@@ -116,6 +116,15 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | `run-searches.mjs` must run under tsx so it can reuse the browser's `src/zip.ts` lookup. Plain node cannot run it | Not decided |
 | The robots.txt parser does not percent-encoding-normalize paths and reads robots.txt up to 1 MB (RFC 9309 sets a minimum of 500 KiB) | Not decided |
 
+## Documentation and evidence
+
+| Shortcut | Best-practice alternative |
+|----------|---------------------------|
+| `docs/evidence/tofu-plan.txt` does not exist; it needs one run of `infra/plan-evidence.sh` with a real `CLOUDFLARE_API_TOKEN` (listed in STATUS under Blocked on operator) | Run the script once and commit its output |
+| Applied and rejected counts for the first nine review passes are unrecoverable; STATUS shows them as not recorded | Record counts at the time of each review |
+| The STATUS review row for the first docs pass (6 of 7 applied) is self-reported, from a self-pass plus an advisor review, not a separate reviewer's count | An independent reviewer records its own counts |
+| Typical per-search LLM cost in `costs.md` is an estimate | Replace with OpenRouter's `usage.cost` from the first live search and the quality evaluation |
+
 ## Before going public
 
 - CONTRIBUTING guide

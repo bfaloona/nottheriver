@@ -133,6 +133,16 @@ Every default below was taken without operator input; each is also reflected in 
 - Screenshots: `landing.png`, `results.png`, `about.png` at 1280x800 and `landing-360.png` at 360x640.
 - Evaluation zips: urban, suburban and rural per state by a fixed RUCA and distance rule; 10 states, 2 products each, 60 searches.
 - The probe fetches robots.txt first and one page per registrable domain, 2 s apart; its verdict is scored against the browser pass; grades and the recall baseline share one file and schema; searches run 4 s apart.
+- Test count reported as 514 in 21 files (measured today). The task text's 463 is from before the pipeline and e2e commits.
+- ADR 0001 is not verbatim from research/services.md. Its rate-limit decision (option B, 5/min, SEARCH_LIMITER) and bindings example were rewritten to match the code: RATE_LIMITER 30/60 s plus GLOBAL_LIMITER 60/60 s, namespaces 1001 and 1002. The distance sentence and the plan-gate bullet were amended as instructed. The live-check row cites the findings without the query text, which named a location.
+- The hygiene grep is reported in STATUS as a control hit plus 3 expected matches, described generically, not the prescribed '0 hits, control 1 hit'. The orchestrator's out-of-band patterns never arrived, so I used my own (name, city, home path, key-filename prefix).
+- README local dev uses 'npx wrangler dev --cwd proxy' with proxy/.dev.vars. The flag was checked against wrangler --help and matches the build:proxy form, but the command was not run.
+- costs.md's worst-case LLM prompt cost takes a loose bound of 1 token per character over measured worst-case prompt lengths (enrich 25,605 chars with 200-char URLs, normalize 1,197). The 'typical' LLM cost is labeled an estimate. I added a Cloudflare Workers Free row (100,000 requests/day) from the research checks.
+- debt.md was regrouped into topic sections. I added rows from spec's own required list and STATUS content: model negatives cannot fire, positive signals informational, cloudflare_worker trio, runtime response validation only in tests, dispute process undefined. The rate-limit rows were merged into three. The stale Brave gitleaks-rule row was removed, and the web-search fallback row was rewritten as not needed.
+- ranking.md's dispute link points at .github/ISSUE_TEMPLATE/dispute-a-ranking.md. The site itself links to issues/new?template=.
+- In STATUS, the nine review passes with '<n>' placeholders now show 'not recorded'. The session note says those counts could not be recovered after the crash.
+- STATUS records the operator decisions from the session note in generic wording: build prompt kept with no history rewrite, smoke-test zip kept, commit subjects kept. No location is named.
+- The 0003 weight rationale is written as reasoning plus arithmetic from the formula. No history or attribution was invented.
 
 ## Review passes
 
@@ -154,6 +164,7 @@ Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and reje
 | End-to-end smoke test | 11 | 8 | 1 |
 | Docs | 7 (from a simplification self-pass and a fresh-eyes review; the declined one asked to cut a step from architecture.md) | 6 | 1 |
 | Docs (second review) | 10 | 10 | 0 |
+| Project docs: simplify + Fable review (2 lenses) | 10 | 10 | 0 |
 
 ## Evidence
 
