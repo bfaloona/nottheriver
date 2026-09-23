@@ -39,6 +39,17 @@
 - Proximity uses the displayed distance (haversine rounded to 1 decimal), so a reader can recompute value = 1 - distance_km/40 from what the page shows. The value itself is not rounded.
 - Negative source labels read '<Kind>: <claim>' (e.g. 'Labor: <source title>'). Certification source labels use the certification's label. The relevance source label is the candidate's title, falling back to its name.
 - Ethics and env keep their sources (baseline, certifications, negatives) even after flooring to 0. The UI hides zero rows anyway.
+- Shape of src/quality.json once measured: {date: 'YYYY-MM-DD', precision: {online, local}, recall: {online, local}}, all values fractions from 0 to 1 (typed as QualityMeasure in src/about.ts). U11 must write this shape.
+- Distance sort follows spec D: distance ascending, missing distance last, ties (including all-online) broken by name. This overrides ui.md 4.1, which kept online items in score order.
+- Used build.rolldownOptions.input instead of rollupOptions, which is deprecated in the installed vite 8.3.0 types.
+- The 'Why this rank' components render as a <ul> grid, not the <table> from ui.md, so it reflows at 360px. The C14 data-* hooks are unchanged.
+- Component labels: Relevance, Ethics, Environment (for env), Proximity. Weights line reads 'Ranked by relevance 0.25, ethics 0.30, environment 0.30, proximity 0.15.' (decimals, so both '0.3' and '0.30' match).
+- Success status copy 'Found N shops near you and M online.' is not in ui.md 4.5. Input-validation copy: 'Type what you are looking for.' and 'Enter a five-digit zip code.'
+- Positive LLM signals (F-21) show as plain rows (kind, source's claim, source link) with no dispute link. Negative signals get the warn row plus 'Dispute this'.
+- About page title is 'About {siteName}'. Its h1 is the mission sentence. Doc links (docs/*.md, data/blocklist.md) point at {repoUrl}/blob/main/<path> and stay plain text when no repo URL is set.
+- Added an inline data: SVG favicon (the creek mark) to both pages. Chrome's /favicon.ico 404 was logging a console error, and U7's smoke test asserts there are none. The CSP img-src already allows data:.
+- Local count line reads 'N shops within X mi' using the farthest shown distance. Bare 'N shops' when no distances are known.
+- Distance shows with the address: '2.0 mi, 12 Main St, ...'. Result snippets are not shown, which avoids stray brand words in visible text.
 
 ## Review passes
 
@@ -46,6 +57,7 @@
 - U2 zips: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U4 data seeds: simplify + Fable review (2 lenses), 8 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U3 scoring: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U6 ui: simplify + Fable review (2 lenses), 11 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 

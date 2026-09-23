@@ -25,6 +25,18 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Local relevance uses only the place title and its categories list (Brave place results have no description), so most local results score 0.5 or 0.2 | Fetch /local/descriptions or the store's product page |
 | Relevance is a lexical match with a crude plural rule, not stemming or semantic matching | A proper stemmer, or a structured relevance judgment validated in code |
 | The score.ts certification and signal kind lists are hardcoded from the prompt's section 8; no test checks they match the 'kinds' map in data/certifications.json | A cross-file assertion in pipeline.test.ts |
+| Serif system font stack not checked on Android (no Georgia) or Windows (no ui-serif). | Test on real devices; if the fallback is poor, self-host an open-license serif (still no CDN). |
+| Desktop popover can extend below the viewport for the last result. | Flip it above the summary near the viewport bottom (a few lines of JS). |
+| Popover hover/focus/Escape behaviour is not covered by an automated browser test (click-to-pin checked by hand only). | A Playwright check that hover opens it, Escape closes it, and focus inside keeps it open. |
+| No skip link. | Add 'Skip to search' before the header. |
+| No print stylesheet. | @media print that hides the controls and expands every <details>. |
+| Dark mode follows prefers-color-scheme only. | A manual toggle with a data-theme attribute, remembered in sessionStorage. |
+| Loading state is a text line only. | A step indicator once the Worker reports stages. |
+| Native <select> and checkbox internals are drawn by the browser and were not contrast-checked. | Audit with an a11y tool and add a custom border if a browser fails 3:1. |
+| No social/OG image. | Export the creek mark as a plain OG image. |
+| Baseline/proximity source links (about.html#ranking from the Worker) open in a new tab even though they are same-site. | Open same-origin source links in the same tab. |
+| CSP is a build-time meta tag because GitHub Pages cannot set headers. | A real CSP header behind a custom domain. |
+| The site name in the wordmark is filled in by JS (C15 keeps it out of the HTML), so the header is briefly empty on first paint. | Inject it at build time with a transformIndexHtml replacement. |
 
 ## Before going public
 
