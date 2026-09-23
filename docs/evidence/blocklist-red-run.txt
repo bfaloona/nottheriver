@@ -1,0 +1,48 @@
+Blocklist red run, 2026-09-23
+
+State: tests, fixtures and data/blocklist.json written; proxy/src/blocklist.ts was a pass-through stub
+(every check returned false, filterBlocked returned its input), so no filter existed.
+
+$ npx vitest run proxy/test/blocklist.test.ts
+
+     × D1 domain amazon.com -> blocked
+     × D2 url https://www.amazon.com/dp/B000000000 -> blocked
+     × D3 domain smile.amazon.com -> blocked
+     × D4 domain amazon.co.uk -> blocked
+     × D7 url https://amzn.to/3abc -> blocked
+     × D8 url https://a.co/d/xyz -> blocked
+     × D20 domain mybucket.s3.amazonaws.com -> blocked
+     × D30 url https://evil.example/?u=https://amazon.… -> blocked
+     × URL1 url https://deals.example/go?url=amazon.com -> blocked
+     × N1 name Whole Foods Market -> blocked
+     × N2 name Whole Foods Market - Midtown -> blocked
+     × N9 name Amazon Fresh -> blocked
+     × N14 name Whole Foods Market Midtown -> blocked
+     × N17 local The Fresh Market -> blocked
+     × N29 name Amazon Hub Locker - Midtown -> blocked
+     ...
+
+ Test Files  1 failed (1)
+      Tests  69 failed | 45 passed (114)
+
+The 45 passing tests were the allowed-by-design fixtures (for example D15 amazon.example.com,
+N8 Whole Foods Co-op), data-file checks, and registrableDomain checks (domain.ts already existed).
+
+Second red run, 2026-09-23: new cases for nested redirect URLs, hash routes, the URL host, non-http
+schemes, a circled-letter name and scrub edge cases, run before the filter was changed.
+
+$ npx vitest run proxy/test/blocklist.test.ts
+
+     × URL5 url https://deals.example/?u=https://other.… -> blocked
+     × URL6 url https://deals.example/?u=https://other.… -> blocked
+     × URL7 url https://deals.example/#/go?url=amazon.c… -> blocked
+     × N41 name Ⓐmazon Fresh -> blocked
+     × checks the URL host too, so it is safe to call alone
+     × scans the fragment
+     × blocks a non-http scheme
+     × blocks a row whose url host disagrees with its domain field
+     × "Amazon™ Fresh produce" -> "produce"
+     × "Amazon​Fresh produce" -> "produce"
+     × "Ama̴zon skillet" -> "skillet"
+
+      Tests  11 failed | 118 passed (129)

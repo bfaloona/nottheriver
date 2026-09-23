@@ -1,0 +1,568 @@
+[
+  {
+    "id": "D1",
+    "kind": "domain",
+    "input": "amazon.com",
+    "expected": "blocked",
+    "note": "label amazon under com"
+  },
+  {
+    "id": "D2",
+    "kind": "url",
+    "input": "https://www.amazon.com/dp/B000000000",
+    "expected": "blocked",
+    "note": "subdomain www resolves to amazon.com"
+  },
+  {
+    "id": "D3",
+    "kind": "domain",
+    "input": "smile.amazon.com",
+    "expected": "blocked",
+    "note": "subdomain resolves to amazon.com"
+  },
+  {
+    "id": "D4",
+    "kind": "domain",
+    "input": "amazon.co.uk",
+    "expected": "blocked",
+    "note": "country suffix co.uk"
+  },
+  {
+    "id": "D5",
+    "kind": "domain",
+    "input": "amazon.com.au",
+    "expected": "blocked",
+    "note": "country suffix com.au"
+  },
+  {
+    "id": "D6",
+    "kind": "domain",
+    "input": "amazon.de",
+    "expected": "blocked",
+    "note": "country suffix de"
+  },
+  {
+    "id": "D7",
+    "kind": "url",
+    "input": "https://amzn.to/3abc",
+    "expected": "blocked",
+    "note": "short link amzn.to"
+  },
+  {
+    "id": "D8",
+    "kind": "url",
+    "input": "https://a.co/d/xyz",
+    "expected": "blocked",
+    "note": "short link a.co"
+  },
+  {
+    "id": "D9",
+    "kind": "domain",
+    "input": "amzn.com",
+    "expected": "blocked",
+    "note": "short link amzn.com"
+  },
+  {
+    "id": "D10",
+    "kind": "domain",
+    "input": "audible.co.uk",
+    "expected": "blocked",
+    "note": "label audible under co.uk"
+  },
+  {
+    "id": "D11",
+    "kind": "domain",
+    "input": "abebooks.de",
+    "expected": "blocked",
+    "note": "label abebooks under de"
+  },
+  {
+    "id": "D12",
+    "kind": "domain",
+    "input": "www.zappos.com",
+    "expected": "blocked",
+    "note": "subdomain of zappos.com"
+  },
+  {
+    "id": "D13",
+    "kind": "domain",
+    "input": "6pm.com",
+    "expected": "blocked",
+    "note": "exact 6pm.com"
+  },
+  {
+    "id": "D14",
+    "kind": "url",
+    "input": "https://www.wholefoodsmarket.com/stores/midtown",
+    "expected": "blocked",
+    "note": "exact wholefoodsmarket.com"
+  },
+  {
+    "id": "D15",
+    "kind": "domain",
+    "input": "amazon.example.com",
+    "expected": "allowed",
+    "note": "registrable domain is example.com; fails a substring match"
+  },
+  {
+    "id": "D16",
+    "kind": "domain",
+    "input": "www.amazon.com.evil.com",
+    "expected": "allowed",
+    "note": "registrable domain is evil.com; fails an ends-with match"
+  },
+  {
+    "id": "D17",
+    "kind": "domain",
+    "input": "notamazon.com",
+    "expected": "allowed",
+    "note": "label notamazon"
+  },
+  {
+    "id": "D18",
+    "kind": "domain",
+    "input": "amazonia-plants.com",
+    "expected": "allowed",
+    "note": "label amazonia-plants"
+  },
+  {
+    "id": "D19",
+    "kind": "domain",
+    "input": "ringcentral.com",
+    "expected": "allowed",
+    "note": "ring.com is exact, not a label rule"
+  },
+  {
+    "id": "D20",
+    "kind": "domain",
+    "input": "mybucket.s3.amazonaws.com",
+    "expected": "blocked",
+    "note": "exact amazonaws.com"
+  },
+  {
+    "id": "D21",
+    "kind": "url",
+    "input": "HTTPS://WWW.AMAZON.COM/",
+    "expected": "blocked",
+    "note": "uppercase"
+  },
+  {
+    "id": "D22",
+    "kind": "url",
+    "input": "https://amazon.com./x",
+    "expected": "blocked",
+    "note": "trailing dot in host"
+  },
+  {
+    "id": "D23",
+    "kind": "url",
+    "input": "https://amazon.com:8443/",
+    "expected": "blocked",
+    "note": "explicit port"
+  },
+  {
+    "id": "D24",
+    "kind": "url",
+    "input": "https://m.amazon.co.jp/",
+    "expected": "blocked",
+    "note": "subdomain under co.jp"
+  },
+  {
+    "id": "D25",
+    "kind": "url",
+    "input": "https://amazon.com.evil.example/",
+    "expected": "allowed",
+    "note": "registrable domain is evil.example; path and query empty"
+  },
+  {
+    "id": "D26",
+    "kind": "url",
+    "input": "https://amazon.github.io/",
+    "expected": "allowed",
+    "note": "github.io is a private suffix parent, not Amazon"
+  },
+  {
+    "id": "D27",
+    "kind": "url",
+    "input": "https://amazon.com%2Eevil.example/",
+    "expected": "allowed",
+    "note": "host parsing decodes %2E; registrable domain is evil.example"
+  },
+  {
+    "id": "D28",
+    "kind": "url",
+    "input": "http://192.0.2.1/",
+    "expected": "dropped",
+    "note": "IP literal has no registrable domain"
+  },
+  {
+    "id": "D29",
+    "kind": "url",
+    "input": "https://xn--amzon-hqa.com/",
+    "expected": "dropped",
+    "note": "invalid punycode fails URL parsing"
+  },
+  {
+    "id": "D30",
+    "kind": "url",
+    "input": "https://evil.example/?u=https://amazon.com/",
+    "expected": "blocked",
+    "note": "Amazon URL in the query string"
+  },
+  {
+    "id": "URL1",
+    "kind": "url",
+    "input": "https://deals.example/go?url=amazon.com",
+    "expected": "blocked",
+    "note": "bare Amazon host in the query"
+  },
+  {
+    "id": "URL2",
+    "kind": "url",
+    "input": "https://deals.example/r/https%3A%2F%2Famzn.to%2Fx",
+    "expected": "blocked",
+    "note": "encoded short link in the path, one decode"
+  },
+  {
+    "id": "URL3",
+    "kind": "url",
+    "input": "https://shop.example/?ref=notamazon.com",
+    "expected": "allowed",
+    "note": "notamazon.com is not listed"
+  },
+  {
+    "id": "URL4",
+    "kind": "url",
+    "input": "javascript:alert(1)",
+    "expected": "dropped",
+    "note": "non-http scheme"
+  },
+  {
+    "id": "URL5",
+    "kind": "url",
+    "input": "https://deals.example/?u=https://other.example/?url=amazon.com",
+    "expected": "blocked",
+    "note": "bare Amazon host inside a nested URL"
+  },
+  {
+    "id": "URL6",
+    "kind": "url",
+    "input": "https://deals.example/?u=https://other.example/r/amzn.to/x",
+    "expected": "blocked",
+    "note": "short link inside a nested URL"
+  },
+  {
+    "id": "URL7",
+    "kind": "url",
+    "input": "https://deals.example/#/go?url=amazon.com",
+    "expected": "blocked",
+    "note": "Amazon host in a hash route"
+  },
+  {
+    "id": "URL8",
+    "kind": "url",
+    "input": "https://deals.example/?u=https://\uff41\uff4d\uff41\uff5a\uff4f\uff4e.com/x",
+    "expected": "blocked",
+    "note": "fullwidth host folds under URL parsing"
+  },
+  {
+    "id": "N1",
+    "kind": "name",
+    "input": "Whole Foods Market",
+    "expected": "blocked",
+    "note": "equals entry"
+  },
+  {
+    "id": "N2",
+    "kind": "name",
+    "input": "Whole Foods Market - Midtown",
+    "expected": "blocked",
+    "note": "entry then \" - \""
+  },
+  {
+    "id": "N3",
+    "kind": "name",
+    "input": "Whole Foods Market #12",
+    "expected": "blocked",
+    "note": "entry then \" #\""
+  },
+  {
+    "id": "N4",
+    "kind": "name",
+    "input": "Whole Foods Market (Midtown)",
+    "expected": "blocked",
+    "note": "entry then \" (\""
+  },
+  {
+    "id": "N5",
+    "kind": "name",
+    "input": "Whole Foods Market, Midtown",
+    "expected": "blocked",
+    "note": "entry then \",\""
+  },
+  {
+    "id": "N6",
+    "kind": "name",
+    "input": "Whole Foods Market at Midtown Plaza",
+    "expected": "blocked",
+    "note": "entry then \" at \""
+  },
+  {
+    "id": "N7",
+    "kind": "name",
+    "input": "Whole Foods Market in Midtown",
+    "expected": "blocked",
+    "note": "entry then \" in \""
+  },
+  {
+    "id": "N8",
+    "kind": "name",
+    "input": "Whole Foods Co-op",
+    "expected": "allowed",
+    "note": "must pass: bare \"Whole Foods\" is an exact entry"
+  },
+  {
+    "id": "N9",
+    "kind": "name",
+    "input": "Amazon Fresh",
+    "expected": "blocked",
+    "note": "equals entry"
+  },
+  {
+    "id": "N10",
+    "kind": "name",
+    "input": "AMAZON GO - Downtown",
+    "expected": "blocked",
+    "note": "case-insensitive prefix"
+  },
+  {
+    "id": "N11",
+    "kind": "name",
+    "input": "Amazon 4-Star",
+    "expected": "blocked",
+    "note": "entry spelled \"Amazon 4-star\"; both normalize to \"amazon 4 star\""
+  },
+  {
+    "id": "N12",
+    "kind": "name",
+    "input": "Amazonia Plants",
+    "expected": "allowed",
+    "note": "\"amazonia\" is not the word \"amazon\""
+  },
+  {
+    "id": "N13",
+    "kind": "name",
+    "input": "Zappos",
+    "expected": "blocked",
+    "note": "equals entry"
+  },
+  {
+    "id": "N14",
+    "kind": "name",
+    "input": "Whole Foods Market Midtown",
+    "expected": "blocked",
+    "note": "plain space is a word boundary"
+  },
+  {
+    "id": "N15",
+    "kind": "name",
+    "input": "Zappos.com",
+    "expected": "blocked",
+    "note": "\".com\" becomes a trailing word"
+  },
+  {
+    "id": "N16",
+    "kind": "name",
+    "input": "Wholesome Foods Market",
+    "expected": "allowed",
+    "note": "no entry is a word prefix"
+  },
+  {
+    "id": "N17",
+    "kind": "local",
+    "input": "The Fresh Market",
+    "website": "https://www.wholefoodsmarket.com/",
+    "expected": "blocked",
+    "note": "listed website domain blocks regardless of name"
+  },
+  {
+    "id": "N18",
+    "kind": "local",
+    "input": "Corner Hardware",
+    "website": "https://www.amazon.com/stores/page/abc",
+    "expected": "blocked",
+    "note": "listed website domain blocks regardless of name"
+  },
+  {
+    "id": "N19",
+    "kind": "name",
+    "input": "Amazon Pharmacy",
+    "expected": "blocked",
+    "note": "equals entry"
+  },
+  {
+    "id": "N20",
+    "kind": "name",
+    "input": "Whole Foods",
+    "expected": "blocked",
+    "note": "equals the exact entry"
+  },
+  {
+    "id": "N21",
+    "kind": "name",
+    "input": "Amazon Fresh Pickup",
+    "expected": "blocked",
+    "note": "word prefix"
+  },
+  {
+    "id": "N22",
+    "kind": "name",
+    "input": "Prime Video Store",
+    "expected": "allowed",
+    "note": "no name entry for Prime Video; domain entry only"
+  },
+  {
+    "id": "N23",
+    "kind": "local",
+    "input": "Whole Foods Market Midtown",
+    "website": "https://www.wholefoodsmarket.com/",
+    "expected": "blocked",
+    "note": "listed website domain"
+  },
+  {
+    "id": "N24",
+    "kind": "name",
+    "input": "Whole Foods Market \u2013 Midtown",
+    "expected": "blocked",
+    "note": "en dash"
+  },
+  {
+    "id": "N25",
+    "kind": "name",
+    "input": "Whole Foods Market: Midtown",
+    "expected": "blocked",
+    "note": "colon"
+  },
+  {
+    "id": "N26",
+    "kind": "name",
+    "input": "Whole Foods Market | Midtown",
+    "expected": "blocked",
+    "note": "pipe"
+  },
+  {
+    "id": "N27",
+    "kind": "name",
+    "input": "Whole Foods Market / Midtown",
+    "expected": "blocked",
+    "note": "slash"
+  },
+  {
+    "id": "N28",
+    "kind": "name",
+    "input": "Woot.com",
+    "expected": "blocked",
+    "note": "\".com\" becomes a trailing word"
+  },
+  {
+    "id": "N29",
+    "kind": "name",
+    "input": "Amazon Hub Locker - Midtown",
+    "expected": "blocked",
+    "note": "caught by the \"Amazon\" word-prefix entry"
+  },
+  {
+    "id": "N30",
+    "kind": "name",
+    "input": "\uff21mazon Fresh",
+    "expected": "blocked",
+    "note": "fullwidth letter folds under NFKC"
+  },
+  {
+    "id": "N31",
+    "kind": "name",
+    "input": "Whole\u200bFoods Market",
+    "expected": "blocked",
+    "note": "zero-width space standing in for a space"
+  },
+  {
+    "id": "N32",
+    "kind": "local",
+    "input": "Whole Foods Co-op",
+    "website": "https://wholefoods.coop.example/",
+    "expected": "allowed",
+    "note": "must pass as a local result with its own website"
+  },
+  {
+    "id": "N33",
+    "kind": "name",
+    "input": "Whole Foods Cooperative",
+    "expected": "allowed",
+    "note": "bare \"Whole Foods\" is exact"
+  },
+  {
+    "id": "N34",
+    "kind": "local",
+    "input": "Amazonia Plants",
+    "website": "https://amazonia-plants.example/",
+    "expected": "allowed",
+    "note": "local result with its own website"
+  },
+  {
+    "id": "N35",
+    "kind": "name",
+    "input": "The Amazon Cafe",
+    "expected": "allowed",
+    "note": "\"amazon\" mid-name is not a prefix"
+  },
+  {
+    "id": "N36",
+    "kind": "name",
+    "input": "Whole Foods - Midtown",
+    "expected": "allowed",
+    "note": "known gap: the exact bare entry misses a separator suffix"
+  },
+  {
+    "id": "N37",
+    "kind": "name",
+    "input": "Whole Foods (Midtown)",
+    "expected": "allowed",
+    "note": "known gap: the exact bare entry misses a separator suffix"
+  },
+  {
+    "id": "N38",
+    "kind": "local",
+    "input": "Whole Foods - Midtown",
+    "website": "https://www.wholefoodsmarket.com/",
+    "expected": "blocked",
+    "note": "the website domain closes the gap"
+  },
+  {
+    "id": "N39",
+    "kind": "name",
+    "input": "Ama\u200bzon Fresh",
+    "expected": "blocked",
+    "note": "zero-width space inside a word"
+  },
+  {
+    "id": "N40",
+    "kind": "name",
+    "input": "Amazon\u2122 Fresh",
+    "expected": "blocked",
+    "note": "trademark sign does not fuse with the word"
+  },
+  {
+    "id": "N41",
+    "kind": "name",
+    "input": "\u24b6mazon Fresh",
+    "expected": "blocked",
+    "note": "circled letter folds under NFKC"
+  },
+  {
+    "id": "N42",
+    "kind": "name",
+    "input": "Amazo\u0144 Fresh",
+    "expected": "allowed",
+    "note": "known gap: a mark with a precomposed form survives normalization"
+  }
+]
