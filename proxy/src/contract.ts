@@ -40,11 +40,11 @@ export interface ScoreComponent {
   value: number;        // 0..1
   weight: number;       // from proxy/ranking/weights.ts
   contribution: number; // weight * value, 3 decimals
-  sources: SourceRef[]; // length >= 1 whenever value > 0 (HR5)
+  sources: SourceRef[]; // length >= 1 whenever value > 0
 }
 
 export interface SearchResult {
-  id: string;             // online: "online:<domain>"; local: "local:<place_id or domain>:<index>"
+  id: string;             // online: "online:<domain>"; local: "local:<place_id or domain>:<index among local rows kept by the first blocklist pass>"
   kind: ResultKind;
   rank: number;           // 1-based score rank within its section; the UI never renumbers
   retailer: { name: string; domain: string; url: string };
@@ -89,7 +89,7 @@ export interface ErrorResponse { error: ErrorCode }
 export interface Candidate {
   kind: ResultKind;
   name: string;
-  domain: string;          // registrable domain, never empty: brave.ts drops anything that does not parse (C12)
+  domain: string;          // registrable domain, never empty: brave.ts drops anything that does not parse
   url: string;             // WHATWG-normalized href
   title: string;
   snippet: string;
