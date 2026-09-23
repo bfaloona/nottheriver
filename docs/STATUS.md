@@ -91,6 +91,13 @@
 - scrubSources also drops a signal whose claim contains the word "amazon". The spec's text rule only covers title, snippet and matched_product. Claims are fetched page titles, so without this the word could reach the page.
 - A test in the spec mentions 'a normalize fixture whose queries all point at blocked text' leading to no enrich call and empty results. I read that as two separate cases: (1) Brave returns only blocked results, so nothing survives the first blocklist pass and no enrich call is made (tested); (2) every online query is empty after brand names are stripped, which raises InvalidLlmOutput before any Brave call (tested).
 - Response validation against search-response.json runs only in tests, as the spec's schema section says; there is no runtime check. Reason: the Workers free plan allows 10 ms of CPU per request.
+- Screenshot names follow the task text (landing.png, results.png, about.png at 1280x800) plus landing-360.png for phone width (360x640). The spec's file list names landing-1280.png / results-1280.png / about-1280.png. If STATUS cites the spec names, those references need to match these files.
+- The spec step 'Tab to the first summary, Enter opens it' is done as summary.focus() then Enter, then a check that details[open] is set.
+- smoke.spec.ts loads isBlockedDomain/isBlockedUrl through tsx's tsImport. Playwright's ESM loader rejects proxy/src/blocklist.ts because its data/blocklist.json import has no `with { type: 'json' }`. The workaround works.
+- The mock proxy builds a fresh makeFixtureFetch(defaultRoutes()) for each search, so the web-1/web-2 alternation restarts every time and every search returns the same results. The handler's base deps.fetch is an empty fixture fetch, so no code path can make a live call.
+- reuseExistingServer is false on both web servers, so a stray dev server on 5173 (no CSP, wrong worker URL) fails on --strictPort instead of being reused silently.
+- The spec also asks smoke.spec to import data/blocklist.json. It doesn't: blocklist.ts already loads that file.
+- Zip 98116 came from decisions.json smoke_zip. It is hard-coded only in smoke.spec.ts and no assertion checks a city.
 
 ## Review passes
 
@@ -105,6 +112,7 @@
 - U11 quality eval part 1: simplify + Fable review (2 lenses), 16 findings, <n> applied, <n> rejected (reasons in commit or below)
 - infra plan evidence and CI control: simplify + Fable review (2 lenses), 8 findings, 6 applied, 0 rejected
 - search pipeline: simplify + Fable review (2 lenses), 8 findings, 7 applied, 0 rejected
+- end-to-end smoke test: simplify + Fable review (2 lenses), 11 findings, 8 applied, 1 rejected
 
 ## Evidence
 

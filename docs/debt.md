@@ -67,6 +67,12 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | The Amazon text rule over-blocks: a shop whose title or snippet says 'not on Amazon' is dropped. | Not decided |
 | scrubSources rescores every row that survives the second pass, even when nothing was removed. This is about 40 scoring calls at most per request; a skip-when-unchanged check was left out on purpose to keep the code simple. | Not decided |
 | dedupe repeats the seen-set pattern of uniqueBy in proxy/ranking/score.ts. That helper is not exported and I don't own that file. | Not decided |
+| The tsImport workaround in smoke.spec.ts can be removed if proxy/src/blocklist.ts adds `with { type: 'json' }` to its JSON import, or if Playwright's loader starts accepting JSON imports without that attribute. | Not decided |
+| No tsconfig type-checks playwright.config.ts (root include is ['src']). This was already the case before this work; eslint still covers the file. | Not decided |
+| results.png shows fixture addresses in Springfield, IL, about 980 mi from zip 02138. The near section reads '5 shops within 982 mi' and local results have no proximity row. The spec expects STATUS to explain this. | Not decided |
+| Every npm run e2e rewrites the four tracked PNGs in docs/evidence, so local runs leave binary diffs. Options: gate screenshots.spec behind an env var, or accept the churn. | Not decided |
+| If the CI e2e job ever sets BASE_PATH, vite preview serves under /<repo>/ and baseURL 404s. This belongs to the CI workflow (U8), not these files. | Not decided |
+| The screenshot shows a UI/pipeline quality issue owned by other units: Blue Heron Goods carries an 'Environmental' positive signal whose claim is its own product title ('Pre-seasoned Cast Iron Skillet, 10 inch \| Blue Heron Goods'). The fixture or enrich acceptance is letting a retailer's own page count as an environmental signal. | Not decided |
 
 ## Before going public
 
