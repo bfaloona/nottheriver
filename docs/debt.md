@@ -59,6 +59,10 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | The script that picked the zips is not committed (it read raw RUCA and Gazetteer files that stay out of the repo). The rule, the sources and a table of each zip's RUCA code and distance are in eval/README.md, so the choice can be rechecked. | Not decided |
 | run-searches.mjs must run under tsx so it can reuse the browser's src/zip.ts lookup. Plain node cannot run it. | Not decided |
 | The robots.txt parser does not percent-encoding-normalize paths and reads robots.txt up to 1 MB (RFC 9309 sets a minimum of 500 KiB). | Not decided |
+| The literal-value leftover check covers only TF_VAR_brave_api_key, TF_VAR_openrouter_api_key and CLOUDFLARE_API_TOKEN. The account id is covered by the 32-hex rule, and the origin and site URL by the host rules. | Not decided |
+| The synthetic plan fixture is hand-written, not captured from real 'tofu show' output. The first real run is the check that the redaction fits the real output. | Not decided |
+| The 32-hex redaction's behavior at end of line was not tested separately on GNU sed (CI) and BSD sed (macOS). Low risk: tofu quotes string values. | Not decided |
+| The bundle-scan self-test proves the scan as a whole goes red. It does not prove gitleaks and the prefix grep each catch the samples on their own. | Not decided |
 
 ## Before going public
 

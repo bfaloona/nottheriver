@@ -79,6 +79,13 @@
 - Default delay between searches is 4 s (15 per minute), leaving headroom under the 30/min per-client and 60/min global limits.
 - Shape of src/quality.json once measured, written by `node eval/summarize.mjs --site`: {"measured": {"date", "searches", "precision": {"online", "local"}, "recall": {"online", "local"}}}. Values are numbers or null. U6 should code against this shape.
 - Repo files never name the operator's state, and the operator's zip appears nowhere in eval/. Zips outside that state were chosen by hand rather than enforced by a test that would name the state.
+- Kept the spec's test-value guard: the script refuses to run tofu unless the five TF_VAR_* values are exactly test-brave, test-openrouter, 32 zeros, and http://localhost:5173 for both the origin and the site URL. I read 'with credentials' as CLOUDFLARE_API_TOKEN only.
+- Test hooks are env vars (PLAN_TEXT=<file> uses synthetic text instead of running tofu; OUT=<file> overrides docs/evidence/tofu-plan.txt), not flags.
+- Hosts are over-redacted: the whole token up to .workers.dev or .github.io is replaced, so the outputs.tf placeholder 'https://nottheriver-proxy.<account-subdomain>.workers.dev' becomes '[redacted-worker-host]'. Otherwise the leftover check would refuse every real run.
+- Self-tests are shell scripts under .github/scripts/, because vitest's include list leaves out infra/ and I don't own vitest.config.ts.
+- Used 'gitleaks dir --config .gitleaks.toml' as the existing scan does, instead of the spec's 'gitleaks detect --no-git' (old syntax).
+- Dropped the random apiKey sample from the bundle-secret-scan.sh header instead of making it deterministic. The header now points at the self-test script.
+- '(sensitive value)' is left as-is, not redacted further: tofu already prints that literal in place of sensitive values.
 
 ## Review passes
 
@@ -91,6 +98,7 @@
 - U5 worker part 1: simplify + Fable review (2 lenses), 9 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U1 blocklist: simplify + Fable review (2 lenses), 10 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U11 quality eval part 1: simplify + Fable review (2 lenses), 16 findings, <n> applied, <n> rejected (reasons in commit or below)
+- infra plan evidence and CI control: simplify + Fable review (2 lenses), 8 findings, 6 applied, 0 rejected
 
 ## Evidence
 
