@@ -9,10 +9,10 @@ resource "cloudflare_workers_script" "proxy" {
   content_file   = local.bundle
   content_sha256 = filesha256(local.bundle)
   main_module    = "index.js"
-  # Must equal proxy/wrangler.json so `wrangler dev` runs the same runtime as the deploy.
+  # Must equal proxy/wrangler.jsonc so `wrangler dev` runs the same runtime as the deploy.
   compatibility_date = "2026-09-01"
 
-  # Workers Logs stay off, matching proxy/wrangler.json.
+  # Workers Logs stay off, matching proxy/wrangler.jsonc.
   observability = {
     enabled = false
   }
