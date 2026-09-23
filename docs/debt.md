@@ -46,6 +46,13 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Local shops without a website are not shown (a place with no url, or one that yields no registrable domain, is dropped before filtering) | Key local results on place identity, not domain |
 | No retailer classification: every parsed web result outside the negative-source domains becomes a candidate, review and news sites included | A deterministic domain-category filter or a validated is_retailer field |
 | Clients are keyed on CF-Connecting-IP, trusted only because Cloudflare's edge sets it | A non-Cloudflare deployment must key on the socket peer address |
+| The name rule under-blocks the bare 'Whole Foods' entry followed by a separator ('Whole Foods - Midtown', fixtures N36/N37 are allowed). The entry has to be exact so 'Whole Foods Co-op' passes. The domain rule covers these listings when a website is present (N38). | Not decided |
+| The name rule over-blocks plain-space suffixes such as 'Whole Foods Market Midtown' and 'Amazon Fresh Pickup'. This is the safe side for the no-Amazon requirement. | None needed |
+| 'Amazon' in the middle of a name ('The Amazon Cafe') or as part of a longer word ('Amazonia Plants') is allowed by design. | None needed |
+| Redirects are not followed at runtime, so an unlisted shortener whose URL contains no Amazon token passes. | A 'redirector' entry kind |
+| media-amazon.com and ssl-images-amazon.com (Amazon image hosts): no public source found, not added. | Add them once a public source ties them to Amazon |
+| normalizeName turns symbols into spaces before NFKC so that '™' cannot fold into 'tm'. Side effect: enclosed-letter symbols such as 'Ⓐ' become a space, so 'Ⓐmazon' is not caught. Low risk. | Not decided |
+| The ownership check reads Wikipedia by hand on the check date. Nothing re-verifies sources automatically. | A scheduled re-check of each entry's source |
 
 ## Before going public
 

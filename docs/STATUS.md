@@ -64,6 +64,13 @@
 - createBraveClient takes `negativeSourceDomains: ReadonlySet<string>` as a parameter. data/negative-sources.json belongs to U4, so the pipeline wires it in wave B.
 - The handler sends `Vary: Origin` on every response, not only on allowed origins. It adds no CORS permission.
 - Header values fed to x-loc-city: accents are folded to ASCII; a name that stays non-ASCII after folding drops the header.
+- Adopted the rule amendment for secondary sources (dated HTTP redirect, subsidiary article, and a news source for 'Amazon Style' only). 7 entries are status pending-rule-amendment: amzn.to, amzn.com, a.co, 6pm.com, 'Amazon Style' (seed) and fabric.com, amzn.eu (additions). The filter ignores status.
+- Added a 'Woot' prefix-word name entry, sourced from the same Wikipedia products-list sentence as woot.com. Without it, fixture N28 ('Woot.com' as a listing name, expected blocked) could not pass.
+- Additions from the sourced-additions check: vine.com, wag.com and yoyo.com (named as domains on List of Amazon products and services #Retail_goods), plus wondery.com, mgm.com and onemedical.com (named on Amazon (company); each domain taken from the brand's own Wikipedia infobox). All are active.
+- wag.com: the spec expected an unrelated business at this domain. On 2026-09-23 it returned 301 to https://amazon.com:443/wag/, so it is blocked on both the Wikipedia source and the redirect. No guess involved.
+- Excluded buyvip.com (no article or redirect ties the brand to the domain, and it does not resolve) and lovefilm.com (the article's website field points to an Amazon storefront, not this domain, and it does not resolve). Handmade and Luxury Stores are storefronts inside amazon.com and are already covered.
+- Renamed the embedded-URL fixture ids from U1-U4 to URL1-URL4 so they can't be read as unit names.
+- Changed N32 and N34 from exact duplicates of N8 and N12 into local cases with their own non-listed websites. They are still expected allowed.
 
 ## Review passes
 
@@ -74,6 +81,7 @@
 - U6 ui: simplify + Fable review (2 lenses), 11 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U9 ci: simplify + Fable review (2 lenses), 12 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U5 worker part 1: simplify + Fable review (2 lenses), 9 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U1 blocklist: simplify + Fable review (2 lenses), 10 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 
@@ -86,3 +94,27 @@ Checked 2026-09-23 on a clean clone of `main`:
 | `npm run lint` | exit 0; a planted lint error and a planted Worker type error both failed it |
 | `gitleaks git .` (full history) | `5 commits scanned.` / `no leaks found` |
 | pre-commit hook with a planted fake `sk-or-` key staged | `leaks found: 1` (rule `openrouter-api-key`), exit 1 |
+
+Ran against a pass-through stub of proxy/src/blocklist.ts: every check returned false and filterBlocked returned its input, so no filter existed yet. The fixtures, tests and data/blocklist.json were already written. Recorded in docs/evidence/blocklist-red-run.txt.
+
+```
+$ npx vitest run proxy/test/blocklist.test.ts
+     × D1 domain amazon.com -> blocked
+     × D2 url https://www.amazon.com/dp/B000000000 -> blocked
+     × D3 domain smile.amazon.com -> blocked
+     × D4 domain amazon.co.uk -> blocked
+     × D7 url https://amzn.to/3abc -> blocked
+     × D8 url https://a.co/d/xyz -> blocked
+     × D20 domain mybucket.s3.amazonaws.com -> blocked
+     × D30 url https://evil.example/?u=https://amazon.… -> blocked
+     × URL1 url https://deals.example/go?url=amazon.com -> blocked
+     × N1 name Whole Foods Market -> blocked
+     × N2 name Whole Foods Market - Midtown -> blocked
+     × N9 name Amazon Fresh -> blocked
+     × N17 local The Fresh Market -> blocked
+     × N29 name Amazon Hub Locker - Midtown -> blocked
+ Test Files  1 failed (1)
+      Tests  69 failed | 45 passed (114)
+```
+
+The 45 that passed were the allowed-by-design fixtures (for example D15 amazon.example.com and N8 Whole Foods Co-op), the data-file checks, and the registrableDomain checks (domain.ts already existed).
