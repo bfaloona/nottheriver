@@ -22,11 +22,12 @@
 
 ## Questions guessed on
 
-- None yet.
+- Placeholder bundle content for validate: 'export default {};' (spec said one line, not which).
+- Omitted the empty provider "cloudflare" {} block; the provider reads CLOUDFLARE_API_TOKEN from env implicitly, noted in a comment in versions.tf.
 
 ## Review passes
 
-- None yet.
+- U8 infra part 1: simplify + Fable review (2 lenses), 4 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 
