@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "checked": "2026-09-23",
+  "notes": "Closure or rebranding never removes an entry. Both filter passes apply every entry regardless of status. See blocklist.md.",
+  "domains": [
+    {
+      "pattern": "amazon",
+      "kind": "label-any-suffix",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Amazon.com",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "amzn.to",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "seed",
+      "source_kind": "http-redirect",
+      "source": "https://amzn.to/ -> 301 http://www.amazon.com/",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "amzn.com",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "seed",
+      "source_kind": "http-redirect",
+      "source": "https://amzn.com/ -> 301 https://www.amazon.com/",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "a.co",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "seed",
+      "source_kind": "http-redirect",
+      "source": "https://a.co/ -> 302 http://www.amazon.com/",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "primevideo.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Amazon_Prime_Video",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "wholefoodsmarket.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Whole_Foods_Market",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "zappos.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "6pm.com",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "seed",
+      "source_kind": "wikipedia-subsidiary-article",
+      "source": "https://en.wikipedia.org/wiki/Zappos#Amazon_subsidiary",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "woot.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "shopbop.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "audible",
+      "kind": "label-any-suffix",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Audible",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "ring.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Ring",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "eero.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Other",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "blinkforhome.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "twitch.tv",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Twitch",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "imdb.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Subsidiaries",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "goodreads.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Goodreads",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "abebooks",
+      "kind": "label-any-suffix",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "pillpack.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Other",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "comixology.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Other",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "amazonaws.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Amazon_Web_Services",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "souq.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Other",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "diapers.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Subsidiaries",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "bookdepository.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-navbox+mergers",
+      "source": "https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Amazon",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "fabric.com",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "addition",
+      "source_kind": "http-redirect",
+      "source": "https://fabric.com/ -> 301 https://www.amazon.com/fabric/b/?ie=UTF8&node=12899121",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "amzn.eu",
+      "kind": "exact",
+      "status": "pending-rule-amendment",
+      "origin": "addition",
+      "source_kind": "http-redirect",
+      "source": "https://amzn.eu/ -> 302 http://www.amazon.co.uk/gp/amazon-eu.html",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "vine.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "wag.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "yoyo.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "wondery.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "mgm.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "checked": "2026-09-23"
+    },
+    {
+      "pattern": "onemedical.com",
+      "kind": "exact",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Subsidiaries",
+      "checked": "2026-09-23"
+    }
+  ],
+  "names": [
+    {
+      "name": "Whole Foods",
+      "match": "exact",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Retail",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Whole Foods Market",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Whole_Foods_Market",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon Fresh",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_stores",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon Go",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_stores",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon Style",
+      "match": "prefix-word",
+      "status": "pending-rule-amendment",
+      "origin": "seed",
+      "source_kind": "news",
+      "source": "https://www.geekwire.com/2023/amazon-closing-its-style-physical-clothing-stores-will-continue-investing-in-grocery/",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon 4-star",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_stores",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon Books",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_stores",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Zappos",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "seed",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Subsidiaries",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Woot",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/List_of_Amazon_products_and_services#Retail_goods",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon Pharmacy",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)#Other",
+      "checked": "2026-09-23"
+    },
+    {
+      "name": "Amazon",
+      "match": "prefix-word",
+      "status": "active",
+      "origin": "addition",
+      "source_kind": "wikipedia-named-page",
+      "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "checked": "2026-09-23"
+    }
+  ]
+}
