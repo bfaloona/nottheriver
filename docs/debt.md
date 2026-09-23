@@ -41,6 +41,11 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | The bundle scan does not catch a bare high-entropy string with no key-like word next to it. A bare-string fallback would flag hashed chunk names and zips.json. Coverage is the two project key patterns (sk-or-, BSA) plus the default gitleaks rules, which need a key-like word such as 'apiKey=' next to the value. | Revisit if a new key type without a known prefix is added. |
 | The gitleaks install step (pinned version and sha256) is duplicated in ci.yml and pages.yml. | A shared install script or composite action called from both workflows. |
 | Workflows use floating major tags (@v7 etc.), not commit SHAs. | Pin actions to commit SHAs with a bot updating them. |
+| Rate limit is 30 per 60 s per client key (full IPv4 address or IPv6 /64) plus a global 60 per 60 s circuit breaker; the prompt's 30 per 10 minutes cannot be expressed with Cloudflare's 10 s or 60 s periods, so the sustained ceiling is 10x the target | A shared store (Durable Object or KV) counting over a 10-minute window |
+| The model gets a structure-only JSON schema (value constraints stripped by structuralOnly) because provider strict-mode keyword support is unverified; the full schema is enforced on every reply | Send the full schema once the live gate shows the provider accepts it |
+| Local shops without a website are not shown (a place with no url, or one that yields no registrable domain, is dropped before filtering) | Key local results on place identity, not domain |
+| No retailer classification: every parsed web result outside the negative-source domains becomes a candidate, review and news sites included | A deterministic domain-category filter or a validated is_retailer field |
+| Clients are keyed on CF-Connecting-IP, trusted only because Cloudflare's edge sets it | A non-Cloudflare deployment must key on the socket peer address |
 
 ## Before going public
 

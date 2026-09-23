@@ -56,6 +56,14 @@
 - pages.yml skips the npm cache so the deploy build never restores a cache another run wrote (setup-node v7 notes discuss cache-poisoning risk). CI keeps the cache.
 - The scan uses `gitleaks dir --config <repo>/.gitleaks.toml` (the current name for `detect --no-git`). --config is required because `gitleaks dir` otherwise looks for .gitleaks.toml inside the scanned directory, not the repo root.
 - The Brave rule comment says keys 'have been observed' to start with BSA, without naming whose key.
+- Prompt templates are .ts string modules (proxy/prompts/normalize.ts, enrich.ts), not the .txt files the spec names. Reason: tsx cannot import .txt (checked: ERR_UNKNOWN_FILE_EXTENSION), which would break the e2e mock proxy, and Vite would load .txt as an asset URL.
+- llm client: complete() returns only the validated data. Usage goes into a `usage: LlmUsage[]` list on the client, one entry per billed attempt, retries included. The spec had complete() return {data, usage}. This way the pipeline reads llm.usage once and retry cost is not lost.
+- enrichAll(pass1, llm, data) drops the unused `n` parameter from the spec signature.
+- acceptSignals is stricter than the spec for positive signals too. Any signal must cite a fetched page that is either on the retailer's own domain or names the retailer (by name or domain label); the spec kept a positive from any fetched URL. Duplicate signals (same kind, polarity and URL) count once so they cannot double-penalize a score.
+- brave.ts strips inline markup (<...>) from titles and snippets and collapses whitespace. I have not seen whether live Brave responses contain markup; this is defensive. Worth checking at the live-search gate.
+- createBraveClient takes `negativeSourceDomains: ReadonlySet<string>` as a parameter. data/negative-sources.json belongs to U4, so the pipeline wires it in wave B.
+- The handler sends `Vary: Origin` on every response, not only on allowed origins. It adds no CORS permission.
+- Header values fed to x-loc-city: accents are folded to ASCII; a name that stays non-ASCII after folding drops the header.
 
 ## Review passes
 
@@ -65,6 +73,7 @@
 - U3 scoring: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U6 ui: simplify + Fable review (2 lenses), 11 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U9 ci: simplify + Fable review (2 lenses), 12 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U5 worker part 1: simplify + Fable review (2 lenses), 9 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 
