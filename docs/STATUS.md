@@ -31,7 +31,7 @@ As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed a
 
 ## Deploy (2026-09-23)
 
-- `tofu apply` created the Worker and its `workers.dev` address (2 added, 0 changed, 0 destroyed), from a plan reviewed before apply. The rate-limit bindings were accepted at deploy; a 429 has not been triggered live.
+- `tofu apply` created the Worker and its `workers.dev` address (2 added, 0 changed, 0 destroyed), from a plan reviewed before apply. The rate-limit bindings were accepted at deploy but did not throttle a live burst. After the in-memory limiter was redeployed (1 changed), 40 requests over one reused connection returned 21 `400` then 19 `429`, while 40 requests on separate connections returned no `429` because they spread across isolates ([debt.md](debt.md)).
 - The first live search succeeded with `provider.data_collection: "deny"`: 10 local and 10 online results, 5 Brave calls, about $0.026. Screenshot: [evidence/live-search.jpg](evidence/live-search.jpg).
 - Observed in that search: about half the online results were review articles rather than shops, and local results had no matched product. The quality evaluation measures this.
 
