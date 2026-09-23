@@ -6,3 +6,11 @@ dist/
 .terraform/
 test-results/
 playwright-report/
+proxy/.dev.vars*
+proxy/dist/
+.wrangler/
+data/raw/
+*.tfplan
+plan.bin
+infra/*.tfvars
+crash.log
