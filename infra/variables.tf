@@ -1,4 +1,4 @@
-# Every value arrives as TF_VAR_* at apply time; nothing is committed in a .tfvars file.
+# Secrets and account-identifying values arrive as TF_VAR_* at apply time; nothing is committed in a .tfvars file.
 
 variable "account_id" {
   type      = string
