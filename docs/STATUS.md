@@ -24,10 +24,16 @@
 
 - Placeholder bundle content for validate: 'export default {};' (spec said one line, not which).
 - Omitted the empty provider "cloudflare" {} block; the provider reads CLOUDFLARE_API_TOKEN from env implicitly, noted in a comment in versions.tf.
+- EXPECTED_ROWS = 33791 is hard-coded in data/build-zips.mjs main() so a truncated download fails loudly; a future Gazetteer vintage with a different ZCTA count needs a manual bump (J5 only requires output rows == Gazetteer rows, which join() also guarantees).
+- Out-of-order or duplicate Gazetteer GEOIDs throw rather than being sorted (J7 assumes sorted input; C8 requires ascending output).
+- join(gazetteerText, geonamesTexts) takes file contents, not paths, so the test needs no filesystem; main() does the I/O.
+- loadZips evicts a failed fetch from its cache so a later search can retry (C9 says only 'one fetch per url').
+- Sample fixture rows chosen: 00601 PR, 00802 VI, 02138 MA, 10001 NY, 60614 IL, 96799 AS, 96860 HI, 96910 GU, 96950 MP, 99501 AK (no WA rows), extracted from the generated file, not hand-typed.
 
 ## Review passes
 
 - U8 infra part 1: simplify + Fable review (2 lenses), 4 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U2 zips: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 
