@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-23, commit `8cce4d6` plus this docs update. Nothing is pushed or deployed yet.
+As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed and a live search from the Pages site works.
 
 ## Done
 
@@ -26,13 +26,14 @@ As of 2026-09-23, commit `8cce4d6` plus this docs update. Nothing is pushed or d
 
 | Gate | What it unblocks |
 |---|---|
-| One run of `infra/plan-evidence.sh` with a real `CLOUDFLARE_API_TOKEN` and the test variable values ([architecture.md](architecture.md#build-and-deploy)) | The redacted `docs/evidence/tofu-plan.txt`; the script and its self-test are committed |
-| Push to GitHub | CI green on `main` |
-| Enable Pages (source: GitHub Actions) and set the `WORKER_URL` repository variable | The public site |
-| `tofu apply` | The live Worker, and whether the rate-limit binding works on the Free plan |
-| One live search from the Pages URL, with a screenshot in `docs/evidence/` | Confirms `provider.data_collection: "deny"` still leaves a structured-output route, and whether Brave snippets carry markup |
 | Live quality evaluation: run the 60 searches, grade in a browser, deploy, run and delete the access probe, write the report and `src/quality.json` | The numbers in [quality.md](quality.md) and on the About page |
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
+
+## Deploy (2026-09-23)
+
+- `tofu apply` created the Worker and its `workers.dev` address (2 added, 0 changed, 0 destroyed), from a plan reviewed before apply. The rate-limit bindings were accepted at deploy; a 429 has not been triggered live.
+- The first live search succeeded with `provider.data_collection: "deny"`: 10 local and 10 online results, 5 Brave calls, about $0.026. Screenshot: [evidence/live-search.jpg](evidence/live-search.jpg).
+- Observed in that search: about half the online results were review articles rather than shops, and local results had no matched product. The quality evaluation measures this.
 
 ## Decisions made by the operator
 
@@ -44,7 +45,6 @@ As of 2026-09-23, commit `8cce4d6` plus this docs update. Nothing is pushed or d
 
 ## Decisions needed
 
-- If the first live search fails because no provider meets `data_collection: "deny"`: relax it to `"allow"`, or accept the failure.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.
 - Whether to add labor or environmental watchdogs to the negative-source registry.
@@ -185,7 +185,7 @@ Run on 2026-09-23 against the working tree at `8cce4d6`.
 | Secrets in history | `gitleaks git --config .gitleaks.toml .` | `55 commits scanned.`, `no leaks found` |
 | End-to-end smoke and screenshots | `npm run e2e` | `3 passed (3.1s)` |
 | Screenshots | `docs/evidence/landing.png`, `landing-360.png`, `results.png`, `about.png` | present |
-| `tofu plan` | `infra/plan-evidence.sh` | not yet produced (blocked on operator) |
-| CI on `main` | GitHub Actions | blocked on operator (push) |
-| Live search screenshot | manual | blocked on operator |
+| `tofu plan` | `infra/plan-evidence.sh` | `Plan: 2 to add, 0 to change, 0 to destroy.` in [evidence/tofu-plan.txt](evidence/tofu-plan.txt) |
+| CI on `main` | GitHub Actions | CI `success` (1m4s), Pages `success` (35s) on the first push |
+| Live search screenshot | manual, from the Pages site | 10 near you, 10 online: [evidence/live-search.jpg](evidence/live-search.jpg) |
 | Hygiene grep | case-insensitive grep of tracked files and `git log -p --all` for personal names, the operator's location, local home paths and key filenames, after a planted control | control: 1 hit. Tracked files: 3 expected matches (a place name in the zip dataset, the home-path guard inside `infra/plan-evidence.sh`, and the build prompt kept by operator decision). History: commit author lines and the same content; no key filenames |
