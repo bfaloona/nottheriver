@@ -30,3 +30,12 @@
 
 ## Evidence
 
+Checked 2026-09-23 on a clean clone of `main`:
+
+| Command | Result |
+|---------|--------|
+| `npm run build` | `✓ built in 16ms` (exit 0) |
+| `npm test` | `No test files found, exiting with code 0` |
+| `npm run lint` | exit 0; a planted lint error and a planted Worker type error both failed it |
+| `gitleaks git .` (full history) | `5 commits scanned.` / `no leaks found` |
+| pre-commit hook with a planted fake `sk-or-` key staged | `leaks found: 1` (rule `openrouter-api-key`), exit 1 |
