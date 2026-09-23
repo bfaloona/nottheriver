@@ -1,0 +1,69 @@
+{
+  "query": { "product": "cast iron skillet", "city": "Springfield", "state": "IL", "canonical_name": "cast iron skillet", "category": "cookware" },
+  "weights": { "relevance": 0.25, "ethics": 0.3, "env": 0.3, "proximity": 0.15 },
+  "local": [
+    {
+      "id": "local:place-1:0", "kind": "local", "rank": 1,
+      "retailer": { "name": "Riverbend Hardware", "domain": "riverbend-hardware.example", "url": "https://riverbend-hardware.example/" },
+      "matched_product": "cast iron skillet", "snippet": "Cast iron skillets and cookware.",
+      "address": "12 Main St, Springfield, IL 62701", "distance_km": 3.2,
+      "certifications": [ { "kind": "b_corp", "label": "B Corp", "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/example/", "checked": "2026-09-23" } ],
+      "signals": [],
+      "score": 0.763,
+      "components": [
+        { "name": "relevance", "value": 1, "weight": 0.25, "contribution": 0.25, "sources": [ { "label": "Riverbend Hardware: cast iron skillet", "url": "https://riverbend-hardware.example/skillet" } ] },
+        { "name": "ethics", "value": 0.75, "weight": 0.3, "contribution": 0.225, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" }, { "label": "B Corp", "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/example/" } ] },
+        { "name": "env", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
+        { "name": "proximity", "value": 0.92, "weight": 0.15, "contribution": 0.138, "sources": [ { "label": "3.2 km from your zip area", "url": "http://localhost:5173/about.html#ranking" } ] }
+      ]
+    },
+    {
+      "id": "local:place-2:1", "kind": "local", "rank": 2,
+      "retailer": { "name": "Northfork Kitchen Supply", "domain": "northfork-kitchen.example", "url": "https://northfork-kitchen.example/" },
+      "matched_product": "skillet", "snippet": "Kitchen supply store.",
+      "address": "300 Oak Ave, Springfield, IL 62702", "distance_km": 11.5,
+      "certifications": [],
+      "signals": [ { "kind": "labor", "polarity": "negative", "claim": "Department of Labor announces settlement requiring corporate-wide safety investments", "source_url": "https://www.osha.gov/news/newsreleases/national/example", "origin": "curated", "action_date": "2024-07-11" } ],
+      "score": 0.432,
+      "components": [
+        { "name": "relevance", "value": 1, "weight": 0.25, "contribution": 0.25, "sources": [ { "label": "Northfork Kitchen Supply", "url": "https://northfork-kitchen.example/" } ] },
+        { "name": "ethics", "value": 0.25, "weight": 0.3, "contribution": 0.075, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" }, { "label": "Labor: OSHA settlement", "url": "https://www.osha.gov/news/newsreleases/national/example" } ] },
+        { "name": "env", "value": 0, "weight": 0.3, "contribution": 0, "sources": [] },
+        { "name": "proximity", "value": 0.71, "weight": 0.15, "contribution": 0.107, "sources": [ { "label": "11.5 km from your zip area", "url": "http://localhost:5173/about.html#ranking" } ] }
+      ]
+    }
+  ],
+  "online": [
+    {
+      "id": "online:blue-heron-goods.example", "kind": "online", "rank": 1,
+      "retailer": { "name": "Blue Heron Goods", "domain": "blue-heron-goods.example", "url": "https://blue-heron-goods.example/cast-iron" },
+      "matched_product": "cast iron skillet", "snippet": "Pre-seasoned cast iron skillet, 10 inch.",
+      "address": null, "distance_km": null,
+      "certifications": [ { "kind": "one_percent_planet", "label": "1% for the Planet", "source_url": "https://directories.onepercentfortheplanet.org/profile/example", "checked": "2026-09-23" } ],
+      "signals": [],
+      "score": 0.7,
+      "components": [
+        { "name": "relevance", "value": 1, "weight": 0.25, "contribution": 0.25, "sources": [ { "label": "Blue Heron Goods: cast iron skillet", "url": "https://blue-heron-goods.example/cast-iron" } ] },
+        { "name": "ethics", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
+        { "name": "env", "value": 0.75, "weight": 0.3, "contribution": 0.225, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" }, { "label": "1% for the Planet", "url": "https://directories.onepercentfortheplanet.org/profile/example" } ] },
+        { "name": "proximity", "value": 0.5, "weight": 0.15, "contribution": 0.075, "sources": [ { "label": "Online retailer, fixed 0.5", "url": "http://localhost:5173/about.html#ranking" } ] }
+      ]
+    },
+    {
+      "id": "online:granite-outfitters.example", "kind": "online", "rank": 2,
+      "retailer": { "name": "Granite Outfitters", "domain": "granite-outfitters.example", "url": "https://granite-outfitters.example/" },
+      "matched_product": "cookware", "snippet": "Outdoor cookware and camp gear.",
+      "address": null, "distance_km": null,
+      "certifications": [],
+      "signals": [],
+      "score": 0.5,
+      "components": [
+        { "name": "relevance", "value": 0.5, "weight": 0.25, "contribution": 0.125, "sources": [ { "label": "Granite Outfitters", "url": "https://granite-outfitters.example/" } ] },
+        { "name": "ethics", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
+        { "name": "env", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
+        { "name": "proximity", "value": 0.5, "weight": 0.15, "contribution": 0.075, "sources": [ { "label": "Online retailer, fixed 0.5", "url": "http://localhost:5173/about.html#ranking" } ] }
+      ]
+    }
+  ],
+  "usage": { "brave_calls": 4, "llm": [ { "call": "normalize", "model": "google/gemma-4-31b-it", "prompt_tokens": 400, "completion_tokens": 120, "cost_usd": 0.0000768 }, { "call": "enrich", "model": "google/gemma-4-31b-it", "prompt_tokens": 2100, "completion_tokens": 300, "cost_usd": 0.000291 } ], "llm_tokens": 2920, "estimated_cost_usd": 0.0204 }
+}
