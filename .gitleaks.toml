@@ -11,5 +11,12 @@ description = "OpenRouter API key"
 regex = '''sk-or-[A-Za-z0-9_-]{20,}'''
 keywords = ["sk-or-"]
 
-# No Brave Search rule: Brave's API docs do not publish a key format, so a
-# prefix rule would be a guess. The default generic-api-key rule still applies.
+# Brave's docs do not publish a key format; issued Search API keys have been
+# observed to start with "BSA", so this matches that prefix with a long tail.
+# The left boundary stops a match starting mid-base64.
+[[rules]]
+id = "brave-search-api-key"
+description = "Brave Search API key"
+regex = '''(?:^|[^A-Za-z0-9+/])(BSA[A-Za-z0-9_-]{20,})'''
+secretGroup = 1
+keywords = ["BSA"]
