@@ -50,6 +50,12 @@
 - Added an inline data: SVG favicon (the creek mark) to both pages. Chrome's /favicon.ico 404 was logging a console error, and U7's smoke test asserts there are none. The CSP img-src already allows data:.
 - Local count line reads 'N shops within X mi' using the farthest shown distance. Bare 'N shops' when no distances are known.
 - Distance shows with the address: '2.0 mi, 12 Main St, ...'. Result snippets are not shown, which avoids stray brand words in visible text.
+- Changed from the spec: the full-history gitleaks scan runs the pinned gitleaks binary (`gitleaks git`) after a fetch-depth 0 checkout, not gitleaks/gitleaks-action. On push events the action's src/gitleaks.js (lines 103-110 at v3) scans only the pushed commit range, so it would not meet 'full history'. The action's current major is v3 (the spec named v2; v2 runs on Node 20, which GitHub removed from hosted runners on 2026-09-16).
+- Merged the spec's separate `gitleaks` job into the `check` job (which now checks out with fetch-depth 0), so each workflow installs gitleaks once. ci.yml has two jobs: check and e2e.
+- Action majors checked on GitHub today (2026-09-23), each floating tag resolved: actions/checkout@v7 (v7.0.1), actions/setup-node@v7 (v7.0.0), actions/configure-pages@v6, actions/upload-pages-artifact@v5, actions/deploy-pages@v5 (v5.0.1). gitleaks v8.30.1 linux_x64 sha256 551f6fc8...70eb matches the release checksums file and my own hash of the downloaded tarball.
+- pages.yml skips the npm cache so the deploy build never restores a cache another run wrote (setup-node v7 notes discuss cache-poisoning risk). CI keeps the cache.
+- The scan uses `gitleaks dir --config <repo>/.gitleaks.toml` (the current name for `detect --no-git`). --config is required because `gitleaks dir` otherwise looks for .gitleaks.toml inside the scanned directory, not the repo root.
+- The Brave rule comment says keys 'have been observed' to start with BSA, without naming whose key.
 
 ## Review passes
 
@@ -58,6 +64,7 @@
 - U4 data seeds: simplify + Fable review (2 lenses), 8 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U3 scoring: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U6 ui: simplify + Fable review (2 lenses), 11 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U9 ci: simplify + Fable review (2 lenses), 12 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 

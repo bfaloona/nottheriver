@@ -37,6 +37,10 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Baseline/proximity source links (about.html#ranking from the Worker) open in a new tab even though they are same-site. | Open same-origin source links in the same tab. |
 | CSP is a build-time meta tag because GitHub Pages cannot set headers. | A real CSP header behind a custom domain. |
 | The site name in the wordmark is filled in by JS (C15 keeps it out of the HTML), so the header is briefly empty on first paint. | Inject it at build time with a transformIndexHtml replacement. |
+| WORKER_URL masking is partial: GitHub prints a step's env block before the step runs, so the 'Mask Worker URL' step shows the value once in its own log header. Every later step is masked. The workers.dev host is public in the deployed bundle anyway. | A custom domain, or store it as a secret (the prompt says variable). |
+| The bundle scan does not catch a bare high-entropy string with no key-like word next to it. A bare-string fallback would flag hashed chunk names and zips.json. Coverage is the two project key patterns (sk-or-, BSA) plus the default gitleaks rules, which need a key-like word such as 'apiKey=' next to the value. | Revisit if a new key type without a known prefix is added. |
+| The gitleaks install step (pinned version and sha256) is duplicated in ci.yml and pages.yml. | A shared install script or composite action called from both workflows. |
+| Workflows use floating major tags (@v7 etc.), not commit SHAs. | Pin actions to commit SHAs with a bot updating them. |
 
 ## Before going public
 
