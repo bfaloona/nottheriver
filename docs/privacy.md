@@ -14,7 +14,7 @@ What the site collects, where it goes, and what is kept. Nothing here says "noth
 
 | Recipient | Receives | Does not receive |
 |---|---|---|
-| Brave Search, web search | Search terms derived from your product; the zip-area center as `x-loc-lat` / `x-loc-long` headers; city and state as `x-loc-city` / `x-loc-state` headers | Your zip, your IP address, your browser's User-Agent or Referer |
+| Brave Search, web search | Search terms derived from your product; the zip-area center as `x-loc-lat` / `x-loc-long` headers; city and state as `x-loc-city` / `x-loc-state` headers; `x-loc-country`, always `US` | Your zip, your IP address, your browser's User-Agent or Referer |
 | Brave Search, place search | Search terms; the zip-area center as `latitude` / `longitude` query parameters (so Brave gets the center twice per search) | City, state, your zip, your IP address |
 | OpenRouter and the model provider it routes to | Your product text, city and state (first call); titles, snippets and URLs of the fetched search results (second call) | Coordinates, your zip, your IP address |
 

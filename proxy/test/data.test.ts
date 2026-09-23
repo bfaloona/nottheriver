@@ -30,7 +30,7 @@ function markdownRows() {
     .filter((line) => line.startsWith('|'))
     .map((line) => line.split('|').slice(1, -1).map((cell) => cell.trim()))
     .filter(([domain]) => domain !== 'domain' && !domain!.startsWith('-'))
-    .map(([domain, organization, rationale, verified_via]) => ({ domain, organization, rationale, verified_via }));
+    .map(([domain, organization, rationale, verified_via, checked]) => ({ domain, organization, rationale, verified_via, checked }));
 }
 
 function expectUnique(keys: string[]) {
@@ -75,6 +75,7 @@ describe('negative-sources registry', () => {
   it.each(registry.sources)('$domain is a registrable domain with a verification page', (s) => {
     expect(registrableDomain(s.domain)).toBe(s.domain);
     expect(s.verified_via).toMatch(/^https:\/\//);
+    expect(s.checked).toMatch(DATE);
   });
 
   it('has one row per domain', () => {

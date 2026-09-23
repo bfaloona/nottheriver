@@ -78,7 +78,7 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | CSP is a build-time `<meta>` tag because GitHub Pages cannot set headers | A real CSP header behind a custom domain |
 | Serif system font stack not checked on Android (no Georgia) or Windows (no ui-serif) | Test on real devices; if the fallback is poor, self-host an open-license serif (still no CDN) |
 | Desktop popover can extend below the viewport for the last result | Flip it above the summary near the viewport bottom |
-| Popover hover, focus and Escape behaviour is not covered by an automated browser test (click-to-pin checked by hand only) | A Playwright check that hover opens it, Escape closes it, and focus inside keeps it open |
+| Popover hover, focus and Escape behaviour is not covered by an automated browser test (Enter-to-pin is covered by `tests/e2e/smoke.spec.ts`; hover, focus and Escape only by `src/render.test.ts` under happy-dom) | A Playwright check that hover opens it, Escape closes it, and focus inside keeps it open |
 | No skip link | Add 'Skip to search' before the header |
 | No print stylesheet | `@media print` that hides the controls and expands every `<details>` |
 | Dark mode follows `prefers-color-scheme` only | A manual toggle with a `data-theme` attribute, remembered in `sessionStorage` |
