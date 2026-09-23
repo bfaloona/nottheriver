@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quality eval grades",
+  "description": "Hand grades of search results and the independent recall baseline, stored at docs/evidence/quality/grades.json. See eval/README.md for how each field is judged.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["grades", "baseline"],
+  "properties": {
+    "grades": { "type": "array", "items": { "$ref": "#/$defs/grade" } },
+    "baseline": { "type": "array", "items": { "$ref": "#/$defs/baselineItem" } }
+  },
+  "$defs": {
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "grade": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_id", "result_id", "kind", "url", "sells_product", "local_exists", "distance_plausible", "badges_sourced", "page_access", "notes", "checked"],
+      "properties": {
+        "search_id": { "type": "string", "description": "Query id from eval/queries.json" },
+        "result_id": { "type": "string", "description": "SearchResult.id from the saved response" },
+        "kind": { "enum": ["local", "online"] },
+        "url": { "type": "string", "description": "retailer.url from the saved response, verbatim" },
+        "sells_product": { "enum": ["yes", "equivalent", "no", "unknown"] },
+        "local_exists": { "enum": ["yes", "no", "n/a"], "description": "Local results only: the shop exists at the listed address" },
+        "distance_plausible": { "enum": ["yes", "no", "n/a"] },
+        "badges_sourced": { "enum": ["yes", "no", "n/a"], "description": "Every certification badge's source link supports it; n/a when there are none" },
+        "page_access": { "enum": ["ok", "challenge", "blocked", "error"], "description": "What a person in a real browser got" },
+        "notes": { "type": "string" },
+        "checked": { "$ref": "#/$defs/date" }
+      }
+    },
+    "baselineItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_id", "section", "name", "url", "confirmed", "miss_reason", "checked"],
+      "properties": {
+        "search_id": { "type": "string" },
+        "section": { "enum": ["local", "online"] },
+        "name": { "type": "string" },
+        "url": { "type": ["string", "null"], "description": "Null only for a local shop with no website" },
+        "confirmed": { "type": "boolean", "description": "Opened in a real browser and seen to sell the product" },
+        "miss_reason": {
+          "enum": [null, "not_in_brave_index", "weak_snippet", "ranked_low", "filtered", "other"],
+          "description": "Null when the site returned this retailer; set by the grader when it did not"
+        },
+        "checked": { "$ref": "#/$defs/date" }
+      }
+    }
+  }
+}
