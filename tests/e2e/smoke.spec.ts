@@ -24,7 +24,7 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
 
   await page.goto('/');
   await expect(page.locator('meta[name=referrer][content=no-referrer]')).toHaveCount(1);
-  await expect(page.locator('meta[http-equiv=Content-Security-Policy]')).toHaveCount(1);
+  await expect(page.locator('meta[http-equiv=Content-Security-Policy]')).toHaveAttribute('content', /form-action 'none'/);
 
   await page.getByLabel('What are you looking for').fill('cast iron skillet');
   await page.getByLabel('Zip code').fill(ZIP);

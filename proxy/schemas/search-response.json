@@ -12,7 +12,9 @@
         "value": { "type": "number", "minimum": 0, "maximum": 1 },
         "weight": { "type": "number", "minimum": 0, "maximum": 1 },
         "contribution": { "type": "number", "minimum": 0, "maximum": 1 },
-        "sources": { "type": "array", "items": { "$ref": "#/definitions/sourceRef" } } } },
+        "sources": { "type": "array", "items": { "$ref": "#/definitions/sourceRef" } } },
+      "if": { "properties": { "value": { "exclusiveMinimum": 0 } } },
+      "then": { "properties": { "sources": { "minItems": 1 } } } },
     "certification": { "type": "object", "additionalProperties": false,
       "required": ["kind", "label", "source_url", "checked"],
       "properties": {

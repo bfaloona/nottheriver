@@ -63,6 +63,9 @@ describe('search page', () => {
     expect(event.defaultPrevented).toBe(true);
     await vi.waitFor(() => expect($('#results').hidden).toBe(false));
 
+    // Without a name attribute, neither field can be serialized into a URL if the script fails.
+    expect($('#zip').hasAttribute('name')).toBe(false);
+    expect($('#product').hasAttribute('name')).toBe(false);
     expect(location.search).toBe('');
     expect(location.hash.match(/\d{5}/g) ?? []).not.toContain(zip);
     for (const storage of [sessionStorage, localStorage]) {

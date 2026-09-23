@@ -43,7 +43,9 @@ describe('renderResults (HR5)', () => {
           continue;
         }
         expect(row, `${result.id} ${c.name}`).not.toBeNull();
+        expect(row!.querySelector('.component-math')!.textContent).toContain(`${c.weight.toFixed(2)} × ${c.value.toFixed(2)}`);
         expect(row!.querySelector('[data-component-value]')!.textContent).toBe(c.contribution.toFixed(3));
+        expect(c.sources.length, `${result.id} ${c.name}`).toBeGreaterThanOrEqual(1);
         const links = [...row!.querySelectorAll<HTMLAnchorElement>('a[data-component-source]')];
         expect(links.map((a) => a.getAttribute('href'))).toEqual(c.sources.map((s) => s.url));
       }
