@@ -71,6 +71,14 @@
 - Excluded buyvip.com (no article or redirect ties the brand to the domain, and it does not resolve) and lovefilm.com (the article's website field points to an Amazon storefront, not this domain, and it does not resolve). Handmade and Luxury Stores are storefronts inside amazon.com and are already covered.
 - Renamed the embedded-URL fixture ids from U1-U4 to URL1-URL4 so they can't be read as unit names.
 - Changed N32 and N34 from exact duplicates of N8 and N12 into local cases with their own non-listed websites. They are still expected allowed.
+- How zip kinds are defined: urban = hand-picked anchor ZCTA with primary RUCA 1 and under 5 sq mi of land; suburban = nearest ZCTA in the same state with a different place name, RUCA 1, at least 20 km away; rural = nearest ZCTA in the same state with RUCA 10, at least 100 km away. Sources: USDA ERS 2020 RUCA ZIP file and the 2026 Gazetteer, both fetched 2026-09-23.
+- Geography: 10 state triplets (MA, PA, GA, TN, IL, MN, TX, CO, AZ, CA), 2 products per triplet from different categories, 60 searches in total.
+- 'One request per domain' taken to mean one page per registrable domain. The probe also fetches robots.txt first, so each domain sees 2 requests, and the driver waits 2 s between domains.
+- Probe precision/recall: the probe's verdict (challenge, blocked or robots_disallow) is scored against the browser pass's page_access (challenge or blocked) on the same URL. The bot_only count (probe blocked, person got through) is reported separately as the bot-specific blocking signal.
+- Grades and the recall baseline live in one file (docs/evidence/quality/grades.json) and one schema. miss_reason is set by the grader; summarize.mjs works out found vs missed itself, and counts a miss with no reason as 'unclassified'.
+- Default delay between searches is 4 s (15 per minute), leaving headroom under the 30/min per-client and 60/min global limits.
+- Shape of src/quality.json once measured, written by `node eval/summarize.mjs --site`: {"measured": {"date", "searches", "precision": {"online", "local"}, "recall": {"online", "local"}}}. Values are numbers or null. U6 should code against this shape.
+- Repo files never name the operator's state, and the operator's zip appears nowhere in eval/. Zips outside that state were chosen by hand rather than enforced by a test that would name the state.
 
 ## Review passes
 
@@ -82,6 +90,7 @@
 - U9 ci: simplify + Fable review (2 lenses), 12 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U5 worker part 1: simplify + Fable review (2 lenses), 9 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U1 blocklist: simplify + Fable review (2 lenses), 10 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U11 quality eval part 1: simplify + Fable review (2 lenses), 16 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 

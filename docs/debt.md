@@ -53,6 +53,12 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | media-amazon.com and ssl-images-amazon.com (Amazon image hosts): no public source found, not added. | Add them once a public source ties them to Amazon |
 | normalizeName turns symbols into spaces before NFKC so that '™' cannot fold into 'tm'. Side effect: enclosed-letter symbols such as 'Ⓐ' become a space, so 'Ⓐmazon' is not caught. Low risk. | Not decided |
 | The ownership check reads Wikipedia by hand on the check date. Nothing re-verifies sources automatically. | A scheduled re-check of each entry's source |
+| Access-probe challenge detection is a heuristic: the cf-mitigated header, plus vendor challenge-script markers on non-2xx responses only. The browser grading pass is its ground truth. | Not decided |
+| The probe runs from Cloudflare's network and sends a CF-Worker header, while Brave's crawler follows Googlebot's permissions and does not name itself. So the probe's blocked rate approximates, but does not measure, what Brave's crawler meets. | Not decided |
+| Grading uses one grader and no inter-rater agreement check. Recall is measured against another search engine's top results (up to 5 per section), not against every shop that exists. | Not decided |
+| The script that picked the zips is not committed (it read raw RUCA and Gazetteer files that stay out of the repo). The rule, the sources and a table of each zip's RUCA code and distance are in eval/README.md, so the choice can be rechecked. | Not decided |
+| run-searches.mjs must run under tsx so it can reuse the browser's src/zip.ts lookup. Plain node cannot run it. | Not decided |
+| The robots.txt parser does not percent-encoding-normalize paths and reads robots.txt up to 1 MB (RFC 9309 sets a minimum of 500 KiB). | Not decided |
 
 ## Before going public
 
