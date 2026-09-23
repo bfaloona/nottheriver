@@ -2,7 +2,6 @@
 // the deployed probe, one at a time, and writes docs/evidence/quality/probe.json after
 // each one. A rerun skips domains already in that file, so no site is probed twice.
 //   PROBE_URL=https://... PROBE_TOKEN=... node eval/access-probe/run-probe.mjs
-/* global AbortSignal */
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { pathToFileURL } from 'node:url';

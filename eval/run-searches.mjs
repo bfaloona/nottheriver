@@ -1,7 +1,6 @@
 // Runs every query in eval/queries.json against the deployed Worker and saves each raw
 // response. Run with tsx so the zip lookup is the browser's own code:
 //   WORKER_URL=https://... ORIGIN=https://... npx tsx eval/run-searches.mjs [id ...]
-/* global AbortSignal */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { pathToFileURL } from 'node:url';

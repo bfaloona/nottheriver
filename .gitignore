@@ -12,5 +12,5 @@ proxy/dist/
 data/raw/
 *.tfplan
 plan.bin
-infra/*.tfvars
+infra/*.tfvars*
 crash.log
