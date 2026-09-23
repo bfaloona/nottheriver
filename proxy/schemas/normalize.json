@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["category", "canonical_name", "similar_products", "online_queries", "local_queries"],
+  "properties": {
+    "category": { "type": "string", "maxLength": 60 },
+    "canonical_name": { "type": "string", "maxLength": 80 },
+    "similar_products": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+    "online_queries": { "type": "array", "items": { "type": "string", "maxLength": 120 } },
+    "local_queries": { "type": "array", "items": { "type": "string", "maxLength": 120 } }
+  }
+}

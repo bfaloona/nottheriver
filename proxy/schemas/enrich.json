@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["retailers"],
+  "properties": {
+    "retailers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["domain", "signals"],
+        "properties": {
+          "domain": { "type": "string", "maxLength": 253 },
+          "signals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "polarity", "claim", "source_url", "confidence"],
+              "properties": {
+                "kind": { "type": "string", "enum": ["labor", "governance", "environmental"] },
+                "polarity": { "type": "string", "enum": ["positive", "negative"] },
+                "claim": { "type": "string", "maxLength": 200 },
+                "source_url": { "type": "string", "maxLength": 2048 },
+                "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
