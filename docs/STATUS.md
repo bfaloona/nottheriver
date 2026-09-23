@@ -1,12 +1,12 @@
 # Status
 
-As of 2026-09-23, commit `d6a2566` plus this docs update. Nothing is pushed or deployed yet.
+As of 2026-09-23, commit `8cce4d6` plus this docs update. Nothing is pushed or deployed yet.
 
 ## Done
 
 | Subject | What exists |
 |---|---|
-| Blocklist | `data/blocklist.json` and `data/blocklist.md` (32 domain and 11 name entries, each sourced and dated), `proxy/src/blocklist.ts`, 80 fixtures; red run recorded before the filter existed |
+| Blocklist | `data/blocklist.json` and `data/blocklist.md` (39 domain and 14 name entries, each sourced and dated), `proxy/src/blocklist.ts`, 91 fixtures; red run recorded before the filter existed |
 | Zips | `public/zips.json` (33,791 ZCTAs) built by `data/build-zips.mjs`, browser lookup in `src/zip.ts`, provenance and attribution in `data/README.md` |
 | Scoring | `proxy/ranking/` (weights, score, haversine distance) |
 | Ranking data | 28 certifications, 4 curated negatives, 14 accepted negative sources, each with a source and check date |
@@ -165,24 +165,25 @@ Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and reje
 | Docs | 7 (from a simplification self-pass and a fresh-eyes review; the declined one asked to cut a step from architecture.md) | 6 | 1 |
 | Docs (second review) | 10 | 10 | 0 |
 | Project docs: simplify + Fable review (2 lenses) | 10 | 10 | 0 |
+| Adversarial review of blocklist, tests and docs (the rejected one asked to change the build prompt, smoke-test zip and history, which the operator decided to keep) | 18 | 17 | 1 |
 
 ## Evidence
 
-Run on 2026-09-23 against the working tree at `d6a2566`.
+Run on 2026-09-23 against the working tree at `8cce4d6`.
 
 | Check | Command | Result |
 |---|---|---|
-| Unit tests | `npm test` | `Test Files  21 passed (21)`, `Tests  514 passed (514)` |
-| Blocklist suite | `npx vitest run proxy/test/blocklist.test.ts` | `Tests  130 passed (130)`; `tests/fixtures/blocklist-cases.json` holds 80 fixtures across domains, subdomains, country TLDs, short links, embedded URLs and local names, including the 'Whole Foods Co-op' must-pass case |
+| Unit tests | `npm test` | `Test Files  21 passed (21)`, `Tests  540 passed (540)` |
+| Blocklist suite | `npx vitest run proxy/test/blocklist.test.ts` | `Tests  153 passed (153)`; `tests/fixtures/blocklist-cases.json` holds 91 fixtures across domains, subdomains, country TLDs, short links, embedded URLs and local names, including the 'Whole Foods Co-op' must-pass case |
 | Red runs before the code existed | `docs/evidence/blocklist-red-run.txt`, `worker-red-run.txt`, `zips-red-run.txt` | `69 failed \| 45 passed (114)`; `48 failed \| 2 passed (50)`; `15 failed (15)` |
-| HR2 injection | in `proxy/test/pipeline.test.ts`: "removes a blocked retailer that enters after the first pass", "runs twice, and the model enrichment cannot bring a blocked retailer back" | pass (part of the 514) |
-| HR3 location | `src/api.test.ts` "sends city, state and a 2-decimal centroid, never the zip"; `src/main.test.ts` "never puts the zip in the URL, storage, or the request"; `proxy/test/pipeline.test.ts` "sends the model no location" | pass (part of the 514) |
+| HR2 injection | in `proxy/test/pipeline.test.ts`: "removes a blocked retailer that enters after the first pass", "runs twice, and the model enrichment cannot bring a blocked retailer back" | pass (part of the 540) |
+| HR3 location | `src/api.test.ts` "sends city, state and a 2-decimal centroid, never the zip"; `src/main.test.ts` "never puts the zip in the URL, storage, or the request"; `proxy/test/pipeline.test.ts` "sends the model no location" | pass (part of the 540) |
 | Lint and types | `npm run lint` | exit 0 |
-| Site build | `npm run build` | `✓ built in 44ms` |
-| Worker bundle | `npm run build:proxy` | `Total Upload: 272.02 KiB / gzip: 72.76 KiB` |
+| Site build | `npm run build` | `✓ built in 58ms` |
+| Worker bundle | `npm run build:proxy` | `Total Upload: 276.03 KiB / gzip: 73.26 KiB` |
 | Bundle secret scan | `npm run scan:bundle` | `no leaks found` (site and Worker bundles) |
-| Secrets in history | `gitleaks git --config .gitleaks.toml .` | `48 commits scanned.`, `no leaks found` |
-| End-to-end smoke | `npx playwright test tests/e2e/smoke.spec.ts` | `1 passed (3.3s)` |
+| Secrets in history | `gitleaks git --config .gitleaks.toml .` | `55 commits scanned.`, `no leaks found` |
+| End-to-end smoke and screenshots | `npm run e2e` | `3 passed (3.1s)` |
 | Screenshots | `docs/evidence/landing.png`, `landing-360.png`, `results.png`, `about.png` | present |
 | `tofu plan` | `infra/plan-evidence.sh` | not yet produced (blocked on operator) |
 | CI on `main` | GitHub Actions | blocked on operator (push) |
