@@ -2,11 +2,7 @@
 # Fails if a built bundle contains an API key.
 # Usage: bundle-secret-scan.sh [dir...]   (default: dist and proxy/dist, whichever exist)
 # Exit: 0 clean, 1 secret found or scan error, 2 nothing to scan.
-#
-# Self-test: plant each sample in an empty temp dir and expect exit 1:
-#   printf 'sk-or-%s\n' TESTTESTTESTTESTTESTTEST > "$tmp/a.js"   # split so the pre-commit hook passes
-#   printf 'const apiKey="%s"\n' "$(head -c 30 /dev/urandom | base64)" > "$tmp/b.js"
-#   sh .github/scripts/bundle-secret-scan.sh "$tmp"
+# Self-test (runs in CI): bundle-secret-scan-selftest.sh.
 # A bare random string with no key-like name beside it is expected to pass:
 # gitleaks' generic rule needs one, and a bare-string rule would flag every hash.
 set -u

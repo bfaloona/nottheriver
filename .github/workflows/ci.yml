@@ -34,6 +34,9 @@ jobs:
       # events; the binary scans the whole history.
       - name: Secret scan (full git history)
         run: gitleaks git --redact --no-banner .
+      # A green bundle scan means something only after the scanner was seen going red.
+      - run: sh .github/scripts/bundle-secret-scan-selftest.sh
+      - run: sh .github/scripts/plan-evidence-selftest.sh
       - run: npm ci
       - run: npm run lint
       - run: npm test
