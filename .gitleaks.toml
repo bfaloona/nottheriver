@@ -1,0 +1,15 @@
+title = "nottheriver gitleaks config"
+
+[extend]
+useDefault = true
+
+# OpenRouter keys start with "sk-or-". The suffix format is not documented,
+# so the rule matches any long token-like tail.
+[[rules]]
+id = "openrouter-api-key"
+description = "OpenRouter API key"
+regex = '''sk-or-[A-Za-z0-9_-]{20,}'''
+keywords = ["sk-or-"]
+
+# No Brave Search rule: Brave's API docs do not publish a key format, so a
+# prefix rule would be a guess. The default generic-api-key rule still applies.

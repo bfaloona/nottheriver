@@ -1,1 +1,8 @@
 prompts/operator-local.md
+node_modules/
+dist/
+.env*
+*.tfstate*
+.terraform/
+test-results/
+playwright-report/
