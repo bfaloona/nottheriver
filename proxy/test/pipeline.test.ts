@@ -170,6 +170,19 @@ describe('query handling', () => {
     expect(MAX_ONLINE_QUERIES + MAX_LOCAL_QUERIES).toBeLessThanOrEqual(MAX_BRAVE_CALLS);
   });
 
+  it('matches only the first 6 similar products', async () => {
+    const decoys = ['d1', 'd2', 'd3', 'd4', 'd5', 'd6'].map((d) => `${d} decoy`);
+    const reply = (similar: string[]) => llmReply({ ...NORMALIZED, canonical_name: 'zz none', category: 'zz none', similar_products: similar, local_queries: [] });
+    const relevanceOf = async (similar: string[]) => {
+      const { res } = await search(defaultRoutes({ normalize: reply(similar) }));
+      expect(res.online.length).toBeGreaterThan(0);
+      return res.online.map((r) => r.components.find((c) => c.name === 'relevance')!.value);
+    };
+    // Control: in the first six, the product matches the fixture snippets.
+    expect(await relevanceOf(['cast iron skillet', ...decoys.slice(1)])).toContain(1);
+    expect(await relevanceOf([...decoys, 'cast iron skillet'])).not.toContain(1);
+  });
+
   it('skips place search when there are no local queries', async () => {
     const { res, fetch } = await search(defaultRoutes({ normalize: llmReply({ ...NORMALIZED, local_queries: [] }) }));
     expect(fetch.calls.some((c) => c.url.includes('/local/'))).toBe(false);
@@ -260,6 +273,15 @@ describe('the second blocklist pass', () => {
     expectAmazonFree(res);
   });
 
+  it.each([
+    ['fullwidth', 'Cheaper on \uff21\uff4d\uff41\uff5a\uff4f\uff4e'],
+    ['zero-width', 'Cheaper on Ama\u200bzon'],
+  ])('drops a row whose snippet spells Amazon in %s characters', (_, snippet) => {
+    const rows = [row(candidate({ domain: 'copper.example', url: 'https://copper.example/', snippet })), row(candidate({}))];
+    const res = finalizeResponse(scoreAll(rows, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    expect(res.online.map((r) => r.retailer.domain)).toEqual(['clean.example']);
+  });
+
   it('caps each section at 10 and keeps fetch order among equal scores', () => {
     const rows = Array.from({ length: 12 }, (_, i) => row(candidate({ domain: `shop${i}.example`, url: `https://shop${i}.example/skillet` })));
     const res = finalizeResponse(scoreAll(rows, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
@@ -279,7 +301,8 @@ describe('the second blocklist pass', () => {
 
   it('removes a blocked retailer that enters after the first pass', async () => {
     const { enrichAll: realEnrichAll } = await vi.importActual<typeof import('../src/enrich')>('../src/enrich');
-    const injected = row(candidate({ name: 'Amazon', domain: 'amazon.com', url: 'https://www.amazon.com/dp/B0' }));
+    // A name the text rule cannot match, so only the domain check can remove it.
+    const injected = row(candidate({ name: 'Prime Deals', domain: 'amazon.com', url: 'https://www.amazon.com/dp/B0' }));
     vi.mocked(enrichAll).mockImplementationOnce(async (...args) => [...(await realEnrichAll(...args)), injected]);
 
     const { res } = await search();
