@@ -210,6 +210,48 @@
     "note": "Amazon URL in the query string"
   },
   {
+    "id": "D31",
+    "kind": "domain",
+    "input": "www.amazon.com.be",
+    "expected": "blocked",
+    "note": "com.be is not a public suffix; the exact entry matches as a host suffix"
+  },
+  {
+    "id": "D32",
+    "kind": "domain",
+    "input": "notamazon.com.be",
+    "expected": "allowed",
+    "note": "a host suffix match needs a dot before the entry"
+  },
+  {
+    "id": "D33",
+    "kind": "domain",
+    "input": "amazon.com.be.evil.example",
+    "expected": "allowed",
+    "note": "the entry must end the host"
+  },
+  {
+    "id": "D34",
+    "kind": "url",
+    "input": "https://deals.example/go?u=https%3A%2F%2Fwww.amazon.com.be%2Fdp%2FB0",
+    "expected": "blocked",
+    "note": "a nested link to a host under an exact entry"
+  },
+  {
+    "id": "D35",
+    "kind": "domain",
+    "input": "kindle.com",
+    "expected": "blocked",
+    "note": "redirects into amazon.com"
+  },
+  {
+    "id": "D36",
+    "kind": "url",
+    "input": "https://www.wholefoods.com/",
+    "expected": "blocked",
+    "note": "redirects into wholefoodsmarket.com"
+  },
+  {
     "id": "URL1",
     "kind": "url",
     "input": "https://deals.example/go?url=amazon.com",
@@ -498,7 +540,7 @@
     "kind": "name",
     "input": "Whole Foods Cooperative",
     "expected": "allowed",
-    "note": "bare \"Whole Foods\" is exact"
+    "note": "an exception on the bare \"Whole Foods\" entry"
   },
   {
     "id": "N34",
@@ -519,15 +561,15 @@
     "id": "N36",
     "kind": "name",
     "input": "Whole Foods - Midtown",
-    "expected": "allowed",
-    "note": "known gap: the exact bare entry misses a separator suffix"
+    "expected": "blocked",
+    "note": "the bare \"Whole Foods\" entry is prefix-word"
   },
   {
     "id": "N37",
     "kind": "name",
     "input": "Whole Foods (Midtown)",
-    "expected": "allowed",
-    "note": "known gap: the exact bare entry misses a separator suffix"
+    "expected": "blocked",
+    "note": "the bare \"Whole Foods\" entry is prefix-word"
   },
   {
     "id": "N38",
@@ -562,7 +604,43 @@
     "id": "N42",
     "kind": "name",
     "input": "Amazo\u0144 Fresh",
+    "expected": "blocked",
+    "note": "NFD after NFKC splits the composed accent off again"
+  },
+  {
+    "id": "N43",
+    "kind": "local",
+    "input": "AmazonFresh",
+    "website": "https://grocer.example/",
+    "expected": "blocked",
+    "note": "one-word spelling from the products list"
+  },
+  {
+    "id": "N44",
+    "kind": "name",
+    "input": "AmazonBasics Store",
+    "expected": "blocked",
+    "note": "one-word spelling from the products list"
+  },
+  {
+    "id": "N45",
+    "kind": "name",
+    "input": "365 by Whole Foods Market - Midtown",
+    "expected": "blocked",
+    "note": "former Whole Foods store format"
+  },
+  {
+    "id": "N46",
+    "kind": "name",
+    "input": "Whole Foods Co-op Midtown",
     "expected": "allowed",
-    "note": "known gap: a mark with a precomposed form survives normalization"
+    "note": "an exception also covers a word suffix"
+  },
+  {
+    "id": "N47",
+    "kind": "name",
+    "input": "Amazo\u0301n Fresh",
+    "expected": "blocked",
+    "note": "combining accent after o"
   }
 ]

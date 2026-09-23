@@ -9,6 +9,7 @@ import {
   isBlockedDomain,
   isBlockedName,
   isBlockedUrl,
+  mentionsAmazon,
   normalizeName,
   scrubBlockedText,
 } from '../src/blocklist';
@@ -76,7 +77,8 @@ describe('normalizeName', () => {
     ['ＡＭＡＺＯＮ', 'amazon'],
     ['Ama​zon', 'amazon'],
     ['Ama̴zon', 'amazon'],
-    ['Café Luna', 'café luna'],
+    ['Café Luna', 'cafe luna'],
+    ['Amazo\u0144 Fresh', 'amazon fresh'],
   ])('%j -> %j', (input, expected) => {
     expect(normalizeName(input)).toBe(expected);
   });
@@ -106,6 +108,21 @@ describe('isBlockedUrl', () => {
   it('blocks a non-http scheme', () => {
     expect(isBlockedUrl('javascript:alert(1)')).toBe(true);
     expect(isBlockedUrl('ftp://files.example/')).toBe(true);
+  });
+});
+
+describe('mentionsAmazon', () => {
+  it.each([
+    ['Cheaper on Amazon?', true],
+    ['Cheaper on \uff21\uff4d\uff41\uff5a\uff4f\uff4e?', true],
+    ['Cheaper on Ama\u200bzon?', true],
+    ['Cheaper on Amazon\u200bFresh', true],
+    ['Cheaper on \u{1d400}\u{1d426}\u{1d41a}\u{1d433}\u{1d428}\u{1d427}', true],
+    ['AmazonBasics skillet', true],
+    ['Amazonia Plants', false],
+    ['Cast iron skillet', false],
+  ])('%j -> %s', (text, expected) => {
+    expect(mentionsAmazon(text)).toBe(expected);
   });
 });
 
@@ -148,6 +165,9 @@ describe('scrubBlockedText', () => {
     ['Ama̴zon skillet', 'skillet'],
     ['skillet under $50', 'skillet under $50'],
     ['cast\u200biron skillet 🍳', 'cast\u200biron skillet 🍳'],
+    ['Amazo\u0144 Fresh produce', 'produce'],
+    ['AmazonBasics skillet', 'skillet'],
+    ['Café skillet', 'Café skillet'],
   ])('%j -> %j', (input, expected) => {
     expect(scrubBlockedText(input)).toBe(expected);
   });
@@ -174,8 +194,9 @@ describe('data/blocklist.json', () => {
     for (const n of list.names) expect(['exact', 'prefix-word']).toContain(n.match);
   });
 
-  it('keeps the bare "Whole Foods" entry exact so "Whole Foods Co-op" passes', () => {
-    expect(list.names.filter((n) => n.match === 'exact').map((n) => n.name)).toEqual(['Whole Foods']);
+  it('blocks names after the bare "Whole Foods" but lets its co-op exceptions pass', () => {
+    expect(isBlockedName('Whole Foods - Midtown')).toBe(true);
+    for (const n of ['Whole Foods Co-op', 'Whole Foods Cooperative']) expect(isBlockedName(n), n).toBe(false);
   });
 
   it('documents every entry in blocklist.md', () => {

@@ -33,10 +33,11 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 
 | Shortcut | Best-practice alternative |
 |----------|---------------------------|
-| The name rule replaces the prescribed separator list with punctuation-to-space plus word-prefix matching. It under-blocks the bare 'Whole Foods' entry followed by a separator ('Whole Foods - Midtown', fixtures N36/N37 are allowed), because the entry has to be exact so 'Whole Foods Co-op' passes. The domain rule covers these listings when a website is present (N38) | Not decided |
+| The name rule replaces the prescribed separator list with punctuation-to-space plus word-prefix matching. The bare 'Whole Foods' entry blocks any name it starts, except two hand-listed co-op spellings ('Whole Foods Co-op', 'Whole Foods Cooperative'); another co-op spelling is over-blocked | Add a spelling to the entry's `except` list when one is reported |
+| Accents are folded before names are compared, so a name that really starts with an accented form of an entry is blocked too. This is the safe side | None needed |
 | The same rule over-blocks plain-space suffixes such as 'Whole Foods Market Midtown' and 'Amazon Fresh Pickup'. This is the safe side | None needed |
 | 'Amazon' in the middle of a name ('The Amazon Cafe') or as part of a longer word ('Amazonia Plants') is allowed by the name rule (the second pass's text rule still drops a result whose name contains the word) | None needed |
-| The second pass's text rule drops any result whose title, name, snippet or matched product contains the word "amazon", so a shop that says 'not on Amazon' disappears | Not decided |
+| The second pass's text rule drops any result whose title, name, snippet or matched product contains the word "amazon" (or a glued name entry such as 'AmazonBasics'), so a shop that says 'not on Amazon' disappears | Not decided |
 | Redirects are not followed at runtime, so an unlisted shortener whose URL contains no Amazon token passes | A 'redirector' entry kind for a small sourced list of shorteners |
 | media-amazon.com and ssl-images-amazon.com (Amazon image hosts): no public source found, not added | Add them once a public source ties them to Amazon |
 | `normalizeName` turns symbols into spaces before NFKC so that '™' cannot fold into 'tm'. Side effect: enclosed-letter symbols such as 'Ⓐ' become a space, so 'Ⓐmazon' is not caught. Low risk | Not decided |

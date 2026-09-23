@@ -2,7 +2,7 @@ import { getDomain, getDomainWithoutSuffix } from 'tldts';
 
 // URLs go through WHATWG parsing first so case, IDN-to-punycode and percent-encoded
 // dots in the host are normalized the same way a browser would before tldts sees them.
-function hostOf(input: string): string | null {
+export function hostOf(input: string): string | null {
   const trimmed = input.trim();
   if (!trimmed) return null;
   if (!trimmed.includes('://')) return trimmed;

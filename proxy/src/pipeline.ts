@@ -3,7 +3,7 @@ import negatives from '../../data/negatives.json';
 import registry from '../../data/negative-sources.json';
 import { WEIGHTS } from '../ranking/weights';
 import { rankByScore, scoreCandidate, type ScoreInput } from '../ranking/score';
-import { filterBlocked, isBlockedDomain, isBlockedUrl, scrubBlockedText } from './blocklist';
+import { filterBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
 import { createBraveClient, type BraveClient } from './brave';
 import type {
   Candidate, Env, Deps, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
@@ -28,8 +28,6 @@ const curated: CuratedData = {
   negatives: negatives.entries as NegativeRow[],
   negativeSources: negativeSourceDomains,
 };
-
-const AMAZON_WORD = /\bamazon\b/i;
 
 // The input is kept beside the result so a row can be rescored after its sources are scrubbed.
 export interface ScoredRow { input: ScoreInput; result: Omit<SearchResult, 'rank'> }
@@ -112,11 +110,10 @@ export function scoreAll(rows: EnrichedRow[], n: Normalized, req: SearchRequest,
   });
 }
 
-// Deliberately over-blocks ("not on Amazon" loses the shop too): the word itself must not reach the page.
 // The name is checked here too because the blocklist catches a name only as an exact or leading match.
 export function hasBlockedText(row: ScoredRow): boolean {
   const texts = [row.input.candidate.title, row.result.retailer.name, row.result.snippet, row.result.matched_product];
-  return texts.some((t) => AMAZON_WORD.test(t));
+  return texts.some(mentionsAmazon);
 }
 
 const allowedUrl = (url: string) => !isBlockedDomain(url) && !isBlockedUrl(url);
@@ -125,7 +122,7 @@ const allowedUrl = (url: string) => !isBlockedDomain(url) && !isBlockedUrl(url);
 // dropped badge leaves no score behind. A signal's claim is a fetched page title, so it gets the text rule too.
 export function scrubSources(row: ScoredRow): ScoredRow {
   const certs = row.input.certifications.filter((c) => allowedUrl(c.source_url));
-  const signals = row.input.signals.filter((s) => allowedUrl(s.source_url) && !AMAZON_WORD.test(s.claim));
+  const signals = row.input.signals.filter((s) => allowedUrl(s.source_url) && !mentionsAmazon(s.claim));
   const rescored = scoreRow(row.result.id, { ...row.input, certifications: certs, signals });
   const components = rescored.result.components.map((c) => ({ ...c, sources: c.sources.filter((s) => allowedUrl(s.url)) }));
   return { input: rescored.input, result: { ...rescored.result, components } };
