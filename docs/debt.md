@@ -18,6 +18,10 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | GitHub Pages compression of `zips.json` unmeasured until deploy | Measure with `curl -sI -H 'Accept-Encoding: gzip, br'` and record in `costs.md` |
 | GeoNames place spellings kept as-is (e.g. 96860 -> 'Jbphh') | Curated display-name overrides |
 | 111 ZCTAs share a centroid at 2-decimal rounding (intended ~1 km coarsening) | None needed; recorded so it is not mistaken for a bug |
+| Certifier directories (bcorporation.net returns a Cloudflare 403; the 1% for the Planet directory is JavaScript-only) cannot be re-checked by a script, so those 12 rows' check dates will go stale | Automated re-check in a real browser |
+| `independent_retailer_assoc` is a badge only and does not change the score (F-13) | Operator decision on whether association membership should count |
+| Only one watchdog (Good Jobs First) in the negative-source registry | Operator policy choice on adding labor or environmental NGOs |
+| Fair Trade rows are product-level, not whole-company | Keep the badge text 'Sells Fair Trade Certified products' (C10 label) |
 
 ## Before going public
 

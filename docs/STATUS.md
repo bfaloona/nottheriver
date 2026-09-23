@@ -29,11 +29,15 @@
 - join(gazetteerText, geonamesTexts) takes file contents, not paths, so the test needs no filesystem; main() does the I/O.
 - loadZips evicts a failed fetch from its cache so a later search can retry (C9 says only 'one fetch per url').
 - Sample fixture rows chosen: 00601 PR, 00802 VI, 02138 MA, 10001 NY, 60614 IL, 96799 AS, 96860 HI, 96910 GU, 96950 MP, 99501 AK (no WA rows), extracted from the generated file, not hand-typed.
+- F-14 (FTC bamboo cases): Kohl's and Walmart are tagged `governance` (deceptive marketing), not `environmental`. The choice decides which score component the penalty lowers.
+- madewell.com is inferred from the brand name: fairtradecertified.org lists Madewell with an empty outbound link, and the storefront returns 403 to curl, so the domain could not be confirmed.
+- The three Grassroots Outdoor Alliance store names (Travel Country Outfitters, Ute Mountaineer, Skinny Skis) come from each store's own site title (all three re-fetched 200 on 2026-09-23). Their domains come from logo filenames on the member list.
 
 ## Review passes
 
 - U8 infra part 1: simplify + Fable review (2 lenses), 4 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U2 zips: simplify + Fable review (2 lenses), 5 findings, <n> applied, <n> rejected (reasons in commit or below)
+- U4 data seeds: simplify + Fable review (2 lenses), 8 findings, <n> applied, <n> rejected (reasons in commit or below)
 
 ## Evidence
 
