@@ -1,0 +1,98 @@
+
+OpenTofu used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+OpenTofu will perform the following actions:
+
+  # cloudflare_workers_script.proxy will be created
+  + resource "cloudflare_workers_script" "proxy" {
+      + account_id          = (sensitive value)
+      + annotations         = (known after apply)
+      + bindings            = [
+          + {
+              + name = "BRAVE_API_KEY"
+              + text = (sensitive value)
+              + type = "secret_text"
+            },
+          + {
+              + name = "OPENROUTER_API_KEY"
+              + text = (sensitive value)
+              + type = "secret_text"
+            },
+          + {
+              + name = "ALLOWED_ORIGIN"
+              + text = (sensitive value)
+              + type = "plain_text"
+            },
+          + {
+              + name = "SITE_NAME"
+              + text = (sensitive value)
+              + type = "plain_text"
+            },
+          + {
+              + name = "SITE_URL"
+              + text = (sensitive value)
+              + type = "plain_text"
+            },
+          + {
+              + name         = "RATE_LIMITER"
+              + namespace_id = "1001"
+              + simple       = {
+                  + limit  = 30
+                  + period = 60
+                }
+              + type         = "ratelimit"
+            },
+          + {
+              + name         = "GLOBAL_LIMITER"
+              + namespace_id = "1002"
+              + simple       = {
+                  + limit  = 60
+                  + period = 60
+                }
+              + type         = "ratelimit"
+            },
+        ]
+      + body_part           = (known after apply)
+      + compatibility_date  = "2026-09-01"
+      + compatibility_flags = (known after apply)
+      + content_file        = "./../proxy/dist/index.js"
+      + content_sha256      = "7ffc4aba47e6c445e4a4da8a0a05545bc471fe2d27fe9a9c89e1463e2cefc1e2"
+      + created_on          = (known after apply)
+      + etag                = (known after apply)
+      + handlers            = (known after apply)
+      + has_assets          = (known after apply)
+      + has_modules         = (known after apply)
+      + id                  = (known after apply)
+      + last_deployed_from  = (known after apply)
+      + logpush             = false
+      + main_module         = "index.js"
+      + migration_tag       = (known after apply)
+      + modified_on         = (known after apply)
+      + named_handlers      = (known after apply)
+      + observability       = {
+          + enabled = false
+        }
+      + placement           = (known after apply)
+      + placement_mode      = (known after apply)
+      + placement_status    = (known after apply)
+      + script_name         = "nottheriver-proxy"
+      + startup_time_ms     = (known after apply)
+      + tail_consumers      = (known after apply)
+      + usage_model         = "standard"
+    }
+
+  # cloudflare_workers_script_subdomain.proxy will be created
+  + resource "cloudflare_workers_script_subdomain" "proxy" {
+      + account_id       = (sensitive value)
+      + enabled          = true
+      + id               = (known after apply)
+      + previews_enabled = false
+      + script_name      = "nottheriver-proxy"
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + worker_url = "[redacted-worker-host]; read the subdomain from the dashboard"
