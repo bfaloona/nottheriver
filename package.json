@@ -10,9 +10,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit -p . && vite build",
-    "build:proxy": "wrangler deploy --dry-run --outdir proxy/dist -c proxy/wrangler.jsonc",
+    "build:proxy": "wrangler deploy --dry-run --cwd proxy --outdir dist",
     "build:zips": "node data/build-zips.mjs",
-    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p proxy && tsc --noEmit -p tests",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p proxy && tsc --noEmit -p tests && tsc --noEmit -p eval/access-probe",
     "lint": "eslint . && npm run typecheck",
     "test": "vitest run",
     "e2e": "playwright test",
