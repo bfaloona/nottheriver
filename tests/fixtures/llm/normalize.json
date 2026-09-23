@@ -1,0 +1,18 @@
+{
+  "id": "gen-fixture-normalize",
+  "model": "google/gemma-4-31b-it",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"category\":\"cookware\",\"canonical_name\":\"cast iron skillet\",\"similar_products\":[\"cast iron frying pan\",\"enameled cast iron skillet\",\"carbon steel skillet\"],\"online_queries\":[\"cast iron skillet shop\",\"buy cast iron skillet online\"],\"local_queries\":[\"cast iron skillet\",\"kitchen supply store\"]}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 120,
+    "total_tokens": 520,
+    "cost": 0.0000768
+  }
+}

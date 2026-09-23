@@ -1,0 +1,18 @@
+{
+  "id": "gen-fixture-enrich",
+  "model": "google/gemma-4-31b-it",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"retailers\":[{\"domain\":\"blue-heron-goods.example\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Ships in recycled packaging.\",\"source_url\":\"https://blue-heron-goods.example/cast-iron\",\"confidence\":0.6},{\"kind\":\"labor\",\"polarity\":\"negative\",\"claim\":\"Model-written claim that must never be shown.\",\"source_url\":\"https://www.ftc.gov/news-events/news/press-releases/fixture-cookware-claims\",\"confidence\":0.7},{\"kind\":\"governance\",\"polarity\":\"positive\",\"claim\":\"Cites a page that was never fetched.\",\"source_url\":\"https://unfetched.example/page\",\"confidence\":0.5}]},{\"domain\":\"granite-outfitters.example\",\"signals\":[{\"kind\":\"governance\",\"polarity\":\"negative\",\"claim\":\"Negative from a source outside the registry.\",\"source_url\":\"https://granite-outfitters.example/\",\"confidence\":0.8}]},{\"domain\":\"unknown-shop.example\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Retailer that was never fetched.\",\"source_url\":\"https://unknown-shop.example/\",\"confidence\":0.9}]},{\"domain\":\"copper-kettle-kitchen.example\",\"signals\":[]}]}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2100,
+    "completion_tokens": 300,
+    "total_tokens": 2400,
+    "cost": 0.000291
+  }
+}

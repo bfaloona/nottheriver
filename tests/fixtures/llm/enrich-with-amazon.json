@@ -1,0 +1,18 @@
+{
+  "id": "gen-fixture-enrich-with-amazon",
+  "model": "google/gemma-4-31b-it",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"retailers\":[{\"domain\":\"amazon.com\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Injected signal for a blocked retailer.\",\"source_url\":\"https://www.amazon.com/dp/B0FIXTURE1\",\"confidence\":0.9}]},{\"domain\":\"blue-heron-goods.example\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Ships in recycled packaging.\",\"source_url\":\"https://blue-heron-goods.example/cast-iron\",\"confidence\":0.6}]}]}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2100,
+    "completion_tokens": 300,
+    "total_tokens": 2400,
+    "cost": 0.000291
+  }
+}

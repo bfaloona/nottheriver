@@ -1,0 +1,94 @@
+{
+  "type": "locations",
+  "results": [
+    {
+      "id": "place-1",
+      "title": "Riverbend Hardware",
+      "url": "https://riverbend-hardware.example/",
+      "coordinates": [39.78, -89.63],
+      "distance": { "value": 3.2, "units": "km" },
+      "categories": ["Hardware Store", "Cookware Store"],
+      "postal_address": { "streetAddress": "12 Main St", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62701", "country": "US", "displayAddress": "12 Main St, Springfield, IL 62701" }
+    },
+    {
+      "id": "place-2",
+      "title": "Northfork Kitchen Supply",
+      "url": "https://northfork-kitchen.example/",
+      "coordinates": [39.72, -89.55],
+      "distance": { "value": 11.5, "units": "km" },
+      "categories": ["Kitchen Supply Store"],
+      "postal_address": { "streetAddress": "300 Oak Ave", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62702", "country": "US", "displayAddress": "300 Oak Ave, Springfield, IL 62702" }
+    },
+    {
+      "id": "place-2",
+      "title": "Northfork Kitchen Supply",
+      "url": "https://northfork-kitchen.example/",
+      "coordinates": [39.72, -89.55],
+      "distance": { "value": 11.5, "units": "km" },
+      "categories": ["Kitchen Supply Store"],
+      "postal_address": { "streetAddress": "300 Oak Ave", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62702", "country": "US", "displayAddress": "300 Oak Ave, Springfield, IL 62702" }
+    },
+    {
+      "id": "place-3",
+      "title": "Whole Foods Market - Midtown",
+      "url": "https://www.wholefoodsmarket.com/stores/midtown",
+      "coordinates": [39.8, -89.64],
+      "distance": { "value": 1.1, "units": "km" },
+      "categories": ["Grocery Store"],
+      "postal_address": { "streetAddress": "5 Midtown Plaza", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62701", "country": "US", "displayAddress": "5 Midtown Plaza, Springfield, IL 62701" }
+    },
+    {
+      "id": "place-4",
+      "title": "Whole Foods Co-op",
+      "url": "https://wholefoods-coop.example/",
+      "coordinates": [39.81, -89.66],
+      "distance": { "value": 1.4, "units": "km" },
+      "categories": ["Grocery Store", "Cooperative"],
+      "postal_address": { "streetAddress": "40 Elm St", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62702", "country": "US", "displayAddress": "40 Elm St, Springfield, IL 62702" }
+    },
+    {
+      "id": "place-5",
+      "title": "Amazon Hub Locker - Midtown",
+      "url": "https://midtown-market.example/locker",
+      "coordinates": [39.8, -89.65],
+      "distance": { "value": 0.9, "units": "km" },
+      "categories": ["Parcel Locker"],
+      "postal_address": { "streetAddress": "7 Midtown Plaza", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62701", "country": "US", "displayAddress": "7 Midtown Plaza, Springfield, IL 62701" }
+    },
+    {
+      "id": "place-6",
+      "title": "Corner Hardware",
+      "url": "https://www.amazon.com/stores/fixture-corner-hardware",
+      "coordinates": [39.79, -89.62],
+      "distance": { "value": 2.6, "units": "km" },
+      "categories": ["Hardware Store"],
+      "postal_address": { "streetAddress": "88 Corner Rd", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62703", "country": "US", "displayAddress": "88 Corner Rd, Springfield, IL 62703" }
+    },
+    {
+      "id": "place-7",
+      "title": "No Website Kitchen Store",
+      "coordinates": [39.77, -89.68],
+      "distance": { "value": 4.0, "units": "km" },
+      "categories": ["Kitchen Supply Store"],
+      "postal_address": { "streetAddress": "19 Mill St", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62704", "country": "US", "displayAddress": "19 Mill St, Springfield, IL 62704" }
+    },
+    {
+      "id": "place-8",
+      "title": "Prairie Cookware Co.",
+      "url": "https://prairie-cookware.example/",
+      "coordinates": [39.75, -89.7],
+      "distance": { "value": 7.3, "units": "km" },
+      "categories": ["Cookware Store"],
+      "postal_address": { "streetAddress": "210 Prairie Ave", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62704", "country": "US", "displayAddress": "210 Prairie Ave, Springfield, IL 62704" }
+    },
+    {
+      "id": "place-9",
+      "title": "Blue Heron Goods Store",
+      "url": "https://blue-heron-goods.example/visit",
+      "coordinates": [39.83, -89.6],
+      "distance": { "value": 5.8, "units": "km" },
+      "categories": ["Home Goods Store"],
+      "postal_address": { "streetAddress": "3 River Rd", "addressLocality": "Springfield", "addressRegion": "IL", "postalCode": "62702", "country": "US", "displayAddress": "3 River Rd, Springfield, IL 62702" }
+    }
+  ]
+}

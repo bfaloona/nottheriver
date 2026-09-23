@@ -1,0 +1,16 @@
+Command: npx vitest run proxy/test/handler.test.ts
+Run against a stub handler.ts that exported the signatures but no behaviour (2026-09-23).
+
+ Test Files  1 failed (1)
+      Tests  48 failed | 2 passed (50)
+
+Sample failures:
+     × answers a preflight from the allowed origin with CORS headers
+     × answers a preflight from another origin without CORS headers
+     × rejects a streamed body one byte over the cap with no Content-Length
+     × returns 429 when the per-client limiter refuses
+     × returns 429 when the global limiter refuses and the client limiter allows
+     × falls back to one in-memory limiter per handler: call 30 passes, call 31 is refused
+     × falls back to an in-memory global limiter across clients
+     × buckets IPv6 by /64
+     × logs exactly one line with route, status and ms on 429

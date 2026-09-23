@@ -1,0 +1,77 @@
+{
+  "type": "search",
+  "web": {
+    "results": [
+      {
+        "title": "Pre-seasoned Cast Iron Skillet, 10 inch | Blue Heron Goods",
+        "url": "https://blue-heron-goods.example/cast-iron",
+        "description": "Pre-seasoned cast iron skillet, 10 inch.",
+        "meta_url": { "hostname": "blue-heron-goods.example" },
+        "profile": { "name": "Blue Heron Goods" },
+        "extra_snippets": ["Ships in recycled packaging."]
+      },
+      {
+        "title": "Cast Iron Skillet 10 inch",
+        "url": "https://www.amazon.com/dp/B0FIXTURE1",
+        "description": "Cast iron skillet with free shipping.",
+        "meta_url": { "hostname": "www.amazon.com" },
+        "profile": { "name": "Amazon.com" }
+      },
+      {
+        "title": "Cast iron skillet deal",
+        "url": "https://a.co/d/fixture1",
+        "description": "Short link to a skillet listing.",
+        "meta_url": { "hostname": "a.co" }
+      },
+      {
+        "title": "Camp Skillet | Zappos",
+        "url": "https://www.zappos.com/p/fixture-camp-skillet",
+        "description": "Camp cookware and outdoor gear.",
+        "meta_url": { "hostname": "www.zappos.com" },
+        "profile": { "name": "Zappos.com" }
+      },
+      {
+        "title": "Cast Iron Skillet",
+        "url": "https://smile.amazon.co.uk/dp/B0FIXTURE2",
+        "description": "Cast iron skillet, pre-seasoned.",
+        "meta_url": { "hostname": "smile.amazon.co.uk" },
+        "profile": { "name": "Amazon.co.uk" }
+      },
+      {
+        "title": "Skillet deals of the day",
+        "url": "https://deals.example/go?u=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0",
+        "description": "Today's best cast iron skillet deal.",
+        "meta_url": { "hostname": "deals.example" },
+        "profile": { "name": "Deals Example" }
+      },
+      {
+        "title": "Fixture agency release about cookware marketing claims",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/fixture-cookware-claims",
+        "description": "Synthetic fixture text standing in for a regulator page.",
+        "meta_url": { "hostname": "www.ftc.gov" },
+        "profile": { "name": "Federal Trade Commission" }
+      },
+      {
+        "title": "Cast Iron Skillets | Copper Kettle Kitchen",
+        "url": "https://copper-kettle-kitchen.example/skillets",
+        "description": "Cheaper on Amazon? Compare our cast iron skillet prices.",
+        "meta_url": { "hostname": "copper-kettle-kitchen.example" },
+        "profile": { "name": "Copper Kettle Kitchen" }
+      },
+      {
+        "title": "Granite Outfitters",
+        "url": "https://granite-outfitters.example/",
+        "description": "Outdoor cookware and camp gear.",
+        "meta_url": { "hostname": "granite-outfitters.example" },
+        "profile": { "name": "Granite Outfitters" }
+      },
+      {
+        "title": "Cast iron skillet | Northfork Kitchen Supply",
+        "url": "https://northfork-kitchen.example/shop/skillet",
+        "description": "Order a cast iron skillet online or pick it up in store.",
+        "meta_url": { "hostname": "northfork-kitchen.example" },
+        "profile": { "name": "Northfork Kitchen Supply" }
+      }
+    ]
+  }
+}

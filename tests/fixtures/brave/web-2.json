@@ -1,0 +1,45 @@
+{
+  "type": "search",
+  "web": {
+    "results": [
+      {
+        "title": "12 inch Cast Iron Skillet | Blue Heron Goods",
+        "url": "https://blue-heron-goods.example/skillets/12-inch",
+        "description": "A larger pre-seasoned skillet.",
+        "meta_url": { "hostname": "blue-heron-goods.example" },
+        "profile": { "name": "Blue Heron Goods" }
+      },
+      {
+        "title": "Cast iron frying pan | Lakeside Mercantile",
+        "url": "https://www.lakeside-mercantile.example/kitchen/cast-iron",
+        "description": "Cast iron frying pan and enameled cookware.",
+        "meta_url": { "hostname": "www.lakeside-mercantile.example" }
+      },
+      {
+        "title": "Cast Iron Skillet | Whole Foods Market",
+        "url": "https://www.wholefoodsmarket.com/product/fixture-skillet",
+        "description": "Cast iron skillet in the home aisle.",
+        "meta_url": { "hostname": "www.wholefoodsmarket.com" },
+        "profile": { "name": "Whole Foods Market" }
+      },
+      {
+        "title": "Invalid punycode host",
+        "url": "https://xn--amzon-hqa.com/",
+        "description": "Lookalike host that fails URL parsing.",
+        "meta_url": { "hostname": "xn--amzon-hqa.com" }
+      },
+      {
+        "title": "Bare IP host",
+        "url": "http://192.0.2.1/skillet",
+        "description": "Documentation-range IP address.",
+        "meta_url": { "hostname": "192.0.2.1" }
+      },
+      {
+        "title": "Script URL",
+        "url": "javascript:alert(1)",
+        "description": "Non-http scheme.",
+        "meta_url": { "hostname": "" }
+      }
+    ]
+  }
+}
