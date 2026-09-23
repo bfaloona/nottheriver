@@ -22,6 +22,9 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | `independent_retailer_assoc` is a badge only and does not change the score (F-13) | Operator decision on whether association membership should count |
 | Only one watchdog (Good Jobs First) in the negative-source registry | Operator policy choice on adding labor or environmental NGOs |
 | Fair Trade rows are product-level, not whole-company | Keep the badge text 'Sells Fair Trade Certified products' (C10 label) |
+| Local relevance uses only the place title and its categories list (Brave place results have no description), so most local results score 0.5 or 0.2 | Fetch /local/descriptions or the store's product page |
+| Relevance is a lexical match with a crude plural rule, not stemming or semantic matching | A proper stemmer, or a structured relevance judgment validated in code |
+| The score.ts certification and signal kind lists are hardcoded from the prompt's section 8; no test checks they match the 'kinds' map in data/certifications.json | A cross-file assertion in pipeline.test.ts |
 
 ## Before going public
 
