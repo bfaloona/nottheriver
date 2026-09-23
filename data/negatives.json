@@ -1,0 +1,9 @@
+{
+  "checked": "2026-09-23",
+  "entries": [
+    {"domain": "kohls.com", "name": "Kohl's", "kind": "governance", "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart", "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls", "action_date": "2022-04-08", "checked": "2026-09-23"},
+    {"domain": "walmart.com", "name": "Walmart", "kind": "governance", "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart", "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls", "action_date": "2022-04-08", "checked": "2026-09-23", "note": "Case page also fetched: https://www.ftc.gov/legal-library/browse/cases-proceedings/2023173-walmart-us-v (stipulated order, $3 million penalty)"},
+    {"domain": "homedepot.com", "name": "The Home Depot", "kind": "environmental", "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint", "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations", "action_date": "2020-12-17", "checked": "2026-09-23"},
+    {"domain": "dollargeneral.com", "name": "Dollar General", "kind": "labor", "claim": "Department of Labor announces settlement with Dollar General requiring corporate-wide safety investments in stores nationwide", "source_url": "https://www.osha.gov/news/newsreleases/national/07112024-0", "action_date": "2024-07-11", "checked": "2026-09-23", "note": "Page states Dollar General agreed to pay $12 million in penalties"}
+  ]
+}

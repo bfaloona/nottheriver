@@ -1,0 +1,19 @@
+{
+  "checked": "2026-09-23",
+  "sources": [
+    {"domain": "ftc.gov", "organization": "Federal Trade Commission", "rationale": "US consumer-protection and competition regulator; publishes enforcement actions and case records", "verified_via": "https://www.ftc.gov/about-ftc"},
+    {"domain": "osha.gov", "organization": "Occupational Safety and Health Administration (US DOL)", "rationale": "US workplace-safety regulator; publishes citations and settlements", "verified_via": "https://www.osha.gov/aboutosha"},
+    {"domain": "dol.gov", "organization": "U.S. Department of Labor", "rationale": "Parent of OSHA and the Wage and Hour Division; publishes wage-theft and labor enforcement releases", "verified_via": "https://www.dol.gov/general/aboutdol"},
+    {"domain": "nlrb.gov", "organization": "National Labor Relations Board", "rationale": "US agency that adjudicates unfair labor practice cases", "verified_via": "https://www.nlrb.gov/about-nlrb"},
+    {"domain": "epa.gov", "organization": "U.S. Environmental Protection Agency", "rationale": "US environmental regulator; publishes enforcement settlements", "verified_via": "https://www.epa.gov/aboutepa"},
+    {"domain": "cpsc.gov", "organization": "U.S. Consumer Product Safety Commission", "rationale": "US product-safety regulator; publishes recalls and civil penalties", "verified_via": "https://www.cpsc.gov/About-CPSC"},
+    {"domain": "sec.gov", "organization": "U.S. Securities and Exchange Commission", "rationale": "Securities regulator; enforcement actions and filings for public retailers", "verified_via": "https://www.sec.gov/about"},
+    {"domain": "justice.gov", "organization": "U.S. Department of Justice", "rationale": "Federal prosecutions and civil settlements", "verified_via": "https://www.justice.gov/about"},
+    {"domain": "uscourts.gov", "organization": "Administrative Office of the U.S. Courts", "rationale": "Federal judiciary; primary court records", "verified_via": "https://www.uscourts.gov/about-federal-courts"},
+    {"domain": "courtlistener.com", "organization": "Free Law Project (CourtListener)", "rationale": "Nonprofit archive of court opinions and federal filings, run by Free Law Project (https://free.law/about/)", "verified_via": "https://www.courtlistener.com/"},
+    {"domain": "goodjobsfirst.org", "organization": "Good Jobs First (Violation Tracker)", "rationale": "Nonprofit database aggregating regulatory and court penalties by company", "verified_via": "https://goodjobsfirst.org/violation-tracker/"},
+    {"domain": "propublica.org", "organization": "ProPublica", "rationale": "Independent nonprofit investigative newsroom", "verified_via": "https://www.propublica.org/about/"},
+    {"domain": "npr.org", "organization": "NPR", "rationale": "Independent nonprofit news organization", "verified_via": "https://www.npr.org/about/"},
+    {"domain": "apnews.com", "organization": "The Associated Press", "rationale": "Wire service; apnews.com is AP's news site and carries the \"AP News\" branding", "verified_via": "https://www.ap.org/about/"}
+  ]
+}
