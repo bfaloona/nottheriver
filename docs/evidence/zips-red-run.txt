@@ -1,0 +1,38 @@
+Zip red run, 2026-09-23
+
+Reproduced after implementation in a copy of the repo holding the current tests, the committed
+src/zip.ts stub (every function throws 'not implemented') and no data/build-zips.mjs.
+
+$ npx vitest run data/build-zips.test.mjs
+
+ FAIL  data/build-zips.test.mjs [ data/build-zips.test.mjs ]
+Error: Cannot find module './build-zips.mjs' imported from .../data/build-zips.test.mjs
+ Test Files  1 failed (1)
+      Tests  no tests
+
+$ npx vitest run src/zip.test.ts
+
+     × accepts exactly five ASCII digits, trimmed
+     × rejects "02138-1234"
+     × rejects "0213a"
+     × returns city, state, and centroid, keeping leading zeros
+     × returns null for a zip with no ZCTA
+     × never returns coordinates finer than 2 decimals
+     × fetches once per url
+     × retries after a failed fetch instead of caching the failure
+     ...
+Error: not implemented
+ Test Files  1 failed (1)
+      Tests  15 failed (15)
+
+Input guards added later (missing Gazetteer column, blank coordinate, empty place name), run
+against build-zips.mjs without them:
+
+$ npx vitest run data/build-zips.test.mjs
+
+     × fails on a missing Gazetteer column
+       expected [Function] to throw error matching /INTPTLAT/ but got 'bad coordinates for 00601'
+     × fails on an empty place name
+     × fails on a malformed zip, bad coordinate, or unsorted rows
+ Test Files  1 failed (1)
+      Tests  3 failed | 10 passed (13)
