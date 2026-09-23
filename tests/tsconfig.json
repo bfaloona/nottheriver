@@ -13,6 +13,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true
   },
-  "include": ["**/*.ts", "../proxy/src/**/*.ts", "../proxy/ranking/**/*.ts"],
+  "include": ["**/*.ts", "../proxy/test/**/*.ts", "../proxy/src/**/*.ts", "../proxy/ranking/**/*.ts"],
   "exclude": ["../proxy/src/index.ts"]
 }
