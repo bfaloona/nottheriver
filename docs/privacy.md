@@ -24,7 +24,7 @@ The Worker builds every outbound header from fixed values, so your browser's `Us
 
 | Where | What | How long |
 |---|---|---|
-| Cloudflare rate limiter | A client key: your full IPv4 address, or the first half (/64) of an IPv6 address | The 60-second limit window. Limits are 30 searches per minute per key and 60 per minute for the whole site, counted per Cloudflare location and approximate by Cloudflare's own description. If the rate-limit binding is unavailable, an in-memory fallback holds the same keys in the Worker instance's memory; they stop counting after 60 seconds but stay in memory until that instance is recycled, or until the table passes 10,000 keys and expired ones are swept |
+| Cloudflare rate limiter | A client key: your full IPv4 address, or the first half (/64) of an IPv6 address | The 60-second limit window. Limits are 30 searches per minute per key and 60 per minute for the whole site, counted per Cloudflare location and approximate by Cloudflare's own description. An in-memory limiter also holds the same keys in the Worker instance's memory; they stop counting after 60 seconds but stay in memory until that instance is recycled, or until the table passes 10,000 keys and expired ones are swept |
 | Cloudflare, as the platform | Request metadata, including IP address | Per Cloudflare's own policy |
 | Worker logs | One line per request: route, status code, latency. Never bodies, product text, coordinates or keys | Workers observability is disabled (`proxy/wrangler.jsonc`, `infra/main.tf`), so Cloudflare does not retain these lines beyond its platform metadata. If an operator turns it on, the retention window must be added here |
 | GitHub Pages | Access logs for the site and `zips.json` | Per GitHub's own policy |

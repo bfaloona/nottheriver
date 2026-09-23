@@ -52,9 +52,10 @@ function ipv6Prefix64(ip: string): string | null {
   return prefix.includes(null) ? null : `${prefix.join(':')}::/64`;
 }
 
-// Per-isolate fixed window, matching the binding's "limit per period", used only when
-// the binding is absent. Each isolate counts separately, so this is weak; the spend caps
-// on the API keys are the backstop.
+// Per-isolate fixed window, matching the binding's "limit per period". It applies on top
+// of the binding because the binding is eventually consistent and did not throttle a
+// one-client burst in a live test. Each isolate counts separately, so this is weak too;
+// the spend caps on the API keys are the backstop.
 export function memoryLimiter(limit: number, periodMs: number, now: () => number): RateLimiter {
   const windows = new Map<string, { count: number; start: number }>();
   return {
@@ -112,18 +113,19 @@ export function parseSearchRequest(value: unknown): SearchRequest | null {
 }
 
 export function createHandler(runSearch: RunSearch, deps: Deps) {
-  // Created once per handler, i.e. once per isolate, so the fallback actually counts.
-  let clientFallback: RateLimiter | undefined;
-  let globalFallback: RateLimiter | undefined;
-  const perClient = (env: Env) =>
-    env.RATE_LIMITER ?? (clientFallback ??= memoryLimiter(RATE_LIMIT.limit, RATE_LIMIT.periodSeconds * 1000, deps.now));
-  const global = (env: Env) =>
-    env.GLOBAL_LIMITER ?? (globalFallback ??= memoryLimiter(GLOBAL_LIMIT.limit, GLOBAL_LIMIT.periodSeconds * 1000, deps.now));
+  // Created once per handler, i.e. once per isolate, so the counts carry between requests.
+  const clientMemory = memoryLimiter(RATE_LIMIT.limit, RATE_LIMIT.periodSeconds * 1000, deps.now);
+  const globalMemory = memoryLimiter(GLOBAL_LIMIT.limit, GLOBAL_LIMIT.periodSeconds * 1000, deps.now);
+
+  async function passes(binding: RateLimiter | undefined, memory: RateLimiter, key: string): Promise<boolean> {
+    if (binding && !(await binding.limit({ key })).success) return false;
+    return (await memory.limit({ key })).success;
+  }
 
   async function allowed(request: Request, env: Env): Promise<boolean> {
     try {
-      if (!(await perClient(env).limit({ key: clientKey(request) })).success) return false;
-      return (await global(env).limit({ key: 'global' })).success;
+      if (!(await passes(env.RATE_LIMITER, clientMemory, clientKey(request)))) return false;
+      return await passes(env.GLOBAL_LIMITER, globalMemory, 'global');
     } catch {
       return false; // a broken limiter must not turn into unlimited spend
     }

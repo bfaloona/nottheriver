@@ -115,8 +115,8 @@ export interface Env {
   ALLOWED_ORIGIN: string; // origin only, e.g. http://localhost:5173
   SITE_NAME: string;      // OpenRouter X-OpenRouter-Title
   SITE_URL: string;       // full site base URL, may include a path, never a trailing slash (pipeline.ts strips one defensively)
-  RATE_LIMITER?: RateLimiter;   // per-client; absent -> memoryLimiter(RATE_LIMIT)
-  GLOBAL_LIMITER?: RateLimiter; // all clients together; absent -> memoryLimiter(GLOBAL_LIMIT)
+  RATE_LIMITER?: RateLimiter;   // per-client; memoryLimiter(RATE_LIMIT) applies as well
+  GLOBAL_LIMITER?: RateLimiter; // all clients together; memoryLimiter(GLOBAL_LIMIT) applies as well
 }
 
 export interface Deps {

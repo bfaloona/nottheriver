@@ -218,7 +218,29 @@ describe('rate limits', () => {
     expect(global.limit).toHaveBeenCalledWith({ key: 'global' });
   });
 
-  it('falls back to one in-memory limiter per handler: call 30 passes, call 31 is refused', async () => {
+  // The deployed binding let 135 requests from one client through in about a minute, so
+  // passing the binding must not be enough on its own.
+  it('refuses call 31 from one client even when the per-client binding allows every call', async () => {
+    const { handle, search } = setup();
+    const env = makeEnv({ RATE_LIMITER: allow, GLOBAL_LIMITER: allow });
+    for (let i = 1; i <= RATE_LIMIT.limit; i++) {
+      expect((await handle(req(), env)).status, `call ${i}`).toBe(200);
+    }
+    await expect429(await handle(req(), env));
+    expect(search).toHaveBeenCalledTimes(RATE_LIMIT.limit);
+    expect((await handle(req({ ip: '198.51.100.9' }), env)).status).toBe(200);
+  });
+
+  it('refuses call 61 across clients even when the global binding allows every call', async () => {
+    const { handle } = setup();
+    const env = makeEnv({ RATE_LIMITER: allow, GLOBAL_LIMITER: allow });
+    for (let i = 0; i < GLOBAL_LIMIT.limit; i++) {
+      expect((await handle(req({ ip: `198.51.100.${i}` }), env)).status).toBe(200);
+    }
+    await expect429(await handle(req({ ip: '192.0.2.200' }), env));
+  });
+
+  it('without bindings, uses one in-memory limiter per handler: call 30 passes, call 31 is refused', async () => {
     const { handle } = setup();
     const env = makeEnv({ RATE_LIMITER: undefined, GLOBAL_LIMITER: undefined });
     for (let i = 1; i <= RATE_LIMIT.limit; i++) {
@@ -228,7 +250,7 @@ describe('rate limits', () => {
     expect((await handle(req({ ip: '198.51.100.9' }), env)).status).toBe(200);
   });
 
-  it('counts the fallback per fixed window: call 31 is refused 30 s in and allowed once the window ends', async () => {
+  it('counts the in-memory limiter per fixed window: call 31 is refused 30 s in and allowed once the window ends', async () => {
     let t = 1_000_000;
     const { handle } = setup(undefined, () => t);
     const env = makeEnv({ RATE_LIMITER: undefined, GLOBAL_LIMITER: undefined });
@@ -239,7 +261,7 @@ describe('rate limits', () => {
     expect((await handle(req(), env)).status).toBe(200);
   });
 
-  it('falls back to an in-memory global limiter across clients', async () => {
+  it('without a global binding, uses an in-memory global limiter across clients', async () => {
     const { handle } = setup();
     const env = makeEnv({ GLOBAL_LIMITER: undefined });
     for (let i = 0; i < GLOBAL_LIMIT.limit; i++) {

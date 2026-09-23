@@ -36,7 +36,7 @@ variable "worker_name" {
   default = "nottheriver-proxy"
 }
 
-# Keep equal to RATE_LIMIT and GLOBAL_LIMIT in proxy/src/handler.ts so the binding and the in-memory fallback enforce the same ceiling.
+# Keep equal to RATE_LIMIT and GLOBAL_LIMIT in proxy/src/handler.ts so the binding and the in-memory limiter enforce the same ceiling.
 variable "rate_limit_per_minute" {
   type    = number
   default = 30
