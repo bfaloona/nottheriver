@@ -63,6 +63,10 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | The synthetic plan fixture is hand-written, not captured from real 'tofu show' output. The first real run is the check that the redaction fits the real output. | Not decided |
 | The 32-hex redaction's behavior at end of line was not tested separately on GNU sed (CI) and BSD sed (macOS). Low risk: tofu quotes string values. | Not decided |
 | The bundle-scan self-test proves the scan as a whole goes red. It does not prove gitleaks and the prefix grep each catch the samples on their own. | Not decided |
+| fetchCandidates runs the Brave calls in parallel (Promise.all). If one call returns non-2xx, the whole search fails with 502 while the calls already started still cost money. Call order and the budget check stay deterministic. | Not decided |
+| The Amazon text rule over-blocks: a shop whose title or snippet says 'not on Amazon' is dropped. | Not decided |
+| scrubSources rescores every row that survives the second pass, even when nothing was removed. This is about 40 scoring calls at most per request; a skip-when-unchanged check was left out on purpose to keep the code simple. | Not decided |
+| dedupe repeats the seen-set pattern of uniqueBy in proxy/ranking/score.ts. That helper is not exported and I don't own that file. | Not decided |
 
 ## Before going public
 

@@ -86,6 +86,11 @@
 - Used 'gitleaks dir --config .gitleaks.toml' as the existing scan does, instead of the spec's 'gitleaks detect --no-git' (old syntax).
 - Dropped the random apiKey sample from the bundle-secret-scan.sh header instead of making it deterministic. The header now points at the self-test script.
 - '(sensitive value)' is left as-is, not redacted further: tofu already prints that literal in place of sensitive values.
+- Empty canonical_name from the model: the spec says in one place to reject it as invalid_llm_output and in another to fall back to the user's product. I took the fallback, but the fallback also has blocked brand names stripped out. So if the product is only a blocked brand (for example "amazon"), canonical_name comes back as "". The schema allows that, and relevance scoring already handles an empty search term.
+- Local result id index: it is assigned in scoreAll, meaning after the first blocklist pass, not straight after dedupe as the spec says. Ids are still unique; the index can shift when a blocked place is dropped.
+- scrubSources also drops a signal whose claim contains the word "amazon". The spec's text rule only covers title, snippet and matched_product. Claims are fetched page titles, so without this the word could reach the page.
+- A test in the spec mentions 'a normalize fixture whose queries all point at blocked text' leading to no enrich call and empty results. I read that as two separate cases: (1) Brave returns only blocked results, so nothing survives the first blocklist pass and no enrich call is made (tested); (2) every online query is empty after brand names are stripped, which raises InvalidLlmOutput before any Brave call (tested).
+- Response validation against search-response.json runs only in tests, as the spec's schema section says; there is no runtime check. Reason: the Workers free plan allows 10 ms of CPU per request.
 
 ## Review passes
 
@@ -99,6 +104,7 @@
 - U1 blocklist: simplify + Fable review (2 lenses), 10 findings, <n> applied, <n> rejected (reasons in commit or below)
 - U11 quality eval part 1: simplify + Fable review (2 lenses), 16 findings, <n> applied, <n> rejected (reasons in commit or below)
 - infra plan evidence and CI control: simplify + Fable review (2 lenses), 8 findings, 6 applied, 0 rejected
+- search pipeline: simplify + Fable review (2 lenses), 8 findings, 7 applied, 0 rejected
 
 ## Evidence
 
