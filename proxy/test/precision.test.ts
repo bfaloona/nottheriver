@@ -263,10 +263,10 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     expect(dropReason(out[1]!.classification)).toBeNull();
   });
 
-  it('caps the view at 24 online and 16 local, and keeps what is past the cap', async () => {
+  it('caps the view at 24 online and 20 local, and keeps what is past the cap', async () => {
     const many = [
       ...Array.from({ length: 30 }, (_, i) => candidate({ domain: `o${i}.example`, url: `https://o${i}.example/` })),
-      ...Array.from({ length: 20 }, (_, i) => candidate({ kind: 'local', domain: `l${i}.example`, url: `https://l${i}.example/`, place_id: `p${i}` })),
+      ...Array.from({ length: 25 }, (_, i) => candidate({ kind: 'local', domain: `l${i}.example`, url: `https://l${i}.example/`, place_id: `p${i}` })),
     ];
     const { llm, prompts } = fakeLlm((ids) => ({
       retailers: [],
@@ -276,12 +276,12 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     const out = await enrichAll(many, llm, CURATED, PRODUCT);
     const sent = dataOf(prompts[0]!).candidates.map((c) => c.id);
     expect(MAX_LLM_ONLINE).toBe(24);
-    expect(MAX_LLM_LOCAL).toBe(16);
-    expect(sent).toHaveLength(40);
+    expect(MAX_LLM_LOCAL).toBe(20);
+    expect(sent).toHaveLength(44);
     expect(sent.slice(0, 24)).toEqual(Array.from({ length: 24 }, (_, i) => `c${i}`));
-    expect(sent.slice(24)).toEqual(Array.from({ length: 16 }, (_, i) => `c${30 + i}`));
+    expect(sent.slice(24)).toEqual(Array.from({ length: 20 }, (_, i) => `c${30 + i}`));
     const classified = out.map((r) => r.classification !== null);
-    expect(classified).toEqual(many.map((_, i) => i < 24 || (i >= 30 && i < 46)));
+    expect(classified).toEqual(many.map((_, i) => i < 24 || (i >= 30 && i < 50)));
   });
 
   it('sends the product inside the data block and no location', async () => {

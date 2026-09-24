@@ -22,7 +22,7 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Shortcut | Best-practice alternative |
 |----------|---------------------------|
 | Retailer classification is measured only with a stub built from hand labels (`proxy/test/precision.test.ts`); the model's own accuracy is unmeasured | A live rerun of the six-search pilot, graded the same way (about $0.16) |
-| Rows kept by the fail-open rule (the model skipped them, or they were past the 24 online / 16 local view cap) are not counted or reported, so their share of shown results is unknown | Count them in the response usage block or a log line, and grade them in the next pilot |
+| Rows kept by the fail-open rule (the model skipped them, or they were past the 24 online view cap) are counted in `usage.unclassified_shown` but have not been graded as a group | Grade them in the next eval run |
 | Local candidates are classified from the name and one store-type word: a place listing has no page text, its `categories` list arrives empty, and the snippet carries only Brave's `icon_category` | Fetch the store's page before classifying |
 | The local store-type hint and the restaurant/amusement-park drop rely on `icon_category`, a field Brave's place search returns but does not document; it may change or disappear. If it disappears, both fall back to name-only classification without an error | A documented category source (another places provider), or a test against a live response that fails when the field is missing |
 | Page titles are not in the saved pilot responses (`SearchResult` has no title field), so no title rule was measured or built | Save the Brave title with each graded row, then test a title rule against the grades |

@@ -5,8 +5,9 @@ import { ENRICH_MAX_TOKENS, type LlmClient } from './llm';
 import { buildEnrichPrompt, type EnrichProduct, type LlmView } from './prompts';
 
 // Separate caps, because with one shared cap a full online list left local candidates unseen.
+// The local cap covers every place result (2 queries x BRAVE_COUNT); a test fails if that drifts.
 export const MAX_LLM_ONLINE = 24;
-export const MAX_LLM_LOCAL = 16;
+export const MAX_LLM_LOCAL = 20;
 export const LLM_TITLE_CHARS = 120;
 export const LLM_SNIPPET_CHARS = 400;
 

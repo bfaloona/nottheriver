@@ -173,6 +173,23 @@ describe('runSearch over the fixtures', () => {
     expect(res.usage.estimated_cost_usd).toBeGreaterThan(0);
   });
 
+  it('counts shown results the model did not judge', async () => {
+    // Judges every candidate it is sent as a shop selling the product.
+    const judgeAll: FixtureRoute = {
+      match: (u, init) => u.pathname === '/api/v1/chat/completions' && String(init?.body).includes('enrich'),
+      respond: (_u, init) => {
+        const prompt = (JSON.parse(String(init?.body)) as { messages: Array<{ content: string }> }).messages[0]!.content;
+        const { candidates } = JSON.parse(/<<<DATA\n([\s\S]*?)\nDATA>>>/.exec(prompt)![1]!) as { candidates: Array<{ id: string }> };
+        return { body: llmReply({ retailers: [], candidates: candidates.map((c) => ({ id: c.id, site_type: 'retailer', sells_product: 'yes' })) }) };
+      },
+    };
+    const judged = await search([...defaultRoutes().slice(0, 3), judgeAll]);
+    expect(judged.res.usage.unclassified_shown).toEqual({ online: 0, local: 0 });
+    const { res } = await search(defaultRoutes({ enrich: llmReply({ retailers: [], candidates: [] }) }));
+    expect(res.local.length + res.online.length).toBeGreaterThan(0);
+    expect(res.usage.unclassified_shown).toEqual({ online: res.online.length, local: res.local.length });
+  });
+
   it('sends the model no location: no location keys and no coordinates', async () => {
     const { fetch } = await search();
     const bodies = fetch.calls.filter((c) => isLlm(c.url)).map((c) => c.body ?? '');

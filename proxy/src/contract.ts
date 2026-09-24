@@ -76,6 +76,8 @@ export interface Usage {
   llm: LlmUsage[];
   llm_tokens: number;         // sum of prompt + completion over llm[]
   estimated_cost_usd: number; // see pricing.ts
+  // Shown results kept only because the model did not judge them (past a view cap, or skipped in its reply).
+  unclassified_shown?: { online: number; local: number };
 }
 
 // What a precision filter removed or the top-10 cut left out, so an evaluation can tell a

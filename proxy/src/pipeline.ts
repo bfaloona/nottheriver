@@ -266,5 +266,10 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   const dropped = placeCategoryDrops(brave.rejected);
   const kept = await enrichAndFilter(pass1, llm, n, dropped); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
-  return finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
+  const res = finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
+  const unjudged = new Set(kept.filter((r) => r.classification === null).map((r) => r.candidate));
+  const unjudgedIds = new Set(scored.filter((r) => unjudged.has(r.input.candidate)).map((r) => r.result.id));
+  const count = (section: SearchResult[]) => section.filter((r) => unjudgedIds.has(r.id)).length;
+  res.usage.unclassified_shown = { online: count(res.online), local: count(res.local) };
+  return res;
 }

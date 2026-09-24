@@ -1,4 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
+import { BRAVE_COUNT } from '../src/brave';
+import { MAX_LOCAL_QUERIES } from '../src/pipeline';
 import type { Candidate } from '../src/contract';
 import {
   LLM_SNIPPET_CHARS,
@@ -41,6 +43,10 @@ const signal = (source_url: string, polarity: 'positive' | 'negative' = 'positiv
 const output = (domain: string, ...signals: ReturnType<typeof signal>[]): EnrichOutput => ({ retailers: [{ domain, signals }], candidates: [] });
 
 describe('llmView', () => {
+  it('sends the model every local candidate the place searches can return', () => {
+    expect(MAX_LLM_LOCAL).toBeGreaterThanOrEqual(MAX_LOCAL_QUERIES * BRAVE_COUNT);
+  });
+
   it('projects to five keys and applies the caps', () => {
     const many = Array.from({ length: MAX_LLM_ONLINE + 5 }, (_, i) =>
       candidate({ domain: `s${i}.example`, title: 'T'.repeat(500), snippet: 'S'.repeat(1000), address: '1 Main St', lat: 39.8, lon: -89.6, place_id: 'p' }));
@@ -48,7 +54,6 @@ describe('llmView', () => {
     expect(view).toHaveLength(MAX_LLM_ONLINE);
     expect(view[0]!.domain).toBe('s0.example');
     expect(view.map((v) => v.id)).toEqual(Array.from({ length: MAX_LLM_ONLINE }, (_, i) => `c${i}`));
-    expect(MAX_LLM_LOCAL).toBe(16);
     for (const v of view) {
       expect(Object.keys(v).sort()).toEqual(['domain', 'id', 'snippet', 'title', 'url']);
       expect(v.title).toHaveLength(LLM_TITLE_CHARS);
