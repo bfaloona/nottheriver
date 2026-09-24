@@ -8,6 +8,7 @@ Only shops that could sell the product are scored. Each layer only removes candi
 
 | Layer | Drops | Code |
 |---|---|---|
+| Place category | Local places whose Brave `icon_category` is `restaurant` or `amusement_park`, reported as `place_category`. Other categories are not dropped: `furniture` and `service` also covered kitchenware shops in the pilot's place results ([place-icon-categories.json](evidence/quality/place-icon-categories.json)), so they reach the classifier as the first word of the snippet instead | `DROPPED_PLACE_CATEGORIES` in `proxy/src/brave.ts` |
 | Local dedupe | Department listings of one store: same registrable domain and street address, the shortest name kept | `dedupe` in `proxy/src/pipeline.ts` |
 | Editorial URL rule | Online pages whose path has an editorial segment (blog, blogs, news, post, posts, story, article, articles, features, expert-advice, longform, how-to, shopping-guide) or a slug with the word "best". Never a homepage, and never a URL with a shop segment (collections, product, products, shop, store, stores). Dedupe prefers a shop page from the same domain, so a domain is dropped only when every page fetched from it is editorial | `isEditorialUrl` in `proxy/src/precision.ts` |
 | Classification | Candidates the model classifies as editorial, service or manufacturer with no cart, or as not selling the product. A candidate it did not classify is kept | `dropReason` in `proxy/src/precision.ts` |
@@ -39,7 +40,7 @@ Every component is between 0 and 1, and the weights sum to 1, so the score is to
 | Environment | See [Baseline](#baseline). +0.25 per environmental certification kind, capped at 1.0; then −0.25 per accepted environmental finding, floored at 0 | This page, plus each counted certification and finding |
 | Proximity | See [Proximity](#proximity) | This page |
 
-Relevance is a plain substring match on lowercased text with punctuation turned into spaces, so a short product name can match inside a longer word ("pan" in "Japan"). For a local shop the snippet is its list of categories, so most local shops score 0.5 or 0.2; a shop scores 1.0 only when its name or a category names the product. Both limits are listed in [debt.md](debt.md).
+Relevance is a plain substring match on lowercased text with punctuation turned into spaces, so a short product name can match inside a longer word ("pan" in "Japan"). For a local shop the snippet is Brave's store-type word (such as "hardware") plus any categories, so most local shops score 0.5 or 0.2; a shop scores 1.0 only when its name or the snippet names the product. Both limits are listed in [debt.md](debt.md).
 
 ### Baseline
 

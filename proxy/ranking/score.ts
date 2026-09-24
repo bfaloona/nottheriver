@@ -26,7 +26,7 @@ function normalizeText(s: string): string {
 }
 
 export function relevance(c: Candidate, n: Normalized): { value: 1 | 0.5 | 0.2; matched: string; source: SourceRef } {
-  // For places the snippet is the categories list, so local relevance rests on title and categories.
+  // For places the snippet is Brave's store-type word plus any categories, so local relevance rests on those and the title.
   // Checked separately so a phrase cannot straddle the end of the title and the start of the snippet.
   const fields = [normalizeText(c.title), normalizeText(c.snippet)];
   const found = (phrase: string) => {

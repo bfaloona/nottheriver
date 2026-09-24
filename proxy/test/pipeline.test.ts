@@ -6,7 +6,7 @@ import type { Candidate, Certification, Env, SearchRequest, SearchResponse, Sign
 import { enrichAll, type EnrichedRow } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
 import { MAX_BRAVE_CALLS } from '../src/brave';
-import { MAX_LOCAL_QUERIES, MAX_ONLINE_QUERIES, finalizeResponse, runSearch, scoreAll, type ScoredRow } from '../src/pipeline';
+import { MAX_DROPPED, MAX_LOCAL_QUERIES, MAX_ONLINE_QUERIES, finalizeResponse, placeCategoryDrops, runSearch, scoreAll, type ScoredRow } from '../src/pipeline';
 import { estimateCost } from '../src/pricing';
 import { validateAgainst } from '../src/validate';
 import { defaultRoutes, makeFixtureFetch, type FixtureRoute } from '../../tests/fixtures/fixture-fetch';
@@ -100,12 +100,41 @@ describe('runSearch over the fixtures', () => {
     expect(res.query.local_queries).toEqual(sent('/local/place_search'));
   });
 
+  it('reports a restaurant from the place search as a place_category drop, not as a result', async () => {
+    const diner = { id: 'diner', title: 'Riverside Diner', url: 'https://riverside-diner.example/', coordinates: [39.79, -89.64], icon_category: 'restaurant' };
+    const routes = defaultRoutes().map((r) => (r.match(new URL('https://api.search.brave.com/res/v1/local/place_search'))
+      ? { ...r, respond: () => ({ body: { ...place1, results: [...place1.results, diner] } }) }
+      : r));
+    const { res } = await search(routes);
+    expect(res.local.map((r) => r.retailer.domain)).not.toContain('riverside-diner.example');
+    expect(res.dropped).toContainEqual({ kind: 'local', domain: 'riverside-diner.example', reason: 'place_category' });
+  });
+
+  it('reports a category drop once per domain, and never one the blocklist would have removed', () => {
+    const place = (name: string, domain: string, i: number) => candidate({ kind: 'local', name, domain, url: `https://${domain}/`, place_id: `p${i}` });
+    const drops = placeCategoryDrops([
+      place('Diner', 'diner.example', 1),
+      place('Diner', 'diner.example', 2),
+      place('Whole Foods Market Cafe', 'wfm-cafe.example', 3),
+      place('Cafe', 'amazon.com', 4),
+    ]);
+    expect(drops).toEqual([{ kind: 'local', domain: 'diner.example', reason: 'place_category' }]);
+  });
+
+  it('puts category drops after the cuts, so the cap removes them first', () => {
+    const many = Array.from({ length: 12 }, (_, i) => row(candidate({ domain: `s${i}.example`, url: `https://s${i}.example/skillet` })));
+    const categoryDrops = Array.from({ length: MAX_DROPPED }, (_, i) => ({ kind: 'local' as const, domain: `d${i}.example`, reason: 'place_category' as const }));
+    const res = finalizeResponse(scoreAll(many, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE, categoryDrops);
+    expect((res.dropped ?? []).filter((d) => d.reason === 'below_top_10')).toHaveLength(2);
+    expect(res.dropped).toHaveLength(MAX_DROPPED);
+  });
+
   it('lists what the precision filters dropped, by kind, domain and reason only', async () => {
     const { res } = await search();
     expect(Array.isArray(res.dropped)).toBe(true);
     for (const d of res.dropped ?? []) {
       expect(Object.keys(d).sort()).toEqual(['domain', 'kind', 'reason']);
-      expect(['editorial_url', 'site_type', 'sells_product', 'below_top_10', 'branch_cap']).toContain(d.reason);
+      expect(['place_category', 'editorial_url', 'site_type', 'sells_product', 'below_top_10', 'branch_cap']).toContain(d.reason);
     }
   });
 

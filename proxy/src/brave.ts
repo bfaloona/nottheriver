@@ -30,6 +30,7 @@ interface PlaceResult {
   url?: string;
   coordinates?: [number, number];
   categories?: string[];
+  icon_category?: unknown; // undocumented; categories arrives empty, so this is the only store-type hint
   postal_address?: { displayAddress?: string };
 }
 
@@ -77,27 +78,36 @@ export function mapWebResults(body: unknown, negativeSourceDomains: ReadonlySet<
   });
 }
 
+// Only types that can never sell a product. A furniture or service icon still covered
+// kitchenware shops, so those go to the classifier as a hint instead.
+export const DROPPED_PLACE_CATEGORIES: ReadonlySet<string> = new Set(['restaurant', 'amusement_park']);
+
 // Places without a website are dropped: the blocklist needs a domain and every
-// result needs a source URL.
-export function mapPlaceResults(body: unknown, negativeSourceDomains: ReadonlySet<string>): Candidate[] {
+// result needs a source URL. Places dropped for their category go to `rejected` whole, so the
+// pipeline can run the blocklist over them before reporting any.
+export function mapPlaceResults(body: unknown, negativeSourceDomains: ReadonlySet<string>, rejected: Candidate[] = []): Candidate[] {
   const results = (body as { results?: PlaceResult[] } | null)?.results ?? [];
   return results.flatMap((r): Candidate[] => {
     const parsed = parseUrl(r.url);
     const name = text(r.title);
     if (!parsed || !name || negativeSourceDomains.has(parsed.domain)) return [];
+    const icon = typeof r.icon_category === 'string' ? r.icon_category : '';
     const [lat, lon] = r.coordinates ?? [];
-    return [{
+    const candidate: Candidate = {
       kind: 'local',
       name,
       domain: parsed.domain,
       url: parsed.href,
       title: name,
-      snippet: (r.categories ?? []).map(text).join(', '),
+      snippet: [icon.replace(/_/g, ' '), ...(r.categories ?? [])].map(text).filter(Boolean).join(', '),
       address: r.postal_address?.displayAddress ?? null,
       lat: typeof lat === 'number' ? lat : null,
       lon: typeof lon === 'number' ? lon : null,
       place_id: r.id ?? null,
-    }];
+    };
+    if (!DROPPED_PLACE_CATEGORIES.has(icon)) return [candidate];
+    rejected.push(candidate);
+    return [];
   });
 }
 
@@ -109,6 +119,7 @@ export function createBraveClient(opts: {
 }) {
   const { apiKey, negativeSourceDomains, maxCalls = MAX_BRAVE_CALLS } = opts;
   let calls = 0;
+  const rejected: Candidate[] = [];
 
   // Headers are built from literals only, so nothing from the inbound request
   // (User-Agent, Referer) can reach Brave.
@@ -135,6 +146,10 @@ export function createBraveClient(opts: {
       return calls;
     },
 
+    get rejected(): readonly Candidate[] {
+      return rejected;
+    },
+
     async webSearch(q: string, loc: SearchLocation): Promise<Candidate[]> {
       const city = locCityHeader(loc.city);
       const body = await get(
@@ -158,7 +173,7 @@ export function createBraveClient(opts: {
         { q, latitude: String(loc.lat), longitude: String(loc.lon), count: String(BRAVE_COUNT), country: 'US', units: 'metric' },
         {},
       );
-      return mapPlaceResults(body, negativeSourceDomains);
+      return mapPlaceResults(body, negativeSourceDomains, rejected);
     },
   };
 }

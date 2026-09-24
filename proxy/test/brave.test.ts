@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { BraveBudgetExceeded, MAX_BRAVE_CALLS, createBraveClient, locCityHeader, mapPlaceResults, mapWebResults } from '../src/brave';
+import type { Candidate } from '../src/contract';
 import { UpstreamError } from '../src/errors';
 import { defaultRoutes, makeFixtureFetch } from '../../tests/fixtures/fixture-fetch';
 import web1 from '../../tests/fixtures/brave/web-1.json';
@@ -170,6 +171,32 @@ describe('place result mapping', () => {
   it('drops a place whose website is on a registry domain', () => {
     const place = { results: [{ id: 'x', title: 'Agency Office', url: 'https://www.ftc.gov/', coordinates: [1, 2] }] };
     expect(mapPlaceResults(place, REGISTRY)).toEqual([]);
+  });
+
+  it('puts Brave\'s icon_category first in the snippet, readable, so the classifier sees the store type', () => {
+    const [c] = mapPlaceResults({ results: [{ id: 'x', title: 'Crate & Barrel', url: 'https://crateandbarrel.com/', icon_category: 'clothing_store', categories: ['Home Goods'] }] }, REGISTRY);
+    expect(c!.snippet).toBe('clothing store, Home Goods');
+  });
+
+  it('ignores an icon_category that is empty or not a string, as if Brave had dropped the field', () => {
+    for (const icon_category of [7, '']) {
+      const [c] = mapPlaceResults({ results: [{ id: 'x', title: 'Shop', url: 'https://shop.example/', icon_category }] }, REGISTRY);
+      expect(c!.snippet).toBe('');
+    }
+  });
+
+  it('sets a restaurant or amusement park aside before the model, keeping the whole candidate', () => {
+    const rejected: Candidate[] = [];
+    const places = { results: [
+      { id: 'r', title: "Jackson's Kitchen", url: 'https://jacksonskitchen.example/', icon_category: 'restaurant' },
+      { id: 'a', title: 'Fun Park', url: 'https://www.funpark.example/', icon_category: 'amusement_park' },
+      { id: 'f', title: 'Crate & Barrel', url: 'https://crateandbarrel.com/', icon_category: 'furniture' },
+    ] };
+    expect(mapPlaceResults(places, REGISTRY, rejected).map((c) => c.name)).toEqual(['Crate & Barrel']);
+    expect(rejected.map((c) => [c.name, c.domain, c.snippet])).toEqual([
+      ["Jackson's Kitchen", 'jacksonskitchen.example', 'restaurant'],
+      ['Fun Park', 'funpark.example', 'amusement park'],
+    ]);
   });
 
   it('keeps a place with no coordinates, with null lat and lon', () => {

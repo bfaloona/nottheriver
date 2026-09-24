@@ -3,7 +3,7 @@ import negatives from '../../data/negatives.json';
 import registry from '../../data/negative-sources.json';
 import { WEIGHTS } from '../ranking/weights';
 import { rankByScore, scoreCandidate, type ScoreInput } from '../ranking/score';
-import { filterBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
+import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
 import { createBraveClient, type BraveClient } from './brave';
 import type {
   Candidate, Dropped, Env, Deps, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
@@ -31,6 +31,13 @@ const curated: CuratedData = {
   negatives: negatives.entries as NegativeRow[],
   negativeSources: negativeSourceDomains,
 };
+
+// A place the category rule removed is reported once per domain, and only if the blocklist
+// would have let it through, so `dropped` never names a blocked shop.
+export function placeCategoryDrops(rejected: readonly Candidate[]): Dropped[] {
+  const domains = new Set(rejected.filter((c) => !isBlocked(c)).map((c) => c.domain));
+  return [...domains].map((domain) => ({ kind: 'local', domain, reason: 'place_category' }));
+}
 
 // The input is kept beside the result so a row can be rescored after its sources are scrubbed.
 export interface ScoredRow { input: ScoreInput; result: Omit<SearchResult, 'rank'> }
@@ -220,7 +227,9 @@ export function finalizeResponse(
     .map(scrubSources);
   const local = rankedSection(final, 'local');
   const online = rankedSection(final, 'online');
-  const allDropped = [...dropped, ...local.cut, ...online.cut];
+  // Category drops go last so the cap cuts them before the cuts an evaluation needs.
+  const late = (d: Dropped) => Number(d.reason === 'place_category');
+  const allDropped = [...dropped, ...local.cut, ...online.cut].sort((a, b) => late(a) - late(b));
   return {
     query: {
       product: req.product, city: req.city, state: req.state, canonical_name: n.canonical_name, category: n.category,
@@ -230,7 +239,7 @@ export function finalizeResponse(
     local: local.top,
     online: online.top,
     usage,
-    // Only pass-1 survivors can be dropped here, but the list is checked again like everything else shown.
+    // Every entry already passed the blocklist (pass 1, or placeCategoryDrops), but the list is checked again like everything else shown.
     dropped: allDropped.filter((d) => !isBlockedDomain(d.domain) && !mentionsAmazon(d.domain)).slice(0, MAX_DROPPED),
   };
 }
@@ -254,7 +263,7 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   // Scrubbed before truncating, so blocked queries cannot take the slots of usable ones.
   const n = truncate(scrubNormalized(raw, req.product));
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
-  const dropped: Dropped[] = [];
+  const dropped = placeCategoryDrops(brave.rejected);
   const kept = await enrichAndFilter(pass1, llm, n, dropped); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
   return finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
