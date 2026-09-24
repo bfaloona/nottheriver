@@ -68,7 +68,8 @@ const NO_USAGE = { brave_calls: 0, llm: [], llm_tokens: 0, estimated_cost_usd: 0
 // The blocklist comes from data/blocklist.json, so this checks every entry, not a fixed list.
 // Only the negative is asserted: the ranking-doc URLs point at localhost, which has no registrable domain.
 function expectAmazonFree(res: SearchResponse) {
-  const text = JSON.stringify({ query: { canonical_name: res.query.canonical_name, category: res.query.category }, local: res.local, online: res.online });
+  const { canonical_name, category, online_queries, local_queries } = res.query;
+  const text = JSON.stringify({ query: { canonical_name, category, online_queries, local_queries }, local: res.local, online: res.online, dropped: res.dropped });
   const urls = text.match(/https?:\/\/[^"\s]+/g) ?? [];
   expect(urls.length).toBeGreaterThan(0);
   for (const url of urls) {
@@ -90,6 +91,32 @@ describe('runSearch over the fixtures', () => {
     const { res } = await search();
     const result = validateAgainst('search-response', res);
     expect(result.ok ? [] : result.errors).toEqual([]);
+  });
+
+  it('echoes exactly the queries that went to Brave', async () => {
+    const { res, fetch } = await search();
+    const sent = (path: string) => fetch.calls.filter((c) => c.url.includes(path)).map((c) => new URL(c.url).searchParams.get('q'));
+    expect(res.query.online_queries).toEqual(sent('/web/search'));
+    expect(res.query.local_queries).toEqual(sent('/local/place_search'));
+  });
+
+  it('lists what the precision filters dropped, by kind, domain and reason only', async () => {
+    const { res } = await search();
+    expect(Array.isArray(res.dropped)).toBe(true);
+    for (const d of res.dropped ?? []) {
+      expect(Object.keys(d).sort()).toEqual(['domain', 'kind', 'reason']);
+      expect(['editorial_url', 'site_type', 'sells_product', 'below_top_10']).toContain(d.reason);
+    }
+  });
+
+  it('lists a shop ranked below the top 10 as dropped for that reason', async () => {
+    const many = Array.from({ length: 12 }, (_, i) => row(candidate({ domain: `s${i}.example`, url: `https://s${i}.example/skillet` })));
+    const res = finalizeResponse(scoreAll(many, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    expect(res.online).toHaveLength(10);
+    const shown = new Set(res.online.map((r) => r.retailer.domain));
+    const cut = (res.dropped ?? []).filter((d) => d.reason === 'below_top_10');
+    expect(cut).toHaveLength(2);
+    for (const d of cut) expect(shown.has(d.domain)).toBe(false);
   });
 
   it('makes one Brave call per query and reports usage and cost', async () => {

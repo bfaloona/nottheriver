@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import type { Candidate, Classification, Env, SearchRequest, SellsProduct, SiteType } from '../src/contract';
+import type { Candidate, Classification, Dropped, Env, SearchRequest, SellsProduct, SiteType } from '../src/contract';
 import { registrableDomain } from '../src/domain';
 import { enrichAll, MAX_LLM_LOCAL, MAX_LLM_ONLINE } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
@@ -291,6 +291,21 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     expect(data.product).toEqual(PRODUCT);
     expect(Object.keys(data.candidates[0]!).sort()).toEqual(['domain', 'id', 'snippet', 'title', 'url']);
     expect(prompts[0]).not.toMatch(/Main St|39\.8|-89\.6/);
+  });
+
+  it('records each drop with its reason, and nothing it kept', async () => {
+    const shop = candidate({ domain: 'shop.example', url: 'https://shop.example/tents' });
+    const cafe = candidate({ kind: 'local', domain: 'cafe.example', url: 'https://cafe.example/', address: '1 Main St', place_id: 'p1' });
+    const article = candidate({ domain: 'mag.example', url: 'https://mag.example/blog/best-tents' });
+    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [{ id: 'c1', site_type: 'retailer', sells_product: 'no' }] }));
+    const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
+    const dropped: Dropped[] = [];
+    const kept = await enrichAndFilter([shop, cafe, article], llm, normalized, dropped);
+    expect(kept.map((r) => r.candidate)).toEqual([shop]);
+    expect(dropped).toEqual([
+      { kind: 'online', domain: 'mag.example', reason: 'editorial_url' },
+      { kind: 'local', domain: 'cafe.example', reason: 'sells_product' },
+    ]);
   });
 
   it('a flagged page is not a result but can still be cited as evidence for a shop', async () => {

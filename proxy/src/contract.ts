@@ -78,12 +78,20 @@ export interface Usage {
   estimated_cost_usd: number; // see pricing.ts
 }
 
+// What a precision filter removed or the top-10 cut left out, so an evaluation can tell a
+// dropped shop from one never found. Domain only: no name, address or coordinates.
+export interface Dropped { kind: ResultKind; domain: string; reason: 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' }
+
 export interface SearchResponse {
-  query: { product: string; city: string; state: string; canonical_name: string; category: string };
+  query: {
+    product: string; city: string; state: string; canonical_name: string; category: string;
+    online_queries?: string[]; local_queries?: string[];
+  };
   weights: Record<ComponentName, number>;
   local: SearchResult[];  // <= 10
   online: SearchResult[]; // <= 10
   usage: Usage;
+  dropped?: Dropped[];
 }
 
 export type ErrorCode = 'bad_request' | 'rate_limited' | 'upstream_error' | 'invalid_llm_output' | 'server_error';

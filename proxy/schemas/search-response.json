@@ -46,7 +46,9 @@
   "properties": {
     "query": { "type": "object", "additionalProperties": false,
       "required": ["product", "city", "state", "canonical_name", "category"],
-      "properties": { "product": { "type": "string" }, "city": { "type": "string" }, "state": { "type": "string" }, "canonical_name": { "type": "string" }, "category": { "type": "string" } } },
+      "properties": { "product": { "type": "string" }, "city": { "type": "string" }, "state": { "type": "string" }, "canonical_name": { "type": "string" }, "category": { "type": "string" },
+        "online_queries": { "type": "array", "maxItems": 3, "items": { "type": "string" } },
+        "local_queries": { "type": "array", "maxItems": 2, "items": { "type": "string" } } } },
     "weights": { "type": "object", "additionalProperties": false,
       "required": ["relevance", "ethics", "env", "proximity"],
       "properties": { "relevance": { "type": "number" }, "ethics": { "type": "number" }, "env": { "type": "number" }, "proximity": { "type": "number" } } },
@@ -60,6 +62,10 @@
           "required": ["call", "model", "prompt_tokens", "completion_tokens", "cost_usd"],
           "properties": { "call": { "enum": ["normalize", "enrich"] }, "model": { "type": "string" },
             "prompt_tokens": { "type": "integer" }, "completion_tokens": { "type": "integer" }, "cost_usd": { "type": ["number", "null"] } } } },
-        "llm_tokens": { "type": "integer" }, "estimated_cost_usd": { "type": "number" } } }
+        "llm_tokens": { "type": "integer" }, "estimated_cost_usd": { "type": "number" } } },
+    "dropped": { "type": "array", "maxItems": 60, "items": { "type": "object", "additionalProperties": false,
+      "required": ["kind", "domain", "reason"],
+      "properties": { "kind": { "enum": ["local", "online"] }, "domain": { "type": "string", "maxLength": 253 },
+        "reason": { "enum": ["editorial_url", "site_type", "sells_product", "below_top_10"] } } } }
   }
 }

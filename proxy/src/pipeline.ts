@@ -6,7 +6,7 @@ import { rankByScore, scoreCandidate, type ScoreInput } from '../ranking/score';
 import { filterBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
 import { createBraveClient, type BraveClient } from './brave';
 import type {
-  Candidate, Env, Deps, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
+  Candidate, Dropped, Env, Deps, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
 } from './contract';
 import { enrichAll, type CertificationRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
 import { InvalidLlmOutput } from './errors';
@@ -19,6 +19,7 @@ export const MAX_SIMILAR_PRODUCTS = 6;
 export const MAX_ONLINE_QUERIES = 3;
 export const MAX_LOCAL_QUERIES = 2;
 export const MAX_RESULTS_PER_SECTION = 10;
+export const MAX_DROPPED = 60;
 
 const negativeSourceDomains: ReadonlySet<string> = new Set(registry.sources.map((s) => s.domain));
 
@@ -129,12 +130,18 @@ export function dedupe(candidates: Candidate[]): Candidate[] {
 // Editorial pages go to the model after the shops, so a cap cuts them first; they stay as
 // citable evidence for signals but are never results. A row the model judged not to be a shop
 // selling the product is dropped; one it did not judge is kept.
-export async function enrichAndFilter(pass1: Candidate[], llm: LlmClient, n: Normalized): Promise<EnrichedRow[]> {
+export async function enrichAndFilter(pass1: Candidate[], llm: LlmClient, n: Normalized, dropped: Dropped[] = []): Promise<EnrichedRow[]> {
   const { shops, editorial } = splitEditorial(pass1);
+  for (const c of editorial) dropped.push({ kind: c.kind, domain: c.domain, reason: 'editorial_url' });
   if (shops.length === 0) return [];
   const evidenceOnly = new Set(editorial);
   const rows = await enrichAll([...shops, ...editorial], llm, curated, n);
-  return rows.filter((r) => !evidenceOnly.has(r.candidate) && dropReason(r.classification) === null);
+  return rows.filter((r) => {
+    if (evidenceOnly.has(r.candidate)) return false;
+    const reason = dropReason(r.classification);
+    if (reason) dropped.push({ kind: r.candidate.kind, domain: r.candidate.domain, reason });
+    return reason === null;
+  });
 }
 
 function scoreRow(id: string, input: ScoreInput): ScoredRow {
@@ -185,22 +192,34 @@ export function scrubSources(row: ScoredRow): ScoredRow {
   return { input: rescored.input, result: { ...rescored.result, components } };
 }
 
-function topResults(rows: ScoredRow[], kind: ResultKind): SearchResult[] {
-  return rankByScore(rows.map((r) => r.result).filter((r) => r.kind === kind)).slice(0, MAX_RESULTS_PER_SECTION);
+function rankedSection(rows: ScoredRow[], kind: ResultKind): { top: SearchResult[]; cut: Dropped[] } {
+  const ranked = rankByScore(rows.map((r) => r.result).filter((r) => r.kind === kind));
+  const cut = ranked.slice(MAX_RESULTS_PER_SECTION).map((r) => ({ kind, domain: r.retailer.domain, reason: 'below_top_10' as const }));
+  return { top: ranked.slice(0, MAX_RESULTS_PER_SECTION), cut };
 }
 
 // The second blocklist pass: whatever entered after the first one (enrichment, a model reply,
 // a bug) is removed here, as the last step before the response is built.
-export function finalizeResponse(scored: ScoredRow[], n: Normalized, req: SearchRequest, usage: Usage): SearchResponse {
+export function finalizeResponse(
+  scored: ScoredRow[], n: Normalized, req: SearchRequest, usage: Usage, dropped: Dropped[] = [],
+): SearchResponse {
   const final = filterBlocked(scored, (r) => r.result.retailer)
     .filter((r) => !hasBlockedText(r))
     .map(scrubSources);
+  const local = rankedSection(final, 'local');
+  const online = rankedSection(final, 'online');
+  const allDropped = [...dropped, ...local.cut, ...online.cut];
   return {
-    query: { product: req.product, city: req.city, state: req.state, canonical_name: n.canonical_name, category: n.category },
+    query: {
+      product: req.product, city: req.city, state: req.state, canonical_name: n.canonical_name, category: n.category,
+      online_queries: n.online_queries, local_queries: n.local_queries,
+    },
     weights: WEIGHTS,
-    local: topResults(final, 'local'),
-    online: topResults(final, 'online'),
+    local: local.top,
+    online: online.top,
     usage,
+    // Only pass-1 survivors can be dropped here, but the list is checked again like everything else shown.
+    dropped: allDropped.filter((d) => !isBlockedDomain(d.domain) && !mentionsAmazon(d.domain)).slice(0, MAX_DROPPED),
   };
 }
 
@@ -223,7 +242,8 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   // Scrubbed before truncating, so blocked queries cannot take the slots of usable ones.
   const n = truncate(scrubNormalized(raw, req.product));
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
-  const kept = await enrichAndFilter(pass1, llm, n); // no model call when no shop survives pass 1
+  const dropped: Dropped[] = [];
+  const kept = await enrichAndFilter(pass1, llm, n, dropped); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
-  return finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]));
+  return finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
 }
