@@ -107,6 +107,10 @@ describe('template wording', () => {
   it('asks for shop-style online queries and store-type local queries', () => {
     expect(normalizeTemplate).toMatch(/Never use best, top, review, vs, guide, or ethics words/);
     expect(normalizeTemplate).toMatch(/each ending in 'store' or 'shop'/);
-    expect(normalizeTemplate).not.toMatch(/kitchen supply store/);
+    // One specialist store type for precision, one broader shop phrase for recall; the
+    // classifier removes the contractors and showrooms a broad phrase also matches.
+    expect(normalizeTemplate).toMatch(/local_queries: exactly 2/);
+    expect(normalizeTemplate).toMatch(/The first names the specialist store type/);
+    expect(normalizeTemplate).toMatch(/The second is the broader name/);
   });
 });

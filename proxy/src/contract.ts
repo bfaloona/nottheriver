@@ -80,7 +80,7 @@ export interface Usage {
 
 // What a precision filter removed or the top-10 cut left out, so an evaluation can tell a
 // dropped shop from one never found. Domain only: no name, address or coordinates.
-export interface Dropped { kind: ResultKind; domain: string; reason: 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' }
+export interface Dropped { kind: ResultKind; domain: string; reason: 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' | 'branch_cap' }
 
 export interface SearchResponse {
   query: {

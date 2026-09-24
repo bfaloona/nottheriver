@@ -12,6 +12,6 @@ Return a JSON object with exactly these fields:
 - canonical_name: the common generic name of the product, without brand names.
 - similar_products: 3 to 6 close equivalents a shopper would accept instead.
 - online_queries: 2 or 3 queries a shopper types to buy the product from an online shop, e.g. 'cast iron skillet shop', 'buy camping tent'. Never use best, top, review, vs, guide, or ethics words (ethical, sustainable, eco-friendly) unless the shopper typed them; ethics are scored separately.
-- local_queries: 1 or 2 kinds of store that stock the product, each ending in 'store' or 'shop', e.g. 'cookware store', 'outdoor gear store', 'sporting goods store', 'hardware store'. Name the store type, never the product, a room (kitchen), or an activity (camping). Never include a place, city, state or neighborhood name, because location is sent separately.
+- local_queries: exactly 2 map searches for nearby shops that stock the product, each ending in 'store' or 'shop'. The first names the specialist store type, e.g. 'cookware store', 'outdoor gear store', 'running shoe store'. The second is the broader name small independent shops often use for themselves, e.g. 'kitchen supply store', 'outdoor outfitters shop', 'general store'. Never name the product itself. Never include a place, city, state or neighborhood name, because location is sent separately.
 
 Do not name any particular marketplace, store or brand in the queries.`;

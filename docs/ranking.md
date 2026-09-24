@@ -12,6 +12,8 @@ Only shops that could sell the product are scored. Each layer only removes candi
 | Editorial URL rule | Online pages whose path has an editorial segment (blog, blogs, news, post, posts, story, article, articles, features, expert-advice, longform, how-to, shopping-guide) or a slug with the word "best". Never a homepage, and never a URL with a shop segment (collections, product, products, shop, store, stores). Dedupe prefers a shop page from the same domain, so a domain is dropped only when every page fetched from it is editorial | `isEditorialUrl` in `proxy/src/precision.ts` |
 | Classification | Candidates the model classifies as editorial, service or manufacturer with no cart, or as not selling the product. A candidate it did not classify is kept | `dropReason` in `proxy/src/precision.ts` |
 
+After scoring, the near-you section shows at most 2 branches per registrable domain (`MAX_BRANCHES_PER_DOMAIN` in `proxy/src/pipeline.ts`). In a rerun of the Cambridge skillet search, five Ace Hardware branches and a duplicate grocery listing filled the top 10 and pushed a Le Creuset outlet and a Home Depot below it.
+
 Measured offline against the graded six-search pilot (`tests/fixtures/quality/graded-pilot.json`, replayed by `proxy/test/precision.test.ts`):
 
 - The URL rule drops 25 of the 52 online rows graded "no" (15 of 27 unique URLs) and none of the 8 graded as selling the product.

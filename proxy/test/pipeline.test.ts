@@ -105,7 +105,7 @@ describe('runSearch over the fixtures', () => {
     expect(Array.isArray(res.dropped)).toBe(true);
     for (const d of res.dropped ?? []) {
       expect(Object.keys(d).sort()).toEqual(['domain', 'kind', 'reason']);
-      expect(['editorial_url', 'site_type', 'sells_product', 'below_top_10']).toContain(d.reason);
+      expect(['editorial_url', 'site_type', 'sells_product', 'below_top_10', 'branch_cap']).toContain(d.reason);
     }
   });
 
@@ -117,6 +117,20 @@ describe('runSearch over the fixtures', () => {
     const cut = (res.dropped ?? []).filter((d) => d.reason === 'below_top_10');
     expect(cut).toHaveLength(2);
     for (const d of cut) expect(shown.has(d.domain)).toBe(false);
+  });
+
+  it('shows at most 2 branches of one chain nearby and lists the rest as a branch cap', async () => {
+    const branches = Array.from({ length: 5 }, (_, i) => row(candidate({
+      kind: 'local', name: `Ace ${i}`, domain: 'acehardware.com', url: `https://www.acehardware.com/store-details/${i}`,
+      address: `${i} Main St`, lat: 39.78, lon: -89.65, place_id: `p${i}`,
+    })));
+    const other = row(candidate({ kind: 'local', name: 'Pan Shop', domain: 'panshop.example', url: 'https://panshop.example/', address: '9 Elm St', lat: 39.9, lon: -89.9, place_id: 'q' }));
+    const res = finalizeResponse(scoreAll([...branches, other], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    expect(res.local.filter((r) => r.retailer.domain === 'acehardware.com')).toHaveLength(2);
+    expect(res.local.map((r) => r.retailer.domain)).toContain('panshop.example');
+    expect((res.dropped ?? []).filter((d) => d.reason === 'branch_cap')).toEqual(
+      Array.from({ length: 3 }, () => ({ kind: 'local', domain: 'acehardware.com', reason: 'branch_cap' })),
+    );
   });
 
   it('makes one Brave call per query and reports usage and cost', async () => {

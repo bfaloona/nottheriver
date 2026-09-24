@@ -20,6 +20,7 @@ export const MAX_ONLINE_QUERIES = 3;
 export const MAX_LOCAL_QUERIES = 2;
 export const MAX_RESULTS_PER_SECTION = 10;
 export const MAX_DROPPED = 60;
+export const MAX_BRANCHES_PER_DOMAIN = 2;
 
 const negativeSourceDomains: ReadonlySet<string> = new Set(registry.sources.map((s) => s.domain));
 
@@ -192,10 +193,21 @@ export function scrubSources(row: ScoredRow): ScoredRow {
   return { input: rescored.input, result: { ...rescored.result, components } };
 }
 
+// A chain's many nearby branches would otherwise fill the local section and push out
+// independent shops; the nearest two show that the chain is close.
 function rankedSection(rows: ScoredRow[], kind: ResultKind): { top: SearchResult[]; cut: Dropped[] } {
-  const ranked = rankByScore(rows.map((r) => r.result).filter((r) => r.kind === kind));
-  const cut = ranked.slice(MAX_RESULTS_PER_SECTION).map((r) => ({ kind, domain: r.retailer.domain, reason: 'below_top_10' as const }));
-  return { top: ranked.slice(0, MAX_RESULTS_PER_SECTION), cut };
+  const perDomain = new Map<string, number>();
+  const cut: Dropped[] = [];
+  const kept = rankByScore(rows.map((r) => r.result).filter((r) => r.kind === kind)).filter((r) => {
+    if (kind !== 'local') return true;
+    const n = (perDomain.get(r.retailer.domain) ?? 0) + 1;
+    perDomain.set(r.retailer.domain, n);
+    if (n <= MAX_BRANCHES_PER_DOMAIN) return true;
+    cut.push({ kind, domain: r.retailer.domain, reason: 'branch_cap' });
+    return false;
+  });
+  for (const r of kept.slice(MAX_RESULTS_PER_SECTION)) cut.push({ kind, domain: r.retailer.domain, reason: 'below_top_10' });
+  return { top: kept.slice(0, MAX_RESULTS_PER_SECTION), cut };
 }
 
 // The second blocklist pass: whatever entered after the first one (enrichment, a model reply,

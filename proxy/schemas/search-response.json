@@ -66,6 +66,6 @@
     "dropped": { "type": "array", "maxItems": 60, "items": { "type": "object", "additionalProperties": false,
       "required": ["kind", "domain", "reason"],
       "properties": { "kind": { "enum": ["local", "online"] }, "domain": { "type": "string", "maxLength": 253 },
-        "reason": { "enum": ["editorial_url", "site_type", "sells_product", "below_top_10"] } } } }
+        "reason": { "enum": ["editorial_url", "site_type", "sells_product", "below_top_10", "branch_cap"] } } } }
   }
 }
