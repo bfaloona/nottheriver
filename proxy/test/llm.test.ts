@@ -38,7 +38,7 @@ describe('request', () => {
     await llm.complete('enrich', 'x', ENRICH_MAX_TOKENS);
     const body = JSON.parse(fetch.calls[0]!.body!);
     expect(body.response_format.json_schema.name).toBe('enrich');
-    expect(body.max_completion_tokens).toBe(2000);
+    expect(body.max_completion_tokens).toBe(3000);
     expect(JSON.stringify(body.response_format.json_schema.schema)).not.toMatch(/"(enum|maxLength|minimum|maximum)"/);
   });
 

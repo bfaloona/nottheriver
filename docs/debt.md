@@ -21,13 +21,18 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 
 | Shortcut | Best-practice alternative |
 |----------|---------------------------|
-| No retailer classification: every parsed web result outside the negative-source domains becomes a candidate, review and news sites included | A deterministic domain-category filter or a validated `is_retailer` field |
+| Retailer classification is measured only with a stub built from hand labels (`proxy/test/precision.test.ts`); the model's own accuracy is unmeasured | A live rerun of the six-search pilot, graded the same way (about $0.16) |
+| Rows kept by the fail-open rule (the model skipped them, or they were past the 24 online / 16 local view cap) are not counted or reported, so their share of shown results is unknown | Count them in the response usage block or a log line, and grade them in the next pilot |
+| Local candidates are classified from the name alone: a place listing has no page text, and its snippet is a list of map categories that is often empty | Fetch `/local/descriptions` or the store's page before classifying |
+| Page titles are not in the saved pilot responses (`SearchResult` has no title field), so no title rule was measured or built | Save the Brave title with each graded row, then test a title rule against the grades |
+| A hostile page snippet can tell the model to classify other candidates as editorial or not selling the product, which hides real shops (it cannot add a blocked retailer; both blocklist passes still run) | Log drop counts per search and flag a reply whose classification drops most (say over 80%) of the candidates the URL rule kept |
+| The editorial URL rule's word lists come from one six-search pilot | Grow them only with new graded evidence; every word must match at least one graded page |
+| Brave options that could cut editorial pages at the source are untested: `count` up to 20 on web search (same billed call, more candidates left after filtering) and Goggles (discard path patterns). Neither can be checked offline | Check both against Brave's documentation, then measure against the graded pilot |
 | Local shops without a website are not shown (a place with no URL, or one that yields no registrable domain, is dropped before filtering) | Key local results on place identity, not domain |
 | The model gets a structure-only JSON schema (value constraints stripped) because provider strict-mode keyword support is unverified; the full schema is enforced on every reply | Send the full schema once the first live search shows the provider accepts it |
 | The response is validated against `search-response.json` only in tests, not at runtime, to stay inside the Free plan's 10 ms CPU budget | Runtime validation on a paid plan, or a cheaper hand-written check |
 | `fetchCandidates` runs the Brave calls in parallel (`Promise.all`). If one returns non-2xx, the whole search fails with 502 while the calls already started still cost money | Keep partial results from the calls that succeeded |
 | `scrubSources` rescores every row that survives the second pass, even when nothing was removed (at most about 40 scoring calls per request) | Skip rows with nothing removed, if profiling ever shows a cost |
-| `dedupe` in `pipeline.ts` repeats the seen-set pattern of `uniqueBy` in `proxy/ranking/score.ts` | Export one helper and use it in both |
 
 ## Blocklist
 

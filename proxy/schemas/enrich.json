@@ -1,7 +1,7 @@
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["retailers"],
+  "required": ["retailers", "candidates"],
   "properties": {
     "retailers": {
       "type": "array",
@@ -26,6 +26,19 @@
               }
             }
           }
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "site_type", "sells_product"],
+        "properties": {
+          "id": { "type": "string", "maxLength": 8 },
+          "site_type": { "type": "string", "maxLength": 32 },
+          "sells_product": { "type": "string", "maxLength": 16 }
         }
       }
     }

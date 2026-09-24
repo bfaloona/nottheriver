@@ -1,6 +1,24 @@
 # How ranking works
 
-Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms and points at evidence; it never sets a number and never writes text that is shown as a finding. Each result's "Why this rank" lists every non-zero component with its value, weight and source.
+Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms, points at evidence, and judges whether each result is a shop that sells the product, which can remove a result ([Filtered before scoring](#filtered-before-scoring)); it never sets a number and never writes text that is shown as a finding. Each result's "Why this rank" lists every non-zero component with its value, weight and source.
+
+## Filtered before scoring
+
+Only shops that could sell the product are scored. Each layer only removes candidates; the two blocklist passes run regardless ([architecture.md](architecture.md#request-flow)).
+
+| Layer | Drops | Code |
+|---|---|---|
+| Local dedupe | Department listings of one store: same registrable domain and street address, the shortest name kept | `dedupe` in `proxy/src/pipeline.ts` |
+| Editorial URL rule | Online pages whose path has an editorial segment (blog, blogs, news, post, posts, story, article, articles, features, expert-advice, longform, how-to, shopping-guide) or a slug with the word "best". Never a homepage, and never a URL with a shop segment (collections, product, products, shop, store, stores). Dedupe prefers a shop page from the same domain, so a domain is dropped only when every page fetched from it is editorial | `isEditorialUrl` in `proxy/src/precision.ts` |
+| Classification | Candidates the model classifies as editorial, service or manufacturer with no cart, or as not selling the product. A candidate it did not classify is kept | `dropReason` in `proxy/src/precision.ts` |
+
+Measured offline against the graded six-search pilot (`tests/fixtures/quality/graded-pilot.json`, replayed by `proxy/test/precision.test.ts`):
+
+- The URL rule drops 25 of the 52 online rows graded "no" (15 of 27 unique URLs) and none of the 8 graded as selling the product.
+- With a stub classifier that answers from hand labels, the remaining 12 unique "no" URLs are dropped: 11 as editorial and one clothing shop as not selling the product. This proves the plumbing, not the model's accuracy; that needs a live rerun of the pilot.
+- Local dedupe merges three department pairs or groups in the pilot (REI and REI Bike Shop; three Camping World listings; Cabela's and its gun library listing) and keeps apart branches at different addresses and different shops at one mall address.
+
+Every word in the URL rule matched at least one graded page; the lists grow only with new graded evidence.
 
 ## Formula
 

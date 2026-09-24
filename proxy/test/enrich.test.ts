@@ -3,7 +3,8 @@ import type { Candidate } from '../src/contract';
 import {
   LLM_SNIPPET_CHARS,
   LLM_TITLE_CHARS,
-  MAX_LLM_CANDIDATES,
+  MAX_LLM_LOCAL,
+  MAX_LLM_ONLINE,
   acceptSignals,
   certificationsFor,
   enrichAll,
@@ -20,6 +21,7 @@ import place1 from '../../tests/fixtures/brave/place-1.json';
 import enrichFixture from '../../tests/fixtures/llm/enrich.json';
 
 const REGISTRY = new Set(['ftc.gov', 'osha.gov']);
+const PRODUCT = { canonical_name: 'cast iron skillet', category: 'cookware' };
 
 function candidate(overrides: Partial<Candidate>): Candidate {
   return {
@@ -36,17 +38,19 @@ const other = candidate({ name: 'Other Shop', domain: 'other.example', url: 'htt
 
 const signal = (source_url: string, polarity: 'positive' | 'negative' = 'positive', kind: 'labor' | 'governance' | 'environmental' = 'labor') =>
   ({ kind, polarity, claim: 'MODEL PROSE', source_url, confidence: 0.9 });
-const output = (domain: string, ...signals: ReturnType<typeof signal>[]): EnrichOutput => ({ retailers: [{ domain, signals }] });
+const output = (domain: string, ...signals: ReturnType<typeof signal>[]): EnrichOutput => ({ retailers: [{ domain, signals }], candidates: [] });
 
 describe('llmView', () => {
-  it('projects to four keys and applies the caps', () => {
-    const many = Array.from({ length: MAX_LLM_CANDIDATES + 5 }, (_, i) =>
+  it('projects to five keys and applies the caps', () => {
+    const many = Array.from({ length: MAX_LLM_ONLINE + 5 }, (_, i) =>
       candidate({ domain: `s${i}.example`, title: 'T'.repeat(500), snippet: 'S'.repeat(1000), address: '1 Main St', lat: 39.8, lon: -89.6, place_id: 'p' }));
     const view = llmView(many);
-    expect(view).toHaveLength(MAX_LLM_CANDIDATES);
+    expect(view).toHaveLength(MAX_LLM_ONLINE);
     expect(view[0]!.domain).toBe('s0.example');
+    expect(view.map((v) => v.id)).toEqual(Array.from({ length: MAX_LLM_ONLINE }, (_, i) => `c${i}`));
+    expect(MAX_LLM_LOCAL).toBe(16);
     for (const v of view) {
-      expect(Object.keys(v).sort()).toEqual(['domain', 'snippet', 'title', 'url']);
+      expect(Object.keys(v).sort()).toEqual(['domain', 'id', 'snippet', 'title', 'url']);
       expect(v.title).toHaveLength(LLM_TITLE_CHARS);
       expect(v.snippet).toHaveLength(LLM_SNIPPET_CHARS);
     }
@@ -141,7 +145,7 @@ describe('curated lookups', () => {
     const fetch = makeFixtureFetch(defaultRoutes());
     const llm = createLlmClient({ fetch, apiKey: 'k', siteUrl: 'https://site.example', siteName: 'test' });
     const pass1 = [...mapWebResults(web1, REGISTRY).filter((c) => c.domain.endsWith('.example')), candidate({})];
-    const rows = await enrichAll(pass1, llm, data);
+    const rows = await enrichAll(pass1, llm, data, PRODUCT);
     expect(rows.map((r) => r.candidate)).toEqual(pass1);
     const shopRow = rows.find((r) => r.candidate.domain === 'shop.example')!;
     expect(shopRow.certifications).toHaveLength(2);
@@ -152,7 +156,7 @@ describe('curated lookups', () => {
 
   it('enrichAll with no candidates makes no LLM call', async () => {
     const llm = { usage: [], complete: vi.fn() };
-    expect(await enrichAll([], llm as never, data)).toEqual([]);
+    expect(await enrichAll([], llm as never, data, PRODUCT)).toEqual([]);
     expect(llm.complete).not.toHaveBeenCalled();
   });
 

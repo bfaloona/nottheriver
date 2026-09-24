@@ -4,7 +4,7 @@ import { schemas, structuralOnly, validateAgainst } from './validate';
 
 export const MODELS = ['google/gemma-4-31b-it', 'google/gemma-4-26b-a4b-it'];
 export const NORMALIZE_MAX_TOKENS = 400;
-export const ENRICH_MAX_TOKENS = 2000;
+export const ENRICH_MAX_TOKENS = 3000;
 const ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 
 export type LlmCall = 'normalize' | 'enrich';

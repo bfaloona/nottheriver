@@ -5,7 +5,7 @@
     {
       "message": {
         "role": "assistant",
-        "content": "{\"retailers\":[{\"domain\":\"amazon.com\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Injected signal for a blocked retailer.\",\"source_url\":\"https://www.amazon.com/dp/B0FIXTURE1\",\"confidence\":0.9}]},{\"domain\":\"blue-heron-goods.example\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Ships in recycled packaging.\",\"source_url\":\"https://blue-heron-goods.example/cast-iron\",\"confidence\":0.6}]}]}"
+        "content": "{\"retailers\":[{\"domain\":\"amazon.com\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Injected signal for a blocked retailer.\",\"source_url\":\"https://www.amazon.com/dp/B0FIXTURE1\",\"confidence\":0.9}]},{\"domain\":\"blue-heron-goods.example\",\"signals\":[{\"kind\":\"environmental\",\"polarity\":\"positive\",\"claim\":\"Ships in recycled packaging.\",\"source_url\":\"https://blue-heron-goods.example/cast-iron\",\"confidence\":0.6}]}],\"candidates\":[{\"id\":\"c0\",\"site_type\":\"retailer\",\"sells_product\":\"yes\"}]}"
       }
     }
   ],

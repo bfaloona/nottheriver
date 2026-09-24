@@ -22,16 +22,16 @@ The OpenRouter prices are the cheapest endpoint's. On the same day, endpoints fo
 | Part | Calls | Cost |
 |---|---|---|
 | Brave | 1 to 3 web searches plus 0 to 2 place searches, so at most 5 (the client also refuses any call past 6) | at most 5 × $0.005 = $0.025 |
-| LLM completion | 2 calls (normalize, enrich), each retried once on invalid output; completion capped at 400 and 2,000 tokens | at most (400 + 2,000) × 2 × $0.34/M ≈ $0.0016 |
-| LLM prompt | Measured with 30 candidates at the title and snippet caps and 200-character URLs: normalize prompt 1,197 characters, enrich prompt 25,605 characters. URLs are not capped, so a longer URL raises this figure | about (1,197 + 25,605) × 2 × $0.09/M ≈ $0.0048 at the cheapest endpoint's price, taking the loose bound of one token per character; about $0.04 at the $0.75/M endpoint |
+| LLM completion | 2 calls (normalize, enrich), each retried once on invalid output; completion capped at 400 and 3,000 tokens (the enrich reply also classifies every candidate it was sent) | at most (400 + 3,000) × 2 × $0.34/M ≈ $0.0023 |
+| LLM prompt | Measured with the enrich cap's 40 candidates (24 online, 16 local) at the title and snippet caps, 200-character URLs and a 120-character product name: normalize prompt 1,543 characters, enrich prompt 35,799 characters. URLs are not capped, so a longer URL raises this figure | about (1,543 + 35,799) × 2 × $0.09/M ≈ $0.0067 at the cheapest endpoint's price, taking the loose bound of one token per character; about $0.056 at the $0.75/M endpoint |
 
-- **Upper estimate at the cheapest endpoint:** about $0.03 per search, almost all of it Brave. If OpenRouter routes to the $0.75/M endpoint, the prompt alone adds up to about $0.04, so about $0.07 before any higher completion price at that endpoint.
+- **Upper estimate at the cheapest endpoint:** about $0.03 per search ($0.025 + $0.0023 + $0.0067 ≈ $0.034), most of it Brave. If OpenRouter routes to the $0.75/M endpoint, the prompt alone adds up to about $0.056, so about $0.08 before any higher completion price at that endpoint.
 - **Estimated typical search:** 4 to 5 Brave calls when the model returns the full 3 online and 1 to 2 local queries ($0.020 to $0.025) plus well under $0.002 of LLM use, so about $0.02 to $0.03. The LLM figure is an estimate, not a measurement; the live evaluation in [quality.md](quality.md) will record real per-search cost.
 - **Free credit:** $5 of Brave credit a month covers 1,000 requests, about 200 searches at 5 calls each.
 
 ## Abuse ceiling
 
-The Worker accepts requests without an `Origin` header (it must be safe to call from curl), and per-client keys can be rotated, so a global rate limit is the spend circuit breaker: 60 searches per minute for the whole Worker by default. At about $0.03 per search that is about $1.80 per minute at the cheapest endpoint's price; the ceiling scales with the endpoint OpenRouter routes to (about $4.20 per minute at $0.07 per search). To lower the limit, change `GLOBAL_LIMIT` in `proxy/src/handler.ts` and its mirrors, which must match: the `GLOBAL_LIMITER` binding in `proxy/wrangler.jsonc` and `global_limit_per_minute` in `infra/variables.tf`. Or lower the spend caps on the Brave and OpenRouter keys, to taste. The key spend caps are the last backstop.
+The Worker accepts requests without an `Origin` header (it must be safe to call from curl), and per-client keys can be rotated, so a global rate limit is the spend circuit breaker: 60 searches per minute for the whole Worker by default. At about $0.03 per search that is about $1.80 per minute at the cheapest endpoint's price; the ceiling scales with the endpoint OpenRouter routes to (about $4.80 per minute at $0.08 per search). To lower the limit, change `GLOBAL_LIMIT` in `proxy/src/handler.ts` and its mirrors, which must match: the `GLOBAL_LIMITER` binding in `proxy/wrangler.jsonc` and `global_limit_per_minute` in `infra/variables.tf`. Or lower the spend caps on the Brave and OpenRouter keys, to taste. The key spend caps are the last backstop.
 
 ## Zip dataset
 

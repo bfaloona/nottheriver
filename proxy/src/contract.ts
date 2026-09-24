@@ -16,6 +16,11 @@ export type CertKind =
   | 'one_percent_planet' | 'climate_neutral'
   | 'independent_retailer_assoc';
 export type SignalKind = 'labor' | 'governance' | 'environmental';
+// The model's judgment of one fetched page. "maybe" exists because a place listing often
+// gives too little to decide, and a forced yes/no would be a guess.
+export type SiteType = 'retailer' | 'marketplace' | 'editorial' | 'manufacturer_no_cart' | 'service' | 'other';
+export type SellsProduct = 'yes' | 'maybe' | 'no';
+export interface Classification { site_type: SiteType; sells_product: SellsProduct }
 
 export interface SourceRef { label: string; url: string }
 
@@ -44,7 +49,7 @@ export interface ScoreComponent {
 }
 
 export interface SearchResult {
-  id: string;             // online: "online:<domain>"; local: "local:<place_id or domain>:<index among local rows kept by the first blocklist pass>"
+  id: string;             // online: "online:<domain>"; local: "local:<place_id or domain>:<index among local rows that reach scoring>"
   kind: ResultKind;
   rank: number;           // 1-based score rank within its section; the UI never renumbers
   retailer: { name: string; domain: string; url: string };

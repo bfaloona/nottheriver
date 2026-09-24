@@ -62,7 +62,7 @@ function candidate(overrides: Partial<Candidate>): Candidate {
 }
 
 const row = (c: Candidate, certs: Certification[] = [], signals: Signal[] = []): EnrichedRow =>
-  ({ candidate: c, certifications: certs, signals });
+  ({ candidate: c, certifications: certs, signals, classification: null });
 const NO_USAGE = { brave_calls: 0, llm: [], llm_tokens: 0, estimated_cost_usd: 0 };
 
 // The blocklist comes from data/blocklist.json, so this checks every entry, not a fixed list.
@@ -165,7 +165,7 @@ describe('query handling', () => {
     const many = { ...NORMALIZED, online_queries: ['q1', 'q2', 'q3', 'q4', 'q5'], local_queries: ['l1', 'l2', 'l3'] };
     const { res, fetch } = await search(defaultRoutes({ normalize: llmReply(many) }));
     const qs = fetch.calls.filter((c) => isBrave(c.url)).map((c) => new URL(c.url).searchParams.get('q'));
-    expect(qs).toEqual(['q1', 'q2', 'q3', 'l1', 'l2']);
+    expect(qs).toEqual(['q1', 'q2', 'q3', 'l1 store', 'l2 store']);
     expect(res.usage.brave_calls).toBe(5);
     expect(MAX_ONLINE_QUERIES + MAX_LOCAL_QUERIES).toBeLessThanOrEqual(MAX_BRAVE_CALLS);
   });
@@ -301,8 +301,12 @@ describe('the second blocklist pass', () => {
 
   it('removes a blocked retailer that enters after the first pass', async () => {
     const { enrichAll: realEnrichAll } = await vi.importActual<typeof import('../src/enrich')>('../src/enrich');
-    // A name the text rule cannot match, so only the domain check can remove it.
-    const injected = row(candidate({ name: 'Prime Deals', domain: 'amazon.com', url: 'https://www.amazon.com/dp/B0' }));
+    // A name the text rule cannot match, so only the domain check can remove it. The model calls
+    // it a shop selling the product, so the classification filter keeps it and only pass 2 can drop it.
+    const injected: EnrichedRow = {
+      ...row(candidate({ name: 'Prime Deals', domain: 'amazon.com', url: 'https://www.amazon.com/dp/B0' })),
+      classification: { site_type: 'retailer', sells_product: 'yes' },
+    };
     vi.mocked(enrichAll).mockImplementationOnce(async (...args) => [...(await realEnrichAll(...args)), injected]);
 
     const { res } = await search();

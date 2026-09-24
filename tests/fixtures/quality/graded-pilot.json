@@ -1,0 +1,1805 @@
+{
+ "_source": "Frozen copy of the 2026-09-23 six-search pilot grades (docs/evidence/quality/grades.json) joined to the saved responses, snippets cut to the 400 characters the model sees. label is a hand label of each page: site_type and sells_product, for a stub classifier. grade is the browser grade.",
+ "rows": [
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4RWTS7FOIGBCUA2X2I45N5SCRYC7O6JJJAAAAAAA=:3",
+   "kind": "local",
+   "url": "https://formaggiokitchen.com/Cambridge",
+   "name": "Formaggio Kitchen",
+   "snippet": "grocery",
+   "address": "358 Huron Ave, Cambridge, MA 02138",
+   "grade": "no",
+   "notes": "gourmet grocery; home goods are knives, boards, accessories; no cookware",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4IVBWX2XBGFCUB7KJPTXAJSKRYAZTVF6F5BEWTYQ=:5",
+   "kind": "local",
+   "url": "https://homegoods.com/",
+   "name": "HomeGoods",
+   "snippet": "",
+   "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+   "grade": "unknown",
+   "notes": "homepage, no online catalog; site store list has Fresh Pond, Cambridge",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6",
+   "kind": "local",
+   "url": "https://homegoods.com/",
+   "name": "HomeGoods",
+   "snippet": "",
+   "address": "60 Everett St, Allston, MA 02134",
+   "grade": "unknown",
+   "notes": "homepage, no online catalog; site store list has no Allston store",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4SKIVR5ZUF5CUAVFRRRUBNRSRYDWLALGTF4XSTRQ=:2",
+   "kind": "local",
+   "url": "https://formaggiokitchen.com/kendall",
+   "name": "Formaggio Kitchen Kendall",
+   "snippet": "",
+   "address": "94 Hampshire St, Cambridge, MA 02139",
+   "grade": "no",
+   "notes": "gourmet grocery; no cookware online",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc45NED6K32GJCUBFLVUSPRLRKRYBL265UHAAAAAAA=:9",
+   "kind": "local",
+   "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row",
+   "name": "Le Creuset Outlet Store",
+   "snippet": "",
+   "address": "510 Assembly Row, Somerville, MA 02145",
+   "grade": "yes",
+   "notes": "store page; site sells enameled cast iron skillets",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc44HZLH3FEFZCUBC6TLLRJFTCRYBC3UJ24AAAAAAA=:11",
+   "kind": "local",
+   "url": "https://kitchencornerstones.com/",
+   "name": "kitchen cornerstones",
+   "snippet": "",
+   "address": "204 California St D, Newton, MA 02458",
+   "grade": "no",
+   "notes": "kitchen design and remodeling",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc42BUGCBNOFJCUBQIMPT52TR2RYCMZQGPDAAAAAAA=:4",
+   "kind": "local",
+   "url": "https://kitchennationusa.com/",
+   "name": "Kitchen Nation",
+   "snippet": "",
+   "address": "311 Washington St #2, Brookline, MA 02445",
+   "grade": "no",
+   "notes": "kitchen remodeling contractor",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8",
+   "kind": "local",
+   "url": "https://masterkitchenpro.com/",
+   "name": "Master Kitchen Essential",
+   "snippet": "",
+   "address": "81 Taft St, Medford, MA 02155",
+   "grade": "unknown",
+   "notes": "site unreachable after 3 tries, with and without www; could not verify address",
+   "label": {
+    "site_type": "other",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=:7",
+   "kind": "local",
+   "url": "https://kitchenwitchjp.com/",
+   "name": "Kitchenwitch",
+   "snippet": "",
+   "address": "671 Centre St, Jamaica Plain, MA 02130",
+   "grade": "unknown",
+   "notes": "kitchen supply shop, no online catalog beyond gift cards",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4IGU2YXC6FZCUBEYJV2UPPSKRYDNXM2PMAAAAAAA=:0",
+   "kind": "local",
+   "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps",
+   "name": "The Home Depot",
+   "snippet": "",
+   "address": "615 Arsenal St, Watertown, MA 02472",
+   "grade": "yes",
+   "notes": "store page; site search lists cast iron skillets",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:bonappetit.com",
+   "kind": "online",
+   "url": "https://www.bonappetit.com/story/best-cast-iron-skillet",
+   "name": "Bon Appétit",
+   "snippet": "It has thinner walls than a typical cast-iron skillet, which allows it to heat up faster. In testing, it came to temp over one minute faster than pans with thicker walls. We were concerned this would mean a reduction in the level of heat retention you’d want to crisp up the edges of some skillet cornbread, but we didn’t find that to be a problem at all. My goal is merely to provide recommendations",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:seriouseats.com",
+   "kind": "online",
+   "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+   "name": "Serious Eats",
+   "snippet": "After examining heat conduction, frying dozens of eggs, searing steaks, and baking loads of cornbread, we found eight excellent cast iron skillets. Cast iron skillets are dead simple pieces of cookware. They’re cast out of an alloy of iron, carbon, and silicon that is sanded and sometimes pre-seasoned. Sure, like most gear, the design and price tag vary depending on the manufacturer, but at their ",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:lancastercastiron.com",
+   "kind": "online",
+   "url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+   "name": "Lancaster Cast Iron",
+   "snippet": "Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Our American-made cast iron skillet collection features a No. 4",
+   "address": null,
+   "grade": "yes",
+   "notes": "collection page lists cast iron skillets with prices",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:epicurious.com",
+   "kind": "online",
+   "url": "https://www.epicurious.com/expert-advice/best-cast-iron-skillet-pan-reviews-article",
+   "name": "Epicurious",
+   "snippet": "Yes, this does mean they require slightly more care and attention than your average stainless steel or nonstick pans, but your reward for a mindful toweling off and the occasional re-seasoning is a skillet that can become a family heirloom—and produce tons of excellent meals along the way. A quality cast-iron skillet is one of the best long-term kitchen investments you can make, and we at the Epic",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:foodnetwork.com",
+   "kind": "online",
+   "url": "https://www.foodnetwork.com/how-to/packages/shopping/sustainable-and-eco-friendly-cookware-brands",
+   "name": "Food Network",
+   "snippet": "We baked, seared, fried and seasoned cast-iron pans to find the perfect pan for you! A basic tenet of sustainability is using materials that can be recycled or are biodegradable, both of which cut back on landfill waste. There are lots of cookware options made from sustainable materials, including cast-iron, stainless steel, aluminum, copper and ceramic. Not only does Our Place's famous Always Pan",
+   "address": null,
+   "grade": "no",
+   "notes": "editorial brand roundup, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:shunkangcookware.com",
+   "kind": "online",
+   "url": "https://www.shunkangcookware.com/news/durable-sustainable-versatile-cast-iron-grill-p.html",
+   "name": "Shunkangcookware",
+   "snippet": "Around the world, millions depend on cooking methods that require durable, efficient, and multi-purpose tools. In many developing regions — and even among eco-conscious consumers internationally — the cast iron grill pan stands out as a practical and sustainable choice. Cast iron pans have been around for centuries, cherished for their durability and unrivaled heat retention. But why does understa",
+   "address": null,
+   "grade": "no",
+   "notes": "article on manufacturer site; wholesale inquiry only, no cart",
+   "label": {
+    "site_type": "manufacturer_no_cart",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:homecrux.com",
+   "kind": "online",
+   "url": "https://www.homecrux.com/sustainable-hornbeam-cast-iron-skillet/271785/",
+   "name": "Homecrux",
+   "snippet": "The Hornbeam Cast Iron Skillet is sustainably made from 95 percent recycled metal using electricity generated from offshore wind energy. Aiming to reintroduce cast iron pans to every kitchen, British cast iron radiator manufacturer Castrads has launched a new cookware brand, Hornbeam. The Hornbeam cast iron skillet is available in 10- and 12-inch diameters to cover a wide range of dishes. Made wit",
+   "address": null,
+   "grade": "no",
+   "notes": "news article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:the-independent.com",
+   "kind": "online",
+   "url": "https://www.the-independent.com/extras/indybest/us/best-cookware-sets-b2962473.html",
+   "name": "The Independent",
+   "snippet": "From Caraway and Our Place to GreenPan and Cuisinart, I’ve found the cookware you’ll want to show off on your countertop From non-stick to stainless steel sets, I've tried, tested, and reviewed the best cookware sets from Caraway, Our Place, GreenPan, Cuisinart and more Ultimately, I wanted to know how these pots and pans perform and who they would be a fit for. Caraway’s 12-piece cookware set cam",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:thegoodtrade.com",
+   "kind": "online",
+   "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/",
+   "name": "The Good Trade",
+   "snippet": "For this guide, I’ve rounded up my favorite nontoxic and eco-friendly cookware and personally tested out some of their best-selling products to find out how they compare with their conventional counterparts. Below, I’ve included notes on how it was to cook with each brand’s wares, how they wore over time, and other details that delighted me. (Spoiler alert: I am obsessed with these goods!) All of ",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "online:warmcazza.com",
+   "kind": "online",
+   "url": "https://www.warmcazza.com/post/non-toxic-cookware-brands-2026",
+   "name": "Warmcazza",
+   "snippet": "The important distinction is certification &quot;non-toxic&quot; as a marketing claim means nothing without specific PFAS-free documentation. Caraway, Our Place, and GreenPan all publish independent certifications. Among coated options, ceramic cookware certified PFAS-free and PTFE-free (Caraway, Our Place, GreenPan) is the safest alternative to traditional non-stick. Quality ceramic pans certifie",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post with affiliate links, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4OZDKKIS7ERCUAV44YXTD5VSRYCHLMLABYSJGN7Q=:9",
+   "kind": "local",
+   "url": "https://ciliciamediterranean.com/",
+   "name": "Cilicia Mediterranean Market and Kitchen",
+   "snippet": "",
+   "address": "7 Main St, Natick, MA 01760",
+   "grade": "no",
+   "notes": "Mediterranean market and prepared food; no cookware",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4UNRFEMXPEZCUATNSD5ZS7VKRYD35623EAAAAAAA=:8",
+   "kind": "local",
+   "url": "https://ifoundmykitchen.com/",
+   "name": "Kitchen Countertops & Cabinets",
+   "snippet": "",
+   "address": "1 Wellesley Rd, Natick, MA 01760",
+   "grade": "no",
+   "notes": "countertop and cabinet installer",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4HNFTKWG5EZCUBZPJAGMFPWCRYCVFV77PAAAAAAA=:10",
+   "kind": "local",
+   "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+   "name": "Harbor Freight",
+   "snippet": "",
+   "address": "321 Speen St #3a, Natick, MA 01760",
+   "grade": "no",
+   "notes": "tool store page; site search for cast iron skillet returns no matching products",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4AKCA6JK2EZCUAXFI7RVXTWCRYBZPKHY7AAAAAAA=:11",
+   "kind": "local",
+   "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+   "name": "Crate & Barrel",
+   "snippet": "",
+   "address": "1245 Worcester St, Natick, MA 01760",
+   "grade": "yes",
+   "notes": "store page; site search lists many cast iron skillets",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc45YQYNQQME5CUBHD7MAZWLWCRYBBTLPS5AAAAAAA=:5",
+   "kind": "local",
+   "url": "https://kohler.com/en/locations/massachusetts/natick/kohler-store-by-supply-new-england",
+   "name": "KOHLER Store by Supply New England (Natick)",
+   "snippet": "",
+   "address": "323 Speen St, Natick, MA 01760",
+   "grade": "no",
+   "notes": "plumbing fixture showroom",
+   "label": {
+    "site_type": "manufacturer_no_cart",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4KKMJY73AEZCUAQP23S76RWCRYDQSKYQAAAAAAAA=:7",
+   "kind": "local",
+   "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+   "name": "BED BATH & BEYOND + The Container Store",
+   "snippet": "service",
+   "address": "1265 Worcester St, Natick, MA 01760",
+   "grade": "yes",
+   "notes": "store page; site search lists enameled cast iron skillets",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc43BD2PLT4EZCUAMC6TDYVXWKRYCJ4ZQZKAAAAAAA=:3",
+   "kind": "local",
+   "url": "https://stores.bestbuy.com/ma/framingham/1-worcester-rd-532.html?loc=ns100",
+   "name": "Pacific Kitchen and Home",
+   "snippet": "",
+   "address": "1 Worcester Rd Ste 23, Framingham, MA 01701",
+   "grade": "yes",
+   "notes": "result named Pacific Kitchen and Home, page is Best Buy store; site search lists cast iron skillet sets",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13",
+   "kind": "local",
+   "url": "https://hobbylobby.com/stores/search/915",
+   "name": "Hobby Lobby",
+   "snippet": "",
+   "address": "1 Worcester Rd, Framingham, MA 01701",
+   "grade": "equivalent",
+   "notes": "store page; site sells only a 5 in mini cast iron serving skillet",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4Z3XNV342EZCUAF2EUSTF3WKRYCKMMJDGAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://locations.us.homesense.com/ma/framingham",
+   "name": "Homesense",
+   "snippet": "",
+   "address": "1 Worcester Rd, Framingham, MA 01701",
+   "grade": "unknown",
+   "notes": "store page; no online catalog",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "local:loc4RYSQORZEE5CUACH3DNMR5WKRYDH7ADDYAAAAAAA=:4",
+   "kind": "local",
+   "url": "https://dvkitchens.com/",
+   "name": "Dolce Vita Kitchen and Bath",
+   "snippet": "",
+   "address": "405 Cochituate Rd, Framingham, MA 01701",
+   "grade": "no",
+   "notes": "kitchen and bath cabinet showroom",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:boroughfurnace.com",
+   "kind": "online",
+   "url": "https://www.boroughfurnace.com/",
+   "name": "Borough Furnace",
+   "snippet": "Cast iron skillets and Dutch ovens, poured and finished by hand in Owego, New York. 100% recycled iron, built to last generations.",
+   "address": null,
+   "grade": "yes",
+   "notes": "homepage; skillets sold with prices and cart",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:seriouseats.com",
+   "kind": "online",
+   "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+   "name": "Serious Eats",
+   "snippet": "The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. Cast iron skillets are dead simple pieces of cookware. They’re cast out of an alloy of iron, carbon, and silicon that is sanded and sometimes pre-seasoned. Sure, like most gea",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:lodgecastiron.com",
+   "kind": "online",
+   "url": "https://www.lodgecastiron.com/",
+   "name": "Lodge Cast Iron",
+   "snippet": "Shop the original home of American cast iron. Create kitchen memories with Lodge Cast Iron skillets, dutch ovens, carbon steel, pans, bakeware &amp; more. NEW: Luxe Enameled Cast Iron, choose your color today! The perfect gift, made by you! | Custom Skillets →",
+   "address": null,
+   "grade": "yes",
+   "notes": "homepage; skillets collection with products",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:fbgcastiron.com",
+   "kind": "online",
+   "url": "https://www.fbgcastiron.com/",
+   "name": "Fbgcastiron",
+   "snippet": "Realize the Benefits of our No. 10 Cast Iron Skillet ... Made in Texas. Crafted by Family | For Family | For Life Shop Equipped with a large main handle, a generous helper handle, an easy to use pour spout, and with the smoothest polished interior cooking surface of any cast iron skillet on the market you won't want to cook with anything else. Additionally our team has hand seasoned your skillet t",
+   "address": null,
+   "grade": "yes",
+   "notes": "homepage lists skillet with price and cart; hCaptcha present only as hidden form widget",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:lancastercastiron.com",
+   "kind": "online",
+   "url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+   "name": "Lancaster Cast Iron",
+   "snippet": "Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Our American-made cast iron skillet collection features a No. 4",
+   "address": null,
+   "grade": "yes",
+   "notes": "collection page lists cast iron skillets with prices",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:prettyorganicgirl.com",
+   "kind": "online",
+   "url": "https://www.prettyorganicgirl.com/cast-iron",
+   "name": "PrettyOrganicGirl",
+   "snippet": "The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, ... The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved m",
+   "address": null,
+   "grade": "no",
+   "notes": "review page with affiliate links, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:madeintheusamatters.com",
+   "kind": "online",
+   "url": "https://madeintheusamatters.com/cast-iron-cookware-made-in-the-usa-american-made-brand-directory/",
+   "name": "Made in the USA Matters",
+   "snippet": "Collectors who appreciate smooth cast iron skillets from boutique brands · Shoppers who want to support American-made cast iron pans and pots Cast iron cookware has a long history in American kitchens, from vintage Griswold skillets to modern pans by Lodge, Smithey, and Stargazer. Shoppers often ask which brands are still making cast iron in the USA, what makes them different, and how to choose th",
+   "address": null,
+   "grade": "no",
+   "notes": "brand directory article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:fieldcompany.com",
+   "kind": "online",
+   "url": "https://fieldcompany.com/collections/cast-iron-skillets",
+   "name": "Field Company",
+   "snippet": "Field Company Cast Iron Skillets are meticulously designed to combine the best features of vintage American cast iron with modern craftsmanship. Our skillets are made in the USA using recycled iron and traditional green sand casting methods, ... Field Skillets are named after vintage cast iron naming conventions, meaning the No.8 Field Skillet is actually 10.25 inches. If you're shopping for your ",
+   "address": null,
+   "grade": "yes",
+   "notes": "collection page lists cast iron skillets with prices",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:artisansbench.com",
+   "kind": "online",
+   "url": "https://www.artisansbench.com/collections/smithey-ironware-co",
+   "name": "The Artisan's Bench",
+   "snippet": "14&quot; Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12&quot; Carbon Steel Round Roaster Pan · $295.00 ... Charleston, SC Made in the US, their skillets begin as raw castings with a surface similar to heavy grit sandpaper. They transform each one into an eleg",
+   "address": null,
+   "grade": "yes",
+   "notes": "collection page lists cast iron skillets with prices",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "result_id": "online:eater.com",
+   "kind": "online",
+   "url": "https://www.eater.com/21525568/how-cast-iron-pans-are-made-by-hand-at-borough-furnace",
+   "name": "Eater",
+   "snippet": "The small shop creates cast iron skillets, oven-to-table bakeware, and Dutch ovens. The molds for each of these items are first designed digitally, and then a machine-produced pattern is created. For the seasoned option, it’s whipped down with flaxseed seed oil because it’s very high in fatty acid which bonds well to the pan when baked, creating a sealant. This finish helps give the pan a non stic",
+   "address": null,
+   "grade": "no",
+   "notes": "feature article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4H44QUEAFHJCUBYQG243QWICSYDVIMS2YAAAAAAA=:9",
+   "kind": "local",
+   "url": "https://joyfriedman.com/",
+   "name": "Joy Friedman Pottery",
+   "snippet": "",
+   "address": "13 Montague Rd, Leverett, MA 01054",
+   "grade": "no",
+   "notes": "pottery studio; no cookware",
+   "label": {
+    "site_type": "other",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4BML2Q62TIVCUB7N22OO2OGKSYCV6QB5WAAAAAAA=:6",
+   "kind": "local",
+   "url": "https://wendellcountrystore.wordpress.com/",
+   "name": "Wendell Country Store",
+   "snippet": "",
+   "address": "57 Lockes Village Rd, Wendell, MA 01379",
+   "grade": "no",
+   "notes": "convenience store and package store; no cookware",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4U6UQVMQKGVCUAD4HLP2AIISSYCUMHXRSAAAAAAA=:0",
+   "kind": "local",
+   "url": "https://cowlsbuildingsupply.com/",
+   "name": "Cowls Building Supply",
+   "snippet": "",
+   "address": "125 Sunderland Rd, Amherst, MA 01059",
+   "grade": "no",
+   "notes": "building supply; site search for cast iron skillet returns only levels, paint, hardware",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4ZRUQKPA7GVCUAYYGZ4U62IKSYDVTEK6HAAAAAAA=:13",
+   "kind": "local",
+   "url": "https://provisionswine.com/",
+   "name": "Provisions, Mill District",
+   "snippet": "",
+   "address": "65 Cowls Rd, Amherst, MA 01002",
+   "grade": "no",
+   "notes": "wine, beer and cheese shop; no cookware",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4",
+   "kind": "local",
+   "url": "https://acehardware.com/store-details/17984",
+   "name": "Hamshaw Lumber-Amherst",
+   "snippet": "",
+   "address": "150 College St, Amherst, MA 01002",
+   "grade": "unknown",
+   "notes": "Cloudflare 'you have been blocked' page on two tries; could not verify store or stock",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc47CCJCAY3GBCUBBHOG57TQIKSYDTIYEPOAAAAAAA=:1",
+   "kind": "local",
+   "url": "https://claysclothing.com/",
+   "name": "Clay's",
+   "snippet": "",
+   "address": "32 Main St, Amherst, MA 01002",
+   "grade": "no",
+   "notes": "women's clothing store; site lists an Amherst location",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4WAH7ZONSQVCEAUCDBJKDK52SYDKK4P3QAAAAAAA=:11",
+   "kind": "local",
+   "url": "https://cookware-co.com/",
+   "name": "The Cookware Company",
+   "snippet": "",
+   "address": "94 N Broadway, Irvington, NY 10533",
+   "grade": "no",
+   "notes": "corporate site of a ceramic nonstick cookware maker; no shop; no office address on site; 198 km from query point",
+   "label": {
+    "site_type": "manufacturer_no_cart",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4U3ZNCPKGIBCUA5GN4SN63WSRYDOD3S2EAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://kitchen-outfitters.com/",
+   "name": "Kitchen Outfitters",
+   "snippet": "",
+   "address": "342 Great Rd, Acton, MA 01720",
+   "grade": "yes",
+   "notes": "kitchenware shop; cookware collection lists cast iron and enameled cast iron; 82 km from query point",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=:3",
+   "kind": "local",
+   "url": "https://kitchenwitchjp.com/",
+   "name": "Kitchenwitch",
+   "snippet": "",
+   "address": "671 Centre St, Jamaica Plain, MA 02130",
+   "grade": "unknown",
+   "notes": "kitchen supply shop, no online catalog beyond gift cards; 108 km from query point",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "local:loc4D6ZO2WL4SZCUB7MPAL5LGQ2SYAZ4XC7YZFGEYNI=:5",
+   "kind": "local",
+   "url": "https://vermontkitchensupply.com/",
+   "name": "Vermont Kitchen Supply",
+   "snippet": "",
+   "address": "4788 Main St, Manchester Center, VT 05255",
+   "grade": "yes",
+   "notes": "kitchen shop; site search lists many cast iron skillets with prices; 95 km from query point",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:seriouseats.com",
+   "kind": "online",
+   "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+   "name": "Serious Eats",
+   "snippet": "The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. Smooth and lightweight cast iron is not only easier to handle, especially when filled with food, but it is also easier to clean, responds more quickly to heat, and will still ",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:thegoodtrade.com",
+   "kind": "online",
+   "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/",
+   "name": "The Good Trade",
+   "snippet": "Our Place is ethically made with responsible materials, and they also partner with organizations combating food insecurity. The pan is beautiful too, and has a lid, which is a must for me! I’d love to be a cast iron girl — it feels like all the good home cooks are — but I have yet to get the hang of it. As demonstrated by my egg, which did not turn out the best of the bunch. Still tasty, but a lit",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:bonappetit.com",
+   "kind": "online",
+   "url": "https://www.bonappetit.com/story/best-cast-iron-skillet",
+   "name": "Bon Appétit",
+   "snippet": "My goal is merely to provide recommendations for cast-iron cookware based on side-by-side testing and the input collectively provided by members of our staff. Agree with my team or don’t, either way, I&#x27;m happy if people are passionate about cooking with cast iron because I too enjoy it a great deal. The heirloom pan your kids will fight over when you die: Lancaster No. 8 Skillet My goal is me",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:prettyorganicgirl.com",
+   "kind": "online",
+   "url": "https://www.prettyorganicgirl.com/cast-iron",
+   "name": "PrettyOrganicGirl",
+   "snippet": "The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, ... The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved m",
+   "address": null,
+   "grade": "no",
+   "notes": "review page with affiliate links, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:foodandwine.com",
+   "kind": "online",
+   "url": "https://www.foodandwine.com/cooking-techniques/cast-iron-pans",
+   "name": "Food & Wine",
+   "snippet": "The other unique characteristic of this skillet is the smooth, matte surface. Field Company pans are made of the same pure iron as other brands, but they’re polished on the inside before being pre-seasoned. Its heirloom-worthy design features a beautiful imprint of the brand’s name on the bottom. The polished finish develops a lovely patina through various cooking and seasoning sessions. I love th",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:forbes.com",
+   "kind": "online",
+   "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cast-iron-skillet/",
+   "name": "Forbes",
+   "snippet": "Out of the enameled pans we’ve tested, the Le Creuset Signature Skillet has earned the highest marks overall. Plus, it comes in over 20 of the brand’s signature colors, including Cerise and Shallot. Ahead, find the best cast-iron skillets in 2025, based on years of hands-on testing. ... We've sent this story to your inbox. ... Lodge is the best-known brand in the cast-iron space, and with good rea",
+   "address": null,
+   "grade": "no",
+   "notes": "review article with affiliate shop buttons, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:booniehicks.com",
+   "kind": "online",
+   "url": "https://www.booniehicks.com/best-cast-iron-skillets/",
+   "name": "Boonie Hicks",
+   "snippet": "Another reason to purchase Lodge is that they proudly make their skillets in the US. And they have manufactured cast-iron cookware since 1896. When it comes to one of the most trusted brands in cast iron cookware, it is hard to look past a skillet made by Lodge Manufacturing . The Staub cast iron skillet is sometimes discounted online. It is a good idea to keep an eye open for these bargains. I lo",
+   "address": null,
+   "grade": "no",
+   "notes": "blog review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:tastingtable.com",
+   "kind": "online",
+   "url": "https://www.tastingtable.com/992992/the-best-cast-iron-brands-ranked/",
+   "name": "Tasting Table",
+   "snippet": "Lancaster Cast Iron is an Amish-made cast iron brand from Pennsylvania. The brand offers two sizes of cast iron skillet: a 10.5-inch (No. 8) and an 11.6-inch (No. 10). These skillets are priced at $175 and $225, respectively, on Lancaster&#x27;s website. Each piece is polished before packaging, resulting in an easy-to-clean and more scratch-resistant product. Butter Pat pans are comparatively ligh",
+   "address": null,
+   "grade": "no",
+   "notes": "brand ranking article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:allrecipes.com",
+   "kind": "online",
+   "url": "https://www.allrecipes.com/longform/best-cast-iron-skillets/",
+   "name": "Allrecipes",
+   "snippet": "When it comes to kitchen gifts, there are few better choices than a good enameled cast iron skillet. They&#x27;re low-maintenance, long-lasting, and extremely versatile. We love this one from Caraway—a brand known for its durable ceramic cookware and stylish food storage containers—that&#x27;s so beautiful you&#x27;ll probably want to display it on the stove while not in use. When it comes to kitc",
+   "address": null,
+   "grade": "no",
+   "notes": "review article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "result_id": "online:artisansbench.com",
+   "kind": "online",
+   "url": "https://www.artisansbench.com/collections/smithey-ironware-co",
+   "name": "The Artisan's Bench",
+   "snippet": "14&quot; Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12&quot; Carbon Steel Round Roaster Pan · $295.00 ... Charleston, SC Made in the US, their skillets begin as raw castings with a surface similar to heavy grit sandpaper. They transform each one into an eleg",
+   "address": null,
+   "grade": "yes",
+   "notes": "collection page lists cast iron skillets with prices",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4BQEAQQNC7FBUBLUFWQQ5VSSSYCPKZN5YAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://philadelphiarunner.com/",
+   "name": "Philadelphia Runner",
+   "snippet": "",
+   "address": "1711 Walnut St, Philadelphia, PA 19103",
+   "grade": "no",
+   "notes": "running shoe and apparel store; site lists Center City store at 1711 Walnut St",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc44RJEWKM67FBUB7KZHVY4VSSSYBIVN47RAAAAAAA=:15",
+   "kind": "local",
+   "url": "https://wearfigs.com/",
+   "name": "FIGS",
+   "snippet": "",
+   "address": "1625 Walnut St, Philadelphia, PA 19103",
+   "grade": "no",
+   "notes": "medical scrubs brand; site lists a Philadelphia Rittenhouse Square store",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc42ZOMT2KG7FBUAL7KUQELVSSSYBCQURDTAAAAAAA=:7",
+   "kind": "local",
+   "url": "https://frankinstienbikeworx.com/",
+   "name": "Frankenstein Bike Worx Spruce St Philadelphia",
+   "snippet": "",
+   "address": "1529 Spruce St, Philadelphia, PA 19102",
+   "grade": "no",
+   "notes": "bike shop; contact page gives 1529 Spruce St",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4BJ7SW7XY7FBUB5BFMWONBSSSYCKU4QE2AAAAAAA=:9",
+   "kind": "local",
+   "url": "https://haworth.com/na/en.html",
+   "name": "Haworth Philadelphia Showroom",
+   "snippet": "",
+   "address": "1700 Market St Ste 600, Philadelphia, PA 19103",
+   "grade": "no",
+   "notes": "office furniture maker homepage; showroom address not found on site",
+   "label": {
+    "site_type": "manufacturer_no_cart",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc42U4EBVMN7FBUAUMUSVYLFSSSYABGWRKSAAAAAAA=:11",
+   "kind": "local",
+   "url": "https://aesop.com/stores/us/pa/philadelphia",
+   "name": "Aesop Walnut Street",
+   "snippet": "",
+   "address": "1528 Walnut St, Philadelphia, PA 19102",
+   "grade": "no",
+   "notes": "skincare store page; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12",
+   "kind": "local",
+   "url": "https://cmcstaff.com/",
+   "name": "Camping Management Corporation",
+   "snippet": "",
+   "address": "1528 Walnut St # 1900, Philadelphia, PA 19102, United States",
+   "grade": "unknown",
+   "notes": "site shows only a 'temporarily unavailable' placeholder; could not tell what it sells or verify address",
+   "label": {
+    "site_type": "other",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4JWJPQJUX7FBUA5DUAHKHTSSSYCPQZ247AAAAAAA=:10",
+   "kind": "local",
+   "url": "https://pineforestcamp.com/",
+   "name": "Pine Forest Camp",
+   "snippet": "",
+   "address": "123 S Broad St #1200, Philadelphia, PA 19109",
+   "grade": "no",
+   "notes": "summer camp; site gives only the camp's own street address, no Philadelphia office shown",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4WRTBUA5B7NBUBQGUQUHPBSCSYDDT5OTJAAAAAAA=:4",
+   "kind": "local",
+   "url": "https://letsgooutdoors.net/",
+   "name": "Let's Go Outdoors, LLC",
+   "snippet": "",
+   "address": "c/o WeWork, Montesino, 1010 N Hancock St, Philadelphia, PA 19123",
+   "grade": "no",
+   "notes": "outdoor education nonprofit, no shop; site lists only a PO Box, listed street address not shown",
+   "label": {
+    "site_type": "other",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4GGGALT6O7RBUAUFT6YWSTSKSYBC4DACEAAAAAAA=:5",
+   "kind": "local",
+   "url": "https://gethandyoutdoors.com/",
+   "name": "gethandyoutdoors",
+   "snippet": "",
+   "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+   "grade": "no",
+   "notes": "gardening guide blog, no shop, no address on site",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4NGSRBSBF7ZBUAI5TYQKHNSCSYAF3ZGQWAAAAAAA=:3",
+   "kind": "local",
+   "url": "https://g.page/TheDickiesStore",
+   "name": "Gear N Up",
+   "snippet": "",
+   "address": "2326 N Front St, Philadelphia, PA 19133",
+   "grade": "no",
+   "notes": "url is a Google Maps listing, not a retailer site; listing says clothing store at the listed address",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:sustainablejungle.com",
+   "kind": "online",
+   "url": "https://www.sustainablejungle.com/eco-friendly-tents/",
+   "name": "Sustainable Jungle",
+   "snippet": "The company utilizes recycled materials and smart design principles to develop ultralight tents made from recycled materials and suited for harsh weather conditions. ... Their lifetime warranty, gear trade-in program, and repair guides will help you get the most out of your camping gear. ... NEMO has stepped up its sustainable tent materials with the Dagger OSMO, a lightweight backpacking tent mad",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:bettertrail.com",
+   "kind": "online",
+   "url": "https://bettertrail.com/sustainability/camping-tents",
+   "name": "Better Trail",
+   "snippet": "To evaluate how sustainable a camping tent is, we consider four product-level criteria: PFAS-free durable water repellent (DWR) coatings, recycled materials, Bluesign-approved materials, and solution-dyed fabrics. We also assess tent brands for their manufacturing practices, packaging reduction, repair programs, resale and recycling services, greenhouse gas emissions tracking, and annual impact re",
+   "address": null,
+   "grade": "no",
+   "notes": "404 page not found",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:campmaid.com",
+   "kind": "online",
+   "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+   "name": "CampMaid",
+   "snippet": "Instead of getting disposable tents for each trip, consider investing in a camping tent that’s made of eco-friendly material. It should be manufactured ethically and be recyclable. As a camping enthusiast, you should always look for sustainable camping gear. It essentially means that this gear should be made in an eco-friendly and ethical way, and you should be able to use this gear repeatedly on ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post on a camp cookware shop; site search for tent returns only dutch ovens and tools",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:ethicalconsumer.org",
+   "kind": "online",
+   "url": "https://www.ethicalconsumer.org/retailers/shopping-guide/outdoor-clothing-shops",
+   "name": "Ethical Consumer",
+   "snippet": "Plus we have rated some secondhand shops in our ethical clothing Guide. See also our article on charity shops. We rated outdoor clothing shops on their policy of using the highly toxic and persistent ‘forever chemicals’, PFAs, which are used as waterproof membranes and coatings, like Gore-Tex. PFAS (per- and polyfluorinated alkyl substances) are a group of harmful industrial chemicals linked to a ",
+   "address": null,
+   "grade": "no",
+   "notes": "UK retailer ratings guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:abodeoutside.com",
+   "kind": "online",
+   "url": "https://abodeoutside.com/collections/all",
+   "name": "Abodeoutside",
+   "snippet": "Abode Outside offers high-quality, sustainable clothing includes hoodies, pullovers, sleeveless, headwear &amp; accessories and more. Shop Now! From recycled polyester and wool blends to innovative new blends, our yarns are chosen for their technical benefits and low environmental footprint. You’ll find eco-conscious gifts and outdoor gear that meet the needs of both minimalists and adventurers. L",
+   "address": null,
+   "grade": "no",
+   "notes": "clothing shop; all 62 products are apparel and hats, no tents",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:lensofjen.org",
+   "kind": "online",
+   "url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/",
+   "name": "The Lens of Jen",
+   "snippet": "And did you know you can also shop for gently used outdoor gear at REI, too? Yep! Shop women’s gear here and men’s ethical outdoor clothing here. Here are a few sustainable outdoor brands that are selling gently used ethical outdoor clothing: Geartrade is an awesome eco-friendly, centralized hub for buying and selling outdoor gear and clothing. The clothes are often so gently “used” that the tags ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post about clothing, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:veggievagabonds.com",
+   "kind": "online",
+   "url": "https://veggievagabonds.com/ethical-outdoor-clothing/",
+   "name": "Veggie Vagabonds",
+   "snippet": "Donate it to a charity/second-hand shop or organisations like Gift Your Gear · Sell it on eBay, Gumtree or any of the other suggestions listed in the second-hand gear section above · Sell it back to the manufacturer: companies like Arc’teryx, Patagonia, REI, AlpKit North Face can reuse them ... You can find plenty more tips in our big Guide to Recycling Outdoor Clothing &amp; Equipment. Great for:",
+   "address": null,
+   "grade": "no",
+   "notes": "blog guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:knownothingnomads.com",
+   "kind": "online",
+   "url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/",
+   "name": "Know Nothing Nomads",
+   "snippet": "Patagonia – As a Certified B Corp, Patagonia sets the standard in ethical business practices, offering sustainable outdoor apparel and gear while committing to environmental and social responsibility. Shop Patagonia at REI. Arc’teryx – A high-end brand known for its superior craftsmanship in outdoor clothing and gear that is particularly favored by climbers and alpinists. Shop RDS products by Arc’",
+   "address": null,
+   "grade": "no",
+   "notes": "blog article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:alwaystheadventure.com",
+   "kind": "online",
+   "url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands",
+   "name": "Always the Adventure",
+   "snippet": "Our sustainable outdoor gear pick: Edelrid Swift Eco 8.9mm x 70m recycled climbing rope (this is the rope we use!) ... “Marmot strives for the highest level of performance and protection with the lowest possible impact on the planet. We have a rigorous process of selecting sustainable materials and manufacturing methods.” ... Eco friendly camping gear range: Eco friendly camping gear like tents an",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:gearjunkie.com",
+   "kind": "online",
+   "url": "https://gearjunkie.com/outdoor/best-independent-gear-shops-america",
+   "name": "GearJunkie",
+   "snippet": "Along with its online companion site GearX.com, the Outdoor Gear Exchange is an everything outfitter: camping, hiking, climbing, mountaineering, telemark, alpine touring, nordic skiing, cycling, paddling, and yoga. When it comes to sustainability, buying used is the easiest and best way to make an environmentally friendly choice. Janky Gear specializes in used outdoor equipment and clothing for ca",
+   "address": null,
+   "grade": "no",
+   "notes": "editorial list of shops, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4V6JZ76KBBRCEBUK3HS6GPUSSYCTOMEUTAAAAAAA=:1",
+   "kind": "local",
+   "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+   "name": "REI",
+   "snippet": "",
+   "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+   "grade": "yes",
+   "notes": "outdoor store page; site lists camping tents; store address on page matches; Climate Label source page confirms REI certified",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4HU2OFOCCBRCEBPG6UI4GZUSSYBXLQZKRAAAAAAA=:9",
+   "kind": "local",
+   "url": "https://rei.com/stores/conshohocken-plymouth-meeting/bike-shop",
+   "name": "REI Bike Shop",
+   "snippet": "",
+   "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+   "grade": "yes",
+   "notes": "bike repair department page of the REI store above (same address); site sells tents; duplicate of the store result",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4WZK77VQEB5CEAOEEFI27XUKSYDCGCJVYAAAAAAA=:6",
+   "kind": "local",
+   "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+   "name": "Boscov's",
+   "snippet": "",
+   "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+   "grade": "unknown",
+   "notes": "department store page; address matches; no outdoor or camping department listed; site search returned a Cloudflare block so could not check",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4ZHIAYPN5BZCEB2XHJVCSVUSSYAPZSQYPAAAAAAA=:0",
+   "kind": "local",
+   "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+   "name": "DICK'S Sporting Goods",
+   "snippet": "",
+   "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+   "grade": "yes",
+   "notes": "sporting goods store page with camping gear category; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5",
+   "kind": "local",
+   "url": "https://orvis.com/plymouthmeeting",
+   "name": "Orvis",
+   "snippet": "",
+   "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+   "grade": "no",
+   "notes": "fly fishing and apparel retailer; store page 404 and PA store list has no Plymouth Meeting store",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:4",
+   "kind": "local",
+   "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+   "name": "DICK'S Sporting Goods",
+   "snippet": "",
+   "address": "THE METROPLEX 2430, Chemical Rd, Plymouth Meeting, PA 19462",
+   "grade": "yes",
+   "notes": "url redirects to the PA store list; site lists only the Germantown Pike store for Plymouth Meeting, no Chemical Rd store; chain sells tents",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4QWANPQUHBVCEBHVWUG65LUSSYAPUTCKYAAAAAAA=:8",
+   "kind": "local",
+   "url": "https://pgatoursuperstore.com/stores/detail?StoreID=1232",
+   "name": "PGA TOUR Superstore Plymouth",
+   "snippet": "",
+   "address": "2410 Chemical Rd, Plymouth Meeting, PA 19462",
+   "grade": "no",
+   "notes": "golf store; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4TGV5KDOKCJCEAJW42A46JVCSYCS7RZHEAAAAAAA=:7",
+   "kind": "local",
+   "url": "https://sfotackle.com/",
+   "name": "Sport Fishing Outlet",
+   "snippet": "",
+   "address": "230 W Germantown Pike, East Norriton Township, PA 19401",
+   "grade": "no",
+   "notes": "fishing tackle and bait shop; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=:10",
+   "kind": "local",
+   "url": "https://foundingfathersphilly.com/",
+   "name": "Founding Fathers Outfitters",
+   "snippet": "",
+   "address": "9280 Ridge Pike, Lafayette Hill, PA 19444",
+   "grade": "unknown",
+   "notes": "domain does not resolve; browser error page",
+   "label": {
+    "site_type": "other",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc425WVB65NBVCEATM7DVYF3VSSYDVMT3GZAAAAAAA=:12",
+   "kind": "local",
+   "url": "https://sunlinesupply.com/",
+   "name": "Sunline Supply",
+   "snippet": "",
+   "address": "313 W 4th St Ste B, Bridgeport, PA 19405",
+   "grade": "unknown",
+   "notes": "domain does not resolve; browser error page",
+   "label": {
+    "site_type": "other",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:sustainablejungle.com",
+   "kind": "online",
+   "url": "https://www.sustainablejungle.com/eco-friendly-tents/",
+   "name": "Sustainable Jungle",
+   "snippet": "The company utilizes recycled materials and smart design principles to develop ultralight tents made from recycled materials and suited for harsh weather conditions. ... Their lifetime warranty, gear trade-in program, and repair guides will help you get the most out of your camping gear. ... NEMO has stepped up its sustainable tent materials with the Dagger OSMO, a lightweight backpacking tent mad",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:bettertrail.com",
+   "kind": "online",
+   "url": "https://bettertrail.com/sustainability/camping-tents",
+   "name": "Better Trail",
+   "snippet": "To evaluate how sustainable a camping tent is, we consider four product-level criteria: PFAS-free durable water repellent (DWR) coatings, recycled materials, Bluesign-approved materials, and solution-dyed fabrics. We also assess tent brands for their manufacturing practices, packaging reduction, repair programs, resale and recycling services, greenhouse gas emissions tracking, and annual impact re",
+   "address": null,
+   "grade": "no",
+   "notes": "404 page not found",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:campmaid.com",
+   "kind": "online",
+   "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+   "name": "CampMaid",
+   "snippet": "Instead of getting disposable tents for each trip, consider investing in a camping tent that’s made of eco-friendly material. It should be manufactured ethically and be recyclable. As a camping enthusiast, you should always look for sustainable camping gear. It essentially means that this gear should be made in an eco-friendly and ethical way, and you should be able to use this gear repeatedly on ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post on a camp cookware shop; shop menu is dutch ovens and tools only",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:ethicalconsumer.org",
+   "kind": "online",
+   "url": "https://www.ethicalconsumer.org/retailers/shopping-guide/outdoor-clothing-shops",
+   "name": "Ethical Consumer",
+   "snippet": "Plus we have rated some secondhand shops in our ethical clothing Guide. See also our article on charity shops. We rated outdoor clothing shops on their policy of using the highly toxic and persistent ‘forever chemicals’, PFAs, which are used as waterproof membranes and coatings, like Gore-Tex. PFAS (per- and polyfluorinated alkyl substances) are a group of harmful industrial chemicals linked to a ",
+   "address": null,
+   "grade": "no",
+   "notes": "UK retailer ratings guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:abodeoutside.com",
+   "kind": "online",
+   "url": "https://abodeoutside.com/collections/all",
+   "name": "Abodeoutside",
+   "snippet": "Abode Outside offers high-quality, sustainable clothing includes hoodies, pullovers, sleeveless, headwear &amp; accessories and more. Shop Now! From recycled polyester and wool blends to innovative new blends, our yarns are chosen for their technical benefits and low environmental footprint. You’ll find eco-conscious gifts and outdoor gear that meet the needs of both minimalists and adventurers. L",
+   "address": null,
+   "grade": "no",
+   "notes": "clothing shop; 62 products, all apparel, no tents",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:lensofjen.org",
+   "kind": "online",
+   "url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/",
+   "name": "The Lens of Jen",
+   "snippet": "And did you know you can also shop for gently used outdoor gear at REI, too? Yep! Shop women’s gear here and men’s ethical outdoor clothing here. Here are a few sustainable outdoor brands that are selling gently used ethical outdoor clothing: Geartrade is an awesome eco-friendly, centralized hub for buying and selling outdoor gear and clothing. The clothes are often so gently “used” that the tags ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post about clothing, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:veggievagabonds.com",
+   "kind": "online",
+   "url": "https://veggievagabonds.com/ethical-outdoor-clothing/",
+   "name": "Veggie Vagabonds",
+   "snippet": "Donate it to a charity/second-hand shop or organisations like Gift Your Gear · Sell it on eBay, Gumtree or any of the other suggestions listed in the second-hand gear section above · Sell it back to the manufacturer: companies like Arc’teryx, Patagonia, REI, AlpKit North Face can reuse them ... You can find plenty more tips in our big Guide to Recycling Outdoor Clothing &amp; Equipment. Great for:",
+   "address": null,
+   "grade": "no",
+   "notes": "blog guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:knownothingnomads.com",
+   "kind": "online",
+   "url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/",
+   "name": "Know Nothing Nomads",
+   "snippet": "Patagonia – As a Certified B Corp, Patagonia sets the standard in ethical business practices, offering sustainable outdoor apparel and gear while committing to environmental and social responsibility. Shop Patagonia at REI. Arc’teryx – A high-end brand known for its superior craftsmanship in outdoor clothing and gear that is particularly favored by climbers and alpinists. Shop RDS products by Arc’",
+   "address": null,
+   "grade": "no",
+   "notes": "blog article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:alwaystheadventure.com",
+   "kind": "online",
+   "url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands",
+   "name": "Always the Adventure",
+   "snippet": "Our sustainable outdoor gear pick: Edelrid Swift Eco 8.9mm x 70m recycled climbing rope (this is the rope we use!) ... “Marmot strives for the highest level of performance and protection with the lowest possible impact on the planet. We have a rigorous process of selecting sustainable materials and manufacturing methods.” ... Eco friendly camping gear range: Eco friendly camping gear like tents an",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:gearjunkie.com",
+   "kind": "online",
+   "url": "https://gearjunkie.com/outdoor/best-independent-gear-shops-america",
+   "name": "GearJunkie",
+   "snippet": "Along with its online companion site GearX.com, the Outdoor Gear Exchange is an everything outfitter: camping, hiking, climbing, mountaineering, telemark, alpine touring, nordic skiing, cycling, paddling, and yoga. When it comes to sustainability, buying used is the easiest and best way to make an environmentally friendly choice. Janky Gear specializes in used outdoor equipment and clothing for ca",
+   "address": null,
+   "grade": "no",
+   "notes": "editorial list of shops, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4RB27ICPKI5CEA3PUPOWKUACTYAELSGRCAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://priorityonesurplus.com/",
+   "name": "Priority One Surplus",
+   "snippet": "",
+   "address": "1744 Tilden Ridge Dr, Hamburg, PA 19526",
+   "grade": "unknown",
+   "notes": "military surplus store; address matches; online search for tent returns nothing, site says webstore is a fraction of inventory",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4WFZMGSTAI5CEAPNMQH3R6ACTYAH2CQNZWJAUEMQ=:0",
+   "kind": "local",
+   "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+   "name": "Cabela's",
+   "snippet": "",
+   "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+   "grade": "yes",
+   "notes": "outdoor store page with camping department; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc42PHHUQWAI5CEBLYJNGG4D72SYAO2GX26AAAAAAA=:1",
+   "kind": "local",
+   "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+   "name": "Camping World - Hamburg",
+   "snippet": "",
+   "address": "20 Industrial Dr, Hamburg, PA 19526",
+   "grade": "yes",
+   "notes": "RV dealer page; address matches; site search lists camping tents for sale",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4TVMVYLOBI5CEB7ATAHZ3L72SYBGWPHUFAAAAAAA=:5",
+   "kind": "local",
+   "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania/rv-parts-supplies",
+   "name": "Camping World RV Parts & Accessories - Hamburg",
+   "snippet": "",
+   "address": "20 Industrial Dr, Hamburg, PA 19526",
+   "grade": "yes",
+   "notes": "parts department page of the RV dealer above (same address); site sells tents; duplicate of the dealer result",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc445QOY43LI5CEBODICIDC6ACTYAP4MBM3AAAAAAA=:9",
+   "kind": "local",
+   "url": "https://cabelas.com/category/Hamburg-Gun-Library/105937380.uts",
+   "name": "Hamburg Gun Library",
+   "snippet": "",
+   "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+   "grade": "yes",
+   "notes": "gun library department url redirects to the Cabela's homepage after a brief interstitial; site sells tents; store page lists a gun library at the same address; duplicate of the store result",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4ZVJ4FOGAI5CEAQVGY2K4J72SYCXO5TURAAAAAAA=:11",
+   "kind": "local",
+   "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+   "name": "Propane Refills at Camping World",
+   "snippet": "",
+   "address": "20 Industrial Dr, Hamburg, PA 19526",
+   "grade": "yes",
+   "notes": "RV dealer page; address matches; site search lists camping tents for sale",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "yes"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4556WA7PSJBCEAB2A3TKSX72SYD7RP7SSAAAAAAA=:13",
+   "kind": "local",
+   "url": "https://olivetbgc.org/blue-mountain-camp",
+   "name": "Olivet Blue Mountain Camp Inc",
+   "snippet": "",
+   "address": "115 Mountain Ave, Hamburg, PA 19526",
+   "grade": "no",
+   "notes": "youth club camp and event venue rental, no shop; address matches",
+   "label": {
+    "site_type": "service",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4KQVJO7FCIVCEBW6IFPDK77SSYAQ7PEGKAAAAAAA=:7",
+   "kind": "local",
+   "url": "https://outdoorcoverwarehouse.com/Hamburg-Pennsylvania",
+   "name": "Outdoor Cover Warehouse",
+   "snippet": "",
+   "address": "802 S Fourth St, Hamburg, PA 19526",
+   "grade": "no",
+   "notes": "patio, RV, boat and car cover store; address matches",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4BNXFVX3WIVCEB7XNWJPXP7SSYCEL4Y2GAAAAAAA=:12",
+   "kind": "local",
+   "url": "https://chesacorv.com/hamburg",
+   "name": "Chesaco RV - Hamburg",
+   "snippet": "",
+   "address": "500 Hawk Ridge Dr Suites 9-11, Hamburg, PA 19526",
+   "grade": "no",
+   "notes": "RV dealer; site nav is RVs, financing, service and parts, no gear shop; location page is a site error page; site lists a Hamburg PA location but shows no address",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=:3",
+   "kind": "local",
+   "url": "https://stevesoutdoor.myshopify.com/",
+   "name": "Steve’s Outdoor Solutions LLC",
+   "snippet": "",
+   "address": "448 Pine Swamp Rd, Kempton, PA 19529",
+   "grade": "unknown",
+   "notes": "Shopify placeholder says store unavailable; nothing to judge",
+   "label": {
+    "site_type": "other",
+    "sells_product": "maybe"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:sustainablejungle.com",
+   "kind": "online",
+   "url": "https://www.sustainablejungle.com/eco-friendly-tents/",
+   "name": "Sustainable Jungle",
+   "snippet": "The company utilizes recycled materials and smart design principles to develop ultralight tents made from recycled materials and suited for harsh weather conditions. ... Their lifetime warranty, gear trade-in program, and repair guides will help you get the most out of your camping gear. ... NEMO has stepped up its sustainable tent materials with the Dagger OSMO, a lightweight backpacking tent mad",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:bettertrail.com",
+   "kind": "online",
+   "url": "https://bettertrail.com/sustainability/camping-tents",
+   "name": "Better Trail",
+   "snippet": "To evaluate how sustainable a camping tent is, we consider four product-level criteria: PFAS-free durable water repellent (DWR) coatings, recycled materials, Bluesign-approved materials, and solution-dyed fabrics. We also assess tent brands for their manufacturing practices, packaging reduction, repair programs, resale and recycling services, greenhouse gas emissions tracking, and annual impact re",
+   "address": null,
+   "grade": "no",
+   "notes": "404 page not found",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:campmaid.com",
+   "kind": "online",
+   "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+   "name": "CampMaid",
+   "snippet": "Instead of getting disposable tents for each trip, consider investing in a camping tent that’s made of eco-friendly material. It should be manufactured ethically and be recyclable. As a camping enthusiast, you should always look for sustainable camping gear. It essentially means that this gear should be made in an eco-friendly and ethical way, and you should be able to use this gear repeatedly on ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post on a camp cookware shop; shop menu is dutch ovens and tools only",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:ethicalconsumer.org",
+   "kind": "online",
+   "url": "https://www.ethicalconsumer.org/retailers/shopping-guide/outdoor-clothing-shops",
+   "name": "Ethical Consumer",
+   "snippet": "Plus we have rated some secondhand shops in our ethical clothing Guide. See also our article on charity shops. We rated outdoor clothing shops on their policy of using the highly toxic and persistent ‘forever chemicals’, PFAs, which are used as waterproof membranes and coatings, like Gore-Tex. PFAS (per- and polyfluorinated alkyl substances) are a group of harmful industrial chemicals linked to a ",
+   "address": null,
+   "grade": "no",
+   "notes": "UK retailer ratings guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:abodeoutside.com",
+   "kind": "online",
+   "url": "https://abodeoutside.com/collections/all",
+   "name": "Abodeoutside",
+   "snippet": "Abode Outside offers high-quality, sustainable clothing includes hoodies, pullovers, sleeveless, headwear &amp; accessories and more. Shop Now! From recycled polyester and wool blends to innovative new blends, our yarns are chosen for their technical benefits and low environmental footprint. You’ll find eco-conscious gifts and outdoor gear that meet the needs of both minimalists and adventurers. L",
+   "address": null,
+   "grade": "no",
+   "notes": "clothing shop; 62 products, all apparel, no tents",
+   "label": {
+    "site_type": "retailer",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:lensofjen.org",
+   "kind": "online",
+   "url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/",
+   "name": "The Lens of Jen",
+   "snippet": "And did you know you can also shop for gently used outdoor gear at REI, too? Yep! Shop women’s gear here and men’s ethical outdoor clothing here. Here are a few sustainable outdoor brands that are selling gently used ethical outdoor clothing: Geartrade is an awesome eco-friendly, centralized hub for buying and selling outdoor gear and clothing. The clothes are often so gently “used” that the tags ",
+   "address": null,
+   "grade": "no",
+   "notes": "blog post about clothing, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:veggievagabonds.com",
+   "kind": "online",
+   "url": "https://veggievagabonds.com/ethical-outdoor-clothing/",
+   "name": "Veggie Vagabonds",
+   "snippet": "Donate it to a charity/second-hand shop or organisations like Gift Your Gear · Sell it on eBay, Gumtree or any of the other suggestions listed in the second-hand gear section above · Sell it back to the manufacturer: companies like Arc’teryx, Patagonia, REI, AlpKit North Face can reuse them ... You can find plenty more tips in our big Guide to Recycling Outdoor Clothing &amp; Equipment. Great for:",
+   "address": null,
+   "grade": "no",
+   "notes": "blog guide, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:knownothingnomads.com",
+   "kind": "online",
+   "url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/",
+   "name": "Know Nothing Nomads",
+   "snippet": "Patagonia – As a Certified B Corp, Patagonia sets the standard in ethical business practices, offering sustainable outdoor apparel and gear while committing to environmental and social responsibility. Shop Patagonia at REI. Arc’teryx – A high-end brand known for its superior craftsmanship in outdoor clothing and gear that is particularly favored by climbers and alpinists. Shop RDS products by Arc’",
+   "address": null,
+   "grade": "no",
+   "notes": "blog article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:alwaystheadventure.com",
+   "kind": "online",
+   "url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands",
+   "name": "Always the Adventure",
+   "snippet": "Our sustainable outdoor gear pick: Edelrid Swift Eco 8.9mm x 70m recycled climbing rope (this is the rope we use!) ... “Marmot strives for the highest level of performance and protection with the lowest possible impact on the planet. We have a rigorous process of selecting sustainable materials and manufacturing methods.” ... Eco friendly camping gear range: Eco friendly camping gear like tents an",
+   "address": null,
+   "grade": "no",
+   "notes": "brand roundup article, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:gearjunkie.com",
+   "kind": "online",
+   "url": "https://gearjunkie.com/outdoor/best-independent-gear-shops-america",
+   "name": "GearJunkie",
+   "snippet": "Along with its online companion site GearX.com, the Outdoor Gear Exchange is an everything outfitter: camping, hiking, climbing, mountaineering, telemark, alpine touring, nordic skiing, cycling, paddling, and yoga. When it comes to sustainability, buying used is the easiest and best way to make an environmentally friendly choice. Janky Gear specializes in used outdoor equipment and clothing for ca",
+   "address": null,
+   "grade": "no",
+   "notes": "editorial list of shops, no shop",
+   "label": {
+    "site_type": "editorial",
+    "sells_product": "no"
+   }
+  }
+ ]
+}

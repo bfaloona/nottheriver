@@ -10,7 +10,8 @@ import type {
 } from './contract';
 import { enrichAll, type CertificationRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
 import { InvalidLlmOutput } from './errors';
-import { NORMALIZE_MAX_TOKENS, createLlmClient } from './llm';
+import { NORMALIZE_MAX_TOKENS, createLlmClient, type LlmClient } from './llm';
+import { dropReason, isEditorialUrl, splitEditorial } from './precision';
 import { estimateCost } from './pricing';
 import { buildNormalizePrompt } from './prompts';
 
@@ -41,6 +42,26 @@ function truncate(n: Normalized): Normalized {
   };
 }
 
+const words = (s: string) => s.toLowerCase().split(/\s+/).map((w) => w.replace(/[.,:;!?]+$/, '')).filter(Boolean);
+
+// These words pull review roundups instead of shops. One the shopper typed stays ("tank top").
+const EDITORIAL_QUERY_WORDS: ReadonlySet<string> = new Set(['best', 'top', 'review', 'reviews', 'vs']);
+export function shopQuery(q: string, product: string): string {
+  const typed = new Set(words(product));
+  return q.split(/\s+/).filter((w) => {
+    const [word] = words(w);
+    return !word || !EDITORIAL_QUERY_WORDS.has(word) || typed.has(word);
+  }).join(' ').trim();
+}
+
+// A place search for a room or an activity ("kitchen", "camping") returned remodelers and
+// camps; naming a kind of store keeps it to shops.
+const STORE_WORDS: ReadonlySet<string> = new Set(['store', 'stores', 'shop', 'shops', 'outfitters']);
+export function storeQuery(q: string): string {
+  const last = words(q).at(-1);
+  return last && STORE_WORDS.has(last) ? q : `${q} store`;
+}
+
 // The model may echo a blocked brand back ("Amazon Basics ..."); stripping it here keeps it
 // out of the search queries and the response. The fallback is scrubbed too, so a product the
 // user typed as a blocked brand cannot come back as the canonical name.
@@ -50,8 +71,8 @@ export function scrubNormalized(n: Normalized, product: string): Normalized {
     category: scrubBlockedText(n.category),
     canonical_name: scrubBlockedText(n.canonical_name) || scrubBlockedText(product),
     similar_products: list(n.similar_products),
-    online_queries: list(n.online_queries),
-    local_queries: list(n.local_queries),
+    online_queries: list(n.online_queries).map((q) => shopQuery(q, product)).filter(Boolean),
+    local_queries: list(n.local_queries).map(storeQuery),
   };
   if (scrubbed.online_queries.length === 0) throw new InvalidLlmOutput();
   return scrubbed;
@@ -68,16 +89,52 @@ export async function fetchCandidates(n: Normalized, req: SearchRequest, brave: 
   return batches.flat();
 }
 
-// First occurrence wins. A shop can appear once online and once locally, and two branches of
-// one chain are separate places.
+// The street part of a display address, without the unit, so the departments of one store
+// ("REI" and "REI Bike Shop" at "200 Ridge Pike Ste 115") share a key. "Space" counts as a unit
+// only before a number, so a street such as "Space Park Dr" survives.
+export function addressKey(displayAddress: string | null): string | null {
+  const street = (displayAddress ?? '').split(',')[0]!.toLowerCase();
+  const key = street.split(/\s(?:ste|suites?|unit)\b|\sspace\s+#?\d|#/)[0]!.replace(/\s+/g, ' ').trim();
+  return key || null;
+}
+
+function dedupeKey(c: Candidate): string {
+  if (c.kind === 'online') return `online:${c.domain}`;
+  const address = addressKey(c.address);
+  return address ? `local:${c.domain}:${address}` : `local:${c.place_id ?? c.url}`;
+}
+
+// A shop can appear once online and once locally. Online, the first page per domain wins unless
+// it is editorial and a later page is not: the editorial one would be dropped after dedupe,
+// taking the shop with it.
+// Locally, one domain at one street address is one store, and the shortest name is the store
+// rather than a department; branches of a chain have different addresses, so they stay apart.
+// A name-prefix rule would merge those branches, so there is none.
 export function dedupe(candidates: Candidate[]): Candidate[] {
-  const seen = new Set<string>();
-  return candidates.filter((c) => {
-    const key = c.kind === 'online' ? `online:${c.domain}` : `local:${c.place_id ?? c.url}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  const at = new Map<string, number>();
+  const out: Candidate[] = [];
+  for (const c of candidates) {
+    const key = dedupeKey(c);
+    const i = at.get(key);
+    if (i === undefined) {
+      at.set(key, out.length);
+      out.push(c);
+    } else if (c.kind === 'local' ? c.name.length < out[i]!.name.length : isEditorialUrl(out[i]!.url) && !isEditorialUrl(c.url)) {
+      out[i] = c;
+    }
+  }
+  return out;
+}
+
+// Editorial pages go to the model after the shops, so a cap cuts them first; they stay as
+// citable evidence for signals but are never results. A row the model judged not to be a shop
+// selling the product is dropped; one it did not judge is kept.
+export async function enrichAndFilter(pass1: Candidate[], llm: LlmClient, n: Normalized): Promise<EnrichedRow[]> {
+  const { shops, editorial } = splitEditorial(pass1);
+  if (shops.length === 0) return [];
+  const evidenceOnly = new Set(editorial);
+  const rows = await enrichAll([...shops, ...editorial], llm, curated, n);
+  return rows.filter((r) => !evidenceOnly.has(r.candidate) && dropReason(r.classification) === null);
 }
 
 function scoreRow(id: string, input: ScoreInput): ScoredRow {
@@ -166,7 +223,7 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   // Scrubbed before truncating, so blocked queries cannot take the slots of usable ones.
   const n = truncate(scrubNormalized(raw, req.product));
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
-  const enriched = await enrichAll(pass1, llm, curated); // no model call when pass1 is empty
-  const scored = scoreAll(enriched, n, req, siteUrl);
+  const kept = await enrichAndFilter(pass1, llm, n); // no model call when no shop survives pass 1
+  const scored = scoreAll(kept, n, req, siteUrl);
   return finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]));
 }

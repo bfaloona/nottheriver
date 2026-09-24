@@ -1,10 +1,12 @@
 import { normalizeName } from './blocklist';
-import type { Candidate, CertKind, Certification, Signal, SignalKind } from './contract';
+import type { Candidate, CertKind, Certification, Classification, SellsProduct, Signal, SignalKind, SiteType } from './contract';
 import { domainLabel, registrableDomain } from './domain';
 import { ENRICH_MAX_TOKENS, type LlmClient } from './llm';
-import { buildEnrichPrompt, type LlmView } from './prompts';
+import { buildEnrichPrompt, type EnrichProduct, type LlmView } from './prompts';
 
-export const MAX_LLM_CANDIDATES = 30;
+// Separate caps, because with one shared cap a full online list left local candidates unseen.
+export const MAX_LLM_ONLINE = 24;
+export const MAX_LLM_LOCAL = 16;
 export const LLM_TITLE_CHARS = 120;
 export const LLM_SNIPPET_CHARS = 400;
 
@@ -15,12 +17,18 @@ export interface CuratedData {
   negatives: NegativeRow[];
   negativeSources: ReadonlySet<string>;
 }
-export interface EnrichedRow { candidate: Candidate; certifications: Certification[]; signals: Signal[] }
+export interface EnrichedRow {
+  candidate: Candidate;
+  certifications: Certification[];
+  signals: Signal[];
+  classification: Classification | null; // null: the model did not judge this candidate
+}
 export interface EnrichOutput {
   retailers: Array<{
     domain: string;
     signals: Array<{ kind: SignalKind; polarity: 'positive' | 'negative'; claim: string; source_url: string; confidence: number }>;
   }>;
+  candidates: Array<{ id: string; site_type: string; sells_product: string }>;
 }
 
 export const CERT_LABELS: Record<CertKind, string> = {
@@ -45,13 +53,36 @@ export function negativesFor(domain: string, rows: NegativeRow[]): Signal[] {
 }
 
 // Candidates arrive with location fields; this projection is the only shape the model sees.
+// An id is the candidate's index in the input, so it still points at the right row when a cap skips some.
 export function llmView(candidates: Candidate[]): LlmView[] {
-  return candidates.slice(0, MAX_LLM_CANDIDATES).map((c) => ({
-    domain: c.domain,
-    title: c.title.slice(0, LLM_TITLE_CHARS),
-    snippet: c.snippet.slice(0, LLM_SNIPPET_CHARS),
-    url: c.url,
-  }));
+  const seen = { online: 0, local: 0 };
+  const cap = { online: MAX_LLM_ONLINE, local: MAX_LLM_LOCAL };
+  return candidates.flatMap((c, i) => {
+    if (seen[c.kind]++ >= cap[c.kind]) return [];
+    return [{
+      id: `c${i}`,
+      domain: c.domain,
+      title: c.title.slice(0, LLM_TITLE_CHARS),
+      snippet: c.snippet.slice(0, LLM_SNIPPET_CHARS),
+      url: c.url,
+    }];
+  });
+}
+
+// Only ids that were sent count, and the first answer for an id wins.
+const SITE_TYPES: ReadonlySet<string> = new Set<SiteType>(['retailer', 'marketplace', 'editorial', 'manufacturer_no_cart', 'service', 'other']);
+const SELLS: ReadonlySet<string> = new Set<SellsProduct>(['yes', 'maybe', 'no']);
+
+// The reply schema takes any short string here, so one made-up value cannot fail the whole
+// search; a candidate with a value outside the lists stays unclassified and is kept.
+export function acceptClassifications(output: EnrichOutput, view: LlmView[]): Map<string, Classification> {
+  const sent = new Set(view.map((v) => v.id));
+  const accepted = new Map<string, Classification>();
+  for (const { id, site_type, sells_product } of output.candidates) {
+    if (!sent.has(id) || accepted.has(id) || !SITE_TYPES.has(site_type) || !SELLS.has(sells_product)) continue;
+    accepted.set(id, { site_type: site_type as SiteType, sells_product: sells_product as SellsProduct });
+  }
+  return accepted;
 }
 
 function urlKey(url: string): string | null {
@@ -112,13 +143,16 @@ export function acceptSignals(
   return accepted;
 }
 
-export async function enrichAll(pass1: Candidate[], llm: LlmClient, data: CuratedData): Promise<EnrichedRow[]> {
+export async function enrichAll(pass1: Candidate[], llm: LlmClient, data: CuratedData, product: EnrichProduct): Promise<EnrichedRow[]> {
   if (pass1.length === 0) return [];
-  const output = await llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(llmView(pass1)), ENRICH_MAX_TOKENS);
+  const view = llmView(pass1);
+  const output = await llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(view, product), ENRICH_MAX_TOKENS);
   const accepted = acceptSignals(output, pass1, data.negativeSources);
-  return pass1.map((candidate) => ({
+  const classified = acceptClassifications(output, view);
+  return pass1.map((candidate, i) => ({
     candidate,
     certifications: certificationsFor(candidate.domain, data.certifications),
     signals: [...negativesFor(candidate.domain, data.negatives), ...(accepted.get(candidate.domain) ?? [])],
+    classification: classified.get(`c${i}`) ?? null,
   }));
 }
