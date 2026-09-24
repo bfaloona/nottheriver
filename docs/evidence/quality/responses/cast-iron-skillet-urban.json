@@ -1,0 +1,1433 @@
+{
+  "id": "cast-iron-skillet-urban",
+  "checked": "2026-09-23T22:46:44.138Z",
+  "request": {
+    "product": "cast iron skillet",
+    "city": "Cambridge",
+    "state": "MA",
+    "lat": 42.38,
+    "lon": -71.14
+  },
+  "status": 200,
+  "elapsed_ms": 19278,
+  "body": {
+    "query": {
+      "product": "cast iron skillet",
+      "city": "Cambridge",
+      "state": "MA",
+      "canonical_name": "cast iron skillet",
+      "category": "cookware"
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4RWTS7FOIGBCUA2X2I45N5SCRYC7O6JJJAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Formaggio Kitchen",
+          "domain": "formaggiokitchen.com",
+          "url": "https://formaggiokitchen.com/Cambridge"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "358 Huron Ave, Cambridge, MA 02138",
+        "distance_km": 0.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.499,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Formaggio Kitchen",
+                "url": "https://formaggiokitchen.com/Cambridge"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.995,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4IVBWX2XBGFCUB7KJPTXAJSKRYAZTVF6F5BEWTYQ=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+        "distance_km": 1.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.496,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "HomeGoods",
+                "url": "https://homegoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9725,
+            "weight": 0.15,
+            "contribution": 0.146,
+            "sources": [
+              {
+                "label": "1.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "60 Everett St, Allston, MA 02134",
+        "distance_km": 2.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.49,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "HomeGoods",
+                "url": "https://homegoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.935,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "2.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4SKIVR5ZUF5CUAVFRRRUBNRSRYDWLALGTF4XSTRQ=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Formaggio Kitchen Kendall",
+          "domain": "formaggiokitchen.com",
+          "url": "https://formaggiokitchen.com/kendall"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "94 Hampshire St, Cambridge, MA 02139",
+        "distance_km": 3.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.485,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Formaggio Kitchen Kendall",
+                "url": "https://formaggiokitchen.com/kendall"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9025,
+            "weight": 0.15,
+            "contribution": 0.135,
+            "sources": [
+              {
+                "label": "3.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc45NED6K32GJCUBFLVUSPRLRKRYBL265UHAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Le Creuset Outlet Store",
+          "domain": "lecreuset.com",
+          "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "510 Assembly Row, Somerville, MA 02145",
+        "distance_km": 5.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Le Creuset Outlet Store",
+                "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.87,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc44HZLH3FEFZCUBC6TLLRJFTCRYBC3UJ24AAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "kitchen cornerstones",
+          "domain": "kitchencornerstones.com",
+          "url": "https://kitchencornerstones.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "204 California St D, Newton, MA 02458",
+        "distance_km": 5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "kitchen cornerstones",
+                "url": "https://kitchencornerstones.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc42BUGCBNOFJCUBQIMPT52TR2RYCMZQGPDAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Kitchen Nation",
+          "domain": "kitchennationusa.com",
+          "url": "https://kitchennationusa.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "311 Washington St #2, Brookline, MA 02445",
+        "distance_km": 5.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.48,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Kitchen Nation",
+                "url": "https://kitchennationusa.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.865,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "5.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Master Kitchen Essential",
+          "domain": "masterkitchenpro.com",
+          "url": "https://masterkitchenpro.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "81 Taft St, Medford, MA 02155",
+        "distance_km": 6.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.474,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Master Kitchen Essential",
+                "url": "https://masterkitchenpro.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8275,
+            "weight": 0.15,
+            "contribution": 0.124,
+            "sources": [
+              {
+                "label": "6.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Kitchenwitch",
+          "domain": "kitchenwitchjp.com",
+          "url": "https://kitchenwitchjp.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "671 Centre St, Jamaica Plain, MA 02130",
+        "distance_km": 7.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.471,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Kitchenwitch",
+                "url": "https://kitchenwitchjp.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8049999999999999,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4IGU2YXC6FZCUBEYJV2UPPSKRYDNXM2PMAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "615 Arsenal St, Watertown, MA 02472",
+        "distance_km": 2.4,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.416,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The Home Depot",
+                "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.94,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "2.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:bonappetit.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bon Appétit",
+          "domain": "bonappetit.com",
+          "url": "https://www.bonappetit.com/story/best-cast-iron-skillet"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "It has thinner walls than a typical cast-iron skillet, which allows it to heat up faster. In testing, it came to temp over one minute faster than pans with thicker walls. We were concerned this would mean a reduction in the level of heat retention you’d want to crisp up the edges of some skillet cornbread, but we didn’t find that to be a problem at all. My goal is merely to provide recommendations for cast-iron cookware based on side-by-side testing and the input collectively provided by members of our staff. Agree with my team or don’t, either way, I'm happy if people are passionate about cooking with cast iron because I too enjoy it a great deal. The heirloom pan your kids will fight over when you die: Lancaster No. 8 Skillet Yes, there are ways you can damage this seasoning layer, but these pans are far more resilient than lots of people think and they aren’t actually all that difficult to care for. Talk to cast-iron enthusiasts and they’ll tell you the best way to season a cast-iron skillet is to just keep cooking with it. It has thinner walls than a typical cast-iron skillet, which allows it to heat up faster. In testing, it came to temp over one minute faster than pans with thicker walls. We were concerned this would mean a reduction in the level of heat retention you’d want to crisp up the edges of some skillet cornbread, but we didn’t find that to be a problem at all. I also chose to exclude any cast-iron griddles or grill pans since they are too different functionally. Sizing is a bit different from company to company, but I chose to stick with a 10\"-diameter skillet—a No.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Best Cast-Iron Skillets for a Lifetime of Cooking (2026) | Bon Appétit",
+                "url": "https://www.bonappetit.com/story/best-cast-iron-skillet"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:seriouseats.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Serious Eats",
+          "domain": "seriouseats.com",
+          "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "After examining heat conduction, frying dozens of eggs, searing steaks, and baking loads of cornbread, we found eight excellent cast iron skillets. Cast iron skillets are dead simple pieces of cookware. They’re cast out of an alloy of iron, carbon, and silicon that is sanded and sometimes pre-seasoned. Sure, like most gear, the design and price tag vary depending on the manufacturer, but at their core, cast iron skillets are just a big honkin’ piece of metal. The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. The best cast iron skillet is from Lodge. It heats up fast and sears deeply, and only costs around $20. We also like the lightweight Lancaster No. Options abound: pricey and cheap, smooth-surfaced or pebbled, big and small. But much of what makes a great cast iron skillet boils down to a cook’s preferences.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "To Find the Best Cast Iron Skillets, I Seared Steaks, Baked Cornbread, and Fried Dozens of Eggs",
+                "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:lancastercastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lancaster Cast Iron",
+          "domain": "lancastercastiron.com",
+          "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Their lightweight design makes them a preferred choice for seasoned chefs and home cooks. With our lifetime warranty, you can enjoy the durability and performance of these skillets for generations to come. ... Lancaster No. 4 Cast Iron Skillet Lancaster No. 6 Cast Iron Skillet Lancaster No. 8 Cast Iron Skillet",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Cast Iron Skillets – American-Made Cookware | Lancaster Cast Iron",
+            "source_url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Skillets – American-Made Cookware | Lancaster Cast Iron",
+                "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:epicurious.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Epicurious",
+          "domain": "epicurious.com",
+          "url": "https://www.epicurious.com/expert-advice/best-cast-iron-skillet-pan-reviews-article"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Yes, this does mean they require slightly more care and attention than your average stainless steel or nonstick pans, but your reward for a mindful toweling off and the occasional re-seasoning is a skillet that can become a family heirloom—and produce tons of excellent meals along the way. A quality cast-iron skillet is one of the best long-term kitchen investments you can make, and we at the Epicurious test kitchen want to help. But how fancy does a cast-iron pan really need to be for the average home cook? Looking for the best cast-iron skillet on the market? We put pans from leading brands like Lodge, Smithey and Victoria to the test. Many might say that the best cast-iron skillet is the one they got from Grandma. However, we aren’t all so lucky to inherit an extremely well-seasoned, smooth-as-glass pan that lets you just slide eggs around. Sure, a cast-iron skillet is a fundamentally straight-forward pan, but the recent proliferation of new, bespoke cast-iron brands like Smithey, Butter Pat, and Field have called into question the inexpensive and long popular offerings of Lodge and Victoria. Yes, this does mean they require slightly more care and attention than your average stainless steel or nonstick pans, but your reward for a mindful toweling off and the occasional re-seasoning is a skillet that can become a family heirloom—and produce tons of excellent meals along the way. A quality cast-iron skillet is one of the best long-term kitchen investments you can make, and we at the Epicurious test kitchen want to help. But how fancy does a cast-iron pan really need to be for the average home cook?",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Best Cast Iron Skillet (2024), 23 Tested and Reviewed | Epicurious",
+                "url": "https://www.epicurious.com/expert-advice/best-cast-iron-skillet-pan-reviews-article"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:foodnetwork.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Food Network",
+          "domain": "foodnetwork.com",
+          "url": "https://www.foodnetwork.com/how-to/packages/shopping/sustainable-and-eco-friendly-cookware-brands"
+        },
+        "matched_product": "seasoned cast iron pan",
+        "snippet": "We baked, seared, fried and seasoned cast-iron pans to find the perfect pan for you! A basic tenet of sustainability is using materials that can be recycled or are biodegradable, both of which cut back on landfill waste. There are lots of cookware options made from sustainable materials, including cast-iron, stainless steel, aluminum, copper and ceramic. Not only does Our Place's famous Always Pan take the place of a multitude of separate cookware items, making it more sustainable, but the materials they use are also better for the earth. Whether it's the nontoxic ceramic-coated cookware, cast iron or the newest titanium line, all of the materials are eco-friendly. We baked, seared, fried and seasoned cast-iron pans to find the perfect pan for you! A basic tenet of sustainability is using materials that can be recycled or are biodegradable, both of which cut back on landfill waste. There are lots of cookware options made from sustainable materials, including cast-iron, stainless steel, aluminum, copper and ceramic. On the other hand, Teflon-coated pans are made with fluorinated plastic, which isn't recyclable and can be toxic to both humans and the environment. If something is made from a sustainable material but doesn't last long, it may not be worth the cost of the labor, material, transportation and energy that went into producing and selling it. When it comes to cookware, cast iron gets high marks from sustainability experts. Ceramic cookware is naturally nonstick so it's a good replacement for any nonstick pans that have chemicals. The downfall is that their lifespan is often only a few years, making them less sustainable than other materials. If you take care of a cast-iron pan properly (you can't submerge it in water), it can last for decades.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "8 Eco-Friendly and Sustainable Cookware Brands 2026 | Food Network",
+                "url": "https://www.foodnetwork.com/how-to/packages/shopping/sustainable-and-eco-friendly-cookware-brands"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:shunkangcookware.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Shunkangcookware",
+          "domain": "shunkangcookware.com",
+          "url": "https://www.shunkangcookware.com/news/durable-sustainable-versatile-cast-iron-grill-p.html"
+        },
+        "matched_product": "cast iron grill pan",
+        "snippet": "Around the world, millions depend on cooking methods that require durable, efficient, and multi-purpose tools. In many developing regions — and even among eco-conscious consumers internationally — the cast iron grill pan stands out as a practical and sustainable choice. Cast iron pans have been around for centuries, cherished for their durability and unrivaled heat retention. But why does understanding this particular piece of cookware matter beyond your stove? Well, consider global cooking trends, sustainability, and economic access to versatile kitchenware. Around the world, millions depend on cooking methods that require durable, efficient, and multi-purpose tools. In many developing regions — and even among eco-conscious consumers internationally — the cast iron grill pan stands out as a practical and sustainable choice. Plus, in an era where waste reduction and long-lasting goods are emphasized (hello, ISO 14000 sustainability series), cooking tools that last decades are surprisingly a big deal. So what benefits come with really understanding, choosing, and using a cast iron grill pan? These trends pair nicely with growing global priorities on green energy and sustainability. One common snag is the weight. Cast iron isn’t light, which can be intimidating for some cooks. But proper handles, grip covers, and improved casting techniques help. Cleaning, too, scares some off. No dishwasher here — but a quick wipe and gentle seasoning go a long way. And rust? It’s a possibility but easily prevented with correct aftercare, which vendors like Shun Kang provide clear guides on. Q: Are cast iron grill pans safe for use on induction cooktops?",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Durable, Sustainable & Versatile Cast Iron Grill Pans for Every Kitchen",
+                "url": "https://www.shunkangcookware.com/news/durable-sustainable-versatile-cast-iron-grill-p.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:homecrux.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Homecrux",
+          "domain": "homecrux.com",
+          "url": "https://www.homecrux.com/sustainable-hornbeam-cast-iron-skillet/271785/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The Hornbeam Cast Iron Skillet is sustainably made from 95 percent recycled metal using electricity generated from offshore wind energy. Aiming to reintroduce cast iron pans to every kitchen, British cast iron radiator manufacturer Castrads has launched a new cookware brand, Hornbeam. The Hornbeam cast iron skillet is available in 10- and 12-inch diameters to cover a wide range of dishes. Made with 95 percent recycled metal, the skillets are cast in a foundry in Dorset that is powered by offshore wind energy, making them a sustainable choice. The sides are thinned to 2.5 mm to keep the pan lightweight and easy to maneuver. The best part is that Hornbeam skillets never use Teflon, forever chemicals, or PFAs to retain their non-stick properties. The raw cast iron can be seasoned with your choice of vegetable oil to keep the skillet in prime condition for generations to come. A Hornbeam cast iron skillet distributes heat evenly on all cook surfaces including induction. It’s an excellent all-rounder pan you can use on an open fire, gas stovetop, or in the oven. Cast in a single piece, there are no parts that can come loose or wobble over time. The Hornbeam Cast Iron Skillet is sustainably made from 95 percent recycled metal using electricity generated from offshore wind energy.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Hornbeam Cast Iron Skillet is Next Sustainable Kitchen Heirloom",
+            "source_url": "https://www.homecrux.com/sustainable-hornbeam-cast-iron-skillet/271785/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Hornbeam Cast Iron Skillet is Next Sustainable Kitchen Heirloom",
+                "url": "https://www.homecrux.com/sustainable-hornbeam-cast-iron-skillet/271785/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:the-independent.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Independent",
+          "domain": "the-independent.com",
+          "url": "https://www.the-independent.com/extras/indybest/us/best-cookware-sets-b2962473.html"
+        },
+        "matched_product": "cookware",
+        "snippet": "From Caraway and Our Place to GreenPan and Cuisinart, I’ve found the cookware you’ll want to show off on your countertop From non-stick to stainless steel sets, I've tried, tested, and reviewed the best cookware sets from Caraway, Our Place, GreenPan, Cuisinart and more Ultimately, I wanted to know how these pots and pans perform and who they would be a fit for. Caraway’s 12-piece cookware set came out on top because it covers all your needs and can be taken from stove to oven. When testing these sets, it became clear that I wanted to use Caraway’s cookware more often than any other. It only took a few minutes for the ceramic-coated pots and pans to heat evenly on medium-low heat. The cookware is oven-safe up to 550F, which is higher than even the enameled cast-iron Staub set I tested. While you can’t stack and store this set as easily as the T-Fal ingenio essentials set, each set comes with a rack for easy storing. The only drawback is that the Caraway 12-piece cookware set is hand-wash only.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Best Cookware 2026, Reviewed in a Real Kitchen | The Independent",
+                "url": "https://www.the-independent.com/extras/indybest/us/best-cookware-sets-b2962473.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:thegoodtrade.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Good Trade",
+          "domain": "thegoodtrade.com",
+          "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/"
+        },
+        "matched_product": "cookware",
+        "snippet": "For this guide, I’ve rounded up my favorite nontoxic and eco-friendly cookware and personally tested out some of their best-selling products to find out how they compare with their conventional counterparts. Below, I’ve included notes on how it was to cook with each brand’s wares, how they wore over time, and other details that delighted me. (Spoiler alert: I am obsessed with these goods!) All of the brands on this list meet the following criteria. Our editor reviews the best nontoxic pots and pans that are simple to clean, long-lasting, and make mealtime delicious — all without any PFAS. So when I had the chance to dive into cooking for self-care with eight new (to me!) cookware brands, I really enjoyed it…and feel better for it! Even when friends have asked me to go to dinner on the weekends, I’ve diverted our hangouts to walks instead, in favor of cooking at home! Two of the most common members of this chemical family are PFOA and PFOS. These per- and polyfluoroalkyl substances aren’t just used in cookware; they show up in everything from pizza boxes and period underwear to moisture-wicking activewear. You might know them best under one of their most famous brand names: Teflon. For this guide, I’ve rounded up my favorite nontoxic and eco-friendly cookware and personally tested out some of their best-selling products to find out how they compare with their conventional counterparts. Below, I’ve included notes on how it was to cook with each brand’s wares, how they wore over time, and other details that delighted me. (Spoiler alert: I am obsessed with these goods!) All of the brands on this list meet the following criteria.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "I Tested The 8 Best Nontoxic Cookware Brands For 2026 - The Good Trade",
+                "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:warmcazza.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Warmcazza",
+          "domain": "warmcazza.com",
+          "url": "https://www.warmcazza.com/post/non-toxic-cookware-brands-2026"
+        },
+        "matched_product": "cookware",
+        "snippet": "The important distinction is certification &quot;non-toxic&quot; as a marketing claim means nothing without specific PFAS-free documentation. Caraway, Our Place, and GreenPan all publish independent certifications. Among coated options, ceramic cookware certified PFAS-free and PTFE-free (Caraway, Our Place, GreenPan) is the safest alternative to traditional non-stick. Quality ceramic pans certified PFAS-free and PTFE-free are significantly safer than traditional non-stick. The important distinction is certification \"non-toxic\" as a marketing claim means nothing without specific PFAS-free documentation. Caraway, Our Place, and GreenPan all publish independent certifications. Best non-toxic cookware 2026 - 8 PFAS-free brands ranked by safety, durability, and price. From $35 Lodge cast iron to lifetime Le Creuset, tested daily. The 8 best non-toxic cookware brands in 2026 are Made In (best overall stainless and carbon steel, 20+ years, no coating), Caraway (best ceramic non-stick, PTFE-free, 3–5 years), Our Place (best for small kitchens, PFAS-free, replaces 8 pieces), Le Creuset (best investment enameled cast iron, lifetime warranty), Staub (best for bread and braising, Japandi-friendly dark aesthetic), Lodge (best budget seasoned cast iron from $35, zero PFAS risk), GreenPan (best budget ceramic, Thermolon certified PFAS-free), and All-Clad (best professional stainless, 20+ years). That was two years ago. Since then I have tested ceramic, stainless steel, cast iron, and carbon steel cookware across eight brands in my 58m² flat the same flat where I learned that a $340 sofa bought twice costs more than a $600 sofa bought once. The same logic applies to cookware.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Best Non-Toxic Cookware 2026: 8 PFAS-Free Brands Ranked",
+            "source_url": "https://www.warmcazza.com/post/non-toxic-cookware-brands-2026",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Best Non-Toxic Cookware 2026: 8 PFAS-Free Brands Ranked",
+                "url": "https://www.warmcazza.com/post/non-toxic-cookware-brands-2026"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 5,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 246,
+          "completion_tokens": 91,
+          "cost_usd": 0.00005554
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4546,
+          "completion_tokens": 756,
+          "cost_usd": 0.00066618
+        }
+      ],
+      "llm_tokens": 5639,
+      "estimated_cost_usd": 0.025722
+    }
+  }
+}

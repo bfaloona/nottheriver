@@ -1,0 +1,440 @@
+{
+  "checked": "2026-09-23",
+  "method": "15 grades sampled across all 6 searches (11 local, 4 online). Every grade whose verdict occurs fewer than 8 times was included (local_exists 'no', page_access 'error' and 'blocked', sells_product 'equivalent'), which filled 9 slots and skewed the sample toward local results; the other 6 were drawn by sells_product and section. Because the sampling script listed those 9 in verdict order, the auditor knew one original field for each of them before grading: local_exists for local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6, local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5, local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:4; page_access for local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8, local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12, local:loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=:10, local:loc425WVB65NBVCEATM7DVYF3VSSYDVMT3GZAAAAAAA=:12, local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4; sells_product for local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13. All other fields were graded blind, then compared. Graded per eval/README.md; local_exists 'no' where the shop's own site could not be reached is marked 'weak no' in the reason, since the schema has no 'unknown' for that field.",
+  "items": [
+    {
+      "result_id": "local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6",
+      "url": "https://homegoods.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "homegoods.com is a brand site with no product catalog; in-store cookware assortment not visible"
+    },
+    {
+      "result_id": "local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6",
+      "url": "https://homegoods.com/",
+      "field": "local_exists",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "HomeGoods all-stores directory lists no Allston or Everett St store; the only Boston store is 350 Washington St"
+    },
+    {
+      "result_id": "local:loc47NNJOGVBFVCUA3RSVIGOHSCRYCN6S4QYAAAAAAA=:6",
+      "url": "https://homegoods.com/",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "homepage loaded normally"
+    },
+    {
+      "result_id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5",
+      "url": "https://orvis.com/plymouthmeeting",
+      "field": "sells_product",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "orvis.com search for 'camping tent' returns only camp shirts and fishing lodges; no tents"
+    },
+    {
+      "result_id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5",
+      "url": "https://orvis.com/plymouthmeeting",
+      "field": "local_exists",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "URL redirects to stores.orvis.com/us/pennsylvania/plymouth-meeting, a 404; the Pennsylvania store directory lists only Hill Country Pro Shop and Pittsburgh"
+    },
+    {
+      "result_id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5",
+      "url": "https://orvis.com/plymouthmeeting",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "error",
+      "agree": false,
+      "reason": "result URL lands on a 404 page"
+    },
+    {
+      "result_id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:4",
+      "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+      "field": "sells_product",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "dickssportinggoods.com search shows 103 results for 'camping tent'; the linked page itself is a store locator page, not a product page"
+    },
+    {
+      "result_id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:4",
+      "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+      "field": "local_exists",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "DICK'S only Plymouth Meeting store is at 500 W. Germantown Pike (Plymouth Meeting Mall), not the listed Metroplex / Chemical Rd address"
+    },
+    {
+      "result_id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:4",
+      "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "URL redirects to the PA store index, which loads normally"
+    },
+    {
+      "result_id": "local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8",
+      "url": "https://masterkitchenpro.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "site unreachable, nothing to judge"
+    },
+    {
+      "result_id": "local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8",
+      "url": "https://masterkitchenpro.com/",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "no",
+      "agree": false,
+      "reason": "not verifiable: the domain returns NXDOMAIN, so no own-site evidence of a shop at 81 Taft St; weak no"
+    },
+    {
+      "result_id": "local:loc4DZC6ORVCG5CUA3MRB7KW7RSRYDM7FZO6AAAAAAA=:8",
+      "url": "https://masterkitchenpro.com/",
+      "field": "page_access",
+      "original": "error",
+      "audit": "error",
+      "agree": true,
+      "reason": "browser error page; DNS lookup for the domain fails (NXDOMAIN) while a control domain resolves"
+    },
+    {
+      "result_id": "local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12",
+      "url": "https://cmcstaff.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "site shows only 'temporarily unavailable'; the name suggests a camp operator rather than a gear retailer, but the page gives no evidence either way"
+    },
+    {
+      "result_id": "local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12",
+      "url": "https://cmcstaff.com/",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "no",
+      "agree": false,
+      "reason": "not verifiable: no address or listing on the site; weak no"
+    },
+    {
+      "result_id": "local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12",
+      "url": "https://cmcstaff.com/",
+      "field": "page_access",
+      "original": "error",
+      "audit": "error",
+      "agree": true,
+      "reason": "host answers but serves only a 'site temporarily unavailable' placeholder"
+    },
+    {
+      "result_id": "local:loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=:10",
+      "url": "https://foundingfathersphilly.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "site unreachable, nothing to judge"
+    },
+    {
+      "result_id": "local:loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=:10",
+      "url": "https://foundingfathersphilly.com/",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "no",
+      "agree": false,
+      "reason": "not verifiable: domain returns NXDOMAIN (bare and www); weak no"
+    },
+    {
+      "result_id": "local:loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=:10",
+      "url": "https://foundingfathersphilly.com/",
+      "field": "page_access",
+      "original": "error",
+      "audit": "error",
+      "agree": true,
+      "reason": "browser error page; DNS lookup fails (NXDOMAIN)"
+    },
+    {
+      "result_id": "local:loc425WVB65NBVCEATM7DVYF3VSSYDVMT3GZAAAAAAA=:12",
+      "url": "https://sunlinesupply.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "site unreachable, nothing to judge"
+    },
+    {
+      "result_id": "local:loc425WVB65NBVCEATM7DVYF3VSSYDVMT3GZAAAAAAA=:12",
+      "url": "https://sunlinesupply.com/",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "no",
+      "agree": false,
+      "reason": "not verifiable: domain lookup fails (SERVFAIL); weak no"
+    },
+    {
+      "result_id": "local:loc425WVB65NBVCEATM7DVYF3VSSYDVMT3GZAAAAAAA=:12",
+      "url": "https://sunlinesupply.com/",
+      "field": "page_access",
+      "original": "error",
+      "audit": "error",
+      "agree": true,
+      "reason": "browser error page; DNS lookup returns SERVFAIL"
+    },
+    {
+      "result_id": "local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4",
+      "url": "https://acehardware.com/store-details/17984",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "store page lists departments (lumber, hardware, BBQ grills, lawn) with no housewares or cookware; chain carries cast iron online but this store's stock is not shown"
+    },
+    {
+      "result_id": "local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4",
+      "url": "https://acehardware.com/store-details/17984",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "yes",
+      "agree": false,
+      "reason": "Ace store page shows Hamshaw Lumber-Amherst at 150 College St, Amherst, MA 01002"
+    },
+    {
+      "result_id": "local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4",
+      "url": "https://acehardware.com/store-details/17984",
+      "field": "page_access",
+      "original": "blocked",
+      "audit": "ok",
+      "agree": false,
+      "reason": "store page loaded normally with hours, address, departments"
+    },
+    {
+      "result_id": "local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13",
+      "url": "https://hobbylobby.com/stores/search/915",
+      "field": "sells_product",
+      "original": "equivalent",
+      "audit": "equivalent",
+      "agree": true,
+      "reason": "site search leads to a $3.99 'Mini Cast Iron Skillet' (5 x 9.25 in, bakeware-cookware); a real cast iron skillet but serving-size, so a close substitute rather than the full-size item"
+    },
+    {
+      "result_id": "local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13",
+      "url": "https://hobbylobby.com/stores/search/915",
+      "field": "local_exists",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "store page shows Store 915 at 1 Worcester Road, Framingham, MA 01701"
+    },
+    {
+      "result_id": "local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13",
+      "url": "https://hobbylobby.com/stores/search/915",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "store page loaded normally"
+    },
+    {
+      "result_id": "online:fieldcompany.com",
+      "url": "https://fieldcompany.com/collections/cast-iron-skillets",
+      "field": "sells_product",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "collection page lists cast iron skillets No.4 to No.16 with prices ($100 to $350)"
+    },
+    {
+      "result_id": "online:fieldcompany.com",
+      "url": "https://fieldcompany.com/collections/cast-iron-skillets",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "n/a",
+      "agree": true,
+      "reason": "online result"
+    },
+    {
+      "result_id": "online:fieldcompany.com",
+      "url": "https://fieldcompany.com/collections/cast-iron-skillets",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "collection page loaded normally"
+    },
+    {
+      "result_id": "online:seriouseats.com",
+      "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+      "field": "sells_product",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "editorial review ('8 Best Cast Iron Skillets'); Serious Eats sells nothing, it links out to retailers, including Amazon affiliate links"
+    },
+    {
+      "result_id": "online:seriouseats.com",
+      "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "n/a",
+      "agree": true,
+      "reason": "online result"
+    },
+    {
+      "result_id": "online:seriouseats.com",
+      "url": "https://www.seriouseats.com/best-cast-iron-skillet",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "article loaded normally"
+    },
+    {
+      "result_id": "local:loc445QOY43LI5CEBODICIDC6ACTYAP4MBM3AAAAAAA=:9",
+      "url": "https://cabelas.com/category/Hamburg-Gun-Library/105937380.uts",
+      "field": "sells_product",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "listing is the gun-library department, but it sits inside the Cabela's store, and cabelas.com has Camping > Tents and Shelters; arguable given the department name"
+    },
+    {
+      "result_id": "local:loc445QOY43LI5CEBODICIDC6ACTYAP4MBM3AAAAAAA=:9",
+      "url": "https://cabelas.com/category/Hamburg-Gun-Library/105937380.uts",
+      "field": "local_exists",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "Cabela's store locator lists Cabela's Hamburg, PA at 100 Cabela Drive"
+    },
+    {
+      "result_id": "local:loc445QOY43LI5CEBODICIDC6ACTYAP4MBM3AAAAAAA=:9",
+      "url": "https://cabelas.com/category/Hamburg-Gun-Library/105937380.uts",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "category URL no longer exists and redirects to the cabelas.com homepage, which loads normally"
+    },
+    {
+      "result_id": "online:lancastercastiron.com",
+      "url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+      "field": "sells_product",
+      "original": "yes",
+      "audit": "yes",
+      "agree": true,
+      "reason": "collection page lists Lancaster No. 4 to No. 12 cast iron skillets with prices ($120 to $275)"
+    },
+    {
+      "result_id": "online:lancastercastiron.com",
+      "url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "n/a",
+      "agree": true,
+      "reason": "online result"
+    },
+    {
+      "result_id": "online:lancastercastiron.com",
+      "url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "collection page loaded normally"
+    },
+    {
+      "result_id": "online:campmaid.com",
+      "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+      "field": "sells_product",
+      "original": "no",
+      "audit": "no",
+      "agree": true,
+      "reason": "blog post giving generic tent advice; CampMaid sells Dutch-oven and charcoal cooking accessories, not tents"
+    },
+    {
+      "result_id": "online:campmaid.com",
+      "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "n/a",
+      "agree": true,
+      "reason": "online result"
+    },
+    {
+      "result_id": "online:campmaid.com",
+      "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "ok",
+      "agree": true,
+      "reason": "blog post loaded normally"
+    },
+    {
+      "result_id": "local:loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=:3",
+      "url": "https://stevesoutdoor.myshopify.com/",
+      "field": "sells_product",
+      "original": "unknown",
+      "audit": "unknown",
+      "agree": true,
+      "reason": "Shopify 'Store unavailable' page; no catalog to judge"
+    },
+    {
+      "result_id": "local:loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=:3",
+      "url": "https://stevesoutdoor.myshopify.com/",
+      "field": "local_exists",
+      "original": "n/a",
+      "audit": "no",
+      "agree": false,
+      "reason": "not verifiable: the store's own site is deactivated and shows no address; weak no"
+    },
+    {
+      "result_id": "local:loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=:3",
+      "url": "https://stevesoutdoor.myshopify.com/",
+      "field": "page_access",
+      "original": "ok",
+      "audit": "error",
+      "agree": false,
+      "reason": "Shopify serves a deactivated-store page"
+    }
+  ],
+  "agreement": {
+    "sells_product": {
+      "agree": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "local_exists": {
+      "agree": 9,
+      "total": 15,
+      "rate": 0.6
+    },
+    "page_access": {
+      "agree": 12,
+      "total": 15,
+      "rate": 0.8
+    },
+    "overall": {
+      "agree": 36,
+      "total": 45,
+      "rate": 0.8
+    }
+  },
+  "findings": [
+    "sells_product: full agreement (15/15), including the 7 'unknown' grades, all of which were unreachable or catalog-less pages.",
+    "local_exists: 5 of 6 disagreements are one rubric gap, not a factual dispute. When a local shop's own site is unreachable, the original grader used 'n/a' and the audit used 'no'. The schema reserves 'n/a' for online results and has no 'unknown', so neither is clearly right; precision treats both the same (only 'yes' counts), so the gap does not move the headline number. Adding 'unknown' to local_exists would remove it.",
+    "local_exists and page_access on acehardware.com/store-details/17984: the original grader got a Cloudflare block page twice; the audit got the store page normally and could confirm the address. Likely transient or session-dependent bot blocking rather than a grading error, but it means one 'blocked' in the bot-blocked rate may not reproduce.",
+    "page_access 'ok' vs 'error' on dead pages is inconsistent in the original grades: a host placeholder ('temporarily unavailable', cmcstaff.com) was graded 'error', while a Shopify 'Store unavailable' placeholder and an Orvis 404 were graded 'ok'. The audit graded all three 'error'. The rubric should say whether a page that loads but shows a 404 or deactivated-store notice is 'ok' or 'error'.",
+    "Both graders scored sells_product for local chain stores (DICK'S, Cabela's) from the chain's online catalog, because the linked page is a store-locator page that offers nothing. The rubric says 'the page offers the product', so the 15/15 sells_product agreement partly reflects a shared, unwritten reading of the rubric for local results."
+  ]
+}

@@ -1,0 +1,1390 @@
+{
+  "id": "cast-iron-skillet-rural",
+  "checked": "2026-09-23T22:47:20.650Z",
+  "request": {
+    "product": "cast iron skillet",
+    "city": "Shutesbury",
+    "state": "MA",
+    "lat": 42.46,
+    "lon": -72.42
+  },
+  "status": 200,
+  "elapsed_ms": 6791,
+  "body": {
+    "query": {
+      "product": "cast iron skillet",
+      "city": "Shutesbury",
+      "state": "MA",
+      "canonical_name": "cast iron skillet",
+      "category": "cookware"
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4H44QUEAFHJCUBYQG243QWICSYDVIMS2YAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Joy Friedman Pottery",
+          "domain": "joyfriedman.com",
+          "url": "https://joyfriedman.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "13 Montague Rd, Leverett, MA 01054",
+        "distance_km": 6.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Joy Friedman Pottery",
+                "url": "https://joyfriedman.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8325,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4BML2Q62TIVCUB7N22OO2OGKSYCV6QB5WAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Wendell Country Store",
+          "domain": "wordpress.com",
+          "url": "https://wendellcountrystore.wordpress.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "57 Lockes Village Rd, Wendell, MA 01379",
+        "distance_km": 9.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.465,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Wendell Country Store",
+                "url": "https://wendellcountrystore.wordpress.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.77,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "9.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4U6UQVMQKGVCUAD4HLP2AIISSYCUMHXRSAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Cowls Building Supply",
+          "domain": "cowlsbuildingsupply.com",
+          "url": "https://cowlsbuildingsupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "125 Sunderland Rd, Amherst, MA 01059",
+        "distance_km": 10.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.461,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Cowls Building Supply",
+                "url": "https://cowlsbuildingsupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7375,
+            "weight": 0.15,
+            "contribution": 0.111,
+            "sources": [
+              {
+                "label": "10.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4ZRUQKPA7GVCUAYYGZ4U62IKSYDVTEK6HAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Provisions, Mill District",
+          "domain": "provisionswine.com",
+          "url": "https://provisionswine.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "65 Cowls Rd, Amherst, MA 01002",
+        "distance_km": 10.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.461,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Provisions, Mill District",
+                "url": "https://provisionswine.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7424999999999999,
+            "weight": 0.15,
+            "contribution": 0.111,
+            "sources": [
+              {
+                "label": "10.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Hamshaw Lumber-Amherst",
+          "domain": "acehardware.com",
+          "url": "https://acehardware.com/store-details/17984"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "150 College St, Amherst, MA 01002",
+        "distance_km": 12.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.454,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Hamshaw Lumber-Amherst",
+                "url": "https://acehardware.com/store-details/17984"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.6950000000000001,
+            "weight": 0.15,
+            "contribution": 0.104,
+            "sources": [
+              {
+                "label": "12.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc47CCJCAY3GBCUBBHOG57TQIKSYDTIYEPOAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Clay's",
+          "domain": "claysclothing.com",
+          "url": "https://claysclothing.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "32 Main St, Amherst, MA 01002",
+        "distance_km": 12.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.453,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Clay's",
+                "url": "https://claysclothing.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.69,
+            "weight": 0.15,
+            "contribution": 0.104,
+            "sources": [
+              {
+                "label": "12.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4WAH7ZONSQVCEAUCDBJKDK52SYDKK4P3QAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "The Cookware Company",
+          "domain": "cookware-co.com",
+          "url": "https://cookware-co.com/"
+        },
+        "matched_product": "cookware",
+        "snippet": "",
+        "address": "94 N Broadway, Irvington, NY 10533",
+        "distance_km": 197.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "The Cookware Company",
+                "url": "https://cookware-co.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4U3ZNCPKGIBCUA5GN4SN63WSRYDOD3S2EAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Kitchen Outfitters",
+          "domain": "kitchen-outfitters.com",
+          "url": "https://kitchen-outfitters.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "342 Great Rd, Acton, MA 01720",
+        "distance_km": 82.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Kitchen Outfitters",
+                "url": "https://kitchen-outfitters.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Kitchenwitch",
+          "domain": "kitchenwitchjp.com",
+          "url": "https://kitchenwitchjp.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "671 Centre St, Jamaica Plain, MA 02130",
+        "distance_km": 108.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Kitchenwitch",
+                "url": "https://kitchenwitchjp.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4D6ZO2WL4SZCUB7MPAL5LGQ2SYAZ4XC7YZFGEYNI=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Vermont Kitchen Supply",
+          "domain": "vermontkitchensupply.com",
+          "url": "https://vermontkitchensupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "4788 Main St, Manchester Center, VT 05255",
+        "distance_km": 95.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Vermont Kitchen Supply",
+                "url": "https://vermontkitchensupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:seriouseats.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Serious Eats",
+          "domain": "seriouseats.com",
+          "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. Smooth and lightweight cast iron is not only easier to handle, especially when filled with food, but it is also easier to clean, responds more quickly to heat, and will still have all the amazing benefits of cast iron, such as durability and heat retention. To achieve a smoother and lightweight feel we have incorporated several extra steps including our tumbling process.” · Tumbling sounds just like its name: Skillets are placed in a rotating drum filled with pieces of metal and as the drum turns it smooths out lumps and bumps, resulting in a polished pan. So, today, you have brands like Lancaster that sell slightly less seasoned, smooth skillets and others, like Lodge, that sell heavily seasoned, rougher skillets; both styles released foods well in my tests, so it’s more a matter of personal preference (and price, since smoother skillets tend to be more expensive). Cast iron skillets are dead simple pieces of cookware. They’re cast out of an alloy of iron, carbon, and silicon that is sanded and sometimes pre-seasoned. Sure, like most gear, the design and price tag vary depending on the manufacturer, but at their core, cast iron skillets are just a big honkin’ piece of metal. The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. The best cast iron skillet is from Lodge. It heats up fast and sears deeply, and only costs around $20. We also like the lightweight Lancaster No.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "To Find the Best Cast Iron Skillets, I Seared Steaks, Baked Cornbread, and Fried Dozens of Eggs",
+                "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:thegoodtrade.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Good Trade",
+          "domain": "thegoodtrade.com",
+          "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Our Place is ethically made with responsible materials, and they also partner with organizations combating food insecurity. The pan is beautiful too, and has a lid, which is a must for me! I’d love to be a cast iron girl — it feels like all the good home cooks are — but I have yet to get the hang of it. As demonstrated by my egg, which did not turn out the best of the bunch. Still tasty, but a little hard to flip! But I have to say, Sur La Table’s Enameled Cast Iron Skillet is heavy, high-quality, and actually cute. Lodge is definitely the original cast iron. I tested an extra-large skillet with the hopes of bringing it on a camping trip to feed a group. And clearly, you could make eggs on this one for a large family event! Although I have to say, since this skillet is new and unseasoned, it’s hard not for them to stick… Though my cast iron cooking skills need a little refining, Sur La Table‘s enameled skillet makes seasoning and maintaining one a little easier. Our Place is ethically made with responsible materials, and they also partner with organizations combating food insecurity. The pan is beautiful too, and has a lid, which is a must for me! ... Our Place‘s titanium pan holds up beautifully under heat and frequent runs through the dishwasher. ... Best For | Premium cookware & kitchen essentials Nontoxic Materials | Ceramic nonstick, stainless steel, enameled cast iron, carbon steel, and PFOA-free cookware options Product Range | Frying pans, saucepans, Dutch ovens, cookware sets, kitchen tools Price Range | $15–$2,000+",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "I Tested The 8 Best Nontoxic Cookware Brands For 2026 - The Good Trade",
+            "source_url": "https://www.thegoodtrade.com/features/nontoxic-cookware/",
+            "origin": "llm",
+            "action_date": null
+          },
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "I Tested The 8 Best Nontoxic Cookware Brands For 2026 - The Good Trade",
+            "source_url": "https://www.thegoodtrade.com/features/nontoxic-cookware/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "I Tested The 8 Best Nontoxic Cookware Brands For 2026 - The Good Trade",
+                "url": "https://www.thegoodtrade.com/features/nontoxic-cookware/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:bonappetit.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bon Appétit",
+          "domain": "bonappetit.com",
+          "url": "https://www.bonappetit.com/story/best-cast-iron-skillet"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "My goal is merely to provide recommendations for cast-iron cookware based on side-by-side testing and the input collectively provided by members of our staff. Agree with my team or don’t, either way, I&#x27;m happy if people are passionate about cooking with cast iron because I too enjoy it a great deal. The heirloom pan your kids will fight over when you die: Lancaster No. 8 Skillet My goal is merely to provide recommendations for cast-iron cookware based on side-by-side testing and the input collectively provided by members of our staff. Agree with my team or don’t, either way, I'm happy if people are passionate about cooking with cast iron because I too enjoy it a great deal. The heirloom pan your kids will fight over when you die: Lancaster No. 8 Skillet Yes, there are ways you can damage this seasoning layer, but these pans are far more resilient than lots of people think and they aren’t actually all that difficult to care for. Talk to cast-iron enthusiasts and they’ll tell you the best way to season a cast-iron skillet is to just keep cooking with it. It has thinner walls than a typical cast-iron skillet, which allows it to heat up faster. In testing, it came to temp over one minute faster than pans with thicker walls. We were concerned this would mean a reduction in the level of heat retention you’d want to crisp up the edges of some skillet cornbread, but we didn’t find that to be a problem at all. I also chose to exclude any cast-iron griddles or grill pans since they are too different functionally. Sizing is a bit different from company to company, but I chose to stick with a 10\"-diameter skillet—a No.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Best Cast-Iron Skillets for a Lifetime of Cooking (2026) | Bon Appétit",
+                "url": "https://www.bonappetit.com/story/best-cast-iron-skillet"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:prettyorganicgirl.com",
+        "kind": "online",
+        "retailer": {
+          "name": "PrettyOrganicGirl",
+          "domain": "prettyorganicgirl.com",
+          "url": "https://www.prettyorganicgirl.com/cast-iron"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, ... The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, baking.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Best Cast Iron Cookware Brands 2026 | PrettyOrganicGirl",
+                "url": "https://www.prettyorganicgirl.com/cast-iron"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:foodandwine.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Food & Wine",
+          "domain": "foodandwine.com",
+          "url": "https://www.foodandwine.com/cooking-techniques/cast-iron-pans"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The other unique characteristic of this skillet is the smooth, matte surface. Field Company pans are made of the same pure iron as other brands, but they’re polished on the inside before being pre-seasoned. Its heirloom-worthy design features a beautiful imprint of the brand’s name on the bottom. The polished finish develops a lovely patina through various cooking and seasoning sessions. I love this skillet; it has secured the top spot in my cabinet. It’s my go-to for searing steaks and any other cast iron task. The other unique characteristic of this skillet is the smooth, matte surface. Field Company pans are made of the same pure iron as other brands, but they’re polished on the inside before being pre-seasoned. The texture made it a little less likely to hold on to burnt bits and saved some effort in scrubbing, though it’s not a world-changing amount of difference. The pan is still made of cast iron and still requires thorough drying and regular re-seasoning. Shorter handles are a better choice if you have smaller hands or a little less lifting strength. We considered all of these factors during testing to ensure these cast iron skillets were up to our standards. ... It depends on the manufacturer, so check your brand’s specifications. Though she’s fine using a squeeze of fresh lemon to finish a dish of pork chops, she suggests an enameled cast iron skillet for something like a long-simmered tomato sauce. Wing disagrees and believes you can cook anything in cast iron. “I have a vintage chicken fryer from the 1940s that is a beautiful, beautiful hammered piece, and I make tomato sauce in that quite often,” he says, though not entirely without reservation. “I wouldn’t recommend you make tomato sauce in a brand-new Dutch oven you just took out of the box.”",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Is Lodge Still the King of Cast Iron? We Tested More Than 25 Skillets to Find Out",
+                "url": "https://www.foodandwine.com/cooking-techniques/cast-iron-pans"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:forbes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Forbes",
+          "domain": "forbes.com",
+          "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cast-iron-skillet/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Out of the enameled pans we’ve tested, the Le Creuset Signature Skillet has earned the highest marks overall. Plus, it comes in over 20 of the brand’s signature colors, including Cerise and Shallot. Ahead, find the best cast-iron skillets in 2025, based on years of hands-on testing. ... We've sent this story to your inbox. ... Lodge is the best-known brand in the cast-iron space, and with good reason: “Lodge is a time-tested favorite for its durability and affordability, making it a staple in many kitchens,” says Vickers. While oven mitts should suffice, the brand also sells silicone holders for the main handle and smaller one. ... If you’re looking to invest in an heirloom-quality skillet with a lightweight design and polished interior, Forbes Vetted editors—myself included—have long been impressed by Field Company’s No. 8 Cast-Iron Skillet. Though it can’t withstand as much heat as regular cast iron (it’s oven-safe up to 500 degrees, whereas the Lodge skillet can heat up to 650 degrees), it offers similar heat retention and stove-to-oven capabilities. It’s also lower maintenance, as it doesn’t require seasoning or react with acidic foods. Out of the enameled pans we’ve tested, the Le Creuset Signature Skillet has earned the highest marks overall. Plus, it comes in over 20 of the brand’s signature colors, including Cerise and Shallot. Based on years of hands-on testing, we believe Lodge and Field Company make the best cast-iron skillets and Le Creuset makes the best enameled cast-iron skillet. That said, we’ve tried out a number of pans from other brands that have impressed us, including Smithey, Yeti and Lancaster.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The 3 Best Cast-Iron Skillets, Tested And Reviewed",
+                "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cast-iron-skillet/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:booniehicks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Boonie Hicks",
+          "domain": "booniehicks.com",
+          "url": "https://www.booniehicks.com/best-cast-iron-skillets/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Another reason to purchase Lodge is that they proudly make their skillets in the US. And they have manufactured cast-iron cookware since 1896. When it comes to one of the most trusted brands in cast iron cookware, it is hard to look past a skillet made by Lodge Manufacturing . The Staub cast iron skillet is sometimes discounted online. It is a good idea to keep an eye open for these bargains. I love my Staub cookware, and it seems those who have a bit of experience using cast-iron also love the brand. Remember that cast iron skillets are a low-tech item. This means, for the most part, any skillet manufactured by any company will work and provide you with similar benefits of cast iron. It’s common for more high-tech appliances to have wider differences between brands. It depends right? I guess it does, but hopefully, I can help narrow the choices down to some top-notch frying pans that will do you proud in the kitchen. So whether you are living the single life or married with five kids. You can’t go wrong with a cast-iron skillet. And trust me there is nothing better or more satisfying than using cast iron cookware. And that’s coming from a pretty average cook at best. Before I get into the results of my findings, I will quickly answer your question, and why I came to that conclusion. The best skillet for the majority of users, in my opinion, is the Lodge 10-1/4-inch skillet.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Best cast iron skillets for both new and experienced cast-iron cooks. – BOONIE HICKS",
+                "url": "https://www.booniehicks.com/best-cast-iron-skillets/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:tastingtable.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Tasting Table",
+          "domain": "tastingtable.com",
+          "url": "https://www.tastingtable.com/992992/the-best-cast-iron-brands-ranked/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Lancaster Cast Iron is an Amish-made cast iron brand from Pennsylvania. The brand offers two sizes of cast iron skillet: a 10.5-inch (No. 8) and an 11.6-inch (No. 10). These skillets are priced at $175 and $225, respectively, on Lancaster&#x27;s website. Each piece is polished before packaging, resulting in an easy-to-clean and more scratch-resistant product. Butter Pat pans are comparatively light because of their thinner walls, making flipping and maneuvering this cast iron skillet much easier than other heavyweight brands. Ergonomically speaking, Borough Furnace has an upper hand on some of the brands on this list. The skillets feature low walls for optimized airflow and a heavy base. From a purely aesthetic angle, you can tell that the folks at Borough Furnace put a level of craftsmanship into its products not often seen with other mass-produced cast iron brands. Lancaster Cast Iron is an Amish-made cast iron brand from Pennsylvania. The brand offers two sizes of cast iron skillet: a 10.5-inch (No. 8) and an 11.6-inch (No. 10). These skillets are priced at $175 and $225, respectively, on Lancaster's website. Some features set Lancaster skillets apart from other brands. You'll find a pour spout on either side of the pan for easy draining as well as a smooth, pre-seasoned finish for a cooking experience like a non-stick pan. Similar to other artisan cast iron manufacturers on our list, Lancaster products are made with thin walls for easy movement and flipping.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The 15 Best Cast Iron Brands, Ranked - Tasting Table",
+                "url": "https://www.tastingtable.com/992992/the-best-cast-iron-brands-ranked/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:allrecipes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Allrecipes",
+          "domain": "allrecipes.com",
+          "url": "https://www.allrecipes.com/longform/best-cast-iron-skillets/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "When it comes to kitchen gifts, there are few better choices than a good enameled cast iron skillet. They&#x27;re low-maintenance, long-lasting, and extremely versatile. We love this one from Caraway—a brand known for its durable ceramic cookware and stylish food storage containers—that&#x27;s so beautiful you&#x27;ll probably want to display it on the stove while not in use. When it comes to kitchen gifts, there are few better choices than a good enameled cast iron skillet. They're low-maintenance, long-lasting, and extremely versatile. We love this one from Caraway—a brand known for its durable ceramic cookware and stylish food storage containers—that's so beautiful you'll probably want to display it on the stove while not in use. If you want to invest in a high-quality cast iron skillet that's thoughtfully designed and simply beautiful to look at, Yeti has you covered. Of course, we'd expect nothing less from the brand that's brought us some of our favorite insulated water bottles and coolers. After studying thousands of customer reviews and looking for models that earned high marks for heat distribution and retention, durability, and versatility, we sent several models to the Allrecipes Allstars—our dedicated team of trusted experts—to test. These are the best cast iron skillets to help you in the kitchen. Although it's heavier, cooked food was easy to release from the pan thanks to the cast iron's seasoning. The Details: Available from 3.5-inch to 15-inch in size; from 10 ounces to 12.4 pounds; induction compatible ... Field Company, headed by two brothers in New York's Catskills, makes skillets modeled after the cast iron of the 1930s.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "We Tested the 7 Best Cast Iron Skillets for Every Cook",
+                "url": "https://www.allrecipes.com/longform/best-cast-iron-skillets/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:artisansbench.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Artisan's Bench",
+          "domain": "artisansbench.com",
+          "url": "https://www.artisansbench.com/collections/smithey-ironware-co"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "14&quot; Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12&quot; Carbon Steel Round Roaster Pan · $295.00 ... Charleston, SC Made in the US, their skillets begin as raw castings with a surface similar to heavy grit sandpaper. They transform each one into an elegant cookware piece by hand & machine in Charleston, SC. They are so confident in the quality of their cookware, that each Smithey comes with a lifetime guarantee. 14\" Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12\" Carbon Steel Round Roaster Pan · $295.00 Sold Out · Sold Out · 12\" Dual Handle Cast Iron Skillet · 12\" Flat Top Cast Iron Griddle · $140.00 Sold Out · Sold Out · Carbon Steel Party Pan · $400.00 Sold Out · Sold Out · Carbon Steel Wok · $325.00 Sold Out · Sold Out · 10\" Flat Top Cast Iron Griddle · $125.00 Sold Out · Sold Out · 6\" Cast Iron Skillet · They transform each one into an elegant cookware piece by hand & machine in Charleston, SC. They are so confident in the quality of their cookware, that each Smithey comes with a lifetime guarantee. Smithey believes that some of the best cast iron sits on the ranges of future generations, and they plan to share it with you.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Smithey Ironware Co. - Handcrafted Cast Iron Skillets – The Artisan's Bench",
+                "url": "https://www.artisansbench.com/collections/smithey-ironware-co"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 5,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 248,
+          "completion_tokens": 140,
+          "cost_usd": 0.00006736
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4697,
+          "completion_tokens": 279,
+          "cost_usd": 0.00056456
+        }
+      ],
+      "llm_tokens": 5364,
+      "estimated_cost_usd": 0.025632
+    }
+  }
+}

@@ -1,0 +1,1455 @@
+{
+  "id": "camping-tent-urban",
+  "checked": "2026-09-23T22:50:16.111Z",
+  "request": {
+    "product": "camping tent",
+    "city": "Philadelphia",
+    "state": "PA",
+    "lat": 39.95,
+    "lon": -75.17
+  },
+  "status": 200,
+  "elapsed_ms": 30638,
+  "body": {
+    "query": {
+      "product": "camping tent",
+      "city": "Philadelphia",
+      "state": "PA",
+      "canonical_name": "camping tent",
+      "category": "outdoor gear"
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4BQEAQQNC7FBUBLUFWQQ5VSSSYCPKZN5YAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Philadelphia Runner",
+          "domain": "philadelphiarunner.com",
+          "url": "https://philadelphiarunner.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1711 Walnut St, Philadelphia, PA 19103",
+        "distance_km": 0,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Philadelphia Runner",
+                "url": "https://philadelphiarunner.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 1,
+            "weight": 0.15,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "0 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc44RJEWKM67FBUB7KZHVY4VSSSYBIVN47RAAAAAAA=:15",
+        "kind": "local",
+        "retailer": {
+          "name": "FIGS",
+          "domain": "wearfigs.com",
+          "url": "https://wearfigs.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1625 Walnut St, Philadelphia, PA 19103",
+        "distance_km": 0.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "FIGS",
+                "url": "https://wearfigs.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9975,
+            "weight": 0.15,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "0.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc42ZOMT2KG7FBUAL7KUQELVSSSYBCQURDTAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Frankenstein Bike Worx Spruce St Philadelphia",
+          "domain": "frankinstienbikeworx.com",
+          "url": "https://frankinstienbikeworx.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1529 Spruce St, Philadelphia, PA 19102",
+        "distance_km": 0.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.499,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Frankenstein Bike Worx Spruce St Philadelphia",
+                "url": "https://frankinstienbikeworx.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9925,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4BJ7SW7XY7FBUB5BFMWONBSSSYCKU4QE2AAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Haworth Philadelphia Showroom",
+          "domain": "haworth.com",
+          "url": "https://haworth.com/na/en.html"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1700 Market St Ste 600, Philadelphia, PA 19103",
+        "distance_km": 0.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.499,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Haworth Philadelphia Showroom",
+                "url": "https://haworth.com/na/en.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9925,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc42U4EBVMN7FBUAUMUSVYLFSSSYABGWRKSAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Aesop Walnut Street",
+          "domain": "aesop.com",
+          "url": "https://aesop.com/stores/us/pa/philadelphia"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1528 Walnut St, Philadelphia, PA 19102",
+        "distance_km": 0.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.499,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Aesop Walnut Street",
+                "url": "https://aesop.com/stores/us/pa/philadelphia"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.995,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4MW36AVUL7FBUBGEC3IKLJSSSYDIBTGM6AAAAAAA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "Camping Management Corporation",
+          "domain": "cmcstaff.com",
+          "url": "https://cmcstaff.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1528 Walnut St # 1900, Philadelphia, PA 19102, United States",
+        "distance_km": 0.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.499,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Camping Management Corporation",
+                "url": "https://cmcstaff.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.995,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4JWJPQJUX7FBUA5DUAHKHTSSSYCPQZ247AAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Pine Forest Camp",
+          "domain": "pineforestcamp.com",
+          "url": "https://pineforestcamp.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "123 S Broad St #1200, Philadelphia, PA 19109",
+        "distance_km": 0.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.498,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Pine Forest Camp",
+                "url": "https://pineforestcamp.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9875,
+            "weight": 0.15,
+            "contribution": 0.148,
+            "sources": [
+              {
+                "label": "0.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4WRTBUA5B7NBUBQGUQUHPBSCSYDDT5OTJAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Let's Go Outdoors, LLC",
+          "domain": "letsgooutdoors.net",
+          "url": "https://letsgooutdoors.net/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "c/o WeWork, Montesino, 1010 N Hancock St, Philadelphia, PA 19123",
+        "distance_km": 3.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Let's Go Outdoors, LLC",
+                "url": "https://letsgooutdoors.net/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9225,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "3.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4GGGALT6O7RBUAUFT6YWSTSKSYBC4DACEAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "gethandyoutdoors",
+          "domain": "gethandyoutdoors.com",
+          "url": "https://gethandyoutdoors.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+        "distance_km": 3.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "gethandyoutdoors",
+                "url": "https://gethandyoutdoors.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4NGSRBSBF7ZBUAI5TYQKHNSCSYAF3ZGQWAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Gear N Up",
+          "domain": "g.page",
+          "url": "https://g.page/TheDickiesStore"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "2326 N Front St, Philadelphia, PA 19133",
+        "distance_km": 5.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Gear N Up",
+                "url": "https://g.page/TheDickiesStore"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8725,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:sustainablejungle.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Sustainable Jungle",
+          "domain": "sustainablejungle.com",
+          "url": "https://www.sustainablejungle.com/eco-friendly-tents/"
+        },
+        "matched_product": "camping tent",
+        "snippet": "The company utilizes recycled materials and smart design principles to develop ultralight tents made from recycled materials and suited for harsh weather conditions. ... Their lifetime warranty, gear trade-in program, and repair guides will help you get the most out of your camping gear. ... NEMO has stepped up its sustainable tent materials with the Dagger OSMO, a lightweight backpacking tent made from 100% recycled fabric. NEMO uses 100% recycled tent fabric to produce camping tents that don’t compromise on durability or lightweight design. Their lifetime warranty is the s’mores at the end of the day. Kammok’s light hammock tents are ideal for relaxing under the night sky after a long hiking trip. You’ll sleep even better knowing they’re a Certified B Corp and Climate Neutral. ... NEMO has not been rated. ... NEMO produces some of the best sustainable tents on the market. The company utilizes recycled materials and smart design principles to develop ultralight tents made from recycled materials and suited for harsh weather conditions. ... Their lifetime warranty, gear trade-in program, and repair guides will help you get the most out of your camping gear. ... NEMO has stepped up its sustainable tent materials with the Dagger OSMO, a lightweight backpacking tent made from 100% recycled fabric. Whether it’s a sleeping bag, tent, or sleeping bag, NEMO’s products are designed to last, hence their lifetime warranty. Many of their products include repair patches and kits upon purchase, helping you get the most out of your purchase. If your sustainable camping tent reaches the end of its lifespan, you can always sell it to its trade-in partner Trove. The hammock tent is designed for hot, cold, or stormy weather and has an integrated insect net and built-in rain fly shelter. Kammok also upcycles scrap materials and hardware, with a growing catalog of products, like the Tote and Pika pack made from leftover hammock fabric. ... As a Certified B Corp, Kammok’s employees receive living wages, safe working conditions, and respect throughout their entire supply chain. Their sustainable camping tents and gear are prototyped in Austin, Texas, then manufactured by partners in Asia.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "4 Eco-Friendly Tents You Can (Sustainably) Sleep Under The Stars In",
+            "source_url": "https://www.sustainablejungle.com/eco-friendly-tents/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "4 Eco-Friendly Tents You Can (Sustainably) Sleep Under The Stars In",
+                "url": "https://www.sustainablejungle.com/eco-friendly-tents/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:bettertrail.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Better Trail",
+          "domain": "bettertrail.com",
+          "url": "https://bettertrail.com/sustainability/camping-tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "To evaluate how sustainable a camping tent is, we consider four product-level criteria: PFAS-free durable water repellent (DWR) coatings, recycled materials, Bluesign-approved materials, and solution-dyed fabrics. We also assess tent brands for their manufacturing practices, packaging reduction, repair programs, resale and recycling services, greenhouse gas emissions tracking, and annual impact reports. Compared to other categories of outdoor gear, camping tents are behind the curve on low-impact features. Still, some brands are making progress toward making more sustainable tents—and we’re here to help you find them. To evaluate how sustainable a camping tent is, we consider four product-level criteria: PFAS-free durable water repellent (DWR) coatings, recycled materials, Bluesign-approved materials, and solution-dyed fabrics. We also assess tent brands for their manufacturing practices, packaging reduction, repair programs, resale and recycling services, greenhouse gas emissions tracking, and annual impact reports. That said, we see significantly more solution-dyed materials in the backpacking tents category, raising questions over why these materials are less common in frontcountry camping tents. Durability plays a crucial role in sustainability—after all, a long-lasting tent delays the need for replacement, keeping your gear out of landfills. Flame retardants have been linked to cancer, thyroid disruption, and developmental harm, and are being phased out of many camping tents on the market. When we confirm that a tent does not contain these chemicals, we include this information in our sustainability reports.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Most Sustainable Camping Tents | Better Trail",
+                "url": "https://bettertrail.com/sustainability/camping-tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:campmaid.com",
+        "kind": "online",
+        "retailer": {
+          "name": "CampMaid",
+          "domain": "campmaid.com",
+          "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Instead of getting disposable tents for each trip, consider investing in a camping tent that’s made of eco-friendly material. It should be manufactured ethically and be recyclable. As a camping enthusiast, you should always look for sustainable camping gear. It essentially means that this gear should be made in an eco-friendly and ethical way, and you should be able to use this gear repeatedly on multiple trips to the woods. Not only is it good for the environment, but it’s also pocket-friendly a Are you a camping enthusiast? Here are four sustainable camping gear essentials that you should consider investing in. Instead of getting disposable tents for each trip, consider investing in a camping tent that’s made of eco-friendly material. It should be manufactured ethically and be recyclable.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "4 Sustainable Camping Gear Essentials - CampMaid",
+                "url": "https://www.campmaid.com/blogs/news/4-sustainable-camping-gear-essentials"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:ethicalconsumer.org",
+        "kind": "online",
+        "retailer": {
+          "name": "Ethical Consumer",
+          "domain": "ethicalconsumer.org",
+          "url": "https://www.ethicalconsumer.org/retailers/shopping-guide/outdoor-clothing-shops"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Plus we have rated some secondhand shops in our ethical clothing Guide. See also our article on charity shops. We rated outdoor clothing shops on their policy of using the highly toxic and persistent ‘forever chemicals’, PFAs, which are used as waterproof membranes and coatings, like Gore-Tex. PFAS (per- and polyfluorinated alkyl substances) are a group of harmful industrial chemicals linked to a wide range of health and environmental impacts. The outdoor gear industry call them PFCs (perfluorinated compounds or chemicals) but we are talking about the same thing. What to look for when buying from outdoor clothing shops: Is it a local retailer? By buying from a local retailer, you support your local economy and avoid large, often unethical conglomerates. Is it a secondhand retailer? Buying secondhand gear and extending the life of existing clothing and equipment is the most ethical option. Plus we have rated some secondhand shops in our ethical clothing Guide. See also our article on charity shops. We rated outdoor clothing shops on their policy of using the highly toxic and persistent ‘forever chemicals’, PFAs, which are used as waterproof membranes and coatings, like Gore-Tex. PFAS (per- and polyfluorinated alkyl substances) are a group of harmful industrial chemicals linked to a wide range of health and environmental impacts. The outdoor gear industry call them PFCs (perfluorinated compounds or chemicals) but we are talking about the same thing. When buying outdoor gear, our key recommendation is to look for ways to buy secondhand. We haven’t rated secondhand retailers in this guide, and unfortunately many (e.g. eBay) are not renowned for their ethics. Find ethical and environmental outdoor clothing and sports shops. This guide ranks 15 outdoor and sports clothing and equipment retailers. Whether you are an avid mountain climber or like a stroll in the park, buying outdoor clothing and equipment is necessary with the British weather.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Outdoor clothing shops | Ethical Consumer",
+                "url": "https://www.ethicalconsumer.org/retailers/shopping-guide/outdoor-clothing-shops"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:abodeoutside.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Abodeoutside",
+          "domain": "abodeoutside.com",
+          "url": "https://abodeoutside.com/collections/all"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Abode Outside offers high-quality, sustainable clothing includes hoodies, pullovers, sleeveless, headwear &amp; accessories and more. Shop Now! From recycled polyester and wool blends to innovative new blends, our yarns are chosen for their technical benefits and low environmental footprint. You’ll find eco-conscious gifts and outdoor gear that meet the needs of both minimalists and adventurers. Looking for stylish, functional clothing with a conscience? Browse our full selection of sustainable apparel in The Shop. We design high-quality, eco-friendly apparel for people who love the outdoors. As a purpose-driven outdoor clothing company, our mission is to minimize environmental impact while maximizing comfort, durability, and style. Every product we make reflects our commitment to sustainability and ethical manufacturing. Minnesota is home to an incredible network of independently owned outdoor retailers and outfitters. These businesses do much more than sell gear.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Buy High Quality Sustainable Clothing Online | Affordable Eco Friendly Clothing | Ethical Gear & Apparel – ABODE OUTSIDE",
+            "source_url": "https://abodeoutside.com/collections/all",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Buy High Quality Sustainable Clothing Online | Affordable Eco Friendly Clothing | Ethical Gear & Apparel – ABODE OUTSIDE",
+                "url": "https://abodeoutside.com/collections/all"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:lensofjen.org",
+        "kind": "online",
+        "retailer": {
+          "name": "The Lens of Jen",
+          "domain": "lensofjen.org",
+          "url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "And did you know you can also shop for gently used outdoor gear at REI, too? Yep! Shop women’s gear here and men’s ethical outdoor clothing here. Here are a few sustainable outdoor brands that are selling gently used ethical outdoor clothing: Geartrade is an awesome eco-friendly, centralized hub for buying and selling outdoor gear and clothing. The clothes are often so gently “used” that the tags are still on them, but your discount is massive. Reusing outdoor gear and keeping it out of our landfills is one of the most sustainable ways to shop. Shop men’s clothing here and women’s gear here. The founder of Patagonia literally created the 1% for the Planet program, which encourages companies to contribute one percent of total annual sales to grassroots environmental groups. So you know these guys are leaders even among other ethical outdoor brands who are looking to keep clothes out of landfills and to use sustainable materials in production. And did you know you can also shop for gently used outdoor gear at REI, too? Yep! Shop women’s gear here and men’s ethical outdoor clothing here. You sign up for an account at Geartrade absolutely free to start shopping for your discounted items. Browse women’s gear here and men’s gear here. Have gear to sell? You can sign up for a free Geartrade account to sell your gently used outdoor gear, too!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Ethical Outdoor Clothing For Cheap• The Lens of Jen",
+            "source_url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Ethical Outdoor Clothing For Cheap• The Lens of Jen",
+                "url": "https://www.lensofjen.org/ethical-outdoor-clothing-for-autumn-and-beyond/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:veggievagabonds.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Veggie Vagabonds",
+          "domain": "veggievagabonds.com",
+          "url": "https://veggievagabonds.com/ethical-outdoor-clothing/"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Donate it to a charity/second-hand shop or organisations like Gift Your Gear · Sell it on eBay, Gumtree or any of the other suggestions listed in the second-hand gear section above · Sell it back to the manufacturer: companies like Arc’teryx, Patagonia, REI, AlpKit North Face can reuse them ... You can find plenty more tips in our big Guide to Recycling Outdoor Clothing &amp; Equipment. Great for: comfy casualwear, yoga clothing and chilled ethical climbing gear · Showcasing the wonders of second-hand outdoor gear! You can shop directly with brands you know have ethical items (like the ones above), or go with outdoor suppliers which have eco products from a huge variety of outdoor companies. The ones suggested below all have search functions for sustainable materials and clearly show ethical certifications and vegan-friendly products: ... Outdoor Gear Ex. (US-based) ... It’s all well and good saying try and buy sustainable! but how can you actually tell? Nowadays, ‘eco-friendly’ has become a major selling point and the certifications listed below will normally be advertised with pride. If you’re shopping in-store the info might be on the clothes tags and online on the product description. The ultimate guide to finding the right ethical outdoor clothing and making your time in the outdoors that bit more sustainable! Donate it to a charity/second-hand shop or organisations like Gift Your Gear · Sell it on eBay, Gumtree or any of the other suggestions listed in the second-hand gear section above · Sell it back to the manufacturer: companies like Arc’teryx, Patagonia, REI, AlpKit North Face can reuse them ... You can find plenty more tips in our big Guide to Recycling Outdoor Clothing & Equipment.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "A Guide to Ethical Outdoor Clothing and Sustainable Gear 2023",
+            "source_url": "https://veggievagabonds.com/ethical-outdoor-clothing/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "A Guide to Ethical Outdoor Clothing and Sustainable Gear 2023",
+                "url": "https://veggievagabonds.com/ethical-outdoor-clothing/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:knownothingnomads.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Know Nothing Nomads",
+          "domain": "knownothingnomads.com",
+          "url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Patagonia – As a Certified B Corp, Patagonia sets the standard in ethical business practices, offering sustainable outdoor apparel and gear while committing to environmental and social responsibility. Shop Patagonia at REI. Arc’teryx – A high-end brand known for its superior craftsmanship in outdoor clothing and gear that is particularly favored by climbers and alpinists. Shop RDS products by Arc’teryx at REI. In addition to the Responsible Down Standard, the Global Traceable Down Standard (TDS) offers another layer of assurance for ethically sourced Down. Patagonia – As a Certified B Corp, Patagonia sets the standard in ethical business practices, offering sustainable outdoor apparel and gear while committing to environmental and social responsibility. Shop Patagonia at REI. Cotopaxi – Cotopaxi, a Certified B Corp, focuses on creating innovative and ethically made outdoor gear, with a strong emphasis on fighting poverty and supporting community initiatives. Shop Cotopaxi at REI. Shopping sustainably, especially when it comes to outdoor gear, is a powerful way to contribute positively to the environment. By choosing eco-friendly companies and products, consumers directly support practices that reduce environmental impact, such as minimizing carbon footprints, conserving natural resources, and reducing waste. Sustainable shopping also often means supporting ethical labor practices and animal welfare.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "The Truth About Sustainable Outdoor Gear You Need to ...",
+            "source_url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/",
+            "origin": "llm",
+            "action_date": null
+          },
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "The Truth About Sustainable Outdoor Gear You Need to ...",
+            "source_url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "The Truth About Sustainable Outdoor Gear You Need to ...",
+                "url": "https://knownothingnomads.com/sustainable-outdoor-gear-shopping/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:alwaystheadventure.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Always the Adventure",
+          "domain": "alwaystheadventure.com",
+          "url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Our sustainable outdoor gear pick: Edelrid Swift Eco 8.9mm x 70m recycled climbing rope (this is the rope we use!) ... “Marmot strives for the highest level of performance and protection with the lowest possible impact on the planet. We have a rigorous process of selecting sustainable materials and manufacturing methods.” ... Eco friendly camping gear range: Eco friendly camping gear like tents and sleeping bags (shop their Eco line for eco friendly sleeping bags), mountaineering gear, and eco friendly hiking clothes Ethical practices: No information about factories and manufacturing detailed on their website · Impact management: Sell used BA gear at their brick-and-mortar shop (remember we love used gear!) Other: Offer grants through the Bob Swanson Fund; Protect public lands and outdoor inclusivity by donating to environmental organizations like Leave No Trace, the American Alpine Club, SOS Outreach, She Jumps, and more; Support the Continental Divide Trail Coalition by adopting 75 miles of trail to maintain; Re-Routt™ collection utilized recycled fabrics, fills, and hardware and/or environmentally sensitive manufacturing practices Ethical practices: Founding member of the Outdoor Industry Association (OIA) Sustainability Working Group; All products made in the USA (in either Reno or Seattle) in factories with tons of ethical compliance certifications; Practice rigorous supplier tracking · Impact Management: Design with longevity in mind; Have a warranty and repair shop (in 2018, they repaired 85% of the products returned to them); One of the first hard-good brands to use the Higg Index to assess material traceability, chemical management, and social responsibility; Offer fuel canister recycling at their Seattle workshop; Packaging materials are locally sourced from northwest suppliers; Seattle factory runs on 98% renewable energy; Aspires to be a zero waste brand; Assess the impact of every one of their products, from design to disposal You’re only as good as your gear, at least from an environmental standpoint. These eco friendly outdoor gear brands offer a more ethical way to gear up and get out. Our sustainable outdoor gear pick: Edelrid Swift Eco 8.9mm x 70m recycled climbing rope (this is the rope we use!) ... “Marmot strives for the highest level of performance and protection with the lowest possible impact on the planet. We have a rigorous process of selecting sustainable materials and manufacturing methods.” ... Eco friendly camping gear range: Eco friendly camping gear like tents and sleeping bags (shop their Eco line for eco friendly sleeping bags), mountaineering gear, and eco friendly hiking clothes",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "27 of the Most Ethical & Eco Friendly Outdoor Gear Brands — Always the Adventure",
+            "source_url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "27 of the Most Ethical & Eco Friendly Outdoor Gear Brands — Always the Adventure",
+                "url": "https://alwaystheadventure.com/sustainability/eco-friendly-outdoor-gear-brands"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:gearjunkie.com",
+        "kind": "online",
+        "retailer": {
+          "name": "GearJunkie",
+          "domain": "gearjunkie.com",
+          "url": "https://gearjunkie.com/outdoor/best-independent-gear-shops-america"
+        },
+        "matched_product": "outdoor gear",
+        "snippet": "Along with its online companion site GearX.com, the Outdoor Gear Exchange is an everything outfitter: camping, hiking, climbing, mountaineering, telemark, alpine touring, nordic skiing, cycling, paddling, and yoga. When it comes to sustainability, buying used is the easiest and best way to make an environmentally friendly choice. Janky Gear specializes in used outdoor equipment and clothing for camping, climbing, and winter sports. It operates on consignment, so it’s constantly getting in new stuff. With climbing magnet Red River Gorge nearby, it’s no surprise that Lexington is home to a long-running independent gear shop. J&H specializes in climbing, camping, and travel products. Owner Tracy Mayer has worked in the outdoors industry since she was 14 years old. Backcountry North has an in-store theater where patrons can arrange to hold slideshow viewings of recent adventures. The store sells camping gear, apparel, packs, and more. Along with its online companion site GearX.com, the Outdoor Gear Exchange is an everything outfitter: camping, hiking, climbing, mountaineering, telemark, alpine touring, nordic skiing, cycling, paddling, and yoga.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "The Best Independent Gear Shops in the USA | GearJunkie",
+                "url": "https://gearjunkie.com/outdoor/best-independent-gear-shops-america"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 5,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 245,
+          "completion_tokens": 131,
+          "cost_usd": 0.00006659
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4775,
+          "completion_tokens": 1580,
+          "cost_usd": 0.00096439
+        }
+      ],
+      "llm_tokens": 6731,
+      "estimated_cost_usd": 0.026031
+    }
+  }
+}

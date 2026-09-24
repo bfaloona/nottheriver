@@ -1,0 +1,1411 @@
+{
+  "id": "cast-iron-skillet-suburban",
+  "checked": "2026-09-23T22:47:09.855Z",
+  "request": {
+    "product": "cast iron skillet",
+    "city": "Natick",
+    "state": "MA",
+    "lat": 42.28,
+    "lon": -71.35
+  },
+  "status": 200,
+  "elapsed_ms": 21712,
+  "body": {
+    "query": {
+      "product": "cast iron skillet",
+      "city": "Natick",
+      "state": "MA",
+      "canonical_name": "cast iron skillet",
+      "category": "cookware"
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4OZDKKIS7ERCUAV44YXTD5VSRYCHLMLABYSJGN7Q=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Cilicia Mediterranean Market and Kitchen",
+          "domain": "ciliciamediterranean.com",
+          "url": "https://ciliciamediterranean.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "7 Main St, Natick, MA 01760",
+        "distance_km": 0.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.498,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Cilicia Mediterranean Market and Kitchen",
+                "url": "https://ciliciamediterranean.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9875,
+            "weight": 0.15,
+            "contribution": 0.148,
+            "sources": [
+              {
+                "label": "0.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4UNRFEMXPEZCUATNSD5ZS7VKRYD35623EAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Kitchen Countertops & Cabinets",
+          "domain": "ifoundmykitchen.com",
+          "url": "https://ifoundmykitchen.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1 Wellesley Rd, Natick, MA 01760",
+        "distance_km": 3.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Kitchen Countertops & Cabinets",
+                "url": "https://ifoundmykitchen.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9225,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "3.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4HNFTKWG5EZCUBZPJAGMFPWCRYCVFV77PAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "321 Speen St #3a, Natick, MA 01760",
+        "distance_km": 3.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Harbor Freight",
+                "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4AKCA6JK2EZCUAXFI7RVXTWCRYBZPKHY7AAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Crate & Barrel",
+          "domain": "crateandbarrel.com",
+          "url": "https://crateandbarrel.com/stores/natick-mall/str211"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1245 Worcester St, Natick, MA 01760",
+        "distance_km": 3.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Crate & Barrel",
+                "url": "https://crateandbarrel.com/stores/natick-mall/str211"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.915,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc45YQYNQQME5CUBHD7MAZWLWCRYBBTLPS5AAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "KOHLER Store by Supply New England (Natick)",
+          "domain": "kohler.com",
+          "url": "https://kohler.com/en/locations/massachusetts/natick/kohler-store-by-supply-new-england"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "323 Speen St, Natick, MA 01760",
+        "distance_km": 3.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.486,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "KOHLER Store by Supply New England (Natick)",
+                "url": "https://kohler.com/en/locations/massachusetts/natick/kohler-store-by-supply-new-england"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.905,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "3.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4KKMJY73AEZCUAQP23S76RWCRYDQSKYQAAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "BED BATH & BEYOND + The Container Store",
+          "domain": "containerstore.com",
+          "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT"
+        },
+        "matched_product": "",
+        "snippet": "service",
+        "address": "1265 Worcester St, Natick, MA 01760",
+        "distance_km": 3.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.485,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "BED BATH & BEYOND + The Container Store",
+                "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9025,
+            "weight": 0.15,
+            "contribution": 0.135,
+            "sources": [
+              {
+                "label": "3.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc43BD2PLT4EZCUAMC6TDYVXWKRYCJ4ZQZKAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Pacific Kitchen and Home",
+          "domain": "bestbuy.com",
+          "url": "https://stores.bestbuy.com/ma/framingham/1-worcester-rd-532.html?loc=ns100"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1 Worcester Rd Ste 23, Framingham, MA 01701",
+        "distance_km": 4.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Pacific Kitchen and Home",
+                "url": "https://stores.bestbuy.com/ma/framingham/1-worcester-rd-532.html?loc=ns100"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.89,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4FNQKP7L3EZCUB5PL6O6SXWKRYC7STEYFAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Hobby Lobby",
+          "domain": "hobbylobby.com",
+          "url": "https://hobbylobby.com/stores/search/915"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1 Worcester Rd, Framingham, MA 01701",
+        "distance_km": 4.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Hobby Lobby",
+                "url": "https://hobbylobby.com/stores/search/915"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.895,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4Z3XNV342EZCUAF2EUSTF3WKRYCKMMJDGAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Homesense",
+          "domain": "homesense.com",
+          "url": "https://locations.us.homesense.com/ma/framingham"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1 Worcester Rd, Framingham, MA 01701",
+        "distance_km": 4.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.483,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Homesense",
+                "url": "https://locations.us.homesense.com/ma/framingham"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8875,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "4.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4RYSQORZEE5CUACH3DNMR5WKRYDH7ADDYAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Dolce Vita Kitchen and Bath",
+          "domain": "dvkitchens.com",
+          "url": "https://dvkitchens.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "405 Cochituate Rd, Framingham, MA 01701",
+        "distance_km": 4.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.483,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Dolce Vita Kitchen and Bath",
+                "url": "https://dvkitchens.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8875,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "4.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:boroughfurnace.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Borough Furnace",
+          "domain": "boroughfurnace.com",
+          "url": "https://www.boroughfurnace.com/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Cast iron skillets and Dutch ovens, poured and finished by hand in Owego, New York. 100% recycled iron, built to last generations.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Cast Iron Cookware, Cast by Hand in New York | Borough Furnace",
+            "source_url": "https://www.boroughfurnace.com/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Cookware, Cast by Hand in New York | Borough Furnace",
+                "url": "https://www.boroughfurnace.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:seriouseats.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Serious Eats",
+          "domain": "seriouseats.com",
+          "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. Cast iron skillets are dead simple pieces of cookware. They’re cast out of an alloy of iron, carbon, and silicon that is sanded and sometimes pre-seasoned. Sure, like most gear, the design and price tag vary depending on the manufacturer, but at their core, cast iron skillets are just a big honkin’ piece of metal. The Best Small Cast Iron Skillet: Field Company No.5 Cast Iron Chef Skillet at Fieldcompany.com Jump to Review · I tested cast iron skillets by searing and baking in them, noting if anything stuck egregiously to the surface. The best cast iron skillet is from Lodge. It heats up fast and sears deeply, and only costs around $20. We also like the lightweight Lancaster No. Options abound: pricey and cheap, smooth-surfaced or pebbled, big and small. But much of what makes a great cast iron skillet boils down to a cook’s preferences.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "To Find the Best Cast Iron Skillets, I Seared Steaks, Baked Cornbread, and Fried Dozens of Eggs",
+                "url": "https://www.seriouseats.com/best-cast-iron-skillet"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:lodgecastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lodge Cast Iron",
+          "domain": "lodgecastiron.com",
+          "url": "https://www.lodgecastiron.com/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Shop the original home of American cast iron. Create kitchen memories with Lodge Cast Iron skillets, dutch ovens, carbon steel, pans, bakeware &amp; more. NEW: Luxe Enameled Cast Iron, choose your color today! The perfect gift, made by you! | Custom Skillets →",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
+                "url": "https://www.lodgecastiron.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:fbgcastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fbgcastiron",
+          "domain": "fbgcastiron.com",
+          "url": "https://www.fbgcastiron.com/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Realize the Benefits of our No. 10 Cast Iron Skillet ... Made in Texas. Crafted by Family | For Family | For Life Shop Equipped with a large main handle, a generous helper handle, an easy to use pour spout, and with the smoothest polished interior cooking surface of any cast iron skillet on the market you won't want to cook with anything else. Additionally our team has hand seasoned your skillet to perfection with avocado oil, allowing for immediate cooking action upon arrival. For the perfect pan-seared thick-cut steak turned to your Fredericksburg Cast Iron skillet with its heat-retention properties which are ideal for a perfect sear. Peach season in Fredericksburg is one of the best times of the year. This cast iron skillet take on an old fashioned, but incredibly easy recipe, is the best. Fredericksburg Cast Iron Co.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Fredericksburg Cast Iron Co.",
+                "url": "https://www.fbgcastiron.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:lancastercastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lancaster Cast Iron",
+          "domain": "lancastercastiron.com",
+          "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Their lightweight design makes them a preferred choice for seasoned chefs and home cooks. With our lifetime warranty, you can enjoy the durability and performance of these skillets for generations to come. ... Lancaster No. 4 Cast Iron Skillet Lancaster No. 6 Cast Iron Skillet Lancaster No. 8 Cast Iron Skillet",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Skillets – American-Made Cookware | Lancaster Cast Iron",
+                "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:prettyorganicgirl.com",
+        "kind": "online",
+        "retailer": {
+          "name": "PrettyOrganicGirl",
+          "domain": "prettyorganicgirl.com",
+          "url": "https://www.prettyorganicgirl.com/cast-iron"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, ... The Best Cast Iron Cookware Brand Reviews 2026. Cast Iron made in the USA with safer and approved materials. Cast iron Organic seasoning oil, PFSA PFOA-free. Organic cast iron pan, cast iron griddle, cast iron skillet, non-stick baking pans, cast iron cooking pans, non-stick, non-toxic cookware, baking.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Best Cast Iron Cookware Brands 2026 | PrettyOrganicGirl",
+                "url": "https://www.prettyorganicgirl.com/cast-iron"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:madeintheusamatters.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Made in the USA Matters",
+          "domain": "madeintheusamatters.com",
+          "url": "https://madeintheusamatters.com/cast-iron-cookware-made-in-the-usa-american-made-brand-directory/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Collectors who appreciate smooth cast iron skillets from boutique brands · Shoppers who want to support American-made cast iron pans and pots Cast iron cookware has a long history in American kitchens, from vintage Griswold skillets to modern pans by Lodge, Smithey, and Stargazer. Shoppers often ask which brands are still making cast iron in the USA, what makes them different, and how to choose the best skillet or Dutch oven. Collectors who appreciate smooth cast iron skillets from boutique brands · Shoppers who want to support American-made cast iron pans and pots Cast iron cookware made in USA continues a tradition that stretches back over a century. From everyday cast iron skillets made in the USA to heirloom-quality cast iron Dutch ovens, American makers still produce some of the best cast iron cookware available. American-made cast iron cookware from top U.S. brands · USA-made skillets, Dutch ovens, and pots for kitchens and campfires",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Cookware Made in USA: Authentic American-Made Brands - Made in the USA Matters",
+                "url": "https://madeintheusamatters.com/cast-iron-cookware-made-in-the-usa-american-made-brand-directory/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:fieldcompany.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Field Company",
+          "domain": "fieldcompany.com",
+          "url": "https://fieldcompany.com/collections/cast-iron-skillets"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Field Company Cast Iron Skillets are meticulously designed to combine the best features of vintage American cast iron with modern craftsmanship. Our skillets are made in the USA using recycled iron and traditional green sand casting methods, ... Field Skillets are named after vintage cast iron naming conventions, meaning the No.8 Field Skillet is actually 10.25 inches. If you're shopping for your every day pan, we would recommend our two most popular skillets: Field Company Cast Iron Skillets are meticulously designed to combine the best features of vintage American cast iron with modern craftsmanship. Our skillets are made in the USA using recycled iron and traditional green sand casting methods, just like the most celebrated vintage cast iron manufacturers, Griswold and Wagner. Like vintage pans, Field skillets have thinner sidewalls and weigh less overall, making them easy to reach for every day. We're not just a company, we're cast iron nerds. Field Cast Iron Skillets are induction compatible. We have a clever feature on all Field Company skillets—a heat ring!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Lightweight Cast Iron Skillets – Smooth, Nonstick | Field Company",
+            "source_url": "https://fieldcompany.com/collections/cast-iron-skillets",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Lightweight Cast Iron Skillets – Smooth, Nonstick | Field Company",
+                "url": "https://fieldcompany.com/collections/cast-iron-skillets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:artisansbench.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Artisan's Bench",
+          "domain": "artisansbench.com",
+          "url": "https://www.artisansbench.com/collections/smithey-ironware-co"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "14&quot; Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12&quot; Carbon Steel Round Roaster Pan · $295.00 ... Charleston, SC Made in the US, their skillets begin as raw castings with a surface similar to heavy grit sandpaper. They transform each one into an elegant cookware piece by hand & machine in Charleston, SC. They are so confident in the quality of their cookware, that each Smithey comes with a lifetime guarantee. 14\" Traditional Style Cast Iron Skillet · $250.00 · 7.25 Qt Dutch Oven · $375.00 · 1 Qt Saucepan with Glass Lid · $175.00 · Sold Out · Double Burner Griddle · $295.00 Sold Out · Sold Out · 12\" Carbon Steel Round Roaster Pan · $295.00 Sold Out · Sold Out · 12\" Dual Handle Cast Iron Skillet · 12\" Flat Top Cast Iron Griddle · $140.00 Sold Out · Sold Out · Carbon Steel Party Pan · $400.00 Sold Out · Sold Out · Carbon Steel Wok · $325.00 Sold Out · Sold Out · 10\" Flat Top Cast Iron Griddle · $125.00 Sold Out · Sold Out · 6\" Cast Iron Skillet · They transform each one into an elegant cookware piece by hand & machine in Charleston, SC. They are so confident in the quality of their cookware, that each Smithey comes with a lifetime guarantee. Smithey believes that some of the best cast iron sits on the ranges of future generations, and they plan to share it with you.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Smithey Ironware Co. - Handcrafted Cast Iron Skillets – The Artisan's Bench",
+                "url": "https://www.artisansbench.com/collections/smithey-ironware-co"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:eater.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Eater",
+          "domain": "eater.com",
+          "url": "https://www.eater.com/21525568/how-cast-iron-pans-are-made-by-hand-at-borough-furnace"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The small shop creates cast iron skillets, oven-to-table bakeware, and Dutch ovens. The molds for each of these items are first designed digitally, and then a machine-produced pattern is created. For the seasoned option, it’s whipped down with flaxseed seed oil because it’s very high in fatty acid which bonds well to the pan when baked, creating a sealant. This finish helps give the pan a non stick layer, and seals in the raw cast iron which is susceptible to rust. Borough Furnace is the only U.S. producer of enamel cast iron. Enameled pieces receive an “enamel slip,” which is a spray similar to those used in glazing ceramics, composed of glass, clay, and powder. Their mix is specially engineered to expand and shrink with the pan as it goes from an oven to room temperature to keep the enamel from chipping. Therefore, the team has to use a trained eye and get a feel for when the metal is right, both so that it doesn’t freeze before it hits the mold and that it doesn’t burn through the sand. When the molten metal is right, it’s poured into the mold. After it is cast and cooled down, the mold is dropped on a vibrating machine called the shakeout, which breaks the sand apart to reveal the pan. The small shop creates cast iron skillets, oven-to-table bakeware, and Dutch ovens. The molds for each of these items are first designed digitally, and then a machine-produced pattern is created.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "How Cast Iron Pans Are Made by Hand at Borough Furnace | Eater",
+                "url": "https://www.eater.com/21525568/how-cast-iron-pans-are-made-by-hand-at-borough-furnace"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 5,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 247,
+          "completion_tokens": 138,
+          "cost_usd": 0.00006915
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4252,
+          "completion_tokens": 295,
+          "cost_usd": 0.00066486
+        }
+      ],
+      "llm_tokens": 4932,
+      "estimated_cost_usd": 0.025734
+    }
+  }
+}
