@@ -1,0 +1,31 @@
+{
+  "checked": "2026-09-24T02:07:33.935Z",
+  "searches": 3,
+  "ok": 3,
+  "brave_calls": 12,
+  "llm_tokens": 14426,
+  "estimated_cost_usd": 0.062401,
+  "rows": [
+    {
+      "id": "cast-iron-skillet-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4568,
+      "estimated_cost_usd": 0.020608
+    },
+    {
+      "id": "cast-iron-skillet-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5136,
+      "estimated_cost_usd": 0.020995
+    },
+    {
+      "id": "cast-iron-skillet-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4722,
+      "estimated_cost_usd": 0.020798
+    }
+  ]
+}
