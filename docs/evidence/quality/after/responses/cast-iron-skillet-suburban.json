@@ -1,0 +1,1218 @@
+{
+  "id": "cast-iron-skillet-suburban",
+  "checked": "2026-09-24T01:17:30.636Z",
+  "request": {
+    "product": "cast iron skillet",
+    "city": "Natick",
+    "state": "MA",
+    "lat": 42.28,
+    "lon": -71.35
+  },
+  "status": 200,
+  "elapsed_ms": 14396,
+  "body": {
+    "query": {
+      "product": "cast iron skillet",
+      "city": "Natick",
+      "state": "MA",
+      "canonical_name": "cast iron skillet",
+      "category": "cookware"
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4HNFTKWG5EZCUBZPJAGMFPWCRYCVFV77PAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "321 Speen St #3a, Natick, MA 01760",
+        "distance_km": 3.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Harbor Freight",
+                "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4AKCA6JK2EZCUAXFI7RVXTWCRYBZPKHY7AAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Crate & Barrel",
+          "domain": "crateandbarrel.com",
+          "url": "https://crateandbarrel.com/stores/natick-mall/str211"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1245 Worcester St, Natick, MA 01760",
+        "distance_km": 3.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Crate & Barrel",
+                "url": "https://crateandbarrel.com/stores/natick-mall/str211"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.915,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc466AC6O32EZCUBTBT4X44FWCRYDM52CXKAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Macy's",
+          "domain": "macys.com",
+          "url": "https://macys.com/stores/ma/natick/natick-mall_40.html"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1245 Worcester Rd Ste 2, Natick, MA 01760",
+        "distance_km": 3.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.486,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Macy's",
+                "url": "https://macys.com/stores/ma/natick/natick-mall_40.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.905,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "3.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4JGIWX6JXE5CUAZN4KI5WRWKRYBMJFIAWAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "400 Cochituate Rd, Framingham, MA 01701",
+        "distance_km": 4.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.482,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "HomeGoods",
+                "url": "https://homegoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8775,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "4.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc422KL7VQAE5CUAAVRCEWZ5WKRYALVE5HKAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Lowe's Home Improvement",
+          "domain": "lowes.com",
+          "url": "https://lowes.com/store/MA-Framingham/2384?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2384-_-na-_-0-_-0&y_source=1_MTE4MzQ0OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "350 Cochituate Rd, Framingham, MA 01701",
+        "distance_km": 5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Lowe's Home Improvement",
+                "url": "https://lowes.com/store/MA-Framingham/2384?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2384-_-na-_-0-_-0&y_source=1_MTE4MzQ0OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4K5L2VMF6ENCUATFM477TBT2RYBHL5GWAAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Needham Garden & Hardware",
+          "domain": "needhamgardencenter.shop",
+          "url": "https://needhamgardencenter.shop/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "53 Chestnut St, Needham, MA 02492",
+        "distance_km": 9.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.465,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Needham Garden & Hardware",
+                "url": "https://needhamgardencenter.shop/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7675,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "9.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4SJA64ISME5CUBKKHX4RGJWCRYAMVHY5DAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://homedepot.com/l/Natick/MA/Natick/01760/2669?emt=MSGoogleMaps"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "339 Speen St, Natick, MA 01760",
+        "distance_km": 3.9,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.41,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The Home Depot",
+                "url": "https://homedepot.com/l/Natick/MA/Natick/01760/2669?emt=MSGoogleMaps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9025,
+            "weight": 0.15,
+            "contribution": 0.135,
+            "sources": [
+              {
+                "label": "3.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      }
+    ],
+    "online": [
+      {
+        "id": "online:lancastercastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lancaster Cast Iron",
+          "domain": "lancastercastiron.com",
+          "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Shop premium cast iron skillets built in the USA to last a lifetime. Seasoned, lightweight, and polished smooth for home cooks and professional kitchens. Our American-made cast iron skillet collection features a No. 4, No. 6, No. 8, No. 10, and a No. 12 Skillet! Proudly crafted in Lancaster, Pennsylvania, our skillets deliver the best cast iron cookware experience. These skillets are machined smooth to provide a naturally non-stick cooking surface that enhances your culinary endeavors. Their lightweight design makes them a preferred choice for seasoned chefs and home cooks. With our lifetime warranty, you can enjoy the durability and performance of these skillets for generations to come. ... Lancaster No. 4 Cast Iron Skillet Lancaster No. 6 Cast Iron Skillet Lancaster No. 8 Cast Iron Skillet",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Cast Iron Skillets – American-Made Cookware | Lancaster Cast Iron",
+            "source_url": "https://lancastercastiron.com/collections/cast-iron-skillets",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Skillets – American-Made Cookware | Lancaster Cast Iron",
+                "url": "https://lancastercastiron.com/collections/cast-iron-skillets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:fieldcompany.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Field Company",
+          "domain": "fieldcompany.com",
+          "url": "https://fieldcompany.com/collections/cast-iron"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Lighter, smoother cast iron skillets, made in USA by Field Company. Pre-seasoned and ready to cook cast iron pans, griddles &amp; dutch ovens. Rated best lightweight cast iron skillet by Food &amp; Wine. At just 0.04” of clearance, it won’t interfere with cooking performance or lose any power from electric or induction heat elements, particularly since induction is activated through magnetics and iron is a magnetic element. ... Field Skillets are named after vintage cast iron naming conventions, meaning the No.8 Field Skillet is actually 10.25 inches. If you're shopping for your every day pan, we would recommend our two most popular skillets: ... Read more in our size guide. We spent years developing a product that we are proud to stand behind. Try it for yourself in your own kitchen and if you aren’t satisfied with your Field Cast Iron for any reason within 45 days of receiving it, you may return the item for a refund, less shipping costs. Field Company Cast Iron Skillets are meticulously designed to combine the best features of vintage American cast iron with modern craftsmanship. Our skillets are made in the USA using recycled iron and traditional green sand casting methods, just like the most celebrated vintage cast iron manufacturers, Griswold and Wagner. Like vintage pans, Field skillets have thinner sidewalls and weigh less overall, making them easy to reach for every day. We're not just a company, we're cast iron nerds.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Cast Iron Skillets | Smooth Vintage-Style Cast Iron Cookware – Field Company",
+            "source_url": "https://fieldcompany.com/collections/cast-iron",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Skillets | Smooth Vintage-Style Cast Iron Cookware – Field Company",
+                "url": "https://fieldcompany.com/collections/cast-iron"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:finexusa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Finex",
+          "domain": "finexusa.com",
+          "url": "https://www.finexusa.com/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "The official FINEX Cast Iron Cookware website – where tradition meets innovation. Premium American-made cast iron cookware designed to last generations with our Guaranteed Good Forever promise. FINEX cast iron is built to be handed down through generations, developing a deeper patina with every use. Invest in cookware that only gets better with age. GUIDE TO CLEANING & CARE · FINEX cookware earns its place in your kitchen every day, inspiring meals for a lifetime. Start cooking with confidence. SEE WHAT’S ON THE MENU · Our skillets, dutch ovens, and grill pans can handle the heat wherever you go. FINEX Cast Iron Skillet FINEX Cast Iron Skillet FINEX Cast Iron Skillet FINEX Cast Iron Skillet FINEX Cast Iron Skillet FINEX Cast Iron Skillet FINEX Grill Pan FINEX Grill Pan 1 Qt SAUCE POT 1 Qt SAUCE POT FINEX Grill Pan FINEX Grill Pan I’ve wanted a Finex skillet since I first saw one. Finally got one and I love it! Fit and finish is amazing! I got the 12” and I plan to mainly use it for searing steaks and other meats. My only regret so far is not getting the lid with it.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "FINEX Cast Iron Cookware Co.",
+            "source_url": "https://www.finexusa.com/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "FINEX Cast Iron Cookware Co.",
+                "url": "https://www.finexusa.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:fbgcastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fbgcastiron",
+          "domain": "fbgcastiron.com",
+          "url": "https://www.fbgcastiron.com/"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "For the perfect pan-seared thick-cut steak turned to your Fredericksburg Cast Iron skillet with its heat-retention properties which are ideal for a perfect sear. Equipped with a large main handle, a generous helper handle, an easy to use pour spout, and with the smoothest polished interior cooking surface of any cast iron skillet on the market you won't want to cook with anything else. Additionally our team has hand seasoned your skillet to perfection with avocado oil, allowing for immediate cooking action upon arrival. This robust process creates a non-stick experience, enhancing your ease of use and quickly moving your cast iron into your everyday rotation. The ideal size for everyday use - from cooking up the perfect grilled cheese to preparing your favorite dessert - our No. 10 skillet will become your go to cast iron skillet. For the perfect pan-seared thick-cut steak turned to your Fredericksburg Cast Iron skillet with its heat-retention properties which are ideal for a perfect sear.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Fredericksburg Cast Iron Co.",
+                "url": "https://www.fbgcastiron.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:lehmans.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lehmans.com",
+          "domain": "lehmans.com",
+          "url": "https://www.lehmans.com/category/cast-iron"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Cooking food with cast iron brings ... no cookware more suitable for off-grid living, camping and cooking over the open fire than cast iron. Shop cast iron skillets, pans, waffle makers, grills, pizza pans, biscuit pans and much more.... Cooking food with cast iron brings many amazing benefits - it conserves energy (since it uses less heat and water), adds dietary iron to food and simplifies cooking by providing even heat. Lehman's knows that there's no cookware more suitable for off-grid living, camping and cooking over the open fire than cast iron. Shop cast iron skillets, pans, waffle makers, grills, pizza pans, biscuit pans and much more. Improve the way you cook with high-quality, American-made cast iron cookware and accessories from Lehman's, including cookware by Lodge.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Cast Iron Cookware: Skillets, Pans, Grills, Cleaning",
+            "source_url": "https://www.lehmans.com/category/cast-iron",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron Cookware: Skillets, Pans, Grills, Cleaning",
+                "url": "https://www.lehmans.com/category/cast-iron"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Get free shipping on qualified Cast Iron Skillets products or Buy Online Pick Up in Store today in the Kitchen Department.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cast Iron - Skillets - The Home Depot",
+                "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940"
+        },
+        "matched_product": "cast iron skillet",
+        "snippet": "Utopia Kitchen Cast iron Skillets 3 Piece Set, Chefs Pan, Pre Seasoned Cast iron Skillets, 6, 8 &amp; 10 Inches, Black Utopia Kitchen Cast iron Skillets 3 Piece Set, Chefs Pan, Pre Seasoned Cast iron Skillets, 6, 8 & 10 Inches, Black FINEX 12\" Cast Iron Skillet Without Lid - Versatile Cast Iron Pan - Cooking Pan Enhances Food Taste - Nonstick Skillet - Heirloom Kitchen Essentials - Pre-Seasoned with Flaxseed Oil",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Pre-Seasoned Cast Iron Skillets - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:smithey.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Smithey Ironware",
+          "domain": "smithey.com",
+          "url": "https://smithey.com/"
+        },
+        "matched_product": "cookware",
+        "snippet": "Smithey Ironware Co. designs and manufactures heirloom quality cast iron and carbon steel cookware in Charleston, SC. From skillets to Dutch ovens, roasters to our hand-forged wok, Smithey crafts tools for your kitchen that will last a lifetime. This will cook all your favorite foods with a whisker of butter or oil. Very nonstick. Heats evenly, cleans easily with water. Best cast iron cookware ever. Got for my spouse who was the #10 and can’t stop talking about what an amazing pan it is. — Sandara · Shop the no. 12 combo set · No. 14 Dual Handle Skillet Shop the no. 14 dual handle skillet · No. 10 Chef Skillet · This has replaced all my pan cookware, an extreme close 2nd to my grandma's vintage skillet that I acquired but, only due to nostalgia. AMERICAN Cast iron is the way to go!! Shop the No. 6 Skillet ... Cast Iron vs Carbon Steel... Smithey Ironware Co. designs and manufactures heirloom quality cast iron and carbon steel cookware in Charleston, SC. From skillets to Dutch ovens, roasters to our hand-forged wok, Smithey crafts tools for your kitchen that will last a lifetime.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Smithey Ironware Company | Premium Cast Iron Cookware",
+            "source_url": "https://smithey.com/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Smithey Ironware Company | Premium Cast Iron Cookware",
+                "url": "https://smithey.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:lodgecastiron.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lodge Cast Iron",
+          "domain": "lodgecastiron.com",
+          "url": "https://www.lodgecastiron.com/collections/skillets"
+        },
+        "matched_product": "",
+        "snippet": "Since 1896, Lodge Cast Iron has held a permanent place on stovetops around the world. Our American-made seasoned cast iron collection includes skillets, dutch ovens, and griddles, as well as grill pans and grill presses - perfect for grilling, ... Since 1896, Lodge Cast Iron has held a permanent place on stovetops around the world. Our American-made seasoned cast iron collection includes skillets, dutch ovens, and griddles, as well as grill pans and grill presses - perfect for grilling, baking, and serving for both outdoor and camping and at home. NEW: Luxe Enameled Cast Iron, choose your color today! The perfect gift, made by you! | Custom Skillets →",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Skillets – Lodge Cast Iron",
+            "source_url": "https://www.lodgecastiron.com/collections/skillets",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Skillets – Lodge Cast Iron",
+                "url": "https://www.lodgecastiron.com/collections/skillets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 340,
+          "completion_tokens": 127,
+          "cost_usd": 0.00007718
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3188,
+          "completion_tokens": 1491,
+          "cost_usd": 0.00082574
+        }
+      ],
+      "llm_tokens": 5146,
+      "estimated_cost_usd": 0.020903
+    }
+  }
+}
