@@ -55,6 +55,8 @@ async function readSaved(file) {
 async function main() {
   const { WORKER_URL, ORIGIN } = process.env;
   const delay = Number(process.env.DELAY_MS ?? DEFAULT_DELAY_MS);
+  // A rerun after a pipeline change goes to its own directory so earlier evidence is never overwritten.
+  const outDir = process.env.OUT_DIR || OUT_DIR;
   if (!WORKER_URL || !ORIGIN) {
     console.error('Set WORKER_URL (Worker base URL) and ORIGIN (the Worker ALLOWED_ORIGIN).');
     process.exit(2);
@@ -63,12 +65,12 @@ async function main() {
   const zips = JSON.parse(await readFile('public/zips.json', 'utf8'));
   const only = new Set(process.argv.slice(2));
   const endpoint = `${WORKER_URL.replace(/\/$/, '')}/search`;
-  await mkdir(`${OUT_DIR}/responses`, { recursive: true });
+  await mkdir(`${outDir}/responses`, { recursive: true });
 
   const rows = [];
   for (const query of queries) {
     if (only.size > 0 && !only.has(query.id)) continue;
-    const file = `${OUT_DIR}/responses/${query.id}.json`;
+    const file = `${outDir}/responses/${query.id}.json`;
     const existing = await readSaved(file);
     // Resuming after an interruption must not pay for searches that already succeeded.
     if (existing?.status === 200) {
@@ -89,7 +91,7 @@ async function main() {
   }
 
   const headline = totals(rows);
-  await writeFile(`${OUT_DIR}/run-summary.json`, JSON.stringify({ checked: new Date().toISOString(), ...headline, rows }, null, 2) + '\n');
+  await writeFile(`${outDir}/run-summary.json`, JSON.stringify({ checked: new Date().toISOString(), ...headline, rows }, null, 2) + '\n');
   console.log(headline);
 }
 

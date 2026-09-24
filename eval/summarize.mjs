@@ -6,7 +6,8 @@ import { pathToFileURL } from 'node:url';
 import { Validator } from '@cfworker/json-schema';
 import { getDomain } from 'tldts';
 
-const DIR = 'docs/evidence/quality';
+// OUT_DIR selects a rerun's own evidence directory, matching run-searches.mjs.
+const DIR = process.env.OUT_DIR || 'docs/evidence/quality';
 const SECTIONS = ['online', 'local'];
 const ACCESS = ['ok', 'challenge', 'blocked', 'robots_disallow', 'error'];
 const BOT_BLOCKED = new Set(['challenge', 'blocked', 'robots_disallow']);
