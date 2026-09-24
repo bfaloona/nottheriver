@@ -162,6 +162,19 @@ describe('runSearch over the fixtures', () => {
     );
   });
 
+  it("ranks a nearby store the model judged to sell the product above one it only thought might", () => {
+    const store = (name: string, sells: 'yes' | 'maybe'): EnrichedRow => ({
+      ...row(candidate({ kind: 'local', name, title: name, snippet: 'shop', domain: `${name.toLowerCase()}.example`, url: `https://${name.toLowerCase()}.example/`, address: '1 Main St', lat: REQ.lat + 0.01, lon: REQ.lon, place_id: name })),
+      classification: { site_type: 'retailer', sells_product: sells },
+    });
+    // The "maybe" store is closer, so without the judgment it would rank first.
+    const maybe = store('Maybe', 'maybe');
+    const closer = { ...maybe, candidate: { ...maybe.candidate, lat: REQ.lat } };
+    const res = finalizeResponse(scoreAll([closer, store('Yes', 'yes')], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    expect(res.local.map((r) => r.retailer.name)).toEqual(['Yes', 'Maybe']);
+    expect(res.local[0]!.components.find((c) => c.name === 'relevance')).toMatchObject({ value: 1, sources: [{ label: 'Model judgment: likely sells it' }] });
+  });
+
   describe('distance tiers', () => {
     // 1 degree of latitude is about 69 mi, so these sit roughly 5, 15, 45 and 150 mi north of REQ.
     const at = (name: string, miles: number) => row(candidate({

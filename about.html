@@ -32,7 +32,7 @@
 <h2 id="ranking">How ranking works</h2>
 <p>Each result gets four scores between 0 and 1, and its rank comes from their weighted sum. The weights are listed above every set of results, and "Why this rank" on each result shows every part of its score with a source.</p>
 <ul>
-<li>Relevance: 1 when the shop's listing names the product or a close equivalent, 0.5 when it matches only the product's category, otherwise 0.2.</li>
+<li>Relevance: 1 when the shop's listing names the product or a close equivalent, 0.5 when it matches only the product's category, otherwise 0.2. For a shop near you, the language model's judgment from the shop's name and type also counts: 1 if it judged the shop likely sells the product, 0.5 if maybe.</li>
 <li>Ethics: starts at 0.5. Each ethics certification (B Corp, Fair Trade, worker co-op) adds 0.25, up to 1. Each accepted labor or governance finding subtracts 0.25, down to 0.</li>
 <li>Environment: starts at 0.5. Each environmental certification (1% for the Planet, Climate Neutral) adds 0.25, up to 1. Each accepted environmental finding subtracts 0.25, down to 0.</li>
 <li>Proximity: for shops near you, 1 at the center of your zip area, falling to 0 at 40 km (about 25 miles). Online retailers get 0.5.</li>

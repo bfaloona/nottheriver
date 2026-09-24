@@ -183,11 +183,11 @@ function scoreRow(id: string, input: ScoreInput): ScoredRow {
 export function scoreAll(rows: EnrichedRow[], n: Normalized, req: SearchRequest, siteUrl: string): ScoredRow[] {
   const origin = { lat: req.lat, lon: req.lon };
   let localIndex = 0;
-  return rows.map(({ candidate, certifications: certs, signals }) => {
+  return rows.map(({ candidate, certifications: certs, signals, classification }) => {
     const id = candidate.kind === 'online'
       ? `online:${candidate.domain}`
       : `local:${candidate.place_id ?? candidate.domain}:${localIndex++}`;
-    return scoreRow(id, { candidate, certifications: certs, signals, normalized: n, origin, siteUrl });
+    return scoreRow(id, { candidate, certifications: certs, signals, normalized: n, origin, siteUrl, classification });
   });
 }
 

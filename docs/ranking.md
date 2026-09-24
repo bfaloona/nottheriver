@@ -35,12 +35,12 @@ Every component is between 0 and 1, and the weights sum to 1, so the score is to
 
 | Component | Rule | Source shown |
 |---|---|---|
-| Relevance | 1.0 if the result's title or snippet contains the product name or one of the similar products the model suggested; 0.5 if it contains only the product category; otherwise 0.2 | The result's own page |
+| Relevance | 1.0 if the result's title or snippet contains the product name or one of the similar products the model suggested; 0.5 if it contains only the product category; otherwise 0.2. A local shop also gets 1.0 when the classifier judged that it sells the product ("yes") and 0.5 when it judged "maybe", if that is higher | The result's own page, labeled "Model judgment" when the judgment set the value |
 | Ethics | See [Baseline](#baseline). +0.25 per ethics certification kind, capped at 1.0; then −0.25 per accepted labor or governance finding, floored at 0 | This page, plus each counted certification and finding |
 | Environment | See [Baseline](#baseline). +0.25 per environmental certification kind, capped at 1.0; then −0.25 per accepted environmental finding, floored at 0 | This page, plus each counted certification and finding |
 | Proximity | See [Proximity](#proximity) | This page |
 
-Relevance is a plain substring match on lowercased text with punctuation turned into spaces, so a short product name can match inside a longer word ("pan" in "Japan"). For a local shop the snippet is Brave's store-type word (such as "hardware") plus any categories, so most local shops score 0.5 or 0.2; a shop scores 1.0 only when its name or the snippet names the product. Both limits are listed in [debt.md](debt.md).
+Relevance is a plain substring match on lowercased text with punctuation turned into spaces, so a short product name can match inside a longer word ("pan" in "Japan"). For a local shop the snippet is Brave's store-type word (such as "hardware") plus any categories, so the text rule leaves most local shops at 0.5 or 0.2; the classifier's judgment is what separates them. On the graded searches of 2026-09-24, local shops the classifier called "yes" were good 80% of the time (53 of 66) and "maybe" 40% (58 of 146); re-ranking the graded nearby shops this way raised good shops in each search's top 3 from 23 to 29 and lowered bad ones from 20 to 15. The judgment comes from a shop's name and store type only, so it is a likelihood, not a stock check. Both limits of the text rule are listed in [debt.md](debt.md).
 
 ### Baseline
 

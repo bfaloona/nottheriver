@@ -1,5 +1,5 @@
 import type {
-  Candidate, CertKind, Certification, ComponentName, Normalized, ScoreComponent, Signal, SignalKind, SourceRef,
+  Candidate, CertKind, Certification, Classification, ComponentName, Normalized, ScoreComponent, SellsProduct, Signal, SignalKind, SourceRef,
 } from '../src/contract';
 import { haversineKm, type LatLon } from './geo';
 import { WEIGHTS } from './weights';
@@ -25,7 +25,21 @@ function normalizeText(s: string): string {
   return s.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 }
 
-export function relevance(c: Candidate, n: Normalized): { value: 1 | 0.5 | 0.2; matched: string; source: SourceRef } {
+const JUDGED: Partial<Record<SellsProduct, { value: 1 | 0.5; label: string }>> = {
+  yes: { value: 1, label: 'Model judgment: likely sells it' },
+  maybe: { value: 0.5, label: 'Model judgment: may sell it' },
+};
+
+// A place listing's text is a name and a store-type word, so the text rule leaves almost every
+// local store at 0.2; the classifier's yes/maybe separates them (80% vs 40% good in graded rows).
+export function relevance(c: Candidate, n: Normalized, sells?: SellsProduct | null): { value: 1 | 0.5 | 0.2; matched: string; source: SourceRef } {
+  const text = textRelevance(c, n);
+  const judged = c.kind === 'local' && sells ? JUDGED[sells] : undefined;
+  if (!judged || judged.value <= text.value) return text;
+  return { value: judged.value, matched: '', source: { label: judged.label, url: c.url } };
+}
+
+function textRelevance(c: Candidate, n: Normalized): { value: 1 | 0.5 | 0.2; matched: string; source: SourceRef } {
   // For places the snippet is Brave's store-type word plus any categories, so local relevance rests on those and the title.
   // Checked separately so a phrase cannot straddle the end of the title and the start of the snippet.
   const fields = [normalizeText(c.title), normalizeText(c.snippet)];
@@ -103,13 +117,14 @@ export interface ScoreInput {
   normalized: Normalized;
   origin: LatLon;
   siteUrl: string; // no trailing slash
+  classification?: Classification | null; // the model's judgment; null when it did not judge
 }
 
 export function scoreCandidate(
   input: ScoreInput, weights: Readonly<Record<ComponentName, number>> = WEIGHTS,
 ): { score: number; matched_product: string; distance_km: number | null; components: ScoreComponent[] } {
   const docUrl = `${input.siteUrl}/about.html#ranking`;
-  const rel = relevance(input.candidate, input.normalized);
+  const rel = relevance(input.candidate, input.normalized, input.classification?.sells_product);
   const prox = proximity(input.candidate, input.origin, docUrl);
   const parts: [ComponentName, { value: number; sources: SourceRef[] }][] = [
     ['relevance', { value: rel.value, sources: [rel.source] }],

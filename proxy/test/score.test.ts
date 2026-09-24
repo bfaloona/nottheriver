@@ -104,6 +104,21 @@ describe('relevance', () => {
     expect(relevance(local('Corner Store', 'Hardware Store'), normalized).value).toBe(0.2);
     expect(relevance(local('Skillet Shack', 'Cast Iron Skillet Shop'), normalized).value).toBe(1);
   });
+
+  it("lifts a local store by the model's judgment that it sells the product, citing the store", () => {
+    const store = local('Corner Store', 'Hardware Store');
+    expect(relevance(store, normalized, 'yes')).toEqual({
+      value: 1, matched: '', source: { label: 'Model judgment: likely sells it', url: store.url },
+    });
+    expect(relevance(store, normalized, 'maybe')).toMatchObject({ value: 0.5, matched: '', source: { label: 'Model judgment: may sell it' } });
+    expect(relevance(store, normalized, null).value).toBe(0.2);
+    expect(relevance(store, normalized).value).toBe(0.2);
+  });
+
+  it('keeps the text match when it scores higher than the judgment, and ignores judgments for online retailers', () => {
+    expect(relevance(local('Skillet Shack', 'Cast Iron Skillet Shop'), normalized, 'maybe')).toMatchObject({ value: 1, matched: 'cast iron skillet' });
+    expect(relevance(online('Garden hoses'), normalized, 'yes').value).toBe(0.2);
+  });
 });
 
 const dimensions = [
