@@ -52,7 +52,7 @@ A grader opens each result's URL in an ordinary browser session and records one 
 
 ## 3. Recall baseline
 
-For each search, a separate web search (a different index from Brave's; never automated Google queries through a browser) collects up to 5 good retailers per section, excluding Amazon-owned businesses. Each is opened in a browser and recorded under `baseline` with `confirmed: true` only if it sells the product. `summarize.mjs` decides whether the site returned it (same registrable domain, or same name for a local shop without a website). For each miss the grader sets `miss_reason`: `not_in_brave_index` (a Brave `site:` query finds nothing), `weak_snippet`, `ranked_low`, `filtered` (blocklist or text rule), or `other`.
+For each search, a separate web search (a different index from Brave's; never automated Google queries through a browser) collects up to 5 good retailers per section, excluding Amazon-owned businesses. Each is opened in a browser and recorded under `baseline` with `confirmed: true` only if it sells the product. `summarize.mjs` decides whether the site returned it (same registrable domain, or same name for a local shop without a website). A shop that uses more than one domain, such as one that redirects to the other, lists the rest under `also_urls`; a result on any of them counts. For each miss the grader sets `miss_reason`: `not_in_brave_index` (a Brave `site:` query finds nothing), `weak_snippet`, `ranked_low`, `filtered` (blocklist or text rule), or `other`.
 
 ## 4. Access probe
 

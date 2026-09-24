@@ -68,8 +68,11 @@ export function tally(grades, field) {
 }
 
 function returned(item, results) {
-  const domain = item.url ? getDomain(item.url) : null;
-  return results.some((r) => (domain ? r.retailer.domain === domain : normName(r.retailer.name) === normName(item.name)));
+  // A shop can own several domains (one redirecting to another); any of them counts.
+  const urls = item.url ? [item.url, ...(item.also_urls ?? [])] : [];
+  const domains = new Set(urls.map((u) => getDomain(u)).filter(Boolean));
+  if (domains.size === 0) return results.some((r) => normName(r.retailer.name) === normName(item.name));
+  return results.some((r) => domains.has(r.retailer.domain));
 }
 
 /** Recall against confirmed baseline retailers; `resultsFor(search_id, section)` gives the site's results. */

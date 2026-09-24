@@ -38,6 +38,7 @@
         "section": { "enum": ["local", "online"] },
         "name": { "type": "string" },
         "url": { "type": ["string", "null"], "description": "Null only for a local shop with no website" },
+        "also_urls": { "type": "array", "items": { "type": "string" }, "description": "Other domains the same business uses, e.g. one that redirects to url; a result on any of them counts as found" },
         "confirmed": { "type": "boolean", "description": "Opened in a real browser and seen to sell the product" },
         "miss_reason": {
           "enum": [null, "not_in_brave_index", "weak_snippet", "ranked_low", "filtered", "other"],

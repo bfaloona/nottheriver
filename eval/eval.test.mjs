@@ -144,6 +144,15 @@ describe('summarize', () => {
     expect(r).toEqual({ confirmed: 4, found: 2, recall: 0.5, miss_reasons: { ranked_low: 1, unclassified: 1 } });
   });
 
+  it('counts a baseline shop found under one of its other domains', () => {
+    const results = { 's1:local': [{ retailer: { name: 'Sky Toys & Books', domain: 'skytoys.com' } }] };
+    const base = { search_id: 's1', section: 'local', name: 'Sky Toys and Books', url: 'https://bsky.example/', confirmed: true, miss_reason: null, checked: '2026-10-01' };
+    const resultsFor = (id, sec) => results[`${id}:${sec}`] ?? [];
+    expect(recall([base], resultsFor).found).toBe(0);
+    expect(recall([{ ...base, also_urls: ['https://skytoys.com/'] }], resultsFor).found).toBe(1);
+    expect(() => validateGrades({ grades: [], baseline: [{ ...base, also_urls: ['https://skytoys.com/'] }] }, schema)).not.toThrow();
+  });
+
   it('rates bot blocking and compares it with what a person saw', () => {
     const probe = [
       { url: 'https://a.com/p', access: 'ok' },

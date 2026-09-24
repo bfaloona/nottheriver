@@ -7,14 +7,14 @@ Graded 2026-09-23 (US Pacific time; baseline top-up and access probe finished 20
 | Measure | Online | Local |
 |---|---|---|
 | Precision (sells the product; local: and the shop exists) | 99% (189 of 191) | 51% (72 of 140; 45 not judgeable, left out) |
-| Recall against a separately built baseline | 30% (30 of 100) | 29% (25 of 86) |
+| Recall against a separately built baseline | 30% (30 of 100) | 30% (26 of 86) |
 | Bot blocked rate (probe, one page per domain) | 16% (27 of 169 domains) | 14% (49 of 353 domains) |
 | Results with an unsupported badge source | 0 of 7 with badges | 0 of 6 with badges |
 | Local distance implausible | n/a | 2 of 185 |
 
 Local precision by area: urban 48% (23 of 48), suburban 53% (30 of 57), rural 54% (19 of 35).
 
-Local recall by kind of shop: independents 17% (4 of 23), chains 33% (21 of 63). A chain here is a brand with 10 or more US stores under one name; Ace Hardware dealers count as Ace. The labels are this report's judgment, one per baseline shop.
+Local recall by kind of shop: independents 17% (4 of 23), chains 35% (22 of 63). A chain here is a brand with 10 or more US stores under one name; Ace Hardware dealers count as Ace. The labels are this report's judgment, one per baseline shop.
 
 Evaluation cost: the 60 searches made 240 Brave calls and used 313,981 model tokens, an estimated $1.25 in total.
 
@@ -39,7 +39,7 @@ The probe covered every retailer domain in all 60 searches (566 domains; 44 fetc
 |---|---|---|
 | Brave has a matching page but it was not in the top 10 for the site's queries (a `site:` query found one) | 48 | not checked |
 | Returned but ranked below the top 10 or cut by the 2-branch cap | 2 | 3 |
-| Never returned by the site's Brave queries (online: not checked, Brave call budget) | 20 | 58 |
+| Never returned by the site's Brave queries (online: not checked, Brave call budget) | 20 | 57 |
 
 All 48 online misses checked with a Brave `site:` query had a matching page in Brave's index (hit counts in [misses.json](evidence/quality/eval60/misses.json)), so online recall is limited by what the site's two online queries return, not by the index. Local misses were never among Brave's place results for the site's two local queries; whether Brave's place index holds them was not checked.
 
