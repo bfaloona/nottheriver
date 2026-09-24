@@ -9,7 +9,10 @@ const round2 = (n: number) => Math.round(n * 100) / 100;
 
 export async function search(req: SearchRequest, fetchImpl: typeof fetch = fetch): Promise<SearchOutcome> {
   // An explicit literal, so nothing else a caller attaches (a zip, say) can ride along.
-  const body = { product: req.product, city: req.city, state: req.state, lat: round2(req.lat), lon: round2(req.lon) };
+  const body = {
+    product: req.product, city: req.city, state: req.state, lat: round2(req.lat), lon: round2(req.lon),
+    ...(req.ruca !== undefined && { ruca: req.ruca }),
+  };
   let res: Response;
   try {
     res = await fetchImpl(`${workerUrl}/search`, {

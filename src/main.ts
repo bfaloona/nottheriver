@@ -90,7 +90,7 @@ async function run(): Promise<void> {
     // failure cannot redraw old results over the status line.
     clearResults();
     renderStatus(status, { kind: 'searching', city: place.city, state: place.state });
-    const outcome = await search({ product: text, city: place.city, state: place.state, lat: place.lat, lon: place.lon });
+    const outcome = await search({ product: text, city: place.city, state: place.state, lat: place.lat, lon: place.lon, ruca: place.ruca });
     if (!outcome.ok) {
       return renderStatus(status, { kind: outcome.code === 'rate_limited' ? 'rate_limited' : 'failed' });
     }

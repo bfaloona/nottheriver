@@ -17,7 +17,7 @@ const TIMEOUT_MS = 60_000;
 export function buildRequest(query, zips) {
   const loc = lookupZip(query.zip, zips);
   if (!loc) throw new Error(`${query.id}: zip not found in public/zips.json`);
-  return { product: query.product, city: loc.city, state: loc.state, lat: loc.lat, lon: loc.lon };
+  return { product: query.product, city: loc.city, state: loc.state, lat: loc.lat, lon: loc.lon, ...(loc.ruca !== undefined && { ruca: loc.ruca }) };
 }
 
 async function post(url, origin, request) {

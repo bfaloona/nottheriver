@@ -5,7 +5,7 @@ What the site collects, where it goes, and what is kept. Nothing here says "noth
 ## What leaves your browser
 
 - **Your zip code does not.** The browser downloads one static file, `zips.json` (the same path for everyone, so the request itself reveals nothing), and looks the zip up locally.
-- **One request per search**, to the search Worker, with exactly five fields: the product text, the city, the state, and the center of your zip area (latitude and longitude rounded to two decimal places, about 1 km).
+- **One request per search**, to the search Worker, with at most six fields: the product text, the city, the state, the center of your zip area (latitude and longitude rounded to two decimal places, about 1 km), and your zip area's rural-urban code (one of 10 USDA categories, left out when the zip has none). The Worker uses the code only to decide how far counts as nearby and does not forward it.
 - **That center identifies your zip area.** The Worker forwards it to Brave Search to find nearby shops, so Brave learns the zip area of each search. Nothing finer is ever collected, and the site never asks for a street address.
 - **Without JavaScript, nothing is sent.** The zip field has no `name`, and the built site's Content Security Policy forbids form submission (`form-action 'none'`), so a script failure cannot turn the zip into a URL or a request.
 - **Outbound links carry no page URL.** Both pages set a `no-referrer` referrer policy through a `<meta name="referrer">` tag.

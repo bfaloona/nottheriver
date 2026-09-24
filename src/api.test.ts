@@ -26,11 +26,18 @@ describe('search (HR3, browser side)', () => {
 
     const init = fetchImpl.mock.calls[0]![1]!;
     const body = JSON.parse(init.body as string) as Record<string, unknown>;
-    expect(Object.keys(body).sort()).toEqual(['city', 'lat', 'lon', 'product', 'state']);
+    expect(Object.keys(body).sort()).toEqual(['city', 'lat', 'lon', 'product', 'ruca', 'state']);
+    expect(body.ruca).toBe(1);
     expect(String(body.lat)).toMatch(/^-?\d+(\.\d{1,2})?$/);
     expect(String(body.lon)).toMatch(/^-?\d+(\.\d{1,2})?$/);
     // No cookies or page URL either: they could identify the searcher alongside the zip area.
     expect(init).toMatchObject({ credentials: 'omit', referrerPolicy: 'no-referrer' });
+  });
+
+  it('leaves the RUCA code out when the zip has none', async () => {
+    const fetchImpl = okFetch();
+    await search({ product: 'kettle', city: 'Cambridge', state: 'MA', lat: 42.38, lon: -71.13 }, fetchImpl);
+    expect(Object.keys(JSON.parse(fetchImpl.mock.calls[0]![1]!.body as string) as object)).not.toContain('ruca');
   });
 
   it('rounds coordinates to 2 decimals even if given more', async () => {

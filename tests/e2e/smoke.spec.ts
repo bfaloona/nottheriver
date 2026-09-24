@@ -34,7 +34,7 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   // The browser is the only place the referrer meta and fetch referrerPolicy run together.
   const request = await sent;
   const payload = request.postData() ?? '';
-  expect(Object.keys(JSON.parse(payload)).sort()).toEqual(['city', 'lat', 'lon', 'product', 'state']);
+  expect(Object.keys(JSON.parse(payload)).sort()).toEqual(['city', 'lat', 'lon', 'product', 'ruca', 'state']);
   expect(payload).not.toContain(ZIP);
   // allHeaders, because headers() omits some the network layer adds, Referer among them.
   expect((await request.allHeaders()).referer).toBeUndefined();
