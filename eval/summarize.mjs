@@ -122,7 +122,8 @@ export function siteMeasure(report) {
   const recall = { online: report.recall.online.recall, local: report.recall.local.recall };
   const figures = [...Object.values(precision), ...Object.values(recall)];
   if (!report.graded_through || !figures.every(Number.isFinite)) return null;
-  return { date: report.graded_through, searches: report.searches.ok, precision, recall };
+  // A sampled run grades only some searches; the headline names how many it rests on.
+  return { date: report.graded_through, searches: report.searches.graded, precision, recall };
 }
 
 async function readJson(path, fallback) {
@@ -152,7 +153,7 @@ async function main() {
   const report = {
     generated: new Date().toISOString(),
     graded_through: grades.grades.map((g) => g.checked).sort().at(-1) ?? null,
-    searches: { planned: queries.length, saved: run.searches, ok: run.ok },
+    searches: { planned: queries.length, saved: run.searches, ok: run.ok, graded: new Set(grades.grades.map((g) => g.search_id)).size },
     cost: { brave_calls: run.brave_calls, llm_tokens: run.llm_tokens, estimated_cost_usd: run.estimated_cost_usd },
     precision: Object.fromEntries(SECTIONS.map((sec) => [sec, precision(gradesIn(sec))])),
     precision_local_by_zip_kind: Object.fromEntries(

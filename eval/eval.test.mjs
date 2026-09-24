@@ -179,12 +179,12 @@ describe('summarize', () => {
     const sec = (p, r) => ({ precision: { precision: p }, recall: { recall: r } });
     const report = (online, local, graded_through = '2026-10-01') => ({
       graded_through,
-      searches: { ok: 60 },
+      searches: { ok: 60, graded: 20 },
       precision: { online: online.precision, local: local.precision },
       recall: { online: online.recall, local: local.recall },
     });
     expect(siteMeasure(report(sec(0.9, 0.5), sec(0.8, 0.4)))).toEqual({
-      date: '2026-10-01', searches: 60, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
+      date: '2026-10-01', searches: 20, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
     });
     // Grades exist but no confirmed baseline yet: recall is null, so nothing is published.
     expect(siteMeasure(report(sec(0.9, null), sec(0.8, null)))).toBeNull();
