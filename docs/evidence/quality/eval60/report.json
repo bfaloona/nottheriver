@@ -1,0 +1,115 @@
+{
+  "generated": "2026-09-24T07:59:25.776Z",
+  "graded_through": "2026-09-23",
+  "searches": {
+    "planned": 60,
+    "saved": 60,
+    "ok": 60,
+    "graded": 20
+  },
+  "cost": {
+    "brave_calls": 240,
+    "llm_tokens": 313981,
+    "estimated_cost_usd": 1.251694
+  },
+  "precision": {
+    "online": {
+      "graded": 191,
+      "relevant": 189,
+      "unknown": 0,
+      "precision": 0.99
+    },
+    "local": {
+      "graded": 140,
+      "relevant": 72,
+      "unknown": 45,
+      "precision": 0.514
+    }
+  },
+  "precision_local_by_zip_kind": {
+    "urban": {
+      "graded": 48,
+      "relevant": 23,
+      "unknown": 14,
+      "precision": 0.479
+    },
+    "suburban": {
+      "graded": 57,
+      "relevant": 30,
+      "unknown": 13,
+      "precision": 0.526
+    },
+    "rural": {
+      "graded": 35,
+      "relevant": 19,
+      "unknown": 18,
+      "precision": 0.543
+    }
+  },
+  "badges_sourced": {
+    "online": {
+      "yes": 7,
+      "no": 0,
+      "n/a": 184
+    },
+    "local": {
+      "yes": 6,
+      "no": 0,
+      "n/a": 179
+    }
+  },
+  "distance_plausible": {
+    "yes": 183,
+    "no": 2,
+    "n/a": 0
+  },
+  "recall": {
+    "online": {
+      "confirmed": 100,
+      "found": 30,
+      "recall": 0.3,
+      "miss_reasons": {
+        "other": 48,
+        "unclassified": 20,
+        "ranked_low": 2
+      }
+    },
+    "local": {
+      "confirmed": 86,
+      "found": 25,
+      "recall": 0.291,
+      "miss_reasons": {
+        "unclassified": 58,
+        "ranked_low": 3
+      }
+    }
+  },
+  "probe": {
+    "online": {
+      "probed": 171,
+      "ok": 142,
+      "challenge": 12,
+      "blocked": 15,
+      "robots_disallow": 0,
+      "error": 2,
+      "bot_blocked_rate": 0.16
+    },
+    "local": {
+      "probed": 395,
+      "ok": 304,
+      "challenge": 16,
+      "blocked": 25,
+      "robots_disallow": 8,
+      "error": 42,
+      "bot_blocked_rate": 0.139
+    }
+  },
+  "probe_vs_person": {
+    "both_blocked": 0,
+    "bot_only": 39,
+    "person_only": 0,
+    "neither": 195,
+    "precision": 0,
+    "recall": null
+  }
+}

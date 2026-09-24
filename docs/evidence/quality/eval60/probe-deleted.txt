@@ -1,0 +1,6 @@
+Probe Worker deletion check, 2026-09-24 ~01:00 PDT
+
+Cloudflare API GET /accounts/<account>/workers/scripts/<name>/settings
+  nottheriver-access-probe: 404
+  nottheriver-proxy: 200 (the live search Worker, kept)
+https://nottheriver-access-probe.<subdomain>.workers.dev/ now answers "error code: 1042".

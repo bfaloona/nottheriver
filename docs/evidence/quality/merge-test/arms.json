@@ -1,0 +1,2881 @@
+{
+ "cast-iron-skillet-urban": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/16390",
+    "address": "29 White St, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "60 Everett St, Allston, MA 02134",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Stop & Shop",
+    "domain": "stopandshop.com",
+    "url": "https://stores.stopandshop.com/ma/arlington/905-massachusetts-avenue?y_source=1_NDE5NTg0OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "905 Massachusetts Ave, Arlington, MA 02476",
+    "distance_km": 4.7,
+    "score": 0.482,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Le Creuset Outlet Store",
+    "domain": "lecreuset.com",
+    "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row",
+    "address": "510 Assembly Row, Somerville, MA 02145",
+    "distance_km": 5.2,
+    "score": 0.481,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Kitchen Nation",
+    "domain": "kitchennationusa.com",
+    "url": "https://kitchennationusa.com/",
+    "address": "311 Washington St #2, Brookline, MA 02445",
+    "distance_km": 5.4,
+    "score": 0.48,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Master Kitchen Essential",
+    "domain": "masterkitchenpro.com",
+    "url": "https://masterkitchenpro.com/",
+    "address": "81 Taft St, Medford, MA 02155",
+    "distance_km": 6.9,
+    "score": 0.474,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Kitchenwitch",
+    "domain": "kitchenwitchjp.com",
+    "url": "https://kitchenwitchjp.com/",
+    "address": "671 Centre St, Jamaica Plain, MA 02130",
+    "distance_km": 7.8,
+    "score": 0.471,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps",
+    "address": "615 Arsenal St, Watertown, MA 02472",
+    "distance_km": 2.4,
+    "score": 0.416,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://homedepot.com/l/Somerville/MA/Somerville/02145/2667?emt=MSGoogleMaps",
+    "address": "75 Mystic Ave, Somerville, MA 02145",
+    "distance_km": 5.1,
+    "score": 0.406,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "Restaurant Supply",
+    "domain": "restaurantsupply.com",
+    "url": "https://www.restaurantsupply.com/pages/massachusetts-cambridge-restaurant-supply-store",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Lowe's",
+    "domain": "lowes.com",
+    "url": "https://www.lowes.com/pl/kitchenware/cookware/cooking-pans-skillets/cast-iron/4294606021-4294686006",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/16390",
+    "address": "29 White St, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "60 Everett St, Allston, MA 02134",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Stop & Shop",
+    "domain": "stopandshop.com",
+    "url": "https://stores.stopandshop.com/ma/arlington/905-massachusetts-avenue?y_source=1_NDE5NTg0OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "905 Massachusetts Ave, Arlington, MA 02476",
+    "distance_km": 4.7,
+    "score": 0.482,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Le Creuset Outlet Store",
+    "domain": "lecreuset.com",
+    "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row",
+    "address": "510 Assembly Row, Somerville, MA 02145",
+    "distance_km": 5.2,
+    "score": 0.481,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Kitchen Nation",
+    "domain": "kitchennationusa.com",
+    "url": "https://kitchennationusa.com/",
+    "address": "311 Washington St #2, Brookline, MA 02445",
+    "distance_km": 5.4,
+    "score": 0.48,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Muji",
+    "domain": "muji.us",
+    "url": "https://www.muji.us/",
+    "address": "48 Brattle Street, Cambridge, MA 02138",
+    "distance_km": 1.6,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Longleaf Lumber",
+    "domain": "longleaflumber.com",
+    "url": "https://www.longleaflumber.com/",
+    "address": "115 Fawcett Street, Cambridge, MA 02138",
+    "distance_km": 1.5,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Miniso",
+    "domain": "miniso-us.com",
+    "url": "https://www.miniso-us.com/locations/harvard-square",
+    "address": "31 Brattle Street, Cambridge, MA 02138",
+    "distance_km": 1.7,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "China Fair",
+    "domain": "chinafairinc.com",
+    "url": "http://www.chinafairinc.com/",
+    "address": "2100 Massachusetts Avenue, Cambridge, MA 02140",
+    "distance_km": 1.8,
+    "score": 0.493,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/16390",
+    "address": "29 White St, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://www.acehardware.com/store-details/16390",
+    "address": "29 White Street, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/cambridge-porter-square/3304",
+    "address": "822 Somerville Avenue, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Pod",
+    "domain": "shop-pod.com",
+    "url": "https://www.shop-pod.com/",
+    "address": "35 Sacramento Place, 02138",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Glass Ripples",
+    "domain": "glassripples.com",
+    "url": "https://glassripples.com/",
+    "address": "200 Elm Street, Cambridge, MA 02140",
+    "distance_km": 2.1,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "Restaurant Supply",
+    "domain": "restaurantsupply.com",
+    "url": "https://www.restaurantsupply.com/pages/massachusetts-cambridge-restaurant-supply-store",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Lowe's",
+    "domain": "lowes.com",
+    "url": "https://www.lowes.com/pl/kitchenware/cookware/cooking-pans-skillets/cast-iron/4294606021-4294686006",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "198 Alewife Brook Pkwy, Cambridge, MA 02138",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Muji",
+    "domain": "muji.us",
+    "url": "https://www.muji.us/",
+    "address": "48 Brattle Street, Cambridge, MA 02138",
+    "distance_km": 1.6,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Longleaf Lumber",
+    "domain": "longleaflumber.com",
+    "url": "https://www.longleaflumber.com/",
+    "address": "115 Fawcett Street, Cambridge, MA 02138",
+    "distance_km": 1.5,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Miniso",
+    "domain": "miniso-us.com",
+    "url": "https://www.miniso-us.com/locations/harvard-square",
+    "address": "31 Brattle Street, Cambridge, MA 02138",
+    "distance_km": 1.7,
+    "score": 0.494,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "China Fair",
+    "domain": "chinafairinc.com",
+    "url": "http://www.chinafairinc.com/",
+    "address": "2100 Massachusetts Avenue, Cambridge, MA 02140",
+    "distance_km": 1.8,
+    "score": 0.493,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/16390",
+    "address": "29 White St, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Tags Hardware",
+    "domain": "acehardware.com",
+    "url": "https://www.acehardware.com/store-details/16390",
+    "address": "29 White Street, Cambridge, MA 02140",
+    "distance_km": 2,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   }
+  ]
+ },
+ "cast-iron-skillet-suburban": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "Harbor Freight",
+    "domain": "harborfreight.com",
+    "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+    "address": "321 Speen St #3a, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Crate & Barrel",
+    "domain": "crateandbarrel.com",
+    "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+    "address": "1245 Worcester St, Natick, MA 01760",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Arhaus",
+    "domain": "arhaus.com",
+    "url": "https://arhaus.com/pages/natick-ma",
+    "address": "323 Speen St, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Macy's",
+    "domain": "macys.com",
+    "url": "https://macys.com/stores/ma/natick/natick-mall_40.html",
+    "address": "1245 Worcester Rd Ste 2, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "BED BATH & BEYOND + The Container Store",
+    "domain": "containerstore.com",
+    "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+    "address": "1265 Worcester St, Natick, MA 01760",
+    "distance_km": 3.9,
+    "score": 0.485,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Hobby Lobby",
+    "domain": "hobbylobby.com",
+    "url": "https://hobbylobby.com/stores/search/915",
+    "address": "1 Worcester Rd, Framingham, MA 01701",
+    "distance_km": 4.2,
+    "score": 0.484,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Homesense",
+    "domain": "homesense.com",
+    "url": "https://locations.us.homesense.com/ma/framingham",
+    "address": "1 Worcester Rd, Framingham, MA 01701",
+    "distance_km": 4.5,
+    "score": 0.483,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "HomeGoods",
+    "domain": "homegoods.com",
+    "url": "https://homegoods.com/",
+    "address": "400 Cochituate Rd, Framingham, MA 01701",
+    "distance_km": 4.9,
+    "score": 0.482,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Lowe's Home Improvement",
+    "domain": "lowes.com",
+    "url": "https://lowes.com/store/MA-Framingham/2384?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2384-_-na-_-0-_-0&y_source=1_MTE4MzQ0OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "350 Cochituate Rd, Framingham, MA 01701",
+    "distance_km": 5,
+    "score": 0.481,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Home Decor Group",
+    "domain": "homedecorgroup.com",
+    "url": "https://homedecorgroup.com/",
+    "address": "149 Cochituate Rd, Framingham, MA 01701",
+    "distance_km": 5.3,
+    "score": 0.48,
+    "source": [
+     "brave_place_specialist"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "Fbgcastiron",
+    "domain": "fbgcastiron.com",
+    "url": "https://www.fbgcastiron.com/",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Lodge Cast Iron",
+    "domain": "lodgecastiron.com",
+    "url": "https://www.lodgecastiron.com/shop",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Harbor Freight",
+    "domain": "harborfreight.com",
+    "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+    "address": "321 Speen St #3a, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Crate & Barrel",
+    "domain": "crateandbarrel.com",
+    "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+    "address": "1245 Worcester St, Natick, MA 01760",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Arhaus",
+    "domain": "arhaus.com",
+    "url": "https://arhaus.com/pages/natick-ma",
+    "address": "323 Speen St, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Macy's",
+    "domain": "macys.com",
+    "url": "https://macys.com/stores/ma/natick/natick-mall_40.html",
+    "address": "1245 Worcester Rd Ste 2, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "BED BATH & BEYOND + The Container Store",
+    "domain": "containerstore.com",
+    "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+    "address": "1265 Worcester St, Natick, MA 01760",
+    "distance_km": 3.9,
+    "score": 0.485,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Hobby Lobby",
+    "domain": "hobbylobby.com",
+    "url": "https://hobbylobby.com/stores/search/915",
+    "address": "1 Worcester Rd, Framingham, MA 01701",
+    "distance_km": 4.2,
+    "score": 0.484,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Homesense",
+    "domain": "homesense.com",
+    "url": "https://locations.us.homesense.com/ma/framingham",
+    "address": "1 Worcester Rd, Framingham, MA 01701",
+    "distance_km": 4.5,
+    "score": 0.483,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "Dollar Tree",
+    "domain": "dollartree.com",
+    "url": "https://locations.dollartree.com/ma/natick/219-north-main-street-suite-a100",
+    "address": "219 North Main Street, Natick, MA",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Harbor Freight",
+    "domain": "harborfreight.com",
+    "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+    "address": "321 Speen St #3a, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Crate & Barrel",
+    "domain": "crateandbarrel.com",
+    "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+    "address": "1245 Worcester St, Natick, MA 01760",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Harbor Freight Tools",
+    "domain": "harborfreight.com",
+    "url": "https://go.harborfreight.com/store/harbor-freight-tools-in-natick-ma-01760/",
+    "address": "321 Speen Street, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/ma/natick/27",
+    "address": "321 Speen Street, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Arhaus",
+    "domain": "arhaus.com",
+    "url": "https://arhaus.com/pages/natick-ma",
+    "address": "323 Speen St, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Macy's",
+    "domain": "macys.com",
+    "url": "https://macys.com/stores/ma/natick/natick-mall_40.html",
+    "address": "1245 Worcester Rd Ste 2, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Macy's",
+    "domain": "macys.com",
+    "url": "https://www.macys.com/stores/ma/natick/natick-mall_40.html",
+    "address": null,
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Nordstrom",
+    "domain": "nordstrom.com",
+    "url": "https://www.nordstrom.com/store-details/united-states/ma/natick/nordstrom-natick-mall",
+    "address": "290 Speen Street, Natick, 01760",
+    "distance_km": 3.7,
+    "score": 0.486,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "BED BATH & BEYOND + The Container Store",
+    "domain": "containerstore.com",
+    "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+    "address": "1265 Worcester St, Natick, MA 01760",
+    "distance_km": 3.9,
+    "score": 0.485,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "Fbgcastiron",
+    "domain": "fbgcastiron.com",
+    "url": "https://www.fbgcastiron.com/",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Lodge Cast Iron",
+    "domain": "lodgecastiron.com",
+    "url": "https://www.lodgecastiron.com/shop",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Dollar Tree",
+    "domain": "dollartree.com",
+    "url": "https://locations.dollartree.com/ma/natick/219-north-main-street-suite-a100",
+    "address": "219 North Main Street, Natick, MA",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Harbor Freight",
+    "domain": "harborfreight.com",
+    "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+    "address": "321 Speen St #3a, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Crate & Barrel",
+    "domain": "crateandbarrel.com",
+    "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+    "address": "1245 Worcester St, Natick, MA 01760",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Harbor Freight Tools",
+    "domain": "harborfreight.com",
+    "url": "https://go.harborfreight.com/store/harbor-freight-tools-in-natick-ma-01760/",
+    "address": "321 Speen Street, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/ma/natick/27",
+    "address": "321 Speen Street, Natick, MA 01760",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Arhaus",
+    "domain": "arhaus.com",
+    "url": "https://arhaus.com/pages/natick-ma",
+    "address": "323 Speen St, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Macy's",
+    "domain": "macys.com",
+    "url": "https://macys.com/stores/ma/natick/natick-mall_40.html",
+    "address": "1245 Worcester Rd Ste 2, Natick, MA 01760",
+    "distance_km": 3.8,
+    "score": 0.486,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   }
+  ]
+ },
+ "cast-iron-skillet-rural": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "New Salem General Store",
+    "domain": "newsalemgeneralstore.com",
+    "url": "https://newsalemgeneralstore.com/",
+    "address": "410 Daniel Shays Hwy, New Salem, MA 01355",
+    "distance_km": 8.7,
+    "score": 0.467,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Wendell Country Store",
+    "domain": "wordpress.com",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "address": "57 Lockes Village Rd, Wendell, MA 01379",
+    "distance_km": 9.2,
+    "score": 0.465,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Cowls Building Supply",
+    "domain": "cowlsbuildingsupply.com",
+    "url": "https://cowlsbuildingsupply.com/",
+    "address": "125 Sunderland Rd, Amherst, MA 01059",
+    "distance_km": 10.5,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "The Mill District General Store",
+    "domain": "generalstorelocalgallery.com",
+    "url": "https://generalstorelocalgallery.com/",
+    "address": "91 Cowls Rd, Amherst, MA 01002",
+    "distance_km": 10.4,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Hamshaw Lumber-Amherst",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/17984",
+    "address": "150 College St, Amherst, MA 01002",
+    "distance_km": 12.2,
+    "score": 0.454,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Kitchen Outfitters",
+    "domain": "kitchen-outfitters.com",
+    "url": "https://kitchen-outfitters.com/",
+    "address": "342 Great Rd, Acton, MA 01720",
+    "distance_km": 82.1,
+    "score": 0.35,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Kitchenwitch",
+    "domain": "kitchenwitchjp.com",
+    "url": "https://kitchenwitchjp.com/",
+    "address": "671 Centre St, Jamaica Plain, MA 02130",
+    "distance_km": 108.5,
+    "score": 0.35,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Cookshop Plus",
+    "domain": "cookshopplus.com",
+    "url": "https://cookshopplus.com/",
+    "address": "60 LaSalle Rd, West Hartford, CT 06107",
+    "distance_km": 82.3,
+    "score": 0.35,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Kitchenall Restaurant Equipment & Supply",
+    "domain": "kitchenall.com",
+    "url": "https://kitchenall.com/",
+    "address": "57 Box St, Brooklyn, NY 11222",
+    "distance_km": 230.1,
+    "score": 0.35,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Whisk Kitchen Supplies",
+    "domain": "whisknyc.com",
+    "url": "https://whisknyc.com/",
+    "address": "197 Atlantic Ave, Brooklyn, NY 11201",
+    "distance_km": 236.3,
+    "score": 0.35,
+    "source": [
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Fbgcastiron",
+    "domain": "fbgcastiron.com",
+    "url": "https://www.fbgcastiron.com/",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Lodge Cast Iron",
+    "domain": "lodgecastiron.com",
+    "url": "https://www.lodgecastiron.com/shop",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Lowe's",
+    "domain": "lowes.com",
+    "url": "https://www.lowes.com/pl/kitchenware/cookware/cooking-pans-skillets/cast-iron/4294606021-4294686006",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Pick-Up-Today/Cast-Iron/N-5yc1vZc7fwZ1z0ub2tZ1z175a5",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Walmart",
+    "domain": "walmart.com",
+    "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "New Salem General Store",
+    "domain": "newsalemgeneralstore.com",
+    "url": "https://newsalemgeneralstore.com/",
+    "address": "410 Daniel Shays Hwy, New Salem, MA 01355",
+    "distance_km": 8.7,
+    "score": 0.467,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Wendell Country Store",
+    "domain": "wordpress.com",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "address": "57 Lockes Village Rd, Wendell, MA 01379",
+    "distance_km": 9.2,
+    "score": 0.465,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Cowls Building Supply",
+    "domain": "cowlsbuildingsupply.com",
+    "url": "https://cowlsbuildingsupply.com/",
+    "address": "125 Sunderland Rd, Amherst, MA 01059",
+    "distance_km": 10.5,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "New Salem General Store",
+    "domain": "newsalemgeneralstore.com",
+    "url": "https://newsalemgeneralstore.com/",
+    "address": "410 Daniel Shays Hwy, New Salem, MA 01355",
+    "distance_km": 8.7,
+    "score": 0.467,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Wendell Country Store",
+    "domain": "wordpress.com",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "address": "57 Lockes Village Rd, Wendell, MA 01379",
+    "distance_km": 9.2,
+    "score": 0.465,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Cowls Building Supply",
+    "domain": "cowlsbuildingsupply.com",
+    "url": "https://cowlsbuildingsupply.com/",
+    "address": "125 Sunderland Rd, Amherst, MA 01059",
+    "distance_km": 10.5,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "The Mill District General Store",
+    "domain": "generalstorelocalgallery.com",
+    "url": "https://generalstorelocalgallery.com/",
+    "address": "91 Cowls Rd, Amherst, MA 01002",
+    "distance_km": 10.4,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Hamshaw Lumber-Amherst",
+    "domain": "acehardware.com",
+    "url": "https://acehardware.com/store-details/17984",
+    "address": "150 College St, Amherst, MA 01002",
+    "distance_km": 12.2,
+    "score": 0.454,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Dollar Tree",
+    "domain": "dollartree.com",
+    "url": "https://www.dollartree.com/locations/ma/hadley/1052/",
+    "address": "458 Russell Street, Hadley, MA 01035",
+    "distance_km": 14.2,
+    "score": 0.447,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/hadley/1839",
+    "address": "367 Russell Street, Hadley, MA 01035-9456",
+    "distance_km": 15.4,
+    "score": 0.442,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Lowe's",
+    "domain": "lowes.com",
+    "url": "https://www.lowes.com/store/ma-hadley/1916",
+    "address": "282 Russell Street, Hadley, MA 01035",
+    "distance_km": 16.7,
+    "score": 0.437,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Muffin's General Market",
+    "domain": "muffinsgeneralmarket.com",
+    "url": "https://www.muffinsgeneralmarket.com/",
+    "address": "28 State Road, Whately, MA",
+    "distance_km": 17.1,
+    "score": 0.436,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Dollar Tree",
+    "domain": "dollartree.com",
+    "url": "https://www.dollartree.com/locations/ma/greenfield/4973/",
+    "address": "255 Mohawk Trail",
+    "distance_km": 22.1,
+    "score": 0.417,
+    "source": [
+     "osm"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "Greenfieldfarmerscoop",
+    "domain": "greenfieldfarmerscoop.com",
+    "url": "https://shop.greenfieldfarmerscoop.com/p/skillet-assist-handle-3550092",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Fbgcastiron",
+    "domain": "fbgcastiron.com",
+    "url": "https://www.fbgcastiron.com/",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Lodge Cast Iron",
+    "domain": "lodgecastiron.com",
+    "url": "https://www.lodgecastiron.com/shop",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Lowe's",
+    "domain": "lowes.com",
+    "url": "https://www.lowes.com/pl/kitchenware/cookware/cooking-pans-skillets/cast-iron/4294606021-4294686006",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "The Home Depot",
+    "domain": "homedepot.com",
+    "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Pick-Up-Today/Cast-Iron/N-5yc1vZc7fwZ1z0ub2tZ1z175a5",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Walmart",
+    "domain": "walmart.com",
+    "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "New Salem General Store",
+    "domain": "newsalemgeneralstore.com",
+    "url": "https://newsalemgeneralstore.com/",
+    "address": "410 Daniel Shays Hwy, New Salem, MA 01355",
+    "distance_km": 8.7,
+    "score": 0.467,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Wendell Country Store",
+    "domain": "wordpress.com",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "address": "57 Lockes Village Rd, Wendell, MA 01379",
+    "distance_km": 9.2,
+    "score": 0.465,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Cowls Building Supply",
+    "domain": "cowlsbuildingsupply.com",
+    "url": "https://cowlsbuildingsupply.com/",
+    "address": "125 Sunderland Rd, Amherst, MA 01059",
+    "distance_km": 10.5,
+    "score": 0.461,
+    "source": [
+     "brave_place_broad"
+    ]
+   }
+  ]
+ },
+ "camping-tent-urban": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "Columbia Factory Store",
+    "domain": "columbia.com",
+    "url": "https://stores.columbia.com/pa/philadelphia/factory-store-566",
+    "address": "1001 Market St Unit C205, Philadelphia, PA 19107",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Hidden River Outfitters",
+    "domain": "hiddenriveroutfitters.com",
+    "url": "https://hiddenriveroutfitters.com/",
+    "address": "Walnut St, Philadelphia, PA 19106",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "gethandyoutdoors",
+    "domain": "gethandyoutdoors.com",
+    "url": "https://gethandyoutdoors.com/",
+    "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Bunkline Outfitter",
+    "domain": "bunkline.com",
+    "url": "https://bunkline.com/",
+    "address": "",
+    "distance_km": 6.1,
+    "score": 0.477,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "First Contact Gear",
+    "domain": "firstcontactgear.com",
+    "url": "https://firstcontactgear.com/",
+    "address": "",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Triou Outdoor",
+    "domain": "triououtdoor.com",
+    "url": "https://triououtdoor.com/",
+    "address": "",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Adventure Outfitter",
+    "domain": "adventureoutfitter.com",
+    "url": "https://adventureoutfitter.com/pages/contact-us",
+    "address": "3791 Main St, Philadelphia, PA 19127, United States",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "Columbia Factory Store",
+    "domain": "columbia.com",
+    "url": "https://stores.columbia.com/pa/philadelphia/factory-store-566",
+    "address": "1001 Market St Unit C205, Philadelphia, PA 19107",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Hidden River Outfitters",
+    "domain": "hiddenriveroutfitters.com",
+    "url": "https://hiddenriveroutfitters.com/",
+    "address": "Walnut St, Philadelphia, PA 19106",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "gethandyoutdoors",
+    "domain": "gethandyoutdoors.com",
+    "url": "https://gethandyoutdoors.com/",
+    "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Bunkline Outfitter",
+    "domain": "bunkline.com",
+    "url": "https://bunkline.com/",
+    "address": "",
+    "distance_km": 6.1,
+    "score": 0.477,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "First Contact Gear",
+    "domain": "firstcontactgear.com",
+    "url": "https://firstcontactgear.com/",
+    "address": "",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Triou Outdoor",
+    "domain": "triououtdoor.com",
+    "url": "https://triououtdoor.com/",
+    "address": "",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Adventure Outfitter",
+    "domain": "adventureoutfitter.com",
+    "url": "https://adventureoutfitter.com/pages/contact-us",
+    "address": "3791 Main St, Philadelphia, PA 19127, United States",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Walmart",
+    "domain": "walmart.com",
+    "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+    "address": null,
+    "distance_km": null,
+    "score": 0.275,
+    "source": [
+     "brave_web"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/philadelphia-rittenhouse-square/3206",
+    "address": "1900 Chestnut Street, Philadelphia, PA 19103-4610",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Bloomingdale's",
+    "domain": "bloomingdales.com",
+    "url": "https://locations.bloomingdales.com/liberty-place-outlet",
+    "address": "1625 Chestnut Street, Philadelphia, 19103",
+    "distance_km": 0.2,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Boyds",
+    "domain": "boydsphila.com",
+    "url": "https://boydsphila.com/",
+    "address": "1818 Chestnut Street",
+    "distance_km": 0.2,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Columbia Factory Store",
+    "domain": "columbia.com",
+    "url": "https://stores.columbia.com/pa/philadelphia/factory-store-566",
+    "address": "1001 Market St Unit C205, Philadelphia, PA 19107",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Hidden River Outfitters",
+    "domain": "hiddenriveroutfitters.com",
+    "url": "https://hiddenriveroutfitters.com/",
+    "address": "Walnut St, Philadelphia, PA 19106",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "TJ Maxx",
+    "domain": "tjx.com",
+    "url": "https://tjmaxx.tjx.com/m/stores/Philadelphia-PA-19107/1540/aboutstore",
+    "address": "1130 Market Street",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/philadelphia-broad-and-washington/3263",
+    "address": "1020 Broad Street, Philadelphia, PA 19146-5006",
+    "distance_km": 1.3,
+    "score": 0.495,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/pa/philadelphia/431",
+    "address": "833 Market Street, Philadelphia, PA 19107",
+    "distance_km": 1.3,
+    "score": 0.495,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Philadelphia Runner",
+    "domain": "philadelphiarunner.com",
+    "url": "https://philadelphiarunner.com/content/pr-university-city",
+    "address": "3621 Walnut Street, Philadelphia, PA 19104",
+    "distance_km": 2.3,
+    "score": 0.491,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 12,
+    "name": "gethandyoutdoors",
+    "domain": "gethandyoutdoors.com",
+    "url": "https://gethandyoutdoors.com/",
+    "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/philadelphia-rittenhouse-square/3206",
+    "address": "1900 Chestnut Street, Philadelphia, PA 19103-4610",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Bloomingdale's",
+    "domain": "bloomingdales.com",
+    "url": "https://locations.bloomingdales.com/liberty-place-outlet",
+    "address": "1625 Chestnut Street, Philadelphia, 19103",
+    "distance_km": 0.2,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Boyds",
+    "domain": "boydsphila.com",
+    "url": "https://boydsphila.com/",
+    "address": "1818 Chestnut Street",
+    "distance_km": 0.2,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Columbia Factory Store",
+    "domain": "columbia.com",
+    "url": "https://stores.columbia.com/pa/philadelphia/factory-store-566",
+    "address": "1001 Market St Unit C205, Philadelphia, PA 19107",
+    "distance_km": 1.1,
+    "score": 0.496,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Hidden River Outfitters",
+    "domain": "hiddenriveroutfitters.com",
+    "url": "https://hiddenriveroutfitters.com/",
+    "address": "Walnut St, Philadelphia, PA 19106",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "TJ Maxx",
+    "domain": "tjx.com",
+    "url": "https://tjmaxx.tjx.com/m/stores/Philadelphia-PA-19107/1540/aboutstore",
+    "address": "1130 Market Street",
+    "distance_km": 1,
+    "score": 0.496,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/philadelphia-broad-and-washington/3263",
+    "address": "1020 Broad Street, Philadelphia, PA 19146-5006",
+    "distance_km": 1.3,
+    "score": 0.495,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/pa/philadelphia/431",
+    "address": "833 Market Street, Philadelphia, PA 19107",
+    "distance_km": 1.3,
+    "score": 0.495,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Philadelphia Runner",
+    "domain": "philadelphiarunner.com",
+    "url": "https://philadelphiarunner.com/content/pr-university-city",
+    "address": "3621 Walnut Street, Philadelphia, PA 19104",
+    "distance_km": 2.3,
+    "score": 0.491,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 12,
+    "name": "gethandyoutdoors",
+    "domain": "gethandyoutdoors.com",
+    "url": "https://gethandyoutdoors.com/",
+    "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist"
+    ]
+   }
+  ]
+ },
+ "camping-tent-suburban": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+    "distance_km": 2.8,
+    "score": 0.565,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Orvis",
+    "domain": "orvis.com",
+    "url": "https://orvis.com/plymouthmeeting",
+    "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+    "address": "THE METROPLEX 2430, Chemical Rd, Plymouth Meeting, PA 19462",
+    "distance_km": 1.9,
+    "score": 0.493,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Wave One Sports",
+    "domain": "waveonesports.com",
+    "url": "https://waveonesports.com/",
+    "address": "1992 Butler Pike, Conshohocken, PA 19428",
+    "distance_km": 2.7,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Sport Fishing Outlet",
+    "domain": "sfotackle.com",
+    "url": "https://sfotackle.com/",
+    "address": "230 W Germantown Pike, East Norriton Township, PA 19401",
+    "distance_km": 4.9,
+    "score": 0.482,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Frank Jones Sporting Goods",
+    "domain": "frankjonessportinggoods.com",
+    "url": "https://frankjonessportinggoods.com/",
+    "address": "1735 Markley St, Norristown, PA 19401",
+    "distance_km": 4.8,
+    "score": 0.482,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Treeline Sports, Inc.",
+    "domain": "treelinesports.com",
+    "url": "https://treelinesports.com/",
+    "address": "1447 W Main St, Norristown, PA 19403",
+    "distance_km": 7.2,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Duluth Trading Company",
+    "domain": "duluthtrading.com",
+    "url": "https://duluthtrading.com/locations/?StoreID=015&city=KingofPrussia&srccode=WBGMB19&street-address=197E.DekalbPike",
+    "address": "197 E Dekalb Pike, King of Prussia, PA 19406",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+    "distance_km": 2.8,
+    "score": 0.565,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Orvis",
+    "domain": "orvis.com",
+    "url": "https://orvis.com/plymouthmeeting",
+    "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+    "address": "THE METROPLEX 2430, Chemical Rd, Plymouth Meeting, PA 19462",
+    "distance_km": 1.9,
+    "score": 0.493,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Wave One Sports",
+    "domain": "waveonesports.com",
+    "url": "https://waveonesports.com/",
+    "address": "1992 Butler Pike, Conshohocken, PA 19428",
+    "distance_km": 2.7,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Sport Fishing Outlet",
+    "domain": "sfotackle.com",
+    "url": "https://sfotackle.com/",
+    "address": "230 W Germantown Pike, East Norriton Township, PA 19401",
+    "distance_km": 4.9,
+    "score": 0.482,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Frank Jones Sporting Goods",
+    "domain": "frankjonessportinggoods.com",
+    "url": "https://frankjonessportinggoods.com/",
+    "address": "1735 Markley St, Norristown, PA 19401",
+    "distance_km": 4.8,
+    "score": 0.482,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Treeline Sports, Inc.",
+    "domain": "treelinesports.com",
+    "url": "https://treelinesports.com/",
+    "address": "1447 W Main St, Norristown, PA 19403",
+    "distance_km": 7.2,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Duluth Trading Company",
+    "domain": "duluthtrading.com",
+    "url": "https://duluthtrading.com/locations/?StoreID=015&city=KingofPrussia&srccode=WBGMB19&street-address=197E.DekalbPike",
+    "address": "197 E Dekalb Pike, King of Prussia, PA 19406",
+    "distance_km": 7.3,
+    "score": 0.473,
+    "source": [
+     "brave_place_specialist"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+    "distance_km": 2.8,
+    "score": 0.565,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+    "address": "200 West Ridge Pike, Conshohocken, PA 19428",
+    "distance_km": 2.7,
+    "score": 0.565,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Orvis",
+    "domain": "orvis.com",
+    "url": "https://orvis.com/plymouthmeeting",
+    "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Dick's Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/pa/plymouth-meeting/1135/",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Marshalls",
+    "domain": "marshalls.com",
+    "url": "https://www.marshalls.com/us/store/stores/Plymouth+Meeting-PA-19462/385/aboutstore",
+    "address": "2430 Chemical Road, Plymouth Meeting, PA 19462",
+    "distance_km": 1.9,
+    "score": 0.493,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/plymouth-meeting/1269",
+    "address": "2250 Chemical Road, Plymouth Meeting, PA 19462",
+    "distance_km": 2.1,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+    "distance_km": 2.8,
+    "score": 0.565,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "REI",
+    "domain": "rei.com",
+    "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+    "address": "200 West Ridge Pike, Conshohocken, PA 19428",
+    "distance_km": 2.7,
+    "score": 0.565,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Boscov's",
+    "domain": "boscovs.com",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.3,
+    "score": 0.499,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "DICK'S Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Orvis",
+    "domain": "orvis.com",
+    "url": "https://orvis.com/plymouthmeeting",
+    "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Dick's Sporting Goods",
+    "domain": "dickssportinggoods.com",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Burlington",
+    "domain": "burlington.com",
+    "url": "https://stores.burlington.com/pa/plymouth-meeting/1135/",
+    "address": "500 West Germantown Pike, Plymouth Meeting, PA 19462",
+    "distance_km": 0.6,
+    "score": 0.498,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Marshalls",
+    "domain": "marshalls.com",
+    "url": "https://www.marshalls.com/us/store/stores/Plymouth+Meeting-PA-19462/385/aboutstore",
+    "address": "2430 Chemical Road, Plymouth Meeting, PA 19462",
+    "distance_km": 1.9,
+    "score": 0.493,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/plymouth-meeting/1269",
+    "address": "2250 Chemical Road, Plymouth Meeting, PA 19462",
+    "distance_km": 2.1,
+    "score": 0.492,
+    "source": [
+     "osm"
+    ]
+   }
+  ]
+ },
+ "camping-tent-rural": {
+  "A_prod": [
+   {
+    "rank": 1,
+    "name": "Priority One Surplus",
+    "domain": "priorityonesurplus.com",
+    "url": "https://priorityonesurplus.com/",
+    "address": "1744 Tilden Ridge Dr, Hamburg, PA 19526",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Camping World - Hamburg",
+    "domain": "campingworld.com",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "address": "20 Industrial Dr, Hamburg, PA 19526",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Steve’s Outdoor Solutions LLC",
+    "domain": "myshopify.com",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "address": "448 Pine Swamp Rd, Kempton, PA 19529",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "address": "1050 Shoemaker Ave, Shoemakersville, PA 19555",
+    "distance_km": 9.8,
+    "score": 0.463,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Top City",
+    "domain": "topcityonline.com",
+    "url": "https://topcityonline.com/",
+    "address": "500 PA-61, Orwigsburg, PA 17961, United States",
+    "distance_km": 9.9,
+    "score": 0.463,
+    "source": [
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "B_web": [
+   {
+    "rank": 1,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://www.tractorsupply.com/tsc/catalog/camping-tents",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Priority One Surplus",
+    "domain": "priorityonesurplus.com",
+    "url": "https://priorityonesurplus.com/",
+    "address": "1744 Tilden Ridge Dr, Hamburg, PA 19526",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Camping World - Hamburg",
+    "domain": "campingworld.com",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "address": "20 Industrial Dr, Hamburg, PA 19526",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Walmart",
+    "domain": "walmart.com",
+    "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Steve’s Outdoor Solutions LLC",
+    "domain": "myshopify.com",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "address": "448 Pine Swamp Rd, Kempton, PA 19529",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "address": "1050 Shoemaker Ave, Shoemakersville, PA 19555",
+    "distance_km": 9.8,
+    "score": 0.463,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Top City",
+    "domain": "topcityonline.com",
+    "url": "https://topcityonline.com/",
+    "address": "500 PA-61, Orwigsburg, PA 17961, United States",
+    "distance_km": 9.9,
+    "score": 0.463,
+    "source": [
+     "brave_place_broad"
+    ]
+   }
+  ],
+  "C_osm": [
+   {
+    "rank": 1,
+    "name": "Priority One Surplus",
+    "domain": "priorityonesurplus.com",
+    "url": "https://priorityonesurplus.com/",
+    "address": "1744 Tilden Ridge Dr, Hamburg, PA 19526",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Camping World - Hamburg",
+    "domain": "campingworld.com",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "address": "20 Industrial Dr, Hamburg, PA 19526",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "http://www.cabelas.com/stores/store_info.jsp?pageName=009",
+    "address": "100 Cabela Drive, Hamburg, PA 19526",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Steve’s Outdoor Solutions LLC",
+    "domain": "myshopify.com",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "address": "448 Pine Swamp Rd, Kempton, PA 19529",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "address": "1050 Shoemaker Ave, Shoemakersville, PA 19555",
+    "distance_km": 9.8,
+    "score": 0.463,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Top City",
+    "domain": "topcityonline.com",
+    "url": "https://topcityonline.com/",
+    "address": "500 PA-61, Orwigsburg, PA 17961, United States",
+    "distance_km": 9.9,
+    "score": 0.463,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/muhlenberg-township/2302",
+    "address": "4220 North 5th Street Highway, Temple, PA 19560-1738",
+    "distance_km": 22,
+    "score": 0.418,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Ross",
+    "domain": "rossstores.com",
+    "url": "https://www.rossstores.com/",
+    "address": "4214 North 5th Street Highway, Temple, PA 19560",
+    "distance_km": 22.2,
+    "score": 0.417,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Big Lots",
+    "domain": "biglots.com",
+    "url": "https://local.biglots.com/pa/reading/3215-n-5th-street-hwy",
+    "address": "3215 North 5th Street Highway, Reading, PA 19605",
+    "distance_km": 23.6,
+    "score": 0.412,
+    "source": [
+     "osm"
+    ]
+   }
+  ],
+  "D_all": [
+   {
+    "rank": 1,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://www.tractorsupply.com/tsc/catalog/camping-tents",
+    "address": null,
+    "distance_km": null,
+    "score": 0.55,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Priority One Surplus",
+    "domain": "priorityonesurplus.com",
+    "url": "https://priorityonesurplus.com/",
+    "address": "1744 Tilden Ridge Dr, Hamburg, PA 19526",
+    "distance_km": 2.6,
+    "score": 0.49,
+    "source": [
+     "brave_place_specialist"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "address": "100 Cabela Dr, Hamburg, PA 19526, United States",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Camping World - Hamburg",
+    "domain": "campingworld.com",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "address": "20 Industrial Dr, Hamburg, PA 19526",
+    "distance_km": 3.6,
+    "score": 0.487,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Cabela's",
+    "domain": "cabelas.com",
+    "url": "http://www.cabelas.com/stores/store_info.jsp?pageName=009",
+    "address": "100 Cabela Drive, Hamburg, PA 19526",
+    "distance_km": 3.4,
+    "score": 0.487,
+    "source": [
+     "osm"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Walmart",
+    "domain": "walmart.com",
+    "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+    "address": null,
+    "distance_km": null,
+    "score": 0.475,
+    "source": [
+     "brave_web"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "Steve’s Outdoor Solutions LLC",
+    "domain": "myshopify.com",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "address": "448 Pine Swamp Rd, Kempton, PA 19529",
+    "distance_km": 8.4,
+    "score": 0.469,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Tractor Supply Co.",
+    "domain": "tractorsupply.com",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "address": "1050 Shoemaker Ave, Shoemakersville, PA 19555",
+    "distance_km": 9.8,
+    "score": 0.463,
+    "source": [
+     "brave_place_specialist",
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Top City",
+    "domain": "topcityonline.com",
+    "url": "https://topcityonline.com/",
+    "address": "500 PA-61, Orwigsburg, PA 17961, United States",
+    "distance_km": 9.9,
+    "score": 0.463,
+    "source": [
+     "brave_place_broad"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Target",
+    "domain": "target.com",
+    "url": "https://www.target.com/sl/muhlenberg-township/2302",
+    "address": "4220 North 5th Street Highway, Temple, PA 19560-1738",
+    "distance_km": 22,
+    "score": 0.418,
+    "source": [
+     "osm"
+    ]
+   }
+  ]
+ }
+}

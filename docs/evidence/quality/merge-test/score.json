@@ -1,0 +1,1904 @@
+{
+ "arms": {
+  "A_prod": {
+   "rows": 53,
+   "graded": 38,
+   "relevant": 18,
+   "excluded_unknown": 15,
+   "precision": 0.474,
+   "precision_bounds": {
+    "unknowns_as_irrelevant": 0.34,
+    "possible_unknowns_as_relevant": 0.592,
+    "possible_unknowns": 11
+   },
+   "recall_all": {
+    "confirmed": 23,
+    "found": 6,
+    "recall": 0.261
+   },
+   "recall_no_chains": {
+    "confirmed": 4,
+    "found": 0,
+    "recall": 0
+   },
+   "recall_branch_level": {
+    "confirmed": 23,
+    "found": 5,
+    "recall": 0.217,
+    "items": [
+     "The Home Depot (Somerville)",
+     "Crate & Barrel (Natick Mall)",
+     "REI (Conshohocken/Plymouth Meeting)",
+     "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "Cabela's (Hamburg)"
+    ]
+   },
+   "per_search": {
+    "cast-iron-skillet-urban": {
+     "rows": 10,
+     "graded": 6,
+     "relevant": 4
+    },
+    "cast-iron-skillet-suburban": {
+     "rows": 10,
+     "graded": 7,
+     "relevant": 4
+    },
+    "cast-iron-skillet-rural": {
+     "rows": 10,
+     "graded": 7,
+     "relevant": 4
+    },
+    "camping-tent-urban": {
+     "rows": 7,
+     "graded": 5,
+     "relevant": 0
+    },
+    "camping-tent-suburban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 2
+    },
+    "camping-tent-rural": {
+     "rows": 6,
+     "graded": 5,
+     "relevant": 4
+    }
+   },
+   "hits": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "The Home Depot (Somerville)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 10,
+       "name": "The Home Depot",
+       "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 11,
+       "name": "The Home Depot",
+       "url": "https://homedepot.com/l/Somerville/MA/Somerville/02145/2667?emt=MSGoogleMaps",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Crate & Barrel (Natick Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 2,
+       "name": "Crate & Barrel",
+       "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (Conshohocken/Plymouth Meeting)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 3,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 5,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+       "source": [
+        "brave_place_specialist"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (King of Prussia)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Cabela's (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 2,
+       "name": "Cabela's",
+       "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    }
+   ],
+   "misses": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Blackstone's of Beacon Hill (Boston)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Boston General Store (Brookline)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Sur La Table (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "The Home Depot (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Target (Framingham)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Kitchen Outfitters (Acton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Baker's Pin (Northampton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Target (Hadley)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Home Depot (Hadley)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Walmart (Northampton)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "Walmart (Roosevelt Blvd, Philadelphia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "REI (Conshohocken)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "L.L.Bean (King of Prussia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "Walmart Supercenter (Norristown)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Walmart Supercenter (Hamburg)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Dunham's Sports (Pottsville)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "DICK'S Sporting Goods (Reading)",
+     "chain": true
+    }
+   ],
+   "unknown_rows": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "Master Kitchen Essential",
+     "url": "https://masterkitchenpro.com/",
+     "sells_product": "unknown",
+     "local_exists": "no"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "Kitchenwitch",
+     "url": "https://kitchenwitchjp.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "BED BATH & BEYOND + The Container Store",
+     "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "Homesense",
+     "url": "https://locations.us.homesense.com/ma/framingham",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "name": "The Mill District General Store",
+     "url": "https://generalstorelocalgallery.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "name": "Kitchenwitch",
+     "url": "https://kitchenwitchjp.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "name": "Cookshop Plus",
+     "url": "https://cookshopplus.com/",
+     "sells_product": "unknown",
+     "local_exists": "no"
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "name": "First Contact Gear",
+     "url": "https://firstcontactgear.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "name": "Adventure Outfitter",
+     "url": "https://adventureoutfitter.com/pages/contact-us",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Orvis",
+     "url": "https://orvis.com/plymouthmeeting",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Treeline Sports, Inc.",
+     "url": "https://treelinesports.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Steve’s Outdoor Solutions LLC",
+     "url": "https://stevesoutdoor.myshopify.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    }
+   ]
+  },
+  "B_web": {
+   "rows": 56,
+   "graded": 47,
+   "relevant": 21,
+   "excluded_unknown": 9,
+   "precision": 0.447,
+   "precision_bounds": {
+    "unknowns_as_irrelevant": 0.375,
+    "possible_unknowns_as_relevant": 0.519,
+    "possible_unknowns": 7
+   },
+   "recall_all": {
+    "confirmed": 23,
+    "found": 10,
+    "recall": 0.435
+   },
+   "recall_no_chains": {
+    "confirmed": 4,
+    "found": 0,
+    "recall": 0
+   },
+   "recall_branch_level": {
+    "confirmed": 23,
+    "found": 5,
+    "recall": 0.217,
+    "items": [
+     "Crate & Barrel (Natick Mall)",
+     "Walmart (Roosevelt Blvd, Philadelphia)",
+     "REI (Conshohocken/Plymouth Meeting)",
+     "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "Cabela's (Hamburg)"
+    ]
+   },
+   "per_search": {
+    "cast-iron-skillet-urban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 4
+    },
+    "cast-iron-skillet-suburban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 3
+    },
+    "cast-iron-skillet-rural": {
+     "rows": 10,
+     "graded": 10,
+     "relevant": 5
+    },
+    "camping-tent-urban": {
+     "rows": 8,
+     "graded": 6,
+     "relevant": 1
+    },
+    "camping-tent-suburban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 2
+    },
+    "camping-tent-rural": {
+     "rows": 8,
+     "graded": 7,
+     "relevant": 6
+    }
+   },
+   "hits": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "The Home Depot (Somerville)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 10,
+       "name": "The Home Depot",
+       "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Crate & Barrel (Natick Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "Crate & Barrel",
+       "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Home Depot (Hadley)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "The Home Depot",
+       "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+       "source": [
+        "brave_web"
+       ]
+      },
+      {
+       "rank": 6,
+       "name": "The Home Depot",
+       "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Pick-Up-Today/Cast-Iron/N-5yc1vZc7fwZ1z0ub2tZ1z175a5",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Walmart (Northampton)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 7,
+       "name": "Walmart",
+       "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "Walmart (Roosevelt Blvd, Philadelphia)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 8,
+       "name": "Walmart",
+       "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (Conshohocken/Plymouth Meeting)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 3,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 5,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+       "source": [
+        "brave_place_specialist"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (King of Prussia)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Cabela's (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 3,
+       "name": "Cabela's",
+       "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Walmart Supercenter (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "Walmart",
+       "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    }
+   ],
+   "misses": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Blackstone's of Beacon Hill (Boston)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Boston General Store (Brookline)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Sur La Table (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "The Home Depot (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Target (Framingham)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Kitchen Outfitters (Acton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Baker's Pin (Northampton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Target (Hadley)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "REI (Conshohocken)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "L.L.Bean (King of Prussia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "Walmart Supercenter (Norristown)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Dunham's Sports (Pottsville)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "DICK'S Sporting Goods (Reading)",
+     "chain": true
+    }
+   ],
+   "unknown_rows": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "BED BATH & BEYOND + The Container Store",
+     "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "Homesense",
+     "url": "https://locations.us.homesense.com/ma/framingham",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "name": "First Contact Gear",
+     "url": "https://firstcontactgear.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "name": "Adventure Outfitter",
+     "url": "https://adventureoutfitter.com/pages/contact-us",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Orvis",
+     "url": "https://orvis.com/plymouthmeeting",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Treeline Sports, Inc.",
+     "url": "https://treelinesports.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Steve’s Outdoor Solutions LLC",
+     "url": "https://stevesoutdoor.myshopify.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    }
+   ]
+  },
+  "C_osm": {
+   "rows": 60,
+   "graded": 51,
+   "relevant": 23,
+   "excluded_unknown": 9,
+   "precision": 0.451,
+   "precision_bounds": {
+    "unknowns_as_irrelevant": 0.383,
+    "possible_unknowns_as_relevant": 0.517,
+    "possible_unknowns": 7
+   },
+   "recall_all": {
+    "confirmed": 23,
+    "found": 6,
+    "recall": 0.261
+   },
+   "recall_no_chains": {
+    "confirmed": 4,
+    "found": 0,
+    "recall": 0
+   },
+   "recall_branch_level": {
+    "confirmed": 23,
+    "found": 5,
+    "recall": 0.217,
+    "items": [
+     "Crate & Barrel (Natick Mall)",
+     "Target (Hadley)",
+     "REI (Conshohocken/Plymouth Meeting)",
+     "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "Cabela's (Hamburg)"
+    ]
+   },
+   "per_search": {
+    "cast-iron-skillet-urban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 3
+    },
+    "cast-iron-skillet-suburban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 4
+    },
+    "cast-iron-skillet-rural": {
+     "rows": 10,
+     "graded": 9,
+     "relevant": 3
+    },
+    "camping-tent-urban": {
+     "rows": 10,
+     "graded": 10,
+     "relevant": 2
+    },
+    "camping-tent-suburban": {
+     "rows": 10,
+     "graded": 9,
+     "relevant": 5
+    },
+    "camping-tent-rural": {
+     "rows": 10,
+     "graded": 7,
+     "relevant": 6
+    }
+   },
+   "hits": [
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Crate & Barrel (Natick Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 3,
+       "name": "Crate & Barrel",
+       "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Target (Hadley)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 7,
+       "name": "Target",
+       "url": "https://www.target.com/sl/hadley/1839",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (Conshohocken/Plymouth Meeting)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 2,
+       "name": "REI",
+       "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 7,
+       "name": "Dick's Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (King of Prussia)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 2,
+       "name": "REI",
+       "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Cabela's (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 2,
+       "name": "Cabela's",
+       "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 4,
+       "name": "Cabela's",
+       "url": "http://www.cabelas.com/stores/store_info.jsp?pageName=009",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    }
+   ],
+   "misses": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Blackstone's of Beacon Hill (Boston)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Boston General Store (Brookline)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "The Home Depot (Somerville)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Sur La Table (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "The Home Depot (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Target (Framingham)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Kitchen Outfitters (Acton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Baker's Pin (Northampton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Home Depot (Hadley)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Walmart (Northampton)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "Walmart (Roosevelt Blvd, Philadelphia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "REI (Conshohocken)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "L.L.Bean (King of Prussia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "Walmart Supercenter (Norristown)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Walmart Supercenter (Hamburg)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Dunham's Sports (Pottsville)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "DICK'S Sporting Goods (Reading)",
+     "chain": true
+    }
+   ],
+   "unknown_rows": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "China Fair",
+     "url": "http://www.chinafairinc.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "Burlington",
+     "url": "https://stores.burlington.com/ma/natick/27",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "BED BATH & BEYOND + The Container Store",
+     "url": "https://containerstore.com/stores/ma/natick/1265-worcester-street?cid=ns%3Amaps%3Agoogle%3Amain-store%3A39-NAT",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "name": "The Mill District General Store",
+     "url": "https://generalstorelocalgallery.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Orvis",
+     "url": "https://orvis.com/plymouthmeeting",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Steve’s Outdoor Solutions LLC",
+     "url": "https://stevesoutdoor.myshopify.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Ross",
+     "url": "https://www.rossstores.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Big Lots",
+     "url": "https://local.biglots.com/pa/reading/3215-n-5th-street-hwy",
+     "sells_product": "unknown",
+     "local_exists": "no"
+    }
+   ]
+  },
+  "D_all": {
+   "rows": 60,
+   "graded": 55,
+   "relevant": 25,
+   "excluded_unknown": 5,
+   "precision": 0.455,
+   "precision_bounds": {
+    "unknowns_as_irrelevant": 0.417,
+    "possible_unknowns_as_relevant": 0.492,
+    "possible_unknowns": 4
+   },
+   "recall_all": {
+    "confirmed": 23,
+    "found": 8,
+    "recall": 0.348
+   },
+   "recall_no_chains": {
+    "confirmed": 4,
+    "found": 0,
+    "recall": 0
+   },
+   "recall_branch_level": {
+    "confirmed": 23,
+    "found": 4,
+    "recall": 0.174,
+    "items": [
+     "Crate & Barrel (Natick Mall)",
+     "REI (Conshohocken/Plymouth Meeting)",
+     "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "Cabela's (Hamburg)"
+    ]
+   },
+   "per_search": {
+    "cast-iron-skillet-urban": {
+     "rows": 10,
+     "graded": 8,
+     "relevant": 3
+    },
+    "cast-iron-skillet-suburban": {
+     "rows": 10,
+     "graded": 9,
+     "relevant": 2
+    },
+    "cast-iron-skillet-rural": {
+     "rows": 10,
+     "graded": 10,
+     "relevant": 5
+    },
+    "camping-tent-urban": {
+     "rows": 10,
+     "graded": 10,
+     "relevant": 2
+    },
+    "camping-tent-suburban": {
+     "rows": 10,
+     "graded": 9,
+     "relevant": 5
+    },
+    "camping-tent-rural": {
+     "rows": 10,
+     "graded": 9,
+     "relevant": 8
+    }
+   },
+   "hits": [
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Crate & Barrel (Natick Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 6,
+       "name": "Crate & Barrel",
+       "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Home Depot (Hadley)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "The Home Depot",
+       "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Cast-Iron/N-5yc1vZc7fwZ1z0ub2t",
+       "source": [
+        "brave_web"
+       ]
+      },
+      {
+       "rank": 6,
+       "name": "The Home Depot",
+       "url": "https://www.homedepot.com/b/Kitchen-Kitchenware-Cookware-Skillets/Pick-Up-Today/Cast-Iron/N-5yc1vZc7fwZ1z0ub2tZ1z175a5",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Walmart (Northampton)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 7,
+       "name": "Walmart",
+       "url": "https://www.walmart.com/browse/home/cast-iron-skillets/4044_623679_8140341_6673940",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (Conshohocken/Plymouth Meeting)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 2,
+       "name": "REI",
+       "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 5,
+       "name": "DICK'S Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 7,
+       "name": "Dick's Sporting Goods",
+       "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "REI (King of Prussia)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 1,
+       "name": "REI",
+       "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 2,
+       "name": "REI",
+       "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Cabela's (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 3,
+       "name": "Cabela's",
+       "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+       "source": [
+        "brave_place_specialist",
+        "brave_place_broad"
+       ]
+      },
+      {
+       "rank": 5,
+       "name": "Cabela's",
+       "url": "http://www.cabelas.com/stores/store_info.jsp?pageName=009",
+       "source": [
+        "osm"
+       ]
+      }
+     ]
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Walmart Supercenter (Hamburg)",
+     "chain": true,
+     "rows": [
+      {
+       "rank": 6,
+       "name": "Walmart",
+       "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
+       "source": [
+        "brave_web"
+       ]
+      }
+     ]
+    }
+   ],
+   "misses": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Blackstone's of Beacon Hill (Boston)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "Boston General Store (Brookline)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "item": "The Home Depot (Somerville)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Sur La Table (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "The Home Depot (Natick)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Target (Framingham)",
+     "chain": true
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "item": "Kitchen Outfitters (Acton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "The Baker's Pin (Northampton)",
+     "chain": false
+    },
+    {
+     "search_id": "cast-iron-skillet-rural",
+     "item": "Target (Hadley)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "Walmart (Roosevelt Blvd, Philadelphia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-urban",
+     "item": "REI (Conshohocken)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "L.L.Bean (King of Prussia)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "item": "Walmart Supercenter (Norristown)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "Dunham's Sports (Pottsville)",
+     "chain": true
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "item": "DICK'S Sporting Goods (Reading)",
+     "chain": true
+    }
+   ],
+   "unknown_rows": [
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "cast-iron-skillet-urban",
+     "name": "China Fair",
+     "url": "http://www.chinafairinc.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "cast-iron-skillet-suburban",
+     "name": "Burlington",
+     "url": "https://stores.burlington.com/ma/natick/27",
+     "sells_product": "unknown",
+     "local_exists": "yes"
+    },
+    {
+     "search_id": "camping-tent-suburban",
+     "name": "Orvis",
+     "url": "https://orvis.com/plymouthmeeting",
+     "sells_product": "no",
+     "local_exists": "unknown"
+    },
+    {
+     "search_id": "camping-tent-rural",
+     "name": "Steve’s Outdoor Solutions LLC",
+     "url": "https://stevesoutdoor.myshopify.com/",
+     "sells_product": "unknown",
+     "local_exists": "unknown"
+    }
+   ]
+  }
+ },
+ "sources": {
+  "C_osm": {
+   "brave_place_specialist": {
+    "rows": 18,
+    "sole_source_rows": 4,
+    "graded": 15,
+    "relevant": 9,
+    "excluded_unknown": 3,
+    "precision": 0.6,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-suburban",
+      "item": "Crate & Barrel (Natick Mall)",
+      "chain": true,
+      "row": "Crate & Barrel",
+      "rank": 3,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "DICK'S Sporting Goods",
+      "rank": 5,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 2,
+      "sole_source": false
+     }
+    ]
+   },
+   "brave_place_broad": {
+    "rows": 21,
+    "sole_source_rows": 7,
+    "graded": 16,
+    "relevant": 9,
+    "excluded_unknown": 5,
+    "precision": 0.563,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-suburban",
+      "item": "Crate & Barrel (Natick Mall)",
+      "chain": true,
+      "row": "Crate & Barrel",
+      "rank": 3,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "DICK'S Sporting Goods",
+      "rank": 5,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 2,
+      "sole_source": false
+     }
+    ]
+   },
+   "brave_web": {
+    "rows": 0,
+    "sole_source_rows": 0,
+    "graded": 0,
+    "relevant": 0,
+    "excluded_unknown": 0,
+    "precision": null,
+    "baseline_hits": []
+   },
+   "osm": {
+    "rows": 35,
+    "sole_source_rows": 35,
+    "graded": 31,
+    "relevant": 13,
+    "excluded_unknown": 4,
+    "precision": 0.419,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-rural",
+      "item": "Target (Hadley)",
+      "chain": true,
+      "row": "Target",
+      "rank": 7,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 2,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 2,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "Dick's Sporting Goods",
+      "rank": 7,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 4,
+      "sole_source": true
+     }
+    ]
+   }
+  },
+  "D_all": {
+   "brave_place_specialist": {
+    "rows": 17,
+    "sole_source_rows": 4,
+    "graded": 15,
+    "relevant": 9,
+    "excluded_unknown": 2,
+    "precision": 0.6,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-suburban",
+      "item": "Crate & Barrel (Natick Mall)",
+      "chain": true,
+      "row": "Crate & Barrel",
+      "rank": 6,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "DICK'S Sporting Goods",
+      "rank": 5,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 3,
+      "sole_source": false
+     }
+    ]
+   },
+   "brave_place_broad": {
+    "rows": 18,
+    "sole_source_rows": 5,
+    "graded": 15,
+    "relevant": 8,
+    "excluded_unknown": 3,
+    "precision": 0.533,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-suburban",
+      "item": "Crate & Barrel (Natick Mall)",
+      "chain": true,
+      "row": "Crate & Barrel",
+      "rank": 6,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 1,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "DICK'S Sporting Goods",
+      "rank": 5,
+      "sole_source": false
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 3,
+      "sole_source": false
+     }
+    ]
+   },
+   "brave_web": {
+    "rows": 15,
+    "sole_source_rows": 15,
+    "graded": 15,
+    "relevant": 8,
+    "excluded_unknown": 0,
+    "precision": 0.533,
+    "baseline_hits": [
+     {
+      "search_id": "cast-iron-skillet-rural",
+      "item": "The Home Depot (Hadley)",
+      "chain": true,
+      "row": "The Home Depot",
+      "rank": 5,
+      "sole_source": true
+     },
+     {
+      "search_id": "cast-iron-skillet-rural",
+      "item": "Walmart (Northampton)",
+      "chain": true,
+      "row": "Walmart",
+      "rank": 7,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Walmart Supercenter (Hamburg)",
+      "chain": true,
+      "row": "Walmart",
+      "rank": 6,
+      "sole_source": true
+     }
+    ]
+   },
+   "osm": {
+    "rows": 23,
+    "sole_source_rows": 23,
+    "graded": 21,
+    "relevant": 8,
+    "excluded_unknown": 2,
+    "precision": 0.381,
+    "baseline_hits": [
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (Conshohocken/Plymouth Meeting)",
+      "chain": true,
+      "row": "REI",
+      "rank": 2,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "REI (King of Prussia)",
+      "chain": true,
+      "row": "REI",
+      "rank": 2,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-suburban",
+      "item": "DICK'S Sporting Goods (Plymouth Meeting Mall)",
+      "chain": true,
+      "row": "Dick's Sporting Goods",
+      "rank": 7,
+      "sole_source": true
+     },
+     {
+      "search_id": "camping-tent-rural",
+      "item": "Cabela's (Hamburg)",
+      "chain": true,
+      "row": "Cabela's",
+      "rank": 5,
+      "sole_source": true
+     }
+    ]
+   }
+  }
+ },
+ "chain_labels": {
+  "Blackstone's of Beacon Hill (Boston)": {
+   "search_id": "cast-iron-skillet-urban",
+   "chain": false,
+   "reason": "single independent Beacon Hill shop"
+  },
+  "Boston General Store (Brookline)": {
+   "search_id": "cast-iron-skillet-urban",
+   "chain": false,
+   "reason": "independent, one or two shops"
+  },
+  "The Home Depot (Somerville)": {
+   "search_id": "cast-iron-skillet-urban",
+   "chain": true,
+   "reason": "about 2,000 US stores"
+  },
+  "Sur La Table (Natick)": {
+   "search_id": "cast-iron-skillet-suburban",
+   "chain": true,
+   "reason": "about 50+ US stores"
+  },
+  "Crate & Barrel (Natick Mall)": {
+   "search_id": "cast-iron-skillet-suburban",
+   "chain": true,
+   "reason": "about 80+ US stores"
+  },
+  "The Home Depot (Natick)": {
+   "search_id": "cast-iron-skillet-suburban",
+   "chain": true,
+   "reason": "about 2,000 US stores"
+  },
+  "Target (Framingham)": {
+   "search_id": "cast-iron-skillet-suburban",
+   "chain": true,
+   "reason": "about 1,900 US stores"
+  },
+  "Kitchen Outfitters (Acton)": {
+   "search_id": "cast-iron-skillet-suburban",
+   "chain": false,
+   "reason": "single independent kitchen shop"
+  },
+  "The Baker's Pin (Northampton)": {
+   "search_id": "cast-iron-skillet-rural",
+   "chain": false,
+   "reason": "single independent kitchen shop"
+  },
+  "Target (Hadley)": {
+   "search_id": "cast-iron-skillet-rural",
+   "chain": true,
+   "reason": "about 1,900 US stores"
+  },
+  "The Home Depot (Hadley)": {
+   "search_id": "cast-iron-skillet-rural",
+   "chain": true,
+   "reason": "about 2,000 US stores"
+  },
+  "Walmart (Northampton)": {
+   "search_id": "cast-iron-skillet-rural",
+   "chain": true,
+   "reason": "about 4,600 US stores"
+  },
+  "Walmart (Roosevelt Blvd, Philadelphia)": {
+   "search_id": "camping-tent-urban",
+   "chain": true,
+   "reason": "about 4,600 US stores"
+  },
+  "REI (Conshohocken)": {
+   "search_id": "camping-tent-urban",
+   "chain": true,
+   "reason": "about 190 US stores"
+  },
+  "REI (Conshohocken/Plymouth Meeting)": {
+   "search_id": "camping-tent-suburban",
+   "chain": true,
+   "reason": "about 190 US stores"
+  },
+  "DICK'S Sporting Goods (Plymouth Meeting Mall)": {
+   "search_id": "camping-tent-suburban",
+   "chain": true,
+   "reason": "about 850 US stores"
+  },
+  "REI (King of Prussia)": {
+   "search_id": "camping-tent-suburban",
+   "chain": true,
+   "reason": "about 190 US stores"
+  },
+  "L.L.Bean (King of Prussia)": {
+   "search_id": "camping-tent-suburban",
+   "chain": true,
+   "reason": "about 50+ US retail and outlet stores"
+  },
+  "Walmart Supercenter (Norristown)": {
+   "search_id": "camping-tent-suburban",
+   "chain": true,
+   "reason": "about 4,600 US stores"
+  },
+  "Cabela's (Hamburg)": {
+   "search_id": "camping-tent-rural",
+   "chain": true,
+   "reason": "about 70+ US stores under the Cabela's name"
+  },
+  "Walmart Supercenter (Hamburg)": {
+   "search_id": "camping-tent-rural",
+   "chain": true,
+   "reason": "about 4,600 US stores"
+  },
+  "Dunham's Sports (Pottsville)": {
+   "search_id": "camping-tent-rural",
+   "chain": true,
+   "reason": "about 250 US stores"
+  },
+  "DICK'S Sporting Goods (Reading)": {
+   "search_id": "camping-tent-rural",
+   "chain": true,
+   "reason": "about 850 US stores"
+  }
+ },
+ "baseline_count": 23,
+ "missing_grades": [],
+ "domain_mismatch": []
+}
