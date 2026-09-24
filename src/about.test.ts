@@ -25,9 +25,9 @@ describe('about page', () => {
   });
 
   it('states the measured precision and recall with the date', async () => {
-    await load({ date: '2026-10-01', precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 } });
+    await load({ date: '2026-10-01', searches: 20, precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 } });
     const text = $('[data-quality]').textContent!;
-    for (const part of ['2026-10-01', '80%', '63%', '50%', '40%']) expect(text).toContain(part);
+    for (const part of ['2026-10-01', '20 graded searches', '80%', '63%', '50%', '40%']) expect(text).toContain(part);
   });
 
   it('keeps repo links and the dispute form out when no repo URL is configured', async () => {

@@ -4,6 +4,7 @@ import quality from './quality.json';
 // Fractions in [0, 1] from the latest evaluation run; null until one has run.
 export interface QualityMeasure {
   date: string; // YYYY-MM-DD
+  searches: number; // searches graded; a run may grade a sample of those it made
   precision: { online: number; local: number };
   recall: { online: number; local: number };
 }
@@ -12,9 +13,9 @@ const pct = (n: number) => `${Math.round(n * 100)}%`;
 
 export function coverageText(measured: QualityMeasure | null): string {
   if (!measured) return 'Not yet measured.';
-  const { date, precision, recall } = measured;
+  const { date, searches, precision, recall } = measured;
   return (
-    `Last measured ${date}: ${pct(precision.online)} of online results and ${pct(precision.local)} of local ` +
+    `Last measured ${date} across ${searches} graded searches: ${pct(precision.online)} of online results and ${pct(precision.local)} of local ` +
     `results sold the product or a close equivalent. This site found ${pct(recall.online)} of the good online ` +
     `shops and ${pct(recall.local)} of the good local shops that the independent search found.`
   );

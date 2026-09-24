@@ -1,12 +1,13 @@
 // Sends one retailer URL per registrable domain from the saved search responses through
-// the deployed probe, one at a time, and writes docs/evidence/quality/probe.json after
-// each one. A rerun skips domains already in that file, so no site is probed twice.
-//   PROBE_URL=https://... PROBE_TOKEN=... node eval/access-probe/run-probe.mjs
+// the deployed probe, one at a time, and writes <OUT_DIR>/probe.json after each one.
+// A rerun skips domains already in that file, so no site is probed twice.
+//   PROBE_URL=https://... PROBE_TOKEN=... [OUT_DIR=docs/evidence/quality/<run>] node eval/access-probe/run-probe.mjs
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { pathToFileURL } from 'node:url';
 
-const DIR = 'docs/evidence/quality';
+// OUT_DIR selects a rerun's own evidence directory, matching run-searches.mjs and summarize.mjs.
+const DIR = process.env.OUT_DIR || 'docs/evidence/quality';
 const OUT = `${DIR}/probe.json`;
 const GAP_MS = 2000;
 // Redirects across hosts mean several robots.txt and page fetches, each up to 15 s plus a 2 s gap.

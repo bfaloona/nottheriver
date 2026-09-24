@@ -66,7 +66,7 @@ PROBE_URL=<probe workers.dev URL> node eval/access-probe/run-probe.mjs
 npx wrangler delete -c eval/access-probe/wrangler.jsonc
 ```
 
-The driver takes the first result URL per registrable domain from the saved responses, sends them one at a time 2 s apart, and saves `docs/evidence/quality/probe.json` after each. A rerun skips domains already in that file; delete a row to probe it again. The probe checks robots.txt and then fetches the page 2 s later, so each domain sees two requests (more if it redirects to another host). The driver stops on the first non-200 answer from the probe itself (wrong token or URL) or a network error reaching it. The method and token checks run only in the Workers runtime; test them by hand with `wrangler dev`. Delete the Worker as soon as the run ends. `ABOUT_URL` and the workers.dev host are passed at deploy time and never committed.
+The driver takes the first result URL per registrable domain from the saved responses, sends them one at a time 2 s apart, and saves `probe.json` after each, in `docs/evidence/quality/` or the `OUT_DIR` a rerun uses. A rerun skips domains already in that file; delete a row to probe it again. The probe checks robots.txt and then fetches the page 2 s later, so each domain sees two requests (more if it redirects to another host). The driver stops on the first non-200 answer from the probe itself (wrong token or URL) or a network error reaching it. The method and token checks run only in the Workers runtime; test them by hand with `wrangler dev`. Delete the Worker as soon as the run ends. `ABOUT_URL` and the workers.dev host are passed at deploy time and never committed.
 
 ## 5. Summarize
 
