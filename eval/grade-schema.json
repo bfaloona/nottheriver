@@ -21,7 +21,7 @@
         "kind": { "enum": ["local", "online"] },
         "url": { "type": "string", "description": "retailer.url from the saved response, verbatim" },
         "sells_product": { "enum": ["yes", "equivalent", "no", "unknown"] },
-        "local_exists": { "enum": ["yes", "no", "n/a"], "description": "Local results only: the shop exists at the listed address" },
+        "local_exists": { "enum": ["yes", "no", "unknown", "n/a"], "description": "Local results only: the shop exists at the listed address; unknown when the evidence conflicts (e.g. a dead site but a current listing)" },
         "distance_plausible": { "enum": ["yes", "no", "n/a"] },
         "badges_sourced": { "enum": ["yes", "no", "n/a"], "description": "Every certification badge's source link supports it; n/a when there are none" },
         "page_access": { "enum": ["ok", "challenge", "blocked", "error"], "description": "What a person in a real browser got" },

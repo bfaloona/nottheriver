@@ -45,7 +45,7 @@ A grader opens each result's URL in an ordinary browser session and records one 
 | Field | Judged as |
 |---|---|
 | `sells_product` | `yes`: the page offers the product; `equivalent`: a close substitute; `no`; `unknown`: could not tell |
-| `local_exists` | Local results: the shop is at the listed address per its own site or listing. `n/a` for online |
+| `local_exists` | Local results: the shop is at the listed address per its own site or listing. `unknown` when the evidence conflicts, such as a dead website with a current map listing. `n/a` for online |
 | `distance_plausible` | Local results: shown distance roughly matches the address. `n/a` for online |
 | `badges_sourced` | Every certification badge's source link supports the badge; `n/a` when there are none |
 | `page_access` | What the person got: `ok`, `challenge` (CAPTCHA or "checking your browser"), `blocked` (refusal page), `error` |
@@ -75,4 +75,4 @@ node eval/summarize.mjs          # writes docs/evidence/quality/report.json
 node eval/summarize.mjs --site   # also writes src/quality.json for the About page
 ```
 
-Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` out of the denominator, reporting how many were left out. `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.
+Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` (on either question) out of the denominator, reporting how many were left out. `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.

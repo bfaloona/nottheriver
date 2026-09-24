@@ -53,9 +53,9 @@ export function validateGrades(grades, schema) {
   }
 }
 
-/** Relevant: sells the product or an equivalent, and for local results the shop exists. Unknowns are excluded. */
+/** Relevant: sells the product or an equivalent, and for local results the shop exists. Unknowns on either question are excluded. */
 export function precision(grades) {
-  const graded = grades.filter((g) => g.sells_product !== 'unknown');
+  const graded = grades.filter((g) => g.sells_product !== 'unknown' && g.local_exists !== 'unknown');
   const relevant = graded.filter((g) => g.sells_product !== 'no' && (g.kind === 'online' || g.local_exists === 'yes'));
   return { graded: graded.length, relevant: relevant.length, unknown: grades.length - graded.length, precision: ratio(relevant.length, graded.length) };
 }

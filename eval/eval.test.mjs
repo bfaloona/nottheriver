@@ -120,6 +120,16 @@ describe('summarize', () => {
     expect(precision(grades)).toEqual({ graded: 4, relevant: 2, unknown: 1, precision: 0.5 });
   });
 
+  it('leaves a local shop whose existence could not be judged out of precision, like an unknown product', () => {
+    expect(() => validateGrades({ grades: [grade({ kind: 'local', local_exists: 'unknown' })], baseline: [] }, schema)).not.toThrow();
+    const grades = [
+      grade({ kind: 'local', sells_product: 'yes', local_exists: 'yes' }),
+      grade({ kind: 'local', sells_product: 'yes', local_exists: 'unknown' }),
+      grade({ kind: 'local', sells_product: 'no', local_exists: 'yes' }),
+    ];
+    expect(precision(grades)).toEqual({ graded: 2, relevant: 1, unknown: 1, precision: 0.5 });
+  });
+
   it('computes recall by registrable domain, or by name for shops without a website', () => {
     const results = { 's1:online': [{ retailer: { name: 'Shop A', domain: 'a.com' } }], 's1:local': [{ retailer: { name: "Bob's Hardware", domain: '' } }] };
     const base = (over) => ({ search_id: 's1', section: 'online', name: 'x', url: null, confirmed: true, miss_reason: null, checked: '2026-10-01', ...over });
