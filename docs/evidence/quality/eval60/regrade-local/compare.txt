@@ -1,0 +1,27 @@
+{
+  pairs: {
+    'good/good': 15,
+    'unknown/good': 7,
+    'bad/bad': 10,
+    'bad/unknown': 1,
+    'bad/good': 2,
+    'unknown/unknown': 1
+  },
+  judged_by_both: 27,
+  agree: 25,
+  agreement: '0.926',
+  precision_first: '15/28',
+  precision_second: '24/34'
+}
+store second-pass precision 14/22
+chain second-pass precision 10/12
+unknown -> good [chain] extra-virgin-olive-oil-urban | https://saviprovisions.com/ | 1st: unknown/yes | 2nd: yes/yes
+unknown -> good [store] bath-towels-urban | https://m.facebook.com/pages/category/Home-Decor/Mecca-Linen-LLC-230565993966724 | 1st: unknown/yes | 2nd: yes/yes
+bad -> unknown [store] camping-tent-urban | https://hiddenriveroutfitters.com/ | 1st: no/yes | 2nd: no/unknown
+unknown -> good [store] extra-virgin-olive-oil-urban | https://sevananda.coop/ | 1st: unknown/yes | 2nd: yes/yes
+unknown -> good [store] rain-jacket-suburban | https://natickoutdoorstore.com/ | 1st: unknown/yes | 2nd: yes/yes
+bad -> good [store] cast-iron-skillet-suburban | https://jarvisapplianceinc.com/ | 1st: no/yes | 2nd: equivalent/yes
+unknown -> good [chain] rain-jacket-suburban | https://storelocations.ae.com/us/ma/natick/1245-worcester-st.html | 1st: unknown/yes | 2nd: yes/yes
+unknown -> good [chain] rechargeable-aa-batteries-rural | https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100 | 1st: unknown/yes | 2nd: yes/yes
+unknown -> good [store] cast-iron-skillet-rural | https://kitchenwitchjp.com/ | 1st: unknown/yes | 2nd: yes/yes
+bad -> good [store] camping-tent-rural | https://priorityonesurplus.com/ | 1st: no/yes | 2nd: yes/yes
