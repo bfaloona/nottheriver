@@ -1,0 +1,1494 @@
+{
+  "id": "extra-virgin-olive-oil-suburban",
+  "checked": "2026-09-24T05:10:51.033Z",
+  "request": {
+    "product": "extra virgin olive oil",
+    "city": "Red Oak",
+    "state": "GA",
+    "lat": 33.62,
+    "lon": -84.5
+  },
+  "status": 200,
+  "elapsed_ms": 28477,
+  "body": {
+    "query": {
+      "product": "extra virgin olive oil",
+      "city": "Red Oak",
+      "state": "GA",
+      "canonical_name": "extra virgin olive oil",
+      "category": "pantry staples",
+      "online_queries": [
+        "buy extra virgin olive oil",
+        "olive oil online shop"
+      ],
+      "local_queries": [
+        "gourmet food store",
+        "specialty grocery shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4PFU5JDOBZ5AEBXLJEG3RKICVYC4ACKF3BQB6ONA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Wayfield Foods Inc",
+          "domain": "wayfieldfoods.com",
+          "url": "https://wayfieldfoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery, bank",
+        "address": "3435 Roosevelt Hwy, Atlanta, GA 30349",
+        "distance_km": 0.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.498,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Wayfield Foods Inc",
+                "url": "https://wayfieldfoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.99,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4JGJDDCCZ2RAEBWATXDIPAH2VYA437EWCAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Target Grocery",
+          "domain": "target.com",
+          "url": "https://target.com/sl/east-point/1546/grocery"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "3660 Marketplace Blvd, East Point, GA 30344",
+        "distance_km": 4.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Target Grocery",
+                "url": "https://target.com/sl/east-point/1546/grocery"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8925,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4KW4IU2VWZVAEBUKNVSOXEHCVYCRP5R7BAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Wayfield Foods",
+          "domain": "wayfieldfoods.com",
+          "url": "https://wayfieldfoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "5432 River Station Blvd, College Park, GA 30349",
+        "distance_km": 5.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.48,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Wayfield Foods",
+                "url": "https://wayfieldfoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8674999999999999,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "5.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4QB6XJ2WK2VAEBJGTASNYIHKVYDTXCV34NCHTNGQ=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Piggly Wiggly",
+          "domain": "pigglywiggly.com",
+          "url": "https://pigglywiggly.com/store-locations/georgia"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "3100 Washington Rd, East Point, GA 30344",
+        "distance_km": 6.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Piggly Wiggly",
+                "url": "https://pigglywiggly.com/store-locations/georgia"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.835,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4C65X2VUZ2RAEATQXDBUK2HCVYDEWYXBWAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Eden Fresh",
+          "domain": "edenfreshmarket.com",
+          "url": "https://edenfreshmarket.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery, bank",
+        "address": "3465 Main St, College Park, GA 30337",
+        "distance_km": 6.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Eden Fresh",
+                "url": "https://edenfreshmarket.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.835,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4JFSB6ZCZZRAEBC4KHCOWIG2VYD2DJ3PQAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "ALDI",
+          "domain": "aldi.us",
+          "url": "https://info.aldi.us/stores/l/ga/college-park/5820-riverdale-road/l931"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "5820 Riverdale Rd, College Park, GA 30349",
+        "distance_km": 7.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.473,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "ALDI",
+                "url": "https://info.aldi.us/stores/l/ga/college-park/5820-riverdale-road/l931"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8200000000000001,
+            "weight": 0.15,
+            "contribution": 0.123,
+            "sources": [
+              {
+                "label": "7.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc46EDD2QE4ZJAEAQP23S7WQGSVYAEZP4DDAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "H Mart Riverdale",
+          "domain": "hmart.com",
+          "url": "https://hmart.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "6335 GA-85 T, Riverdale, GA 30274",
+        "distance_km": 9.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.466,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "H Mart Riverdale",
+                "url": "https://hmart.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7725,
+            "weight": 0.15,
+            "contribution": 0.116,
+            "sources": [
+              {
+                "label": "9.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4K2WZNBOAZBAEBZ6AC7FRSJKVYBDCG3C5XICWCDA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "Food Depot",
+          "domain": "fooddepot.com",
+          "url": "https://fooddepot.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "80 NW Broad St, Fairburn, GA 30213",
+        "distance_km": 9.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.465,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Food Depot",
+                "url": "https://fooddepot.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.765,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "9.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4OK5TYQTSY5AEAR6ARU4XIGSVYATU6VXG5GL56KA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Steven's Fine Food & Seafood Market",
+          "domain": "stevensfinefoodseafood.com",
+          "url": "https://stevensfinefoodseafood.com/"
+        },
+        "matched_product": "",
+        "snippet": "seafood",
+        "address": "7200 GA-85 Suite 120, Riverdale, GA 30274",
+        "distance_km": 10.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.46,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Steven's Fine Food & Seafood Market",
+                "url": "https://stevensfinefoodseafood.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.735,
+            "weight": 0.15,
+            "contribution": 0.11,
+            "sources": [
+              {
+                "label": "10.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      },
+      {
+        "id": "local:loc4QBM6XVIR55AEBHTWTWZL6HCVYDXCPG3HAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Savi Provisions",
+          "domain": "saviprovisions.com",
+          "url": "https://saviprovisions.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "Post Corporate, 4403 Northside Pkwy NW Suite 170, Atlanta, GA 30327",
+        "distance_km": 27.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.395,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Savi Provisions",
+                "url": "https://saviprovisions.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.3025,
+            "weight": 0.15,
+            "contribution": 0.045,
+            "sources": [
+              {
+                "label": "27.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 11
+      }
+    ],
+    "online": [
+      {
+        "id": "online:oliveoillovers.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Olive Oil Lovers",
+          "domain": "oliveoillovers.com",
+          "url": "https://oliveoillovers.com/collections/extra-virgin-olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Discover premium extra virgin olive oils from renowned producers across Greece, Italy, Spain, Portugal, Croatia, France, Turkey, South Africa, and beyond, carefully selected for their exceptional flavor, quality, and craftsmanship. Olive oil is a healthy liquid fat obtained from olives. The highest quality olive oil is extra virgin olive oil which must be totally unprocessed and kept below 75 degrees Fahrenheit at all times during the mechanical extraction process. To be certified as extra virgin, the oil must not only meet strict chemical criteria as defined by the International Olive Oil Council and adopted by the European Union and USDA, but also must have perfect flavor and aroma as determined by a certified tasting panel. Discover premium extra virgin olive oils from renowned producers across Greece, Italy, Spain, Portugal, Croatia, France, Turkey, South Africa, and beyond, carefully selected for their exceptional flavor, quality, and craftsmanship. It begins with the care of trees and a careful harvest of fresh olives, and requires producers to thoroughly monitor every single step of the production process. After the oil has been bottled, it is important that it is kept away from heat and light, because extra virgin olive oil doesn’t stay “extra virgin” for ever. Discover freshly harvested extra virgin olive oils selected for exceptional flavor, quality, and character from trusted producers around the world.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Buy Extra Virgin Olive Oils Online - World's Best Small-Batch Producers",
+                "url": "https://oliveoillovers.com/collections/extra-virgin-olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:corto-olive.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Corto Olive Oil",
+          "domain": "corto-olive.com",
+          "url": "https://corto-olive.com/products/truly-extra-virgin-olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Experience TRULY® EVOO by Corto – pure, fresh olives oil. Ideal for bread-dipping, salad dressings, cheese boards. Enhance your dishes now. Enjoy a one-hour group tasting with a certified olive oil expert. ... Free Shipping in Contiguous US! ... Named TRULY® because it’s the real deal — full-bodied and dynamic with bright floral notes you could only get from fresh-squeezed juice. Made from California-grown olives harvested at their peak freshness, our ultra fresh, Extra Virgin Olive Oil is cold-extracted and packaged upon order so it tastes just as fresh when it reaches your kitchen. As oil is dispensed in our FlavorLock™ Boxes, the bag inside collapses, keeping air out (and all the goodness in). ... “This is the only TRULY Extra Virgin Olive Oil that reminds me of what my Nonna e Mamma used growing up in our home. The flavor it enriches our food with is second to none. For bread-dipping and alongside your cheese board for extra zip. Perfect for finishing on warm entrees. ... It’s not easy to get a fresh olive off the tree, but we harvest our olives at peak freshness in the Fall just as they turn green with a hint of violet. If we waited until they were black, it would be easier to harvest, but our oil wouldn’t taste nearly as delicious. Our unique FlavorLock™ Box is the only packaging that keeps your olive oil fresh from the time it is filled until the very last drop. Think of it as a mini cellar - it successfully protects the oil from light, heat and air, keeping it 100% truly-fresh.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "TRULY® Extra Virgin Olive Oil",
+                "url": "https://corto-olive.com/products/truly-extra-virgin-olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:midtownoliveoil.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Midtown Olive Oil",
+          "domain": "midtownoliveoil.com",
+          "url": "https://www.midtownoliveoil.com/collections/ultra-premium-evoos"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "The UP standard is reserved for the finest extra virgin olive oils, or EVOOs, in the world as it exceeds all existing European, Italian, Spanish, Greek, North American, Californian, or any other standard for the grade known as extra virgin olive oil. To qualify, the extra virgin olive oil must ... The UP standard is reserved for the finest extra virgin olive oils, or EVOOs, in the world as it exceeds all existing European, Italian, Spanish, Greek, North American, Californian, or any other standard for the grade known as extra virgin olive oil. To qualify, the extra virgin olive oil must meet or exceed a comprehensive set of Production, Storage, Transportation, Testing, Chemistry, and Organoleptic requirements.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Ultra Premium Extra Virgin Olive Oils – Midtown Olive Oil",
+                "url": "https://www.midtownoliveoil.com/collections/ultra-premium-evoos"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:americanvinegarworks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "American Vinegar Works",
+          "domain": "americanvinegarworks.com",
+          "url": "https://www.americanvinegarworks.com/collections/olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Experience organic extra virgin olive oil sourced from California groves. This fresh EVOO delivers a smooth finish for salads and artisanal bread dipping. Our Olive Oil collection features premium organic extra virgin oil sourced directly from a family estate in California. We value the quality of our oil just as much as our traditionally fermented vinegars. This oil is characterized by a fresh, grassy, and perfectly balanced flavor profile. It is specifically selected to play beautifully with the acidity of our barrel-aged vinegars. We believe a well-stocked kitchen requires a high-quality fat to match our high-quality acids. This extra virgin olive oil is ideal for professional dressings, finishing drizzles, and dipping. Pair this oil with our wine or cider vinegars for a superior house vinaigrette. Elevate your culinary foundation with our intentional selection of organic olive oil today. ... We believe that olive oil and vinegar complement each other perfectly, creating a harmonious balance of flavors that elevate any dish. The rich, smooth texture of high-quality olive oil pairs beautifully with the sharp, tangy notes of our artisan vinegars, making them a dynamic duo in the culinary world. When combined, the acidity of the vinegar cuts through the richness of the olive oil, enhancing the flavors of both and creating a well-rounded taste experience.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Organic California Olive Oil | Extra Virgin EVOO | AVW",
+            "source_url": "https://www.americanvinegarworks.com/collections/olive-oil",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Organic California Olive Oil | Extra Virgin EVOO | AVW",
+                "url": "https://www.americanvinegarworks.com/collections/olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:colavitastore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Colavita",
+          "domain": "colavitastore.com",
+          "url": "https://colavitastore.com/collections/extra-virgin-olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "A trusted family brand, Colavita started out in Italy, making Italian Extra Virgin Olive Oil. Colavita: A trusted family brand. Purchase our imported Italian products, view recipes, company news, our current partnerships, and how to contact us.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Extra Virgin Olive Oil | Colavita USA",
+                "url": "https://colavitastore.com/collections/extra-virgin-olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:olio2go.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Olio2go",
+          "domain": "olio2go.com",
+          "url": "https://www.olio2go.com/collections/olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "At Olio2go, we offer the finest lines of Italian olive oils. All of our oils are exactingly composed from specific varieties to enhance their natural and nuanced flavors. If you're looking for the best, then look no further. Olio2go offers the finest selection of olive oils sourced directly from Italy. Each producer that we work with selects only the best olives, and each blend presents a perfect balance of exquisite varieties. For those who really appreciate the finer things in life, we offer a number of sets, so you don't have to limit yourself to just one olive oil. The Da Vince Crude Viaggio Set represents some of the finest olive oils available anywhere. This set gives your taste buds the opportunity to travel across Italy, featuring flavors from Tuscany, Lazio, Basilicata and Puglia. If you want nothing but the best, then the Flos Olei Eccellenza set is for you. These extra virgin olive oils are atop their class: these award-winning varieties have earned spots in Flos Olei's Hall of Fame, along with dozens of other honors. If you're looking for a gift, then you can't miss the Azienda Del Carmine Artist Palette Gift Set. The four traditional olive oils featured in this set are packaged like a paint set to emphasize the artistry of fine Italian olive oil.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Italian Olive Oil - Extra Virgin Olive Oil - Olio2go",
+                "url": "https://www.olio2go.com/collections/olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:themediterraneandish.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Mediterranean Dish",
+          "domain": "themediterraneandish.com",
+          "url": "https://shop.themediterraneandish.com/collections/olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Our curated collection features early-harvest, single-origin Extra Virgin Olive Oils sourced from Greece, Italy, and Spain. To keep olive oil fresh, store it in a cool, dark place away from heat and light. A tightly sealed bottle, kept away from the stove, will help preserve its flavor and quality. ... Olive oil is best enjoyed while it’s fresh. Our curated collection features early-harvest, single-origin Extra Virgin Olive Oils sourced from Greece, Italy, and Spain. High-quality extra virgin olive oil is an excellent choice for everyday cooking. Extra virgin olive oil is the purest form of olive oil, made by cold-pressing fresh olives without heat or chemicals.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Single-Source Extra Virgin Olive Oil | The Mediterranean Dish Shop",
+                "url": "https://shop.themediterraneandish.com/collections/olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:gustogrocery.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Gusto Grocery",
+          "domain": "gustogrocery.com",
+          "url": "https://gustogrocery.com/collections/organic-olive-oil"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Get organic Italian extra virgin olive oil from our family-owned Italian grocery store online! Our selection of certified organic olive oils made from 100% Italian-harvested olives are grown on all-organic farms in the Italian countryside. Get organic Italian extra virgin olive oil shipped you! Barbera Lorenzo No. 5 Organic Nocellara Extra Virgin Olive Oil, 500 ml / 16.9 fl oz",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Buy 100% Italian Organic Olive Oil Online – Authentic Italian Market Online - Gusto Grocery",
+            "source_url": "https://gustogrocery.com/collections/organic-olive-oil",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Buy 100% Italian Organic Olive Oil Online – Authentic Italian Market Online - Gusto Grocery",
+                "url": "https://gustogrocery.com/collections/organic-olive-oil"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/food/olive-oils/976759_976794_4649724_6195973"
+        },
+        "matched_product": "extra virgin olive oil",
+        "snippet": "Shop for Olive oils in Cooking oils &amp; vinegar. Buy products such as Great Value: 100% Extra Virgin Olive Oil, 25.5 fl oz at Walmart and save.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Extra Virgin Olive Oils for Cooking and Dressing",
+                "url": "https://www.walmart.com/browse/food/olive-oils/976759_976794_4649724_6195973"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:oliviersandco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Oliviersandco",
+          "domain": "oliviersandco.com",
+          "url": "https://oliviersandco.com/"
+        },
+        "matched_product": "",
+        "snippet": "Oliviers&amp;Co has the best olive oil in the world. Our brand offers high quality olive oil, bast balsamic vinegar, truffle oil and condiments. We source only the best ingredients the Mediterranean has to offer. Shopping Basket Close You have no items in your shopping cart. ... Let's celebrate the 30th harvest! ... Inspired by a cocktail: The Saint Germain Spritz! ... Perfect for summer appetizers! ... A real treat! ... Our producers guarantee the terroir, the olive varieties, and a vintage olive oil produced in the purest regional tradition and in sustainable agriculture. Oliviers&Co has the best olive oil in the world. Our brand offers high quality olive oil, bast balsamic vinegar, truffle oil and condiments. We source only the best ingredients the Mediterranean has to offer. Every year, Il Fornacino is celebrated for its intensity and elegance; however, this latest expression reaches an unprecedented peak. This Tuscan masterpiece, widely regarded as a legendary cuvée, represents a near-perfect olive oil. Our producers commit to preserving the terroir, olive varieties, and producing vintage olive oil following traditions and sustainable agriculture practices.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Oliviers & Co: Best Olive Oils in the world - Oliviers & Co",
+                "url": "https://oliviersandco.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 363,
+          "completion_tokens": 88,
+          "cost_usd": 0.00006003
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3941,
+          "completion_tokens": 1344,
+          "cost_usd": 0.00085106
+        }
+      ],
+      "llm_tokens": 5736,
+      "estimated_cost_usd": 0.020911
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "sporked.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "consumerreports.org",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "aboutoliveoil.org",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "kimcorealty.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "wayfieldfoods.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "saviprovisions.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "savorygourmetmarket.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "savorygourmetmarket.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "weolive.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "theblueoliveshop.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "gategourmet.com",
+        "reason": "place_category"
+      },
+      {
+        "kind": "local",
+        "domain": "saviprovisions.com",
+        "reason": "place_category"
+      }
+    ]
+  }
+}

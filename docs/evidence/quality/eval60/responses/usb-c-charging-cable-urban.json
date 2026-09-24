@@ -1,0 +1,1349 @@
+{
+  "id": "usb-c-charging-cable-urban",
+  "checked": "2026-09-24T05:03:34.705Z",
+  "request": {
+    "product": "USB-C charging cable",
+    "city": "Austin",
+    "state": "TX",
+    "lat": 30.27,
+    "lon": -97.74
+  },
+  "status": 200,
+  "elapsed_ms": 10227,
+  "body": {
+    "query": {
+      "product": "USB-C charging cable",
+      "city": "Austin",
+      "state": "TX",
+      "canonical_name": "USB-C charging cable",
+      "category": "electronics accessories",
+      "online_queries": [
+        "buy USB-C charging cable",
+        "USB-C cable shop"
+      ],
+      "local_queries": [
+        "electronics store",
+        "computer supply shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4HLFMC3ACIQ7EBC46UV26K32YYCRFP75NAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Austin MacWorks-Apple Authorized Service Provider & Reseller",
+          "domain": "austinmacworks.com",
+          "url": "https://austinmacworks.com/"
+        },
+        "matched_product": "",
+        "snippet": "car repair",
+        "address": "450 W 2nd St, Austin, TX 78701",
+        "distance_km": 0.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.497,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Austin MacWorks-Apple Authorized Service Provider & Reseller",
+                "url": "https://austinmacworks.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9775,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4WTXUAU3FIY7EBBILPECLO32YYAQIJPNXAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "ΗC Cuѕtоm Βuіlԁ Cоmputеrs & Gаmіng ΡC",
+          "domain": "hypercyber.com",
+          "url": "https://hypercyber.com/"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "501 W 12th St, Austin, TX 78701",
+        "distance_km": 0.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.497,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "ΗC Cuѕtоm Βuіlԁ Cоmputеrs & Gаmіng ΡC",
+                "url": "https://hypercyber.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.98,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4FJNBJUIKIU7EBGCXBFYUA4CYYAPGLHT2AAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Office Depot",
+          "domain": "officedepot.com",
+          "url": "https://officedepot.com/storelocator/tx/austin/office-depot-6253"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "907 W 5th St #101, Austin, TX 78703",
+        "distance_km": 1.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.495,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Office Depot",
+                "url": "https://officedepot.com/storelocator/tx/austin/office-depot-6253"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9675,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "1.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4RAXRGRKIJE7EAM2OINKGC32YYC7HAJLVAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Campus Computer Store",
+          "domain": "campuscomputer.com",
+          "url": "https://campuscomputer.com/"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2304 Whitis Ave FAC) 109, Austin, TX 78712, United States",
+        "distance_km": 1.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.493,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Campus Computer Store",
+                "url": "https://campuscomputer.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.955,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4WLIHHMFDJA7EB5RNZZZR63SYYA22EHO6AAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Apple Shark",
+          "domain": "appleshark.com",
+          "url": "https://appleshark.com/"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2213 Poquito St Apt 100, Austin, TX 78722",
+        "distance_km": 2.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.491,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Apple Shark",
+                "url": "https://appleshark.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.94,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "2.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc46FYPDJQRJU7EBQ7K3G6SM3SYYABRC2O4AAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Spectrum Store",
+          "domain": "spectrum.com",
+          "url": "https://spectrum.com/locations/store/1000-e-41st-st-austin-tx-2005?cmp=lastmile"
+        },
+        "matched_product": "",
+        "snippet": "mobile phone",
+        "address": "1000 E 41st St Suite 920, Austin, TX 78751",
+        "distance_km": 3.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.485,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Spectrum Store",
+                "url": "https://spectrum.com/locations/store/1000-e-41st-st-austin-tx-2005?cmp=lastmile"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9025,
+            "weight": 0.15,
+            "contribution": 0.135,
+            "sources": [
+              {
+                "label": "3.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4V6PVS3KZH47EBY7OXUEU64KYYBASTYVLAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Office Depot",
+          "domain": "officedepot.com",
+          "url": "https://officedepot.com/storelocator/tx/austin/office-depot-304"
+        },
+        "matched_product": "",
+        "snippet": "stationery",
+        "address": "2101 S Lamar Blvd, Austin, TX 78704",
+        "distance_km": 3.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.485,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Office Depot",
+                "url": "https://officedepot.com/storelocator/tx/austin/office-depot-304"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9025,
+            "weight": 0.15,
+            "contribution": 0.135,
+            "sources": [
+              {
+                "label": "3.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4SC4MPUUHJY7EB27G4JXXW3KYYBE6NYJHAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://stores.bestbuy.com/tx/austin/1201-barbara-jordan-blvd-1153.html/?loc=ns100"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "1201 Barbara Jordan Blvd Ste 100, Austin, TX 78723",
+        "distance_km": 5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Best Buy",
+                "url": "https://stores.bestbuy.com/tx/austin/1201-barbara-jordan-blvd-1153.html/?loc=ns100"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4OGIBBZILII7EA53FC4GK442YYAOQ4PDPAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Apple Barton Creek",
+          "domain": "apple.com",
+          "url": "https://apple.com/retail/bartoncreek?cid=aos-us-seo-maps"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2901 S Capital of Texas Hwy, Austin, TX 78746",
+        "distance_km": 6.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Apple Barton Creek",
+                "url": "https://apple.com/retail/bartoncreek?cid=aos-us-seo-maps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.835,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc47K27LU37HQ7EBUZAXPAYM5CYYAZLH7FYAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://stores.bestbuy.com/tx/austin/4970-w-highway-290-204.html/?loc=ns100"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "4970 US-290, Austin, TX 78735",
+        "distance_km": 8.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.468,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Best Buy",
+                "url": "https://stores.bestbuy.com/tx/austin/4970-w-highway-290-204.html/?loc=ns100"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.785,
+            "weight": 0.15,
+            "contribution": 0.118,
+            "sources": [
+              {
+                "label": "8.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:bestbuy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://www.bestbuy.com/site/data-cables/usb-c-charging-cables/pcmcat1706305342973.c?id=pcmcat1706305342973"
+        },
+        "matched_product": "USB-C charging cable",
+        "snippet": "Esoulk - 6.6&#x27; 100W USB-C Cable 20Gbps Data &amp; 4K Video (Thunderbolt 3 Compatible) For Smart TV Laptop Macbook iPad Tablet – - Black ... Entronix - 6FT USB-C Charger Cable - 2-Pack, Charging &amp; Data Transfer, Universal Compatibility - White Esoulk - 6.6' 100W USB-C Cable 20Gbps Data & 4K Video (Thunderbolt 3 Compatible) For Smart TV Laptop Macbook iPad Tablet – - Black ... Entronix - 6FT USB-C Charger Cable - 2-Pack, Charging & Data Transfer, Universal Compatibility - White Acer - USB-C Charging Cable, 27W PD Fast Charging, Durable Braided Cord with 480Mbps Data Sync, Battery Protection - Orange Acer - USB C to USB C Cable, Type-C 60W Fast Charging Cable (6 FT) for iPhone 17 Series, iPadmini 6 and More - Black Acer - USB C to USB C Cable, Type-C 60W Fast Charging Cable (6 FT) for iPhone 17 Series, iPadmini 6 and More - Orange",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "USB-C Charging Cables - Best Buy",
+                "url": "https://www.bestbuy.com/site/data-cables/usb-c-charging-cables/pcmcat1706305342973.c?id=pcmcat1706305342973"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/cell-phones/usb-c-cables/1105910_133161_8341180_6842958_2654809_9285526"
+        },
+        "matched_product": "USB-C to USB-C cable",
+        "snippet": "Belkin BoostCharge USB-C to USB-C Cable 240W 2.0 6.6ft/2M Braided Fast Charging Cable USB-C Power Cable Laptop &amp; Phone Charger Black Belkin BoostCharge USB-C to USB-C Cable 240W 2.0 6.6ft/2M Braided Fast Charging Cable USB-C Power Cable Laptop & Phone Charger Black Belkin BoostCharge USB-A to USB-C Cable 2.0 9.9ft/3M Fast Charging & Sync Cable USB-A Charger Cable USB-C Phone Cable Eco Cable White onn USB-C to USB-A Charging Cable, 6 ft, USB-IF Certified, for iPhone 15/16/17 and Galaxy Devices, White onn 10ft USB-C to USB Braided Charging Cable, USB-IF Certified, White for iPhone Samsung Galaxy Pixel",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "USB-C Cables in Phone Cables by Connector Type - Walmart.com",
+                "url": "https://www.walmart.com/browse/cell-phones/usb-c-cables/1105910_133161_8341180_6842958_2654809_9285526"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:ugreen.com",
+        "kind": "online",
+        "retailer": {
+          "name": "UGREEN US",
+          "domain": "ugreen.com",
+          "url": "https://us.ugreen.com/collections/usb-c-cables"
+        },
+        "matched_product": "",
+        "snippet": "Shop USB-C cables for charging, travel, work, and daily use. Get fast charging, high wattage, and durable designs. Explore UGREEN now. They are used for charging and data transfer between devices such as smartphones, tablets, laptops, and more. UGREEN USB C Cables are known for their reliability and durability, making them essential accessories for modern devices. ... Have an account? Log in to check out faster. Continue shopping ... Buy with confidence from our official channels and verified partners—ensuring you get genuine UGREEN quality every time. Shop USB-C cables for charging, travel, work, and daily use. Get fast charging, high wattage, and durable designs. Explore UGREEN now. A USB Type-C cable is a type of cable connector that is used for various purposes, including charging, data transfer, and connecting peripherals to electronic devices such as smartphones, laptops, tablets, and gaming consoles. It is known for its reversible design, high data transfer speeds, and ability to deliver power quickly. This means USB-C ports can charge devices faster and can also deliver power to larger devices like laptops. Overall, USB-C offers improved features such as reversible design, faster data transfer speeds, and higher power delivery capabilities compared to USB-A, making it more versatile and convenient for modern devices. Read more: The ultimate guide to the types of USB cables",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "USB-C Cables for Fast Charging | UGREEN US",
+                "url": "https://us.ugreen.com/collections/usb-c-cables"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:cablewholesale.com",
+        "kind": "online",
+        "retailer": {
+          "name": "CableWholesale",
+          "domain": "cablewholesale.com",
+          "url": "https://www.cablewholesale.com/products/usb-firewire/usb-c.php"
+        },
+        "matched_product": "",
+        "snippet": "USB 3.1 Type C to Mini DisplayPort Video Adapter, requires Thunderbolt3 or DisplayPort Alt Mode Part # 30U3-34560 No Reviews ... USB4 40Gbps 100 watt Fast Charging Cable, USB Type C Male to Male, ThunderBolt 3 Compatible, PVC Jacket, 1 foot USB-C 3.1, 3-in-1 Mini Dock, 4k HDMI @ 30Hz, USB 3.0 Type-A, & 100W USB-C Charge Port Part # &nbsp; 30U3-33001 No Reviews ... USB-C 9-in-1 Mini Dock. HDMI, USB C PD 100W, USB A 3.0 x 3, SD/TF 2.0, LAN 1000Mbps, 3.5mm Audio, Gray Part # 30U3-35000 No Reviews ... USB C Male to RJ45 Male 8P8C Flat Console Cable, Periwinkle Blue, 10 foot Part # 10U3-38110 No Reviews The USB consortium's latest connector features a symmetrical design that is reversible, meaning you will no longer have to flip it over and try again. Shop Cable Wholesale and enjoy our wholesale USB-C cable chargers. In the past few years, most of your favorite devices have been making the leap to USB-C cables including smartphones, laptops, headphones, and more. Currently, the latest iPhones and Google Pixels have replaced headphone jacks with this technology because it allows for faster-charging speeds and data transfers. Our collection of wholesale USB-C cords and accessories include dock adapters, so you can plug in additional SVGA, HDMI, and Ethernet cords. Cable Wholesale carries additional USB-C products such as USB A to C cords, micro-USB, C to USB-C, and more. USB type C is an easy way to transfer data and connect your favorite products. We provide wholesale USB type C cables, docks, and more. Shop now!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Bulk USB-C Cables and Accessories | Cable Wholesale",
+                "url": "https://www.cablewholesale.com/products/usb-firewire/usb-c.php"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:gonimble.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Nimble",
+          "domain": "gonimble.com",
+          "url": "https://www.gonimble.com/collections/usb-c-cables"
+        },
+        "matched_product": "",
+        "snippet": "Looking for durable USB-C cables for your device? Shop eco-friendly bpa &amp; pvc-free USB-C cables at GoNimble.com. Looking for durable USB-C cables for your device? Shop eco-friendly bpa & pvc-free USB-C cables at GoNimble.com.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Shop USB-C Cables | Nimble",
+            "source_url": "https://www.gonimble.com/collections/usb-c-cables",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Shop USB-C Cables | Nimble",
+                "url": "https://www.gonimble.com/collections/usb-c-cables"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:macsales.com",
+        "kind": "online",
+        "retailer": {
+          "name": "MacSales.com",
+          "domain": "macsales.com",
+          "url": "https://eshop.macsales.com/shop/cables/usb-c"
+        },
+        "matched_product": "",
+        "snippet": "Extend the reach of USB-C by 20&quot; with this male to female extension cable. Works with all USB-C hosts including those with Thunderbolt 4, Thunderbolt 3, and USB4 ports. Supports up to 4K resolution with HDR and HDCP 2.2 for connecting an HDMI display to your USB-C equipped computer, iPad, smartphone, dock, or hub. 3 Year Newer Technology Limited Warranty. ... Cable for Charging iPads, Laptops, iPhone 15, any device with USB-C from a USB-C charger - Up to 60W PD. Extend the reach of USB-C by 20\" with this male to female extension cable. Works with all USB-C hosts including those with Thunderbolt 4, Thunderbolt 3, and USB4 ports. Charge your laptop, iPad, iPhone 15 - any device that charges via USB-C or uses a USB-C charger. Up to 60W PD. 2 Year OWC Limited Warranty. ... Universal, full capability for all Thunderbolt 4, Thunderbolt 3, USB-C, and USB4 devices. Supports speeds up to 40Gb/s and power delivery up to 240W. Universal, full capability for all Thunderbolt 4, Thunderbolt 3, USB-C, and USB4 devices. Supports speeds up to 40Gb/s and power delivery up to 240W. 3 Year OWC Limited Warranty. ... Charge/Sync/Transfer data between USB-C devices.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "USB-C Cables from MacSales.com",
+                "url": "https://eshop.macsales.com/shop/cables/usb-c"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:cabletimetech.com",
+        "kind": "online",
+        "retailer": {
+          "name": "CABLETIME",
+          "domain": "cabletimetech.com",
+          "url": "https://cabletimetech.com/collections/usb-c-cable"
+        },
+        "matched_product": "",
+        "snippet": "At CableTime, our bulk USB-C cables are built for everyday reliability. With power options from 60W to 240W, speeds up to 20Gbps, and 4K/8K support, our cables cater to all needs. Available in sturdy braided and PVC jackets, and lengths from 0.5m to 5m, they’re perfect for any use. Yes, all our USB-C cables come with a 2 year warranty to ensure your satisfaction and peace of mind. ... Your cart is currently empty. Not sure where to start? Try these collections: Continue shopping At CableTime, our bulk USB-C cables are built for everyday reliability. With power options from 60W to 240W, speeds up to 20Gbps, and 4K/8K support, our cables cater to all needs. Available in sturdy braided and PVC jackets, and lengths from 0.5m to 5m, they’re perfect for any use. USB C cables are also known as USB Type-C cables. Nowadays, most electronic devices are equipped with usb c ports, including smartphones, laptops, headphones, etc. It is the future. USB C cable is symmetrical and reversible, which means you will no longer need to turn it over and try again. It enables data transfer and fast charging between devices with USB-C ports. That's why the wholesale usb c cables are one of our best sellers. Data transmission rate from 480Mbps to 20Gbps, out power from 60w to 100w. Custom USB Type C cables are available to suit your needs.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Bulk USB-C Cables - Top Quality & Wholesale Prices | CableTime – CABLETIME",
+                "url": "https://cabletimetech.com/collections/usb-c-cable"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Electronics-Cables/USB-C/N-5yc1vZc652Z1z1aa2p"
+        },
+        "matched_product": "",
+        "snippet": "Get free shipping on qualified USB-C Cables products or Buy Online Pick Up in Store today in the Electronics Department. Shop All · Services · DIY · Log In · Sign in for the best experience · Sign In · Don't have an account?Create an Account · Cart · Home · /Electronics · /Cables · 42 results · Filters · In Stock at Store Today · Free 1-2 Day Delivery · Next-Day Delivery · Electronics · Cables · USB Cables · Specials & Offers Appliances Bath Blinds & Window Treatments Building Materials Lumber & Composites Cleaning Home Décor Lighting Doors & Windows Electrical Flooring Hardware Heating, Venting & Cooling Kitchen Garden Center Outdoors Paint Plumbing Holiday Decorations Smart Home Storage & Organization Tools Automotive Furniture Baby & Kids Shop All Brands Home Depot Gift Cards Credit Card Services Home Services Home Depot Rental Pro Services & Contractor Supply Project Calculators DIY Projects and Ideas Local Ad Store Finder Site Map",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "USB-C - Cables - The Home Depot",
+                "url": "https://www.homedepot.com/b/Electronics-Cables/USB-C/N-5yc1vZc652Z1z1aa2p"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 363,
+          "completion_tokens": 99,
+          "cost_usd": 0.00006996
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3667,
+          "completion_tokens": 1095,
+          "cost_usd": 0.000739
+        }
+      ],
+      "llm_tokens": 5224,
+      "estimated_cost_usd": 0.020809
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "pcworld.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "bondstv.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "ubreakifix.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "compuplus.shop",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "robotatx.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "mrcomputeraustin.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "eliteatx.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "fcnaustin.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

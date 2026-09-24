@@ -1,0 +1,1416 @@
+{
+  "id": "garden-hose-urban",
+  "checked": "2026-09-24T05:18:56.694Z",
+  "request": {
+    "product": "garden hose",
+    "city": "Phoenix",
+    "state": "AZ",
+    "lat": 33.45,
+    "lon": -112.07
+  },
+  "status": 200,
+  "elapsed_ms": 22265,
+  "body": {
+    "query": {
+      "product": "garden hose",
+      "city": "Phoenix",
+      "state": "AZ",
+      "canonical_name": "garden hose",
+      "category": "gardening tools",
+      "online_queries": [
+        "buy garden hose",
+        "garden hose shop"
+      ],
+      "local_queries": [
+        "garden center store",
+        "hardware supply shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4BWEXWLD5XBAEB2NKRK5CABC4YDBLAGUNAAAAAAA=:16",
+        "kind": "local",
+        "retailer": {
+          "name": "Phoenix Welding Supply",
+          "domain": "phxwelding.com",
+          "url": "https://phxwelding.com/locations/phoenix-branch"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "701 S 7th St, Phoenix, AZ 85034",
+        "distance_km": 1.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.496,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Phoenix Welding Supply",
+                "url": "https://phxwelding.com/locations/phoenix-branch"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9725,
+            "weight": 0.15,
+            "contribution": 0.146,
+            "sources": [
+              {
+                "label": "1.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4KZU6MJHPXNAEATDWY665IBK4YA57EWL6AAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Valley Garden Center",
+          "domain": "valleygardencenterphx.org",
+          "url": "https://valleygardencenterphx.org/"
+        },
+        "matched_product": "",
+        "snippet": "event",
+        "address": "1809 N 15th Ave, Phoenix, AZ 85007",
+        "distance_km": 2.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.49,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Valley Garden Center",
+                "url": "https://valleygardencenterphx.org/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.93,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "2.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4THB2JLTLXNAEAEL6TBZV6BS4YB2IJNVOAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Six Points Hardware",
+          "domain": "sixpointshardware.com",
+          "url": "https://sixpointshardware.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1409 N 19th Ave, Phoenix, AZ 85009",
+        "distance_km": 3.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Six Points Hardware",
+                "url": "https://sixpointshardware.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.92,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "3.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc43BLWQMOCXVAEBOTC5O7AQA24YAJRTZKMAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Dig It Gardens",
+          "domain": "digphx.com",
+          "url": "https://digphx.com/"
+        },
+        "matched_product": "",
+        "snippet": "garden center, garden_center",
+        "address": "3015 N 16th St, Phoenix, AZ 85016",
+        "distance_km": 4.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Dig It Gardens",
+                "url": "https://digphx.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.895,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4CWRVH7EEXRAEA5U2CYDPMAK4YDH4P5T3AAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Ace Hardware",
+          "domain": "acehardware.com",
+          "url": "https://acehardware.com/store-details/06234"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "2242 N 24th St, Phoenix, AZ 85008",
+        "distance_km": 4.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Ace Hardware",
+                "url": "https://acehardware.com/store-details/06234"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.89,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4NM53OGRDWRAEBQC7E5IJ6BC4YDQLZ5GDAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Broadway Central Hardware",
+          "domain": "acehardware.com",
+          "url": "https://acehardware.com/store-details/18094"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "28 E Broadway Rd, Phoenix, AZ 85040",
+        "distance_km": 4.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.482,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Broadway Central Hardware",
+                "url": "https://acehardware.com/store-details/18094"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.88,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "4.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4PGBXTWOAWRAEBAZG2OZP6AS4YAFR4S7FAAAAAAA=:17",
+        "kind": "local",
+        "retailer": {
+          "name": "AMW Construction Supply",
+          "domain": "amwsupply.com",
+          "url": "https://amwsupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "3635 S 16th St, Phoenix, AZ 85040",
+        "distance_km": 4.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.482,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "AMW Construction Supply",
+                "url": "https://amwsupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8825,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "4.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4AGUD3AFAXVAEBXYYAKAOGAC4YDV6BQDJAAAAAAA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/3146-east-thomas-road-phoenix-85016?number=447"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "3146 E Thomas Rd, Phoenix, AZ 85016",
+        "distance_km": 6.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.476,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Harbor Freight",
+                "url": "https://harborfreight.com/storelocator/3146-east-thomas-road-phoenix-85016?number=447"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8425,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "6.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4IAW2WVLAWJAEARWMSE5KMBC4YCEXDJYQAAAAAAA=:15",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/5813-south-central-avenue-phoenix-85040?number=510"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "5813 S Central Ave, Phoenix, AZ 85040",
+        "distance_km": 6.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.476,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Harbor Freight",
+                "url": "https://harborfreight.com/storelocator/5813-south-central-avenue-phoenix-85040?number=510"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8425,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "6.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      },
+      {
+        "id": "local:loc4RZZNLYMNWVAEADSV44D6J723YAH7GVBEAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "The Paver Store and Landscaping Supplies",
+          "domain": "paverstoreaz.com",
+          "url": "https://paverstoreaz.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "3830 E Miami Ave, Phoenix, AZ 85040",
+        "distance_km": 7.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.472,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The Paver Store and Landscaping Supplies",
+                "url": "https://paverstoreaz.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8125,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "7.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 12
+      }
+    ],
+    "online": [
+      {
+        "id": "online:lowes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lowe's",
+          "domain": "lowes.com",
+          "url": "https://www.lowes.com/pl/garden-hoses-accessories/garden-hoses/4294612473"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Water lawns, gardens, and outdoor spaces with garden hoses. Find standard, soaker, coiled, flat, and kink-free options atLowe&#x27;s. Shop Now Water lawns, gardens, and outdoor spaces with garden hoses. Find standard, soaker, coiled, flat, and kink-free options atLowe's. Shop Now Rain Bird PGH50 5/8-in x 50-ft Premium -Duty Kink Free Rubber Green Hose · Rain Bird PGH50 Premium Heavy-Duty Garden Hose, 100% EPDM Rubber, Hexagonal, 5/8\" Inside Diameter x 50’ Long, Green. Premium, industrial-grade garden hose constructed of 100% EDPM rubber for superior flexibly, kink-resistance and ease of coiling in all weather conditions...even to a bone-chilling -40° Fahrenheit! Heavy-duty hexagonal (6-sided) shape and double-spiral reinforcing; permanently resists kinking that weakens water flow in common hoses. Robust crimped-on nickel plated, brass couplings won’t crush or bend…even when run over by a vehicle. The watering hose of choice for professional gardeners, contractors, golf courses, greenhouses and municipal parks. Its kink-free technology and unique internal rod allows for continuous water flow, even if the hose appears twisted or kinked. The Professional hoses also include a rotating male coupling that helps prevent kinking during initial hose setup and future use.View More · Garden hoses help deliver water for lawn care, gardening, washing vehicles and a variety of outdoor projects.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses for Watering & Outdoor Cleaning | Lowe's",
+                "url": "https://www.lowes.com/pl/garden-hoses-accessories/garden-hoses/4294612473"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:acehardware.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Ace Hardware",
+          "domain": "acehardware.com",
+          "url": "https://www.acehardware.com/departments/lawn-and-garden/watering-and-irrigation/garden-hoses"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Shop the garden hose department at Ace for easy yard watering, with coil water hoses, expandable hose designs and soaker hoses for efficient irrigation. Sponsored Gorilla 250 ft. Black/Gray Wheeled Hose Reel Cart ... Teknor Apex Zero-G 5/8 in. D X 50 ft. L Heavy Duty Commercial Grade Garden Hose Sponsored Gorilla 150 ft. Black/Gray Retractable Free Standing Hose Reel Cart ... Teknor Apex Zero-G 5/8 in. D X 100 ft. L Heavy Duty Commercial Grade Garden Hose Ace Heavy Duty 5/8 in. D X 75 ft. L Heavy Duty Professional Grade Flexible Garden Hose ... Ace SmartFLO Max 5/8 in. D X 25 ft. L Premium Grade Garden Hose Ace SmartFLO 3/4 in. D X 50 ft. L Contractor Grade Garden Hose ... Ace Comfort Grip 5/8 in. D X 50 ft. L Medium Duty Garden Hose",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses - Ace Hardware",
+                "url": "https://www.acehardware.com/departments/lawn-and-garden/watering-and-irrigation/garden-hoses"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:menards.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Menards",
+          "domain": "menards.com",
+          "url": "https://www.menards.com/main/outdoors/watering-irrigation/garden-hose/c-13103.htm"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Keep your garden hydrated with durable garden hoses from Menards, available in multiple lengths and materials. In these cases manufacturers require that you take some steps to add the item to your cart or go to checkout to view our final prices when lower than the manufacturer's set minimum advertised pricing. Don't worry. You can easily remove the item from your cart if you do not want to buy it. Bring Your Project to Life with Menards® Design & Buy™",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hose at Menards®",
+                "url": "https://www.menards.com/main/outdoors/watering-irrigation/garden-hose/c-13103.htm"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:costco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Costco",
+          "domain": "costco.com",
+          "url": "https://www.costco.com/hose-reels-hoses.html"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Teknor Rapid Flo 5/8 in. x 100 ft. Compact Garden Hose Flexon 5/8 in. x 100 ft. Contractor Grade Hose with Guard & Grip ... Your lawn and garden are extensions of your home. Sure, you may not have bought your trees and shrubs in the same way you picked out your couch, but caring for them and the garden they grow in is part of being a homeowner. Teknor Rapid Flo 5/8 in. x 100 ft. Compact Garden Hose",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses, Sprinklers & Accessories | Costco",
+                "url": "https://www.costco.com/hose-reels-hoses.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:bomgaars.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bomgaars",
+          "domain": "bomgaars.com",
+          "url": "https://www.bomgaars.com/lawn-garden/water-irrigation/garden-hoses.html"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Keep your garden and outdoor spaces well-watered with Bomgaars’ durable garden hoses, designed for flexibility, strength, and long-lasting performance. Our selection includes soaker hoses, expandable hoses, heavy-duty rubber hoses, and kink-resistant models, all built to deliver consistent water flow for lawns, gardens, and landscaping projects. Keep your garden and outdoor spaces well-watered with Bomgaars’ durable garden hoses, designed for flexibility, strength, and long-lasting performance. Our selection includes soaker hoses, expandable hoses, heavy-duty rubber hoses, and kink-resistant models, all built to deliver consistent water flow for lawns, gardens, and landscaping projects. Easy to use and versatile, these hoses help you water efficiently while reducing leaks and tangles. Tackle any watering job—shop Bomgaars for reliable, durable garden hoses. Teknor Apex ZERO-G Lightweight Ultra Flexible Curable Kink-Free Garden Hose, 4001-50, 5/8 IN x 50 FT Flexzilla SwivelGrip Garden Lead-in Hose, 3/4 IN - 11 1/2 IN GHT Fittings, ZillaGreen, HFZG510YWS, 5/8 IN x 10 FT",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "SHOP Garden Hose Products at Bomgaars | bomgaars.com",
+                "url": "https://www.bomgaars.com/lawn-garden/water-irrigation/garden-hoses.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:swanhose.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Swan Hose",
+          "domain": "swanhose.com",
+          "url": "https://swanhose.com/collections/residential"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Shop our selection of residential hoses and garden hoses. We’ve got you covered for gardening, lawn care, and cleaning the areas around your home. Better hoses for a better world. That’s the promise of Swan’s Element® brand. And perhaps no other... ... Swan’s Metal Garden Hose® is designed to be one of the most durable water hoses on the... Introducing the XFlex® PRO Hose, the ultimate choice for professionals tackling demanding jobsite tasks. Combining unmatched kink-resistance... Sale priceFrom $59.99 John Deere Premium Duty Garden Hose Developed through a collaboration between Swan and John Deere, the John Deere Premium Duty Garden Hose is... ... Designed for effortless light-duty watering and cleaning, our innovative XPandable® UltraLITE rubber garden hose delivers maximum reach... Swan’s WaterCOLORS® Pink Hose combines everyday watering performance with a playful pop of pink that brightens gardens,... ... Swan's WaterCOLORS® Green Hose combines everyday watering performance with a vibrant green color that complements lawns, gardens,...",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Residential Hoses - Swan Hose",
+            "source_url": "https://swanhose.com/collections/residential",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Residential Hoses - Swan Hose",
+                "url": "https://swanhose.com/collections/residential"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:tractorsupply.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Tractor Supply Co.",
+          "domain": "tractorsupply.com",
+          "url": "https://www.tractorsupply.com/tsc/catalog/garden-hoses"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Garden hoses can offer several uses around your house, from watering your lawn and plants to washing your car or furry friend. You can find a selection of garden hoses, along with other lawn and garden supplies, at Tractor Supply. Whether you want a coiled garden hose or a contractor hose, you can find choices in our trusted lawn and garden selection. To start shopping, visit your local Tractor Supply store today or browse our selection online. Garden hoses can offer several uses around your house, from watering your lawn and plants to washing your car or furry friend. You can find a selection of garden hoses, along with other lawn and garden supplies, at Tractor Supply. Discover the different hose types we have available. Whether you plan on using a garden hose for watering your flowers and lawn or for spraying down your dog after a muddy walk, you can find a suitable option for your Life Out Here. Find the perfect garden hose for any task in our selection. Whatever type of hose you need, you can find options here. We have standard hoses ideal for watering your lawn, soaker hoses that slowly release water into gardens or bushes and contractor hoses that are suitable for landscaping purposes.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses at Tractor Supply Co.",
+                "url": "https://www.tractorsupply.com/tsc/catalog/garden-hoses"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Outdoors-Garden-Center-Watering-Irrigation-Watering-Essentials-Garden-Hoses/N-5yc1vZbx4e"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Get free shipping on qualified Garden Hoses products or Buy Online Pick Up in Store today in the Outdoors Department. Specials & Offers Appliances Bath Blinds & Window Treatments Building Materials Lumber & Composites Cleaning Home Décor Lighting Doors & Windows Electrical Flooring Hardware Heating, Venting & Cooling Kitchen Garden Center Outdoors Paint Plumbing Holiday Decorations Smart Home Storage & Organization Tools Automotive Furniture Baby & Kids Shop All Brands Home Depot Gift Cards Credit Card Services Home Services Home Depot Rental Pro Services & Contractor Supply Project Calculators DIY Projects and Ideas Local Ad Store Finder Site Map ... Flexible hoses for everyday watering and yard care.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses - The Home Depot",
+                "url": "https://www.homedepot.com/b/Outdoors-Garden-Center-Watering-Irrigation-Watering-Essentials-Garden-Hoses/N-5yc1vZbx4e"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/patio-garden/garden-hoses/5428_4091_2462840_6393057"
+        },
+        "matched_product": "garden hose",
+        "snippet": "Garden Hose 100 FT,304 Stainless Steel Heavy Duty Water Hose with 7 Function Nozzles No-Kink Rust Proof for Yard Outdoor BIONIC STEEL 75 Ft Metal Garden Hose with Sprayer Nozzle, Non Kinking Designed Stainless Steel Heavy Duty Water Hose 75 Ft x 5/8 in. Kotto 100 ft Flexible Garden Hose, Water Hose for Outside with 10 Spray Nozzles, Brass Connector, Leak-Proof, Blue Garden Hose 100 FT,304 Stainless Steel Heavy Duty Water Hose with 7 Function Nozzles No-Kink Rust Proof for Yard Outdoor BN-LINK Garden Hose 50FT, 10 Pattern Thumb Spray Nozzle, No-Kink Flexible 304 Stainless Steel Water Hose, Lightweight Leak & Rust Proof Water Hose for Yard, Outdoor, 3/4\" Swivel Connectors",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Garden Hoses for Outdoor Watering Needs - Walmart.com",
+                "url": "https://www.walmart.com/browse/patio-garden/garden-hoses/5428_4091_2462840_6393057"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 360,
+          "completion_tokens": 75,
+          "cost_usd": 0.00005534
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3516,
+          "completion_tokens": 1093,
+          "cost_usd": 0.00068422
+        }
+      ],
+      "llm_tokens": 5044,
+      "estimated_cost_usd": 0.02074
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "thespruce.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "acehardware.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "acehardware.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "lowes.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1556 @@
+{
+  "id": "rain-jacket-urban",
+  "checked": "2026-09-24T05:08:31.661Z",
+  "request": {
+    "product": "rain jacket",
+    "city": "Cambridge",
+    "state": "MA",
+    "lat": 42.38,
+    "lon": -71.14
+  },
+  "status": 200,
+  "elapsed_ms": 17366,
+  "body": {
+    "query": {
+      "product": "rain jacket",
+      "city": "Cambridge",
+      "state": "MA",
+      "canonical_name": "rain jacket",
+      "category": "outerwear",
+      "online_queries": [
+        "buy rain jacket",
+        "waterproof jacket shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "outdoor outfitters shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4JO7Y4SMQFRCUBX5J3M2JDRKRYDCQDDTFAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Patagonia",
+          "domain": "patagonia.com",
+          "url": "https://patagonia.com/stores/ma/boston/346-newbury-street/store_boston.html"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "346 Newbury St, Boston, MA 02115",
+        "distance_km": 5.6,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/patagonia",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "fair_trade",
+            "label": "Sells Fair Trade Certified products",
+            "source_url": "https://www.fairtradecertified.org/shop-fair-trade/",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.704,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Patagonia",
+                "url": "https://patagonia.com/stores/ma/boston/346-newbury-street/store_boston.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/"
+              },
+              {
+                "label": "Sells Fair Trade Certified products",
+                "url": "https://www.fairtradecertified.org/shop-fair-trade/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/patagonia"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.86,
+            "weight": 0.15,
+            "contribution": 0.129,
+            "sources": [
+              {
+                "label": "5.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4C3JIM2AZFRCUBGMTMETJXRSRYCYF7KZ7AAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://rei.com/stores/boston?y_source=1_MTQ1MzQ0Ny03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "401 Park Dr Ste 103, Boston, MA 02215",
+        "distance_km": 5,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.556,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "REI",
+                "url": "https://rei.com/stores/boston?y_source=1_MTQ1MzQ0Ny03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4IQVDC5ERFRCUA26FJBAJNRKRYDEMLN2CAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Arc'teryx Newbury",
+          "domain": "arcteryx.com",
+          "url": "https://stores.arcteryx.com/newbury"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "352 Newbury St, Boston, MA 02115",
+        "distance_km": 5.6,
+        "certifications": [
+          {
+            "kind": "fair_trade",
+            "label": "Sells Fair Trade Certified products",
+            "source_url": "https://www.fairtradecertified.org/shop-fair-trade/",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.554,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Arc'teryx Newbury",
+                "url": "https://stores.arcteryx.com/newbury"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Sells Fair Trade Certified products",
+                "url": "https://www.fairtradecertified.org/shop-fair-trade/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.86,
+            "weight": 0.15,
+            "contribution": 0.129,
+            "sources": [
+              {
+                "label": "5.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4HS3AUB7HF5CUBOSVYZ24FR2RYAHEVM3OAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Fjällräven Cambridge",
+          "domain": "fjallraven.com",
+          "url": "https://fjallraven.com/us/en-us/store-locator"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "63 Church St, Cambridge, MA 02138",
+        "distance_km": 1.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.494,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Fjällräven Cambridge",
+                "url": "https://fjallraven.com/us/en-us/store-locator"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9575,
+            "weight": 0.15,
+            "contribution": 0.144,
+            "sources": [
+              {
+                "label": "1.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4KV4UZ3WBF5CUB6U7K6L25R2RYBJI426SAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Urban Outfitters",
+          "domain": "urbanoutfitters.com",
+          "url": "https://urbanoutfitters.com/stores"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "11 John F. Kennedy St, Cambridge, MA 02138",
+        "distance_km": 1.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.493,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Urban Outfitters",
+                "url": "https://urbanoutfitters.com/stores"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.955,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4LVRNCGN5GBCUBI5M35GEZRSRYCPHRHCVAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Summit Bound Outfitter",
+          "domain": "summitboundoutfitter.com",
+          "url": "https://summitboundoutfitter.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "348 Somerville Ave, Somerville, MA 02143",
+        "distance_km": 3.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Summit Bound Outfitter",
+                "url": "https://summitboundoutfitter.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.915,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4PR6EE5W6GJCUBS3PQ46DRS2RYBKKLJDJAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Champions Sporting Goods",
+          "domain": "championssportinggoods.com",
+          "url": "https://championssportinggoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "53 Leonard St, Belmont, MA 02478",
+        "distance_km": 3.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Champions Sporting Goods",
+                "url": "https://championssportinggoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9125,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4CQ74NXFVFRCUBRLWKK5E7SCRYAXMTZDDAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Urban Outfitters",
+          "domain": "urbanoutfitters.com",
+          "url": "https://urbanoutfitters.com/stores/allston"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "226 Harvard Ave, Allston, MA 02134",
+        "distance_km": 3.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Urban Outfitters",
+                "url": "https://urbanoutfitters.com/stores/allston"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9125,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4RAGFBP5QFZCUAI4ATPCYXRSRYCDZTGGYAAAAAAA=:14",
+        "kind": "local",
+        "retailer": {
+          "name": "Hilton's Tent City",
+          "domain": "hiltonstentcity.com",
+          "url": "https://hiltonstentcity.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "565 Massachusetts Ave, Cambridge, MA 02139",
+        "distance_km": 3.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.487,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Hilton's Tent City",
+                "url": "https://hiltonstentcity.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9125,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "3.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4F7FCEAZPGRCUBHTUY4D6FRKRYDMDXCYWAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://stores.dickssportinggoods.com/ma/medford/1308/?seo=localpack"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "MEADOW GLEN MALL, 3850 Mystic Valley Pkwy, Medford, MA 02155",
+        "distance_km": 5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "DICK'S Sporting Goods",
+                "url": "https://stores.dickssportinggoods.com/ma/medford/1308/?seo=localpack"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:patagonia.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Patagonia",
+          "domain": "patagonia.com",
+          "url": "https://www.patagonia.com/shop/mens/jackets-vests/rain-waterproof"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "We’ve got our hands full at the moment but we should be up and moving shortly. This page will automatically refresh and bring you into the website as soon as we can handle it · If you live in the United States or Canada and need to contact us immediately, please call 1.800.638.6464 or email ...",
+        "address": null,
+        "distance_km": null,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/patagonia",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "fair_trade",
+            "label": "Sells Fair Trade Certified products",
+            "source_url": "https://www.fairtradecertified.org/shop-fair-trade/",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.85,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Men's Rain Jackets & Raincoats by Patagonia",
+                "url": "https://www.patagonia.com/shop/mens/jackets-vests/rain-waterproof"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/"
+              },
+              {
+                "label": "Sells Fair Trade Certified products",
+                "url": "https://www.fairtradecertified.org/shop-fair-trade/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/patagonia"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/mens-rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Shop for Men&#x27;s Rain Jackets at REI - Browse our extensive selection of trusted outdoor brands and high-quality recreation gear. Top quality, great selection and expert advice you can trust. 100% Satisfaction Guarantee Water-resistant: can handle light to moderate rain, breathable but permeable · Windproof vs. wind-resistant · Waterproof jackets are also windproof, do not let wind pass through fibers Add a middle layer to retain body heat in colder conditions; this could be a fleece jacket, an insulated vest or puffy jacket · An outer layer, like a rain jacket, shields you from wind and rain Learn how to test your rainwear’s durable water repellent (DWR) coating and how to revive existing DWR or apply new DWR. Learn how to prepare for rain when you go hiking: Get tips on gear to bring, how to keep it dry and special concerns for wet-weather hikers.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Men's Rain Jackets, Coats & Shells: Lightweight & Waterproof | REI Co-op",
+                "url": "https://www.rei.com/c/mens-rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:dickssportinggoods.com",
+        "kind": "online",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://www.dickssportinggoods.com/f/rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Now TrendingHouse of CleatsGear Up for Golf SeasonRain JacketsHouse of JerseysNike MAVNTrading Cards &amp; CollectiblesClose ... Stay dry while you&#x27;re out trekking in the rain with the help of a rain jacket from DICK&#x27;S Sporting Goods. Now TrendingHouse of CleatsGear Up for Golf SeasonRain JacketsHouse of JerseysNike MAVNTrading Cards & CollectiblesClose ... Stay dry while you're out trekking in the rain with the help of a rain jacket from DICK'S Sporting Goods. Water Protection: Remember, not all rain jackets are the same. Rain jackets designated as \"water-resistant\" do not prevent rain from penetrating fabric, but they delay seepage. These jackets are breathable and lightweight. For full protection, go for a waterproof rain shell, which is treated with various laminates and coatings for full water repellency. Rain jackets are a staple in every wardrobe whether you're exercising or commuting to work. Details make a difference in your rain jacket.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets & Raincoats | Curbside Pickup Available at DICK'S",
+                "url": "https://www.dickssportinggoods.com/f/rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:rains.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Rains",
+          "domain": "rains.com",
+          "url": "https://us.rains.com/collections/waterproof-rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "What types of rain jackets are available from RAINS? At RAINS you can buy a wide variety of rain jackets. For example the Jacket, Long Jacket, Curve Jacket, Longer Jacket, Fishtail Parka, Cape and many others. We will help you pick the right jacket for your wardrobe so you can enhance your look for everyday wear or special occasions. The last thing any busy man or woman wants is to buy clothes that require the commitment of a part-time job to maintain. You certainly won’t have that problem with your Rain Jacket. What types of rain jackets are available from RAINS? At RAINS you can buy a wide variety of rain jackets. For example the Jacket, Long Jacket, Curve Jacket, Longer Jacket, Fishtail Parka, Cape and many others. What colors are rain jackets from RAINS available in? In our area of the world, when it rains, it pours! Make sure you are ready to put your best foot forward no matter the weather with a jacket from the Rain collection. We have something for everyone. In our collection, you will find jackets to please even the most discriminating tastes. When the cold, wet weather comes around, you can stay warm and dry while looking your stylish best in attractive and unique jackets from Rain. When you slip on one of our jackets, you will experience the ultimate in comfort, convenience, and style. Long gone are the days of having to put up with the nasty smell and feel of rubber slickers in order to stay dry.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Waterproof Rain Jackets | Buy with Free Shipping here | Rains",
+                "url": "https://us.rains.com/collections/waterproof-rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:columbia.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Columbia Sportswear",
+          "domain": "columbia.com",
+          "url": "https://www.columbia.com/c/rainwear/"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Find the right lightweight rain jackets, rain slickers, shoes, and all rainwear you&#x27;ll need to keep dry when it gets wet. Whether it's pouring hard or just drizzling, our rainwear keeps you protected. Stay dry with rain jackets and pants for the whole family. Premium, fully seam-sealed rain gear that delivers waterproof-breathable protection.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rainwear - Rain Jackets & Footwear | Columbia Sportswear",
+                "url": "https://www.columbia.com/c/rainwear/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:target.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://www.target.com/s/rain+jacket"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "skip to main contentskip to footer · Get top deals, latest trends, and more · Terms · Footer",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets: Waterproof, Windproof, Lightweight Options",
+                "url": "https://www.target.com/s/rain+jacket"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:farmandhomesupply.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Farm and Home Supply",
+          "domain": "farmandhomesupply.com",
+          "url": "https://www.farmandhomesupply.com/clothing/rainwear-outerwear.html"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Our selection contains rain and cold weather clothing for men, women and children so that you can outfit the whole family. Our rainwear and outerwear includes options such as coveralls, rain jackets, coats, rain pants, rain suits, sweatshirts, vests and winter headwear. Our selection contains rain and cold weather clothing for men, women and children so that you can outfit the whole family. Our rainwear and outerwear includes options such as coveralls, rain jackets, coats, rain pants, rain suits, sweatshirts, vests and winter headwear.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rainwear and Outerwear for Men, Women and Children",
+                "url": "https://www.farmandhomesupply.com/clothing/rainwear-outerwear.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:weatherproofgarment.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Weatherproof Garment",
+          "domain": "weatherproofgarment.com",
+          "url": "https://weatherproofgarment.com/"
+        },
+        "matched_product": "windbreaker",
+        "snippet": "Shop Weatherproof® men&#x27;s and women&#x27;s jackets, coats, vests, and rain gear. Packable, lightweight, softshell, and puffer styles since 1948. Free shipping. Shop All Women · New Arrivals · Vests · Rain & Windbreakers · Quilted Jackets · Fleece · Novelty Fashion · Puffer Jackets · Plus Size · MENS · Shop All Men · Golf Jackets · Lightweight Jackets · Packable Styles · Softshell Jackets · Bomber Jackets · Puffer Jackets · Pillow Pac Puffer · Big & Tall · Magnetic Closures · Login · Cart · Your cart is empty · Start shopping · Add order note Save · Shop MenShop Women · Shop MenShop Women · Go to slide 1 Go to slide 2 · Shop now · Shop now · New · PLUSH LINED PUFFER QUILTED VEST ·",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jackets, Coats & Rain Gear for Men & Women | Weatherproof®",
+                "url": "https://weatherproofgarment.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:landsend.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lands' End",
+          "domain": "landsend.com",
+          "url": "https://www.landsend.com/shop/waterproof-coats-jackets-outerwear/S-xfi-xez-yna-xhi-xec"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "From waterproof women&#x27;s spring jackets to water resistant women&#x27;s parkas, each piece seamlessly combines fashion-forward design with cutting-edge technology to create a jacket that not only keeps you dry but also elevates your look. Lands' End waterproof jackets feature advanced waterproofing technology to shield you from the rain, ensuring you stay dry without sacrificing breathability. Our seam-sealed construction and durable materials are built to withstand the elements, so you can confidently face whatever weather comes your way. Shop Lands' End today for top quality men's women's, and kids rain jackets. When the skies open up and the rain starts to pour, there's no need to compromise on style or comfort. Lands' End waterproof jackets and rain boots are here to keep you dry, chic, and ready for whatever Mother Nature throws your way. Our waterproof jackets are designed with you in mind. From waterproof women's spring jackets to water resistant women's parkas, each piece seamlessly combines fashion-forward design with cutting-edge technology to create a jacket that not only keeps you dry but also elevates your look. Whether you're strolling through the city streets or hiking in the wilderness, our waterproof jackets are your reliable companion.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Waterproof Jackets | Lands' End",
+                "url": "https://www.landsend.com/shop/waterproof-coats-jackets-outerwear/S-xfi-xez-yna-xhi-xec"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/sports-outdoors/rain-jackets/4125_546956_4128_1800746_5376162_1858720"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Shop for Rain Jackets in Rainwear. Buy products such as Rosvigor Womens Waterproof Raincoat Lightweight Color Block Jackets Windproof Hooded Jacket with Pockets at Walmart and save.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets in Rainwear - Walmart.com",
+                "url": "https://www.walmart.com/browse/sports-outdoors/rain-jackets/4125_546956_4128_1800746_5376162_1858720"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 360,
+          "completion_tokens": 77,
+          "cost_usd": 0.00006218
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3569,
+          "completion_tokens": 726,
+          "cost_usd": 0.00056805
+        }
+      ],
+      "llm_tokens": 4732,
+      "estimated_cost_usd": 0.02063
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "potterybarn.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "outdoorcoverwarehouse.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "urbanoutfitters.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "urbanoutfitters.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "thenorthface.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "norrona.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "dickssportinggoods.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "thecambridgeshop.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "on.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

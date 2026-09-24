@@ -1,0 +1,1446 @@
+{
+  "id": "wooden-train-set-suburban",
+  "checked": "2026-09-24T05:12:29.074Z",
+  "request": {
+    "product": "wooden train set",
+    "city": "Franklin",
+    "state": "TN",
+    "lat": 35.98,
+    "lon": -86.9
+  },
+  "status": 200,
+  "elapsed_ms": 21918,
+  "body": {
+    "query": {
+      "product": "wooden train set",
+      "city": "Franklin",
+      "state": "TN",
+      "canonical_name": "wooden train set",
+      "category": "toys",
+      "online_queries": [
+        "buy wooden train set",
+        "wooden railway shop"
+      ],
+      "local_queries": [
+        "toy store",
+        "gift shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4VWIRHXH67BAUBK6J7COOBNCVYBPIH5FHAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Learning Express Toys and Gifts",
+          "domain": "learningexpress.com",
+          "url": "https://learningexpress.com/nashville"
+        },
+        "matched_product": "toys",
+        "snippet": "shop",
+        "address": "420 Cool Springs Blvd #120, Franklin, TN 37067",
+        "distance_km": 7.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.546,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Learning Express Toys and Gifts",
+                "url": "https://learningexpress.com/nashville"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8075,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4T5FBPLEC7NAUBNYX4KRCJNCVYDDNEX4GAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Brilliant Sky Toys & Books",
+          "domain": "brilliantskytoys.com",
+          "url": "https://brilliantskytoys.com/"
+        },
+        "matched_product": "toys",
+        "snippet": "shop",
+        "address": "1705 Mallory Ln #100, Brentwood, TN 37027",
+        "distance_km": 7.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.545,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Brilliant Sky Toys & Books",
+                "url": "https://brilliantskytoys.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "7.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc42HV2VG7G6ZAUBHJJORPOHOSVYAIZZWTIAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Bound Booksellers & Gifts",
+          "domain": "boundbookstn.com",
+          "url": "https://boundbookstn.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "158 Front St #106, Franklin, TN 37064",
+        "distance_km": 6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.478,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Bound Booksellers & Gifts",
+                "url": "https://boundbookstn.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.85,
+            "weight": 0.15,
+            "contribution": 0.128,
+            "sources": [
+              {
+                "label": "6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4J2Q2TDNA7RAUAO3HWBHDVNKVYDS42KYNAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Sew What Gifts & Stitches",
+          "domain": "sewwhatgifts.com",
+          "url": "https://sewwhatgifts.com/"
+        },
+        "matched_product": "",
+        "snippet": "gift",
+        "address": "6950 Moores Ln, Brentwood, TN 37027",
+        "distance_km": 6.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.477,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Sew What Gifts & Stitches",
+                "url": "https://sewwhatgifts.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.845,
+            "weight": 0.15,
+            "contribution": 0.127,
+            "sources": [
+              {
+                "label": "6.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4IOIIGETG65AUBHT3B6LRZN2VYACO36AFAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Lemon Gift Shop",
+          "domain": "lemongiftshop.com",
+          "url": "https://lemongiftshop.com/"
+        },
+        "matched_product": "",
+        "snippet": "gift",
+        "address": "230 Franklin Rd #12A, Franklin, TN 37064",
+        "distance_km": 6.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.476,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Lemon Gift Shop",
+                "url": "https://lemongiftshop.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8425,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "6.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4MUYVMQCG65AUATMDUJ4QBN2VYCVJOS6HAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Made in TN",
+          "domain": "shopmadeintn.com",
+          "url": "https://shopmadeintn.com/"
+        },
+        "matched_product": "",
+        "snippet": "gift",
+        "address": "230 Franklin Rd #12e, Franklin, TN 37064",
+        "distance_km": 6.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.476,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Made in TN",
+                "url": "https://shopmadeintn.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8375,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "6.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4CSHTBMM67NAUBGMOJL5TBNCVYAKK567DAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Bricks & Minifigs Brentwood",
+          "domain": "bricksandminifigs.com",
+          "url": "https://bricksandminifigs.com/brentwood-tn"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "91 Seaboard Ln #108, Brentwood, TN 37027",
+        "distance_km": 7.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.471,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Bricks & Minifigs Brentwood",
+                "url": "https://bricksandminifigs.com/brentwood-tn"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8049999999999999,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4BVWQANRA7JAUBVP6OM6XNNCVYCPY6SP6AAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Games Workshop",
+          "domain": "warhammer.com",
+          "url": "https://warhammer.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1945 Mallory Ln #155, Franklin, TN 37067",
+        "distance_km": 7.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.471,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Games Workshop",
+                "url": "https://warhammer.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8049999999999999,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4CW6DFOLC7JAUAQBDEJDBTNCVYAEZAGPLAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "LEGO® Store CoolSprings Galleria",
+          "domain": "lego.com",
+          "url": "https://lego.com/en-us/stores/store/lego-store-coolsprings-galleria?cmp=REF-202601-GBP-123&y_source=1_MTAyMTExOTUyMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1800 Galleria Blvd #2360, Franklin, TN 37067",
+        "distance_km": 8.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.469,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "LEGO® Store CoolSprings Galleria",
+                "url": "https://lego.com/en-us/stores/store/lego-store-coolsprings-galleria?cmp=REF-202601-GBP-123&y_source=1_MTAyMTExOTUyMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.795,
+            "weight": 0.15,
+            "contribution": 0.119,
+            "sources": [
+              {
+                "label": "8.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4IMDE3JTF7JAUA4QVRPPRJNCVYCTJIVJNAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Franklin Toy Works",
+          "domain": "titantoystn.com",
+          "url": "https://titantoystn.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1800 Galleria Blvd #2240, Franklin, TN 37067",
+        "distance_km": 8.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.469,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Franklin Toy Works",
+                "url": "https://titantoystn.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.795,
+            "weight": 0.15,
+            "contribution": 0.119,
+            "sources": [
+              {
+                "label": "8.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:ebay.com",
+        "kind": "online",
+        "retailer": {
+          "name": "eBay",
+          "domain": "ebay.com",
+          "url": "https://www.ebay.com/b/Wooden-Train-Set/1197/bn_55210293"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Wooden Train Set(2,414) Plan Toys(9,914) Wood Toy(4,561) Wooden Car(3,771) Wooden Puzzle(3,878) Wooden Train Table(84) Melissa and Doug Puzzle(9) Character Family · American Girl(3) Chuggington(19) Mickey Mouse &amp; Friends(26) Sesame Street(3) Thomas &amp; Friends(190) Toy Story(3) Winnie the Pooh &amp; Friends(7) Not Specified(2,162) Condition · New(1,259) Used(1,155) Price · Under $25 · $25 to $50 · Over $50 · Buying Format · Wooden Train Set(2,414) Plan Toys(9,914) Wood Toy(4,561) Wooden Car(3,771) Wooden Puzzle(3,878) Wooden Train Table(84) Melissa and Doug Puzzle(9) Character Family · American Girl(3) Chuggington(19) Mickey Mouse & Friends(26) Sesame Street(3) Thomas & Friends(190) Toy Story(3) Winnie the Pooh & Friends(7) Not Specified(2,162) Condition · New(1,259) Used(1,155) Price · Under $25 · $25 to $50 · Over $50 · Buying Format · This train set is so cute and easy to build.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wooden Train Set for sale | eBay",
+                "url": "https://www.ebay.com/b/Wooden-Train-Set/1197/bn_55210293"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:macys.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Macys",
+          "domain": "macys.com",
+          "url": "https://www.macys.com/shop/featured/wooden-train-set"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Shop for and buy wooden train set online at Macy&#x27;s. Find wooden train set at Macy&#x27;s",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wooden Train Set - Macy's",
+                "url": "https://www.macys.com/shop/featured/wooden-train-set"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:tinylandus.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Tiny Land",
+          "domain": "tinylandus.com",
+          "url": "https://www.tinylandus.com/collections/wooden-train-set"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Shop wooden train set designs for kids with track, trains, and accessories. Explore quality train sets that support imaginative play, learning, and easy expansion. Our wooden train tracks and wooden trains are more than just toys—they’re tools for learning, creativity, and imagination in everyday life. Each wooden train set is designed to help children and kids build fine motor skills, explore development through hands-on play, and enjoy endless fun with durable pieces. From starter railway sets to detailed train cars, train track layouts, and themed accessories, you’ll find the perfect introduction to wooden toys that can grow with your child for years.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wooden Train Set for Kids - Train Sets with Track & Accessories | Tinyland",
+                "url": "https://www.tinylandus.com/collections/wooden-train-set"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:trainworld.com",
+        "kind": "online",
+        "retailer": {
+          "name": "TrainWorld",
+          "domain": "trainworld.com",
+          "url": "https://www.trainworld.com/train-set/wooden-train-set.html"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "From Brio, Hape, and Thomas The Tank Wooden Railway series, to Muni pals we carry a huge assortment of wooden toy trains and wooden train sets. Wooden train sets or wood train sets are a perfect way to get started in the hobby. Wooden train tracks are a classic toy that has stood the test of time. Everything you need to build and play with your first wooden railway in the ultimate way. From Brio, Hape, and Thomas The Tank Wooden Railway series, to Muni pals we carry a huge assortment of wooden toy trains and wooden train sets.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wooden Train Set",
+                "url": "https://www.trainworld.com/train-set/wooden-train-set.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:trainz.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Trainz",
+          "domain": "trainz.com",
+          "url": "https://www.trainz.com/collections/wooden-trains"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Shop wooden train sets and accessories, including kid-powered locomotives, train cars, track, bridges, and railway pieces made for hands-on play. Explore wooden trains from Bigjigs Rails, Maple Landmark Inc., and other brands for building, rebuilding, and creating new railway adventures. Looking for electric trains and scale models instead? Browse our Model Trains for Sale for locomotives, rolling stock, train sets, track, and more. Shop wooden train sets and accessories, including kid-powered locomotives, train cars, track, bridges, and railway pieces made for hands-on play.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Wooden Train Sets & Toy Trains | Wooden Trains – Trainz",
+                "url": "https://www.trainz.com/collections/wooden-trains"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:woodentracks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "WoodenTracks",
+          "domain": "woodentracks.com",
+          "url": "https://woodentracks.com/"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "We are your one stop shop for BRIO, Thomas and Friends, KidKraft, Melissa &amp; Doug, Maxim Enterprise Wooden Train Sets and Wooden Train Accessories. All products sold here at WoodenTracks are compatible with each other & interchangeable with all major name brand wooden train sets and wooden train accessories.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Your One Stop Wooden Train Shop All Major Brands – WoodenTracks",
+                "url": "https://woodentracks.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:bigjigsrail.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bigjigsrail",
+          "domain": "bigjigsrail.com",
+          "url": "https://www.bigjigsrail.com/"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Bigjigs Rail is the Award Winning Wooden Railway collection from Bigjigs Toys. Complete with Train Sets, Train Track, Wooden Engines, Bridges, Tunnels and many other accessories. Shop Now · View all · Fairy Wooden Train Set for Kids with Track and Accessories 35 Piece · $65.20 · Unit price / Unavailable · Rocky Mountain Wooden Train Expansion Pack – 12 Piece Railway Accessory Set · $61.60 · Unit price / Unavailable · Dino Crane – Wooden Railway Dinosaur Toy, Magnetic Crane for Train Sets · We've put together a short guide to help you discover the benefits of train play and choose the best wooden train set for your young railway enthusiast! From rail name letters to festive toy trains, we have picked 7 of our favourite wooden railway stocking fillers for kids to open on Christmas morning. Take a first peek at our Black Friday deals and bag up to 40% off themed wooden train sets, railway toys and accessories. Once they’re gone, they’re gone!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bigjigs Rail: Traditional Wooden Railway, Train Sets and More – BigjigsRail.com",
+                "url": "https://www.bigjigsrail.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/toys/wooden-train-sets/4171_1111647_3209931"
+        },
+        "matched_product": "wooden train set",
+        "snippet": "Shop for Wooden Train Sets in Cars, RC, Drones &amp; Trains. Buy products such as Melissa &amp; Doug Wooden Magnetic Train Cars - 8 Piece Educational and Skill-Building Wooden Toy for Boys and Girls at Walmart and save.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wooden Train Sets in Cars, RC, Drones & Trains - Walmart.com",
+                "url": "https://www.walmart.com/browse/toys/wooden-train-sets/4171_1111647_3209931"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:totallythomas.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Totallythomas",
+          "domain": "totallythomas.com",
+          "url": "https://www.totallythomas.com/shop/32/wooden-railway"
+        },
+        "matched_product": "toys",
+        "snippet": "Totally Thomas Toys, Thomas Wooden Railway brings the beloved stories of Thomas &amp; Friends to life, providing little engineers with a rich world to discover and explore. Featuring real wood construction, the Thomas Wooden Railway system is designe Featuring real wood construction, the Thomas Wooden Railway system is designed to grow with a child's increasing ability and creativity.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Shop for Wooden Railway at Totally Thomas Inc.",
+                "url": "https://www.totallythomas.com/shop/32/wooden-railway"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:etsy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Etsy",
+          "domain": "etsy.com",
+          "url": "https://www.etsy.com/market/wooden_railway"
+        },
+        "matched_product": "toys",
+        "snippet": "Some of the popular wooden railway available on Etsy include: wooden railway 3d print, wooden railway coach, wooden railway polar express, wooden railway express coach, wooden railway 1998 thomas, and even wooden railway emily. Check them out here. ... Toys Shop Montessori Math Worksheets Buy Holy Plush Online The Bad Guys Plush Doll for Sale John Cena Figure - US Mage Hand / Spell Effect / Dungeons and Dragons / DnD / Pathfinder / Miniature / 5e / Crippled God - Toys Some of the popular wooden railway available on Etsy include: wooden railway 3d print, wooden railway coach, wooden railway polar express, wooden railway express coach, wooden railway 1998 thomas, and even wooden railway emily. Check them out here. ... Toys Shop Montessori Math Worksheets Buy Holy Plush Online The Bad Guys Plush Doll for Sale John Cena Figure - US Mage Hand / Spell Effect / Dungeons and Dragons / DnD / Pathfinder / Miniature / 5e / Crippled God - Toys Yes! Many of the wooden railway, sold by the shops on Etsy, qualify for included shipping, such as: See each listing for more details. Click here to see more wooden railway with free shipping included. Wooden Toy Train Set with Trailer|Locomotive Train Toy|Toddler Push Toy|Nursery Natural Wood Toy Decor|Waldorf, Montessori Toy Gift For Kids · Lot of 5 Chuggington Trains Railway Wilson Brewster Mtambo Wagon Toy Set",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Wooden Railway - Etsy",
+                "url": "https://www.etsy.com/market/wooden_railway"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 361,
+          "completion_tokens": 119,
+          "cost_usd": 0.00007039
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3367,
+          "completion_tokens": 996,
+          "cost_usd": 0.00063783
+        }
+      ],
+      "llm_tokens": 4843,
+      "estimated_cost_usd": 0.020708
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "kidtokid.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "thelittlecottagechildrensshop.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "facebook.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "online",
+        "domain": "woodentrain.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "heritagewoodenrailway.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "maplelandmark.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

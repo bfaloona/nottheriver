@@ -1,0 +1,1471 @@
+{
+  "id": "pour-over-coffee-dripper-suburban",
+  "checked": "2026-09-24T05:16:30.851Z",
+  "request": {
+    "product": "pour-over coffee dripper",
+    "city": "Buda",
+    "state": "TX",
+    "lat": 30.08,
+    "lon": -97.84
+  },
+  "status": 200,
+  "elapsed_ms": 19831,
+  "body": {
+    "query": {
+      "product": "pour-over coffee dripper",
+      "city": "Buda",
+      "state": "TX",
+      "canonical_name": "pour-over coffee dripper",
+      "category": "coffee equipment",
+      "online_queries": [
+        "buy pour over coffee dripper",
+        "coffee dripper shop"
+      ],
+      "local_queries": [
+        "coffee equipment store",
+        "kitchen supply shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4AP647K2LCU7EB6FOTQMO25KYYDZ7JEZI3ULI54Q=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Summer Moon Coffee",
+          "domain": "summermooncoffee.com",
+          "url": "https://locations.summermooncoffee.com/locations/main-street-buda"
+        },
+        "matched_product": "",
+        "snippet": "cafe",
+        "address": "316 Main St, Buda, TX 78610",
+        "distance_km": 0.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.498,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Summer Moon Coffee",
+                "url": "https://locations.summermooncoffee.com/locations/main-street-buda"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.99,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4D7QWUUZLCY7EAHNXJYJIC5KYYATLWB5KAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Embrace The Grind BTX",
+          "domain": "embracethegrindbtx.com",
+          "url": "https://embracethegrindbtx.com/"
+        },
+        "matched_product": "",
+        "snippet": "cafe",
+        "address": "824 Main St, Buda, TX 78610",
+        "distance_km": 0.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.497,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Embrace The Grind BTX",
+                "url": "https://embracethegrindbtx.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.98,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4DZCHY4PTCE7EA3SZOSQSQ5SYYCGTMRNZAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Tiny House Coffee Roasters",
+          "domain": "tinyhousecoffeeroasters.com",
+          "url": "https://tinyhousecoffeeroasters.com/"
+        },
+        "matched_product": "",
+        "snippet": "bakery",
+        "address": "120 Precision Dr, Buda, TX 78610",
+        "distance_km": 1.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.495,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Tiny House Coffee Roasters",
+                "url": "https://tinyhousecoffeeroasters.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9675,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "1.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4VLPTWIF7B47EAJR2ZMWME5SYYCBJN5HUAAAAAAA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "AHI Supply",
+          "domain": "ahi-supply.com",
+          "url": "https://ahi-supply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1585 Jack C Hays Trail, Buda, TX 78610",
+        "distance_km": 2.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.491,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "AHI Supply",
+                "url": "https://ahi-supply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "2.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4PP27DUDXC47EAN2AD4N3O42YYC5QS3CYAAAAAAA=:14",
+        "kind": "local",
+        "retailer": {
+          "name": "US Foods",
+          "domain": "usfoods.com",
+          "url": "https://usfoods.com/locations/restaurant-supplier-in-austin--tx.html"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "2150 Fire Cracker Dr, Buda, TX 78610",
+        "distance_km": 3.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "US Foods",
+                "url": "https://usfoods.com/locations/restaurant-supplier-in-austin--tx.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9175,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "3.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4Q4NOBXJFBA7EBNZYOTCGW5SYYDFQRZYLAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Costco Wholesale",
+          "domain": "costco.com",
+          "url": "https://costco.com/warehouse-locations/kyle-TX-1629.html"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "19086 I-35, Kyle, TX 78640",
+        "distance_km": 5.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.48,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Costco Wholesale",
+                "url": "https://costco.com/warehouse-locations/kyle-TX-1629.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.865,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "5.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4ALSQAC5KEM7EAMYTWEW2Q5KYYBPBUHJCAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "McCoy's Building Supply",
+          "domain": "mccoys.com",
+          "url": "https://mccoys.com/stores/austin-manchaca-tx"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1305 Farm to Market 1626, Manchaca, TX 78652",
+        "distance_km": 6.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "McCoy's Building Supply",
+                "url": "https://mccoys.com/stores/austin-manchaca-tx"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.835,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4CGL5F2JPEY7EBY467B57G5KYYA3VKKIOAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Austin Coffee Technician",
+          "domain": "austincoffeetechnician.com",
+          "url": "https://austincoffeetechnician.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2119 Frate Barker Rd #1101, Austin, TX 78748",
+        "distance_km": 7.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.471,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Austin Coffee Technician",
+                "url": "https://austincoffeetechnician.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8075,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4TA7IK3OVE47EBPMKGFK5K4SYYDPMBXLMAAAAAAA=:16",
+        "kind": "local",
+        "retailer": {
+          "name": "Sam's Club",
+          "domain": "samsclub.com",
+          "url": "https://samsclub.com/club/8259-austin-tx"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "9900 S I-35 Frontage Rd, Austin, TX 78748",
+        "distance_km": 9.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.464,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Sam's Club",
+                "url": "https://samsclub.com/club/8259-austin-tx"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7625,
+            "weight": 0.15,
+            "contribution": 0.114,
+            "sources": [
+              {
+                "label": "9.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc43SJGMPOGFI7EBDUAYC47K5CYYBVCISQPAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Praxis Coffee Roasters",
+          "domain": "praxiscoffee.com",
+          "url": "https://praxiscoffee.com/"
+        },
+        "matched_product": "",
+        "snippet": "cafe",
+        "address": "10400 Menchaca Rd, Austin, TX 78748",
+        "distance_km": 9.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.463,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Praxis Coffee Roasters",
+                "url": "https://praxiscoffee.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.755,
+            "weight": 0.15,
+            "contribution": 0.113,
+            "sources": [
+              {
+                "label": "9.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:bodum.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bodum",
+          "domain": "bodum.com",
+          "url": "https://www.bodum.com/us/en/coffee/pour-over-coffee-drippers"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "Coffee dripper, 0.6 l · $27.49 · Out of stock · Add to Cart · Bestseller · POUR OVER · Coffee maker with permanent filter, 1.0 l, 34 oz · $27.49 · Add to Cart · POUR OVER · Coffee dripper and double wall mug, 0.35 l, 12 oz · $16.49 · Add to Cart · HomeCoffeePour Over & Coffee Drippers · Filter10 results · Sort by:Relevance · Relevance$ Low - High$ High - LowProduct Name · Add to Cart · POUR OVER · Coffee Maker with Handle, 8 cup · $60.00 · Add to Cart · POUR OVER · Pour Over Filter, 12 cup · Coffee dripper, 0.6 l · $27.49 · Out of stock · Add to Cart · Bestseller · POUR OVER · Coffee maker with permanent filter, 1.0 l, 34 oz · $27.49 · Add to Cart · POUR OVER · Coffee dripper and double wall mug, 0.35 l, 12 oz · $16.49 · Add to Cart ·",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "BODUM® - Pour Over and Coffee Drippers | Coffee",
+                "url": "https://www.bodum.com/us/en/coffee/pour-over-coffee-drippers"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:blackoutcoffee.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Blackout Coffee Co",
+          "domain": "blackoutcoffee.com",
+          "url": "https://www.blackoutcoffee.com/products/stainless-steel-pour-over-coffee-dripper"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "Designed to fit on most cups, mugs, thermoses and small pots. DOUBLE FILTERED - The pour over coffee dripper cone has an ultra fine mesh on the inside, and a laser-cut filter on the outside. Stainless Steel Coffee Dripper: Reusable, Paperless, Ultra Fine Filter. INNOVATIVE DESIGN - Modern and minimalistic look with superb finishings. Made from 304 stainless steel that will keep it rust free and deliver a clean tasting coffee. Designed to fit on most cups, mugs, thermoses and small pots. DOUBLE FILTERED - The pour over coffee dripper cone has an ultra fine mesh on the inside, and a laser-cut filter on the outside. I bought the pour over filter so I could make a single cup of coffee using whatever grind of Blackout coffe I desire. I teamed it up with some number 2 cone filters for easy clean up when camping, and it was great! ... The pour over is a great taste. The method is convenient. The stainless steel setup is simple and easy to use. Well made device. ... Easy to use and easy to clean! This pour over dripper makes it extremely quick and easy to make a single cup in the morning. I’ve never used a dripper before, and I’m completely sold!! Threw my stupid “plastic” Coffee maker away, wife loves it too. Great price and got here fast!!! ... My pour-over coffee dripper was the perfect travel companion on a recent trip 1,300 miles from home. My first time trying a pour over coffee had me a little anxious. But with this dripper, it makes it so much easier. You don't have to worry with paper filters and man is it great coffee.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Pour Over Coffee Dripper Stainless Steel – Blackout Coffee Co",
+                "url": "https://www.blackoutcoffee.com/products/stainless-steel-pour-over-coffee-dripper"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:target.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://www.target.com/s/pour+over+coffee+dripper"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "skip to main contentskip to footer · Get top deals, latest trends, and more · Terms · Footer",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Pour Over Coffee Dripper & Maker",
+                "url": "https://www.target.com/s/pour+over+coffee+dripper"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:ebay.com",
+        "kind": "online",
+        "retailer": {
+          "name": "eBay",
+          "domain": "ebay.com",
+          "url": "https://www.ebay.com/shop/coffee-dripper?_nkw=coffee+dripper"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "Handmade Pour Over Ceramic Coffee Dripper - Authentic Brewing Experience for . ... H⁣S⁣Q⁣p⁣ ⁣O⁣o⁣7⁣n⁣s⁣o⁣ ⁣B⁣C⁣r⁣ ⁣L⁣e⁣N⁣ ⁣d⁣⁣E⁣R⁣ ⁣C⁣⁣⁣ · Pour Over Coffee Maker, Single Cup Coffee Dripper, Manual Porcelain Slow Brewing Origami Ceramic Pour Over Coffee Dripper Non-Electric Manual Brew Filter Cup ... S⁣p⁣o⁣I⁣n⁣s⁣B⁣ ⁣o⁣r⁣7⁣V⁣e⁣ ⁣1⁣d⁣3⁣ ⁣5⁣⁣⁣V⁣ ⁣I⁣V⁣ ⁣⁣⁣ · Pour Over Coffee Dripper Slow Drip Paperless Coffee Filter Double Mesh Stainless Handmade Pour Over Ceramic Coffee Dripper - Authentic Brewing Experience for . ... H⁣S⁣Q⁣p⁣ ⁣O⁣o⁣7⁣n⁣s⁣o⁣ ⁣B⁣C⁣r⁣ ⁣L⁣e⁣N⁣ ⁣d⁣⁣E⁣R⁣ ⁣C⁣⁣⁣ · Pour Over Coffee Maker, Single Cup Coffee Dripper, Manual Porcelain Slow Brewing Coffee Filter, Fine Mesh Coffee Maker, Stainless Steel Pour over Coffee Dripper, ... S⁣J⁣p⁣C⁣o⁣ ⁣n⁣7⁣J⁣ ⁣s⁣o⁣r⁣e⁣Y⁣d⁣T⁣⁣⁣⁣⁣ ⁣⁣U⁣I⁣⁣⁣ ⁣ · NEW Silicone Collapsible Pour Over Coffee Dripper Reusable Cone Filter Camping First thing in the morning, I can brew myself a great cup of coffee with this Coffee Filter Dripper. I was surprised how quickly o... see all reviews ... Kalita Wave just works; that’s enough for me. The 185 size is more flexible than the 155 size. Don’t grind your beans too fine; re... see all reviews ... Well-made, easy to use and clean, very nice looking. Made myself a big cup of coffee, turned out very good.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Coffee Dripper | eBay",
+                "url": "https://www.ebay.com/shop/coffee-dripper?_nkw=coffee+dripper"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:thebasicbarista.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Basic Barista",
+          "domain": "thebasicbarista.com",
+          "url": "https://thebasicbarista.com/en-us/collections/coffee-drippers"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "Shop our range of pour over coffee drippers, we stock a wide range of coffee drippers from leading coffee brands. Making pour over coffee is a slow manual brew method that relies on gravity to pull your boiling water through your bed of coffee grinds. A coffee dripper plays a vital role in ... Shop our range of pour over coffee drippers, we stock a wide range of coffee drippers from leading coffee brands. Making pour over coffee is a slow manual brew method that relies on gravity to pull your boiling water through your bed of coffee grinds. A coffee dripper plays a vital role in holding your coffee filter in A coffee dripper plays a vital role in holding your coffee filter in place and can massively change the taste of your coffee.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Coffee Drippers – Basic Barista",
+                "url": "https://thebasicbarista.com/en-us/collections/coffee-drippers"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:onelinecoffee.com",
+        "kind": "online",
+        "retailer": {
+          "name": "One Line Coffee",
+          "domain": "onelinecoffee.com",
+          "url": "https://www.onelinecoffee.com/shop/clever-dripper/"
+        },
+        "matched_product": "French press",
+        "snippet": "Orders placed by Sunday, June 28 will ship on Tuesday, June 30. Free shipping on all coffee and tea pouch orders over $42 ... The Clever Dripper gives you full flavor extraction and good body. The stopper at the bottom allows water to drain when the filtercone is placed on a cup. The Clever Dripper gives you full flavor extraction and good body. The stopper at the bottom allows water to drain when the filtercone is placed on a cup. It’s made of durable BPA-free plastic and is easy to disassemble for cleaning. The Clever Coffee Dripper combines the best features of French press and filter drip […] Orders placed by Sunday, June 28 will ship on Tuesday, June 30. Free shipping on all coffee and tea pouch orders over $42 ... The Clever Dripper gives you full flavor extraction and good body. The stopper at the bottom allows water to drain when the filtercone is placed on a cup. It’s made of durable BPA-free plastic and is easy to disassemble for cleaning. The Clever Coffee Dripper combines the best features of French press and filter drip brewing. It combines control over steeping time with a sediment-free cup.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Clever Dripper - One Line Coffee",
+                "url": "https://www.onelinecoffee.com/shop/clever-dripper/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/coffee-pour-overs/4044_90548_90546_1115306_5285147"
+        },
+        "matched_product": "pour-over coffee dripper",
+        "snippet": "Pour Over Coffee Dripper, Slow Drip Paperless Coffee Filter, Pour Over Coffee Maker for 1-2Cups Brew, Double Mesh Design of Manual Reusable Cone Filter FGXMBXG Glass Coffee Drip Filter with Wooden Base - V60 Pour-over Coffee Pot, Reusable Glass Filter Cup, Spiral Ribs Design, Simple and High-End Coffee Accessories ... WAAYEE Clever Coffee Dripper V60 Brewer, One-Touch Switch Control, French Press Soak & Fast Release, Borosilicate Glass+BPA-Free, Easy Clean Hybrid System for Beginners Pour Over Coffee Dripper, Slow Drip Paperless Coffee Filter, Pour Over Coffee Maker for 1-2Cups Brew, Double Mesh Design of Manual Reusable Cone Filter",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Coffee Pour Overs in Coffee Shop - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/coffee-pour-overs/4044_90548_90546_1115306_5285147"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:seattlecoffeegear.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Seattle Coffee Gear",
+          "domain": "seattlecoffeegear.com",
+          "url": "https://www.seattlecoffeegear.com/collections/pour-overs"
+        },
+        "matched_product": "coffee equipment",
+        "snippet": "Having the right equipment doesn’t hurt, either. Here at Seattle Coffee Gear, we carry an extensive selection of pour over coffee-equipment from some of the industry’s leading manufacturers. Passionate about pour over coffee? You’ve come to the right place. Here at Seattle Coffee Gear, we carry an extensive selection of pour over coffee equipment perfectly designed to create great-tasting coffee in a matter of minutes. Making pour over coffee is a process that requires attention to detail with a dash of patience. Shop All Accessories Cleaning Supplies Filters Espresso Accessories Scales and Measuring Coffee Storage Cups Kettles Milk Frothers Tea Ware Parts Subscriptions · New Arrivals Staff Picks Shop Brands Refurbished Open Box Closeouts Sale ... We’ll reach out to you to assist with product selection, troubleshooting, and to answer any general questions. Learn More ... Passionate about pour over coffee? Having the right equipment doesn’t hurt, either. Here at Seattle Coffee Gear, we carry an extensive selection of pour over coffee-equipment from some of the industry’s leading manufacturers. Used in connection with buyer localization.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Pour Overs Coffee Brewers | Seattle Coffee Gear",
+                "url": "https://www.seattlecoffeegear.com/collections/pour-overs"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:hario-usa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Hario USA",
+          "domain": "hario-usa.com",
+          "url": "https://www.hario-usa.com/collections/pour-over-sets"
+        },
+        "matched_product": "",
+        "snippet": "Hario pour over coffee sets, perfect for manual brewing. Explore complete kits featuring various dripper and server materials like glass, ceramic, and plastic to elevate your coffee experience.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Pourover Sets – Hario USA",
+                "url": "https://www.hario-usa.com/collections/pour-over-sets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:cleverbrewing.coffee",
+        "kind": "online",
+        "retailer": {
+          "name": "Cleverbrewing",
+          "domain": "cleverbrewing.coffee",
+          "url": "https://cleverbrewing.coffee/"
+        },
+        "matched_product": "",
+        "snippet": "Used by specialty cafes around the world, the Clever Brewer produces a consistent, clean cup of coffee every time. Its affordability and ease-of-use also makes it a great starter brewer for your customers and a great retail item on your shelves. Shop Clever Wholesale Affordable, easy-to-use and makes consistently great coffee, the Clever is a great starter brewer for your customers and great way to help increase retail sales of coffee beans from your cafe. Buy Wholesale ... Take Clever with you on your travels, and you'll never be far away from an easy, consistent brew that's simple to clean up. Shop Clever Coffee Brewers Used by specialty cafes around the world, the Clever Brewer produces a consistent, clean cup of coffee every time. Its affordability and ease-of-use also makes it a great starter brewer for your customers and a great retail item on your shelves. Shop Clever Wholesale The Clever Coffee Brewer uses standard #4 paper filters. You can also upgrade your coffee experience by using Kalita Japanese Premium paper filters, or CoffeeSock Organic Cloth Filters made in the USA. Shop Clever Filters Used in specialty cafes around the world, the Clever Brewer uses a unique steep-and-release functionality to create a consistent, clean cup of coffee.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Clever Coffee Brewers",
+                "url": "https://cleverbrewing.coffee/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 365,
+          "completion_tokens": 127,
+          "cost_usd": 0.00007603
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3817,
+          "completion_tokens": 1108,
+          "cost_usd": 0.00071641
+        }
+      ],
+      "llm_tokens": 5417,
+      "estimated_cost_usd": 0.020792
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "driproast.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "allappliancepartsaustin.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "hobbylobby.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homegoods.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "kylesdailygrind.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "equipmentroom.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "procoffeegear.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "binxcorp.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "frenchpresscoffee.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

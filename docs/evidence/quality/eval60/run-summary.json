@@ -1,0 +1,430 @@
+{
+  "checked": "2026-09-24T05:20:56.460Z",
+  "searches": 60,
+  "ok": 60,
+  "brave_calls": 240,
+  "llm_tokens": 313981,
+  "estimated_cost_usd": 1.251694,
+  "rows": [
+    {
+      "id": "cast-iron-skillet-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4527,
+      "estimated_cost_usd": 0.02066
+    },
+    {
+      "id": "cast-iron-skillet-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5496,
+      "estimated_cost_usd": 0.020896
+    },
+    {
+      "id": "cast-iron-skillet-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4744,
+      "estimated_cost_usd": 0.020812
+    },
+    {
+      "id": "camping-tent-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5263,
+      "estimated_cost_usd": 0.020812
+    },
+    {
+      "id": "camping-tent-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5916,
+      "estimated_cost_usd": 0.020875
+    },
+    {
+      "id": "camping-tent-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4362,
+      "estimated_cost_usd": 0.020566
+    },
+    {
+      "id": "wool-socks-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4895,
+      "estimated_cost_usd": 0.020814
+    },
+    {
+      "id": "wool-socks-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4928,
+      "estimated_cost_usd": 0.021023
+    },
+    {
+      "id": "wool-socks-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 3856,
+      "estimated_cost_usd": 0.020679
+    },
+    {
+      "id": "cordless-drill-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5053,
+      "estimated_cost_usd": 0.020742
+    },
+    {
+      "id": "cordless-drill-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5021,
+      "estimated_cost_usd": 0.023647
+    },
+    {
+      "id": "cordless-drill-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5642,
+      "estimated_cost_usd": 0.020816
+    },
+    {
+      "id": "loose-leaf-green-tea-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5290,
+      "estimated_cost_usd": 0.020847
+    },
+    {
+      "id": "loose-leaf-green-tea-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5738,
+      "estimated_cost_usd": 0.020963
+    },
+    {
+      "id": "loose-leaf-green-tea-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5472,
+      "estimated_cost_usd": 0.020938
+    },
+    {
+      "id": "jigsaw-puzzle-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5158,
+      "estimated_cost_usd": 0.020819
+    },
+    {
+      "id": "jigsaw-puzzle-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4935,
+      "estimated_cost_usd": 0.020727
+    },
+    {
+      "id": "jigsaw-puzzle-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5137,
+      "estimated_cost_usd": 0.020803
+    },
+    {
+      "id": "usb-c-charging-cable-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5224,
+      "estimated_cost_usd": 0.020809
+    },
+    {
+      "id": "usb-c-charging-cable-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5130,
+      "estimated_cost_usd": 0.020752
+    },
+    {
+      "id": "usb-c-charging-cable-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5151,
+      "estimated_cost_usd": 0.020771
+    },
+    {
+      "id": "wool-blanket-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5377,
+      "estimated_cost_usd": 0.020758
+    },
+    {
+      "id": "wool-blanket-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5733,
+      "estimated_cost_usd": 0.020897
+    },
+    {
+      "id": "wool-blanket-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5306,
+      "estimated_cost_usd": 0.020806
+    },
+    {
+      "id": "chef-s-knife-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5372,
+      "estimated_cost_usd": 0.020825
+    },
+    {
+      "id": "chef-s-knife-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5586,
+      "estimated_cost_usd": 0.020845
+    },
+    {
+      "id": "chef-s-knife-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5428,
+      "estimated_cost_usd": 0.021097
+    },
+    {
+      "id": "headlamp-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5757,
+      "estimated_cost_usd": 0.020873
+    },
+    {
+      "id": "headlamp-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5441,
+      "estimated_cost_usd": 0.020827
+    },
+    {
+      "id": "headlamp-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5173,
+      "estimated_cost_usd": 0.020766
+    },
+    {
+      "id": "rain-jacket-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4732,
+      "estimated_cost_usd": 0.02063
+    },
+    {
+      "id": "rain-jacket-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5060,
+      "estimated_cost_usd": 0.020748
+    },
+    {
+      "id": "rain-jacket-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4300,
+      "estimated_cost_usd": 0.02065
+    },
+    {
+      "id": "led-light-bulbs-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5372,
+      "estimated_cost_usd": 0.020831
+    },
+    {
+      "id": "led-light-bulbs-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5605,
+      "estimated_cost_usd": 0.02085
+    },
+    {
+      "id": "led-light-bulbs-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5087,
+      "estimated_cost_usd": 0.0207
+    },
+    {
+      "id": "extra-virgin-olive-oil-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5330,
+      "estimated_cost_usd": 0.020841
+    },
+    {
+      "id": "extra-virgin-olive-oil-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5736,
+      "estimated_cost_usd": 0.020911
+    },
+    {
+      "id": "extra-virgin-olive-oil-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5351,
+      "estimated_cost_usd": 0.020816
+    },
+    {
+      "id": "wooden-train-set-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5068,
+      "estimated_cost_usd": 0.02075
+    },
+    {
+      "id": "wooden-train-set-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4843,
+      "estimated_cost_usd": 0.020708
+    },
+    {
+      "id": "wooden-train-set-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5057,
+      "estimated_cost_usd": 0.020667
+    },
+    {
+      "id": "rechargeable-aa-batteries-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5855,
+      "estimated_cost_usd": 0.020918
+    },
+    {
+      "id": "rechargeable-aa-batteries-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5159,
+      "estimated_cost_usd": 0.021142
+    },
+    {
+      "id": "rechargeable-aa-batteries-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4763,
+      "estimated_cost_usd": 0.02076
+    },
+    {
+      "id": "bath-towels-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 6105,
+      "estimated_cost_usd": 0.02094
+    },
+    {
+      "id": "bath-towels-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5883,
+      "estimated_cost_usd": 0.020886
+    },
+    {
+      "id": "bath-towels-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5565,
+      "estimated_cost_usd": 0.020735
+    },
+    {
+      "id": "pour-over-coffee-dripper-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 6125,
+      "estimated_cost_usd": 0.020908
+    },
+    {
+      "id": "pour-over-coffee-dripper-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5417,
+      "estimated_cost_usd": 0.020792
+    },
+    {
+      "id": "pour-over-coffee-dripper-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5301,
+      "estimated_cost_usd": 0.020729
+    },
+    {
+      "id": "insulated-water-bottle-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5736,
+      "estimated_cost_usd": 0.020882
+    },
+    {
+      "id": "insulated-water-bottle-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5592,
+      "estimated_cost_usd": 0.020877
+    },
+    {
+      "id": "insulated-water-bottle-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5806,
+      "estimated_cost_usd": 0.020855
+    },
+    {
+      "id": "garden-hose-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5044,
+      "estimated_cost_usd": 0.02074
+    },
+    {
+      "id": "garden-hose-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4564,
+      "estimated_cost_usd": 0.020676
+    },
+    {
+      "id": "garden-hose-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4931,
+      "estimated_cost_usd": 0.020785
+    },
+    {
+      "id": "dark-chocolate-bar-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5141,
+      "estimated_cost_usd": 0.020826
+    },
+    {
+      "id": "dark-chocolate-bar-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4802,
+      "estimated_cost_usd": 0.020983
+    },
+    {
+      "id": "dark-chocolate-bar-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4540,
+      "estimated_cost_usd": 0.020693
+    }
+  ]
+}

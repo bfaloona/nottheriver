@@ -1,0 +1,1454 @@
+{
+  "id": "headlamp-suburban",
+  "checked": "2026-09-24T05:07:52.613Z",
+  "request": {
+    "product": "headlamp",
+    "city": "Burlingame",
+    "state": "CA",
+    "lat": 37.57,
+    "lon": -122.38
+  },
+  "status": 200,
+  "elapsed_ms": 16692,
+  "body": {
+    "query": {
+      "product": "headlamp",
+      "city": "Burlingame",
+      "state": "CA",
+      "canonical_name": "headlamp",
+      "category": "outdoor gear",
+      "online_queries": [
+        "buy headlamp",
+        "headlamp shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "outdoor outfitters shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4JCQ5DQQKZNBEAY5LCW3RXF26YCLO5KJ3AAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Summit Bicycles",
+          "domain": "summitbicycles.com",
+          "url": "https://summitbicycles.com/about/burlingame-pg416.htm"
+        },
+        "matched_product": "",
+        "snippet": "bicycle",
+        "address": "1031 California Dr, Burlingame, CA 94010",
+        "distance_km": 2.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.491,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Summit Bicycles",
+                "url": "https://summitbicycles.com/about/burlingame-pg416.htm"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "2.5 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4U4VMQKQAZJBEAUCFHO4ALFS6YDSA5NJ6AAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "A Runner's Mind",
+          "domain": "arunnersmind.com",
+          "url": "https://arunnersmind.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1111 Howard Ave, Burlingame, CA 94010",
+        "distance_km": 3.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "A Runner's Mind",
+                "url": "https://arunnersmind.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9175,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "3.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4FSB4KPEGZVBEBNZG3WLERGK6YBIIBKX7AAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Outdoor Supply Hardware",
+          "domain": "outdoorsupplyhardware.com",
+          "url": "https://outdoorsupplyhardware.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "900 El Camino Real, Millbrae, CA 94030",
+        "distance_km": 4.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Outdoor Supply Hardware",
+                "url": "https://outdoorsupplyhardware.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.895,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4QYFMJILNZ5BEA5ZGP3LENGS6YBLWFFZIAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Peninsula Guns and Tactical",
+          "domain": "peninsulaguns.com",
+          "url": "https://peninsulaguns.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "360 El Camino Real, San Bruno, CA 94066",
+        "distance_km": 6.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.477,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Peninsula Guns and Tactical",
+                "url": "https://peninsulaguns.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.845,
+            "weight": 0.15,
+            "contribution": 0.127,
+            "sources": [
+              {
+                "label": "6.2 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc43P527TUMYVBEA5GDADJ3HE26YBM6BLFIAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "GoTo SPORTS GEAR",
+          "domain": "gotosportsgear.com",
+          "url": "https://gotosportsgear.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "135 W 25th Ave Unit 6578, San Mateo, CA 94403",
+        "distance_km": 7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.474,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "GoTo SPORTS GEAR",
+                "url": "https://gotosportsgear.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.825,
+            "weight": 0.15,
+            "contribution": 0.124,
+            "sources": [
+              {
+                "label": "7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4CZ3XEPCVYVBEAGOXBF4U5E26YAV3QY2CAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Big 5 Sporting Goods",
+          "domain": "big5sportinggoods.com",
+          "url": "https://big5sportinggoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2825 S El Camino Real S, San Mateo, CA 94403",
+        "distance_km": 7.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.472,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Big 5 Sporting Goods",
+                "url": "https://big5sportinggoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.81,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "7.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc43IOVEDEQ2BBEBNACINLLPGS6YCGGKX5TAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Big 5 Sporting Goods",
+          "domain": "big5sportinggoods.com",
+          "url": "https://big5sportinggoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "855 El Camino Real, San Bruno, CA 94066",
+        "distance_km": 7.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.472,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Big 5 Sporting Goods",
+                "url": "https://big5sportinggoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.815,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "7.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4ALLRKM6CYRBEA3GGB3HTPE26YD6UB2UHAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "JD Sports",
+          "domain": "jdsports.com",
+          "url": "https://jdsports.com/"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "60 31st Ave Spc 1264, San Mateo, CA 94403",
+        "distance_km": 7.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.47,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "JD Sports",
+                "url": "https://jdsports.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "7.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4XANH5XBD2JBEAFZ7GLBABG26YAMEAJLUAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "The Golf Mart",
+          "domain": "worldwidegolfshops.com",
+          "url": "https://stores.worldwidegolfshops.com/ca/southsanfrancisco/the-golf-mart-ssf.html"
+        },
+        "matched_product": "",
+        "snippet": "golf",
+        "address": "470-A Noor Ave, South San Francisco, CA 94080",
+        "distance_km": 8.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.467,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The Golf Mart",
+                "url": "https://stores.worldwidegolfshops.com/ca/southsanfrancisco/the-golf-mart-ssf.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.78,
+            "weight": 0.15,
+            "contribution": 0.117,
+            "sources": [
+              {
+                "label": "8.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4USD2DVOJYZBEBKYVLRRJXEK6YDAKNIH2AAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Califa Sports Store",
+          "domain": "califasports.com",
+          "url": "https://califasports.com/"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "700 Edgewater Blvd, Foster City, CA 94404",
+        "distance_km": 9.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.465,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Califa Sports Store",
+                "url": "https://califasports.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.765,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "9.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Our REI field testers pick their 8 favorite headlamps for running, camping, backpacking and more. Our REI field testers pick their 8 favorite headlamps for running, camping, backpacking and more. A headlamp with a high lumens count will consume energy at a higher rate than one with a lower lumens number. Most headlamps offer several brightness levels like low, mid and high (max). Lithium battery–powered headlamps are a good choice for cold-weather use, since lithium batteries outperform alkaline batteries in cold conditions.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps for Camping, Hiking & Running | REI Co-op",
+                "url": "https://www.rei.com/c/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:fenixlighting.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fenix Lighting",
+          "domain": "fenixlighting.com",
+          "url": "https://www.fenixlighting.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Shop incredibly bright headlamps. Fenix headlamps are all LED headlamps and most are USB rechargeable. A great headlamp will be at your side for every task. Fenix headlamps are designed for high performance. Built with powerful batteries and impressive lumen counts, these LED headlamps are popular for everything from hiking, to work, to taking the dog out at night. Fenix headlamps are made with high-performance LED lights built to meet the demands of any task. Combining durability and comfort, these headlamps are ideal for a wide range of activities. Whether you need a bright, lightweight model for early morning jogs or a headlamp with a focused beam and red-light mode for detailed tasks, there’s a Fenix option to suit your needs. Say goodbye to the hassle of constantly replacing batteries with our collection of rechargeable headlamps. Fenix’s rechargeable headlamps were designed to make your life easier. Featuring USB-C rechargeability, they’re simple to power up overnight or in the car on your way to work. Fenix Lighting offers some of the brightest headlamps on the market. Built with high-lumen outputs, these headlamps illuminate with ease. With a wide selection of headlamps available, you can choose the perfect fit for your lighting needs. Ultra-bright options are great for recreation, work, and any other additional lighting settings.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps - Super Bright LED Headlamps - Fenix Headlamps - Fenix Lighting",
+                "url": "https://www.fenixlighting.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:blackdiamondequipment.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Black Diamond Equipment",
+          "domain": "blackdiamondequipment.com",
+          "url": "https://blackdiamondequipment.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Shop headlamps from Black Diamond. Our battery powered and rechargeable headlamps are designed for running, climbing, and more. Whether you’re looking for a headlamp that can handle the final hours of your climb or illuminate your campsite, our lineup has something for you. Our headlamp models include low profile and sleek styles as well as more robust offerings that pack up to 1,500 lumens of power. With a diverse range of designs to choose from, you’ll have no trouble finding the best rechargeable headlamp for you. Designed for activity and dynamic movement, our climbing and running headlamps are secured by a comfortable, recycled elastic headband. They’ll move with you and stay put while you navigate anything in your path. Our rechargeable headlamps are equipped with convenient micro-USB charging. If you’re looking for a headlamp that can function on a rechargeable battery pack as well as on traditional batteries, we offer versatile options that support both power sources. Many of our headlamps feature multiple brightness settings. This allows you to conserve battery by switching to a lower level of brightness, or increase visibility by switching to a higher one. Optional strobe and night vision settings add further versatility. For reliability during any adventure, be sure to check out our waterproof rechargeable headlamps.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps & Rechargeable Headlamps | Black Diamond",
+                "url": "https://blackdiamondequipment.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:coastportland.com",
+        "kind": "online",
+        "retailer": {
+          "name": "COAST",
+          "domain": "coastportland.com",
+          "url": "https://www.coastportland.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Roll up your sleeves, show some grit, and keep on going. Shop our innovative LED Flashlights, Headlamps, Area Lights, Knives and Multi-Tools that make work and play easier, safer and more enjoyable. Experience the power of COAST LED headlamps. They deliver bright, reliable lighting with hands-free convenience, perfect for any task or adventure. All headlamps are backed by a Lifetime Warranty. Say it, see it. The RL35R headlamp responds to voice commands for power, modes, and beams—delivering 1,100 lumens of true hands-free light. Hands-free lighting perfected—FL97R voice-controlled headlamp with warm, red, and green beams for any task.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps - COAST",
+                "url": "https://www.coastportland.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:bestbuy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=headlamp"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Shop for headlamp at Best Buy. Find low everyday prices and buy online for delivery or in-store pick-up",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "headlamp - Best Buy",
+                "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=headlamp"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:ledlenserusa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Ledlenser USA",
+          "domain": "ledlenserusa.com",
+          "url": "https://www.ledlenserusa.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Explore best hiking headlamp and biking headlamp collection at Ledlenser USA. Durable, lightweight, and ultra-bright for all your outdoor adventures—shop now! Hard Sheath Quick Buy · Sort by · Featured · Most relevant · Best selling · Alphabetically, A-Z · Alphabetically, Z-A · Price, low to high · Price, high to low · Date, old to new · Date, new to old · 52 products · Show my results · H14R.2 Headlamp-Ledlenser USA ·",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Best Hiking & Biking Headlamps Collection | Ledlenser USA",
+                "url": "https://www.ledlenserusa.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:fenix-store.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fenix",
+          "domain": "fenix-store.com",
+          "url": "https://fenix-store.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Shop Fenix headlamps — from lightweight everyday models to the brightest rechargeable headlamps built for work, hunting, and search and rescue. A headlamp straps to your head so both hands stay free — essential for hiking, camping, hunting, trail running, and hands-on work after dark. Fenix headlamps have unequaled fit and finish. Whether your adventures or work need all-day, ultra-light comfort or high-performance output for an extended expedition, the Fenix Headlamp Series has a lamp for the occasion. Picking between models for a specific activity? Our guide to headlamps for night trail running narrows down picks for runners, while our camping and thru-hiking headlamp guide covers backpacking needs. Hunters can check our roundup of headlamps for bowhunting and rifle hunting at night, and cavers can compare beam type, runtime, and durability in our Knowledge Hub guide to headlamps for caving. Fenix applies its years of LED experience to craft ultra-bright headlamps that are comfortable to wear and easy to use in a variety of conditions. Whether you're after the brightest headlamp for search and rescue or a lightweight everyday option, Fenix builds some of the best headlamps on the market for every use case.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps – Best Rechargeable LED Headlamps | Fenix Store",
+                "url": "https://fenix-store.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:cyclopssolutions.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Cyclops",
+          "domain": "cyclopssolutions.com",
+          "url": "https://www.cyclopssolutions.com/headlamps/"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Shop for high output LED headlamps from Cyclops Lighting Solutions, The best headlamps for hunting, fishing, camping, hiking, working and much more. Hands-free illumination just got a whole lot cooler, thanks to our cutting-edge 520-lumen EclipseLite Headlamp. With a powerful 520 lumens of brightness, this headlamp provides exceptional visibility in the darkest environments—whether you’re in the yard or on the trail. ... Your cart is currently empty. Continue Shopping Featuring an almost otherworldly powerful 20-watt CREE XHP5.02 LED capable of delivering as many as 2,000 lumens when operated at 100%, the Poseidon 2000-Lumen Headlamp from Cyclops powers through the ever-changing elements with ease. Select from multiple modes, including 100%, 40%, 15% and 3% power, as well as strobe lighting. The HL500 500-Lumen Headlamp boasts an ultra-bright, multi-mode, 5-watt CREE LED. Its IPX6 rating and rugged, ABS housing with an optimal optical focus design and clear, protective shield powers through any weather conditions. Features an impressive 8 road beam long-distance vision enhancement. For a limited time, buy a Hades Horizon removable and rechargeable headlamp and get one free!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop LED Headlamps from Cyclops Lighting Solutions",
+                "url": "https://www.cyclopssolutions.com/headlamps/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:nitecorestore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Nitecore",
+          "domain": "nitecorestore.com",
+          "url": "https://nitecorestore.com/collections/headlamps"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Whether you&#x27;re backpacking through the backcountry, camping with family, running after dark, working on the job site, or preparing for emergencies, Nitecore offers a headlamp designed for the task. Choosing the right headlamp starts with how you plan to use it. Whether you're backpacking through the backcountry, camping with family, running after dark, working on the job site, or preparing for emergencies, Nitecore offers a headlamp designed for the task. Whether you're backpacking through the backcountry, camping with family, running after dark, working on the job site, or preparing for emergencies, Nitecore offers a headlamp designed for the task. Browse our complete collection or shop by activity to quickly find the best fit for your needs.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps – Nitecore Store",
+                "url": "https://nitecorestore.com/collections/headlamps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:brightguy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fenix",
+          "domain": "brightguy.com",
+          "url": "https://brightguy.com/shop/headlamps/"
+        },
+        "matched_product": "headlamp",
+        "snippet": "Choose from high quality headlamps at BrightGuy.com including industrial headlamps, camping headlamps, rechargeable headlamps and more. Intrinsically Safe Flashlights, Headlamps and Work Lights · Industrial & Utility · Lights for the Home · Military · Law Enforcement · Professional Trades · Labor Day Sale | Use code LABORDAY for 10% off select brands! SHOP · NEW · Flashlights · Headlamps · Work Lights · Finding the Right Fit Start by thinking about how you’ll use it. Tasks up close – reading, repairs, cooking at camp – benefit from broad flood lighting, while navigating trails or scanning distance requires a focused spot beam. Many headlamps offer both, giving you the flexibility to switch based on the situation. The Case for Red Light Many headlamps include a red output mode, and it’s more useful than it might seem. Red light provides a soft, low-level glow that’s easy on the eyes in the dark – and unlike white light, it won’t disrupt your night vision. Battery Matters Power source is worth considering carefully. Modern headlamps increasingly use lithium-ion rechargeable batteries, which offer a compelling combination of compact size, light weight, and strong output.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Headlamps, High Quality Headlamps and Bright Headlamp Models",
+                "url": "https://brightguy.com/shop/headlamps/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 362,
+          "completion_tokens": 112,
+          "cost_usd": 0.00007428
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3899,
+          "completion_tokens": 1068,
+          "cost_usd": 0.00075302
+        }
+      ],
+      "llm_tokens": 5441,
+      "estimated_cost_usd": 0.020827
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "1lumen.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "gearjunkie.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "ontrackautomotive.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "kk1912.net",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "yelp.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "terraoutdoor.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "classicpatio.com",
+        "reason": "sells_product"
+      }
+    ]
+  }
+}

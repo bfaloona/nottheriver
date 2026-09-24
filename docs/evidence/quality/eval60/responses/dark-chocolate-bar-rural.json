@@ -1,0 +1,1395 @@
+{
+  "id": "dark-chocolate-bar-rural",
+  "checked": "2026-09-24T05:20:52.444Z",
+  "request": {
+    "product": "dark chocolate bar",
+    "city": "Vernalis",
+    "state": "CA",
+    "lat": 37.61,
+    "lon": -121.25
+  },
+  "status": 200,
+  "elapsed_ms": 20928,
+  "body": {
+    "query": {
+      "product": "dark chocolate bar",
+      "city": "Vernalis",
+      "state": "CA",
+      "canonical_name": "dark chocolate bar",
+      "category": "confectionery",
+      "online_queries": [
+        "buy dark chocolate bars",
+        "dark chocolate bar shop"
+      ],
+      "local_queries": [
+        "chocolatier store",
+        "specialty food shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4SLTI62LNZBBEADRSZHEFSUC6YBVT4L3SAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Just Tomatoes, Etc! DBA Karen's Naturals",
+          "domain": "karensnaturals.com",
+          "url": "https://karensnaturals.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "2103 W Hamilton Rd, Westley, CA 95387",
+        "distance_km": 4.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.482,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Just Tomatoes, Etc! DBA Karen's Naturals",
+                "url": "https://karensnaturals.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8775,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "4.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc445WWY5VEVFBEBDFZCBIIM7C6YAXMBSI5AAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Venchi Chocolate & Gelato Valley Fair",
+          "domain": "venchi.com",
+          "url": "https://us.venchi.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "2855 Stevens Creek Blvd, Santa Clara, CA 95050",
+        "distance_km": 69.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Venchi Chocolate & Gelato Valley Fair",
+                "url": "https://us.venchi.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4ZZK7GHER55BEAFYQLIHV7EK6YAWCB3PNAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Chocolaterie",
+          "domain": "shopchocolaterie.com",
+          "url": "https://shopchocolaterie.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "1964 University Ave, Berkeley, CA 94704",
+        "distance_km": 94.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Chocolaterie",
+                "url": "https://shopchocolaterie.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc42U3XURTMGNBUA2U2DTRS7F26YA5E7QEWPF6DCBA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Kollar Chocolates",
+          "domain": "kollarchocolates.com",
+          "url": "https://kollarchocolates.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "6525 Washington St, Yountville, CA 94599",
+        "distance_km": 131.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Kollar Chocolates",
+                "url": "https://kollarchocolates.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4OHNQRVIXT5BEBNCEDUGKW626YAKHUN5EAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Deux Cranes",
+          "domain": "deuxcranes.com",
+          "url": "https://deuxcranes.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "15531 Union Ave, Los Gatos, CA 95032",
+        "distance_km": 72.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Deux Cranes",
+                "url": "https://deuxcranes.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4ZIAKW7QA4JBEAACQNLKGRGS6YDQV33NMYJJ6I4Q=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Dandelion Chocolate Factory",
+          "domain": "dandelionchocolate.com",
+          "url": "https://dandelionchocolate.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery, cafe",
+        "address": "2600 16th St, San Francisco, CA 94103",
+        "distance_km": 103.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Dandelion Chocolate Factory",
+                "url": "https://dandelionchocolate.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4Z2BWB6QD4VBEBJTCMNPMPG26YAAMIQNWAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Dandelion Chocolate",
+          "domain": "dandelionchocolate.com",
+          "url": "https://dandelionchocolate.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "2115 Fillmore St, San Francisco, CA 94115",
+        "distance_km": 106.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Dandelion Chocolate",
+                "url": "https://dandelionchocolate.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4SO4H2RLN4NBEAT2WWGORJG26YAMA6ZKN3NPDWPI=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Christopher Elbow Chocolates",
+          "domain": "elbowchocolates.com",
+          "url": "https://elbowchocolates.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "401 Hayes St, San Francisco, CA 94102",
+        "distance_km": 104.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Christopher Elbow Chocolates",
+                "url": "https://elbowchocolates.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc426WI455CJFBUBAV52OXFGXS6YCOVLGBRAH72N2Y=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Ginger Elizabeth Chocolates",
+          "domain": "gingerelizabeth.com",
+          "url": "https://gingerelizabeth.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "2413 J St #120, Sacramento, CA 95816",
+        "distance_km": 109.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Ginger Elizabeth Chocolates",
+                "url": "https://gingerelizabeth.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4AGWEJD6OKNBUAZ6TCHAM2R26YD36OG23AAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Ginger Elizabeth Chocolates",
+          "domain": "gingerelizabeth.com",
+          "url": "https://gingerelizabeth.com/"
+        },
+        "matched_product": "confectionery",
+        "snippet": "confectionery",
+        "address": "2770 E Bidwell St #500, Folsom, CA 95630",
+        "distance_km": 116.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Ginger Elizabeth Chocolates",
+                "url": "https://gingerelizabeth.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:lakechamplainchocolates.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lake Champlain Chocolates",
+          "domain": "lakechamplainchocolates.com",
+          "url": "https://www.lakechamplainchocolates.com/chocolate/chocolate-bars/dark-chocolate-bars/"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Explore the ultimate collection of gourmet dark chocolate candy bars by Lake Champlain Chocolates. Great for treating yourself, giving as a gift, and baking! Truffles, bars, gift baskets, hot chocolate & more shipped nationwide from Vermont. ... You know what you love — and if it’s a dark chocolate candy bar, you’ve come to the right place! A haven of semi-sweet, dark chocolate deliciousness with every imaginable flavor of gourmet bar and sampler. From sweet and salty bars, to high cocoa, spicy, and our famous 5 Star Bars, there’s a taste of dark chocolate to suit every fancy.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Dark Chocolate Bars: Gourmet Dark Chocolate Candy Bar Gifts",
+                "url": "https://www.lakechamplainchocolates.com/chocolate/chocolate-bars/dark-chocolate-bars/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:compartes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Compartes",
+          "domain": "compartes.com",
+          "url": "https://compartes.com/collections/shop-gourmet-dark-chocolate-bars-online"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "That’s why we’ve created something unapologetically rich. At Compartés, our curated collection of 47 dark chocolate candy bars is a masterclass in complexity, contrast, and craftsmanship. We believe everyone should be able to enjoy real, strong dark chocolate—not the chalky, watered-down version, but the deep, nuanced kind that stirs something in you. From gluten-free to nut-free options, we've built this collection for all kinds of chocolate lovers, without ever compromising on the taste that makes Compartés unforgettable. Our site lets you filter by diet, flavor, or type of chocolate. So finding the perfect chocolate bar for your palate is easy, even if you're buying for someone else. Intensely Flavored, Artistically Crafted Bars Very few things surprise the seasoned chocolate lover. But bold, uncompromising, and intensely flavorful dark chocolate still can. That’s why we’ve created something unapologetically rich. At Compartés, our curated collection of 47 dark chocolate candy bars is a masterclass in complexity, contrast, and craftsmanship. Browse gourmet dark chocolate bars by Compartés, makers of the world's best chocolate for gifting. Shop bold, luxury dark chocolate creations now. From beloved favorites like Campfire S’mores and California Love Pretzel to indulgent creations such as Nightcap Whiskey and Strawberry Champagne, our signature artistry is unmistakable. Every bar pulls you deeper into the experience, proving this isn’t just dark chocolate, it’s a craving you never knew you had.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop All Luxury Dark Chocolate Bars | Compartés",
+                "url": "https://compartes.com/collections/shop-gourmet-dark-chocolate-bars-online"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:cocoastore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Cocoastore",
+          "domain": "cocoastore.com",
+          "url": "https://cocoastore.com/collections/100-bars"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Craving 100 dark chocolate? Indulge in our dark chocolate bars, crafted from 100% cocoa. Experience the pure cacao chocolates that deliver rich, intense flavors Good chocolate is not supposed to be bitter--even 100% chocolate which has zero sugar. 100% chocolate bars have a strong depth crafted for true chocolate enthusiasts, offering the bold, uncompromising flavor profile of cocoa. Cocoa Store's collection of 100% bars offers a range of intensity.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "100 Dark Chocolate: Indulge in Pure 100% Cacao Bars – Cocoa Store",
+                "url": "https://cocoastore.com/collections/100-bars"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:ethelm.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Ethel M Chocolates",
+          "domain": "ethelm.com",
+          "url": "https://www.ethelm.com/en-us/treats/dark-bar/bars-single-dark-chocolate-p.html"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Enjoy a decadent Dark Chocolate Bar made from our small-batch dark chocolate, expertly crafted for those who appreciate exceptional, premium chocolate defined by depth and refinement.Read More Enjoy a decadent Dark Chocolate Bar made from our small-batch dark chocolate – crafted for those who appreciate the bold character of fine cacao, balanced cocoa notes and a smooth, lingering finish. Enjoy a decadent Dark Chocolate Bar made from our small-batch dark chocolate, expertly crafted for those who appreciate exceptional, premium chocolate defined by depth and refinement.Read More These classic chocolate bars are ideal for savoring throughout the day, sharing with a friend or elevating everyday moments with remarkable quality and unmistakable taste. Whether you prefer a deep cocoa intensity or a more nuanced flavor profile, this exceptional product delivers the best of both worlds. Made with thoughtfully selected ingredients and an unwavering commitment to craft, our premium chocolate reflects the care and precision that define Ethel M Chocolates. With carefully balanced cocoa content and refined flavor development from bean to source, each dark chocolate creation offers a truly elevated chocolate experience.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Gourmet Dark Chocolate Bars | Ethel M Chocolates",
+                "url": "https://www.ethelm.com/en-us/treats/dark-bar/bars-single-dark-chocolate-p.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:ghirardelli.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Ghirardelli",
+          "domain": "ghirardelli.com",
+          "url": "https://www.ghirardelli.com/chocolate/flavors/dark-chocolate"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Buy Ghirardelli dark chocolate for it&#x27;s intense, complex flavors. Find premium bulk dark chocolate chips, gifts, dark chocolate bars, squares and more. Explore the robust and intensely delicious flavor of premium dark chocolate with Ghirardelli dark chocolate squares, bars, chips, and other products. High quality cacao beans are the starting point of every Ghirardelli creation. From there, we process the chocolate using the methods we have worked to refine since our founding in 1852. Experience the rich, intense chocolate flavor of Ghirardelli dark chocolate bars, squares, chips, and more. Each of our premium dark chocolate products offers the same smooth, melt-in-your-mouth consistency you already know and love, plus a robust, full-bodied flavor that only dark chocolate can provide. Each intensely delicious dark chocolate square will cater to your senses, and comes individually wrapped for easy portioning. Take your love of dark chocolate to the next level with Ghirardelli dark chocolate chips and baking bars — perfect for whipping up your favorite cakes, cookies, brownies, and other dark chocolate recipes. Ghirardelli chocolate has been making life a bite better since 1852. Delicious gourmet chocolate, gifts and recipes at our online chocolate shop and in-stores. Shop Today!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Dark Chocolate Bars, Squares & Dark Chocolate Chips | Ghirardelli",
+                "url": "https://www.ghirardelli.com/chocolate/flavors/dark-chocolate"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:alterecofoods.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Alter Eco Foods",
+          "domain": "alterecofoods.com",
+          "url": "https://www.alterecofoods.com/collections/dark-chocolate-bars"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Our Swiss-made chocolate isn&#x27;t just dark, deep and unbelievably smooth – it&#x27;s also crafted from organic cacao by farmers who are replanting tropical forests in South America.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Organic Dark Chocolate Bars – Alter Eco Foods",
+            "source_url": "https://www.alterecofoods.com/collections/dark-chocolate-bars",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Organic Dark Chocolate Bars – Alter Eco Foods",
+                "url": "https://www.alterecofoods.com/collections/dark-chocolate-bars"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:barandcocoa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bar & Cocoa",
+          "domain": "barandcocoa.com",
+          "url": "https://barandcocoa.com/collections/dark"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Browse curated dark chocolate bars from the world&#x27;s best makers. Single origin, inclusion, and pure dark bars for gifting and discovery. Browse curated dark chocolate bars from the world's best makers. Single origin, inclusion, and pure dark bars for gifting and discovery.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Best Dark Chocolate Bars | Bar & Cocoa",
+                "url": "https://barandcocoa.com/collections/dark"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/c/kp/dark-chocolate-bars"
+        },
+        "matched_product": "dark chocolate bar",
+        "snippet": "Discover a variety of dark chocolate bars with rich cocoa content and unique flavors. If chilling is necessary: Place the bar in a sealed bag and let it come to room temperature before unsealing to help prevent condensation. Mind the date: Check the package’s best-by date for peak quality. These steps can help maintain quality, though results may vary with your home’s conditions.Show less ... $320.11current price $320.11Toblerone Crunchy Almond with Sea Salt Milk Chocolate Bar, 3.52 Ounce -- 80 per case. Texture: Smooth solid bars vs. Use case: Plain bars tend to melt more evenly for baking; filled bars shine for snacking. Format: Single bars for sampling or larger bars for sharing.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Dark Chocolate Bars for Rich Flavor",
+                "url": "https://www.walmart.com/c/kp/dark-chocolate-bars"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:lindtusa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lindt",
+          "domain": "lindtusa.com",
+          "url": "https://www.lindtusa.com/shop-chocolate/dark-chocolate"
+        },
+        "matched_product": "",
+        "snippet": "Lindt Dark Chocolate, crafted by master chocolatiers, balances rich cocoa with exquisite flavors for a unique experience. Enjoy 90% cocoa bars, or explore 60% cocoa&#x27;s complexity. Try Raspberry, Chilli, or Intense Orange. When it comes to gifting, nothing expresses thoughtfulness and luxury like Lindt dark chocolate. Our exquisite truffles and bars are crafted with the finest ingredients, ensuring every bite is a moment of pure pleasure. Beautifully packaged and irresistibly delicious, Lindt chocolate gifts are perfect for birthdays, anniversaries, holidays, or simply to show appreciation. For an irresistible gift for another, or an indulgent escape for yourself, Lindt is the answer. Rich and savory chocolates go into every box. Shop today. Indulge in Lindt Dark Chocolate, crafted by experts to balance rich cocoa and unique flavors. Explore our diverse range today. Dark Chocolate Dark Choco...",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Dark Chocolate - Premium Chocolates | Lindt USA",
+                "url": "https://www.lindtusa.com/shop-chocolate/dark-chocolate"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:malleys.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Malley's Chocolates",
+          "domain": "malleys.com",
+          "url": "https://malleys.com/products/dark-bar"
+        },
+        "matched_product": "",
+        "snippet": "Solid Dark Chocolate Candy Bars are 1.75-ounce bars made with Malley’s decadent dark chocolate. Individually wrapped, they can be ordered as single bars or in 30-ct cases. Chocolates · Nuts & Popcorn · Candy Bars · Gummi Candy · Sugar Free · Shop by Taste · Dark Chocolate · Milk Chocolate · Fruity · Sweet & Salty · Nutty · Sale · Loading... Loading... Pecan BillyBobs 14 oz $29.95 · Milk Chocolate Covered Pretzels 14 oz $24.95 ·",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Dark Bar",
+                "url": "https://malleys.com/products/dark-bar"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 362,
+          "completion_tokens": 130,
+          "cost_usd": 0.0000804
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3054,
+          "completion_tokens": 994,
+          "cost_usd": 0.00061282
+        }
+      ],
+      "llm_tokens": 4540,
+      "estimated_cost_usd": 0.020693
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "foodandwine.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "gawfco.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "dandelionchocolate.com",
+        "reason": "branch_cap"
+      }
+    ]
+  }
+}

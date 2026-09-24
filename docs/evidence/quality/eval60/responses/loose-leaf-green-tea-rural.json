@@ -1,0 +1,1447 @@
+{
+  "id": "loose-leaf-green-tea-rural",
+  "checked": "2026-09-24T05:02:22.992Z",
+  "request": {
+    "product": "loose leaf green tea",
+    "city": "Seneca",
+    "state": "IL",
+    "lat": 41.33,
+    "lon": -88.6
+  },
+  "status": 200,
+  "elapsed_ms": 35736,
+  "body": {
+    "query": {
+      "product": "loose leaf green tea",
+      "city": "Seneca",
+      "state": "IL",
+      "canonical_name": "loose leaf green tea",
+      "category": "tea",
+      "online_queries": [
+        "buy loose leaf green tea",
+        "green tea leaves shop"
+      ],
+      "local_queries": [
+        "tea store",
+        "specialty food shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4F3WYVT2TVJCEB6VOVVCEKLKWYB7DEXDZCJKJRFQ=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "D & S Foods",
+          "domain": "facebook.com",
+          "url": "https://m.facebook.com/dsfood"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "120 E Bluff St, Marseilles, IL 61341",
+        "distance_km": 9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.466,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "D & S Foods",
+                "url": "https://m.facebook.com/dsfood"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.775,
+            "weight": 0.15,
+            "contribution": 0.116,
+            "sources": [
+              {
+                "label": "9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4MXYECGPU4JCEAARPRYSYOCKWYDK7PROBGDMJDCY=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Adagio Teas Naperville",
+          "domain": "adagio.com",
+          "url": "https://adagio.com/stores/il_naperville.html"
+        },
+        "matched_product": "tea",
+        "snippet": "teahouse",
+        "address": "27 W Jefferson Ave, Naperville, IL 60540",
+        "distance_km": 61.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Adagio Teas Naperville",
+                "url": "https://adagio.com/stores/il_naperville.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4DJK6CKVK6NCEALL43BTD52CVYCITVUZ3WJZ7EZA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Chicago Teahouse",
+          "domain": "chicagoteahouse.com",
+          "url": "https://chicagoteahouse.com/"
+        },
+        "matched_product": "tea",
+        "snippet": "teahouse",
+        "address": "1160 N State St, Chicago, IL 60610",
+        "distance_km": 102.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Chicago Teahouse",
+                "url": "https://chicagoteahouse.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4MWC4OI2565CEBDCRRVG6D3SVYB5HGIQXAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Spirit Tea",
+          "domain": "spirittea.co",
+          "url": "https://spirittea.co/"
+        },
+        "matched_product": "tea",
+        "snippet": "",
+        "address": "4200 W Diversey Ave Unit 12, Chicago, IL 60639",
+        "distance_km": 98.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Spirit Tea",
+                "url": "https://spirittea.co/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4KFCNBYWW6JCEALLNQK42P2CVYBDGGLHYAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Tiesta Tea Company",
+          "domain": "tiestatea.com",
+          "url": "https://tiestatea.com/"
+        },
+        "matched_product": "tea",
+        "snippet": "building",
+        "address": "1844 Brummel Ave, Elk Grove Village, IL 60007",
+        "distance_km": 102,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Tiesta Tea Company",
+                "url": "https://tiestatea.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc46ZCNPBI72RCUA4RT3SAM7WCTYAV3II55AAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Specialty Food Shop",
+          "domain": "specialtyfoodshop.ca",
+          "url": "https://specialtyfoodshop.ca/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "555 University Ave, Toronto, ON M5G 2L3",
+        "distance_km": 797.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Specialty Food Shop",
+                "url": "https://specialtyfoodshop.ca/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc42VIXUS663RCEAE6HZPSOKAKWYCIFHHY7AAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Gordon Food Service Store",
+          "domain": "gfsstore.com",
+          "url": "https://gfsstore.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "2025 87th St, Woodridge, IL 60517",
+        "distance_km": 64.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Gordon Food Service Store",
+                "url": "https://gfsstore.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4N6PVKZSK6BCEA42ZS34VR32VYDOSU7WVAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Specialty Foods Group Inc",
+          "domain": "specialtyfoodsgroup.com",
+          "url": "https://specialtyfoodsgroup.com/"
+        },
+        "matched_product": "",
+        "snippet": "slaughterhouse, shop",
+        "address": "4550 W Jackson Blvd, Chicago, IL 60624",
+        "distance_km": 93.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Specialty Foods Group Inc",
+                "url": "https://specialtyfoodsgroup.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4XTO5ZKOK5VCEAT64HO2FT52VYD2VDFM2AAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Artisan Specialty Foods",
+          "domain": "artisanspecialty.com",
+          "url": "https://artisanspecialty.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "2528 S 27th Ave, Broadview, IL 60155",
+        "distance_km": 84.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Artisan Specialty Foods",
+                "url": "https://artisanspecialty.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4Q56ODX5RCNCUBOZCTUTFR7KVYDV3MJ3IAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Wild Fork Meat & Seafood Market - Buffalo Grove",
+          "domain": "wildforkfoods.com",
+          "url": "https://wildforkfoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "41 McHenry Rd, Buffalo Grove, IL 60089",
+        "distance_km": 105.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Wild Fork Meat & Seafood Market - Buffalo Grove",
+                "url": "https://wildforkfoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:theteaspot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Tea Spot",
+          "domain": "theteaspot.com",
+          "url": "https://www.theteaspot.com/collections/loose-leaf-tea-green-tea"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Discover Loose Leaf Green Teas in bulk, tins, tea bags, samplers, &amp; Green Tea Club. Our loose leaf green teas include dragonwell, jasmine tea, gunpowder, sencha, genmaicha, matcha, organic green teas &amp; delicious green tea blends. Fresh whole leaf green tea leaves offer natural health benefits like EGCG antioxidants. Whether you're craving an organic loose leaf green tea with the steamed depth of Gyokuro or the minty brightness of Moroccan Mint, or even a citrus-forward blend like Keep Fit, each tea offers a unique journey in your cup. Available in bulk, loose leaf, with many also offered in tea sachets—which are plant-based, biodegradable, and completely plastic free. We hope to be your one-stop shop for where to buy green tea, as we source our loose leaf green teas directly from trusted farms and partners who share our commitment to quality, sustainability, and tradition. We hope to be your one-stop shop for where to buy green tea, as we source our loose leaf green teas directly from trusted farms and partners who share our commitment to quality, sustainability, and tradition. Many of our teas are single origin, offering a pure expression of terroir and craftsmanship from harvest to cup. Discover Loose Leaf Green Teas in bulk, tins, tea bags, samplers, & Green Tea Club. Our loose leaf green teas include dragonwell, jasmine tea, gunpowder, sencha, genmaicha, matcha, organic green teas & delicious green tea blends. Fresh whole leaf green tea leaves offer natural health benefits like EGCG antioxidants. Delve into the world of green tea with our carefully curated collection. Our passion for quality has led us to journey across the globe, seeking out the best green teas to bring to your te... Read more ... Discover our loose leaf green tea collection, featuring a range of flavors from floral Jasmine Petals to Sencha.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Loose Leaf Green Tea - Green Tea Leaves in Bulk, Tins, Bags | Tea Spot",
+            "source_url": "https://www.theteaspot.com/collections/loose-leaf-tea-green-tea",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Loose Leaf Green Tea - Green Tea Leaves in Bulk, Tins, Bags | Tea Spot",
+                "url": "https://www.theteaspot.com/collections/loose-leaf-tea-green-tea"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:teasource.com",
+        "kind": "online",
+        "retailer": {
+          "name": "TeaSource",
+          "domain": "teasource.com",
+          "url": "https://www.teasource.com/collections/shop-all-tea/green"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "China and Japan produce the highest quality green teas, though many other countries are now producing it as well. Green tea usually produces a light body with mild astringency and a vegetal/grassy character. Explore our complete selection of loose-leaf tea, from classic black, green, white, oolong, and puer teas to herbal blends and specialty teas from around the world. China and Japan produce the highest quality green teas, though many other countries are now producing it as well. Green tea usually produces a light body with mild astringency and a vegetal/grassy character. Explore our complete selection of loose-leaf tea, from classic black, green, white, oolong, and puer teas to herbal blends and specialty teas from around the world. Shop all TeaSource teas, including black, green, white, oolong, puer, herbal, and specialty teas from around the world. Discover your next favorite tea.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Loose Leaf Green Teas",
+                "url": "https://www.teasource.com/collections/shop-all-tea/green"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:nelsonstea.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Nelson's Tea",
+          "domain": "nelsonstea.com",
+          "url": "https://nelsonstea.com/loose-leaf-green-tea/"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Discover the convenience and value of buying bulk green tea loose-leaf options at Nelson&#x27;s Tea. From our best-selling Peppermint White Chocolate to exotic blends infused with fruits and spices, like Ginger Orange Peach, each of our loose-leaf green teas for sale caters to traditionalists and adventurous tea enthusiasts. We source our tea from top-quality tea estates worldwide. Each ingredient is carefully selected, with flavor and aroma being at the top of the list. Are you looking to buy loose-leaf green tea online in bulk, or do you want to explore new varieties? Discover the convenience and value of buying bulk green tea loose-leaf options at Nelson's Tea. Loose-leaf green tea is made with whole or larger pieces of tea leaves instead of the crushed bits you’d find in most tea bags. It’s especially common in places like China and Japan, where tea culture runs deep. Whether you want to try a single blend or stock up on a number of favorites, from the smooth Raspberries & Cream Chari-TEA to the delectable Apricot Peach Cobbler, our bulk green teas cater to every taste and preference. Experience the satisfaction of brewing fresh, premium-quality tea with Nelson's Tea. Place your wholesale loose-leaf green tea order today and elevate your tea experience!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Loose Leaf Green Tea Online - Bulk & Wholesale",
+                "url": "https://nelsonstea.com/loose-leaf-green-tea/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:fullleafteacompany.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Full Leaf Tea Company",
+          "domain": "fullleafteacompany.com",
+          "url": "https://fullleafteacompany.com/collections/loose-leaf-green-tea"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Shop loose leaf green tea! Explore popular organic green teas including ceylon green, jasmine, sencha, and gunpowder green tea! Orders $49+ receive free shipping! Quiz to Find Your Perfect Tea! ... Green tea is has been around since 2737 B.C. and originated in China. Although many drink green tea for its delicious flavor, there are tons of health benefits in every cup! Green tea is full of antioxidants and can promote weight loss, blood sugar regulation, brain health, and healthy teeth. From classic favorites to innovative blends, we have a green tea that everyone will enjoy! To learn more about green tea, check out our article \"What is Green Tea?\" Shop our best selling teas!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Shop Green Tea - Loose Leaf, Premium – Full Leaf Tea Company",
+            "source_url": "https://fullleafteacompany.com/collections/loose-leaf-green-tea",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Green Tea - Loose Leaf, Premium – Full Leaf Tea Company",
+                "url": "https://fullleafteacompany.com/collections/loose-leaf-green-tea"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:artoftea.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Art of Tea",
+          "domain": "artoftea.com",
+          "url": "https://www.artoftea.com/collections/green-tea"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Whether you&#x27;re just discovering the world of tea or have been a tea enthusiast for decades, our loose-leaf varietals are guaranteed to bring peace and enjoyment to your mornings, afternoons, or evenings. We offer a diverse inventory of loose teas, with multiple categories including caffeine-free, single origin, green and black teas, blooming tea, herbal tea, and even yerba mate. Whether you are exploring green tea for the first time or deepening a longtime ritual, this collection has a green tea to match your mood. Shop organic loose leaf green tea for the full sensory experience of watching the leaves unfurl, or choose convenient green teabags for a quick, quality cup on any schedule. Whether you're just discovering the world of tea or have been a tea enthusiast for decades, our loose-leaf varietals are guaranteed to bring peace and enjoyment to your mornings, afternoons, or evenings. We offer a diverse inventory of loose teas, with multiple categories including caffeine-free, single origin, green and black teas, blooming tea, herbal tea, and even yerba mate. I sorta bought this for the kitsch factor - I do love all things tea-related - but it's actually proven very helpful, especially for those of us (hello!) who frequently get distracted and forget just how long the tea has been steeping. Plus, it's very pretty. Tracy A. Shop Now · Our loose-leaf teas are carefully crafted to achieve nuanced, delicious blends that any tea drinker can enjoy. Love these tea bags for my loose tea! The string and tag are perfect. Unlike others that have no string or just the string, the little tag to hang over the cup makes it a dream to use! Lhayn N. Shop Now · One of my favorite teas! The aroma and the taste is superb. It’s a very nice black tea that steeps quickly and doesn’t get overly bitter if you accidentally over-steep. I will continue to buy this over and over!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Buy Organic Green Tea Online – Loose Leaf, Tea Bags and More | Art of Tea",
+            "source_url": "https://www.artoftea.com/collections/green-tea",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Buy Organic Green Tea Online – Loose Leaf, Tea Bags and More | Art of Tea",
+                "url": "https://www.artoftea.com/collections/green-tea"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:adagio.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Adagio Teas",
+          "domain": "adagio.com",
+          "url": "https://www.adagio.com/green/green_teas.html"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Buy loose leaf green tea online — Chinese green teas, Japanese green teas, and flavored green blends. Sencha, Gunpowder, Jasmine, matcha, and more. From 15¢/cup. Christmas Gifts tea samplers horoscope gifts flavor trilogy tea starter sets gift cards loose tea gifts teabag gifts tea candles portions wedding favors custom gift box mystery box literary sampler ... Shop online for loose leaf green teas made from whole tea leaves sourced directly from the artisan farmers who tend them. Japan's most widely consumed tea and the reference point for what Japanese green tea tastes like. Adagio's loose leaf Sencha is steamed in the traditional Japanese style - clean, fresh, with a natural sweetness and a gentle umami depth that distinguishes quality Sencha from the flat, bitter versions that give green tea its undeserved reputation for difficulty. What makes it green rather than black or oolong is the processing: immediately after harvest, the fresh leaves are heated - either pan-fired in a wok (the Chinese method) or steamed (the Japanese method) - to stop oxidation before it begins. The result is a tea that retains the fresh, green character of the leaf rather than developing the darker, more oxidized flavors of black tea. China's most celebrated green tea - Long Jing (龍井), or Dragon Well - from the hills above West Lake in Hangzhou, Zhejiang province. Pan-fired in a flat-leaf style that produces the characteristic chestnut and fresh grass notes of authentic Long Jing, Dragon Well is the green tea that most clearly illustrates the difference between Chinese and Japanese green tea processing.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Loose Leaf Green Tea | Chinese & Japanese Varieties | Adagio Teas",
+                "url": "https://www.adagio.com/green/green_teas.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:itoen.com",
+        "kind": "online",
+        "retailer": {
+          "name": "ITO EN",
+          "domain": "itoen.com",
+          "url": "https://itoen.com/collections/loose-leaf"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Shop ITO EN&#x27;s loose leaf tea collection. Discover a variety of premium, authentic teas for a rich, flavorful brewing experience. Shop now!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Loose Leaf Green Tea | Organic Green Tea – ITO EN",
+            "source_url": "https://itoen.com/collections/loose-leaf",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Loose Leaf Green Tea | Organic Green Tea – ITO EN",
+                "url": "https://itoen.com/collections/loose-leaf"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:fusionteas.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fusion Teas",
+          "domain": "fusionteas.com",
+          "url": "https://www.fusionteas.com/Green-Tea"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "We offer only the best loose-leaf green tea. Our premium blends include Sencha, Jasmine, and Bancha. Buy green tea online with confidence at Fusion Teas. But what we really love about green tea is its flavor! I mean, as healthy as green tea is, it's not going to do you any good if it's just sitting in your cupboard, right? We love to find and offer loose-leaf green teas that are every bit as tasty as they are healthy. Ah, green tea! So refreshing and clear...This antioxidant powerhouse of a tea has taken the world by storm in recent years, and with good reason! A great green tea is as delicious as it is healthy, and green tea quality here in North America is on the ris… Ah, green tea! So refreshing and clear... This antioxidant powerhouse of a tea has taken the world by storm in recent years, and with good reason! A great green tea is as delicious as it is healthy, and green tea quality here in North America is on the rise. Whether you find it to be exotic or everyday, or whether it's a whole new world or your go-to brew, we've got you covered with the most premium green teas online. And if you're a Japanese tea lover, we have a lot to offer you! Start with our ever-popular Everyday Matcha or our Genmaicha and go from there. Still not sure where to begin? Check out our Green Tea Sampler, or create your own mix-and-match sampler with our sample-size option.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Green Tea Online | Loose Green Tea & Organic Green Tea Leaves",
+            "source_url": "https://www.fusionteas.com/Green-Tea",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Green Tea Online | Loose Green Tea & Organic Green Tea Leaves",
+                "url": "https://www.fusionteas.com/Green-Tea"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:rishi-tea.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Rishi Tea",
+          "domain": "rishi-tea.com",
+          "url": "https://www.rishi-tea.com/collections/green-tea"
+        },
+        "matched_product": "matcha powder",
+        "snippet": "Green tea is noted for its fresh flavor and green character, along with the health benefits it offers. Browse our selection of loose leaf organic green tea, as well as our organic matcha powders. This process preserves the leaf’s vibrant green color and helps define its fresh, nuanced flavor and aroma. From classic favorites to modern expressions and bespoke organic blends, this collection offers something to explore for organic tea drinkers of all kinds. To achieve the best results from these teas, add 12 ounces of hot water (180ºF) to 1.5 tablespoons (about 7 grams) of loose leaf tea and steep for 3-5 minutes. Green tea is noted for its fresh flavor and green character, along with the health benefits it offers. Browse our selection of loose leaf organic green tea, as well as our organic matcha powders. Loose Leaf Teas Sachet Tea Bags Iced Teas Tea Concentrates Matcha & Powder Sparkling Botanicals All Forms · Black & Red Botanical Chai Green Matcha Oolong Pu’er & Dark White Caffeine Free All Tea Types Caffeine content varies by varietal and preparation, but green varieties generally contain a moderate amount — typically about half the caffeine of coffee. Matcha tends to contain caffeine levels closer to coffee, as the entire tea leaf is consumed rather than steeped and removed.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Green Tea | Powder & Loose Leaf | Rishi Tea & Botanicals",
+            "source_url": "https://www.rishi-tea.com/collections/green-tea",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Green Tea | Powder & Loose Leaf | Rishi Tea & Botanicals",
+                "url": "https://www.rishi-tea.com/collections/green-tea"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:teasenz.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Teasenz",
+          "domain": "teasenz.com",
+          "url": "https://www.teasenz.com/loose-leaf-green-teas"
+        },
+        "matched_product": "loose leaf green tea",
+        "snippet": "Buy fresh and authentic Chinese green teas online. Many types of loose leaf green tea from famous tea regions. Curated by Teasenz. Wholesale &amp; Retail. Worldwide shipping. In China, green tea is the earliest type of tea in history. Nevertheless, a good and authentic cup, handmade from fresh Spring leaves, is still hard to find. At Teasenz, we're fortunate to work with loose leaf green tea farmers who are born and raised on the same land they grow tea. At the same time, we're driven by our passion to share their fresh leaf teas with you, and the rest of the world. Whether your goal is to lose weight, stay healthy and energized, or simply enjoy an authentic cup, you're at the right place at Teasenz. Here's why we're so confident about our Chinese green teas: Fresh: All our loose green teas are picked in the latest Spring season. This is why all our green teas safe and will flawlessly pass EU and USA import testing. Healthy: Fresh green leaves also contain more nutritional and a high amount of antioxidants. In addition, all our loose green teas consists of 100% natural leaves with no artificial flavoring or coloring. It's good to know that you're drinking something healthy and fresh, but we are the most passionate about the diversity of amazing flavors and aromas that each region has to offer. Our expert teas travel to well known regions such as Huangshan, Xinyang, Anji and Liu'an to taste and curate the best. All their hard work come together on this page, allowing to present the best green tea from China with you.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Buy Loose Leaf Chinese Green Tea Online Wholesale | Teasenz",
+                "url": "https://www.teasenz.com/loose-leaf-green-teas"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 363,
+          "completion_tokens": 125,
+          "cost_usd": 0.00008664
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3359,
+          "completion_tokens": 1625,
+          "cost_usd": 0.00085097
+        }
+      ],
+      "llm_tokens": 5472,
+      "estimated_cost_usd": 0.020938
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "sunsetfoods.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "mountainroseherbs.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "senchateabar.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "senecacenter.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "caseys.com",
+        "reason": "place_category"
+      },
+      {
+        "kind": "local",
+        "domain": "mosaicsbat.com",
+        "reason": "place_category"
+      }
+    ]
+  }
+}

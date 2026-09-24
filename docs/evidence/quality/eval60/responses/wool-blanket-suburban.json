@@ -1,0 +1,1489 @@
+{
+  "id": "wool-blanket-suburban",
+  "checked": "2026-09-24T05:05:26.911Z",
+  "request": {
+    "product": "wool blanket",
+    "city": "Littleton",
+    "state": "CO",
+    "lat": 39.55,
+    "lon": -105.01
+  },
+  "status": 200,
+  "elapsed_ms": 32369,
+  "body": {
+    "query": {
+      "product": "wool blanket",
+      "city": "Littleton",
+      "state": "CO",
+      "canonical_name": "wool blanket",
+      "category": "bedding",
+      "online_queries": [
+        "buy wool blanket",
+        "wool throw shop"
+      ],
+      "local_queries": [
+        "textile store",
+        "home goods shop"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4P7JQKBS2YZBUA4YOINIFUQC2YBELMB6XAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://target.com/sl/highlands-ranch/2716"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1265 Sergeant Jon Stiles Dr, Highlands Ranch, CO 80129",
+        "distance_km": 0.4,
+        "certifications": [],
+        "signals": [],
+        "score": 0.498,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Target",
+                "url": "https://target.com/sl/highlands-ranch/2716"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.99,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.4 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc43BFEH2H3YVBUBYUQBWSAWQC2YB43SF7TAAAAAAA=:15",
+        "kind": "local",
+        "retailer": {
+          "name": "Michaels",
+          "domain": "michaels.com",
+          "url": "https://locations.michaels.com/CO/Highlands%20Ranch/5061"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "Center, 9315 Dorchester St #101, Highlands Ranch, CO 80129",
+        "distance_km": 0.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.497,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Michaels",
+                "url": "https://locations.michaels.com/CO/Highlands%20Ranch/5061"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9775,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4QO4YEEQLYVBUAC3ZVF6V6QS2YCCQBCQ5AAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Murdoch's Ranch & Home Supply",
+          "domain": "murdochs.com",
+          "url": "https://murdochs.com/stores/littleton"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "12154 N Dumont Way, Littleton, CO 80125",
+        "distance_km": 2.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.49,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Murdoch's Ranch & Home Supply",
+                "url": "https://murdochs.com/stores/littleton"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.935,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "2.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4HFLTSWIPZNBUAE2VV2TKCQK2YATAEQPVAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Tattered Cover Aspen Grove",
+          "domain": "tatteredcover.com",
+          "url": "https://tatteredcover.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "7301 S Santa Fe Dr #240, Littleton, CO 80120",
+        "distance_km": 4.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.484,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Tattered Cover Aspen Grove",
+                "url": "https://tatteredcover.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8925,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "4.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4VYGRLY74ZFBUAVIVDKEGKPK2YD4WR6AIAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Designer Fabrics (by appt only) Hunter Douglas Dealer",
+          "domain": "designerfabricsdenver.com",
+          "url": "https://designerfabricsdenver.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2555 E Jamison Ave, Centennial, CO 80122",
+        "distance_km": 5.3,
+        "certifications": [],
+        "signals": [],
+        "score": 0.48,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Designer Fabrics (by appt only) Hunter Douglas Dealer",
+                "url": "https://designerfabricsdenver.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8674999999999999,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "5.3 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4M2I5YUHHZNBUBIMA5VQMIPK2YBTTN5V2MDEWIUQ=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Fine Rug Gallery at Macy's",
+          "domain": "macys.com",
+          "url": "https://macys.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "6797 S Vine St, Centennial, CO 80122",
+        "distance_km": 6.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.477,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Fine Rug Gallery at Macy's",
+                "url": "https://macys.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8475,
+            "weight": 0.15,
+            "contribution": 0.127,
+            "sources": [
+              {
+                "label": "6.1 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc442YFMSCUYJBUAY4NYQKWCPC2YD6JOIYWAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Red Daisy Quilt Shop",
+          "domain": "reddaisyquiltshop.com",
+          "url": "https://reddaisyquiltshop.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "3531 Whitford Dr, Highlands Ranch, CO 80126",
+        "distance_km": 6.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Red Daisy Quilt Shop",
+                "url": "https://reddaisyquiltshop.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8325,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.7 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc432XJPJQIZRBUAZB2OR5F4PK2YARYERZKAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Daiso - Japanese Household Goods",
+          "domain": "daisous.com",
+          "url": "https://daisous.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop, shop",
+        "address": "6770 S University Blvd, Centennial, CO 80122",
+        "distance_km": 6.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.475,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Daiso - Japanese Household Goods",
+                "url": "https://daisous.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.835,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "6.6 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4BN3GR7OSZVBUAER4OQYFCPK2YDJ275C3QIAKCBQ=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "T.J. Maxx & HomeGoods",
+          "domain": "tjx.com",
+          "url": "https://tjmaxx.tjx.com/store/index.jsp"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "5910 S University Blvd, Littleton, CO 80121",
+        "distance_km": 7.8,
+        "certifications": [],
+        "signals": [],
+        "score": 0.471,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "T.J. Maxx & HomeGoods",
+                "url": "https://tjmaxx.tjx.com/store/index.jsp"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8049999999999999,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "7.8 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4VA2XFAW3ZVBUABV4ZSYFCPK2YBN33QECQIAKCBQ=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "5910 S University Blvd, Littleton, CO 80121",
+        "distance_km": 7.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.47,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "HomeGoods",
+                "url": "https://homegoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "7.9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "online": [
+      {
+        "id": "online:faribaultmill.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Faribault Mill",
+          "domain": "faribaultmill.com",
+          "url": "https://www.faribaultmill.com/collections/wool-bed-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Wool bed blankets from Faribault Mill. Solid, stripe, and plaid designs made with high quality wool. Since 1865, Faribault Mill has been crafting premium wool blankets in the USA with an unwavering commitment to quality, durability, and heritage. For more than 150 years, our mill has perfected the art of wool blanket making—ensuring every piece we produce is made to last and designed to bring lasting comfort. Wool bed blankets from Faribault Mill. Solid, stripe, and plaid designs made with high quality wool. Wool is the world’s most sustainable fiber, and we honor its natural performance by maintaining a production process that prioritizes responsibility, longevity, and low environmental impact. The result: blankets that offer natural insulation, moisture-wicking comfort, and hypoallergenic benefits—ideal for year-round use and restful sleep. For over 160 years, we’ve crafted blankets and throws in the USA with timeless design, natural fibers, and unmatched craftsmanship.OUR STORY ... Natural fibers like wool and cotton help regulate body temperature for a deeper, more restful sleep — naturally.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Bed Blankets",
+                "url": "https://www.faribaultmill.com/collections/wool-bed-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:pendleton-usa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Pendleton",
+          "domain": "pendleton-usa.com",
+          "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop made in USA wool blankets &amp; throws from Pendleton. Fine wool throw blankets woven in America for over a century. Sourced through wool-grower partnerships that in some cases go back over a hundred years, wool is a naturally renewable, biodegradable fiber that acts as a natural heat regulator, insulating against both cold and heat while resisting stains and wrinkles. From the softness of Eco-Wise Wool® to our traditional jacquard weaves, each blanket blends heritage design with everyday durability. Pendleton wool blankets are well known for their bold patterns and vibrant color combinations. Many of these designs draw inspiration from the American West and are rooted in Pendleton's century-old archives. Where are Pendleton blankets made? Most Pendleton wool blankets are woven in Pendleton's historic Pacific Northwest mills in Oregon and Washington. Our jacquard-patterned wool blankets are woven at our original mill in Pendleton, Oregon, which has been producing blankets since 1909. What is the difference between \"napped\" and \"unnapped\" on a wool blanket? Napped wool has been brushed to raise the fiber ends from the weave, creating a softer, thicker feel. An unnapped blanket has not been combed so the pattern is sharper with cleaner edges.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Made in USA Wool Blankets & Throw Blankets | Pendleton",
+            "source_url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Made in USA Wool Blankets & Throw Blankets | Pendleton",
+                "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:arcturusgear.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Arcturus Gear",
+          "domain": "arcturusgear.com",
+          "url": "https://arcturusgear.com/collections/virgin-wool-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "You asked - we listened. Introducing our new Bighorn wool blankets made with 100% virgin wool. Why virgin wool? Since it&#x27;s never been used before, strands of virgin wool are longer than reclaimed wool, which means a softer, even more durable blanket. Reclaimed wool is a great choice but virgin ... You asked - we listened. Introducing our new Bighorn wool blankets made with 100% virgin wool. Why virgin wool? Since it's never been used before, strands of virgin wool are longer than reclaimed wool, which means a softer, even more durable blanket. Reclaimed wool is a great choice but virgin wool delivers unmatched",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "100% Virgin Wool Blankets - Arcturus Gear",
+                "url": "https://arcturusgear.com/collections/virgin-wool-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:highlandtweedblanketcompany.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Highlandtweedblanketcompany",
+          "domain": "highlandtweedblanketcompany.com",
+          "url": "https://highlandtweedblanketcompany.com/"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "HIghland Tweeds are a collection of all Wool Blankets destined to become a family favorites. Perfect to snuggle up next to fire, take a nap, read your favorite novel, or pack for a road trip. Prince of Scots Highland Tweed New Wool Fluffy Throw ~ Antique Hunting Stewart ~ ... Wool adds texture and quality to an interior design scheme. Wool is a great way of adding color, texture or patterns, whether that's in a herringbone, basketweave, or tartan pattern. But more importantly, wool blankets are good for environment. HIghland Tweeds are a collection of all Wool Blankets destined to become a family favorites. Perfect to snuggle up next to fire, take a nap, read your favorite novel, or pack for a road trip. In contrast to synthetics, wool is an active fiber that reacts to changes in body temperature. So it helps you stay warm when the weather is cold, and cool when the weather is hot. Happy Sleeping! Prince of Scots Highland Tweed New Wool Fluffy Throw ~ Antique Hunting Stewart ~ Snuggled up using the blanket for first time. It is so warm and stops any draft!!! Anne, Dallas · Very well made & excellent workmanship! Made in Britain, nice wool, and, to me, not scratchy, but soft and cuddly.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "The Highland Tweeds Blanket Company – Highland Tweeds Blanket Company",
+                "url": "https://highlandtweedblanketcompany.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:thewoolroom.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Wool Room",
+          "domain": "thewoolroom.com",
+          "url": "https://www.thewoolroom.com/product/woolroom-highland-coo-pure-new-wool-throw/"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "A beautiful Highland Coo design crafted from Pure New wool. Perfect for snuggling up under. Made from 100% pure new Shetland Wool · Snuggly, lofty and VERY cosy! This wool blanket makes a perfect accompaniment for your sofa or as extra warmth on your bed. A truly timeless colour that is easy to match to any home. A beautiful Highland Coo design crafted from Pure New wool. Perfect for snuggling up under. Made from 100% pure new Shetland Wool · Snuggly, lofty and VERY cosy! This wool blanket makes a perfect accompaniment for your sofa or as extra warmth on your bed. A truly timeless colour that is easy to match to any home. Decorated with a charming repeat print, our Highland Cow Pure New Wool Throw is ideal for sofas, beds and snuggling. Size: 170 x 130cm. Order today. Woolroom's Customer Care Team Hello Thank you for taking the time to leave a review regarding your throw It is great that you are really happy with the colours and the size and the soft wool. It is great also that you would recommend woolroom to others. Many thanks Woolroom ... Yes, I recommend this product. \"Gorgeous\"Love my 2 blankets. I bought the Bee first then the Highland coo. Woolroom's Customer Care Team Hello Anne it is great to hear that you are very happy with your two blankets and that it is providing extra warmth for you and your two dogs. Many Thanks for leaving a review we really appriciate it. Woolroom ... Yes, I recommend this product. \"Beautiful Product And Great Service\"Product arrived next day! Amazing quality, looks just as advertised. Great sized throw covers neck to toes! Will definitely purchase again and buy as gifts too",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Woolroom Highland Coo Pure New Wool Throw | woolroom",
+                "url": "https://www.thewoolroom.com/product/woolroom-highland-coo-pure-new-wool-throw/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:williams-sonoma.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Williams Sonoma",
+          "domain": "williams-sonoma.com",
+          "url": "https://www.williams-sonoma.com/shop/home-pillows-throws/cotton-wool-throws/"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop Williams Sonoma&#x27;s collection of the best wool blankets and cozy wool throw blankets. Discover luxurious woolen blankets perfect for any home. Wool can help manage damp feel, which supports a dry, cozy rest. These pieces suit cool nights, cabin trips, and year-round use. Choose light throws for mild temps and easy layers on the couch. Use throw wool blankets to finish an armchair or add warmth at movie time. Explore wool throw blankets in soft neutrals, rich tones, and crisp patterns. Our wool blankets add cozy warmth and a clean look to beds, sofas, and chairs.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Blankets: Premium Wool Throws | Williams Sonoma",
+                "url": "https://www.williams-sonoma.com/shop/home-pillows-throws/cotton-wool-throws/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:cuddledown.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Cuddledown",
+          "domain": "cuddledown.com",
+          "url": "https://www.cuddledown.com/shopcategory.aspx?ID=74%2C3262"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop Cuddledown for cozy and warm wool blankets and wool throws that provide comfort year-round. Wool is naturally temperature regulating and creates the perfect blanket. At Cuddledown you’ll find a fabulous selection of Wool. We take great pleasure in providing the best selections in Wool with new selections of Wool added seasonally. We hope that you enjoy our selection of Wool and continue to make Cuddledown your destination for Wool.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Blankets & Wool Throws - Cuddledown",
+                "url": "https://www.cuddledown.com/shopcategory.aspx?ID=74%2C3262"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/wool-blankets/4044_539103_4756_5185109_3958530"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop for Wool Blankets in Bed Blankets. Buy products such as Arcturus Military Wool Blanket - 4.5 lbs, Warm, Thick, Washable, Large 64&quot; x 88&quot; - Great for Camping, Outdoors, Sporting Events, and Survival Kits (Military Gray) at Walmart and save. Military Outdoor Clothing U.S. Style Wool 3-Pound Military Blanket",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Blankets in Bed Blankets - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/wool-blankets/4044_539103_4756_5185109_3958530"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:gallopguru.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Gallop Guru",
+          "domain": "gallopguru.com",
+          "url": "https://www.gallopguru.com/products/highland-cow-wool-blanket"
+        },
+        "matched_product": "",
+        "snippet": "We LOVE this Highland Cow Pure New Wool Throw. In 100% pure new wool, the blanket has a gorgeous soft feel with a lovely cream fringe at either end. Shop now. We LOVE this Highland Cow Pure New Wool Throw. In 100% pure new wool, the blanket has a gorgeous soft feel with a lovely cream fringe at either end. Shop now. The rug is reversible, mainly chocolate on one side and mainly cream on the other. This blanket would be perfect for so many things - from picnics to bedspreads, on the sofa or in the horse box. There is also a matching cushion available. If it's a highland cow gift you're after, you're spoilt for choice with our selection!",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Highland Cow Pure New Wool Throw | Homeware | Gallop Guru",
+                "url": "https://www.gallopguru.com/products/highland-cow-wool-blanket"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:parachutehome.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Parachute",
+          "domain": "parachutehome.com",
+          "url": "https://parachutehome.com/products/highland-wool-throw-natural"
+        },
+        "matched_product": "",
+        "snippet": "Warm and welcoming, this refined throw blanket is handwoven from pure highland wool. Known for its superior durability and warmth, highland wool comes from sheep who live way up in the Peruvian Highlands. With a ribbed texture and unexpected neutral hue, it looks chic draped across the bed or sofa. Handwoven by Peruvian artisans from 100% highland wool. Known for its superior durability and warmth, highland wool comes from sheep who live way up in the Peruvian Highlands. This blanket features fringe detailing and is yarn-dyed in two unexpected neutral hues.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "labor",
+            "polarity": "positive",
+            "claim": "Highland Wool Throw (Natural) – Parachute Home",
+            "source_url": "https://parachutehome.com/products/highland-wool-throw-natural",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Highland Wool Throw (Natural) – Parachute Home",
+                "url": "https://parachutehome.com/products/highland-wool-throw-natural"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 361,
+          "completion_tokens": 118,
+          "cost_usd": 0.00007622
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3848,
+          "completion_tokens": 1406,
+          "cost_usd": 0.00082052
+        }
+      ],
+      "llm_tokens": 5733,
+      "estimated_cost_usd": 0.020897
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "grateful-dyes.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "square.site",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "sewhavenltd.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "needleworksusa.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "hobbylobby.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "amanawoolenmill.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "macys.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "westelm.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

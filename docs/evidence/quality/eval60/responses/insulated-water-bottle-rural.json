@@ -1,0 +1,1505 @@
+{
+  "id": "insulated-water-bottle-rural",
+  "checked": "2026-09-24T05:18:30.426Z",
+  "request": {
+    "product": "insulated water bottle",
+    "city": "Galeton",
+    "state": "CO",
+    "lat": 40.54,
+    "lon": -104.44
+  },
+  "status": 200,
+  "elapsed_ms": 30428,
+  "body": {
+    "query": {
+      "product": "insulated water bottle",
+      "city": "Galeton",
+      "state": "CO",
+      "canonical_name": "insulated water bottle",
+      "category": "drinkware",
+      "online_queries": [
+        "buy insulated water bottle",
+        "vacuum insulated bottle shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "general store"
+      ]
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4YIZDM5FTIFCEAIRV5VRJUIS2YA6WJSEXAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Platte Basin Outdoors, LLC",
+          "domain": "plattebasinoutdoors.com",
+          "url": "https://plattebasinoutdoors.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "35494 Co Rd 55, Eaton, CO 80615",
+        "distance_km": 9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.466,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Platte Basin Outdoors, LLC",
+                "url": "https://plattebasinoutdoors.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.775,
+            "weight": 0.15,
+            "contribution": 0.116,
+            "sources": [
+              {
+                "label": "9 km from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4GPP4CTY4JVCEAPS53WY5QRC2YBIBHONXAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "JAX Fort Collins Outdoor Gear",
+          "domain": "jaxgoods.com",
+          "url": "https://jaxgoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1200 N College Ave, Fort Collins, CO 80524",
+        "distance_km": 54.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "JAX Fort Collins Outdoor Gear",
+                "url": "https://jaxgoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4BNVK5CN3SRCEBUS2FSQKWM22YBDIAGY3AAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "JAX Cheyenne Outdoor Gear, Farm & Ranch",
+          "domain": "jaxgoods.com",
+          "url": "https://jaxgoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1400 Dell Range Blvd, Cheyenne, WY 82009",
+        "distance_km": 75.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "JAX Cheyenne Outdoor Gear, Farm & Ranch",
+                "url": "https://jaxgoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4MUDOAVOF4JBUAXFBLER4YQS2YAETSXLBAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "FERAL - New and Used Outdoor Goods",
+          "domain": "liveferal.com",
+          "url": "https://liveferal.com/"
+        },
+        "matched_product": "",
+        "snippet": "sportevent",
+        "address": "3936 Tennyson St, Denver, CO 80212",
+        "distance_km": 99.7,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "FERAL - New and Used Outdoor Goods",
+                "url": "https://liveferal.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc43LUWELQEJNCEAYEUUC75ARC2YBZHTIPZAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "The Gearage",
+          "domain": "gearageoutdoorsports.com",
+          "url": "https://gearageoutdoorsports.com/"
+        },
+        "matched_product": "",
+        "snippet": "sportevent",
+        "address": "142 Remington St, Fort Collins, CO 80524",
+        "distance_km": 53.9,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The Gearage",
+                "url": "https://gearageoutdoorsports.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4KZDCHH2XGBCEAVNBQFMDMX22YCTT43W3JFEQRUY=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Estes Park Mountain Shop",
+          "domain": "estesparkmountainshop.com",
+          "url": "https://estesparkmountainshop.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2050 Big Thompson Ave, Estes Park, CO 80517",
+        "distance_km": 90.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Estes Park Mountain Shop",
+                "url": "https://estesparkmountainshop.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4WVCHRRM54JBUAJFSWT4DSPK2YAA7F2HXAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Out&Back Outdoor",
+          "domain": "outandbackoutdoor.com",
+          "url": "https://outandbackoutdoor.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop, building",
+        "address": "3869 Steele St Unit 1163, Denver, CO 80205",
+        "distance_km": 96.2,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Out&Back Outdoor",
+                "url": "https://outandbackoutdoor.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc45VSMWTJP4FBUA6SSEY23IQC2YC3MI4QMAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "General Store 45",
+          "domain": "generalstore45.com",
+          "url": "https://generalstore45.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1575 Boulder St D, Denver, CO 80211",
+        "distance_km": 99.5,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "General Store 45",
+                "url": "https://generalstore45.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 10
+      },
+      {
+        "id": "local:loc4HB3D6XMTZZBUBBBBXSDRKQK2YC5WJAZ2UAWUDVA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "General Store 45",
+          "domain": "generalstore45.com",
+          "url": "https://generalstore45.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store, fitness",
+        "address": "2479 Main St A, Littleton, CO 80120",
+        "distance_km": 114.1,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "General Store 45",
+                "url": "https://generalstore45.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 11
+      },
+      {
+        "id": "local:loc454SH3NP6AJBUBYDIY4GT7VC2YA25WGKKAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "The General Store",
+          "domain": "lcgeneralstore.com",
+          "url": "https://lcgeneralstore.com/"
+        },
+        "matched_product": "",
+        "snippet": "gift",
+        "address": "252 Colorado 149, 252 Gunnison Ave, Lake City, CO 81235",
+        "distance_km": 373.6,
+        "certifications": [],
+        "signals": [],
+        "score": 0.35,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "The General Store",
+                "url": "https://lcgeneralstore.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "rank": 12
+      }
+    ],
+    "online": [
+      {
+        "id": "online:kleankanteen.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Klean Kanteen",
+          "domain": "kleankanteen.com",
+          "url": "https://www.kleankanteen.com/collections/insulated-water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Our insulated water bottles and insulated coffee mugs are made to eliminate single-use with high-performance in mind. Our 64 oz insulated keeps drinks cold up to 145 hours iced! Our 20 oz insulated keeps drinks hot 17 hours! Our insulated water bottles and insulated coffee mugs are made to eliminate single-use with high-performance in mind. Our 64 oz insulated keeps drinks cold up to 145 hours iced! Our 20 oz insulated keeps drinks hot 17 hours! Shop your favorite insulated bottle or mug - styles, colors and caps from sports to straws. Stainless Steel Insulated Water Bottles Our full line of Climate Lock™ Vacuum Insulated stainless steel water bottles get rave reviews due to their high performance, durable construction and lifetime guarantee. Keeping drinks cold up to 145 hours, and hot up to 47 hours. Our full line of Climate Lock™ Vacuum Insulated stainless steel water bottles get rave reviews due to their high performance, durable construction and lifetime guarantee. Keeping drinks cold up to 145 hours, and hot up to 47 hours. From narrow profile Classic and Kid Kanteen to wide mouth TKWide and TKPro with pour through cap, we have bottle options, colors and sizes for any lifestyle. Pick up your favorite insulated bottle for water, coffee, tea, iced coffee, smoothies, juice or other drinks; iced cold or piping hot.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/klean-kanteen/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/klean-kanteen",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/klean-kanteen",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.85,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Steel Water Bottles and Coffee Mugs | Klean Kanteen",
+                "url": "https://www.kleankanteen.com/collections/insulated-water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/klean-kanteen/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/klean-kanteen"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/klean-kanteen"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/water-bottles/f/f-insulated"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Add Micro Hydro Vacuum Water Bottle with Screw Cap - 10 fl. oz. to Compare · Top RatedYETIRambler Vacuum Bottle with Chug Cap - 18 fl. oz. ... Add Rambler Vacuum Bottle with Chug Cap - 18 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 25 fl. Add Lightweight Wide-Mouth Vacuum Water Bottle with Flex Chug Cap - 24 fl. oz. to Compare · Staff PickBivoTrio Insulated Water Bottle - 21 fl. Add Lightweight Wide-Mouth Vacuum Water Bottle with Flex Chug Cap - 32 fl. oz. to Compare · CamelBakPodium Big Chill Insulated Water Bottle - 24 fl. Add Micro Hydro Vacuum Water Bottle with Screw Cap - 10 fl. oz. to Compare · Top RatedYETIRambler Vacuum Bottle with Chug Cap - 18 fl. oz. ... Add Rambler Vacuum Bottle with Chug Cap - 18 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 25 fl. Add Rambler Vacuum Water Bottle with Flip Chug Cap - 26 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 35 fl.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Water Bottles | REI Co-op",
+                "url": "https://www.rei.com/c/water-bottles/f/f-insulated"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:stanley1913.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Stanley 1913",
+          "domain": "stanley1913.com",
+          "url": "https://www.stanley1913.com/collections/water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Shop Stanley 1913 stainless steel water bottles. Explore our best insulated water bottles that keep water cold wherever you go. Free shipping on orders over $75! Our iconic insulated bottles start with two layers of stainless-steel metal. The air separating these layers is removed to create a vacuum. As a result of this highly efficient, double-wall vacuum insulation, beverages stay hotter or colder longer. Another great benefit: your Stanley 1913 water bottle is also designed to eliminate condensation when filled with a cold or iced drink. What is the best Stanley 1913 water bottle size for me? Stanley 1913's insulated, stainless-steel water bottles range in size from 25 oz–40 oz. For a streamlined design that fits easily into a backpack, bag, or car cup holder, look for a water bottle under 36 oz. When you've been keeping water icy cold for over a century, you learn what makes the best water bottle. We don't just specialize in making lasting stainless steel insulated water bottles for every trail, commute and adventure; we craft lifelong companions tough enough to keep your cool, literally. Insulated cups & mugs for hot morning coffee or evening tea. Water jugs for major hydration needs. Water bottle holders to keep your bottle secure and easy to access.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Stainless Steel Water Bottles – Stanley 1913",
+                "url": "https://www.stanley1913.com/collections/water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:bulktumblers.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bulk Tumblers",
+          "domain": "bulktumblers.com",
+          "url": "https://bulktumblers.com/collections/insulated-water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Blank and Powder Coated Stainless Steel Insulated Water Bottles, sold individually or by the case. Bulk Case Pricing - 32 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistan... 32 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ... 20 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ... 40 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ...",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Water Bottles — Bulk Tumblers",
+                "url": "https://bulktumblers.com/collections/insulated-water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:pcna.com",
+        "kind": "online",
+        "retailer": {
+          "name": "PCNA",
+          "domain": "pcna.com",
+          "url": "https://www.pcna.com/en-us/drinkware/vacuum-insulated/vacuum-insulated-bottles"
+        },
+        "matched_product": "insulated tumbler",
+        "snippet": "This bottle is made using a 91% recycled stainless steel liner and a 100% recycled plastic lid. Shopper Totes · See All Mugs · Ceramic Mugs · Metal Mugs · See All Tumblers · Tumblers With Straws · Travel Tumblers · See All Vacuum Insulated · Vacuum Insulated Bottles · Vacuum Insulated Mugs · Vacuum Insulated Tumblers · See All Blankets & Throws · This bottle is made from 90% post-consumer recycled 18/8 stainless steel. This bottle is made with a 91% recycled 18/8 stainless steel body and a 100% recycled plastic lid. This bottle is made using a 91% recycled stainless steel liner and a 100% recycled plastic lid.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Vacuum Insulated Bottles | PCNA",
+            "source_url": "https://www.pcna.com/en-us/drinkware/vacuum-insulated/vacuum-insulated-bottles",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Vacuum Insulated Bottles | PCNA",
+                "url": "https://www.pcna.com/en-us/drinkware/vacuum-insulated/vacuum-insulated-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:blockhuette.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Blockhuette",
+          "domain": "blockhuette.com",
+          "url": "https://www.blockhuette.com/collections/shop-double-vacuum-insulated-water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Innovative water bottles made from stainless steel",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Double Vacuum Insulated Water Bottles – Blockhütte US",
+                "url": "https://www.blockhuette.com/collections/shop-double-vacuum-insulated-water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:target.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://www.target.com/c/water-bottles-sports-outdoors/vacuum-insulated/-/N-5xt53Zoypno"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Shop now before they’re gone. ... Are you in search of the perfect water bottle to keep you hydrated on the go? Look no further! Our collection features a variety of options from trusted brands known for their quality and innovation in hydration solutions. Whether you need a durable steel water bottle, a vacuum-insulated thermos, or a convenient tumbler with a straw lid, we have something for everyone. Shop now before they’re gone. ... Are you in search of the perfect water bottle to keep you hydrated on the go? Look no further! Our collection features a variety of options from trusted brands known for their quality and innovation in hydration solutions. Whether you need a durable steel water bottle, a vacuum-insulated thermos, or a convenient tumbler with a straw lid, we have something for everyone. Made from high-quality materials like stainless steel, our bottles are designed to withstand the rigors of daily use. With features like wide mouths for easy filling and cleaning, vacuum insulation for temperature retention, and leak-proof lids, you can count on our products to keep your drinks hot or cold for hours. Stay hydrated with Target's water bottles and tumblers collection featuring top brands like Stanley and Owala. Find the perfect bottle for you. Shop now. A: Many of our bottles feature double-wall insulation, which helps keep drinks cold for up to 24 hours or hot for up to 12 hours.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Vacuum-Insulated : Water Bottles : Target",
+                "url": "https://www.target.com/c/water-bottles-sports-outdoors/vacuum-insulated/-/N-5xt53Zoypno"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:dickssportinggoods.com",
+        "kind": "online",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://www.dickssportinggoods.com/a/vacuum-insulated-water-bottle-0bfz33b.html"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Featured FavoritesGear Up for Golf SeasonThe Bogg ShopRain JacketsDSG SporthoodHouse of CleatsTurtlebox Portable SpeakersClose ... Stay hydrated on the go with our premium vacuum insulated water bottles. Featured FavoritesGear Up for Golf SeasonThe Bogg ShopRain JacketsDSG SporthoodHouse of CleatsTurtlebox Portable SpeakersClose ... Stay hydrated on the go with our premium vacuum insulated water bottles. Designed to keep your beverages hot or cold for hours, these bottles are perfect for any adventure, whether you're at the gym, hiking, or commuting. Stay hydrated on the go with our vacuum insulated water bottles. Designed for durability and temperature retention, these bottles are perfect for any adventure. Explore our collection at Dick's Sporting Goods today! Crafted from durable materials, they offer excellent insulation and resistance to spills, ensuring your drinks stay secure. With a variety of sizes and colors, you can find the ideal bottle to match your style. Experience the perfect blend of functionality and design with our vacuum insulated water bottles. Vacuum insulated water bottles are designed to keep beverages at their desired temperature for extended periods. They can keep drinks cold for up to 24 hours or hot for several hours, making them ideal for various activities like hiking, gym workouts, or daily commutes.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Vacuum Insulated Water Bottles | DICK'S Sporting Goods",
+                "url": "https://www.dickssportinggoods.com/a/vacuum-insulated-water-bottle-0bfz33b.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/insulated-water-bottles/4044_623679_639999_7751805_4269055_6031069"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Shop insulated water bottles designed for travel, outdoor activities, and daily hydration needs. Water Bottle Feature · Color · Material · Lifestage · Gender · Features · Cleaning Care and Maintenance · Availability · Departments · Deals · Customer Rating · Retailer · Gifting · Uses item details. Price when purchased online · Options · Sponsored ·",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Water Bottles for Travel and Outdoors - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/insulated-water-bottles/4044_623679_639999_7751805_4269055_6031069"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Sports-Outdoors-Water-Bottles/Insulated/N-5yc1vZcexkZ1z0lzhv"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Get free shipping on qualified Insulated Water Bottles products or Buy Online Pick Up in Store today in the Sports &amp; Outdoors Department.",
+        "address": null,
+        "distance_km": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated - Water Bottles - The Home Depot",
+                "url": "https://www.homedepot.com/b/Sports-Outdoors-Water-Bottles/Insulated/N-5yc1vZcexkZ1z0lzhv"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 362,
+          "completion_tokens": 121,
+          "cost_usd": 0.00007372
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3933,
+          "completion_tokens": 1390,
+          "cost_usd": 0.00078177
+        }
+      ],
+      "llm_tokens": 5806,
+      "estimated_cost_usd": 0.020855
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "gearjunkie.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "foodandwine.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "outdoorsgeek.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "jaxgoods.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "jaxgoods.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "shop-generalstore.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "twinlakesgs.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstorestockyards.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "thelocalgeneral.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstoreofminnetonka.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "uranusgeneralstore.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "shopcasa.org",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "zojirushi.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "kelloggsupplyco.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}
