@@ -96,7 +96,7 @@ async function run(): Promise<void> {
     }
 
     renderFooter(cost, outcome.data.usage);
-    if (outcome.data.local.length === 0 && outcome.data.online.length === 0) {
+    if (outcome.data.local.length === 0 && !outcome.data.local_farther?.length && outcome.data.online.length === 0) {
       return renderStatus(status, { kind: 'no_results', product: text });
     }
     current = outcome.data;

@@ -21,6 +21,15 @@ export const MAX_LOCAL_QUERIES = 2;
 export const MAX_RESULTS_PER_SECTION = 10;
 export const MAX_DROPPED = 60;
 export const MAX_BRANCHES_PER_DOMAIN = 2;
+export const MAX_FARTHER = 3;
+export const MAX_LOCAL_MILES = 100;
+const KM_PER_MILE = 1.609344;
+
+// RUCA 1-3 is metropolitan; 4-10 (micropolitan, small town, rural) spreads shops farther apart.
+// A zip with no code gets the metropolitan radius.
+export function nearRadiusMiles(ruca: number | undefined): number {
+  return ruca !== undefined && ruca >= 4 ? 30 : 10;
+}
 
 const negativeSourceDomains: ReadonlySet<string> = new Set(registry.sources.map((s) => s.domain));
 
@@ -202,7 +211,7 @@ export function scrubSources(row: ScoredRow): ScoredRow {
 
 // A chain's many nearby branches would otherwise fill the local section and push out
 // independent shops; the nearest two show that the chain is close.
-function rankedSection(rows: ScoredRow[], kind: ResultKind): { top: SearchResult[]; cut: Dropped[] } {
+function rankedSection(rows: ScoredRow[], kind: ResultKind, limit = MAX_RESULTS_PER_SECTION): { top: SearchResult[]; cut: Dropped[] } {
   const perDomain = new Map<string, number>();
   const cut: Dropped[] = [];
   const kept = rankByScore(rows.map((r) => r.result).filter((r) => r.kind === kind)).filter((r) => {
@@ -213,8 +222,8 @@ function rankedSection(rows: ScoredRow[], kind: ResultKind): { top: SearchResult
     cut.push({ kind, domain: r.retailer.domain, reason: 'branch_cap' });
     return false;
   });
-  for (const r of kept.slice(MAX_RESULTS_PER_SECTION)) cut.push({ kind, domain: r.retailer.domain, reason: 'below_top_10' });
-  return { top: kept.slice(0, MAX_RESULTS_PER_SECTION), cut };
+  for (const r of kept.slice(limit)) cut.push({ kind, domain: r.retailer.domain, reason: 'below_top_10' });
+  return { top: kept.slice(0, limit), cut };
 }
 
 // The second blocklist pass: whatever entered after the first one (enrichment, a model reply,
@@ -225,18 +234,28 @@ export function finalizeResponse(
   const final = filterBlocked(scored, (r) => r.result.retailer)
     .filter((r) => !hasBlockedText(r))
     .map(scrubSources);
-  const local = rankedSection(final, 'local');
+  // Shops past the nearby radius are shown apart, a few at most, so they never push out a nearby
+  // shop; past MAX_LOCAL_MILES they are dropped. A place without coordinates counts as nearby.
+  const nearMiles = nearRadiusMiles(req.ruca);
+  const miles = (r: ScoredRow) => (r.result.distance_km ?? 0) / KM_PER_MILE;
+  const localRows = final.filter((r) => r.result.kind === 'local');
+  const tooFar = localRows.filter((r) => miles(r) > MAX_LOCAL_MILES);
+  const inRange = localRows.filter((r) => miles(r) <= MAX_LOCAL_MILES);
+  const local = rankedSection(inRange.filter((r) => miles(r) <= nearMiles), 'local');
+  const farther = rankedSection(inRange.filter((r) => miles(r) > nearMiles), 'local', MAX_FARTHER);
   const online = rankedSection(final, 'online');
+  const tooFarDrops = tooFar.map((r): Dropped => ({ kind: 'local', domain: r.result.retailer.domain, reason: 'too_far' }));
   // Category drops go last so the cap cuts them before the cuts an evaluation needs.
   const late = (d: Dropped) => Number(d.reason === 'place_category');
-  const allDropped = [...dropped, ...local.cut, ...online.cut].sort((a, b) => late(a) - late(b));
+  const allDropped = [...dropped, ...local.cut, ...farther.cut, ...tooFarDrops, ...online.cut].sort((a, b) => late(a) - late(b));
   return {
     query: {
       product: req.product, city: req.city, state: req.state, canonical_name: n.canonical_name, category: n.category,
-      online_queries: n.online_queries, local_queries: n.local_queries,
+      online_queries: n.online_queries, local_queries: n.local_queries, near_radius_mi: nearMiles,
     },
     weights: WEIGHTS,
     local: local.top,
+    local_farther: farther.top.map((r, i) => ({ ...r, rank: local.top.length + i + 1 })),
     online: online.top,
     usage,
     // Every entry already passed the blocklist (pass 1, or placeCategoryDrops), but the list is checked again like everything else shown.

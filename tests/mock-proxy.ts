@@ -27,8 +27,21 @@ const env: Env = {
 // A fresh fixture fetch per search: web results alternate by call count, and a shared
 // counter would make the second search in a run differ from the first. The base fetch
 // matches nothing, so no code path can reach a live API.
+// The place fixture sits around Springfield, IL; it is moved to the searched point, keeping
+// each shop's offset, so the browser test's zip gets nearby shops rather than ones too far to show.
+const FIXTURE_ORIGIN = { lat: 39.78, lon: -89.65 };
+function placesAround(url: URL) {
+  const dLat = Number(url.searchParams.get('latitude')) - FIXTURE_ORIGIN.lat;
+  const dLon = Number(url.searchParams.get('longitude')) - FIXTURE_ORIGIN.lon;
+  const results = place1.results.map((r) => (r.coordinates ? { ...r, coordinates: [r.coordinates[0]! + dLat, r.coordinates[1]! + dLon] } : r));
+  return { ...place1, results };
+}
+const routes = () => defaultRoutes().map((route) => (route.match(new URL('https://api.search.brave.com/res/v1/local/place_search'))
+  ? { ...route, respond: (u: URL) => ({ body: placesAround(u) }) }
+  : route));
+
 const handle = createHandler(
-  (req, e, deps) => runSearch(req, e, { ...deps, fetch: makeFixtureFetch(defaultRoutes()) }),
+  (req, e, deps) => runSearch(req, e, { ...deps, fetch: makeFixtureFetch(routes()) }),
   { fetch: makeFixtureFetch([]), now: Date.now, log: () => {} },
 );
 

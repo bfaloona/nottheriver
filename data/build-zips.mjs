@@ -1,4 +1,5 @@
-// Builds public/zips.json from the Census ZCTA Gazetteer and GeoNames postal files in data/raw/.
+// Builds public/zips.json from the Census ZCTA Gazetteer, GeoNames postal files and the ERS RUCA
+// ZIP code file in data/raw/.
 // Sources, download steps, and attribution: data/README.md.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
@@ -31,7 +32,22 @@ function placeNames(geonamesTexts) {
   return places;
 }
 
-export function join(gazetteerText, geonamesTexts) {
+// Primary RUCA code by ZIP; the Worker uses it to pick how far counts as nearby.
+function rucaCodes(text) {
+  const codes = new Map();
+  const [header, ...rows] = lines(text);
+  const iCode = header.split(',').indexOf('PrimaryRUCA');
+  if (iCode < 0) throw new Error('RUCA header has no PrimaryRUCA column');
+  for (const row of rows) {
+    const fields = row.split(',');
+    const code = Number(fields[iCode]);
+    if (!(Number.isInteger(code) && code >= 1 && code <= 10)) throw new Error(`bad RUCA code for ${fields[0]}: ${fields[iCode]}`);
+    codes.set(fields[0], code);
+  }
+  return codes;
+}
+
+export function join(gazetteerText, geonamesTexts, rucaText) {
   const [header, ...rows] = lines(gazetteerText);
   // 2026 is pipe-delimited; earlier vintages were tab-delimited with padded fields.
   const delimiter = header.includes('|') ? '|' : '\t';
@@ -42,7 +58,8 @@ export function join(gazetteerText, geonamesTexts) {
     return i;
   });
   const places = placeNames(geonamesTexts);
-  const out = { zip: [], city: [], state: [], lat: [], lon: [] };
+  const ruca = rucaText === undefined ? null : rucaCodes(rucaText);
+  const out = { zip: [], city: [], state: [], lat: [], lon: [], ...(ruca ? { ruca: [] } : {}) };
   const missing = [];
 
   for (const row of rows) {
@@ -66,6 +83,8 @@ export function join(gazetteerText, geonamesTexts) {
     out.state.push(place.state);
     out.lat.push(round2(lat));
     out.lon.push(round2(lon));
+    // A few ZCTAs have no RUCA row; the Worker treats a missing code as metropolitan.
+    if (ruca) out.ruca.push(ruca.get(zip) ?? null);
   }
   if (missing.length) throw new Error(`ZCTAs with no GeoNames row: ${missing.join(', ')}`);
   return out;
@@ -76,6 +95,7 @@ function main() {
   const data = join(
     read('2026_Gaz_zcta_national.txt'),
     GEONAMES.map((cc) => read(`${cc}.txt`)),
+    read('ruca2020.csv'),
   );
   if (data.zip.length !== EXPECTED_ROWS) {
     throw new Error(`expected ${EXPECTED_ROWS} rows, got ${data.zip.length}`);

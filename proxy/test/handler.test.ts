@@ -318,6 +318,10 @@ describe('request validation', () => {
     ['city with digits', { ...VALID, city: 'Springfield 2' }],
     ['lat with 3 decimals', { ...VALID, lat: 39.801 }],
     ['lon as a string', { ...VALID, lon: '-89.65' }],
+    ['RUCA code 0', { ...VALID, ruca: 0 }],
+    ['RUCA code 11', { ...VALID, ruca: 11 }],
+    ['fractional RUCA code', { ...VALID, ruca: 2.5 }],
+    ['RUCA code as a string', { ...VALID, ruca: '1' }],
     ['missing lon', { product: 'x', city: 'Springfield', state: 'IL', lat: 1 }],
     ['an array', [VALID]],
     ['null', null],
@@ -334,6 +338,13 @@ describe('request validation', () => {
   it('rejects malformed JSON with 400', async () => {
     const { handle } = setup();
     expect((await handle(req({ body: '{"product":' }), makeEnv())).status).toBe(400);
+  });
+
+  it('passes an optional RUCA code through, and leaves it out when absent or null', () => {
+    expect(parseSearchRequest({ ...VALID, ruca: 10 })).toEqual({ ...VALID, ruca: 10 });
+    expect(parseSearchRequest({ ...VALID, ruca: 1 })).toEqual({ ...VALID, ruca: 1 });
+    expect(parseSearchRequest({ ...VALID, ruca: null })).toEqual(VALID);
+    expect(parseSearchRequest(VALID)).toEqual(VALID);
   });
 
   it('trims product and city and accepts every territory code', () => {

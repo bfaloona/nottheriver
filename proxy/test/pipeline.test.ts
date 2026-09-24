@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import certifications from '../../data/certifications.json';
 import negatives from '../../data/negatives.json';
 import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl } from '../src/blocklist';
-import type { Candidate, Certification, Env, SearchRequest, SearchResponse, Signal } from '../src/contract';
+import type { Candidate, Certification, Env, SearchRequest, SearchResponse, SearchResult, Signal } from '../src/contract';
 import { enrichAll, type EnrichedRow } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
 import { MAX_BRAVE_CALLS } from '../src/brave';
@@ -153,13 +153,54 @@ describe('runSearch over the fixtures', () => {
       kind: 'local', name: `Ace ${i}`, domain: 'acehardware.com', url: `https://www.acehardware.com/store-details/${i}`,
       address: `${i} Main St`, lat: 39.78, lon: -89.65, place_id: `p${i}`,
     })));
-    const other = row(candidate({ kind: 'local', name: 'Pan Shop', domain: 'panshop.example', url: 'https://panshop.example/', address: '9 Elm St', lat: 39.9, lon: -89.9, place_id: 'q' }));
+    const other = row(candidate({ kind: 'local', name: 'Pan Shop', domain: 'panshop.example', url: 'https://panshop.example/', address: '9 Elm St', lat: 39.82, lon: -89.7, place_id: 'q' }));
     const res = finalizeResponse(scoreAll([...branches, other], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
     expect(res.local.filter((r) => r.retailer.domain === 'acehardware.com')).toHaveLength(2);
     expect(res.local.map((r) => r.retailer.domain)).toContain('panshop.example');
     expect((res.dropped ?? []).filter((d) => d.reason === 'branch_cap')).toEqual(
       Array.from({ length: 3 }, () => ({ kind: 'local', domain: 'acehardware.com', reason: 'branch_cap' })),
     );
+  });
+
+  describe('distance tiers', () => {
+    // 1 degree of latitude is about 69 mi, so these sit roughly 5, 15, 45 and 150 mi north of REQ.
+    const at = (name: string, miles: number) => row(candidate({
+      kind: 'local', name, domain: `${name.toLowerCase()}.example`, url: `https://${name.toLowerCase()}.example/`,
+      address: '1 Main St', lat: REQ.lat + miles / 69, lon: REQ.lon, place_id: name,
+    }));
+    const rows = [at('Five', 5), at('Fifteen', 15), at('FortyFive', 45), at('OneFifty', 150)];
+    const run = (req: SearchRequest) => finalizeResponse(scoreAll(rows, NORMALIZED, req, ENV.SITE_URL), NORMALIZED, req, NO_USAGE);
+    const names = (list: SearchResult[] | undefined) => (list ?? []).map((r) => r.retailer.name);
+
+    it('shows metro shops within 10 mi as nearby, farther ones apart, and drops those over 100 mi', () => {
+      const res = run({ ...REQ, ruca: 1 });
+      expect(res.query.near_radius_mi).toBe(10);
+      expect(names(res.local)).toEqual(['Five']);
+      expect(names(res.local_farther)).toEqual(['Fifteen', 'FortyFive']);
+      expect(res.dropped).toContainEqual({ kind: 'local', domain: 'onefifty.example', reason: 'too_far' });
+      expect(names([...res.local, ...(res.local_farther ?? [])])).not.toContain('OneFifty');
+    });
+
+    it('treats RUCA 4 to 10 as rural, with a 30 mi nearby radius', () => {
+      for (const ruca of [4, 10]) {
+        const res = run({ ...REQ, ruca });
+        expect(res.query.near_radius_mi).toBe(30);
+        expect(names(res.local)).toEqual(['Five', 'Fifteen']);
+        expect(names(res.local_farther)).toEqual(['FortyFive']);
+      }
+      expect(run({ ...REQ, ruca: 3 }).query.near_radius_mi).toBe(10);
+    });
+
+    it('uses the metro radius when the zip has no RUCA code', () => {
+      expect(run(REQ).query.near_radius_mi).toBe(10);
+    });
+
+    it('shows at most 3 farther shops, numbered after the nearby ones', () => {
+      const many = [at('Near', 2), ...Array.from({ length: 5 }, (_, i) => at(`Far${i}`, 20 + i))];
+      const res = finalizeResponse(scoreAll(many, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+      expect(res.local_farther).toHaveLength(3);
+      expect(res.local_farther!.map((r) => r.rank)).toEqual([2, 3, 4]);
+    });
   });
 
   it('makes one Brave call per query and reports usage and cost', async () => {

@@ -2,11 +2,13 @@
 
 ## Zip dataset (`public/zips.json`)
 
-Built by `data/build-zips.mjs` from two sources. The file contains, for every 2020 ZIP Code Tabulation Area (ZCTA), the ZCTA code, a place name, a state or territory abbreviation, and the ZCTA internal-point coordinates rounded to two decimal places (about 1 km). The browser fetches it on first search and converts the typed zip to city, state, and those coordinates; the zip itself never leaves the browser.
+Built by `data/build-zips.mjs` from three sources. The file contains, for every 2020 ZIP Code Tabulation Area (ZCTA), the ZCTA code, a place name, a state or territory abbreviation, the ZCTA internal-point coordinates rounded to two decimal places (about 1 km), and the primary RUCA code (`ruca`, 1 to 10, or null for the 4 ZCTAs the RUCA file lacks). The browser fetches it on first search and converts the typed zip to city, state, and those coordinates; the zip itself never leaves the browser.
 
 **Coordinates and ZCTA list:** U.S. Census Bureau, "ZIP Code Tabulation Areas," Gazetteer Files, 2026, https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip, accessed 2026-09-23. Record layout: https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html. Work of the U.S. Government, not subject to copyright in the United States (17 U.S.C. §105).
 
 **Place and state names:** GeoNames postal code data, https://download.geonames.org/export/zip/ (files US.zip, PR.zip, VI.zip, GU.zip, AS.zip, MP.zip), accessed 2026-09-23. Licensed under the Creative Commons Attribution 4.0 International License, https://creativecommons.org/licenses/by/4.0/ (terms: https://download.geonames.org/export/zip/readme.txt). GeoNames coordinates are not used.
+
+**Rural-urban codes:** USDA Economic Research Service, 2020 Rural-Urban Commuting Area Codes, ZIP code file, https://www.ers.usda.gov/media/5444/2020-rural-urban-commuting-area-codes-zip-codes.csv?v=96534, accessed 2026-09-23; documentation https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/documentation. Work of the U.S. Government, not subject to copyright in the United States (17 U.S.C. §105). Only `PrimaryRUCA` is used; the search Worker uses it to choose how far counts as nearby ([ranking.md](../docs/ranking.md#distance-groups)).
 
 **Changes made:** joined on the 5-digit code, kept only codes that are 2020 ZCTAs, dropped all columns except place name and state, took the state from the country code for PR, VI, GU, AS and MP, chose the row with a state code where GeoNames lists a code twice, and rounded Census coordinates to two decimals. Not all USPS ZIP Codes are ZCTAs (PO-box-only and single-organization codes usually are not), so some valid ZIP Codes are absent and the site reports them as not found.
 
@@ -23,11 +25,12 @@ All downloaded 2026-09-23; the Census file's Last-Modified header was 2026-09-08
 | GeoNames GU | https://download.geonames.org/export/zip/GU.zip | c22ce7a3518761016d8f576edc0eebed7dabd4b3bfe88f86dac3dd1d733c5073 |
 | GeoNames AS | https://download.geonames.org/export/zip/AS.zip | ff8f6971cbb94c763b35c125d20d654a95611b38503b113a4ceb1a1b14867faa |
 | GeoNames MP | https://download.geonames.org/export/zip/MP.zip | c97a27acfa70b6a5798b25314063beca428b867ea438cfc8fdb8c1471f0294aa |
+| ERS 2020 RUCA ZIP codes (a .csv, not a .zip) | https://www.ers.usda.gov/media/5444/2020-rural-urban-commuting-area-codes-zip-codes.csv?v=96534 | b7fce586b30bc89aee4219cd06cf319c35186773250297b0a83efdedfd79b095 |
 
 ### Output (build of 2026-09-23)
 
 - 33,791 rows (every ZCTA in the Gazetteer; the build fails if any lacks a GeoNames place name or if the count changes).
-- 1,266,692 bytes raw; 317,402 bytes with `gzip -9`. Actual transfer size depends on the host's compression.
+- 1,344,215 bytes raw; 330,531 bytes with `gzip -9` (rebuilt 2026-09-24 to add `ruca`). Actual transfer size depends on the host's compression.
 - All place names are ASCII.
 
 ### Rebuild
@@ -38,7 +41,8 @@ The raw files are not committed (`data/raw/` is gitignored). From the repo root:
 mkdir -p data/raw
 curl -fsSLo data/raw/gaz.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip
 for cc in US PR VI GU AS MP; do curl -fsSLo data/raw/$cc.zip https://download.geonames.org/export/zip/$cc.zip; done
-shasum -a 256 data/raw/*.zip
+curl -fsSLo data/raw/ruca2020.csv 'https://www.ers.usda.gov/media/5444/2020-rural-urban-commuting-area-codes-zip-codes.csv?v=96534'
+shasum -a 256 data/raw/*.zip data/raw/ruca2020.csv
 for z in data/raw/*.zip; do unzip -o -d data/raw "$z"; done
 npm run build:zips
 ```

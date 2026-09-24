@@ -7,6 +7,7 @@ export interface SearchRequest {
   state: string;   // 2-letter USPS code, 56 accepted (50 states, DC, PR, VI, GU, AS, MP)
   lat: number;     // ZCTA centroid, 2 decimals
   lon: number;     // ZCTA centroid, 2 decimals
+  ruca?: number;   // primary RUCA code of the zip, 1..10; picks the nearby radius. Absent when unknown
 }
 
 export type ResultKind = 'local' | 'online';
@@ -82,15 +83,17 @@ export interface Usage {
 
 // What a precision filter removed or the top-10 cut left out, so an evaluation can tell a
 // dropped shop from one never found. Domain only: no name, address or coordinates.
-export interface Dropped { kind: ResultKind; domain: string; reason: 'place_category' | 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' | 'branch_cap' }
+export interface Dropped { kind: ResultKind; domain: string; reason: 'place_category' | 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' | 'branch_cap' | 'too_far' }
 
 export interface SearchResponse {
   query: {
     product: string; city: string; state: string; canonical_name: string; category: string;
     online_queries?: string[]; local_queries?: string[];
+    near_radius_mi?: number; // local results within this distance are "nearby"
   };
   weights: Record<ComponentName, number>;
-  local: SearchResult[];  // <= 10
+  local: SearchResult[];  // <= 10, within near_radius_mi
+  local_farther?: SearchResult[]; // <= 3, past near_radius_mi and within 100 mi, ranked after local
   online: SearchResult[]; // <= 10
   usage: Usage;
   dropped?: Dropped[];

@@ -54,6 +54,18 @@ Ethics and environment start at 0.5, not 0: a shop with no certification and no 
 
 For a shop near you: `max(0, 1 − distance_km / 40)`. Distance is the straight-line (haversine) distance from the center of your zip area to the shop's coordinates, rounded to 0.1 km before scoring so you can recompute the value from what is shown (the page displays miles). A shop with no coordinates, or 40 km (about 25 miles) or more away, gets 0 and the component is hidden. Online retailers get a fixed 0.5.
 
+## Distance groups
+
+Shops are split by distance from the center of your zip area before the top 10 is chosen:
+
+| Group | Metropolitan zip (RUCA 1 to 3, or no code) | Other zip (RUCA 4 to 10) |
+|---|---|---|
+| Near you, up to 10 shops | within 10 mi | within 30 mi |
+| Farther away, up to 3 shops, listed after the nearby ones | 10 to 100 mi | 30 to 100 mi |
+| Not shown (`dropped`, reason `too_far`) | over 100 mi | over 100 mi |
+
+The RUCA code is the zip's primary Rural-Urban Commuting Area code from USDA ERS ([data/README.md](../data/README.md)): 1 to 3 are metropolitan areas, 4 to 6 micropolitan, 7 to 9 small towns, 10 rural. The quality evaluation's zips have codes 1 and 10 only, so the thresholds are untested for 2 to 9. On the 20 graded searches of 2026-09-24, every good local shop in a metropolitan zip was within 10 mi; in rural zips 12 of 19 good shops were within 30 mi, 6 more within 100 mi, and one at 143 mi.
+
 ## Certifications
 
 Curated in `data/certifications.json`; every row has a source URL and a check date.

@@ -109,7 +109,7 @@ export function parseSearchRequest(value: unknown): SearchRequest | null {
   if (!validateAgainst('search-request', trimmed).ok) return null;
   const req = trimmed as unknown as SearchRequest;
   if (!STATES.has(req.state) || !twoDecimals(req.lat) || !twoDecimals(req.lon)) return null;
-  return { product: req.product, city: req.city, state: req.state, lat: req.lat, lon: req.lon };
+  return { product: req.product, city: req.city, state: req.state, lat: req.lat, lon: req.lon, ...(req.ruca != null && { ruca: req.ruca }) };
 }
 
 export function createHandler(runSearch: RunSearch, deps: Deps) {

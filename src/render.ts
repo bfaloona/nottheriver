@@ -170,6 +170,22 @@ export function renderWeights(weights: SearchResponse['weights']): HTMLParagraph
   );
 }
 
+interface Farther { all: SearchResult[]; shown: SearchResult[]; nearMiles: number | undefined }
+
+// Shops past the nearby radius, listed after the nearby ones inside the same section.
+function fartherGroup(farther: Farther, config: RenderConfig): HTMLElement | null {
+  if (farther.shown.length === 0) return null;
+  const known = farther.shown.flatMap((r) => (r.distance_km === null ? [] : [r.distance_km]));
+  const span = known.length ? `, ${formatDistance(Math.min(...known)).replace(' mi', '')} to ${formatDistance(Math.max(...known))} away` : '';
+  return el(
+    'div',
+    { data: { farther: '' } },
+    el('h3', {}, 'Farther away'),
+    el('p', { className: 'section-note' }, plural(farther.shown.length, 'shop', 'shops') + span),
+    el('ol', { className: 'results' }, ...farther.shown.map((r) => renderResult(r, config))),
+  );
+}
+
 function section(
   key: 'near' | 'online',
   heading: string,
@@ -177,9 +193,12 @@ function section(
   shown: SearchResult[],
   enabled: boolean,
   config: RenderConfig,
+  farther?: Farther,
 ): HTMLElement {
   let note: string;
-  if (all.length === 0) {
+  if (all.length === 0 && farther?.all.length) {
+    note = `No shops within ${farther.nearMiles ?? 10} mi matched. Farther shops are below.`;
+  } else if (all.length === 0) {
     note = key === 'near' ? 'No shops nearby matched. Online results are below.' : 'No online retailers matched.';
   } else if (shown.length === 0) {
     note = 'Every result here is hidden by the filters.';
@@ -196,6 +215,7 @@ function section(
     el('h2', { id }, heading),
     el('p', { className: 'section-note' }, note),
     el('ol', { className: 'results' }, ...shown.map((r) => renderResult(r, config))),
+    ...(farther ? [fartherGroup(farther, config)].filter((g): g is HTMLElement => g !== null) : []),
   );
   node.setAttribute('aria-labelledby', id);
   node.hidden = !enabled;
@@ -210,14 +230,17 @@ export function renderResults(
   view: View = defaultView,
 ): number {
   const shownLocal = sortResults(filterResults(response.local, view), view.sort);
+  const fartherAll = response.local_farther ?? [];
+  const shownFarther = sortResults(filterResults(fartherAll, view), view.sort);
   const shownOnline = sortResults(filterResults(response.online, view), view.sort);
+  const farther = { all: fartherAll, shown: shownFarther, nearMiles: response.query.near_radius_mi };
   root.replaceChildren(
     renderWeights(response.weights),
-    section('near', 'Near you', response.local, shownLocal, view.near, config),
+    section('near', 'Near you', response.local, shownLocal, view.near, config, farther),
     section('online', 'Online', response.online, shownOnline, view.online, config),
   );
   wirePopovers(root);
-  return shownLocal.length + shownOnline.length;
+  return shownLocal.length + shownFarther.length + shownOnline.length;
 }
 
 function statusText(status: Status): string {

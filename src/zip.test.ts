@@ -19,8 +19,8 @@ describe('parseZip', () => {
 
 describe('lookupZip', () => {
   it('returns city, state, and centroid, keeping leading zeros', () => {
-    expect(lookupZip('02138', data)).toEqual({ city: 'Cambridge', state: 'MA', lat: 42.38, lon: -71.14 });
-    expect(lookupZip('00601', data)).toEqual({ city: 'Adjuntas', state: 'PR', lat: 18.18, lon: -66.75 });
+    expect(lookupZip('02138', data)).toEqual({ city: 'Cambridge', state: 'MA', lat: 42.38, lon: -71.14, ruca: 1 });
+    expect(lookupZip('00601', data)).toEqual({ city: 'Adjuntas', state: 'PR', lat: 18.18, lon: -66.75, ruca: 10 });
   });
 
   it('handles territories on both sides of the equator and the date line', () => {

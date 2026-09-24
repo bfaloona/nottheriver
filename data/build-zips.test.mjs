@@ -19,6 +19,13 @@ const US = [
 ].join('\n');
 const PR = 'PR\t00601\tAdjuntas\tAdjuntas\t001\t\t\t\t\t18.1627\t-66.7221\t4';
 const AS = 'AS\t96799\tPago Pago\tAs\t\t\t\t\t\t-14.2781\t-170.7025\t6';
+// Verbatim lines from the ERS 2020 RUCA ZIP code file; 96860 is left out to test a missing code.
+const RUCA = [
+  'ZIPCode,State,ZIPCodeType,POName,PrimaryRUCA,SecondaryRUCA',
+  '00601,PR,ZIP Code Area,Adjuntas,10,10',
+  '02138,MA,ZIP Code Area,Cambridge,1,1',
+  '96799,AS,ZIP Code Area,Pago Pago,4,4',
+].join('\n');
 
 describe('join', () => {
   it('builds columnar rows in Gazetteer order', () => {
@@ -29,6 +36,14 @@ describe('join', () => {
       lat: [18.18, 42.38, -14.32, 21.36],
       lon: [-66.75, -71.14, -170.75, -157.95],
     });
+  });
+
+  it('adds the primary RUCA code per ZCTA, null where the file has none', () => {
+    expect(join(GAZ, [US, PR, AS], RUCA).ruca).toEqual([10, 1, 4, null]);
+  });
+
+  it('fails on a RUCA code outside 1 to 10', () => {
+    expect(() => join(GAZ, [US, PR, AS], RUCA.replace('Cambridge,1,1', 'Cambridge,99,1'))).toThrow(/RUCA/);
   });
 
   it('reads a tab-delimited Gazetteer with padded fields', () => {
@@ -85,7 +100,8 @@ describe('committed public/zips.json', () => {
   const sample = JSON.parse(readFileSync(new URL('../tests/fixtures/zips-sample.json', import.meta.url), 'utf8'));
 
   it('has one full-length column per field and 2-decimal coordinates', () => {
-    for (const key of ['zip', 'city', 'state', 'lat', 'lon']) expect(data[key]).toHaveLength(EXPECTED_ROWS);
+    for (const key of ['zip', 'city', 'state', 'lat', 'lon', 'ruca']) expect(data[key]).toHaveLength(EXPECTED_ROWS);
+    expect(data.ruca.every((c) => c === null || (Number.isInteger(c) && c >= 1 && c <= 10))).toBe(true);
     const twoDecimals = (x) => Math.round(x * 100) / 100 === x;
     expect(data.lat.every(twoDecimals) && data.lon.every(twoDecimals)).toBe(true);
   });
@@ -93,7 +109,7 @@ describe('committed public/zips.json', () => {
   it('contains every sample fixture row verbatim', () => {
     const row = (d, zip) => {
       const i = d.zip.indexOf(zip);
-      return i < 0 ? null : { city: d.city[i], state: d.state[i], lat: d.lat[i], lon: d.lon[i] };
+      return i < 0 ? null : { city: d.city[i], state: d.state[i], lat: d.lat[i], lon: d.lon[i], ruca: d.ruca[i] };
     };
     for (const zip of sample.zip) expect(row(data, zip)).toEqual(row(sample, zip));
   });

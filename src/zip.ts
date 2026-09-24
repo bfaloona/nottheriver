@@ -1,5 +1,6 @@
-export interface ZipDataset { zip: string[]; city: string[]; state: string[]; lat: number[]; lon: number[] }
-export interface ZipLocation { city: string; state: string; lat: number; lon: number }
+export interface ZipDataset { zip: string[]; city: string[]; state: string[]; lat: number[]; lon: number[]; ruca: (number | null)[] }
+// ruca is the zip's primary RUCA code (1..10), absent when the source has none.
+export interface ZipLocation { city: string; state: string; lat: number; lon: number; ruca?: number }
 
 // \d never matches non-ASCII digits in JavaScript, so fullwidth digits are rejected.
 const FIVE_DIGITS = /^\d{5}$/;
@@ -19,7 +20,8 @@ export function lookupZip(zip: string, data: ZipDataset): ZipLocation | null {
   }
   const i = index.get(zip);
   if (i === undefined) return null;
-  return { city: data.city[i]!, state: data.state[i]!, lat: data.lat[i]!, lon: data.lon[i]! };
+  const ruca = data.ruca[i];
+  return { city: data.city[i]!, state: data.state[i]!, lat: data.lat[i]!, lon: data.lon[i]!, ...(ruca != null && { ruca }) };
 }
 
 const loads = new Map<string, Promise<ZipDataset>>();

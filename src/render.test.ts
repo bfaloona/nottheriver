@@ -176,6 +176,29 @@ describe('section notes', () => {
     expect(near.querySelector('.section-note')!.textContent).toBe('No shops nearby matched. Online results are below.');
   });
 
+  it('names the nearby radius when no shop is within it', () => {
+    const el = document.createElement('div');
+    const far = { ...response.local[0]!, rank: 1, distance_km: 40 };
+    renderResults({ ...response, query: { ...response.query, near_radius_mi: 10 }, local: [], local_farther: [far] }, el, config);
+    const near = el.querySelector<HTMLElement>('[data-section="near"]')!;
+    expect(near.querySelector('.section-note')!.textContent).toBe('No shops within 10 mi matched. Farther shops are below.');
+  });
+
+  it('lists farther shops under their own heading inside the nearby section, counted as visible', () => {
+    const el = document.createElement('div');
+    const far = [{ ...response.local[0]!, id: 'far1', rank: 3, distance_km: 24.1 }, { ...response.local[1]!, id: 'far2', rank: 4, distance_km: 72.4 }];
+    const shown = renderResults({ ...response, local_farther: far }, el, config);
+    const group = el.querySelector<HTMLElement>('[data-section="near"] [data-farther]')!;
+    expect(group.querySelector('h3')!.textContent).toBe('Farther away');
+    expect(group.querySelector('.section-note')!.textContent).toBe('2 shops, 15 to 45 mi away');
+    expect([...group.querySelectorAll('.rank')].map((r) => r.textContent)).toEqual(['3', '4']);
+    expect(shown).toBe(response.local.length + response.online.length + 2);
+  });
+
+  it('shows no farther heading when there are no farther shops', () => {
+    expect(root.querySelector('[data-farther]')).toBeNull();
+  });
+
   it('hides a section the view turns off and reports what is visible', () => {
     const el = document.createElement('div');
     const shown = renderResults(response, el, config, { sort: 'score', near: false, online: true, certifiedOnly: true });

@@ -48,11 +48,13 @@
       "required": ["product", "city", "state", "canonical_name", "category"],
       "properties": { "product": { "type": "string" }, "city": { "type": "string" }, "state": { "type": "string" }, "canonical_name": { "type": "string" }, "category": { "type": "string" },
         "online_queries": { "type": "array", "maxItems": 3, "items": { "type": "string" } },
-        "local_queries": { "type": "array", "maxItems": 2, "items": { "type": "string" } } } },
+        "local_queries": { "type": "array", "maxItems": 2, "items": { "type": "string" } },
+        "near_radius_mi": { "type": "number", "exclusiveMinimum": 0 } } },
     "weights": { "type": "object", "additionalProperties": false,
       "required": ["relevance", "ethics", "env", "proximity"],
       "properties": { "relevance": { "type": "number" }, "ethics": { "type": "number" }, "env": { "type": "number" }, "proximity": { "type": "number" } } },
     "local": { "type": "array", "maxItems": 10, "items": { "$ref": "#/definitions/result" } },
+    "local_farther": { "type": "array", "maxItems": 3, "items": { "$ref": "#/definitions/result" } },
     "online": { "type": "array", "maxItems": 10, "items": { "$ref": "#/definitions/result" } },
     "usage": { "type": "object", "additionalProperties": false,
       "required": ["brave_calls", "llm", "llm_tokens", "estimated_cost_usd"],
@@ -68,6 +70,6 @@
     "dropped": { "type": "array", "maxItems": 60, "items": { "type": "object", "additionalProperties": false,
       "required": ["kind", "domain", "reason"],
       "properties": { "kind": { "enum": ["local", "online"] }, "domain": { "type": "string", "maxLength": 253 },
-        "reason": { "enum": ["place_category", "editorial_url", "site_type", "sells_product", "below_top_10", "branch_cap"] } } } }
+        "reason": { "enum": ["place_category", "editorial_url", "site_type", "sells_product", "below_top_10", "branch_cap", "too_far"] } } } }
   }
 }
