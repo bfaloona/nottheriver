@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed and a live search from the Pages site works.
+As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type filter, and the quality evaluation is measured on a 20-search sample ([quality.md](quality.md)).
 
 ## Done
 
@@ -15,7 +15,8 @@ As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed a
 | End-to-end | Playwright smoke test against a mock proxy running the real handler and pipeline on fixtures; screenshots in `docs/evidence/` |
 | Infrastructure | OpenTofu config for the Worker, its secrets and rate limits; `infra/plan-evidence.sh` for a redacted plan |
 | CI | `ci.yml` (tests, lint, full-history gitleaks, bundle secret scan, e2e) and `pages.yml` (build, scan, deploy) |
-| Quality evaluation | Harness, 60-search query set, grade schema, access probe, [quality.md](quality.md) skeleton, [ADR 0005](decisions/0005-site-access-and-mitigation.md) |
+| Quality evaluation | Harness, 60-search query set, grade schema, access probe, [ADR 0005](decisions/0005-site-access-and-mitigation.md); all 60 searches run, 20 graded with a recall baseline and miss reasons, access probe run and deleted ([check](evidence/quality/eval60/probe-deleted.txt)), [quality.md](quality.md) and the About page headline |
+| Local store-type filter | Brave's undocumented `icon_category` becomes the local snippet; restaurants and amusement parks are dropped as `place_category` ([ranking.md](ranking.md)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0004](decisions/0004-down-ranking.md) |
 
 ## In flight
@@ -26,7 +27,6 @@ As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed a
 
 | Gate | What it unblocks |
 |---|---|
-| Live quality evaluation: run the 60 searches, grade in a browser, deploy, run and delete the access probe, write the report and `src/quality.json` | The numbers in [quality.md](quality.md) and on the About page |
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
 
 ## Deploy (2026-09-23)
@@ -45,6 +45,8 @@ As of 2026-09-23. Pushed to `main`; CI and Pages green; the Worker is deployed a
 
 ## Decisions needed
 
+- Whether to ship the stronger local classifier (Gemini 2.5 Flash plus one prompt paragraph): 13 points more local precision on the merge-test searches (11 on the graded sample), but on the graded sample it also drops 12 of 72 good local shops, 3 of them small independents ([quality.md](quality.md#experiments-that-did-not-ship)).
+- Whether local recall should favor independents: the site finds 17% of independent baseline shops against 33% of chain stores.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.
 - Whether to add labor or environmental watchdogs to the negative-source registry.
