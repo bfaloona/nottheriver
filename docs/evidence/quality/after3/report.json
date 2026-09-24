@@ -1,0 +1,111 @@
+{
+  "generated": "2026-09-24T02:24:06.836Z",
+  "graded_through": "2026-09-23",
+  "searches": {
+    "planned": 60,
+    "saved": 6,
+    "ok": 6
+  },
+  "cost": {
+    "brave_calls": 24,
+    "llm_tokens": 31180,
+    "estimated_cost_usd": 0.125096
+  },
+  "precision": {
+    "online": {
+      "graded": 55,
+      "relevant": 55,
+      "unknown": 0,
+      "precision": 1
+    },
+    "local": {
+      "graded": 45,
+      "relevant": 17,
+      "unknown": 10,
+      "precision": 0.378
+    }
+  },
+  "precision_local_by_zip_kind": {
+    "urban": {
+      "graded": 17,
+      "relevant": 4,
+      "unknown": 3,
+      "precision": 0.235
+    },
+    "suburban": {
+      "graded": 16,
+      "relevant": 6,
+      "unknown": 4,
+      "precision": 0.375
+    },
+    "rural": {
+      "graded": 12,
+      "relevant": 7,
+      "unknown": 3,
+      "precision": 0.583
+    }
+  },
+  "badges_sourced": {
+    "online": {
+      "yes": 3,
+      "no": 0,
+      "n/a": 52
+    },
+    "local": {
+      "yes": 1,
+      "no": 0,
+      "n/a": 54
+    }
+  },
+  "distance_plausible": {
+    "yes": 55,
+    "no": 0,
+    "n/a": 0
+  },
+  "recall": {
+    "online": {
+      "confirmed": 30,
+      "found": 15,
+      "recall": 0.5,
+      "miss_reasons": {
+        "unclassified": 15
+      }
+    },
+    "local": {
+      "confirmed": 23,
+      "found": 6,
+      "recall": 0.261,
+      "miss_reasons": {
+        "unclassified": 17
+      }
+    }
+  },
+  "probe": {
+    "online": {
+      "probed": 0,
+      "ok": 0,
+      "challenge": 0,
+      "blocked": 0,
+      "robots_disallow": 0,
+      "error": 0,
+      "bot_blocked_rate": null
+    },
+    "local": {
+      "probed": 0,
+      "ok": 0,
+      "challenge": 0,
+      "blocked": 0,
+      "robots_disallow": 0,
+      "error": 0,
+      "bot_blocked_rate": null
+    }
+  },
+  "probe_vs_person": {
+    "both_blocked": 0,
+    "bot_only": 0,
+    "person_only": 0,
+    "neither": 0,
+    "precision": null,
+    "recall": null
+  }
+}

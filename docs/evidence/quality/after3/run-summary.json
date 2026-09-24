@@ -1,0 +1,52 @@
+{
+  "checked": "2026-09-24T02:13:17.871Z",
+  "searches": 6,
+  "ok": 6,
+  "brave_calls": 24,
+  "llm_tokens": 31180,
+  "estimated_cost_usd": 0.125096,
+  "rows": [
+    {
+      "id": "cast-iron-skillet-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5058,
+      "estimated_cost_usd": 0.020852
+    },
+    {
+      "id": "cast-iron-skillet-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5408,
+      "estimated_cost_usd": 0.020903
+    },
+    {
+      "id": "cast-iron-skillet-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4609,
+      "estimated_cost_usd": 0.020769
+    },
+    {
+      "id": "camping-tent-urban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 5178,
+      "estimated_cost_usd": 0.021025
+    },
+    {
+      "id": "camping-tent-suburban",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 6294,
+      "estimated_cost_usd": 0.020889
+    },
+    {
+      "id": "camping-tent-rural",
+      "status": 200,
+      "brave_calls": 4,
+      "llm_tokens": 4633,
+      "estimated_cost_usd": 0.020658
+    }
+  ]
+}
