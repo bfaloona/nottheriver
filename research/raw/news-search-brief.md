@@ -7,7 +7,7 @@ Passes 1 and 2 couldn't run a general news search: the first session's 200 web s
 - Start a new session with a higher cap: `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=600 claude`. The cap covers the whole session, all subagents included.
 - Worktree `/Users/brandon/dev/ai/nottheriver-research`, branch `research/amazon-alternatives`. Read `research/raw/run-log.md` ("Resume cold") first.
 - Run 4 Opus agents in parallel, one per batch below, and commit after each one finishes. Don't merge to main until the operator asks.
-- The four rules set during the run (D1 to D4, in `research/brief.md` section 9 and `method.md`) haven't been reviewed by the operator. Apply them as written, and log every case where one decides the outcome.
+- The four rules set during the run (D1 to D4, in `research/brief.md` section 9 and `method.md`) were approved by the operator on 2026-09-25. Apply them as written.
 
 ## Batches (same as pass 2)
 

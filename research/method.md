@@ -99,7 +99,7 @@ Rule from [raw/retailer-selection.md](raw/retailer-selection.md):
 
 ## Decisions made during the run
 
-From [raw/run-log.md](raw/run-log.md) and [brief.md](brief.md) section 9. The operator may overrule the lead's decisions. What would change is under [Operator checks](#operator-checks).
+From [raw/run-log.md](raw/run-log.md) and [brief.md](brief.md) section 9. On 2026-09-25 the operator approved the four rules that affect tiers: what counts as a concern, which OSHA citations count, Fair Trade USA brand listings as `fair_trade`, and open NLRB complaints. The operator may still overrule the lead's other decisions. What would change is under [Operator checks](#operator-checks).
 
 | Decision | Made by | What it says | Effect in this run |
 |---|---|---|---|
