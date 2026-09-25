@@ -14,3 +14,4 @@ data/raw/
 plan.bin
 infra/*.tfvars*
 crash.log
+infra/deploy.local.env
