@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { stringify } from 'yaml';
-import { rateRetailer, blocklistMatch, isAcceptedSource, splitFrontMatter, buildIndex } from './build-index.mjs';
+import { rateRetailer, blocklistMatch, isAcceptedSource, splitFrontMatter, buildIndex, tallyRetailers } from './build-index.mjs';
 
 const TODAY = '2026-09-25';
 const cert = (kind) => ({ kind, source: 'https://www.bcorporation.net/x', checked: TODAY, verified_this_run: true });
@@ -112,5 +112,16 @@ describe('buildIndex', () => {
     };
     const { errors } = buildIndex(setup({ 'sites/example-org.md': md(site), 'retailers/shop-example.md': md(r) }));
     expect(errors.join('\n')).toMatch(/no matching row in data\/certifications.json[\s\S]*accepted_source must be false/);
+  });
+});
+
+describe('tallyRetailers', () => {
+  it('counts distinct sites per registrable domain and skips rows without a domain', () => {
+    const root = mkdtempSync(join(tmpdir(), 'tally-'));
+    mkdirSync(join(root, 'sites'));
+    const table = (rows) => `## Retailers named\n| # | Retailer | Domain | Reason |\n|---|---|---|---|\n${rows}\n\n## Sources\n- https://x.org\n`;
+    writeFileSync(join(root, 'sites', 'a-org.md'), table('| 1 | Bookshop | bookshop.org | books |\n| 2 | Bookshop again | www.bookshop.org | dup |\n| - | none (tool) | - | x |'));
+    writeFileSync(join(root, 'sites', 'b-org.md'), table('| 1 | Bookshop.org | bookshop.org | books |\n| 2 | Mystery | unknown | ? |'));
+    expect(tallyRetailers(root)).toEqual([{ domain: 'bookshop.org', names: ['Bookshop', 'Bookshop again', 'Bookshop.org'], mentions: 2, mentioned_by: ['a-org', 'b-org'] }]);
   });
 });

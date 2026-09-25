@@ -204,7 +204,34 @@ export function buildIndex(root = HERE) {
   return { errors, index: { sites, retailers } };
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url) && process.argv[2] === '--blocklist') {
+// Reads each site's "## Retailers named" table and counts distinct sites per retailer domain.
+export function tallyRetailers(root = HERE) {
+  const byDomain = new Map();
+  for (const { slug, text } of readDir(join(root, 'sites'))) {
+    const section = text.split(/^## Retailers named\s*$/m)[1]?.split(/^## /m)[0] ?? '';
+    for (const line of section.split('\n')) {
+      const cells = line.split('|').slice(1, -1).map((c) => c.trim());
+      if (cells.length < 3 || /^-+$/.test(cells[0]) || cells[0] === '#') continue;
+      const domain = registrable(cells[2]);
+      if (!domain) continue;
+      const entry = byDomain.get(domain) ?? { domain, names: new Set(), sites: new Set() };
+      entry.names.add(cells[1]);
+      entry.sites.add(slug);
+      byDomain.set(domain, entry);
+    }
+  }
+  return [...byDomain.values()]
+    .map((e) => ({ domain: e.domain, names: [...e.names].sort(), mentions: e.sites.size, mentioned_by: [...e.sites].sort() }))
+    .sort((a, b) => b.mentions - a.mentions || a.domain.localeCompare(b.domain));
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url) && process.argv[2] === '--tally') {
+  const rows = tallyRetailers();
+  const out = ['# Retailer mention tally', '', `Built by \`node research/build-index.mjs --tally\` from research/sites/*.md.`, '', '| # | domain | names used | mentions | mentioned_by | amazon-owned |', '|---|---|---|---|---|---|'];
+  rows.forEach((r, i) => out.push(`| ${i + 1} | ${r.domain} | ${r.names.join('; ')} | ${r.mentions} | ${r.mentioned_by.join(', ')} | ${r.names.some((n) => blocklistMatch(n, r.domain)) ? 'yes' : ''} |`));
+  writeFileSync(join(HERE, 'raw', 'tally.md'), `${out.join('\n')}\n`);
+  console.log(`raw/tally.md: ${rows.length} retailer domains`);
+} else if (process.argv[1] === fileURLToPath(import.meta.url) && process.argv[2] === '--blocklist') {
   // node research/build-index.mjs --blocklist "<name>" <domain>
   const hit = blocklistMatch(process.argv[3] ?? '', process.argv[4] ?? '');
   console.log(hit ? `amazon-owned: blocklist entry "${hit}" (cite data/blocklist.md)` : 'not on the blocklist');
