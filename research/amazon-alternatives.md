@@ -163,7 +163,7 @@ The full list is in [index.json](index.json).
 
 ## How far to trust this
 
-The concern search is now complete for the 38 retailers that could still change tier; the limits below remain.
+All planned concern searches have now run for the 38 retailers that could still change tier. Open rule questions could still move some tiers ([method.md](method.md#operator-checks), OC32 to OC36), and the limits below remain.
 
 - **The web search budget ran out.** The run's 200 web searches were used up while the retailer batches were running. Batch R1 hit the limit right after its Etsy searches ([raw/blocked-retailers-R1.md](raw/blocked-retailers-R1.md)). After that, concern checks used whatever regulator and court pages could be fetched directly, mostly OSHA, NLRB and CourtListener. So the concern searches were incomplete for almost every retailer. The `blocked-retailers-R<n>.md` files in [raw/](raw/) list what was missed for each batch.
 - **A second concern pass found nothing new.** Later on 2026-09-25, still without web search, four agents rechecked the 38 recommended and acceptable retailers against FTC case titles, CourtListener dockets since 2016 where a government body is a party, and ProPublica. They added no concerns and changed no tiers ([raw/concern-pass-2-brief.md](raw/concern-pass-2-brief.md), `raw/concerns2-C1.md` to `C4.md`). The 12 caution retailers were skipped because a new concern can't change their tier. It had no general news search; pass 3 below added one.

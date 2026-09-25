@@ -6,7 +6,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 ## Resume cold
 
-**Next session (after 2026-09-25):** run concern pass 3, the news search, from `research/raw/news-search-brief.md` in a session started with `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=600`. Also: retry OC31 re-sourcing with `node research/fetch-osha-dol.mjs name "<establishment>"` (allow rule already added; key in `~/dev/secrets/nottheriver-dol-api-key.txt`). Operator decisions: OC31 keep; merge to main after pass 3; D1 to D4 approved by the operator (2026-09-25).
+**State (2026-09-25, evening):** concern pass 3 (news search) is done (commits 32957e1 to a7053e0); don't rerun it. Next: operator answers OC32 to OC36 in `method.md` (each lists its tier effect); OC31 DOL retry for B&H and Azure (API 429s after about a dozen calls), resolve Thrive's two candidate rows, fetch penalties from DOL's violation dataset (details in `raw/osha-dol-match.md`). Run `node research/fetch-osha-dol.mjs` by absolute path; the shell can't cd into this worktree from the main checkout's session. Merge to main only when the operator says. D1 to D4 approved by the operator (2026-09-25).
 
 1. `git -C <worktree> log --oneline -5` shows the last finished stage.
 2. Check the planned files for the in-flight stage below against `ls research/...`; rerun only the agents whose files are missing.
