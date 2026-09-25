@@ -128,7 +128,7 @@ From [raw/run-log.md](raw/run-log.md) and [brief.md](brief.md) section 9. The op
 - **Some accepted sources were unreachable.** Good Jobs First's Violation Tracker (403 in every batch), justice.gov (bot challenge), ftc.gov search (404 in pass 1; worked in pass 2), dol.gov search (403), apnews.com (fetch refused), and CourtListener docket pages (403; its search API was used instead).
 - **Search depth varies by retailer.** Big retailers with many OSHA and NLRB records had more to find than small brands. Costco's file says its concerns are a sample of many cases.
 - **Certifications.** bcorporation.net returned 403 throughout. The 1% for the Planet directory builds its pages with scripts and disallows agents in robots.txt. The Climate Label wasn't checked for batch R10. See [amazon-alternatives.md](amazon-alternatives.md#how-far-to-trust-this).
-- **Foreign sources weren't searched** for companies based outside the US ([raw/verify-R10.md](raw/verify-R10.md) notes Kotn and World of Books).
+- **Foreign sources weren't searched** for companies based outside the US ([raw/verify-R10.md](raw/verify-R10.md) notes Kotn and World of Books; Tentree, a recommended retailer, is based in Vancouver).
 - **`sells_on_amazon` is `unknown` in all 54 retailer files.** No fetched source stated it.
 - **Site scores are judgments.** Each site was scored by one assessor and aligned by one calibrator. Each read the page as it stood on 2026-09-25.
 - **Tools list only their curated picks** ([brief.md](brief.md) section 9), so their whole databases aren't in the tally.

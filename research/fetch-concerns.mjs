@@ -5,6 +5,7 @@
 // FTC case search needs WebFetch (plain curl gets 403), so agents do that part.
 import { readdirSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { setTimeout as sleep } from 'node:timers/promises';
 import { splitFrontMatter } from './build-index.mjs';
 
 const ROOT = new URL('.', import.meta.url).pathname;
@@ -15,7 +16,6 @@ const AGENCY = ['Equal Employment', 'EEOC', 'Secretary of Labor', 'Department of
 // Names the retailer is sued or cited under when that differs from `name`.
 const ALIASES = { 'lovegrown.com': ['Hive Brands'], 'wearpact.com': ['Pact Apparel', 'Pact, LLC'], 'grove.co': ['Grove Collaborative'] };
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const quote = (s) => `"${s.replace(/"/g, '')}"`;
 
 async function courtListener(names) {

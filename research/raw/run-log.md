@@ -82,3 +82,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - C1 done (10 recommended, 0 concerns; FTC v. Pact, Inc. dropped as a different company).
 - C2 done (10, 0 concerns). Lead retested quoted FTC search (works). Pass 2 result: 38 retailers, 0 new concerns, 0 tier changes.
 - Report and method updated: pass 2 result, robots finding (OC31: dropping disallowed-page concerns changes 8 tiers). Tests 696 pass.
+- Lead checks: no duplicate pass-2 edits or Sources lines; lint fixed in fetch-concerns.mjs; Tentree foreign-source caveat added. The 18 disallowed-page concerns are all OSHA (0 from NLRB search).
