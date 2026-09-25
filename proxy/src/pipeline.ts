@@ -74,11 +74,16 @@ export function shopQuery(q: string, product: string): string {
 
 // A place search for a room or an activity ("kitchen", "camping") returned remodelers and
 // camps; naming a kind of store keeps it to shops.
+// "Shop" becomes "store" because the model picks between them at random, and one word
+// changed which shops Brave returned (docs/quality.md, run-to-run changes).
 const STORE_WORDS: ReadonlySet<string> = new Set(['store', 'stores', 'shop', 'shops', 'outfitters']);
 export function storeQuery(q: string): string {
   const last = words(q).at(-1);
-  return last && STORE_WORDS.has(last) ? q : `${q} store`;
+  if (!last || !STORE_WORDS.has(last)) return `${q} store`;
+  return q.replace(/\bshop(s?)([.,:;!?]*)\s*$/i, 'store$1$2');
 }
+
+const uniqueQueries = (qs: string[]) => qs.filter((q, i) => qs.findIndex((o) => o.toLowerCase() === q.toLowerCase()) === i);
 
 // The model may echo a blocked brand back ("Amazon Basics ..."); stripping it here keeps it
 // out of the search queries and the response. The fallback is scrubbed too, so a product the
@@ -90,7 +95,7 @@ export function scrubNormalized(n: Normalized, product: string): Normalized {
     canonical_name: scrubBlockedText(n.canonical_name) || scrubBlockedText(product),
     similar_products: list(n.similar_products),
     online_queries: list(n.online_queries).map((q) => shopQuery(q, product)).filter(Boolean),
-    local_queries: list(n.local_queries).map(storeQuery),
+    local_queries: uniqueQueries(list(n.local_queries).map(storeQuery)),
   };
   if (scrubbed.online_queries.length === 0) throw new InvalidLlmOutput();
   return scrubbed;

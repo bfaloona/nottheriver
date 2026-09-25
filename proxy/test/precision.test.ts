@@ -448,11 +448,17 @@ describe('T6: query guard', () => {
     ['outdoor gear', 'outdoor gear store'],
     ['camping', 'camping store'],
     ['outdoor gear store', 'outdoor gear store'],
-    ['Cookware Shop', 'Cookware Shop'],
+    ['Cookware Shop', 'Cookware store'],
+    ['tea shop', 'tea store'],
+    ['gift shops', 'gift stores'],
     ['mountain outfitters', 'mountain outfitters'],
     ['sporting goods stores', 'sporting goods stores'],
   ])('local %j becomes %j', (q, expected) => {
     expect(guard(['buy tent'], [q]).local_queries).toEqual([expected]);
+  });
+
+  it('local queries that differ only in store or shop become one query', () => {
+    expect(guard(['buy tent'], ['tea shop', 'Tea store']).local_queries).toEqual(['tea store']);
   });
 
   it('local queries keep "best" and "top": the guard only shapes online queries', () => {
