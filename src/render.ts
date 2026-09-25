@@ -5,7 +5,8 @@ import { wirePopovers } from './popover';
 // Everything in a SearchResponse is untrusted text from the web: nodes are built
 // with textContent only, and a URL becomes an href only when it is http(s).
 
-export interface MapPin { rank: number; name: string; lat: number; lon: number; farther: boolean }
+// target: the id of the pin's list item, where a pin click takes the reader.
+export interface MapPin { rank: number; name: string; lat: number; lon: number; farther: boolean; target: string }
 
 // onMap draws the map into the container, which is already in the page; kept out of this
 // module so rendering stays testable without a map library and the library can load on
@@ -193,7 +194,10 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
     ),
   );
 
-  return el('li', { className: 'result', data: { result: '' } }, el('span', { className: 'rank' }, String(result.rank)), body);
+  const item = el('li', { className: 'result', data: { result: '' } }, el('span', { className: 'rank' }, String(result.rank)), body);
+  // Nearby and farther shops share one numbering, so the rank names a map pin's list item uniquely.
+  if (result.kind === 'local') item.id = shopId(result.rank);
+  return item;
 }
 
 export function renderWeights(weights: SearchResponse['weights']): HTMLParagraphElement {
@@ -208,10 +212,12 @@ export function renderWeights(weights: SearchResponse['weights']): HTMLParagraph
   );
 }
 
+const shopId = (rank: number) => `shop-${rank}`;
+
 function mapPins(near: SearchResult[], farther: SearchResult[]): MapPin[] {
   const pin = (isFarther: boolean) => (r: SearchResult): MapPin[] =>
     // Number.isFinite also rejects a missing field, from a Worker deployed before shops carried coordinates.
-    Number.isFinite(r.lat) && Number.isFinite(r.lon) ? [{ rank: r.rank, name: r.retailer.name, lat: r.lat!, lon: r.lon!, farther: isFarther }] : [];
+    Number.isFinite(r.lat) && Number.isFinite(r.lon) ? [{ rank: r.rank, name: r.retailer.name, lat: r.lat!, lon: r.lon!, farther: isFarther, target: shopId(r.rank) }] : [];
   return [...near.flatMap(pin(false)), ...farther.flatMap(pin(true))];
 }
 

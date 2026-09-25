@@ -17,6 +17,17 @@ function pinIcon(pin: MapPin): L.DivIcon {
   return L.divIcon({ html: label, className: pin.farther ? 'map-pin map-pin-farther' : 'map-pin', iconSize: [26, 26] });
 }
 
+// Brings a pin's shop into view in the list and moves focus to its link, so the next Tab or
+// Enter continues from there.
+function showInList(pin: MapPin, reducedMotion: boolean): void {
+  const item = document.getElementById(pin.target);
+  if (!item) return;
+  for (const picked of document.querySelectorAll('.result-picked')) picked.classList.remove('result-picked');
+  item.classList.add('result-picked');
+  item.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
+  item.querySelector<HTMLElement>('[data-retailer]')?.focus({ preventScroll: true });
+}
+
 export function clearMap(): void {
   current?.remove();
   current = undefined;
@@ -48,10 +59,11 @@ export function drawMap(container: HTMLElement, pins: MapPin[], center?: { lat: 
       points.push([center.lat, center.lon]);
     }
     // Farther pins first, so nearby ones draw on top where they overlap. keyboard: false keeps
-    // pins out of the tab order, where they would be buttons that do nothing; the list is the
-    // keyboard and screen-reader equivalent.
+    // pins out of the tab order: a pin only leads to its list item, which the next Tab reaches anyway.
     for (const pin of [...pins].sort((a, b) => Number(b.farther) - Number(a.farther))) {
-      L.marker([pin.lat, pin.lon], { icon: pinIcon(pin), title: `${pin.rank}. ${pin.name}`, keyboard: false }).addTo(map);
+      L.marker([pin.lat, pin.lon], { icon: pinIcon(pin), title: `${pin.rank}. ${pin.name}`, keyboard: false })
+        .on('click', () => showInList(pin, reducedMotion))
+        .addTo(map);
       points.push([pin.lat, pin.lon]);
     }
     map.fitBounds(L.latLngBounds(points), { padding: [24, 24], maxZoom: 15 });

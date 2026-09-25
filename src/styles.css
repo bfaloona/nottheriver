@@ -154,6 +154,7 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 /* Map of nearby shops. Selectors start with .map to outrank leaflet.css, which loads later. isolation keeps Leaflet's pane z-indexes (up to 1000) inside the map. */
 .map { height: 16rem; margin: 0 0 var(--space-3); border: 1px solid var(--rule); border-radius: var(--radius-panel); isolation: isolate; font-family: var(--font-ui); }
 .map .map-pin {
+  cursor: pointer;
   display: grid;
   place-items: center;
   font-size: var(--text-sm);
@@ -166,6 +167,8 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
   box-shadow: var(--shadow-popover);
 }
 .map .map-pin-farther { color: var(--accent); background: var(--surface); border-color: var(--accent); }
+/* The list item a pin click led to; stays until another pin is clicked. */
+.result-picked { background: var(--badge-bg); }
 .map .map-center { fill: var(--focus); fill-opacity: 0.35; stroke: var(--focus); stroke-width: 2; }
 .result {
   position: relative; /* popover anchor; no ancestor may clip overflow */

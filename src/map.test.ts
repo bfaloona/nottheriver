@@ -4,8 +4,8 @@ import { clearMap, drawMap } from './map';
 import type { MapPin } from './render';
 
 const PINS: MapPin[] = [
-  { rank: 1, name: 'Near Shop', lat: 39.78, lon: -89.63, farther: false },
-  { rank: 2, name: 'Far Shop', lat: 40.5, lon: -89.1, farther: true },
+  { rank: 1, name: 'Near Shop', lat: 39.78, lon: -89.63, farther: false, target: 'shop-1' },
+  { rank: 2, name: 'Far Shop', lat: 40.5, lon: -89.1, farther: true, target: 'shop-2' },
 ];
 const CENTER = { lat: 39.78, lon: -89.65 };
 
@@ -39,6 +39,23 @@ describe('drawMap', () => {
     expect(el.querySelector('.leaflet-control-attribution')!.textContent).toContain('OpenStreetMap contributors');
   });
 
+  it('takes a pin click to its result: scrolled into view, marked, and its shop link focused', () => {
+    const list = document.createElement('ol');
+    list.innerHTML = '<li class="result" id="shop-1"><a data-retailer href="#a">Near Shop</a></li><li class="result result-picked" id="shop-2"><a data-retailer href="#b">Far Shop</a></li>';
+    document.body.append(list);
+    const scrolled = vi.fn();
+    const item = document.getElementById('shop-1')!;
+    item.scrollIntoView = scrolled;
+    const el = container();
+    drawMap(el, PINS);
+
+    const pin = pinsIn(el).find((p) => p.title === '1. Near Shop')!;
+    pin.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    expect(scrolled).toHaveBeenCalledWith({ behavior: 'smooth', block: 'center' });
+    expect(document.activeElement).toBe(item.querySelector('a'));
+    expect([...document.querySelectorAll('.result-picked')]).toEqual([item]);
+  });
+
   it('skips a container a newer render already removed', () => {
     const el = document.createElement('div');
     drawMap(el, PINS);
@@ -58,7 +75,7 @@ describe('drawMap', () => {
 
   it('removes a half-built map when a pin cannot be placed', () => {
     const el = container();
-    expect(() => drawMap(el, [...PINS, { rank: 3, name: 'Bad', lat: Number.NaN, lon: 0, farther: false }])).toThrow();
+    expect(() => drawMap(el, [...PINS, { rank: 3, name: 'Bad', lat: Number.NaN, lon: 0, farther: false, target: 'shop-3' }])).toThrow();
     expect(el.querySelector('.leaflet-pane')).toBeNull();
   });
 });

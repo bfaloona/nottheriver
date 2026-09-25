@@ -56,6 +56,12 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(map.locator('.map-pin')).toHaveCount(await page.locator('[data-section=near] [data-result]').count());
   await expect(map.locator('.leaflet-control-attribution')).toContainText('OpenStreetMap contributors');
   await expect.poll(() => tileReferers.length).toBeGreaterThan(0);
+  // A pin click leads to its shop in the list.
+  const pin = map.locator('.map-pin').last();
+  const rank = (await pin.textContent())!.trim();
+  await pin.click();
+  await expect(page.locator(`#shop-${rank}`)).toHaveClass(/result-picked/);
+  await expect(page.locator(`#shop-${rank} [data-retailer]`)).toBeFocused();
   // OpenStreetMap requires a Referer; the tiles send the site's origin only, never a path.
   expect(new Set(tileReferers)).toEqual(new Set([new URL(page.url()).origin + '/']));
   await expect(page.locator('[data-cost]')).toBeVisible();

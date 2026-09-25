@@ -310,9 +310,14 @@ describe('map of nearby shops', () => {
     expect(draw).toHaveBeenCalledTimes(1);
     expect(draw.mock.calls[0]![0]).toBe(map);
     expect(draw.mock.calls[0]![1]).toEqual([
-      ...response.local.map((r) => ({ rank: r.rank, name: r.retailer.name, lat: r.lat, lon: r.lon, farther: false })),
-      { rank: 3, name: 'Far Shop', lat: 40.5, lon: -89.1, farther: true },
+      ...response.local.map((r) => ({ rank: r.rank, name: r.retailer.name, lat: r.lat, lon: r.lon, farther: false, target: `shop-${r.rank}` })),
+      { rank: 3, name: 'Far Shop', lat: 40.5, lon: -89.1, farther: true, target: 'shop-3' },
     ]);
+    // Each pin's target is its shop's list item; online results need none.
+    for (const pin of draw.mock.calls[0]![1] as { rank: number; target: string }[]) {
+      expect(el.querySelector(`#${pin.target} .rank`)!.textContent).toBe(String(pin.rank));
+    }
+    expect(el.querySelectorAll('[data-section="online"] [data-result][id]')).toHaveLength(0);
   });
 
   it('leaves out shops without coordinates and filtered shops, and draws no map when none remain', () => {
