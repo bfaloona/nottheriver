@@ -21,7 +21,7 @@ checked: 2026-09-25
 - Independence (14/20): affiliate disclosure directly under the headline and the site owner is identifiable on the about and terms pages; deducted because 14 of 19 retailer links are affiliate links (Costco, Libby, Back Market, Shop Good and Package Free are plain).
 - Evidence (7/20): the case against Amazon is well sourced, but per-retailer claims (B Corp for Thrive Market, Grove and Back Market) link no certifier or source.
 - Substance (15/20): 20 real, non-Amazon options across groceries, household, beauty, books, audiobooks, tech, gifts and pets, most with a specific reason; deducted because the five unnumbered mentions (Dermstore, iHerb, Ulta, Libby, Spotify) get one line or less and two are apps rather than shops. After calibration 18 rows count as shops; Libby and Spotify are under "Also named".
-- Currency (9/15): no date shown (R5); the text dates it to 2025 or later; the 14 affiliate links were followed this run and all reached a live retailer home page.
+- Currency (9/15): no date shown (R5); the text dates it to 2025 or later; the 14 affiliate links were followed this run and all reached a live retailer page (the Hive link lands on lovegrown.com).
 - Usefulness (11/15): numbered, with skip-to-section links and product types per pick, plus a purchase-tracking template; not grouped by product type and no shipping regions given.
 - No dark patterns (10/10): headline matches the content, Amazon-owned brands appear only as ones to avoid, no Amazon links, no repeated top pick; the repeated newsletter prompt is not a wall (R7).
 

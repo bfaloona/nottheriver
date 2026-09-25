@@ -66,3 +66,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Verifier R10 done (no tier changes). Lead decision: an NLRB agency-issued complaint counts even while open (the open-case exception is OSHA-only); Costco stays caution either way.
 - Stage 5 done. Report writer running: writes research/amazon-alternatives.md, research/method.md, research/README.md.
 - Report written. Lead fixed writer-flagged nits (provisional lines on 3 R10 files, shortlist trimmed table, verify-R8 row placement, discovery count). QA agent running: writes research/raw/qa.md and fixes small issues.
+- QA done (55 issues: 33 fixed, 22 flagged; raw/qa.md). Lead removed Costco's classaction.org concern row. OSHA closed-status checker running (writes raw/osha-status.md).

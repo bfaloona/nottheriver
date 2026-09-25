@@ -23,7 +23,7 @@ Kotn is a Canadian clothing brand, founded in 2015 by Benjamin Sehl, Mackenzie Y
 
 Lists name it as an ethical clothing brand (A Day In Our Shoes) and for staples made "in a safe and fair production environment" with profits funding schools and farm support (AmazonAlts). Kotn's own about page says it is "A certified B Corporation voted Best for the World™". That is the company's own claim: the B Lab directory page it links to (bcorporation.net) returned HTTP 403, and `data/certifications.json` has no row for kotn.com, so no B Corp certification is counted. Kotn is not among the brands on Fair Trade USA's shop page. The 1% for the Planet and Climate Label directories could not be checked this run (see `research/raw/blocked-retailers-R10.md`).
 
-Concern checks: an NLRB case search for "kotn" returned no results (the same search for "costco" returned 180, so the search works). A CourtListener search found one docket naming Kotn America, Inc., a 2025 disability civil-rights suit (Anderson v. Kotn America, Inc., E.D.N.Y.); it is an allegation that does not fit the labor, governance or environmental kinds and is not recorded as a concern.
+Concern checks: an NLRB case search for "kotn" returned no results (the same search for "costco" returned 180, so the search works). A CourtListener search found one docket naming Kotn America, Inc., a 2025 disability civil-rights suit brought by an individual (E.D.N.Y.); it is an allegation that does not fit the labor, governance or environmental kinds and is not recorded as a concern.
 
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Kotn" kotn.com` says not on the blocklist, so `amazon_owned: false`.

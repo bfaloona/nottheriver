@@ -23,10 +23,10 @@ Christy Dawn designs and sells its own clothing (dresses, knitwear, tops, skirts
 
 Lists recommend it as an ethical clothing brand: A Day in Our Shoes (ethical clothing brand) and Sustainable Jungle ("Upcycled and deadstock fabric dresses").
 
-Concerns. None recorded. The NLRB case search for "christy dawn" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket naming the company, Fischler v. Christy Dawn, LLC (E.D.N.Y., filed 2020-09-03, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
+Concerns. None recorded. The NLRB case search for "christy dawn" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket naming the company, an individual's suit against Christy Dawn, LLC (E.D.N.Y., filed 2020-09-03, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
 ## Rating
-- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia). The brand's own pages claim none of these.
+- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia). The brand's own pages claim none of these.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.

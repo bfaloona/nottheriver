@@ -30,7 +30,7 @@ Certifications:
 - 1% for the Planet: directory profiles render only in a browser (logged); no fallback row.
 - The Climate Label: explore.changeclimate.org/brand/pact returns "Brand Not Found".
 
-Concerns: none recorded. An NLRB case search for "Wear Pact" returns no cases. CourtListener lists two federal dockets naming Wear Pact LLC as a defendant: an Americans with Disabilities Act case (W.D. Pa., filed 2020-04-16, terminated 2020-04-27) and *Johnston v. Wear Pact LLC* (D. Colo., filed 2025-06-18, open, nature of suit not shown). The search results show no finding or settlement, so neither is recorded. The session's web-search budget had run out, so no site-restricted searches of the other accepted sources were possible (logged).
+Concerns: none recorded. An NLRB case search for "Wear Pact" returns no cases. CourtListener lists two federal dockets naming Wear Pact LLC as a defendant: an Americans with Disabilities Act case (W.D. Pa., filed 2020-04-16, terminated 2020-04-27) and an individual's suit against Wear Pact LLC (D. Colo., filed 2025-06-18, open, nature of suit not shown). The search results show no finding or settlement, so neither is recorded. The session's web-search budget had run out, so no site-restricted searches of the other accepted sources were possible (logged).
 
 ## Rating
 - ethics: start 0.5; +0.25 fair_trade; no accepted labor or governance concern; = 0.75

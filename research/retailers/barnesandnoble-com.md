@@ -43,6 +43,6 @@ OSHA. The establishment search (2016 to 2026, violations only) returned five "Ba
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1642640.015
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1484432.015
 - https://violationtracker.goodjobsfirst.org/?company=barnes+%26+noble (HTTP 403, logged in raw/blocked-retailers-R5.md)
-- https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (HTTP 403, logged)
+- https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (a query for another retailer in batch R5; its HTTP 403 shows the directory blocked agents; logged)
 - data/blocklist.md (not on the blocklist: `build-index.mjs --blocklist`)
 - research/sites/dollarsprout-com.md, research/sites/moneypantry-com.md, research/sites/techradar-com.md (reasons)

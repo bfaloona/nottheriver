@@ -722,10 +722,7 @@
       "domain": "aliexpress.com",
       "type": "marketplace",
       "goods": [
-        "general merchandise",
-        "electronics",
-        "clothing",
-        "home goods"
+        "general merchandise"
       ],
       "ownership": "public",
       "parent": "Alibaba Group",
@@ -1322,13 +1319,6 @@
           "source": "https://www.nlrb.gov/case/01-CA-355597",
           "date": "2025-08-12",
           "accepted_source": true
-        },
-        {
-          "kind": "governance",
-          "title": "$14M Costco Settlement Resolves Class Action Lawsuit Over Promo Emails With Allegedly Misleading Subject Lines",
-          "source": "https://www.classaction.org/news/14m-costco-settlement-resolves-class-action-lawsuit-over-promo-emails-with-allegedly-misleading-subject-lines",
-          "date": "2026-07-22",
-          "accepted_source": false
         }
       ],
       "ethics": 0,

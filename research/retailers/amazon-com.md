@@ -27,3 +27,5 @@ Tier `excluded` (blocklist match). Ethics and environment are left at the 0.5 ba
 ## Sources
 - data/blocklist.md (entry `amazon`)
 - https://en.wikipedia.org/wiki/Amazon_(company)#Amazon.com
+- research/sites/fairtradecertified-org.md (the Amazon tile and the Big Country Foods link)
+- research/sites/pcworld-com.md (the Amazon listing link)

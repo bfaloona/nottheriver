@@ -42,3 +42,4 @@ Not scored, but on record: Wikipedia says that in 2022 "a group of 5,000 sellers
 - https://www.nlrb.gov/search/case/Etsy (no cases)
 - https://www.osha.gov/ords/imis/establishment.html?p_message=2&establishment=Etsy&state=all&office=all&officetype=all&sitezip=&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=both ("Your search did not return any results.")
 - https://oag.ca.gov/system/files/prop65/settlements/2024-02373S4583.pdf
+- research/raw/tally.md (names used per domain)

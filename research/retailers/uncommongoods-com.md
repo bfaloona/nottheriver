@@ -24,7 +24,7 @@ Uncommon Goods is an online gift retailer in Brooklyn, New York, founded in 1999
 
 ## Rating
 - Ethics: 0.5 baseline, +0.25 `b_corp`. The B Corp directory returned HTTP 403 to this run's fetch, so the row in `data/certifications.json` counts (`verified_this_run: false`, "Certified Since May 2007", checked there 2026-09-23). No accepted concern. = 0.75
-- Environment: 0.5 baseline. Not in The Climate Label directory list (188 brands); no 1% for the Planet claim on any list page. No environmental concern. = 0.5
+- Environment: 0.5 baseline. Not in The Climate Label directory's brand list; no 1% for the Planet claim on any list page. No environmental concern. = 0.5
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Concerns: NLRB's case search returned no cases for "uncommon goods". The WebSearch budget was used up, so ftc.gov, osha.gov, dol.gov and news were not searched; the concern list may be incomplete.
 - Blocklist: `node research/build-index.mjs --blocklist "Uncommon Goods" uncommongoods.com` returned "not on the blocklist".

@@ -27,7 +27,7 @@ Fair Trade USA's shop page lists Bob's Red Mill among "brands that offer Fair Tr
 
 OSHA (Oregon state plan) inspections of Bob's Red Mill Natural Foods Inc, 13521 SE Pheasant Ct, Portland, OR: seven since 2018. Counted: a complaint inspection opened 2022-10-25, citations issued 2023-01-03, 3 serious citations with penalties, total $1,350. Not counted: a planned inspection opened 2025-09-25, still open, with one other-than-serious citation (issued 2025-10-29) and no penalty; the other five list no violations.
 
-Litigation seen on CourtListener, none counted because the docket list shows no finding or settlement: an employment civil-rights suit (Santos, D. Or., 2011), consumer fraud and contract suits (Frankel, N.D. Cal., 2018; Hayden, N.D. Cal., 2023), a product-liability suit (Sturdivant, S.D. Fla., 2014) and an ADA website-access suit (Dawson, S.D.N.Y., 2020). All are terminated.
+Litigation seen on CourtListener, none counted because the docket list shows no finding or settlement: an employment civil-rights suit (D. Or., 2011), consumer fraud and contract suits (N.D. Cal., 2018; N.D. Cal., 2023), a product-liability suit (S.D. Fla., 2014) and an ADA website-access suit (S.D.N.Y., 2020). All are terminated.
 
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").

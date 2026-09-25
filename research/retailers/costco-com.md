@@ -15,7 +15,6 @@ concerns:
   - {kind: labor, title: "Inspection: 1640222.015 - Costco Wholesale Corp #781", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1640222.015", date: 2023-03-15, accepted_source: true}
   - {kind: labor, title: "Inspection: 1356334.015 - Costco Wholesale Corporation", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1356334.015", date: 2019-03-05, accepted_source: true}
   - {kind: labor, title: "Costco Wholesale Corp.", source: "https://www.nlrb.gov/case/01-CA-355597", date: 2025-08-12, accepted_source: true}
-  - {kind: governance, title: "$14M Costco Settlement Resolves Class Action Lawsuit Over Promo Emails With Allegedly Misleading Subject Lines", source: "https://www.classaction.org/news/14m-costco-settlement-resolves-class-action-lawsuit-over-promo-emails-with-allegedly-misleading-subject-lines", date: 2026-07-22, accepted_source: false}
 ethics: 0
 environment: 0.5
 tier: caution
@@ -33,7 +32,7 @@ Concerns, in the sources' own terms:
 - OSHA inspection 1640222.015 (Chula Vista, CA, store #781): six citations issued 2023-03-15; three deleted (including the one "Serious" item) and three "Other" citations remain, current penalty $1,330; case closed 2026-03-25.
 - OSHA inspection 1356334.015 (Tracy, CA): five citations issued 2019-03-05; three deleted (including the "Serious" item) and two "Other" citations remain, current penalty $560; case closed 2019-09-03.
 - NLRB case 01-CA-355597 (Milford, CT): an "8(a)(1) Coercive Rules" charge filed 2024-11-27; the NLRB General Counsel issued a complaint and notice of hearing on 2025-08-12, and the case is open. This is an allegation, not a finding.
-- Class action Aaland v. Costco over emails sent to Washington residents (emails with "allegedly misleading subject lines"): Costco agreed to a $14 million settlement without admitting wrongdoing; final approval hearing set for 2026-10-02. The source (classaction.org) is not an accepted source, so it does not change the score.
+- A class action against Costco over emails sent to Washington residents (emails with "allegedly misleading subject lines"): Costco agreed to a $14 million settlement without admitting wrongdoing; final approval hearing set for 2026-10-02. The source (classaction.org) is not an accepted source, so it does not change the score.
 
 These are a sample, not a full count: an NLRB case search for "costco" returns 180 cases, of which only the six named here were opened, and an OSHA establishment search for "costco" (2016 to 2026-09-25) lists 302 inspections, of which only the five named here were opened.
 
@@ -67,3 +66,4 @@ Checked and not recorded: NLRB cases 03-CA-356842 and 03-CA-355134 (Brighton, NY
 - https://www.classaction.org/news/14m-costco-settlement-resolves-class-action-lawsuit-over-promo-emails-with-allegedly-misleading-subject-lines
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Costco+Wholesale%22+settlement&type=r&order_by=dateFiled+desc
 - data/blocklist.md (checked: no matching entry)
+- research/sites/vstyleblog-com.md (the list's reason)

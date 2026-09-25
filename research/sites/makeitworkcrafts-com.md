@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (20/20): no affiliate links or sponsor labels found, all links go straight to the shops; owner and byline are shown.
 - Evidence (2/20): no sources or certifications for any shop; the single ownership claim (Artist & Craftsman "employee-owned") is not sourced.
-- Substance (12/20): 31 real, non-Amazon US shops, each with a specific (if short) reason, but one category of goods only (craft and art supplies), reasons are about selection rather than ethics, and three picks are Etsy shops.
+- Substance (12/20): 31 real, non-Amazon shops, each with a specific (if short) reason, but one category of goods only (craft and art supplies), reasons are about selection rather than ethics, and three picks are Etsy shops.
 - Currency (12/15): published 2025-03-19, within two years, but the year is not shown on the page; of the 28 non-Etsy shop links checked with plain curl, all loaded except the Arteza link (arteza.com), which now lands on plaidonline.com.
 - Usefulness (11/15): grouped by craft type with direct links; no shipping information.
 - No dark patterns (10/10): plain headline, no Amazon or Amazon-owned links, no repeated pick; the 30-vs-31 count is a slip, not a lure.

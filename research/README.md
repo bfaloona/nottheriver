@@ -41,6 +41,7 @@ Nothing here changes the live site. The live data stays in `data/`.
 | `blocked-retailers-R<n>.md` | Pages the retailer researchers could not fetch, per batch |
 | `verify-R<n>.md` | The verifier's check of every certification, concern and field, per batch |
 | `run-log.md` | Stage status and the lead's decisions during the run |
+| `qa.md` | The final QA check of every file: what was fixed and what is flagged for the operator |
 
 ## Rebuild
 

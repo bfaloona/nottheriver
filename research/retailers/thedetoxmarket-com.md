@@ -23,7 +23,7 @@ The Detox Market sells "clean beauty and wellness" products (skincare, makeup, b
 
 Lists recommend it for ingredient standards: AmazonAlts (natural wellness products vetted for ingredients and cruelty-free formulas), Going Zero Waste ("non-toxic, cruelty-free products", "planting 500,000 trees") and Sustainable Jungle ("Natural and organic beauty"). The tree-planting claim did not appear on the homepage fetched this run.
 
-CourtListener shows two private suits: Hecht v. The Detox Market Inc. (S.D.N.Y., filed 2020-08-21, Americans with Disabilities Act, terminated 2020-11-09) and Henry v. The Detox Market, Inc. (N.D. Ill., filed 2025-05-08, cause not shown, open). The complaints were not fetched, so what each alleges is unknown and neither is recorded as a concern.
+CourtListener shows two private suits: one against The Detox Market Inc. (S.D.N.Y., filed 2020-08-21, Americans with Disabilities Act, terminated 2020-11-09) and one against The Detox Market, Inc. (N.D. Ill., filed 2025-05-08, cause not shown, open). The complaints were not fetched, so what each alleges is unknown and neither is recorded as a concern.
 
 ## Rating
 - ethics: 0.5 baseline. No B Corp, Fair Trade USA or worker co-op listing verified (bcorporation.net blocked agents this run; no row in data/certifications.json).

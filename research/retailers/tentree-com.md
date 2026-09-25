@@ -26,7 +26,7 @@ Lists recommend it for tree planting: AmazonAlts ("10 trees for each item purcha
 
 Tentree's about page claims B Corp certification (and a "Best For the World" award in Community, 2021), the Climate Label and Science Based Targets. The B Corp claim could not be checked on bcorporation.net (HTTP 403) and data/certifications.json has no row for tentree.com, so it does not count. The Climate Label claim was checked on the certifier's own directory (explore.changeclimate.org, run by Climate Neutral dba The Change Climate Project; climateneutral.org redirects to changeclimate.org), which shows "first certified 2021" and "current certification year 2025".
 
-CourtListener shows Haker v. Tentree International Inc. (E.D.N.Y., filed 2020-03-20, copyright infringement, terminated 2021-09-08). A copyright claim is not a labor, governance or environmental concern, so it is not recorded as one.
+CourtListener shows an individual's suit against Tentree International Inc. (E.D.N.Y., filed 2020-03-20, copyright infringement, terminated 2021-09-08). A copyright claim is not a labor, governance or environmental concern, so it is not recorded as one.
 
 ## Rating
 - ethics: 0.5 baseline. B Corp claimed but not verified this run (bcorporation.net 403, no fallback row).

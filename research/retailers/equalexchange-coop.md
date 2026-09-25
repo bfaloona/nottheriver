@@ -48,6 +48,6 @@ Concerns checked: NLRB case search for "equal exchange" returned no cases. OSHA'
 - https://www.nlrb.gov/search/case/equal%20exchange
 - https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=equal+exchange&State=all&officetype=all&Office=all&sitezip=&p_case=all&p_violations_exist=yes&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1880169.015
-- https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (HTTP 403, logged in raw/blocked-retailers-R5.md)
+- https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (a query for another retailer in batch R5; its HTTP 403 shows the directory blocked agents; logged in raw/blocked-retailers-R5.md)
 - data/blocklist.md (not on the blocklist: `build-index.mjs --blocklist`)
 - research/sites/adayinourshoes-com.md, research/sites/greenamerica-org.md, research/sites/workerowned-info.md (reasons)

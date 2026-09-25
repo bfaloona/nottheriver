@@ -24,7 +24,7 @@ Grove Collaborative sells household cleaning and personal care products online, 
 
 ## Rating
 - Ethics: 0.5 baseline, +0.25 `b_corp`. The B Corp directory returned HTTP 403 to this run's fetch of this page, so the row in `data/certifications.json` counts (`verified_this_run: false`, "Certified Since June 2014", checked there 2026-09-23). No accepted concern. = 0.75
-- Environment: 0.5 baseline. The Climate Label: explore.changeclimate.org/brand/grove-collaborative and /brand/grove return "Brand Not Found", and Grove is not in the directory's list of 188 brands; not counted. No environmental concern. = 0.5
+- Environment: 0.5 baseline. The Climate Label: explore.changeclimate.org/brand/grove-collaborative and /brand/grove return "Brand Not Found", and Grove is not in the directory's brand list; not counted. No environmental concern. = 0.5
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Concerns: NLRB's case search returned no cases for "grove collaborative". The WebSearch budget was used up, so ftc.gov, osha.gov, dol.gov, sec.gov and news were not searched; the concern list may be incomplete.
 - Blocklist: `node research/build-index.mjs --blocklist "Grove Collaborative" grove.co` returned "not on the blocklist".

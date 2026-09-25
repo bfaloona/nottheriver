@@ -21,7 +21,7 @@ checked: 2026-09-25
 - Independence (16/20): owner named in the footer and no affiliate or retailer links in the article; points off because the only disclosure is a generic financial-advertiser box, and the site says advertiser pay "may impact how and where products appear".
 - Evidence (1/20): no sources or certifications; Grove is called "sustainable" with nothing behind it.
 - Substance (8/20): 10 real, non-Amazon retailers across groceries, home, kitchen, pets and handmade goods, each with a short specific reason; points off for the short list, big-box picks (Target, Home Depot) and AliExpress and Wish offered with a quality warning.
-- Currency (4/15): calibrated from 3 to match techradar-com (4, published 2020-12-12, also pandemic-era with no later update); last updated 2021-08-23, over 4 years ago, with pandemic framing; retailer domains checked this run all answer (thrivemarket.com, grove.co, surlatable.com, chewy.com, homedepot.com, wish.com; overstock.com refused the request).
+- Currency (4/15): calibrated from 3 to match techradar-com (4, published 2020-12-12, also pandemic-era with no later update); last updated 2021-08-23, over 4 years ago, with pandemic framing; retailer domains checked this run answer, except overstock.com (thrivemarket.com, grove.co, surlatable.com, chewy.com, homedepot.com, wish.com; overstock.com refused the request).
 - Usefulness (3/15): no links to any retailer, no shipping details, no grouping by product type.
 - No dark patterns (8/10): no Amazon or Amazon-owned picks and no repeated top pick; points off for the exit-intent banking-offers overlay in the page markup (not seen rendered).
 
@@ -39,7 +39,7 @@ checked: 2026-09-25
 | 9 | Etsy | etsy.com | Handmade and vintage; "you're probably getting the only one" |
 | 10 | Chewy | chewy.com | Pet products with discounts and free shipping; contacts your vet for prescriptions |
 
-The page links to no retailer, so every domain comes from a direct request to the retailer's site this run (overstock.com refused the request; aliexpress.com, target.com and etsy.com were not requested). The page's single "AliExpress and Wish" entry is split into rows #7 and #8. Whole Foods is named only as excluded for being Amazon-owned, so it is not in the table. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+The page links to no retailer, so each domain except aliexpress.com, target.com and etsy.com comes from a direct request to the retailer's site this run (overstock.com refused the request; aliexpress.com, target.com and etsy.com were not requested). The page's single "AliExpress and Wish" entry is split into rows #7 and #8. Whole Foods is named only as excluded for being Amazon-owned, so it is not in the table. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
 
 ## Sources
 - https://www.gobankingrates.com/saving-money/holiday/top-places-shop-online-arent-amazon/

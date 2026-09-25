@@ -27,3 +27,4 @@ Tier `excluded` (blocklist match). Ethics and environment are left at the 0.5 ba
 ## Sources
 - data/blocklist.md (entry `abebooks`)
 - https://en.wikipedia.org/wiki/Amazon_(company)
+- research/sites/techradar-com.md (the pick and the page's note on ownership)

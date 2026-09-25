@@ -2,7 +2,7 @@
 name: AliExpress
 domain: aliexpress.com
 type: marketplace
-goods: [general merchandise, electronics, clothing, home goods]
+goods: [general merchandise]
 ownership: public
 parent: Alibaba Group
 hq: unknown

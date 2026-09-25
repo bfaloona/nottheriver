@@ -25,7 +25,7 @@ Wikipedia also describes it as a certified B Corporation that donates books or a
 
 List sites recommend it for used books with a literacy mission: AmazonAlts lists it under books as "a better place to get books", Antifa Marketer as "Books that support literacy programs", and Sustainable Jungle for "affordable used books" and having "raised almost $10 million for local bookstores".
 
-Concerns checked: NLRB case search for "better world books" returned no cases; OSHA's establishment search for "better world books" (2016 to 2026) returned no inspections (the same query form returned 46 inspections for Chewy, so the search works); a CourtListener opinion search surfaced only Hachette Book Group v. Internet Archive, in which Better World Books is not a party. No general news search was possible (the run's web search budget was used up), so this check is narrower than intended.
+Concerns checked: NLRB case search for "better world books" returned no cases; OSHA's establishment search for "better world books" (2016 to 2026) returned no inspections; a CourtListener opinion search surfaced only Hachette Book Group v. Internet Archive, in which Better World Books is not a party. No general news search was possible (the run's web search budget was used up), so this check is narrower than intended.
 
 ## Rating
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.

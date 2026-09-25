@@ -27,3 +27,4 @@ Tier `excluded` (blocklist match). Ethics and environment are left at the 0.5 ba
 ## Sources
 - data/blocklist.md (entry `wholefoodsmarket.com`)
 - https://en.wikipedia.org/wiki/Amazon_(company)#Whole_Foods_Market
+- research/sites/fairtradecertified-org.md (the shop tile and the Allegro Coffee link)

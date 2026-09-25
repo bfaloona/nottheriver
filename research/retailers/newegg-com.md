@@ -26,7 +26,7 @@ The one concern is NLRB unfair labor practice case 21-CA-184553 (Region 21, Los 
 
 ## Rating
 - Ethics: 0.5 baseline. No verified certification. Minus 0.25 for the accepted labor concern (nlrb.gov, settled 2019-07-31). = 0.25
-- Environment: 0.5 baseline. No verified certification (not in The Climate Label directory list of 188 brands; no B Corp or 1% for the Planet claim on any list page). No environmental concern. = 0.5
+- Environment: 0.5 baseline. No verified certification (not in The Climate Label directory's brand list; no B Corp or 1% for the Planet claim on any list page). No environmental concern. = 0.5
 - Total 0.75: tier `caution`.
 - Blocklist: `node research/build-index.mjs --blocklist "Newegg" newegg.com` returned "not on the blocklist".
 - Concern search incomplete this run (see raw/blocked-retailers-R2.md); tier is provisional.
