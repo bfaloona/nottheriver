@@ -30,7 +30,7 @@
         "origin": { "enum": ["curated", "llm"] },
         "action_date": { "type": ["string", "null"] } } },
     "result": { "type": "object", "additionalProperties": false,
-      "required": ["id", "kind", "rank", "retailer", "matched_product", "snippet", "address", "distance_km", "certifications", "signals", "score", "components"],
+      "required": ["id", "kind", "rank", "retailer", "matched_product", "snippet", "address", "distance_km", "lat", "lon", "certifications", "signals", "score", "components"],
       "properties": {
         "id": { "type": "string" }, "kind": { "enum": ["local", "online"] },
         "rank": { "type": "integer", "minimum": 1 },
@@ -38,6 +38,7 @@
           "properties": { "name": { "type": "string", "minLength": 1 }, "domain": { "type": "string", "minLength": 1 }, "url": { "type": "string", "pattern": "^https?://" } } },
         "matched_product": { "type": "string" }, "snippet": { "type": "string" },
         "address": { "type": ["string", "null"] }, "distance_km": { "type": ["number", "null"] },
+        "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 }, "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
         "certifications": { "type": "array", "items": { "$ref": "#/definitions/certification" } },
         "signals": { "type": "array", "items": { "$ref": "#/definitions/signal" } },
         "score": { "type": "number", "minimum": 0, "maximum": 1 },

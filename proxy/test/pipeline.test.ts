@@ -279,7 +279,7 @@ describe('runSearch over the fixtures', () => {
     }
   });
 
-  it('ranks 1..n by score, gives every counted component a source, and exposes no coordinates', async () => {
+  it('ranks 1..n by score and gives every counted component a source', async () => {
     const { res } = await search();
     for (const section of [res.local, res.online]) {
       expect(section.map((r) => r.rank)).toEqual(section.map((_, i) => i + 1));
@@ -289,7 +289,23 @@ describe('runSearch over the fixtures', () => {
         for (const c of r.components) if (c.value > 0) expect(c.sources.length, `${r.id} ${c.name}`).toBeGreaterThan(0);
       }
     }
-    expect(JSON.stringify([res.local, res.online])).not.toMatch(/"(lat|lon)"/);
+  });
+
+  // Shop coordinates are public listing data the map pins; the searcher's own centroid is never echoed.
+  it('gives each local shop its listed coordinates to 4 decimals, online none, and no request centroid', async () => {
+    const { res } = await search();
+    const listed = new Map(place1.results.map((p) => [p.title, p.coordinates]));
+    expect(res.local.length).toBeGreaterThan(0);
+    for (const r of res.local) {
+      const [lat, lon] = listed.get(r.retailer.name) ?? [];
+      expect({ lat: r.lat, lon: r.lon }, r.id).toEqual({ lat, lon });
+    }
+    for (const r of res.online) expect({ lat: r.lat, lon: r.lon }, r.id).toEqual({ lat: null, lon: null });
+    expect(JSON.stringify(res.query)).not.toMatch(/"(lat|lon)"/);
+
+    const precise = candidate({ kind: 'local', lat: 39.781234567, lon: -89.654321987, address: '1 Main St', place_id: 'p' });
+    const [scored] = scoreAll([row(precise)], NORMALIZED, REQ, 'http://localhost:5173');
+    expect({ lat: scored!.result.lat, lon: scored!.result.lon }).toEqual({ lat: 39.7812, lon: -89.6543 });
   });
 
   it('builds ranking-doc links with one slash when SITE_URL ends in a slash', async () => {

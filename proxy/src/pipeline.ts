@@ -161,6 +161,9 @@ export async function enrichAndFilter(pass1: Candidate[], llm: LlmClient, n: Nor
   });
 }
 
+// About 11 m: enough to place a pin, no more precise than the listing needs.
+const coord = (x: number | null): number | null => (x === null || !Number.isFinite(x) ? null : Math.round(x * 1e4) / 1e4);
+
 function scoreRow(id: string, input: ScoreInput): ScoredRow {
   const { candidate: c, certifications: certs, signals } = input;
   const scored = scoreCandidate(input);
@@ -172,6 +175,8 @@ function scoreRow(id: string, input: ScoreInput): ScoredRow {
     snippet: c.snippet,
     address: c.address,
     distance_km: scored.distance_km,
+    lat: coord(c.lat),
+    lon: coord(c.lon),
     certifications: certs,
     signals,
     score: scored.score,

@@ -58,6 +58,8 @@ export interface SearchResult {
   snippet: string;
   address: string | null;      // local only (displayAddress)
   distance_km: number | null;  // local only, haversine from the centroid, 1 decimal
+  lat: number | null;          // local only: the shop's listed coordinates, 4 decimals, for the map
+  lon: number | null;
   certifications: Certification[];
   signals: Signal[];
   score: number;               // 0..1, 3 decimals
