@@ -25,13 +25,15 @@ The list sites name it for refurbished tech and e-waste: "rigorous vetting progr
 
 Concern search was limited: the session's WebSearch budget ran out before this retailer, and the ftc.gov, justice.gov, nlrb.gov and npr.org site searches did not return filtered results (inconclusive). The CourtListener search API worked and returned three federal cases naming Back Market Inc.: two 2022 suits filed under "Americans with Disabilities - Other" (one against Back Market Inc, S.D.N.Y.; one against Back Market Inc., E.D.N.Y.) and a suit by an individual against Back Market Inc. (N.D. Cal., filed 2026-09-15; nature not shown, docket page blocked). None is a labor, governance or environmental finding, so none is recorded as a concern.
 
+Second pass (2026-09-25): FTC cases search for "Back Market" returned 565 keyword matches; sorted by relevance, the top 20 (Backcountry.com, Whole Foods Market and similar) include no Back Market respondent. The CourtListener agency-docket query for "Back Market" since 2016 returned no dockets; ProPublica's 48 hits for the phrase include none about the company. No matching cases.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Back Market" backmarket.com` returned "not on the blocklist".
 - Certifications: B Corp claimed but unverified (certifier directory blocked, no fallback row); none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns.
 - Environment: 0.5 baseline, no counted certifications or accepted concerns.
 - Tier: ethics + environment = 1.0, so `acceptable` (below the 1.25 needed for `recommended`). A verified B Corp listing would raise ethics to 0.75 and the tier to `recommended`.
-- Concern search incomplete this run (see raw/blocked-retailers-R3.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.backmarket.com/en-us/about-us
@@ -39,3 +41,7 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Back+Market+Inc%22&type=r
 - research/sites/goodgoodgood-co.md, sustainablejungle-com.md, thegoodtrade-com.md, vstyleblog-com.md (reasons)
 - data/blocklist.md (checked: no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Back%20Market
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Back%20Market&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Back%20Market%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Back%20Market%22

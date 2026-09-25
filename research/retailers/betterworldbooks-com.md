@@ -27,11 +27,13 @@ List sites recommend it for used books with a literacy mission: AmazonAlts lists
 
 Concerns checked: NLRB case search for "better world books" returned no cases; OSHA's establishment search for "better world books" (2016 to 2026) returned no inspections; a CourtListener opinion search surfaced only Hachette Book Group v. Internet Archive, in which Better World Books is not a party. No general news search was possible (the run's web search budget was used up), so this check is narrower than intended.
 
+Second pass (2026-09-25): FTC cases search for "Better World" (covers the retailer and its parent, Better World Libraries) sorted by relevance returned 86 keyword matches; the top 20 (BetterHelp, World Federation of Advertising and similar) include no Better World respondent. The CourtListener agency-docket query for "Better World Books" since 2016 returned no dockets; ProPublica's 42 hits for the phrase include none about the company. No matching cases.
+
 ## Rating
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.
 - Environment: 0.5 baseline. The Climate Label directory (explore.changeclimate.org) returned "Brand Not Found" for `better-world-books`; the 1% for the Planet directory profile page rendered no listing content, so membership is unverified. No environmental concern. Environment 0.5.
 - Tier: 0.5 + 0.5 = 1.0 meets `acceptable` (≥ 1.0), not `recommended` (≥ 1.25). Tier `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Better_World_Books
@@ -45,3 +47,6 @@ Concerns checked: NLRB case search for "better world books" returned no cases; O
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Better%20World%20Books%22
 - data/blocklist.md (not on the blocklist: `build-index.mjs --blocklist`)
 - research/sites/amazonalts-org.md, research/sites/antifamarketer-org.md, research/sites/sustainablejungle-com.md (reasons)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Better%20World&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Better%20World%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Better%20World%20Books%22

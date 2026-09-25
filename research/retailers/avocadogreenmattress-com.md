@@ -31,12 +31,14 @@ Litigation seen on CourtListener, none counted as a concern because none shows a
 
 OSHA (California state plan) inspections of the parent, Avocado Green Brands, LLC, in Fullerton, CA, both counted as labor concerns. The tie to this retailer comes from the company's own pages: the story page says Avocado Green Mattress "is owned by Avocado Green Brands" and that "Every Avocado mattress is handmade in our GOTS-certified facility in Fullerton, California". an accident inspection opened 2022-03-10 (2337 W Commonwealth Ave) after a worker was "struck by an object" from a belt sander, citations issued 2022-08-11, 2 other-than-serious, initial penalty $5,000, current $3,000 (one citation was contested and resolved by an administrative law judge's order; case closed 2024-11-18); and an accident inspection opened 2023-03-23 (570 N. Gilbert St.), citations issued 2023-08-16, 3 other-than-serious, penalty $935.
 
+Second pass (2026-09-25): FTC cases search for "Avocado Green" (covers the retailer and its parent, Avocado Green Brands) returned 33 keyword matches ("Green", "Walgreens" and similar); the 20 shown, dated 2012 to 2026, include none naming Avocado as respondent; the CourtListener agency-docket query for "Avocado Green Mattress" since 2016 returned no dockets; ProPublica's one hit (a Philips CPAP story) is not about the company. No matching cases.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline. No ethics certification verified (B Corp claim unverifiable this run). −0.25 × 2 accepted labor concerns (osha.gov, parent company's factory) = −0.5. Result 0.
 - Environment: 0.5 baseline, +0.25 `climate_neutral` (The Climate Label: explore.changeclimate.org, run by Climate Neutral dba The Change Climate Project, shows the brand as certified, first certified 2020, current certification year 2025), +0.25 `one_percent_planet` (the directory page renders no content to a fetch, so the row in `data/certifications.json` counts, `verified_this_run: false`; that row notes it is a Product Line Member, not whole-company). Result 1.0.
 - Tier: ethics + environment = 1.0; accepted concerns in the last 5 years rule out `recommended`; 1.0 ≥ 1.0: `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.avocadogreenmattress.com/pages/our-story
@@ -53,3 +55,6 @@ OSHA (California state plan) inspections of the parent, Avocado Green Brands, LL
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1658946.015
 - https://violationtracker.goodjobsfirst.org/?company_op=starts&company=Avocado (403)
 - data/blocklist.md
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Avocado%20Green
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Avocado%20Green%20Mattress%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Avocado%20Green%20Mattress%22

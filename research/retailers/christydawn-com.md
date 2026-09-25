@@ -25,12 +25,14 @@ Lists recommend it as an ethical clothing brand: A Day in Our Shoes (ethical clo
 
 Concerns. None recorded. The NLRB case search for "christy dawn" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket naming the company, an individual's suit against Christy Dawn, LLC (E.D.N.Y., filed 2020-09-03, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
+Second pass (2026-09-25): FTC cases search for "Christy Dawn" returned no results (the same unquoted search returns matches for other names this pass); the CourtListener agency-docket query since 2016 returned no dockets; ProPublica's 4 hits for the phrase include none about the company. No matching cases.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia). The brand's own pages claim none of these.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://christydawn.com/pages/about
@@ -47,3 +49,6 @@ Concerns. None recorded. The NLRB case search for "christy dawn" returned no cas
 - https://explore.changeclimate.org/ (not listed)
 - https://dueekpzk7aquu.cloudfront.net/search?q=christy%20dawn (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Christy%20Dawn&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Christy%20Dawn%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Christy%20Dawn%22

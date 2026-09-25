@@ -25,13 +25,15 @@ The list sites name it for range and convenience, not ethics: "massive inventory
 
 Concern search was limited: the session's WebSearch budget ran out before this retailer, the ftc.gov, nlrb.gov and osha.gov site searches were inconclusive (search terms ignored, or a known-positive control also returned nothing), and justice.gov search returned HTTP 403. A CourtListener API search for federal dockets with Best Buy against the United States, the EEOC, the FTC, the Secretary of Labor, the NLRB or the SEC since 2016 found only cases Best Buy or an unrelated "Star Best Buy Inc." brought against the United States (trade and tax claims), which are not concerns. Wikipedia lists older matters (a 2008 FCC fine over analog-TV notices, class-action settlements, a 2026 B.C. Human Rights Tribunal order) that are not from accepted sources and were not fetched at their source, so none is recorded. This file should be rechecked with a working search.
 
+Second pass (2026-09-25): FTC cases search for "Best Buy" sorted by relevance returned 72 keyword matches; the top results (Appliancebestbuys.com, BUY.COM, Best Priced Brands and similar) include no Best Buy Co. respondent, and a quoted-phrase search returned nothing (inconclusive, the quoted syntax returns nothing for any name tried). The CourtListener agency-docket query since 2016 returned 4 dockets, all brought against the United States (Best Buy Purchasing LLC and an unrelated Star Best Buy Inc. in the Court of International Trade, and Best Buy Co. in the Court of Federal Claims), so none is a concern. ProPublica's 45 hits include none about an action against Best Buy. No matching cases.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Best Buy" bestbuy.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Environment: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R3.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Best_Buy
@@ -42,3 +44,7 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 - https://www.courtlistener.com/api/rest/v4/search/?q=caseName%3A%22Best+Buy%22&type=o&order_by=dateFiled+desc&filed_after=2021-01-01
 - research/sites/amazonalts-org.md, moneypantry-com.md, pcworld-com.md, techradar-com.md (reasons)
 - data/blocklist.md (checked: no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Best%20Buy%22 (no results; quoted syntax inconclusive)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Best%20Buy&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Best%20Buy%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Best%20Buy%22

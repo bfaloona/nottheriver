@@ -29,12 +29,14 @@ OSHA (Oregon state plan) inspections of Bob's Red Mill Natural Foods Inc, 13521 
 
 Litigation seen on CourtListener, none counted because the docket list shows no finding or settlement: an employment civil-rights suit (D. Or., 2011), consumer fraud and contract suits (N.D. Cal., 2018; N.D. Cal., 2023), a product-liability suit (S.D. Fla., 2014) and an ADA website-access suit (S.D.N.Y., 2020). All are terminated.
 
+Second pass (2026-09-25): FTC cases search for "Bob's Red Mill" sorted by relevance returned 792 keyword matches; the top 20 (General Mills, Pendleton Woolen Mills and similar) include no Bob's Red Mill respondent. The CourtListener agency-docket query since 2016 returned no dockets; ProPublica's 7 hits for the phrase include none about an action against the company. No matching cases.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline, +0.25 `fair_trade` (fairtradecertified.org brand listing, fetched this run), −0.25 × 1 accepted labor concern (osha.gov). B Corp not checked: bcorporation.net blocked agents this run and `data/certifications.json` has no row for this domain. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (explore.changeclimate.org/sitemap.xml, 310 brand pages) has no Bob's Red Mill entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0; an accepted concern in the last 5 years rules out `recommended`; 1.0 ≥ 1.0: `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Bob%27s_Red_Mill
@@ -47,3 +49,6 @@ Litigation seen on CourtListener, none counted because the docket list shows no 
 - https://www.ftc.gov/search?search_api_fulltext=%22Bob%27s+Red+Mill%22 (404)
 - https://explore.changeclimate.org/sitemap.xml
 - data/blocklist.md
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Bob%27s%20Red%20Mill&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Bob's%20Red%20Mill%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Bob's%20Red%20Mill%22

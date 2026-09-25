@@ -25,13 +25,15 @@ The list sites name it for Black-owned, non-toxic goods: "all-natural marketplac
 
 Concern search was limited: the session's WebSearch budget ran out before this retailer, and the regulator site searches were inconclusive (see Best Buy's file and `raw/blocked-retailers-R3.md`). A CourtListener API search for "BLK + GRN", "BLK & GRN" and "BLK GRN" returned no case naming it. No concerns recorded.
 
+Second pass (2026-09-25): FTC cases search for "BLK GRN" returned no results (the same unquoted search returns matches for other names this pass); the CourtListener agency-docket query for "BLK + GRN" since 2016 returned no dockets; ProPublica returned no articles for the name. No matching cases.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "BLK + GRN" blkgrn.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Environment: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R3.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://blkgrn.com/
@@ -39,3 +41,6 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22BLK+%2B+GRN%22+OR+%22BLK+%26+GRN%22+OR+%22BLK+GRN%22+OR+%22Misfits+Market%22&type=r
 - research/sites/amazonalts-org.md, goingzerowaste-com.md, goodgoodgood-co.md, thegoodtrade-com.md (reasons)
 - data/blocklist.md (checked: no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=BLK%20GRN&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22BLK%20%2B%20GRN%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22BLK%20%2B%20GRN%22
