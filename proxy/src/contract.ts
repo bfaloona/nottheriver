@@ -128,6 +128,11 @@ export interface Normalized {
 }
 
 export interface RateLimiter { limit(opts: { key: string }): Promise<{ success: boolean }> }
+// The part of a Workers KV binding the normalize cache uses.
+export interface KvStore {
+  get(key: string, type: 'json'): Promise<unknown>;
+  put(key: string, value: string, options: { expirationTtl: number }): Promise<void>;
+}
 
 export interface Env {
   BRAVE_API_KEY: string;
@@ -137,6 +142,7 @@ export interface Env {
   SITE_URL: string;       // full site base URL, may include a path, never a trailing slash (pipeline.ts strips one defensively)
   RATE_LIMITER?: RateLimiter;   // per-client; memoryLimiter(RATE_LIMIT) applies as well
   GLOBAL_LIMITER?: RateLimiter; // all clients together; memoryLimiter(GLOBAL_LIMIT) applies as well
+  NORMALIZE_CACHE?: KvStore; // without it every search calls the model for its search wording
 }
 
 export interface Deps {

@@ -18,7 +18,7 @@ What the site collects, where it goes, and what is kept. Nothing here says "noth
 | Brave Search, web search | Search terms derived from your product; the zip-area center as `x-loc-lat` / `x-loc-long` headers; city and state as `x-loc-city` / `x-loc-state` headers; `x-loc-country`, always `US` | Your zip, your IP address, your browser's User-Agent or Referer |
 | Brave Search, place search | Search terms; the zip-area center as `latitude` / `longitude` query parameters (so Brave gets the center twice per search) | City, state, your zip, your IP address |
 | OpenStreetMap tile servers (from your browser, not the Worker) | Requests for map images covering the shops near you and the center of your zip area; your IP address, User-Agent and the site's origin | Your zip, the product, any page path |
-| OpenRouter and the model provider it routes to | Your product text, city and state (first call); titles, snippets and URLs of the fetched search results (second call) | Coordinates, your zip, your IP address |
+| OpenRouter and the model provider it routes to | Your product text (first call); titles, snippets and URLs of the fetched search results (second call). Those results were found near you, so their text can name your town | The city and state you searched from as fields, coordinates, your zip, your IP address |
 
 The Worker builds every outbound header from fixed values, so your browser's `User-Agent` and `Referer` never reach Brave or OpenRouter. OpenRouter also receives the site's name and URL in its documented app-attribution headers.
 

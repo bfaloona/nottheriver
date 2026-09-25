@@ -6,7 +6,7 @@ import { rankByScore, scoreCandidate, type ScoreInput } from '../ranking/score';
 import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
 import { createBraveClient, type BraveClient } from './brave';
 import type {
-  Candidate, Dropped, Env, Deps, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
+  Candidate, Dropped, Env, Deps, KvStore, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
 } from './contract';
 import { enrichAll, type CertificationRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
 import { InvalidLlmOutput } from './errors';
@@ -14,6 +14,7 @@ import { NORMALIZE_MAX_TOKENS, createLlmClient, type LlmClient } from './llm';
 import { dropReason, isEditorialUrl, splitEditorial } from './precision';
 import { estimateCost } from './pricing';
 import { buildNormalizePrompt } from './prompts';
+import { normalizeCacheKey, readNormalized, writeNormalized } from './normalize-cache';
 
 export const MAX_SIMILAR_PRODUCTS = 6;
 export const MAX_ONLINE_QUERIES = 3;
@@ -282,15 +283,34 @@ function totalUsage(braveCalls: number, llm: LlmUsage[]): Usage {
   };
 }
 
+// The raw model output is cached, not the scrubbed one, so blocklist changes still apply
+// to cached products. A cached value the scrub refuses counts as a miss and is replaced;
+// otherwise one bad reading would fail every search for that product until it expired.
+async function normalize(req: SearchRequest, llm: LlmClient, cache: KvStore | undefined): Promise<Normalized> {
+  const key = cache ? await normalizeCacheKey(req.product) : null;
+  const cached = cache && key ? await readNormalized(cache, key) : null;
+  if (cached !== null) {
+    try {
+      // Scrubbed before truncating, so blocked queries cannot take the slots of usable ones.
+      return truncate(scrubNormalized(cached as Normalized, req.product));
+    } catch {
+      // fall through to the model
+    }
+  }
+  const raw = await llm.complete<Normalized>('normalize', buildNormalizePrompt(req), NORMALIZE_MAX_TOKENS);
+  const n = truncate(scrubNormalized(raw, req.product));
+  // A reading with no local search would hide every nearby shop for this product for 30 days.
+  if (cache && key && n.local_queries.length > 0) await writeNormalized(cache, key, raw);
+  return n;
+}
+
 export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promise<SearchResponse> {
   const siteUrl = env.SITE_URL.replace(/\/+$/, '');
   const llm = createLlmClient({ fetch: deps.fetch, apiKey: env.OPENROUTER_API_KEY, siteUrl, siteName: env.SITE_NAME });
   // The client refuses a seventh call; truncation keeps a search at five at most.
   const brave = createBraveClient({ fetch: deps.fetch, apiKey: env.BRAVE_API_KEY, negativeSourceDomains });
 
-  const raw = await llm.complete<Normalized>('normalize', buildNormalizePrompt(req), NORMALIZE_MAX_TOKENS);
-  // Scrubbed before truncating, so blocked queries cannot take the slots of usable ones.
-  const n = truncate(scrubNormalized(raw, req.product));
+  const n = await normalize(req, llm, env.NORMALIZE_CACHE);
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
   const dropped = placeCategoryDrops(brave.rejected);
   const kept = await enrichAndFilter(pass1, llm, n, dropped); // no model call when no shop survives pass 1

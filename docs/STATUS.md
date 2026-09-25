@@ -52,10 +52,10 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 - Distances are shown in miles everywhere a person reads them.
 - "Why this rank" is plain words with links only for certifications and concerns (2026-09-24). This departs from HR5 in the build prompt ("every non-zero component with its value and a source"), which stays as committed; the full values remain in the API response ([ADR 0003](decisions/0003-scoring.md)).
 - The map of nearby shops loads automatically, above the Near you list, with OpenStreetMap tiles; OpenStreetMap sees the visitor's IP address and the area ([privacy.md](privacy.md)).
+- Local searches always end in "store", and the model's reading of a product is cached per product in Workers KV; the normalize prompt no longer receives city and state (2026-09-25, [plans/search-variation.md](plans/search-variation.md)). The 30-day cache lifetime was the agent's pick; change it in `proxy/src/normalize-cache.ts`.
 
 ## Decisions needed
 
-- Whether to make local search wording repeatable: always end it in "store" (partial, no cache) and/or cache the model's search wording (full, a new store of search terms). Numbers and options: [plans/search-variation.md](plans/search-variation.md) Q1.
 - Whether local recall should favor independents: the site finds 17% of independent baseline shops against 35% of chain stores (a gap within noise at this sample size).
 - Whether marketplaces (Facebook Marketplace is classified `marketplace` and kept) should appear at all.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).

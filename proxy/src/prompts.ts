@@ -16,12 +16,9 @@ export function renderTemplate(template: string, vars: Record<string, string>): 
   });
 }
 
-export function buildNormalizePrompt(input: { product: string; city: string; state: string }): string {
-  return renderTemplate(normalizeTemplate, {
-    product: JSON.stringify(input.product),
-    city: JSON.stringify(input.city),
-    state: JSON.stringify(input.state),
-  });
+// The product only: one product gets one cached reading wherever it was searched.
+export function buildNormalizePrompt(input: { product: string }): string {
+  return renderTemplate(normalizeTemplate, { product: JSON.stringify(input.product) });
 }
 
 export function buildEnrichPrompt(view: LlmView[], product: EnrichProduct): string {

@@ -2,10 +2,11 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import certifications from '../../data/certifications.json';
 import negatives from '../../data/negatives.json';
 import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl } from '../src/blocklist';
-import type { Candidate, Certification, Env, SearchRequest, SearchResponse, SearchResult, Signal } from '../src/contract';
+import type { Candidate, Certification, Env, KvStore, SearchRequest, SearchResponse, SearchResult, Signal } from '../src/contract';
 import { enrichAll, type EnrichedRow } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
 import { MAX_BRAVE_CALLS } from '../src/brave';
+import { normalizeCacheKey } from '../src/normalize-cache';
 import { MAX_DROPPED, MAX_LOCAL_QUERIES, MAX_ONLINE_QUERIES, finalizeResponse, placeCategoryDrops, runSearch, scoreAll, type ScoredRow } from '../src/pipeline';
 import { estimateCost } from '../src/pricing';
 import { validateAgainst } from '../src/validate';
@@ -35,9 +36,9 @@ const ENV: Env = {
 };
 const NORMALIZED = JSON.parse(normalizeFixture.choices[0]!.message.content);
 
-async function search(routes: FixtureRoute[] = defaultRoutes(), env: Env = ENV) {
+async function search(routes: FixtureRoute[] = defaultRoutes(), env: Env = ENV, req: SearchRequest = REQ) {
   const fetch = makeFixtureFetch(routes);
-  const res = await runSearch(REQ, env, { fetch, now: () => 0, log: () => {} });
+  const res = await runSearch(req, env, { fetch, now: () => 0, log: () => {} });
   return { res, fetch };
 }
 
@@ -254,6 +255,9 @@ describe('runSearch over the fixtures', () => {
       for (const key of ['lat', 'lon', 'coordinates', 'postal_address', 'distance', 'address']) expect(prompt).not.toContain(`"${key}"`);
       for (const value of coordinates) expect(body).not.toContain(value);
     }
+    // The enrich call carries Brave snippets, which may name a town; the normalize call never does.
+    const normalize = bodies[0]!;
+    for (const text of ['"city"', '"state"', REQ.city, `\\"${REQ.state}\\"`]) expect(normalize).not.toContain(text);
   });
 
   it('removes every blocked retailer, URL and mention', async () => {
@@ -479,5 +483,97 @@ describe('curated data against the blocklist', () => {
   it.each([...certifications.entries, ...negatives.entries])('$domain is not blocked and cites an allowed source', (e) => {
     expect(isBlocked({ name: e.name, domain: e.domain })).toBe(false);
     expect(isBlockedDomain(e.source_url) || isBlockedUrl(e.source_url)).toBe(false);
+  });
+});
+
+describe('normalize cache', () => {
+  type Kv = { store: Map<string, string>; puts: Array<{ key: string; ttl: number | undefined }> };
+  function fakeKv(opts: { failGet?: boolean; failPut?: boolean } = {}): Kv & { binding: KvStore } {
+    const store = new Map<string, string>();
+    const puts: Kv['puts'] = [];
+    const binding = {
+      async get(key: string, type: string) {
+        if (opts.failGet) throw new Error('kv down');
+        const v = store.get(key);
+        return v === undefined ? null : type === 'json' ? JSON.parse(v) : v;
+      },
+      async put(key: string, value: string, o?: { expirationTtl?: number }) {
+        if (opts.failPut) throw new Error('kv down');
+        puts.push({ key, ttl: o?.expirationTtl });
+        store.set(key, value);
+      },
+    } as unknown as KvStore;
+    return { store, puts, binding };
+  }
+  const llmCalls = (fetch: { calls: Array<{ url: string }> }) => fetch.calls.filter((c) => isLlm(c.url)).length;
+  const placeQueries = (fetch: { calls: Array<{ url: string }> }) =>
+    fetch.calls.filter((c) => c.url.includes('/local/place_search')).map((c) => new URL(c.url).searchParams.get('q'));
+
+  it('a repeat search for the same product skips the normalize call and sends the same queries', async () => {
+    const kv = fakeKv();
+    const env = { ...ENV, NORMALIZE_CACHE: kv.binding };
+    const first = await search(defaultRoutes(), env);
+    const second = await search(defaultRoutes(), env);
+    expect(llmCalls(second.fetch)).toBe(llmCalls(first.fetch) - 1);
+    expect(placeQueries(second.fetch)).toEqual(placeQueries(first.fetch));
+    expect(second.res.query).toEqual(first.res.query);
+    expect(second.res.usage.llm.map((u) => u.call)).not.toContain('normalize');
+    expect(kv.puts).toHaveLength(1);
+  });
+
+  it('gives case and spacing variants one key, and different products different keys', async () => {
+    const key = await normalizeCacheKey('cast iron skillet');
+    expect(await normalizeCacheKey('  Cast Iron\tSKILLET ')).toBe(key);
+    expect(await normalizeCacheKey('cast iron pan')).not.toBe(key);
+  });
+
+  it('does not cache a reading with no local search, so nearby shops are not hidden for 30 days', async () => {
+    const kv = fakeKv();
+    await search(defaultRoutes({ normalize: llmReply({ ...NORMALIZED, local_queries: [] }) }), { ...ENV, NORMALIZE_CACHE: kv.binding });
+    expect(kv.store.size).toBe(0);
+  });
+
+  it('keys by product only: another town and different case or spacing is a hit', async () => {
+    const kv = fakeKv();
+    const env = { ...ENV, NORMALIZE_CACHE: kv.binding };
+    await search(defaultRoutes(), env);
+    const other = await search(defaultRoutes(), env, { ...REQ, product: '  Cast Iron   SKILLET ', city: 'Peoria', state: 'IL' });
+    expect(other.res.usage.llm.map((u) => u.call)).not.toContain('normalize');
+  });
+
+  it('stores the model output for 30 days under a hashed key that holds no product text', async () => {
+    const kv = fakeKv();
+    await search(defaultRoutes(), { ...ENV, NORMALIZE_CACHE: kv.binding });
+    expect(kv.puts).toHaveLength(1);
+    expect(kv.puts[0]!.ttl).toBe(30 * 24 * 60 * 60);
+    expect(kv.puts[0]!.key).toMatch(/^normalize:[0-9a-f]{64}$/);
+    expect(JSON.parse(kv.store.get(kv.puts[0]!.key)!)).toEqual(NORMALIZED);
+  });
+
+  it.each([
+    ['fails the schema', { category: 'x' }],
+    ['has only banned online queries', { ...NORMALIZED, online_queries: ['best top reviews'] }],
+  ])('a cached value that %s is a miss, and the fresh model output replaces it', async (_why, bad) => {
+    const kv = fakeKv();
+    const env = { ...ENV, NORMALIZE_CACHE: kv.binding };
+    await search(defaultRoutes(), env);
+    const key = kv.puts[0]!.key;
+    kv.store.set(key, JSON.stringify(bad));
+    const { res } = await search(defaultRoutes(), env);
+    expect(res.usage.llm.map((u) => u.call)).toContain('normalize');
+    expect(JSON.parse(kv.store.get(key)!)).toEqual(NORMALIZED);
+  });
+
+  it('never caches output the Worker refuses', async () => {
+    const kv = fakeKv();
+    const routes = defaultRoutes({ normalize: llmReply({ ...NORMALIZED, online_queries: ['best top reviews'] }) });
+    await expect(search(routes, { ...ENV, NORMALIZE_CACHE: kv.binding })).rejects.toThrow(InvalidLlmOutput);
+    expect(kv.store.size).toBe(0);
+  });
+
+  it.each([['get', { failGet: true }], ['put', { failPut: true }]] as const)('a failing cache %s still returns the search', async (_op, opts) => {
+    const kv = fakeKv(opts);
+    const { res } = await search(defaultRoutes(), { ...ENV, NORMALIZE_CACHE: kv.binding });
+    expect(res.online.length + res.local.length).toBeGreaterThan(0);
   });
 });

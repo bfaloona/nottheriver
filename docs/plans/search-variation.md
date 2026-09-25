@@ -1,6 +1,6 @@
 # Plan: why Brave returns different local shops from run to run
 
-Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local results change from run to run"); step 4 awaits the operator's answer to Q1. Wording dominates. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
+Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local results change from run to run"); Wording dominates. Q1 answered 2026-09-25: the operator chose both fixes, "store" always (shipped a938294) and a normalize cache keyed by product only, so the normalize prompt no longer receives city and state. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
 
 ## What is known
 
