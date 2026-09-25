@@ -27,12 +27,14 @@ Concerns. None recorded. The NLRB case search returned no cases for "depop", and
 
 Second pass (2026-09-25): FTC cases searches returned no results for "Depop", 3 for "eBay" (the parent since July 2026: Carmeuse/Oglebay Norton, Gio Crystal and a Bay Ridge listing service, none with eBay as respondent) and 1 for "Etsy" (the parent from 2021, a 1997 business-opportunity case, not Etsy); the CourtListener agency-docket query for "Depop" since 2016 returned no dockets; ProPublica returned no articles for the name. No matching cases.
 
+News pass (2026-09-25): three web searches, `"Depop" lawsuit OR settlement OR fine OR violation`, `"Depop" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, because Depop is based in the UK, `Depop ICO OR CMA OR "Advertising Standards Authority" OR "Trading Standards" ruling OR fine OR investigation`. Found: private US class actions over a "marketplace fee" shown only at checkout ("drip pricing"): Dinh (California, filed 2026-02-06, voluntarily dismissed in July), Yuen (reported as in mediation) and Rivera (N.D. Ill., filed 2026-09-15, pending), all reported by classaction.org and similar outlets; no ruling, so none is a concern. The UK search found only the Competition and Markets Authority's merger review of eBay's purchase of Depop, which it cleared on 2026-07-15 without a phase 2 inquiry; a merger clearance is not an action against the company. UK regulators' own sites are not in `data/negative-sources.json`, so a UK action would have needed an accepted-source page to count. Actions against the parent, eBay, are recorded in `research/retailers/ebay-com.md`; they concern eBay's own business before it bought Depop (July 2026) and are not carried over. No concerns added.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for depop.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable` (below 1.25 for `recommended`).
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Depop

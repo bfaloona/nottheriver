@@ -27,12 +27,14 @@ Concerns. None recorded. The NLRB case search for "christy dawn" returned no cas
 
 Second pass (2026-09-25): FTC cases search for "Christy Dawn" returned no results (the same unquoted search returns matches for other names this pass); the CourtListener agency-docket query since 2016 returned no dockets; ProPublica's 4 hits for the phrase include none about the company. No matching cases.
 
+News pass (2026-09-25): two web searches, `"Christy Dawn" lawsuit OR settlement OR fine OR violation` and `"Christy Dawn" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were about other people (a Texas Attorney General settlement with influencer Brittany Dawn), brand reviews and generic agency pages, plus a Proposition 65 60-day notice listing (oag.ca.gov, 2016-00377) whose subject was not checked; a 60-day notice is a private enforcer's notice, not an agency action. Nothing reports an agency or court action against the company. Parent unknown, so no third search. No concerns added.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia). The brand's own pages claim none of these.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://christydawn.com/pages/about

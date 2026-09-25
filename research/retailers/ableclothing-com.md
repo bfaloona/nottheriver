@@ -25,12 +25,14 @@ CourtListener shows that Fashionable, Inc. filed a Chapter 11 bankruptcy case (M
 
 Second pass (2026-09-25): FTC cases search for "Fashionable" (the legal name) returned no results, and a search for "ABLE" returned 220 keyword matches (substrings such as "Accountable" and "Adjustable") whose top 20 by date and by relevance name no ABLE or Fashionable, Inc. respondent; the CourtListener agency-docket query for "ABLE" since 2016 returned 29 dockets (20 listed), all name collisions (Able Sales Company, Able Car Rental, Able Groupe, Able Moving & Storage, criminal cases against individuals named Able, forfeitures of property on Able Place) or suits against a state or the United States; ProPublica's 32 hits for "ABLE" include none about the company. No matching cases.
 
+News pass (2026-09-25): two web searches, `"ABLE" "Fashionable" Nashville clothing lawsuit OR settlement OR fine OR violation` and `"ABLE" Nashville "Fashionable Inc" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were the 2025 Chapter 11 filing already noted (Nashville Post, BKData), the company's Wikipedia page, and other companies' cases (Fashion Nova); none reports an agency or court action against the company. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline. No ethics certification found (bcorporation.net blocked agents this run; no row in `data/certifications.json` for this domain; not on Fair Trade USA's shop page). Benefit-corporation status is a legal form, not a scored certification. No accepted concern. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (310 brand pages) has no ABLE entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0 < 1.25, ≥ 1.0: `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://www.ableclothing.com/pages/about-us

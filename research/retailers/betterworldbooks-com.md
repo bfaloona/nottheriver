@@ -29,11 +29,13 @@ Concerns checked: NLRB case search for "better world books" returned no cases; O
 
 Second pass (2026-09-25): FTC cases search for "Better World" (covers the retailer and its parent, Better World Libraries) sorted by relevance returned 86 keyword matches; the top 20 (BetterHelp, World Federation of Advertising and similar) include no Better World respondent. The CourtListener agency-docket query for "Better World Books" since 2016 returned no dockets; ProPublica's 42 hits for the phrase include none about the company. No matching cases.
 
+News pass (2026-09-25): three web searches, `"Better World Books" lawsuit OR settlement OR fine OR violation`, `"Better World Books" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the parent, `"Better World Libraries" lawsuit OR settlement OR fine OR violation OR "attorney general"`. Hits were BBB customer complaints, the Wikipedia page, a law-firm marketing page (overtimepaylaws.org) that speaks of overtime suits against companies "like" Better World Books without naming a case, and unrelated library litigation; none reports an agency or court action against the company or its parent. No concerns added.
+
 ## Rating
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.
 - Environment: 0.5 baseline. The Climate Label directory (explore.changeclimate.org) returned "Brand Not Found" for `better-world-books`; the 1% for the Planet directory profile page rendered no listing content, so membership is unverified. No environmental concern. Environment 0.5.
 - Tier: 0.5 + 0.5 = 1.0 meets `acceptable` (≥ 1.0), not `recommended` (≥ 1.25). Tier `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Better_World_Books

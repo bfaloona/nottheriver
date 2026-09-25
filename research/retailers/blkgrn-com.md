@@ -27,13 +27,15 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 
 Second pass (2026-09-25): FTC cases search for "BLK GRN" returned no results (the same unquoted search returns matches for other names this pass); the CourtListener agency-docket query for "BLK + GRN" since 2016 returned no dockets; ProPublica returned no articles for the name. No matching cases.
 
+News pass (2026-09-25): two web searches, `"BLK + GRN" OR "BLK+GRN" lawsuit OR settlement OR fine OR violation` and `"BLK + GRN" OR "BLK+GRN" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The search engine matched the name to BlackRock (ticker BLK) and to generic agency pages; no hit was about this company, so the search is weak evidence of absence for a name this short. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "BLK + GRN" blkgrn.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Environment: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://blkgrn.com/

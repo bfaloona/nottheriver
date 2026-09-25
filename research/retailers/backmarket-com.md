@@ -27,13 +27,15 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 
 Second pass (2026-09-25): FTC cases search for "Back Market" returned 565 keyword matches; sorted by relevance, the top 20 (Backcountry.com, Whole Foods Market and similar) include no Back Market respondent. The CourtListener agency-docket query for "Back Market" since 2016 returned no dockets; ProPublica's 48 hits for the phrase include none about the company. No matching cases.
 
+News pass (2026-09-25): three web searches, `"Back Market" lawsuit OR settlement OR fine OR violation`, `"Back Market" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, because the company was founded in Paris, one for French regulators: `"Back Market" DGCCRF OR "Autorité de la concurrence" OR CNIL amende OR sanction`. The only relevant hit was a UniCourt page for Martinez v. Back Market Inc. (E.D.N.Y., filed 2022-01-28, disability discrimination), which it says ended with a notice of settlement in principle on 2022-03-15; that is a private suit settled between the parties (one of the 2022 ADA suits already noted), not an agency or court action, and UniCourt is not an accepted source. The French-regulator search returned only general pages about those agencies. No concerns added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Back Market" backmarket.com` returned "not on the blocklist".
 - Certifications: B Corp claimed but unverified (certifier directory blocked, no fallback row); none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns.
 - Environment: 0.5 baseline, no counted certifications or accepted concerns.
 - Tier: ethics + environment = 1.0, so `acceptable` (below the 1.25 needed for `recommended`). A verified B Corp listing would raise ethics to 0.75 and the tier to `recommended`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://www.backmarket.com/en-us/about-us
