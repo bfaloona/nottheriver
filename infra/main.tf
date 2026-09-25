@@ -3,6 +3,13 @@ locals {
   bundle = "${path.module}/../proxy/dist/index.js"
 }
 
+# The model's reading of each product, cached so repeat searches send the same search wording.
+# Entries expire after 30 days (set by the Worker); docs/privacy.md describes what is kept.
+resource "cloudflare_workers_kv_namespace" "normalize_cache" {
+  account_id = var.account_id
+  title      = "${var.worker_name}-normalize-cache"
+}
+
 resource "cloudflare_workers_script" "proxy" {
   account_id     = var.account_id
   script_name    = var.worker_name
@@ -23,6 +30,7 @@ resource "cloudflare_workers_script" "proxy" {
     { type = "plain_text", name = "ALLOWED_ORIGIN", text = var.allowed_origin },
     { type = "plain_text", name = "SITE_NAME", text = var.site_name },
     { type = "plain_text", name = "SITE_URL", text = var.site_url },
+    { type = "kv_namespace", name = "NORMALIZE_CACHE", namespace_id = cloudflare_workers_kv_namespace.normalize_cache.id },
     {
       type         = "ratelimit"
       name         = "RATE_LIMITER"
