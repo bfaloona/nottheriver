@@ -27,12 +27,14 @@ Its own pages claim OEKO-TEX Standard 100 fabric, "certified factories" and a 1%
 
 Concerns. None recorded. The NLRB case search for "girlfriend collective" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket, an individual's suit against Girlfriend Collective LLC (W.D. Pa., filed 2021-07-28, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
+Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "Girlfriend Collective" returned "No results found for these filters." (the unquoted search matched 47 cases on the separate words, and none of the 20 on its first page names Girlfriend Collective; the search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (Girlfriend Collective paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned 47 article links, none about the company by slug (they match the word "girlfriend"). No concern added.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for girlfriend.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia), so the brand's own 1% claim does not count.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no verified certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://girlfriend.com/pages/about-us
@@ -49,3 +51,8 @@ Concerns. None recorded. The NLRB case search for "girlfriend collective" return
 - https://explore.changeclimate.org/ (not listed)
 - https://dueekpzk7aquu.cloudfront.net/search?q=girlfriend%20collective (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Girlfriend%20Collective%22 ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Girlfriend%20Collective (47 word matches; none on page 1 names the company)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
+- CourtListener agency-docket search for "Girlfriend Collective", filed since 2016 (0 results; URL in research/raw/concern-fetch/girlfriend-com.json)
+- https://www.propublica.org/search?qss=%22Girlfriend%20Collective%22 (no article about the company)

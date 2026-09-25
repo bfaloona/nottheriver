@@ -25,12 +25,14 @@ Lists recommend it for packaging: Good Good Good cites bottles of "100% recycled
 
 Court records (CourtListener search API, fetched this run) show private lawsuits naming Don't Run Out, Inc.: one against Don't Run Out, Inc. (E.D. Cal., filed 2022-07-01, cause "Diversity-Fraud", terminated 2023-01-10), one against Dont Run Out, Inc. (C.D. Cal., removed 2024-04-25, "Notice of Removal - Fraud", terminated 2024-05-07), one against Dont Run Out, Inc. (N.D. Ill., filed 2025-02-19, Americans with Disabilities Act, docket shows a "Notice of Settlement" on 2025-07-01) and one against Don't Run Out, Inc. (C.D. Cal., filed 2026-06-18, contract, open). The docket pages and complaints could not be fetched (HTTP 403), so what each suit alleges is unknown; they are not recorded as concerns. Operator: check the dockets.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Public Goods" (no parent named to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 40 ProPublica articles matching "Public Goods" is about the company. No matching cases, so no concern rows were added.
+
 ## Rating
 - ethics: 0.5 baseline. No B Corp, fair trade or worker co-op listing verified (bcorporation.net returned 403; no fallback row in data/certifications.json for publicgoods.com).
 - environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified (the 1% for the Planet directory returns no data to a plain fetch; not checked on the Climate Label directory).
 - concerns: none recorded. NLRB case search for "Public Goods" returned no cases (a control search for "Starbucks" returned 2,559). Other searches were limited: the web search budget ran out before the general news pass, and Violation Tracker returned 403.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.publicgoods.com/
@@ -40,3 +42,6 @@ Court records (CourtListener search API, fetched this run) show private lawsuits
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Don%27t+Run+Out%22&type=r
 - https://www.nlrb.gov/search/case/%22Public%20Goods%22
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Public%20Goods%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Public%20Goods%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Public%20Goods%22

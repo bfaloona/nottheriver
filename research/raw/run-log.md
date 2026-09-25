@@ -77,3 +77,5 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Script `research/fetch-concerns.mjs` saves CourtListener agency-party dockets and ProPublica slugs to `raw/concern-fetch/<slug>.json`.
 - Brief: `raw/concern-pass-2-brief.md`. Batches (Opus): C1 = 10 recommended; C2 to C4 = 28 acceptable. Caution retailers skipped: this pass can only add concerns, so their tier can't change.
 - Planned files: `raw/concerns2-C<n>.md`, `raw/blocked-concerns2-C<n>.md`, edits to each batch's `retailers/<slug>.md`.
+- Fetch done (50 retailers, no errors; commit c9a9d46). Agents C1 to C4 running (Opus).
+- C3 done (9 retailers, 0 concerns). C4 done (9, 0 concerns); C4 saw another agent adding source URLs to its files, check diffs before commit.

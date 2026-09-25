@@ -25,13 +25,15 @@ Lists name it as a used-book alternative (antifamarketer) that donates books and
 
 Concern checks: an NLRB case search for "world of books" returned no results. A CourtListener search found Global Brother SRL v. World of Books Group LTD (D. Del., filed 2025-02-19); the search result gives no nature of suit and the docket was not opened, so nothing is recorded. It is a UK company, so US regulators are unlikely to list it; UK sources were not searched.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "World of Books" (the phrase also covers the parent, World of Books Group); the CourtListener agency-docket query since 2016 returned no dockets; none of the 40 ProPublica articles matching "World of Books" is about the company. No matching cases, so no concern rows were added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "World of Books" worldofbooks.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified. B Corp is stated by Wikipedia and the site's footer badge, but the certifier's page was blocked and there is no fallback row.
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/World_of_Books
@@ -40,3 +42,6 @@ Concern checks: an NLRB case search for "world of books" returned no results. A 
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22World+of+Books%22&type=r&order_by=dateFiled+desc
 - data/blocklist.md (checked: no matching entry)
 - data/certifications.json (checked: no row for worldofbooks.com)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22World%20of%20Books%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22World%20of%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22World%20of%20Books%22

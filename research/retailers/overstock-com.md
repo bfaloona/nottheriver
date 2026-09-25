@@ -27,11 +27,13 @@ Not scored, but on record:
 - The 2025 10-K's legal note names no specific government action, only litigation "from time to time" and liabilities "not material".
 - Good Jobs First Violation Tracker has a parent page for Overstock.com but returned HTTP 403 (logged in raw/blocked-retailers-R6.md). NLRB case search for "Overstock" returned no cases. Other agency searches (FTC, DOJ, CourtListener) could not be run: their search pages returned 403 or 404, and this session's web search budget ran out.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Overstock" or for the parent's current name "Neighborhood Intelligence"; the CourtListener agency-docket query since 2016 returned no dockets; none of the five ProPublica articles matching "Overstock" is about an agency or court action against the company. No matching cases, so no concern rows were added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; not checked for Fair Trade or worker co-op, which do not fit a public company). No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern. = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R6.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 - Blocklist: `node research/build-index.mjs --blocklist "Overstock" overstock.com` returned "not on the blocklist".
 
 ## Sources
@@ -46,3 +48,7 @@ Not scored, but on record:
 - https://www.nlrb.gov/search/case/Overstock
 - https://explore.changeclimate.org/
 - https://directories.onepercentfortheplanet.org/ (script-rendered; no listing readable)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Overstock
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Neighborhood%20Intelligence%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Overstock%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)
+- https://www.propublica.org/search?qss=%22Overstock%22

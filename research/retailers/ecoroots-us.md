@@ -23,12 +23,14 @@ EcoRoots sells zero-waste personal care and household goods ("beauty, hair, and 
 
 No certification claim appears on its about page. Concern checks found nothing: no OSHA establishment matches "EcoRoots" (2016 to 2026), and CourtListener's docket search returns no case for "EcoRoots" or "Eco Roots".
 
+Second pass (2026-09-25): the FTC cases-and-proceedings search for "EcoRoots" returned "No results found for these filters." (the same search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (EcoRoots paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned no articles. No concern added.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline. No ethics certification found (bcorporation.net blocked agents this run; no row in `data/certifications.json`). No accepted concern. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (310 brand pages) has no EcoRoots entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0 < 1.25, ≥ 1.0: `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://ecoroots.us/pages/about-us
@@ -40,3 +42,7 @@ No certification claim appears on its about page. Concern checks found nothing: 
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22EcoRoots%22&type=r (0 results)
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Eco%20Roots%22&type=r (0 results)
 - data/blocklist.md
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=EcoRoots ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
+- CourtListener agency-docket search for "EcoRoots", filed since 2016 (0 results; URL in research/raw/concern-fetch/ecoroots-us.json)
+- https://www.propublica.org/search?qss=%22EcoRoots%22 (no articles)

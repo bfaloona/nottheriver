@@ -29,12 +29,14 @@ Lawsuits noted, not recorded as concerns (brief section 9, "What counts as a con
 
 Wikipedia also mentions a 2020 incident in which two support staff took customer data for up to 200 merchants, a 2021 textbook-publisher copyright suit settled out of court, and content-moderation criticism; none was checked at an original source this run, so none is recorded.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Shop app" or for the parent "Shopify" (a bare "Shop" search is too generic to be useful). The CourtListener agency-docket query for "Shop" since 2016 returned 46 dockets (20 listed); all listed ones are other businesses with "Shop" in their name or companies suing the United States, so none was kept, and the other 26 were not listed. A separate CourtListener query for "Shopify" returned 2 dockets filed 2026-09-15 in N.D. Cal., both applications for a grand jury subpoena to Shopify (USA), Inc. in an investigation, which name Shopify as a records holder rather than a defendant, so neither was kept. None of the 50 ProPublica articles matching "Shop" is about Shop or Shopify. No matching cases, so no concern rows were added.
+
 ## Rating
 - ethics: 0.5 baseline, no B Corp, Fair Trade USA or worker co-op listing verified (bcorporation.net blocked agents this run; no row in data/certifications.json).
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
-- concerns: none recorded. Briskin v. Shopify and the severance class action are noted above but do not count (private suits with no ruling on the merits, and about Shopify rather than Shop). NLRB case search for "Shopify" returned no cases (control search "Starbucks" returned 2,559). The FTC case-library search did not filter by name (inconclusive). The 10-K's Legal Proceedings section was not readable through the fetch tool. The web search budget ran out before the news pass.
+- concerns: none recorded. Briskin v. Shopify and the severance class action are noted above but do not count (private suits with no ruling on the merits, and about Shopify rather than Shop). NLRB case search for "Shopify" returned no cases (control search "Starbucks" returned 2,559). The first-pass FTC case-library search did not filter by name; pass 2 used the `search=` form, which did filter (Walmart control returned 14 results), and found no cases for "Shop app" or "Shopify". The 10-K's Legal Proceedings section was not readable through the fetch tool. The web search budget ran out before the news pass.
 - tier: `acceptable` (0.5 + 0.5 = 1.0; not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.shopify.com/shop
@@ -46,3 +48,8 @@ Wikipedia also mentions a 2020 incident in which two support staff took customer
 - https://www.nlrb.gov/search/case/Shopify
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search_api_fulltext=Shopify
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Shop%20app%22
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Shopify
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Shopify%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Shop%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Shop%22

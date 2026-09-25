@@ -25,11 +25,13 @@ Love Grown's site says it is a Certified B Corporation. That claim could not be 
 
 Not scored, but on record: NLRB case searches for "Hive Brands" and "Love Grown" returned no cases. Neither name appears on The Climate Label directory page. No other concern search could be run: Violation Tracker, FTC and DOJ search pages were blocked or missing, and this session's web search budget ran out.
 
+Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No results found for these filters." for the phrases "Hive Brands" and "Love Grown" (the search for "Amazon" returned 26 and the phrase "Seven & i Holdings" returned 5, so plain and phrase searches work); the CourtListener agency-docket search returned 0 dockets for "Hive Brands" (filed since 2016), and a second run for "Love Grown" also returned 0; the ProPublica search used the list label "Hive (now Love Grown)" and returned no articles, which is not a useful negative for either name. No concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp claim on the retailer's own site only, not verified with the certifier (403) and no data/certifications.json row, so it does not count. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R6.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 - Blocklist: `node research/build-index.mjs --blocklist "Hive" lovegrown.com` returned "not on the blocklist".
 
 ## Sources
@@ -40,3 +42,10 @@ Not scored, but on record: NLRB case searches for "Hive Brands" and "Love Grown"
 - https://www.nlrb.gov/search/case/Love%20Grown
 - https://explore.changeclimate.org/
 - https://www.bcorporation.net/en-us/find-a-b-corp/company/hive-brands/ (HTTP 403; logged)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Hive%20Brands%22 ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Love%20Grown%22 ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Seven%20%26%20i%20Holdings%22 (phrase-search control: 5 results)
+- CourtListener agency-docket search for "Hive Brands", filed since 2016 (0 results; URL in research/raw/concern-fetch/lovegrown-com.json)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName:("Love Grown") AND caseName:(government party list as in the pass-2 fetch) (count 0)
+- https://www.propublica.org/search?qss=%22Hive%20(now%20Love%20Grown)%22 (no articles)

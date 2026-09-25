@@ -25,13 +25,15 @@ Lists name it as an ethical clothing brand (A Day In Our Shoes) and for staples 
 
 Concern checks: an NLRB case search for "kotn" returned no results (the same search for "costco" returned 180, so the search works). A CourtListener search found one docket naming Kotn America, Inc., a 2025 disability civil-rights suit brought by an individual (E.D.N.Y.); it is an allegation that does not fit the labor, governance or environmental kinds and is not recorded as a concern.
 
+Second pass (2026-09-25): the FTC cases-and-proceedings search for "Kotn" returned "No results found for these filters." (the search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (Kotn paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned no articles. No concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Kotn" kotn.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified. B Corp is claimed on kotn.com but the certifier's page was blocked and there is no fallback row.
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable` (below the 1.25 needed for `recommended`).
-- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Kotn
@@ -43,3 +45,7 @@ Concern checks: an NLRB case search for "kotn" returned no results (the same sea
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Kotn%22&type=r&order_by=dateFiled+desc
 - data/blocklist.md (checked: no matching entry)
 - data/certifications.json (checked: no row for kotn.com)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Kotn ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
+- CourtListener agency-docket search for "Kotn", filed since 2016 (0 results; URL in research/raw/concern-fetch/kotn-com.json)
+- https://www.propublica.org/search?qss=%22Kotn%22 (no articles)

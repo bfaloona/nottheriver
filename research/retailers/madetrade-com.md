@@ -25,13 +25,15 @@ Lists name it for homeware that meets at least one of its values (fair trade, he
 
 Concern checks: an NLRB case search for "made trade" returned no results. CourtListener shows one docket, an individual's suit against Made Trade Group, LLC (S.D.N.Y., filed 2024-12-31), a disability-access suit; it is an allegation that does not fit the labor, governance or environmental kinds and is not recorded as a concern.
 
+Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "Made Trade" returned "No results found for these filters." (the phrase "Seven & i Holdings" returned 5, so phrase search works); the CourtListener agency-docket search (Made Trade paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned 47 article links, none about the company by slug (they match "trade" and "made"). No concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Made Trade" madetrade.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified (B Corp page blocked, 1% for the Planet directory not readable, Climate Label not checked, not on Fair Trade USA's shop page).
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/
@@ -40,3 +42,7 @@ Concern checks: an NLRB case search for "made trade" returned no results. CourtL
 - research/sites/amazonalts-org.md and research/sites/goingzerowaste-com.md (list sites' descriptions)
 - data/blocklist.md (checked: no matching entry)
 - data/certifications.json (checked: no row for madetrade.com)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Made%20Trade%22 ("No results found for these filters.")
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Seven%20%26%20i%20Holdings%22 (phrase-search control: 5 results)
+- CourtListener agency-docket search for "Made Trade", filed since 2016 (0 results; URL in research/raw/concern-fetch/madetrade-com.json)
+- https://www.propublica.org/search?qss=%22Made%20Trade%22 (no article about the company)

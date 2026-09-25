@@ -30,11 +30,13 @@ Not scored, but on record:
 - Wikipedia also reports layoffs in 2011 and 2020 and a Labor Day strike on 2023-09-04; no accepted source was fetched for these.
 - Good Jobs First Violation Tracker returned HTTP 403 (logged). Other agency and news searches could not be run: search pages returned 403 or 404, and this session's web search budget ran out.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Powell's" or for the broader "Powell" (no parent to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 23 ProPublica articles matching "Powell's Books" is about the company. No matching cases, so no concern rows were added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; no worker co-op or Fair Trade listing expected for a family-owned bookstore, none checked). No accepted concern (NLRB charges are allegations that were withdrawn, dismissed or are still open). = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search incomplete this run (see raw/blocked-retailers-R6.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 - Blocklist: `node research/build-index.mjs --blocklist "Powell's Books" powells.com` returned "not on the blocklist".
 
 ## Sources
@@ -50,3 +52,7 @@ Not scored, but on record:
 - https://www.nlrb.gov/case/36-CA-010588
 - https://explore.changeclimate.org/
 - https://www.powells.com/about-us (HTTP 403; logged)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Powell%27s%22
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Powell
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Powell's%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Powell's%20Books%22

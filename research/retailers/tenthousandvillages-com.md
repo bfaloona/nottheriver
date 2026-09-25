@@ -27,12 +27,14 @@ Wikipedia says it is "a founding member of the World Fair Trade Organization (WF
 
 CourtListener lists an individual's suit against TEN THOUSAND VILLAGES/MENNONITE CENTRAL COMMITTEE (E.D. Pa., filed 2003-11-26, terminated 2004-07-19) with no cause shown; what it alleged is unknown, so it is not recorded as a concern.
 
+Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Ten Thousand Villages" (no parent to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 46 ProPublica articles matching "Ten Thousand Villages" is about the organization. No matching cases, so no concern rows were added.
+
 ## Rating
 - ethics: 0.5 baseline. No B Corp, Fair Trade USA or worker co-op listing verified (bcorporation.net blocked agents this run; the Fair Trade USA partner search URL returned 404; no row in data/certifications.json).
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
 - concerns: none recorded. NLRB case search returned no cases (the same search for "Starbucks" returned 2,559, so the search works); CourtListener API search found only the 2003 case above. OSHA establishment search and Violation Tracker returned 403, and the web search budget ran out before the news pass.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Ten_Thousand_Villages
@@ -42,3 +44,6 @@ CourtListener lists an individual's suit against TEN THOUSAND VILLAGES/MENNONITE
 - https://www.nlrb.gov/search/case/%22Starbucks%22 (control search)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&q=%22Ten%20Thousand%20Villages%22
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Ten%20Thousand%20Villages%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Ten%20Thousand%20Villages%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Ten%20Thousand%20Villages%22
