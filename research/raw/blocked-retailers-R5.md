@@ -9,3 +9,4 @@ checked: 2026-09-25
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Better%20World%20Books%22&type=r (Better World Books). Wanted: federal docket (RECAP) search. HTTP 429 rate limit. No claims made.
 - https://www.justice.gov/news?search_api_fulltext=Chewy (Chewy). Wanted: DOJ action on overlapping PetSmart and Chewy directors (March 2023, per Wikipedia citing Bloomberg). HTTP 403. No claims made.
 - https://www.dol.gov/newsroom/releases?search_api_fulltext=%22B%26H%20Foto%22 (B&H). Wanted: the DOL (OFCCP) release on the 2017 B&H settlement that Wikipedia describes. HTTP 403. No claims made.
+- https://directories.onepercentfortheplanet.org/profile/better-world-books and .../profile/equal-exchange (Better World Books, Equal Exchange). Wanted: 1% for the Planet membership. Pages rendered only the directory title (content loads by script), so membership could not be read either way. No claims made.

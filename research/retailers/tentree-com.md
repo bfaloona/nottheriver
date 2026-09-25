@@ -30,7 +30,7 @@ CourtListener shows Haker v. Tentree International Inc. (E.D.N.Y., filed 2020-03
 
 ## Rating
 - ethics: 0.5 baseline. B Corp claimed but not verified this run (bcorporation.net 403, no fallback row).
-- environment: 0.5 + 0.25 (The Climate Label, verified on explore.changeclimate.org) = 0.75. 1% for the Planet not checked: the directory returns no data to a plain fetch.
+- environment: 0.5 + 0.25 (The Climate Label, verified on explore.changeclimate.org; the directory showed 2025 as the current certification year when checked 2026-09-25, and the tier depends on this row) = 0.75. 1% for the Planet not checked: the directory returns no data to a plain fetch.
 - concerns: none recorded. NLRB case search returned no cases (control search "Starbucks" returned 2,559); CourtListener API search found only the copyright case above; the web search budget ran out before the regulator and news searches, and Tentree is a Canadian company, which US regulator databases may not cover.
 - tier: `recommended` (0.5 + 0.75 = 1.25, no accepted concern, not Amazon-owned per `node research/build-index.mjs --blocklist`).
 

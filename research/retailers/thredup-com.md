@@ -11,8 +11,8 @@ sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
 concerns:
-  - {kind: labor, title: "Inspection Detail: Thredup Distribution Center, Mechanicsburg, PA (Inspection 1815510.015)", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1815510.015", date: 2025-05-07, accepted_source: true}
-  - {kind: labor, title: "Inspection Detail: Thredup, Inc., Duluth, GA (Inspection 1257615.015)", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1257615.015", date: 2017-10-26, accepted_source: true}
+  - {kind: labor, title: "Inspection: 1815510.015 - Thredup Distribution Center", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1815510.015", date: 2025-05-07, accepted_source: true}
+  - {kind: labor, title: "Inspection: 1257615.015 - Thredup, Inc.", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1257615.015", date: 2017-10-26, accepted_source: true}
 ethics: 0.0
 environment: 0.5
 tier: caution

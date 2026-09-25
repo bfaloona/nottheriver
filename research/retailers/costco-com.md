@@ -35,9 +35,9 @@ Concerns, in the sources' own terms:
 - NLRB case 01-CA-355597 (Milford, CT): an "8(a)(1) Coercive Rules" charge filed 2024-11-27; the NLRB General Counsel issued a complaint and notice of hearing on 2025-08-12, and the case is open. This is an allegation, not a finding.
 - Washington class action Aaland v. Costco (emails with "allegedly misleading subject lines"): Costco agreed to a $14 million settlement without admitting wrongdoing; final approval hearing set for 2026-10-02. The source (classaction.org) is not an accepted source, so it does not change the score.
 
-These are a sample, not a full count: an NLRB case search for "costco" returns 180 cases, of which only the seven named here were opened, and only the OSHA inspections a web search surfaced were opened.
+These are a sample, not a full count: an NLRB case search for "costco" returns 180 cases, of which only the seven named here were opened, and an OSHA establishment search for "costco" (2016 to 2026-09-25) lists 302 inspections, of which only the five named here were opened.
 
-Checked and not recorded: NLRB cases 03-CA-356842 and 03-CA-355134 (Rochester, NY) were dismissed in 2025, and 25-CA-344136 (Morris, IL) got a merit dismissal letter on 2026-04-07. OSHA inspection 1670176.015 (San Marcos, CA) had both citations deleted. OSHA inspection 1368205.015 (Monrovia, MD) shows an accident investigation but no citations. Cases 31-CB-173898 and 22-CB-284296 are charges against Teamsters locals, not against Costco.
+Checked and not recorded: NLRB cases 03-CA-356842 and 03-CA-355134 (Rochester, NY) were dismissed in 2025, and 25-CA-344136 (Morris, IL) got a merit dismissal letter on 2026-04-07. OSHA inspection 1670176.015 (San Marcos, CA) had both citations deleted. OSHA inspection 1368205.015 (Monrovia, MD) shows an accident investigation but no citations. Cases 31-CB-173898 and 22-CB-284296 are charges against Teamsters locals, not against Costco. A CourtListener search lists Costco Wholesale Corporation among the defendants in California Department of Toxic Substances Control v. Calistoga Holdings, LLC (N.D. Cal., filed 2026-09-03); the docket returned HTTP 403, so what is alleged is unknown and nothing is recorded.
 
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Costco" costco.com` says not on the blocklist, so `amazon_owned: false`.
@@ -59,6 +59,7 @@ Checked and not recorded: NLRB cases 03-CA-356842 and 03-CA-355134 (Rochester, N
 - https://www.nlrb.gov/case/03-CA-355134
 - https://www.nlrb.gov/case/25-CA-344136
 - https://www.nlrb.gov/search/case/costco
+- https://www.osha.gov/ords/imis/establishment.search?establishment=costco&state=all&officetype=all&Office=all&sitezip=&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=all
 - https://www.classaction.org/news/14m-costco-settlement-resolves-class-action-lawsuit-over-promo-emails-with-allegedly-misleading-subject-lines
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Costco+Wholesale%22+settlement&type=r&order_by=dateFiled+desc
 - data/blocklist.md (checked: no matching entry)

@@ -945,10 +945,18 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [],
-      "ethics": 0.5,
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1700421.015",
+          "date": "2024-03-01",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.25,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "caution",
       "mentions": 3,
       "mentioned_by": [
         "dollarsprout-com",
@@ -1334,6 +1342,40 @@
       "checked": "2026-09-25"
     },
     {
+      "slug": "credobeauty-com",
+      "name": "Credo Beauty",
+      "domain": "credobeauty.com",
+      "type": "retailer",
+      "goods": [
+        "skincare",
+        "makeup",
+        "haircare",
+        "bath and body",
+        "fragrance"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 6,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "sustainablejungle-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
       "slug": "depop-com",
       "name": "Depop",
       "domain": "depop.com",
@@ -1478,7 +1520,7 @@
         "clothing"
       ],
       "ownership": "private",
-      "parent": "none",
+      "parent": "unknown",
       "hq": "Irvington, NY",
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
@@ -1505,6 +1547,46 @@
       "mentioned_by": [
         "adayinourshoes-com",
         "fairtradecertified-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "equalexchange-coop",
+      "name": "Equal Exchange",
+      "domain": "equalexchange.coop",
+      "type": "co-op",
+      "goods": [
+        "coffee",
+        "tea",
+        "chocolate",
+        "cocoa",
+        "sugar",
+        "bananas",
+        "avocados"
+      ],
+      "ownership": "cooperative",
+      "parent": "none",
+      "hq": "West Bridgewater, MA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "worker_coop",
+          "source": "https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces?page=8",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.75,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 3,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "greenamerica-org",
+        "workerowned-info"
       ],
       "checked": "2026-09-25"
     },
@@ -1811,6 +1893,35 @@
       "checked": "2026-09-25"
     },
     {
+      "slug": "misfitsmarket-com",
+      "name": "Misfits Market",
+      "domain": "misfitsmarket.com",
+      "type": "grocer",
+      "goods": [
+        "produce",
+        "groceries"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "Philadelphia, PA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 4,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
       "slug": "newegg-com",
       "name": "Newegg",
       "domain": "newegg.com",
@@ -2056,6 +2167,48 @@
       "checked": "2026-09-25"
     },
     {
+      "slug": "shop-app",
+      "name": "Shop",
+      "domain": "shop.app",
+      "type": "marketplace",
+      "goods": [
+        "general merchandise"
+      ],
+      "ownership": "public",
+      "parent": "Shopify",
+      "hq": "Ottawa, ON, Canada",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "Brandon Briskin v. Shopify, Inc.",
+          "source": "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf",
+          "date": "2025-04-21",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Shopify faces class-action lawsuit over severance offered to recently laid off staff",
+          "source": "https://www.theglobeandmail.com/business/technology/article-shopify-faces-class-action-lawsuit-over-severance-offered-to-recently/",
+          "date": "2023-05-30",
+          "accepted_source": false
+        }
+      ],
+      "ethics": 0.25,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 3,
+      "mentioned_by": [
+        "antifamarketer-org",
+        "ilsr-org",
+        "thegoodtrade-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
       "slug": "tenthousandvillages-com",
       "name": "Ten Thousand Villages",
       "domain": "tenthousandvillages.com",
@@ -2171,14 +2324,14 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "Inspection Detail: Thredup Distribution Center, Mechanicsburg, PA (Inspection 1815510.015)",
+          "title": "Inspection: 1815510.015 - Thredup Distribution Center",
           "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1815510.015",
           "date": "2025-05-07",
           "accepted_source": true
         },
         {
           "kind": "labor",
-          "title": "Inspection Detail: Thredup, Inc., Duluth, GA (Inspection 1257615.015)",
+          "title": "Inspection: 1257615.015 - Thredup, Inc.",
           "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1257615.015",
           "date": "2017-10-26",
           "accepted_source": true
