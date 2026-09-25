@@ -29,11 +29,13 @@ Concerns: none recorded. An NLRB case search for "Package Free" returns no cases
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Package Free" (no parent named to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 47 ProPublica articles matching "Package Free" is about the company. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): two web searches (no parent is named, so no third): `"Package Free" Lauren Singer lawsuit OR settlement OR fine OR violation` and `"Package Free" shop (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Neither returned any report of an agency or court action against Package Free (results were the company's own pages, profiles of its founder, generic agency pages and unrelated cases). No concern rows added.
+
 ## Rating
 - ethics: start 0.5; no verified ethics certification; no accepted labor or governance concern; = 0.5
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
 - tier: not on the blocklist (`node research/build-index.mjs --blocklist "Package Free" packagefreeshop.com` says "not on the blocklist"); ethics + environment = 1.0, which meets the 1.0 bar for `acceptable` but not 1.25 for `recommended`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://packagefreeshop.com/pages/about

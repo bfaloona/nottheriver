@@ -10,7 +10,8 @@ marketplace: unknown
 sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
-concerns: []
+concerns:
+  - {kind: governance, title: "Don't Run Out dba Public Goods - 626847 - 03/11/2022", source: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022, date: 2022-03-11, accepted_source: false}
 ethics: 0.5
 environment: 0.5
 tier: acceptable
@@ -27,12 +28,14 @@ Court records (CourtListener search API, fetched this run) show private lawsuits
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Public Goods" (no parent named to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 40 ProPublica articles matching "Public Goods" is about the company. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): two web searches (no parent named, so no third), with the legal name added: `"Public Goods" OR "Don't Run Out, Inc." lawsuit OR settlement OR fine OR violation` and `"Public Goods" publicgoods.com (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general" OR "Proposition 65")`. One agency action found: an FDA warning letter to "Don't Run Out dba Public Goods" dated March 11, 2022 (Division of Northeast Imports), which says "we found that you are not in compliance with the requirements of 21 CFR part 1, subpart L" and that the company "did not develop, maintain, and follow an FSVP as required by section 805 of the FD&C Act" for imported ramen noodles (FSVP is the Foreign Supplier Verification Program). It is recorded as a governance row, but fda.gov is not an accepted source (`data/negative-sources.json`), so `accepted_source: false` and it does not change the score. The page mentions no close-out letter. Also seen: the Casillas v. Don't Run Out, Inc. docket (E.D. Cal. 22-1153, the 2022 private suit already noted above) and an NSF public notice about the company (NSF is a certifier, not an agency; not fetched). The second search returned only general Proposition 65 pages.
+
 ## Rating
 - ethics: 0.5 baseline. No B Corp, fair trade or worker co-op listing verified (bcorporation.net returned 403; no fallback row in data/certifications.json for publicgoods.com).
 - environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified (the 1% for the Planet directory returns no data to a plain fetch; not checked on the Climate Label directory).
-- concerns: none recorded. NLRB case search for "Public Goods" returned no cases (a control search for "Starbucks" returned 2,559). Other searches were limited: the web search budget ran out before the general news pass, and Violation Tracker returned 403.
+- concerns: one row, the 2022 FDA warning letter, which is `accepted_source: false` (fda.gov is not an accepted source) and does not count. NLRB case search for "Public Goods" returned no cases (a control search for "Starbucks" returned 2,559). Other searches were limited: the web search budget ran out before the general news pass, and Violation Tracker returned 403.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://www.publicgoods.com/
@@ -45,3 +48,4 @@ Second pass (2026-09-25): the FTC cases and proceedings search returned no resul
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Public%20Goods%22
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Public%20Goods%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Public%20Goods%22
+- https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022

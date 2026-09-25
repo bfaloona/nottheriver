@@ -27,13 +27,15 @@ Concern checks: an NLRB case search for "world of books" returned no results. A 
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "World of Books" (the phrase also covers the parent, World of Books Group); the CourtListener agency-docket query since 2016 returned no dockets; none of the 40 ProPublica articles matching "World of Books" is about the company. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): three web searches, `"World of Books" OR "Wob" Ziffit lawsuit OR settlement OR fine OR violation`, `"World of Books" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for UK regulators, `"World of Books" OR Ziffit "Health and Safety Executive" OR "Environment Agency" OR ICO OR CMA OR "Advertising Standards Authority" fine OR ruling OR prosecution`. No agency or court action against World of Books, Wob or Ziffit was found: results were the company's own pages, Wikipedia, review sites (Trustpilot, BBB complaints, which are customer complaints, not agency actions), generic US agency pages and general articles on CMA and ICO enforcement that do not name the company. No concern rows added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "World of Books" worldofbooks.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified. B Corp is stated by Wikipedia and the site's footer badge, but the certifier's page was blocked and there is no fallback row.
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/World_of_Books

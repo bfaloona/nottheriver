@@ -29,12 +29,14 @@ CourtListener lists an individual's suit against TEN THOUSAND VILLAGES/MENNONITE
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Ten Thousand Villages" (no parent to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 46 ProPublica articles matching "Ten Thousand Villages" is about the organization. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): two web searches (no parent, so no third): `"Ten Thousand Villages" lawsuit OR settlement OR fine OR violation` and `"Ten Thousand Villages" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general" OR CPSC)` (CPSC added because it sells handmade goods). No report of an agency or court action against Ten Thousand Villages; the hits were other organizations with "Villages" in the name (for example The Villages Health System's False Claims Act settlement), nonprofit directory listings for local stores and generic agency pages. No concern rows added.
+
 ## Rating
 - ethics: 0.5 baseline. No B Corp, Fair Trade USA or worker co-op listing verified (bcorporation.net blocked agents this run; the Fair Trade USA partner search URL returned 404; no row in data/certifications.json).
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
 - concerns: none recorded. NLRB case search returned no cases (the same search for "Starbucks" returned 2,559, so the search works); CourtListener API search found only the 2003 case above. OSHA establishment search and Violation Tracker returned 403, and the web search budget ran out before the news pass.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Ten_Thousand_Villages

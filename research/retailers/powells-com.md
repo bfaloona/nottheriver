@@ -32,11 +32,13 @@ Not scored, but on record:
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Powell's" or for the broader "Powell" (no parent to try); the CourtListener agency-docket query since 2016 returned no dockets; none of the 23 ProPublica articles matching "Powell's Books" is about the company. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): two web searches (no parent, so no third): `"Powell's Books" lawsuit OR settlement OR fine OR violation` and `"Powell's Books" (EEOC OR OSHA OR "Department of Labor" OR BOLI OR NLRB OR "attorney general")` (BOLI is Oregon's labor bureau; added because Powell's is in Oregon). No report of an agency or court action against Powell's. The first returned Powell's Books, Inc. v. Kroger (ACLU of Oregon, Media Coalition), a suit in which Powell's and others were plaintiffs challenging an Oregon law, which the Ninth Circuit struck down; the second returned the NLRB case page for 19-CA-288784, already noted above as dismissed. No concern rows added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; no worker co-op or Fair Trade listing expected for a family-owned bookstore, none checked). No accepted concern (NLRB charges are allegations that were withdrawn, dismissed or are still open). = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 - Blocklist: `node research/build-index.mjs --blocklist "Powell's Books" powells.com` returned "not on the blocklist".
 
 ## Sources

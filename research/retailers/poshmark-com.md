@@ -25,11 +25,13 @@ Not scored, but on record: NLRB case search for "Poshmark" returned no cases. Co
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Poshmark" or for the parent "Naver"; the CourtListener agency-docket query since 2016 returned no dockets; the ProPublica search for "Poshmark" returned no articles. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): three web searches, `"Poshmark" lawsuit OR settlement OR fine OR violation`, `"Poshmark" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the parent, `"Naver" Poshmark fine OR settlement OR regulator OR "Fair Trade Commission"`. No report of an agency or court action against Poshmark: the first returned a law firm's shareholder "investigation" page (Bragar Eagel & Squire, a private claim with no ruling), Poshmark's SEC filings and terms, and the second only generic agency pages. The parent search returned Korea Fair Trade Commission actions against Naver itself (search snippets: a 26.7 billion won fine in October 2020 over search-algorithm self-preferencing for Naver Shopping, and a 1 billion won fine in December 2020 over a data deal; a Truth on the Market post says Korea's Supreme Court overturned the Naver Shopping decision in October 2025). These concern Naver's Korean businesses, not Poshmark, and were reported only by outlets that are not accepted sources, so they are noted here and not recorded as concerns (none was fetched). No concern rows added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json). No accepted concern. = 0.5
 - Environment: 0.5 baseline. Poshmark's resale sustainability claim is self-reported, not a certifier listing. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 - Blocklist: `node research/build-index.mjs --blocklist "Poshmark" poshmark.com` returned "not on the blocklist".
 
 ## Sources

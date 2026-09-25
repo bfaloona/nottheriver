@@ -10,10 +10,12 @@ marketplace: unknown
 sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
-concerns: []
-ethics: 0.5
+concerns:
+  - {kind: governance, title: "People v. Overstock.com, Inc.", source: https://www.courtlistener.com/opinion/6238839/people-v-overstockcom-inc/, date: 2017-06-02, accepted_source: true}
+  - {kind: environmental, title: "Beyond, Inc., dba Bed, Bath & Beyond and Overstock.com Settlement", source: https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement, date: unknown, accepted_source: false}
+ethics: 0.25
 environment: 0.5
-tier: acceptable
+tier: caution
 mentions: 3
 mentioned_by: [dollarsprout-com, gobankingrates-com, moneypantry-com]
 checked: 2026-09-25
@@ -29,11 +31,16 @@ Not scored, but on record:
 
 Second pass (2026-09-25): the FTC cases and proceedings search returned no results for "Overstock" or for the parent's current name "Neighborhood Intelligence"; the CourtListener agency-docket query since 2016 returned no dockets; none of the five ProPublica articles matching "Overstock" is about an agency or court action against the company. No matching cases, so no concern rows were added.
 
+News pass (2026-09-25): searched the web for "Overstock" with lawsuit, settlement, fine or violation; for "Overstock" with EEOC, OSHA, Department of Labor, FTC, EPA or attorney general; and for the parent ("Beyond, Inc." or "Neighborhood Intelligence") with SEC or attorney general. Found two agency or court actions:
+- People v. Overstock.com, Inc. (California Court of Appeal, opinion filed 2017-06-02, 12 Cal. App. 5th 1064). Overstock "appeals a judgment entered after the trial court found it had engaged in unfair business practices"; the trial court granted "injunctive relief and imposed $6,828,000 in civil penalties"; "The judgment is affirmed." Search-result summaries (not opened) say eight California counties brought the case over "Compare At" reference prices. Recorded as a governance concern on CourtListener, an accepted source. The opinion page renders no text to the fetch tool, so the quotes come from CourtListener's search API for the same opinion (URLs in Sources).
+- California Air Resources Board settlement (June 2025): "Beyond, Inc. violated the Indoor ACD Regulation because they sold, supplied, offered for sale, and introduced into commerce in California, indoor air cleaning devices that were not certified by CARB", penalty $13,485. CARB is not an accepted source and no accepted page was found, so the row has `accepted_source: false` and does not count.
+- Also seen, not concerns: a 2016 GlobeNewswire release headlined "Overstock.com Accepts $20 Million to Settle Market Manipulation Case" (Overstock accepting money, so not an action against it; not fetched); a Missouri sales-tax class action (private, no ruling found); a 2024 Tenth Circuit decision in the company's favor (Cooley). The Delaware unclaimed-property judgment is covered above (reversed).
+
 ## Rating
-- Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; not checked for Fair Trade or worker co-op, which do not fit a public company). No accepted concern. = 0.5
-- Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern. = 0.5
-- Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; not checked for Fair Trade or worker co-op, which do not fit a public company). One accepted governance concern (People v. Overstock.com, 2017): -0.25. = 0.25
+- Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern (the CARB settlement is not on an accepted source). = 0.5
+- Total 0.75, not Amazon-owned: tier `caution` (was `acceptable` before the news pass).
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 - Blocklist: `node research/build-index.mjs --blocklist "Overstock" overstock.com` returned "not on the blocklist".
 
 ## Sources
@@ -52,3 +59,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search returned no resul
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Neighborhood%20Intelligence%22
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Overstock%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)
 - https://www.propublica.org/search?qss=%22Overstock%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=o&q=%22Overstock.com%22%20AND%20%22People%22%20AND%20%22compare%20at%22
+- https://www.courtlistener.com/opinion/6238839/people-v-overstockcom-inc/ (renders no text to the fetch tool)
+- https://www.courtlistener.com/api/rest/v4/search/?type=o&highlight=on&q=cluster_id%3A6238839%20AND%20%22judgment%20is%20affirmed%22
+- https://www.courtlistener.com/api/rest/v4/search/?type=o&highlight=on&q=cluster_id%3A6238839%20AND%20%22civil%20penalties%22%20AND%20million
+- https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement
