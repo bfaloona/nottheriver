@@ -1,0 +1,1 @@
+- https://www.ethicalconsumer.org/ethical-campaigns/boycott-amazon/shopping-without-amazon — UK (Ethical Consumer is a UK publication; retailers named are largely UK-focused)
