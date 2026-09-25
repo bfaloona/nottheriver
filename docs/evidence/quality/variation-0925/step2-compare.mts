@@ -6,6 +6,8 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { mapPlaceResults } from '../../../../proxy/src/brave.ts';
 
 const DIR = new URL('.', import.meta.url).pathname;
+type Place = { id: string };
+type Saved = { local: { retailer: { domain: string } }[]; local_farther?: { retailer: { domain: string } }[]; dropped: { kind: string; domain: string }[] };
 const [A = '1', B = '2'] = process.argv.slice(2);
 const SRC = 'docs/evidence/quality/eval20-0924/responses/';
 const jac = (x: Set<string>, y: Set<string>) => {
@@ -20,19 +22,19 @@ function replay(n: string, id: string) {
   const dir = `${DIR}replay-${n}/`;
   const files = [0, 1].map((i) => `${dir}${id}__${i}.json`).filter(existsSync);
   if (!files.length) return null;
-  const bodies = files.map((f) => JSON.parse(readFileSync(f, 'utf8')).body);
-  const ids = new Set(bodies.flatMap((b) => b.results.map((r: any) => String(r.id))));
+  const bodies: { results: Place[] }[] = files.map((f) => JSON.parse(readFileSync(f, 'utf8')).body);
+  const ids = new Set(bodies.flatMap((b) => b.results.map((r) => String(r.id))));
   const domains = new Set(bodies.flatMap((b) => mapPlaceResults(b, new Set()).map((c) => c.domain)));
   // Order matters to the ranking only through relevance, but a changed top 5 is visible churn.
-  const top5 = bodies.map((b) => b.results.slice(0, 5).map((r: any) => String(r.id)).join(','));
+  const top5 = bodies.map((b) => b.results.slice(0, 5).map((r) => String(r.id)).join(','));
   return { ids, domains, top5 };
 }
 
 const rows = readdirSync(SRC).filter((f) => f.endsWith('.json')).sort().map((f) => {
   const id = f.replace('.json', '');
-  const body = JSON.parse(readFileSync(SRC + f, 'utf8')).body;
-  const saved = new Set<string>([...body.local, ...(body.local_farther ?? [])].map((r: any) => r.retailer.domain)
-    .concat(body.dropped.filter((d: any) => d.kind === 'local').map((d: any) => d.domain)));
+  const body: Saved = JSON.parse(readFileSync(SRC + f, 'utf8')).body;
+  const saved = new Set<string>([...body.local, ...(body.local_farther ?? [])].map((r) => r.retailer.domain)
+    .concat(body.dropped.filter((d) => d.kind === 'local').map((d) => d.domain)));
   const a = replay(A, id), b = replay(B, id);
   return {
     id,

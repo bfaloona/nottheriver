@@ -3,6 +3,7 @@
 // Resumable: skips files already saved with results.
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { setTimeout } from 'node:timers/promises';
 
 const DIR = new URL('.', import.meta.url).pathname;
 const n = process.argv[2];
@@ -20,7 +21,7 @@ for (const f of readdirSync(SRC).filter((x) => x.endsWith('.json')).sort()) {
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed.results)) throw new Error(`${f} q${i}: no results array: ${raw.slice(0, 200)}`);
     writeFileSync(out, JSON.stringify({ q, at: new Date().toISOString(), body: parsed }));
-    await new Promise((r) => setTimeout(r, 1100));
+    await setTimeout(1100);
   }
 }
 console.log('done', n);

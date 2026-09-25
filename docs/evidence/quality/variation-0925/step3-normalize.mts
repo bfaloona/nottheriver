@@ -11,7 +11,7 @@ import { schemas, structuralOnly } from '../../../../proxy/src/validate.ts';
 const RUNS = Number(process.argv[2] ?? 3);
 const OUT = new URL('.', import.meta.url).pathname + (process.env.OUT_NAME ?? 'step3.json');
 const SRC = 'docs/evidence/quality/eval20-0924/responses/';
-const out: Record<string, any[]> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : {};
+const out: Record<string, unknown[]> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : {};
 
 for (const f of readdirSync(SRC).filter((x) => x.endsWith('.json')).sort()) {
   const id = f.replace('.json', '');
@@ -30,10 +30,11 @@ for (const f of readdirSync(SRC).filter((x) => x.endsWith('.json')).sort()) {
         temperature: 0,
       }),
     });
-    const j: any = await res.json().catch(() => null);
+    type Completion = { provider?: string; model?: string; usage?: { cost?: number }; choices: { message: { content: string } }[] };
+    const j = (await res.json().catch(() => null)) as Completion | null;
     let local: string[] | null = null, category: string | null = null;
     try {
-      const n = scrubNormalized(JSON.parse(j.choices[0].message.content), request.product);
+      const n = scrubNormalized(JSON.parse(j!.choices[0].message.content), request.product);
       local = n.local_queries.slice(0, MAX_LOCAL_QUERIES);
       category = n.category;
     } catch { /* recorded as null */ }
