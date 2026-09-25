@@ -64,7 +64,6 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | The certification and signal kind lists in `score.ts` are hardcoded; no test checks they match the `kinds` map in `data/certifications.json` | A cross-file assertion in `pipeline.test.ts` |
 | Local relevance uses only the place title and its categories list (`/local/descriptions` is not called), so most local results score 0.5 or 0.2 | Fetch `/local/descriptions` or the store's product page |
 | Relevance is a substring match on normalized text, so a short product name matches inside a longer word ('pan' in 'Japan') and a plural product name does not match singular text | Whole-word matching with an optional plural s, or a structured relevance judgment validated in code |
-| A shop's own page can be cited as a positive signal: in the pipeline fixtures (`tests/fixtures/llm/enrich.json` citing `tests/fixtures/brave/web-1.json`) Blue Heron Goods gets an 'Environmental' signal whose claim is its own product title, visible in `docs/evidence/results.png` | Require a positive signal to cite a third-party page |
 | The model view (`llmView` in `proxy/src/enrich.ts`) caps title and snippet but not URL, so a long URL raises prompt size and cost | Cap or drop the URL in the model view |
 
 ## Zip data

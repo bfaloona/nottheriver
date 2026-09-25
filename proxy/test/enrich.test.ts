@@ -73,11 +73,9 @@ describe('acceptSignals', () => {
     expect(acceptSignals(output(shop.domain, signal('https://riverbend-hardware.example/elsewhere')), all, REGISTRY).size).toBe(0);
   });
 
-  it('keeps a positive citing the retailer\'s own page, with the fetched title as the claim', () => {
-    const result = acceptSignals(output('www.riverbend-hardware.example', signal(`${shop.url}/`, 'positive', 'environmental')), all, REGISTRY);
-    expect(result.get(shop.domain)).toEqual([
-      { kind: 'environmental', polarity: 'positive', claim: 'Pans | Riverbend Hardware', source_url: shop.url, origin: 'llm', action_date: null },
-    ]);
+  // Its claim would be the shop's own page title, which says nothing about labor or the environment.
+  it('drops a positive citing the retailer\'s own page', () => {
+    expect(acceptSignals(output('www.riverbend-hardware.example', signal(`${shop.url}/`, 'positive', 'environmental')), all, REGISTRY).size).toBe(0);
   });
 
   it('keeps a positive from another fetched page only when that page names the retailer', () => {
@@ -102,7 +100,7 @@ describe('acceptSignals', () => {
   });
 
   it('counts a repeated signal once', () => {
-    const result = acceptSignals(output(shop.domain, signal(shop.url), signal(`${shop.url}/`)), all, REGISTRY);
+    const result = acceptSignals(output(shop.domain, signal(blog.url), signal(`${blog.url}/`)), all, REGISTRY);
     expect(result.get(shop.domain)).toHaveLength(1);
   });
 
@@ -114,10 +112,10 @@ describe('acceptSignals', () => {
     const fetched = mapWebResults(web1, REGISTRY);
     const content = JSON.parse(enrichFixture.choices[0]!.message.content) as EnrichOutput;
     const result = acceptSignals(content, fetched, REGISTRY);
-    expect([...result.keys()]).toEqual(['blue-heron-goods.example']);
-    expect(result.get('blue-heron-goods.example')).toEqual([
-      expect.objectContaining({ polarity: 'positive', source_url: 'https://blue-heron-goods.example/cast-iron', origin: 'llm' }),
-    ]);
+    // Blue Heron's own-page positive is dropped; the FTC negative (not a mention of it), the unfetched
+    // page, Granite's own-page negative and the unknown shop fall to the other rules.
+    expect(content.retailers.flatMap((r) => r.signals).some((s) => s.source_url === 'https://blue-heron-goods.example/cast-iron')).toBe(true);
+    expect(result.size).toBe(0);
   });
 });
 
@@ -146,7 +144,7 @@ describe('curated lookups', () => {
     ]);
   });
 
-  it('enrichAll joins curated data and accepted signals for every candidate', async () => {
+  it('enrichAll joins curated data and the model reply for every candidate', async () => {
     const fetch = makeFixtureFetch(defaultRoutes());
     const llm = createLlmClient({ fetch, apiKey: 'k', siteUrl: 'https://site.example', siteName: 'test' });
     const pass1 = [...mapWebResults(web1, REGISTRY).filter((c) => c.domain.endsWith('.example')), candidate({})];
@@ -155,7 +153,10 @@ describe('curated lookups', () => {
     const shopRow = rows.find((r) => r.candidate.domain === 'shop.example')!;
     expect(shopRow.certifications).toHaveLength(2);
     expect(shopRow.signals).toEqual([expect.objectContaining({ origin: 'curated' })]);
-    expect(rows.find((r) => r.candidate.domain === 'blue-heron-goods.example')!.signals).toEqual([expect.objectContaining({ origin: 'llm' })]);
+    // The reply's one classification (c0, the first candidate) lands on its row; its only
+    // acceptable-looking signal cites the shop's own page and is dropped.
+    expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes' });
+    expect(rows.find((r) => r.candidate.domain === 'blue-heron-goods.example')!.signals).toEqual([]);
     expect(llm.usage.map((u) => u.call)).toEqual(['enrich']);
   });
 

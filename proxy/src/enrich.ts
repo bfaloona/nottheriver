@@ -133,6 +133,8 @@ export function acceptSignals(
       const about = cited.domain === domain || mentionTerms.some((t) => text.includes(t));
       if (!about) continue;
       if (s.polarity === 'negative' && !negativeSources.has(cited.domain)) continue;
+      // A shop vouching for itself is not evidence, and the claim shown would be its own page title.
+      if (s.polarity === 'positive' && cited.domain === domain) continue;
 
       const list = accepted.get(domain) ?? [];
       // Repeats would otherwise count twice in the score.

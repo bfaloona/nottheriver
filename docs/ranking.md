@@ -92,7 +92,7 @@ A finding lowers a score only if all of these hold:
 
 **The model path cannot fire yet.** The code accepts a model-suggested finding only when it cites a page that was among the fetched search results, that page names the shop, and that page sits on an accepted-source domain. But the Worker drops every search result on an accepted-source domain before ranking (a regulator's page must never be ranked as a shop), so no such page is ever citable. The path stays in the code, and becomes live only if registry pages are someday fetched as citable evidence rows separate from shop results.
 
-Positive signals the model points at (for example a shop's own sustainability page) are shown as information and never change the score; only curated certifications raise it.
+Positive signals the model points at are shown as information and never change the score; only curated certifications raise it. A positive must cite a fetched page on another site that names the shop: a shop's own page is not evidence about itself, and the claim shown would be its own page title.
 
 ## Disputes
 

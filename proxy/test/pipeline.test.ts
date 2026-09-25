@@ -451,8 +451,8 @@ describe('the second blocklist pass', () => {
     expect(spy).toHaveBeenCalledTimes(2);
     expect(domainsOf(spy.mock.calls[0]![0])).toContain('amazon.com');
     expect(domainsOf(spy.mock.results[0]!.value)).not.toContain('amazon.com');
-    // The clean retailer's signal from the same reply was accepted, so the reply was used.
-    expect(res.online.find((r) => r.retailer.domain === 'blue-heron-goods.example')!.signals.map((s) => s.origin)).toContain('llm');
+    // The reply was used: its one classification means one fewer shown result went unjudged.
+    expect(res.usage.unclassified_shown!.online).toBe(res.online.length - 1);
     expectAmazonFree(res);
   });
 
