@@ -5,7 +5,7 @@ export type SearchOutcome = { ok: true; data: SearchResponse } | { ok: false; co
 
 const ERROR_CODES: readonly string[] = ['bad_request', 'rate_limited', 'upstream_error', 'invalid_llm_output', 'server_error'];
 
-const round2 = (n: number) => Math.round(n * 100) / 100;
+export const round2 = (n: number) => Math.round(n * 100) / 100;
 
 export async function search(req: SearchRequest, fetchImpl: typeof fetch = fetch): Promise<SearchOutcome> {
   // An explicit literal, so nothing else a caller attaches (a zip, say) can ride along.

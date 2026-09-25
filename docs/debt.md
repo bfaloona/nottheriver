@@ -91,7 +91,8 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Loading state is a text line only | A step indicator once the Worker reports stages |
 | Native `<select>` and checkbox internals are drawn by the browser and were not contrast-checked | Audit with an accessibility tool and add a custom border if a browser fails 3:1 |
 | No social/OG image | Export the creek mark as a plain OG image |
-| Baseline and proximity source links (`about.html#ranking`, built by the Worker) open in a new tab even though they are same-site | Open same-origin source links in the same tab |
+| Map images come from OpenStreetMap's volunteer-run tile servers, which offer no service guarantee and may block a site whose traffic degrades them | A tile provider with a service agreement, or self-hosted tiles, before going public |
+| Map pins show a shop's rank and name on hover only and are kept out of the tab order (the list is the keyboard and screen-reader equivalent); a pin does not scroll to or highlight its result, and the tiles are not dimmed in dark mode | Make each pin a working link to its result and back; a dark tile style |
 | The site name in the wordmark is filled in by JS (it is kept out of the HTML so it lives in one place), so the header is briefly empty on first paint | Inject it at build time with a `transformIndexHtml` replacement |
 
 ## CI, secrets and tests

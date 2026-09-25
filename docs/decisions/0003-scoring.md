@@ -28,10 +28,11 @@ What that means in points: one certification or one negative finding moves a sco
 - Ethics and environment: baseline 0.5, +0.25 per certification kind that scores in that component, capped at 1.0, then −0.25 per accepted negative finding of a matching kind, floored at 0. Baselines are non-zero because no data is not bad data, and so both components always carry a source (the ranking doc).
 - Duplicates count once: each certification kind earns one step even when a shop has two rows of that kind, and a finding counts once per kind and source page, so a curated row and a model-cited row of the same page cannot penalize twice.
 - The cap applies before findings are subtracted, so a finding still costs 0.25 for a shop that holds every certification.
-- Proximity: `max(0, 1 − distance_km / 40)` for local shops, haversine from the request centroid to the shop's coordinates, rounded to 0.1 km before scoring so a reader can recompute it from the display. No coordinates or beyond 40 km gives 0, which is hidden. Online retailers: fixed 0.5.
+- Proximity: `max(0, 1 − distance_km / 40)` for local shops, haversine from the request centroid to the shop's coordinates, rounded to 0.1 km before scoring so a reader can recompute it from the display. No coordinates or beyond 40 km gives 0. Online retailers: fixed 0.5.
 - `independent_retailer_assoc` is a badge with no score effect: no weight is defined for it.
 - Positive signals the model points at are displayed but do not change the score; only curated certifications raise it.
-- Ties keep fetch order (stable sort); scores and contributions are rounded to 3 decimals for display, and the total is summed from unrounded products.
+- Ties keep fetch order (stable sort); scores and contributions are rounded to 3 decimals in the response, and the total is summed from unrounded products.
+- Amended 2026-09-24 (operator decision): "Why this rank" on the page shows the score to 2 decimals and one plain-words line per component, linking only certifications and concerns; the weights are in the line above the results, and every value, weight and source stays in the API response.
 
 ## Consequences
 

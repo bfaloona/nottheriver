@@ -11,7 +11,7 @@ function contentSecurityPolicy(workerUrl: string): Plugin {
     "default-src 'none'",
     "script-src 'self'",
     "style-src 'self'",
-    "img-src 'self' data:",
+    "img-src 'self' data: https://tile.openstreetmap.org",
     `connect-src 'self' ${workerUrl}`,
     "form-action 'none'",
     "base-uri 'none'",

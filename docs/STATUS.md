@@ -11,7 +11,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 | Scoring | `proxy/ranking/` (weights, score, haversine distance) |
 | Ranking data | 28 certifications, 4 curated negatives, 14 accepted negative sources, each with a source and check date |
 | Worker | One route (`POST /search`), CORS, byte-counted body cap, per-client and global rate limits, Brave and OpenRouter clients, schema validation, the full pipeline with both blocklist passes |
-| Site | Search page, results with sort, filter and "Why this rank", About page, cost footer, CSP injected at build |
+| Site | Search page, results with sort, filter and "Why this rank" (plain words), a map of nearby shops (OpenStreetMap tiles, Leaflet), About page, cost footer, CSP injected at build |
 | End-to-end | Playwright smoke test against a mock proxy running the real handler and pipeline on fixtures; screenshots in `docs/evidence/` |
 | Infrastructure | OpenTofu config for the Worker, its secrets and rate limits; `infra/plan-evidence.sh` for a redacted plan |
 | CI | `ci.yml` (tests, lint, full-history gitleaks, bundle secret scan, e2e) and `pages.yml` (build, scan, deploy) |
@@ -48,6 +48,8 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 - The stronger local classifier is not shipped: Gemini 2.5 Flash with a prompt paragraph dropped good local shops on the graded sample, and gpt-oss-120b missed the pre-set precision gain ([quality.md](quality.md#experiments-that-did-not-ship)).
 - Distance groups: 10 mi nearby for metro zips, 30 mi for other zips, nothing beyond 100 mi; the zip's RUCA code picks the group.
 - Distances are shown in miles everywhere a person reads them.
+- "Why this rank" is plain words with links only for certifications and concerns (2026-09-24). This departs from HR5 in the build prompt ("every non-zero component with its value and a source"), which stays as committed; the full values remain in the API response ([ADR 0003](decisions/0003-scoring.md)).
+- The map of nearby shops loads automatically, above the Near you list, with OpenStreetMap tiles; OpenStreetMap sees the visitor's IP address and the area ([privacy.md](privacy.md)).
 
 ## Decisions needed
 

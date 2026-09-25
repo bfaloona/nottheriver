@@ -289,3 +289,82 @@ describe('"Why this rank" on a fine hover pointer', () => {
     expect(d.open).toBe(false);
   });
 });
+
+describe('map of nearby shops', () => {
+  const draw = vi.fn();
+  const mapConfig = { ...config, onMap: draw };
+  let el: HTMLElement;
+  beforeEach(() => {
+    draw.mockClear();
+    el = document.createElement('div');
+  });
+  const farther = { ...response.local[0]!, id: 'local:far:9', rank: 3, retailer: { ...response.local[0]!.retailer, name: 'Far Shop' }, lat: 40.5, lon: -89.1 };
+
+  it('puts one map between the Near you note and its list, pinning shown shops by rank', () => {
+    renderResults({ ...response, local_farther: [farther] }, el, mapConfig);
+    const near = el.querySelector('[data-section="near"]')!;
+    const map = near.querySelector<HTMLElement>('[data-map]')!;
+    expect(map.previousElementSibling!.className).toBe('section-note');
+    expect(map.nextElementSibling!.tagName).toBe('OL');
+    expect(map.getAttribute('aria-label')).toBe('Map of the shops listed near you');
+    expect(draw).toHaveBeenCalledTimes(1);
+    expect(draw.mock.calls[0]![0]).toBe(map);
+    expect(draw.mock.calls[0]![1]).toEqual([
+      ...response.local.map((r) => ({ rank: r.rank, name: r.retailer.name, lat: r.lat, lon: r.lon, farther: false })),
+      { rank: 3, name: 'Far Shop', lat: 40.5, lon: -89.1, farther: true },
+    ]);
+  });
+
+  it('leaves out shops without coordinates and filtered shops, and draws no map when none remain', () => {
+    const [first, second] = response.local;
+    const noCoords = { ...response, local: [first!, { ...second!, lat: null, lon: null }] };
+    renderResults(noCoords, el, mapConfig);
+    expect(draw.mock.calls[0]![1].map((p: { name: string }) => p.name)).toEqual([first!.retailer.name]);
+
+    // Only the first shop is certified, so the filter must take the second, pinnable shop off the map.
+    draw.mockClear();
+    expect(second!.certifications).toEqual([]);
+    renderResults(response, el, mapConfig, { ...defaultView, certifiedOnly: true });
+    expect(draw.mock.calls[0]![1].map((p: { name: string }) => p.name)).toEqual([first!.retailer.name]);
+
+    // A Worker deployed before shops carried coordinates omits the fields entirely.
+    draw.mockClear();
+    const old: Partial<SearchResult> = { ...second! };
+    delete old.lat;
+    delete old.lon;
+    renderResults({ ...response, local: [first!, old as SearchResult] }, el, mapConfig);
+    expect(draw.mock.calls[0]![1].map((p: { name: string }) => p.name)).toEqual([first!.retailer.name]);
+
+    draw.mockClear();
+    renderResults({ ...response, local: response.local.map((r) => ({ ...r, lat: null, lon: null })) }, el, mapConfig);
+    expect(el.querySelector('[data-map]')).toBeNull();
+    expect(draw).not.toHaveBeenCalled();
+  });
+
+  it('draws no map while the Near you section is switched off', () => {
+    renderResults(response, el, mapConfig, { ...defaultView, near: false });
+    expect(draw).not.toHaveBeenCalled();
+  });
+
+  it('hands the map a container that is already in the page', () => {
+    document.body.append(el);
+    let attached = false;
+    renderResults(response, el, { ...config, onMap: (container) => { attached = container.isConnected; } });
+    expect(attached).toBe(true);
+  });
+
+  it('pins no shop whose coordinates are not finite numbers', () => {
+    const [first, second] = response.local;
+    renderResults({ ...response, local: [first!, { ...second!, lat: Number.NaN }] }, el, mapConfig);
+    expect(draw.mock.calls[0]![1]).toHaveLength(1);
+  });
+
+  it('reports a render without a map, so the page can drop the old one', () => {
+    const noMap = vi.fn();
+    renderResults(response, el, { ...config, onMap: draw, onNoMap: noMap }, { ...defaultView, near: false });
+    expect(noMap).toHaveBeenCalledTimes(1);
+    noMap.mockClear();
+    renderResults(response, el, { ...config, onMap: draw, onNoMap: noMap });
+    expect(noMap).not.toHaveBeenCalled();
+  });
+});

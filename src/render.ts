@@ -5,7 +5,16 @@ import { wirePopovers } from './popover';
 // Everything in a SearchResponse is untrusted text from the web: nodes are built
 // with textContent only, and a URL becomes an href only when it is http(s).
 
-export interface RenderConfig { disputeUrl: string }
+export interface MapPin { rank: number; name: string; lat: number; lon: number; farther: boolean }
+
+// onMap draws the map into the container, which is already in the page; kept out of this
+// module so rendering stays testable without a map library and the library can load on
+// demand. onNoMap runs when a render shows no map, so an earlier map can be released.
+export interface RenderConfig {
+  disputeUrl: string;
+  onMap?: (container: HTMLElement, pins: MapPin[]) => void;
+  onNoMap?: () => void;
+}
 
 export type Status =
   | { kind: 'idle' }
@@ -199,6 +208,13 @@ export function renderWeights(weights: SearchResponse['weights']): HTMLParagraph
   );
 }
 
+function mapPins(near: SearchResult[], farther: SearchResult[]): MapPin[] {
+  const pin = (isFarther: boolean) => (r: SearchResult): MapPin[] =>
+    // Number.isFinite also rejects a missing field, from a Worker deployed before shops carried coordinates.
+    Number.isFinite(r.lat) && Number.isFinite(r.lon) ? [{ rank: r.rank, name: r.retailer.name, lat: r.lat!, lon: r.lon!, farther: isFarther }] : [];
+  return [...near.flatMap(pin(false)), ...farther.flatMap(pin(true))];
+}
+
 interface Farther { all: SearchResult[]; shown: SearchResult[]; nearMiles: number | undefined }
 
 // Shops past the nearby radius, listed after the nearby ones inside the same section.
@@ -223,6 +239,7 @@ function section(
   enabled: boolean,
   config: RenderConfig,
   farther?: Farther,
+  map?: HTMLElement | null,
 ): HTMLElement {
   let note: string;
   if (all.length === 0 && farther?.all.length) {
@@ -243,6 +260,7 @@ function section(
     { data: { section: key } },
     el('h2', { id }, heading),
     el('p', { className: 'section-note' }, note),
+    ...(map ? [map] : []),
     el('ol', { className: 'results' }, ...shown.map((r) => renderResult(r, config))),
     ...(farther ? [fartherGroup(farther, config)].filter((g): g is HTMLElement => g !== null) : []),
   );
@@ -263,12 +281,18 @@ export function renderResults(
   const shownFarther = sortResults(filterResults(fartherAll, view), view.sort);
   const shownOnline = sortResults(filterResults(response.online, view), view.sort);
   const farther = { all: fartherAll, shown: shownFarther, nearMiles: response.query.near_radius_mi };
+  const pins = view.near ? mapPins(shownLocal, shownFarther) : [];
+  const map = pins.length > 0 && config.onMap ? el('div', { className: 'map', data: { map: '' } }) : null;
+  map?.setAttribute('role', 'region');
+  map?.setAttribute('aria-label', 'Map of the shops listed near you');
   root.replaceChildren(
     renderWeights(response.weights),
-    section('near', 'Near you', response.local, shownLocal, view.near, config, farther),
+    section('near', 'Near you', response.local, shownLocal, view.near, config, farther, map),
     section('online', 'Online', response.online, shownOnline, view.online, config),
   );
   wirePopovers(root);
+  if (map) config.onMap!(map, pins);
+  else config.onNoMap?.();
   return shownLocal.length + shownFarther.length + shownOnline.length;
 }
 

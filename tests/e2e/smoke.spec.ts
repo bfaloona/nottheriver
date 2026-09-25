@@ -22,6 +22,14 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   });
   page.on('pageerror', (err) => errors.push(err.message));
 
+  // Never fetch real tiles in a test; a 1x1 PNG stands in, and each request's Referer is kept.
+  const tileReferers: (string | undefined)[] = [];
+  const PIXEL = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
+  await page.route('https://tile.openstreetmap.org/**', async (route) => {
+    tileReferers.push((await route.request().allHeaders()).referer);
+    await route.fulfill({ contentType: 'image/png', body: PIXEL });
+  });
+
   await page.goto('/');
   await expect(page.locator('meta[name=referrer][content=no-referrer]')).toHaveCount(1);
   await expect(page.locator('meta[http-equiv=Content-Security-Policy]')).toHaveAttribute('content', /form-action 'none'/);
@@ -42,6 +50,14 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(page.locator('[data-section=near] [data-result]').first()).toBeVisible();
   await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
   await expect(page.locator('[data-weights]')).toBeVisible();
+
+  // One pin per shop listed near you (the mock places every shop), under the CSP, with attribution.
+  const map = page.locator('[data-section=near] [data-map]');
+  await expect(map.locator('.map-pin')).toHaveCount(await page.locator('[data-section=near] [data-result]').count());
+  await expect(map.locator('.leaflet-control-attribution')).toContainText('OpenStreetMap contributors');
+  await expect.poll(() => tileReferers.length).toBeGreaterThan(0);
+  // OpenStreetMap requires a Referer; the tiles send the site's origin only, never a path.
+  expect(new Set(tileReferers)).toEqual(new Set([new URL(page.url()).origin + '/']));
   await expect(page.locator('[data-cost]')).toBeVisible();
 
   // The zip must never reach the address bar, where it would leak via history or a Referer.

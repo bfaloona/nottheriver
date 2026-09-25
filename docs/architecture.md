@@ -5,9 +5,12 @@ Two deployables: a static site on GitHub Pages and one Cloudflare Worker that ow
 ```
 browser ── GET zips.json (static, same path for everyone)
    │
-   └── POST /search {product, city, state, lat, lon, ruca?} ──> Worker ──> Brave Search (web, place)
-                                                              └──> OpenRouter (2 structured calls)
+   ├── POST /search {product, city, state, lat, lon, ruca?} ──> Worker ──> Brave Search (web, place)
+   │                                                          └──> OpenRouter (2 structured calls)
+   └── GET map tiles ──> tile.openstreetmap.org (when shops near you are shown)
 ```
+
+The map (`src/map.ts`, Leaflet, loaded as a separate chunk after the first results) pins each local result by the coordinates the Worker returns (4 decimals) and marks the zip-area center the browser already holds.
 
 ## Request flow
 

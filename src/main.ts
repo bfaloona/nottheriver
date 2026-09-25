@@ -1,8 +1,8 @@
 import type { SearchResponse } from '../proxy/src/contract';
-import { search } from './api';
+import { round2, search } from './api';
 import { disputeUrl, siteName, zipsUrl } from './config';
 import { bindControls } from './controls';
-import { renderFooter, renderResults, renderStatus } from './render';
+import { renderFooter, renderResults, renderStatus, type MapPin } from './render';
 import { loadZips, lookupZip, parseZip } from './zip';
 
 // Only the product text is remembered, never the zip.
@@ -29,13 +29,26 @@ try {
 }
 
 let current: SearchResponse | null = null;
+let center: { lat: number; lon: number } | undefined;
+
+let clearMap: (() => void) | undefined;
+
+// A map that fails to load or draw is dropped; the list below it still works.
+function onMap(container: HTMLElement, pins: MapPin[]): void {
+  import('./map')
+    .then((m) => {
+      clearMap = m.clearMap;
+      m.drawMap(container, pins, center);
+    })
+    .catch(() => container.remove());
+}
 
 const readView = bindControls(results, () => {
   if (current) show(current);
 });
 
 function show(response: SearchResponse): void {
-  const visible = renderResults(response, sections, { disputeUrl }, readView());
+  const visible = renderResults(response, sections, { disputeUrl, onMap, onNoMap: () => clearMap?.() }, readView());
   renderStatus(
     status,
     visible > 0
@@ -100,6 +113,8 @@ async function run(): Promise<void> {
       return renderStatus(status, { kind: 'no_results', product: text });
     }
     current = outcome.data;
+    // The same 2-decimal center the Worker receives, so the map shows nothing finer.
+    center = { lat: round2(place.lat), lon: round2(place.lon) };
     results.hidden = false;
     show(current);
   } catch {
