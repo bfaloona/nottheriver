@@ -20,6 +20,8 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 | Local classifier coverage | The model sees every local candidate (cap 16 to 20, tied to the place-search count by a test); `usage.unclassified_shown` counts shown results it did not judge |
 | Distance groups | Nearby within 10 mi (metro zips, RUCA 1 to 3) or 30 mi (RUCA 4 to 10); up to 3 "Farther away" out to 100 mi; beyond that dropped as `too_far`. RUCA code per ZCTA in `zips.json`, sent with each search ([ranking.md](ranking.md#distance-groups)) |
 | Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29; a live rerun showed no change (30 of 54 before, 29 of 51 after) ([quality.md](quality.md#rerun-after-distance-groups-and-classifier-judged-ranking)) |
+| Worker deploys | Agents deploy the Worker with `infra/deploy.sh` (operator grant, 2026-09-24): committed and pushed code only, and only a new bundle; any other infrastructure change stops for the operator. When to run it: `.claude/skills/deploy/SKILL.md` |
+| Positive signals | A positive signal must cite a fetched page on another site that names the shop; a shop's own page no longer counts ([ADR 0004](decisions/0004-down-ranking.md)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0004](decisions/0004-down-ranking.md) |
 
 ## In flight
