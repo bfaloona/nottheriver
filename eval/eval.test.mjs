@@ -5,7 +5,7 @@ import { isAllowed } from './access-probe/robots';
 import { pickTargets } from './access-probe/run-probe.mjs';
 import { parseTarget } from './access-probe/target';
 import { buildRequest } from './run-searches.mjs';
-import { agreement, precision, probeRates, recall, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
+import { agreement, precision, probeRates, recall, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
 
 const { queries } = JSON.parse(readFileSync('eval/queries.json', 'utf8'));
 const zips = JSON.parse(readFileSync('public/zips.json', 'utf8'));
@@ -218,5 +218,21 @@ describe('probe targets', () => {
     expect(parseTarget('https://a.com/p?q=1')?.href).toBe('https://a.com/p?q=1');
     expect(parseTarget('http://a.com')?.href).toBe('http://a.com/');
     for (const bad of [null, '', '/relative', 'file:///etc/passwd', 'javascript:alert(1)', 'ftp://a.com/']) expect(parseTarget(bad)).toBeNull();
+  });
+});
+
+describe('sectionResults', () => {
+  const near = { retailer: { name: 'Near', domain: 'near.example' } };
+  const far = { retailer: { name: 'Far', domain: 'far.example' } };
+  const web = { retailer: { name: 'Web', domain: 'web.example' } };
+
+  it('counts the farther-away shops the page shows as local results', () => {
+    const body = { local: [near], local_farther: [far], online: [web] };
+    expect(sectionResults(body, 'local')).toEqual([near, far]);
+    expect(sectionResults(body, 'online')).toEqual([web]);
+  });
+
+  it('reads a response saved before farther shops existed', () => {
+    expect(sectionResults({ local: [near], online: [] }, 'local')).toEqual([near]);
   });
 });

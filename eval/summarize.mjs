@@ -138,6 +138,11 @@ async function readJson(path, fallback) {
   }
 }
 
+/** What the page shows in a section: local includes the "Farther away" group listed under it. */
+export function sectionResults(body, section) {
+  return section === 'local' ? [...body.local, ...(body.local_farther ?? [])] : body[section];
+}
+
 async function main() {
   const { queries } = await readJson('eval/queries.json');
   const saved = await Promise.all(queries.map((q) => readJson(`${DIR}/responses/${q.id}.json`, null)));
@@ -149,7 +154,7 @@ async function main() {
   const zipKind = new Map(queries.map((q) => [q.id, q.zip_kind]));
   const resultsFor = (id, section) => {
     const s = responses.get(id);
-    return s?.status === 200 ? s.body[section] : [];
+    return s?.status === 200 ? sectionResults(s.body, section) : [];
   };
   const gradesIn = (sec) => grades.grades.filter((g) => g.kind === sec);
   const run = totals([...responses.values()].map(usageRow));
