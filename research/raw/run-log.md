@@ -60,3 +60,5 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Researchers R1, R2, R3, R5, R6, R7, R9, R10 done; verifiers for those running. R4 and R8 researchers still running. Lead checked explore.changeclimate.org robots.txt: allows Claude-User (Climate Label certs OK).
 - R8 done; V8 running. Operator decision pending: should small OSHA citations (e.g. ThredUp's $0 and $1,773 'Other' citations) count? Brief rule applied: yes.
 - Verifiers R3, R6, R7, R9 done (Shop caution->acceptable). Operator check: Azure Standard's 3 OSHA concerns rest on a complaint's 'information and belief' identity link plus a matching address.
+- Verifier R5 done (no tier changes). Lead rule added to brief section 9: OSHA citations count only with a penalty and a closed case; $0 or open ones are body notes. Operator may overrule (it keeps Equal Exchange recommended; ThredUp's 2017 $0 inspection drops).
+- Verifiers R1, R2 done (eBay EPA concern removed as dismissed; Thrive OSHA merged). Waiting on V4, V8, V10.

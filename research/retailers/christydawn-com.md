@@ -19,7 +19,7 @@ mentioned_by: [adayinourshoes-com, sustainablejungle-com]
 checked: 2026-09-25
 ---
 
-Christy Dawn designs and sells its own clothing (dresses, knitwear, tops, skirts, intimates and accessories); its best-known item is "The Dawn Dress". Its privacy policy and terms give its address as 2115 South San Pedro Street, Los Angeles, CA 90011, and its site lists an L.A. store. Its about page promotes a "Farm-to-Closet" regenerative cotton program with the Oshadi Collective in India and claims that "Everyone from Farm-to-Closet makes a living wage"; these are the brand's own claims, not verified. No fetched source gives its owners or investors, so ownership and parent are `unknown`; a court docket names the company Christy Dawn, LLC. It sells only its own goods (`marketplace: false`); no fetched source says whether it sells through Amazon. There is no Wikipedia article.
+Christy Dawn designs and sells its own clothing (dresses, knitwear, tops, skirts, intimates and accessories); its best-known item is "The Dawn Dress". Its privacy policy and terms give its address as 2115 South San Pedro Street, Los Angeles, CA 90011, and its site lists an L.A. store. Its about page promotes a "Farm-to-Closet" regenerative cotton program with the Oshadi Collective in India and claims that "Everyone from Farm-to-Closet makes a living wage"; these are the brand's own claims, not verified. No fetched source gives its owners or investors, so ownership and parent are `unknown`; a court docket names the company Christy Dawn, LLC. It sells only its own goods (`marketplace: false`), plus a "Pre-Loved" site for secondhand Christy Dawn items (regenerates.christydawn.com, linked from its FAQ page); no fetched source says whether it sells through Amazon. There is no Wikipedia article.
 
 Lists recommend it as an ethical clothing brand: A Day in Our Shoes (ethical clothing brand) and Sustainable Jungle ("Upcycled and deadstock fabric dresses").
 
@@ -30,6 +30,7 @@ Concerns. None recorded. The NLRB case search for "christy dawn" returned no cas
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
 
 ## Sources
 - https://christydawn.com/pages/about

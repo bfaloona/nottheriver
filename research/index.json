@@ -1460,17 +1460,10 @@
           "source": "https://www.npr.org/2024/01/11/1224333712/ebay-stalking-settlement",
           "date": "2024-01-11",
           "accepted_source": true
-        },
-        {
-          "kind": "environmental",
-          "title": "EPA and Justice Department File Complaint Alleging Environmental Violations by eBay",
-          "source": "https://www.epa.gov/newsreleases/epa-and-justice-department-file-complaint-alleging-environmental-violations-ebay",
-          "date": "2023-09-27",
-          "accepted_source": true
         }
       ],
       "ethics": 0.25,
-      "environment": 0.25,
+      "environment": 0.5,
       "tier": "caution",
       "mentions": 6,
       "mentioned_by": [
@@ -1618,15 +1611,7 @@
           "verified_this_run": true
         }
       ],
-      "concerns": [
-        {
-          "kind": "environmental",
-          "title": "Settlement Agreement, AG Notice Nos. 2024-02373",
-          "source": "https://oag.ca.gov/system/files/prop65/settlements/2024-02373S4583.pdf",
-          "date": "2024-12-13",
-          "accepted_source": false
-        }
-      ],
+      "concerns": [],
       "ethics": 0.5,
       "environment": 0.75,
       "tier": "recommended",
@@ -1659,7 +1644,7 @@
       ],
       "ownership": "unknown",
       "parent": "unknown",
-      "hq": "Seattle, WA",
+      "hq": "unknown",
       "marketplace": false,
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
@@ -1868,23 +1853,16 @@
         "bedding"
       ],
       "ownership": "unknown",
-      "parent": "none",
+      "parent": "unknown",
       "hq": "Oakland, CA",
       "marketplace": false,
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
-      "certifications": [
-        {
-          "kind": "fair_trade",
-          "source": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
-          "checked": "2026-09-25",
-          "verified_this_run": true
-        }
-      ],
+      "certifications": [],
       "concerns": [],
-      "ethics": 0.75,
+      "ethics": 0.5,
       "environment": 0.5,
-      "tier": "recommended",
+      "tier": "acceptable",
       "mentions": 2,
       "mentioned_by": [
         "fairtradecertified-org",
@@ -1943,7 +1921,7 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "MAGNELL ASSOCIATE, INC. D/B/A NEWEGG.COM (21-CA-184553)",
+          "title": "MAGNELL ASSOCIATE, INC. D/B/A NEWEGG.COM",
           "source": "https://www.nlrb.gov/case/21-CA-184553",
           "date": "2019-07-31",
           "accepted_source": true
@@ -2371,20 +2349,13 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "Inspection: 1815510.015 - Thredup Distribution Center",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
           "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1815510.015",
           "date": "2025-05-07",
           "accepted_source": true
-        },
-        {
-          "kind": "labor",
-          "title": "Inspection: 1257615.015 - Thredup, Inc.",
-          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1257615.015",
-          "date": "2017-10-26",
-          "accepted_source": true
         }
       ],
-      "ethics": 0,
+      "ethics": 0.25,
       "environment": 0.5,
       "tier": "caution",
       "mentions": 3,
@@ -2419,20 +2390,13 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "Inspection Detail: Thrive Market, Inc. (Activity 1724624.015)",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
           "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724624.015",
-          "date": "2024-03-25",
-          "accepted_source": true
-        },
-        {
-          "kind": "labor",
-          "title": "Inspection Detail: Thrive Market, Inc. (Activity 1724652.015)",
-          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724652.015",
           "date": "2024-03-25",
           "accepted_source": true
         }
       ],
-      "ethics": 0,
+      "ethics": 0.25,
       "environment": 0.5,
       "tier": "caution",
       "mentions": 10,

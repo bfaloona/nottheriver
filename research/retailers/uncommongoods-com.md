@@ -28,6 +28,7 @@ Uncommon Goods is an online gift retailer in Brooklyn, New York, founded in 1999
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Concerns: NLRB's case search returned no cases for "uncommon goods". The WebSearch budget was used up, so ftc.gov, osha.gov, dol.gov and news were not searched; the concern list may be incomplete.
 - Blocklist: `node research/build-index.mjs --blocklist "Uncommon Goods" uncommongoods.com` returned "not on the blocklist".
+- Concern search incomplete this run (see raw/blocked-retailers-R2.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Uncommon_Goods

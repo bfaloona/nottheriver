@@ -26,10 +26,11 @@ The B Corp status is not counted: bcorporation.net returned HTTP 403, and data/c
 
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). No accepted concern. = 0.5
-- Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`; profile says "certified Climate Neutral in 2020, 2021, 2022, 2023 and 2024", current certification year 2025). = 0.75
+- Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`; profile says "certified Climate Neutral in 2020, 2021, 2022, 2023 and 2024", current certification year 2025, not marked expired). = 0.75
 - 1% for the Planet: directory is script-rendered and returned no content; inconclusive, not counted.
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Blocklist: `node research/build-index.mjs --blocklist "Bookshop.org" bookshop.org` returned "not on the blocklist".
+- Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Bookshop.org

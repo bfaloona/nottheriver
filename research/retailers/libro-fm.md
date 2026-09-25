@@ -21,13 +21,14 @@ checked: 2026-09-25
 
 Libro.fm sells DRM-free digital audiobooks through its app and splits its profits with an independent bookstore the customer chooses. Wikipedia says it was founded in 2014 by Mark Pearson, Carl Hartung and Nick Johnson, is based in Seattle, is "employee-owned and a social purpose corporation", partnered with Bookshop.org in 2020, and operates in the US, Canada, the UK, Australia and New Zealand. Lists recommend it as the independent-bookstore alternative to Amazon's Audible.
 
-Certifications not counted: one list site calls it a B Corp, but bcorporation.net returned HTTP 403 and data/certifications.json has no Libro.fm row. Employee ownership is not the `worker_coop` certification: Libro.fm does not appear in the US Federation of Worker Cooperatives directory (all pages scanned; a known member, Arizmendi Cooperative, did appear). The Climate Label directory has no Libro.fm profile ("Brand Not Found") and it is not among the 188 current brands. NLRB case search for "Libro.fm" returned no cases, and OSHA's establishment search for "Libro" (2016 to 2026) returned no results. No general news search was possible (the session's web search budget was used up), and its about page returned HTTP 403.
+Certifications not counted: one list site calls it a B Corp, but bcorporation.net returned HTTP 403 and data/certifications.json has no Libro.fm row. Employee ownership is not the `worker_coop` certification: Libro.fm does not appear in the US Federation of Worker Cooperatives directory (all pages scanned; a known member, Arizmendi Cooperative, did appear). The Climate Label directory has no Libro.fm profile ("Brand Not Found") and it is not in the directory's brand list. NLRB case search for "Libro.fm" returned no cases, and OSHA's establishment search for "Libro" (2016 to 2026) returned no results. No general news search was possible (the session's web search budget was used up), and its about page returned HTTP 403.
 
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row); not in the worker co-op directory. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not in The Climate Label directory; 1% for the Planet directory is script-rendered and returned no content (inconclusive). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
 - Blocklist: `node research/build-index.mjs --blocklist "Libro.fm" libro.fm` returned "not on the blocklist".
+- Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Libro.fm

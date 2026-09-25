@@ -5,7 +5,7 @@ type: brand
 goods: [clothing, activewear]
 ownership: unknown
 parent: unknown
-hq: Seattle, WA
+hq: unknown
 marketplace: false
 sells_on_amazon: unknown
 amazon_owned: false
@@ -19,7 +19,7 @@ mentioned_by: [amazonalts-org, goodgoodgood-co]
 checked: 2026-09-25
 ---
 
-Girlfriend Collective sells its own activewear and clothing, which its about page calls "Ethically Made Activewear" and says uses recycled polyester from post-consumer plastic ("100% of our collections use over 75% recycled polyester"); it names Quang Dinh as co-founder. Its terms of service name the company as Girlfriend Collective LLC, and its contact page gives 600 1st Avenue, Suite 330, Seattle, WA 98104. No fetched source says who owns the LLC, so ownership and parent are `unknown`. Its site sells only its own goods (plus a pre-owned resale section "Powered by Treet"), so `marketplace` is `false`; no fetched source says whether it sells through Amazon. There is no Wikipedia article.
+Girlfriend Collective sells its own activewear and clothing, which its about page calls "Ethically Made Activewear" and says uses recycled polyester from post-consumer plastic ("100% of our collections use over 75% recycled polyester"); it names Quang Dinh as co-founder. Its terms of service name the company as Girlfriend Collective LLC and send disputes to arbitration in Travis County, Texas; its contact page gives a private mailbox address, 600 1st Avenue, Suite 330, PMB 81172, Seattle, WA 98104. A mail drop and a Texas venue clause do not establish a headquarters, so `hq` is `unknown`. No fetched source says who owns the LLC, so ownership and parent are `unknown`. Its site sells only its own goods (plus a pre-owned resale section "Powered by Treet"), so `marketplace` is `false`; no fetched source says whether it sells through Amazon. There is no Wikipedia article.
 
 Lists recommend it for recycled-material activewear: AmazonAlts (factories with "fair wages") and Goodgoodgood ("made from recycled materials", sizes "2XS to 6XL").
 
@@ -32,6 +32,7 @@ Concerns. None recorded. The NLRB case search for "girlfriend collective" return
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no verified certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
 
 ## Sources
 - https://girlfriend.com/pages/about-us

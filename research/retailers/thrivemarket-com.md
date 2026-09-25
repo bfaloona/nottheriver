@@ -11,9 +11,8 @@ sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
 concerns:
-  - {kind: labor, title: "Inspection Detail: Thrive Market, Inc. (Activity 1724624.015)", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724624.015", date: 2024-03-25, accepted_source: true}
-  - {kind: labor, title: "Inspection Detail: Thrive Market, Inc. (Activity 1724652.015)", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724652.015", date: 2024-03-25, accepted_source: true}
-ethics: 0
+  - {kind: labor, title: "Inspection Detail | Occupational Safety and Health Administration", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724624.015", date: 2024-03-25, accepted_source: true}
+ethics: 0.25
 environment: 0.5
 tier: caution
 mentions: 10
@@ -25,14 +24,15 @@ Thrive Market is a membership online grocer selling organic and natural food, su
 
 Certifications not counted: the Thrive Market site shows a B Corp badge and Wikipedia says it became a B Corp in October 2020, but bcorporation.net returned HTTP 403 and data/certifications.json has no Thrive Market row. The Climate Label's profile says "Thrive Market's certification has expired", so `climate_neutral` does not count either.
 
-Concerns: OSHA's establishment search lists four inspections from 2016 to 2026. Two planned inspections opened 01/31/2024 at the same site (700 Milan Dr., Nevada, Reno office) each ended in a citation issued 03/25/2024: activity 1724624.015 cited one Serious violation (initial penalty $6,612, current $3,306) and one Other violation ($0); activity 1724652.015 cited one Serious violation (initial $6,222, current $3,111). Both cases are "CLOSED". They are recorded as two rows because they are two OSHA records, though they come from the same visit. The Indiana (2026) and Pennsylvania (2025) inspections list no violations and are not concerns. NLRB case search for "Thrive Market" returned no cases. No general news search was possible (the session's web search budget was used up).
+Concerns: OSHA's establishment search lists four inspections from 2016 to 2026. Two planned inspections opened 01/31/2024 at the same site (700 Milan Dr., Nevada, Reno office) each ended in a citation issued 03/25/2024: activity 1724624.015 cited one Serious violation (initial penalty $6,612, current $3,306) and one Other violation ($0); activity 1724652.015 cited one Serious violation (initial $6,222, current $3,111). Both cases are "CLOSED" after informal settlement. The two records share one report ID (0953210), open date, closing conference and close date, and each lists the other as related activity, so they are one inspection visit and recorded as one concern (the 1724624.015 record). Under the OSHA citation rule (brief section 9) it counts because the Serious citation carries a penalty ($3,306 current) and the case is closed; the $0 Other citation adds nothing on its own. The Indiana (2026) and Pennsylvania (2025) inspections list no violations and are not concerns. NLRB case search for "Thrive Market" returned no cases. No general news search was possible (the session's web search budget was used up).
 
 ## Rating
-- Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). Minus 0.25 for each of two accepted labor concerns (osha.gov, 2024-03-25). 0.5 - 0.5 = 0
+- Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). Minus 0.25 for one accepted labor concern (osha.gov inspection 1724624.015, citations issued 2024-03-25; its companion record 1724652.015 is the same visit and not counted again). 0.5 - 0.25 = 0.25
 - Environment: 0.5 baseline. Climate Label certification expired; no other verified certification; no environmental concern. = 0.5
-- Total 0.5, with accepted concerns inside the last 5 years: tier `caution`.
+- Total 0.75, with an accepted concern inside the last 5 years: tier `caution`.
 - 1% for the Planet: directory is script-rendered and returned no content; inconclusive, not counted.
 - Blocklist: `node research/build-index.mjs --blocklist "Thrive Market" thrivemarket.com` returned "not on the blocklist".
+- Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
 
 ## Sources
 - https://thrivemarket.com/about
