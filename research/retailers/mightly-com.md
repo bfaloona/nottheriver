@@ -9,11 +9,12 @@ hq: Oakland, CA
 marketplace: false
 sells_on_amazon: unknown
 amazon_owned: false
-certifications: []
+certifications:
+  - {kind: fair_trade, source: https://www.fairtradecertified.org/our-community/shop-fair-trade/, checked: 2026-09-25, verified_this_run: true}
 concerns: []
-ethics: 0.5
+ethics: 0.75
 environment: 0.5
-tier: acceptable
+tier: recommended
 mentions: 2
 mentioned_by: [fairtradecertified-org, goodgoodgood-co]
 checked: 2026-09-25
@@ -23,15 +24,15 @@ Mightly sells kids' clothing, which its about page calls "Organic, Fair Trade Ce
 
 Lists recommend it for fair trade organic clothing: Fair Trade USA's shop page shows it as a brand tile (apparel, clothing), and Goodgoodgood lists both Mightly ("Certified Fair Trade brand", organic cotton) and Of an Origin (Mightly's maternity line), which is why this file covers both names.
 
-Fair trade. Fair Trade USA's "Shop Fair Trade" page, fetched this run, shows a Mightly brand tile under the apparel and clothing filters, linking to mightly.com/pages/sustainability#fair-trade. The page presents its tiles as "brands that offer Fair Trade Certified products", so this shows a brand that sells certified products, not a certified company; Mightly's own sustainability page says of factory partners, "Fair Trade Certified: Our first filter". The certification belongs to its factories, so `fair_trade` is not counted.
+Fair trade. Fair Trade USA's "Shop Fair Trade" page, fetched this run, shows a Mightly brand tile under the apparel and clothing filters, linking to mightly.com/pages/sustainability#fair-trade. The page presents its tiles as "brands that offer Fair Trade Certified products", so this shows a brand that sells certified products; Mightly's own sustainability page says of factory partners, "Fair Trade Certified: Our first filter". The project's `fair_trade` kind means "Sells Fair Trade Certified products" (docs/ranking.md), and the curated rows in data/certifications.json use this same brand listing, so `fair_trade` counts (lead decision; the verifier had removed it, see raw/verify-R8.md).
 
 Concerns. None recorded. The NLRB case search for "mightly" returned no cases, OSHA's establishment search returned no results, and CourtListener returned no dockets with "mightly" in the case name. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
 ## Rating
-- Certifications: none counted. Fair Trade USA's shop page lists Mightly among "brands that offer Fair Trade Certified products", which is not a company certification, so `fair_trade` does not count. B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
-- Ethics: 0.5 baseline, no counted certification, no accepted concern = 0.5.
+- Certifications: `fair_trade` counted: Fair Trade USA's shop page lists Mightly among "brands that offer Fair Trade Certified products", which is what the project's `fair_trade` kind means ("Sells Fair Trade Certified products", docs/ranking.md). B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
+- Ethics: 0.5 baseline + 0.25 (fair_trade), no accepted concern = 0.75.
 - Environment: 0.5 baseline, no environmental certification, no environmental concern = 0.5.
-- Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable` (below 1.25 for `recommended`).
+- Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.25 and no accepted concern, so `recommended`.
 - Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
 
 ## Sources
@@ -41,7 +42,7 @@ Concerns. None recorded. The NLRB case search for "mightly" returned no cases, O
 - https://www.mightly.com/pages/sustainability
 - https://www.mightly.com/policies/terms-of-service
 - https://www.mightly.com/policies/privacy-policy
-- https://www.fairtradecertified.org/our-community/shop-fair-trade/ (Mightly brand tile under "brands that offer Fair Trade Certified products"; not a company certification)
+- https://www.fairtradecertified.org/our-community/shop-fair-trade/ (Mightly brand tile under "brands that offer Fair Trade Certified products")
 - https://www.nlrb.gov/search/case/mightly (no cases)
 - https://www.osha.gov/ords/imis/establishment.search?establishment=mightly&state=all&officetype=all&office=all&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=all (no results)
 - https://www.courtlistener.com/api/rest/v4/search/?q=caseName%3A%28%22mightly%22%29&type=r (no dockets)

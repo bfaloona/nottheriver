@@ -62,3 +62,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Verifiers R3, R6, R7, R9 done (Shop caution->acceptable). Operator check: Azure Standard's 3 OSHA concerns rest on a complaint's 'information and belief' identity link plus a matching address.
 - Verifier R5 done (no tier changes). Lead rule added to brief section 9: OSHA citations count only with a penalty and a closed case; $0 or open ones are body notes. Operator may overrule (it keeps Equal Exchange recommended; ThredUp's 2017 $0 inspection drops).
 - Verifiers R1, R2 done (eBay EPA concern removed as dismissed; Thrive OSHA merged). Waiting on V4, V8, V10.
+- Verifier R8 done (ThredUp $0 inspection moved to body). Lead override: restored Mightly's fair_trade (project definition = sells certified products; curated rows use the same Fair Trade USA brand listing); stockists like Walmart/Costco still not counted.

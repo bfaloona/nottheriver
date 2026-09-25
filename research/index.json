@@ -1858,11 +1858,18 @@
       "marketplace": false,
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
-      "certifications": [],
+      "certifications": [
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
       "concerns": [],
-      "ethics": 0.5,
+      "ethics": 0.75,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "recommended",
       "mentions": 2,
       "mentioned_by": [
         "fairtradecertified-org",
