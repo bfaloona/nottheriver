@@ -10,7 +10,7 @@ score_parts: {independence: 14, evidence: 4, substance: 9, currency: 13, usefuln
 affiliate_links: none
 owner: unknown
 updated: 2026-01-15
-retailers_listed: 42
+retailers_listed: 12
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (14/20): no affiliate links (hrefs are plain) and a footer statement of no promotional affiliations; deducted because the owner is not identified anywhere on the site.
 - Evidence (4/20): the case against Amazon is well sourced (CBS, AP, NPR, EFF, ACLU), but no claim about any alternative is made or sourced; picks carry no certifications or ownership facts.
-- Substance (9/20): 42 named, non-Amazon options across books, general shopping, streaming, audiobooks, ebooks, reading apps and film reference; deducted because no pick has a specific reason, 15 are streaming services and 7 are reading or reference apps rather than shops, Temu and AliExpress sit beside ethical picks without comment, hive.co.uk is a UK shop, and Anna's Archive is linked only to its Wikipedia article.
+- Substance (9/20): 42 named, non-Amazon options across books, general shopping, streaming, audiobooks, ebooks, reading apps and film reference; deducted because no pick has a specific reason, 15 are streaming services and 7 are reading or reference apps rather than shops, Temu and AliExpress sit beside ethical picks without comment, hive.co.uk is a UK shop, and Anna's Archive is linked only to its Wikipedia article. After calibration 12 rows count as shops; the 30 streaming services, apps, software, free archives and reference sites are under "Also named".
 - Currency (13/15): updated 2026-01-15; retailers' current operation not checked this run.
 - Usefulness (11/15): organized by the Amazon product each option replaces, with direct links; no shipping regions or prices, and no guidance on choosing between picks.
 - No dark patterns (10/10): no Amazon or Amazon-owned links (Amazon-owned brands appear only as things to avoid), no pop-ups, the About page says it uses no tracking cookies.
@@ -39,6 +39,15 @@ checked: 2026-09-25
 | 9 | Not On The High Street | notonthehighstreet.com | Under Amazon Shopping; no specific reason |
 | 10 | Shop | shop.app | Under Amazon Shopping; no specific reason |
 | 11 | Temu | temu.com | Under Amazon Shopping; no specific reason |
+| 31 | Libro.fm | libro.fm | Under Audible: audiobook alternative |
+
+Domains come from the page's plain links (no affiliate wrappers). None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
 | 12 | Acorn TV | acorn.tv | Under Amazon Prime: streaming alternative (streaming service, not a shop) |
 | 13 | Crunchyroll | crunchyroll.com | Under Amazon Prime: streaming alternative (streaming service) |
 | 14 | CuriosityStream | curiositystream.com | Under Amazon Prime: streaming alternative (streaming service) |
@@ -58,11 +67,10 @@ checked: 2026-09-25
 | 28 | BorrowBox | borrowbox.com | Under Audible: audiobook and ebook alternative (library lending app) |
 | 29 | Hoopla | hoopladigital.com | Under Audible: audiobook and ebook alternative (library lending app) |
 | 30 | Libby | libbyapp.com | Under Audible: audiobook and ebook alternative (library lending app) |
-| 31 | Libro.fm | libro.fm | Under Audible: audiobook alternative |
 | 32 | OpenAudible | openaudible.org | Under Audible: audiobook alternative (software, not a shop) |
 | 33 | Anna's Archive | unknown | Under Kindle: ebook alternative (page links only its Wikipedia article) |
-| 34 | Freeditorial | freeditorial.com | Under Kindle: ebook alternative (free ebooks) |
-| 35 | Project Gutenberg | gutenberg.org | Under Kindle: ebook alternative (free ebooks) |
+| 34 | Freeditorial | freeditorial.com | Under Kindle: ebook alternative (free ebooks) (free archive, not a shop) |
+| 35 | Project Gutenberg | gutenberg.org | Under Kindle: ebook alternative (free ebooks) (free archive, not a shop) |
 | 36 | BookWyrm | joinbookwyrm.com | Under Goodreads: alternative (reading-tracker app, not a shop) |
 | 37 | Fable | fable.co | Under Goodreads: alternative (reading app) |
 | 38 | Hardcover | hardcover.app | Under Goodreads: alternative (reading-tracker app) |
@@ -70,8 +78,6 @@ checked: 2026-09-25
 | 40 | The StoryGraph | thestorygraph.com | Under Goodreads: alternative (reading-tracker app) |
 | 41 | Rotten Tomatoes | rottentomatoes.com | Under IMDb: alternative (film reference site, not a shop) |
 | 42 | Wikipedia | wikipedia.org | Under IMDb: alternative (reference site, not a shop) |
-
-Domains come from the page's plain links (no affiliate wrappers). None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
 
 ## Sources
 - https://www.antifamarketer.org/boycott-amazon

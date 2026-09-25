@@ -5,8 +5,8 @@ url: https://www.buycott.com/
 kind: app
 category: tool
 also: []
-score: 49
-score_parts: {independence: 14, evidence: 7, substance: 6, currency: 5, usefulness: 7, no_dark_patterns: 10}
+score: 46
+score_parts: {independence: 14, evidence: 7, substance: 3, currency: 5, usefulness: 7, no_dark_patterns: 10}
 affiliate_links: none
 owner: Buycott, Inc.
 updated: unknown
@@ -20,7 +20,7 @@ Buycott is a free barcode-scanning app (iOS and Android) and website run by Buyc
 ## Score
 - Independence (14/20): no ads or affiliate links on the homepage, FAQ or campaign pages fetched, and the operator (Buycott, Inc.) is named in the terms; deducted because nothing fetched says how it is funded, and campaigns are user-run with no moderation policy described.
 - Evidence (7/20): some campaigns cite sources (the Koch Industries campaign cites CBS News, the EPA, The Guardian and others), but campaigns are user-written with no verification process described, and product data is crowd-sourced.
-- Substance (6/20): large product database and 29 campaigns on the browse page, but it names no non-Amazon retailers or alternatives; it only flags companies to avoid.
+- Substance (3/20): large product database and 29 campaigns on the browse page, but it names no non-Amazon retailers or alternatives; it only flags companies to avoid. Calibrated from 6 to match themarkup-org (3), the other tool that names no alternatives and only flags what to avoid.
 - Currency (5/15): footer reads "© 2026", but no dated activity is visible; terms were last updated 2015-12-01, and one of the listed campaigns is titled for FIFA 2022.
 - Usefulness (7/15): scanning in a store is easy to act on, but it says nothing about where to buy instead and has no Amazon campaign.
 - No dark patterns (10/10): no Amazon links, bait headlines or sign-up walls seen in the fetched pages.

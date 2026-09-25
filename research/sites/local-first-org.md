@@ -5,8 +5,8 @@ url: https://local-first.org/initiatives/act-local/whats-in-it-for-amazon/
 kind: article
 category: ethical-anti-amazon
 also: []
-score: 45
-score_parts: {independence: 17, evidence: 3, substance: 2, currency: 10, usefulness: 3, no_dark_patterns: 10}
+score: 47
+score_parts: {independence: 17, evidence: 3, substance: 2, currency: 12, usefulness: 3, no_dark_patterns: 10}
 affiliate_links: none
 owner: Local First Foundation
 updated: 2024-10-18
@@ -21,7 +21,7 @@ checked: 2026-09-25
 - Independence (17/20): no affiliate links, owner clearly identified as a nonprofit with an address; deducted because the only alternative offered is its own dues-paying members' directory.
 - Evidence (3/20): the case against Amazon cites ILSR, Good Jobs First and AMIBA, but there are no retailer claims to source.
 - Substance (2/20): no named alternatives, only a general call to shop local and a link to a one-region member directory.
-- Currency (10/15): dated 2024-10-18, inside two years but near the edge; the reports it cites are from 2016.
+- Currency (12/15): dated 2024-10-18, inside two years but near the edge; the reports it cites are from 2016. Calibrated from 10 to match ilsr-org (12, dated 2024-10-31): Currency scores the page's own date and its retailers, and the age of cited reports is not part of it.
 - Usefulness (3/15): nothing actionable for US shoppers outside southwest Colorado; locals can use the linked directory.
 - No dark patterns (10/10): no Amazon links, no bait headline; the newsletter and "Localist" signup prompts are not walls.
 

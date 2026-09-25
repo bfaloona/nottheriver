@@ -10,7 +10,7 @@ score_parts: {independence: 14, evidence: 9, substance: 15, currency: 10, useful
 affiliate_links: none
 owner: unknown
 updated: unknown
-retailers_listed: 29
+retailers_listed: 21
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ Worker Owned ("Market Place", workerowned.info) is a searchable directory of pro
 ## Score
 - Independence (14/20): no affiliate links and an explicit no-commission statement on every page; deducted because no fetched page names an owner or says how the site is funded.
 - Evidence (9/20): the FAQ names its sources (USFWC directory, Democracy at Work Institute) and each pick carries an ownership label, but no pick links to a source for its ownership claim; the site's own data lists Frontier Co-op as a "member co-op (retailers as members)" although the FAQ says consumer co-ops are excluded, and the guide calls Wood Shop Workers Co-op a "Worker-owned shop in Brooklyn" while the site data says "Canada (Vancouver) — verify US shipping".
-- Substance (15/20): 29 distinct picks, each with a product line and a specific ownership reason, over coffee, food, pharmacy, clothing, crafts, art supplies, music and audiobooks; deducted because 8 picks are news and media outlets (subscriptions, not goods) and at least two may not ship from the US (Trama Textiles in Guatemala, Wood Shop per its data).
+- Substance (15/20): 29 distinct picks, each with a product line and a specific ownership reason, over coffee, food, pharmacy, clothing, crafts, art supplies, music and audiobooks; deducted because 8 picks are news and media outlets (subscriptions, not goods) and at least two may not ship from the US (Trama Textiles in Guatemala, Wood Shop per its data). After calibration 21 rows count as shops; the eight media outlets are under "Also named".
 - Currency (10/15): no update date shown on any page; the server's Last-Modified header read 2026-09-24, pick notes mention 2023 and 2025 events, and the site data marks 175 of 181 companies "verified active"; no retailer sites were checked this run.
 - Usefulness (11/15): organized by what each pick replaces and searchable by product category, with ownership type on every card; guide cards link to the site's own store pages rather than straight to the shop, and shipping regions (present in the site data) are not shown on the guide.
 - No dark patterns (10/10): no pop-ups, bait headline, repeated top pick or Amazon-owned links seen.
@@ -51,6 +51,12 @@ Picks from https://www.workerowned.info/guides/alternatives, in page order. The 
 | 19 | Subvert | subvert.fm | Instead of Spotify: "Music marketplace for records and digital downloads. Multi-stakeholder co-op connecting fans to artists." |
 | 20 | Catalytic Sound | catalyticsound.com | Instead of Spotify: "Experimental and improvised music recordings. Artist-owned cooperative label." |
 | 21 | Libro.fm | libro.fm | Instead of Audible ("Audible is Amazon"): "DRM-free audiobooks ... 100% employee-owned, B Corp. 28% of revenue stays local vs 4% with Amazon." |
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
 | 22 | Defector | defector.com | Instead of Corporate News: "Sports and culture journalism. Worker-owned since the staff walked out of Deadspin in 2020." (media subscription, not goods) |
 | 23 | 404 Media | 404media.co | Instead of Corporate News: "Investigative tech and internet journalism. Worker-owned by former Motherboard reporters." (media, not goods) |
 | 24 | Aftermath | aftermath.site | Instead of Corporate News: "Video game journalism and criticism. Worker-owned, independent, no ads." (media, not goods) |

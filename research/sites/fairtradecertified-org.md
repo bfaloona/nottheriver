@@ -5,12 +5,12 @@ url: https://www.fairtradecertified.org/our-community/shop-fair-trade/
 kind: directory
 category: tool
 also: [ethical-affirmative]
-score: 56
-score_parts: {independence: 11, evidence: 10, substance: 11, currency: 13, usefulness: 10, no_dark_patterns: 1}
+score: 52
+score_parts: {independence: 11, evidence: 10, substance: 7, currency: 13, usefulness: 10, no_dark_patterns: 1}
 affiliate_links: none
 owner: Fair Trade USA
 updated: 2026-07-08
-retailers_listed: 87
+retailers_listed: 86
 amazon_owned_recommended: ["Amazon (brand tile links to an amazon.com search page)", "Whole Foods Market (brand tile, wholefoodsmarket.com)", "Allegro Coffee (brand tile links to wholefoodsmarket.com)", "Big Country Foods (brand tile links to its amazon.com storefront)", "BLK & Bold (featured product links to amazon.com)"]
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (11/20): no affiliate tags on any outbound link and the owner is clearly named, but brands that license the label pay Fair Trade USA "a service fee ... typically based on volume" (retailers "usually do not pay any Fair Trade fees directly"), and the shop page discloses neither relationship.
 - Evidence (10/20): every pick rests on one named certification with published standards, and many tiles link to the brand's own fair trade page; deducted because it is the certifier vouching for its own partners, no tile links to a product certificate, and the tiles don't say which of a brand's products carry the label.
-- Substance (11/20): 87 distinct brands and retailers over food, coffee, tea, produce, seafood, apparel, beauty and home goods; deducted because tiles give no reason beyond a category filter, and it includes a Canadian site (MEC, mec.ca) and a tile (Ahold Delhaize) that links to aholddelhaize.com rather than a shop.
+- Substance (7/20): calibrated from 11 under rule K2 (the Amazon-owned deduction applies under Substance as well as No dark patterns): −2 each for the two Amazon-owned companies offered as places to buy (Amazon, Whole Foods Market). 87 distinct brands and retailers over food, coffee, tea, produce, seafood, apparel, beauty and home goods; deducted because tiles give no reason beyond a category filter, and it includes a Canadian site (MEC, mec.ca) and a tile (Ahold Delhaize) that links to aholddelhaize.com rather than a shop. After calibration 86 rows count as shops; Ahold Delhaize is under "Also named".
 - Currency (13/15): modified 2026-07-08 and tile logos uploaded from 2022 to 2026; one tile links to a 2020 blog post (Divine Flavor); no retailer sites were checked this run.
 - Usefulness (10/15): category filters and direct links to each brand's site; deducted because many links go to sustainability or blog pages rather than a shop, one featured product has no link (Madewell), and nothing says who ships where.
 - No dark patterns (1/10): links straight to Amazon three times (an Amazon tile, a featured BLK & Bold coffee on amazon.com, and the Big Country Foods tile to its Amazon storefront) and to Amazon-owned Whole Foods twice (its own tile and the Allegro Coffee tile), with no signal that these are Amazon.
@@ -77,7 +77,6 @@ Featured products first, then the brand tiles, in page order; a name that appear
 | 45 | Athleta | gap.com | Brand tile (categories: apparel, clothing); links to athleta.gap.com |
 | 46 | Coyuchi | coyuchi.com | Brand tile (categories: apparel, clothing, home-goods) |
 | 47 | J. Crew | jcrew.com | Brand tile (categories: apparel, clothing) |
-| 48 | Ahold Delhaize | aholddelhaize.com | Brand tile (no category filter); links to aholddelhaize.com |
 | 49 | Central Market | centralmarket.com | Brand tile, filed under Retailer (categories: other, retailer) |
 | 50 | Walmart Canada | walmart.com | Brand tile, filed under Retailer (categories: other, retailer); links to walmart.com |
 | 51 | Simple Truth | kroger.com | Brand tile, filed under Retailer (categories: baking, beverages, candy-chocolate, food, health-beauty, other, produce, retailer, snacks); links to kroger.com (same page as the Kroger tile) |
@@ -117,6 +116,13 @@ Featured products first, then the brand tiles, in page order; a name that appear
 | 85 | Naturipe | naturipefarms.com | Brand tile (categories: produce) |
 | 86 | Oppy | oppy.com | Brand tile (categories: produce) |
 | 87 | Divine Flavor | divineflavor.com | Brand tile (categories: produce) |
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 48 | Ahold Delhaize | aholddelhaize.com | Brand tile (no category filter); links to aholddelhaize.com (corporate holding company site, not a shop; K1) |
 
 ## Sources
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/

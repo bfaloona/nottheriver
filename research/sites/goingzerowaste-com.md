@@ -10,7 +10,7 @@ score_parts: {independence: 7, evidence: 8, substance: 15, currency: 5, usefulne
 affiliate_links: undisclosed
 owner: Going Zero Waste
 updated: 2020-09-23
-retailers_listed: 23
+retailers_listed: 22
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (7/20): owner and byline shown and a site-wide disclosure policy exists, but nothing on the page discloses that 18 of 23 links are affiliate or referral links, and one pick comes with the author's discount code.
 - Evidence (8/20): the case against Amazon links six news and advocacy sources; per-shop certifications (B Corp for Uncommon Goods, Earth Hero, Grove, Barebones; fair trade; 1% for the Planet) are named without certifier links (R8).
-- Substance (15/20): 23 distinct non-Amazon options, each with a specific reason, across beauty, homewares, groceries, zero-waste basics, cleaning, clothing, books and outdoor gear; deducted because the CSA entry is a USDA directory rather than a shop and the Hive link now lands on a different brand.
+- Substance (15/20): 23 distinct non-Amazon options, each with a specific reason, across beauty, homewares, groceries, zero-waste basics, cleaning, clothing, books and outdoor gear; deducted because the CSA entry is a USDA directory rather than a shop and the Hive link now lands on a different brand. After calibration 22 rows count as shops; the CSA directory is under "Also named".
 - Currency (5/15): the only date shown is 2020-09-23, six years old; checked with plain curl: the Etsy affiliate link lands on an Awin "closedMerchant" page, the Grove link returns 404, the Hive link lands on lovegrown.com, and loopstore.com redirects to exploreloop.com.
 - Usefulness (11/15): grouped by product type with a jump-link table of contents and a free-shipping FAQ; two broken shop links; no per-shop shipping regions.
 - No dark patterns (10/10): no Amazon or Amazon-owned links on this page (checked the HTML for amazon and amzn hrefs); the admitted Amazon links are on other posts; the headline matches the content.
@@ -40,7 +40,6 @@ checked: 2026-09-25
 | 10 | Thrive Market | thrivemarket.com | Groceries; "carbon-neutral", "zero waste warehouses" |
 | 11 | Loop | exploreloop.com | Groceries; "zero waste marketplace" on a "refill or milkman model" (link loopstore.com redirects to exploreloop.com) |
 | 12 | Hive Grocery | lovegrown.com | Groceries; "badging system" for brands (link resolves to lovegrown.com; Love Grown's footer help link references Hive Brands; a rebrand is not confirmed on any page fetched) |
-| 13 | CSA | usda.gov | Community-supported agriculture; links the USDA local food directory (a directory, not a shop) |
 | 14 | Earth Hero | earthhero.com | Zero-waste basics; "certified B Corporation", "1% for the planet" |
 | 15 | Eco Roots | ecoroots.us | Zero-waste basics; "ethically and sustainably sourced", donates to "Ocean Conservancy"; code Kathryn10 |
 | 16 | Grove Collaborative | grove.co | Cleaning; "certified B Corp", "carbon neutral" (link returns 404) |
@@ -53,6 +52,13 @@ checked: 2026-09-25
 | 23 | Barebones | barebonesliving.com | Outdoor gear; "certified B Corp" |
 
 Domains for #2, #4 to #7, #9, #10, #12, #14 to #16, #18 and #20 come from following fave.co and tidd.ly short links with plain curl (#6 from the retailer name, since its link ends on an Awin page); #21 to #23 from the AvantLink `url` parameter; the rest from the link itself. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 13 | CSA | usda.gov | Community-supported agriculture; links the USDA local food directory (a directory, not a shop) |
 
 ## Sources
 - https://www.goingzerowaste.com/blog/where-to-shop-online-that-isnt-amazon/

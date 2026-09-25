@@ -25,9 +25,9 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 | 0 Check commit | done | pushed |
 | 1 Index script + test | done: lint, 695 tests pass | stage-1 commit |
 | 2 Discovery (6 + critic) | done: 116 candidates, 30 shortlisted | see git log |
-| 3 Assess (pilot, then rest) + calibrate | pilot done (2 files, rollingstone blocked); groups A to G running | |
-| 4 Tally | pending | |
-| 5 Retailers (research + verify) | pending | |
+| 3 Assess (pilot, then rest) + calibrate | done: 26 sites, calibrated (raw/calibration.md) | see git log |
+| 4 Tally | done: 313 domains, top 50 in raw/retailer-selection.md; 4 Amazon-owned excluded files | see git log |
+| 5 Retailers (research + verify) | researchers R1 to R10 running | |
 | 6 Report | pending | |
 | 7 QA + finish | pending | |
 
@@ -51,3 +51,5 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Group B done (borgenproject, vstyleblog, ilsr, greenamerica). Non-retailer rows are tagged '(... not a retailer)' in Reason; calibrator moves them to the not-counted section.
 - Group F done (fairtradecertified 87 retailers incl. 5 Amazon-linked, usworker-coop, workerowned-info; bcorporation.net 403 everywhere). Impact: B Corp certifications can only count via data/certifications.json rows (verified_this_run: false); other B Corp claims go to the operator check list.
 - Group A done (goodgoodgood, sustainablejungle, makeitworkcrafts, goingzerowaste). All assessors done: 26 site files; blocked: rollingstone, washingtonpost, hollywoodreporter, bcorporation. Calibrator (Fable) running; writes research/sites/*.md edits and research/raw/calibration.md.
+- Calibrator on Fable failed (Fable out of usage credits, 429) after reading files, before edits. Rerun on Opus.
+- Stage 5: 10 Opus researchers (batches R1 to R10 in raw/retailer-selection.md), each writes `research/retailers/<slug>.md` for its 5 domains plus `research/raw/blocked-retailers-R<n>.md`; each is followed by a verifier writing `research/raw/verify-R<n>.md` and editing the same 5 files.

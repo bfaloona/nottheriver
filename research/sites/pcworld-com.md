@@ -5,13 +5,13 @@ url: https://www.pcworld.com/article/398976/the-best-alternatives-to-amazon-for-
 kind: article
 category: affiliate-funnel
 also: []
-score: 43
-score_parts: {independence: 13, evidence: 5, substance: 9, currency: 2, usefulness: 7, no_dark_patterns: 7}
+score: 42
+score_parts: {independence: 13, evidence: 5, substance: 8, currency: 2, usefulness: 7, no_dark_patterns: 7}
 affiliate_links: disclosed
 owner: FoundryCo, Inc.
 updated: 2020-04-03
 retailers_listed: 9
-amazon_owned_recommended: [Amazon]
+amazon_owned_recommended: ["Amazon (affiliate-tagged link to an amazon.com listing, shown sold out)"]
 checked: 2026-09-25
 ---
 
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (13/20): disclosure at the very top with a linked policy, owner named; deducted because every retailer product link is affiliate-wrapped, including one to Amazon, and the policy doesn't say whether retailers pay for placement.
 - Evidence (5/20): availability claims are backed by the author's own screenshots and an NPD citation, but the page makes no ethics or sustainability claims, and its ownership notes (B&H "privately held", Office Depot "bought OfficeMax in 2013") carry no source.
-- Substance (9/20): 8 real US retailers, each with a specific reason about stock or shipping, but all tech, mostly large chains (Walmart, Target, Best Buy, Staples), chosen for availability rather than as a different kind of shop.
+- Substance (8/20): calibrated from 9 under rule K2: −1 for the link to Amazon, which is not offered as a pick. 8 real US retailers, each with a specific reason about stock or shipping, but all tech, mostly large chains (Walmart, Target, Best Buy, Staples), chosen for availability rather than as a different kind of shop.
 - Currency (2/15): dated 2020-04-03 and written for the spring-2020 shortage ("the entire business closes down for Passover, April 8-16 in 2020"); retailers checked only by decoding link destinations.
 - Usefulness (7/15): one section per retailer with practical tips on reading stock and pickup status, US only; the tips describe 2020 site behaviour and the product links point at 2020 listings.
 - No dark patterns (7/10): an affiliate-tagged link to Amazon's own listing sits in a list of Amazon alternatives (shown as sold out, not recommended); no top pick repeated; the stale "right now" headline is scored under currency only.

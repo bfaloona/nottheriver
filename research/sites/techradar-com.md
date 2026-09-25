@@ -5,13 +5,13 @@ url: https://www.techradar.com/best/amazon-alternatives
 kind: article
 category: ethical-anti-amazon
 also: []
-score: 48
-score_parts: {independence: 14, evidence: 4, substance: 11, currency: 4, usefulness: 9, no_dark_patterns: 6}
+score: 46
+score_parts: {independence: 14, evidence: 4, substance: 9, currency: 4, usefulness: 9, no_dark_patterns: 6}
 affiliate_links: disclosed
 owner: Future US, Inc.
 updated: 2020-12-12
 retailers_listed: 19
-amazon_owned_recommended: [AbeBooks]
+amazon_owned_recommended: ["AbeBooks (named without a link; abebooks.com)"]
 checked: 2026-09-25
 ---
 
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (14/20): disclosure right under the headline, owner named, about page says no outside party picks products; deducted because 13 of the 17 linked retailers are affiliate-wrapped (Awin, Rakuten, Impact, CJ, Webgains, Skimlinks), leaving only Micro Center, Powell's, Daunt Books and Folksy as plain links.
 - Evidence (4/20): no ethics, ownership or sustainability claim about a retailer is sourced; Bookshop.org is described by quoting its own site, and the Ring privacy claim links only to TechRadar's own report.
-- Substance (11/20): 19 real retailers across tech, books and crafts, each with a short reason; deducted because 8 are UK-only and Walmart is offered with the page's own caveat that it "might rather defeat the object".
+- Substance (9/20): calibrated from 11 under rule K2: −2 for offering Amazon-owned AbeBooks as a pick. 19 real retailers across tech, books and crafts, each with a short reason; deducted because 8 are UK-only and Walmart is offered with the page's own caveat that it "might rather defeat the object".
 - Currency (4/15): published 2020-12-12 with no update, over two years old; text still mentions "Covid-19 restrictions at the time of writing"; retailers checked only by decoding each affiliate link's destination.
 - Usefulness (9/15): organized by goods type with US and UK summary lines per section, but covers only three kinds of goods and says little about shipping beyond Powell's.
 - No dark patterns (6/10): suggests AbeBooks as a low-waste option while admitting "it's still owned by Amazon. Sorry!" (an Amazon-owned company offered as an alternative), and the in-article recommendation boxes promote Prime Day deals at Amazon.

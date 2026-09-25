@@ -10,7 +10,7 @@ score_parts: {independence: 12, evidence: 10, substance: 16, currency: 13, usefu
 affiliate_links: disclosed
 owner: Good Good Good
 updated: 2026-03-24
-retailers_listed: 50
+retailers_listed: 49
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ Two list pages from Good Good Good, which its about page calls "an independent m
 ## Score
 - Independence (12/20): disclosures sit above the first pick on both pages and the owner and editors are named; deducted because page 2 says some picks are "partners" without labeling them, nearly all page 1 links and most page 2 links are affiliate-wrapped, and page 1 carries discount codes.
 - Evidence (10/20): the case against Amazon is well sourced (13 linked sources on page 1, 5 on page 2); per-shop claims name certifications (B Corp, Climate Neutral, Fair Trade, GOTS) and quote company figures without linking any certifier (R8).
-- Substance (16/20): 50 named options with a specific reason each, across groceries, household, beauty, books, e-readers, refurbished tech, pet, gifts, artisan goods and clothing (new and secondhand); deducted because 4 rows are programs of brands already listed and the Hive link now lands on a different brand.
+- Substance (16/20): 50 named options with a specific reason each, across groceries, household, beauty, books, e-readers, refurbished tech, pet, gifts, artisan goods and clothing (new and secondhand); deducted because 4 rows are programs of brands already listed and the Hive link now lands on a different brand. After calibration 49 rows count as shops; DoneGood, whose domain no longer sells anything, is under "Also named".
 - Currency (13/15): published 2025-03-06 and 2026-03-24, both within two years, no update date shown; followed 34 short links with plain curl: all reached the named shop's domain except Hive, whose link lands on lovegrown.com; the other 16 links were not followed.
 - Usefulness (11/15): numbered picks with direct links and a reason each; page 2 grouped into sections; neither page says where shops ship.
 - No dark patterns (10/10): no Amazon or Amazon-owned links, no repeated top pick, no per-pick sponsor label; headlines match the content.
@@ -30,7 +30,7 @@ Two list pages from Good Good Good, which its about page calls "an independent m
 |---|---|---|---|
 | 1 | Package Free Shop | packagefreeshop.com | Page 1; "100% plastic-free" shipping materials; home, beauty, kitchen |
 | 2 | Thrive Market | thrivemarket.com | Page 1; "carbon-neutral shipping in sustainable packaging"; B Corp per page |
-| 3 | Hive | lovegrown.com | Page 1; "robust recycling guide" for packaging (link resolves to lovegrown.com; Love Grown's footer help link references Hive Brands; a rebrand is not confirmed on any page fetched) |
+| 3 | Hive (US grocery) | lovegrown.com | Page 1; "robust recycling guide" for packaging (link resolves to lovegrown.com; Love Grown's footer help link references Hive Brands; a rebrand is not confirmed on any page fetched) |
 | 4 | Misfits Market | misfitsmarket.com | Page 1; "rescues" food, "up to 40%" cheaper than grocers |
 | 5 | Grove Collaborative | grove.co | Page 1; "all shipments are carbon neutral"; B Corp per page |
 | 6 | Blueland | blueland.com | Page 1; refillable cleaning products, "industrially compostable packaging" |
@@ -49,7 +49,6 @@ Two list pages from Good Good Good, which its about page calls "an independent m
 | 19 | eBay | ebay.com | Page 1; used goods; "eBay for Charity", "$76 million since 1998" |
 | 20 | Good.Store | good.store | Page 1; "100% of proceeds going to charity"; code GOODGOODGOOD |
 | 21 | Ten Thousand Villages | tenthousandvillages.com | Page 1; artisan gifts; fair trade, pays "artisans a living wage" |
-| 22 | DoneGood | donegood.co | Page 1; ethical marketplace of "over 120 ethical brands"; B Corp per page |
 | 23 | NOVICA | novica.com | Page 1; artisan handmade goods; B Corp per page, "Fair Trade movement" |
 | 24 | Toad&Co | toadandco.com | Page 2; "transparent about the material it uses", hemp and plant-based fibers |
 | 25 | Bombas | bombas.com | Page 2; B Corp per page, "buy-one-give-one" socks for homeless people |
@@ -80,6 +79,13 @@ Two list pages from Good Good Good, which its about page calls "an independent m
 | 50 | Sleeper | the-sleeper.com | Page 2; "locally handmade in safe and fair working conditions" |
 
 Domains for short links (fave.co, pxf.io, sjv.io, tidd.ly, impact and CJ links, go.novica.com) come from following them with plain curl; #16, #20, #21, #25 and #18 from the link's `url`, `ued` or `murl` parameter; the rest from the link itself. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 22 | DoneGood | donegood.co | Page 1; ethical marketplace of "over 120 ethical brands"; B Corp per page (donegood.co now serves an unrelated climate publication, see sites/donegood-co.md; K8) |
 
 ## Sources
 - https://www.goodgoodgood.co/articles/alternatives-to-amazon

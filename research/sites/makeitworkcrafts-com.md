@@ -48,7 +48,7 @@ checked: 2026-09-25
 | 18 | Cricut | cricut.com | Paper craft; "cutting machine for a variety of materials" (a brand, not a multi-brand shop) |
 | 19 | Silhouette | silhouetteamerica.com | Paper craft; "cutting machine... stamp maker for crafters" (a brand) |
 | 20 | Pipsticks | pipsticks.com | "Vinyl stickers, planner stickers, fuzzy stickers" |
-| 21 | Arteza | arteza.com | Fine art; "quality drawing and paint supplies for affordable prices" (link now lands on plaidonline.com) |
+| 21 | Arteza | plaidonline.com | Fine art; "quality drawing and paint supplies for affordable prices" (link arteza.com now lands on plaidonline.com; current domain used per calibration rule K4) |
 | 22 | United Art & Education | unitednow.com | Fine art; "massive selection of supplies for fine arts and crafts" |
 | 23 | Jerry's Artarama | jerrysartarama.com | "Traditional fine art supplies, frames, art studio furniture" |
 | 24 | Utrecht | utrechtart.com | Fine art supplier with "stores throughout the United States" |

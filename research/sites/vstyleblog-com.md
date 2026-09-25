@@ -10,7 +10,7 @@ score_parts: {independence: 14, evidence: 7, substance: 15, currency: 9, usefuln
 affiliate_links: disclosed
 owner: VSTYLE
 updated: unknown
-retailers_listed: 20
+retailers_listed: 18
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (14/20): affiliate disclosure directly under the headline and the site owner is identifiable on the about and terms pages; deducted because 14 of 19 retailer links are affiliate links (Costco, Libby, Back Market, Shop Good and Package Free are plain).
 - Evidence (7/20): the case against Amazon is well sourced, but per-retailer claims (B Corp for Thrive Market, Grove and Back Market) link no certifier or source.
-- Substance (15/20): 20 real, non-Amazon options across groceries, household, beauty, books, audiobooks, tech, gifts and pets, most with a specific reason; deducted because the five unnumbered mentions (Dermstore, iHerb, Ulta, Libby, Spotify) get one line or less and two are apps rather than shops.
+- Substance (15/20): 20 real, non-Amazon options across groceries, household, beauty, books, audiobooks, tech, gifts and pets, most with a specific reason; deducted because the five unnumbered mentions (Dermstore, iHerb, Ulta, Libby, Spotify) get one line or less and two are apps rather than shops. After calibration 18 rows count as shops; Libby and Spotify are under "Also named".
 - Currency (9/15): no date shown (R5); the text dates it to 2025 or later; the 14 affiliate links were followed this run and all reached a live retailer home page.
 - Usefulness (11/15): numbered, with skip-to-section links and product types per pick, plus a purchase-tracking template; not grouped by product type and no shipping regions given.
 - No dark patterns (10/10): headline matches the content, Amazon-owned brands appear only as ones to avoid, no Amazon links, no repeated top pick; the repeated newsletter prompt is not a wall (R7).
@@ -36,20 +36,26 @@ checked: 2026-09-25
 | 6 | iHerb | iherb.com | Unnumbered, in the Credo Beauty entry: beauty alternative |
 | 7 | Ulta | ulta.com | Unnumbered, in the Credo Beauty entry: beauty alternative, "one of few major companies" not rolling back DEI |
 | 8 | Bookshop | bookshop.org | Supports independent bookstores; ebooks available |
-| 9 | Libby | libbyapp.com | Unnumbered, in the Bookshop entry: free ebook and audiobook app through your library (library app, not a shop) |
 | 10 | Back Market | backmarket.com | Refurbished tech, Certified B Corp per page, reduces e-waste |
 | 11 | Shop Good | shop-good.co | San Diego clean beauty and skincare shop with "rigorous vetting" |
 | 12 | Etsy | etsy.com | Unique gifts, jewelry and accessories |
-| 13 | Hive | lovegrown.com | Grocery and household staples with a 5-pillar sustainability screen; Subscribe & Save (the link resolves to lovegrown.com) |
+| 13 | Hive (US grocery) | lovegrown.com | Grocery and household staples with a 5-pillar sustainability screen; Subscribe & Save (the link resolves to lovegrown.com) |
 | 14 | Package Free | packagefreeshop.com | Plastic-free, low-waste household and beauty goods |
 | 15 | Earth Hero | earthhero.com | Wide range, 5-pillar sourcing, filters by values (zero waste, US-made, woman-owned) |
 | 16 | Libro.fm | libro.fm | Audiobooks that support local bookstores; membership or à la carte |
-| 17 | Spotify | spotify.com | Unnumbered, in the Libro.fm entry: audiobook titles included with a subscription (not linked; domain from web search) |
 | 18 | Public Goods | publicgoods.com | Minimal, non-toxic home essentials; paid membership for a discount |
 | 19 | eBay | ebay.com | General marketplace alternative; page mentions an insurance policy |
 | 20 | Chewy | chewy.com | Pet supplies and prescriptions, Subscribe & Save |
 
 Rows follow the page's order; the page numbers 15 (Costco, Thrive Market, Grove Co, Credo Beauty, Bookshop, Back Market, Shop Good, Etsy, Hive, Package Free, Earth Hero, Libro.fm, Public Goods, eBay, Chewy), and rows marked "unnumbered" are named inside those entries. Domains for #2 to #8, #12, #13, #15, #16, #18 to #20 come from following the go.shopmy.us or bit.ly link with plain curl to its final page. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 9 | Libby | libbyapp.com | Unnumbered, in the Bookshop entry: free ebook and audiobook app through your library (library app, not a shop) |
+| 17 | Spotify | spotify.com | Unnumbered, in the Libro.fm entry: audiobook titles included with a subscription (not linked; domain from web search) (subscription streaming service, not a shop; K8) |
 
 ## Sources
 - https://vstyleblog.com/how-to-boycott-amazon-15-amazon-alternatives/

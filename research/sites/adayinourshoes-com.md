@@ -10,7 +10,7 @@ score_parts: {independence: 15, evidence: 3, substance: 11, currency: 14, useful
 affiliate_links: none
 owner: A Day in our Shoes, LLC
 updated: 2026-07-09
-retailers_listed: 21
+retailers_listed: 19
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (15/20): no affiliate links on the page and the owner is named; deducted because the site runs display ads (Raptive) and its site-wide disclosure says the owner is paid for some opinions, with nothing on this page saying whether this post is among them.
 - Evidence (3/20): no source is cited for any claim about the boycotted companies or the alternatives; "direct trade" and "ethical" labels for the coffee and fashion brands carry no certification or link.
-- Substance (11/20): 21 named, real goods sellers across groceries, secondhand, coffee and clothing, but reasons are one line per group rather than per shop, much of the list is generic advice (farmers' markets, local roasters), and it recommends Facebook Marketplace while listing Meta among companies to boycott.
+- Substance (11/20): 21 named options (19 goods sellers counted after calibration; Freecycle and Buy Nothing, free-exchange networks, are under "Also named") across groceries, secondhand, coffee and clothing, but reasons are one line per group rather than per shop, much of the list is generic advice (farmers' markets, local roasters), and it recommends Facebook Marketplace while listing Meta among companies to boycott.
 - Currency (14/15): dated 2026-07-09; 20 of the 21 retailer domains (all but facebook.com, not checked) responded to a plain request this run (thredup.com and goodwill.org with 403), but what they sell was not checked.
 - Usefulness (8/15): organized by product type, but gives no link to any named retailer and says nothing about who ships where.
 - No dark patterns (10/10): plain headline, no Amazon or Amazon-owned links, no repeated top pick; Whole Foods appears only as a company to avoid.
@@ -30,8 +30,6 @@ checked: 2026-09-25
 |---|---|---|---|
 | 1 | Thrive Market | thrivemarket.com | Online grocery: "Sites like Thrive Market, Misfits Market, or local farm delivery services can replace some grocery shopping" |
 | 2 | Misfits Market | misfitsmarket.com | Online grocery, same sentence as Thrive Market |
-| 3 | Freecycle | freecycle.org | "Join Freecycle or 'Buy Nothing' Groups"; free exchange, not a shop |
-| 4 | Buy Nothing | buynothingproject.org | Same sentence as Freecycle; free exchange, not a shop |
 | 5 | Goodwill | goodwill.org | Secondhand: "Goodwill, local thrift shops, online platforms like Poshmark, Depop, ThredUp, Facebook Marketplace" |
 | 6 | Poshmark | poshmark.com | Secondhand clothing platform, same sentence |
 | 7 | Depop | depop.com | Secondhand clothing platform, same sentence |
@@ -51,6 +49,14 @@ checked: 2026-09-25
 | 21 | Patagonia (Worn Wear) | patagonia.com | Used-gear program, same sentence |
 
 The page links none of these, so each domain was found by loading the retailer's own site this run (page titles checked for the coffee and clothing brands). None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`). Left out of the table because they are not sellers of goods: Aspiration and Amalgamated Bank (banking), DuckDuckGo, ProtonMail, Mastodon and Bluesky (online services), GoodRx (a drug discount program), and generic kinds of shop with no business named.
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 3 | Freecycle | freecycle.org | "Join Freecycle or 'Buy Nothing' Groups"; free exchange, not a shop |
+| 4 | Buy Nothing | buynothingproject.org | Same sentence as Freecycle; free exchange, not a shop |
 
 ## Sources
 - https://adayinourshoes.com/boycott/

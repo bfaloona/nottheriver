@@ -10,7 +10,7 @@ score_parts: {independence: 12, evidence: 7, substance: 14, currency: 4, usefuln
 affiliate_links: none
 owner: Green America
 updated: unknown
-retailers_listed: 34
+retailers_listed: 31
 amazon_owned_recommended: []
 checked: 2026-09-25
 ---
@@ -20,7 +20,7 @@ checked: 2026-09-25
 ## Score
 - Independence (12/20): no affiliate links and the nonprofit owner is identifiable; deducted because every pick comes from Green America's own dues-paying certification network, a financial tie the page doesn't disclose.
 - Evidence (7/20): the Amazon criticisms are sourced, and the page points to its certification standard; but that is Green America's own seal, "many" (not all) picks hold it, and per-pick claims such as "Fair Trade verified" link no outside certifier.
-- Substance (14/20): 34 named businesses across clothing, personal care, home, toys and crafts, books, pets, cleaning and food, each with a short reason; deducted because three are media outlets (Washington Gardener Magazine, CSRWire, The Organic & Non-GMO Report), and many are single-product makers rather than shops.
+- Substance (14/20): 34 named businesses across clothing, personal care, home, toys and crafts, books, pets, cleaning and food, each with a short reason; deducted because three are media outlets (Washington Gardener Magazine, CSRWire, The Organic & Non-GMO Report), and many are single-product makers rather than shops. After calibration 31 rows count as shops; the three media outlets are under "Also named".
 - Currency (4/15): no date shown (R5) and the text dates to about 2020-21; the directory's own profile lookup returned no listing for 6 of the 34 linked IDs this run (#8, #12, #19, #21, #27, #30), which may mean those listings were removed.
 - Usefulness (6/15): grouped by product type, but links go to a script-driven directory page rather than the shop (WebFetch saw only an empty shell), and there is no shipping information.
 - No dark patterns (10/10): no Amazon or Amazon-owned links, no bait headline, no repeated top pick, no pop-up wall seen.
@@ -46,9 +46,6 @@ checked: 2026-09-25
 | 16 | Natural Earth Paint | naturalearthpaint.com | "Non-toxic art supplies" from "natural earth pigments" |
 | 17 | Organic Cotton Plus | organiccottonplus.com | "Organic, sustainably sourced fabric and craft supplies" |
 | 18 | Terra Experience | terradollclothes.com | "Handwoven textiles" supporting "Fair Trade, Mayan artisans" |
-| 19 | Washington Gardener Magazine | washingtongardener.com | (Media, not a retailer) local gardening magazine (no directory listing found; domain from web search) |
-| 20 | CSRWire | csrwire.com | (Media, not a retailer) "corporate social responsibility news" |
-| 21 | The Organic & Non-GMO Report | non-gmoreport.com | (Media, not a retailer) covers "threats by GMO foods" (no directory listing found; domain from web search) |
 | 22 | Reach and Teach | reachandteach.com | Books and entertainment: "books, toys, games, fair-trade gifts" |
 | 23 | P.L.A.Y. Pet Lifestyle and You | playpetbrands.com | Pets: "eco-friendly pet beds and toys" |
 | 24 | Purrfectplay | purrfectplay.com | "Natural handmade cat and dog toys. Plastic free" |
@@ -64,6 +61,15 @@ checked: 2026-09-25
 | 34 | Velasquez Family Coffee | vfamilycoffee.com | "Direct Trade freshly roasted coffee" from a Honduran family |
 
 Every pick links to `greenbusinessnetwork.org/directory#!biz/id/<id>`, which WebFetch saw only as an empty shell. That page loads listings from the MembershipWorks API, so each linked ID was looked up with plain curl at `api.membershipworks.com/v2/account/<id>/profile?org=33102`; 28 returned a profile, and its `web` field gives the domain here. The other six (#8, #12, #19, #21, #27, #30) returned nothing; their domains come from a web search this run. All 28 profiles found list a US state. The page also links the Green Business Directory itself (greenbusinessnetwork.org) as a resource; that isn't a row. None matched `data/blocklist.json` (checked with `build-index.mjs --blocklist`; source `data/blocklist.md`).
+
+## Also named (not counted)
+Named on the page but not places where a US shopper buys goods (calibration rule K1; see `research/raw/calibration.md`). Numbers are the page-order numbers from the table above.
+
+| # | Retailer | Domain | Reason the page gives |
+|---|---|---|---|
+| 19 | Washington Gardener Magazine | washingtongardener.com | (Media, not a retailer) local gardening magazine (no directory listing found; domain from web search) |
+| 20 | CSRWire | csrwire.com | (Media, not a retailer) "corporate social responsibility news" |
+| 21 | The Organic & Non-GMO Report | non-gmoreport.com | (Media, not a retailer) covers "threats by GMO foods" (no directory listing found; domain from web search) |
 
 ## Sources
 - https://greenamerica.org/sustainable-alternatives-amazon
