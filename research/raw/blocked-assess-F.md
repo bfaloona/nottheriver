@@ -1,0 +1,7 @@
+# Blocked pages: assess-F
+checked: 2026-09-25
+
+- https://www.bcorporation.net/en-us/find-a-b-corp/ (shortlist #22). Wanted: directory description, method or certification criteria, any featured list of B Corps, owner and dates. WebFetch and plain curl both got HTTP 403 Forbidden; https://www.bcorporation.net/en-us/ also 403. Not worked around; no site file written. Operator check needed.
+- https://usca.bcorporation.net/find-a-b-corp/ (shortlist #22, second URL). Same wants. HTTP 404 Not Found (WebFetch and plain curl). No claims made.
+- https://partner.fairtradecertified.org/directory/results (shortlist #24, second URL). Wanted: how the partner directory works, coverage, per-brand listings. The page is a client-rendered partner portal (its script bundle calls login endpoints under /api/v1/authn); the served HTML holds only a footer and help links. Not probed further; no claims made from it. Operator check needed to see whether it is usable without a login.
+- https://airtable.com/embed/shrObCDjNQ3M8QqLd (the #ShopCoop list embedded on https://www.usworker.coop/shopcoop/, shortlist #25). Wanted: every worker co-op business in the curated list, with link and description. The embed renders its rows with JavaScript through an API that expects app-specific request headers; WebFetch saw no rows. Not worked around; the usworker.coop site file records no retailers. Operator check needed to read the list.
