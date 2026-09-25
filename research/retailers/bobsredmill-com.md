@@ -34,6 +34,7 @@ Litigation seen on CourtListener, none counted because the docket list shows no 
 - Ethics: 0.5 baseline, +0.25 `fair_trade` (fairtradecertified.org brand listing, fetched this run), −0.25 × 1 accepted labor concern (osha.gov). B Corp not checked: bcorporation.net blocked agents this run and `data/certifications.json` has no row for this domain. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (explore.changeclimate.org/sitemap.xml, 310 brand pages) has no Bob's Red Mill entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0; an accepted concern in the last 5 years rules out `recommended`; 1.0 ≥ 1.0: `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Bob%27s_Red_Mill

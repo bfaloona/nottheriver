@@ -28,7 +28,7 @@ Lists recommend it as a large online secondhand clothing platform: A Day in Our 
 Concerns. OSHA's establishment search returned two complaint inspections, each closed with one "Other" (not serious) citation: Mechanicsburg, PA distribution center, citation issued 2025-05-07 under 29 CFR 1904.32(a)(3) (injury and illness recordkeeping), initial penalty $2,364, current $1,773 after an informal settlement; Duluth, GA, citation issued 2017-10-26 under 29 CFR 1910.22(a)(1) (walking-working surfaces), penalty $0. Both are on osha.gov, an accepted source, so each counts. The FY2025 10-K states "We are not a party to any material pending legal proceedings." CourtListener lists federal dockets naming ThredUp (among them an employment discrimination suit, Starnes v. ThredUp Inc., E.D. Pa., filed 2022-12-07, and fraud, trademark, ADA and qui tam cases); no order, finding or settlement was fetched for any of them, so none is recorded as a concern. The NLRB case search returned no cases for "thredup". Good Jobs First's Violation Tracker returned 403 (blocked file). A general news search was not possible: the session's web search limit was used up.
 
 ## Rating
-- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for thredup.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; the 1% for the Planet directory could not be read (client-rendered).
+- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for thredup.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline, −0.25 (OSHA inspection 1815510.015, labor), −0.25 (OSHA inspection 1257615.015, labor) = 0.0.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 0.5, below 1.0, so `caution`.
@@ -44,4 +44,5 @@ Concerns. OSHA's establishment search returned two complaint inspections, each c
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/ (not listed)
 - https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces (not listed)
 - https://explore.changeclimate.org/ (not listed)
+- https://dueekpzk7aquu.cloudfront.net/search?q=thredup (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)

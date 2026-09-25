@@ -29,13 +29,15 @@ Fair trade. Fair Trade USA's "Shop Fair Trade" page, fetched this run, shows a M
 Concerns. None recorded. The NLRB case search for "mightly" returned no cases, OSHA's establishment search returned no results, and CourtListener returned no dockets with "mightly" in the case name. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
 ## Rating
-- Certifications: `fair_trade` verified on Fair Trade USA's own shop page this run (+0.25 ethics). B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the 188 brands on The Climate Label's directory; the 1% for the Planet directory could not be read (client-rendered).
+- Certifications: `fair_trade` verified on Fair Trade USA's own shop page this run (+0.25 ethics). B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline + 0.25 (fair_trade) = 0.75; no accepted concern.
 - Environment: 0.5 baseline, no environmental certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.25 and no accepted concern in the last 5 years, so `recommended`.
 
 ## Sources
 - https://www.mightly.com/pages/about
+- https://www.mightly.com/pages/about-us
+- https://www.mightly.com/pages/contact
 - https://www.mightly.com/pages/sustainability
 - https://www.mightly.com/policies/terms-of-service
 - https://www.mightly.com/policies/privacy-policy
@@ -45,4 +47,5 @@ Concerns. None recorded. The NLRB case search for "mightly" returned no cases, O
 - https://www.courtlistener.com/api/rest/v4/search/?q=caseName%3A%28%22mightly%22%29&type=r (no dockets)
 - https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces (not listed)
 - https://explore.changeclimate.org/ (not listed)
+- https://dueekpzk7aquu.cloudfront.net/search?q=mightly (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)

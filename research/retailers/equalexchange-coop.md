@@ -32,6 +32,7 @@ Concerns checked: NLRB case search for "equal exchange" returned no cases. OSHA'
 - Ethics: 0.5 baseline + 0.25 `worker_coop` (US Federation of Worker Cooperatives directory, verified this run) = 0.75. Fair Trade USA not verified; B Corp not checked (directory blocked, no data/certifications.json row of that kind). No accepted concern. Ethics 0.75.
 - Environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified. No environmental concern. Environment 0.5.
 - Tier: 0.75 + 0.5 = 1.25, meets `recommended` (≥ 1.25) with no accepted concern in the last 5 years. Tier `recommended`.
+- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Equal_Exchange

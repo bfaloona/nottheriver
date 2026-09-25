@@ -31,6 +31,7 @@ Concerns checked: NLRB case search for "better world books" returned no cases; O
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.
 - Environment: 0.5 baseline. The Climate Label directory (explore.changeclimate.org) returned "Brand Not Found" for `better-world-books`; the 1% for the Planet directory profile page rendered no listing content, so membership is unverified. No environmental concern. Environment 0.5.
 - Tier: 0.5 + 0.5 = 1.0 meets `acceptable` (≥ 1.0), not `recommended` (≥ 1.25). Tier `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Better_World_Books

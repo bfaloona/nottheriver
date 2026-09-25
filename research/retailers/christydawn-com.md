@@ -26,7 +26,7 @@ Lists recommend it as an ethical clothing brand: A Day in Our Shoes (ethical clo
 Concerns. None recorded. The NLRB case search for "christy dawn" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket naming the company, Fischler v. Christy Dawn, LLC (E.D.N.Y., filed 2020-09-03, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
 ## Rating
-- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; the 1% for the Planet directory could not be read (client-rendered). The brand's own pages claim none of these.
+- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for christydawn.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia). The brand's own pages claim none of these.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
@@ -34,6 +34,7 @@ Concerns. None recorded. The NLRB case search for "christy dawn" returned no cas
 ## Sources
 - https://christydawn.com/pages/about
 - https://christydawn.com/pages/faq
+- https://christydawn.com/pages/contact
 - https://christydawn.com/policies/privacy-policy
 - https://christydawn.com/policies/terms-of-service
 - https://en.wikipedia.org/wiki/Christy_Dawn (404, no article)
@@ -43,4 +44,5 @@ Concerns. None recorded. The NLRB case search for "christy dawn" returned no cas
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/ (not listed)
 - https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces (not listed)
 - https://explore.changeclimate.org/ (not listed)
+- https://dueekpzk7aquu.cloudfront.net/search?q=christy%20dawn (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)

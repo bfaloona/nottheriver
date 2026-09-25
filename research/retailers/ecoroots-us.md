@@ -28,6 +28,7 @@ No certification claim appears on its about page. Concern checks found nothing: 
 - Ethics: 0.5 baseline. No ethics certification found (bcorporation.net blocked agents this run; no row in `data/certifications.json`). No accepted concern. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (310 brand pages) has no EcoRoots entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0 < 1.25, ≥ 1.0: `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
 
 ## Sources
 - https://ecoroots.us/pages/about-us

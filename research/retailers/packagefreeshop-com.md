@@ -25,7 +25,7 @@ Lists recommend it for plastic-free replacements for single-use items and plasti
 
 Certifications: none found. B Corp directory returned HTTP 403 (logged); 1% for the Planet profile pages render only in a browser (logged); The Climate Label has no brand page at explore.changeclimate.org/brand/package-free (404); Fair Trade USA's shop page does not list it. No row for packagefreeshop.com in data/certifications.json.
 
-Concerns: none recorded. CourtListener shows two federal dockets naming Package Free, Inc.: *Blachowicz v. Package Free, Inc.* (W.D.N.Y., filed 2021-01-23, terminated 2021-07-12, an Americans with Disabilities Act civil-rights case) and a 2022 contract case where it is not the lead party. Neither docket entry shows a finding, and neither fits the labor, governance or environmental kinds, so neither is recorded as a concern. The session's web-search budget ran out before site-restricted searches of the other accepted sources, so this check is narrower than the brief asks (logged).
+Concerns: none recorded. An NLRB case search for "Package Free" returns no cases. CourtListener shows two federal dockets naming Package Free, Inc.: *Blachowicz v. Package Free, Inc.* (W.D.N.Y., filed 2021-01-23, terminated 2021-07-12, an Americans with Disabilities Act civil-rights case) and a 2022 contract case where it is not the lead party. Neither docket entry shows a finding, and neither fits the labor, governance or environmental kinds, so neither is recorded as a concern. The session's web-search budget ran out before site-restricted searches of the other accepted sources, so this check is narrower than the brief asks (logged).
 
 ## Rating
 - ethics: start 0.5; no verified ethics certification; no accepted labor or governance concern; = 0.5
@@ -39,4 +39,5 @@ Concerns: none recorded. CourtListener shows two federal dockets naming Package 
 - https://www.fairtradecertified.org/shop-fair-trade/
 - https://explore.changeclimate.org/brand/package-free (404)
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Package%20Free%2C%20Inc.%22&type=r&format=json
+- https://www.nlrb.gov/search/case/Package%20Free
 - data/blocklist.md (no match)

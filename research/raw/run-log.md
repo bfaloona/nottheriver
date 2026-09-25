@@ -58,3 +58,5 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - R6 done (overstock, powells, poshmark, kobo, lovegrown; all acceptable). Lead rule added to brief section 9, "What counts as a concern" (agency or court actions only; filed charges and dismissed/reversed actions are body notes). Operator may overrule. Verifiers apply it.
 - R9 done (avocado, azure, bobsredmill, ecoroots, ableclothing). V9 running with identity and state-site checks. Save-point commit of researcher output before verification.
 - Researchers R1, R2, R3, R5, R6, R7, R9, R10 done; verifiers for those running. R4 and R8 researchers still running. Lead checked explore.changeclimate.org robots.txt: allows Claude-User (Climate Label certs OK).
+- R8 done; V8 running. Operator decision pending: should small OSHA citations (e.g. ThredUp's $0 and $1,773 'Other' citations) count? Brief rule applied: yes.
+- Verifiers R3, R6, R7, R9 done (Shop caution->acceptable). Operator check: Azure Standard's 3 OSHA concerns rest on a complaint's 'information and belief' identity link plus a matching address.

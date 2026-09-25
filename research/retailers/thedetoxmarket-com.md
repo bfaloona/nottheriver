@@ -30,6 +30,7 @@ CourtListener shows two private suits: Hecht v. The Detox Market Inc. (S.D.N.Y.,
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
 - concerns: none recorded. NLRB case search returned no cases (control search "Starbucks" returned 2,559); CourtListener API search found the two suits above. OSHA and Violation Tracker returned 403, and the web search budget ran out before the news pass.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
+- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
 
 ## Sources
 - https://www.thedetoxmarket.com/

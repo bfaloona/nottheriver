@@ -32,6 +32,7 @@ CourtListener lists KHANNA v. TEN THOUSAND VILLAGES/MENNONITE CENTRAL COMMITTEE 
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
 - concerns: none recorded. NLRB case search returned no cases (the same search for "Starbucks" returned 2,559, so the search works); CourtListener API search found only the 2003 case above. OSHA establishment search and Violation Tracker returned 403, and the web search budget ran out before the news pass.
 - tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
+- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Ten_Thousand_Villages

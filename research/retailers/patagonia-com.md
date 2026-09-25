@@ -13,8 +13,9 @@ certifications:
   - {kind: fair_trade, source: https://www.fairtradecertified.org/shop-fair-trade/, checked: 2026-09-25, verified_this_run: true}
   - {kind: b_corp, source: https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/, checked: 2026-09-25, verified_this_run: false}
   - {kind: one_percent_planet, source: https://directories.onepercentfortheplanet.org/profile/patagonia, checked: 2026-09-25, verified_this_run: false}
-concerns: []
-ethics: 1.0
+concerns:
+  - {kind: labor, title: "Patagonia Works (NLRB case 32-CA-254886)", source: https://www.nlrb.gov/case/32-CA-254886, date: 2020-03-25, accepted_source: true}
+ethics: 0.75
 environment: 0.75
 tier: recommended
 mentions: 4
@@ -32,12 +33,15 @@ Certifications:
 - 1% for the Planet: the directory profile renders only in a browser, so a fetch can't confirm it (logged); the data/certifications.json row ("Whole Company Member", checked 2026-09-23) counts with `verified_this_run: false`.
 - The Climate Label: explore.changeclimate.org/brand/patagonia returns "Brand Not Found". Not counted.
 
-Concerns: none recorded. Wikipedia's controversy section mentions supply-chain labor reports (internal audits in 2007 and 2011 on trafficking in second-tier Taiwanese suppliers; a December 2021 criminal complaint by the European Center for Constitutional and Human Rights over Xinjiang cotton; a 2023 Dutch report on shared factories). None of their underlying sources were fetched this run (the ECCHR case URL tried returned 404, and the web-search budget had run out), so none is recorded. CourtListener lists federal dockets naming Patagonia, Inc. as a defendant (for example an employment civil-rights case filed 2025-03-07 in D. Nev. and website-accessibility cases); a docket search result shows no finding or settlement, so private suits without an outcome are not recorded as concerns. No agency action was found in the CourtListener search.
+Concerns:
+- labor, nlrb.gov, 2020-03-25: NLRB case 32-CA-254886, "Patagonia Works" (Reno, NV, filed 2020-01-17 by an individual employee), allegation 8(a)(1) "Concerted Activities (Retaliation, Discharge, Discipline)", resolved by a "Unilateral Settlement Agreement Approval Letter" on 2020-03-25. More than 5 years old, so it lowers ethics but does not block `recommended`.
+
+Not recorded: NLRB case 32-CA-360724 (Patagonia, Inc., Reno, filed 2025-02-20 by the UFCW) closed when the General Counsel approved a withdrawal request on 2025-09-26, with no finding. Wikipedia's controversy section mentions supply-chain labor reports (internal audits in 2007 and 2011 on trafficking in second-tier Taiwanese suppliers; a December 2021 criminal complaint by the European Center for Constitutional and Human Rights over Xinjiang cotton; a 2023 Dutch report on shared factories). None of their underlying sources were fetched this run (the ECCHR case URL tried returned 404, and the web-search budget had run out), so none is recorded. CourtListener lists federal dockets naming Patagonia, Inc. as a defendant (for example an employment civil-rights case filed 2025-03-07 in D. Nev. and website-accessibility cases); a docket search result shows no finding or settlement, so private suits without an outcome are not recorded as concerns. No agency case was found in the CourtListener search.
 
 ## Rating
-- ethics: start 0.5; +0.25 fair_trade; +0.25 b_corp; no accepted labor or governance concern; = 1.0
+- ethics: start 0.5; +0.25 fair_trade; +0.25 b_corp; −0.25 labor (NLRB settlement, 2020-03-25); = 0.75
 - environment: start 0.5; +0.25 one_percent_planet; no accepted environmental concern; = 0.75
-- tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 1.75 ≥ 1.25 and no accepted concern in the last 5 years, so `recommended`.
+- tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 1.5 ≥ 1.25 and no accepted concern in the last 5 years (the 2020-03-25 settlement is before the 2021-09-25 cutoff), so `recommended`.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Patagonia,_Inc.
@@ -47,4 +51,7 @@ Concerns: none recorded. Wikipedia's controversy section mentions supply-chain l
 - https://explore.changeclimate.org/brand/patagonia (Brand Not Found)
 - https://www.patagonia.com/ownership/ (returned a site-downtime page)
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22v.%20Patagonia%2C%20Inc.%22&type=r&format=json
+- https://www.nlrb.gov/search/case/Patagonia
+- https://www.nlrb.gov/case/32-CA-254886
+- https://www.nlrb.gov/case/32-CA-360724
 - data/blocklist.md (no match)

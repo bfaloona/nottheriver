@@ -699,7 +699,7 @@
         "accessories"
       ],
       "ownership": "public-benefit-corporation",
-      "parent": "none",
+      "parent": "unknown",
       "hq": "Nashville, TN",
       "marketplace": false,
       "sells_on_amazon": "unknown",
@@ -904,9 +904,9 @@
         "tablets",
         "game consoles"
       ],
-      "ownership": "private",
+      "ownership": "unknown",
       "parent": "none",
-      "hq": "Paris, France",
+      "hq": "unknown",
       "marketplace": true,
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
@@ -1724,7 +1724,7 @@
         "audiobooks",
         "e-readers"
       ],
-      "ownership": "public",
+      "ownership": "unknown",
       "parent": "Rakuten Group",
       "hq": "Toronto, ON, Canada",
       "marketplace": "unknown",
@@ -1901,9 +1901,9 @@
         "produce",
         "groceries"
       ],
-      "ownership": "private",
+      "ownership": "unknown",
       "parent": "none",
-      "hq": "Philadelphia, PA",
+      "hq": "unknown",
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
@@ -2061,8 +2061,16 @@
           "verified_this_run": false
         }
       ],
-      "concerns": [],
-      "ethics": 1,
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Patagonia Works (NLRB case 32-CA-254886)",
+          "source": "https://www.nlrb.gov/case/32-CA-254886",
+          "date": "2020-03-25",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.75,
       "environment": 0.75,
       "tier": "recommended",
       "mentions": 4,
@@ -2088,7 +2096,7 @@
         "electronics",
         "beauty"
       ],
-      "ownership": "public",
+      "ownership": "unknown",
       "parent": "Naver Corporation",
       "hq": "Redwood City, CA",
       "marketplace": true,
@@ -2147,8 +2155,8 @@
         "home goods",
         "food"
       ],
-      "ownership": "private",
-      "parent": "none",
+      "ownership": "unknown",
+      "parent": "unknown",
       "hq": "New York, NY",
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
@@ -2181,30 +2189,69 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [
-        {
-          "kind": "governance",
-          "title": "Brandon Briskin v. Shopify, Inc.",
-          "source": "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf",
-          "date": "2025-04-21",
-          "accepted_source": true
-        },
-        {
-          "kind": "labor",
-          "title": "Shopify faces class-action lawsuit over severance offered to recently laid off staff",
-          "source": "https://www.theglobeandmail.com/business/technology/article-shopify-faces-class-action-lawsuit-over-severance-offered-to-recently/",
-          "date": "2023-05-30",
-          "accepted_source": false
-        }
-      ],
-      "ethics": 0.25,
+      "concerns": [],
+      "ethics": 0.5,
       "environment": 0.5,
-      "tier": "caution",
+      "tier": "acceptable",
       "mentions": 3,
       "mentioned_by": [
         "antifamarketer-org",
         "ilsr-org",
         "thegoodtrade-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "target-com",
+      "name": "Target",
+      "domain": "target.com",
+      "type": "retailer",
+      "goods": [
+        "general-merchandise",
+        "grocery",
+        "apparel",
+        "home",
+        "electronics"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Minneapolis, MN",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Target Corporation (NLRB case 10-CA-295461)",
+          "source": "https://www.nlrb.gov/case/10-CA-295461",
+          "date": "2023-03-17",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "U.S. Equal Employment Opportunity Commission v. Target Corporation, Inc.",
+          "source": "https://www.courtlistener.com/docket/7927467/us-equal-employment-opportunity-commission-v-target-corporation-inc/",
+          "date": "2020-03-27",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "US Equal Employment Opportunity Commission v. Target Stores Inc",
+          "source": "https://www.courtlistener.com/docket/50668526/us-equal-employment-opportunity-commission-v-target-stores-inc/",
+          "date": "2011-07-21",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 4,
+      "mentioned_by": [
+        "dollarsprout-com",
+        "gobankingrates-com",
+        "moneypantry-com",
+        "pcworld-com"
       ],
       "checked": "2026-09-25"
     },
@@ -2444,6 +2491,68 @@
         "goodgoodgood-co",
         "ilsr-org",
         "thegoodtrade-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "walmart-com",
+      "name": "Walmart",
+      "domain": "walmart.com",
+      "type": "retailer",
+      "goods": [
+        "general-merchandise",
+        "grocery",
+        "electronics",
+        "pharmacy",
+        "home",
+        "apparel"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Bentonville, AR",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "Walmart Agrees to Pay $50 Million for Illegally Filling Unlawful Opioid Prescriptions",
+          "source": "https://www.justice.gov/opa/pr/walmart-agrees-pay-50-million-illegally-filling-unlawful-opioid-prescriptions",
+          "date": "2026-08-28",
+          "accepted_source": true
+        },
+        {
+          "kind": "governance",
+          "title": "Federal Trade Commission v. Walmart Inc.",
+          "source": "https://www.courtlistener.com/docket/63554833/federal-trade-commission-v-walmart-inc/",
+          "date": "2025-06-23",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "United States Equal Employment Opportunity Commission v. Walmart, Inc.",
+          "source": "https://www.courtlistener.com/docket/62985776/united-states-equal-employment-opportunity-commission-v-walmart-inc/",
+          "date": "2024-01-11",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "United States v. Wal-Mart Stores, Inc.",
+          "source": "https://www.courtlistener.com/docket/6250398/united-states-v-wal-mart-stores-inc/",
+          "date": "2013-06-04",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.25,
+      "tier": "caution",
+      "mentions": 4,
+      "mentioned_by": [
+        "fairtradecertified-org",
+        "moneypantry-com",
+        "pcworld-com",
+        "techradar-com"
       ],
       "checked": "2026-09-25"
     },

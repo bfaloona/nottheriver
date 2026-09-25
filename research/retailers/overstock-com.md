@@ -31,6 +31,7 @@ Not scored, but on record:
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; not checked for Fair Trade or worker co-op, which do not fit a public company). No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern. = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R6.md); tier is provisional.
 - Blocklist: `node research/build-index.mjs --blocklist "Overstock" overstock.com` returned "not on the blocklist".
 
 ## Sources

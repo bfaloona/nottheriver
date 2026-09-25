@@ -26,7 +26,7 @@ Lists recommend it for secondhand clothing: A Day in Our Shoes (secondhand cloth
 Concerns. None recorded. The NLRB case search returned no cases for "depop", and OSHA's establishment search returned no results. CourtListener lists federal dockets naming Depop, Inc. (an ADA suit filed 2019 in S.D.N.Y., a fraud suit filed 2026 in N.D. Cal., and two 2026 suits with no nature of suit given); no order, finding or settlement was fetched, so none is recorded. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up). Wikipedia describes 2020 reports of scams and of user data sold on the dark web, citing outlets that are not accepted sources; those articles were not fetched, so nothing is recorded from them.
 
 ## Rating
-- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for depop.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; the 1% for the Planet directory could not be read (client-rendered).
+- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for depop.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable` (below 1.25 for `recommended`).
@@ -41,4 +41,5 @@ Concerns. None recorded. The NLRB case search returned no cases for "depop", and
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/ (not listed)
 - https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces (not listed)
 - https://explore.changeclimate.org/ (not listed)
+- https://dueekpzk7aquu.cloudfront.net/search?q=depop (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)

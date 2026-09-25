@@ -31,6 +31,7 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Environment: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Tier: ethics + environment = 1.0, so `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R3.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Best_Buy

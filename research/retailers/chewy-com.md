@@ -33,6 +33,7 @@ Concerns. OSHA's establishment search (2016 to 2026, violations only) returned s
 - Ethics: 0.5 baseline. No certification verified (B Corp directory blocked; no data/certifications.json row). Four accepted labor concerns (osha.gov, four separate source pages): 0.5 − 1.0 = −0.5, floored at 0. Ethics 0.
 - Environment: 0.5 baseline. No certification verified, no environmental concern. Environment 0.5.
 - Tier: 0 + 0.5 = 0.5, below 1.0, and accepted concerns fall within the last 5 years (2022-01-14 and 2023-05-03). Tier `caution`.
+- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Chewy,_Inc.
@@ -48,6 +49,9 @@ Concerns. OSHA's establishment search (2016 to 2026, violations only) returned s
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1425169.015
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1249958.015
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1223545.015
+- https://efts.sec.gov/LATEST/search-index?q=%22Wilkes-Barre%22%20%22Ocala%22&ciks=0001766502&forms=10-K (EDGAR full-text search: Chewy's own 10-Ks name the towns of the four OSHA sites)
+- https://efts.sec.gov/LATEST/search-index?q=%22Mechanicsburg%22&ciks=0001766502&forms=10-K
+- https://efts.sec.gov/LATEST/search-index?q=%22Jessup%22&ciks=0001766502
 - https://www.nlrb.gov/search/case/chewy
 - https://www.nlrb.gov/case/14-CA-291528
 - https://www.nlrb.gov/case/09-CA-258016

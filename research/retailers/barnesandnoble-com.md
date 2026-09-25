@@ -32,6 +32,7 @@ OSHA. The establishment search (2016 to 2026, violations only) returned five "Ba
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified (bcorporation.net returned 403; no data/certifications.json row for this domain). One accepted labor concern (osha.gov, 2024-03-01): 0.5 − 0.25 = 0.25. Ethics 0.25.
 - Environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified. No environmental concern. Environment 0.5.
 - Tier: 0.25 + 0.5 = 0.75, below the `acceptable` floor of 1.0. Tier `caution`.
+- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Barnes_%26_Noble

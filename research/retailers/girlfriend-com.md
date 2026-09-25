@@ -23,12 +23,12 @@ Girlfriend Collective sells its own activewear and clothing, which its about pag
 
 Lists recommend it for recycled-material activewear: AmazonAlts (factories with "fair wages") and Goodgoodgood ("made from recycled materials", sizes "2XS to 6XL").
 
-Its own pages claim OEKO-TEX Standard 100 fabric, "certified factories" and a 1% for the Planet program ("1% of every order is donated to a nonprofit you choose"). These are the brand's own claims and are not counted: the 1% for the Planet directory could not be read this run (see the blocked file), and OEKO-TEX is not one of the scored certifications.
+Its own pages claim OEKO-TEX Standard 100 fabric, "certified factories" and a 1% for the Planet program ("1% of every order is donated to a nonprofit you choose"). These are the brand's own claims and are not counted: 1% for the Planet's own directory search returned no match for "girlfriend collective" or "girlfriend", and OEKO-TEX is not one of the scored certifications.
 
 Concerns. None recorded. The NLRB case search for "girlfriend collective" returned no cases, and OSHA's establishment search returned no results. CourtListener lists one docket, Murphy v. Girlfriend Collective LLC (W.D. Pa., filed 2021-07-28, Americans with Disabilities Act); no order, finding or settlement was fetched, so it is not recorded as a concern. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
 ## Rating
-- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for girlfriend.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; the 1% for the Planet directory could not be read (client-rendered), so the brand's own 1% claim does not count.
+- Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for girlfriend.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the 188 brands on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia), so the brand's own 1% claim does not count.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no verified certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
@@ -46,4 +46,5 @@ Concerns. None recorded. The NLRB case search for "girlfriend collective" return
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/ (not listed)
 - https://info.usworker.coop/iframe/directory/worker-co-op-dem-workplaces (not listed)
 - https://explore.changeclimate.org/ (not listed)
+- https://dueekpzk7aquu.cloudfront.net/search?q=girlfriend%20collective (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)
