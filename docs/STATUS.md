@@ -26,7 +26,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 
 ## In flight
 
-- None.
+- Normalize cache (session 447c95cc): cache the model's search wording per product in Workers KV so repeat searches are repeatable; the normalize prompt stops receiving city and state. Plan: [plans/search-variation.md](plans/search-variation.md) step 4.
 
 ## Blocked on operator
 
