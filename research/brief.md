@@ -209,3 +209,4 @@ These settings override sections 1 to 8 where they differ. The operator set them
 - R7. Deduct each fact under one score part only. A newsletter prompt is not a pop-up wall.
 - R8. A named certification with no link to the certifier earns partial Evidence credit, not full.
 - R9. A tool with no curated list has exactly one row, `| - | none (tool) | - | <reason> |`, and `retailers_listed: 0`.
+- **What counts as a concern** (lead decision, 2026-09-25, following the "finding" wording in `docs/ranking.md`). A concern is an action by an agency or court against the company: a citation, an agency-issued complaint, a fine, a settlement, a judgment or a finding. Charges or lawsuits filed by others (a union's NLRB charge, a private suit with no ruling) are noted in the body but not recorded as concerns. An action that a fetched source shows was later dismissed, withdrawn or reversed is noted in the body, not counted.

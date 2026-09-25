@@ -1,0 +1,37 @@
+---
+name: Poshmark
+domain: poshmark.com
+type: marketplace
+goods: [secondhand clothing, clothing, shoes, accessories, home goods, electronics, beauty]
+ownership: public
+parent: Naver Corporation
+hq: Redwood City, CA
+marketplace: true
+sells_on_amazon: unknown
+amazon_owned: false
+certifications: []
+concerns: []
+ethics: 0.5
+environment: 0.5
+tier: acceptable
+mentions: 3
+mentioned_by: [adayinourshoes-com, goodgoodgood-co, moneypantry-com]
+checked: 2026-09-25
+---
+
+Poshmark is a peer-to-peer resale marketplace: its about page calls it "a leading fashion resale marketplace powered by a vibrant, highly-engaged community of buyers and sellers", with 10,000+ brands across 90+ categories (fashion, home, electronics, pets, beauty) in the US and Canada, and says resale is "shaping a more sustainable future for fashion". Wikipedia says it is headquartered in Redwood City, California, went public on Nasdaq in January 2021, and was acquired by South Korea's Naver Corporation in January 2023 for US$1.2 billion. `ownership: public` follows the convention of the other retailer files for a subsidiary of a listed company. Lists recommend it as a secondhand clothing platform (A Day in Our Shoes, Good Good Good) and for "deals up to 70% off" (MoneyPantry).
+
+Not scored, but on record: NLRB case search for "Poshmark" returned no cases. CourtListener search results name Poshmark in private suits (for example Reichman v. Poshmark, Inc.; patent and trademark cases where it is one of several platforms), but the opinion page fetched returned no readable content and CourtListener's search page returned 403, so no court record was read. Good Jobs First Violation Tracker returned 403. FTC and DOJ search pages returned 404 or 403, and this session's web search budget ran out before a news search.
+
+## Rating
+- Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json). No accepted concern. = 0.5
+- Environment: 0.5 baseline. Poshmark's resale sustainability claim is self-reported, not a certifier listing. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
+- Total 1.0, not Amazon-owned: tier `acceptable`.
+- Blocklist: `node research/build-index.mjs --blocklist "Poshmark" poshmark.com` returned "not on the blocklist".
+
+## Sources
+- https://poshmark.com/about
+- https://en.wikipedia.org/wiki/Poshmark
+- https://www.nlrb.gov/search/case/Poshmark
+- https://www.courtlistener.com/opinion/7326812/reichman-v-poshmark-inc/ (fetched; no readable content)
+- https://explore.changeclimate.org/

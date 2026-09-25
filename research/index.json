@@ -1,4 +1,2413 @@
 {
-  "sites": [],
-  "retailers": []
+  "sites": [
+    {
+      "slug": "adayinourshoes-com",
+      "name": "A Day in Our Shoes",
+      "domain": "adayinourshoes.com",
+      "url": "https://adayinourshoes.com/boycott/",
+      "kind": "article",
+      "category": "ethical-anti-bigbox",
+      "also": [],
+      "score": 61,
+      "score_parts": {
+        "independence": 15,
+        "evidence": 3,
+        "substance": 11,
+        "currency": 14,
+        "usefulness": 8,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "A Day in our Shoes, LLC",
+      "updated": "2026-07-09",
+      "retailers_listed": 19,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "amazonalts-org",
+      "name": "Amazon Alternatives (amazonalts.org)",
+      "domain": "amazonalts.org",
+      "url": "https://amazonalts.org/",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [],
+      "score": 57,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 4,
+        "substance": 15,
+        "currency": 4,
+        "usefulness": 10,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Incitement Design",
+      "updated": "unknown",
+      "retailers_listed": 27,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "antifamarketer-org",
+      "name": "The Anti-Fascist Marketer",
+      "domain": "antifamarketer.org",
+      "url": "https://www.antifamarketer.org/boycott-amazon",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [],
+      "score": 61,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 4,
+        "substance": 9,
+        "currency": 13,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "unknown",
+      "updated": "2026-01-15",
+      "retailers_listed": 12,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "borgenproject-org",
+      "name": "The Borgen Project",
+      "domain": "borgenproject.org",
+      "url": "https://borgenproject.org/10-great-fair-trade-stores/",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [],
+      "score": 57,
+      "score_parts": {
+        "independence": 20,
+        "evidence": 4,
+        "substance": 11,
+        "currency": 6,
+        "usefulness": 6,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "The Borgen Project",
+      "updated": "2024-05-29",
+      "retailers_listed": 10,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "buycott-com",
+      "name": "Buycott",
+      "domain": "buycott.com",
+      "url": "https://www.buycott.com/",
+      "kind": "app",
+      "category": "tool",
+      "also": [],
+      "score": 46,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 7,
+        "substance": 3,
+        "currency": 5,
+        "usefulness": 7,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Buycott, Inc.",
+      "updated": "unknown",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "dollarsprout-com",
+      "name": "DollarSprout",
+      "domain": "dollarsprout.com",
+      "url": "https://dollarsprout.com/amazon-alternatives/",
+      "kind": "article",
+      "category": "clickbait",
+      "also": [],
+      "score": 44,
+      "score_parts": {
+        "independence": 12,
+        "evidence": 2,
+        "substance": 7,
+        "currency": 10,
+        "usefulness": 7,
+        "no_dark_patterns": 6
+      },
+      "affiliate_links": "disclosed",
+      "owner": "VTX Capital, LLC",
+      "updated": "2025-04-01",
+      "retailers_listed": 12,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "donegood-co",
+      "name": "DoneGood",
+      "domain": "donegood.co",
+      "url": "https://donegood.co",
+      "kind": "extension",
+      "category": "tool",
+      "also": [],
+      "score": 10,
+      "score_parts": {
+        "independence": 0,
+        "evidence": 0,
+        "substance": 0,
+        "currency": 0,
+        "usefulness": 0,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "unknown",
+      "owner": "Donegood Media",
+      "updated": "unknown",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "fairtradecertified-org",
+      "name": "Fair Trade USA (Fair Trade Certified)",
+      "domain": "fairtradecertified.org",
+      "url": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
+      "kind": "directory",
+      "category": "tool",
+      "also": [
+        "ethical-affirmative"
+      ],
+      "score": 52,
+      "score_parts": {
+        "independence": 11,
+        "evidence": 10,
+        "substance": 7,
+        "currency": 13,
+        "usefulness": 10,
+        "no_dark_patterns": 1
+      },
+      "affiliate_links": "none",
+      "owner": "Fair Trade USA",
+      "updated": "2026-07-08",
+      "retailers_listed": 86,
+      "amazon_owned_recommended": [
+        "Amazon (brand tile links to an amazon.com search page)",
+        "Whole Foods Market (brand tile, wholefoodsmarket.com)",
+        "Allegro Coffee (brand tile links to wholefoodsmarket.com)",
+        "Big Country Foods (brand tile links to its amazon.com storefront)",
+        "BLK & Bold (featured product links to amazon.com)"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "gobankingrates-com",
+      "name": "GOBankingRates",
+      "domain": "gobankingrates.com",
+      "url": "https://www.gobankingrates.com/saving-money/holiday/top-places-shop-online-arent-amazon/",
+      "kind": "article",
+      "category": "clickbait",
+      "also": [],
+      "score": 40,
+      "score_parts": {
+        "independence": 16,
+        "evidence": 1,
+        "substance": 8,
+        "currency": 4,
+        "usefulness": 3,
+        "no_dark_patterns": 8
+      },
+      "affiliate_links": "none",
+      "owner": "GOBankingRates",
+      "updated": "2021-08-23",
+      "retailers_listed": 10,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "goingzerowaste-com",
+      "name": "Going Zero Waste",
+      "domain": "goingzerowaste.com",
+      "url": "https://www.goingzerowaste.com/blog/where-to-shop-online-that-isnt-amazon/",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [
+        "ethical-anti-amazon",
+        "affiliate-funnel"
+      ],
+      "score": 56,
+      "score_parts": {
+        "independence": 7,
+        "evidence": 8,
+        "substance": 15,
+        "currency": 5,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "undisclosed",
+      "owner": "Going Zero Waste",
+      "updated": "2020-09-23",
+      "retailers_listed": 22,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "goodgoodgood-co",
+      "name": "Good Good Good",
+      "domain": "goodgoodgood.co",
+      "url": "https://www.goodgoodgood.co/articles/alternatives-to-amazon",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [
+        "ethical-anti-amazon",
+        "affiliate-funnel"
+      ],
+      "score": 72,
+      "score_parts": {
+        "independence": 12,
+        "evidence": 10,
+        "substance": 16,
+        "currency": 13,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "disclosed",
+      "owner": "Good Good Good",
+      "updated": "2026-03-24",
+      "retailers_listed": 49,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "greenamerica-org",
+      "name": "Green America",
+      "domain": "greenamerica.org",
+      "url": "https://greenamerica.org/sustainable-alternatives-amazon",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [
+        "ethical-affirmative"
+      ],
+      "score": 53,
+      "score_parts": {
+        "independence": 12,
+        "evidence": 7,
+        "substance": 14,
+        "currency": 4,
+        "usefulness": 6,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Green America",
+      "updated": "unknown",
+      "retailers_listed": 31,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "ilsr-org",
+      "name": "Institute for Local Self-Reliance",
+      "domain": "ilsr.org",
+      "url": "https://ilsr.org/article/independent-business/its-time-to-break-up-with-amazon/",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [],
+      "score": 78,
+      "score_parts": {
+        "independence": 20,
+        "evidence": 7,
+        "substance": 16,
+        "currency": 12,
+        "usefulness": 13,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Institute for Local Self-Reliance",
+      "updated": "2024-10-31",
+      "retailers_listed": 24,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "indiebound-org",
+      "name": "IndieBound",
+      "domain": "indiebound.org",
+      "url": "https://www.indiebound.org/",
+      "kind": "directory",
+      "category": "tool",
+      "also": [
+        "ethical-anti-amazon"
+      ],
+      "score": 73,
+      "score_parts": {
+        "independence": 16,
+        "evidence": 12,
+        "substance": 12,
+        "currency": 12,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "disclosed",
+      "owner": "American Booksellers Association",
+      "updated": "unknown",
+      "retailers_listed": 3,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "local-first-org",
+      "name": "Local First",
+      "domain": "local-first.org",
+      "url": "https://local-first.org/initiatives/act-local/whats-in-it-for-amazon/",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [],
+      "score": 47,
+      "score_parts": {
+        "independence": 17,
+        "evidence": 3,
+        "substance": 2,
+        "currency": 12,
+        "usefulness": 3,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Local First Foundation",
+      "updated": "2024-10-18",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "makeitworkcrafts-com",
+      "name": "Make It Work Crafts",
+      "domain": "makeitworkcrafts.com",
+      "url": "https://makeitworkcrafts.com/blog-2/2025/3/19/30-craft-retailers-that-arent-amazon-target-or-walmart",
+      "kind": "article",
+      "category": "ethical-anti-bigbox",
+      "also": [],
+      "score": 67,
+      "score_parts": {
+        "independence": 20,
+        "evidence": 2,
+        "substance": 12,
+        "currency": 12,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "Make It Work Crafts",
+      "updated": "2025-03-19",
+      "retailers_listed": 31,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "moneypantry-com",
+      "name": "MoneyPantry",
+      "domain": "moneypantry.com",
+      "url": "https://moneypantry.com/amazon-alternatives/",
+      "kind": "article",
+      "category": "clickbait",
+      "also": [
+        "affiliate-funnel"
+      ],
+      "score": 32,
+      "score_parts": {
+        "independence": 8,
+        "evidence": 1,
+        "substance": 5,
+        "currency": 8,
+        "usefulness": 9,
+        "no_dark_patterns": 1
+      },
+      "affiliate_links": "disclosed",
+      "owner": "Money Pantry Media LLC",
+      "updated": "2025-02-17",
+      "retailers_listed": 17,
+      "amazon_owned_recommended": [
+        "Zappos (links to zappos.com)"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "pcworld-com",
+      "name": "PCWorld",
+      "domain": "pcworld.com",
+      "url": "https://www.pcworld.com/article/398976/the-best-alternatives-to-amazon-for-buying-tech-right-now.html",
+      "kind": "article",
+      "category": "affiliate-funnel",
+      "also": [],
+      "score": 42,
+      "score_parts": {
+        "independence": 13,
+        "evidence": 5,
+        "substance": 8,
+        "currency": 2,
+        "usefulness": 7,
+        "no_dark_patterns": 7
+      },
+      "affiliate_links": "disclosed",
+      "owner": "FoundryCo, Inc.",
+      "updated": "2020-04-03",
+      "retailers_listed": 9,
+      "amazon_owned_recommended": [
+        "Amazon (affiliate-tagged link to an amazon.com listing, shown sold out)"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "sustainablejungle-com",
+      "name": "Sustainable Jungle",
+      "domain": "sustainablejungle.com",
+      "url": "https://www.sustainablejungle.com/alternatives-to-amazon/",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [
+        "ethical-anti-amazon",
+        "affiliate-funnel"
+      ],
+      "score": 64,
+      "score_parts": {
+        "independence": 12,
+        "evidence": 7,
+        "substance": 14,
+        "currency": 12,
+        "usefulness": 9,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "disclosed",
+      "owner": "Sustainable Jungle",
+      "updated": "2025-02-06",
+      "retailers_listed": 39,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "techradar-com",
+      "name": "TechRadar",
+      "domain": "techradar.com",
+      "url": "https://www.techradar.com/best/amazon-alternatives",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [],
+      "score": 46,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 4,
+        "substance": 9,
+        "currency": 4,
+        "usefulness": 9,
+        "no_dark_patterns": 6
+      },
+      "affiliate_links": "disclosed",
+      "owner": "Future US, Inc.",
+      "updated": "2020-12-12",
+      "retailers_listed": 19,
+      "amazon_owned_recommended": [
+        "AbeBooks (named without a link; abebooks.com)"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "thegoodtrade-com",
+      "name": "The Good Trade",
+      "domain": "thegoodtrade.com",
+      "url": "https://www.thegoodtrade.com/features/amazon-alternatives/",
+      "kind": "article",
+      "category": "ethical-affirmative",
+      "also": [
+        "ethical-anti-amazon",
+        "affiliate-funnel"
+      ],
+      "score": 74,
+      "score_parts": {
+        "independence": 13,
+        "evidence": 9,
+        "substance": 15,
+        "currency": 13,
+        "usefulness": 14,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "disclosed",
+      "owner": "The Good Trade",
+      "updated": "2026-08-26",
+      "retailers_listed": 17,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "themarkup-org",
+      "name": "Amazon Brand Detector (The Markup)",
+      "domain": "themarkup.org",
+      "url": "https://themarkup.org/amazons-advantage/2021/11/29/introducing-amazon-brand-detector",
+      "kind": "extension",
+      "category": "tool",
+      "also": [],
+      "score": 54,
+      "score_parts": {
+        "independence": 18,
+        "evidence": 16,
+        "substance": 3,
+        "currency": 2,
+        "usefulness": 5,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "The Markup (part of CalMatters)",
+      "updated": "2021-11-29",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "thepeoplesunionusa-com",
+      "name": "The People's Union USA",
+      "domain": "thepeoplesunionusa.com",
+      "url": "https://thepeoplesunionusa.com/boycotts",
+      "kind": "campaign",
+      "category": "ethical-anti-bigbox",
+      "also": [],
+      "score": 32,
+      "score_parts": {
+        "independence": 13,
+        "evidence": 0,
+        "substance": 1,
+        "currency": 5,
+        "usefulness": 3,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "The People's Union USA",
+      "updated": "unknown",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "usworker-coop",
+      "name": "U.S. Federation of Worker Cooperatives",
+      "domain": "usworker.coop",
+      "url": "https://www.usworker.coop/directory/",
+      "kind": "directory",
+      "category": "tool",
+      "also": [
+        "ethical-affirmative"
+      ],
+      "score": 55,
+      "score_parts": {
+        "independence": 17,
+        "evidence": 8,
+        "substance": 8,
+        "currency": 6,
+        "usefulness": 6,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "U.S. Federation of Worker Cooperatives",
+      "updated": "unknown",
+      "retailers_listed": 0,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "vstyleblog-com",
+      "name": "VSTYLE",
+      "domain": "vstyleblog.com",
+      "url": "https://vstyleblog.com/how-to-boycott-amazon-15-amazon-alternatives/",
+      "kind": "article",
+      "category": "ethical-anti-amazon",
+      "also": [],
+      "score": 66,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 7,
+        "substance": 15,
+        "currency": 9,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "disclosed",
+      "owner": "VSTYLE",
+      "updated": "unknown",
+      "retailers_listed": 18,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "workerowned-info",
+      "name": "Worker Owned Marketplace",
+      "domain": "workerowned.info",
+      "url": "https://www.workerowned.info/",
+      "kind": "directory",
+      "category": "tool",
+      "also": [
+        "ethical-affirmative"
+      ],
+      "score": 69,
+      "score_parts": {
+        "independence": 14,
+        "evidence": 9,
+        "substance": 15,
+        "currency": 10,
+        "usefulness": 11,
+        "no_dark_patterns": 10
+      },
+      "affiliate_links": "none",
+      "owner": "unknown",
+      "updated": "unknown",
+      "retailers_listed": 21,
+      "amazon_owned_recommended": [],
+      "checked": "2026-09-25"
+    }
+  ],
+  "retailers": [
+    {
+      "slug": "abebooks-com",
+      "name": "AbeBooks",
+      "domain": "abebooks.com",
+      "type": "marketplace",
+      "goods": [
+        "books"
+      ],
+      "ownership": "unknown",
+      "parent": "Amazon",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": true,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "excluded",
+      "mentions": 1,
+      "mentioned_by": [
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "ableclothing-com",
+      "name": "ABLE",
+      "domain": "ableclothing.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "leather goods",
+        "jewelry",
+        "accessories"
+      ],
+      "ownership": "public-benefit-corporation",
+      "parent": "none",
+      "hq": "Nashville, TN",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "amazonalts-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "aliexpress-com",
+      "name": "AliExpress",
+      "domain": "aliexpress.com",
+      "type": "marketplace",
+      "goods": [
+        "general merchandise",
+        "electronics",
+        "clothing",
+        "home goods"
+      ],
+      "ownership": "public",
+      "parent": "Alibaba Group",
+      "hq": "unknown",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "Alibaba Group and AUS Merchant Services Agree to Pay $600 Million to Resolve Allegations that they Failed to Prevent Illegal Sales of Pharmaceuticals, Pharmaceutical Equipment, and Other Illegal Products",
+          "source": "https://www.justice.gov/opa/pr/alibaba-group-and-aus-merchant-services-agree-pay-600-million-resolve-allegations-they",
+          "date": "2026-07-01",
+          "accepted_source": true
+        },
+        {
+          "kind": "governance",
+          "title": "Commission fines AliExpress €550 million for breaching the Digital Services Act",
+          "source": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+          "date": "2026-07-20",
+          "accepted_source": false
+        }
+      ],
+      "ethics": 0.25,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 4,
+      "mentioned_by": [
+        "antifamarketer-org",
+        "dollarsprout-com",
+        "gobankingrates-com",
+        "moneypantry-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "amazon-com",
+      "name": "Amazon",
+      "domain": "amazon.com",
+      "type": "marketplace",
+      "goods": [
+        "general merchandise"
+      ],
+      "ownership": "unknown",
+      "parent": "Amazon",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": true,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "excluded",
+      "mentions": 2,
+      "mentioned_by": [
+        "fairtradecertified-org",
+        "pcworld-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "avocadogreenmattress-com",
+      "name": "Avocado Green Mattress",
+      "domain": "avocadogreenmattress.com",
+      "type": "brand",
+      "goods": [
+        "mattresses"
+      ],
+      "ownership": "private",
+      "parent": "Avocado Green Brands",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "climate_neutral",
+          "source": "https://explore.changeclimate.org/brand/avocado-green-brands",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        },
+        {
+          "kind": "one_percent_planet",
+          "source": "https://directories.onepercentfortheplanet.org/profile/avocado-green-mattress",
+          "checked": "2026-09-25",
+          "verified_this_run": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1582670.015",
+          "date": "2022-08-11",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1658946.015",
+          "date": "2023-08-16",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 1,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "amazonalts-org",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "azurestandard-com",
+      "name": "Azure Standard",
+      "domain": "azurestandard.com",
+      "type": "grocer",
+      "goods": [
+        "food",
+        "produce",
+        "household"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Dufur, OR",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1574338.015",
+          "date": "2022-03-10",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1647478.015",
+          "date": "2023-03-08",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1665055.015",
+          "date": "2023-05-26",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 2,
+      "mentioned_by": [
+        "amazonalts-org",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "backmarket-com",
+      "name": "Back Market",
+      "domain": "backmarket.com",
+      "type": "marketplace",
+      "goods": [
+        "refurbished electronics",
+        "phones",
+        "computers",
+        "tablets",
+        "game consoles"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "Paris, France",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 4,
+      "mentioned_by": [
+        "goodgoodgood-co",
+        "sustainablejungle-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "barnesandnoble-com",
+      "name": "Barnes & Noble",
+      "domain": "barnesandnoble.com",
+      "type": "retailer",
+      "goods": [
+        "books",
+        "magazines",
+        "toys",
+        "games",
+        "stationery",
+        "music",
+        "movies"
+      ],
+      "ownership": "private",
+      "parent": "Elliott (Elliott Investment Management)",
+      "hq": "New York, NY",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "dollarsprout-com",
+        "moneypantry-com",
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "bestbuy-com",
+      "name": "Best Buy",
+      "domain": "bestbuy.com",
+      "type": "retailer",
+      "goods": [
+        "electronics",
+        "appliances",
+        "video games",
+        "phones",
+        "cameras"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Richfield, MN",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 4,
+      "mentioned_by": [
+        "amazonalts-org",
+        "moneypantry-com",
+        "pcworld-com",
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "betterworldbooks-com",
+      "name": "Better World Books",
+      "domain": "betterworldbooks.com",
+      "type": "secondhand",
+      "goods": [
+        "books"
+      ],
+      "ownership": "nonprofit",
+      "parent": "Better World Libraries",
+      "hq": "Mishawaka, IN",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "amazonalts-org",
+        "antifamarketer-org",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "bhphotovideo-com",
+      "name": "B&H Photo Video",
+      "domain": "bhphotovideo.com",
+      "type": "retailer",
+      "goods": [
+        "cameras",
+        "video",
+        "audio",
+        "computers",
+        "electronics"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "New York, NY",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1552934.015",
+          "date": "2022-02-17",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1369750.015",
+          "date": "2019-06-06",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 3,
+      "mentioned_by": [
+        "amazonalts-org",
+        "pcworld-com",
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "blkgrn-com",
+      "name": "BLK + GRN",
+      "domain": "blkgrn.com",
+      "type": "marketplace",
+      "goods": [
+        "skin care",
+        "hair care",
+        "home care",
+        "wellness"
+      ],
+      "ownership": "unknown",
+      "parent": "none",
+      "hq": "unknown",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 4,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "thegoodtrade-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "bobsredmill-com",
+      "name": "Bob's Red Mill",
+      "domain": "bobsredmill.com",
+      "type": "brand",
+      "goods": [
+        "food",
+        "flour",
+        "grains",
+        "baking"
+      ],
+      "ownership": "employee-owned",
+      "parent": "none",
+      "hq": "Milwaukie, OR",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1637323.015",
+          "date": "2023-01-03",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "fairtradecertified-org",
+        "workerowned-info"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "bookshop-org",
+      "name": "Bookshop.org",
+      "domain": "bookshop.org",
+      "type": "retailer",
+      "goods": [
+        "books",
+        "ebooks",
+        "audiobooks"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "climate_neutral",
+          "source": "https://explore.changeclimate.org/brand/bookshop",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.75,
+      "tier": "recommended",
+      "mentions": 10,
+      "mentioned_by": [
+        "amazonalts-org",
+        "antifamarketer-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "ilsr-org",
+        "indiebound-org",
+        "sustainablejungle-com",
+        "techradar-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "chewy-com",
+      "name": "Chewy",
+      "domain": "chewy.com",
+      "type": "retailer",
+      "goods": [
+        "pet food",
+        "pet supplies",
+        "pet medications",
+        "pet health services"
+      ],
+      "ownership": "public",
+      "parent": "BC Partners affiliates (controlling stockholders)",
+      "hq": "Plantation, FL",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1648417.015",
+          "date": "2023-05-03",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1545401.015",
+          "date": "2022-01-14",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1425169.015",
+          "date": "2019-09-27",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail | Occupational Safety and Health Administration",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1223545.015",
+          "date": "2017-04-20",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 3,
+      "mentioned_by": [
+        "gobankingrates-com",
+        "goodgoodgood-co",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "christydawn-com",
+      "name": "Christy Dawn",
+      "domain": "christydawn.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "accessories"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Los Angeles, CA",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "costco-com",
+      "name": "Costco",
+      "domain": "costco.com",
+      "type": "retailer",
+      "goods": [
+        "groceries",
+        "household",
+        "electronics",
+        "clothing",
+        "pharmacy",
+        "gasoline"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Issaquah, WA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection: 1763330.015 - Costco Wholesale",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1763330.015",
+          "date": "2024-12-06",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection: 1640222.015 - Costco Wholesale Corp #781",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1640222.015",
+          "date": "2023-03-15",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection: 1356334.015 - Costco Wholesale Corporation",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1356334.015",
+          "date": "2019-03-05",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Costco Wholesale Corp.",
+          "source": "https://www.nlrb.gov/case/01-CA-355597",
+          "date": "2025-08-12",
+          "accepted_source": true
+        },
+        {
+          "kind": "governance",
+          "title": "$14M Costco Settlement Resolves Class Action Lawsuit Over Promo Emails With Allegedly Misleading Subject Lines",
+          "source": "https://www.classaction.org/news/14m-costco-settlement-resolves-class-action-lawsuit-over-promo-emails-with-allegedly-misleading-subject-lines",
+          "date": "2026-07-22",
+          "accepted_source": false
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 2,
+      "mentioned_by": [
+        "fairtradecertified-org",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "depop-com",
+      "name": "Depop",
+      "domain": "depop.com",
+      "type": "marketplace",
+      "goods": [
+        "clothing",
+        "accessories"
+      ],
+      "ownership": "public",
+      "parent": "eBay Inc.",
+      "hq": "London, United Kingdom",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "earthhero-com",
+      "name": "EarthHero",
+      "domain": "earthhero.com",
+      "type": "retailer",
+      "goods": [
+        "zero-waste home goods",
+        "kitchen",
+        "reusables",
+        "personal care",
+        "baby and kids"
+      ],
+      "ownership": "unknown",
+      "parent": "ZeroWasteStore",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 5,
+      "mentioned_by": [
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "sustainablejungle-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "ebay-com",
+      "name": "eBay",
+      "domain": "ebay.com",
+      "type": "marketplace",
+      "goods": [
+        "general merchandise",
+        "used goods",
+        "refurbished electronics",
+        "collectibles"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "San Jose, CA",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "eBay will pay a $3 million fine over former employees' harassment campaign",
+          "source": "https://www.npr.org/2024/01/11/1224333712/ebay-stalking-settlement",
+          "date": "2024-01-11",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "EPA and Justice Department File Complaint Alleging Environmental Violations by eBay",
+          "source": "https://www.epa.gov/newsreleases/epa-and-justice-department-file-complaint-alleging-environmental-violations-ebay",
+          "date": "2023-09-27",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.25,
+      "environment": 0.25,
+      "tier": "caution",
+      "mentions": 6,
+      "mentioned_by": [
+        "antifamarketer-org",
+        "goodgoodgood-co",
+        "moneypantry-com",
+        "sustainablejungle-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "ecoroots-us",
+      "name": "EcoRoots",
+      "domain": "ecoroots.us",
+      "type": "brand",
+      "goods": [
+        "personal care",
+        "household",
+        "zero-waste"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "unknown",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "goingzerowaste-com",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "eileenfisher-com",
+      "name": "Eileen Fisher",
+      "domain": "eileenfisher.com",
+      "type": "brand",
+      "goods": [
+        "clothing"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "Irvington, NY",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "b_corp",
+          "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/eileen-fisher-inc/",
+          "checked": "2026-09-23",
+          "verified_this_run": false
+        },
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 1,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 2,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "fairtradecertified-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "etsy-com",
+      "name": "Etsy",
+      "domain": "etsy.com",
+      "type": "marketplace",
+      "goods": [
+        "handmade goods",
+        "vintage items",
+        "craft supplies",
+        "jewelry",
+        "clothing",
+        "home decor",
+        "art"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Brooklyn, NY",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "climate_neutral",
+          "source": "https://explore.changeclimate.org/brand/etsy",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "environmental",
+          "title": "Settlement Agreement, AG Notice Nos. 2024-02373",
+          "source": "https://oag.ca.gov/system/files/prop65/settlements/2024-02373S4583.pdf",
+          "date": "2024-12-13",
+          "accepted_source": false
+        }
+      ],
+      "ethics": 0.5,
+      "environment": 0.75,
+      "tier": "recommended",
+      "mentions": 13,
+      "mentioned_by": [
+        "amazonalts-org",
+        "antifamarketer-org",
+        "dollarsprout-com",
+        "gobankingrates-com",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "ilsr-org",
+        "makeitworkcrafts-com",
+        "moneypantry-com",
+        "sustainablejungle-com",
+        "techradar-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "girlfriend-com",
+      "name": "Girlfriend Collective",
+      "domain": "girlfriend.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "activewear"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Seattle, WA",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "grove-co",
+      "name": "Grove Collaborative",
+      "domain": "grove.co",
+      "type": "retailer",
+      "goods": [
+        "household cleaning products",
+        "personal care",
+        "home goods"
+      ],
+      "ownership": "public-benefit-corporation",
+      "parent": "none",
+      "hq": "San Francisco, CA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "b_corp",
+          "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/grove-collaborative/",
+          "checked": "2026-09-25",
+          "verified_this_run": false
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.75,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 6,
+      "mentioned_by": [
+        "amazonalts-org",
+        "gobankingrates-com",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "kobo-com",
+      "name": "Kobo",
+      "domain": "kobo.com",
+      "type": "retailer",
+      "goods": [
+        "ebooks",
+        "audiobooks",
+        "e-readers"
+      ],
+      "ownership": "public",
+      "parent": "Rakuten Group",
+      "hq": "Toronto, ON, Canada",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "goodgoodgood-co",
+        "indiebound-org",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "kotn-com",
+      "name": "Kotn",
+      "domain": "kotn.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "accessories",
+        "home"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Toronto, ON, Canada",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "amazonalts-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "libro-fm",
+      "name": "Libro.fm",
+      "domain": "libro.fm",
+      "type": "retailer",
+      "goods": [
+        "audiobooks"
+      ],
+      "ownership": "employee-owned",
+      "parent": "none",
+      "hq": "Seattle, WA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 7,
+      "mentioned_by": [
+        "antifamarketer-org",
+        "goodgoodgood-co",
+        "ilsr-org",
+        "indiebound-org",
+        "sustainablejungle-com",
+        "vstyleblog-com",
+        "workerowned-info"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "lovegrown-com",
+      "name": "Hive (now Love Grown)",
+      "domain": "lovegrown.com",
+      "type": "brand",
+      "goods": [
+        "coffee",
+        "cereal",
+        "supplements"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "unknown",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "madetrade-com",
+      "name": "Made Trade",
+      "domain": "madetrade.com",
+      "type": "retailer",
+      "goods": [
+        "home"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "mightly-com",
+      "name": "Mightly",
+      "domain": "mightly.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "kids clothing",
+        "bedding"
+      ],
+      "ownership": "unknown",
+      "parent": "none",
+      "hq": "Oakland, CA",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/our-community/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.75,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 2,
+      "mentioned_by": [
+        "fairtradecertified-org",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "newegg-com",
+      "name": "Newegg",
+      "domain": "newegg.com",
+      "type": "retailer",
+      "goods": [
+        "computer hardware",
+        "PC components",
+        "peripherals",
+        "gaming hardware",
+        "consumer electronics"
+      ],
+      "ownership": "public",
+      "parent": "unknown",
+      "hq": "Diamond Bar, CA",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "MAGNELL ASSOCIATE, INC. D/B/A NEWEGG.COM (21-CA-184553)",
+          "source": "https://www.nlrb.gov/case/21-CA-184553",
+          "date": "2019-07-31",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.25,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 5,
+      "mentioned_by": [
+        "amazonalts-org",
+        "dollarsprout-com",
+        "moneypantry-com",
+        "pcworld-com",
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "overstock-com",
+      "name": "Overstock",
+      "domain": "overstock.com",
+      "type": "retailer",
+      "goods": [
+        "furniture",
+        "home decor",
+        "bedding",
+        "home goods"
+      ],
+      "ownership": "public",
+      "parent": "Neighborhood Intelligence, Inc. (formerly Bed Bath & Beyond, Inc., Beyond, Inc. and Overstock.com, Inc.)",
+      "hq": "Murray, UT",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "dollarsprout-com",
+        "gobankingrates-com",
+        "moneypantry-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "packagefreeshop-com",
+      "name": "Package Free",
+      "domain": "packagefreeshop.com",
+      "type": "retailer",
+      "goods": [
+        "home",
+        "cleaning",
+        "personal-care",
+        "kitchen",
+        "baby"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 4,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goodgoodgood-co",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "patagonia-com",
+      "name": "Patagonia",
+      "domain": "patagonia.com",
+      "type": "brand",
+      "goods": [
+        "apparel",
+        "outdoor-gear",
+        "food",
+        "used-gear"
+      ],
+      "ownership": "private",
+      "parent": "Patagonia Purpose Trust (voting stock); Holdfast Collective (nonvoting stock)",
+      "hq": "Ventura, CA",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        },
+        {
+          "kind": "b_corp",
+          "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/",
+          "checked": "2026-09-25",
+          "verified_this_run": false
+        },
+        {
+          "kind": "one_percent_planet",
+          "source": "https://directories.onepercentfortheplanet.org/profile/patagonia",
+          "checked": "2026-09-25",
+          "verified_this_run": false
+        }
+      ],
+      "concerns": [],
+      "ethics": 1,
+      "environment": 0.75,
+      "tier": "recommended",
+      "mentions": 4,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "fairtradecertified-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "poshmark-com",
+      "name": "Poshmark",
+      "domain": "poshmark.com",
+      "type": "marketplace",
+      "goods": [
+        "secondhand clothing",
+        "clothing",
+        "shoes",
+        "accessories",
+        "home goods",
+        "electronics",
+        "beauty"
+      ],
+      "ownership": "public",
+      "parent": "Naver Corporation",
+      "hq": "Redwood City, CA",
+      "marketplace": true,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "goodgoodgood-co",
+        "moneypantry-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "powells-com",
+      "name": "Powell's Books",
+      "domain": "powells.com",
+      "type": "retailer",
+      "goods": [
+        "books",
+        "used books",
+        "rare books"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "Portland, OR",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "dollarsprout-com",
+        "ilsr-org",
+        "techradar-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "publicgoods-com",
+      "name": "Public Goods",
+      "domain": "publicgoods.com",
+      "type": "brand",
+      "goods": [
+        "personal care",
+        "cleaning",
+        "home goods",
+        "food"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "New York, NY",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "goodgoodgood-co",
+        "sustainablejungle-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "tenthousandvillages-com",
+      "name": "Ten Thousand Villages",
+      "domain": "tenthousandvillages.com",
+      "type": "retailer",
+      "goods": [
+        "home decor",
+        "jewelry",
+        "accessories",
+        "personal care",
+        "gifts"
+      ],
+      "ownership": "nonprofit",
+      "parent": "none",
+      "hq": "Akron, PA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "borgenproject-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "tentree-com",
+      "name": "Tentree",
+      "domain": "tentree.com",
+      "type": "brand",
+      "goods": [
+        "clothing",
+        "accessories"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Vancouver, BC, Canada",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "climate_neutral",
+          "source": "https://explore.changeclimate.org/brand/tentree",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.75,
+      "tier": "recommended",
+      "mentions": 3,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "thedetoxmarket-com",
+      "name": "The Detox Market",
+      "domain": "thedetoxmarket.com",
+      "type": "retailer",
+      "goods": [
+        "beauty",
+        "skincare",
+        "personal care",
+        "wellness"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Van Nuys, CA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 3,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "sustainablejungle-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "thredup-com",
+      "name": "ThredUp",
+      "domain": "thredup.com",
+      "type": "secondhand",
+      "goods": [
+        "clothing",
+        "shoes",
+        "accessories"
+      ],
+      "ownership": "public",
+      "parent": "none",
+      "hq": "Oakland, CA",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail: Thredup Distribution Center, Mechanicsburg, PA (Inspection 1815510.015)",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1815510.015",
+          "date": "2025-05-07",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail: Thredup, Inc., Duluth, GA (Inspection 1257615.015)",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1257615.015",
+          "date": "2017-10-26",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 3,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "thrivemarket-com",
+      "name": "Thrive Market",
+      "domain": "thrivemarket.com",
+      "type": "grocer",
+      "goods": [
+        "groceries",
+        "snacks",
+        "supplements",
+        "personal care",
+        "cleaning products",
+        "baby products",
+        "pet care"
+      ],
+      "ownership": "public-benefit-corporation",
+      "parent": "none",
+      "hq": "Los Angeles, CA",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [
+        {
+          "kind": "labor",
+          "title": "Inspection Detail: Thrive Market, Inc. (Activity 1724624.015)",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724624.015",
+          "date": "2024-03-25",
+          "accepted_source": true
+        },
+        {
+          "kind": "labor",
+          "title": "Inspection Detail: Thrive Market, Inc. (Activity 1724652.015)",
+          "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1724652.015",
+          "date": "2024-03-25",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0,
+      "environment": 0.5,
+      "tier": "caution",
+      "mentions": 10,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "amazonalts-org",
+        "fairtradecertified-org",
+        "gobankingrates-com",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "ilsr-org",
+        "sustainablejungle-com",
+        "thegoodtrade-com",
+        "vstyleblog-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "uncommongoods-com",
+      "name": "Uncommon Goods",
+      "domain": "uncommongoods.com",
+      "type": "retailer",
+      "goods": [
+        "gifts",
+        "home accents",
+        "jewelry",
+        "kitchen and bar",
+        "art",
+        "games",
+        "books",
+        "food and drink",
+        "DIY kits"
+      ],
+      "ownership": "private",
+      "parent": "none",
+      "hq": "Brooklyn, NY",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "b_corp",
+          "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/uncommongoods/",
+          "checked": "2026-09-25",
+          "verified_this_run": false
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.75,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 5,
+      "mentioned_by": [
+        "amazonalts-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co",
+        "ilsr-org",
+        "thegoodtrade-com"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "wearpact-com",
+      "name": "Pact",
+      "domain": "wearpact.com",
+      "type": "brand",
+      "goods": [
+        "apparel",
+        "baby",
+        "home-textiles"
+      ],
+      "ownership": "unknown",
+      "parent": "unknown",
+      "hq": "Boulder, CO",
+      "marketplace": false,
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [
+        {
+          "kind": "fair_trade",
+          "source": "https://www.fairtradecertified.org/shop-fair-trade/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
+      "concerns": [],
+      "ethics": 0.75,
+      "environment": 0.5,
+      "tier": "recommended",
+      "mentions": 4,
+      "mentioned_by": [
+        "adayinourshoes-com",
+        "fairtradecertified-org",
+        "goingzerowaste-com",
+        "goodgoodgood-co"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "wholefoodsmarket-com",
+      "name": "Whole Foods Market",
+      "domain": "wholefoodsmarket.com",
+      "type": "grocer",
+      "goods": [
+        "groceries"
+      ],
+      "ownership": "unknown",
+      "parent": "Amazon",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": true,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "excluded",
+      "mentions": 1,
+      "mentioned_by": [
+        "fairtradecertified-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "worldofbooks-com",
+      "name": "World of Books",
+      "domain": "worldofbooks.com",
+      "type": "secondhand",
+      "goods": [
+        "books",
+        "media"
+      ],
+      "ownership": "private-equity",
+      "parent": "World of Books Group",
+      "hq": "Goring-by-Sea, UK",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": false,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "acceptable",
+      "mentions": 2,
+      "mentioned_by": [
+        "amazonalts-org",
+        "antifamarketer-org"
+      ],
+      "checked": "2026-09-25"
+    },
+    {
+      "slug": "zappos-com",
+      "name": "Zappos",
+      "domain": "zappos.com",
+      "type": "retailer",
+      "goods": [
+        "shoes",
+        "clothing"
+      ],
+      "ownership": "unknown",
+      "parent": "Amazon",
+      "hq": "unknown",
+      "marketplace": "unknown",
+      "sells_on_amazon": "unknown",
+      "amazon_owned": true,
+      "certifications": [],
+      "concerns": [],
+      "ethics": 0.5,
+      "environment": 0.5,
+      "tier": "excluded",
+      "mentions": 1,
+      "mentioned_by": [
+        "moneypantry-com"
+      ],
+      "checked": "2026-09-25"
+    }
+  ]
 }
