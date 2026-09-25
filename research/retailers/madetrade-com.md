@@ -31,6 +31,7 @@ Concern checks: an NLRB case search for "made trade" returned no results. CourtL
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
+- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
 
 ## Sources
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/

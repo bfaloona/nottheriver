@@ -33,6 +33,7 @@ Concern checks: an NLRB case search for "eileen fisher" returned no results, and
 - Ethics: 0.5 start + 0.25 (b_corp) + 0.25 (fair_trade) = 1.0, no concerns.
 - Environment: 0.5 start, no environmental certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.5, at least 1.25, and no accepted concern in the last 5 years, so `recommended`.
+- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Eileen_Fisher

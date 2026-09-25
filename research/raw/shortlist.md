@@ -50,7 +50,6 @@ Every other candidate from `candidates.md`, with a one-line reason it was not sh
 | https://ahouseinthehills.com/stores-like-homegoods-for-affordable-decor/ | ahouseinthehills.com | Home-decor-specific, single-angle find; category already covered by stronger picks within the cap. |
 | https://alternativeto.net/software/amazon | alternativeto.net | General software-alternatives directory, not shopping-specific; relevance to Amazon shopping alternatives unconfirmed. |
 | https://amazonalternatives.org/ | amazonalternatives.org | Thin/uncertain content, distinct from amazonalts.org (row 6); category already covered by stronger picks within the cap. |
-| https://amazonalts.org/ | amazonalts.org | Found via search snippets only, with angles disagreeing on kind/category/US scope; category already covered by stronger picks within the cap. |
 | https://apps.apple.com/us/app/good-on-you-ethical-ratings/id1044017998 | apps.apple.com | App Store listing; the tool's own domain (goodonyou.eco, row 45) is the better URL, and neither is needed within the cap. |
 | https://apps.apple.com/us/app/real-by-authentic-labs/id1502199187 | apps.apple.com | App Store listing only, no independent site found; category already covered within the cap. |
 | https://artfulhaven.com/best-places-for-buying-art-supplies-online/ | artfulhaven.com | Art-supplies-specific, single-angle find; category already covered by stronger picks within the cap. |
@@ -128,6 +127,7 @@ Every other candidate from `candidates.md`, with a one-line reason it was not sh
 | https://amiba.net/resources/ | amiba.net | Critic finding; category already covered by 9 more prominent tools within the cap (IndieBound, shortlisted #30, covers the local-first/independent-business angle). |
 | https://www.independentwestand.org/ | independentwestand.org | Critic finding; category already covered by 9 more prominent tools within the cap. |
 | https://trustedbuyerreport.com/blog/best-amazon-alternatives-2026-shop-beyond-giant | trustedbuyerreport.com | Site origin unconfirmed (critic finding), unclear US scope; category already covered by stronger picks within the cap. |
+| https://chrome.google.com/webstore/detail/sook/hhpjbegfdghkiklhipkkhlnohakkined | chrome.google.com | Lead change: possibly delisted 2025-09-16, and a store listing is not the tool's own site; replaced by amazonalts.org |
 
 
 ## Lead changes

@@ -34,7 +34,7 @@ Files: thredup-com, depop-com, girlfriend-com, christydawn-com, mightly-com (all
 | mightly-com | marketplace false | https://www.mightly.com/pages/about | kept | three own brands only |
 | mightly-com | tier | section 5 recompute | fixed: recommended -> acceptable | ethics 0.75 -> 0.5 after removing fair_trade; 0.5 + 0.5 = 1.0. Provisional line added |
 | all five | concern search completeness | raw/blocked-retailers-R8.md | fixed | WebSearch exhausted before R8; ftc, dol, epa, cpsc, justice, AP, NPR, ProPublica not searched. Provisional line added to each `## Rating` |
+| mightly-com | certification fair_trade | https://www.fairtradecertified.org/our-community/shop-fair-trade/ | restored by lead | docs/ranking.md defines `fair_trade` as "Sells Fair Trade Certified products", and the curated rows in data/certifications.json (eileenfisher, wearpact, patagonia, arcteryx, madewell) cite this same brand listing. Tier back to recommended (0.75 + 0.5). Stockists listed as retailers (Walmart, Costco) still do not count. |
 
 ## Not fetchable this pass
 - https://www.sec.gov/Archives/edgar/data/1484778/000148477826000007/tdup-20251231.htm, Item 3 (Legal Proceedings): WebFetch truncated before it; plain curl 403. Claim removed.
-| mightly-com | certification fair_trade | https://www.fairtradecertified.org/our-community/shop-fair-trade/ | restored by lead | docs/ranking.md defines `fair_trade` as "Sells Fair Trade Certified products", and the curated rows in data/certifications.json (eileenfisher, wearpact, patagonia, arcteryx, madewell) cite this same brand listing. Tier back to recommended (0.75 + 0.5). Stockists listed as retailers (Walmart, Costco) still do not count. |

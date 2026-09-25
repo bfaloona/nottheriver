@@ -28,8 +28,8 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 | 3 Assess (pilot, then rest) + calibrate | done: 26 sites, calibrated (raw/calibration.md) | see git log |
 | 4 Tally | done: 313 domains, top 50 in raw/retailer-selection.md; 4 Amazon-owned excluded files | see git log |
 | 5 Retailers (research + verify) | done: 50 researched and verified + 4 excluded | see git log |
-| 6 Report | running | |
-| 7 QA + finish | pending | |
+| 6 Report | done: amazon-alternatives.md, method.md, README.md | see git log |
+| 7 QA + finish | QA running | |
 
 ## Planned files per stage
 
@@ -37,7 +37,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 Stage 2, one agent per angle; each writes `research/raw/discovery-<angle>.md` and, if needed, `research/raw/out-of-scope-<angle>.md`, `research/raw/blocklist-candidates-<angle>.md`, `research/raw/blocked-discovery-<angle>.md`.
 Angles: `generic`, `product-types`, `motive-ethics`, `motive-local`, `formats`, `news`. Critic (after): `research/raw/discovery-critic.md`, `research/raw/candidates.md`, `research/raw/shortlist.md`.
-Discovery agents done (138 raw candidates, commit 808aa3a). Critic running.
+Discovery agents done (144 raw candidate rows, commit 808aa3a). Critic running.
 
 Stage 3 pilot (1 Opus assessor): shortlist #1 thegoodtrade.com, #15 rollingstone.com, #23 buycott.com, writing `research/sites/thegoodtrade-com.md`, `rollingstone-com.md`, `buycott-com.md` and `research/raw/blocked-assess-pilot.md` if needed.
 
@@ -65,3 +65,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Verifier R8 done (ThredUp $0 inspection moved to body). Lead override: restored Mightly's fair_trade (project definition = sells certified products; curated rows use the same Fair Trade USA brand listing); stockists like Walmart/Costco still not counted.
 - Verifier R10 done (no tier changes). Lead decision: an NLRB agency-issued complaint counts even while open (the open-case exception is OSHA-only); Costco stays caution either way.
 - Stage 5 done. Report writer running: writes research/amazon-alternatives.md, research/method.md, research/README.md.
+- Report written. Lead fixed writer-flagged nits (provisional lines on 3 R10 files, shortlist trimmed table, verify-R8 row placement, discovery count). QA agent running: writes research/raw/qa.md and fixes small issues.

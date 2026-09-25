@@ -31,6 +31,7 @@ Concern checks: an NLRB case search for "kotn" returned no results (the same sea
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable` (below the 1.25 needed for `recommended`).
+- Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Kotn
