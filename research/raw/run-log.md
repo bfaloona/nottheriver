@@ -22,9 +22,9 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 | Stage | State | Commit |
 |---|---|---|
-| 0 Check commit | in progress | |
-| 1 Index script + test | pending | |
-| 2 Discovery (6 + critic) | pending | |
+| 0 Check commit | done | pushed |
+| 1 Index script + test | done: lint, 695 tests pass | stage-1 commit |
+| 2 Discovery (6 + critic) | in progress | |
 | 3 Assess (pilot, then rest) + calibrate | pending | |
 | 4 Tally | pending | |
 | 5 Retailers (research + verify) | pending | |
@@ -34,3 +34,6 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 ## Planned files per stage
 
 (Filled in before each stage's agents start.)
+
+Stage 2, one agent per angle; each writes `research/raw/discovery-<angle>.md` and, if needed, `research/raw/out-of-scope-<angle>.md`, `research/raw/blocklist-candidates-<angle>.md`, `research/raw/blocked-discovery-<angle>.md`.
+Angles: `generic`, `product-types`, `motive-ethics`, `motive-local`, `formats`, `news`. Critic (after): `research/raw/discovery-critic.md`.
