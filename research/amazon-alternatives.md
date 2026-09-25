@@ -1,13 +1,13 @@
 # Amazon alternatives: who lists them, and how the shops rate
 
-Checked 2026-09-25. US sites only. Every tier below is provisional: read [How far to trust this](#how-far-to-trust-this) before using any of it.
+Checked 2026-09-25. US sites only. Read [How far to trust this](#how-far-to-trust-this) before relying on any tier.
 
 In short:
 
 - 26 list sites were assessed. The best ones are nonprofit or reader-funded pages that explain why they left Amazon: ILSR (78 of 100), The Good Trade (74), IndieBound (73) and Good Good Good (72).
 - 4 of the 26 recommend an Amazon-owned company (Zappos, AbeBooks, Whole Foods Market) or link to Amazon itself.
 - The lists named 313 retailer domains. Etsy (13 sites), Bookshop.org (10) and Thrive Market (10) come up most.
-- Of the 50 retailers rated, 10 are `recommended`, 28 `acceptable` and 12 `caution`. 4 more are Amazon-owned and `excluded`.
+- Of the 50 retailers rated, 10 are `recommended`, 26 `acceptable` and 14 `caution`. 4 more are Amazon-owned and `excluded`.
 
 Scores and tiers follow the brief ([brief.md](brief.md) sections 4 and 5). The sources are the front matter of [sites/](sites/) and [retailers/](retailers/), collected in [index.json](index.json).
 
@@ -84,7 +84,7 @@ Mentions count how many of the 26 site files name the retailer's domain ([raw/ta
 | [Uncommon Goods](retailers/uncommongoods-com.md) | 5 | recommended |
 | [AliExpress](retailers/aliexpress-com.md) | 4 | caution |
 | [Back Market](retailers/backmarket-com.md) | 4 | acceptable |
-| [Best Buy](retailers/bestbuy-com.md) | 4 | acceptable |
+| [Best Buy](retailers/bestbuy-com.md) | 4 | caution |
 | [BLK + GRN](retailers/blkgrn-com.md) | 4 | acceptable |
 | [Misfits Market](retailers/misfitsmarket-com.md) | 4 | acceptable |
 | [Package Free](retailers/packagefreeshop-com.md) | 4 | acceptable |
@@ -102,13 +102,13 @@ Ethics and environment each start at 0.5. A counted certification adds 0.25. An 
 | Tier | Retailers |
 |---|---|
 | `recommended` | 10 |
-| `acceptable` | 28 |
-| `caution` | 12 |
+| `acceptable` | 26 |
+| `caution` | 14 |
 | `excluded` (Amazon-owned) | 4 |
 
 Counts are from the `tier` field of each file in [retailers/](retailers/).
 
-A retailer with no counted certification and no accepted concern totals 1.0, which is `acceptable`. That covers 26 of the 28 `acceptable` retailers. For most of them, `acceptable` means the search found nothing either way, not that they were checked and found clean.
+A retailer with no counted certification and no accepted concern totals 1.0, which is `acceptable`. That covers 24 of the 26 `acceptable` retailers. For most of them, `acceptable` means the search found nothing either way, not that they were checked and found clean.
 
 ### Recommended (10)
 
@@ -129,7 +129,7 @@ A retailer with no counted certification and no accepted concern totals 1.0, whi
 
 Each certification was checked again by a verifier. The verifier tables are in [raw/verify-R1.md](raw/verify-R1.md) to [raw/verify-R10.md](raw/verify-R10.md).
 
-### Caution (12)
+### Caution (14)
 
 Each concern below comes from an accepted source (a regulator, a court or an outlet listed in `data/negative-sources.md`). The wording follows the source.
 
@@ -147,12 +147,14 @@ Each concern below comes from an accepted source (a regulator, a court or an out
 | [Thrive Market](retailers/thrivemarket-com.md) | 0.25 | 0.5 | One OSHA serious citation, $3,306 after settlement (2024) |
 | [ThredUp](retailers/thredup-com.md) | 0.25 | 0.5 | One OSHA "Other" citation, $1,773 after settlement (2025) |
 | [Newegg](retailers/newegg-com.md) | 0.25 | 0.5 | NLRB complaint (2017) and settlement (2019) |
+| [Best Buy](retailers/bestbuy-com.md) | 0.25 | 0.5 | Agreed to pay a $3.8 million CPSC civil penalty for selling recalled products (2016). Found in the news pass. |
+| [Overstock](retailers/overstock-com.md) | 0.25 | 0.5 | California Court of Appeal upheld $6,828,000 in civil penalties for unfair business practices (People v. Overstock.com, 2017). Found in the news pass. |
 
 One accepted concern and no counted certification is enough for `caution`. Several of these rest on a single small citation. The retailer files give the details and the cases that were noted but not counted.
 
-### Acceptable (28)
+### Acceptable (26)
 
-26 have nothing counted either way. Two have both certifications and concerns:
+24 have nothing counted either way. Two have both certifications and concerns:
 
 - [Avocado Green Mattress](retailers/avocadogreenmattress-com.md): The Climate Label and 1% for the Planet (from `data/certifications.json`) raise environment to 1.0. Two OSHA inspections with penalties (2022, 2023) take ethics to 0.
 - [Bob's Red Mill](retailers/bobsredmill-com.md): fair trade products, minus one OSHA inspection with a penalty (2023).
@@ -161,13 +163,14 @@ The full list is in [index.json](index.json).
 
 ## How far to trust this
 
-Treat every tier as provisional.
+The concern search is now complete for the 38 retailers that could still change tier; the limits below remain.
 
 - **The web search budget ran out.** The run's 200 web searches were used up while the retailer batches were running. Batch R1 hit the limit right after its Etsy searches ([raw/blocked-retailers-R1.md](raw/blocked-retailers-R1.md)). After that, concern checks used whatever regulator and court pages could be fetched directly, mostly OSHA, NLRB and CourtListener. So the concern searches were incomplete for almost every retailer. The `blocked-retailers-R<n>.md` files in [raw/](raw/) list what was missed for each batch.
-- **A second concern pass found nothing new.** Later on 2026-09-25, still without web search, four agents rechecked the 38 recommended and acceptable retailers against FTC case titles, CourtListener dockets since 2016 where a government body is a party, and ProPublica. They added no concerns and changed no tiers ([raw/concern-pass-2-brief.md](raw/concern-pass-2-brief.md), `raw/concerns2-C1.md` to `C4.md`). The 12 caution retailers were skipped because a new concern can't change their tier. There was still no general news search, so tiers stay provisional.
-- **Pass 1's OSHA and NLRB searches used pages that robots.txt disallows** (`osha.gov/ords/`, `nlrb.gov/search/`). This breaks the run's own access rule. Every OSHA concern in the retailer files comes from those pages. They are real agency records. Dropping them would change 8 tiers, 2 of them to recommended. The operator decided on 2026-09-25 to keep them. A try at re-sourcing them through DOL's open-data API was inconclusive: the key works, but DOL's inspection number didn't match the osha.gov ID, and the API rate-limited the lookups (`research/fetch-osha-dol.mjs`, [raw/run-log.md](raw/run-log.md)). A retry by establishment name is planned ([method.md](method.md#operator-checks), OC31).
+- **A second concern pass found nothing new.** Later on 2026-09-25, still without web search, four agents rechecked the 38 recommended and acceptable retailers against FTC case titles, CourtListener dockets since 2016 where a government body is a party, and ProPublica. They added no concerns and changed no tiers ([raw/concern-pass-2-brief.md](raw/concern-pass-2-brief.md), `raw/concerns2-C1.md` to `C4.md`). The 12 caution retailers were skipped because a new concern can't change their tier. It had no general news search; pass 3 below added one.
+- **A third pass searched the news.** In a later session with a larger search budget, four agents ran 2 or 3 web searches per retailer (lawsuits and fines; named US agencies; the parent company or, for a non-US retailer, its home regulator) on the same 38 retailers ([raw/news-search-brief.md](raw/news-search-brief.md), `raw/news-N1.md` to `N4.md`). They added two accepted concerns, both old court or agency penalties: [Best Buy](retailers/bestbuy-com.md) and [Overstock](retailers/overstock-com.md) move from `acceptable` to `caution`. No `recommended` retailer changed. Items from sources not on the accepted list (for example an FDA warning letter to Public Goods, a California Air Resources Board settlement with Overstock, and private Proposition 65 settlements) are noted in the retailer files and not counted.
+- **Pass 1's OSHA and NLRB searches used pages that robots.txt disallows** (`osha.gov/ords/`, `nlrb.gov/search/`). This breaks the run's own access rule. Every OSHA concern in the retailer files comes from those pages. They are real agency records. Dropping them would change 8 tiers, 2 of them to recommended. The operator decided on 2026-09-25 to keep them. A try at re-sourcing them through DOL's open-data API was inconclusive: the key works, but DOL's inspection number didn't match the osha.gov ID, and the API rate-limited the lookups (`research/fetch-osha-dol.mjs`, [raw/run-log.md](raw/run-log.md)). A retry by establishment name and close date then found 12 of the 18 in DOL's data (Thrive's 1 is ambiguous; B&H's 2 and Azure's 3 not yet found) ([raw/osha-dol-match.md](raw/osha-dol-match.md); [method.md](method.md#operator-checks), OC31).
 - **Several accepted sources couldn't be read.** Good Jobs First's Violation Tracker returned 403 in every batch. justice.gov served a bot challenge, the ftc.gov search returned 404 in the first pass (it worked in the second), the AP site couldn't be fetched and CourtListener's docket pages returned 403 (its search API was used instead).
-- **Foreign sources were not searched.** The verifier notes this for [Kotn](retailers/kotn-com.md) (Toronto) and [World of Books](retailers/worldofbooks-com.md) (UK) ([raw/verify-R10.md](raw/verify-R10.md)). [Kobo](retailers/kobo-com.md), [Shop](retailers/shop-app.md) , [Depop](retailers/depop-com.md) and the recommended [Tentree](retailers/tentree-com.md) (Vancouver) are also based outside the US, and their concern checks also used US sources.
+- **Foreign regulators count only as notes.** [Kotn](retailers/kotn-com.md) (Toronto), [World of Books](retailers/worldofbooks-com.md) (UK), [Kobo](retailers/kobo-com.md), [Shop](retailers/shop-app.md), [Depop](retailers/depop-com.md) and the recommended [Tentree](retailers/tentree-com.md) (Vancouver) are based outside the US ([raw/verify-R10.md](raw/verify-R10.md) first noted this). Passes 1 and 2 used US sources for them. Pass 3 added one search on each one's home regulator, but those regulators' pages are not on the accepted list, so anything found there is a note, not a concern.
 - **B Corp could only count through `data/certifications.json`.** bcorporation.net blocked agents (HTTP 403) throughout ([raw/blocked-assess-F.md](raw/blocked-assess-F.md)). Four retailers get B Corp credit from rows in that file: Eileen Fisher, Grove Collaborative, Patagonia and Uncommon Goods (`verified_this_run: false`). Other B Corp claims were noted and not counted, including those of Back Market, Better World Books, EarthHero, Kotn, Libro.fm, Love Grown, Thrive Market and World of Books. If any of them were confirmed, its tier could rise.
 - **1% for the Planet could not be read.** Its directory builds its pages with scripts and blocks agents in robots.txt. Only the `data/certifications.json` rows for Patagonia and Avocado count.
 - **The Climate Label was not checked for batch R10** (Costco, Eileen Fisher, Kotn, World of Books, Made Trade) ([raw/verify-R10.md](raw/verify-R10.md)).

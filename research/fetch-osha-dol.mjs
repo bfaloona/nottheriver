@@ -32,8 +32,8 @@ if (mode === 'metadata') {
   console.log(JSON.stringify(one).slice(0, 1500));
 } else if (mode === 'name') {
   const filter = JSON.stringify({ field: 'estab_name', operator: 'like', value: process.argv[3] });
-  const rows = await get('inspection/json', { filter_object: filter, sort_by: 'open_date', sort: 'desc', limit: 10, fields: 'activity_nr,estab_name,site_city,site_state,open_date,close_case_date,load_dt' });
-  console.log(JSON.stringify(rows).slice(0, 2500));
+  const rows = await get('inspection/json', { filter_object: filter, sort_by: 'open_date', sort: 'desc', limit: Number(process.argv[4] ?? 10), fields: 'activity_nr,estab_name,site_city,site_state,open_date,close_case_date,load_dt' });
+  console.log(JSON.stringify(rows));
 } else if (mode === 'lookup') {
   const out = join(ROOT, 'raw', 'osha-dol');
   mkdirSync(out, { recursive: true });

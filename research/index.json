@@ -981,10 +981,18 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [],
-      "ethics": 0.5,
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "Best Buy Agrees to Pay $3.8 Million Civil Penalty, Implement Internal Compliance Program for Distributing and Selling Recalled Products",
+          "source": "https://www.cpsc.gov/Best-Buy-Agrees-to-Pay-38-million-civil-penalty",
+          "date": "2016-10-03",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.25,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "caution",
       "mentions": 4,
       "mentioned_by": [
         "amazonalts-org",
@@ -1955,10 +1963,25 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [],
-      "ethics": 0.5,
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "People v. Overstock.com, Inc.",
+          "source": "https://www.courtlistener.com/opinion/6238839/people-v-overstockcom-inc/",
+          "date": "2017-06-02",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Beyond, Inc., dba Bed, Bath & Beyond and Overstock.com Settlement",
+          "source": "https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement",
+          "date": "unknown",
+          "accepted_source": false
+        }
+      ],
+      "ethics": 0.25,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "caution",
       "mentions": 3,
       "mentioned_by": [
         "dollarsprout-com",
@@ -2137,7 +2160,15 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [],
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "Don't Run Out dba Public Goods - 626847 - 03/11/2022",
+          "source": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022",
+          "date": "2022-03-11",
+          "accepted_source": false
+        }
+      ],
       "ethics": 0.5,
       "environment": 0.5,
       "tier": "acceptable",
@@ -2308,7 +2339,7 @@
         "wellness"
       ],
       "ownership": "unknown",
-      "parent": "unknown",
+      "parent": "Violet Grey",
       "hq": "Van Nuys, CA",
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
