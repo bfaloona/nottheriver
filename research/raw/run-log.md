@@ -68,3 +68,12 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Report written. Lead fixed writer-flagged nits (provisional lines on 3 R10 files, shortlist trimmed table, verify-R8 row placement, discovery count). QA agent running: writes research/raw/qa.md and fixes small issues.
 - QA done (55 issues: 33 fixed, 22 flagged; raw/qa.md). Lead removed Costco's classaction.org concern row. OSHA closed-status checker running (writes raw/osha-status.md).
 - OSHA status check: all 18 OSHA concerns carry a penalty and are closed; no changes. Run complete. Branch not merged to main (brief: never push research to main; main checkout is shared). Next: operator checks in method.md, concern re-search after the usage reset.
+
+## Concern pass 2 (2026-09-25, 05:30, operator: "run now undeterred", ~18% weekly usage left)
+
+- WebSearch still spent (200 of 200 this session; cap is `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`). Pass uses fetches only.
+- Reachable and allowed by robots: FTC case search (WebFetch only), CourtListener API, ProPublica search. Blocked (403): Violation Tracker, justice.gov, sec.gov, apnews; npr 402.
+- **Finding for operator:** robots.txt disallows `osha.gov/ords/` and `/ords/imis/`, `nlrb.gov/search/`, EPA ECHO search, and CPSC recall search. Pass 1's OSHA and NLRB checks (all 18 OSHA concerns) used those paths, against brief section 9 Access. Not undone; operator decides.
+- Script `research/fetch-concerns.mjs` saves CourtListener agency-party dockets and ProPublica slugs to `raw/concern-fetch/<slug>.json`.
+- Brief: `raw/concern-pass-2-brief.md`. Batches (Opus): C1 = 10 recommended; C2 to C4 = 28 acceptable. Caution retailers skipped: this pass can only add concerns, so their tier can't change.
+- Planned files: `raw/concerns2-C<n>.md`, `raw/blocked-concerns2-C<n>.md`, edits to each batch's `retailers/<slug>.md`.

@@ -1,0 +1,202 @@
+{
+  "domain": "target.com",
+  "names": [
+    "Target"
+  ],
+  "fetched": "2026-09-25T14:24:47.083Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Target%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 19440,
+    "results": [
+      {
+        "caseName": "United States v. Black Dialn Seized as FP&F No. 2026565500069602-0001 (Target Device 4)",
+        "court": "casd",
+        "dateFiled": "2026-09-24",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74845040/united-states-v-black-dialn-seized-as-fpf-no-2026565500069602-0001/"
+      },
+      {
+        "caseName": "United States v. Black Dialn Seized as FP&F No. 2026565500069602-0001 (Target Device 4)",
+        "court": "casd",
+        "dateFiled": "2026-09-24",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74844965/united-states-v-black-dialn-seized-as-fpf-no-2026565500069602-0001/"
+      },
+      {
+        "caseName": "United States v. Black GPS Tracking Device Seizure No. 2026250400151101-0006 (\"Target Device\")",
+        "court": "casd",
+        "dateFiled": "2026-09-23",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74840118/united-states-v-black-gps-tracking-device-seizure-no/"
+      },
+      {
+        "caseName": "United States v. Black GPS Tracking Device Seizure No. 2026250400151101-0006 (\"Target Device\")",
+        "court": "casd",
+        "dateFiled": "2026-09-23",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74840024/united-states-v-black-gps-tracking-device-seizure-no/"
+      },
+      {
+        "caseName": "United States v. Application by the United States for a Search Warrant for Target Telephone for Investigation of 18 U.S.C. § 922(g)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-16",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74806499/united-states-v-application-by-the-united-states-for-a-search-warrant-for/"
+      },
+      {
+        "caseName": "United States v. Application by the United States for a Search Warrant for Target Telephone for Investigation of 18 U.S.C. § 922(g)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-16",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74806490/united-states-v-application-by-the-united-states-for-a-search-warrant-for/"
+      },
+      {
+        "caseName": "Application by the United States for an Order for a PRTT for One Target Device for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74796775/application-by-the-united-states-for-an-order-for-a-prtt-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for an Order for a PRTT for One Target Device for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74796772/application-by-the-united-states-for-an-order-for-a-prtt-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for an Order for a PRTT for One Target Device for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74796757/application-by-the-united-states-for-an-order-for-a-prtt-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for an Order for a PRTT for One Target Device for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74796756/application-by-the-united-states-for-an-order-for-a-prtt-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for a Tracking Warrant for One Target Vehicle for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-14",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74793920/application-by-the-united-states-for-a-tracking-warrant-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for a Tracking Warrant for One Target Vehicle for Investigation of 21 U.S.C. § 841(a)(1) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-14",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74793826/application-by-the-united-states-for-a-tracking-warrant-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for Tracking of One Target Vehicle for Investigation of 21 U.S.C. § 841(a) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74776504/application-by-the-united-states-for-tracking-of-one-target-vehicle-for/"
+      },
+      {
+        "caseName": "Application by the United States for Tracking of One Target Vehicle for Investigation of 21 U.S.C. § 841(a) and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74776486/application-by-the-united-states-for-tracking-of-one-target-vehicle-for/"
+      },
+      {
+        "caseName": "Application by the United States for a Search Warrant for One Target Telephone for Investigation of 21 U.S.C. § 841 and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74772568/application-by-the-united-states-for-a-search-warrant-for-one-target/"
+      },
+      {
+        "caseName": "Application by the United States for a Search Warrant for One Target Telephone for Investigation of 21 U.S.C. § 841 and Other Offenses",
+        "court": "cand",
+        "dateFiled": "2026-09-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74772547/application-by-the-united-states-for-a-search-warrant-for-one-target/"
+      },
+      {
+        "caseName": "United States v. Target Device",
+        "court": "scd",
+        "dateFiled": "2026-09-08",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74780251/united-states-v-target-device/"
+      },
+      {
+        "caseName": "Application by the United States for a Search Warrant for One Premises, One Target Subject, and One Vehicle for the Investigation of 18 U.S.C. § 1344 and Other Offnses",
+        "court": "cand",
+        "dateFiled": "2026-09-08",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74765051/application-by-the-united-states-for-a-search-warrant-for-one-premises-one/"
+      },
+      {
+        "caseName": "Application by the United States for a Search Warrant for One Premises, One Target Subject, and One Vehicle for the Investigation of 18 U.S.C. § 1344 and Other Offnses",
+        "court": "cand",
+        "dateFiled": "2026-09-08",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74765050/application-by-the-united-states-for-a-search-warrant-for-one-premises-one/"
+      },
+      {
+        "caseName": "United States v. Target Phones",
+        "court": "scd",
+        "dateFiled": "2026-09-02",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74793496/united-states-v-target-phones/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Target%22",
+    "articles": [
+      "https://www.propublica.org/article/minnesota-jury-predatory-home-financing-chadwick-banken-contract-for-deed",
+      "https://www.propublica.org/article/trump-immigration-deportation-family-court-sotero-mendoza-rivera",
+      "https://www.propublica.org/article/trump-ambani-reliance-industries-america-first-refining-texas",
+      "https://www.propublica.org/article/trump-counterterrorism-plan-ignores-far-rights-gorka",
+      "https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban",
+      "https://www.propublica.org/article/federal-employees-work-from-home-trump-myth",
+      "https://www.propublica.org/article/trump-doj-civil-rights-lawsuits-halted-louisiana-south-carolina",
+      "https://www.propublica.org/article/trump-dei-black-women-minorities-careers-jobs-dismissed",
+      "https://www.propublica.org/article/education-department-civil-rights-donald-trump-discrimination",
+      "https://www.propublica.org/article/rumeysa-ozturk-best-friend-inside-story-tufts-trump-louisiana-ice",
+      "https://www.propublica.org/article/2024-election-certification-ads-georgia-wisconsin-pennsylvania",
+      "https://www.propublica.org/article/trump-administration-migrants-guantanamo-bay",
+      "https://www.propublica.org/article/arizona-medicaid-fraud-crackdown-native-american-patients",
+      "https://www.propublica.org/article/texas-ken-paxton-consumer-protection-law-investigations",
+      "https://www.propublica.org/article/louisiana-teens-prosecution-reverse-raise-the-age",
+      "https://www.propublica.org/article/ken-paxton-consumer-protection-laws-political-targets",
+      "https://www.propublica.org/article/minnesota-attorney-general-sues-contract-for-deed-seller-chadwick-banken",
+      "https://www.propublica.org/article/chinese-organized-crime-gift-cards-american-retail",
+      "https://www.propublica.org/article/georgia-voter-registration-cancellation-portal-mtg-raffensperger",
+      "https://www.propublica.org/article/trump-dhs-immigration-scams-fraud-homeland-security",
+      "https://www.propublica.org/article/trump-defense-department-iran-hegseth-civilian-casualties",
+      "https://www.propublica.org/article/how-tear-gas-harms-kids-trump-ice-cbp-minneapolis-portland",
+      "https://www.propublica.org/article/trump-doj-colony-ridge-texas-settlement-victims",
+      "https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon",
+      "https://www.propublica.org/article/immigration-287g-maricopa-county-arizona",
+      "https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump",
+      "https://www.propublica.org/article/trump-doj-domestic-terrorism-extremism-states-michigan",
+      "https://www.propublica.org/article/trump-law-firms-accountability-environment-police-lgbtq",
+      "https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations",
+      "https://www.propublica.org/article/trump-pardons-erased-prosecutions-second-term",
+      "https://www.propublica.org/article/caught-in-crackdown-trump-immigration-ice-cbp-excessive-force",
+      "https://www.propublica.org/article/trump-dot-oil-gas-pipeline-ethics-questions-senator-cantwell",
+      "https://www.propublica.org/article/trump-immigration-scams-complaints-doubled-ice",
+      "https://www.propublica.org/article/earthjustice-abigail-dillen-q-a",
+      "https://www.propublica.org/article/sebastian-gorka-trump-counterterrorism-czar-iran-terrorism",
+      "https://www.propublica.org/article/immigration-ice-americans-detained-joint-congressional-investigation",
+      "https://www.propublica.org/article/federal-government-ai-cautionary-tales",
+      "https://www.propublica.org/article/hegseth-civilian-harm-mitigation-response-trump-defense-department",
+      "https://www.propublica.org/article/regional-public-universities-trump-funding-dei",
+      "https://www.propublica.org/article/ice-border-patrol-less-lethal-weapons",
+      "https://www.propublica.org/article/aclu-trump-police-reform-doj-minneapolis-louisville-phoenix-memphis",
+      "https://www.propublica.org/article/chile-suspects-venezuela-cabello-killing",
+      "https://www.propublica.org/article/israel-iran-war-mossad-iranian-recruits",
+      "https://www.propublica.org/article/trump-nih-grant-terminations-illegal"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "domain": "grove.co",
+  "names": [
+    "Grove Collaborative",
+    "Grove Collaborative"
+  ],
+  "fetched": "2026-09-25T14:18:58.126Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Grove%20Collaborative%22%20OR%20%22Grove%20Collaborative%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Grove%20Collaborative%22",
+    "articles": [
+      "https://www.propublica.org/article/telegram-terrorgram-collective-bratislava-murders-neo-nazi-online-hate",
+      "https://www.propublica.org/article/utah-solar-energy-operation-gigawatt-spencer-cox",
+      "https://www.propublica.org/article/grazing-environment-public-lands-oversight",
+      "https://www.propublica.org/article/rise-and-fall-terrorgram-inside-global-online-hate-network-frontline-telegram",
+      "https://www.propublica.org/article/propublica-editor-training-cohort-2023",
+      "https://www.propublica.org/article/biodiversity-offsets-guinea-world-bank-group-chimpanzees-outbreak",
+      "https://www.propublica.org/article/monkeypox-transmission-treatment-cdc-scientist",
+      "https://www.propublica.org/article/babies-are-dying-of-syphilis-its-100-preventable",
+      "https://www.propublica.org/article/pulitzer-winner-anchorage-daily-news-alaska-public-safety-navy-pacific-disaster",
+      "https://www.propublica.org/article/9-11-investigation-saudi-connections-operation-encore-fbi",
+      "https://www.propublica.org/article/advoserv-profit-and-abuse-at-homes-for-the-profoundly-disabled",
+      "https://www.propublica.org/article/firestone-and-the-warlord-chapter-1",
+      "https://www.propublica.org/article/firestone-and-the-warlord-print"
+    ]
+  }
+}

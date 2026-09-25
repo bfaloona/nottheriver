@@ -1,0 +1,40 @@
+{
+  "domain": "powells.com",
+  "names": [
+    "Powell's Books"
+  ],
+  "fetched": "2026-09-25T14:23:55.295Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Powell's%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Powell's%20Books%22",
+    "articles": [
+      "https://www.propublica.org/article/propublica-and-the-connecticut-mirror-win-pulitzer-prize-for-local-reporting",
+      "https://www.propublica.org/article/trump-cabinet-mortgage-fraud",
+      "https://www.propublica.org/article/russ-vought-trump-shadow-president-omb",
+      "https://www.propublica.org/article/silicon-valley-bank-failure-fdic-fed-failure",
+      "https://www.propublica.org/article/big-lie-trump-stolen-election-inside-creation",
+      "https://www.propublica.org/article/how-states-limit-teen-access-to-abortion",
+      "https://www.propublica.org/article/columbia-obgyn-sexually-assaulted-patients-for-20-years",
+      "https://www.propublica.org/article/lev-menand-fed-unbound-interview",
+      "https://www.propublica.org/article/sexual-misconduct-allegations-prompt-another-alaska-attorney-general-to-resign",
+      "https://www.propublica.org/article/the-fed-saved-the-economy-but-is-threatening-trillions-of-dollars-worth-of-middle-class-retirement",
+      "https://www.propublica.org/article/what-to-do-if-you-change-your-mind-about-voting-by-mail",
+      "https://www.propublica.org/article/the-trump-administration-says-a-new-bailout-program-will-help-35-million-americans-it-probably-wont",
+      "https://www.propublica.org/article/politicians-and-business-interests-pushed-health-officials-aside-to-control-reopening-then-cases-exploded",
+      "https://www.propublica.org/article/alabama-sheriffs-accusations-impeding-successors",
+      "https://www.propublica.org/article/i-will-never-let-boeing-forget-her-737-max",
+      "https://www.propublica.org/article/alabama-sheriffs-undermine-successors-after-losing-reelection",
+      "https://www.propublica.org/article/can-wall-street-solve-the-water-crisis-in-the-west",
+      "https://www.propublica.org/article/may-it-displease-the-court-race-and-justice-sotomayor",
+      "https://www.propublica.org/article/private-emails-reveal-ex-clinton-aides-secret-spy-network",
+      "https://www.propublica.org/article/how-the-labor-department-let-companies-off-hook-for-unpaid-internships",
+      "https://www.propublica.org/article/the-bank-friendly-eighth-governor-of-the-fed",
+      "https://www.propublica.org/article/a-muckreads-guide-to-north-korea",
+      "https://www.propublica.org/article/talking-with-jane-mayer-715"
+    ]
+  }
+}

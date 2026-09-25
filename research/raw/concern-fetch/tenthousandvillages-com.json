@@ -1,0 +1,63 @@
+{
+  "domain": "tenthousandvillages.com",
+  "names": [
+    "Ten Thousand Villages"
+  ],
+  "fetched": "2026-09-25T14:25:25.119Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Ten%20Thousand%20Villages%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Ten%20Thousand%20Villages%22",
+    "articles": [
+      "https://www.propublica.org/article/minto-money-dr-phil-son-payday-lending-alaska",
+      "https://www.propublica.org/article/pacific-palisades-california-wildfires-rebuilding-community",
+      "https://www.propublica.org/article/rural-alaska-crumbling-schools-state-funding",
+      "https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan",
+      "https://www.propublica.org/article/old-apostolic-lutheran-church-generational-sexual-abuse",
+      "https://www.propublica.org/article/telegram-terrorgram-collective-bratislava-murders-neo-nazi-online-hate",
+      "https://www.propublica.org/article/why-museum-of-us-history-colorado-didnt-scramble-meet-new-repatriation-rules",
+      "https://www.propublica.org/article/massachusetts-public-housing-units-vacant-despite-waitlists",
+      "https://www.propublica.org/article/arizona-sober-homes-deaths-medicaid-fraud",
+      "https://www.propublica.org/article/how-dominican-republic-baseball-factory-traps-players-mlb-santo-caraballo",
+      "https://www.propublica.org/article/marijuana-oklahoma-china-immigration-safety-workers",
+      "https://www.propublica.org/article/delayed-repatriation-allows-destructive-research-native-american-remains",
+      "https://www.propublica.org/article/kushner-westminster-baltimore-apartments-settlement",
+      "https://www.propublica.org/article/pandemic-spillover-outbreak-guinea-forest-clearing",
+      "https://www.propublica.org/article/dickson-mounds-museum-history",
+      "https://www.propublica.org/article/kushner-apartments-lawsuit-baltimore-maryland-settlement",
+      "https://www.propublica.org/article/the-met-museum-native-american-collections",
+      "https://www.propublica.org/article/afghanistan-night-raids-zero-units-lynzy-billing",
+      "https://www.propublica.org/article/honorary-consuls-shadow-diplomatic-immunity-investigation",
+      "https://www.propublica.org/article/colorado-hoa-management-companies-investigation",
+      "https://www.propublica.org/article/china-cartels-xizhi-li-money-laundering",
+      "https://www.propublica.org/article/missouri-afghan-refugees-rezwan-kohistani-oronogo",
+      "https://www.propublica.org/article/dcfs-illinois-investigations-child-welfare",
+      "https://www.propublica.org/article/across-the-parish-line",
+      "https://www.propublica.org/article/heeding-steve-bannons-call-election-deniers-organize-to-seize-control-of-the-gop-and-reshape-americas-elections",
+      "https://www.propublica.org/article/hacking-water-systems",
+      "https://www.propublica.org/article/alaska-requires-dna-be-collected-from-people-arrested-for-violent-crimes-many-police-have-ignored-that",
+      "https://www.propublica.org/article/out-of-jail-and-back-in-school-grace-finds-her-voice",
+      "https://www.propublica.org/article/the-big-thaw-how-russia-could-dominate-a-warming-world",
+      "https://www.propublica.org/article/sears-headquarters-was-supposed-to-turn-a-sleepy-suburb-into-a-boomtown-it-never-happened",
+      "https://www.propublica.org/article/a-teenager-didnt-do-her-online-schoolwork-so-a-judge-sent-her-to-juvenile-detention",
+      "https://www.propublica.org/article/the-postal-service-is-steadily-getting-worse-can-it-handle-a-national-mail-in-election",
+      "https://www.propublica.org/article/whether-the-ballot-you-mail-is-counted-may-depend-on-where-you-vote",
+      "https://www.propublica.org/article/its-his-land-now-a-canadian-company-gets-to-take-it",
+      "https://www.propublica.org/article/coronavirus-and-pregnancy-expecting-mothers-q-and-a",
+      "https://www.propublica.org/article/cairo-thebes-hud-long-neglected-these-residents-now-as-they-move-out-some-feel-let-down-again",
+      "https://www.propublica.org/article/low-wage-industries-immigrants-and-refugees",
+      "https://www.propublica.org/article/case-farms-chicken-industry-immigrant-workers-and-american-labor-law",
+      "https://www.propublica.org/article/federal-agents-arrest-former-guatemalan-soldier-massacring-civilians",
+      "https://www.propublica.org/article/alternative-education-using-charter-schools-hide-dropouts-and-game-system",
+      "https://www.propublica.org/article/boomtown-flood-town-text",
+      "https://www.propublica.org/article/new-york-isnt-telling-tenants-they-may-be-protected-from-big-rent-hikes",
+      "https://www.propublica.org/article/a-fathers-war-a-sons-toxic-inheritance",
+      "https://www.propublica.org/article/bad-grandpa-the-ugly-forefather-of-new-yorks-affordable-housing-debacles",
+      "https://www.propublica.org/article/the-man-peddling-execution-drugs-and-more-in-muckreads-weekly",
+      "https://www.propublica.org/article/landlords-fail-to-list-fifty-thousand-nyc-apartments-for-rent-limits"
+    ]
+  }
+}

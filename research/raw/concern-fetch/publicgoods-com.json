@@ -1,0 +1,57 @@
+{
+  "domain": "publicgoods.com",
+  "names": [
+    "Public Goods"
+  ],
+  "fetched": "2026-09-25T14:24:01.874Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Public%20Goods%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Public%20Goods%22",
+    "articles": [
+      "https://www.propublica.org/article/fort-worth-mercy-culture-church-campaign-university",
+      "https://www.propublica.org/article/indigenous-community-cultural-coverage-journalism",
+      "https://www.propublica.org/article/jefferson-griffin-north-carolina-supreme-court-challenge-election-integrity-network",
+      "https://www.propublica.org/article/minnesota-trump-ice-shooting-lawsuit-alex-pretti-renee-good",
+      "https://www.propublica.org/article/chicago-public-schools-enrollment-costs",
+      "https://www.propublica.org/article/tom-dundon-moda-center-portland-oregon",
+      "https://www.propublica.org/article/donald-trump-jr-vulcan-deal-white-house",
+      "https://www.propublica.org/article/louisiana-jeff-landry-prison-budget-increase",
+      "https://www.propublica.org/article/how-to-research-private-schools",
+      "https://www.propublica.org/article/aquabounty-pioneer-ohio-gmo-salmon-fish",
+      "https://www.propublica.org/article/washington-badger-mountain-solar-project-canceled-avangrid",
+      "https://www.propublica.org/article/texas-overhauls-anti-abortion-crisis-pregnancy-centers-funding",
+      "https://www.propublica.org/article/why-local-state-police-rarely-investigate-ice-cbp-fbi",
+      "https://www.propublica.org/article/wisconsin-postpartum-medicaid-new-mothers-robin-vos",
+      "https://www.propublica.org/article/sean-duffy-stock-sales-trump-tariffs",
+      "https://www.propublica.org/article/401k-retirement-plan-fees-funds",
+      "https://www.propublica.org/article/transdev-senate-oversight-bus-crashes-public-transit",
+      "https://www.propublica.org/article/range-usa-guns-straw-sales-atf",
+      "https://www.propublica.org/article/trump-artificial-intelligence-google-gemini-transportation-regulations",
+      "https://www.propublica.org/article/idaho-voter-data-trump-justice-department",
+      "https://www.propublica.org/article/ice-dilley-children-letters",
+      "https://www.propublica.org/article/california-teacher-misconduct-public-records",
+      "https://www.propublica.org/article/idaho-vaccine-bill-medical-freedom-act-maha",
+      "https://www.propublica.org/article/california-fired-teacher-sexual-harassment",
+      "https://www.propublica.org/article/louisiana-parole-drop-jeff-landry",
+      "https://www.propublica.org/article/pete-hoekstra-michigan-canada-tariffs",
+      "https://www.propublica.org/article/sebold-rape-syracuse-investigation-findings-documentary",
+      "https://www.propublica.org/article/oregon-affordable-housing-cost-secrecy",
+      "https://www.propublica.org/article/alex-pretti-shooting-cbp-agents-identified-jesus-ochoa-raymundo-gutierrez",
+      "https://www.propublica.org/article/colony-ridge-settlement-court-hearing-doj",
+      "https://www.propublica.org/article/justice-department-presumption-of-regularity",
+      "https://www.propublica.org/article/school-vouchers-disabilities",
+      "https://www.propublica.org/article/doge-elon-musk-chris-young-cfpb-tesla-x",
+      "https://www.propublica.org/article/propublica-investigations-february-impact",
+      "https://www.propublica.org/article/thomas-albus-fulton-county-georgia-election-records",
+      "https://www.propublica.org/article/mark-mcafee-raw-milk-recalls-maha",
+      "https://www.propublica.org/article/andrew-tate-investigation-dhs-paul-ingrassia",
+      "https://www.propublica.org/article/trump-epa-methane-jeffery-hildebrand-hilcorp-oil-regulations",
+      "https://www.propublica.org/article/prediction-markets-propublica-code-of-ethics",
+      "https://www.propublica.org/article/covid-pregnancy-risk-autism-study-cdc"
+    ]
+  }
+}

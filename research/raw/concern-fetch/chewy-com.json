@@ -1,0 +1,33 @@
+{
+  "domain": "chewy.com",
+  "names": [
+    "Chewy"
+  ],
+  "fetched": "2026-09-25T14:14:28.612Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Chewy%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 2,
+    "results": [
+      {
+        "caseName": "Chewy, Inc. v. United States Customs and Border Protection",
+        "court": "cit",
+        "dateFiled": "2026-03-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/72389051/chewy-inc-v-united-states-customs-and-border-protection/"
+      },
+      {
+        "caseName": "Chewy, Inc. v. U.S. Department of Labor",
+        "court": "ca11",
+        "dateFiled": "2022-05-13",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67405710/chewy-inc-v-us-department-of-labor/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Chewy%22",
+    "articles": [
+      "https://www.propublica.org/article/inflation-tires-rubber-imports-high-prices"
+    ]
+  }
+}

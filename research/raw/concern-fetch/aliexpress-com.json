@@ -1,0 +1,38 @@
+{
+  "domain": "aliexpress.com",
+  "names": [
+    "AliExpress"
+  ],
+  "fetched": "2026-09-25T14:10:09.778Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22AliExpress%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 3,
+    "results": [
+      {
+        "caseName": "Rogers v. Aliexpress International (United States) Corporation",
+        "court": "txsd",
+        "dateFiled": "2026-08-27",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/74711745/rogers-v-aliexpress-international-united-states-corporation/"
+      },
+      {
+        "caseName": "United States v. $200,000,000 in United States Currency Surrendered by Alibaba Group Holding Limited, Alibaba.com Singapore E-Commerce Pte. Limited, AliExpress E-Commerce One Pte. Ltd., and Alibaba.com U.S. LLC",
+        "court": "rid",
+        "dateFiled": "2026-08-12",
+        "suitNature": "690 Forfeit/Penalty: Other",
+        "docket": "https://www.courtlistener.com/docket/74643017/united-states-v-200000000-in-united-states-currency-surrendered-by/"
+      },
+      {
+        "caseName": "John Reyes v. AliExpress International United States Corporation",
+        "court": "cacd",
+        "dateFiled": "2026-02-25",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/72328890/john-reyes-v-aliexpress-international-united-states-corporation/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22AliExpress%22",
+    "articles": []
+  }
+}

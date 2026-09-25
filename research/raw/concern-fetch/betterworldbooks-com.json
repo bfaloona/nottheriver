@@ -1,0 +1,59 @@
+{
+  "domain": "betterworldbooks.com",
+  "names": [
+    "Better World Books"
+  ],
+  "fetched": "2026-09-25T14:12:24.093Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Better%20World%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Better%20World%20Books%22",
+    "articles": [
+      "https://www.propublica.org/article/nike-wages-clothing-shoe-factory-indonesia",
+      "https://www.propublica.org/article/sebold-rape-syracuse-investigation-findings-documentary",
+      "https://www.propublica.org/article/trump-usaid-kenya-humanitarian-aid-starvation-families-children",
+      "https://www.propublica.org/article/rfk-jr-vaccine-agenda-childhood-plagues",
+      "https://www.propublica.org/article/trump-peter-thiel-ramp-gsa-smartpay-expense-payment-system",
+      "https://www.propublica.org/article/homeless-encampments-essay",
+      "https://www.propublica.org/article/kratom-legalization-christopher-mccurdy-research-conflict-of-interest-aka",
+      "https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan",
+      "https://www.propublica.org/article/los-angeles-housing-rent-controlled-apartments-vacation-rentals",
+      "https://www.propublica.org/article/alaska-telecom-subsidies-roger-shoffstall",
+      "https://www.propublica.org/article/billy-long-irs-trump-certified-tax-business-advisor-missouri",
+      "https://www.propublica.org/article/texas-granbury-isd-school-board-courtney-gore",
+      "https://www.propublica.org/article/hud-considers-crypto-blockchain-stablecoin-housing-urban-development",
+      "https://www.propublica.org/article/education-department-public-schools-activists-linda-mcmahon-trump",
+      "https://www.propublica.org/article/louisiana-angola-death-row-wrongful-conviction-jimmie-duncan",
+      "https://www.propublica.org/article/mental-health-suicide-highmark-bcbs-insurance-denials",
+      "https://www.propublica.org/article/general-dynamics-artillery-factory-failed",
+      "https://www.propublica.org/article/wilcox-county-alabama-segregation-academies",
+      "https://www.propublica.org/article/elon-musk-texas-legislature-laws-spacex-tesla",
+      "https://www.propublica.org/article/formaldehyde-levels-in-your-home-car-furniture",
+      "https://www.propublica.org/article/israel-iran-war-mossad-iranian-recruits",
+      "https://www.propublica.org/article/teens-fentanyl-percocet-green-bay-wisconsin-maylia-sotelo-jack-mcdonough",
+      "https://www.propublica.org/article/mark-mcafee-raw-milk-recalls-maha",
+      "https://www.propublica.org/article/election-issues-2024-immigration-abortion-economy",
+      "https://www.propublica.org/article/utah-mike-lee-public-lands-sell-off",
+      "https://www.propublica.org/article/inside-doge-social-security-takeover-leland-dudek",
+      "https://www.propublica.org/article/what-australia-could-teach-america-about-reducing-stillbirths",
+      "https://www.propublica.org/article/school-closures-students-charter-schools-home-schooling-rochester",
+      "https://www.propublica.org/article/macon-georgia-segregation-academies-school-vouchers",
+      "https://www.propublica.org/article/phosphorus-the-culprit-behind-dead-zones-threat-to-water-supply",
+      "https://www.propublica.org/article/school-vouchers-ohio-church-state-tax-dollars-private-religious",
+      "https://www.propublica.org/article/ambetter-ghost-network-consequences",
+      "https://www.propublica.org/article/inside-secret-ap3-militia-american-patriots-three-percent",
+      "https://www.propublica.org/article/shaken-baby-syndrome-abusive-head-trauma-controversy",
+      "https://www.propublica.org/article/christopher-newport-university-virginia-black-neighborhoods-enrollment",
+      "https://www.propublica.org/article/california-farm-families-gained-control-colorado-river",
+      "https://www.propublica.org/article/climate-migration-louisiana-slidell-flooding",
+      "https://www.propublica.org/article/state-lawmakers-women-southeast",
+      "https://www.propublica.org/article/they-needed-mental-health-treatment-mississippi-threw-them-in-jail",
+      "https://www.propublica.org/article/these-virginia-universities-expanded-by-displacing-black-residents",
+      "https://www.propublica.org/article/why-michigan-failing-compensate-wrongly-convicted-despite-law",
+      "https://www.propublica.org/article/how-dominican-republic-baseball-factory-traps-players-mlb-santo-caraballo"
+    ]
+  }
+}

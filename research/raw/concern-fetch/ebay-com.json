@@ -1,0 +1,184 @@
+{
+  "domain": "ebay.com",
+  "names": [
+    "eBay"
+  ],
+  "fetched": "2026-09-25T14:16:41.936Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22eBay%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 25,
+    "results": [
+      {
+        "caseName": "United States v. Ebay Account",
+        "court": "ared",
+        "dateFiled": "2026-05-04",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/73289331/united-states-v-ebay-account/"
+      },
+      {
+        "caseName": "United States v. Ebay Account",
+        "court": "ared",
+        "dateFiled": "2026-05-04",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/73289281/united-states-v-ebay-account/"
+      },
+      {
+        "caseName": "United States of America v. Ebay, Inc.",
+        "court": "ca2",
+        "dateFiled": "2024-12-02",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/69431401/united-states-of-america-v-ebay-inc/"
+      },
+      {
+        "caseName": "United States v. Information Associated with eBay. Inc. Accounts Jackalsjunk, Macja2071, And Xavmart-5527 that are stored at premises controlled by eBay. Inc.",
+        "court": "mtd",
+        "dateFiled": "2024-05-13",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68754680/united-states-v-information-associated-with-ebay-inc-accounts/"
+      },
+      {
+        "caseName": "United States v. Information Associated with eBay. Inc. Accounts Jackalsjunk, Macja2071, And Xavmart-5527 that are stored at premises controlled by eBay. Inc.",
+        "court": "mtd",
+        "dateFiled": "2024-05-13",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68525191/united-states-v-information-associated-with-ebay-inc-accounts/"
+      },
+      {
+        "caseName": "United States v. eBay Inc.",
+        "court": "mad",
+        "dateFiled": "2024-01-11",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68153695/united-states-v-ebay-inc/"
+      },
+      {
+        "caseName": "United States v. eBay Inc.",
+        "court": "mad",
+        "dateFiled": "2024-01-11",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68153565/united-states-v-ebay-inc/"
+      },
+      {
+        "caseName": "United States v. EBay, Inc.",
+        "court": "nyed",
+        "dateFiled": "2023-09-27",
+        "suitNature": "893 Environmental Matters",
+        "docket": "https://www.courtlistener.com/docket/67832171/united-states-v-ebay-inc/"
+      },
+      {
+        "caseName": "United States v. All funds held in the Pueblo Bank and Trust Account 102296006 in the name of Top Dollar Pawn LLC eBay North",
+        "court": "cod",
+        "dateFiled": "2022-06-17",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67269306/united-states-v-all-funds-held-in-the-pueblo-bank-and-trust-account/"
+      },
+      {
+        "caseName": "United States v. The eBay Inc. account asianjackson",
+        "court": "ilnd",
+        "dateFiled": "2021-06-07",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/61071493/united-states-v-the-ebay-inc-account-asianjackson/"
+      },
+      {
+        "caseName": "United States v. EBAY ACCOUNT CELTICSFANCPH",
+        "court": "med",
+        "dateFiled": "2021-04-16",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68579770/united-states-v-ebay-account-celticsfancph/"
+      },
+      {
+        "caseName": "United States v. EBAY ACCOUNT CELTICSFANCPH",
+        "court": "med",
+        "dateFiled": "2021-04-16",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68579767/united-states-v-ebay-account-celticsfancph/"
+      },
+      {
+        "caseName": "United States v. The eBay account associated with User IDs \"peekoo_products,\" \"connect_one,\" \"dreamfinder13,\" and \"peekoo3,\"",
+        "court": "ilnd",
+        "dateFiled": "2021-03-12",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/61084102/united-states-v-the-ebay-account-associated-with-user-ids/"
+      },
+      {
+        "caseName": "United States v. In the Matter of the Search of ebay account dealslyn2018",
+        "court": "mad",
+        "dateFiled": "2020-06-05",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/41241586/united-states-v-in-the-matter-of-the-search-of-ebay-account-dealslyn2018/"
+      },
+      {
+        "caseName": "United States v. In the Matter of the Search of ebay account dealslyn2018",
+        "court": "mad",
+        "dateFiled": "2020-06-05",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/29809925/united-states-v-in-the-matter-of-the-search-of-ebay-account-dealslyn2018/"
+      },
+      {
+        "caseName": "United States v. Information Associated with the eBay Account Listed in Attachment A-4",
+        "court": "mdd",
+        "dateFiled": "2019-10-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/51444634/united-states-v-information-associated-with-the-ebay-account-listed-in/"
+      },
+      {
+        "caseName": "United States v. Information Associated with the eBay Account Listed in Attachment A-4",
+        "court": "mdd",
+        "dateFiled": "2019-10-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/51444620/united-states-v-information-associated-with-the-ebay-account-listed-in/"
+      },
+      {
+        "caseName": "United States v. Search of information associated with the Ebay user IDS Liphet715",
+        "court": "nyed",
+        "dateFiled": "2019-03-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/14853581/united-states-v-search-of-information-associated-with-the-ebay-user-ids/"
+      },
+      {
+        "caseName": "United States v. Search of information associated with the Ebay user IDS Liphet715",
+        "court": "nyed",
+        "dateFiled": "2019-03-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/14826124/united-states-v-search-of-information-associated-with-the-ebay-user-ids/"
+      },
+      {
+        "caseName": "United States v. Search Warrant for information associated with EBay account seller2244843 stored at premises controlled by EBay, Inc.",
+        "court": "nced",
+        "dateFiled": "2018-01-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/37033475/united-states-v-search-warrant-for-information-associated-with-ebay/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22eBay%22",
+    "articles": [
+      "https://www.propublica.org/article/bitcoin-jesus-roger-ver-tax-evasion-friends-of-trump",
+      "https://www.propublica.org/article/pam-bondi-fake-covid-vaccine-cards-kirk-moore",
+      "https://www.propublica.org/article/google-alphabet-ads-fund-disinformation-covid-elections",
+      "https://www.propublica.org/article/how-to-avoid-being-scammed-on-facebook-marketplace",
+      "https://www.propublica.org/article/facebook-grew-marketplace-to-1-billion-users-now-scammers-are-using-it-to-target-people-around-the-world",
+      "https://www.propublica.org/article/lord-of-the-roths-how-tech-mogul-peter-thiel-turned-a-retirement-account-for-the-middle-class-into-a-5-billion-dollar-tax-free-piggy-bank",
+      "https://www.propublica.org/article/meet-the-customer-service-reps-for-disney-and-airbnb-who-have-to-pay-to-talk-to-you",
+      "https://www.propublica.org/article/a-nurse-bought-protective-supplies-for-her-colleagues-using-gofundme-the-hospital-suspended-her",
+      "https://www.propublica.org/article/coronavirus-hand-sanitizers-cdc-recommended-alcohol",
+      "https://www.propublica.org/article/in-desperation-new-york-state-pays-up-to-15-times-the-normal-price-for-medical-equipment",
+      "https://www.propublica.org/article/the-market-for-voting-machines-is-broken-this-company-has-thrived-in-it",
+      "https://www.propublica.org/article/how-trump-tariffs-are-creating-jobs-for-canadians",
+      "https://www.propublica.org/article/election-security-a-high-priority-until-it-comes-to-paying-for-new-voting-machines",
+      "https://www.propublica.org/article/amazon-says-it-puts-customers-first-but-its-pricing-algorithm-doesnt",
+      "https://www.propublica.org/article/weak-oversight-lets-dangerous-nurses-work-in-new-york",
+      "https://www.propublica.org/article/the-painting-that-saved-my-family-from-the-holocaust",
+      "https://www.propublica.org/article/uber-surge-pricing-may-not-lead-to-a-surge-in-drivers",
+      "https://www.propublica.org/article/judge-orders-nypd-to-release-records-on-x-ray-vans",
+      "https://www.propublica.org/article/voter-information-wars-will-the-gop-team-up-with-wal-marts-data-specialist",
+      "https://www.propublica.org/article/how-a-grad-student-scooped-the-ftc-and-what-it-means-for-your-online-privac",
+      "https://www.propublica.org/article/super-donors-our-reading-guide-to-the-top-10-super-pac-givers",
+      "https://www.propublica.org/article/this-weeks-top-muckreads-rotten-eggs-libyan-spies-and-renditions-revealed",
+      "https://www.propublica.org/article/1970s-bp-branded-board-game-turned-offshore-drilling-into-childs-play",
+      "https://www.propublica.org/article/palin-billed-state-to-be-stay-at-home-gov-909",
+      "https://www.propublica.org/article/palins-office-rebuffs-investigators-press-917",
+      "https://www.propublica.org/article/governor-sarah-palins-vp-nomination-speech-a-visual-annotation-1002"
+    ]
+  }
+}

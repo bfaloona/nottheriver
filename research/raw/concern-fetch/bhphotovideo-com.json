@@ -1,0 +1,57 @@
+{
+  "domain": "bhphotovideo.com",
+  "names": [
+    "B&H Photo Video"
+  ],
+  "fetched": "2026-09-25T14:13:01.415Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22B%26H%20Photo%20Video%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22B%26H%20Photo%20Video%22",
+    "articles": [
+      "https://www.propublica.org/article/supreme-court-shadow-docket-explainer",
+      "https://www.propublica.org/article/noncitizen-voting-trump-homeland-security-investigations",
+      "https://www.propublica.org/article/washington-badger-mountain-solar-project-canceled-avangrid",
+      "https://www.propublica.org/article/supreme-court-shadow-docket-rulings-milestone",
+      "https://www.propublica.org/article/how-trump-reversed-biden-gun-crackdown-atf",
+      "https://www.propublica.org/article/puerto-rico-trump-drogas-votos-prisiones-elecciones-jenniffer-gonzalez-colon",
+      "https://www.propublica.org/article/puerto-rico-trump-drugs-votes-prisons-elections-jenniffer-gonzalez-colon",
+      "https://www.propublica.org/article/trump-fiscalia-federal-puerto-rico-fraude-electoral-carceles-drogas-votos",
+      "https://www.propublica.org/article/trump-doj-puerto-rico-election-fraud-prison-drugs-votes",
+      "https://www.propublica.org/article/caught-in-crackdown-ice-cbp-doj-trump-arrests-convictions",
+      "https://www.propublica.org/article/trump-doj-immigration-bondi-declinations-criminal-investigations",
+      "https://www.propublica.org/article/grazing-ranchers-public-lands-trump",
+      "https://www.propublica.org/article/grazing-environment-public-lands-oversight",
+      "https://www.propublica.org/article/connecticut-towing-law-data-dmv",
+      "https://www.propublica.org/article/indigenous-community-cultural-coverage-journalism",
+      "https://www.propublica.org/article/washington-badger-mountain-solar-native-cultural-sites",
+      "https://www.propublica.org/article/yakama-nation-green-energy-federal-government",
+      "https://www.propublica.org/article/washington-state-is-leaving-tribal-cultural-resources-at-mercy-of-solar-developers",
+      "https://www.propublica.org/article/irene-gilbert-oregon-solar-green-energy-policy",
+      "https://www.propublica.org/article/trump-immigration-h1b-visas-perm-tech-jobs-recruitment",
+      "https://www.propublica.org/article/arizona-english-language-test-azella",
+      "https://www.propublica.org/article/more-parents-decline-vitamin-k-shot-newborns",
+      "https://www.propublica.org/article/arizona-examen-de-ingles-azella",
+      "https://www.propublica.org/article/propublica-sports-investigations",
+      "https://www.propublica.org/article/propublica-emerging-reporters-2025",
+      "https://www.propublica.org/article/hegseth-trump-war-civilian-casualties-elizabeth-warren-pentagon",
+      "https://www.propublica.org/article/propublica-emerging-reporters-2024",
+      "https://www.propublica.org/article/trump-administration-immigration-invasion-rhetoric-courts",
+      "https://www.propublica.org/article/nike-just-made-it-harder-to-track-executives-use-of-private-jets",
+      "https://www.propublica.org/article/military-defense-spending-budget-series",
+      "https://www.propublica.org/article/saudi-arabia-september-11-lawsuit-trial-qaida",
+      "https://www.propublica.org/article/chicago-police-eric-tabb-guilty-plea-battery",
+      "https://www.propublica.org/article/alaska-murder-pretrial-delays-impact",
+      "https://www.propublica.org/article/illinois-student-civil-rights-police-ticketing-bill",
+      "https://www.propublica.org/article/propublica-and-the-connecticut-mirror-win-pulitzer-prize-for-local-reporting",
+      "https://www.propublica.org/article/5-quotes-raw-milk-mark-mcafee",
+      "https://www.propublica.org/article/texas-school-takeover-mike-miles-morath-beaumont-lake-worth-austin",
+      "https://www.propublica.org/article/video-project-2025-presidential-training-academy-trump-election",
+      "https://www.propublica.org/article/texas-flash-flood-camp-mystic-climate-change-trump-noaa-fema",
+      "https://www.propublica.org/article/vitamin-k-shot-joseph-mercola-reversal-babies"
+    ]
+  }
+}
