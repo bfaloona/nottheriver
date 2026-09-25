@@ -1990,7 +1990,7 @@
         "baby"
       ],
       "ownership": "private",
-      "parent": "none",
+      "parent": "unknown",
       "hq": "unknown",
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
@@ -2023,7 +2023,7 @@
       "ownership": "private",
       "parent": "Patagonia Purpose Trust (voting stock); Holdfast Collective (nonvoting stock)",
       "hq": "Ventura, CA",
-      "marketplace": false,
+      "marketplace": "unknown",
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [
@@ -2049,7 +2049,7 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "Patagonia Works (NLRB case 32-CA-254886)",
+          "title": "Patagonia Works",
           "source": "https://www.nlrb.gov/case/32-CA-254886",
           "date": "2020-03-25",
           "accepted_source": true
@@ -2208,7 +2208,7 @@
       "concerns": [
         {
           "kind": "labor",
-          "title": "Target Corporation (NLRB case 10-CA-295461)",
+          "title": "Target Corporation",
           "source": "https://www.nlrb.gov/case/10-CA-295461",
           "date": "2023-03-17",
           "accepted_source": true
@@ -2216,14 +2216,14 @@
         {
           "kind": "labor",
           "title": "U.S. Equal Employment Opportunity Commission v. Target Corporation, Inc.",
-          "source": "https://www.courtlistener.com/docket/7927467/us-equal-employment-opportunity-commission-v-target-corporation-inc/",
+          "source": "https://storage.courtlistener.com/recap/gov.uscourts.cand.332406/gov.uscourts.cand.332406.66.0.pdf",
           "date": "2020-03-27",
           "accepted_source": true
         },
         {
           "kind": "labor",
           "title": "US Equal Employment Opportunity Commission v. Target Stores Inc",
-          "source": "https://www.courtlistener.com/docket/50668526/us-equal-employment-opportunity-commission-v-target-stores-inc/",
+          "source": "https://storage.courtlistener.com/recap/gov.uscourts.cacd.452020/gov.uscourts.cacd.452020.20.0.pdf",
           "date": "2011-07-21",
           "accepted_source": true
         }
@@ -2496,21 +2496,21 @@
         {
           "kind": "governance",
           "title": "Federal Trade Commission v. Walmart Inc.",
-          "source": "https://www.courtlistener.com/docket/63554833/federal-trade-commission-v-walmart-inc/",
+          "source": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.416367/gov.uscourts.ilnd.416367.105.0.pdf",
           "date": "2025-06-23",
           "accepted_source": true
         },
         {
           "kind": "labor",
           "title": "United States Equal Employment Opportunity Commission v. Walmart, Inc.",
-          "source": "https://www.courtlistener.com/docket/62985776/united-states-equal-employment-opportunity-commission-v-walmart-inc/",
+          "source": "https://storage.courtlistener.com/recap/gov.uscourts.iasd.78754/gov.uscourts.iasd.78754.82.0.pdf",
           "date": "2024-01-11",
           "accepted_source": true
         },
         {
           "kind": "environmental",
           "title": "United States v. Wal-Mart Stores, Inc.",
-          "source": "https://www.courtlistener.com/docket/6250398/united-states-v-wal-mart-stores-inc/",
+          "source": "https://www.courtlistener.com/api/rest/v4/search/?q=docket_id%3A6250398&type=rd&format=json",
           "date": "2013-06-04",
           "accepted_source": true
         }
@@ -2540,7 +2540,7 @@
       "ownership": "unknown",
       "parent": "unknown",
       "hq": "Boulder, CO",
-      "marketplace": false,
+      "marketplace": "unknown",
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [

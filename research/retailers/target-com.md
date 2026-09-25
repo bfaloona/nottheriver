@@ -11,9 +11,9 @@ sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
 concerns:
-  - {kind: labor, title: "Target Corporation (NLRB case 10-CA-295461)", source: https://www.nlrb.gov/case/10-CA-295461, date: 2023-03-17, accepted_source: true}
-  - {kind: labor, title: "U.S. Equal Employment Opportunity Commission v. Target Corporation, Inc.", source: https://www.courtlistener.com/docket/7927467/us-equal-employment-opportunity-commission-v-target-corporation-inc/, date: 2020-03-27, accepted_source: true}
-  - {kind: labor, title: "US Equal Employment Opportunity Commission v. Target Stores Inc", source: https://www.courtlistener.com/docket/50668526/us-equal-employment-opportunity-commission-v-target-stores-inc/, date: 2011-07-21, accepted_source: true}
+  - {kind: labor, title: "Target Corporation", source: https://www.nlrb.gov/case/10-CA-295461, date: 2023-03-17, accepted_source: true}
+  - {kind: labor, title: "U.S. Equal Employment Opportunity Commission v. Target Corporation, Inc.", source: https://storage.courtlistener.com/recap/gov.uscourts.cand.332406/gov.uscourts.cand.332406.66.0.pdf, date: 2020-03-27, accepted_source: true}
+  - {kind: labor, title: "US Equal Employment Opportunity Commission v. Target Stores Inc", source: https://storage.courtlistener.com/recap/gov.uscourts.cacd.452020/gov.uscourts.cacd.452020.20.0.pdf, date: 2011-07-21, accepted_source: true}
 ethics: 0
 environment: 0.5
 tier: caution
@@ -35,10 +35,13 @@ Concerns (all from accepted sources; verbs are the sources'):
 
 Not recorded: the NLRB lists 53 cases naming Target Corporation; of the three opened, 10-CA-296088 (Christiansburg, filed 2022-05-19) and 21-CA-300653 (Long Beach, filed 2022-08-02) closed by approved withdrawal, with no finding. The rest were not opened. Wikipedia mentions a 2009 California Attorney General hazardous-waste suit, a 2018 Alameda County e-waste settlement and 2013 data-breach settlements; none of those sources is on the accepted list, and the one fetched (alcoda.org) returned 404, so none is recorded. Ethics is already at 0, so further labor findings would not change the rating.
 
+Concern sources for the two EEOC cases are the consent-decree PDFs on storage.courtlistener.com; the docket pages (listed in Sources) return HTTP 403 to fetches.
+
 ## Rating
 - ethics: start 0.5; no verified ethics certification; −0.25 labor (NLRB settlement, 2023); −0.25 labor (EEOC consent decree, 2020); −0.25 labor (EEOC consent decree, 2011); floored at 0; = 0
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
 - tier: not on the blocklist (`--blocklist "Target" target.com`: "not on the blocklist"); ethics + environment = 0.5 < 1.0, so `caution`.
+- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Target_Corporation
@@ -53,5 +56,9 @@ Not recorded: the NLRB lists 53 cases naming Target Corporation; of the three op
 - https://www.courtlistener.com/api/rest/v4/search/?q=caseName%3A%28%28%22Federal+Trade+Commission%22+OR+%22United+States%22+OR+%22Equal+Employment+Opportunity+Commission%22+OR+%22Secretary+of+Labor%22+OR+%22National+Labor+Relations+Board%22+OR+%22Environmental+Protection+Agency%22%29+AND+%22Target+Corporation%22%29&type=r&format=json&order_by=dateFiled+desc
 - https://www.courtlistener.com/api/rest/v4/search/?q=docket_id%3A7927467+&type=rd&format=json&order_by=entry_date_filed+desc
 - https://www.courtlistener.com/api/rest/v4/search/?q=docket_id%3A50668526+&type=rd&format=json&order_by=entry_date_filed+desc
+- https://storage.courtlistener.com/recap/gov.uscourts.cand.332406/gov.uscourts.cand.332406.66.0.pdf
+- https://storage.courtlistener.com/recap/gov.uscourts.cacd.452020/gov.uscourts.cacd.452020.20.0.pdf
 - http://www.alcoda.org/newsroom/2018/dec/target_settlement (404)
+- https://www.courtlistener.com/docket/7927467/us-equal-employment-opportunity-commission-v-target-corporation-inc/ (docket page, HTTP 403 this run)
+- https://www.courtlistener.com/docket/50668526/us-equal-employment-opportunity-commission-v-target-stores-inc/ (docket page, HTTP 403 this run)
 - data/blocklist.md (no match)

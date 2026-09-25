@@ -6,7 +6,7 @@ goods: [apparel, outdoor-gear, food, used-gear]
 ownership: private
 parent: Patagonia Purpose Trust (voting stock); Holdfast Collective (nonvoting stock)
 hq: Ventura, CA
-marketplace: false
+marketplace: unknown
 sells_on_amazon: unknown
 amazon_owned: false
 certifications:
@@ -14,7 +14,7 @@ certifications:
   - {kind: b_corp, source: https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/, checked: 2026-09-25, verified_this_run: false}
   - {kind: one_percent_planet, source: https://directories.onepercentfortheplanet.org/profile/patagonia, checked: 2026-09-25, verified_this_run: false}
 concerns:
-  - {kind: labor, title: "Patagonia Works (NLRB case 32-CA-254886)", source: https://www.nlrb.gov/case/32-CA-254886, date: 2020-03-25, accepted_source: true}
+  - {kind: labor, title: "Patagonia Works", source: https://www.nlrb.gov/case/32-CA-254886, date: 2020-03-25, accepted_source: true}
 ethics: 0.75
 environment: 0.75
 tier: recommended
@@ -23,7 +23,7 @@ mentioned_by: [adayinourshoes-com, fairtradecertified-org, goingzerowaste-com, g
 checked: 2026-09-25
 ---
 
-Patagonia makes and sells "outdoor recreation clothing, equipment, and food" (Wikipedia) and runs Worn Wear, a trade-in and resale program for its own used gear started in 2017. Wikipedia describes it as a private benefit corporation headquartered in Ventura, California; after 2022 founder Yvon Chouinard transferred the voting stock to the Patagonia Purpose Trust and the nonvoting stock to the Holdfast Collective, a 501(c)(4) nonprofit. `ownership` is `private` because the closed list has no value for a trust-held company; the benefit-corporation form is noted here rather than chosen, since `public-benefit-corporation` names a Delaware form the source doesn't claim. It sells its own goods, not third-party sellers', so `marketplace` is false. No fetched source says whether it sells through Amazon's marketplace.
+Patagonia makes and sells "outdoor recreation clothing, equipment, and food" (Wikipedia) and runs Worn Wear, "a trade-in and exchange program" started in 2017 (Wikipedia). Wikipedia describes it as a private benefit corporation headquartered in Ventura, California; after 2022 founder Yvon Chouinard transferred the voting stock to the Patagonia Purpose Trust and the nonvoting stock to the Holdfast Collective, a 501(c)(4) nonprofit. `ownership` is `private` because the closed list has no value for a trust-held company; the benefit-corporation form is noted here rather than chosen, since `public-benefit-corporation` names a Delaware form the source doesn't claim. No fetched page says whether it hosts outside sellers (patagonia.com returned a site-downtime page), so `marketplace` is unknown. No fetched source says whether it sells through Amazon's marketplace.
 
 Lists recommend it for Worn Wear used gear, Fair Trade factories and activism ("Earth is their only shareholder", goodgoodgood-co); Fair Trade USA's own shop page lists it as a brand (fairtradecertified-org).
 
@@ -42,6 +42,7 @@ Not recorded: NLRB case 32-CA-360724 (Patagonia, Inc., Reno, filed 2025-02-20 by
 - ethics: start 0.5; +0.25 fair_trade; +0.25 b_corp; −0.25 labor (NLRB settlement, 2020-03-25); = 0.75
 - environment: start 0.5; +0.25 one_percent_planet; no accepted environmental concern; = 0.75
 - tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 1.5 ≥ 1.25 and no accepted concern in the last 5 years (the 2020-03-25 settlement is before the 2021-09-25 cutoff), so `recommended`.
+- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Patagonia,_Inc.

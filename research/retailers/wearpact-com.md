@@ -6,7 +6,7 @@ goods: [apparel, baby, home-textiles]
 ownership: unknown
 parent: unknown
 hq: Boulder, CO
-marketplace: false
+marketplace: unknown
 sells_on_amazon: unknown
 amazon_owned: false
 certifications:
@@ -20,7 +20,7 @@ mentioned_by: [adayinourshoes-com, fairtradecertified-org, goingzerowaste-com, g
 checked: 2026-09-25
 ---
 
-Pact sells its own organic-cotton clothing basics for adults, kids and babies, plus home textiles. Its privacy policy names the company as "Wear Pact LLC, 4725 Walnut St, Boulder, CO 80301" and mentions unnamed "affiliated business entities"; no fetched page says who owns the LLC, so `ownership` and `parent` are unknown. It sells its own label, not third-party sellers' goods, so `marketplace` is false. No fetched source says whether it sells through Amazon's marketplace. The about page renders only in a browser, so its text could not be read.
+Pact sells its own organic-cotton clothing basics for adults, kids and babies, plus home textiles. Its privacy policy names the company as "Wear Pact LLC, 4725 Walnut St, Boulder, CO 80301" and mentions unnamed "affiliated business entities"; no fetched page says who owns the LLC, so `ownership` and `parent` are unknown. No fetched page says whether it hosts outside sellers, so `marketplace` is unknown. No fetched source says whether it sells through Amazon's marketplace. The about page renders only in a browser, so its text could not be read.
 
 Lists recommend it for organic cotton basics made in Fair Trade Certified factories; goodgoodgood-co also cites GOTS-certified cotton (a list claim, not checked here, and not a scored kind). Fair Trade USA's own shop page features its Classic Fine Knit Crew Sweater ("100% organic cotton") and lists it in the brand directory.
 
@@ -36,6 +36,7 @@ Concerns: none recorded. An NLRB case search for "Wear Pact" returns no cases. C
 - ethics: start 0.5; +0.25 fair_trade; no accepted labor or governance concern; = 0.75
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
 - tier: not on the blocklist (`--blocklist "Pact" wearpact.com`: "not on the blocklist"); ethics + environment = 1.25 ≥ 1.25 and no accepted concern in the last 5 years, so `recommended`.
+- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
 
 ## Sources
 - https://wearpact.com/privacy

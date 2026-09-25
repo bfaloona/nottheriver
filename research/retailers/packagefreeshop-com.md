@@ -4,7 +4,7 @@ domain: packagefreeshop.com
 type: retailer
 goods: [home, cleaning, personal-care, kitchen, baby]
 ownership: private
-parent: none
+parent: unknown
 hq: unknown
 marketplace: unknown
 sells_on_amazon: unknown
@@ -19,7 +19,7 @@ mentioned_by: [amazonalts-org, goodgoodgood-co, thegoodtrade-com, vstyleblog-com
 checked: 2026-09-25
 ---
 
-Package Free sells low-waste household, cleaning, personal-care and baby goods, including its own lines (its about page names a plastic-free laundry pod) and, per its history page, other sustainable brands. Its history page says it opened on April 22, 2017 as "a 3-month popup shop at 137 Grand Street in Williamsburg, Brooklyn", was "initially funded by the brands that we sold", and "in 2019, we took on venture partners". Founder Lauren Singer (the "Trash is for Tossers" blog) is named on the about page and in Wikipedia. Ownership is recorded as `private` because the only source says venture partners, not a sale or a listing; no current headquarters address was found on a fetched page, so `hq` is unknown. The pages don't say whether outside sellers list their own goods, so `marketplace` is unknown.
+Package Free sells low-waste household, cleaning, personal-care and baby goods, including its own lines (its about page names a plastic-free laundry pod) and, per its history page, other sustainable brands. Its history page says it opened on April 22, 2017 as "a 3-month popup shop at 137 Grand Street in Williamsburg, Brooklyn", was "initially funded by the brands that we sold", and "in 2019, we took on venture partners". Founder Lauren Singer (the "Trash is for Tossers" blog) is named on the about page and in Wikipedia. Ownership is recorded as `private` because the only source says venture partners, not a sale or a listing; no fetched page names or rules out a parent, so `parent` is unknown; no current headquarters address was found on a fetched page, so `hq` is unknown. The pages don't say whether outside sellers list their own goods, so `marketplace` is unknown.
 
 Lists recommend it for plastic-free replacements for single-use items and plastic-free shipping materials (amazonalts-org, goodgoodgood-co, thegoodtrade-com, vstyleblog-com). The Good Trade calls it woman-owned; that is the list's claim, not checked here.
 
@@ -31,6 +31,7 @@ Concerns: none recorded. An NLRB case search for "Package Free" returns no cases
 - ethics: start 0.5; no verified ethics certification; no accepted labor or governance concern; = 0.5
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
 - tier: not on the blocklist (`node research/build-index.mjs --blocklist "Package Free" packagefreeshop.com` says "not on the blocklist"); ethics + environment = 1.0, which meets the 1.0 bar for `acceptable` but not 1.25 for `recommended`.
+- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
 
 ## Sources
 - https://packagefreeshop.com/pages/about

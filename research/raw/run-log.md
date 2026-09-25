@@ -27,8 +27,8 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 | 2 Discovery (6 + critic) | done: 116 candidates, 30 shortlisted | see git log |
 | 3 Assess (pilot, then rest) + calibrate | done: 26 sites, calibrated (raw/calibration.md) | see git log |
 | 4 Tally | done: 313 domains, top 50 in raw/retailer-selection.md; 4 Amazon-owned excluded files | see git log |
-| 5 Retailers (research + verify) | researchers R1 to R10 running | |
-| 6 Report | pending | |
+| 5 Retailers (research + verify) | done: 50 researched and verified + 4 excluded | see git log |
+| 6 Report | running | |
 | 7 QA + finish | pending | |
 
 ## Planned files per stage
@@ -64,3 +64,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Verifiers R1, R2 done (eBay EPA concern removed as dismissed; Thrive OSHA merged). Waiting on V4, V8, V10.
 - Verifier R8 done (ThredUp $0 inspection moved to body). Lead override: restored Mightly's fair_trade (project definition = sells certified products; curated rows use the same Fair Trade USA brand listing); stockists like Walmart/Costco still not counted.
 - Verifier R10 done (no tier changes). Lead decision: an NLRB agency-issued complaint counts even while open (the open-case exception is OSHA-only); Costco stays caution either way.
+- Stage 5 done. Report writer running: writes research/amazon-alternatives.md, research/method.md, research/README.md.
