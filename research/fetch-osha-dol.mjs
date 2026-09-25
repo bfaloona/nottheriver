@@ -6,6 +6,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { homedir } from 'node:os';
+import { URLSearchParams } from 'node:url';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { splitFrontMatter } from './build-index.mjs';
 
