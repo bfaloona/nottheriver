@@ -196,3 +196,16 @@ These settings override sections 1 to 8 where they differ. The operator set them
 - **Retailers named by tools.** A `tool` (or a directory or database) lists only the retailers it presents as a curated set on its own pages, such as a featured list, not its whole database. If it has none, the table has a single row: "none (tool)", and `retailers_listed: 0`.
 - **Retailers table is machine-read.** In `## Retailers named`, the Domain column holds the retailer's registrable domain (`bookshop.org`, not `www.bookshop.org/shop`), or `unknown` if the page gives no link and you can't find the retailer's site. Amazon-owned retailers stay in the table and are also listed in `amazon_owned_recommended`.
 - **Blocklist lookup.** `node research/build-index.mjs --blocklist "<name>" <domain>` says whether a retailer is Amazon-owned per `data/blocklist.json`.
+- **Access.** Never disguise a request as a browser (no browser user agent, no curl or wget with spoofed headers). Never get around a paywall, a paid gate for bots (tollbit, HTTP 402), a login or robots rules. A blocked page goes to your blocked file for the operator. Following a short link with plain curl to learn where it points is fine.
+
+### Assessor rules (from the pilot, 2026-09-25)
+
+- R1. Keep every retailer the page names, including non-US picks and free-exchange networks; count them and say so in the Reason column. They cost points under Substance, not rows.
+- R2. For a retailer's domain, decode the affiliate URL's destination parameter (`ued`, `url`, `u`, `murl`). Follow an opaque short link (pxf.io, sjv.io, ltk.com) with plain curl only.
+- R3. A "Partner" or sponsor label on a pick is paid placement: deduct under Independence and add `affiliate-funnel` to `also` (unless it is the category).
+- R4. Owner is what the footer, about page or terms state. A link to another company's advertise page is not ownership.
+- R5. Currency comes from the page's shown update date. Don't fetch every retailer; say which ones you checked.
+- R6. Marketplaces and aggregators (Shop, eBay, Etsy) are retailers under their own domain.
+- R7. Deduct each fact under one score part only. A newsletter prompt is not a pop-up wall.
+- R8. A named certification with no link to the certifier earns partial Evidence credit, not full.
+- R9. A tool with no curated list has exactly one row, `| - | none (tool) | - | <reason> |`, and `retailers_listed: 0`.
