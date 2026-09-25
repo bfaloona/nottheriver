@@ -29,12 +29,14 @@ Concerns. None recorded. The NLRB case search for "girlfriend collective" return
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "Girlfriend Collective" returned "No results found for these filters." (the unquoted search matched 47 cases on the separate words, and none of the 20 on its first page names Girlfriend Collective; the search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (Girlfriend Collective paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned 47 article links, none about the company by slug (they match the word "girlfriend"). No concern added.
 
+News pass (2026-09-25): two web searches, `"Girlfriend Collective" lawsuit OR settlement OR fine OR violation` and `"Girlfriend Collective" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned only pages matching the words "girlfriend" and "collective" (collective-action explainers, unrelated cases) and agency landing pages. Because those results were noisy, a third search, `"Girlfriend Collective" leggings class action OR lawsuit OR recall`, was run; it found the brand's own site, a founder case study and other brands' leggings suits (LuLaRoe, PFAS suits against other brands). None reports an agency or court action against Girlfriend Collective. No parent is named. No concerns added.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for girlfriend.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia), so the brand's own 1% claim does not count.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no verified certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://girlfriend.com/pages/about-us

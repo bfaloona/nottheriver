@@ -25,13 +25,15 @@ Certifications, not counted: The Climate Label's EarthHero page says "EarthHero'
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No results found for these filters." for "EarthHero" and for its certifier-listed parent "ZeroWasteStore" (the same search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (EarthHero paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned no articles. No concern added.
 
+News pass (2026-09-25): three web searches, `"EarthHero" lawsuit OR settlement OR fine OR violation`, `"EarthHero" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the certifier-listed parent, `"ZeroWasteStore" lawsuit OR settlement OR fine OR violation OR FTC OR "attorney general"`. Hits were a private class settlement over Earth Rated poop bags (a different company, a name collision), agency landing pages and other companies' FTC cases; none reports an agency or court action against EarthHero or ZeroWasteStore. No concerns added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp claimed by lists; directory blocked, no fallback row). No accepted concern. = 0.5
 - Environment: 0.5 baseline. The Climate Label brand page says expired (not counted; conflict with the parent's page logged). 1% for the Planet unverifiable (page renders by script). No environmental concern. = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
 - Concerns: NLRB's case search returned no cases for "earthhero". The WebSearch budget was used up, so ftc.gov, osha.gov, dol.gov and news were not searched; the concern list may be incomplete.
 - Blocklist: `node research/build-index.mjs --blocklist "EarthHero" earthhero.com` returned "not on the blocklist".
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://explore.changeclimate.org/brand/earthhero

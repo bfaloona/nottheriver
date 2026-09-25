@@ -27,11 +27,13 @@ Not scored, but on record: NLRB case searches for "Hive Brands" and "Love Grown"
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No results found for these filters." for the phrases "Hive Brands" and "Love Grown" (the search for "Amazon" returned 26 and the phrase "Seven & i Holdings" returned 5, so plain and phrase searches work); the CourtListener agency-docket search returned 0 dockets for "Hive Brands" (filed since 2016), and a second run for "Love Grown" also returned 0; the ProPublica search used the list label "Hive (now Love Grown)" and returned no articles, which is not a useful negative for either name. No concern added.
 
+News pass (2026-09-25): two web searches, each covering both names, `("Hive Brands" OR "Love Grown") lawsuit OR settlement OR fine OR violation` and `("Hive Brands" OR "Love Grown") (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The first found a press release dated October 31, 2023 saying "Hive Brands, the sustainable online grocery store, announced today that it has acquired popular cereal and granola brand Love Grown", which explains the shared systems above (it does not say Hive later renamed itself, so `parent` stays `unknown`). It also found one private case, an individual's petition against Hive Brands Holdings, Inc. in Los Angeles Superior Court (No. 26STCP00378, "Other Civil Petition", filed 2026-01-27, a petition to compel arbitration, "Pending" with no ruling, per PlainSite, which is not an accepted source); it is a private filing with no ruling, so it is not recorded. The second search returned only agency landing pages. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp claim on the retailer's own site only, not verified with the certifier (403) and no data/certifications.json row, so it does not count. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 - Blocklist: `node research/build-index.mjs --blocklist "Hive" lovegrown.com` returned "not on the blocklist".
 
 ## Sources
@@ -49,3 +51,5 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No resu
 - CourtListener agency-docket search for "Hive Brands", filed since 2016 (0 results; URL in research/raw/concern-fetch/lovegrown-com.json)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName:("Love Grown") AND caseName:(government party list as in the pass-2 fetch) (count 0)
 - https://www.propublica.org/search?qss=%22Hive%20(now%20Love%20Grown)%22 (no articles)
+- https://www.einpresswire.com/article/665234085/hive-brands-acquires-love-grown-to-offer-exclusive-cereals-and-granolas (press release, 2023-10-31)
+- https://www.plainsite.org/courts/superior-court-of-california-county-of-los-angeles/vivek-shah-an-individual-v-hive-brands-holdings-inc-a-delaware-corporation/5xaxnx26r/ (private petition, pending; not an accepted source)

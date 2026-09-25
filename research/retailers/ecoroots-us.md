@@ -25,12 +25,14 @@ No certification claim appears on its about page. Concern checks found nothing: 
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search for "EcoRoots" returned "No results found for these filters." (the same search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (EcoRoots paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned no articles. No concern added.
 
+News pass (2026-09-25): two web searches, `"EcoRoots" lawsuit OR settlement OR fine OR violation` and `"EcoRoots" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were the store's own pages, review and profile sites (Trustpilot, CB Insights, which describes a different UK company named Ecoroots), other companies' California enforcement settlements and agency landing pages; none reports an agency or court action against EcoRoots. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline. No ethics certification found (bcorporation.net blocked agents this run; no row in `data/certifications.json`). No accepted concern. Result 0.5.
 - Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (310 brand pages) has no EcoRoots entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
 - Tier: ethics + environment = 1.0 < 1.25, ≥ 1.0: `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://ecoroots.us/pages/about-us

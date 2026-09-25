@@ -25,12 +25,14 @@ Certifications not counted: one list site calls it a B Corp, but bcorporation.ne
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search for "Libro.fm" returned "No results found for these filters." (the search for "Amazon" returned 26, so the search works); the CourtListener agency-docket search (Libro.fm paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned no articles. No concern added.
 
+News pass (2026-09-25): two web searches, `"Libro.fm" lawsuit OR settlement OR fine OR violation` and `"Libro.fm" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were Libro.fm's own terms and support pages, Wikipedia, the American Booksellers Association's partner page, Book Riot, other cases and agency or law-firm landing pages; none reports an agency or court action against Libro.fm. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row); not in the worker co-op directory. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not in The Climate Label directory; 1% for the Planet directory is script-rendered and returned no content (inconclusive). = 0.5
 - Total 1.0, not Amazon-owned: tier `acceptable`.
 - Blocklist: `node research/build-index.mjs --blocklist "Libro.fm" libro.fm` returned "not on the blocklist".
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Libro.fm

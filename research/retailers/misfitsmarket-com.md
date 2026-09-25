@@ -27,13 +27,15 @@ Concern search was limited: the session's WebSearch budget ran out before this r
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No results found for these filters." for the phrases "Misfits Market" and "Imperfect Foods" (the company it acquired, and the name on its FLSA docket; the phrase "Seven & i Holdings" returned 5, so phrase search works); the CourtListener agency-docket search (company paired with a government party, filed since 2016) returned 0 dockets for "Misfits Market" and, in an extra run, 0 for "Imperfect Foods"; ProPublica search returned 2 article links (Oath Keepers; a civil rights law), neither about the company. The private labor suits noted above stay unscored. No concern added.
 
+News pass (2026-09-25): two web searches, each covering both names, `("Misfits Market" OR "Imperfect Foods") lawsuit OR settlement OR fine OR violation` and `("Misfits Market" OR "Imperfect Foods") (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were acquisition coverage, Consumer Reports, an Oregon WARN notice (Clackamas fulfillment center closing at the end of 2024, per the search snippet; not fetched), the Maryland FLSA docket already noted above, and two NLRB case pages, both fetched. Case 20-CA-346490 ("Misfits Market d/b/a Imperfect Foods", filed 07/17/2024) is a union's charge (UFCW Local 5) alleging "8(a)(5) Refusal to Bargain/Bad Faith Bargaining"; its docket ends with a "Letter Approving Withdrawal Request" (10/29/2024) and status "Closed", so it is a charge by others that was withdrawn and is not recorded. Case 19-RD-336776 (Imperfect Foods, Inc., Clackamas, OR, filed 02/28/2024) is an employee's decertification petition, a representation election (tally: 15 votes against the union, 5 for) with no action against the company, so it is not a concern either. No parent is named (`parent: none`), so no third search. No concerns added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Misfits Market" misfitsmarket.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
 - Ethics: 0.5 baseline, no counted certifications or accepted concerns recorded (search limited; open labor complaints noted above, not scored).
 - Environment: 0.5 baseline, no counted certifications or accepted concerns found (search limited).
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Misfits_Market
@@ -48,3 +50,5 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No resu
 - CourtListener agency-docket search for "Misfits Market", filed since 2016 (0 results; URL in research/raw/concern-fetch/misfitsmarket-com.json)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName:("Imperfect Foods") AND caseName:(government party list as in the pass-2 fetch) (count 0)
 - https://www.propublica.org/search?qss=%22Misfits%20Market%22 (2 unrelated articles)
+- https://www.nlrb.gov/case/20-CA-346490 (union charge, withdrawal approved 10/29/2024, closed)
+- https://www.nlrb.gov/case/19-RD-336776 (decertification petition, election held, closed)

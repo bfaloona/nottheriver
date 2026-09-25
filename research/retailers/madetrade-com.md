@@ -27,13 +27,15 @@ Concern checks: an NLRB case search for "made trade" returned no results. CourtL
 
 Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "Made Trade" returned "No results found for these filters." (the phrase "Seven & i Holdings" returned 5, so phrase search works); the CourtListener agency-docket search (Made Trade paired with a government party, filed since 2016) returned 0 dockets; ProPublica search returned 47 article links, none about the company by slug (they match "trade" and "made"). No concern added.
 
+News pass (2026-09-25): two web searches, `"Made Trade" (madetrade OR "Made Trade Group") lawsuit OR settlement OR fine OR violation` and `"Made Trade" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general") ethical home goods`. Hits were other companies' FTC "Made in USA" cases (matching the words "made" and "trade") and agency landing pages. The FTC's April 2026 "Made in USA" sweep release was fetched because Made Trade sells a "made in USA" category: it names TouchTunes, Americana Liberty, Three Nations, Oak Street Manufacturing and two closing-letter recipients, not Made Trade. Nothing reports an agency or court action against Made Trade. No parent is named, so no third search. No concerns added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Made Trade" madetrade.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified (B Corp page blocked, 1% for the Planet directory not readable, Climate Label not checked, not on Fair Trade USA's shop page).
 - Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/
@@ -46,3 +48,4 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "M
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Seven%20%26%20i%20Holdings%22 (phrase-search control: 5 results)
 - CourtListener agency-docket search for "Made Trade", filed since 2016 (0 results; URL in research/raw/concern-fetch/madetrade-com.json)
 - https://www.propublica.org/search?qss=%22Made%20Trade%22 (no article about the company)
+- https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-announces-made-usa-sweep-including-three-law-enforcement-actions-protect-american-consumers (Made Trade not named)
