@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type filter, and the quality evaluation is measured on a 20-search sample ([quality.md](quality.md)).
+As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups and classifier-judged local ranking. The quality evaluation was measured on a 20-search sample before those last two changes ([quality.md](quality.md)).
 
 ## Done
 
@@ -15,8 +15,11 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 | End-to-end | Playwright smoke test against a mock proxy running the real handler and pipeline on fixtures; screenshots in `docs/evidence/` |
 | Infrastructure | OpenTofu config for the Worker, its secrets and rate limits; `infra/plan-evidence.sh` for a redacted plan |
 | CI | `ci.yml` (tests, lint, full-history gitleaks, bundle secret scan, e2e) and `pages.yml` (build, scan, deploy) |
-| Quality evaluation | Harness, 60-search query set, grade schema, access probe, [ADR 0005](decisions/0005-site-access-and-mitigation.md); all 60 searches run, 20 graded with a recall baseline and miss reasons, access probe run and deleted ([check](evidence/quality/eval60/probe-deleted.txt)), [quality.md](quality.md) and the About page headline |
+| Quality evaluation | Harness, 60-search query set, grade schema, access probe, [ADR 0005](decisions/0005-site-access-and-mitigation.md); all 60 searches run, 20 graded with a recall baseline and miss reasons, access probe run and deleted ([check](evidence/quality/eval60/probe-deleted.txt)), [quality.md](quality.md) and the About page headline; a second blind grader agreed on 25 of 27 local rows, and regrading the 45 unknown local rows puts local precision at 56% (94 of 167) ([regrade-local](evidence/quality/eval60/regrade-local/)) |
 | Local store-type filter | Brave's undocumented `icon_category` becomes the local snippet; restaurants and amusement parks are dropped as `place_category` ([ranking.md](ranking.md)) |
+| Local classifier coverage | The model sees every local candidate (cap 16 to 20, tied to the place-search count by a test); `usage.unclassified_shown` counts shown results it did not judge |
+| Distance groups | Nearby within 10 mi (metro zips, RUCA 1 to 3) or 30 mi (RUCA 4 to 10); up to 3 "Farther away" out to 100 mi; beyond that dropped as `too_far`. RUCA code per ZCTA in `zips.json`, sent with each search ([ranking.md](ranking.md#distance-groups)) |
+| Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29 ([ranking.md](ranking.md)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0004](decisions/0004-down-ranking.md) |
 
 ## In flight
@@ -42,11 +45,14 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 - The build prompt in `prompts/` stays as committed; history is not rewritten.
 - The Playwright smoke test keeps the zip the build prompt names.
 - Existing commit subjects stay as they are.
+- The stronger local classifier is not shipped: Gemini 2.5 Flash with a prompt paragraph dropped good local shops on the graded sample, and gpt-oss-120b missed the pre-set precision gain ([quality.md](quality.md#experiments-that-did-not-ship)).
+- Distance groups: 10 mi nearby for metro zips, 30 mi for other zips, nothing beyond 100 mi; the zip's RUCA code picks the group.
+- Distances are shown in miles everywhere a person reads them.
 
 ## Decisions needed
 
-- Whether to ship the stronger local classifier (Gemini 2.5 Flash plus one prompt paragraph): 13 points more local precision on the merge-test searches (11 on the graded sample), but on the graded sample it also drops 12 of 72 good local shops, 3 of them small independents ([quality.md](quality.md#experiments-that-did-not-ship)).
-- Whether local recall should favor independents: the site finds 17% of independent baseline shops against 33% of chain stores.
+- Whether local recall should favor independents: the site finds 17% of independent baseline shops against 35% of chain stores (a gap within noise at this sample size).
+- Whether marketplaces (Facebook Marketplace is classified `marketplace` and kept) should appear at all.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.
 - Whether to add labor or environmental watchdogs to the negative-source registry.
@@ -171,7 +177,7 @@ Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and reje
 
 ## Evidence
 
-Run on 2026-09-23 against the working tree at `8cce4d6`.
+Run on 2026-09-23 against the working tree at `8cce4d6`. Latest checks, 2026-09-24 at `abcf222`: 651 unit tests passed, `npm run e2e` 3 passed, lint and site build clean, CI and Pages `success`.
 
 | Check | Command | Result |
 |---|---|---|
