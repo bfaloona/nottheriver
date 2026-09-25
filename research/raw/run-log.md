@@ -29,7 +29,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 | 4 Tally | done: 313 domains, top 50 in raw/retailer-selection.md; 4 Amazon-owned excluded files | see git log |
 | 5 Retailers (research + verify) | done: 50 researched and verified + 4 excluded | see git log |
 | 6 Report | done: amazon-alternatives.md, method.md, README.md | see git log |
-| 7 QA + finish | QA running | |
+| 7 QA + finish | done: QA (raw/qa.md), OSHA status check (raw/osha-status.md); npm ci, lint, 696 tests pass | see git log |
 
 ## Planned files per stage
 
@@ -67,3 +67,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Stage 5 done. Report writer running: writes research/amazon-alternatives.md, research/method.md, research/README.md.
 - Report written. Lead fixed writer-flagged nits (provisional lines on 3 R10 files, shortlist trimmed table, verify-R8 row placement, discovery count). QA agent running: writes research/raw/qa.md and fixes small issues.
 - QA done (55 issues: 33 fixed, 22 flagged; raw/qa.md). Lead removed Costco's classaction.org concern row. OSHA closed-status checker running (writes raw/osha-status.md).
+- OSHA status check: all 18 OSHA concerns carry a penalty and are closed; no changes. Run complete. Branch not merged to main (brief: never push research to main; main checkout is shared). Next: operator checks in method.md, concern re-search after the usage reset.
