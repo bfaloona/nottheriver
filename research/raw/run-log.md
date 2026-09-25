@@ -24,8 +24,8 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 |---|---|---|
 | 0 Check commit | done | pushed |
 | 1 Index script + test | done: lint, 695 tests pass | stage-1 commit |
-| 2 Discovery (6 + critic) | in progress | |
-| 3 Assess (pilot, then rest) + calibrate | pending | |
+| 2 Discovery (6 + critic) | done: 116 candidates, 30 shortlisted | see git log |
+| 3 Assess (pilot, then rest) + calibrate | pilot running | |
 | 4 Tally | pending | |
 | 5 Retailers (research + verify) | pending | |
 | 6 Report | pending | |
@@ -36,4 +36,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 (Filled in before each stage's agents start.)
 
 Stage 2, one agent per angle; each writes `research/raw/discovery-<angle>.md` and, if needed, `research/raw/out-of-scope-<angle>.md`, `research/raw/blocklist-candidates-<angle>.md`, `research/raw/blocked-discovery-<angle>.md`.
-Angles: `generic`, `product-types`, `motive-ethics`, `motive-local`, `formats`, `news`. Critic (after): `research/raw/discovery-critic.md`.
+Angles: `generic`, `product-types`, `motive-ethics`, `motive-local`, `formats`, `news`. Critic (after): `research/raw/discovery-critic.md`, `research/raw/candidates.md`, `research/raw/shortlist.md`.
+Discovery agents done (138 raw candidates, commit 808aa3a). Critic running.
+
+Stage 3 pilot (1 Opus assessor): shortlist #1 thegoodtrade.com, #15 rollingstone.com, #23 buycott.com, writing `research/sites/thegoodtrade-com.md`, `rollingstone-com.md`, `buycott-com.md` and `research/raw/blocked-assess-pilot.md` if needed.

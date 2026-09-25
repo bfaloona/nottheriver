@@ -204,7 +204,11 @@ export function buildIndex(root = HERE) {
   return { errors, index: { sites, retailers } };
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
+if (process.argv[1] === fileURLToPath(import.meta.url) && process.argv[2] === '--blocklist') {
+  // node research/build-index.mjs --blocklist "<name>" <domain>
+  const hit = blocklistMatch(process.argv[3] ?? '', process.argv[4] ?? '');
+  console.log(hit ? `amazon-owned: blocklist entry "${hit}" (cite data/blocklist.md)` : 'not on the blocklist');
+} else if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { errors, index } = buildIndex();
   if (errors.length) {
     console.error(errors.join('\n'));
