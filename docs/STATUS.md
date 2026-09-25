@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups and classifier-judged local ranking. The quality evaluation was measured on a 20-search sample before those last two changes ([quality.md](quality.md)).
+As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups and classifier-judged local ranking. The quality evaluation was measured on a 20-search sample and rerun after those last two changes, with no measurable change ([quality.md](quality.md)).
 
 ## Done
 
@@ -19,7 +19,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 | Local store-type filter | Brave's undocumented `icon_category` becomes the local snippet; restaurants and amusement parks are dropped as `place_category` ([ranking.md](ranking.md)) |
 | Local classifier coverage | The model sees every local candidate (cap 16 to 20, tied to the place-search count by a test); `usage.unclassified_shown` counts shown results it did not judge |
 | Distance groups | Nearby within 10 mi (metro zips, RUCA 1 to 3) or 30 mi (RUCA 4 to 10); up to 3 "Farther away" out to 100 mi; beyond that dropped as `too_far`. RUCA code per ZCTA in `zips.json`, sent with each search ([ranking.md](ranking.md#distance-groups)) |
-| Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29 ([ranking.md](ranking.md)) |
+| Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29; a live rerun showed no change (30 of 54 before, 29 of 51 after) ([quality.md](quality.md#rerun-after-distance-groups-and-classifier-judged-ranking)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0004](decisions/0004-down-ranking.md) |
 
 ## In flight

@@ -1,0 +1,1564 @@
+{
+  "id": "rain-jacket-suburban",
+  "checked": "2026-09-25T05:52:45.877Z",
+  "request": {
+    "product": "rain jacket",
+    "city": "Natick",
+    "state": "MA",
+    "lat": 42.28,
+    "lon": -71.35,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 13033,
+  "body": {
+    "query": {
+      "product": "rain jacket",
+      "city": "Natick",
+      "state": "MA",
+      "canonical_name": "rain jacket",
+      "category": "outerwear",
+      "online_queries": [
+        "buy rain jacket",
+        "waterproof jacket shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "outdoor outfitters shop"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4WPVHHNIVE5CUBDWMEN7TBWKRYDFGLOWGAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://rei.com/stores/framingham?y_source=1_MTQ1MzQ0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "375 Cochituate Rd, Framingham, MA 01701",
+        "distance_km": 4.6,
+        "lat": 42.3054,
+        "lon": -71.3936,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.633,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://rei.com/stores/framingham?y_source=1_MTQ1MzQ0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.885,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "2.9 mi (4.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc43Q53JWNCERCUALEBSTMDLVSRYCTWIGYRAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Natick Outdoor Store",
+          "domain": "natickoutdoorstore.com",
+          "url": "https://natickoutdoorstore.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "38 North Ave, Natick, MA 01760",
+        "distance_km": 0.7,
+        "lat": 42.2862,
+        "lon": -71.347,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://natickoutdoorstore.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9825,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.4 mi (0.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc43UDFUJTIEZCUBIZTPJ743VSRYCUE47UTAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "SkiMD",
+          "domain": "skimd.com",
+          "url": "https://skimd.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "780 Worcester St, Natick, MA 01760, United States",
+        "distance_km": 2.3,
+        "lat": 42.3001,
+        "lon": -71.3563,
+        "certifications": [],
+        "signals": [],
+        "score": 0.566,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://skimd.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9425,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.4 mi (2.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4CDINR4RFEZCUB4CUDP34DWCRYCV65EN7AAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://stores.dickssportinggoods.com/ma/natick/255/?seo=localpack"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1336 Worcester St, Natick, MA 01760",
+        "distance_km": 3.6,
+        "lat": 42.298,
+        "lon": -71.3868,
+        "certifications": [],
+        "signals": [],
+        "score": 0.562,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://stores.dickssportinggoods.com/ma/natick/255/?seo=localpack"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "2.2 mi (3.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4EVKYBFD5EZCUBZ2EZQ3IDWCRYACAGTYTAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "JD Sports",
+          "domain": "jdsports.com",
+          "url": "https://jdsports.com/"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "1245 Worcester St, Natick, MA 01760",
+        "distance_km": 3.6,
+        "lat": 42.3007,
+        "lon": -71.3829,
+        "certifications": [],
+        "signals": [],
+        "score": 0.562,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://jdsports.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "2.2 mi (3.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4NBBJHRESEZCUAUH5QNEINWCRYAEFV6RYAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Urban Outfitters",
+          "domain": "urbanoutfitters.com",
+          "url": "https://urbanoutfitters.com/stores/urban-outfitters-natick"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "Collection, 1245 Worcester St #4000, Natick, MA 01760",
+        "distance_km": 3.6,
+        "lat": 42.3014,
+        "lon": -71.3832,
+        "certifications": [],
+        "signals": [],
+        "score": 0.562,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://urbanoutfitters.com/stores/urban-outfitters-natick"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "2.2 mi (3.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4CFY45Y4LEZCUAR7UPQLYBWCRYC5DRRCXAAAAAAA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "Foot Locker",
+          "domain": "footlocker.com",
+          "url": "https://stores.footlocker.com/ma/natick/1245-worcester-street-6944.html"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "1245 Worcester St #2190, Natick, MA 01760",
+        "distance_km": 3.6,
+        "lat": 42.3011,
+        "lon": -71.3828,
+        "certifications": [],
+        "signals": [],
+        "score": 0.562,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://stores.footlocker.com/ma/natick/1245-worcester-street-6944.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "2.2 mi (3.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4D2U3544LEZCUBNP4YBKZ5WCRYBKJYI42CXUTU6I=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "The North Face Natick Mall",
+          "domain": "thenorthface.com",
+          "url": "https://locations.thenorthface.com/en-us/ma/natick/usa23"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1245 Worcester St Ste 4016 Suite 4016, Natick, MA 01760",
+        "distance_km": 3.7,
+        "lat": 42.3011,
+        "lon": -71.3847,
+        "certifications": [],
+        "signals": [],
+        "score": 0.561,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://locations.thenorthface.com/en-us/ma/natick/usa23"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9075,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "2.3 mi (3.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4C5TQY44CEZCUB2DQBCYKHWCRYBG5T3LEAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "American Eagle Outfitters",
+          "domain": "ae.com",
+          "url": "https://storelocations.ae.com/us/ma/natick/1245-worcester-st.html"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "1245 Worcester St #2146, Natick, MA 01760",
+        "distance_km": 3.7,
+        "lat": 42.3009,
+        "lon": -71.385,
+        "certifications": [],
+        "signals": [],
+        "score": 0.561,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://storelocations.ae.com/us/ma/natick/1245-worcester-st.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9075,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "2.3 mi (3.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc45BFW67ZOEVCUBFG77VGBRWSRYBOKUYVQAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Joe Practice Sports Gear",
+          "domain": "joepractice.com",
+          "url": "https://joepractice.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "35 Harrison St, Framingham, MA 01702",
+        "distance_km": 4.9,
+        "lat": 42.2905,
+        "lon": -71.4077,
+        "certifications": [],
+        "signals": [],
+        "score": 0.557,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://joepractice.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8775,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "3.0 mi (4.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:patagonia.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Patagonia",
+          "domain": "patagonia.com",
+          "url": "https://www.patagonia.com/shop/mens/jackets-vests/rain-waterproof"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Lightweight, packable protection from seriously wet weather—shop men&#x27;s waterproof rain jackets and shells with GORE-TEX® or H2No® fabric at Patagonia.com. Whether you need a men’s lightweight waterproof jacket to stay dry while hiking or trail running or a heavy-duty Patagonia GORE-TEX jacket for climbing, we’ve got you covered. Find what you need to keep going through drizzles, mist and showers alike. Waterproof, breathable and durable, our men’s waterproof rain jackets are built to withstand conditions from sudden showers to hours spent on the water. We have packable windbreakers and lightweight men’s waterproof shell jackets for daily wear in the rainy season or trips made under the risk of wet weather. The best rain jacket for men means something different to everyone. If you’re constantly on the move, your “best” option is something lightweight and quick drying. If you’re headed for weather that’s both wet and chilly, your best bet is something warm and waterproof like one of our Patagonia men’s GORE-TEX rain jackets. And our workhorse men’s waterproof coats and slicker jackets are your armor for wet, muddy tasks and pursuits.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/patagonia",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "fair_trade",
+            "label": "Sells Fair Trade Certified products",
+            "source_url": "https://www.fairtradecertified.org/shop-fair-trade/",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.85,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Men's Rain Jackets & Raincoats by Patagonia",
+                "url": "https://www.patagonia.com/shop/mens/jackets-vests/rain-waterproof"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/"
+              },
+              {
+                "label": "Sells Fair Trade Certified products",
+                "url": "https://www.fairtradecertified.org/shop-fair-trade/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/patagonia"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Our staffers pick their favorite rain jackets from Patagonia, REI Co-op, Outdoor Research, Arc&#x27;teryx and more—perfect for hiking, backpacking, everyday use and anywhere else the clouds might open up. Our staffers pick their favorite rain jackets from Patagonia, REI Co-op, Outdoor Research, Arc'teryx and more—perfect for hiking, backpacking, everyday use and anywhere else the clouds might open up. Add a middle layer to retain body heat in colder conditions; this could be a fleece jacket, an insulated vest or puffy jacket · An outer layer, like a rain jacket, shields you from wind and rain Read full article: The 7 Best Rain Jackets of 2026: Tested Learn how to test your rainwear’s durable water repellent (DWR) coating and how to revive existing DWR or apply new DWR.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Coats | REI Co-op",
+                "url": "https://www.rei.com/c/rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:rains.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Rains",
+          "domain": "rains.com",
+          "url": "https://us.rains.com/collections/waterproof-rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "See and shop our selection of waterproof rain jackets | Danish design for all weather | Shipped within 24 hours on working days | Fast international delivery | rains.com We will help you pick the right jacket for your wardrobe so you can enhance your look for everyday wear or special occasions. The last thing any busy man or woman wants is to buy clothes that require the commitment of a part-time job to maintain. You certainly won’t have that problem with your Rain Jacket. What types of rain jackets are available from RAINS? At RAINS you can buy a wide variety of rain jackets. For example the Jacket, Long Jacket, Curve Jacket, Longer Jacket, Fishtail Parka, Cape and many others. What colors are rain jackets from RAINS available in? In our area of the world, when it rains, it pours! Make sure you are ready to put your best foot forward no matter the weather with a jacket from the Rain collection. We have something for everyone. In our collection, you will find jackets to please even the most discriminating tastes. When the cold, wet weather comes around, you can stay warm and dry while looking your stylish best in attractive and unique jackets from Rain. When you slip on one of our jackets, you will experience the ultimate in comfort, convenience, and style. Long gone are the days of having to put up with the nasty smell and feel of rubber slickers in order to stay dry.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Waterproof Rain Jackets | Buy with Free Shipping here | Rains",
+                "url": "https://us.rains.com/collections/waterproof-rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:dickssportinggoods.com",
+        "kind": "online",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://www.dickssportinggoods.com/f/rain-jackets"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Shop rain jackets &amp; raincoats at DICK&#x27;S Sporting Goods. If you find a lower price on rain jackets &amp; raincoats somewhere else, we&#x27;ll match it with our Best Price Guarantee. Now TrendingHouse of CleatsGear Up for Golf SeasonRain JacketsHouse of JerseysNike MAVNTrading Cards & CollectiblesClose ... Stay dry while you're out trekking in the rain with the help of a rain jacket from DICK'S Sporting Goods. Water Protection: Remember, not all rain jackets are the same. Rain jackets designated as \"water-resistant\" do not prevent rain from penetrating fabric, but they delay seepage. These jackets are breathable and lightweight. For full protection, go for a waterproof rain shell, which is treated with various laminates and coatings for full water repellency. Rain jackets are a staple in every wardrobe whether you're exercising or commuting to work. Details make a difference in your rain jacket.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets & Raincoats | Curbside Pickup Available at DICK'S",
+                "url": "https://www.dickssportinggoods.com/f/rain-jackets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:thenorthface.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The North Face",
+          "domain": "thenorthface.com",
+          "url": "https://www.thenorthface.com/en-us/c/mens/mens-jackets-and-vests/mens-rainwear-299284"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "The Men&#x27;s Nukabira Rain Shell Parka: A long design for extra protection plus DRYVENT™ technology and flap pockets make this a popular choice for commuting and everyday wear. The Men&#x27;s DRYVENT™ Field Jacket: For lightweight protection from the elements, turn to the Field Jacket this season. Whether it’s DryVent™ membranes or GORE-TEX fabrics, our rain jackets for men are packed with the latest technology and designed to keep you comfortable and protected no matter what. Seam-sealed construction? Check. Non-PFC DWR finish for added water repellency? The Men's Nukabira Rain Shell Parka: A long design for extra protection plus DRYVENT™ technology and flap pockets make this a popular choice for commuting and everyday wear. The Men's DRYVENT™ Field Jacket: For lightweight protection from the elements, turn to the Field Jacket this season. The Men's GORE-TEX® Mountain Jacket: Our Mountain Jacket is an icon thanks to its hardcore heritage. Numerous positive reviews are a testament to its ability to protect in the extremes. Windproof, waterproof with a water-repellent finish, yet breathable with pit-zip venting, it's a go-to for mountain adventures. ... All of our men's rain jackets at The North Face list whether they have DWR coating, are waterproof, and are breathable in the product features. For maximum breathability, look for jackets made from FUTURELIGHT material or Gore-Tex. Don't miss our most lightweight, waterproof, and breathable rain shell - the Men's Summit Series FUTURELIGHT Papsura Jacket.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Men's Raincoats & Rain Jackets | The North Face",
+                "url": "https://www.thenorthface.com/en-us/c/mens/mens-jackets-and-vests/mens-rainwear-299284"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:target.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://www.target.com/s/rain+jacket"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "skip to main contentskip to footer · Get top deals, latest trends, and more · Terms · Footer",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets: Waterproof, Windproof, Lightweight Options",
+                "url": "https://www.target.com/s/rain+jacket"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:weatherproofgarment.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Weatherproof Garment",
+          "domain": "weatherproofgarment.com",
+          "url": "https://weatherproofgarment.com/"
+        },
+        "matched_product": "windbreaker",
+        "snippet": "Shop Weatherproof® men&#x27;s and women&#x27;s jackets, coats, vests, and rain gear. Packable, lightweight, softshell, and puffer styles since 1948. Free shipping. Shop All Women · New Arrivals · Vests · Rain & Windbreakers · Quilted Jackets · Fleece · Novelty Fashion · Puffer Jackets · Plus Size · MENS · Shop All Men · Golf Jackets · Lightweight Jackets · Packable Styles · Softshell Jackets · Bomber Jackets · Puffer Jackets · Pillow Pac Puffer · Big & Tall · Magnetic Closures · Login · Cart · Your cart is empty · Start shopping · Add order note Save · Shop MenShop Women · Shop MenShop Women · Go to slide 1 Go to slide 2 · Shop now · Shop now · New · PLUSH LINED PUFFER QUILTED VEST ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jackets, Coats & Rain Gear for Men & Women | Weatherproof®",
+                "url": "https://weatherproofgarment.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:nautica.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Nautica",
+          "domain": "nautica.com",
+          "url": "https://www.nautica.com/mens-outerwear/"
+        },
+        "matched_product": "windbreaker",
+        "snippet": "Shop premium men&#x27;s outerwear at Nautica. Discover stylish coats, jackets &amp; windbreakers for every season. Quality craftsmanship meets style. Shop premium men's outerwear at Nautica. Discover stylish coats, jackets & windbreakers for every season. Quality craftsmanship meets style. KEEP SHOPPING CHECKOUT · Your bag (0) 1 product was removed. UNDO · You have no items in your cart. Home · Men · Coats & Jackets · Filter Close Filter + Sort · 15 Items · New Arrivals · Polos · T-Shirts · Sweatshirts & Sweatpants · Shirts · Sweaters · The Getaway Shop · The Deck Collection · Performance · Offshore Tournament Fishing · Top Trends Back to Top · search.refinements.close · Filter + Sort · Sort By · Most Popular · Price $ to $$ Top Rated · Newest First · Price $$ to $ Category · jackets (6) sport coats (1) vests (1) Color ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Men's Coats & Jackets | Stylish Outerwear Collection | Nautica",
+                "url": "https://www.nautica.com/mens-outerwear/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Workwear-Rain-Gear-Rain-Jackets-Raincoats/N-5yc1vZcl48"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Get free shipping on qualified Rain Jackets &amp; Raincoats products or Buy Online Pick Up in Store today in the Workwear Department.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets & Raincoats - The Home Depot",
+                "url": "https://www.homedepot.com/b/Workwear-Rain-Gear-Rain-Jackets-Raincoats/N-5yc1vZcl48"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/sports-outdoors/rain-jackets/4125_546956_4128_1800746_5376162_1858720"
+        },
+        "matched_product": "rain jacket",
+        "snippet": "Shop for Rain Jackets in Rainwear. Buy products such as Rosvigor Womens Waterproof Raincoat Lightweight Color Block Jackets Windproof Hooded Jacket with Pockets at Walmart and save.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rain Jackets in Rainwear - Walmart.com",
+                "url": "https://www.walmart.com/browse/sports-outdoors/rain-jackets/4125_546956_4128_1800746_5376162_1858720"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 361,
+          "completion_tokens": 120,
+          "cost_usd": 0.0000769
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3533,
+          "completion_tokens": 1034,
+          "cost_usd": 0.00070486
+        }
+      ],
+      "llm_tokens": 5048,
+      "estimated_cost_usd": 0.020782,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "yelp.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "massfirearms.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "outdoorcoverwarehouse.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "mahigold.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "skihaus.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "lunkersoutfitters.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "on.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

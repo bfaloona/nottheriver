@@ -1,0 +1,1437 @@
+{
+  "id": "led-light-bulbs-rural",
+  "checked": "2026-09-25T05:53:05.001Z",
+  "request": {
+    "product": "LED light bulbs",
+    "city": "Port Clinton",
+    "state": "PA",
+    "lat": 40.58,
+    "lon": -76.03,
+    "ruca": 10
+  },
+  "status": 200,
+  "elapsed_ms": 15121,
+  "body": {
+    "query": {
+      "product": "LED light bulbs",
+      "city": "Port Clinton",
+      "state": "PA",
+      "canonical_name": "LED light bulbs",
+      "category": "lighting",
+      "online_queries": [
+        "buy LED light bulbs",
+        "LED bulb shop"
+      ],
+      "local_queries": [
+        "lighting store",
+        "hardware store"
+      ],
+      "near_radius_mi": 30
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4E5IB7XHYI5CEA734KORLMACTYCKQ2VQQAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Dollar Tree",
+          "domain": "dollartree.com",
+          "url": "https://locations.dollartree.com/pa/hamburg/1780-tilden-ridge-dr"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1780 Tilden Ridge Dr, Hamburg, PA 19526",
+        "distance_km": 2.5,
+        "lat": 40.5623,
+        "lon": -76.0111,
+        "certifications": [],
+        "signals": [],
+        "score": 0.566,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://locations.dollartree.com/pa/hamburg/1780-tilden-ridge-dr"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.6 mi (2.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4U5ICP2QWJBCEB5FCO27YUACTYCIO4O5ZAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Lowe's Garden Center",
+          "domain": "lowes.com",
+          "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC"
+        },
+        "matched_product": "",
+        "snippet": "garden center",
+        "address": "20 Wilderness Trail, Hamburg, PA 19526",
+        "distance_km": 2.6,
+        "lat": 40.5632,
+        "lon": -76.0085,
+        "certifications": [],
+        "signals": [],
+        "score": 0.565,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.935,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "1.6 mi (2.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4LD4J7IJEI5CEAJ4PLVMG372SYATYSC7RAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Keystone Landscape Supply",
+          "domain": "keystonelandscapesupply.com",
+          "url": "https://keystonelandscapesupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1509 Centre Turnpike, Orwigsburg, PA 17961",
+        "distance_km": 4.3,
+        "lat": 40.5558,
+        "lon": -75.991,
+        "certifications": [],
+        "signals": [],
+        "score": 0.559,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://keystonelandscapesupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8925,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "2.7 mi (4.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc42MDBM5QHI5CEAFXV5Y2D572SYDRQLPQYAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Fastener Place",
+          "domain": "thefastenerplace.com",
+          "url": "https://thefastenerplace.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware, shop",
+        "address": "137 Schuylkill Ave, Hamburg, PA 19526",
+        "distance_km": 4.5,
+        "lat": 40.5549,
+        "lon": -75.9882,
+        "certifications": [],
+        "signals": [],
+        "score": 0.558,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://thefastenerplace.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8875,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "2.8 mi (4.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4EFL6UWIQI5CEBIUUWXZLP7SSYBHWZQHHAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Weis Markets",
+          "domain": "weismarkets.com",
+          "url": "https://weismarkets.com/stores#/4300"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "552 State St, Hamburg, PA 19526",
+        "distance_km": 5,
+        "lat": 40.5552,
+        "lon": -75.98,
+        "certifications": [],
+        "signals": [],
+        "score": 0.556,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://weismarkets.com/stores#/4300"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.875,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "3.1 mi (5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc47QGF5KUIJRCEBGKJ2QF34BKTYDMBCIZSAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Jack's DIY Home Store",
+          "domain": "jackssurplus.com",
+          "url": "https://jackssurplus.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "139 S Front St, Auburn, PA 17922",
+        "distance_km": 5.4,
+        "lat": 40.5979,
+        "lon": -76.0897,
+        "certifications": [],
+        "signals": [],
+        "score": 0.555,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://jackssurplus.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.865,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "3.4 mi (5.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4JEVWH2D5IJCEAXHBLUXGEBCTYBWQJJRSAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Mountain View Supply & Rental (Ace Hardware)",
+          "domain": "mtviewsupply.com",
+          "url": "https://mtviewsupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "5104 Old U.S. 22, Hamburg, PA 19526",
+        "distance_km": 7.5,
+        "lat": 40.5195,
+        "lon": -76.0685,
+        "certifications": [],
+        "signals": [],
+        "score": 0.547,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://mtviewsupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.8125,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "4.7 mi (7.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4GAF63HDGIFCEBWXCDKP4T7KSYCT3K5I2AAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Kuzan's True Value Hardware & Rental Center",
+          "domain": "kuzanshardware.com",
+          "url": "https://kuzanshardware.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1069 Pottsville Pike, Shoemakersville, PA 19555",
+        "distance_km": 9.4,
+        "lat": 40.5109,
+        "lon": -75.9654,
+        "certifications": [],
+        "signals": [],
+        "score": 0.54,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://kuzanshardware.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.765,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "5.8 mi (9.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4Z337QKJTJBCEAKP4MNV4OACTYBICLSG52N2QNFA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Walmart Supercenter",
+          "domain": "walmart.com",
+          "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc"
+        },
+        "matched_product": "",
+        "snippet": "shop, bakery",
+        "address": "1800 Tilden Ridge Dr, Hamburg, PA 19526",
+        "distance_km": 2.3,
+        "lat": 40.5641,
+        "lon": -76.0122,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.491,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9425,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.4 mi (2.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:1000bulbs.com",
+        "kind": "online",
+        "retailer": {
+          "name": "1000Bulbs.com",
+          "domain": "1000bulbs.com",
+          "url": "https://www.1000bulbs.com/category/led-light-bulbs"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "Save money by switching to LED lights. LEDs last longer and uses less energy than other types of lighting. Shop and buy LED bulbs today at 1000Bulbs.com. LED bulbs are used because they reduce energy use, last longer than many older lamp types, and are available for a wide range of fixtures. They can replace incandescent, halogen, fluorescent, CFL, and HID lamps in many applications when the correct LED product is selected. They also give buyers more control over light quality. A19 and A21 bulbs fit many table lamps and ceiling fixtures. PAR and BR bulbs are used in recessed cans, track heads, and flood lighting. MR16 and MR16 GU10 are common in accent lighting. LED tubes, PL lamps, and HID retrofit lamps require closer attention to ballast, bypass, or fixture compatibility. Smart bulbs, motion-sensor bulbs, dusk-to-dawn bulbs, and selectable bulbs may have installation limits or setup requirements. Finally, confirm the fixture and location ratings. Enclosed fixtures trap heat, outdoor fixtures may need wet location ratings, and some retrofit lamps require a ballast, driver, or rewiring. Product specifications matter more than the general LED label. LED light bulbs are used in a wide range of lighting fixtures, including lamps, ceiling fixtures, chandeliers, recessed cans, track lights, vanity fixtures, signs, landscape lights, warehouses, parking lots, retail displays, offices, schools, restaurants, and specialty equipment. The main benefit is choice. LED technology can serve everyday residential lighting, high-CRI display lighting, commercial retrofit work, decorative exposed-bulb fixtures, and high-output industrial applications when the right lamp is matched to the fixture.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "LED Light Bulbs – Long-Lasting, Energy-Efficient Lighting | 1000Bulbs.com",
+                "url": "https://www.1000bulbs.com/category/led-light-bulbs"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:primelights.com",
+        "kind": "online",
+        "retailer": {
+          "name": "PrimeLights",
+          "domain": "primelights.com",
+          "url": "https://www.primelights.com/collections/led-bulbs"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "Order LED Bulbs for All Your Light Fixtures We provide both dimmable and non-dimmable standard LED bulbs in packs of 6, as well cases of tubes—perfect for any common lighting application. PrimeLights LED Bulbs: Shop now for dimmable and non-dimmable LED bulbs. Find the perfect LED replacement bulbs for your lighting needs. Looking for durable, reliable, and energy-efficient light bulbs to replace your outdated fluorescent fixtures? PrimeLights’ LED Bulbs work on all lighting fixtures—including those that came with fluorescent bulbs. They’re also 3x brighter, longer-lasting, and incredibly energy-efficient—making them an all-around ideal solution for all your general lighting needs. We provide both dimmable and non-dimmable standard LED bulbs in packs of 6, as well cases of tubes—perfect for commercial spaces. LED bulbs are available in various color temperatures, allowing you to choose between warm, cool, and daylight options to create the desired ambiance in your space. ... LED light bulbs can be dimmed, but it’s essential to choose dimmable LED bulbs and compatible dimmer switches to ensure optimal performance and avoid flickering.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "LED Light Bulbs | Replacement LED Tubes",
+                "url": "https://www.primelights.com/collections/led-bulbs"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:bulbs.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bulbs.com",
+          "domain": "bulbs.com",
+          "url": "https://www.bulbs.com/Light-Bulbs/results.aspx"
+        },
+        "matched_product": "halogen bulbs",
+        "snippet": "At Bulbs.com you can purchase over 2,100 different Light Bulbs from brands like Bulbrite, Philips Lighting and Satco Products, Inc.. Pick from LED, Halogen, Fluorescent, CFL Plug-in, Automotive, ANSI Code, HID, Incandescent, Miniature, Sealed ... View cart & begin checkout The&nbsp;Business Lighting Experts · Instant Rebates are available to businesses Click to find out about your location ... Our easy-to-use BulbFinder will let you find the correct bulb, step by step. Select a bulb category to get started Globe Standard (Traditional) Candelabra / Holiday Reflector Tube / Circline HID Miniature / Capsule Color Projector Lamps Automotive ... Tel. 1 (888) 455-2800 ... These bulbs bring you the energy efficiency and savings of LED technology, combined with the traditional look and nostalgic feel of incandescent Edison bulbs. They produce a brighter, crisper light that mimics natural light well. Halogen bulbs are also slightly more energy efficient than incandescents, lasting about two to three times longer. However, they are still less efficient than LED bulbs and generate more heat. They also boast impressive energy efficiency, converting more electricity into light compared to traditional bulbs. However, HID bulbs have a longer start time to reach full brightness and may cast a slightly bluish hue. Additionally, they require special ballasts to regulate power, adding complexity to the installation process. LED (Light Emitting Diode) technology represents a significant advancement in lighting. LEDs are highly energy-efficient, converting up to 90% of their energy into light, which drastically reduces electricity consumption and costs. They have an impressive lifespan, often lasting 25,000 hours or more, compared to 1,000 hours for incandescent bulbs and 8,000 hours for CFLs.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Light Bulbs | Bulbs.com",
+                "url": "https://www.bulbs.com/Light-Bulbs/results.aspx"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:warehouse-lighting.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Warehouse-Lighting.com",
+          "domain": "warehouse-lighting.com",
+          "url": "https://www.warehouse-lighting.com/collections/led-light-bulbs"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "6 Pack, 400-watt, clear, ANSI-M59, Fixture Type-enclosed, ED28 bulb, universal operating position, E39 mogul ... Rated Life: 25,000 Hrs. ... Rated Hours: 15,000 Hrs. ... Rated Hours: 15,000 Hrs. ... Hours Rated: 15,000 Hrs. ... Philips-CDM70/TC/830 70 Watt - T4 - MasterColor - Pulse Start - Metal Halide - Unprotected Arc Tube - 3000K - G8.5 Base - ANSI M139/E - Universal Burn ... LED light bulbs do not have toxic elements and other noxious chemicals such as mercury. LED light bulbs have a longer life than traditional incandescent light bulbs and require less energy. They come in a variety of shapes, sizes, bases, and wattages and they offer a variety of sheens to match almost any light fixture. Because of this LED light bulbs help to protect the environment from further toxic waste. LEDs have a higher quality of light distribution and can focus light in directions as opposed to other types of lighting. 6 Pack, 400-watt, clear, ANSI-M59, Fixture Type-enclosed, ED28 bulb, universal operating position, E39 mogul ... Rated Life: 25,000 Hrs. ... Rated Hours: 15,000 Hrs. ... Rated Hours: 15,000 Hrs. ... Hours Rated: 15,000 Hrs. ... Philips-CDM70/TC/830 70 Watt - T4 - MasterColor - Pulse Start - Metal Halide - Unprotected Arc Tube - 3000K - G8.5 Base - ANSI M139/E - Universal Burn ... LED light bulbs do not have toxic elements and other noxious chemicals such as mercury.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "LED Light Bulbs | Find the Best LED Light Bulbs Online | Warehouse-Lighting.com",
+                "url": "https://www.warehouse-lighting.com/collections/led-light-bulbs"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:buyledonline.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Buyledonline",
+          "domain": "buyledonline.com",
+          "url": "https://buyledonline.com/"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "Buy LED Online is a one-stop LED online store for all your lighting needs. Shop our selection of LED light bulbs, LED downlights, flood lights, high bay lights, and more. Buy LED Online is the clear choice for a wide variety of LED light bulbs and related products. We carry a huge selection of LED bulbs, including A-series bulbs, decorative bulbs, reflector bulbs, specialty bulbs, tube bulbs, and much more. In addition to high-quality LED bulbs, we also supply a wide array of lighting equipment and fixtures, such as commercial lighting systems, track lighting tracks and heads, recessed lighting, and flat lighting panels. No matter what kind of lighting you need for your home or business, Buy LED Online has the LED lighting products for you. We’re committed to helping you make the most of your light bulbs and fixtures, and we’re proud to offer industry-leading professionalism and expertise to each and every customer. If you’re looking for business-to-business lighting applications, talk to one of our B2B sales experts! Our team is ready to help you find the perfect lighting solution, and our large inventory and drop-shipping capabilities make Buy LED Online a perfect choice for businesses. Buy LED Online offers a comprehensive range of LED lights and related products for every residential and commercial lighting need. We can brighten up the most overlooked spaces in your restaurant, corporate offices, and multiple-unit homes. We carry LED bulbs, LED Tubes, Indoor and Outdoor Lighting for Residential and Commercial spaces, Flat Panels, Recessed Lighting, Track Lighting, and LED Solar Lights.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop LED Light Bulbs, LED Lights online, LED Lighting - Buy LED Online",
+                "url": "https://buyledonline.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:costco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Costco",
+          "domain": "costco.com",
+          "url": "https://www.costco.com/led-light-bulbs.html"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "Shop with Costco to find fantastic deals on LED light bulbs. Shop online at Costco.com today! Enbrighten 100 ft. Permanent Outdoor Wi-Fi Eternity Eave Lights, 16.5 in.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "LED Light Bulbs | Costco",
+                "url": "https://www.costco.com/led-light-bulbs.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:bulbrite.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bulbrite",
+          "domain": "bulbrite.com",
+          "url": "https://bulbrite.com/"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "We believe that light is so essential – so fundamental – because it impacts every moment of our lives. For over 50 years our dream is to touch the lives of many by providing the most beautiful lights possible. Discover our premium LED bulbs, string lights, smart lighting &amp; fixtures. Upgrade your fixture with these designer bulbs.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bulbrite | LED Light Bulbs, Builder & Cordless Lighting Solutions – Bulbrite",
+                "url": "https://bulbrite.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Lighting-Light-Bulbs-LED-Light-Bulbs/N-5yc1vZbm79"
+        },
+        "matched_product": "LED light bulbs",
+        "snippet": "Get free shipping on qualified LED Light Bulbs products or Buy Online Pick Up in Store today in the Lighting Department. Specials & Offers Appliances Bath Blinds & Window Treatments Building Materials Lumber & Composites Moulding & Millwork Cleaning Home Décor Lighting Doors & Windows Electrical Flooring Hardware Heating, Venting & Cooling Kitchen Garden Center Outdoors Paint Plumbing Holiday Decorations Smart Home Storage & Organization Tools Automotive Furniture Baby & Kids Shop All Brands Home Depot Gift Cards Credit Card Services Home Services Home Depot Rental Pro Services & Contractor Supply Project Calculators DIY Projects and Ideas Local Ad Store Finder Site Map",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "LED Light Bulbs - The Home Depot",
+                "url": "https://www.homedepot.com/b/Lighting-Light-Bulbs-LED-Light-Bulbs/N-5yc1vZbm79"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "online:sunco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Sunco Lighting",
+          "domain": "sunco.com",
+          "url": "https://sunco.com/collections/led-bulbs"
+        },
+        "matched_product": "lighting",
+        "snippet": "Save money on your electric bill by switching to energy saving, bright LED lights from Sunco. Choose energy efficient Sunco LED bulbs with low wattage and with low wattage and a high lumen output for indoor applications in a wide variety of available shapes and sizes. Our LED bulbs deliver powerful, customizable lighting with dimmable brightness, even light distribution, and a range of color temperatures to suit any indoor or outdoor space.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "LED Bulbs – Sunco Lighting",
+                "url": "https://sunco.com/collections/led-bulbs"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:lightbulbs.com",
+        "kind": "online",
+        "retailer": {
+          "name": "LightBulbs",
+          "domain": "lightbulbs.com",
+          "url": "https://www.lightbulbs.com/"
+        },
+        "matched_product": "lighting",
+        "snippet": "Shop the best prices on Light Bulbs, LED Lighting, Halogens, Compact Fluorescents, Christmas Lights and more at LightBulbs.com. In business since 1951, LightBulbs.com is the highest-rated light bulb shopping site around. We offer products from the largest manufacturers like Sylvania, Philips and GE. We have odd fluorescent bulbs for your antique Coke Machine or jukebox, yet we have all the modern LED bulbs that you can control with an app on your phone. We have Christmas Lights all year long, cool new fixtures for your bedroom, and even projector bulbs for your old 8mm/16mm projectors. 1,000's of bulbs, ballasts, fixtures and Christmas lights. In business since 1951 and online since 1996, LightBulbs.com is the highest rated light bulb shopping site around.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Buy Light Bulbs Online | LightBulbs.com",
+                "url": "https://www.lightbulbs.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 362,
+          "completion_tokens": 73,
+          "cost_usd": 0.00005484
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3610,
+          "completion_tokens": 958,
+          "cost_usd": 0.00068672
+        }
+      ],
+      "llm_tokens": 5003,
+      "estimated_cost_usd": 0.020742,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "yelp.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "wickercottagecandleco.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "jmarlinernst.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "superbrightleds.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "bulbamerica.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

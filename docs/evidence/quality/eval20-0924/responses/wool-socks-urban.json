@@ -1,0 +1,1450 @@
+{
+  "id": "wool-socks-urban",
+  "checked": "2026-09-25T05:49:24.298Z",
+  "request": {
+    "product": "wool socks",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.77,
+    "lon": -84.38,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 39152,
+  "body": {
+    "query": {
+      "product": "wool socks",
+      "city": "Atlanta",
+      "state": "GA",
+      "canonical_name": "wool socks",
+      "category": "clothing",
+      "online_queries": [
+        "buy wool socks",
+        "wool socks shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "clothing boutique shop"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4JLK5DTHO4BAEBC46AAXVQF2VYALKCOV4AAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Patagonia",
+          "domain": "patagonia.com",
+          "url": "https://patagonia.com/stores/ga/atlanta/124-krog-st-ne/store_atlantabeltline.html"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "124 Krog St NE, Atlanta, GA 30307",
+        "distance_km": 2,
+        "lat": 33.7573,
+        "lon": -84.3648,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/patagonia",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "fair_trade",
+            "label": "Sells Fair Trade Certified products",
+            "source_url": "https://www.fairtradecertified.org/shop-fair-trade/",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.792,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://patagonia.com/stores/ga/atlanta/124-krog-st-ne/store_atlantabeltline.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/"
+              },
+              {
+                "label": "Sells Fair Trade Certified products",
+                "url": "https://www.fairtradecertified.org/shop-fair-trade/"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/patagonia"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.95,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.2 mi (2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4VEXOAZMG5NAEAAT5EJHZEFCVYARMSXYCAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://rei.com/stores/atlanta?y_source=1_MTQ1MzQwMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "1800 NE Expy NE, Atlanta, GA 30329",
+        "distance_km": 9.5,
+        "lat": 33.84,
+        "lon": -84.3214,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.614,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "REI",
+                "url": "https://rei.com/stores/atlanta?y_source=1_MTQ1MzQwMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.7625,
+            "weight": 0.15,
+            "contribution": 0.114,
+            "sources": [
+              {
+                "label": "5.9 mi (9.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4XEQLMTZC4NAEAREEP4I3IGCVYCJGHFJXAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Cradled in Couth Boutique",
+          "domain": "cradledincouth.com",
+          "url": "https://cradledincouth.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store, clothing_store",
+        "address": "730 Peachtree St NE #570, Atlanta, GA 30308",
+        "distance_km": 0.7,
+        "lat": 33.7745,
+        "lon": -84.386,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Cradled in Couth Boutique",
+                "url": "https://cradledincouth.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9825,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.4 mi (0.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4Q7ROT4DL4NAEB7TVCMQZUGCVYCI7DFRFAAAAAAA=:16",
+        "kind": "local",
+        "retailer": {
+          "name": "Fit for a Queen of Atlanta",
+          "domain": "gownsfitforaqueen.com",
+          "url": "https://gownsfitforaqueen.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "805 Peachtree St NE Unit B, Atlanta, GA 30308",
+        "distance_km": 0.9,
+        "lat": 33.7767,
+        "lon": -84.3844,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Fit for a Queen of Atlanta",
+                "url": "https://gownsfitforaqueen.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9775,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.6 mi (0.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc4LUC6OQU34FAEAQEJFJL5GGCVYAQFQQMBAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Bouie’s boujee boutique",
+          "domain": "bouiesboujeeboutique.com",
+          "url": "https://bouiesboujeeboutique.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "300 Peachtree St NE PMB 4115, CS2, Atlanta, GA 30308",
+        "distance_km": 1.1,
+        "lat": 33.7626,
+        "lon": -84.3879,
+        "certifications": [],
+        "signals": [],
+        "score": 0.571,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Bouie’s boujee boutique",
+                "url": "https://bouiesboujeeboutique.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9725,
+            "weight": 0.15,
+            "contribution": 0.146,
+            "sources": [
+              {
+                "label": "0.7 mi (1.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc4HLYYWAOI4JAEADVRBNIGIF2VYB2DGNGDAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Mountain High Outfitters",
+          "domain": "mountainhighoutfitters.com",
+          "url": "https://mountainhighoutfitters.com/"
+        },
+        "matched_product": "",
+        "snippet": "sportevent",
+        "address": "675 Ponce De Leon Ave NE E-184, Atlanta, GA 30308",
+        "distance_km": 1.4,
+        "lat": 33.7717,
+        "lon": -84.3655,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://mountainhighoutfitters.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.965,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.9 mi (1.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4NX7F65PE4JAEBFRVKYDWKF2VYCDVZ2E2OB6K74Q=:14",
+        "kind": "local",
+        "retailer": {
+          "name": "The Village Retail",
+          "domain": "thevillageretail.com",
+          "url": "https://thevillageretail.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "675 Ponce De Leon Ave NE Ste 225, Atlanta, GA 30308",
+        "distance_km": 1.4,
+        "lat": 33.7726,
+        "lon": -84.3655,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://thevillageretail.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.965,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.9 mi (1.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc4USKMMHUQ4BAEACHVH2PZEF2VYAXNAJTKAAAAAAA=:17",
+        "kind": "local",
+        "retailer": {
+          "name": "Happy Mango Baby Boutique",
+          "domain": "shophappymango.com",
+          "url": "https://shophappymango.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "572 Edgewood Ave SE Ste 115, Atlanta, GA 30312, United States",
+        "distance_km": 2,
+        "lat": 33.7544,
+        "lon": -84.3683,
+        "certifications": [],
+        "signals": [],
+        "score": 0.568,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://shophappymango.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.95,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.2 mi (2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4X6MZQLWE4JAEBTGWKXOJGFSVYBTSEIVSAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Secondwind Gear Shop",
+          "domain": "secondwindgearshop.com",
+          "url": "https://secondwindgearshop.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "628 N Highland Ave NE, Atlanta, GA 30306",
+        "distance_km": 2.5,
+        "lat": 33.7716,
+        "lon": -84.3528,
+        "certifications": [],
+        "signals": [],
+        "score": 0.566,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://secondwindgearshop.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.6 mi (2.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc43RDAG6AL4JAEBNFYWU5VUFSVYCTSMR4HAAAAAAA=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "The Clothing Warehouse",
+          "domain": "theclothingwarehouse.com",
+          "url": "https://theclothingwarehouse.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "420 Moreland Ave NE, Atlanta, GA 30307",
+        "distance_km": 2.9,
+        "lat": 33.766,
+        "lon": -84.3493,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "The Clothing Warehouse",
+                "url": "https://theclothingwarehouse.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.9275,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.8 mi (2.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/socks/f/fbt-wool-wool-blend"
+        },
+        "matched_product": "wool socks",
+        "snippet": "WHEN YOU BUY 3 OR MORE full-price socks. Savings will be reflected in your shopping cart. ... Thru 9/28 only, REI Co-op® Mastercard® cardmembers earn 10% in card rewards on all REI purchases—don&#x27;t wait! Terms apply. Learn more · REI Co-opTrailsmith Merino Wool Crew Socks - 2 Pairs Shop for Wool / Wool Blend Socks at REI - Browse our extensive selection of trusted outdoor brands and high-quality recreation gear. Top quality, great selection and expert advice you can trust. 100% Satisfaction Guarantee Learn how cycling socks differ from socks designed for other activities and what you should look for when buying socks to wear while you ride your bike. We list our 8 favorite socks for hiking, backpacking, kids, compression and more. Socks should feel snug but not tight, and the sock's heel cup should naturally line up with your heel.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Socks | REI Co-op",
+                "url": "https://www.rei.com/c/socks/f/fbt-wool-wool-blend"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:woolx.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Woolx",
+          "domain": "woolx.com",
+          "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Shop Merino Wool Socks for men and women. Our collection offers moisture-wicking, odor-resistant, and cushioned socks perfect for hiking, running, and everyday activities. Enjoy warmth and comfort in all seasons. long sleeve hoodie merino tee base layer joggers socks wool ribbed leggings dresses best sellers pants dress pants collared shirt crew neck 100% Wool Satisfaction Guaranteed Every Woolx purchase is backed by our money back guarantee.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks for Men & Women | Soft, Warm & Durable Socks – Woolx",
+                "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:smartwool.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Smartwool",
+          "domain": "smartwool.com",
+          "url": "https://www.smartwool.com/en-us"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Discover Merino wool socks, apparel and outdoor clothing available in the U.S. at Smartwool®. Built for comfort, breathability and performance. We make high quality Merino wool socks and apparel to equip all of your outdoor adventures. All backed by our go far. Not sure which socks you need for your next adventure? We’ve got you. For decades, Smartwool has helped to redefine comfort with Merino wool apparel designed for performance, durability, and everyday adventure wherever life takes you.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks & Apparel in the U.S. | Smartwool®",
+                "url": "https://www.smartwool.com/en-us"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:sweaterchalet.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Sweater Chalet",
+          "domain": "sweaterchalet.com",
+          "url": "https://www.sweaterchalet.com/quality-woolens/wool-socks/"
+        },
+        "matched_product": "wool socks",
+        "snippet": "World&#x27;s Warmest Wool Socks in 4 ply 100% Austrian Wool by Dachstein Woolwear™ In Men and Women&#x27;s Sizes in the Mountain Tradition. Guaranteed Warmest! Men's 100% Wool sweaters women's 100% Wool sweaters 100% wool socks 100% Wool gloves and mittens 100% wool caps 100% wool Scarves 100% wool blankets and pillows We like to keep our customers happy. That's why we have the \"Love Your Sweater\" guarantee. If you don't absolutely love your sweater or other woolen item, we will exchange it or issue a full refund.*",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "positive",
+            "claim": "Dachstein Woolwear 100% Organic Austrian Wool Socks - Sweater Chalet",
+            "source_url": "https://www.sweaterchalet.com/quality-woolens/wool-socks/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Dachstein Woolwear 100% Organic Austrian Wool Socks - Sweater Chalet",
+                "url": "https://www.sweaterchalet.com/quality-woolens/wool-socks/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:darntough.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Darn Tough Vermont",
+          "domain": "darntough.com",
+          "url": "https://darntough.com/"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Guaranteed for life and made in the USA, Darn Tough socks are the best merino wool socks for hiking, running, work, and everyday wear. Run socks built to last. Unconditionally Guaranteed for Life. Run TOugh · \"Close (esc)\" Darn Tough Vermont - Merino Wool Socks Guaranteed for Life Sock Finder · Size Chart · About Merino Wool · Help Center · Micro Crew Rewards · About Activities · Socks for Hiking · Socks for Running · Socks for Every Day · Socks for Skiing · Socks for Hunting · Socks for Work · Socks for Tactical Use · Log in · Wishlist · Our socks have been waiting for you. If our socks aren't the most comfortable, durable, best-fitting socks, we'll replace them.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "Darn Tough Vermont - Merino Wool Socks Guaranteed for Life",
+            "source_url": "https://darntough.com/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Darn Tough Vermont - Merino Wool Socks Guaranteed for Life",
+                "url": "https://darntough.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:merinoshoes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Merinos",
+          "domain": "merinoshoes.com",
+          "url": "https://merinoshoes.com/products/merino-wool-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Available in both crew and no-show styles, Merinos socks give you the flexibility to match any outfit or activity. Available in classic black or white. Whether you’re dressing up, keeping it casual, or gearing up for adventure, Merinos Merino Wool Socks deliver the perfect blend of comfort, durability, and natural performance. Discover unmatched comfort with Merinos Merino Wool Socks, crafted from premium Australian merino wool for a soft, breathable, and luxurious feel. Designed to keep your feet comfortable year-round, these socks naturally regulate temperature, wick moisture, and resist odors—perfect for daily wear, long walks, or cozy da Available in both crew and no-show styles, Merinos socks give you the flexibility to match any outfit or activity. Available in classic black or white. Whether you’re dressing up, keeping it casual, or gearing up for adventure, Merinos Merino Wool Socks deliver the perfect blend of comfort, durability, and natural performance. Best socks ever! I love wool socks and these fill the need for compression socks as well. \"I’m on my feet all day working with special needs children, and my Merinos keep me comfortable from morning to night. I love that the insoles are removable and washable, and exchanging sizes was quick and easy. I’ll definitely be buying another pair.\"Elizabeth R.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks – Merinos",
+                "url": "https://merinoshoes.com/products/merino-wool-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:peoplesocks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Peoplesocks",
+          "domain": "peoplesocks.com",
+          "url": "https://www.peoplesocks.com/"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Premium Merino Wool socks for Men and Women. We use American, Australian and New Zealand Merino Wool and Knit in the USA. [Georgia, North Carolina, Alabama] Premium Merino Wool socks for Men and Women. We use American, Australian and New Zealand Merino Wool and Knit in the USA. [Georgia, North Carolina, Alabama] Shop Now · Our socks are neither too thick nor too thin, and the neutral color options in two cuts make them easy to style with any attire. Shop Now ... We find that simplicity is key to providing high-quality socks at a fair price. People Socks offer all the comfort and performance you need without the unnecessary bells and whistles — we’re looking at you, polka dot prints! So whether you’re taking a stroll through the woods or simply downtown, our socks are perfect for all people.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "positive",
+            "claim": "American Knitted Premium Merino Wool Socks for Men and Women. – People Socks",
+            "source_url": "https://www.peoplesocks.com/",
+            "origin": "llm",
+            "action_date": null
+          }
+        ],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "American Knitted Premium Merino Wool Socks for Men and Women. – People Socks",
+                "url": "https://www.peoplesocks.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/c/kp/merino-wool-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Yobooom5 Pairs Merino Wool Socks for Men, Thick Winter Wool Hiking Socks, Warm Breathable Crew Mens Socks（Fit USA Size 7-13) Yobooom5 Pairs Merino Wool Socks for Men, Thick Winter Wool Hiking Socks, Warm Breathable Crew Mens Socks（Fit USA Size 7-13) Tismod5 Pairs Merino Wool Socks for Men, Thick Winter Wool Hiking Socks, Warm Breathable Crew Mens Socks(USA Size 7-13) NevENDMens Merino Wool Crew Socks Thermal and Warm Socks for Winter Work Hiking Running 3 Pairs (Size 5-10) NevEND3 Pairs Women's Wool Merino Winter Thermal Boots Thick Insulated Heated Socks For Cold Weather Outdoor Activities Mixed Color",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08"
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Merino Wool Socks for Warmth and Comfort",
+                "url": "https://www.walmart.com/c/kp/merino-wool-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ]
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 360,
+          "completion_tokens": 118,
+          "cost_usd": 0.00006996
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3199,
+          "completion_tokens": 1326,
+          "cost_usd": 0.00073875
+        }
+      ],
+      "llm_tokens": 5003,
+      "estimated_cost_usd": 0.020809,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "specialized.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "mountainhighoutfitters.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "highcountryoutfitters.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "luxechiccouture.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "pinkskyboutique.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "godisdope.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "highcountryoutfitters.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "mountainhighoutfitters.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "dickssportinggoods.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

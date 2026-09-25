@@ -33,6 +33,24 @@ Online results went from mostly review articles to shops. Local precision moves 
 
 The probe covered every retailer domain in all 60 searches (566 domains; 44 fetch errors are left out of the rate). On the 234 pages both the probe and a grader opened, the grader saw every one, while 39 turned the declared bot away (36 refused or challenged it, 3 disallowed it in robots.txt). Graders recorded only whether a page opened, not whether it blocked them, so this compares the bot with a person who got through. A site that fetched retailer pages to check stock would lose about one retailer in six ([probe.json](evidence/quality/eval60/probe.json)).
 
+## Rerun after distance groups and classifier-judged ranking
+
+On 2026-09-24 the same 20 searches were run again on the Worker with distance groups (nearby 10 mi metro, 30 mi rural, up to 3 "Farther away" to 100 mi) and local relevance from the classifier's sells judgment. Nothing measurable changed: every difference is within what a rerun alone moves ([report](evidence/quality/eval20-0924/report.json)).
+
+| Measure | Before (eval60) | Rerun |
+|---|---|---|
+| Local precision, both graders' answers | 56% (94 of 167) | 59% (90 of 153; 18 not judgeable) |
+| Good shops in each search's nearby top 3 | 30 of 54 judged | 29 of 51 judged |
+| "Farther away" shops (new) | n/a | 5 good, 4 bad, 1 not judgeable |
+| Online precision | 99% (189 of 191) | 98% (184 of 188) |
+| Local recall, farther shops included | 26 of 86 | 24 of 86 |
+| Online recall | 30 of 100 | 30 of 100 |
+| Shown results the model did not judge | not measured | 0 online, 0 local |
+
+- **Recall moved by 4 chain stores.** Lost: Target (Kyle) and Safeway (Burlingame), which Brave did not return this time, and DICK'S Sporting Goods (Buckhead), returned but ranked below the top 10. Gained: Mountain High Outfitters (Buckhead), matched by domain through a different listing (Ponce City Market) that this run's grader found closed, so the gain is not a real find.
+- **The offline replay did not carry over.** Replaying the new ranking on eval60's saved results put 29 good shops in the nearby top 3 instead of 23 (a different count from the table above, which uses both graders' answers); live, Brave returned different shops and the top 3 held level.
+- **Method.** 316 of 359 grades were reused from eval60 where the URL (and, for local, the address) matched; the 43 new rows were graded by two agents that did not see the baseline or earlier grades. The graders' browser was blocked on 3 online pages (Macy's, Bloomingdale's, Public Lands); the operator opened them in a personal browser and all 3 sell the product. The recall baseline is eval60's, unchanged; miss reasons in the report are eval60's labels, not checked again. The run made 80 Brave calls and cost about $0.42 in model use. Scripts and inputs: [eval20-0924/method](evidence/quality/eval20-0924/method/).
+
 ## Why good shops were missed
 
 | Reason | Online | Local |

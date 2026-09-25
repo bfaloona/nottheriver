@@ -1,0 +1,28 @@
+{
+ "checks": [
+  {
+   "search_id": "headlamp-urban",
+   "result_id": "online:publiclands.com",
+   "url": "https://www.publiclands.com/f/headlamps",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-24: page loads on publiclands.com (no redirect) and sells headlamps. The grader browser got an Akamai block on this site and dickssportinggoods.com."
+  },
+  {
+   "search_id": "wool-blanket-rural",
+   "result_id": "online:macys.com",
+   "url": "https://www.macys.com/shop/home/bed-bath/bedding/blankets-throws/Fabric/Wool%20%26%20Wool%20Blend?id=29405",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-24: page loads and sells wool blankets. The grader browser got Access Denied."
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "online:bloomingdales.com",
+   "url": "https://www.bloomingdales.com/shop/home/luxury-bath-towels/Fabric/Cotton/Cotton%20Blend?id=1005698",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-24: page loads and sells bath towels. The grader browser got Access Denied."
+  }
+ ]
+}

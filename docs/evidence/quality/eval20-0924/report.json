@@ -1,0 +1,115 @@
+{
+  "generated": "2026-09-25T06:10:55.798Z",
+  "graded_through": "2026-09-24",
+  "searches": {
+    "planned": 60,
+    "saved": 20,
+    "ok": 20,
+    "graded": 20
+  },
+  "cost": {
+    "brave_calls": 80,
+    "llm_tokens": 104322,
+    "estimated_cost_usd": 0.419203
+  },
+  "precision": {
+    "online": {
+      "graded": 188,
+      "relevant": 184,
+      "unknown": 0,
+      "precision": 0.979
+    },
+    "local": {
+      "graded": 153,
+      "relevant": 90,
+      "unknown": 18,
+      "precision": 0.588
+    }
+  },
+  "precision_local_by_zip_kind": {
+    "urban": {
+      "graded": 57,
+      "relevant": 33,
+      "unknown": 5,
+      "precision": 0.579
+    },
+    "suburban": {
+      "graded": 65,
+      "relevant": 39,
+      "unknown": 4,
+      "precision": 0.6
+    },
+    "rural": {
+      "graded": 31,
+      "relevant": 18,
+      "unknown": 9,
+      "precision": 0.581
+    }
+  },
+  "badges_sourced": {
+    "online": {
+      "yes": 7,
+      "no": 0,
+      "n/a": 181
+    },
+    "local": {
+      "yes": 6,
+      "no": 0,
+      "n/a": 165
+    }
+  },
+  "distance_plausible": {
+    "yes": 171,
+    "no": 0,
+    "n/a": 0
+  },
+  "recall": {
+    "online": {
+      "confirmed": 100,
+      "found": 30,
+      "recall": 0.3,
+      "miss_reasons": {
+        "other": 48,
+        "unclassified": 20,
+        "ranked_low": 2
+      }
+    },
+    "local": {
+      "confirmed": 86,
+      "found": 24,
+      "recall": 0.279,
+      "miss_reasons": {
+        "unclassified": 60,
+        "ranked_low": 2
+      }
+    }
+  },
+  "probe": {
+    "online": {
+      "probed": 0,
+      "ok": 0,
+      "challenge": 0,
+      "blocked": 0,
+      "robots_disallow": 0,
+      "error": 0,
+      "bot_blocked_rate": null
+    },
+    "local": {
+      "probed": 0,
+      "ok": 0,
+      "challenge": 0,
+      "blocked": 0,
+      "robots_disallow": 0,
+      "error": 0,
+      "bot_blocked_rate": null
+    }
+  },
+  "probe_vs_person": {
+    "both_blocked": 0,
+    "bot_only": 0,
+    "person_only": 0,
+    "neither": 0,
+    "precision": null,
+    "recall": null
+  }
+}
