@@ -53,7 +53,7 @@ On 2026-09-24 the same 20 searches were run again on the Worker with distance gr
 
 ## Why local results change from run to run
 
-On 2026-09-25 the 20 graded searches were used to separate the causes of run-to-run change in local results ([evidence](evidence/quality/variation-0925/)). Overlap is the share of shop websites two runs have in common (shared ÷ all distinct), counting every local shop Brave returned, shown or not.
+On 2026-09-25 the 20 graded searches were used to separate the causes of run-to-run change in local results ([evidence](evidence/quality/variation-0925/)). Overlap is the share of shop websites two runs have in common (shared ÷ all distinct), counting every local shop the Worker recorded from Brave, shown or not.
 
 | Comparison | Searches | Overlap |
 |---|---|---|

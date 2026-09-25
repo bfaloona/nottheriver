@@ -20,5 +20,5 @@ Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local 
 
 ## Open question for the operator
 
-- Q1. If wording dominates, is a per-product cache acceptable? It makes results repeatable but means a stale query set for a product until the cache expires; the privacy impact is small (product text only, no location) but is a new store of search terms and needs a line in `docs/privacy.md`.
+- Q1. If wording dominates, is a per-product cache acceptable? It makes results repeatable but means a stale query set for a product until the cache expires; the normalize prompt includes city and state, so a product-only key drops the city from the prompt input and a product-plus-city key stores the city; either way it is a new store of search terms and needs a line in `docs/privacy.md`.
   - Measured options: always end local searches in "store" (one line in `storeQuery`, removes 4 of the 7 wording differences between eval runs, no cache); a normalize cache (fully repeatable until expiry; the normalize prompt includes city and state, `proxy/prompts/normalize.ts:7`, so the key is product only or product plus city); category templates (the category itself varied on 4 of 20 searches, and some are not shop types, e.g. "pantry staples"); pinning the provider (no help: wording varied on one provider).
