@@ -1,6 +1,6 @@
 # Plan: why Brave returns different local shops from run to run
 
-Status: planned 2026-09-24, not started. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
+Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local results change from run to run"); step 4 awaits the operator's answer to Q1. Wording dominates. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
 
 ## What is known
 
@@ -21,3 +21,4 @@ Status: planned 2026-09-24, not started. Why it matters: the eval rerun (`docs/q
 ## Open question for the operator
 
 - Q1. If wording dominates, is a per-product cache acceptable? It makes results repeatable but means a stale query set for a product until the cache expires; the privacy impact is small (product text only, no location) but is a new store of search terms and needs a line in `docs/privacy.md`.
+  - Measured options: always end local searches in "store" (one line in `storeQuery`, removes 4 of the 7 wording differences between eval runs, no cache); a normalize cache (fully repeatable until expiry; the normalize prompt includes city and state, `proxy/prompts/normalize.ts:7`, so the key is product only or product plus city); category templates (the category itself varied on 4 of 20 searches, and some are not shop types, e.g. "pantry staples"); pinning the provider (no help: wording varied on one provider).

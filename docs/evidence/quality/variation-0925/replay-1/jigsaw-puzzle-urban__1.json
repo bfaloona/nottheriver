@@ -1,0 +1,143 @@
+{
+ "q": "gift shop",
+ "at": "2026-09-25T07:05:15.998Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4T426IRDAPFDEANWSVUZC4USXYBTIG4M5AAAAAAA=",
+    "title": "Elias Gift Shop",
+    "url": "",
+    "coordinates": [
+     44.9482504,
+     -93.2840697
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "700 W Lake St, Minneapolis, MN 55408"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4HR42ENKQOVDEBR3OKXEMWUCXYAUPLLC7AAAAAAA=",
+    "title": "14 Hill gift shop",
+    "url": "https://14hill.com/",
+    "coordinates": [
+     44.9165103,
+     -93.2624379
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4737 Chicago Ave Ste 2, Minneapolis, MN 55407"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4DXWW4VC5PFDEAJ75DDHBAUCXYBLUJLP3UWQJQ3Q=",
+    "title": "Ingebretsen's Scandinavian Gifts & Foods",
+    "url": "https://ingebretsens.com/",
+    "coordinates": [
+     44.948160699999995,
+     -93.2510257
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1601 E Lake St, Minneapolis, MN 55407"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4J4L45WQSPVDEBRZ6CJAHWUKXYBPT5NPOAAAAAAA=",
+    "title": "Plaza Gift Shop",
+    "url": "",
+    "coordinates": [
+     44.977137899999995,
+     -93.2731476
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Plaza VII, 45 S 7th St, Minneapolis, MN 55402"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc436IPY5ZTPVDEBTMDAVARCUKXYBX3AZREAAAAAAA=",
+    "title": "The Vault Gift Shop",
+    "url": "https://hotelemery.com/discover/the-vault-gift-shop",
+    "coordinates": [
+     44.978133199999995,
+     -93.2666781
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "215 S 4th St, Minneapolis, MN 55401"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4IQAZCNDOPFDEAR2OOD526UCXYB7KA7NXAAAAAAA=",
+    "title": "Midtown Custom Souvenirs and Gifts",
+    "url": "https://midtowncustom.com/",
+    "coordinates": [
+     44.948675699999995,
+     -93.2607411
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "920 E Lake St #159, Minneapolis, MN 55407"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4ETZSHWL6PZDEAHM6CSODAUSXYAC7MXG3AAAAAAA=",
+    "title": "Ukrainian Gift Shop",
+    "url": "https://ukrainiangiftshop.com/",
+    "coordinates": [
+     44.9882461,
+     -93.2842169
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1008 N 5th St, Minneapolis, MN 55411, United States"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4SNUBG4MEPFDEBVTMRJWAYU2XYDNYE2AZAAAAAAA=",
+    "title": "Turning Leaf - Uptown",
+    "url": "https://shopturningleaf.com/retail-locations/uptown-minneapolis-mn",
+    "coordinates": [
+     44.9493543,
+     -93.2976333
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1400 Lagoon Ave, Minneapolis, MN 55408"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4FEYRTWDUPJDEAISTHYCNKUCXYCOBGQMMAAAAAAA=",
+    "title": "Children's Minnesota Marketplace and Gift Shop",
+    "url": "https://childrensmn.org/your-visit/while-you-are-here/on-the-minneapolis-campus/gift-stores",
+    "coordinates": [
+     44.9566908,
+     -93.2630015
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2530 Chicago Ave Fl 2, Minneapolis, MN 55404"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   }
+  ]
+ }
+}

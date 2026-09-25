@@ -1,0 +1,86 @@
+{
+ "q": "cookware store",
+ "at": "2026-09-25T07:04:47.411Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4H44QUEAFHJCUBYQG243QWICSYDVIMS2YAAAAAAA=",
+    "title": "Joy Friedman Pottery",
+    "url": "https://joyfriedman.com/",
+    "coordinates": [
+     42.4532795,
+     -72.5006847
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "13 Montague Rd, Leverett, MA 01054"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4BML2Q62TIVCUB7N22OO2OGKSYCV6QB5WAAAAAAA=",
+    "title": "Wendell Country Store",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "coordinates": [
+     42.5416102,
+     -72.40085549999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "57 Lockes Village Rd, Wendell, MA 01379"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc4ABKHDYYWH5CUABQAPUISGHSSYCYN55GQAAAAAAA=",
+    "title": "Leverett Woodworks",
+    "url": "",
+    "coordinates": [
+     42.492886,
+     -72.4708904
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "169 Rattlesnake Gutter Rd, Leverett, MA 01054"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4R7FKRDKFH5CUBDM5JPGA4HSSYBBFYIKYBCKYH7A=",
+    "title": "Leverett Village Co-Op",
+    "url": "https://leverettcoop.com/",
+    "description": "Co-op Grocery Store",
+    "coordinates": [
+     42.4943101,
+     -72.4696532
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "180 Rattlesnake Gutter Rd, Leverett, MA 01054"
+    },
+    "categories": [
+     "cafe"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4OLJ3AKNBHFCUAGLIRB2ISG2SYATPV4GMAAAAAAA=",
+    "title": "DJ's Farm Fresh Produce",
+    "url": "",
+    "coordinates": [
+     42.4502308,
+     -72.4302646
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "224 Leverett Rd, Shutesbury, MA 01072"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

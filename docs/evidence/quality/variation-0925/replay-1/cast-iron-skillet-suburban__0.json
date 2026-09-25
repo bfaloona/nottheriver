@@ -1,0 +1,161 @@
+{
+ "q": "cookware store",
+ "at": "2026-09-25T07:04:51.213Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4SJA64ISME5CUBKKHX4RGJWCRYAMVHY5DAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Natick/MA/Natick/01760/2669?emt=MSGoogleMaps",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     42.307011,
+     -71.3811118
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "339 Speen St, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc422KL7VQAE5CUAAVRCEWZ5WKRYALVE5HKAAAAAAA=",
+    "title": "Lowe's Home Improvement",
+    "url": "https://lowes.com/store/MA-Framingham/2384?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2384-_-na-_-0-_-0&y_source=1_MTE4MzQ0OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     42.3047131,
+     -71.4002793
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "350 Cochituate Rd, Framingham, MA 01701"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4JGIWX6JXE5CUAZN4KI5WRWKRYBMJFIAWAAAAAAA=",
+    "title": "HomeGoods",
+    "url": "https://homegoods.com/",
+    "coordinates": [
+     42.3063957,
+     -71.3969868
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "400 Cochituate Rd, Framingham, MA 01701"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4QP6TE464DZCUA27HIU3YZW2RYDGJBEA2AAAAAAA=",
+    "title": "Sears Appliance and Hardware Store",
+    "url": "",
+    "coordinates": [
+     42.2411026,
+     -71.4304331
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "310 Pond St, Ashland, MA 01721"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4HNFTKWG5EZCUBZPJAGMFPWCRYCVFV77PAAAAAAA=",
+    "title": "Harbor Freight",
+    "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+    "coordinates": [
+     42.3036299,
+     -71.3803463
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "321 Speen St #3a, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4K5L2VMF6ENCUATFM477TBT2RYBHL5GWAAAAAAAA=",
+    "title": "Needham Garden & Hardware",
+    "url": "https://needhamgardencenter.shop/",
+    "coordinates": [
+     42.2792569,
+     -71.2373657
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "53 Chestnut St, Needham, MA 02492"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4AKCA6JK2EZCUAXFI7RVXTWCRYBZPKHY7AAAAAAA=",
+    "title": "Crate & Barrel",
+    "url": "https://crateandbarrel.com/stores/natick-mall/str211",
+    "coordinates": [
+     42.299626,
+     -71.38241099999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4P5OCYVQ6EZCUBPE7BEBQLW2RYDGR6FZYAAAAAAA=",
+    "title": "Norfolk Kitchen & Bath Framingham",
+    "url": "https://norfolkkitchenandbath.com/kitchen-showrooms/framingham-kitchen-remodel-showroom",
+    "coordinates": [
+     42.2978008,
+     -71.4221809
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "624 Worcester Rd, Framingham, MA 01702"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4RYSQORZEE5CUACH3DNMR5WKRYDH7ADDYAAAAAAA=",
+    "title": "Dolce Vita Kitchen and Bath",
+    "url": "https://dvkitchens.com/",
+    "coordinates": [
+     42.3057946,
+     -71.3924773
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "405 Cochituate Rd, Framingham, MA 01701"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4A54HOCPTEZCUAH7V24V2ZVCRYCFD6DYQAAAAAAA=",
+    "title": "Jarvis Appliances, Inc.",
+    "url": "https://jarvisapplianceinc.com/",
+    "description": "Appliance Store",
+    "coordinates": [
+     42.3042919,
+     -71.3230085
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "958 Worcester St, Wellesley, MA 02482"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   }
+  ]
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "q": "children's gift shop",
+ "at": "2026-09-25T08:07:22.655Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc457D63F2P65AUAJ6SULRQ7N2VYD464LM2AAAAAAA=",
+    "title": "The Little Cottage Children's Shop at The Factory",
+    "url": "https://thelittlecottagechildrensshop.com/",
+    "coordinates": [
+     35.9321165,
+     -86.8603448
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "230 Franklin Rd Ste Suite 11-J, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc44WQN6URJ7NAUBC4AV6GR3NCVYCLSCZMKAAAAAAA=",
+    "title": "Once Upon A Child Franklin",
+    "url": "https://onceuponachild.com/locations/franklin-tn",
+    "coordinates": [
+     35.9621986,
+     -86.81430379999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "7090 Bakers Bridge Ave, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc43R33DVMK7NAUBQKKVJNWFNCVYBSH2TKMAAAAAAA=",
+    "title": "Kid to Kid Brentwood",
+    "url": "https://kidtokid.com/brentwood",
+    "coordinates": [
+     35.965174399999995,
+     -86.81850329999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "95 Seaboard Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4T5FBPLEC7NAUBNYX4KRCJNCVYDDNEX4GAAAAAAA=",
+    "title": "Brilliant Sky Toys & Books",
+    "url": "https://brilliantskytoys.com/",
+    "coordinates": [
+     35.9649253,
+     -86.81473609999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1705 Mallory Ln #100, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4VWIRHXH67BAUBK6J7COOBNCVYBPIH5FHAAAAAAA=",
+    "title": "Learning Express Toys and Gifts",
+    "url": "https://learningexpress.com/nashville",
+    "coordinates": [
+     35.9452777,
+     -86.8262093
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "420 Cool Springs Blvd #120, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc42HV2VG7G6ZAUBHJJORPOHOSVYAIZZWTIAAAAAAA=",
+    "title": "Bound Booksellers & Gifts",
+    "url": "https://boundbookstn.com/",
+    "coordinates": [
+     35.9289126,
+     -86.92012749999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "158 Front St #106, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CSHTBMM67NAUBGMOJL5TBNCVYAKK567DAAAAAAA=",
+    "title": "Bricks & Minifigs Brentwood",
+    "url": "https://bricksandminifigs.com/brentwood-tn",
+    "coordinates": [
+     35.9657804,
+     -86.81548959999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "91 Seaboard Ln #108, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4YWA2CWFY7NAUAKKG6GCSJNCVYDQUR7N2AAAAAAA=",
+    "title": "Barnes & Noble",
+    "url": "https://stores.barnesandnoble.com/store/2701",
+    "description": "Book Store",
+    "coordinates": [
+     35.9665633,
+     -86.8147292
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1701 Mallory Ln, Brentwood, TN 37027"
+    },
+    "categories": [
+     "cafe"
+    ],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4ZKNKE3KG7NAUARPLJWYQ7NCVYBVN7UOMPMSWZAI=",
+    "title": "Gabe's",
+    "url": "https://gabesstores.com/",
+    "coordinates": [
+     35.9630868,
+     -86.8134578
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1735 Galleria Blvd, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4PMWH32EC7JAUB6XSLWSRNNCVYDIQCK6GAAAAAAA=",
+    "title": "The Children's Place",
+    "url": "https://childrensplace.com/us/store/coolspringsgalleria-tn-franklin-37067-111011?CID=Organic-_-GMB-_-open_store-_-website_clicks-_-Null",
+    "coordinates": [
+     35.957119999999996,
+     -86.8138822
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1800 Galleria Blvd #2120, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   }
+  ]
+ }
+}

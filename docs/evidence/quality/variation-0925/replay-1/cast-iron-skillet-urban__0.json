@@ -1,0 +1,165 @@
+{
+ "q": "cookware store",
+ "at": "2026-09-25T07:04:54.863Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4MM3X3B7MGFCUB34SSPSBJRKRYD4FWM7JAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Somerville/MA/Somerville/02145/2667?emt=MSGoogleMaps",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     42.3900308,
+     -71.0794002
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "75 Mystic Ave, Somerville, MA 02145"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc45NED6K32GJCUBFLVUSPRLRKRYBL265UHAAAAAAA=",
+    "title": "Le Creuset Outlet Store",
+    "url": "https://lecreuset.com/store?sid=the-outlets-at-assembly-row",
+    "coordinates": [
+     42.3943533,
+     -71.07944479999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "510 Assembly Row, Somerville, MA 02145"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc44NRFMOP6FRCUASSKGCF37R2RYDIXUYIPAAAAAAA=",
+    "title": "Du's Cookware",
+    "url": "",
+    "coordinates": [
+     42.3515083,
+     -71.12106589999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1010 Commonwealth Ave, Boston, MA 02215"
+    },
+    "categories": [
+     "shop"
+    ],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4ZMUDXIXHFRCUAGEEVCY7HQ2RYB62FOFLAAAAAAA=",
+    "title": "Great Wall Kitchen Supply",
+    "url": "",
+    "coordinates": [
+     42.3508189,
+     -71.0617489
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "38 Kneeland St, Boston, MA 02111"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4IGU2YXC6FZCUBEYJV2UPPSKRYDNXM2PMAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSGoogleMaps",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     42.3622547,
+     -71.1557409
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "615 Arsenal St, Watertown, MA 02472"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4A2U4VLP7FFCUAYFEMFBBNRCRYD7SSPWZAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/South-Bay-Boston/MA/Boston/02125/2679?emt=MSGoogleMaps",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     42.3281152,
+     -71.0638586
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5 Allstate Rd, Boston, MA 02125"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=",
+    "title": "Kitchenwitch",
+    "url": "https://kitchenwitchjp.com/",
+    "coordinates": [
+     42.3124519,
+     -71.1143307
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "671 Centre St, Jamaica Plain, MA 02130"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4SKIVR5ZUF5CUAVFRRRUBNRSRYDWLALGTF4XSTRQ=",
+    "title": "Formaggio Kitchen Kendall",
+    "url": "https://formaggiokitchen.com/kendall",
+    "coordinates": [
+     42.3688039,
+     -71.0951177
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "94 Hampshire St, Cambridge, MA 02139"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc44HZLH3FEFZCUBC6TLLRJFTCRYBC3UJ24AAAAAAA=",
+    "title": "kitchen cornerstones",
+    "url": "https://kitchencornerstones.com/",
+    "coordinates": [
+     42.3644081,
+     -71.1964651
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "204 California St D, Newton, MA 02458"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4RWTS7FOIGBCUA2X2I45N5SCRYC7O6JJJAAAAAAA=",
+    "title": "Formaggio Kitchen",
+    "url": "https://formaggiokitchen.com/Cambridge",
+    "coordinates": [
+     42.3811213,
+     -71.13856369999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "358 Huron Ave, Cambridge, MA 02138"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

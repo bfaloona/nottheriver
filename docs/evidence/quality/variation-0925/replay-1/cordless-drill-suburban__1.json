@@ -1,0 +1,158 @@
+{
+ "q": "tool supply shop",
+ "at": "2026-09-25T07:05:00.474Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4CJI2PF3T75AUB5RFDMH3NOCVYCGCUD5EAAAAAAA=",
+    "title": "Tractor Supply Co.",
+    "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+    "coordinates": [
+     35.9957151,
+     -86.886112
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2176 Hillsboro Rd, Franklin, TN 37069"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4TGNW6RHX7BAUBDIJGGLVJNCVYBK3CIWXAAAAAAA=",
+    "title": "Lowe's Home Improvement",
+    "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     35.945046,
+     -86.817663
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3060 Mallory Ln, Franklin, TN 37067"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc45JU5CTCB7NAUB2E6OWGZNM2VYCKSYQPPAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+    "coordinates": [
+     35.9629303,
+     -86.80606399999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8101 Moores Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4BYHPMJUGAVBEANTDQ7TVXPKVYCBKJFOKAAAAAAA=",
+    "title": "Elder's Ace Hardware-Bellevue",
+    "url": "https://eldershardware.com/locations/bellevue",
+    "coordinates": [
+     36.043156499999995,
+     -86.9587344
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8203 TN-100, Nashville, TN 37221"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4GBFNAX7I7JAUAOBZGJCW7NCVYBNRKWMMAAAAAAA=",
+    "title": "ProVisionTools",
+    "url": "https://provisiontools.com/",
+    "coordinates": [
+     35.9602165,
+     -86.8192914
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "7106 Crossroads Blvd #206, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4E23TOCPP7NAUBTQAOIO35M2VYABO7D5VAAAAAAA=",
+    "title": "Rockler Woodworking and Hardware - Brentwood",
+    "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+    "coordinates": [
+     35.9682323,
+     -86.8084787
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Cool Springs Pointe Shopping Center, 1622 Galleria Blvd, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4TJCYG37V7RAUBH3N3IYRVNKVYBC3WU62AAAAAAA=",
+    "title": "Brentwood Rental & Sales",
+    "url": "https://brentwoodrental.net/",
+    "description": "Equipment Rental",
+    "coordinates": [
+     35.9762401,
+     -86.8297238
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1601 Franklin Rd, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "car_rental"
+   },
+   {
+    "id": "loc4OWX65MZF6RAUALFR25QANOCVYDOVWVYBAAAAAAA=",
+    "title": "Harpeth True Value Hardware",
+    "url": "https://stores.truevalue.com/tn/franklin/23150",
+    "coordinates": [
+     35.907400599999995,
+     -86.8753893
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "203 Downs Blvd, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4MA2NAIIV7RAUB5EZ7XF77M2VYDEEVHNFAAAAAAA=",
+    "title": "Stewart Builder Supply",
+    "url": "https://stewartbuildersupply.com/",
+    "coordinates": [
+     35.9693949,
+     -86.8124876
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1681 Mallory Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4PUA324HH6JAUBQVBW54HROCVYBAI44S3AAAAAAA=",
+    "title": "Haley Tool & Stamping Inc",
+    "url": "",
+    "coordinates": [
+     35.897687999999995,
+     -86.882353
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "303 Century Ct, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   }
+  ]
+ }
+}

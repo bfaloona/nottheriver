@@ -1,0 +1,158 @@
+{
+ "q": "outdoor outfitters shop",
+ "at": "2026-09-25T07:05:26.909Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc43Q53JWNCERCUALEBSTMDLVSRYCTWIGYRAAAAAAA=",
+    "title": "Natick Outdoor Store",
+    "url": "https://natickoutdoorstore.com/",
+    "description": "Outdoor Store",
+    "coordinates": [
+     42.2862198,
+     -71.3470365
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "38 North Ave, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4NBBJHRESEZCUAUH5QNEINWCRYAEFV6RYAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/stores/urban-outfitters-natick",
+    "coordinates": [
+     42.301354,
+     -71.383196
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Collection, 1245 Worcester St #4000, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4MAQXGZKQEFCUBBDNPIDMHXKRYBMR6FMXAAAAAAA=",
+    "title": "Lunkers Outfitters",
+    "url": "https://lunkersoutfitters.com/",
+    "coordinates": [
+     42.260266,
+     -71.4650284
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "159 Main St, Ashland, MA 01721"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4C5TQY44CEZCUB2DQBCYKHWCRYBG5T3LEAAAAAAA=",
+    "title": "American Eagle Outfitters",
+    "url": "https://storelocations.ae.com/us/ma/natick/1245-worcester-st.html",
+    "coordinates": [
+     42.300856,
+     -71.3849907
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St #2146, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4CDINR4RFEZCUB4CUDP34DWCRYCV65EN7AAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/ma/natick/255/?seo=localpack",
+    "coordinates": [
+     42.2980331,
+     -71.3868387
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1336 Worcester St, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc43DVBPEONEVCUBJEHUHK4TUSRYAFP25ZHAAAAAAA=",
+    "title": "E.A. Davis & Co by MAHI GOLD Outfitters",
+    "url": "https://mahigold.com/pages/mahi-gold-outfitters",
+    "coordinates": [
+     42.2953359,
+     -71.29356899999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "579 Washington St, Wellesley, MA 02482"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CFY45Y4LEZCUAR7UPQLYBWCRYC5DRRCXAAAAAAA=",
+    "title": "Foot Locker",
+    "url": "https://stores.footlocker.com/ma/natick/1245-worcester-street-6944.html",
+    "coordinates": [
+     42.301144099999995,
+     -71.3828181
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St #2190, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4WPVHHNIVE5CUBDWMEN7TBWKRYDFGLOWGAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/framingham?y_source=1_MTQ1MzQ0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     42.30535,
+     -71.393585
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "375 Cochituate Rd, Framingham, MA 01701"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4D2U3544LEZCUBNP4YBKZ5WCRYBKJYI42CXUTU6I=",
+    "title": "The North Face Natick Mall",
+    "url": "https://locations.thenorthface.com/en-us/ma/natick/usa23",
+    "coordinates": [
+     42.301146,
+     -71.384664
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St Ste 4016 Suite 4016, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4Y33WV3FXFJCUAOMRAXY2NV2RYCFD7CT6AAAAAAA=",
+    "title": "Outdoor Cover Warehouse",
+    "url": "https://outdoorcoverwarehouse.com/Wayland-Massachusetts",
+    "coordinates": [
+     42.3337379,
+     -71.3695643
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "13 Lakeshore Dr, Wayland, MA 01778"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   }
+  ]
+ }
+}

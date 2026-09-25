@@ -1,0 +1,18 @@
+{
+ "eval_runs_wording_differs": {
+  "raw": 7,
+  "after_store_shop_canon": 3
+ },
+ "six_normalize_runs_unstable": {
+  "raw": 11,
+  "after_store_shop_canon": 7
+ },
+ "judgment_flips": {
+  "domains_in_both_runs": 230,
+  "shown_vs_judged_out": 1,
+  "examples": [
+   "camping-tent-rural:outdoorcoverwarehouse.com:sells_product->shown"
+  ]
+ },
+ "shown_overlap_domain_address": 0.77
+}

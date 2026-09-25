@@ -55,6 +55,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 
 ## Decisions needed
 
+- Whether to make local search wording repeatable: always end it in "store" (partial, no cache) and/or cache the model's search wording (full, a new store of search terms). Numbers and options: [plans/search-variation.md](plans/search-variation.md) Q1.
 - Whether local recall should favor independents: the site finds 17% of independent baseline shops against 35% of chain stores (a gap within noise at this sample size).
 - Whether marketplaces (Facebook Marketplace is classified `marketplace` and kept) should appear at all.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).

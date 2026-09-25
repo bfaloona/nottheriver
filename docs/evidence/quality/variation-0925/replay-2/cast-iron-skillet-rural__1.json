@@ -1,0 +1,161 @@
+{
+ "q": "kitchen supply shop",
+ "at": "2026-09-25T08:06:33.835Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4U3ZNCPKGIBCUA5GN4SN63WSRYDOD3S2EAAAAAAA=",
+    "title": "Kitchen Outfitters",
+    "url": "https://kitchen-outfitters.com/",
+    "coordinates": [
+     42.5021436,
+     -71.42075249999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "342 Great Rd, Acton, MA 01720"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4U6UQVMQKGVCUAD4HLP2AIISSYCUMHXRSAAAAAAA=",
+    "title": "Cowls Building Supply",
+    "url": "https://cowlsbuildingsupply.com/",
+    "coordinates": [
+     42.4143889,
+     -72.5315524
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "125 Sunderland Rd, Amherst, MA 01059"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4ZMUDXIXHFRCUAGEEVCY7HQ2RYB62FOFLAAAAAAA=",
+    "title": "Great Wall Kitchen Supply",
+    "url": "",
+    "coordinates": [
+     42.3508189,
+     -71.0617489
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "38 Kneeland St, Boston, MA 02111"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4LIEYE3H6E5CUA4K3WYYVDR2RYCMCYYUDAAAAAAA=",
+    "title": "Kitchenwitch",
+    "url": "https://kitchenwitchjp.com/",
+    "coordinates": [
+     42.3124519,
+     -71.1143307
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "671 Centre St, Jamaica Plain, MA 02130"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4GFJDSN5XFVCUAMFY42HH5RCRYD736PRXRRNZ7DQ=",
+    "title": "Blackstone's of Beacon Hill",
+    "url": "https://blackstonesboston.com/",
+    "coordinates": [
+     42.3571538,
+     -71.0702245
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "40 Charles St, Boston, MA 02114"
+    },
+    "categories": [],
+    "icon_category": "service"
+   },
+   {
+    "id": "loc4BML2Q62TIVCUB7N22OO2OGKSYCV6QB5WAAAAAAA=",
+    "title": "Wendell Country Store",
+    "url": "https://wendellcountrystore.wordpress.com/",
+    "coordinates": [
+     42.5416102,
+     -72.40085549999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "57 Lockes Village Rd, Wendell, MA 01379"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc47CCJCAY3GBCUBBHOG57TQIKSYDTIYEPOAAAAAAA=",
+    "title": "Clay's",
+    "url": "https://claysclothing.com/",
+    "coordinates": [
+     42.3758244,
+     -72.5190733
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "32 Main St, Amherst, MA 01002"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4RK6WD3GOF5CUBKAVJM3MGICSYBL3ZDHJAAAAAAA=",
+    "title": "Hamshaw Lumber-Amherst",
+    "url": "https://acehardware.com/store-details/17984",
+    "coordinates": [
+     42.3735023,
+     -72.5119148
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "150 College St, Amherst, MA 01002"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc42D2G2HAME5CUAZ5T5JZTLAKSYBA2Q5ETAAAAAAA=",
+    "title": "Because You Cook",
+    "url": "https://becauseyoucook.com/",
+    "coordinates": [
+     42.3050571,
+     -74.01888749999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4365 NY-23, Cairo, NY 12413"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4UPMYNG45IBCUA32DGEPEUFKSYCYHUTQHFFKOS5Q=",
+    "title": "New Salem General Store",
+    "url": "https://newsalemgeneralstore.com/",
+    "description": "General Store",
+    "coordinates": [
+     42.5048098,
+     -72.3326488
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "410 Daniel Shays Hwy, New Salem, MA 01355"
+    },
+    "categories": [
+     "convenience_store"
+    ],
+    "icon_category": "convenience_store"
+   }
+  ]
+ }
+}

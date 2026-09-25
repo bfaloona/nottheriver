@@ -1,0 +1,184 @@
+{
+ "q": "specialty grocery shop",
+ "at": "2026-09-25T07:05:08.164Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc47GRJQF534RAEBIOFBCLUIEKVYA274GGZXLEGUHQ=",
+    "title": "Your DeKalb Farmers Market",
+    "url": "https://dekalbfarmersmarket.com/",
+    "description": "Farmers Market",
+    "coordinates": [
+     33.786959599999996,
+     -84.2698114
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3000 E Ponce de Leon Ave, Decatur, GA 30030"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4A3N6HYBN4JAEBHPJN5JU2FSVYDTY6S5BH2KEOQY=",
+    "title": "Sevananda Natural Foods Market",
+    "url": "https://sevananda.coop/",
+    "description": "Natural Foods Store",
+    "coordinates": [
+     33.7670251,
+     -84.3484696
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "467 Moreland Ave NE, Atlanta, GA 30307"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4PTQHJXB24NAEBVX3GK6WSF2VYDDJVND6CZVBJSA=",
+    "title": "Whole Foods Market",
+    "url": "https://wholefoodsmarket.com/stores/poncedeleon?ref_=US_TRF_ALL_UFG_WFM_FRSOC_1001580",
+    "description": "Grocery Store",
+    "coordinates": [
+     33.775233799999995,
+     -84.3658288
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "650 Ponce De Leon Ave NE, Atlanta, GA 30308"
+    },
+    "categories": [
+     "bakery",
+     "convenience_store",
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4U5LF6XIV4ZAEADSKTBU7WEKVYAZDRTIZI2NMK6Y=",
+    "title": "Patel Brothers",
+    "url": "https://patelbros.com/specials/1709-church-street-suite-f-decatur",
+    "description": "Indian Grocery Store",
+    "coordinates": [
+     33.797526999999995,
+     -84.28097
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1709 Church St F, Decatur, GA 30033"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4GEYODBWO4NAEAZ656WEIOF2VYDBGO4S2HNTEUFQ=",
+    "title": "Trader Joe's",
+    "url": "https://locations.traderjoes.com/ga/atlanta/730",
+    "description": "Grocery Store",
+    "coordinates": [
+     33.7797402,
+     -84.3676474
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "931 Monroe Dr NE, Atlanta, GA 30308"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4LYTZVLHW4NAEBLCSPKTJOGCVYBII3SAK6QHNSKY=",
+    "title": "Savi Provisions - Midtown",
+    "url": "https://saviprovisions.com/",
+    "coordinates": [
+     33.7809654,
+     -84.384256
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "988 Peachtree St NE, Atlanta, GA 30309"
+    },
+    "categories": [
+     "cafe",
+     "convenience_store"
+    ],
+    "icon_category": "alcohol_shop"
+   },
+   {
+    "id": "loc4OYGNTCSH5NAEBI2BMVLTKEKVYAUFZ66ZAAAAAAA=",
+    "title": "Produce and Gourmet Market",
+    "url": "",
+    "coordinates": [
+     33.8381208,
+     -84.2688807
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3561 Lavista Rd, Decatur, GA 30033"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4XBAUQ4PJ4FAEAH6LZQLFUFKVYDG2G3HJJLUO2FI=",
+    "title": "Candler Park Market",
+    "url": "https://candlerparkmarket.com/",
+    "coordinates": [
+     33.7649366,
+     -84.3336236
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1642 McLendon Ave NE, Atlanta, GA 30307"
+    },
+    "categories": [
+     "convenience_store",
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4LDYVOEXK4JAEBIUBWPXWKF2VYATZVAVAQZ4EM6A=",
+    "title": "Ponce City Market",
+    "url": "https://poncecitymarket.com/",
+    "description": "Market",
+    "coordinates": [
+     33.772768299999996,
+     -84.3655967
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "675 Ponce De Leon Ave NE, Atlanta, GA 30308"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "commercial"
+   },
+   {
+    "id": "loc42VR3NPYO4BAEBDNGYS7RSH2VYB4ZMCSVAAAAAAA=",
+    "title": "Wayfield Foods Inc.",
+    "url": "https://wayfieldfoods.com/",
+    "description": "Supermarket",
+    "coordinates": [
+     33.7504501,
+     -84.48594659999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3050 M.L.K. Jr Dr SW, Atlanta, GA 30311"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

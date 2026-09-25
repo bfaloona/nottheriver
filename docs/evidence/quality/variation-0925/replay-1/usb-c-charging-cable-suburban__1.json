@@ -1,0 +1,144 @@
+{
+ "q": "computer supply shop",
+ "at": "2026-09-25T07:05:34.213Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4N5EP5O4ZEY7EBR7YRM2EY5KYYAWCUIK5AAAAAAA=",
+    "title": "That Computer Store",
+    "url": "",
+    "coordinates": [
+     30.150783299999997,
+     -97.8327762
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "11629 Menchaca Rd, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4N3EWA6Y4CY7EB2YCXEP4W5CYYATCDYHDAAAAAAA=",
+    "title": "Walmart Business Center",
+    "url": "https://business.walmart.com/?veh=seo_loc",
+    "coordinates": [
+     30.0863721,
+     -97.8248977
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "690 Old San Antonio Rd, Buda, TX 78610"
+    },
+    "categories": [],
+    "icon_category": "stationery"
+   },
+   {
+    "id": "loc4YBY347OCFA7EB4RJLN72M4SYYC44YUXIAAAAAAA=",
+    "title": "Office Depot",
+    "url": "https://officedepot.com/storelocator/tx/austin/office-depot-6745",
+    "coordinates": [
+     30.1592177,
+     -97.7914122
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9600 I-35 Ste R, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "stationery"
+   },
+   {
+    "id": "loc4ZNDVFUWDFA7EBAYT2GX224SYYAVXJHH4AAAAAAA=",
+    "title": "Best Buy",
+    "url": "https://stores.bestbuy.com/tx/austin/9600-s-interstate-35-2516.html/?loc=ns100",
+    "description": "Electronics Store",
+    "coordinates": [
+     30.159238,
+     -97.791851
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9600 I-35 Ste Q, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4B2QN753PCI7EB2ASB264K6SYYC7GJRREAAAAAAA=",
+    "title": "A Computer Werks",
+    "url": "",
+    "coordinates": [
+     30.072021,
+     -97.918319
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "145 Richards Dr, Buda, TX 78610"
+    },
+    "categories": [],
+    "icon_category": "car_repair"
+   },
+   {
+    "id": "loc435TQC745EQ7EANAUO66MS4SYYCA4Y7HTAAAAAAA=",
+    "title": "LiveWire Onion Creek",
+    "url": "https://livewire.com/",
+    "coordinates": [
+     30.1430282,
+     -97.793563
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "10917 S I-35 Frontage Rd, Austin, TX 78747"
+    },
+    "categories": [],
+    "icon_category": "car"
+   },
+   {
+    "id": "loc4HZM5NIVKFA7EBRL3YSPKY4SYYDSUQSHIAAAAAAA=",
+    "title": "Geek Squad",
+    "url": "https://stores.bestbuy.com/tx/austin/9600-i-35-south-2516/geeksquad.html?loc=ns100",
+    "coordinates": [
+     30.1588537,
+     -97.7917859
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9600 I-35 Ste Q, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "mobile_phone"
+   },
+   {
+    "id": "loc4TA7IK3OVE47EBPMKGFK5K4SYYDPMBXLMAAAAAAA=",
+    "title": "Sam's Club",
+    "url": "https://samsclub.com/club/8259-austin-tx",
+    "coordinates": [
+     30.155600399999997,
+     -97.7942708
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9900 S I-35 Frontage Rd, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc47FP7RURFEE7EBKDTIUU2C42YYCVK6VN4AAAAAAA=",
+    "title": "Techie Solutions",
+    "url": "https://techiesolutions.us/",
+    "coordinates": [
+     30.1294834,
+     -97.8067115
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": ""
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   }
+  ]
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "q": "tea shop",
+ "at": "2026-09-25T07:05:21.430Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4IZ5FDO27VBCEB4ES52OQOJ2WYALR2KRLAAAAAAA=",
+    "title": "Main Street Tee’s",
+    "url": "https://mainstreetteesseneca.com/",
+    "coordinates": [
+     41.3154215,
+     -88.6098399
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "250 N Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "service"
+   },
+   {
+    "id": "loc4KLBW2I2UVJCEBMY4RXUEGLKWYB3SEVIGZF4P2ZI=",
+    "title": "Uncle Wong's",
+    "url": "",
+    "coordinates": [
+     41.3306927,
+     -88.70726979999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "122 E Bluff St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc42UUULYLJVBCEAQETWNTBUJ2WYAMD7X7XAAAAAAA=",
+    "title": "Refuge Coffee",
+    "url": "",
+    "coordinates": [
+     41.315731199999995,
+     -88.6109864
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "113 William St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "cafe"
+   },
+   {
+    "id": "loc4RPZHCEXPVFCEBWGV4QUSWLKWYD77MTROAAAAAAA=",
+    "title": "Annie's House",
+    "url": "",
+    "coordinates": [
+     41.327608399999995,
+     -88.7057595
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "265 Lincoln St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc42UUULYLJVBCEAQETWNTBUJ2WYAXLN4GFAAAAAAA=",
+    "title": "The Lumberyard ~ Coffee. Work. Shop. Gather.",
+    "url": "https://lumberyardseneca.com/",
+    "coordinates": [
+     41.315731199999995,
+     -88.6109864
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "113 William St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "cafe"
+   },
+   {
+    "id": "loc4OY3OJHYZVJCEABELYOMV6LKWYBCZOEFVGGV4PXY=",
+    "title": "Coyote Cafe",
+    "url": "",
+    "coordinates": [
+     41.328907,
+     -88.70895999999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "398 Main St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc4BNBHSH2HV5CEA63JRIAKOK2WYDEF2PLYAAAAAAA=",
+    "title": "Shine Organic Farms",
+    "url": "https://shineorganicfarms.com/",
+    "coordinates": [
+     41.369358,
+     -88.682068
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2539 N 30th Rd, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "greengrocer"
+   },
+   {
+    "id": "loc4DXBQRBQYVJCEB4OINGMVMLKWYC6G2PCLAAAAAAA=",
+    "title": "Gleason & Co",
+    "url": "",
+    "coordinates": [
+     41.3288734,
+     -88.7084106
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "385 Main St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4T7PDDYJ4U5CEBASR53RQ2J2WYAYVHRLSAAAAAAA=",
+    "title": "Seneca Food Mart",
+    "url": "",
+    "coordinates": [
+     41.3065454,
+     -88.6102228
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "271 S Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4A5NICINLUZCEAA26M3MCQJSWYAERZGUDAAAAAAA=",
+    "title": "Cindy Shroba",
+    "url": "",
+    "coordinates": [
+     41.302097499999995,
+     -88.596243
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": ""
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

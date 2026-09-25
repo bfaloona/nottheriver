@@ -1,0 +1,173 @@
+{
+ "replays": [
+  "1",
+  "2"
+ ],
+ "mean_ab_ids": 0.93,
+ "mean_ab_domains": 0.93,
+ "same_top5": 13,
+ "mean_a_vs_saved_domains": 0.94,
+ "mean_saved_in_a": 0.96,
+ "rows": [
+  {
+   "id": "bath-towels-urban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "camping-tent-rural",
+   "ab_ids": 0.8235294117647058,
+   "ab_domains": 0.8,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.8571428571428571,
+   "saved_in_a": 0.9230769230769231
+  },
+  {
+   "id": "camping-tent-suburban",
+   "ab_ids": 0.7058823529411765,
+   "ab_domains": 0.7142857142857143,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "camping-tent-urban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "cast-iron-skillet-rural",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.75,
+   "saved_in_a": 0.9
+  },
+  {
+   "id": "cast-iron-skillet-suburban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.9375,
+   "saved_in_a": 0.9375
+  },
+  {
+   "id": "cast-iron-skillet-urban",
+   "ab_ids": 0.9285714285714286,
+   "ab_domains": 0.875,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.875,
+   "saved_in_a": 0.875
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "dark-chocolate-bar-suburban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "extra-virgin-olive-oil-urban",
+   "ab_ids": 0.7,
+   "ab_domains": 0.6923076923076923,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 0.7692307692307693,
+   "saved_in_a": 0.8333333333333334
+  },
+  {
+   "id": "headlamp-urban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "ab_ids": 0.9285714285714286,
+   "ab_domains": 0.9090909090909091,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "loose-leaf-green-tea-rural",
+   "ab_ids": 0.8823529411764706,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.8571428571428571,
+   "saved_in_a": 0.8571428571428571
+  },
+  {
+   "id": "rain-jacket-suburban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "ab_ids": 0.8823529411764706,
+   "ab_domains": 0.8,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 0.9,
+   "saved_in_a": 0.9
+  },
+  {
+   "id": "usb-c-charging-cable-suburban",
+   "ab_ids": 0.7894736842105263,
+   "ab_domains": 0.7142857142857143,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 0.8461538461538461,
+   "saved_in_a": 0.9166666666666666
+  },
+  {
+   "id": "wooden-train-set-suburban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": true,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "wool-blanket-rural",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  },
+  {
+   "id": "wool-socks-urban",
+   "ab_ids": 1,
+   "ab_domains": 1,
+   "ab_same_top5": false,
+   "a_vs_saved_domains": 1,
+   "saved_in_a": 1
+  }
+ ]
+}

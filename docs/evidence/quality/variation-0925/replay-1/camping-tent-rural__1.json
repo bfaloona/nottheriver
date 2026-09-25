@@ -1,0 +1,158 @@
+{
+ "q": "outdoor outfitters shop",
+ "at": "2026-09-25T07:04:38.107Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4WFZMGSTAI5CEAPNMQH3R6ACTYAH2CQNZWJAUEMQ=",
+    "title": "Cabela's",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     40.5576261,
+     -76.0019511
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "100 Cabela Dr, Hamburg, PA 19526, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc42PHHUQWAI5CEBLYJNGG4D72SYAO2GX26AAAAAAA=",
+    "title": "Camping World - Hamburg",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "description": "RV Dealer",
+    "coordinates": [
+     40.5605548,
+     -75.9961885
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Industrial Dr, Hamburg, PA 19526"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4KQVJO7FCIVCEBW6IFPDK77SSYAQ7PEGKAAAAAAA=",
+    "title": "Outdoor Cover Warehouse",
+    "url": "https://outdoorcoverwarehouse.com/Hamburg-Pennsylvania",
+    "coordinates": [
+     40.5440212,
+     -75.97947839999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "802 S Fourth St, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=",
+    "title": "Steve’s Outdoor Solutions LLC",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "coordinates": [
+     40.62957,
+     -75.95431599999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "448 Pine Swamp Rd, Kempton, PA 19529"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4RKMG2ATHI5CEAHUNT23CCACTYACRH7I6AAAAAAA=",
+    "title": "Sunglass Outfitters by Sunglass Hut",
+    "url": "https://stores.sunglasshut.com/us/pa/hamburg/100-cabela-dr?cid=YEXT_C120&y_source=1_OTc0ODEzNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     40.5578311,
+     -76.0020577
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "19526, Pennsylvania, Hamburg, Cabela Dr"
+    },
+    "categories": [],
+    "icon_category": "optician"
+   },
+   {
+    "id": "loc4EFL6UWIQI5CEBIUUWXZLP7SSYBHWZQHHAAAAAAA=",
+    "title": "Weis Markets",
+    "url": "https://weismarkets.com/stores#/4300",
+    "coordinates": [
+     40.5551865,
+     -75.9799773
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "552 State St, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4ICOZOL6UIBCEBLOYAS65Z7KSYCO4KO6WAAAAAAA=",
+    "title": "Tractor Supply Co.",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "coordinates": [
+     40.5064754,
+     -75.9665978
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1050 Shoemaker Ave, Shoemakersville, PA 19555"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4VVWHVKYJI5CEB2ZLLFP657SSYC6JZNXNAAAAAAA=",
+    "title": "The Blue Coast",
+    "url": "",
+    "coordinates": [
+     40.554982599999995,
+     -75.9832991
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "322B State St, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4J2IY2UPIKFCEAVTR6RBMWBKTYAHE4JH5AAAAAAA=",
+    "title": "Rutter's #80",
+    "url": "https://rutters.com/stores",
+    "coordinates": [
+     40.6399023,
+     -76.09053109999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1160 Centre Turnpike, Orwigsburg, PA 17961"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc42UB6MIKTKJCEBNSFHZKD6B2TYDJNPRI5AAAAAAA=",
+    "title": "Top City",
+    "url": "https://topcityonline.com/",
+    "coordinates": [
+     40.643162,
+     -76.1132403
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 PA-61, Orwigsburg, PA 17961, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

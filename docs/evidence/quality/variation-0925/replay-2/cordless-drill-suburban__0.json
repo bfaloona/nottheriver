@@ -1,0 +1,158 @@
+{
+ "q": "hardware store",
+ "at": "2026-09-25T08:06:42.973Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4TGNW6RHX7BAUBDIJGGLVJNCVYBK3CIWXAAAAAAA=",
+    "title": "Lowe's Home Improvement",
+    "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     35.945046,
+     -86.817663
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3060 Mallory Ln, Franklin, TN 37067"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4OWX65MZF6RAUALFR25QANOCVYDOVWVYBAAAAAAA=",
+    "title": "Harpeth True Value Hardware",
+    "url": "https://stores.truevalue.com/tn/franklin/23150",
+    "coordinates": [
+     35.907400599999995,
+     -86.8753893
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "203 Downs Blvd, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4UJTQ5JHG6VAUBYX46JXNDNCVYC4GIUJUAAAAAAA=",
+    "title": "Complete Home Hardware",
+    "url": "https://completehomehardware.com/",
+    "coordinates": [
+     35.9211011,
+     -86.8252828
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1227 Lakeview Dr Ste 6, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4BYHPMJUGAVBEANTDQ7TVXPKVYCBKJFOKAAAAAAA=",
+    "title": "Elder's Ace Hardware-Bellevue",
+    "url": "https://eldershardware.com/locations/bellevue",
+    "coordinates": [
+     36.043156499999995,
+     -86.9587344
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8203 TN-100, Nashville, TN 37221"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc45JU5CTCB7NAUB2E6OWGZNM2VYCKSYQPPAAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+    "coordinates": [
+     35.9629303,
+     -86.80606399999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8101 Moores Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4E23TOCPP7NAUBTQAOIO35M2VYABO7D5VAAAAAAA=",
+    "title": "Rockler Woodworking and Hardware - Brentwood",
+    "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+    "coordinates": [
+     35.9682323,
+     -86.8084787
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Cool Springs Pointe Shopping Center, 1622 Galleria Blvd, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4MA3RDIRB7JAUBVWIBFXP7NCVYDEPY6J5AAAAAAA=",
+    "title": "Ideal Millwork & Hardware",
+    "url": "https://idealmillworktn.com/",
+    "coordinates": [
+     35.9541514,
+     -86.82809019999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "320 Premier Ct #223, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc44JSTYAEY6ZAUBKOYTDLRDOCVYBRJ3VITAAAAAAA=",
+    "title": "Head Springs Depot",
+    "url": "https://headspringsdepot.com/",
+    "coordinates": [
+     35.9265137,
+     -86.876089
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "547 Mt Hope St, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4MA2NAIIV7RAUB5EZ7XF77M2VYDEEVHNFAAAAAAA=",
+    "title": "Stewart Builder Supply",
+    "url": "https://stewartbuildersupply.com/",
+    "coordinates": [
+     35.9693949,
+     -86.8124876
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1681 Mallory Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4X4XYSDW46RAUATBMSVOGVN2VYADS32YSAAAAAAA=",
+    "title": "Huskey Truss & Building Supply",
+    "url": "https://huskeytruss.com/",
+    "coordinates": [
+     35.9129656,
+     -86.86586679999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "424 Lewisburg Ave, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   }
+  ]
+ }
+}

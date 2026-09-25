@@ -1,0 +1,154 @@
+{
+ "q": "outdoor outfitters shop",
+ "at": "2026-09-25T08:06:30.038Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4SETN4AM67FBUAYXLMNH4ZSSSYCP7K5X6IHUKXTQ=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/stores/urban-outfitters-walnut-street",
+    "coordinates": [
+     39.9501345,
+     -75.1687201
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1627 Walnut St, Philadelphia, PA 19103"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4VJDRVXGW6FBUBUOCBJOEHS2SYBC7QTCXAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/",
+    "coordinates": [
+     39.8893695,
+     -75.17598629999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5000 S Broad St, Philadelphia, PA 19112"
+    },
+    "categories": [],
+    "icon_category": "commercial"
+   },
+   {
+    "id": "loc4SDGNT4IV7JBUA3NO6WQHXTCSYA4BXKSOAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/stores/u-penn",
+    "coordinates": [
+     39.9537947,
+     -75.1950457
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "110 S 36th St, Philadelphia, PA 19104"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4ICL3U5KI6NBUBAVBLC4PNSSSYDAKOD7LAAAAAAA=",
+    "title": "OutPHItters Team Store",
+    "url": "https://shop.outphitters.com/",
+    "coordinates": [
+     39.9006488,
+     -75.1713086
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3601 S Broad St, Philadelphia, PA 19148"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4V6HIRTWX7FBUAPCYWVNJNS2SYAE4XLY5AAAAAAA=",
+    "title": "Hidden River Outfitters",
+    "url": "https://hiddenriveroutfitters.com/",
+    "coordinates": [
+     39.9518984,
+     -75.1810519
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Walnut St, Philadelphia, PA 19106"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4VCI7DA2OAJCEA3Y2SHPKNTKSYDRWURO4AAAAAAA=",
+    "title": "Adventure Outfitter",
+    "url": "https://adventureoutfitter.com/pages/contact-us",
+    "coordinates": [
+     40.0180211,
+     -75.2133099
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3791 Main St, Philadelphia, PA 19127, United States"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4WRTBUA5B7NBUBQGUQUHPBSCSYDDT5OTJAAAAAAA=",
+    "title": "Let's Go Outdoors, LLC",
+    "url": "https://letsgooutdoors.net/",
+    "coordinates": [
+     39.9658512,
+     -75.13965189999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "c/o WeWork, Montesino, 1010 N Hancock St, Philadelphia, PA 19123"
+    },
+    "categories": [],
+    "icon_category": "event"
+   },
+   {
+    "id": "loc4LDUUT5EN65BUA6BFZFZX3RSSYA4UWYZZAAAAAAA=",
+    "title": "Bunkline Outfitter",
+    "url": "https://bunkline.com/",
+    "coordinates": [
+     39.9340196,
+     -75.101407
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": ""
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4RBEE3O4YAJCEAUG7GKT4XTKSYDHBHSBBAAAAAAA=",
+    "title": "Mobile Outfitters",
+    "url": "https://moutfitters.com/",
+    "coordinates": [
+     40.020286,
+     -75.215555
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3901B Main St #106, Philadelphia, PA 19127"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4DAT35WSRABCEAKBASLDI3R2SYDHINKEGAAAAAAA=",
+    "title": "FMT Outfitters",
+    "url": "",
+    "coordinates": [
+     40.002498,
+     -75.11802829999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": ""
+    },
+    "categories": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "q": "clothing boutique shop",
+ "at": "2026-09-25T08:07:30.080Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4XEQLMTZC4NAEAREEP4I3IGCVYCJGHFJXAAAAAAA=",
+    "title": "Cradled in Couth Boutique",
+    "url": "https://cradledincouth.com/",
+    "coordinates": [
+     33.7744846,
+     -84.38599049999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "730 Peachtree St NE #570, Atlanta, GA 30308"
+    },
+    "categories": [
+     "clothing_store"
+    ],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4FJHFUXPT3VAEBDHKX2WYKGKVYDNNZCHDAAAAAAA=",
+    "title": "God Is Dope",
+    "url": "https://godisdope.com/",
+    "description": "Clothing Store",
+    "coordinates": [
+     33.7339894,
+     -84.3987841
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "787 Windsor St SW, Atlanta, GA 30312"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc47GZP5YEN4VAEBJEHUHK4SGKVYCCISUS7AAAAAAA=",
+    "title": "Luxechic Couture Boutique",
+    "url": "https://luxechiccouture.com/",
+    "coordinates": [
+     33.7933923,
+     -84.40294399999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "451 Bishop St NW B, Atlanta, GA 30318"
+    },
+    "categories": [
+     "clothing_store"
+    ],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc43RDAG6AL4JAEBNFYWU5VUFSVYCTSMR4HAAAAAAA=",
+    "title": "The Clothing Warehouse",
+    "url": "https://theclothingwarehouse.com/",
+    "coordinates": [
+     33.765975,
+     -84.3492574
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "420 Moreland Ave NE, Atlanta, GA 30307"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4LUC6OQU34FAEAQEJFJL5GGCVYAQFQQMBAAAAAAA=",
+    "title": "Bouie’s boujee boutique",
+    "url": "https://bouiesboujeeboutique.com/",
+    "coordinates": [
+     33.7625507,
+     -84.38789919999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "300 Peachtree St NE PMB 4115, CS2, Atlanta, GA 30308"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4NX7F65PE4JAEBFRVKYDWKF2VYCDVZ2E2OB6K74Q=",
+    "title": "The Village Retail",
+    "url": "https://thevillageretail.com/",
+    "coordinates": [
+     33.772597,
+     -84.36554129999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "675 Ponce De Leon Ave NE Ste 225, Atlanta, GA 30308"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4H2APX4HC3ZAEBDDIHOTO4FSVYCNCCLHYAAAAAAA=",
+    "title": "Pink Sky Boutique",
+    "url": "https://pinkskyboutique.com/",
+    "coordinates": [
+     33.7413007,
+     -84.358316
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "485 Bill Kennedy Wy SE Ste D, Atlanta, GA 30316"
+    },
+    "categories": [
+     "clothing_store"
+    ],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4Q7ROT4DL4NAEB7TVCMQZUGCVYCI7DFRFAAAAAAA=",
+    "title": "Fit for a Queen of Atlanta",
+    "url": "https://gownsfitforaqueen.com/",
+    "coordinates": [
+     33.7767316,
+     -84.38440729999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "805 Peachtree St NE Unit B, Atlanta, GA 30308"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4NFLBDSPL4FAEBUHFOIUGQFSVYCQI3PFNAAAAAAA=",
+    "title": "The Pink Zebra Boutique",
+    "url": "",
+    "coordinates": [
+     33.765008099999996,
+     -84.35010729999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1142 Euclid Ave NE, Atlanta, GA 30307"
+    },
+    "categories": [
+     "clothing_store"
+    ],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4USKMMHUQ4BAEACHVH2PZEF2VYAXNAJTKAAAAAAA=",
+    "title": "Happy Mango Baby Boutique",
+    "url": "https://shophappymango.com/",
+    "coordinates": [
+     33.7543982,
+     -84.3683241
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "572 Edgewood Ave SE Ste 115, Atlanta, GA 30312, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

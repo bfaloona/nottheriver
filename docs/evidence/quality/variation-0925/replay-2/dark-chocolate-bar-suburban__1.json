@@ -1,0 +1,160 @@
+{
+ "q": "specialty food shop",
+ "at": "2026-09-25T08:06:48.893Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4XSFZYKUE2JBEBFQOGG42ZGS6YCSWP7FUAAAAAAA=",
+    "title": "Renaissance Specialty Foods",
+    "url": "https://renaissancespecialtyfoods.com/",
+    "coordinates": [
+     37.6446584,
+     -122.4167922
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "260 S Maple Ave, South San Francisco, CA 94080"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4NBP5ISIRY5BEACKQKPFVNFC6YAMCMD6DAAAAAAA=",
+    "title": "Sinbad Specialty Foods",
+    "url": "https://sinbadfood.com/",
+    "coordinates": [
+     37.5552151,
+     -122.3177975
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Behind Truffle Butter Poke Bar restaurant, 1234 S El Camino Real, San Mateo, CA 94402"
+    },
+    "categories": [],
+    "icon_category": "bakery"
+   },
+   {
+    "id": "loc4RZQD5NHK2JBEBATXJWRSJGK6YAH66ACFFXQY4JA=",
+    "title": "Giusto's Specialty Foods, LLC",
+    "url": "https://giustos.com/",
+    "coordinates": [
+     37.6477876,
+     -122.3928612
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "344 Littlefield Ave, South San Francisco, CA 94080"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4JUALJHB2YVBEBXFLIX5KHES6YBFHB7DEXSEGAGI=",
+    "title": "Aladdin Gourmet | Grocery & Gourmet Store | Falafel, Humus, Halal Meat in San Mateo",
+    "url": "https://aladdinmarket.com/",
+    "coordinates": [
+     37.5408512,
+     -122.2912584
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "208 E Hillsdale Blvd, San Mateo, CA 94403"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4E3IBNRWMZFBEBBOAQAKKXFK6YCGZULKLNB6FVBQ=",
+    "title": "The Gourmet Corner",
+    "url": "https://thegourmetcorner.com/",
+    "coordinates": [
+     37.5765617,
+     -122.3385669
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "873 N San Mateo Dr, San Mateo, CA 94401"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4OCDZP4IAZVBEBSMT74SBTGK6YBO5YDI2AAAAAAA=",
+    "title": "Pape Meat Co",
+    "url": "",
+    "coordinates": [
+     37.601591299999995,
+     -122.3921597
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "25 Hillcrest Blvd, Millbrae, CA 94030"
+    },
+    "categories": [],
+    "icon_category": "slaughterhouse"
+   },
+   {
+    "id": "loc4SUHNN7ZZZ5BEBYHMEDADHGS6YDWKKOBJAAAAAAA=",
+    "title": "Diamond Head General Store",
+    "url": "",
+    "coordinates": [
+     37.6189575,
+     -122.4094086
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "260 El Camino Real, San Bruno, CA 94066"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc4PHUSMMIIZBBEAS6XAIY37FC6YAP35EGWAAAAAAA=",
+    "title": "Dean's Produce",
+    "url": "https://deansproduce.com/",
+    "coordinates": [
+     37.56275,
+     -122.3241694
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "44 E 4th Ave, San Mateo, CA 94401"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc42NMXOPPCZFBEBK2CAOYWZFS6YBRXWZFKAAAAAAA=",
+    "title": "Mollie Stone's Markets",
+    "url": "https://molliestones.com/",
+    "coordinates": [
+     37.577216799999995,
+     -122.350384
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1477 Chapin Ave, Burlingame, CA 94010"
+    },
+    "categories": [
+     "convenience_store",
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4UN7HE36Z2JBEBXNMMZBDRGK6YALLYULXAAAAAAA=",
+    "title": "Gourmet Foods International - San Francisco, CA",
+    "url": "https://gfifoods.com/",
+    "coordinates": [
+     37.6472606,
+     -122.3940588
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "316 Littlefield Ave, South San Francisco, CA 94080"
+    },
+    "categories": [],
+    "icon_category": "service"
+   }
+  ]
+ }
+}

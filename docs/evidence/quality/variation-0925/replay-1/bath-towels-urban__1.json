@@ -1,0 +1,160 @@
+{
+ "q": "home goods shop",
+ "at": "2026-09-25T07:04:34.125Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4O5TIFYK4PZDEBF3WYXTSSUSXYBS6TJ2MAAAAAAA=",
+    "title": "The Foundry Home Goods",
+    "url": "https://thefoundryhomegoods.com/",
+    "coordinates": [
+     44.9872095,
+     -93.2838077
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "905 N 5th St, Minneapolis, MN 55401"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4RAO5PUAXN5DEAL3PB3L6UVCXYABYRTVHAAAAAAA=",
+    "title": "HomeGoods",
+    "url": "https://homegoods.com/",
+    "coordinates": [
+     44.867914299999995,
+     -93.3268335
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "7435 France Ave S, Edina, MN 55435"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4H7O6LRYEPBDEBYSXVTQ2EWCXYALN5AL3AAAAAAA=",
+    "title": "T.J. Maxx & HomeGoods",
+    "url": "https://tjmaxx.tjx.com/store/index.jsp",
+    "coordinates": [
+     44.9376459,
+     -93.3849415
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8322 MN-7, St Louis Park, MN 55426"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4Q2X265NJOZDEABIAEJMDAUSXYDHFZQBOAAAAAAA=",
+    "title": "Good Yard Goods",
+    "url": "https://goodyardgoods.com/",
+    "coordinates": [
+     44.9270465,
+     -93.2842007
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4155 Grand Ave S, Minneapolis, MN 55409"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4WDDNS5AEPBDEA2PBWIFJWWCXYDKPCIHWAAAAAAA=",
+    "title": "HomeGoods",
+    "url": "https://homegoods.com/",
+    "coordinates": [
+     44.937636,
+     -93.384463
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "8332 MN-7, St Louis Park, MN 55426"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc42YHJA6JONZDEB4KSUAC5OUSXYBKS2JA7AAAAAAA=",
+    "title": "HOM Furniture",
+    "url": "https://homfurniture.com/location/bloomington",
+    "description": "Furniture Store",
+    "coordinates": [
+     44.8607933,
+     -93.2943739
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "7800 Dupont Ave S Ste H, Bloomington, MN 55420"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4QIGNHLMNPFDEBG4HXDPFWT2XYCR5AAT6AAAAAAA=",
+    "title": "Home Choice",
+    "url": "https://homechoicestores.com/",
+    "coordinates": [
+     44.9496362,
+     -93.2399823
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2208 E Lake St, Minneapolis, MN 55407"
+    },
+    "categories": [],
+    "icon_category": "furniture"
+   },
+   {
+    "id": "loc4F7G34PFOQBDEBNTDR727STSXYDUCBFO7AAAAAAA=",
+    "title": "The Home Depot",
+    "url": "https://homedepot.com/l/Minneapolis-Ne/MN/Minneapolis/55413/2807?emt=MSGoogleMaps",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     45.005317299999994,
+     -93.2340063
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1520 New Brighton Blvd, Minneapolis, MN 55413"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc47MCRMG2OPFDEAIXPMZLWWUSXYANDJRWKAAAAAAA=",
+    "title": "Old World Cobbler",
+    "url": "https://oldworldcobbler.wordpress.com/",
+    "coordinates": [
+     44.947696099999995,
+     -93.2878016
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3017B Lyndale Ave S, Minneapolis, MN 55408"
+    },
+    "categories": [],
+    "icon_category": "service"
+   },
+   {
+    "id": "loc4K7U64OQ3PZDEB4TARPOT4UKXYDTGKFV4AAAAAAA=",
+    "title": "Vivid Home",
+    "url": "https://vividhomempls.com/",
+    "coordinates": [
+     44.985206,
+     -93.269462
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "100 2nd Ave N, Minneapolis, MN 55401"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

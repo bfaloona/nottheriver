@@ -1,0 +1,158 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T08:06:24.368Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4ZHIAYPN5BZCEB2XHJVCSVUSSYAPZSQYPAAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "coordinates": [
+     40.1151501,
+     -75.28383
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 W Germantown Pike, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4V6JZ76KBBRCEBUK3HS6GPUSSYCTOMEUTAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     40.0957634,
+     -75.2875815
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "200 Ridge Pike Ste 115, Conshohocken, PA 19428"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4DZMOSSPUB5CEAD6ZTNZUXV2SYBI4ZGRXAAAAAAA=",
+    "title": "Treeline Sports, Inc.",
+    "url": "https://treelinesports.com/",
+    "coordinates": [
+     40.1246426,
+     -75.3639802
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1447 W Main St, Norristown, PA 19403"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4XEXKCJYKBNCEBKMAEDS4ZWCSYBEQOEGKAAAAAAA=",
+    "title": "Buckman's Ski and Snowboard Shop - King of Prussia",
+    "url": "https://buckmans.com/",
+    "coordinates": [
+     40.0862474,
+     -75.3875058
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "740 W Dekalb Pike, King of Prussia, PA 19406"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime=",
+    "coordinates": [
+     40.1058776,
+     -75.2932022
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "THE METROPLEX 2430, Chemical Rd, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=",
+    "title": "Orvis",
+    "url": "https://orvis.com/plymouthmeeting",
+    "coordinates": [
+     40.114659499999995,
+     -75.281587
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4WZK77VQEB5CEAOEEFI27XUKSYDCGCJVYAAAAAAA=",
+    "title": "Boscov's",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "description": "Department Store",
+    "coordinates": [
+     40.1173352,
+     -75.2809575
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 W Germantown Pike, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4TGV5KDOKCJCEAJW42A46JVCSYCS7RZHEAAAAAAA=",
+    "title": "Sport Fishing Outlet",
+    "url": "https://sfotackle.com/",
+    "coordinates": [
+     40.1467912,
+     -75.3264298
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "230 W Germantown Pike, East Norriton Township, PA 19401"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4QWANPQUHBVCEBHVWUG65LUSSYAPUTCKYAAAAAAA=",
+    "title": "PGA TOUR Superstore Plymouth",
+    "url": "https://pgatoursuperstore.com/stores/detail?StoreID=1232",
+    "coordinates": [
+     40.1057056,
+     -75.29429569999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2410 Chemical Rd, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "golf"
+   },
+   {
+    "id": "loc4HU2OFOCCBRCEBPG6UI4GZUSSYBXLQZKRAAAAAAA=",
+    "title": "REI Bike Shop",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting/bike-shop",
+    "coordinates": [
+     40.0957862,
+     -75.28785529999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "200 Ridge Pike Ste 115, Conshohocken, PA 19428"
+    },
+    "categories": [],
+    "icon_category": "car_repair"
+   }
+  ]
+ }
+}

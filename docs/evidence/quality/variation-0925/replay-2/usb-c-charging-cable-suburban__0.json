@@ -1,0 +1,165 @@
+{
+ "q": "electronics store",
+ "at": "2026-09-25T08:07:17.092Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4ZNDVFUWDFA7EBAYT2GX224SYYAVXJHH4AAAAAAA=",
+    "title": "Best Buy",
+    "url": "https://stores.bestbuy.com/tx/austin/9600-s-interstate-35-2516.html/?loc=ns100",
+    "description": "Electronics Store",
+    "coordinates": [
+     30.159238,
+     -97.791851
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9600 I-35 Ste Q, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4N5EP5O4ZEY7EBR7YRM2EY5KYYAWCUIK5AAAAAAA=",
+    "title": "That Computer Store",
+    "url": "",
+    "coordinates": [
+     30.150783299999997,
+     -97.8327762
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "11629 Menchaca Rd, Austin, TX 78748"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4HQG322QKCU7EAFJLLECLK5CYYC7OTBRSAAAAAAA=",
+    "title": "Verizon",
+    "url": "https://stores.cellularsales.com/us/tx/buda/15550-interstate-35?y_source=1_MjA3NzI1ODM2MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     30.0821902,
+     -97.8235484
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "15550 I-35 Ste 100, Buda, TX 78610"
+    },
+    "categories": [],
+    "icon_category": "mobile_phone"
+   },
+   {
+    "id": "loc4N3EWA6Y4CY7EB2YCXEP4W5CYYAL2C6HYAAAAAAA=",
+    "title": "Walmart Supercenter",
+    "url": "https://walmart.com/store/4219-buda-tx/?veh=seo_loc",
+    "description": "Supercenter",
+    "coordinates": [
+     30.0863721,
+     -97.8248977
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "690 Old San Antonio Rd, Buda, TX 78610"
+    },
+    "categories": [
+     "bakery"
+    ],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc44SGYFFTEAM7EAKLSFX7UM52YYCHJ5JUFAAAAAAA=",
+    "title": "GameStop",
+    "url": "https://gamestop.com/store/us/tx/kyle/6783/kyle-crossing-gamestop",
+    "coordinates": [
+     30.0132536,
+     -97.8637083
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5167 Kyle Centre Dr #120, Kyle, TX 78640"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4JCKKY6KEAM7EBICUKYXC652YYDMMSFYZAAAAAAA=",
+    "title": "Verizon",
+    "url": "https://russellcellular.com/?y_source=1_NjE5MDUxNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     30.0127636,
+     -97.8622547
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "151 Evans Dr Ste 107, Kyle, TX 78640"
+    },
+    "categories": [],
+    "icon_category": "mobile_phone"
+   },
+   {
+    "id": "loc4Q4NOBXJFBA7EBNZYOTCGW5SYYDFQRZYLAAAAAAA=",
+    "title": "Costco Wholesale",
+    "url": "https://costco.com/w/-/tx/kyle/1629",
+    "description": "Warehouse Store",
+    "coordinates": [
+     30.0318278,
+     -97.8503276
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "19086 I-35, Kyle, TX 78640"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc42PG3JM46AI7EAIHGG7Y7U5SYYDZAGX5IAAAAAAA=",
+    "title": "Walmart Supercenter",
+    "url": "https://walmart.com/store/4130-kyle-tx/?veh=seo_loc",
+    "description": "Supercenter",
+    "coordinates": [
+     30.0102341,
+     -97.8590663
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5754 Kyle Pkwy, Kyle, TX 78640"
+    },
+    "categories": [
+     "bakery"
+    ],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc43C7UN3OZAI7EB3XPY5EFC52YYDRQ3GKBYBFI33I=",
+    "title": "Target",
+    "url": "https://target.com/sl/kyle/2725",
+    "coordinates": [
+     30.0111378,
+     -97.8643362
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5188 Kyle Centre Dr, Kyle, TX 78640"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc47JUTOVKSAQ7EB7WMYWCD252YYCX2KHR6AAAAAAA=",
+    "title": "The UPS Store",
+    "url": "https://locations.theupsstore.com/tx/kyle/5401-s-fm-1626",
+    "coordinates": [
+     30.0168813,
+     -97.8631298
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5401 Farm to Market 1626 Ste 170, Kyle, TX 78640"
+    },
+    "categories": [],
+    "icon_category": "post"
+   }
+  ]
+ }
+}

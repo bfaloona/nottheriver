@@ -1,0 +1,166 @@
+{
+ "q": "general store",
+ "at": "2026-09-25T08:07:26.255Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc45VSMWTJP4FBUA6SSEY23IQC2YC3MI4QMAAAAAAA=",
+    "title": "General Store 45",
+    "url": "https://generalstore45.com/",
+    "coordinates": [
+     39.759256099999995,
+     -105.010999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1575 Boulder St D, Denver, CO 80211"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc4HB3D6XMTZZBUBBBBXSDRKQK2YC5WJAZ2UAWUDVA=",
+    "title": "General Store 45",
+    "url": "https://generalstore45.com/",
+    "coordinates": [
+     39.6138722,
+     -105.0169391
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2479 Main St A, Littleton, CO 80120"
+    },
+    "categories": [
+     "fitness"
+    ],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc454SH3NP6AJBUBYDIY4GT7VC2YA25WGKKAAAAAAA=",
+    "title": "The General Store",
+    "url": "https://lcgeneralstore.com/",
+    "coordinates": [
+     38.0233981,
+     -107.3163485
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "252 Colorado 149, 252 Gunnison Ave, Lake City, CO 81235"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4UQN3YCUE75AEB7QAWVRETHK5YDUCAOU3AAAAAAA=",
+    "title": "General Store",
+    "url": "https://shop-generalstore.com/collections/new-arrivals",
+    "coordinates": [
+     33.996217099999996,
+     -118.4576041
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1801 Lincoln Blvd, Venice, CA 90291"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4FHHFCR6HK47EA7SIBEFTQZ2YYCOC2PZCAAAAAAA=",
+    "title": "General Store",
+    "url": "",
+    "coordinates": [
+     30.3428845,
+     -97.6127956
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "11003 Harris Branch Pkwy, Austin, TX 78754"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc4SOYCLGXWMRAEBS7X476VUVSYYBSG2MLAAAAAAAA=",
+    "title": "The General Store",
+    "url": "https://generalstorestockyards.com/",
+    "coordinates": [
+     32.788775699999995,
+     -97.3493037
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "101 W Exchange Ave, Fort Worth, TX 76164"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4RFBMXOT7RJBUBVKA6M4XPGC2YARX4IPYEXFF7DI=",
+    "title": "Twin Lakes General Store",
+    "url": "https://twinlakesgs.com/",
+    "description": "General Store",
+    "coordinates": [
+     39.082023,
+     -106.382277
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "6451 CO-82, Twin Lakes, CO 81251"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4SY2JA6GD3ZBUB4EW6WWLKOS2YBYMWC4QAAAAAAA=",
+    "title": "The Local General",
+    "url": "https://thelocalgeneral.com/",
+    "coordinates": [
+     39.7403403,
+     -104.9173386
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1502 Kearney St, Denver, CO 80220"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4XTSCIOIFOZDEBLRFRHFKWXKXYBM35I466YNXCEY=",
+    "title": "General Store of Minnetonka",
+    "url": "https://generalstoreofminnetonka.com/",
+    "description": "Gift Shop",
+    "coordinates": [
+     44.9220344,
+     -93.4636103
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "14401 MN-7, Minnetonka, MN 55345"
+    },
+    "categories": [
+     "clothing_store",
+     "cafe"
+    ],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4XI6VFDQT5JBEAXK4TGTL4BSXYA7POEK3IRY5KXQ=",
+    "title": "Uranus Fudge Factory & General Store - Uranus Missouri",
+    "url": "https://uranusgeneralstore.com/",
+    "description": "Candy Store",
+    "coordinates": [
+     37.8287218,
+     -92.1053864
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "14400 State Hwy Z, St Robert, MO 65584"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   }
+  ]
+ }
+}

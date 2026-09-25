@@ -1,0 +1,114 @@
+{
+ "q": "general store",
+ "at": "2026-09-25T07:05:30.520Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4DDU6UMYMVFCEBU63T6FQMJ2WYBE3OY34AAAAAAA=",
+    "title": "Dollar General Market",
+    "url": "https://dollargeneral.com/store-directory/il/seneca/17461",
+    "coordinates": [
+     41.3206849,
+     -88.6097745
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "484 N Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc45AABZVVPVNCEAJCE7GBBMLKWYDNRVILBAAAAAAA=",
+    "title": "Dollar General",
+    "url": "https://dollargeneral.com/store-directory/il/marseilles/12394",
+    "coordinates": [
+     41.3413036,
+     -88.704499
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1055 Rutland St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc4TMZNYJIWVNCEBVFURNUSMLCWYCWIVMATAAAAAAA=",
+    "title": "Glenwood RV Resort - General Store",
+    "url": "",
+    "coordinates": [
+     41.3366134,
+     -88.68984449999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "88P6+J3, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc46CONEZSBVBCEA6RJQ32RAJ2WYCJG2WWNFLEYTNA=",
+    "title": "Casey's",
+    "url": "https://caseys.com/general-store/il-seneca/225-n-main-st/1665",
+    "coordinates": [
+     41.3144959,
+     -88.6104101
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "225 N Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc4ASGT5C2KU5CEB6LN4OVA2J2WYB4IHESSAAAAAAA=",
+    "title": "Seneca Ace Hardware",
+    "url": "https://acehardware.com/store-details/16926",
+    "description": "Hardware Store",
+    "coordinates": [
+     41.3069624,
+     -88.6102092
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "255 S Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4T7PDDYJ4U5CEBASR53RQ2J2WYAYVHRLSAAAAAAA=",
+    "title": "Seneca Food Mart",
+    "url": "",
+    "coordinates": [
+     41.3065454,
+     -88.6102228
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "271 S Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4F3WYVT2TVJCEB6VOVVCEKLKWYB7DEXDZCJKJRFQ=",
+    "title": "D & S Foods",
+    "url": "https://m.facebook.com/dsfood",
+    "coordinates": [
+     41.3306827,
+     -88.7073528
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "120 E Bluff St, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

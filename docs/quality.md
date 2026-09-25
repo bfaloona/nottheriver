@@ -51,6 +51,23 @@ On 2026-09-24 the same 20 searches were run again on the Worker with distance gr
 - **The offline replay did not carry over.** Replaying the new ranking on eval60's saved results put 29 good shops in the nearby top 3 instead of 23 (a different count from the table above, which uses both graders' answers); live, Brave returned different shops and the top 3 held level.
 - **Method.** 316 of 359 grades were reused from eval60 where the URL (and, for local, the address) matched; the 43 new rows were graded by two agents that did not see the baseline or earlier grades. The graders' browser was blocked on 3 online pages (Macy's, Bloomingdale's, Public Lands); the operator opened them in a personal browser and all 3 sell the product. The recall baseline is eval60's, unchanged; miss reasons in the report are eval60's labels, not checked again. The run made 80 Brave calls and cost about $0.42 in model use. Scripts and inputs: [eval20-0924/method](evidence/quality/eval20-0924/method/).
 
+## Why local results change from run to run
+
+On 2026-09-25 the 20 graded searches were used to separate the causes of run-to-run change in local results ([evidence](evidence/quality/variation-0925/)). Overlap is the share of shop websites two runs have in common (shared ÷ all distinct), counting every local shop Brave returned, shown or not.
+
+| Comparison | Searches | Overlap |
+|---|---|---|
+| Eval60 vs rerun, the model wrote the same local searches | 13 | 93% |
+| Eval60 vs rerun, the model worded them differently | 7 | 62% |
+| Same wording sent straight to Brave, two replays an hour apart | 20 | 93% |
+| Same wording, rerun vs the first replay 1 to 2 hours later | 20 | 94% |
+
+- **Wording is likely the main cause.** The model writes the two local searches, and at temperature 0 it still words them differently: across 6 runs of the same request, 11 of 20 searches got more than one wording. It happened when one provider served every run, so pinning the provider would not fix it. One word can matter: "tea store" and "tea shop" in rural Illinois shared 2 of 18 shops. 4 of the 7 differences between the eval runs were only "store" vs "shop".
+- **Brave itself changes a little.** With the wording fixed, about 1 shop in 14 changes within an hour, and the order of the top 5 changed in 7 of 20 searches. That is about as much change as between eval runs whose wording matched. Target (Kyle) was lost this way: same searches, and Brave stopped returning it.
+- **The shop-judging step barely changes.** Of 230 shops Brave returned in both eval runs, 1 was shown in one run and judged out in the other.
+- **Of the three shops the rerun lost**, one was Brave (Target), one followed a wording change (Safeway, Burlingame: "chocolatier shop" / "specialty food store" became "chocolatier store" / "specialty food shop"), and one was ranking (DICK'S, Buckhead: returned, but below the top 10).
+- **Method.** Wording: the production normalize prompt and request settings, 6 runs per search, $0.008 in model use. Brave: each search's rerun wording sent to Brave place search twice with the Worker's coordinates and count, 80 calls. Eval comparisons use saved responses only. The Brave measure covers about two hours; churn over days or weeks was not measured.
+
 ## Why good shops were missed
 
 | Reason | Online | Local |
@@ -82,4 +99,5 @@ Each result was opened and graded by an AI agent working from the grading rules.
 - **Mixed grading method.** Fetch and browser grading can see different pages. The browser was signed in to the operator's accounts: 4 Facebook pages were read logged in, and Walmart showed no bot check, possibly because of that.
 - **Recall is relative.** The baseline is what another search engine found, up to 5 shops per section. One search (loose-leaf green tea, rural Illinois) has no confirmed local shop.
 - **The probe is a proxy.** It runs from Cloudflare's network and names itself, while Brave's crawler does not, so its blocked rate approximates what Brave meets. Its challenge detection is a heuristic.
+- **One run per search.** Local results change between runs, mostly because the model words its local searches differently ([details](#why-local-results-change-from-run-to-run)); a single run can gain or lose a shop by chance, so small differences between eval runs are not evidence of a change.
 - **Unknowns are left out.** Results the grader could not judge are excluded from precision and reported as a count.

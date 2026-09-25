@@ -1,0 +1,642 @@
+{
+ "bath-towels-urban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005722,
+   "local_queries": [
+    "linen store",
+    "home goods shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006082,
+   "local_queries": [
+    "linen store",
+    "home goods shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007544,
+   "local_queries": [
+    "linen store",
+    "home goods shop"
+   ]
+  }
+ ],
+ "camping-tent-rural": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006194,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "ModelRun",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00034675,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006194,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  }
+ ],
+ "camping-tent-suburban": [
+  {
+   "status": 200,
+   "provider": "ModelRun",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0003435,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006204,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007184,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  }
+ ],
+ "camping-tent-urban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007782,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007166,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004416,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  }
+ ],
+ "cast-iron-skillet-rural": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007329,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004647,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004749,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ]
+  }
+ ],
+ "cast-iron-skillet-suburban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007938,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0000732,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006202,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ]
+  }
+ ],
+ "cast-iron-skillet-urban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007962,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007928,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007311,
+   "local_queries": [
+    "cookware store",
+    "kitchen supply shop"
+   ]
+  }
+ ],
+ "cordless-drill-suburban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0000616,
+   "local_queries": [
+    "hardware store",
+    "home improvement shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006767,
+   "local_queries": [
+    "hardware store",
+    "tool supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005683,
+   "local_queries": [
+    "hardware store",
+    "tool supply shop"
+   ]
+  }
+ ],
+ "dark-chocolate-bar-suburban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007397,
+   "local_queries": [
+    "chocolatier store",
+    "specialty food shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006279,
+   "local_queries": [
+    "chocolatier store",
+    "specialty food shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006347,
+   "local_queries": [
+    "chocolatier store",
+    "specialty food shop"
+   ]
+  }
+ ],
+ "extra-virgin-olive-oil-urban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007218,
+   "local_queries": [
+    "gourmet food store",
+    "specialty grocery shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004842,
+   "local_queries": [
+    "gourmet food store",
+    "specialty grocery shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004842,
+   "local_queries": [
+    "gourmet food store",
+    "specialty grocery shop"
+   ]
+  }
+ ],
+ "headlamp-urban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006058,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006835,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005547,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  }
+ ],
+ "jigsaw-puzzle-urban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006971,
+   "local_queries": [
+    "toy store",
+    "hobby shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004391,
+   "local_queries": [
+    "toy store",
+    "hobby shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004425,
+   "local_queries": [
+    "toy store",
+    "gift shop"
+   ]
+  }
+ ],
+ "led-light-bulbs-rural": [
+  {
+   "status": 200,
+   "provider": "ModelRun",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0003355,
+   "local_queries": [
+    "lighting store",
+    "electrical supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005484,
+   "local_queries": [
+    "lighting store",
+    "hardware store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004332,
+   "local_queries": [
+    "lighting store",
+    "hardware store"
+   ]
+  }
+ ],
+ "loose-leaf-green-tea-rural": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007846,
+   "local_queries": [
+    "tea shop",
+    "specialty food store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007227,
+   "local_queries": [
+    "tea shop",
+    "specialty food store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004647,
+   "local_queries": [
+    "tea shop",
+    "specialty food store"
+   ]
+  }
+ ],
+ "rain-jacket-suburban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0000769,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005611,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005921,
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters shop"
+   ]
+  }
+ ],
+ "rechargeable-aa-batteries-rural": [
+  {
+   "status": 200,
+   "provider": "ModelRun",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.000353,
+   "local_queries": [
+    "electronics store",
+    "general store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007202,
+   "local_queries": [
+    "electronics store",
+    "general store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004758,
+   "local_queries": [
+    "electronics store",
+    "general store"
+   ]
+  }
+ ],
+ "usb-c-charging-cable-suburban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007916,
+   "local_queries": [
+    "electronics store",
+    "computer supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.0000673,
+   "local_queries": [
+    "electronics store",
+    "computer supply shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006696,
+   "local_queries": [
+    "electronics store",
+    "computer supply shop"
+   ]
+  }
+ ],
+ "wooden-train-set-suburban": [
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007039,
+   "local_queries": [
+    "toy store",
+    "gift shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004459,
+   "local_queries": [
+    "toy store",
+    "gift shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004459,
+   "local_queries": [
+    "toy store",
+    "gift shop"
+   ]
+  }
+ ],
+ "wool-blanket-rural": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006092,
+   "local_queries": [
+    "textile store",
+    "general store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00007005,
+   "local_queries": [
+    "textile store",
+    "general store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00005853,
+   "local_queries": [
+    "textile store",
+    "general store"
+   ]
+  }
+ ],
+ "wool-socks-urban": [
+  {
+   "status": 200,
+   "provider": "CoreWeave",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006082,
+   "local_queries": [
+    "clothing store",
+    "general store"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00006996,
+   "local_queries": [
+    "outdoor gear store",
+    "clothing boutique shop"
+   ]
+  },
+  {
+   "status": 200,
+   "provider": "DeepInfra",
+   "model": "google/gemma-4-31b-it",
+   "cost": 0.00004314,
+   "local_queries": [
+    "clothing store",
+    "general store"
+   ]
+  }
+ ]
+}

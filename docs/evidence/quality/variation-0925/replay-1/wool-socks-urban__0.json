@@ -1,0 +1,159 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T07:05:43.292Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4BO2DXJAY4ZAEAAWU2SZLKF2VYBCBNDCMAAAAAAA=",
+    "title": "High Country Outfitters",
+    "url": "https://highcountryoutfitters.com/",
+    "coordinates": [
+     33.797627,
+     -84.370465
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1544 Piedmont Ave NE, Atlanta, GA 30324"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4HLYYWAOI4JAEADVRBNIGIF2VYB2DGNGDAAAAAAA=",
+    "title": "Mountain High Outfitters",
+    "url": "https://mountainhighoutfitters.com/",
+    "coordinates": [
+     33.7717287,
+     -84.3654976
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "675 Ponce De Leon Ave NE E-184, Atlanta, GA 30308"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc47HOGJL6S5BAEAE2WOQ24GGCVYDKKY7AQAAAAAAA=",
+    "title": "High Country Outfitters",
+    "url": "https://highcountryoutfitters.com/",
+    "coordinates": [
+     33.8189296,
+     -84.3869146
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2345 Peachtree Rd ste 9, Atlanta, GA 30305"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4VEXOAZMG5NAEAAT5EJHZEFCVYARMSXYCAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/atlanta?y_source=1_MTQ1MzQwMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Outdoor Store",
+    "coordinates": [
+     33.840039,
+     -84.32142999999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1800 NE Expy NE, Atlanta, GA 30329"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4X6MZQLWE4JAEBTGWKXOJGFSVYBTSEIVSAAAAAAA=",
+    "title": "Secondwind Gear Shop",
+    "url": "https://secondwindgearshop.com/",
+    "coordinates": [
+     33.771612,
+     -84.3527747
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "628 N Highland Ave NE, Atlanta, GA 30306"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4VEGIRNM55RAEBRVZ6L7GIG2VYCH5HW3YAAAAAAA=",
+    "title": "Mountain High Outfitters",
+    "url": "https://mountainhighoutfitters.com/",
+    "coordinates": [
+     33.8485629,
+     -84.4280393
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1248 W Paces Ferry Rd NW, Atlanta, GA 30327"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4J257GHZN5VAEB7ML7PVAKF2VYDSJT5GIAAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/ga/atlanta/418/?seo=localpack",
+    "coordinates": [
+     33.8529396,
+     -84.3597362
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3535 Peachtree Rd, Atlanta, GA 30326"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4JXQ7OJOR4BAEAAVVXWBFSF2VYCW2W7KKAAAAAAA=",
+    "title": "Specialized Atlanta",
+    "url": "https://specialized.com/us/en/store-finder/specialized-atlanta/6791502",
+    "coordinates": [
+     33.756382699999996,
+     -84.3648383
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "112 Krog St NE #10, Atlanta, GA 30307"
+    },
+    "categories": [],
+    "icon_category": "car_rental"
+   },
+   {
+    "id": "loc4JLK5DTHO4BAEBC46AAXVQF2VYALKCOV4AAAAAAA=",
+    "title": "Patagonia",
+    "url": "https://patagonia.com/stores/ga/atlanta/124-krog-st-ne/store_atlantabeltline.html",
+    "coordinates": [
+     33.7572876,
+     -84.3647573
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "124 Krog St NE, Atlanta, GA 30307"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4XUPKOQYC4NAEB3ET5WG6WESVYDVQV7J5AAAAAAA=",
+    "title": "Mountain High Outfitters",
+    "url": "https://mountainhighoutfitters.com/",
+    "coordinates": [
+     33.7735066,
+     -84.29562709999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "114 E Trinity Pl, Decatur, GA 30030"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   }
+  ]
+ }
+}

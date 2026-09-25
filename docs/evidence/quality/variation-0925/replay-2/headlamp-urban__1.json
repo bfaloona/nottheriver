@@ -1,0 +1,159 @@
+{
+ "q": "outdoor outfitters shop",
+ "at": "2026-09-25T08:06:56.580Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4OLW7VOZN4JBEARAX2S3UZGS6YCTKW5JULZJXR5Q=",
+    "title": "Sports Basement Bryant Street",
+    "url": "https://shop.sportsbasement.com/blogs/stores/san-francisco-bryant-street",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     37.7670207,
+     -122.4109325
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1590 Bryant St, San Francisco, CA 94103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4KZZAIX4H4RBEAKP6STHRPGS6YBP247PUAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/stores/union-square-san-francisco",
+    "coordinates": [
+     37.7853812,
+     -122.4077033
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "80 Powell St, San Francisco, CA 94102"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4IPPBOPHR4VBEABPND5K55GK6YD4VYVSAAAAAAAA=",
+    "title": "Lost Coast Outfitters",
+    "url": "https://lostcoastoutfitters.com/",
+    "coordinates": [
+     37.7964244,
+     -122.4041951
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "540 Jackson St, San Francisco, CA 94133"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4GMJQZZY24VBEBZPP3ZIWHGK6YBSXC2HJAAAAAAA=",
+    "title": "Trailblazer Outfitters",
+    "url": "",
+    "coordinates": [
+     37.789883499999995,
+     -122.396687
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Salesforce Plaza, 100-132 Fremont St, San Francisco, CA 94105"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   },
+   {
+    "id": "loc4RDOGP4CS4BBEBM764CGZNGS6YD3LIMYZTJBGKMI=",
+    "title": "Last Minute Gear",
+    "url": "https://lastminutegear.com/",
+    "coordinates": [
+     37.7525311,
+     -122.4154391
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3156B 24th St, San Francisco, CA 94110"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4LJ3T3YVB3ZBEAAKICIU7FGC6YAQLBHD2AAAAAAA=",
+    "title": "Ewing Outdoor Supply",
+    "url": "https://ewingoutdoorsupply.com/",
+    "coordinates": [
+     37.7393153,
+     -122.3897803
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1618 Jerrold Ave, San Francisco, CA 94124"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4ZCY7KDHB4JBEBRZPXSJOJGK6YCBTX2ATAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/san-francisco?y_source=1_MTQ1MzQ4NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Outdoor Store",
+    "coordinates": [
+     37.772493,
+     -122.404576
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "840 Brannan St, San Francisco, CA 94103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4S676OLCY3VBEAWJXHHLYXHS6YBP34GXSAAAAAAA=",
+    "title": "Sports Basement Stonestown",
+    "url": "https://shop.sportsbasement.com/blogs/stores/san-francisco-stonestown",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     37.7292534,
+     -122.4772852
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3251 20th Ave Ste 390, San Francisco, CA 94132"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CSKQ22ZK45BEATBXRFA6BGS6YCW6YEV4AAAAAAA=",
+    "title": "Patagonia",
+    "url": "https://patagonia.com/stores/ca/san-francisco/770-north-point/store_sanfrancisco.html",
+    "coordinates": [
+     37.805982,
+     -122.4199375
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "770 North Point St, San Francisco, CA 94109, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4HQSTCURZ4FBEBZFQIUOPZGS6YD5CCZYTY24QHDQ=",
+    "title": "826 Valencia Pirate Supply Store",
+    "url": "https://shop826valencia.org/",
+    "coordinates": [
+     37.7595618,
+     -122.4216376
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "826 Valencia St, San Francisco, CA 94110"
+    },
+    "categories": [],
+    "icon_category": "gift"
+   }
+  ]
+ }
+}

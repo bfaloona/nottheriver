@@ -1,0 +1,158 @@
+{
+ "q": "chocolatier store",
+ "at": "2026-09-25T07:05:02.492Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4DA4OUMSGZBBEA2LIVD3I5FC6YAGWELBIAAAAAAA=",
+    "title": "tinyB chocolate",
+    "url": "https://tinybchocolate.com/",
+    "coordinates": [
+     37.5646423,
+     -122.3212258
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "407 S B St, San Mateo, CA 94401"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4TPDJXIK5ZRBEAMVYTQAWJGC6YBAGYAKWAAAAAAA=",
+    "title": "Guittard Chocolate Co",
+    "url": "https://guittard.com/",
+    "coordinates": [
+     37.5966074,
+     -122.3811039
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "10 Guittard Rd, Burlingame, CA 94010"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4MRRRJOQBZ5BEBOAZCMDXLGC6YB6H62DDAAAAAAA=",
+    "title": "The Chocolate Market",
+    "url": "",
+    "coordinates": [
+     37.6172402,
+     -122.3821428
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "173 Airport Access Rd, San Francisco, CA 94128"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4RV77UKSUZZBEA4J5BLL2HGC6YBW24CR4AAAAAAA=",
+    "title": "GR Chocolate Boutique",
+    "url": "https://flysfo.com/passengers/shop-dine-relax/gr-chocolate-boutique",
+    "coordinates": [
+     37.6119436,
+     -122.385
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "San Francisco International Airport, Terminal 1, Harvey Milk, Near Gate B13, San Francisco, CA 94128"
+    },
+    "categories": [],
+    "icon_category": "cafe"
+   },
+   {
+    "id": "loc4CEX7ILIYZNBEAC4NOEHVHF26YDVGYPQMGV5BH4Q=",
+    "title": "Preston's Candy & Ice Cream",
+    "url": "https://prestonscandyshop.com/",
+    "coordinates": [
+     37.5866754,
+     -122.3644446
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1170 Broadway, Burlingame, CA 94010"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4WAJD2OV7YRBEAG4YQFXT7E26YCS7BRLRQT65FDY=",
+    "title": "See's Candies",
+    "url": "https://chocolateshops.sees.com/ca/sanmateo/chocolate_shops_san-mateo_ca_2ca046.html",
+    "coordinates": [
+     37.5370858,
+     -122.3007468
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "186 W Hillsdale Blvd #1326, San Mateo, CA 94403"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4NBAL2GJVZ5BEA7WJEE62BGC6YB4T4PYVAAAAAAA=",
+    "title": "Socola Chocolatier SFO",
+    "url": "https://socolachocolates.com/",
+    "coordinates": [
+     37.618808,
+     -122.3847802
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Terminal 3, International Terminal Departures Level, Boarding Area E, San Francisco, CA 94128"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4U477XEJCYJBEAOQAQ726XES6YD3OUZYAAAAAAAA=",
+    "title": "Chocolate Fest",
+    "url": "https://chocolatefestofbelmont.org/contact",
+    "coordinates": [
+     37.51668,
+     -122.2956518
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "751 Alameda de las Pulgas, Belmont, CA 94002"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4W7GVJCCH2JBEAFISPJD5PGK6YDPCHPJ6WHYDV2A=",
+    "title": "See's Candies Volume Savings",
+    "url": "https://chocolateshops.sees.com/ca/southsanfrancisco/chocolate_shops_south-san-francisco_ca_ca_202111.html",
+    "coordinates": [
+     37.642807999999995,
+     -122.4037646
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "400 S Airport Blvd, South San Francisco, CA 94080"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   },
+   {
+    "id": "loc4AQRB6TZGZRBEA72FZCFKXGC6YAHQY3NXYSU2RRY=",
+    "title": "See's Candies",
+    "url": "https://chocolateshops.sees.com/ca/burlingame/chocolate_shops_burlingame_ca_2ca022.html",
+    "coordinates": [
+     37.5949191,
+     -122.3854701
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1843 El Camino Real, Burlingame, CA 94010"
+    },
+    "categories": [],
+    "icon_category": "confectionery"
+   }
+  ]
+ }
+}

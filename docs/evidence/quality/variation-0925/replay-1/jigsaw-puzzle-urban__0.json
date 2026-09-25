@@ -1,0 +1,159 @@
+{
+ "q": "toy store",
+ "at": "2026-09-25T07:05:13.898Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4RUNF332IOZDEBKDTIUUSCVCXYBYJ75DCAAAAAAA=",
+    "title": "Creative Kidstuff Toy Store",
+    "url": "https://creativekidstuff.com/",
+    "coordinates": [
+     44.9241008,
+     -93.314524
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4313 Upton Ave S, Minneapolis, MN 55409"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4RF4VNUUKO5DEB746BYNDAUSXYDFEX3BTAAAAAAA=",
+    "title": "Kinoko Kids",
+    "url": "https://kinokokids.com/",
+    "coordinates": [
+     44.933924,
+     -93.2841859
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3803 Grand Ave S, Minneapolis, MN 55409"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4RUNF332IOZDEBKDTIUUSCVCXYBEIAWSNAAAAAAA=",
+    "title": "Pinwheels and Play Toys",
+    "url": "https://facebook.com/PinwheelsandPlayToys",
+    "coordinates": [
+     44.9241008,
+     -93.314524
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4313 Upton Ave S, Minneapolis, MN 55410"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc47H7GDJSIOBDEBDQ3EN7OUVCXYDTWZFX6AAAAAAA=",
+    "title": "Creative Kidstuff Toy Store",
+    "url": "https://creativekidstuff.com/",
+    "coordinates": [
+     44.8772171,
+     -93.3268123
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3555 W 69th St, Edina, MN 55435"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4MACOQUVXPNDEBMHYS7XD6VSXYDL4H7LDAAAAAAA=",
+    "title": "Creative Kidstuff Toy Store",
+    "url": "https://creativekidstuff.com/",
+    "coordinates": [
+     44.966532099999995,
+     -93.3476521
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1665 West End Blvd, St Louis Park, MN 55416"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4BSBH2KS5PFDEAPJ6Y2AXYUSXYCCKF3QCAAAAAAA=",
+    "title": "Steamship Games",
+    "url": "https://steamshipgames.com/",
+    "coordinates": [
+     44.9481557,
+     -93.2888493
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "711 W Lake St Ste 103, Minneapolis, MN 55408"
+    },
+    "categories": [],
+    "icon_category": "gaming"
+   },
+   {
+    "id": "loc4VVGPRJL6OFDEACW5QAVMSU2XYAXPW2BFAAAAAAA=",
+    "title": "Hub Hobby Center",
+    "url": "https://hubhobby.com/",
+    "description": "Hobby Store",
+    "coordinates": [
+     44.8866775,
+     -93.3091532
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "6410 Penn Ave S, Richfield, MN 55423"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc47MHZ6KUVPVDEAMJURXOISUKXYDCGAYBZAAAAAAA=",
+    "title": "The Manhattan Toy Company",
+    "url": "",
+    "coordinates": [
+     44.9811147,
+     -93.2740394
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "110 N 5th St STE 700, Minneapolis, MN 55403, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4MIIFQONUOBDEAYGCWLR5AVCXYDBXAJQMAAAAAAA=",
+    "title": "Legacy Toys",
+    "url": "https://legacytoys.com/",
+    "coordinates": [
+     44.8805,
+     -93.3252496
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "10 Southdale Ctr Ste 1585, Edina, MN 55435"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4LIU2TOAWPZDEBWF7I3WVSUKXYBN2SMNEAAAAAAA=",
+    "title": "Pacifier Kids Baby Boutique - North Loop",
+    "url": "https://pacifierkids.com/",
+    "coordinates": [
+     44.9850684,
+     -93.2711137
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "219 N 2nd St #102, Minneapolis, MN 55401"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T08:07:09.942Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc43Q53JWNCERCUALEBSTMDLVSRYCTWIGYRAAAAAAA=",
+    "title": "Natick Outdoor Store",
+    "url": "https://natickoutdoorstore.com/",
+    "description": "Outdoor Store",
+    "coordinates": [
+     42.2862198,
+     -71.3470365
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "38 North Ave, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CDINR4RFEZCUB4CUDP34DWCRYCV65EN7AAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/ma/natick/255/?seo=localpack",
+    "coordinates": [
+     42.2980331,
+     -71.3868387
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1336 Worcester St, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4WPVHHNIVE5CUBDWMEN7TBWKRYDFGLOWGAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/framingham?y_source=1_MTQ1MzQ0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     42.30535,
+     -71.393585
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "375 Cochituate Rd, Framingham, MA 01701"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4D2U3544LEZCUBNP4YBKZ5WCRYBKJYI42CXUTU6I=",
+    "title": "The North Face Natick Mall",
+    "url": "https://locations.thenorthface.com/en-us/ma/natick/usa23",
+    "coordinates": [
+     42.301146,
+     -71.384664
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St Ste 4016 Suite 4016, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc43UDFUJTIEZCUBIZTPJ743VSRYCUE47UTAAAAAAA=",
+    "title": "SkiMD",
+    "url": "https://skimd.com/",
+    "coordinates": [
+     42.3000534,
+     -71.3562926
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "780 Worcester St, Natick, MA 01760, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc45BFW67ZOEVCUBFG77VGBRWSRYBOKUYVQAAAAAAA=",
+    "title": "Joe Practice Sports Gear",
+    "url": "https://joepractice.com/",
+    "coordinates": [
+     42.2904815,
+     -71.4077332
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "35 Harrison St, Framingham, MA 01702"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4YRO33CUMDVCUBCBWW2GXLW2RYCZO27WIAAAAAAA=",
+    "title": "Mass Firearms Store",
+    "url": "https://massfirearms.com/",
+    "description": "Gun Shop",
+    "coordinates": [
+     42.2308515,
+     -71.4290499
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "100 Kuniholm Dr, Holliston, MA 01746"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4EVKYBFD5EZCUBZ2EZQ3IDWCRYACAGTYTAAAAAAA=",
+    "title": "JD Sports",
+    "url": "https://jdsports.com/",
+    "coordinates": [
+     42.3007074,
+     -71.38288659999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1245 Worcester St, Natick, MA 01760"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc44C542GZHEZCUBHOGVTGTLW2RYBI43TXYAAAAAAA=",
+    "title": "Ski Haus - NOTB Snowboards - Patio Place at Ski Haus",
+    "url": "https://skihaus.com/",
+    "coordinates": [
+     42.2980685,
+     -71.4251589
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "686 Worcester Rd, Framingham, MA 01702"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4MAQXGZKQEFCUBBDNPIDMHXKRYBMR6FMXAAAAAAA=",
+    "title": "Lunkers Outfitters",
+    "url": "https://lunkersoutfitters.com/",
+    "coordinates": [
+     42.260266,
+     -71.4650284
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "159 Main St, Ashland, MA 01721"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

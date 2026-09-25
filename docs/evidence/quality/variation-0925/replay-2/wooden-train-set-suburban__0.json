@@ -1,0 +1,158 @@
+{
+ "q": "toy store",
+ "at": "2026-09-25T08:07:20.835Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4VWIRHXH67BAUBK6J7COOBNCVYBPIH5FHAAAAAAA=",
+    "title": "Learning Express Toys and Gifts",
+    "url": "https://learningexpress.com/nashville",
+    "coordinates": [
+     35.9452777,
+     -86.8262093
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "420 Cool Springs Blvd #120, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4T5FBPLEC7NAUBNYX4KRCJNCVYDDNEX4GAAAAAAA=",
+    "title": "Brilliant Sky Toys & Books",
+    "url": "https://brilliantskytoys.com/",
+    "coordinates": [
+     35.9649253,
+     -86.81473609999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1705 Mallory Ln #100, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4YILLW7KW6ZAUAKAK6SE3ZN2VYBMZLC3HAAAAAAA=",
+    "title": "Main Street Toy Co",
+    "url": "",
+    "coordinates": [
+     35.9245145,
+     -86.8708825
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "412 Main St STE 100, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CW6DFOLC7JAUAQBDEJDBTNCVYAEZAGPLAAAAAAA=",
+    "title": "LEGO® Store CoolSprings Galleria",
+    "url": "https://lego.com/en-us/stores/store/lego-store-coolsprings-galleria?cmp=REF-202601-GBP-123&y_source=1_MTAyMTExOTUyMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     35.9561378,
+     -86.8140426
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1800 Galleria Blvd #2360, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4CSHTBMM67NAUBGMOJL5TBNCVYAKK567DAAAAAAA=",
+    "title": "Bricks & Minifigs Brentwood",
+    "url": "https://bricksandminifigs.com/brentwood-tn",
+    "coordinates": [
+     35.9657804,
+     -86.81548959999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "91 Seaboard Ln #108, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc43R33DVMK7NAUBQKKVJNWFNCVYBSH2TKMAAAAAAA=",
+    "title": "Kid to Kid Brentwood",
+    "url": "https://kidtokid.com/brentwood",
+    "coordinates": [
+     35.965174399999995,
+     -86.81850329999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "95 Seaboard Ln, Brentwood, TN 37027"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc457D63F2P65AUAJ6SULRQ7N2VYD464LM2AAAAAAA=",
+    "title": "The Little Cottage Children's Shop at The Factory",
+    "url": "https://thelittlecottagechildrensshop.com/",
+    "coordinates": [
+     35.9321165,
+     -86.8603448
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "230 Franklin Rd Ste Suite 11-J, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4IMDE3JTF7JAUA4QVRPPRJNCVYCTJIVJNAAAAAAA=",
+    "title": "Franklin Toy Works",
+    "url": "https://titantoystn.com/",
+    "coordinates": [
+     35.9562271,
+     -86.813774
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1800 Galleria Blvd #2240, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4OXRBOA4Q6VAUA2BULZPZBNKVYCNM2BG7AAAAAAA=",
+    "title": "Daisy Creative Toys",
+    "url": "",
+    "coordinates": [
+     35.9184574,
+     -86.83693679999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Booth - E6, 1113 Murfreesboro Rd #254, Franklin, TN 37064"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4BVWQANRA7JAUBVP6OM6XNNCVYCPY6SP6AAAAAAA=",
+    "title": "Games Workshop",
+    "url": "https://warhammer.com/",
+    "coordinates": [
+     35.954108,
+     -86.8197168
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1945 Mallory Ln #155, Franklin, TN 37067"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

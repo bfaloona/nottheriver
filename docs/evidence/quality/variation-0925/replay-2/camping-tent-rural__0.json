@@ -1,0 +1,161 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T08:06:20.663Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4WFZMGSTAI5CEAPNMQH3R6ACTYAH2CQNZWJAUEMQ=",
+    "title": "Cabela's",
+    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     40.5576261,
+     -76.0019511
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "100 Cabela Dr, Hamburg, PA 19526, United States"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc42PHHUQWAI5CEBLYJNGG4D72SYAO2GX26AAAAAAA=",
+    "title": "Camping World - Hamburg",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+    "description": "RV Dealer",
+    "coordinates": [
+     40.5605548,
+     -75.9961885
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Industrial Dr, Hamburg, PA 19526"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4RB27ICPKI5CEA3PUPOWKUACTYAELSGRCAAAAAAA=",
+    "title": "Priority One Surplus",
+    "url": "https://priorityonesurplus.com/",
+    "coordinates": [
+     40.5618298,
+     -76.0104171
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1744 Tilden Ridge Dr, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=",
+    "title": "Steve’s Outdoor Solutions LLC",
+    "url": "https://stevesoutdoor.myshopify.com/",
+    "coordinates": [
+     40.62957,
+     -75.95431599999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "448 Pine Swamp Rd, Kempton, PA 19529"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4A2ACU3W4KFCEBVABLICJABKTYCWRCWL2AAAAAAA=",
+    "title": "Schaeffer's Motorsports",
+    "url": "https://schaeffersktm.com/",
+    "description": "Motorsports Store",
+    "coordinates": [
+     40.6395395,
+     -76.0869151
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1194 Centre Turnpike, Orwigsburg, PA 17961"
+    },
+    "categories": [],
+    "icon_category": "car"
+   },
+   {
+    "id": "loc4TVMVYLOBI5CEB7ATAHZ3L72SYBGWPHUFAAAAAAA=",
+    "title": "Camping World RV Parts & Accessories - Hamburg",
+    "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania/rv-parts-supplies",
+    "coordinates": [
+     40.5605828,
+     -75.9954803
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Industrial Dr, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4ICOZOL6UIBCEBLOYAS65Z7KSYCO4KO6WAAAAAAA=",
+    "title": "Tractor Supply Co.",
+    "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+    "coordinates": [
+     40.5064754,
+     -75.9665978
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1050 Shoemaker Ave, Shoemakersville, PA 19555"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4KQVJO7FCIVCEBW6IFPDK77SSYAQ7PEGKAAAAAAA=",
+    "title": "Outdoor Cover Warehouse",
+    "url": "https://outdoorcoverwarehouse.com/Hamburg-Pennsylvania",
+    "coordinates": [
+     40.5440212,
+     -75.97947839999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "802 S Fourth St, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4YS5REN25JJCEBQLZE5KZCAKTYBFLCI6TAAAAAAA=",
+    "title": "Hermy's Triumph Parts Department",
+    "url": "https://triumphestore.com/",
+    "description": "Motorcycle Parts Store",
+    "coordinates": [
+     40.5809697,
+     -76.02449539999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "69 Centre St, Port Clinton, PA 19549, United States"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4W2I7ZUXMIFCEAJFFR6X7H7KSYCW7PX5PAAAAAAA=",
+    "title": "Tom Schaeffer's Camping and Travel Center",
+    "url": "https://tomschaeffers.com/",
+    "description": "RV Dealer",
+    "coordinates": [
+     40.5150398,
+     -75.9679984
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1236 Pottsville Pike, Shoemakersville, PA 19555"
+    },
+    "categories": [],
+    "icon_category": "car"
+   }
+  ]
+ }
+}

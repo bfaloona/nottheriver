@@ -1,0 +1,157 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T08:06:28.098Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4ICL3U5KI6NBUBAVBLC4PNSSSYDAKOD7LAAAAAAA=",
+    "title": "OutPHItters Team Store",
+    "url": "https://shop.outphitters.com/",
+    "coordinates": [
+     39.9006488,
+     -75.1713086
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3601 S Broad St, Philadelphia, PA 19148"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4VCI7DA2OAJCEA3Y2SHPKNTKSYDRWURO4AAAAAAA=",
+    "title": "Adventure Outfitter",
+    "url": "https://adventureoutfitter.com/pages/contact-us",
+    "coordinates": [
+     40.0180211,
+     -75.2133099
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3791 Main St, Philadelphia, PA 19127, United States"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4BQEAQQNC7FBUBLUFWQQ5VSSSYCPKZN5YAAAAAAA=",
+    "title": "Philadelphia Runner",
+    "url": "https://philadelphiarunner.com/",
+    "coordinates": [
+     39.9502641,
+     -75.1695637
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1711 Walnut St, Philadelphia, PA 19103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4NGSRBSBF7ZBUAI5TYQKHNSCSYAF3ZGQWAAAAAAA=",
+    "title": "Gear N Up",
+    "url": "https://g.page/TheDickiesStore",
+    "coordinates": [
+     39.985527999999995,
+     -75.1322071
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2326 N Front St, Philadelphia, PA 19133"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4WRTBUA5B7NBUBQGUQUHPBSCSYDDT5OTJAAAAAAA=",
+    "title": "Let's Go Outdoors, LLC",
+    "url": "https://letsgooutdoors.net/",
+    "coordinates": [
+     39.9658512,
+     -75.13965189999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "c/o WeWork, Montesino, 1010 N Hancock St, Philadelphia, PA 19123"
+    },
+    "categories": [],
+    "icon_category": "event"
+   },
+   {
+    "id": "loc4GGGALT6O7RBUAUFT6YWSTSKSYBC4DACEAAAAAAA=",
+    "title": "gethandyoutdoors",
+    "url": "https://gethandyoutdoors.com/",
+    "coordinates": [
+     39.9750613,
+     -75.1431384
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1546 N Lawrence St, Philadelphia, PA 19122"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4VJDRVXGW6FBUBUOCBJOEHS2SYBC7QTCXAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/",
+    "coordinates": [
+     39.8893695,
+     -75.17598629999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "5000 S Broad St, Philadelphia, PA 19112"
+    },
+    "categories": [],
+    "icon_category": "commercial"
+   },
+   {
+    "id": "loc4BGUTNE6K7FBUBIVGJQQNXSSSYBZRHNF5AAAAAAA=",
+    "title": "Philly Team Store",
+    "url": "",
+    "coordinates": [
+     39.9514946,
+     -75.1696244
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1720 Chestnut St, Philadelphia, PA 19103"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc42ZOMT2KG7FBUAL7KUQELVSSSYBCQURDTAAAAAAA=",
+    "title": "Frankenstein Bike Worx Spruce St Philadelphia",
+    "url": "https://frankinstienbikeworx.com/",
+    "coordinates": [
+     39.9474766,
+     -75.16760459999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1529 Spruce St, Philadelphia, PA 19102"
+    },
+    "categories": [],
+    "icon_category": "bicycle"
+   },
+   {
+    "id": "loc465F5LBZ76NBUAUCTZPLHVTCSYD4D4G57AAAAAAA=",
+    "title": "RevZilla",
+    "url": "https://revzilla.com/stores-revzilla-philadelphia-pennsylvania-store-300",
+    "description": "Motorcycle Shop",
+    "coordinates": [
+     39.9003763,
+     -75.1949975
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "4020 S 26th St, Philadelphia, PA 19112"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

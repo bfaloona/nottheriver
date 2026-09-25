@@ -1,0 +1,170 @@
+{
+ "q": "gourmet food store",
+ "at": "2026-09-25T08:06:50.789Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4WNASMGJZ4JAEAIGDORV6GGSVYB6JI6P3AAAAAAA=",
+    "title": "The Gourmet Food Shop by The Veggie Sunflower",
+    "url": "",
+    "coordinates": [
+     33.7673675,
+     -84.4201306
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": ""
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4W6R65OIC4RAEB7WK57M56GCVYBFU4O72AAAAAAA=",
+    "title": "Xi'an Gourmet House (Midtown)",
+    "url": "https://pos.chowbus.com/online-ordering/store/Xian-Gourmet-House--Midtown/23436",
+    "coordinates": [
+     33.7813332,
+     -84.38866279999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "955 Spring St NW c, Atlanta, GA 30309"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc47XOCWTQQ4FAEAWYPXLP7YGCVYAL2AH63UULIEKI=",
+    "title": "The Food Shoppe",
+    "url": "https://thefoodshoppeatl.com/",
+    "description": "Creole Restaurant",
+    "coordinates": [
+     33.758310099999996,
+     -84.3904342
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "123 Luckie St NW Apt 108, Atlanta, GA 30303"
+    },
+    "categories": [],
+    "icon_category": "restaurant"
+   },
+   {
+    "id": "loc434US5WCX4FAEAH2YT66NSGCVYBC7IKTBAAAAAAA=",
+    "title": "Old World Gourmet",
+    "url": "",
+    "coordinates": [
+     33.7604933,
+     -84.3882896
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "240 Peachtree St, Atlanta, GA 30303"
+    },
+    "categories": [],
+    "icon_category": "alcohol_shop"
+   },
+   {
+    "id": "loc4LDOY7ADW3VAEAHCR5ND5IGSVYCYOVUGVAAAAAAA=",
+    "title": "Vine & Olive",
+    "url": "https://vineandolives.com/",
+    "coordinates": [
+     33.7301789,
+     -84.4192066
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1010 White St SW Container #3, Atlanta, GA 30310"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4A3N6HYBN4JAEBHPJN5JU2FSVYDTY6S5BH2KEOQY=",
+    "title": "Sevananda Natural Foods Market",
+    "url": "https://sevananda.coop/",
+    "description": "Natural Foods Store",
+    "coordinates": [
+     33.7670251,
+     -84.3484696
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "467 Moreland Ave NE, Atlanta, GA 30307"
+    },
+    "categories": [
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4LYTZVLHW4NAEBLCSPKTJOGCVYBII3SAK6QHNSKY=",
+    "title": "Savi Provisions - Midtown",
+    "url": "https://saviprovisions.com/",
+    "coordinates": [
+     33.7809654,
+     -84.384256
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "988 Peachtree St NE, Atlanta, GA 30309"
+    },
+    "categories": [
+     "cafe",
+     "convenience_store"
+    ],
+    "icon_category": "alcohol_shop"
+   },
+   {
+    "id": "loc4MLFNCLMF5BAEBWE2VW6GIFKVYCNO5WHIZGB7VDI=",
+    "title": "The Kosher Gourmet",
+    "url": "https://kgatl.com/",
+    "coordinates": [
+     33.816564299999996,
+     -84.3342735
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2153 Briarcliff Rd NE, Atlanta, GA 30329"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4WEFOLDSI4RAEBMNX32AGAGSVYD5WPZ7SAAAAAAA=",
+    "title": "Savi provisions( star metal)",
+    "url": "https://saviprovisions.com/location/food-cafe-menu-star-metal",
+    "coordinates": [
+     33.7834643,
+     -84.4121401
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1050 Howell Ml Rd, Atlanta, GA 30318"
+    },
+    "categories": [],
+    "icon_category": "grocery"
+   },
+   {
+    "id": "loc4PTQHJXB24NAEBVX3GK6WSF2VYDDJVND6CZVBJSA=",
+    "title": "Whole Foods Market",
+    "url": "https://wholefoodsmarket.com/stores/poncedeleon?ref_=US_TRF_ALL_UFG_WFM_FRSOC_1001580",
+    "description": "Grocery Store",
+    "coordinates": [
+     33.775233799999995,
+     -84.3658288
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "650 Ponce De Leon Ave NE, Atlanta, GA 30308"
+    },
+    "categories": [
+     "bakery",
+     "convenience_store",
+     "grocery"
+    ],
+    "icon_category": "grocery"
+   }
+  ]
+ }
+}

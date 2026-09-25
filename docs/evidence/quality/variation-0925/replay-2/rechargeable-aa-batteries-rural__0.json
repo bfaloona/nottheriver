@@ -1,0 +1,163 @@
+{
+ "q": "electronics store",
+ "at": "2026-09-25T08:07:13.532Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4M3NP5FMVRJBUAQXL4HFUJJKXYCVR4MFEAAAAAAA=",
+    "title": "The Electronics Store",
+    "url": "https://electronicsstorekc.com/",
+    "coordinates": [
+     39.08269,
+     -94.582324
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Across from Crayola, 2450 Grand Blvd Floor 2, Kansas City, MO 64108"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc42G5PYPLHZ5CEAHMZ7VYMMBSWYAGIQ7IUAAAAAAA=",
+    "title": "Samsung",
+    "url": "https://samsung.com/us",
+    "coordinates": [
+     41.6203382,
+     -88.1058619
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "160 Southcreek Pkwy, Romeoville, IL 60446"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4UWF2RZHXBFCUBPT4K6UUL52VYDTYB3PQAAAAAAA=",
+    "title": "Abt Electronics & Appliances",
+    "url": "https://abt.com/",
+    "description": "Appliance Store",
+    "coordinates": [
+     42.0778776,
+     -87.86362679999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1200 N Milwaukee Ave, Glenview, IL 60025"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4QXUXWDOBFZCEAH6XQ2FHDMBQIB2XDTTTAAAAAAA=",
+    "title": "Electronics Store",
+    "url": "",
+    "coordinates": [
+     40.3652665,
+     16.6892325
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Via S. Giovanni Bosco, 50, 75015 Marconia MT"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4ZVS3JH6W45CEBMBJIZGD77SVYBMM3LIWYVQU3II=",
+    "title": "Micro Center",
+    "url": "https://microcenter.com/site/stores/westmont.aspx?storeid=25",
+    "description": "Computer Store",
+    "coordinates": [
+     41.811237299999995,
+     -87.9726134
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "80 E Ogden Ave, Westmont, IL 60559"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc4ASGT5C2KU5CEB6LN4OVA2J2WYB4IHESSAAAAAAA=",
+    "title": "Seneca Ace Hardware",
+    "url": "https://acehardware.com/store-details/16926",
+    "description": "Hardware Store",
+    "coordinates": [
+     41.3069624,
+     -88.6102092
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "255 S Main St, Seneca, IL 61360"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc43O7EP7PV5ZCEANAQZNTA52KVYCYVWHDEF4BS7XI=",
+    "title": "Best Buy",
+    "url": "https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100",
+    "description": "Electronics Store",
+    "coordinates": [
+     41.866882,
+     -87.641504
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "555 W Roosevelt Rd, Chicago, IL 60607"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc44F6OUWFFVFCEBXA3GLKJOLKWYCISTKSGAAAAAAA=",
+    "title": "Illinois Valley Cellular",
+    "url": "https://ivcellular.com/",
+    "coordinates": [
+     41.3253585,
+     -88.7123919
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "200 Riverfront Dr, Marseilles, IL 61341"
+    },
+    "categories": [],
+    "icon_category": "mobile_phone"
+   },
+   {
+    "id": "loc4GRN4GVQ265CEADLFJXI3N22VYBIRIL5HL4Q42DI=",
+    "title": "Micro Center",
+    "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151",
+    "description": "Computer Store",
+    "coordinates": [
+     41.9304913,
+     -87.68303329999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2645 N Elston Ave, Chicago, IL 60647"
+    },
+    "categories": [],
+    "icon_category": "electronics"
+   },
+   {
+    "id": "loc46BIG7IMGBNBUB27XNGA6FNBKID65FNIPAAAAAAA=",
+    "title": "Electronics Store",
+    "url": "https://facebook.com/Electronicsstorepalermo",
+    "coordinates": [
+     38.090046099999995,
+     13.3532906
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Via Villagrazia, 201, 90125 Palermo PA"
+    },
+    "categories": [],
+    "icon_category": "mobile_phone"
+   }
+  ]
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "q": "outdoor outfitters shop",
+ "at": "2026-09-25T07:04:41.892Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4NKRTUHOIAVCEBGEOSSEMXWCSYAC7GCIFAAAAAAA=",
+    "title": "Out There Outfitters",
+    "url": "https://outthereoutfitters.com/",
+    "coordinates": [
+     40.0451695,
+     -75.3874227
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "123 N Wayne Ave, Wayne, PA 19087"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4WZK77VQEB5CEAOEEFI27XUKSYDCGCJVYAAAAAAA=",
+    "title": "Boscov's",
+    "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html",
+    "description": "Department Store",
+    "coordinates": [
+     40.1173352,
+     -75.2809575
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 W Germantown Pike, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4V6JZ76KBBRCEBUK3HS6GPUSSYCTOMEUTAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     40.0957634,
+     -75.2875815
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "200 Ridge Pike Ste 115, Conshohocken, PA 19428"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4ZHIAYPN5BZCEB2XHJVCSVUSSYAPZSQYPAAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack",
+    "coordinates": [
+     40.1151501,
+     -75.28383
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "500 W Germantown Pike, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4NKJXTGUCBNCEBHN26JMZ5WCSYDRE5Q4JAAAAAAA=",
+    "title": "Urban Outfitters",
+    "url": "https://urbanoutfitters.com/stores/urban-outfitters-king-of-prussia",
+    "coordinates": [
+     40.0899232,
+     -75.384665
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "Court At, 640 W. DeKalb Pike, King of Prussia Rd, King of Prussia, PA 19406"
+    },
+    "categories": [],
+    "icon_category": "clothing_store"
+   },
+   {
+    "id": "loc4M6CBFQMTBFCEB7XRXFXKLT2SYDXINXMTAAAAAAA=",
+    "title": "Founding Fathers Outfitters",
+    "url": "https://foundingfathersphilly.com/",
+    "coordinates": [
+     40.0748216,
+     -75.24447219999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "9280 Ridge Pike, Lafayette Hill, PA 19444"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc4M2QZ3UZMBNCEADJWOUPBLWKSYDGL3KEZAAAAAAA=",
+    "title": "The North Face King of Prussia",
+    "url": "https://locations.thenorthface.com/en-us/pa/king-of-prussia/usa29",
+    "coordinates": [
+     40.0873055,
+     -75.391914
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "160 N Gulph Rd #2104, King of Prussia, PA 19406"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4QAAGHR4Q5ZBUAIINLU73HYSSYAOEDEX3AAAAAAA=",
+    "title": "Trail Creek Outfitters",
+    "url": "https://trailcreekoutfitters.com/",
+    "coordinates": [
+     39.8637933,
+     -75.5421904
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "487 Wilmington West Chester Pike, Glen Mills, PA 19342"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4QWANPQUHBVCEBHVWUG65LUSSYAPUTCKYAAAAAAA=",
+    "title": "PGA TOUR Superstore Plymouth",
+    "url": "https://pgatoursuperstore.com/stores/detail?StoreID=1232",
+    "coordinates": [
+     40.1057056,
+     -75.29429569999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2410 Chemical Rd, Plymouth Meeting, PA 19462"
+    },
+    "categories": [],
+    "icon_category": "golf"
+   },
+   {
+    "id": "loc4QZHHIAR7BNCEAKO7PWPTXWKSYDZGKEWIAAAAAAA=",
+    "title": "DICK'S Sporting Goods",
+    "url": "https://stores.dickssportinggoods.com/pa/king-of-prussia/1110/?seo=localpack",
+    "coordinates": [
+     40.0878604,
+     -75.3942641
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "160 N Gulph Rd Suite 4000, King of Prussia, PA 19406"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   }
+  ]
+ }
+}

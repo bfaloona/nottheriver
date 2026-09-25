@@ -1,0 +1,161 @@
+{
+ "q": "lighting store",
+ "at": "2026-09-25T08:07:02.726Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4ZWXHWKYSJBCEAUNHS5ZYIACTYBHKIHJCAAAAAAA=",
+    "title": "Lowe's Home Improvement",
+    "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "coordinates": [
+     40.5630545,
+     -76.0080842
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Wilderness Trail, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc47QGF5KUIJRCEBGKJ2QF34BKTYDMBCIZSAAAAAAA=",
+    "title": "Jack's DIY Home Store",
+    "url": "https://jackssurplus.com/",
+    "description": "Home Improvement Store",
+    "coordinates": [
+     40.5979207,
+     -76.0897245
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "139 S Front St, Auburn, PA 17922"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4GAF63HDGIFCEBWXCDKP4T7KSYCT3K5I2AAAAAAA=",
+    "title": "Kuzan's True Value Hardware & Rental Center",
+    "url": "https://kuzanshardware.com/",
+    "coordinates": [
+     40.510943999999995,
+     -75.965431
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1069 Pottsville Pike, Shoemakersville, PA 19555"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4U5ICP2QWJBCEB5FCO27YUACTYCIO4O5ZAAAAAAA=",
+    "title": "Lowe's Garden Center",
+    "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC",
+    "coordinates": [
+     40.5631993,
+     -76.00846849999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Wilderness Trail, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "garden_center"
+   },
+   {
+    "id": "loc4KXXE7447IZCEAFJPXPGNL72SYA7YJT4GAAAAAAA=",
+    "title": "Wicker Cottage Country Candle Co",
+    "url": "https://wickercottagecandleco.com/",
+    "coordinates": [
+     40.5517563,
+     -75.99742429999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "386 W State St Rear, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4LD4J7IJEI5CEAJ4PLVMG372SYATYSC7RAAAAAAA=",
+    "title": "Keystone Landscape Supply",
+    "url": "https://keystonelandscapesupply.com/",
+    "coordinates": [
+     40.5558054,
+     -75.9910489
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1509 Centre Turnpike, Orwigsburg, PA 17961"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4E5IB7XHYI5CEA734KORLMACTYCKQ2VQQAAAAAAA=",
+    "title": "Dollar Tree",
+    "url": "https://locations.dollartree.com/pa/hamburg/1780-tilden-ridge-dr",
+    "coordinates": [
+     40.5622821,
+     -76.0111471
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1780 Tilden Ridge Dr, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "convenience_store"
+   },
+   {
+    "id": "loc4Z337QKJTJBCEAKP4MNV4OACTYCZ2FBAZAAAAAAA=",
+    "title": "Walmart Garden Center",
+    "url": "https://walmart.com/store/4612-hamburg-pa/patio-garden-services/?veh=seo_loc",
+    "coordinates": [
+     40.5640614,
+     -76.0121716
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1800 Tilden Ridge Dr, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "garden_center"
+   },
+   {
+    "id": "loc42MDBM5QHI5CEAFXV5Y2D572SYDRQLPQYAAAAAAA=",
+    "title": "Fastener Place",
+    "url": "https://thefastenerplace.com/",
+    "coordinates": [
+     40.5549152,
+     -75.9881718
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "137 Schuylkill Ave, Hamburg, PA 19526"
+    },
+    "categories": [
+     "shop"
+    ],
+    "icon_category": "hardware"
+   },
+   {
+    "id": "loc4CNH5D3AVJBCEA7NAEZCIUACTYC34FE7FAAAAAAA=",
+    "title": "Lowe's ProServices",
+    "url": "",
+    "coordinates": [
+     40.5631691,
+     -76.00843909999999
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "20 Wilderness Trail, Hamburg, PA 19526"
+    },
+    "categories": [],
+    "icon_category": "hardware"
+   }
+  ]
+ }
+}

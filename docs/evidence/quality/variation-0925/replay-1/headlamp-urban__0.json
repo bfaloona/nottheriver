@@ -1,0 +1,161 @@
+{
+ "q": "outdoor gear store",
+ "at": "2026-09-25T07:05:10.028Z",
+ "body": {
+  "results": [
+   {
+    "id": "loc4OLW7VOZN4JBEARAX2S3UZGS6YCTKW5JULZJXR5Q=",
+    "title": "Sports Basement Bryant Street",
+    "url": "https://shop.sportsbasement.com/blogs/stores/san-francisco-bryant-street",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     37.7670207,
+     -122.4109325
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1590 Bryant St, San Francisco, CA 94103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4ZCY7KDHB4JBEBRZPXSJOJGK6YCBTX2ATAAAAAAA=",
+    "title": "REI",
+    "url": "https://rei.com/stores/san-francisco?y_source=1_MTQ1MzQ4NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "description": "Outdoor Store",
+    "coordinates": [
+     37.772493,
+     -122.404576
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "840 Brannan St, San Francisco, CA 94103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4RDOGP4CS4BBEBM764CGZNGS6YD3LIMYZTJBGKMI=",
+    "title": "Last Minute Gear",
+    "url": "https://lastminutegear.com/",
+    "coordinates": [
+     37.7525311,
+     -122.4154391
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3156B 24th St, San Francisco, CA 94110"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4N2MLEHM54BBEBJRUKE5MPGS6YCJQQDBPAAAAAAA=",
+    "title": "Elite Sports",
+    "url": "https://facebook.com/elitesportsoccer",
+    "coordinates": [
+     37.7547948,
+     -122.4184099
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "2637 Mission St, San Francisco, CA 94110"
+    },
+    "categories": [],
+    "icon_category": "soccer"
+   },
+   {
+    "id": "loc4S676OLCY3VBEAWJXHHLYXHS6YBP34GXSAAAAAAA=",
+    "title": "Sports Basement Stonestown",
+    "url": "https://shop.sportsbasement.com/blogs/stores/san-francisco-stonestown",
+    "description": "Sporting Goods Store",
+    "coordinates": [
+     37.7292534,
+     -122.4772852
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "3251 20th Ave Ste 390, San Francisco, CA 94132"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4EMYDD4NC4JBEAQDBTIZWZGS6YCFVHLSJAAAAAAA=",
+    "title": "Cycle Gear",
+    "url": "https://cyclegear.com/stores/cycle-gear-san-francisco-california-store-40",
+    "description": "Motorcycle Shop",
+    "coordinates": [
+     37.770597599999995,
+     -122.4128541
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1500 Harrison St, San Francisco, CA 94103"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4LJ3T3YVB3ZBEAAKICIU7FGC6YAQLBHD2AAAAAAA=",
+    "title": "Ewing Outdoor Supply",
+    "url": "https://ewingoutdoorsupply.com/",
+    "coordinates": [
+     37.7393153,
+     -122.3897803
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1618 Jerrold Ave, San Francisco, CA 94124"
+    },
+    "categories": []
+   },
+   {
+    "id": "loc43XJTBV754RBEBKNCPCKTLGS6YBS6TJU6AAAAAAA=",
+    "title": "Last Minute Gear",
+    "url": "https://lastminutegear.com/",
+    "coordinates": [
+     37.7889966,
+     -122.4095205
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "563 Sutter St, San Francisco, CA 94102"
+    },
+    "categories": [],
+    "icon_category": "sportevent"
+   },
+   {
+    "id": "loc4ML6I7J2A4FBEA52YS4EXLGK6YAEWDT7RAAAAAAA=",
+    "title": "Last Minute Gear",
+    "url": "https://lastminutegear.com/",
+    "coordinates": [
+     37.7597856,
+     -122.3977684
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1627B 20th St, San Francisco, CA 94107"
+    },
+    "categories": [],
+    "icon_category": "shop"
+   },
+   {
+    "id": "loc4ZO56UAPT4FBEBOBHUMSWVGK6YAANZRBQAAAAAAA=",
+    "title": "Desmoto Sport",
+    "url": "https://desmotosport.com/",
+    "coordinates": [
+     37.7652285,
+     -122.3971037
+    ],
+    "postal_address": {
+     "type": "PostalAddress",
+     "displayAddress": "1310 17th St, San Francisco, CA 94107"
+    },
+    "categories": [],
+    "icon_category": "car_repair"
+   }
+  ]
+ }
+}
