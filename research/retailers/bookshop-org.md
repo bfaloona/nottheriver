@@ -26,13 +26,15 @@ The B Corp status is not counted: bcorporation.net returned HTTP 403, and data/c
 
 Second pass (2026-09-25): FTC cases and proceedings search for "Bookshop.org" and for "Bookshop" showed "No results found for these filters." The CourtListener agency-docket query since 2016 for "Bookshop.org" returned 0 dockets. ProPublica search for "Bookshop.org" returned no articles. No matching cases; no concern added.
 
+News pass (2026-09-25): two web searches, `"Bookshop.org" lawsuit OR settlement OR fine OR violation` and `"Bookshop.org" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned stories about other stores (Avid Bookshop's suit against a Georgia jail) and agency home pages, nothing about Bookshop.org. No parent company is named, so no third search applied. No concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). No accepted concern. = 0.5
 - Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`; profile says "certified Climate Neutral in 2020, 2021, 2022, 2023 and 2024", current certification year 2025, not marked expired). = 0.75
 - 1% for the Planet: directory is script-rendered and returned no content; inconclusive, not counted.
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Blocklist: `node research/build-index.mjs --blocklist "Bookshop.org" bookshop.org` returned "not on the blocklist".
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Bookshop.org

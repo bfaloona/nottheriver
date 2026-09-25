@@ -30,12 +30,14 @@ CourtListener shows an individual's suit against Tentree International Inc. (E.D
 
 Second pass (2026-09-25): the FTC cases and proceedings search for "Tentree" showed "No results found for these filters." The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search for "Tentree" returned no articles. All three are US sources; no Canadian regulator was checked. No matching cases; no concern added.
 
+News pass (2026-09-25): three web searches, `"Tentree" lawsuit OR settlement OR fine OR violation`, `"Tentree" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for Canada's regulators, `"Tentree" ("Competition Bureau" OR WorkSafeBC OR "Employment Standards" OR "Environment and Climate Change Canada" OR greenwashing)`. The first two returned unrelated settlements and agency pages; the third returned the Competition Bureau's general greenwashing guidance and law-firm commentary on it, with no case or action naming Tentree. No concern added. (No Canadian regulator is on the accepted-source list, so a Canadian action could only have been noted, not scored.)
+
 ## Rating
 - ethics: 0.5 baseline. B Corp claimed but not verified this run (bcorporation.net 403, no fallback row).
 - environment: 0.5 + 0.25 (The Climate Label, verified on explore.changeclimate.org; the directory showed 2025 as the current certification year when checked 2026-09-25, and the tier depends on this row) = 0.75. 1% for the Planet not checked: the directory returns no data to a plain fetch.
-- concerns: none recorded. NLRB case search returned no cases (control search "Starbucks" returned 2,559); CourtListener API search found only the copyright case above; the web search budget ran out before the regulator and news searches, and Tentree is a Canadian company, which US regulator databases may not cover.
+- concerns: none recorded. NLRB case search returned no cases (control search "Starbucks" returned 2,559); CourtListener API search found only the copyright case above; pass 3's news search, including one on Canadian regulators, found no action; Tentree is a Canadian company, which US regulator databases may not cover.
 - tier: `recommended` (0.5 + 0.75 = 1.25, no accepted concern, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://www.tentree.com/pages/about

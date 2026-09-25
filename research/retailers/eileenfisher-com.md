@@ -29,13 +29,15 @@ Concern checks: an NLRB case search for "eileen fisher" returned no results, and
 
 Second pass (2026-09-25): the FTC cases and proceedings search for "Eileen Fisher" returned 4 results, all about other parties (Thermo Fisher Scientific, Thermo Electron, a 1997 dietary-supplement staff comment); none names Eileen Fisher. The CourtListener agency-docket query since 2016 returned 1 docket, "Eileen Fisher, Inc. v. United States of America" (Court of International Trade, filed 2026-01-13), where the company sues the government, so it is not a concern. The one ProPublica hit (a Pentagon brain-injury story) is not about the company. No matching cases; no concern added.
 
+News pass (2026-09-25): two web searches, `"Eileen Fisher" lawsuit OR settlement OR fine OR violation` and `"Eileen Fisher" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned other "Fisher" companies (Fisher Investments, Fisher-Price), the brand's own terms page, Wikipedia and agency home pages, nothing reporting an action against Eileen Fisher. The file names no parent company, so no third search applied. No concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Eileen Fisher" eileenfisher.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: `b_corp` (fallback row in `data/certifications.json`, `verified_this_run: false`) and `fair_trade` (Fair Trade USA's own shop page, fetched this run).
 - Ethics: 0.5 start + 0.25 (b_corp) + 0.25 (fair_trade) = 1.0, no concerns.
 - Environment: 0.5 start, no environmental certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.5, at least 1.25, and no accepted concern in the last 5 years, so `recommended`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Eileen_Fisher

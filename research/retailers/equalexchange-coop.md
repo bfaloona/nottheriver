@@ -30,11 +30,13 @@ Concerns checked: NLRB case search for "equal exchange" returned no cases. OSHA'
 
 Second pass (2026-09-25): the FTC cases and proceedings search for "Equal Exchange" without quotes returned 28 loosely matched results (the first 20 read: StubHub, Intercontinental Exchange, Cuban Exchange and others), none naming Equal Exchange; the exact-phrase search for "Equal Exchange" showed "No results found for these filters." The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search returned 48 article links; none of their titles is about Equal Exchange or an action against it, so none was opened. No matching cases; no concern added.
 
+News pass (2026-09-25): two web searches, `"Equal Exchange" lawsuit OR settlement OR fine OR violation` and `"Equal Exchange" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The first surfaced one item about the co-op: a Proposition 65 notice filed with the California Attorney General (notice 2015-01250) by a private individual, Erika McCartney, over cadmium in Equal Exchange Organic Baking Cocoa. The AG's summary page describes an "out-of-court settlement (not court-approved)" reached 2016-06-26, with a $12,500 civil penalty and $40,000 in fees, under which Equal Exchange agreed not to sell the cocoa in California above the safe-harbor level without a warning. A private enforcer's settlement is not an agency or court action, and oag.ca.gov is not an accepted source, so it is noted here and not recorded as a concern. The second search returned only agency home pages. The file names no parent company, so no third search applied. No concern added.
+
 ## Rating
 - Ethics: 0.5 baseline + 0.25 `worker_coop` (US Federation of Worker Cooperatives directory, verified this run) = 0.75. Fair Trade USA not verified; B Corp not checked (directory blocked, no data/certifications.json row of that kind). No accepted concern. Ethics 0.75.
 - Environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified. No environmental concern. Environment 0.5.
 - Tier: 0.75 + 0.5 = 1.25, meets `recommended` (≥ 1.25) with no accepted concern in the last 5 years. Tier `recommended`.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Equal_Exchange
@@ -57,3 +59,4 @@ Second pass (2026-09-25): the FTC cases and proceedings search for "Equal Exchan
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Equal%20Exchange%22 (no results)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Equal%20Exchange%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
 - https://www.propublica.org/search?qss=%22Equal%20Exchange%22 (48 articles, none about the co-op)
+- https://oag.ca.gov/prop65/60-day-notice-2015-01250 (Prop 65 private settlement, 2016; noted, not a concern)

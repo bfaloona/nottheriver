@@ -26,6 +26,8 @@ Not scored, but on record: Wikipedia says that in 2022 "a group of 5,000 sellers
 
 Second pass (2026-09-25): the FTC cases and proceedings search for "Etsy" returned 1 result, a 1997 business-opportunity case against Diane M. Jonas and others, not Etsy. The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search returned 3 article links (Uline political giving, Facebook Marketplace scams, a COVID pregnancy story); none is about an action against Etsy, so none was opened. No matching cases; no concern added.
 
+News pass (2026-09-25): two web searches, `"Etsy" lawsuit OR settlement OR fine OR violation` and `"Etsy" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The first surfaced only private suits, none with a ruling against Etsy: a pixel-tracking privacy class action the plaintiff moved to dismiss voluntarily, a false-advertising suit by the Cashmere and Camel Hair Manufacturers Institute (CCMI) dismissed with prejudice on 2023-02-03, and the 2015 IPO securities class action, which, per search snippets of Etsy's SEC filings (not fetched), the court dismissed in full on 2017-03-24. Private suits and dismissed actions are not concerns. The second search returned only agency and law-firm pages. The file names no parent company, so no third search applied. No concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp lapsed 2017). No accepted concern. = 0.5
 - Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`, profile at explore.changeclimate.org/brand/etsy says "A Climate Label Certified Brand", certified 2026, not expired). No concern. = 0.75
@@ -34,7 +36,7 @@ Second pass (2026-09-25): the FTC cases and proceedings search for "Etsy" return
 - Blocklist: `node research/build-index.mjs --blocklist "Etsy" etsy.com` returned "not on the blocklist".
 - NLRB case search for "Etsy": no cases. OSHA establishment search for "Etsy" (2016 to 2026): no results.
 - Good Jobs First Violation Tracker returned HTTP 403; logged in raw/blocked-retailers-R1.md.
-- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Etsy
