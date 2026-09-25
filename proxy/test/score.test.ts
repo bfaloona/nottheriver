@@ -200,7 +200,7 @@ describe('proximity', () => {
 
   it('rounds distance to 1 decimal and cites the ranking doc with it', () => {
     expect(proximity(local('Store', 'x', 3.2), ORIGIN, DOC)).toEqual({
-      value: 0.92, distance_km: 3.2, sources: [{ label: '3.2 km from your zip area', url: DOC }],
+      value: 0.92, distance_km: 3.2, sources: [{ label: '2.0 mi (3.2 km) from your zip area', url: DOC }],
     });
   });
 

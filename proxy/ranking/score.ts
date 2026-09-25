@@ -107,7 +107,10 @@ export function proximity(
   // Score from the displayed (rounded) distance so a reader can reproduce the value.
   const distance_km = round(haversineKm(origin, { lat: c.lat, lon: c.lon }), 1);
   const value = Math.max(0, 1 - distance_km / PROXIMITY_RADIUS_KM);
-  return { value, distance_km, sources: value > 0 ? [{ label: `${distance_km} km from your zip area`, url: docUrl }] : [] };
+  // The page shows miles; the km figure stays so a reader can recompute the value from the formula.
+  const miles = distance_km * 0.621371;
+  const shown = miles < 10 ? miles.toFixed(1) : String(Math.round(miles));
+  return { value, distance_km, sources: value > 0 ? [{ label: `${shown} mi (${distance_km} km) from your zip area`, url: docUrl }] : [] };
 }
 
 export interface ScoreInput {
