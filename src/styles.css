@@ -185,23 +185,19 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 .components { list-style: none; margin: var(--space-2) 0 0; padding: 0; }
 .components li {
   display: grid;
-  grid-template-columns: 7rem auto;
+  grid-template-columns: 6.5rem 1fr;
   gap: 0 var(--space-3);
   padding-block: var(--space-1);
 }
-.component-math { font-variant-numeric: tabular-nums; }
-.component-sources { grid-column: 1 / -1; color: var(--ink-muted); overflow-wrap: anywhere; }
-@media (min-width: 40rem) {
-  .components li { grid-template-columns: 7rem 9.5rem 1fr; }
-  .component-sources { grid-column: auto; }
-}
+.component-name { color: var(--ink-muted); }
+.component-text { overflow-wrap: anywhere; }
 
 /* Desktop popover only where a hover pointer exists; touch keeps the native in-place expand. */
 @media (hover: hover) and (pointer: fine) {
   .why[open] .why-panel {
     position: absolute;
     left: 2rem;
-    right: 0;
+    width: min(20rem, calc(100% - 2rem));
     z-index: 2;
     margin-top: 0; /* a gap here would fire mouseleave on the way into the panel */
     padding: var(--space-4);

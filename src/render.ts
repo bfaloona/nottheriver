@@ -1,4 +1,4 @@
-import type { ComponentName, SearchResponse, SearchResult, SignalKind, Usage } from '../proxy/src/contract';
+import type { ComponentName, SearchResponse, SearchResult, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
 import { defaultView, filterResults, sortResults, type View } from './controls';
 import { wirePopovers } from './popover';
 
@@ -75,23 +75,52 @@ export function formatDistance(km: number): string {
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
-function componentRow(c: SearchResult['components'][number]): HTMLLIElement {
-  const sources = el('span', { className: 'component-sources' });
-  c.sources.forEach((s, i) => {
-    if (i > 0) sources.append(', ');
-    sources.append(outbound(s.url, s.label, { data: { componentSource: '' } }));
-  });
+// The panel speaks in plain words; the weights and formula live on the ranking page.
+// Only certifications and concerns link out: the baseline and distance lines point at
+// that page, and the relevance line points at the shop's own page, already linked above.
+const WHY_LABELS: Record<ComponentName, string> = {
+  relevance: 'Sells it',
+  ethics: 'Ethics',
+  env: 'Environment',
+  proximity: 'Distance',
+};
+
+const isRankingDoc = (url: string) => url.endsWith('about.html#ranking');
+
+function sellsText(c: SearchResult['components'][number]): string {
+  const judged = c.sources.some((s) => s.label.startsWith('Model judgment'));
+  if (c.value >= 1) return judged ? "Likely (model's judgment)" : 'Product named in listing';
+  if (c.value >= 0.5) return judged ? "Maybe (model's judgment)" : 'Category named in listing';
+  return 'Not confirmed';
+}
+
+// A negative's source label is "<Kind>: <claim>"; the claim is already on the card.
+function sourceLink(s: SourceRef): HTMLAnchorElement {
+  const kind = Object.values(SIGNAL_LABELS).find((k) => s.label.startsWith(`${k}: `));
+  return outbound(s.url, kind ? `${kind} concern` : s.label, { data: { componentSource: '' } });
+}
+
+function whyText(c: SearchResult['components'][number], result: SearchResult): (Node | string)[] {
+  switch (c.name) {
+    case 'relevance':
+      return [sellsText(c)];
+    case 'proximity':
+      if (result.kind === 'online') return ['Online'];
+      return [result.distance_km === null ? 'Unknown' : formatDistance(result.distance_km)];
+    default: {
+      const found = c.sources.filter((s) => !isRankingDoc(s.url));
+      if (found.length === 0) return ['Nothing found'];
+      return found.flatMap((s, i) => (i > 0 ? [', ', sourceLink(s)] : [sourceLink(s)]));
+    }
+  }
+}
+
+function componentRow(c: SearchResult['components'][number], result: SearchResult): HTMLLIElement {
   return el(
     'li',
     { data: { component: c.name } },
-    el('span', { className: 'component-name' }, COMPONENT_LABELS[c.name]),
-    el(
-      'span',
-      { className: 'component-math' },
-      `${c.weight.toFixed(2)} × ${c.value.toFixed(2)} = `,
-      el('span', { data: { componentValue: '' } }, c.contribution.toFixed(3)),
-    ),
-    sources,
+    el('span', { className: 'component-name' }, WHY_LABELS[c.name]),
+    el('span', { className: 'component-text' }, ...whyText(c, result)),
   );
 }
 
@@ -139,7 +168,7 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
     }
   }
 
-  const rows = result.components.filter((c) => c.value > 0).map(componentRow);
+  const rows = result.components.map((c) => componentRow(c, result));
   body.append(
     el(
       'details',
@@ -148,7 +177,7 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
       el(
         'div',
         { className: 'why-panel' },
-        el('p', { className: 'why-total' }, `Score ${result.score.toFixed(3)}, the sum of:`),
+        el('p', { className: 'why-total' }, `Score ${result.score.toFixed(2)}`),
         el('ul', { className: 'components' }, ...rows),
         el('p', { className: 'why-help' }, internal(RANKING_HELP, 'How ranking works')),
       ),

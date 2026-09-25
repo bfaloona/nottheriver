@@ -1,6 +1,6 @@
 # How ranking works
 
-Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms, points at evidence, and judges whether each result is a shop that sells the product, which can remove a result ([Filtered before scoring](#filtered-before-scoring)); it never sets a number and never writes text that is shown as a finding. Each result's "Why this rank" lists every non-zero component with its value, weight and source.
+Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms, points at evidence, and judges whether each result is a shop that sells the product, which can remove a result ([Filtered before scoring](#filtered-before-scoring)); it never sets a number and never writes text that is shown as a finding. Each result's "Why this rank" shows its score and one plain-words line per component (sells it, ethics, environment, distance), linking only certifications and concerns to their sources; the weights are in the line above the results and the full values stay in the API response.
 
 ## Filtered before scoring
 

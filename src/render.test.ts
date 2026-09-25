@@ -33,31 +33,63 @@ describe('renderResults (HR5)', () => {
     expect(root.querySelectorAll('[data-section="online"] [data-result]')).toHaveLength(response.online.length);
   });
 
-  it('lists every non-zero component with its contribution and one link per source', () => {
+  const whyRows = (result: SearchResult) =>
+    [...item(result).querySelectorAll('[data-why] [data-component]')].map((row) => [
+      row.querySelector('.component-name')!.textContent,
+      row.querySelector('.component-text')!.textContent,
+    ]);
+
+  it('explains every result in four plain rows under its score', () => {
     for (const result of all) {
       const li = item(result);
-      for (const c of result.components) {
-        const row = li.querySelector(`[data-component="${c.name}"]`);
-        if (c.value === 0) {
-          expect(row, `${result.id} ${c.name}`).toBeNull();
-          continue;
-        }
-        expect(row, `${result.id} ${c.name}`).not.toBeNull();
-        expect(row!.querySelector('.component-math')!.textContent).toContain(`${c.weight.toFixed(2)} × ${c.value.toFixed(2)}`);
-        expect(row!.querySelector('[data-component-value]')!.textContent).toBe(c.contribution.toFixed(3));
-        expect(c.sources.length, `${result.id} ${c.name}`).toBeGreaterThanOrEqual(1);
-        const links = [...row!.querySelectorAll<HTMLAnchorElement>('a[data-component-source]')];
-        expect(links.map((a) => a.getAttribute('href'))).toEqual(c.sources.map((s) => s.url));
-      }
       expect(li.querySelector('[data-why] summary')!.textContent).toBe('Why this rank');
-      expect(li.querySelector('.why-total')!.textContent).toContain(result.score.toFixed(3));
+      expect(li.querySelector('.why-total')!.textContent).toBe(`Score ${result.score.toFixed(2)}`);
+      expect(whyRows(result).map(([name]) => name)).toEqual(['Sells it', 'Ethics', 'Environment', 'Distance']);
+      expect(li.querySelector('.component-math'), 'no weight × value math').toBeNull();
     }
   });
 
-  it('omits the zero env component of the second local result', () => {
-    const second = response.local[1]!;
-    expect(second.components.find((c) => c.name === 'env')!.value).toBe(0);
-    expect(item(second).querySelector('[data-component="env"]')).toBeNull();
+  it('links only certifications and concerns, plus one "How ranking works"', () => {
+    for (const result of all) {
+      const external = result.components
+        .filter((c) => c.name === 'ethics' || c.name === 'env')
+        .flatMap((c) => c.sources.filter((s) => !s.url.endsWith('about.html#ranking')).map((s) => s.url));
+      const panel = item(result).querySelector('.why-panel')!;
+      const sources = [...panel.querySelectorAll('a[data-component-source]')].map((a) => a.getAttribute('href'));
+      expect(sources, result.id).toEqual(external);
+      expect([...panel.querySelectorAll('a')].length, result.id).toBe(external.length + 1);
+    }
+  });
+
+  it('names certifications and concerns, and says when nothing was found', () => {
+    const [first, second] = response.local;
+    expect(whyRows(first!)).toEqual([
+      ['Sells it', 'Product named in listing'],
+      ['Ethics', 'B Corp'],
+      ['Environment', 'Nothing found'],
+      ['Distance', formatDistance(first!.distance_km!)],
+    ]);
+    expect(whyRows(second!)[1]).toEqual(['Ethics', 'Labor concern']);
+    expect(whyRows(response.online[0]!).slice(2)).toEqual([['Environment', '1% for the Planet'], ['Distance', 'Online']]);
+    expect(whyRows(response.online[1]!)[0]).toEqual(['Sells it', 'Category named in listing']);
+  });
+
+  it("words the model's sells judgment and a missing distance", () => {
+    const base = response.local[0]!;
+    const judged = (value: number, label: string): SearchResult => ({
+      ...base,
+      distance_km: null,
+      components: base.components.map((c) => {
+        if (c.name === 'relevance') return { ...c, value, sources: [{ label, url: base.retailer.url }] };
+        if (c.name === 'proximity') return { ...c, value: 0, sources: [] };
+        return c;
+      }),
+    });
+    const rows = (r: SearchResult) =>
+      [...renderResult(r, config).querySelectorAll('[data-component]')].map((row) => row.querySelector('.component-text')!.textContent);
+    expect(rows(judged(1, 'Model judgment: likely sells it'))).toEqual(["Likely (model's judgment)", 'B Corp', 'Nothing found', 'Unknown']);
+    expect(rows(judged(0.5, 'Model judgment: may sell it'))[0]).toBe("Maybe (model's judgment)");
+    expect(rows(judged(0.2, base.retailer.name))[0]).toBe('Not confirmed');
   });
 
   it('shows the response rank, not the position', () => {
@@ -221,7 +253,7 @@ describe('"Why this rank" on a fine hover pointer', () => {
 
   it('closes on Escape from inside the panel and leaves focus on the summary', () => {
     const d = whys()[0]!;
-    const link = d.querySelector<HTMLAnchorElement>('a[data-component-source]')!;
+    const link = d.querySelector<HTMLAnchorElement>('.why-help a')!;
     link.focus();
     expect(d.open).toBe(true);
     link.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
