@@ -6,6 +6,8 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 ## Resume cold
 
+**Next session (after 2026-09-25):** run concern pass 3, the news search, from `research/raw/news-search-brief.md` in a session started with `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=600`. Also: retry OC31 re-sourcing with `node research/fetch-osha-dol.mjs name "<establishment>"` (allow rule already added; key in `~/dev/secrets/nottheriver-dol-api-key.txt`). Operator decisions: OC31 keep; merge to main after pass 3; D1 to D4 still unreviewed.
+
 1. `git -C <worktree> log --oneline -5` shows the last finished stage.
 2. Check the planned files for the in-flight stage below against `ls research/...`; rerun only the agents whose files are missing.
 3. `node research/build-index.mjs` lists any malformed files.
@@ -87,3 +89,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - OC31: operator chose to register for a DOL API key (brandon@treadlightly.ai). DOL portal signs in through Login.gov (account, password, MFA), so the operator must register; the agent cannot create accounts. Key to be saved at ~/dev/secrets/dol-api-key; then script the 18 inspection lookups.
 - OC31: operator registered (brandon@faloona.net); key at ~/dev/secrets/nottheriver-dol-api-key.txt. Header X-API-KEY got 401; putting the key in the URL query was denied by the auto-mode classifier. Waiting on operator.
 - OC31 DOL attempt: API key works (metadata OK). Lookup by activity_nr returned nothing for 4 of 5 inspections and matched 1647478 to a 1984 inspection of another firm (RIO GRANDE TOOL CO), so the dataset's activity_nr is not the osha.gov inspection id, or recent inspections are missing. Then HTTP 429 persisted past 90 s. Partial dumps removed as misleading. Script research/fetch-osha-dol.mjs kept (modes: metadata, probe, name, lookup).
+- Wrap-up 2026-09-25: OC31 decided keep (retry DOL by name planned); news-search brief written; merge after pass 3.
