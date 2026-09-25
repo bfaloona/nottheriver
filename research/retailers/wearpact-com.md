@@ -32,11 +32,13 @@ Certifications:
 
 Concerns: none recorded. An NLRB case search for "Wear Pact" returns no cases. CourtListener lists two federal dockets naming Wear Pact LLC as a defendant: an Americans with Disabilities Act case (W.D. Pa., filed 2020-04-16, terminated 2020-04-27) and an individual's suit against Wear Pact LLC (D. Colo., filed 2025-06-18, open, nature of suit not shown). The search results show no finding or settlement, so neither is recorded. The session's web-search budget had run out, so no site-restricted searches of the other accepted sources were possible (logged).
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Pact" returned 12 results; the only one named Pact is "Pact, Inc." (FTC matter 152 3010), and its case page shows it is a different company: "Federal Trade Commission v. Pact, Inc." (W.D. Wash., 2:17-cv-1429, 2017-09-21) against "Pact, Inc., a Delaware corporation; Yifan Zhang ... and Geoffrey Oberhofer", over a mobile app that the FTC alleged failed to deliver promised cash rewards, while this retailer is Wear Pact LLC of Boulder, Colorado. That case is a name collision and is not recorded. The same case was the only CourtListener agency docket returned for the retailer's names since 2016. ProPublica's search returned 49 article links, loose matches on "pact" (veterans' cancer coverage, trade policy and others); none is about the retailer, so none was opened. No matching cases; no concern added.
+
 ## Rating
 - ethics: start 0.5; +0.25 fair_trade; no accepted labor or governance concern; = 0.75
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
 - tier: not on the blocklist (`--blocklist "Pact" wearpact.com`: "not on the blocklist"); ethics + environment = 1.25 ≥ 1.25 and no accepted concern in the last 5 years, so `recommended`.
-- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://wearpact.com/privacy
@@ -47,3 +49,7 @@ Concerns: none recorded. An NLRB case search for "Wear Pact" returns no cases. C
 - https://www.courtlistener.com/api/rest/v4/search/?q=%22Wear%20Pact%22&type=r&format=json
 - https://www.nlrb.gov/search/case/Wear%20Pact
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Pact (12 results; only "Pact, Inc." named Pact)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings/152-3010-pact-inc (FTC v. Pact, Inc., a mobile-app company; name collision)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Pact%22%20OR%20%22Pact%20Apparel%22%20OR%20%22Pact%2C%20LLC%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (1 docket, the same FTC v. Pact, Inc. case)
+- https://www.propublica.org/search?qss=%22Pact%22 (articles, none about the retailer)

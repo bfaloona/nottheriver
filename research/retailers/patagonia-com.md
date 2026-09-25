@@ -38,11 +38,13 @@ Concerns:
 
 Not recorded: NLRB case 32-CA-360724 (Patagonia, Inc., Reno, filed 2025-02-20 by the UFCW) closed when the General Counsel approved a withdrawal request on 2025-09-26, with no finding. Wikipedia's controversy section mentions supply-chain labor reports (internal audits in 2007 and 2011 on trafficking in second-tier Taiwanese suppliers; a December 2021 criminal complaint by the European Center for Constitutional and Human Rights over Xinjiang cotton; a 2023 Dutch report on shared factories). None of their underlying sources were fetched this run (the ECCHR case URL tried returned 404, and the web-search budget had run out), so none is recorded. CourtListener lists federal dockets naming Patagonia, Inc. as a defendant (for example an employment civil-rights case filed 2025-03-07 in D. Nev. and website-accessibility cases); a docket search result shows no finding or settlement, so private suits without an outcome are not recorded as concerns. No agency case was found in the CourtListener search.
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Patagonia" (which also covers "Patagonia Works") showed "No results found for these filters." For the owner named above, the search for "Holdfast Collective" returned 47 loose matches on "collective" (the first 20 read, none naming Holdfast), and the search for "Holdfast" showed no results. The CourtListener agency-docket query since 2016 returned 8 dockets, none kept: two are "Patagonia, Inc. v. United States" at the Court of International Trade (2020-09-18, 2026-01-15; the company sues the government), one is "Patagonia Food Group, LLC v. United States" (a different company), one is "Patagonia Area Resource Alliance v. United States Forest Service" (a different party suing the government), and four are "United States v. Patagonia Duffel Bag" (E.D. Mo., 2022-11-15), a case against a bag, not against the company. ProPublica's one hit (tire and rubber import prices) is not about the company. No matching cases; no concern added.
+
 ## Rating
 - ethics: start 0.5; +0.25 fair_trade; +0.25 b_corp; −0.25 labor (NLRB settlement, 2020-03-25); = 0.75
 - environment: start 0.5; +0.25 one_percent_planet; no accepted environmental concern; = 0.75
 - tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 1.5 ≥ 1.25 and no accepted concern in the last 5 years (the 2020-03-25 settlement is before the 2021-09-25 cutoff), so `recommended`.
-- Concern search incomplete this run (see raw/blocked-retailers-R4.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Patagonia,_Inc.
@@ -56,3 +58,8 @@ Not recorded: NLRB case 32-CA-360724 (Patagonia, Inc., Reno, filed 2025-02-20 by
 - https://www.nlrb.gov/case/32-CA-254886
 - https://www.nlrb.gov/case/32-CA-360724
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Patagonia (no results)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Holdfast%20Collective (47 loose matches, none about Holdfast Collective)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Holdfast%22 (no results)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Patagonia%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (8 dockets, none an agency action against the company)
+- https://www.propublica.org/search?qss=%22Patagonia%22 (1 unrelated article)

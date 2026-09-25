@@ -24,6 +24,8 @@ Etsy is an online marketplace where independent sellers list handmade goods, vin
 
 Not scored, but on record: Wikipedia says that in 2022 "a group of 5,000 sellers united to strike" after a fee increase from 5% to 6.5%; this is a seller protest, not a regulator or court finding, so it is not a concern row. Wikipedia also describes an investor suit after the 2015 IPO and recurring counterfeit and trademark disputes; no primary source was fetched for those. A Proposition 65 settlement filed with the California AG (Notice No. 2024-02373, effective 2024-12-13) is between a private individual and Etsy over lead warnings on art pigments; Etsy "denies the material, factual and legal allegations", and the agreement says no public enforcer was prosecuting the claim. As a private settlement, not an agency or court action, it is not a concern row.
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Etsy" returned 1 result, a 1997 business-opportunity case against Diane M. Jonas and others, not Etsy. The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search returned 3 article links (Uline political giving, Facebook Marketplace scams, a COVID pregnancy story); none is about an action against Etsy, so none was opened. No matching cases; no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp lapsed 2017). No accepted concern. = 0.5
 - Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`, profile at explore.changeclimate.org/brand/etsy says "A Climate Label Certified Brand", certified 2026, not expired). No concern. = 0.75
@@ -32,7 +34,7 @@ Not scored, but on record: Wikipedia says that in 2022 "a group of 5,000 sellers
 - Blocklist: `node research/build-index.mjs --blocklist "Etsy" etsy.com` returned "not on the blocklist".
 - NLRB case search for "Etsy": no cases. OSHA establishment search for "Etsy" (2016 to 2026): no results.
 - Good Jobs First Violation Tracker returned HTTP 403; logged in raw/blocked-retailers-R1.md.
-- Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Etsy
@@ -43,3 +45,6 @@ Not scored, but on record: Wikipedia says that in 2022 "a group of 5,000 sellers
 - https://www.osha.gov/ords/imis/establishment.html?p_message=2&establishment=Etsy&state=all&office=all&officetype=all&sitezip=&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=both ("Your search did not return any results.")
 - https://oag.ca.gov/system/files/prop65/settlements/2024-02373S4583.pdf
 - research/raw/tally.md (names used per domain)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Etsy (1 unrelated result)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Etsy%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
+- https://www.propublica.org/search?qss=%22Etsy%22 (3 articles, none about Etsy)

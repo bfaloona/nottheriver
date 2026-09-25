@@ -28,12 +28,14 @@ Fair trade. Fair Trade USA's "Shop Fair Trade" page, fetched this run, shows a M
 
 Concerns. None recorded. The NLRB case search for "mightly" returned no cases, OSHA's establishment search returned no results, and CourtListener returned no dockets with "mightly" in the case name. Good Jobs First's Violation Tracker blocked agents this run, and no general news search was possible (session search limit used up).
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Mightly" showed "No results found for these filters." The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search returned 39 article links, apparently loose matches on the word (school discipline, national parks, EPA lead cleanup and others); none is about Mightly, so none was opened. No matching cases; no concern added.
+
 ## Rating
 - Certifications: `fair_trade` counted: Fair Trade USA's shop page lists Mightly among "brands that offer Fair Trade Certified products", which is what the project's `fair_trade` kind means ("Sells Fair Trade Certified products", docs/ranking.md). B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline + 0.25 (fair_trade), no accepted concern = 0.75.
 - Environment: 0.5 baseline, no environmental certification, no environmental concern = 0.5.
 - Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.25 and no accepted concern, so `recommended`.
-- Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.mightly.com/pages/about
@@ -50,3 +52,6 @@ Concerns. None recorded. The NLRB case search for "mightly" returned no cases, O
 - https://explore.changeclimate.org/ (not listed)
 - https://dueekpzk7aquu.cloudfront.net/search?q=mightly (data service behind directories.onepercentfortheplanet.org; no match; control "patagonia" found)
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Mightly (no results)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Mightly%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
+- https://www.propublica.org/search?qss=%22Mightly%22 (39 articles, none about Mightly)

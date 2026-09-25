@@ -28,11 +28,13 @@ List sites recommend it for ethically sourced food: Workerowned.info as "a pione
 
 Concerns checked: NLRB case search for "equal exchange" returned no cases. OSHA's establishment search (2016 to 2026, violations only) returned one inspection, 1880169.015 at its Portland, OR site (opened 2026-02-27, still open), with two citations issued 2026-04-01 carrying no penalty ($0); under the rule used for this batch (a citation counts as a concern when OSHA attached a penalty), it is noted here and not scored. No general news search was possible (the run's web search budget was used up).
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Equal Exchange" without quotes returned 28 loosely matched results (the first 20 read: StubHub, Intercontinental Exchange, Cuban Exchange and others), none naming Equal Exchange; the exact-phrase search for "Equal Exchange" showed "No results found for these filters." The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search returned 48 article links; none of their titles is about Equal Exchange or an action against it, so none was opened. No matching cases; no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline + 0.25 `worker_coop` (US Federation of Worker Cooperatives directory, verified this run) = 0.75. Fair Trade USA not verified; B Corp not checked (directory blocked, no data/certifications.json row of that kind). No accepted concern. Ethics 0.75.
 - Environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified. No environmental concern. Environment 0.5.
 - Tier: 0.75 + 0.5 = 1.25, meets `recommended` (≥ 1.25) with no accepted concern in the last 5 years. Tier `recommended`.
-- Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Equal_Exchange
@@ -51,3 +53,7 @@ Concerns checked: NLRB case search for "equal exchange" returned no cases. OSHA'
 - https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (a query for another retailer in batch R5; its HTTP 403 shows the directory blocked agents; logged in raw/blocked-retailers-R5.md)
 - data/blocklist.md (not on the blocklist: `build-index.mjs --blocklist`)
 - research/sites/adayinourshoes-com.md, research/sites/greenamerica-org.md, research/sites/workerowned-info.md (reasons)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Equal%20Exchange (28 loose matches, none about Equal Exchange)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Equal%20Exchange%22 (no results)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Equal%20Exchange%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
+- https://www.propublica.org/search?qss=%22Equal%20Exchange%22 (48 articles, none about the co-op)

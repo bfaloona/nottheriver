@@ -24,13 +24,15 @@ Bookshop.org is an online bookstore founded by Andy Hunter in January 2020; Wiki
 
 The B Corp status is not counted: bcorporation.net returned HTTP 403, and data/certifications.json has no Bookshop.org row. Wikipedia and The Climate Label's record (`isBCorpCertified: true`) both say it is a B Corp, but neither is B Lab's own directory. NLRB case search for "Bookshop" returned only unrelated independent stores (Savoy Bookshop, Bookshop Santa Cruz), not Bookshop.org. OSHA's establishment search for "Bookshop" (2016 to 2026) returned no results. No general news search was possible (the session's web search budget was used up), so the concern search covered NLRB and OSHA only.
 
+Second pass (2026-09-25): FTC cases and proceedings search for "Bookshop.org" and for "Bookshop" showed "No results found for these filters." The CourtListener agency-docket query since 2016 for "Bookshop.org" returned 0 dockets. ProPublica search for "Bookshop.org" returned no articles. No matching cases; no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). No accepted concern. = 0.5
 - Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`; profile says "certified Climate Neutral in 2020, 2021, 2022, 2023 and 2024", current certification year 2025, not marked expired). = 0.75
 - 1% for the Planet: directory is script-rendered and returned no content; inconclusive, not counted.
 - Total 1.25, no accepted concern in the last 5 years, not Amazon-owned: tier `recommended`.
 - Blocklist: `node research/build-index.mjs --blocklist "Bookshop.org" bookshop.org` returned "not on the blocklist".
-- Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Bookshop.org
@@ -41,3 +43,7 @@ The B Corp status is not counted: bcorporation.net returned HTTP 403, and data/c
 - https://www.bcorporation.net/en-us/find-a-b-corp/company/bookshop-org/ (HTTP 403)
 - https://bookshop.org/info/about-us (HTTP 403)
 - https://bookshop.org/info/faq (HTTP 403)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Bookshop.org (no results)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Bookshop (no results)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Bookshop.org%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
+- https://www.propublica.org/search?qss=%22Bookshop.org%22 (no articles)

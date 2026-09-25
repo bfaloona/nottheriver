@@ -28,12 +28,14 @@ Tentree's about page claims B Corp certification (and a "Best For the World" awa
 
 CourtListener shows an individual's suit against Tentree International Inc. (E.D.N.Y., filed 2020-03-20, copyright infringement, terminated 2021-09-08). A copyright claim is not a labor, governance or environmental concern, so it is not recorded as one.
 
+Second pass (2026-09-25): the FTC cases and proceedings search for "Tentree" showed "No results found for these filters." The CourtListener agency-docket query since 2016 returned 0 dockets. ProPublica's search for "Tentree" returned no articles. All three are US sources; no Canadian regulator was checked. No matching cases; no concern added.
+
 ## Rating
 - ethics: 0.5 baseline. B Corp claimed but not verified this run (bcorporation.net 403, no fallback row).
 - environment: 0.5 + 0.25 (The Climate Label, verified on explore.changeclimate.org; the directory showed 2025 as the current certification year when checked 2026-09-25, and the tier depends on this row) = 0.75. 1% for the Planet not checked: the directory returns no data to a plain fetch.
 - concerns: none recorded. NLRB case search returned no cases (control search "Starbucks" returned 2,559); CourtListener API search found only the copyright case above; the web search budget ran out before the regulator and news searches, and Tentree is a Canadian company, which US regulator databases may not cover.
 - tier: `recommended` (0.5 + 0.75 = 1.25, no accepted concern, not Amazon-owned per `node research/build-index.mjs --blocklist`).
-- Concern search incomplete this run (see raw/blocked-retailers-R7.md); tier is provisional.
+- Concern search partial: pass 2 checked FTC cases, CourtListener agency dockets since 2016 and ProPublica; no general news search, and DOJ, SEC and Violation Tracker were unreachable; tier is provisional.
 
 ## Sources
 - https://www.tentree.com/pages/about
@@ -44,3 +46,6 @@ CourtListener shows an individual's suit against Tentree International Inc. (E.D
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&q=%22tentree%22
 - https://www.nlrb.gov/search/case/tentree
 - data/blocklist.md (no match)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Tentree (no results)
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Tentree%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
+- https://www.propublica.org/search?qss=%22Tentree%22 (no articles)
