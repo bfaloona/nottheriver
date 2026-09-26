@@ -6,7 +6,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 ## Resume cold
 
-**State (2026-09-25, late):** pass 3 and the operator's rulings (OC32 to OC36) are applied and committed; don't rerun them. Tiers: 6 recommended, 25 acceptable, 19 caution, 4 excluded (OC37 applied). Next: merge to main only when the operator says, then run `infra/deploy.sh` because `data/negative-sources.json` changed (fda.gov, ca.gov). Run scripts by absolute path; the shell can't cd into this worktree from the main checkout's session.
+**State (2026-09-25, late):** pass 3 and the operator's rulings (OC32 to OC36) are applied and committed; don't rerun them. Tiers: 6 recommended, 25 acceptable, 19 caution, 4 excluded (OC37 applied). Next: merged to main and deployed (a6fa019); nothing open. Run scripts by absolute path; the shell can't cd into this worktree from the main checkout's session.
 
 1. `git -C <worktree> log --oneline -5` shows the last finished stage.
 2. Check the planned files for the in-flight stage below against `ls research/...`; rerun only the agents whose files are missing.
@@ -118,3 +118,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - OC31 retry in flight: name search found B&H (345529341, 343697504; Florence NJ) and Azure Farms (345743389, 346474786, 346650559; Moro OR) by close date. New fetcher mode `fetch <activity_nr>...` saves inspection + violations to raw/osha-dol/; Chewy 346484173 penalty matches exactly ($10,000 from $16,072, issued 2023-05-03 = concern date). Remaining 19 fetching (log in session scratchpad dol-fetch.log).
 - OC31 done: all 18 OSHA concerns confirmed in DOL open data (issue date = concern date, close date and penalty match osha-status.md); records saved in raw/osha-dol/, table in raw/osha-dol-match.md, a Sources line in each of the 9 retailer files. Fetcher: `fetch <activity_nr>...` mode, 429 backoff, skips saved records. No tier change.
 - /simplify on fetch-osha-dol.mjs: retry as a loop honoring Retry-After, fixed 15 s sleeps dropped, header and usage aligned, ID pattern noted (18/18 fit). Skipped: batch 'in' filter (API support unverified), restoring a retailer-driven lookup (the map lives in raw/osha-dol-match.md).
+- Merged to main 2026-09-25 (merge a6fa019, pushed); CI and Pages passed. Worker deployed at a6fa019, preflight 204 (fda.gov and ca.gov accepted negative sources; World of Books B Corp in data/certifications.json). The branch research/amazon-alternatives and its worktree remain; nothing open.
