@@ -1,8 +1,11 @@
 #!/bin/sh
 # Deploys the committed Worker with OpenTofu, only when the committed build differs from the
 # last deployed state (a Worker changed by hand in Cloudflare may not show as a difference).
-# Usage: infra/deploy.sh          plan; apply if the only change is the Worker script
-#        infra/deploy.sh --check  plan only; say whether a deploy is needed
+# Usage: infra/deploy.sh             plan; apply if the only change is the Worker script
+#        infra/deploy.sh --check     plan only; say whether a deploy is needed
+#        infra/deploy.sh --operator  as above, but a plan the guard refuses is shown in full and
+#                                    applied only after the operator types the commit hash
+#                                    (needs a terminal, so an agent cannot answer it)
 # When to run it: .claude/skills/deploy/SKILL.md.
 #
 # Secrets: infra/deploy.local.env (gitignored) names the key FILES. Values are read into
@@ -19,11 +22,18 @@ config="$root/infra/deploy.local.env"
 die() { echo "deploy: $*" >&2; exit 1; }
 
 # A mistyped flag must never fall through to a real deploy.
+check_only=false
+operator=false
 case "$*" in
-  "") check_only=false ;;
+  "") ;;
   --check) check_only=true ;;
-  *) die "usage: infra/deploy.sh [--check]" ;;
+  --operator) operator=true ;;
+  *) die "usage: infra/deploy.sh [--check | --operator]" ;;
 esac
+# Checked before anything runs: the confirmation below is the operator's, never piped input.
+if [ "$operator" = true ] && ! { [ -t 0 ] && [ -t 1 ]; }; then
+  die "--operator needs an interactive terminal"
+fi
 
 [ -f "$config" ] || die "no config at infra/deploy.local.env; copy infra/deploy.local.env.example and fill it in"
 # shellcheck source=/dev/null
@@ -94,7 +104,16 @@ esac
 
 tofu -chdir=infra show -json "$tmp/plan" >"$tmp/plan.json" 2>/dev/null || die "cannot read the saved plan"
 echo "deploy: changes for $commit:"
-node infra/plan-guard.mjs <"$tmp/plan.json" || die "plan needs the operator (see above); nothing applied"
+if ! node infra/plan-guard.mjs <"$tmp/plan.json"; then
+  [ "$operator" = true ] || die "plan needs the operator (see above): run infra/deploy.sh --operator; nothing applied"
+  # Secret variables are marked sensitive, so the plan shows them as (sensitive value).
+  quiet tofu -chdir=infra show -no-color "$tmp/plan"
+  [ "$rc" = 0 ] || { show; die "cannot show the saved plan"; }
+  show
+  printf 'deploy: review the plan above. Type %s to apply it, anything else to stop: ' "$commit"
+  read -r answer
+  [ "$answer" = "$commit" ] || die "not confirmed; nothing applied"
+fi
 
 if [ "$check_only" = true ]; then
   echo "deploy: a deploy is needed (--check: nothing applied)"

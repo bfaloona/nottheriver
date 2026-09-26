@@ -31,7 +31,8 @@ When unsure, run it: it compares the committed build with the last deployed stat
 
 ## Needs the operator (the script refuses or it is out of scope)
 
-- Any plan that changes more than the Worker bundle: creating, replacing, moving, importing or destroying a resource; any other resource (subdomain, routes); or a Worker attribute besides the bundle (bindings, secrets, rate limits, logging, compatibility date). The script names the resources and attributes, never values, and stops.
+- Any plan that changes more than the Worker bundle: creating, replacing, moving, importing or destroying a resource; any other resource (subdomain, routes); or a Worker attribute besides the bundle (bindings, secrets, rate limits, logging, compatibility date). The script names the resources and attributes, never values, and stops. The operator deploys it with `infra/deploy.sh --operator`, which shows the full plan and applies it only after they type the commit hash. Agents never run `--operator` (it needs a terminal, and no allow rule covers it); tell the operator to run it from the repo root and what the plan should contain.
+- Never hand the operator raw `tofu` commands to run; every deploy goes through `infra/deploy.sh`. If the script cannot do something, improve the script.
 - Rotating keys, changing key files, or editing `infra/deploy.local.env`.
 - A deploy from anything but `main`, with uncommitted changes under `proxy/`, `data/` or `infra/`, or with unpushed commits: the script refuses. Push first.
 

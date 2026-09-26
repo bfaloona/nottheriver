@@ -32,7 +32,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 
 | Gate | What it unblocks |
 |---|---|
-| `tofu apply` in `infra/` for the Workers KV namespace and `NORMALIZE_CACHE` binding (the deploy script's plan guard refuses new resources and bindings, so agent Worker deploys are blocked until this is applied) | The normalize cache; agent deploys via `infra/deploy.sh` |
+| `infra/deploy.sh --operator` for the Workers KV namespace and `NORMALIZE_CACHE` binding (the plan guard refuses new resources and bindings, so agent Worker deploys are blocked until this is applied) | The normalize cache; agent deploys via `infra/deploy.sh` |
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
 
 ## Deploy (2026-09-23)

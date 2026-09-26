@@ -37,25 +37,9 @@ Commands run from the repo root.
 
 **Worker bundle:** `npm run build:proxy` writes `proxy/dist/index.js` (`wrangler deploy --dry-run`; nothing is uploaded).
 
-**Infrastructure** (`infra/`, OpenTofu, Cloudflare provider 5.x). Secrets and account values come only from environment variables at apply time; nothing is committed in a `.tfvars` file. The paths below are placeholders:
+**Infrastructure** (`infra/`, OpenTofu, Cloudflare provider 5.x). Every Worker and infrastructure change is deployed with `infra/deploy.sh`, never with hand-typed `tofu` commands. Secrets and account values come only from the key files named in a gitignored config (template `infra/deploy.local.env.example`); nothing is committed in a `.tfvars` file. The script checks the tree is committed and pushed, runs the proxy tests and build, plans, and applies only a new Worker bundle, refusing any other change (`infra/plan-guard.mjs`). For a change the guard refuses (a new resource, a binding, a limit), the operator runs `infra/deploy.sh --operator`: the same steps, but the full plan is shown (keys appear as `(sensitive value)`) and applied only after the operator types the commit hash; it needs a terminal, so an agent cannot answer it. Either way the script confirms a fresh plan is empty and the Worker answers a CORS preflight. When to run it: [.claude/skills/deploy/SKILL.md](../.claude/skills/deploy/SKILL.md).
 
-```sh
-export CLOUDFLARE_API_TOKEN="$(cat <secrets-dir>/<cloudflare-token-file>)"
-export TF_VAR_account_id="<cloudflare-account-id>"
-export TF_VAR_brave_api_key="$(cat <secrets-dir>/<brave-key-file>)"
-export TF_VAR_openrouter_api_key="$(cat <secrets-dir>/<openrouter-key-file>)"
-export TF_VAR_allowed_origin="https://<account>.github.io"   # origin only, no path
-export TF_VAR_site_url="https://<account>.github.io/<repo>"  # full site base URL
-
-npm run build:proxy
-tofu -chdir=infra init
-tofu -chdir=infra plan -input=false
-tofu -chdir=infra apply -input=false
-```
-
-For routine Worker updates, `infra/deploy.sh` does the same from a gitignored config that names the key files (template `infra/deploy.local.env.example`): it checks the tree is committed and pushed, runs the proxy tests and build, plans, applies only a new Worker bundle, refusing any other change (`infra/plan-guard.mjs`), confirms a fresh plan is empty and the Worker answers a CORS preflight. When to run it: [.claude/skills/deploy/SKILL.md](../.claude/skills/deploy/SKILL.md).
-
-This creates the Worker (`cloudflare_workers_script`, with the two keys as secret bindings, `ALLOWED_ORIGIN`, `SITE_NAME` and `SITE_URL` as plain bindings, and two rate-limit bindings) and enables its `workers.dev` address (`cloudflare_workers_script_subdomain`). There is no route resource until a custom domain exists. Rate limits default to 30 per minute per client and 60 per minute globally (`rate_limit_per_minute`, `global_limit_per_minute`).
+This creates the Worker (`cloudflare_workers_script`, with the two keys as secret bindings, `ALLOWED_ORIGIN`, `SITE_NAME` and `SITE_URL` as plain bindings, two rate-limit bindings, and the `NORMALIZE_CACHE` binding to a Workers KV namespace, `cloudflare_workers_kv_namespace`) and enables its `workers.dev` address (`cloudflare_workers_script_subdomain`). There is no route resource until a custom domain exists. Rate limits default to 30 per minute per client and 60 per minute globally (`rate_limit_per_minute`, `global_limit_per_minute`).
 
 Use project-scoped Brave and OpenRouter keys with spend caps, not keys shared with another project. The caps are the real backstop behind the rate limits. The Cloudflare rate-limit bindings did not throttle in a live test on 2026-09-23 (135 requests from one client in about a minute, no 429), so the handler's in-memory limiter now always applies alongside them; it counts per isolate, so it is weak. A Durable Object counter is the robust alternative.
 
