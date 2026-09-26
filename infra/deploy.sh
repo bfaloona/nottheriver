@@ -22,16 +22,14 @@ config="$root/infra/deploy.local.env"
 die() { echo "deploy: $*" >&2; exit 1; }
 
 # A mistyped flag must never fall through to a real deploy.
-check_only=false
-operator=false
 case "$*" in
-  "") ;;
-  --check) check_only=true ;;
-  --operator) operator=true ;;
+  "") mode=deploy ;;
+  --check) mode=check ;;
+  --operator) mode=operator ;;
   *) die "usage: infra/deploy.sh [--check | --operator]" ;;
 esac
 # Checked before anything runs: the confirmation below is the operator's, never piped input.
-if [ "$operator" = true ] && ! { [ -t 0 ] && [ -t 1 ]; }; then
+if [ "$mode" = operator ] && ! { [ -t 0 ] && [ -t 1 ]; }; then
   die "--operator needs an interactive terminal"
 fi
 
@@ -105,7 +103,7 @@ esac
 tofu -chdir=infra show -json "$tmp/plan" >"$tmp/plan.json" 2>/dev/null || die "cannot read the saved plan"
 echo "deploy: changes for $commit:"
 if ! node infra/plan-guard.mjs <"$tmp/plan.json"; then
-  [ "$operator" = true ] || die "plan needs the operator (see above): run infra/deploy.sh --operator; nothing applied"
+  [ "$mode" = operator ] || die "plan needs the operator (see above): run infra/deploy.sh --operator; nothing applied"
   # Secret variables are marked sensitive, so the plan shows them as (sensitive value).
   quiet tofu -chdir=infra show -no-color "$tmp/plan"
   [ "$rc" = 0 ] || { show; die "cannot show the saved plan"; }
@@ -115,7 +113,7 @@ if ! node infra/plan-guard.mjs <"$tmp/plan.json"; then
   [ "$answer" = "$commit" ] || die "not confirmed; nothing applied"
 fi
 
-if [ "$check_only" = true ]; then
+if [ "$mode" = check ]; then
   echo "deploy: a deploy is needed (--check: nothing applied)"
   exit 0
 fi
