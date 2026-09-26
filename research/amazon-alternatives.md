@@ -7,7 +7,7 @@ In short:
 - 26 list sites were assessed. The best ones are nonprofit or reader-funded pages that explain why they left Amazon: ILSR (78 of 100), The Good Trade (74), IndieBound (73) and Good Good Good (72).
 - 4 of the 26 recommend an Amazon-owned company (Zappos, AbeBooks, Whole Foods Market) or link to Amazon itself.
 - The lists named 313 retailer domains. Etsy (13 sites), Bookshop.org (10) and Thrive Market (10) come up most.
-- Of the 50 retailers rated, 7 are `recommended`, 25 `acceptable` and 18 `caution`. 4 more are Amazon-owned and `excluded`.
+- Of the 50 retailers rated, 6 are `recommended`, 25 `acceptable` and 19 `caution`. 4 more are Amazon-owned and `excluded`.
 
 Scores and tiers follow the brief ([brief.md](brief.md) sections 4 and 5). The sources are the front matter of [sites/](sites/) and [retailers/](retailers/), collected in [index.json](index.json).
 
@@ -88,7 +88,7 @@ Mentions count how many of the 26 site files name the retailer's domain ([raw/ta
 | [BLK + GRN](retailers/blkgrn-com.md) | 4 | acceptable |
 | [Misfits Market](retailers/misfitsmarket-com.md) | 4 | acceptable |
 | [Package Free](retailers/packagefreeshop-com.md) | 4 | acceptable |
-| [Patagonia](retailers/patagonia-com.md) | 4 | recommended |
+| [Patagonia](retailers/patagonia-com.md) | 4 | caution |
 | [Target](retailers/target-com.md) | 4 | caution |
 | [Walmart](retailers/walmart-com.md) | 4 | caution |
 | [Pact](retailers/wearpact-com.md) | 4 | recommended |
@@ -101,24 +101,23 @@ Ethics and environment each start at 0.5. A counted certification adds 0.25. An 
 
 | Tier | Retailers |
 |---|---|
-| `recommended` | 7 |
+| `recommended` | 6 |
 | `acceptable` | 25 |
-| `caution` | 18 |
+| `caution` | 19 |
 | `excluded` (Amazon-owned) | 4 |
 
 Counts are from the `tier` field of each file in [retailers/](retailers/).
 
 A retailer with no counted certification and no accepted concern totals 1.0, which is `acceptable`. That covers 21 of the 25 `acceptable` retailers. For most of them, `acceptable` means the search found nothing either way, not that they were checked and found clean.
 
-### Recommended (7)
+### Recommended (6)
 
 `fair_trade` here means the brand sells Fair Trade Certified products and is listed on Fair Trade USA's brand page. It is not a whole-company certification.
 
 | Retailer | Ethics | Environment | What earned it |
 |---|---|---|---|
 | [Eileen Fisher](retailers/eileenfisher-com.md) | 1.0 | 0.5 | B Corp (from `data/certifications.json`) and fair trade products |
-| [Patagonia](retailers/patagonia-com.md) | 0.75 | 0.5 | Fair trade products and B Corp (from `data/certifications.json`); 1% for the Planet (from `data/certifications.json`). Two concerns older than 5 years take 0.25 each without blocking the tier: an NLRB settlement (2020-03-25, ethics) and a Proposition 65 settlement over lead in canned mussels (2021-08-12, environment). |
-| [World of Books](retailers/worldofbooks-com.md) | 0.75 | 0.5 | B Corp, confirmed by the operator on B Lab's directory page (agents get 403) |
+| [World of Books](retailers/worldofbooks-com.md) | 0.75 | 0.5 | B Corp, confirmed by the operator on B Lab's directory page (agents get 403); now also a row in `data/certifications.json` |
 | [Pact](retailers/wearpact-com.md) | 0.75 | 0.5 | Fair trade products |
 | [Mightly](retailers/mightly-com.md) | 0.75 | 0.5 | Fair trade products (see the lead decision in [method.md](method.md#decisions-made-during-the-run)) |
 | [Bookshop.org](retailers/bookshop-org.md) | 0.5 | 0.75 | The Climate Label, checked on the certifier's page |
@@ -126,7 +125,7 @@ A retailer with no counted certification and no accepted concern totals 1.0, whi
 
 Each certification was checked again by a verifier. The verifier tables are in [raw/verify-R1.md](raw/verify-R1.md) to [raw/verify-R10.md](raw/verify-R10.md).
 
-### Caution (18)
+### Caution (19)
 
 Each concern below comes from an accepted source (a regulator, a court or an outlet listed in `data/negative-sources.md`). The wording follows the source.
 
@@ -148,6 +147,7 @@ Each concern below comes from an accepted source (a regulator, a court or an out
 | [Overstock](retailers/overstock-com.md) | 0.25 | 0.25 | California Court of Appeal upheld $6,828,000 in civil penalties for unfair business practices (People v. Overstock.com, 2017); California Air Resources Board settlement over uncertified air cleaners (2025). Found in the news pass. |
 | [Etsy](retailers/etsy-com.md) | 0.5 | 0 | Five Proposition 65 settlements, 2022 to 2026, over lead and other chemicals in goods sold on its marketplace (oag.ca.gov). Was `recommended`. |
 | [Bob's Red Mill](retailers/bobsredmill-com.md) | 0.5 | 0 | Seven Proposition 65 settlements, 2020 to 2026 (oag.ca.gov), and one OSHA inspection with a penalty (2023). Fair trade products keep ethics at 0.5. |
+| [Patagonia](retailers/patagonia-com.md) | 0.75 | 0 | Four Proposition 65 settlements over lead or cadmium in food (2021 to 2025): one naming Patagonia, Inc. with its food company Patagonia Provisions, three naming Provisions only (counted under the operator's ruling on sister companies). An NLRB settlement (2020) also takes 0.25 off ethics. Fair trade, B Corp and 1% for the Planet still count. Was `recommended`. |
 | [Depop](retailers/depop-com.md) | 0.25 | 0.5 | Its parent eBay's $3 million fine (2024), carried over under the operator's parent rule |
 | [Public Goods](retailers/publicgoods-com.md) | 0.25 | 0.5 | FDA warning letter (2022): no import-safety plan for a supplier |
 
@@ -166,12 +166,12 @@ The full list is in [index.json](index.json).
 
 ## How far to trust this
 
-All planned concern searches have now run for the retailers that could still change tier, and the operator has ruled on all but one of the rule questions they raised (OC37 in [method.md](method.md#operator-checks), Patagonia Provisions). The limits below remain.
+All planned concern searches have now run for the retailers that could still change tier, and the operator has ruled on the rule questions they raised. The limits below remain.
 
 - **The web search budget ran out.** The run's 200 web searches were used up while the retailer batches were running. Batch R1 hit the limit right after its Etsy searches ([raw/blocked-retailers-R1.md](raw/blocked-retailers-R1.md)). After that, concern checks used whatever regulator and court pages could be fetched directly, mostly OSHA, NLRB and CourtListener. So the concern searches were incomplete for almost every retailer. The `blocked-retailers-R<n>.md` files in [raw/](raw/) list what was missed for each batch.
 - **A second concern pass found nothing new.** Later on 2026-09-25, still without web search, four agents rechecked the 38 recommended and acceptable retailers against FTC case titles, CourtListener dockets since 2016 where a government body is a party, and ProPublica. They added no concerns and changed no tiers ([raw/concern-pass-2-brief.md](raw/concern-pass-2-brief.md), `raw/concerns2-C1.md` to `C4.md`). The 12 caution retailers were skipped because a new concern can't change their tier. It had no general news search; pass 3 below added one.
 - **A third pass searched the news.** In a later session with a larger search budget, four agents ran 2 or 3 web searches per retailer (lawsuits and fines; named US agencies; the parent company or, for a non-US retailer, its home regulator) on the same 38 retailers ([raw/news-search-brief.md](raw/news-search-brief.md), `raw/news-N1.md` to `N4.md`). They added two accepted concerns, both old court or agency penalties: [Best Buy](retailers/bestbuy-com.md) and [Overstock](retailers/overstock-com.md) move from `acceptable` to `caution`. No `recommended` retailer changed in this pass. It also surfaced items from sources that weren't yet accepted (an FDA warning letter, a California Air Resources Board settlement, Proposition 65 settlements); the next point says how they were ruled on.
-- **The operator's rulings moved 8 tiers.** On 2026-09-25 the operator ruled that a parent company's actions count against the retailer, that Proposition 65 settlements and judgments recorded on oag.ca.gov count (including those brought by private enforcers), that fda.gov and California state agency pages (ca.gov) are accepted sources, and that a voluntary recall with no penalty isn't a concern. The operator also confirmed World of Books' B Corp listing. An agent then checked the California Attorney General's Proposition 65 records for all 34 retailers still `recommended` or `acceptable` ([raw/prop65-P1.md](raw/prop65-P1.md)). Results: Etsy (`recommended`), Bob's Red Mill, Depop and Public Goods (`acceptable`) moved to `caution`; Equal Exchange, Grove Collaborative and Uncommon Goods moved from `recommended` to `acceptable`; World of Books moved from `acceptable` to `recommended`. Etsy's settlements concern goods sold by other sellers on its marketplace.
+- **The operator's rulings moved 9 tiers.** On 2026-09-25 the operator ruled that a parent company's actions count against the retailer, that Proposition 65 settlements and judgments recorded on oag.ca.gov count (including those brought by private enforcers), that fda.gov and California state agency pages (ca.gov) are accepted sources, and that a voluntary recall with no penalty isn't a concern. The operator also confirmed World of Books' B Corp listing, and ruled that Proposition 65 settlements naming only Patagonia Provisions (a sister company under Patagonia's parent) count against Patagonia. An agent then checked the California Attorney General's Proposition 65 records for all 34 retailers still `recommended` or `acceptable` ([raw/prop65-P1.md](raw/prop65-P1.md)). Results: Etsy and Patagonia (`recommended`), Bob's Red Mill, Depop and Public Goods (`acceptable`) moved to `caution`; Equal Exchange, Grove Collaborative and Uncommon Goods moved from `recommended` to `acceptable`; World of Books moved from `acceptable` to `recommended`. Etsy's settlements concern goods sold by other sellers on its marketplace.
 - **Pass 1's OSHA and NLRB searches used pages that robots.txt disallows** (`osha.gov/ords/`, `nlrb.gov/search/`). This breaks the run's own access rule. Every OSHA concern in the retailer files comes from those pages. They are real agency records. Dropping them would change 8 tiers, 2 of them to recommended. The operator decided on 2026-09-25 to keep them. A try at re-sourcing them through DOL's open-data API was inconclusive: the key works, but DOL's inspection number didn't match the osha.gov ID, and the API rate-limited the lookups (`research/fetch-osha-dol.mjs`, [raw/run-log.md](raw/run-log.md)). A retry by establishment name and close date then found 12 of the 18 in DOL's data (Thrive's 1 is ambiguous; B&H's 2 and Azure's 3 not yet found) ([raw/osha-dol-match.md](raw/osha-dol-match.md); [method.md](method.md#operator-checks), OC31).
 - **Several accepted sources couldn't be read.** Good Jobs First's Violation Tracker returned 403 in every batch. justice.gov served a bot challenge, the ftc.gov search returned 404 in the first pass (it worked in the second), the AP site couldn't be fetched and CourtListener's docket pages returned 403 (its search API was used instead).
 - **Foreign regulators count only as notes.** [Kotn](retailers/kotn-com.md) (Toronto), [World of Books](retailers/worldofbooks-com.md) (UK), [Kobo](retailers/kobo-com.md), [Shop](retailers/shop-app.md), [Depop](retailers/depop-com.md) and the recommended [Tentree](retailers/tentree-com.md) (Vancouver) are based outside the US ([raw/verify-R10.md](raw/verify-R10.md) first noted this). Passes 1 and 2 used US sources for them. Pass 3 added one search on each one's home regulator, but those regulators' pages are not on the accepted list, so anything found there is a note, not a concern.

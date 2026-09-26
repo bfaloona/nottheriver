@@ -16,9 +16,12 @@ certifications:
 concerns:
   - {kind: labor, title: "Patagonia Works", source: https://www.nlrb.gov/case/32-CA-254886, date: 2020-03-25, accepted_source: true}
   - {kind: environmental, title: "Prop 65 out-of-court settlement, Chemical Toxin Working Group v. Patagonia (lead, canned mussels; defendants Patagonia, Inc., Patagonia Works, Patagonia Provisions, Inc. and others; $36,000 civil penalty)", source: https://oag.ca.gov/prop65/60-Day-Notice-2021-01049, date: 2021-08-12, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 out-of-court settlement, Berj Parseghian v. Patagonia Provisions, Inc. (lead, breadfruit crackers; sister company, counted per operator ruling OC37)", source: https://oag.ca.gov/prop65/60-Day-Notice-2022-00855, date: 2022-12-07, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, EHA v. Patagonia Provisions, Inc. (cadmium and lead, anchovies; Alameda County Superior Court 23CV028844; sister company, counted per operator ruling OC37)", source: https://oag.ca.gov/prop65/60-Day-Notice-2022-02550, date: 2023-02-17, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 out-of-court settlement, EHA v. Patagonia Provisions, Inc. (cadmium, organic fusilli; $2,000 civil penalty; sister company, counted per operator ruling OC37)", source: https://oag.ca.gov/prop65/60-Day-Notice-2024-04838, date: 2025-04-01, accepted_source: true}
 ethics: 0.75
-environment: 0.5
-tier: recommended
+environment: 0
+tier: caution
 mentions: 4
 mentioned_by: [adayinourshoes-com, fairtradecertified-org, goingzerowaste-com, goodgoodgood-co]
 checked: 2026-09-25
@@ -47,11 +50,14 @@ Operator-rule pass (2026-09-25): the California AG's 60-day notice search (Alleg
 
 ## Rating
 - ethics: start 0.5; +0.25 fair_trade; +0.25 b_corp; −0.25 labor (NLRB settlement, 2020-03-25); = 0.75
-- environment: start 0.5; +0.25 one_percent_planet; −0.25 environmental (Prop 65 settlement on oag.ca.gov, 2021-08-12); = 0.5
-- tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 1.25 ≥ 1.25 and no accepted concern in the last 5 years (the 2020-03-25 NLRB settlement and the 2021-08-12 Prop 65 settlement are both before the 2021-09-25 cutoff), so `recommended`. Counting the three Patagonia Provisions-only Prop 65 settlements (2022 to 2025) would make it `caution`; see the operator-rule pass.
+- environment: start 0.5; +0.25 one_percent_planet; −0.25 × 4 environmental (Prop 65 settlements on oag.ca.gov: 2021-08-12 naming Patagonia, Inc., Patagonia Works and Patagonia Provisions; 2022-12-07, 2023-02-17 and 2025-04-01 naming Patagonia Provisions only), floored; = 0
+- tier: not on the blocklist (`--blocklist "Patagonia" patagonia.com`: "not on the blocklist"); ethics + environment = 0.75 < 1.0, so `caution` (was `recommended`). Operator ruling OC37 (2026-09-25): Prop 65 settlements naming only Patagonia Provisions, a sister company under the same parent (Patagonia Works), count against Patagonia.
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
+- https://oag.ca.gov/prop65/60-Day-Notice-2022-00855
+- https://oag.ca.gov/prop65/60-Day-Notice-2022-02550
+- https://oag.ca.gov/prop65/60-Day-Notice-2024-04838
 - https://en.wikipedia.org/wiki/Patagonia,_Inc.
 - https://www.fairtradecertified.org/shop-fair-trade/
 - https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/ (via data/certifications.json; blocked this run)
