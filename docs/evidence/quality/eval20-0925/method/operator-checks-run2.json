@@ -1,0 +1,18 @@
+{
+ "checks": [
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4SETN4AM67FBUAYXLMNH4ZSSSYCP7K5X6IHUKXTQ=:8",
+   "url": "https://urbanoutfitters.com/stores/urban-outfitters-walnut-street",
+   "sells_product": "no",
+   "notes": "Operator checked in own browser 2026-09-26: a search for \"tent\" on urbanoutfitters.com shows no camping tent for sale. The grader browser got a DataDome check on product pages."
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4DAT35WSRABCEAKBASLDI3R2SYCWBV3TAAAAAAAA=:7",
+   "url": "https://firstcontactgear.com/",
+   "local_exists": "no",
+   "notes": "Operator checked Google Maps 2026-09-26: no shop by this name found near 19103."
+  }
+ ]
+}

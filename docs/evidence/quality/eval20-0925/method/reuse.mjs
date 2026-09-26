@@ -1,12 +1,14 @@
-// Run from the repo root: node docs/evidence/quality/eval20-0925/method/reuse.mjs
-// Splits the eval20-0925 rows into grades reused from earlier runs and rows to grade.
+// Run from the repo root: node docs/evidence/quality/eval20-0925/method/reuse.mjs [run2]
+// Splits the eval20-0925 rows (or, with run2, the second run's) into grades reused from earlier runs and rows to grade.
 // Reuse key: online (search, url); local (search, url, address), since one URL can be several branches.
 // eval20-0924/grades.json already holds its eval60 reuses, second-pass grades and operator checks,
 // so it wins over eval60 when both have the key.
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const DIR = 'docs/evidence/quality';
-const NEW = `${DIR}/eval20-0925`;
+const RUN2 = process.argv[2] === 'run2';
+const NEW = RUN2 ? `${DIR}/eval20-0925/run2` : `${DIR}/eval20-0925`;
+const SUFFIX = RUN2 ? '-run2' : '';
 const OUT = new URL('.', import.meta.url).pathname;
 /** @param {string | URL} p */
 const read = (p) => JSON.parse(readFileSync(p, 'utf8'));
@@ -43,6 +45,8 @@ index('eval60', read(`${E60}/grades.json`).grades.map((/** @type {any} */ g) => 
   return { ...g, ...Object.fromEntries(FIELDS.filter((f) => s[f] !== undefined).map((f) => [f, s[f]])), notes: `${s.notes ?? ''} [second-pass grade]` };
 }));
 index('eval20-0924', read(`${DIR}/eval20-0924/grades.json`).grades);
+// The first run's merged grades (with its operator checks) win for the second run.
+if (RUN2) index('eval20-0925', read(`${DIR}/eval20-0925/grades.json`).grades);
 
 const reused = [];
 const todo = [];
@@ -61,8 +65,8 @@ for (const id of ids) {
     }
   }
 }
-writeFileSync(`${OUT}/reused-grades.json`, JSON.stringify({ grades: reused }, null, 1) + '\n');
-writeFileSync(`${OUT}/to-grade.json`, JSON.stringify({ rows: todo }, null, 1) + '\n');
+writeFileSync(`${OUT}/reused-grades${SUFFIX}.json`, JSON.stringify({ grades: reused }, null, 1) + '\n');
+writeFileSync(`${OUT}/to-grade${SUFFIX}.json`, JSON.stringify({ rows: todo }, null, 1) + '\n');
 /** @param {any[]} list */
 const count = (list) => ({ online: list.filter((r) => r.kind === 'online').length, local: list.filter((r) => r.kind === 'local').length });
 console.log({ reused: count(reused), to_grade: count(todo) });

@@ -1,20 +1,20 @@
-// Run from the repo root: node docs/evidence/quality/eval20-0925/method/<script>. after both graders finish. Writes docs/evidence/quality/eval20-0925/grades.json
+// Run from the repo root after grading: node docs/evidence/quality/eval20-0925/method/merge.mjs [run2]. Writes grades.json in eval20-0925 (or eval20-0925/run2)
 // (reused + new grades, eval60 recall baseline unchanged) and prints the extra measures:
 // good shops in each search's nearby top 3, and rows shown without a model judgment.
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const HERE = new URL('.', import.meta.url).pathname;
-const DIR = 'docs/evidence/quality/eval20-0925';
+const RUN2 = process.argv[2] === 'run2';
+const DIR = RUN2 ? 'docs/evidence/quality/eval20-0925/run2' : 'docs/evidence/quality/eval20-0925';
 const read = (p) => JSON.parse(readFileSync(p, 'utf8'));
 const ids = read(`${HERE}/ids.json`).ids;
 
-const grades = [
-  ...read(`${HERE}/reused-grades.json`).grades,
-  ...read(`${HERE}/grades-new-online.json`).grades,
-  ...read(`${HERE}/grades-new-local.json`).grades,
-];
+const grades = RUN2
+  ? [...read(`${HERE}/reused-grades-run2.json`).grades, ...read(`${HERE}/grades-new-run2.json`).grades]
+  : [...read(`${HERE}/reused-grades.json`).grades, ...read(`${HERE}/grades-new-online.json`).grades, ...read(`${HERE}/grades-new-local.json`).grades];
 // The operator's own-browser checks of rows the graders were blocked on replace those fields.
-const checks = new Map(read(`${HERE}/operator-checks.json`).checks.map((c) => [`${c.search_id}|${c.result_id}`, c]));
+// Run 2 reuses run 1's grades with its checks already applied, so it reads only its own file.
+const checks = new Map(read(`${HERE}/operator-checks${RUN2 ? '-run2' : ''}.json`).checks.map((c) => [`${c.search_id}|${c.result_id}`, c]));
 for (const [i, g] of grades.entries()) {
   const c = checks.get(`${g.search_id}|${g.result_id}`);
   if (c) grades[i] = { ...g, ...c, notes: `${c.notes} Grader: ${g.notes}` };
