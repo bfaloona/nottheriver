@@ -1,0 +1,181 @@
+{
+ "grades": [
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:cabelas.com",
+   "kind": "online",
+   "url": "https://www.cabelas.com/c/camping",
+   "sells_product": "unknown",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "blocked",
+   "notes": "Akamai \"Access Denied\" (HTTP 403) both via WebFetch and in the automation browser; could not see the camping category page.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "wool-socks-urban",
+   "result_id": "online:walmart.com",
+   "kind": "online",
+   "url": "https://www.walmart.com/c/kp/wool-socks",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Browser: \"Wool Socks (1000+)\" listing with prices, e.g. Realtree Merino Wool Over the Calf Boot Socks 2 Pair $19.99, Wrangler Wool Blend Work Socks 6 Pairs from $12.98. WebFetch got a press-and-hold bot challenge; real browser loaded normally.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "jigsaw-puzzle-urban",
+   "result_id": "online:ravensburger.us",
+   "kind": "online",
+   "url": "https://www.ravensburger.us/en-US",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Browser: manufacturer online shop homepage listing jigsaw puzzles with prices, e.g. World Jigsaw Puzzle Championship: The Wave $17.99, Acadia National Park $16.99. WebFetch got HTTP 403.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "online:monoprice.com",
+   "kind": "online",
+   "url": "https://www.monoprice.com/category/cables/usb-&-lightning-cables/usb-c-cables",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Browser: USB C Cables category (66 items) with prices, e.g. USB-A to USB-C Silicone Cable 6ft $14.99, AtlasFlex USB-C to USB-A Charge & Sync cable $5.99. WebFetch got HTTP 403.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "online:nordstromrack.com",
+   "kind": "online",
+   "url": "https://www.nordstromrack.com/shop/men/clothing/coats-jackets/waterproof?filterByBrand=nautica",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Nautica men's waterproof jackets listing with prices, e.g. Hooded Rain Jacket $89.97, Water Resistant Flight Jacket $79.97.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "online:oilandvinegarusa.com",
+   "kind": "online",
+   "url": "https://oilandvinegarusa.com/",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Homepage shows flavored EVOOs with Add to cart (e.g. Garlic Extra Virgin Olive Oil from $24.95) and nav link \"Extra Virgin Olive Oils\" to single-estate plain EVOOs (Bonsecco, Koroneiki from $24.95).",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "online:strippaggio.com",
+   "kind": "online",
+   "url": "https://www.strippaggio.com/pages/strippaggio-retail-partners",
+   "sells_product": "no",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Linked page is a retail-partners list of Atlanta-area stores carrying Strippaggio; no products or prices on it. The brand site does sell EVOO online elsewhere (homepage: Basil EVOO from $17.95).",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "online:bakerandolive.com",
+   "kind": "online",
+   "url": "https://bakerandolive.com/",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Homepage online shop; plain EVOO for sale, e.g. Manzanillo Spain Single Varietal Extra Virgin Olive Oil $24.99, plus infused oils and balsamics.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "online:paleblueearth.com",
+   "kind": "online",
+   "url": "https://paleblueearth.com/products/pale-blue-lithium-rechargeable-aa-batteries",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Product page: Voyager AA USB-C Rechargeable Batteries $29.99, 4/8/12-pack options, Add to Cart.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "online:redlandcotton.com",
+   "kind": "online",
+   "url": "https://www.redlandcotton.com/products/cotton-bath-towel-set",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Product page: Cotton Bath Towel Set (2 bath towels 30x58), $117.30 (reg $138), Add to Cart as preorder; back-in-stock signup also shown.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "online:theloomia.com",
+   "kind": "online",
+   "url": "https://www.theloomia.com/collections/cotton-bath-towels",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Cotton bath towels collection, 14 products with prices, e.g. Heena Waffle Weave Turkish Cotton Towel from $22.00, Natalie Luxury Bath Towels from $24.00.",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "online:coyuchi.com",
+   "kind": "online",
+   "url": "https://www.coyuchi.com/collections/organic-bath-towels",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Browser: Organic Bath Towels collection, 25 products with prices, e.g. Temescal Organic Towels $18-$198, Air Weight Organic Towels $8-$148. Products render via JavaScript (WebFetch saw no prices).",
+   "checked": "2026-09-26"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "online:barandcocoa.com",
+   "kind": "online",
+   "url": "https://barandcocoa.com/",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Homepage online shop of craft chocolate; dark bars with Add button, e.g. Labooko Peru 100% $13, Lucid Chocolatier VRAE 99 72% $21.",
+   "checked": "2026-09-26"
+  }
+ ],
+ "needs_browser": [
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:cabelas.com",
+   "url": "https://www.cabelas.com/c/camping",
+   "question": "Does this Cabela's camping page load and offer camping tents for sale (tent products or a Tents category with prices)?"
+  }
+ ]
+}

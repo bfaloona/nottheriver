@@ -1,0 +1,12 @@
+{
+ "checks": [
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:cabelas.com",
+   "url": "https://www.cabelas.com/c/camping",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-26: page loads and offers camping tents for sale. The grader browser got an Akamai Access Denied."
+  }
+ ]
+}

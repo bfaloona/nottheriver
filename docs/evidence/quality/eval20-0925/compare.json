@@ -1,0 +1,439 @@
+{
+ "all_end_in_store": 20,
+ "multi_zip_products": [
+  {
+   "product": "cast-iron-skillet",
+   "wordings": 1
+  },
+  {
+   "product": "camping-tent",
+   "wordings": 1
+  }
+ ],
+ "vs_0924": {
+  "same": {
+   "n": 2,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1
+  },
+  "differ": {
+   "n": 18,
+   "returned_jaccard": 0.68,
+   "shown_jaccard": 0.66
+  }
+ },
+ "vs_eval60": {
+  "same": {
+   "n": 3,
+   "returned_jaccard": 0.97,
+   "shown_jaccard": 0.88
+  },
+  "differ": {
+   "n": 17,
+   "returned_jaccard": 0.69,
+   "shown_jaccard": 0.65
+  }
+ },
+ "rows": [
+  {
+   "id": "cast-iron-skillet-urban",
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 9,
+   "n_shown": 6,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.7,
+    "shown_jaccard": 0.7142857142857143
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.7,
+    "shown_jaccard": 0.7142857142857143
+   }
+  },
+  {
+   "id": "cast-iron-skillet-suburban",
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 16,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": true,
+    "returned_jaccard": 1,
+    "shown_jaccard": 1
+   },
+   "vs_eval60": {
+    "same_queries": true,
+    "returned_jaccard": 1,
+    "shown_jaccard": 1
+   }
+  },
+  {
+   "id": "cast-iron-skillet-rural",
+   "local_queries": [
+    "cookware store",
+    "kitchen supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 10,
+   "n_shown": 6,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.6666666666666666,
+    "shown_jaccard": 0.7142857142857143
+   },
+   "vs_eval60": {
+    "same_queries": true,
+    "returned_jaccard": 1,
+    "shown_jaccard": 0.75
+   }
+  },
+  {
+   "id": "camping-tent-urban",
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 12,
+   "n_shown": 4,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 1,
+    "shown_jaccard": 0.8
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 1,
+    "shown_jaccard": 0.8
+   }
+  },
+  {
+   "id": "camping-tent-suburban",
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 13,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.8571428571428571,
+    "shown_jaccard": 0.8181818181818182
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.7142857142857143,
+    "shown_jaccard": 0.7272727272727273
+   }
+  },
+  {
+   "id": "camping-tent-rural",
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 10,
+   "n_shown": 6,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.6428571428571429,
+    "shown_jaccard": 0.75
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.7692307692307693,
+    "shown_jaccard": 0.7142857142857143
+   }
+  },
+  {
+   "id": "wool-socks-urban",
+   "local_queries": [
+    "outdoor gear store",
+    "general store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 11,
+   "n_shown": 8,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.35,
+    "shown_jaccard": 0.2857142857142857
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.3333333333333333,
+    "shown_jaccard": 0.2
+   }
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "local_queries": [
+    "hardware store",
+    "tool supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 15,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.8666666666666667,
+    "shown_jaccard": 0.6666666666666666
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.8125,
+    "shown_jaccard": 0.6666666666666666
+   }
+  },
+  {
+   "id": "loose-leaf-green-tea-rural",
+   "local_queries": [
+    "tea store",
+    "specialty food store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 13,
+   "n_shown": 5,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.25,
+    "shown_jaccard": 0.25
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.3684210526315789,
+    "shown_jaccard": 0.36363636363636365
+   }
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "local_queries": [
+    "toy store",
+    "hobby store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 13,
+   "n_shown": 9,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.2857142857142857,
+    "shown_jaccard": 0.26666666666666666
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.2857142857142857,
+    "shown_jaccard": 0.26666666666666666
+   }
+  },
+  {
+   "id": "usb-c-charging-cable-suburban",
+   "local_queries": [
+    "electronics store",
+    "computer supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 13,
+   "n_shown": 9,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.6666666666666666,
+    "shown_jaccard": 0.8888888888888888
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.7333333333333333,
+    "shown_jaccard": 1
+   }
+  },
+  {
+   "id": "wool-blanket-rural",
+   "local_queries": [
+    "textile store",
+    "home goods store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 14,
+   "n_shown": 4,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.45454545454545453,
+    "shown_jaccard": 0.6
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.391304347826087,
+    "shown_jaccard": 0.3
+   }
+  },
+  {
+   "id": "headlamp-urban",
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 10,
+   "n_shown": 6,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.9090909090909091,
+    "shown_jaccard": 0.8571428571428571
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.9090909090909091,
+    "shown_jaccard": 0.8571428571428571
+   }
+  },
+  {
+   "id": "rain-jacket-suburban",
+   "local_queries": [
+    "outdoor gear store",
+    "outdoor outfitters store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 16,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.9375,
+    "shown_jaccard": 0.8181818181818182
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.9375,
+    "shown_jaccard": 0.8181818181818182
+   }
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "local_queries": [
+    "lighting store",
+    "electrical supply store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 13,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.6,
+    "shown_jaccard": 0.7272727272727273
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.4444444444444444,
+    "shown_jaccard": 0.5833333333333334
+   }
+  },
+  {
+   "id": "extra-virgin-olive-oil-urban",
+   "local_queries": [
+    "gourmet food store",
+    "specialty grocery store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 11,
+   "n_shown": 9,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.6428571428571429,
+    "shown_jaccard": 0.5
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.6428571428571429,
+    "shown_jaccard": 0.5
+   }
+  },
+  {
+   "id": "wooden-train-set-suburban",
+   "local_queries": [
+    "toy store",
+    "gift store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 14,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.5882352941176471,
+    "shown_jaccard": 0.5833333333333334
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.9285714285714286,
+    "shown_jaccard": 0.8181818181818182
+   }
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "local_queries": [
+    "electronics store",
+    "general store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 10,
+   "n_shown": 7,
+   "vs_0924": {
+    "same_queries": true,
+    "returned_jaccard": 1,
+    "shown_jaccard": 1
+   },
+   "vs_eval60": {
+    "same_queries": true,
+    "returned_jaccard": 0.9090909090909091,
+    "shown_jaccard": 0.875
+   }
+  },
+  {
+   "id": "bath-towels-urban",
+   "local_queries": [
+    "linen store",
+    "home goods store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 15,
+   "n_shown": 9,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.8235294117647058,
+    "shown_jaccard": 0.8
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 0.7222222222222222,
+    "shown_jaccard": 0.8
+   }
+  },
+  {
+   "id": "dark-chocolate-bar-suburban",
+   "local_queries": [
+    "chocolatier store",
+    "specialty food store"
+   ],
+   "all_end_in_store": true,
+   "n_returned": 16,
+   "n_shown": 10,
+   "vs_0924": {
+    "same_queries": false,
+    "returned_jaccard": 0.9375,
+    "shown_jaccard": 0.8181818181818182
+   },
+   "vs_eval60": {
+    "same_queries": false,
+    "returned_jaccard": 1,
+    "shown_jaccard": 0.9
+   }
+  }
+ ]
+}

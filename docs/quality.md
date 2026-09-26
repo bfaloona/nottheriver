@@ -68,6 +68,26 @@ On 2026-09-25 the 20 graded searches were used to separate the causes of run-to-
 - **Of the three shops the rerun lost**, one was Brave (Target), one followed a wording change (Safeway, Burlingame: "chocolatier shop" / "specialty food store" became "chocolatier store" / "specialty food shop"), and one was ranking (DICK'S, Buckhead: returned, but below the top 10).
 - **Method.** Wording: the production normalize prompt and request settings, 6 runs per search, $0.008 in model use. Brave: each search's rerun wording sent to Brave place search twice with the Worker's coordinates and count, 80 calls. Eval comparisons use saved responses only. The Brave measure covers about two hours; churn over days or weeks was not measured.
 
+## Rerun after fixing the search wording
+
+On 2026-09-25 and 26 (US Pacific) the same 20 searches were run twice on the Worker, about an hour apart, after local searches were made to always end in "store" and the model's reading of each product was cached ([evidence](evidence/quality/eval20-0925/)). The wording is now repeatable. Local results were somewhat better than in the 9-24 rerun, but one run cannot show the fix caused it: the step that judges whether a shop sells the product now changes more between runs than the earlier measure found.
+
+| Measure | Rerun 9-24 | Rerun 9-25 |
+|---|---|---|
+| Local precision, both graders' answers | 59% (90 of 153; 18 not judgeable) | 64% (96 of 150; 20 not judgeable) |
+| Good shops in each search's nearby top 3 | 29 of 51 judged | 32 of 49 judged |
+| "Farther away" shops | 5 good, 4 bad, 1 not judgeable | 9 good, 3 bad, 1 not judgeable |
+| Online precision | 98% (184 of 188) | 98% (188 of 192) |
+| Local recall, farther shops included | 24 of 86 | 28 of 86 (30 in the second run) |
+| Online recall | 30 of 100 | 31 of 100 |
+
+- **The wording fix held.** Every local search in both runs ended in "store"; the 3 zips of each product sent the same wording; and the second run sent the first run's wording in all 20 searches. The cache stored a fresh wording, so 18 of 20 searches were worded differently from 9-24: this run is a new starting point, not a like-for-like repeat ([compare.json](evidence/quality/eval20-0925/compare.json)).
+- **Run to run, with the wording fixed:** the two runs shared 93% of shown shop websites (96% of all local shops the Worker recorded from Brave), and the nearby top 3 was identical in 17 of 20 searches ([run2-compare.json](evidence/quality/eval20-0925/run2-compare.json)).
+- **Shop judging caused most of the remaining change.** Of 14 shop websites shown in only one run, 8 were judged "does not sell" in the other run, 3 were ranked below the top 10, and 3 were not returned by Brave. Counted the way the earlier measure was, 8 of the 248 shops Brave returned in both runs were shown in one and judged out in the other; eval60 vs the 9-24 rerun had 1 of 230. The 8 came from 2 searches: cast iron skillet (suburban), where Brave returned the same shops and the judging call used the same number of prompt tokens both times, and camping tent (urban), where the first run judged 9 local shops out and the second none.
+- **Recall gained 5 stores and lost 1.** Gained: Target (Kyle), Safeway (Burlingame) and DICK'S Sporting Goods (Buckhead), the three the 9-24 rerun lost, plus High Country Outfitters (Midtown) and Target (St Louis Park). Lost: Trader Joe's (Atlanta), which the second run found again along with The Home Depot (Natick). Mountain High Outfitters (Buckhead) still counts as found through a listing the 9-24 grader found closed.
+- **Among the 24 new local rows** the graders found 3 shops no longer at the listed address, a wholesale building-products distributor, and a result linked to an unrelated app's website.
+- **Method.** 325 of 362 grades were reused from eval60 and the 9-24 rerun where the URL (and, for local, the address) matched; the 37 new rows were graded by two agents that did not see the baseline or earlier grades. The graders' browser was blocked on Cabela's; the operator opened it in a personal browser and it sells tents. Five local pages the graders could not open cleanly (a certificate error, a refused connection, a human check) were graded from other evidence. Only the first run was graded; for the second, only overlap and local recall, which need no grades, are reported. Each run made 80 Brave calls and cost about $0.42 in model use; 3 first-run searches timed out at the eval client's 60 s limit and were retried, and those attempts may have made up to 12 Brave calls not counted. Scripts and inputs: [eval20-0925/method](evidence/quality/eval20-0925/method/).
+
 ## Why good shops were missed
 
 | Reason | Online | Local |
@@ -99,5 +119,5 @@ Each result was opened and graded by an AI agent working from the grading rules.
 - **Mixed grading method.** Fetch and browser grading can see different pages. The browser was signed in to the operator's accounts: 4 Facebook pages were read logged in, and Walmart showed no bot check, possibly because of that.
 - **Recall is relative.** The baseline is what another search engine found, up to 5 shops per section. One search (loose-leaf green tea, rural Illinois) has no confirmed local shop.
 - **The probe is a proxy.** It runs from Cloudflare's network and names itself, while Brave's crawler does not, so its blocked rate approximates what Brave meets. Its challenge detection is a heuristic.
-- **One run per search.** Local results change between runs, mostly because the model words its local searches differently ([details](#why-local-results-change-from-run-to-run)); a single run can gain or lose a shop by chance, so small differences between eval runs are not evidence of a change.
+- **One run per search.** Local results change between runs, mostly because the model worded its local searches differently ([details](#why-local-results-change-from-run-to-run)); with the wording now fixed, the model's sells judgment is the largest remaining cause ([details](#rerun-after-fixing-the-search-wording)). A single run can gain or lose a shop by chance, so small differences between eval runs are not evidence of a change.
 - **Unknowns are left out.** Results the grader could not judge are excluded from precision and reported as a count.

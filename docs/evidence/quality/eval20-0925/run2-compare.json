@@ -1,0 +1,263 @@
+{
+ "same_queries": 20,
+ "mean_returned_jaccard": 0.96,
+ "mean_shown_jaccard": 0.93,
+ "same_nearby_top3": 17,
+ "shown_only_run1": 5,
+ "shown_only_run2": 9,
+ "returned_both": 248,
+ "sells_flips": 8,
+ "rows": [
+  {
+   "id": "cast-iron-skillet-urban",
+   "same_queries": true,
+   "returned_jaccard": 0.8888888888888888,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 8,
+   "sells_flips": []
+  },
+  {
+   "id": "cast-iron-skillet-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 0.6363636363636364,
+   "same_nearby_top3": false,
+   "only_run1": [
+    "jarvisapplianceinc.com",
+    "kohler.com",
+    "bestbuy.com"
+   ],
+   "only_run2": [
+    "homedepot.com"
+   ],
+   "returned_both": 16,
+   "sells_flips": [
+    "jarvisapplianceinc.com",
+    "kohler.com",
+    "bestbuy.com"
+   ]
+  },
+  {
+   "id": "cast-iron-skillet-rural",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 10,
+   "sells_flips": []
+  },
+  {
+   "id": "camping-tent-urban",
+   "same_queries": true,
+   "returned_jaccard": 0.8461538461538461,
+   "shown_jaccard": 0.3,
+   "same_nearby_top3": false,
+   "only_run1": [
+    "adventureoutfitter.com"
+   ],
+   "only_run2": [
+    "philadelphiarunner.com",
+    "urbanoutfitters.com",
+    "gethandyoutdoors.com",
+    "g.page",
+    "outphitters.com",
+    "firstcontactgear.com"
+   ],
+   "returned_both": 11,
+   "sells_flips": [
+    "outphitters.com",
+    "philadelphiarunner.com",
+    "g.page",
+    "gethandyoutdoors.com",
+    "urbanoutfitters.com"
+   ]
+  },
+  {
+   "id": "camping-tent-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 13,
+   "sells_flips": []
+  },
+  {
+   "id": "camping-tent-rural",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 10,
+   "sells_flips": []
+  },
+  {
+   "id": "wool-socks-urban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 11,
+   "sells_flips": []
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 15,
+   "sells_flips": []
+  },
+  {
+   "id": "loose-leaf-green-tea-rural",
+   "same_queries": true,
+   "returned_jaccard": 0.8461538461538461,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 11,
+   "sells_flips": []
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 13,
+   "sells_flips": []
+  },
+  {
+   "id": "usb-c-charging-cable-suburban",
+   "same_queries": true,
+   "returned_jaccard": 0.8571428571428571,
+   "shown_jaccard": 0.9,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [
+    "homegoods.com"
+   ],
+   "returned_both": 12,
+   "sells_flips": []
+  },
+  {
+   "id": "wool-blanket-rural",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 14,
+   "sells_flips": []
+  },
+  {
+   "id": "headlamp-urban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 10,
+   "sells_flips": []
+  },
+  {
+   "id": "rain-jacket-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 16,
+   "sells_flips": []
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 13,
+   "sells_flips": []
+  },
+  {
+   "id": "extra-virgin-olive-oil-urban",
+   "same_queries": true,
+   "returned_jaccard": 0.8461538461538461,
+   "shown_jaccard": 0.8,
+   "same_nearby_top3": false,
+   "only_run1": [
+    "dekalbfarmersmarket.com"
+   ],
+   "only_run2": [
+    "traderjoes.com"
+   ],
+   "returned_both": 11,
+   "sells_flips": []
+  },
+  {
+   "id": "wooden-train-set-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 14,
+   "sells_flips": []
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 10,
+   "sells_flips": []
+  },
+  {
+   "id": "bath-towels-urban",
+   "same_queries": true,
+   "returned_jaccard": 0.9333333333333333,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 14,
+   "sells_flips": []
+  },
+  {
+   "id": "dark-chocolate-bar-suburban",
+   "same_queries": true,
+   "returned_jaccard": 1,
+   "shown_jaccard": 1,
+   "same_nearby_top3": true,
+   "only_run1": [],
+   "only_run2": [],
+   "returned_both": 16,
+   "sells_flips": []
+  }
+ ]
+}
