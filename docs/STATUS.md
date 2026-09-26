@@ -7,6 +7,7 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 | Subject | What exists |
 |---|---|
 | Blocklist | `data/blocklist.json` and `data/blocklist.md` (39 domain and 14 name entries, each sourced and dated), `proxy/src/blocklist.ts`, 91 fixtures; red run recorded before the filter existed |
+| Normalize cache | `proxy/src/normalize-cache.ts`: the model's reading of a product is cached in Workers KV (`NORMALIZE_CACHE`, 30 days), so repeat searches send the same search wording; live 2026-09-25, checked with two live searches (the second skipped the model call). Local searches always end in "store" |
 | Zips | `public/zips.json` (33,791 ZCTAs) built by `data/build-zips.mjs`, browser lookup in `src/zip.ts`, provenance and attribution in `data/README.md` |
 | Scoring | `proxy/ranking/` (weights, score, haversine distance) |
 | Ranking data | 28 certifications, 4 curated negatives, 14 accepted negative sources, each with a source and check date |
@@ -26,13 +27,12 @@ As of 2026-09-24. Pushed to `main`; the Worker is deployed with the store-type f
 
 ## In flight
 
-- Normalize cache (session 447c95cc): cache the model's search wording per product in Workers KV so repeat searches are repeatable; the normalize prompt stops receiving city and state. Plan: [plans/search-variation.md](plans/search-variation.md) step 4.
+- None.
 
 ## Blocked on operator
 
 | Gate | What it unblocks |
 |---|---|
-| `infra/deploy.sh --operator` for the Workers KV namespace and `NORMALIZE_CACHE` binding (the plan guard refuses new resources and bindings, so agent Worker deploys are blocked until this is applied) | The normalize cache; agent deploys via `infra/deploy.sh` |
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
 
 ## Deploy (2026-09-23)
