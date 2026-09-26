@@ -54,6 +54,7 @@ As of 2026-09-26. Pushed to `main`; the Worker is deployed with the store-type f
 - Distances are shown in miles everywhere a person reads them.
 - "Why this rank" is plain words with links only for certifications and concerns (2026-09-24). This departs from HR5 in the build prompt ("every non-zero component with its value and a source"), which stays as committed; the full values remain in the API response ([ADR 0003](decisions/0003-scoring.md)).
 - The map of nearby shops loads automatically, above the Near you list, with OpenStreetMap tiles; OpenStreetMap sees the visitor's IP address and the area ([privacy.md](privacy.md)).
+- No dispute response promise ships with the Amazon alternatives import, though it adds about 54 "Dispute this" links; the review process stays TBD and the gap is accepted (2026-09-26, [plans/amazon-alternatives-in-ranking.md](plans/amazon-alternatives-in-ranking.md)).
 - Local searches always end in "store", and the model's reading of a product is cached per product in Workers KV; the normalize prompt no longer receives city and state (2026-09-25, [plans/search-variation.md](plans/search-variation.md)). The 30-day cache lifetime was the agent's pick; change it in `proxy/src/normalize-cache.ts`.
 
 ## Decisions needed
