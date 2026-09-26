@@ -1,6 +1,6 @@
 # Plan: why Brave returns different local shops from run to run
 
-Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local results change from run to run"); Wording dominates. Q1 answered 2026-09-25: the operator chose both fixes, "store" always (shipped a938294) and a normalize cache keyed by product only, so the normalize prompt no longer receives city and state. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
+Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local results change from run to run"); Wording dominates. Q1 answered 2026-09-25: the operator chose both fixes, "store" always (shipped a938294) and a normalize cache keyed by product only, so the normalize prompt no longer receives city and state. Wording fix verified live 2026-09-26 (eval20-0925, two runs an hour apart: same wording in 20 of 20 searches, 93% of shown shops shared, nearby top 3 identical in 17 of 20; `docs/quality.md`, "Rerun after fixing the search wording"). Remaining variation is mostly the shop-judging step, not Brave or wording: Q2 and Q3 open. Why it matters: the eval rerun (`docs/quality.md`, "Rerun after distance groups...") could not tell a ranking change from run-to-run churn. Target (Kyle) and Safeway (Burlingame) were returned in one run and not the next, and the offline gain for the nearby top 3 (23 to 29) did not show live.
 
 ## What is known
 
@@ -18,7 +18,9 @@ Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local 
    - Brave: nothing to fix upstream; make the eval robust instead: run each graded search twice and report both, or the shops found in either run.
 5. Write the result into `docs/quality.md` (method limits) and record the decision in `docs/STATUS.md`.
 
-## Open question for the operator
+## Open questions for the operator
 
 - Q1. If wording dominates, is a per-product cache acceptable? It makes results repeatable but means a stale query set for a product until the cache expires; the normalize prompt includes city and state, so a product-only key drops the city from the prompt input and a product-plus-city key stores the city; either way it is a new store of search terms and needs a line in `docs/privacy.md`.
   - Measured options: always end local searches in "store" (one line in `storeQuery`, removes 4 of the 7 wording differences between eval runs, no cache); a normalize cache (fully repeatable until expiry; the normalize prompt includes city and state, `proxy/prompts/normalize.ts:7`, so the key is product only or product plus city); category templates (the category itself varied on 4 of 20 searches, and some are not shop types, e.g. "pantry staples"); pinning the provider (no help: wording varied on one provider).
+- Q2. Shop-judging variation: with the wording fixed, 8 of 248 shops were shown in one eval20-0925 run and judged out in the other (the step that judges whether a shop sells the product flipped: skillet, suburban, 3 shops with identical prompt input; tent, urban, 5 shops). Options: cache the verdict per shop and product; take the majority of several calls; or accept it and grade two runs per eval.
+- Q3. Precision rule: should a local shop that does not exist count as bad even when "sells the product" is unknown? Yes adds 2 bad rows to eval20-0925 (First Contact Gear, Master Kitchen Essential).
