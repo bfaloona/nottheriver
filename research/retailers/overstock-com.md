@@ -12,9 +12,9 @@ amazon_owned: false
 certifications: []
 concerns:
   - {kind: governance, title: "People v. Overstock.com, Inc.", source: https://www.courtlistener.com/opinion/6238839/people-v-overstockcom-inc/, date: 2017-06-02, accepted_source: true}
-  - {kind: environmental, title: "Beyond, Inc., dba Bed, Bath & Beyond and Overstock.com Settlement", source: https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement, date: unknown, accepted_source: false}
+  - {kind: environmental, title: "Beyond, Inc., dba Bed, Bath & Beyond and Overstock.com Settlement", source: https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement, date: unknown, accepted_source: true}
 ethics: 0.25
-environment: 0.5
+environment: 0.25
 tier: caution
 mentions: 3
 mentioned_by: [dollarsprout-com, gobankingrates-com, moneypantry-com]
@@ -38,10 +38,11 @@ News pass (2026-09-25): searched the web for "Overstock" with lawsuit, settlemen
 
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp directory returned 403; no row in data/certifications.json; not checked for Fair Trade or worker co-op, which do not fit a public company). One accepted governance concern (People v. Overstock.com, 2017): -0.25. = 0.25
-- Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern (the CARB settlement is not on an accepted source). = 0.5
-- Total 0.75, not Amazon-owned: tier `caution` (was `acceptable` before the news pass).
+- (Before the 2026-09-25 operator decision below) Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org, full brand list in the served page; control names Etsy, Blueland and Reformation found). 1% for the Planet directory is script-rendered and could not be searched (logged). No accepted concern (the CARB settlement is not on an accepted source). = 0.5
+- (Before the 2026-09-25 operator decision below) Total 0.75, not Amazon-owned: tier `caution` (was `acceptable` before the news pass).
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 - Blocklist: `node research/build-index.mjs --blocklist "Overstock" overstock.com` returned "not on the blocklist".
+- Operator decision (2026-09-25): ca.gov joined the accepted sources, so the California Air Resources Board settlement now counts: environment 0.5 -> 0.25. Total 0.5, still `caution`.
 
 ## Sources
 - https://en.wikipedia.org/wiki/Overstock.com

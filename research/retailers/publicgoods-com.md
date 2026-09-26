@@ -11,10 +11,10 @@ sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
 concerns:
-  - {kind: governance, title: "Don't Run Out dba Public Goods - 626847 - 03/11/2022", source: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022, date: 2022-03-11, accepted_source: false}
-ethics: 0.5
+  - {kind: governance, title: "Don't Run Out dba Public Goods - 626847 - 03/11/2022", source: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022, date: 2022-03-11, accepted_source: true}
+ethics: 0.25
 environment: 0.5
-tier: acceptable
+tier: caution
 mentions: 3
 mentioned_by: [goodgoodgood-co, sustainablejungle-com, vstyleblog-com]
 checked: 2026-09-25
@@ -33,9 +33,10 @@ News pass (2026-09-25): two web searches (no parent named, so no third), with th
 ## Rating
 - ethics: 0.5 baseline. No B Corp, fair trade or worker co-op listing verified (bcorporation.net returned 403; no fallback row in data/certifications.json for publicgoods.com).
 - environment: 0.5 baseline. No 1% for the Planet or Climate Label listing verified (the 1% for the Planet directory returns no data to a plain fetch; not checked on the Climate Label directory).
-- concerns: one row, the 2022 FDA warning letter, which is `accepted_source: false` (fda.gov is not an accepted source) and does not count. NLRB case search for "Public Goods" returned no cases (a control search for "Starbucks" returned 2,559). Other searches were limited: the web search budget ran out before the general news pass, and Violation Tracker returned 403.
-- tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
+- (Before the 2026-09-25 operator decision below) concerns: one row, the 2022 FDA warning letter, which is `accepted_source: false` (fda.gov is not an accepted source) and does not count. NLRB case search for "Public Goods" returned no cases (a control search for "Starbucks" returned 2,559). Other searches were limited: the web search budget ran out before the general news pass, and Violation Tracker returned 403.
+- (Before the 2026-09-25 operator decision below) tier: `acceptable` (0.5 + 0.5 = 1.0, not Amazon-owned per `node research/build-index.mjs --blocklist`).
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
+- Operator decision (2026-09-25): fda.gov joined the accepted sources, so the 2022 FDA warning letter counts as a governance concern: ethics 0.5 -> 0.25. Total 0.75: `caution` (was `acceptable`).
 
 ## Sources
 - https://www.publicgoods.com/

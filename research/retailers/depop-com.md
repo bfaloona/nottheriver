@@ -10,10 +10,11 @@ marketplace: true
 sells_on_amazon: unknown
 amazon_owned: false
 certifications: []
-concerns: []
-ethics: 0.5
+concerns:
+  - {kind: governance, title: "eBay will pay a $3 million fine over former employees' harassment campaign (parent eBay Inc.)", source: https://www.npr.org/2024/01/11/1224333712/ebay-stalking-settlement, date: 2024-01-11, accepted_source: true}
+ethics: 0.25
 environment: 0.5
-tier: acceptable
+tier: caution
 mentions: 2
 mentioned_by: [adayinourshoes-com, goodgoodgood-co]
 checked: 2026-09-25
@@ -31,10 +32,11 @@ News pass (2026-09-25): three web searches, `"Depop" lawsuit OR settlement OR fi
 
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for depop.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
-- Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
+- (Before the 2026-09-25 operator decision below) Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
 - Environment: 0.5 baseline, no certification, no environmental concern = 0.5.
-- Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable` (below 1.25 for `recommended`).
+- (Before the 2026-09-25 operator decision below) Tier: not Amazon-owned (blocklist lookup: not on the blocklist); ethics + environment = 1.0, so `acceptable` (below 1.25 for `recommended`).
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
+- Operator decision (2026-09-25): a parent company's accepted concerns count against the retailer. eBay Inc. owns Depop (purchase cleared by the CMA 2026-07-15), so eBay's accepted concern (research/retailers/ebay-com.md) is carried over, although it predates the purchase: ethics 0.5 -> 0.25. Total 0.75: `caution` (was `acceptable`).
 
 ## Sources
 - https://en.wikipedia.org/wiki/Depop

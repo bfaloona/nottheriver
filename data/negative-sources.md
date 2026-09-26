@@ -20,3 +20,5 @@ To propose a source, open a pull request that adds a row here and in `negative-s
 | propublica.org | ProPublica | Independent nonprofit investigative newsroom | https://www.propublica.org/about/ | 2026-09-23 |
 | npr.org | NPR | Independent nonprofit news organization | https://www.npr.org/about/ | 2026-09-23 |
 | apnews.com | The Associated Press | Wire service; apnews.com is AP's news site and carries the "AP News" branding | https://www.ap.org/about/ | 2026-09-23 |
+| fda.gov | U.S. Food and Drug Administration | US food, drug and cosmetics regulator; publishes warning letters and enforcement actions | https://www.fda.gov/about-fda | 2026-09-25 |
+| ca.gov | State of California (state agencies, including the Office of the Attorney General) | Registrable domain shared by California state agencies; oag.ca.gov is the Attorney General's site, which publishes its enforcement actions and the Proposition 65 notice and settlement records it receives; ww2.arb.ca.gov is the Air Resources Board | https://oag.ca.gov/about | 2026-09-25 |

@@ -9,11 +9,12 @@ hq: Goring-by-Sea, UK
 marketplace: unknown
 sells_on_amazon: unknown
 amazon_owned: false
-certifications: []
+certifications:
+  - {kind: b_corp, source: "https://www.bcorporation.net/en-us/find-a-b-corp/company/world-of-books-group/", checked: 2026-09-25, verified_this_run: true}
 concerns: []
-ethics: 0.5
+ethics: 0.75
 environment: 0.5
-tier: acceptable
+tier: recommended
 mentions: 2
 mentioned_by: [amazonalts-org, antifamarketer-org]
 checked: 2026-09-25
@@ -31,11 +32,12 @@ News pass (2026-09-25): three web searches, `"World of Books" OR "Wob" Ziffit la
 
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "World of Books" worldofbooks.com` says not on the blocklist, so `amazon_owned: false`.
-- Certifications: none verified. B Corp is stated by Wikipedia and the site's footer badge, but the certifier's page was blocked and there is no fallback row.
-- Ethics: 0.5 start, no certifications, no concerns = 0.5.
+- (Before the 2026-09-25 operator decision below) Certifications: none verified. B Corp is stated by Wikipedia and the site's footer badge, but the certifier's page was blocked and there is no fallback row.
+- (Before the 2026-09-25 operator decision below) Ethics: 0.5 start, no certifications, no concerns = 0.5.
 - Environment: 0.5 start, no certifications, no concerns = 0.5.
 - Tier: ethics + environment = 1.0, so `acceptable`.
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
+- Operator check (2026-09-25): the operator opened the B Lab directory page for World of Books Group (403 to agents) and confirmed a current B Corp certification (OC36). Ethics 0.5 -> 0.75. Total 1.25 with no accepted concern: `recommended` (was `acceptable`).
 
 ## Sources
 - https://en.wikipedia.org/wiki/World_of_Books
