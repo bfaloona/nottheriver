@@ -1,0 +1,75 @@
+{
+  "domain": "patagonia.com",
+  "names": [
+    "Patagonia"
+  ],
+  "fetched": "2026-09-25T14:23:12.814Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Patagonia%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 8,
+    "results": [
+      {
+        "caseName": "Patagonia Food Group, LLC v. United States",
+        "court": "cit",
+        "dateFiled": "2026-04-21",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/73224144/patagonia-food-group-llc-v-united-states/"
+      },
+      {
+        "caseName": "Patagonia, Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2026-01-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/72146617/patagonia-inc-v-united-states/"
+      },
+      {
+        "caseName": "Patagonia Area Resource Alliance v. United States Forest Service",
+        "court": "azd",
+        "dateFiled": "2023-06-20",
+        "suitNature": "Other Statutes: Environmental Matters",
+        "docket": "https://www.courtlistener.com/docket/67513202/patagonia-area-resource-alliance-v-united-states-forest-service/"
+      },
+      {
+        "caseName": "United States v. Patagonia Duffel Bag",
+        "court": "moed",
+        "dateFiled": "2022-11-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/70153168/united-states-v-patagonia-duffel-bag/"
+      },
+      {
+        "caseName": "United States v. Patagonia Duffel Bag",
+        "court": "moed",
+        "dateFiled": "2022-11-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/70153160/united-states-v-patagonia-duffel-bag/"
+      },
+      {
+        "caseName": "United States v. Patagonia Duffel Bag",
+        "court": "moed",
+        "dateFiled": "2022-11-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/65758922/united-states-v-patagonia-duffel-bag/"
+      },
+      {
+        "caseName": "United States v. Patagonia Duffel Bag",
+        "court": "moed",
+        "dateFiled": "2022-11-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/65758921/united-states-v-patagonia-duffel-bag/"
+      },
+      {
+        "caseName": "Patagonia, Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2020-09-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/20303493/patagonia-inc-v-united-states/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Patagonia%22",
+    "articles": [
+      "https://www.propublica.org/article/inflation-tires-rubber-imports-high-prices"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# Blocked pages: retailers R2
+checked: 2026-09-25
+
+- https://www.justice.gov/opa/pr/ebay-pay-59-million-settle-controlled-substances-act-allegations-related-pill-presses-sold (ebay-com): wanted the title, date and verb of the pill press settlement. justice.gov served an Akamai bot challenge (WebFetch returned an empty page; plain curl got the challenge page). No claims made from it. Operator check needed.
+- https://www.justice.gov/usao-ma/pr/ebay-inc-pay-3-million-connection-corporate-cyberstalking-campaign-targeting (ebay-com): wanted DOJ's own record of the cyberstalking penalty. Same bot challenge. NPR's report was used instead.
+- https://www.justice.gov/opa/pr/justice-department-requires-ebay-end-anticompetitive-no-poach-hiring-agreements (ebay-com): wanted the date and wording of the no-poach settlement. Same bot challenge. No claims made.
+- https://www.courtlistener.com/opinion/10192986/united-states-v-ebay-inc/ (ebay-com): wanted the dismissal date and wording in the EPA case. WebFetch returned an empty page. No claims made from it.
+- WebSearch (all queries, ebay-com onward): the session's WebSearch budget (200 calls) was used up, so the site: searches of ftc.gov, osha.gov and dol.gov were not run for eBay (NLRB was checked through its own case search). Operator check needed.
+- WebSearch budget: exhausted for the rest of the batch too (grove-co, earthhero-com, newegg-com, uncommongoods-com). Only NLRB's own case search was run for each; ftc.gov, osha.gov, dol.gov, sec.gov, justice.gov and news searches were not. Operator check needed before relying on "no concerns" (grove-co and uncommongoods-com are rated recommended on that basis).
+- https://www.bcorporation.net/en-us/find-a-b-corp/company/grove-collaborative/ (grove-co): wanted B Corp status. HTTP 403. data/certifications.json fallback used for grove-co and uncommongoods-com; earthhero-com has no fallback row, so its claimed B Corp status is unverified. Operator check needed for EarthHero.
+- https://earthhero.com/ and https://earthhero.com/pages/about-us (earthhero-com): wanted ownership, headquarters and its own certification claims. HTTP 403 to WebFetch and plain curl. No claims made from them.
+- https://directories.onepercentfortheplanet.org/profile/earthhero (earthhero-com): wanted 1% for the Planet membership. Page renders only the directory title to a fetch. Operator check needed.
+- https://explore.changeclimate.org/brand/earthhero vs https://explore.changeclimate.org/brand/zerowastestore (earthhero-com): not blocked, but they conflict (EarthHero page: certification "has expired"; ZeroWasteStore page, certified 2025: its certification "covers ... EarthHero"). Not counted. Operator decision needed on whether the parent's certification counts.

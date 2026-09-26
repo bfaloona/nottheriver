@@ -1,0 +1,24 @@
+{
+  "domain": "bobsredmill.com",
+  "names": [
+    "Bob's Red Mill"
+  ],
+  "fetched": "2026-09-25T14:13:45.121Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Bob's%20Red%20Mill%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Bob's%20Red%20Mill%22",
+    "articles": [
+      "https://www.propublica.org/article/fishing-new-bedford-private-equity",
+      "https://www.propublica.org/article/the-great-inheritors-how-three-families-shielded-their-fortunes-from-taxes-for-generations",
+      "https://www.propublica.org/article/the-dirty-secret-of-americas-clean-dishes",
+      "https://www.propublica.org/article/small-town-battle-for-racial-justice-confronts-bloody-past-uncertain-future",
+      "https://www.propublica.org/article/maine-hires-lawyers-with-criminal-records-to-defend-its-poorest-residents",
+      "https://www.propublica.org/article/walmart-was-almost-charged-criminally-over-opioids-trump-appointees-killed-the-indictment",
+      "https://www.propublica.org/article/where-fantasy-meets-reality-in-the-stimulus-317"
+    ]
+  }
+}

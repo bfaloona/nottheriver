@@ -1,0 +1,91 @@
+{
+  "domain": "bestbuy.com",
+  "names": [
+    "Best Buy"
+  ],
+  "fetched": "2026-09-25T14:12:16.682Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Best%20Buy%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 4,
+    "results": [
+      {
+        "caseName": "Best Buy Purchasing LLC v. United States of America",
+        "court": "cit",
+        "dateFiled": "2020-09-21",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/20595031/best-buy-purchasing-llc-v-united-states-of-america/"
+      },
+      {
+        "caseName": "Star Best Buy Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2020-09-20",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/20536432/star-best-buy-inc-v-united-states/"
+      },
+      {
+        "caseName": "Star Best Buy Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2020-09-20",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/20516830/star-best-buy-inc-v-united-states/"
+      },
+      {
+        "caseName": "BEST BUY CO., INC. & SUBSIDIARIES v. United States",
+        "court": "uscfc",
+        "dateFiled": "2017-12-20",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/17362502/best-buy-co-inc-subsidiaries-v-united-states/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Best%20Buy%22",
+    "articles": [
+      "https://www.propublica.org/article/walmart-financial-services-became-fraud-magnet-gift-cards-money-laundering",
+      "https://www.propublica.org/article/donald-trump-jr-vulcan-lawmakers-letter",
+      "https://www.propublica.org/article/homevestors-fraud-charles-carrier-texas",
+      "https://www.propublica.org/article/tom-dundon-moda-center-portland-oregon",
+      "https://www.propublica.org/article/new-york-guardianship-reforms-funding-oversight-hochul",
+      "https://www.propublica.org/article/oklahoma-legislation-oil-gas-injection-wells-water-pollution-cleanup",
+      "https://www.propublica.org/article/elon-musk-spacex-allows-china-investment-cayman-islands-secrecy",
+      "https://www.propublica.org/article/new-mexico-oil-orphan-wells-cleanup",
+      "https://www.propublica.org/article/how-to-reduce-formaldehyde-home-exposure",
+      "https://www.propublica.org/article/illinois-farming-soy-corn-flooding-subsidies-insurance",
+      "https://www.propublica.org/article/idaho-vouchers-public-school-funding-cuts",
+      "https://www.propublica.org/article/donald-trump-jr-vulcan-deal-white-house",
+      "https://www.propublica.org/article/3d-printer-cairo-illinois-housing",
+      "https://www.propublica.org/article/elon-musk-starlink-trump-white-house-spacex-microsoft",
+      "https://www.propublica.org/article/cecot-released-family-reunions-photos",
+      "https://www.propublica.org/article/trump-epa-methane-jeffery-hildebrand-hilcorp-oil-regulations",
+      "https://www.propublica.org/article/utah-dentist-license-nicholas-lafeber",
+      "https://www.propublica.org/article/washington-renewable-energy-projects-grid-upgrades",
+      "https://www.propublica.org/article/impersonating-propublica-reporter",
+      "https://www.propublica.org/article/pete-hoekstra-michigan-canada-tariffs",
+      "https://www.propublica.org/article/trump-canada-tariffs-michigan-sault-ste-marie",
+      "https://www.propublica.org/article/tom-dundon-portland-trail-blazers-subprime-loans",
+      "https://www.propublica.org/article/mark-mcafee-raw-milk-recalls-maha",
+      "https://www.propublica.org/article/trump-debanking-executive-order-cfpb-discrimination-banking",
+      "https://www.propublica.org/article/climate-change-homes-insurance-housing-rent-mortgage",
+      "https://www.propublica.org/article/kerr-county-state-grants-flood-warning-system",
+      "https://www.propublica.org/article/fda-generic-drug-testing",
+      "https://www.propublica.org/article/texas-school-boards-richardson-keller-at-large-voting",
+      "https://www.propublica.org/article/thomas-dans-arctic-research-commission-trump-russia-propaganda",
+      "https://www.propublica.org/article/teens-fentanyl-percocet-green-bay-wisconsin-maylia-sotelo-jack-mcdonough",
+      "https://www.propublica.org/article/trump-immigration-scams-complaints-doubled-ice",
+      "https://www.propublica.org/article/oneil-cruz-pittsburgh-pirates-santo-caraballo-car-crash-payments-dominican-republic",
+      "https://www.propublica.org/article/ice-dilley-children-letters",
+      "https://www.propublica.org/article/aiviq-icebreaker-military-coast-guard",
+      "https://www.propublica.org/article/madison-nashville-school-shooters-online-extremism",
+      "https://www.propublica.org/article/auto-loan-calculator-with-extensions",
+      "https://www.propublica.org/article/how-trump-reversed-biden-gun-crackdown-atf",
+      "https://www.propublica.org/article/trump-climate-rollbacks-heat-deaths",
+      "https://www.propublica.org/article/community-reporting-tips-idaho-schools",
+      "https://www.propublica.org/article/endo-settlement-opioids-justice-department",
+      "https://www.propublica.org/article/how-dominican-republic-baseball-factory-traps-players-mlb-santo-caraballo",
+      "https://www.propublica.org/article/gunmakers-owners-sensitive-personal-information-glock-remington-nssf",
+      "https://www.propublica.org/article/nike-factory-worker-rights-indonesia-advocate",
+      "https://www.propublica.org/article/mental-health-suicide-highmark-bcbs-insurance-denials",
+      "https://www.propublica.org/article/trump-state-department-africa-uganda-aid-medical-data-privacy"
+    ]
+  }
+}

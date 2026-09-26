@@ -1,0 +1,207 @@
+{
+  "domain": "shop.app",
+  "names": [
+    "Shop"
+  ],
+  "fetched": "2026-09-25T14:24:39.056Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Shop%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 46,
+    "results": [
+      {
+        "caseName": "Batista Food Shop Corp. v. United States of America",
+        "court": "nysd",
+        "dateFiled": "2026-03-31",
+        "suitNature": "891 Agriculture Acts",
+        "docket": "https://www.courtlistener.com/docket/73117452/batista-food-shop-corp-v-united-states-of-america/"
+      },
+      {
+        "caseName": "Shop LC Global Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2025-12-10",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/72018604/shop-lc-global-inc-v-united-states/"
+      },
+      {
+        "caseName": "United States v. Undetermined quantities of unauthorized electronic nicotine delivery system products located at A. Joint Effort, Inc., d/b/a Blvd Smoke Shop, 3001 Biscayne Blvd., Miami, FL 33137.",
+        "court": "flsd",
+        "dateFiled": "2025-09-02",
+        "suitNature": "690 Forfeit/Penalty: Other",
+        "docket": "https://www.courtlistener.com/docket/71250249/united-states-v-undetermined-quantities-of-unauthorized-electronic/"
+      },
+      {
+        "caseName": "People of the State of New York v. Bowman's Gun Shop, LLC",
+        "court": "nynd",
+        "dateFiled": "2025-08-21",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/71175583/people-of-the-state-of-new-york-v-bowmans-gun-shop-llc/"
+      },
+      {
+        "caseName": "Discount Meat Shop, LLC v. United States",
+        "court": "gand",
+        "dateFiled": "2025-07-30",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/70977869/discount-meat-shop-llc-v-united-states/"
+      },
+      {
+        "caseName": "Pontiac Liquor Shop, Inc. v. United States",
+        "court": "mied",
+        "dateFiled": "2025-06-04",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/70455803/pontiac-liquor-shop-inc-v-united-states/"
+      },
+      {
+        "caseName": "R&S Liquor Shop Inc. v. United States",
+        "court": "mied",
+        "dateFiled": "2024-10-02",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/69221292/rs-liquor-shop-inc-v-united-states/"
+      },
+      {
+        "caseName": "United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada, AFL-CIO, Local 188 Pension Fund v. The Mechanical Shop, Inc.",
+        "court": "gasd",
+        "dateFiled": "2024-09-17",
+        "suitNature": "Labor: E.R.I.S.A.",
+        "docket": "https://www.courtlistener.com/docket/69554498/united-association-of-journeymen-and-apprentices-of-the-plumbing-and-pipe/"
+      },
+      {
+        "caseName": "FM 2920 Food Shop, Inc. v. United States",
+        "court": "txsd",
+        "dateFiled": "2023-08-30",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67747809/fm-2920-food-shop-inc-v-united-states/"
+      },
+      {
+        "caseName": "JAMS SHOP, LLC v. United States",
+        "court": "insd",
+        "dateFiled": "2023-07-12",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67601408/jams-shop-llc-v-united-states/"
+      },
+      {
+        "caseName": "United States v. Cuttingup Crew barber shop located at 3716 West North Avenue Milwaukee WI (Target Location 2) to include its occupants as further described in Attachment A",
+        "court": "wied",
+        "dateFiled": "2023-03-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68693534/united-states-v-cuttingup-crew-barber-shop-located-at-3716-west-north/"
+      },
+      {
+        "caseName": "United States v. Cuttingup Crew barber shop located at 3716 West North Avenue Milwaukee WI (Target Location 2) to include its occupants as further described in Attachment A",
+        "court": "wied",
+        "dateFiled": "2023-03-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68492174/united-states-v-cuttingup-crew-barber-shop-located-at-3716-west-north/"
+      },
+      {
+        "caseName": "Shop & Go v. United States",
+        "court": "caed",
+        "dateFiled": "2023-03-01",
+        "suitNature": "Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/66920814/shop-go-v-united-states/"
+      },
+      {
+        "caseName": "Quick Shop Deli Grocery v. United States",
+        "court": "nynd",
+        "dateFiled": "2022-12-08",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/66624569/quick-shop-deli-grocery-v-united-states/"
+      },
+      {
+        "caseName": "United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada, ALF-CIO, Local 188 Pension Fund v. The Mechanical Shop, Inc.",
+        "court": "gasd",
+        "dateFiled": "2022-11-14",
+        "suitNature": "Labor: E.R.I.S.A.",
+        "docket": "https://www.courtlistener.com/docket/67322786/united-association-of-journeymen-and-apprentices-of-the-plumbing-and-pipe/"
+      },
+      {
+        "caseName": "United States v. Information associated with Facebook account Lovely's Trendy Shop that is stored at premises controlled by Meta Platforms, Inc.",
+        "court": "arwd",
+        "dateFiled": "2022-04-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68083619/united-states-v-information-associated-with-facebook-account-lovelys/"
+      },
+      {
+        "caseName": "United States v. Information associated with Facebook account Lovely's Trendy Shop that is stored at premises controlled by Meta Platforms, Inc.",
+        "court": "arwd",
+        "dateFiled": "2022-04-18",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/63303306/united-states-v-information-associated-with-facebook-account-lovelys/"
+      },
+      {
+        "caseName": "United States v. Location history data including GPS data and identifying information for search parameters relatedd to Dam Road Gun Shop",
+        "court": "wied",
+        "dateFiled": "2022-02-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/68659611/united-states-v-location-history-data-including-gps-data-and-identifying/"
+      },
+      {
+        "caseName": "United States v. Location history data including GPS data and identifying information for search parameters relatedd to Dam Road Gun Shop",
+        "court": "wied",
+        "dateFiled": "2022-02-15",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/66955204/united-states-v-location-history-data-including-gps-data-and-identifying/"
+      },
+      {
+        "caseName": "United States v. Mr. G's Gun Shop",
+        "court": "moed",
+        "dateFiled": "2021-11-30",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/69947082/united-states-v-mr-gs-gun-shop/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Shop%22",
+    "articles": [
+      "https://www.propublica.org/article/range-usa-guns-straw-sales-atf",
+      "https://www.propublica.org/article/texas-ken-paxton-forum-shopping",
+      "https://www.propublica.org/article/westforth-sports-gary-indiana-chicago-guns-illegal-sales",
+      "https://www.propublica.org/article/how-trump-reversed-biden-gun-crackdown-atf",
+      "https://www.propublica.org/article/trump-canada-tariffs-michigan-sault-ste-marie",
+      "https://www.propublica.org/article/memphis-safe-task-force-immigration-arrests-crime-data",
+      "https://www.propublica.org/article/3d-printer-cairo-illinois-housing",
+      "https://www.propublica.org/article/dhs-citizenship-checks-drivers-license-data",
+      "https://www.propublica.org/article/albuquerque-moves-to-curb-homelessness-citations",
+      "https://www.propublica.org/article/nike-wages-clothing-shoe-factory-indonesia",
+      "https://www.propublica.org/article/alaska-deterioriating-public-schools-reporting",
+      "https://www.propublica.org/article/immigration-287g-maricopa-county-arizona",
+      "https://www.propublica.org/article/deschutes-river-oregon-water-rights",
+      "https://www.propublica.org/article/trump-2020-election-georgia-fulton-artificial-intelligence-fbi",
+      "https://www.propublica.org/article/guns-lobbying-cambridge-analytica-nssf-privacy-elections",
+      "https://www.propublica.org/article/connecticut-drivers-towing-law-reform",
+      "https://www.propublica.org/article/food-desert-grocery-store-cairo-illinois",
+      "https://www.propublica.org/article/rural-alaska-crumbling-schools-state-funding",
+      "https://www.propublica.org/article/connecticut-towing-law-data-dmv",
+      "https://www.propublica.org/article/chicago-glock-lawsuit-guns-auto-sear-modifications-3d-printing",
+      "https://www.propublica.org/article/minneapolis-immigration-protests-photos",
+      "https://www.propublica.org/article/formaldehyde-levels-in-your-home-car-furniture",
+      "https://www.propublica.org/article/elon-musk-wesley-hunt-houston-tunnels-boring-co",
+      "https://www.propublica.org/article/guns-chicago-police-ella-french-indiana-tiahrt-amendment",
+      "https://www.propublica.org/article/jan-6-pardons-trump-purges-domestic-terrorism-focus",
+      "https://www.propublica.org/article/georgia-medicaid-pathways-brian-kemp-luke-seaborn-testimonial-video",
+      "https://www.propublica.org/article/texas-overhauls-anti-abortion-crisis-pregnancy-centers-funding",
+      "https://www.propublica.org/article/arizona-private-school-vouchers-no-transparency",
+      "https://www.propublica.org/article/north-carolina-governor-power-transfers-gop",
+      "https://www.propublica.org/article/trump-doj-colony-ridge-texas-settlement-victims",
+      "https://www.propublica.org/article/washington-dc-trump-musk-federal-government-cutbacks-gloomy-future",
+      "https://www.propublica.org/article/kratom-legalization-christopher-mccurdy-research-conflict-of-interest-aka",
+      "https://www.propublica.org/article/wisconsin-corey-stingley-death-charges-milwaukee-prosecutor",
+      "https://www.propublica.org/article/eric-adams-nypd-community-response-team-police-nyc-misconduct-transparency",
+      "https://www.propublica.org/article/election-issues-2024-immigration-abortion-economy",
+      "https://www.propublica.org/article/inside-gary-indiana-lawsuit-guns-gop",
+      "https://www.propublica.org/article/pacific-palisades-california-wildfires-rebuilding-community",
+      "https://www.propublica.org/article/evicore-health-insurance-denials-cigna-unitedhealthcare-aetna-prior-authorizations",
+      "https://www.propublica.org/article/3d-printed-affordable-housing-cairo-illinois-prestige",
+      "https://www.propublica.org/article/first-48-reality-tv-police-dallas-memphis-mobile",
+      "https://www.propublica.org/article/tce-ban-cancer-parkinsons-trump-republicans",
+      "https://www.propublica.org/article/office-of-refugee-resettlement-immigration-enforcement-trump",
+      "https://www.propublica.org/article/michigan-solar-farms-health-concerns-st-clair-county",
+      "https://www.propublica.org/article/leo-terrell-universities-lawsuits-antisemitism",
+      "https://www.propublica.org/article/albuquerque-homelessness-citations-surge-tim-keller",
+      "https://www.propublica.org/article/enid-oklahoma-oil-gas-pollution-water-protections",
+      "https://www.propublica.org/article/elon-musk-environmental-regulations",
+      "https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation",
+      "https://www.propublica.org/article/jefferson-parish-sheriffs-office-settles-two-use-of-force-cases"
+    ]
+  }
+}

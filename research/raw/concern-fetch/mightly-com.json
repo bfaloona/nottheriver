@@ -1,0 +1,56 @@
+{
+  "domain": "mightly.com",
+  "names": [
+    "Mightly"
+  ],
+  "fetched": "2026-09-25T14:21:08.575Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Mightly%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 0,
+    "results": []
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Mightly%22",
+    "articles": [
+      "https://www.propublica.org/article/garrison-school-illinois-autistic-student-dragged-ankle",
+      "https://www.propublica.org/article/national-parks-staff-cuts-talking-points",
+      "https://www.propublica.org/article/nashville-conviction-review-russell-maze-shaken-baby-syndrome",
+      "https://www.propublica.org/article/how-to-research-private-schools",
+      "https://www.propublica.org/article/prediction-markets-propublica-code-of-ethics",
+      "https://www.propublica.org/article/lloyd-gray-louisiana-split-juries-history",
+      "https://www.propublica.org/article/texas-flash-flood-camp-mystic-climate-change-trump-noaa-fema",
+      "https://www.propublica.org/article/wedges-climate-research-bp-fossil-fuel-princeton",
+      "https://www.propublica.org/article/anthropic-mythos-microsoft-software-vulnerabilities",
+      "https://www.propublica.org/article/food-stamps-crisis-snap-big-beautiful-bill-state-tax-cuts",
+      "https://www.propublica.org/article/fbi-fulton-county-voting-records-search-warrant",
+      "https://www.propublica.org/article/401k-retirement-investment-plan-risk-trump",
+      "https://www.propublica.org/article/lead-contamination-epa-superfund-omaha-nebraska-analysis",
+      "https://www.propublica.org/article/omaha-nebraska-lead-superfund-epa-retesting",
+      "https://www.propublica.org/article/federal-government-ai-cautionary-tales",
+      "https://www.propublica.org/article/pete-hoekstra-michigan-canada-tariffs",
+      "https://www.propublica.org/article/us-mexico-drug-trade-sheinbaum",
+      "https://www.propublica.org/article/save-voter-citizenship-tool-mistakes-confusion",
+      "https://www.propublica.org/article/federal-science-grants-russell-vought-omb",
+      "https://www.propublica.org/article/eunice-whitman-murder-alaska-justice-system",
+      "https://www.propublica.org/article/maine-eviction-safeguards-public-housing",
+      "https://www.propublica.org/article/dhs-trump-child-support-federal-parent-locator-service-immigration",
+      "https://www.propublica.org/article/oregon-affordable-housing-cost-secrecy",
+      "https://www.propublica.org/article/nike-labor-practices-cambodia-column",
+      "https://www.propublica.org/article/how-trump-reversed-biden-gun-crackdown-atf",
+      "https://www.propublica.org/article/ethics-reform-legislation-blocked-statehouses",
+      "https://www.propublica.org/article/texas-abortion-ban-miscarriage-blood-transfusions",
+      "https://www.propublica.org/article/fact-checking-elon-musk-response-boring-houston-tunnels",
+      "https://www.propublica.org/article/trump-dea-nominee-terry-cole-mexico-drug-cartels",
+      "https://www.propublica.org/article/saudi-arabia-september-11-lawsuit-trial-qaida",
+      "https://www.propublica.org/article/trump-self-deportation-cbp-home-app",
+      "https://www.propublica.org/article/tacrolimus-fda-death-mothers-story",
+      "https://www.propublica.org/article/status-venezuelan-trump-immigration-documentary",
+      "https://www.propublica.org/article/trump-immigration-child-parent-separation-estimates-brookings",
+      "https://www.propublica.org/article/minnesota-old-apostolic-lutheran-church-sexual-abuse-police-recording",
+      "https://www.propublica.org/article/air-pollution-regulations-epa-trump",
+      "https://www.propublica.org/article/immigration-wisconsin-trump-mass-deportations-nicaragua",
+      "https://www.propublica.org/article/texas-miscarriage-blood-transfusions-methodology",
+      "https://www.propublica.org/article/sebold-rape-syracuse-investigation-findings-documentary"
+    ]
+  }
+}

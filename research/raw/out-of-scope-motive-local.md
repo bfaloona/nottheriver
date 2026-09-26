@@ -1,0 +1,3 @@
+- https://www.ethicalconsumer.org/ethical-campaigns/boycott-amazon/shopping-without-amazon — UK
+- https://bcorporation.eu/find-a-b-corp/ — EU (B Lab Europe directory; US equivalent used instead)
+- https://www.marieclaire.co.uk/life/sustainability/b-corp-brands-738665 — UK

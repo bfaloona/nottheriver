@@ -13,6 +13,8 @@
     {"domain": "goodjobsfirst.org", "organization": "Good Jobs First (Violation Tracker)", "rationale": "Nonprofit database aggregating regulatory and court penalties by company", "verified_via": "https://goodjobsfirst.org/violation-tracker/", "checked": "2026-09-23"},
     {"domain": "propublica.org", "organization": "ProPublica", "rationale": "Independent nonprofit investigative newsroom", "verified_via": "https://www.propublica.org/about/", "checked": "2026-09-23"},
     {"domain": "npr.org", "organization": "NPR", "rationale": "Independent nonprofit news organization", "verified_via": "https://www.npr.org/about/", "checked": "2026-09-23"},
-    {"domain": "apnews.com", "organization": "The Associated Press", "rationale": "Wire service; apnews.com is AP's news site and carries the \"AP News\" branding", "verified_via": "https://www.ap.org/about/", "checked": "2026-09-23"}
+    {"domain": "apnews.com", "organization": "The Associated Press", "rationale": "Wire service; apnews.com is AP's news site and carries the \"AP News\" branding", "verified_via": "https://www.ap.org/about/", "checked": "2026-09-23"},
+    {"domain": "fda.gov", "organization": "U.S. Food and Drug Administration", "rationale": "US food, drug and cosmetics regulator; publishes warning letters and enforcement actions", "verified_via": "https://www.fda.gov/about-fda", "checked": "2026-09-25"},
+    {"domain": "ca.gov", "organization": "State of California (state agencies, including the Office of the Attorney General)", "rationale": "Registrable domain shared by California state agencies; oag.ca.gov is the Attorney General's site, which publishes its enforcement actions and the Proposition 65 notice and settlement records it receives; ww2.arb.ca.gov is the Air Resources Board", "verified_via": "https://oag.ca.gov/about", "checked": "2026-09-25"}
   ]
 }

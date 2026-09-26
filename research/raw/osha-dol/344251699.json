@@ -1,0 +1,81 @@
+{
+  "activity_nr": "344251699",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":344251699}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 344251699,
+        "reporting_id": "0317700",
+        "state_flag": null,
+        "estab_name": "CHEWY, INC.",
+        "site_address": "600 NEW COMMERCE BOULEVARD",
+        "site_city": "WILKES BARRE",
+        "site_state": "PA",
+        "site_zip": "18706",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "H",
+        "sic_code": null,
+        "naics_code": "493190",
+        "insp_type": "B",
+        "insp_scope": "B",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "600 NEW COMMERCE BOULEVARD",
+        "mail_city": "WILKES BARRE",
+        "mail_state": "PA",
+        "mail_zip": "18706",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "1300",
+        "open_date": "2019-08-21T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2019-08-21T00:00:00",
+        "close_case_date": "2020-01-07T00:00:00",
+        "load_dt": "2026-09-25T00:20:08"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 344251699,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "19100212 A05",
+        "viol_type": "O",
+        "issuance_date": "2019-09-27T00:00:00",
+        "abate_date": "2019-11-01T00:00:00",
+        "abate_complete": "2",
+        "current_penalty": 4347,
+        "initial_penalty": 4347,
+        "contest_date": null,
+        "final_order_date": "2019-10-29T00:00:00",
+        "nr_instances": 1,
+        "nr_exposed": 1000,
+        "rec": null,
+        "gravity": null,
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": null,
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:16"
+      }
+    ]
+  }
+}

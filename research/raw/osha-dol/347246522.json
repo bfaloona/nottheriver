@@ -1,0 +1,81 @@
+{
+  "activity_nr": "347246522",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":347246522}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 347246522,
+        "reporting_id": "0953210",
+        "state_flag": null,
+        "estab_name": "THRIVE MARKET, INC.",
+        "site_address": "700 MILAN DR.",
+        "site_city": "SPARKS",
+        "site_state": "NV",
+        "site_zip": "89434",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "H",
+        "sic_code": null,
+        "naics_code": "493110",
+        "insp_type": "H",
+        "insp_scope": "A",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "700 MILAN DR.",
+        "mail_city": "SPARKS",
+        "mail_state": "NV",
+        "mail_zip": "89434",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "140",
+        "open_date": "2024-01-31T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2024-02-06T00:00:00",
+        "close_case_date": "2024-06-05T00:00:00",
+        "load_dt": "2026-09-25T00:20:16"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 347246522,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "LCB FILE NO. R069-20 (APPROVED AP",
+        "viol_type": "S",
+        "issuance_date": "2024-03-25T00:00:00",
+        "abate_date": null,
+        "abate_complete": "3",
+        "current_penalty": 3111,
+        "initial_penalty": 6222,
+        "contest_date": null,
+        "final_order_date": "2024-06-05T00:00:00",
+        "nr_instances": 1,
+        "nr_exposed": 1,
+        "rec": null,
+        "gravity": "5",
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": "2310",
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:24"
+      }
+    ]
+  }
+}

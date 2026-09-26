@@ -1,0 +1,206 @@
+{
+  "domain": "walmart.com",
+  "names": [
+    "Walmart"
+  ],
+  "fetched": "2026-09-25T14:28:01.667Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Walmart%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 20,
+    "results": [
+      {
+        "caseName": "Federal Trade Commission v. WALMART INC.",
+        "court": "cand",
+        "dateFiled": "2026-02-26",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/72332394/federal-trade-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "EEOC v. Walmart Inc",
+        "court": "wied",
+        "dateFiled": "2025-09-25",
+        "suitNature": "445 Civil Rights: Americans with Disabilities - Employment",
+        "docket": "https://www.courtlistener.com/docket/71459299/eeoc-v-walmart-inc/"
+      },
+      {
+        "caseName": "United States Equal Employment Opportunity Commission v. Walmart Inc.",
+        "court": "cand",
+        "dateFiled": "2025-06-30",
+        "suitNature": "445 American with Disabilities - Employment",
+        "docket": "https://www.courtlistener.com/docket/70676352/united-states-equal-employment-opportunity-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "Equal Employment Opportunity Commission (EEOC) v. WalMart, Inc.",
+        "court": "arwd",
+        "dateFiled": "2023-09-11",
+        "suitNature": "442 Civil Rights: Jobs",
+        "docket": "https://www.courtlistener.com/docket/67781375/equal-employment-opportunity-commission-eeoc-v-walmart-inc/"
+      },
+      {
+        "caseName": "Equal Employment Opportunity Commission v. Walmart Inc.",
+        "court": "ksd",
+        "dateFiled": "2023-09-08",
+        "suitNature": "445 Civil Rights: Americans with Disabilities - Employment",
+        "docket": "https://www.courtlistener.com/docket/67775947/equal-employment-opportunity-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "Equal Employment Opportunity Commission v. Walmart Incorporated",
+        "court": "azd",
+        "dateFiled": "2023-06-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67537627/equal-employment-opportunity-commission-v-walmart-incorporated/"
+      },
+      {
+        "caseName": "Federal Trade Commission v. Walmart Inc.",
+        "court": "ilnd",
+        "dateFiled": "2022-06-28",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/63554833/federal-trade-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "United States v. WALMART INC.",
+        "court": "dcd",
+        "dateFiled": "2022-04-08",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/63222545/united-states-v-walmart-inc/"
+      },
+      {
+        "caseName": "United States Equal Employment Opportunity Commission v. Walmart, Inc.",
+        "court": "iasd",
+        "dateFiled": "2022-02-09",
+        "suitNature": "442 Civil Rights: Jobs",
+        "docket": "https://www.courtlistener.com/docket/62985776/united-states-equal-employment-opportunity-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "EQUAL EMPLOYMENT OPPORTUNITY COMMISSION v. WALMART INC",
+        "court": "flnd",
+        "dateFiled": "2021-09-21",
+        "suitNature": "442 Civil Rights: Jobs",
+        "docket": "https://www.courtlistener.com/docket/60412726/equal-employment-opportunity-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "Walmart Inc. v. United States",
+        "court": "cit",
+        "dateFiled": "2021-03-08",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/67590210/walmart-inc-v-united-states/"
+      },
+      {
+        "caseName": "United States v. Walmart Inc.",
+        "court": "ded",
+        "dateFiled": "2020-12-22",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/19797673/united-states-v-walmart-inc/"
+      },
+      {
+        "caseName": "U.S. Equal Employment Opportunity Commission v. Walmart Inc.",
+        "court": "kyed",
+        "dateFiled": "2020-08-03",
+        "suitNature": "442 Civil Rights: Jobs",
+        "docket": "https://www.courtlistener.com/docket/17412347/us-equal-employment-opportunity-commission-v-walmart-inc/"
+      },
+      {
+        "caseName": "EEOC v. Walmart Stores East, L.P.",
+        "court": "ca7",
+        "dateFiled": "2020-03-16",
+        "suitNature": "1442 Jobs",
+        "docket": "https://www.courtlistener.com/docket/59780313/eeoc-v-walmart-stores-east-lp/"
+      },
+      {
+        "caseName": "Equal Employment Opportunity Commission v. Walmart Stores East, L.P.",
+        "court": "wiwd",
+        "dateFiled": "2018-09-27",
+        "suitNature": "Civil Rights: Jobs",
+        "docket": "https://www.courtlistener.com/docket/7944739/equal-employment-opportunity-commission-v-walmart-stores-east-lp/"
+      },
+      {
+        "caseName": "United States v. A brown Walmart shipping box, with word Walmart marked out by black marker. The tracking number is EZ16254964",
+        "court": "cacd",
+        "dateFiled": "2018-02-23",
+        "suitNature": "350 Motor vehicle personal injury",
+        "docket": "https://www.courtlistener.com/docket/18214333/united-states-v-a-brown-walmart-shipping-box-with-word-walmart-marked-out/"
+      },
+      {
+        "caseName": "United States v. A brown Walmart shipping box, with word Walmart marked out by black marker. The tracking number is EZ16254964",
+        "court": "cacd",
+        "dateFiled": "2018-02-23",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/14949845/united-states-v-a-brown-walmart-shipping-box-with-word-walmart-marked-out/"
+      },
+      {
+        "caseName": "United States v. Retail sales information maintained at the walmart corporation, 702 S.W. Eighth St., Bentonville, AR",
+        "court": "utd",
+        "dateFiled": "2017-09-29",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/32129212/united-states-v-retail-sales-information-maintained-at-the-walmart/"
+      },
+      {
+        "caseName": "United States v. Retail sales information maintained at the walmart corporation, 702 S.W. Eighth St., Bentonville, AR",
+        "court": "utd",
+        "dateFiled": "2017-09-29",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/6221526/united-states-v-retail-sales-information-maintained-at-the-walmart/"
+      },
+      {
+        "caseName": "Secretary of Labor v. Walmart Stores East",
+        "court": "ca8",
+        "dateFiled": "2017-07-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/2472/secretary-of-labor-v-walmart-stores-east/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Walmart%22",
+    "articles": [
+      "https://www.propublica.org/article/walmart-financial-services-became-fraud-magnet-gift-cards-money-laundering",
+      "https://www.propublica.org/article/after-walmart-bought-finance-app-one-complaints-soared",
+      "https://www.propublica.org/article/trump-immigration-deportation-family-court-sotero-mendoza-rivera",
+      "https://www.propublica.org/article/louisiana-angola-death-row-wrongful-conviction-jimmie-duncan",
+      "https://www.propublica.org/article/social-security-disability-eligibility-trump-red-states",
+      "https://www.propublica.org/article/phoenix-post-office-homelessness-funding-cuts",
+      "https://www.propublica.org/article/food-desert-grocery-store-cairo-illinois",
+      "https://www.propublica.org/article/chinese-organized-crime-gift-cards-american-retail",
+      "https://www.propublica.org/article/h-2a-farmworker-visa-safety-suggestions-experts",
+      "https://www.propublica.org/article/propublica-most-read-stories-2024",
+      "https://www.propublica.org/article/maryland-gift-card-scams-prevention-act-walmart-incomm-retail",
+      "https://www.propublica.org/article/arizona-private-school-vouchers-no-transparency",
+      "https://www.propublica.org/article/venezuelan-deportees-trump-immigration-asylum-el-salvador",
+      "https://www.propublica.org/article/search-527s-finances-pacs-database-political-spending",
+      "https://www.propublica.org/article/warren-buffett-privately-traded-stocks-berkshire-hathaway-ethics-irs",
+      "https://www.propublica.org/article/trump-doj-domestic-terrorism-extremism-states-michigan",
+      "https://www.propublica.org/article/federally-qualified-health-centers-unpaid-bills-lawsuits",
+      "https://www.propublica.org/article/venezolanos-deportados-trump-inmigracion-asilo-el-salvador",
+      "https://www.propublica.org/article/trump-border-security-spending-texas-arizona",
+      "https://www.propublica.org/article/immigration-wisconsin-trump-mass-deportations-nicaragua",
+      "https://www.propublica.org/article/grazing-ranchers-public-lands-trump",
+      "https://www.propublica.org/article/immigration-wisconsin-trump-mass-deportations-nicaragua-espanol",
+      "https://www.propublica.org/article/business-lobby-immigration-reform-trump",
+      "https://www.propublica.org/article/john-tanton-far-right-extremism-environmentalism-climate-change",
+      "https://www.propublica.org/article/idaho-coroners-clayton-strong-wives-murder",
+      "https://www.propublica.org/article/flint-michigan-water-crisis-ten-years-after",
+      "https://www.propublica.org/article/oklahoma-oil-cleanup",
+      "https://www.propublica.org/article/immigration-whitewater-wisconsin-nicaragua-trump-police",
+      "https://www.propublica.org/article/tim-dunn-farris-wilks-texas-christian-nationalism-dominionism-elections-voting",
+      "https://www.propublica.org/article/clarence-thomas-scotus-undisclosed-luxury-travel-gifts-crow",
+      "https://www.propublica.org/article/north-carolina-gender-affirming-care-coverage-federal-appeal",
+      "https://www.propublica.org/article/mass-shootings-texas-gun-control",
+      "https://www.propublica.org/article/inmigracion-whitewater-wisconsin-nicaragua-trump-policia",
+      "https://www.propublica.org/article/nashville-conviction-review-russell-maze-shaken-baby-syndrome",
+      "https://www.propublica.org/article/raga-gop-jan6-amazon-walmart-comcast-contributions",
+      "https://www.propublica.org/article/americas-top-15-earners-and-what-they-reveal-about-the-us-tax-system",
+      "https://www.propublica.org/article/the-justice-department-sues-walmart-accusing-it-of-illegally-dispensing-opioids",
+      "https://www.propublica.org/article/texas-agencies-fight-releasing-records-that-could-help-clarify-response-to-uvalde-school-shooting",
+      "https://www.propublica.org/article/irs-files-taxes-wash-sales-goldman-sachs",
+      "https://www.propublica.org/article/work-opportunity-tax-credit-temp-permanent-employment",
+      "https://www.propublica.org/article/inflation-tires-rubber-imports-high-prices",
+      "https://www.propublica.org/article/what-we-lose-when-we-conflate-child-abuse-and-neglect",
+      "https://www.propublica.org/article/911-call-analysis-jessica-logan-evidence",
+      "https://www.propublica.org/article/your-free-range-organic-chicken-may-have-been-processed-at-a-large-industrial-poultry-plant",
+      "https://www.propublica.org/article/missouri-afghan-refugees-rezwan-kohistani-oronogo",
+      "https://www.propublica.org/article/colorado-halfway-houses-prison-community-corrections",
+      "https://www.propublica.org/article/how-your-shadow-credit-score-could-decide-whether-you-get-an-apartment",
+      "https://www.propublica.org/article/heres-why-rapid-covid-tests-are-so-expensive-and-hard-to-find"
+    ]
+  }
+}

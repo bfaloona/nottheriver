@@ -1,0 +1,81 @@
+{
+  "activity_nr": "345529341",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":345529341}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 345529341,
+        "reporting_id": "0213900",
+        "state_flag": null,
+        "estab_name": "B & H FOTO & ELECTRONICS, CORP.",
+        "site_address": "400 CEDAR LANE",
+        "site_city": "FLORENCE",
+        "site_state": "NJ",
+        "site_zip": "08518",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "S",
+        "sic_code": null,
+        "naics_code": "443142",
+        "insp_type": "C",
+        "insp_scope": "B",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "400 CEDAR LANE",
+        "mail_city": "FLORENCE",
+        "mail_state": "NJ",
+        "mail_zip": "08518",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "400",
+        "open_date": "2021-09-14T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2021-09-15T00:00:00",
+        "close_case_date": "2025-02-04T00:00:00",
+        "load_dt": "2026-09-25T00:20:11"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 345529341,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "19100212 A01",
+        "viol_type": "S",
+        "issuance_date": "2022-02-17T00:00:00",
+        "abate_date": "2022-03-16T00:00:00",
+        "abate_complete": "2",
+        "current_penalty": 14502,
+        "initial_penalty": 14502,
+        "contest_date": "2022-03-23T00:00:00",
+        "final_order_date": "2022-07-27T00:00:00",
+        "nr_instances": 2,
+        "nr_exposed": 10,
+        "rec": "R",
+        "gravity": "10",
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": null,
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:19"
+      }
+    ]
+  }
+}

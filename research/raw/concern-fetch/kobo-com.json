@@ -1,0 +1,33 @@
+{
+  "domain": "kobo.com",
+  "names": [
+    "Kobo"
+  ],
+  "fetched": "2026-09-25T14:19:34.614Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Kobo%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 2,
+    "results": [
+      {
+        "caseName": "United States v. Kobo",
+        "court": "casd",
+        "dateFiled": "2022-11-01",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/70666408/united-states-v-kobo/"
+      },
+      {
+        "caseName": "United States v. Kobo",
+        "court": "casd",
+        "dateFiled": "2022-11-01",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/65654124/united-states-v-kobo/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Kobo%22",
+    "articles": [
+      "https://www.propublica.org/article/the-hate-store-amazons-self-publishing-arm-is-a-haven-for-white-supremacists"
+    ]
+  }
+}

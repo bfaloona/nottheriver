@@ -1,0 +1,81 @@
+{
+  "activity_nr": "346474786",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":346474786}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 346474786,
+        "reporting_id": "1054195",
+        "state_flag": null,
+        "estab_name": "317731933 - AZURE FARMS INC",
+        "site_address": "500 AZURE LN",
+        "site_city": "MORO",
+        "site_state": "OR",
+        "site_zip": "97039",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "H",
+        "sic_code": "4226",
+        "naics_code": "493190",
+        "insp_type": "B",
+        "insp_scope": "B",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "79709 DUFUR VALLEY RD",
+        "mail_city": "DUFUR",
+        "mail_state": "OR",
+        "mail_zip": "97021",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "162",
+        "open_date": "2022-12-30T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2023-02-01T00:00:00",
+        "close_case_date": "2023-07-07T00:00:00",
+        "load_dt": "2026-09-25T00:20:14"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 346474786,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "OAR 437-001-0704(4)",
+        "viol_type": "O",
+        "issuance_date": "2023-03-08T00:00:00",
+        "abate_date": "2022-12-30T00:00:00",
+        "abate_complete": "3",
+        "current_penalty": 1000,
+        "initial_penalty": 1000,
+        "contest_date": null,
+        "final_order_date": "2023-04-09T00:00:00",
+        "nr_instances": 1,
+        "nr_exposed": 162,
+        "rec": null,
+        "gravity": null,
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": null,
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:22"
+      }
+    ]
+  }
+}

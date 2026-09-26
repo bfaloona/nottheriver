@@ -1,0 +1,62 @@
+{
+  "domain": "costco.com",
+  "names": [
+    "Costco"
+  ],
+  "fetched": "2026-09-25T14:15:14.124Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Costco%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 2,
+    "results": [
+      {
+        "caseName": "Costco Wholesale Corporation v. United States",
+        "court": "cit",
+        "dateFiled": "2025-11-28",
+        "suitNature": "",
+        "docket": "https://www.courtlistener.com/docket/71973233/costco-wholesale-corporation-v-united-states/"
+      },
+      {
+        "caseName": "Costco Wholesale Corporation v. The Insurance Company of the State of Pennsylvania",
+        "court": "wawd",
+        "dateFiled": "2016-06-24",
+        "suitNature": "110 Insurance",
+        "docket": "https://www.courtlistener.com/docket/6113172/costco-wholesale-corporation-v-the-insurance-company-of-the-state-of/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Costco%22",
+    "articles": [
+      "https://www.propublica.org/article/leo-terrell-universities-lawsuits-antisemitism",
+      "https://www.propublica.org/article/washington-data-centers-tech-jobs-tax-break",
+      "https://www.propublica.org/article/microsoft-white-house-offer-cybersecurity-biden-nadella",
+      "https://www.propublica.org/article/project-2025-trump-campaign-heritage-foundation-paul-dans",
+      "https://www.propublica.org/article/your-free-range-organic-chicken-may-have-been-processed-at-a-large-industrial-poultry-plant",
+      "https://www.propublica.org/article/colorado-marshall-fire-wildfire-climate-change",
+      "https://www.propublica.org/article/he-admitted-to-a-rape-41-years-after-the-fact-for-one-survivor-its-the-most-freeing-experience-in-the-world",
+      "https://www.propublica.org/article/salmonella-chicken-usda-food-safety",
+      "https://www.propublica.org/article/the-amazon-lockdown-how-an-unforgiving-algorithm-drives-suppliers-to-favor-the-e-commerce-giant-over-other-retailers",
+      "https://www.propublica.org/article/a-closer-look-at-federal-covid-contractors-reveals-inexperience-fraud-accusations-and-a-weapons-dealer-operating-out-of-someones-house",
+      "https://www.propublica.org/article/meatpacking-companies-dismissed-years-of-warnings-but-now-say-nobody-could-have-prepared-for-covid-19",
+      "https://www.propublica.org/article/what-happened-when-health-officials-wanted-to-close-a-meatpacking-plant-but-the-governor-said-no",
+      "https://www.propublica.org/article/our-goal-should-be-to-crush-the-curve",
+      "https://www.propublica.org/article/las-empresas-empacadoras-de-carne-ignoraron-las-advertencias-durante-anos-pero-ahora-dicen-que-nadie-habria-podido-prepararse-para-covid-19",
+      "https://www.propublica.org/article/how-to-save-money-on-your-prescription-drugs",
+      "https://www.propublica.org/article/lost-mothers-maternal-health-died-childbirth-pregnancy",
+      "https://www.propublica.org/article/developers-of-manhattan-luxury-towers-give-millions-to-upstate-candidates",
+      "https://www.propublica.org/article/the-costco-warehouse-of-narcotics-predictive-policing-and-more-muckreads-we",
+      "https://www.propublica.org/article/the-best-muckreads-of-2015",
+      "https://www.propublica.org/article/brand-name-drugs-increase-cost-but-not-patient-satisfaction",
+      "https://www.propublica.org/article/inside-corporate-americas-plan-to-ditch-workers-comp",
+      "https://www.propublica.org/article/false-rape-accusations-an-unbelievable-story",
+      "https://www.propublica.org/article/a-double-espresso-of-questions-for-green-mountain",
+      "https://www.propublica.org/article/the-impact-and-echoes-of-the-wal-mart-discrimination-case",
+      "https://www.propublica.org/article/top-medicare-prescribers-rake-in-speaking-fees-from-drugmakers",
+      "https://www.propublica.org/article/tylenol-mcneil-fda-use-only-as-directed",
+      "https://www.propublica.org/article/taken-for-a-ride-temp-agencies-and-raiteros-in-immigrant-chicago",
+      "https://www.propublica.org/article/llevados-al-engano-agencias-de-trabajo-temporal-y-raiteros-en-chicago",
+      "https://www.propublica.org/article/super-pac-man-gobbles-up-regulators-time-patience",
+      "https://www.propublica.org/article/school-kids-and-the-rest-of-us-fed-meat-that-fast-food-joints-wouldnt-touch"
+    ]
+  }
+}

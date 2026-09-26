@@ -1,0 +1,58 @@
+---
+name: Better World Books
+domain: betterworldbooks.com
+type: secondhand
+goods: [books]
+ownership: nonprofit
+parent: Better World Libraries
+hq: Mishawaka, IN
+marketplace: unknown
+sells_on_amazon: unknown
+amazon_owned: false
+certifications: []
+concerns: []
+ethics: 0.5
+environment: 0.5
+tier: acceptable
+mentions: 3
+mentioned_by: [amazonalts-org, antifamarketer-org, sustainablejungle-com]
+checked: 2026-09-25
+---
+
+Better World Books is an online seller of used and new books, stocked from college book drives, library donations and community collection boxes. Wikipedia says it was founded in 2002 by University of Notre Dame students, is based in Mishawaka, Indiana, and was acquired on 2019-11-06 by Better World Libraries, "a mission-aligned, not-for-profit organization affiliated with the Internet Archive". Ownership is recorded as `nonprofit` because its owner is a not-for-profit; the operating company itself is described in the Wikipedia infobox as a private company. It is not on the Amazon blocklist.
+
+Wikipedia also describes it as a certified B Corporation that donates books or a share of profit to literacy programs; that is not the certifier's own page, and bcorporation.net returned HTTP 403 this run with no data/certifications.json row for this domain, so the B Corp status is noted here but not scored. Whether it hosts third-party sellers or sells through Amazon was not shown by any page fetched this run (its own about page returned HTTP 403).
+
+List sites recommend it for used books with a literacy mission: AmazonAlts lists it under books as "a better place to get books", Antifa Marketer as "Books that support literacy programs", and Sustainable Jungle for "affordable used books" and having "raised almost $10 million for local bookstores".
+
+Concerns checked: NLRB case search for "better world books" returned no cases; OSHA's establishment search for "better world books" (2016 to 2026) returned no inspections; a CourtListener opinion search surfaced only Hachette Book Group v. Internet Archive, in which Better World Books is not a party. No general news search was possible (the run's web search budget was used up), so this check is narrower than intended.
+
+Second pass (2026-09-25): FTC cases search for "Better World" (covers the retailer and its parent, Better World Libraries) sorted by relevance returned 86 keyword matches; the top 20 (BetterHelp, World Federation of Advertising and similar) include no Better World respondent. The CourtListener agency-docket query for "Better World Books" since 2016 returned no dockets; ProPublica's 42 hits for the phrase include none about the company. No matching cases.
+
+News pass (2026-09-25): three web searches, `"Better World Books" lawsuit OR settlement OR fine OR violation`, `"Better World Books" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the parent, `"Better World Libraries" lawsuit OR settlement OR fine OR violation OR "attorney general"`. Hits were BBB customer complaints, the Wikipedia page, a law-firm marketing page (overtimepaylaws.org) that speaks of overtime suits against companies "like" Better World Books without naming a case, and unrelated library litigation; none reports an agency or court action against the company or its parent. No concerns added.
+
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Better World Books"`, `"Better World Libraries"`: the retailer and its parent; no notices, so no settlement or judgment and no concern added.
+
+## Rating
+- Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.
+- Environment: 0.5 baseline. The Climate Label directory (explore.changeclimate.org) returned "Brand Not Found" for `better-world-books`; the 1% for the Planet directory profile page rendered no listing content, so membership is unverified. No environmental concern. Environment 0.5.
+- Tier: 0.5 + 0.5 = 1.0 meets `acceptable` (≥ 1.0), not `recommended` (≥ 1.25). Tier `acceptable`.
+- Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
+
+## Sources
+- https://en.wikipedia.org/wiki/Better_World_Books
+- https://www.betterworldbooks.com/about-us (HTTP 403, logged in raw/blocked-retailers-R5.md)
+- https://www.bcorporation.net/en-us/find-a-b-corp/?query=better%20world%20books (HTTP 403, logged)
+- https://explore.changeclimate.org/brand/better-world-books
+- https://explore.changeclimate.org/brand/rei (control query for the Climate Label check)
+- https://directories.onepercentfortheplanet.org/profile/better-world-books
+- https://www.nlrb.gov/search/case/better%20world%20books
+- https://www.osha.gov/ords/imis/establishment.html?p_message=2&establishment=better%20world%20books&state=all&office=all&officetype=all&sitezip=&startmonth=09&startday=25&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=both
+- https://www.courtlistener.com/api/rest/v4/search/?q=%22Better%20World%20Books%22
+- data/blocklist.md (not on the blocklist: `build-index.mjs --blocklist`)
+- research/sites/amazonalts-org.md, research/sites/antifamarketer-org.md, research/sites/sustainablejungle-com.md (reasons)
+- https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Better%20World&sort_by=search_api_relevance
+- https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Better%20World%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
+- https://www.propublica.org/search?qss=%22Better%20World%20Books%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Better+World+Books%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Better+World+Libraries%22&items_per_page=100 (no matching settlement)

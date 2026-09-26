@@ -1,0 +1,75 @@
+{
+  "domain": "wearpact.com",
+  "names": [
+    "Pact",
+    "Pact Apparel",
+    "Pact, LLC"
+  ],
+  "fetched": "2026-09-25T14:28:09.081Z",
+  "courtlistener": {
+    "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Pact%22%20OR%20%22Pact%20Apparel%22%20OR%20%22Pact%2C%20LLC%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22)",
+    "count": 1,
+    "results": [
+      {
+        "caseName": "Federal Trade Commission v. Pact, Inc.",
+        "court": "wawd",
+        "dateFiled": "2017-09-21",
+        "suitNature": "890 Other Statutory Actions",
+        "docket": "https://www.courtlistener.com/docket/6207925/federal-trade-commission-v-pact-inc/"
+      }
+    ]
+  },
+  "propublica": {
+    "url": "https://www.propublica.org/search?qss=%22Pact%22",
+    "articles": [
+      "https://www.propublica.org/article/trump-veterans-affairs-male-breast-cancer-lawmakers",
+      "https://www.propublica.org/article/veterans-affairs-male-breast-cancer-coverage-trump-executive-order",
+      "https://www.propublica.org/article/trump-veterans-affairs-budget-staff-cuts-jeopardize-cancer-research",
+      "https://www.propublica.org/article/ambassador-ronald-johnson-nayib-bukele-trump-el-salvador",
+      "https://www.propublica.org/article/bukele-trump-el-salvador-ms13-gang-vulcan-corruption-investigation",
+      "https://www.propublica.org/article/veterans-affairs-trump-disparities-benefits-office-equity-assurance",
+      "https://www.propublica.org/article/trump-canada-tariffs-michigan-sault-ste-marie",
+      "https://www.propublica.org/article/peptide-safety-fda-compounding-pharmacies",
+      "https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations",
+      "https://www.propublica.org/article/inside-ai-tool-doge-veterans-affairs-contracts-sahil-lavingia",
+      "https://www.propublica.org/article/saudi-officials-may-have-assisted-911-hijackers-new-evidence-suggests",
+      "https://www.propublica.org/article/pga-liv-golf-saudi-911-families",
+      "https://www.propublica.org/article/william-barr-mexico-cartels-cienfuegos-case",
+      "https://www.propublica.org/article/family-reunification-camps-kids-allege-more-abuse",
+      "https://www.propublica.org/article/underride-crashes-nhtsa-dot-iihs-safety-cars-trucks",
+      "https://www.propublica.org/article/shooting-news-msm-reporter-essay",
+      "https://www.propublica.org/article/bayraktar-tb2-drone-turkey-exports",
+      "https://www.propublica.org/article/years-before-a-police-union-leader-was-raided-by-the-fbi-local-investigators-didnt-pursue-claims-against-him",
+      "https://www.propublica.org/article/salmon-hatcheries-government-climate-change",
+      "https://www.propublica.org/article/mexico-drug-cartels-cienfuegos-case-dea",
+      "https://www.propublica.org/article/what-germanys-effort-to-leave-coal-behind-can-teach-the-us",
+      "https://www.propublica.org/article/robert-lighthizer-blew-up-60-years-of-trade-policy-nobody-knows-what-happens-next",
+      "https://www.propublica.org/article/we-reported-on-corporate-tax-breaks-in-the-rust-belt-now-officials-want-tougher-enforcement",
+      "https://www.propublica.org/article/gm-closed-the-lordstown-auto-plant-now-ohio-may-force-a-60-million-repayment",
+      "https://www.propublica.org/article/the-disinfomercial-how-larry-king-got-duped-into-starring-in-chinese-propaganda",
+      "https://www.propublica.org/article/offsets-un-climate-action-summit-the-word-nobody-wanted-to-say",
+      "https://www.propublica.org/article/white-house-may-share-nuclear-power-technology-with-saudi-arabia",
+      "https://www.propublica.org/article/tom-price-bought-drug-stocks-then-he-pushed-pharma-agenda-in-australia",
+      "https://www.propublica.org/article/trump-and-the-climate-his-hot-air-on-warming-far-from-the-greatest-threat",
+      "https://www.propublica.org/article/sicarios-dirty-war-on-mexican-cartels-is-not-yet-reality",
+      "https://www.propublica.org/article/hollywood-lobbied-state-department-built-home-theaters-for-us-embassies",
+      "https://www.propublica.org/article/firestone-and-the-warlord-chapter-4",
+      "https://www.propublica.org/article/freed-of-disclosure-requirement-drug-maker-pulls-doctor-payments-offline",
+      "https://www.propublica.org/article/firestone-and-the-warlord-print",
+      "https://www.propublica.org/article/schumer-calls-on-drug-makers-to-add-safety-devices-to-childrens-medicines-w",
+      "https://www.propublica.org/article/why-a-safety-device-that-could-prevent-thousands-of-drug-accidents-by-kids",
+      "https://www.propublica.org/article/republicans-and-dems-come-together-to-keep-irs-from-competing-turbotax",
+      "https://www.propublica.org/article/how-moms-death-changed-my-thinking-about-end-of-life-care",
+      "https://www.propublica.org/article/afghan-soldier-likely-took-a-brain-test-riddled-with-problems",
+      "https://www.propublica.org/article/cpac-tips-how-to-win-friends-and-influence",
+      "https://www.propublica.org/article/testing-program-fails-soldiers-leaving-brain-injuries-undetected",
+      "https://www.propublica.org/article/more-on-net-neutrality-parsing-through-google-and-verizons-policy-announcem",
+      "https://www.propublica.org/article/troubled-nurses-skip-from-state-to-state-under-compact",
+      "https://www.propublica.org/article/adding-it-up-the-top-players-in-foreign-agent-lobbying-718",
+      "https://www.propublica.org/article/bailout-player-blackrock-becomes-biggest-money-manager",
+      "https://www.propublica.org/article/bailout-for-breakfast5",
+      "https://www.propublica.org/article/aig-lobbied-for-india-nuke-deal-really-1024",
+      "https://www.propublica.org/article/siemens-bribery-1220"
+    ]
+  }
+}
