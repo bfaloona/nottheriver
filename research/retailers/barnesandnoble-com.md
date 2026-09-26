@@ -35,6 +35,7 @@ OSHA. The establishment search (2016 to 2026, violations only) returned five "Ba
 - Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 347004210 matches osha.gov 1700421.015 by establishment, issue date and penalty (research/raw/osha-dol/347004210.json)
 - https://en.wikipedia.org/wiki/Barnes_%26_Noble
 - https://www.nlrb.gov/case/02-CA-347822
 - https://www.nlrb.gov/case/32-CA-024363

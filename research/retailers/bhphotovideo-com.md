@@ -34,6 +34,8 @@ Concerns. OSHA cited B & H Foto & Electronics at its Florence, NJ warehouse twic
 - Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 343697504 matches osha.gov 1369750.015 by establishment, issue date and penalty (research/raw/osha-dol/343697504.json)
+- DOL open data (robots-allowed): OSHA inspection 345529341 matches osha.gov 1552934.015 by establishment, issue date and penalty (research/raw/osha-dol/345529341.json)
 - https://en.wikipedia.org/wiki/B%26H_Photo_Video
 - https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=B+%26+H+Foto&State=all&officetype=all&Office=all&sitezip=&p_case=all&p_violations_exist=yes&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1552934.015

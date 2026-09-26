@@ -36,6 +36,9 @@ OSHA (Oregon state plan) inspections of Azure Farms Inc: eight since 2017. Count
 - Concern search incomplete this run (see raw/blocked-retailers-R9.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 346650559 matches osha.gov 1665055.015 by establishment, issue date and penalty (research/raw/osha-dol/346650559.json)
+- DOL open data (robots-allowed): OSHA inspection 346474786 matches osha.gov 1647478.015 by establishment, issue date and penalty (research/raw/osha-dol/346474786.json)
+- DOL open data (robots-allowed): OSHA inspection 345743389 matches osha.gov 1574338.015 by establishment, issue date and penalty (research/raw/osha-dol/345743389.json)
 - https://www.azurestandard.com/about (site title, footer address, menu; body rendered client-side)
 - https://www.azurestandard.com/about-us
 - https://www.azurestandard.com/azure-life/blog/our-hearts-beat-for-healthy-food/29r2mKkb90WRryvL (no body text rendered)

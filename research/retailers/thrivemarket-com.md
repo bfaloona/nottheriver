@@ -35,6 +35,7 @@ Concerns: OSHA's establishment search lists four inspections from 2016 to 2026. 
 - Concern search incomplete this run (see raw/blocked-retailers-R1.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 347246241 matches osha.gov 1724624.015 by establishment, issue date and penalty (research/raw/osha-dol/347246241.json)
 - https://thrivemarket.com/about
 - https://en.wikipedia.org/wiki/Thrive_Market
 - https://explore.changeclimate.org/brand/thrive-market

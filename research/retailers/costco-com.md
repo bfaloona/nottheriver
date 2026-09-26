@@ -48,6 +48,9 @@ Checked and not recorded: NLRB cases 03-CA-356842 and 03-CA-355134 (Brighton, NY
 - Concern search incomplete this run (see raw/blocked-retailers-R10.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 343563342 matches osha.gov 1356334.015 by establishment, issue date and penalty (research/raw/osha-dol/343563342.json)
+- DOL open data (robots-allowed): OSHA inspection 346402225 matches osha.gov 1640222.015 by establishment, issue date and penalty (research/raw/osha-dol/346402225.json)
+- DOL open data (robots-allowed): OSHA inspection 347633307 matches osha.gov 1763330.015 by establishment, issue date and penalty (research/raw/osha-dol/347633307.json)
 - https://en.wikipedia.org/wiki/Costco
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/
 - https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1763330.015

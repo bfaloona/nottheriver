@@ -36,6 +36,10 @@ Concerns. OSHA's establishment search (2016 to 2026, violations only) returned s
 - Concern search incomplete this run (see raw/blocked-retailers-R5.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 342235454 matches osha.gov 1223545.015 by establishment, issue date and penalty (research/raw/osha-dol/342235454.json)
+- DOL open data (robots-allowed): OSHA inspection 344251699 matches osha.gov 1425169.015 by establishment, issue date and penalty (research/raw/osha-dol/344251699.json)
+- DOL open data (robots-allowed): OSHA inspection 345454011 matches osha.gov 1545401.015 by establishment, issue date and penalty (research/raw/osha-dol/345454011.json)
+- DOL open data (robots-allowed): OSHA inspection 346484173 matches osha.gov 1648417.015 by establishment, issue date and penalty (research/raw/osha-dol/346484173.json)
 - https://en.wikipedia.org/wiki/Chewy,_Inc.
 - https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001766502&type=10-K&dateb=&owner=include&count=10
 - https://www.sec.gov/Archives/edgar/data/1766502/000176650226000034/0001766502-26-000034-index.htm

@@ -1,0 +1,81 @@
+{
+  "activity_nr": "347633307",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":347633307}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 347633307,
+        "reporting_id": "0729700",
+        "state_flag": null,
+        "estab_name": "COSTCO WHOLESALE",
+        "site_address": "12221 BLUE VALLEY PARKWAY",
+        "site_city": "OVERLAND PARK",
+        "site_state": "KS",
+        "site_zip": "66213",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "S",
+        "sic_code": null,
+        "naics_code": "452311",
+        "insp_type": "C",
+        "insp_scope": "B",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "12221 BLUE VALLEY PARKWAY",
+        "mail_city": "OVERLAND PARK",
+        "mail_state": "KS",
+        "mail_zip": "66213",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "313",
+        "open_date": "2024-07-22T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2024-11-14T00:00:00",
+        "close_case_date": "2025-08-28T00:00:00",
+        "load_dt": "2026-09-25T00:20:17"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 347633307,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "19100147 B",
+        "viol_type": "O",
+        "issuance_date": "2024-12-06T00:00:00",
+        "abate_date": null,
+        "abate_complete": "3",
+        "current_penalty": 9403,
+        "initial_penalty": 11754,
+        "contest_date": "2024-12-31T00:00:00",
+        "final_order_date": "2025-09-25T00:00:00",
+        "nr_instances": 1,
+        "nr_exposed": 2,
+        "rec": "A",
+        "gravity": "5",
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": null,
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:25"
+      }
+    ]
+  }
+}

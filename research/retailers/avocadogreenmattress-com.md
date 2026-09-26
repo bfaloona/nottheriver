@@ -45,6 +45,8 @@ Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 346589468 matches osha.gov 1658946.015 by establishment, issue date and penalty (research/raw/osha-dol/346589468.json)
+- DOL open data (robots-allowed): OSHA inspection 345826705 matches osha.gov 1582670.015 by establishment, issue date and penalty (research/raw/osha-dol/345826705.json)
 - https://www.avocadogreenmattress.com/pages/our-story
 - https://help.avocadogreenmattress.com/en/articles/4650111-who-owns-avocado
 - https://www.avocadogreenmattress.com/pages/about (404)

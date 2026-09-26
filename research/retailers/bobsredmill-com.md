@@ -50,6 +50,7 @@ Operator-rule pass (2026-09-25): the California AG's 60-day notice search (Alleg
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 346373236 matches osha.gov 1637323.015 by establishment, issue date and penalty (research/raw/osha-dol/346373236.json)
 - https://en.wikipedia.org/wiki/Bob%27s_Red_Mill
 - https://www.bobsredmill.com/about-us
 - https://www.fairtradecertified.org/our-community/shop-fair-trade/

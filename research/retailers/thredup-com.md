@@ -34,6 +34,7 @@ Concerns. OSHA's establishment search returned two complaint inspections, each w
 - Concern search incomplete this run (see raw/blocked-retailers-R8.md); tier is provisional.
 
 ## Sources
+- DOL open data (robots-allowed): OSHA inspection 348155102 matches osha.gov 1815510.015 by establishment, issue date and penalty (research/raw/osha-dol/348155102.json)
 - https://en.wikipedia.org/wiki/ThredUp
 - https://www.sec.gov/Archives/edgar/data/1484778/000148477826000007/tdup-20251231.htm (FY2025 10-K: address, Nasdaq listing, consignment model, Remix divestiture; Item 3 text not reached by the fetch)
 - https://www.osha.gov/ords/imis/establishment.search?establishment=thredup&state=all&officetype=all&office=all&startmonth=01&startday=01&startyear=2016&endmonth=09&endday=25&endyear=2026&p_case=all&p_violations_exist=all

@@ -1,0 +1,81 @@
+{
+  "activity_nr": "348155102",
+  "query": "https://apiprod.dol.gov/v4/get/OSHA/{inspection,violation}/json?filter_object={\"field\":\"activity_nr\",\"operator\":\"eq\",\"value\":348155102}",
+  "inspection": {
+    "data": [
+      {
+        "activity_nr": 348155102,
+        "reporting_id": "0316700",
+        "state_flag": null,
+        "estab_name": "THREDUP DISTRIBUTION CENTER",
+        "site_address": "5050 LOUISE DRIVE",
+        "site_city": "MECHANICSBURG",
+        "site_state": "PA",
+        "site_zip": "17055",
+        "owner_type": "A",
+        "owner_code": null,
+        "adv_notice": "N",
+        "safety_hlth": "H",
+        "sic_code": null,
+        "naics_code": "453998",
+        "insp_type": "B",
+        "insp_scope": "B",
+        "why_no_insp": "I",
+        "union_status": "B",
+        "safety_manuf": null,
+        "safety_const": null,
+        "safety_marit": null,
+        "health_manuf": null,
+        "health_const": null,
+        "health_marit": null,
+        "migrant": null,
+        "mail_street": "5050 LOUISE DRIVE",
+        "mail_city": "MECHANICSBURG",
+        "mail_state": "PA",
+        "mail_zip": "17055",
+        "host_est_key": "HOST_EST_KEY_VALUE",
+        "nr_in_estab": "387",
+        "open_date": "2025-04-03T00:00:00",
+        "case_mod_date": "2026-09-24T00:00:00",
+        "close_conf_date": "2025-04-03T00:00:00",
+        "close_case_date": "2025-08-05T00:00:00",
+        "load_dt": "2026-09-25T00:20:20"
+      }
+    ]
+  },
+  "violations": {
+    "data": [
+      {
+        "activity_nr": 348155102,
+        "citation_id": "01001",
+        "delete_flag": null,
+        "standard": "19040032 A03",
+        "viol_type": "O",
+        "issuance_date": "2025-05-07T00:00:00",
+        "abate_date": "2025-06-11T00:00:00",
+        "abate_complete": "2",
+        "current_penalty": 1773,
+        "initial_penalty": 2364,
+        "contest_date": null,
+        "final_order_date": "2025-07-11T00:00:00",
+        "nr_instances": 1,
+        "nr_exposed": 387,
+        "rec": null,
+        "gravity": null,
+        "emphasis": null,
+        "hazcat": null,
+        "fta_insp_nr": null,
+        "fta_issuance_date": null,
+        "fta_penalty": 0,
+        "fta_contest_date": null,
+        "fta_final_order_date": null,
+        "hazsub1": null,
+        "hazsub2": null,
+        "hazsub3": null,
+        "hazsub4": null,
+        "hazsub5": null,
+        "load_dt": "2026-09-25T00:24:26"
+      }
+    ]
+  }
+}
