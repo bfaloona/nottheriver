@@ -30,3 +30,4 @@ Notes:
 - Costco: a Sparks NV inspection (347212342) closed the same day as the Chula Vista one, with a $0 current penalty, so it wouldn't count under the OSHA rule (a penalty and a closed case). Saved for reference.
 - DOL prefixes the Azure Farms and Bob's Red Mill establishment names (both in Oregon) with a number; the match rests on name, city, dates and penalty.
 - The API returns HTTP 429 after about 8 calls; the script now waits and retries.
+- ID pattern (observed, not documented): all 18 pairs fit DOL activity_nr = "34" + the osha.gov id's last six digits + one more digit (1648417.015 -> 346484173). A future lookup could filter on that range instead of matching by name; check the pattern first for other regions and years.
