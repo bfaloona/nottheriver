@@ -29,6 +29,8 @@ Second pass (2026-09-25): FTC cases search for "BLK GRN" returned no results (th
 
 News pass (2026-09-25): two web searches, `"BLK + GRN" OR "BLK+GRN" lawsuit OR settlement OR fine OR violation` and `"BLK + GRN" OR "BLK+GRN" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The search engine matched the name to BlackRock (ticker BLK) and to generic agency pages; no hit was about this company, so the search is weak evidence of absence for a name this short. No parent is named, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `BLK`: the only match was an unrelated "Blk Dot Coffee"; no notice names BLK + GRN, so no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "BLK + GRN" blkgrn.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
@@ -46,3 +48,4 @@ News pass (2026-09-25): two web searches, `"BLK + GRN" OR "BLK+GRN" lawsuit OR s
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=BLK%20GRN&sort_by=search_api_relevance
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22BLK%20%2B%20GRN%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22BLK%20%2B%20GRN%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=BLK&items_per_page=100 (no matching settlement)

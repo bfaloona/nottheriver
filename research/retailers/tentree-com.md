@@ -32,6 +32,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search for "Tentree" sho
 
 News pass (2026-09-25): three web searches, `"Tentree" lawsuit OR settlement OR fine OR violation`, `"Tentree" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for Canada's regulators, `"Tentree" ("Competition Bureau" OR WorkSafeBC OR "Employment Standards" OR "Environment and Climate Change Canada" OR greenwashing)`. The first two returned unrelated settlements and agency pages; the third returned the Competition Bureau's general greenwashing guidance and law-firm commentary on it, with no case or action naming Tentree. No concern added. (No Canadian regulator is on the accepted-source list, so a Canadian action could only have been noted, not scored.)
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Tentree`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - ethics: 0.5 baseline. B Corp claimed but not verified this run (bcorporation.net 403, no fallback row).
 - environment: 0.5 + 0.25 (The Climate Label, verified on explore.changeclimate.org; the directory showed 2025 as the current certification year when checked 2026-09-25, and the tier depends on this row) = 0.75. 1% for the Planet not checked: the directory returns no data to a plain fetch.
@@ -51,3 +53,4 @@ News pass (2026-09-25): three web searches, `"Tentree" lawsuit OR settlement OR 
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Tentree (no results)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Tentree%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
 - https://www.propublica.org/search?qss=%22Tentree%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Tentree&items_per_page=100 (no matching settlement)

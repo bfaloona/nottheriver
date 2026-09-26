@@ -27,6 +27,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for "Libro.fm" re
 
 News pass (2026-09-25): two web searches, `"Libro.fm" lawsuit OR settlement OR fine OR violation` and `"Libro.fm" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were Libro.fm's own terms and support pages, Wikipedia, the American Booksellers Association's partner page, Book Riot, other cases and agency or law-firm landing pages; none reports an agency or court action against Libro.fm. No parent is named, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Libro`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row); not in the worker co-op directory. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not in The Climate Label directory; 1% for the Planet directory is script-rendered and returned no content (inconclusive). = 0.5
@@ -47,3 +49,4 @@ News pass (2026-09-25): two web searches, `"Libro.fm" lawsuit OR settlement OR f
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
 - CourtListener agency-docket search for "Libro.fm", filed since 2016 (0 results; URL in research/raw/concern-fetch/libro-fm.json)
 - https://www.propublica.org/search?qss=%22Libro.fm%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Libro&items_per_page=100 (no matching settlement)

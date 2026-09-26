@@ -29,6 +29,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No resu
 
 News pass (2026-09-25): two web searches, each covering both names, `("Misfits Market" OR "Imperfect Foods") lawsuit OR settlement OR fine OR violation` and `("Misfits Market" OR "Imperfect Foods") (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were acquisition coverage, Consumer Reports, an Oregon WARN notice (Clackamas fulfillment center closing at the end of 2024, per the search snippet; not fetched), the Maryland FLSA docket already noted above, and two NLRB case pages, both fetched. Case 20-CA-346490 ("Misfits Market d/b/a Imperfect Foods", filed 07/17/2024) is a union's charge (UFCW Local 5) alleging "8(a)(5) Refusal to Bargain/Bad Faith Bargaining"; its docket ends with a "Letter Approving Withdrawal Request" (10/29/2024) and status "Closed", so it is a charge by others that was withdrawn and is not recorded. Case 19-RD-336776 (Imperfect Foods, Inc., Clackamas, OR, filed 02/28/2024) is an employee's decertification petition, a representation election (tally: 15 votes against the union, 5 for) with no action against the company, so it is not a concern either. No parent is named (`parent: none`), so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Misfits Market"`, `"Imperfect Foods"`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Misfits Market" misfitsmarket.com` returned "not on the blocklist".
 - Certifications: none claimed or found; none counted.
@@ -52,3 +54,5 @@ News pass (2026-09-25): two web searches, each covering both names, `("Misfits M
 - https://www.propublica.org/search?qss=%22Misfits%20Market%22 (2 unrelated articles)
 - https://www.nlrb.gov/case/20-CA-346490 (union charge, withdrawal approved 10/29/2024, closed)
 - https://www.nlrb.gov/case/19-RD-336776 (decertification petition, election held, closed)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Misfits+Market%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Imperfect+Foods%22&items_per_page=100 (no matching settlement)

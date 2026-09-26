@@ -36,6 +36,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search for "Pact" return
 
 News pass (2026-09-25): two web searches, `"Wear Pact" OR "Pact organic" lawsuit OR settlement OR fine OR violation` and `"Wear Pact" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` (the name is searched as "Wear Pact" because "Pact" alone matches unrelated uses). The only enforcement hit was the FTC's 2017 case against Pact, Inc., the mobile-app company already identified above as a name collision. Other hits were Better Business Bureau consumer complaints about unsubscribe and data-deletion requests, a consumer blog's PFAS lab test of Pact leggings and review sites; none is an agency or court action. The file names no parent company, so no third search applied. No concern added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Pact, Inc"`, `"Wear Pact"`: the legal names Pact, Inc. and Wear Pact LLC (the bare word "Pact" is too generic); no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - ethics: start 0.5; +0.25 fair_trade; no accepted labor or governance concern; = 0.75
 - environment: start 0.5; no verified environment certification; no accepted environmental concern; = 0.5
@@ -55,3 +57,5 @@ News pass (2026-09-25): two web searches, `"Wear Pact" OR "Pact organic" lawsuit
 - https://www.ftc.gov/legal-library/browse/cases-proceedings/152-3010-pact-inc (FTC v. Pact, Inc., a mobile-app company; name collision)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Pact%22%20OR%20%22Pact%20Apparel%22%20OR%20%22Pact%2C%20LLC%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (1 docket, the same FTC v. Pact, Inc. case)
 - https://www.propublica.org/search?qss=%22Pact%22 (articles, none about the retailer)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Pact%2C+Inc%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Wear+Pact%22&items_per_page=100 (no matching settlement)

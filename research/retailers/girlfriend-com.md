@@ -31,6 +31,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "G
 
 News pass (2026-09-25): two web searches, `"Girlfriend Collective" lawsuit OR settlement OR fine OR violation` and `"Girlfriend Collective" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned only pages matching the words "girlfriend" and "collective" (collective-action explainers, unrelated cases) and agency landing pages. Because those results were noisy, a third search, `"Girlfriend Collective" leggings class action OR lawsuit OR recall`, was run; it found the brand's own site, a founder case study and other brands' leggings suits (LuLaRoe, PFAS suits against other brands). None reports an agency or court action against Girlfriend Collective. No parent is named. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Girlfriend Collective"`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Certifications: none verified. B Corp directory returned 403 and `data/certifications.json` has no row for girlfriend.com; not found in the Fair Trade USA shop page, the US Federation of Worker Cooperatives directory, or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia), so the brand's own 1% claim does not count.
 - Ethics: 0.5 baseline, no certification, no accepted concern = 0.5.
@@ -58,3 +60,4 @@ News pass (2026-09-25): two web searches, `"Girlfriend Collective" lawsuit OR se
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
 - CourtListener agency-docket search for "Girlfriend Collective", filed since 2016 (0 results; URL in research/raw/concern-fetch/girlfriend-com.json)
 - https://www.propublica.org/search?qss=%22Girlfriend%20Collective%22 (no article about the company)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Girlfriend+Collective%22&items_per_page=100 (no matching settlement)

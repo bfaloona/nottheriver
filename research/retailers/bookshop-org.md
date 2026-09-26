@@ -28,6 +28,8 @@ Second pass (2026-09-25): FTC cases and proceedings search for "Bookshop.org" an
 
 News pass (2026-09-25): two web searches, `"Bookshop.org" lawsuit OR settlement OR fine OR violation` and `"Bookshop.org" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned stories about other stores (Avid Bookshop's suit against a Georgia jail) and agency home pages, nothing about Bookshop.org. No parent company is named, so no third search applied. No concern added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Bookshop`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp not verified (certifier page blocked, no fallback row). No accepted concern. = 0.5
 - Environment: 0.5 baseline + 0.25 The Climate Label (`climate_neutral`; profile says "certified Climate Neutral in 2020, 2021, 2022, 2023 and 2024", current certification year 2025, not marked expired). = 0.75
@@ -49,3 +51,4 @@ News pass (2026-09-25): two web searches, `"Bookshop.org" lawsuit OR settlement 
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Bookshop (no results)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Bookshop.org%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
 - https://www.propublica.org/search?qss=%22Bookshop.org%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Bookshop&items_per_page=100 (no matching settlement)

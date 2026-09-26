@@ -27,6 +27,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for "EcoRoots" re
 
 News pass (2026-09-25): two web searches, `"EcoRoots" lawsuit OR settlement OR fine OR violation` and `"EcoRoots" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Hits were the store's own pages, review and profile sites (Trustpilot, CB Insights, which describes a different UK company named Ecoroots), other companies' California enforcement settlements and agency landing pages; none reports an agency or court action against EcoRoots. No parent is named, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `EcoRoots`, `"Eco Roots"`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline. No ethics certification found (bcorporation.net blocked agents this run; no row in `data/certifications.json`). No accepted concern. Result 0.5.
@@ -48,3 +50,5 @@ News pass (2026-09-25): two web searches, `"EcoRoots" lawsuit OR settlement OR f
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
 - CourtListener agency-docket search for "EcoRoots", filed since 2016 (0 results; URL in research/raw/concern-fetch/ecoroots-us.json)
 - https://www.propublica.org/search?qss=%22EcoRoots%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=EcoRoots&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Eco+Roots%22&items_per_page=100 (no matching settlement)

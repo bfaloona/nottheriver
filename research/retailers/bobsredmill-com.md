@@ -13,9 +13,16 @@ certifications:
   - {kind: fair_trade, source: https://www.fairtradecertified.org/our-community/shop-fair-trade/, checked: 2026-09-25, verified_this_run: true}
 concerns:
   - {kind: labor, title: "Inspection Detail | Occupational Safety and Health Administration", source: "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1637323.015", date: 2023-01-03, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, Kaloustian v. Bob's Red Mill Natural Foods, Inc. (lead, psyllium fiber powder; Los Angeles Superior Court BC717941; $5,000 civil penalty; judgment 2020-09-16)", source: https://oag.ca.gov/prop65/60-Day-Notice-2018-00400, date: 2020-07-30, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, Environmental Research Center v. Bob's Red Mill (lead, dietary supplements; Alameda Superior Court RG20062002; $19,000 civil penalty; judgment 2021-02-08)", source: https://oag.ca.gov/prop65/60-Day-Notice-2019-01824, date: 2020-11-12, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, Ecological Alliance and Bob's Red Mill Natural Foods, Inc. (cadmium, sunflower seeds; $1,000 civil penalty)", source: https://oag.ca.gov/prop65/60-Day-Notice-2021-00799, date: 2021-11-30, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, Parseghian v. Bob's Red Mill Natural Foods, Inc. (lead, cassava flour; Los Angeles Superior Court 22STCV00086; $7,500 civil penalty; judgment 2022-05-31)", source: https://oag.ca.gov/prop65/60-Day-Notice-2021-01464, date: 2022-03-17, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, Kaloustian v. Bob's Red Mill Natural Foods, Inc. (lead, Egg Replacer; Los Angeles Superior Court 22STCV38062; $16,000 civil penalty; corrected 2023-05-04, judgment 2023-05-25)", source: https://oag.ca.gov/prop65/60-Day-Notice-2022-02238, date: 2023-03-23, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 out-of-court settlement, BSF v. Bob's Red Mill (lead, flatbread mix; $2,500 civil penalty)", source: https://oag.ca.gov/prop65/60-Day-Notice-2024-05040, date: 2025-12-04, accepted_source: true}
+  - {kind: environmental, title: "Prop 65 settlement, EHA v. Bob's Red Mill (lead, organic buckwheat flour; $2,000 civil penalty)", source: https://oag.ca.gov/prop65/60-Day-Notice-2025-03554, date: 2026-05-15, accepted_source: true}
 ethics: 0.5
-environment: 0.5
-tier: acceptable
+environment: 0
+tier: caution
 mentions: 2
 mentioned_by: [fairtradecertified-org, workerowned-info]
 checked: 2026-09-25
@@ -31,13 +38,15 @@ Litigation seen on CourtListener, none counted because the docket list shows no 
 
 Second pass (2026-09-25): FTC cases search for "Bob's Red Mill" sorted by relevance returned 792 keyword matches; the top 20 (General Mills, Pendleton Woolen Mills and similar) include no Bob's Red Mill respondent. The CourtListener agency-docket query since 2016 returned no dockets; ProPublica's 7 hits for the phrase include none about an action against the company. No matching cases.
 
-News pass (2026-09-25): two web searches, `"Bob's Red Mill" lawsuit OR settlement OR fine OR violation` and `"Bob's Red Mill" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Found and noted, not counted (`accepted_source: false`): a Proposition 65 "STIPULATED CONSENT JUDGMENT" in Environmental Research Center, Inc. v. Bob's Red Mill Natural Foods, Inc. (Alameda County Superior Court, RG20062002, action filed 2020-05-22, lead in three protein-powder products), in which Bob's Red Mill agreed to pay $40,000, of which "$19,000.00 shall be considered a civil penalty"; the copy on the California Attorney General's Prop 65 settlement page (oag.ca.gov, not an accepted source) is the proposed judgment with the judge's signature line blank, so court entry is not shown. Also found: private consumer suits over glyphosate residue in oats (three individual claims settled, per Bloomberg Law's headline) and cadmium in flaxseed, a 2020 ADA website suit, and a 2018 suit Bob's Red Mill brought against a gluten-free trade group; none is an agency or court action against the company from an accepted source. No parent is named, so no third search. No concerns added.
+News pass (2026-09-25): two web searches, `"Bob's Red Mill" lawsuit OR settlement OR fine OR violation` and `"Bob's Red Mill" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. Found and noted, not counted (`accepted_source: false`): a Proposition 65 "STIPULATED CONSENT JUDGMENT" in Environmental Research Center, Inc. v. Bob's Red Mill Natural Foods, Inc. (Alameda County Superior Court, RG20062002, action filed 2020-05-22, lead in three protein-powder products), in which Bob's Red Mill agreed to pay $40,000, of which "$19,000.00 shall be considered a civil penalty"; the copy on the California Attorney General's Prop 65 settlement page (oag.ca.gov, not an accepted source) is the proposed judgment with the judge's signature line blank, so court entry is not shown there (the operator-rule pass below found the judgment recorded on the AG's notice page). Also found: private consumer suits over glyphosate residue in oats (three individual claims settled, per Bloomberg Law's headline) and cadmium in flaxseed, a 2020 ADA website suit, and a 2018 suit Bob's Red Mill brought against a gluten-free trade group; none is an agency or court action against the company from an accepted source. No parent is named, so no third search. No concerns added.
+
+Operator-rule pass (2026-09-25): the California AG's 60-day notice search (Alleged Violator field, "Red Mill") returned 20 notices naming Bob's Red Mill Natural Foods, Inc.; the 7 with a recorded settlement or judgment were opened, and each settlement record names Bob's Red Mill Natural Foods, Inc. as defendant. Under the operator's 2026-09-25 rule (Prop 65 settlements and judgments recorded on oag.ca.gov count as environmental concerns, private enforcers included), all 7 became rows: psyllium fiber powder (2020-07-30, judgment 2020-09-16), dietary supplements (Environmental Research Center, 2020-11-12; the notice page records a final judgment on 2021-02-08, answering the news pass's open question), sunflower seeds (2021-11-30), cassava flour (2022-03-17, judgment 2022-05-31), Egg Replacer (2023-03-23, judgment 2023-05-25; notice 2022-02238 amends 2022-01013, counted once), flatbread mix (2025-12-04) and buckwheat flour (2026-05-15). The other 13 notices (2022 to 2026) show no settlement or judgment. Environment falls from 0.5 to 0 (floored); total 0.5, tier `acceptable` to `caution`.
 
 ## Rating
 - Amazon-owned: no (`build-index.mjs --blocklist` reports "not on the blocklist").
 - Ethics: 0.5 baseline, +0.25 `fair_trade` (fairtradecertified.org brand listing, fetched this run), −0.25 × 1 accepted labor concern (osha.gov). B Corp not checked: bcorporation.net blocked agents this run and `data/certifications.json` has no row for this domain. Result 0.5.
-- Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (explore.changeclimate.org/sitemap.xml, 310 brand pages) has no Bob's Red Mill entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). No environmental concern. Result 0.5.
-- Tier: ethics + environment = 1.0; an accepted concern in the last 5 years rules out `recommended`; 1.0 ≥ 1.0: `acceptable`.
+- Environment: 0.5 baseline. No environmental certification found: The Climate Label's brand sitemap (explore.changeclimate.org/sitemap.xml, 310 brand pages) has no Bob's Red Mill entry, and the 1% for the Planet directory renders no text to a fetch (no row in `data/certifications.json`). −0.25 × 7 accepted environmental concerns (Prop 65 settlements on oag.ca.gov, 2020 to 2026) = −1.75, floored at 0. Result 0.
+- Tier: ethics + environment = 0.5, below 1.0: `caution` (was `acceptable` before the 2026-09-25 operator-rule pass).
 - Concern search: passes 1 to 3 (agency pages, FTC, CourtListener, ProPublica, general news search).
 
 ## Sources
@@ -54,4 +63,12 @@ News pass (2026-09-25): two web searches, `"Bob's Red Mill" lawsuit OR settlemen
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Bob%27s%20Red%20Mill&sort_by=search_api_relevance
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Bob's%20Red%20Mill%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Bob's%20Red%20Mill%22
-- https://oag.ca.gov/system/files/prop65/settlements/2019-01824S8980.pdf (news pass: Prop 65 stipulated consent judgment, not an accepted source)
+- https://oag.ca.gov/system/files/prop65/settlements/2019-01824S8980.pdf (news pass: Prop 65 stipulated consent judgment; ca.gov became an accepted source on 2026-09-25 and the settlement is now a concern)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Red%20Mill%22&items_per_page=100 (20 notices)
+- https://oag.ca.gov/prop65/60-Day-Notice-2018-00400
+- https://oag.ca.gov/prop65/60-Day-Notice-2019-01824
+- https://oag.ca.gov/prop65/60-Day-Notice-2021-00799
+- https://oag.ca.gov/prop65/60-Day-Notice-2021-01464
+- https://oag.ca.gov/prop65/60-Day-Notice-2022-02238
+- https://oag.ca.gov/prop65/60-Day-Notice-2024-05040
+- https://oag.ca.gov/prop65/60-Day-Notice-2025-03554

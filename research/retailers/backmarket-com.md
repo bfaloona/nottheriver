@@ -29,6 +29,8 @@ Second pass (2026-09-25): FTC cases search for "Back Market" returned 565 keywor
 
 News pass (2026-09-25): three web searches, `"Back Market" lawsuit OR settlement OR fine OR violation`, `"Back Market" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, because the company was founded in Paris, one for French regulators: `"Back Market" DGCCRF OR "Autorité de la concurrence" OR CNIL amende OR sanction`. The only relevant hit was a UniCourt page for Martinez v. Back Market Inc. (E.D.N.Y., filed 2022-01-28, disability discrimination), which it says ended with a notice of settlement in principle on 2022-03-15; that is a private suit settled between the parties (one of the 2022 ADA suits already noted), not an agency or court action, and UniCourt is not an accepted source. The French-regulator search returned only general pages about those agencies. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Back Market"`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Back Market" backmarket.com` returned "not on the blocklist".
 - Certifications: B Corp claimed but unverified (certifier directory blocked, no fallback row); none counted.
@@ -47,3 +49,4 @@ News pass (2026-09-25): three web searches, `"Back Market" lawsuit OR settlement
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Back%20Market&sort_by=search_api_relevance
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Back%20Market%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Back%20Market%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Back+Market%22&items_per_page=100 (no matching settlement)

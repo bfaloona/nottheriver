@@ -29,6 +29,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for "Kotn" return
 
 News pass (2026-09-25): three web searches, `"Kotn" clothing lawsuit OR settlement OR fine OR violation`, `"Kotn" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for Canada's regulators, `"Kotn" "Competition Bureau" OR "Ministry of Labour" OR "Employment Standards" OR greenwashing Canada`. Hits were Kotn's own pages, Wikipedia, business coverage (Globe and Mail, Retail Insider), other companies' cases (Shein, Kohl's, the Competition Bureau's Lululemon greenwashing probe), the Bureau's greenwashing guidance and agency landing pages; none reports an agency or court action against Kotn. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Kotn`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Kotn" kotn.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified. B Corp is claimed on kotn.com but the certifier's page was blocked and there is no fallback row.
@@ -51,3 +53,4 @@ News pass (2026-09-25): three web searches, `"Kotn" clothing lawsuit OR settleme
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
 - CourtListener agency-docket search for "Kotn", filed since 2016 (0 results; URL in research/raw/concern-fetch/kotn-com.json)
 - https://www.propublica.org/search?qss=%22Kotn%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Kotn&items_per_page=100 (no matching settlement)

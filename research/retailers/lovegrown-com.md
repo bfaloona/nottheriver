@@ -29,6 +29,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No resu
 
 News pass (2026-09-25): two web searches, each covering both names, `("Hive Brands" OR "Love Grown") lawsuit OR settlement OR fine OR violation` and `("Hive Brands" OR "Love Grown") (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The first found a press release dated October 31, 2023 saying "Hive Brands, the sustainable online grocery store, announced today that it has acquired popular cereal and granola brand Love Grown", which explains the shared systems above (it does not say Hive later renamed itself, so `parent` stays `unknown`). It also found one private case, an individual's petition against Hive Brands Holdings, Inc. in Los Angeles Superior Court (No. 26STCP00378, "Other Civil Petition", filed 2026-01-27, a petition to compel arbitration, "Pending" with no ruling, per PlainSite, which is not an accepted source); it is a private filing with no ruling, so it is not recorded. The second search returned only agency landing pages. No parent is named, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Love Grown"`, `"Hive Brands"`: the brand and the legal entity Hive Brands Holdings; no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. B Corp claim on the retailer's own site only, not verified with the certifier (403) and no data/certifications.json row, so it does not count. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not on The Climate Label directory page (explore.changeclimate.org). 1% for the Planet directory could not be searched (logged). = 0.5
@@ -53,3 +55,5 @@ News pass (2026-09-25): two web searches, each covering both names, `("Hive Bran
 - https://www.propublica.org/search?qss=%22Hive%20(now%20Love%20Grown)%22 (no articles)
 - https://www.einpresswire.com/article/665234085/hive-brands-acquires-love-grown-to-offer-exclusive-cereals-and-granolas (press release, 2023-10-31)
 - https://www.plainsite.org/courts/superior-court-of-california-county-of-los-angeles/vivek-shah-an-individual-v-hive-brands-holdings-inc-a-delaware-corporation/5xaxnx26r/ (private petition, pending; not an accepted source)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Love+Grown%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Hive+Brands%22&items_per_page=100 (no matching settlement)

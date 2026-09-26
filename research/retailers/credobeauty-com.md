@@ -27,6 +27,8 @@ Second pass (2026-09-25): FTC cases search for "Credo Beauty" returned 4 cases (
 
 News pass (2026-09-25): two web searches, `"Credo Beauty" lawsuit OR settlement OR fine OR violation` and `"Credo Beauty" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`. The one relevant hit was coverage (classaction.org, truthinadvertising.org) of a 2017 private class action claiming "all-natural" products contained synthetic ingredients, against Eco-Chic LLC, which operates Credo Beauty. CourtListener's docket list shows that case, Cohen v. Eco-Chic, LLC (N.D. Cal., 4:17-cv-05146), filed 2017-09-05 and terminated 2017-11-15 after about two months, with no ruling shown; it is a private suit, so not a concern. The same docket list shows other private suits naming Eco-Chic LLC (an ADA suit, E.D.N.Y. 2018, terminated; suits filed 2024 and 2025) and a 2026 trademark suit brought by Eco-Chic LLC against Credo Beauty LLC (C.D. Cal., 2:26-cv-02333), none an agency or court action against the company. No agency action found. Parent unknown, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Credo`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification. No accepted concern. = 0.5
 - Environment: 0.5 baseline. Not in The Climate Label directory; 1% for the Planet directory is script-rendered and returned no content (inconclusive). = 0.5
@@ -45,3 +47,4 @@ News pass (2026-09-25): two web searches, `"Credo Beauty" lawsuit OR settlement 
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Credo%20Beauty%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Credo%20Beauty%22
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&q=caseName%3A(%22Eco-Chic%22) (news pass: docket list for the operating company)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Credo&items_per_page=100 (no matching settlement)

@@ -31,6 +31,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search returned no resul
 
 News pass (2026-09-25): two web searches (no parent, so no third): `"Ten Thousand Villages" lawsuit OR settlement OR fine OR violation` and `"Ten Thousand Villages" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general" OR CPSC)` (CPSC added because it sells handmade goods). No report of an agency or court action against Ten Thousand Villages; the hits were other organizations with "Villages" in the name (for example The Villages Health System's False Claims Act settlement), nonprofit directory listings for local stores and generic agency pages. No concern rows added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Ten Thousand Villages"`: three notices name Ten Thousand Villages (2023-00209 luggage tags, 2024-00227 brass incense holder, 2026-00372 wrist compass), none with a settlement or judgment recorded, so no concern added.
+
 ## Rating
 - ethics: 0.5 baseline. No B Corp, Fair Trade USA or worker co-op listing verified (bcorporation.net blocked agents this run; the Fair Trade USA partner search URL returned 404; no row in data/certifications.json).
 - environment: 0.5 baseline. 1% for the Planet not checked (directory returns no data to a plain fetch); no Climate Label listing checked.
@@ -49,3 +51,4 @@ News pass (2026-09-25): two web searches (no parent, so no third): `"Ten Thousan
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22Ten%20Thousand%20Villages%22
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Ten%20Thousand%20Villages%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Ten%20Thousand%20Villages%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Ten+Thousand+Villages%22&items_per_page=100 (no matching settlement)

@@ -29,6 +29,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search for the phrase "M
 
 News pass (2026-09-25): two web searches, `"Made Trade" (madetrade OR "Made Trade Group") lawsuit OR settlement OR fine OR violation` and `"Made Trade" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general") ethical home goods`. Hits were other companies' FTC "Made in USA" cases (matching the words "made" and "trade") and agency landing pages. The FTC's April 2026 "Made in USA" sweep release was fetched because Made Trade sells a "made in USA" category: it names TouchTunes, Americana Liberty, Three Nations, Oak Street Manufacturing and two closing-letter recipients, not Made Trade. Nothing reports an agency or court action against Made Trade. No parent is named, so no third search. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Made Trade"`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "Made Trade" madetrade.com` says not on the blocklist, so `amazon_owned: false`.
 - Certifications: none verified (B Corp page blocked, 1% for the Planet directory not readable, Climate Label not checked, not on Fair Trade USA's shop page).
@@ -49,3 +51,4 @@ News pass (2026-09-25): two web searches, `"Made Trade" (madetrade OR "Made Trad
 - CourtListener agency-docket search for "Made Trade", filed since 2016 (0 results; URL in research/raw/concern-fetch/madetrade-com.json)
 - https://www.propublica.org/search?qss=%22Made%20Trade%22 (no article about the company)
 - https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-announces-made-usa-sweep-including-three-law-enforcement-actions-protect-american-consumers (Made Trade not named)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Made+Trade%22&items_per_page=100 (no matching settlement)

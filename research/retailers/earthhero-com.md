@@ -27,6 +27,8 @@ Second pass (2026-09-25): the FTC cases-and-proceedings search returned "No resu
 
 News pass (2026-09-25): three web searches, `"EarthHero" lawsuit OR settlement OR fine OR violation`, `"EarthHero" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the certifier-listed parent, `"ZeroWasteStore" lawsuit OR settlement OR fine OR violation OR FTC OR "attorney general"`. Hits were a private class settlement over Earth Rated poop bags (a different company, a name collision), agency landing pages and other companies' FTC cases; none reports an agency or court action against EarthHero or ZeroWasteStore. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `EarthHero`, `"Earth Hero"`, `"Zero Waste Store"`, `ZeroWasteStore`: the retailer and its parent, ZeroWasteStore; no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. No verified certification (B Corp claimed by lists; directory blocked, no fallback row). No accepted concern. = 0.5
 - Environment: 0.5 baseline. The Climate Label brand page says expired (not counted; conflict with the parent's page logged). 1% for the Planet unverifiable (page renders by script). No environmental concern. = 0.5
@@ -48,3 +50,7 @@ News pass (2026-09-25): three web searches, `"EarthHero" lawsuit OR settlement O
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Amazon (control: 26 results)
 - CourtListener agency-docket search for "EarthHero", filed since 2016 (0 results; URL in research/raw/concern-fetch/earthhero-com.json)
 - https://www.propublica.org/search?qss=%22EarthHero%22 (no articles)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=EarthHero&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Earth+Hero%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Zero+Waste+Store%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=ZeroWasteStore&items_per_page=100 (no matching settlement)

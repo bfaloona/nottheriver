@@ -31,6 +31,8 @@ Second pass (2026-09-25): FTC cases search for "Better World" (covers the retail
 
 News pass (2026-09-25): three web searches, `"Better World Books" lawsuit OR settlement OR fine OR violation`, `"Better World Books" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for the parent, `"Better World Libraries" lawsuit OR settlement OR fine OR violation OR "attorney general"`. Hits were BBB customer complaints, the Wikipedia page, a law-firm marketing page (overtimepaylaws.org) that speaks of overtime suits against companies "like" Better World Books without naming a case, and unrelated library litigation; none reports an agency or court action against the company or its parent. No concerns added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"Better World Books"`, `"Better World Libraries"`: the retailer and its parent; no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Ethics: 0.5 baseline. No B Corp, Fair Trade or worker co-op certification verified on a certifier's page (B Corp directory blocked, no fallback row). No accepted concern. Ethics 0.5.
 - Environment: 0.5 baseline. The Climate Label directory (explore.changeclimate.org) returned "Brand Not Found" for `better-world-books`; the 1% for the Planet directory profile page rendered no listing content, so membership is unverified. No environmental concern. Environment 0.5.
@@ -52,3 +54,5 @@ News pass (2026-09-25): three web searches, `"Better World Books" lawsuit OR set
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Better%20World&sort_by=search_api_relevance
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Better%20World%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22Better%20World%20Books%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Better+World+Books%22&items_per_page=100 (no matching settlement)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22Better+World+Libraries%22&items_per_page=100 (no matching settlement)

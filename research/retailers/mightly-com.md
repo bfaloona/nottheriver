@@ -32,6 +32,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search for "Mightly" sho
 
 News pass (2026-09-25): two web searches, `"Mightly" lawsuit OR settlement OR fine OR violation` and `"Mightly" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")`, returned only unrelated cases (Meta, HIPAA and TCPA settlements) and agency or law-firm pages, nothing about Mightly or Mightly, Inc. The file names no parent company (Mightly, Inc.'s owner is unknown), so no third search applied. No concern added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `Mightly`: no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Certifications: `fair_trade` counted: Fair Trade USA's shop page lists Mightly among "brands that offer Fair Trade Certified products", which is what the project's `fair_trade` kind means ("Sells Fair Trade Certified products", docs/ranking.md). B Corp directory returned 403 and `data/certifications.json` has no row for mightly.com; not found in the US Federation of Worker Cooperatives directory or the brand list on The Climate Label's directory; not found by the 1% for the Planet directory search (the data service behind directories.onepercentfortheplanet.org; control search "patagonia" found Patagonia).
 - Ethics: 0.5 baseline + 0.25 (fair_trade), no accepted concern = 0.75.
@@ -57,3 +59,4 @@ News pass (2026-09-25): two web searches, `"Mightly" lawsuit OR settlement OR fi
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Mightly (no results)
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22Mightly%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (0 dockets)
 - https://www.propublica.org/search?qss=%22Mightly%22 (39 articles, none about Mightly)
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=Mightly&items_per_page=100 (no matching settlement)

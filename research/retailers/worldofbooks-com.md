@@ -30,6 +30,8 @@ Second pass (2026-09-25): the FTC cases and proceedings search returned no resul
 
 News pass (2026-09-25): three web searches, `"World of Books" OR "Wob" Ziffit lawsuit OR settlement OR fine OR violation`, `"World of Books" (EEOC OR OSHA OR "Department of Labor" OR FTC OR EPA OR "attorney general")` and, for UK regulators, `"World of Books" OR Ziffit "Health and Safety Executive" OR "Environment Agency" OR ICO OR CMA OR "Advertising Standards Authority" fine OR ruling OR prosecution`. No agency or court action against World of Books, Wob or Ziffit was found: results were the company's own pages, Wikipedia, review sites (Trustpilot, BBB complaints, which are customer complaints, not agency actions), generic US agency pages and general articles on CMA and ICO enforcement that do not name the company. No concern rows added.
 
+Operator-rule pass (2026-09-25): searched the California AG's Proposition 65 60-day notice database (Alleged Violator field) for `"World of Books"`: the retailer and its parent, World of Books Group; no notices, so no settlement or judgment and no concern added.
+
 ## Rating
 - Blocklist: `node research/build-index.mjs --blocklist "World of Books" worldofbooks.com` says not on the blocklist, so `amazon_owned: false`.
 - (Before the 2026-09-25 operator decision below) Certifications: none verified. B Corp is stated by Wikipedia and the site's footer badge, but the certifier's page was blocked and there is no fallback row.
@@ -49,3 +51,4 @@ News pass (2026-09-25): three web searches, `"World of Books" OR "Wob" Ziffit la
 - https://www.ftc.gov/legal-library/browse/cases-proceedings?search=%22World%20of%20Books%22
 - https://www.courtlistener.com/api/rest/v4/search/?type=r&order_by=dateFiled+desc&filed_after=2016-01-01&q=caseName%3A(%22World%20of%20Books%22)%20AND%20caseName%3A(%22Equal%20Employment%22%20OR%20%22EEOC%22%20OR%20%22Secretary%20of%20Labor%22%20OR%20%22Department%20of%20Labor%22%20OR%20%22Federal%20Trade%20Commission%22%20OR%20%22United%20States%22%20OR%20%22State%20of%22%20OR%20%22People%20of%22%20OR%20%22Commonwealth%22%20OR%20%22National%20Labor%20Relations%22%20OR%20%22Environmental%20Protection%22%20OR%20%22Consumer%20Product%20Safety%22%20OR%20%22Securities%20and%20Exchange%22%20OR%20%22Attorney%20General%22%20OR%20%22District%20of%20Columbia%22) (pass 2 agency-docket query)
 - https://www.propublica.org/search?qss=%22World%20of%20Books%22
+- https://oag.ca.gov/prop65/60-day-notice-search-results?field_prop65_defendant_value=%22World+of+Books%22&items_per_page=100 (no matching settlement)
