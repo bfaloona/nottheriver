@@ -1138,11 +1138,60 @@
           "source": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1637323.015",
           "date": "2023-01-03",
           "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Kaloustian v. Bob's Red Mill Natural Foods, Inc. (lead, psyllium fiber powder; Los Angeles Superior Court BC717941; $5,000 civil penalty; judgment 2020-09-16)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2018-00400",
+          "date": "2020-07-30",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Environmental Research Center v. Bob's Red Mill (lead, dietary supplements; Alameda Superior Court RG20062002; $19,000 civil penalty; judgment 2021-02-08)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2019-01824",
+          "date": "2020-11-12",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Ecological Alliance and Bob's Red Mill Natural Foods, Inc. (cadmium, sunflower seeds; $1,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2021-00799",
+          "date": "2021-11-30",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Parseghian v. Bob's Red Mill Natural Foods, Inc. (lead, cassava flour; Los Angeles Superior Court 22STCV00086; $7,500 civil penalty; judgment 2022-05-31)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2021-01464",
+          "date": "2022-03-17",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Kaloustian v. Bob's Red Mill Natural Foods, Inc. (lead, Egg Replacer; Los Angeles Superior Court 22STCV38062; $16,000 civil penalty; corrected 2023-05-04, judgment 2023-05-25)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2022-02238",
+          "date": "2023-03-23",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, BSF v. Bob's Red Mill (lead, flatbread mix; $2,500 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2024-05040",
+          "date": "2025-12-04",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, EHA v. Bob's Red Mill (lead, organic buckwheat flour; $2,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2025-03554",
+          "date": "2026-05-15",
+          "accepted_source": true
         }
       ],
       "ethics": 0.5,
-      "environment": 0.5,
-      "tier": "acceptable",
+      "environment": 0,
+      "tier": "caution",
       "mentions": 2,
       "mentioned_by": [
         "fairtradecertified-org",
@@ -1389,10 +1438,18 @@
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
       "certifications": [],
-      "concerns": [],
-      "ethics": 0.5,
+      "concerns": [
+        {
+          "kind": "governance",
+          "title": "eBay will pay a $3 million fine over former employees' harassment campaign (parent eBay Inc.)",
+          "source": "https://www.npr.org/2024/01/11/1224333712/ebay-stalking-settlement",
+          "date": "2024-01-11",
+          "accepted_source": true
+        }
+      ],
+      "ethics": 0.25,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "caution",
       "mentions": 2,
       "mentioned_by": [
         "adayinourshoes-com",
@@ -1569,10 +1626,18 @@
           "verified_this_run": true
         }
       ],
-      "concerns": [],
+      "concerns": [
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, McCartney v. Equal Exchange, Inc. (cadmium, organic baking cocoa; $12,500 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2015-01250",
+          "date": "2016-06-26",
+          "accepted_source": true
+        }
+      ],
       "ethics": 0.75,
-      "environment": 0.5,
-      "tier": "recommended",
+      "environment": 0.25,
+      "tier": "acceptable",
       "mentions": 3,
       "mentioned_by": [
         "adayinourshoes-com",
@@ -1609,10 +1674,46 @@
           "verified_this_run": true
         }
       ],
-      "concerns": [],
+      "concerns": [
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Wozniak v. Etsy, Inc. (lead, fishing weights; San Francisco Superior Court CGC-21-594665; $20,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2021-01400",
+          "date": "2022-02-17",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, Wozniak v. Etsy, Inc. (lead, ingots; $40,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2021-01401",
+          "date": "2022-02-17",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, Epps v. Etsy, Inc. (lead, art pigments; $6,000 civil penalty; corrected settlement 2024-12-13)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2024-02373",
+          "date": "2024-11-22",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, As You Sow v. Etsy, Inc. (mercury, skin-lightening creams; N.D. Cal. 3:24-cv-04203; $24,300 civil penalty; also recorded under notice 2024-00232)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2024-01113",
+          "date": "2025-02-24",
+          "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, Epps v. Etsy, Inc. (toluene furniture wax and cadmium paints; one agreement covering notices 2025-00672, 2025-01797, 2025-02110 and 2025-02113; $10,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2025-00672",
+          "date": "2026-01-27",
+          "accepted_source": true
+        }
+      ],
       "ethics": 0.5,
-      "environment": 0.75,
-      "tier": "recommended",
+      "environment": 0,
+      "tier": "caution",
       "mentions": 13,
       "mentioned_by": [
         "amazonalts-org",
@@ -1682,10 +1783,18 @@
           "verified_this_run": false
         }
       ],
-      "concerns": [],
+      "concerns": [
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, APS&EE, LLC v. Grove Collaborative, Inc. (lead, 8 Greens supplement; $3,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2025-02024",
+          "date": "2026-02-12",
+          "accepted_source": true
+        }
+      ],
       "ethics": 0.75,
-      "environment": 0.5,
-      "tier": "recommended",
+      "environment": 0.25,
+      "tier": "acceptable",
       "mentions": 6,
       "mentioned_by": [
         "amazonalts-org",
@@ -1976,11 +2085,11 @@
           "title": "Beyond, Inc., dba Bed, Bath & Beyond and Overstock.com Settlement",
           "source": "https://ww2.arb.ca.gov/beyond-inc-dba-bed-bath-beyond-and-overstock-com-settlement",
           "date": "unknown",
-          "accepted_source": false
+          "accepted_source": true
         }
       ],
       "ethics": 0.25,
-      "environment": 0.5,
+      "environment": 0.25,
       "tier": "caution",
       "mentions": 3,
       "mentioned_by": [
@@ -2066,10 +2175,17 @@
           "source": "https://www.nlrb.gov/case/32-CA-254886",
           "date": "2020-03-25",
           "accepted_source": true
+        },
+        {
+          "kind": "environmental",
+          "title": "Prop 65 out-of-court settlement, Chemical Toxin Working Group v. Patagonia (lead, canned mussels; defendants Patagonia, Inc., Patagonia Works, Patagonia Provisions, Inc. and others; $36,000 civil penalty)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2021-01049",
+          "date": "2021-08-12",
+          "accepted_source": true
         }
       ],
       "ethics": 0.75,
-      "environment": 0.75,
+      "environment": 0.5,
       "tier": "recommended",
       "mentions": 4,
       "mentioned_by": [
@@ -2166,12 +2282,12 @@
           "title": "Don't Run Out dba Public Goods - 626847 - 03/11/2022",
           "source": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/dont-run-out-dba-public-goods-626847-03112022",
           "date": "2022-03-11",
-          "accepted_source": false
+          "accepted_source": true
         }
       ],
-      "ethics": 0.5,
+      "ethics": 0.25,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "caution",
       "mentions": 3,
       "mentioned_by": [
         "goodgoodgood-co",
@@ -2472,10 +2588,18 @@
           "verified_this_run": false
         }
       ],
-      "concerns": [],
+      "concerns": [
+        {
+          "kind": "environmental",
+          "title": "Prop 65 settlement, Brimer v. Uncommongoods, LLC (lead, glassware; San Francisco Superior Court CGC-05-445626; $1,600 civil penalty; judgment 2006-12-21)",
+          "source": "https://oag.ca.gov/prop65/60-Day-Notice-2005-00214",
+          "date": "2006-05-11",
+          "accepted_source": true
+        }
+      ],
       "ethics": 0.75,
-      "environment": 0.5,
-      "tier": "recommended",
+      "environment": 0.25,
+      "tier": "acceptable",
       "mentions": 5,
       "mentioned_by": [
         "amazonalts-org",
@@ -2625,11 +2749,18 @@
       "marketplace": "unknown",
       "sells_on_amazon": "unknown",
       "amazon_owned": false,
-      "certifications": [],
+      "certifications": [
+        {
+          "kind": "b_corp",
+          "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/world-of-books-group/",
+          "checked": "2026-09-25",
+          "verified_this_run": true
+        }
+      ],
       "concerns": [],
-      "ethics": 0.5,
+      "ethics": 0.75,
       "environment": 0.5,
-      "tier": "acceptable",
+      "tier": "recommended",
       "mentions": 2,
       "mentioned_by": [
         "amazonalts-org",

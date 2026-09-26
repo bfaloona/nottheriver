@@ -6,7 +6,7 @@ Mirror: `~/.claude/projects/-Users-brandon-dev-ai-nottheriver/ff9ea949-34b7-44c3
 
 ## Resume cold
 
-**State (2026-09-25, evening):** concern pass 3 (news search) is done (commits 32957e1 to a7053e0); don't rerun it. Next: operator answers OC32 to OC36 in `method.md` (each lists its tier effect); OC31 DOL retry for B&H and Azure (API 429s after about a dozen calls), resolve Thrive's two candidate rows, fetch penalties from DOL's violation dataset (details in `raw/osha-dol-match.md`). Run `node research/fetch-osha-dol.mjs` by absolute path; the shell can't cd into this worktree from the main checkout's session. Merge to main only when the operator says. D1 to D4 approved by the operator (2026-09-25).
+**State (2026-09-25, late):** pass 3 and the operator's rulings (OC32 to OC36) are applied and committed; don't rerun them. Tiers: 7 recommended, 25 acceptable, 18 caution, 4 excluded. Next: operator decides OC37 (Patagonia Provisions settlements); OC31 DOL retry for B&H and Azure, Thrive's two candidate rows, penalties (`raw/osha-dol-match.md`); merge to main only when the operator says, then run `infra/deploy.sh` because `data/negative-sources.json` changed (fda.gov, ca.gov). Run scripts by absolute path; the shell can't cd into this worktree from the main checkout's session.
 
 1. `git -C <worktree> log --oneline -5` shows the last finished stage.
 2. Check the planned files for the in-flight stage below against `ls research/...`; rerun only the agents whose files are missing.
@@ -113,3 +113,4 @@ Stage 3 groups (Opus, one each; shortlist row numbers). Each writes `research/si
 - Lead applied: Overstock ARB settlement now counts (environment 0.25, still caution); Public Goods -> caution (FDA letter); Depop -> caution (eBay's 2024 concern carried over); World of Books -> recommended (B Corp).
 - Lead rule: Prop 65 concerns are kind `environmental` (the law is administered by CalEPA's OEHHA and targets toxic-chemical exposure). A 60-day notice alone doesn't count; a settlement or judgment does.
 - Agent P1 (Opus) running: checks oag.ca.gov Prop 65 records for all 34 recommended and acceptable retailers (and parents), adds rows, recomputes; plus a Rakuten Group parent search for Kobo. Writes `raw/prop65-P1.md` and edits retailer files. Lead updates report files after.
+- P1 done (Prop 65: Etsy 5 rows, Bob's Red Mill 7, Equal Exchange, Grove, Uncommon Goods, Patagonia 1 each; Rakuten search found nothing accepted). Tier moves from the rulings: Etsy, Bob's Red Mill, Depop, Public Goods -> caution; Equal Exchange, Grove, Uncommon Goods -> acceptable; World of Books -> recommended. Report, method (decision rows, OC32 to OC36 marked decided, OC37 added) and README updated; 698 tests and lint pass.

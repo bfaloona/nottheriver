@@ -42,6 +42,7 @@ Nothing here changes the live site. The live data stays in `data/`.
 | `verify-R<n>.md` | The verifier's check of every certification, concern and field, per batch |
 | `concern-pass-2-brief.md`, `concerns2-C<n>.md` | Concern pass 2 (agency pages, FTC, CourtListener, ProPublica), per batch |
 | `news-search-brief.md`, `news-N<n>.md` | Concern pass 3 (general news search), per batch: queries, hits, outcomes |
+| `prop65-P1.md` | Proposition 65 lookups on oag.ca.gov for the 34 non-caution retailers, after the operator's rulings |
 | `osha-status.md`, `osha-dol-match.md` | OSHA concern checks: closed status, and matches in DOL's open data |
 | `run-log.md` | Stage status and the lead's decisions during the run |
 | `qa.md` | The final QA check of every file: what was fixed and what is flagged for the operator |
