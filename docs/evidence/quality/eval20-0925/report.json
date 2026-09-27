@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T08:02:01.455Z",
+  "generated": "2026-09-27T00:29:48.312Z",
   "graded_through": "2026-09-26",
   "searches": {
     "planned": 60,
@@ -20,18 +20,18 @@
       "precision": 0.979
     },
     "local": {
-      "graded": 150,
+      "graded": 151,
       "relevant": 96,
-      "unknown": 20,
-      "precision": 0.64
+      "unknown": 19,
+      "precision": 0.636
     }
   },
   "precision_local_by_zip_kind": {
     "urban": {
-      "graded": 51,
+      "graded": 52,
       "relevant": 33,
-      "unknown": 9,
-      "precision": 0.647
+      "unknown": 8,
+      "precision": 0.635
     },
     "suburban": {
       "graded": 68,

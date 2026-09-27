@@ -130,6 +130,14 @@ describe('summarize', () => {
     expect(precision(grades)).toEqual({ graded: 2, relevant: 1, unknown: 1, precision: 0.5 });
   });
 
+  it('counts a local shop confirmed not to exist as bad even when whether it sells the product is unknown', () => {
+    const grades = [
+      grade({ kind: 'local', sells_product: 'yes', local_exists: 'yes' }),
+      grade({ kind: 'local', sells_product: 'unknown', local_exists: 'no' }),
+    ];
+    expect(precision(grades)).toEqual({ graded: 2, relevant: 1, unknown: 0, precision: 0.5 });
+  });
+
   it('computes recall by registrable domain, or by name for shops without a website', () => {
     const results = { 's1:online': [{ retailer: { name: 'Shop A', domain: 'a.com' } }], 's1:local': [{ retailer: { name: "Bob's Hardware", domain: '' } }] };
     const base = (over) => ({ search_id: 's1', section: 'online', name: 'x', url: null, confirmed: true, miss_reason: null, checked: '2026-10-01', ...over });
@@ -184,20 +192,34 @@ describe('summarize', () => {
     expect(tally(grades, 'badges_sourced')).toEqual({ yes: 1, no: 1, 'n/a': 1 });
   });
 
+  const sec = (p, r) => ({ precision: { precision: p }, recall: { recall: r } });
+  const report = (online, local, graded_through = '2026-10-01') => ({
+    graded_through,
+    searches: { ok: 60, graded: 20 },
+    precision: { online: online.precision, local: local.precision },
+    recall: { online: online.recall, local: local.recall },
+  });
+
   it('publishes a headline only when every figure was measured', () => {
-    const sec = (p, r) => ({ precision: { precision: p }, recall: { recall: r } });
-    const report = (online, local, graded_through = '2026-10-01') => ({
-      graded_through,
-      searches: { ok: 60, graded: 20 },
-      precision: { online: online.precision, local: local.precision },
-      recall: { online: online.recall, local: local.recall },
-    });
-    expect(siteMeasure(report(sec(0.9, 0.5), sec(0.8, 0.4)))).toEqual({
+    expect(siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4))], 'docs/evidence/quality/eval20-0925')).toEqual({
       date: '2026-10-01', searches: 20, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
+      evidence: 'docs/evidence/quality/eval20-0925',
     });
     // Grades exist but no confirmed baseline yet: recall is null, so nothing is published.
-    expect(siteMeasure(report(sec(0.9, null), sec(0.8, null)))).toBeNull();
-    expect(siteMeasure(report(sec(0.9, 0.5), sec(0.8, 0.4), null))).toBeNull();
+    expect(siteMeasure([report(sec(0.9, null), sec(0.8, null))], 'x')).toBeNull();
+    expect(siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4), null)], 'x')).toBeNull();
+  });
+
+  it('ranges a figure that rounds to a different percentage between two runs of the same eval', () => {
+    const run1 = report(sec(0.979, 0.31), sec(0.636, 0.326));
+    const run2 = report(sec(0.979, 0.31), sec(0.617, 0.349));
+    expect(siteMeasure([run1, run2], 'docs/evidence/quality/eval20-0925')).toEqual({
+      date: '2026-10-01',
+      searches: 20,
+      precision: { online: 0.979, local: [0.617, 0.636] },
+      recall: { online: 0.31, local: [0.326, 0.349] },
+      evidence: 'docs/evidence/quality/eval20-0925',
+    });
   });
 });
 

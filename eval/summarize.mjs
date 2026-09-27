@@ -53,9 +53,14 @@ export function validateGrades(grades, schema) {
   }
 }
 
-/** Relevant: sells the product or an equivalent, and for local results the shop exists. Unknowns on either question are excluded. */
+/**
+ * Relevant: sells the product or an equivalent, and for local results the shop exists. Unknowns on
+ * either question are excluded, except a local shop confirmed not to exist counts as bad even when
+ * whether it sells the product is unknown (operator ruling, 2026-09-26).
+ */
 export function precision(grades) {
-  const graded = grades.filter((g) => g.sells_product !== 'unknown' && g.local_exists !== 'unknown');
+  const known = (g) => g.local_exists === 'no' || (g.sells_product !== 'unknown' && g.local_exists !== 'unknown');
+  const graded = grades.filter(known);
   const relevant = graded.filter((g) => g.sells_product !== 'no' && (g.kind === 'online' || g.local_exists === 'yes'));
   return { graded: graded.length, relevant: relevant.length, unknown: grades.length - graded.length, precision: ratio(relevant.length, graded.length) };
 }
@@ -119,14 +124,24 @@ export function agreement(probeResults, grades) {
   };
 }
 
-/** The About page's headline, or null unless every figure was actually measured. */
-export function siteMeasure(report) {
-  const precision = { online: report.precision.online.precision, local: report.precision.local.precision };
-  const recall = { online: report.recall.online.recall, local: report.recall.local.recall };
-  const figures = [...Object.values(precision), ...Object.values(recall)];
-  if (!report.graded_through || !figures.every(Number.isFinite)) return null;
+/**
+ * The About page's headline, or null unless every figure was actually measured. `reports` is one or two
+ * graded runs of the same eval (every graded eval now runs twice, operator ruling 2026-09-26); a figure
+ * that rounds to a different percentage between runs is given as a [low, high] range rather than picking
+ * one. `evidence` is the (first) run's evidence folder (OUT_DIR).
+ */
+export function siteMeasure(reports, evidence) {
+  const [first] = reports;
+  const values = (kind, sec) => reports.map((r) => r[kind][sec][kind]);
+  const all = ['precision', 'recall'].flatMap((kind) => SECTIONS.flatMap((sec) => values(kind, sec)));
+  if (!first.graded_through || !all.every(Number.isFinite)) return null;
+  const figure = (kind, sec) => {
+    const vs = values(kind, sec);
+    return new Set(vs.map((v) => Math.round(v * 100))).size === 1 ? vs[0] : [Math.min(...vs), Math.max(...vs)];
+  };
+  const both = (kind) => ({ online: figure(kind, 'online'), local: figure(kind, 'local') });
   // A sampled run grades only some searches; the headline names how many it rests on.
-  return { date: report.graded_through, searches: report.searches.graded, precision, recall };
+  return { date: first.graded_through, searches: first.searches.graded, precision: both('precision'), recall: both('recall'), evidence };
 }
 
 async function readJson(path, fallback) {
@@ -178,7 +193,10 @@ async function main() {
   console.log(JSON.stringify(report, null, 2));
 
   if (process.argv.includes('--site')) {
-    await writeFile('src/quality.json', JSON.stringify({ measured: siteMeasure(report) }, null, 2) + '\n');
+    // A second run of the same eval, when one has been saved alongside this one (Q2 ruling above).
+    const run2 = await readJson(`${DIR}/run2/report.json`, null);
+    const measured = siteMeasure(run2 ? [report, run2] : [report], DIR);
+    await writeFile('src/quality.json', JSON.stringify({ measured }, null, 2) + '\n');
   }
 }
 

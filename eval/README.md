@@ -32,6 +32,8 @@ Zip kinds follow a fixed rule so they can be rechecked. Urban: an anchor ZCTA in
 
 ## 1. Run the searches
 
+Every graded eval runs the 20 searches twice, an hour or more apart, and both runs are graded and reported (operator ruling, 2026-09-26): local results and the model's sell judgment both vary between runs, so one run alone cannot separate a real change from run-to-run noise. Give each run its own `OUT_DIR`, e.g. `docs/evidence/quality/<run>` and `docs/evidence/quality/<run>/run2`.
+
 ```sh
 WORKER_URL=<worker base URL> ORIGIN=<the Worker's ALLOWED_ORIGIN> npx tsx eval/run-searches.mjs
 ```
@@ -75,4 +77,8 @@ node eval/summarize.mjs          # writes docs/evidence/quality/report.json
 node eval/summarize.mjs --site   # also writes src/quality.json for the About page
 ```
 
-Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` (on either question) out of the denominator, reporting how many were left out. `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.
+Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` (on either question) out of the denominator, reporting how many were left out; a local shop confirmed not to exist (`local_exists: no`) counts as bad even when `sells_product` is `unknown` (operator ruling, 2026-09-26). `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.
+
+## 6. Index the run
+
+Every graded run gets its own folder under `docs/evidence/quality/` (its own `OUT_DIR`) and a row in [`docs/evidence/quality/README.md`](../docs/evidence/quality/README.md): date, folder, what changed in the pipeline, searches graded, online and local precision, and local recall, newest first.
