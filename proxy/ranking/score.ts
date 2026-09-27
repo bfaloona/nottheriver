@@ -16,19 +16,21 @@ const MAJOR_USD = 1_000_000;
 const STANDARD_USD = 100_000;
 const MINOR_CAP = 0.25; // total cost of minor findings, per dimension
 
-// The willful-or-repeat rule reads OSHA's own citation-type column, which exists only on an
-// inspection-detail page; a settlement press release on osha.gov (e.g. Dollar General's) has no
-// such column, so it is banded on the stated amount alone, same as any other source.
-const OSHA_INSPECTION_URL = /^https:\/\/www\.osha\.gov\/ords\/imis\/establishment\.inspection_detail\?/;
-
-function bandOf(s: Signal): Band {
-  if (s.status === 'open') return 'minor'; // no penalty imposed yet
-  if ((s.citation_type === 'willful' || s.citation_type === 'repeat') && OSHA_INSPECTION_URL.test(s.source_url)) return 'standard';
-  const amount = s.penalty_usd;
+function amountBand(amount: number | null | undefined): Band {
   if (amount === undefined || amount === null) return 'standard'; // not stated, or no fields recorded at all (llm origin)
   if (amount >= MAJOR_USD) return 'major';
   if (amount >= STANDARD_USD) return 'standard';
   return 'minor';
+}
+
+function bandOf(s: Signal): Band {
+  if (s.status === 'open') return 'minor'; // no penalty imposed yet
+  const band = amountBand(s.penalty_usd);
+  // Willful or repeat is a floor, not an override: `penalty_usd` is the inspection total, so a
+  // willful inspection over $1,000,000 stays major. `citation_type` only ever appears on an
+  // osha.gov inspection-detail row (data.test.ts enforces it), so no URL check is needed here.
+  if ((s.citation_type === 'willful' || s.citation_type === 'repeat') && band === 'minor') return 'standard';
+  return band;
 }
 
 // Pure function of the row's own fields, never the source text at request time. An llm-origin
@@ -174,9 +176,19 @@ export function scoreCandidate(
   }));
   // Sum unrounded products so the total does not accumulate per-row rounding.
   const score = round(components.reduce((sum, c) => sum + c.weight * c.value, 0), 3);
-  // Attach band, relation and cost per finding (ADR 0006) so the API response can show them;
-  // positive signals and certifications are untouched.
-  const signals = input.signals.map((s) => (s.polarity === 'negative' ? { ...s, ...findingCost(s) } : s));
+  // Attach band, relation and cost per finding (ADR 0006) so the API response can show them, but
+  // only to the first (kind, source_url) occurrence: the same one `dimension()`'s dedupe counts
+  // (curated entries come first in enrich.ts's `signals` array, so a curated row wins over a
+  // later llm copy of the same page). A discarded duplicate keeps its fields but never gets a
+  // cost, so summing `signals[].cost` per dimension can never overcount.
+  const countedKeys = new Set<string>();
+  const signals = input.signals.map((s) => {
+    if (s.polarity !== 'negative') return s;
+    const key = `${s.kind}|${s.source_url}`;
+    if (countedKeys.has(key)) return s;
+    countedKeys.add(key);
+    return { ...s, ...findingCost(s) };
+  });
   return { score, matched_product: rel.matched, distance_km: prox.distance_km, components, signals };
 }
 

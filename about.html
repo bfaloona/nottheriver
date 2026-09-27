@@ -33,7 +33,7 @@
 <p>Each result gets four scores between 0 and 1, and its rank comes from their weighted sum. The weights are listed above every set of results, and "Why this rank" on each result says in plain words what went into its score, linking each certification or concern to its source.</p>
 <ul>
 <li>Relevance: 1 when the shop's listing names the product or a close equivalent, 0.5 when it matches only the product's category, otherwise 0.2. For a shop near you, the language model's judgment from the shop's name and type also counts: 1 if it judged the shop likely sells the product, 0.5 if maybe.</li>
-<li>Ethics: starts at 0.5. Each ethics certification (B Corp, Fair Trade, worker co-op) adds 0.25, up to 1. An accepted labor or governance finding subtracts up to 0.25: less when the penalty was small, the case is still open, or it was against a related company; small findings together subtract at most 0.25; down to 0. The ranking page has the table.</li>
+<li>Ethics: starts at 0.5. Each ethics certification (B Corp, Fair Trade, worker co-op) adds 0.25, up to 1. An accepted labor or governance finding subtracts up to 0.25: less when the penalty was small, the amount isn't stated, the case is still open, or it was against a related company; small findings together subtract at most 0.25; down to 0. The ranking page has the table.</li>
 <li>Environment: starts at 0.5. Each environmental certification (1% for the Planet, Climate Neutral) adds 0.25, up to 1. An accepted environmental finding subtracts up to 0.25 the same way; down to 0.</li>
 <li>Proximity: for shops near you, 1 at the center of your zip area, falling to 0 at 40 km (about 25 miles). Online retailers get 0.5.</li>
 </ul>

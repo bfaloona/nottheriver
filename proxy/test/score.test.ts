@@ -213,19 +213,16 @@ describe('findingCost', () => {
     expect(findingCost(signal({ status: 'open', penalty_usd: null })).band).toBe('minor');
   });
 
-  it.each(['willful', 'repeat'] as const)('bands a %s OSHA inspection citation as standard, whatever its amount', (citation_type) => {
+  it.each(['willful', 'repeat'] as const)('bands a %s OSHA citation under $100,000 as standard: a floor, lifting minor up', (citation_type) => {
     expect(findingCost(signal({ source_url: OSHA_INSPECTION_URL, citation_type, penalty_usd: 5_000 })).band).toBe('standard');
+  });
+
+  it.each(['willful', 'repeat'] as const)('never lowers a %s OSHA citation of $1,000,000 or more: it stays major', (citation_type) => {
+    expect(findingCost(signal({ source_url: OSHA_INSPECTION_URL, citation_type, penalty_usd: 1_000_000 })).band).toBe('major');
   });
 
   it.each(['serious', 'other'] as const)('leaves a %s OSHA inspection citation banded on the amount alone', (citation_type) => {
     expect(findingCost(signal({ source_url: OSHA_INSPECTION_URL, citation_type, penalty_usd: 5_000 })).band).toBe('minor');
-  });
-
-  it('reads citation_type only on an inspection-detail page: a willful settlement press release on osha.gov still bands on the amount', () => {
-    // Dollar General's curated row cites a national news release, not an inspection page: no
-    // citation-type column exists there to read, so `citation_type` never overrides its amount.
-    const pressRelease = 'https://www.osha.gov/news/newsreleases/national/x';
-    expect(findingCost(signal({ source_url: pressRelease, citation_type: 'willful', penalty_usd: 5_000 })).band).toBe('minor');
   });
 
   it.each([
@@ -493,6 +490,15 @@ describe('scoreCandidate', () => {
     const positive: Signal = { ...negative('labor'), polarity: 'positive' };
     const r = scoreCandidate(input(online('x'), [], [positive]));
     expect(r.signals[0]).toEqual(positive);
+  });
+
+  it("keeps the curated finding on a dedupe with an llm copy of the same page, and never attaches cost to the discarded one (enrich.ts puts curated first, ADR 0006)", () => {
+    const curated = negative('labor', 1, { penalty_usd: 1_000_000, relation: 'self' }); // major, self: cost 0.25
+    const llmCopy: Signal = { ...curated, origin: 'llm', action_date: null, penalty_usd: undefined, relation: undefined, status: undefined };
+    const r = scoreCandidate(input(online('x'), [], [curated, llmCopy])); // curated first, matching enrich.ts's concatenation order
+    expect(r.components.find((c) => c.name === 'ethics')?.value).toBe(0.25); // 0.5 - 0.25 (major, the curated row); 0.375 if the llm copy had won instead
+    expect(r.signals[0]).toMatchObject({ band: 'major', cost: 0.25 });
+    expect(r.signals[1]!.cost).toBeUndefined(); // the discarded duplicate, so summing signals[].cost per dimension cannot overcount
   });
 
   it('flags minor_cap_applied on ethics only when the cap actually reduced the total, and never on relevance or proximity', () => {

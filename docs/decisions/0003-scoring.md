@@ -20,7 +20,7 @@ Weights live in `proxy/ranking/weights.ts`, are returned with every response and
 - Relevance gets 0.25, not more, because every candidate already came from a search for the product; the component mostly separates an exact match (1.0) from a category match (0.5) or a loose one (0.2).
 - Proximity gets 0.15 because it only varies for local shops (online retailers are fixed at 0.5); a small weight lets a nearby shop edge ahead without letting distance outweigh practice.
 
-What that means in points: one certification or one negative finding moves a score by 0.075 (0.30 × 0.25), exactly the gap between a shop at the center of your zip area and an online retailer (0.15 × 0.5). An exact product match beats a category match by 0.125.
+What that means in points: one certification moves a score by 0.075 (0.30 × 0.25), and one negative finding by at most 0.075, exactly the gap between a shop at the center of your zip area and an online retailer (0.15 × 0.5). An exact product match beats a category match by 0.125.
 
 **Component rules** (full text in [ranking.md](../ranking.md)):
 
