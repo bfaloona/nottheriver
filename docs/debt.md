@@ -14,7 +14,7 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | Shared `github.io` origin for CORS | Custom domain, so the allowed origin is not shared with other project pages |
 | No route resource: the Worker is served on `workers.dev` only | Custom domain with a route resource |
 | Stable `cloudflare_workers_script` + `cloudflare_workers_script_subdomain`, not the newer `cloudflare_worker` trio the provider labels beta | Migrate once the trio is stable |
-| No caching layer | Cache normalized queries and fetch results with a short TTL to cut cost and latency |
+| The model's reading of a product is cached in Workers KV; fetch results are not cached | Cache fetch results with a short TTL to cut cost and latency |
 | Web-search fallback for local results: not needed, because `place_search` was verified with the project's key on 2026-09-23 | None needed |
 
 ## Search pipeline
@@ -118,7 +118,7 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 |----------|---------------------------|
 | Access-probe challenge detection is a heuristic: the `cf-mitigated` header, plus vendor challenge-script markers on non-2xx responses only. The browser grading pass is its ground truth | Not decided |
 | The probe runs from Cloudflare's network and sends a `CF-Worker` header, while Brave's crawler follows Googlebot's permissions and does not name itself. So the probe's blocked rate approximates, but does not measure, what Brave's crawler meets | Not decided |
-| Grading uses one grader and no inter-rater agreement check. Recall is measured against another search engine's top results (up to 5 per section), not against every shop that exists | A second grader on a sample |
+| Grading uses one grader per row; a second grader checked samples only (36 local and 15 online rows, [quality.md](quality.md) Limitations). Recall is measured against another search engine's top results (up to 5 per section), not against every shop that exists | A second grader on every row |
 | The script that picked the evaluation zips is not committed (it read raw RUCA and Gazetteer files that stay out of the repo). The rule, the sources and a table of each zip's RUCA code and distance are in `eval/README.md`, so the choice can be rechecked | Not decided |
 | `run-searches.mjs` must run under tsx so it can reuse the browser's `src/zip.ts` lookup. Plain node cannot run it | Not decided |
 | The robots.txt parser does not percent-encoding-normalize paths and reads robots.txt up to 1 MB (RFC 9309 sets a minimum of 500 KiB) | Not decided |
@@ -127,7 +127,6 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 
 | Shortcut | Best-practice alternative |
 |----------|---------------------------|
-| `docs/evidence/tofu-plan.txt` does not exist; it needs one run of `infra/plan-evidence.sh` with a real `CLOUDFLARE_API_TOKEN` (listed in STATUS under Blocked on operator) | Run the script once and commit its output |
 | Applied and rejected counts for the first nine review passes are unrecoverable; STATUS shows them as not recorded | Record counts at the time of each review |
 | The STATUS review row for the first docs pass (6 of 7 applied) is self-reported, from a self-pass plus an advisor review, not a separate reviewer's count | An independent reviewer records its own counts |
 | Typical per-search LLM cost in `costs.md` is an estimate | Replace with OpenRouter's `usage.cost` from the first live search and the quality evaluation |

@@ -2,7 +2,7 @@
 
 Type a product and a US zip code, and this site suggests retailers that sell it, split into stores near you and online shops, ranked by ethical practice, environmental sustainability, and proximity. Amazon and Amazon-owned businesses never appear. That exclusion is the reason the site exists.
 
-Status: proof of concept, not yet deployed. See [docs/STATUS.md](docs/STATUS.md).
+Status: proof of concept, deployed. See [docs/STATUS.md](docs/STATUS.md).
 
 ## Features
 
