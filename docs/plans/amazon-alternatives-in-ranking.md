@@ -1,6 +1,6 @@
 # Plan: the Amazon alternatives research in ranking, selection and exclusion
 
-Status: planned 2026-09-26, not started. Reviewed: self-review 2026-09-26, file and line references checked; fresh-eyes review 2026-09-26 (`docs/plans/amazon-alternatives-in-ranking-review.md`), R1, R3, R4 (offline), R5, R7 to R10 applied; Operator rulings: R2 weighted findings (Phase B0), R4 live limits T1 to T4, R6 no response promise. Source: `research/amazon-alternatives.md` (54 retailer files, 26 list sites, built into `research/index.json`). Nothing under `research/` changes the live site today (`research/README.md`); the Worker imports only `data/*.json` at build (`proxy/src/pipeline.ts:1-3`).
+Status: Phase A done 2026-09-26; Phase B0 done and deployed 2026-09-27 (4855b7f). Next: Phase B, starting with the operator's claim-wording sign-off. Reviewed: self-review 2026-09-26, file and line references checked; fresh-eyes review 2026-09-26 (`docs/plans/amazon-alternatives-in-ranking-review.md`), R1, R3, R4 (offline), R5, R7 to R10 applied; Operator rulings: R2 weighted findings (Phase B0), R4 live limits T1 to T4, R6 no response promise. Source: `research/amazon-alternatives.md` (54 retailer files, 26 list sites, built into `research/index.json`). Nothing under `research/` changes the live site today (`research/README.md`); the Worker imports only `data/*.json` at build (`proxy/src/pipeline.ts:1-3`).
 
 ## What the research can and cannot do for the site
 
@@ -52,6 +52,7 @@ Four conflicts between the research rows and the live rules:
 - Every row whose page does not name the shop (Azure Standard's address-matched OSHA pages, Depop's eBay case, the Patagonia Provisions rows) carries a `note` stating the tie and its source; the data test checks the note is present for those rows.
 - Walmart's environmental row: cite the CourtListener docket page, not the JSON API URL.
 - Add an `abebooks.com` case to `tests/fixtures/blocklist-cases.json` (the other 3 Amazon-owned domains are already covered).
+- Render the "Counted as ..." line per finding from the response's band and relation ([ADR 0006](../decisions/0006-weighted-findings.md)); B0 shipped the fields only.
 - Adjust the uniqueness test per Q1; add the subset test; add the optional record link field and render it.
 - Amend ADR 0003, ADR 0004 (carry the concern definition from `research/brief.md:212`: open agency complaints and sister-company settlements now count), `docs/ranking.md` ("What can appear today" and rule 3 at lines 84-89), `about.html:36-41`, and the comments at `src/render.ts:159` and `proxy/src/contract.ts:38`. Run `infra/deploy.sh` (agent-runnable: bundle only).
 

@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-26. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups, classifier-judged local ranking, "store"-always local searches and the normalize cache. The quality evaluation was measured on a 20-search sample and rerun twice: after distance groups and ranking (no measurable change) and after the wording fix (local precision 58.1% before, 63.6% and 61.7% in two graded runs, counting a shop that does not exist as bad) ([quality.md](quality.md)).
+As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups, classifier-judged local ranking, "store"-always local searches and the normalize cache. The quality evaluation was measured on a 20-search sample and rerun twice: after distance groups and ranking (no measurable change) and after the wording fix (local precision 58.1% before, 63.6% and 61.7% in two graded runs, counting a shop that does not exist as bad) ([quality.md](quality.md)).
 
 ## Done
 
@@ -22,14 +22,28 @@ As of 2026-09-26. Pushed to `main`; the Worker is deployed with the store-type f
 | Distance groups | Nearby within 10 mi (metro zips, RUCA 1 to 3) or 30 mi (RUCA 4 to 10); up to 3 "Farther away" out to 100 mi; beyond that dropped as `too_far`. RUCA code per ZCTA in `zips.json`, sent with each search ([ranking.md](ranking.md#distance-groups)) |
 | Wording-fix rerun | The 20 graded searches run twice on 2026-09-25/26 with "store" always and the normalize cache: wording identical across runs and zips; local precision 63.6% and 61.7% in the two runs vs 58.1% on 9-24 (a shop that does not exist counts as bad, ruling 2026-09-26), nearby top 3 good in 32 of 49 and 32 of 50 vs 29 of 51, local recall 28 and 30 of 86 vs 24; the model's sells judgment flipped 8 of 248 shops Brave returned in both runs ([quality.md](quality.md#rerun-after-fixing-the-search-wording)) |
 | Amazon alternatives research | `research/` (54 retailer files, 26 list sites, `research/index.json`), merged a6fa019; the Worker deploy added fda.gov and ca.gov as accepted negative sources and World of Books' B Corp certification. Feeding it into ranking is planned: [plans/amazon-alternatives-in-ranking.md](plans/amazon-alternatives-in-ranking.md) |
+| Grouped concerns (Amazon plan Phase A) | A result with 2 or more concerns shows one line ("2 concerns, 2021 to 2023") that opens to each finding with its date, source and dispute link; a single concern shows as before, with its date. Screenshot: [evidence/results.png](evidence/results.png) |
+| Weighted findings (Phase B0, [ADR 0006](decisions/0006-weighted-findings.md)) | Each finding costs 0.25 × band (by penalty) × relation; minor findings capped at 0.25 per dimension; no age factor. The 4 live findings are all major, so live scores did not change. Deployed at 4855b7f (2026-09-27) |
+| About quality summary | Two plain lines from eval20-0925 (both runs) plus the path to the raw evidence; index of runs in [evidence/quality/README.md](evidence/quality/README.md). A local shop that does not exist now counts as bad, and every graded eval runs twice ([eval/README.md](../eval/README.md)) |
 | Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29; a live rerun showed no change (30 of 54 before, 29 of 51 after) ([quality.md](quality.md#rerun-after-distance-groups-and-classifier-judged-ranking)) |
 | Worker deploys | Agents deploy the Worker with `infra/deploy.sh` (operator grant, 2026-09-24): committed and pushed code only, and only a new bundle; any other infrastructure change stops for the operator. When to run it: `.claude/skills/deploy/SKILL.md` |
 | Positive signals | A positive signal must cite a fetched page on another site that names the shop; a shop's own page no longer counts ([ADR 0004](decisions/0004-down-ranking.md)) |
-| Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0004](decisions/0004-down-ranking.md) |
+| Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0006](decisions/0006-weighted-findings.md) |
 
 ## In flight
 
 - None.
+
+## Priorities
+
+How work is scheduled: this list is the order of work. The top item not blocked on the operator is next. Each item names its next concrete step and what it waits on. The operator orders the list; an agent adds a new item at the bottom with a proposed position, and moves a finished item to Done. Decisions the operator owes live under "Decisions needed", not here.
+
+| # | Work | Next step | Waits on |
+|---|---|---|---|
+| 1 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)) | Prepare the claim-wording checklist under `docs/evidence/` (review item R1) | Operator sign-off on every claim before import |
+| 2 | Analysis and triage of [caching-and-store-types.md](caching-and-store-types.md): caching candidates, store-type and chain handling (in the skillet walkthrough, Home Depot and Walmart outrank an independent hardware store), S1 to S5, CQ1 to CQ5 | Detailed analysis per issue, with a proposed triage (do, defer, drop) and the evidence behind each | Operator answers to CQ1 to CQ5 for the final triage |
+| 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
+| 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 
 ## Blocked on operator
 
