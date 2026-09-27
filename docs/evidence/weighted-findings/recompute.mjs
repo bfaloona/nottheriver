@@ -47,9 +47,11 @@ const RELATED = {
   'https://oag.ca.gov/prop65/60-Day-Notice-2022-02550': 'related', // patagonia-com.md:20
   'https://oag.ca.gov/prop65/60-Day-Notice-2024-04838': 'related', // patagonia-com.md:21
   'depop.com|2024-01-11': 'related', // parent eBay; depop-com.md:14
-  'azurestandard.com|2022-03-10': 'related', // Azure Farms Inc, tied by address; azurestandard-com.md:27 (W6)
-  'azurestandard.com|2023-03-08': 'related',
-  'azurestandard.com|2023-05-26': 'related',
+  // Warehouse the shop ships from; operator ruling 2026-09-27 (W6) moved these from `related` to
+  // `related-at-shop` (full weight) after the recommendation predating ruling 4's split.
+  'azurestandard.com|2022-03-10': 'related-at-shop',
+  'azurestandard.com|2023-03-08': 'related-at-shop',
+  'azurestandard.com|2023-05-26': 'related-at-shop',
   'avocadogreenmattress.com|2022-08-11': 'related-at-shop', // parent's inspection at the shop's own factory; avocadogreenmattress-com.md:32
   'avocadogreenmattress.com|2023-08-16': 'related-at-shop',
 };
