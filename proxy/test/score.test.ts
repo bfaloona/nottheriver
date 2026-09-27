@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Candidate, CertKind, Certification, Normalized, Signal, SignalKind } from '../src/contract';
 import { WEIGHTS } from '../ranking/weights';
-import { env, ethics, proximity, rankByScore, relevance, scoreCandidate } from '../ranking/score';
+import { env, ethics, findingCost, proximity, rankByScore, relevance, scoreCandidate } from '../ranking/score';
 
 const SITE = 'http://localhost:5173';
 const DOC = `${SITE}/about.html#ranking`;
@@ -37,10 +37,14 @@ function cert(kind: CertKind, label: string = kind): Certification {
   return { kind, label, source_url: `https://cert.example/${kind}`, checked: '2026-09-23' };
 }
 
-function negative(kind: SignalKind, n = 1): Signal {
+// Major and self by default (cost 0.25), so every existing "0.25 per negative" test still holds:
+// that is also ADR 0006's equivalence claim made concrete (all major and self equals the old flat rule).
+function negative(kind: SignalKind, n = 1, overrides: Partial<Signal> = {}): Signal {
   return {
     kind, polarity: 'negative', claim: `Case ${n}`, source_url: `https://www.ftc.gov/case-${kind}-${n}`,
     origin: 'curated', action_date: '2024-01-01',
+    penalty_usd: 1_000_000, relation: 'self', status: 'final',
+    ...overrides,
   };
 }
 
@@ -136,7 +140,7 @@ describe.each(dimensions)('$name', ({ fn, kinds, other, neg, otherNeg }) => {
   const all = kinds.map((k) => cert(k));
 
   it('starts at the 0.5 baseline, citing the ranking doc', () => {
-    expect(fn([], [], DOC)).toEqual({ value: 0.5, sources: [{ label: 'Baseline 0.5', url: DOC }] });
+    expect(fn([], [], DOC)).toEqual({ value: 0.5, minor_cap_applied: false, sources: [{ label: 'Baseline 0.5', url: DOC }] });
   });
 
   it('adds 0.25 per certification of its own kind and cites it', () => {
@@ -184,6 +188,184 @@ describe.each(dimensions)('$name', ({ fn, kinds, other, neg, otherNeg }) => {
 it('ethics counts a labor and a governance negative citing one page as two', () => {
   const labor = negative('labor');
   expect(ethics([], [labor, { ...negative('governance'), source_url: labor.source_url }], DOC).value).toBe(0);
+});
+
+// ADR 0006 (weighted findings): cost = 0.25 x band x relation, read only from the row's own fields.
+describe('findingCost', () => {
+  const OSHA_INSPECTION_URL = 'https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1';
+  const signal = (overrides: Partial<Signal> = {}): Signal => ({
+    kind: 'labor', polarity: 'negative', claim: 'x', source_url: 'https://www.ftc.gov/x',
+    origin: 'curated', action_date: '2024-01-01', relation: 'self', status: 'final', penalty_usd: 0,
+    ...overrides,
+  });
+
+  it.each([
+    [99_999, 'minor'], [100_000, 'standard'], [999_999, 'standard'], [1_000_000, 'major'], [0, 'minor'],
+  ] as const)('bands a $%d penalty as %s', (penalty_usd, band) => {
+    expect(findingCost(signal({ penalty_usd })).band).toBe(band);
+  });
+
+  it('bands an unstated amount (null) as standard', () => {
+    expect(findingCost(signal({ penalty_usd: null })).band).toBe('standard');
+  });
+
+  it('bands an open case with no penalty as minor', () => {
+    expect(findingCost(signal({ status: 'open', penalty_usd: null })).band).toBe('minor');
+  });
+
+  it.each(['willful', 'repeat'] as const)('bands a %s OSHA inspection citation as standard, whatever its amount', (citation_type) => {
+    expect(findingCost(signal({ source_url: OSHA_INSPECTION_URL, citation_type, penalty_usd: 5_000 })).band).toBe('standard');
+  });
+
+  it.each(['serious', 'other'] as const)('leaves a %s OSHA inspection citation banded on the amount alone', (citation_type) => {
+    expect(findingCost(signal({ source_url: OSHA_INSPECTION_URL, citation_type, penalty_usd: 5_000 })).band).toBe('minor');
+  });
+
+  it('reads citation_type only on an inspection-detail page: a willful settlement press release on osha.gov still bands on the amount', () => {
+    // Dollar General's curated row cites a national news release, not an inspection page: no
+    // citation-type column exists there to read, so `citation_type` never overrides its amount.
+    const pressRelease = 'https://www.osha.gov/news/newsreleases/national/x';
+    expect(findingCost(signal({ source_url: pressRelease, citation_type: 'willful', penalty_usd: 5_000 })).band).toBe('minor');
+  });
+
+  it.each([
+    ['self', 1], ['related-at-shop', 1], ['related', 0.5],
+  ] as const)('weighs a %s finding at %s', (relation, weight) => {
+    expect(findingCost(signal({ relation, penalty_usd: 1_000_000 })).cost).toBe(0.25 * weight);
+  });
+
+  it('costs 0.03125 for a related minor finding', () => {
+    expect(findingCost(signal({ relation: 'related', penalty_usd: 0 })).cost).toBe(0.03125);
+  });
+
+  it('scores an llm-origin signal, which carries none of these fields, as standard and self: 0.125', () => {
+    const llmSignal: Signal = { kind: 'labor', polarity: 'negative', claim: 'x', source_url: 'https://www.ftc.gov/x', origin: 'llm', action_date: null };
+    expect(findingCost(llmSignal)).toEqual({ band: 'standard', relation: 'self', cost: 0.125 });
+  });
+});
+
+describe('minor cap (ADR 0006: at most 0.25 per dimension)', () => {
+  const minor = (kind: SignalKind, n: number, overrides: Partial<Signal> = {}) => negative(kind, n, { penalty_usd: 0, ...overrides });
+
+  it('four minor rows cost 0.25 in total, without tripping the cap flag', () => {
+    const rows = [1, 2, 3, 4].map((n) => minor('labor', n));
+    const r = ethics([], rows, DOC);
+    expect(r.value).toBe(0.25); // 0.5 - 4 x 0.0625
+    expect(r.minor_cap_applied).toBe(false);
+  });
+
+  it('five minor rows still cost 0.25, and now the cap flag is set', () => {
+    const rows = [1, 2, 3, 4, 5].map((n) => minor('labor', n));
+    const r = ethics([], rows, DOC);
+    expect(r.value).toBe(0.25);
+    expect(r.minor_cap_applied).toBe(true);
+  });
+
+  it('nine related minor rows (9 x 0.03125 = 0.28125) still cost only 0.25', () => {
+    const rows = Array.from({ length: 9 }, (_, i) => minor('labor', i, { relation: 'related' }));
+    const r = ethics([], rows, DOC);
+    expect(r.value).toBe(0.25);
+    expect(r.minor_cap_applied).toBe(true);
+  });
+
+  it('a major row beside five minor rows costs 0.5 in total: the cap never touches major or standard findings', () => {
+    const rows = [negative('labor', 0), ...[1, 2, 3, 4, 5].map((n) => minor('labor', n))];
+    expect(ethics([], rows, DOC).value).toBe(0); // 0.5 - 0.25 (major) - 0.25 (capped minor)
+  });
+
+  it('caps per dimension, not per kind: five minor labor rows plus one minor governance row cost 0.25 together', () => {
+    const rows = [...[1, 2, 3, 4, 5].map((n) => minor('labor', n)), minor('governance', 6)];
+    expect(ethics([], rows, DOC).value).toBe(0.25);
+  });
+
+  it('caps ethics and environment separately: five minor rows in each dimension cost 0.25 apiece', () => {
+    const rows = [...[1, 2, 3, 4, 5].map((n) => minor('labor', n)), ...[1, 2, 3, 4, 5].map((n) => minor('environmental', n))];
+    expect(ethics([], rows, DOC).value).toBe(0.25);
+    expect(env([], rows, DOC).value).toBe(0.25);
+  });
+});
+
+// ADR 0006's worked examples, recomputed here from fixtures (not data/*.json: those rows don't
+// exist until Phase B) so a changed row or rule fails this test by name.
+describe('ADR 0006 worked examples', () => {
+  const oshaLabor = (source_url: string, penalty_usd: number, relation: Signal['relation'] = 'self') => ({
+    kind: 'labor' as const, polarity: 'negative' as const, claim: 'OSHA inspection', source_url,
+    origin: 'curated' as const, action_date: '2024-01-01', penalty_usd, relation, status: 'final' as const,
+  });
+  const prop65 = (source_url: string, penalty_usd: number, relation: Signal['relation'] = 'self') => ({
+    kind: 'environmental' as const, polarity: 'negative' as const, claim: 'Prop 65 settlement', source_url,
+    origin: 'curated' as const, action_date: '2024-01-01', penalty_usd, relation, status: 'final' as const,
+  });
+  const standard = (kind: SignalKind, source_url: string) => ({
+    kind, polarity: 'negative' as const, claim: 'Not stated', source_url,
+    origin: 'curated' as const, action_date: '2024-01-01', penalty_usd: null, relation: 'self' as const, status: 'final' as const,
+  });
+  const openCase = (source_url: string) => ({
+    kind: 'labor' as const, polarity: 'negative' as const, claim: 'Open complaint', source_url,
+    origin: 'curated' as const, action_date: '2024-01-01', penalty_usd: null, relation: 'self' as const, status: 'open' as const,
+  });
+
+  it('Walmart: two majors and two unstated-amount standards floor ethics at 0, env stays 0.25', () => {
+    const walmartEthics = [
+      { ...standard('governance', 'https://ftc.example/walmart-2025-06-23'), penalty_usd: 50_000_000 },
+      standard('governance', 'https://ftc.example/walmart-2025-06-23-b'),
+      standard('labor', 'https://dol.example/walmart-2024-01-11'),
+    ];
+    const walmartEnv = [{ ...standard('environmental', 'https://courtlistener.example/walmart'), penalty_usd: 11_000_000 }];
+    expect(ethics([], walmartEthics, DOC).value).toBe(0);
+    expect(env([], walmartEnv, DOC).value).toBe(0.25);
+  });
+
+  it('Costco: four minor OSHA/NLRB rows cost exactly the cap, ethics 0.25', () => {
+    const rows = [
+      oshaLabor('https://osha.example/costco-1', 9_403),
+      oshaLabor('https://osha.example/costco-2', 1_330),
+      oshaLabor('https://osha.example/costco-3', 560),
+      openCase('https://nlrb.example/costco'),
+    ];
+    expect(ethics([], rows, DOC).value).toBe(0.25);
+  });
+
+  it("Patagonia: two ethics certs plus one standard finding gives ethics 0.875; one env cert plus one self and three related minors gives env 0.59375", () => {
+    const certs = [cert('fair_trade'), cert('b_corp'), cert('climate_neutral')];
+    const patagoniaEthics = [standard('labor', 'https://nlrb.example/patagonia')];
+    const patagoniaEnv = [
+      prop65('https://oag.example/patagonia-2021-08-12', 36_000, 'self'),
+      prop65('https://oag.example/patagonia-2022-12-07', 4_000, 'related'),
+      prop65('https://oag.example/patagonia-2023-02-17', 5_000, 'related'),
+      prop65('https://oag.example/patagonia-2025-04-01', 2_000, 'related'),
+    ];
+    expect(ethics(certs, patagoniaEthics, DOC).value).toBe(0.875);
+    expect(env(certs, patagoniaEnv, DOC).value).toBe(0.59375);
+  });
+
+  it('Etsy: five minor Prop 65 rows exceed the cap, so env goes from 0.75 to 0.5 (ethics untouched at 0.5)', () => {
+    const rows = [
+      prop65('https://oag.example/etsy-1', 20_000),
+      prop65('https://oag.example/etsy-2', 40_000),
+      prop65('https://oag.example/etsy-3', 6_000),
+      prop65('https://oag.example/etsy-4', 24_300),
+      prop65('https://oag.example/etsy-5', 10_000),
+    ];
+    expect(ethics([], [], DOC).value).toBe(0.5);
+    expect(env([cert('climate_neutral')], rows, DOC).value).toBe(0.5);
+  });
+
+  it("Bob's Red Mill: a fair_trade cert plus one minor labor row gives ethics 0.6875; seven minor environmental rows exceed the cap, env 0.25", () => {
+    const ethicsRows = [oshaLabor('https://osha.example/bobsredmill', 1_350)];
+    const envRows = [5_000, 19_000, 1_000, 7_500, 16_000, 2_500, 2_000].map((amount, i) => prop65(`https://oag.example/bobsredmill-${i}`, amount));
+    expect(ethics([cert('fair_trade')], ethicsRows, DOC).value).toBe(0.6875);
+    expect(env([], envRows, DOC).value).toBe(0.25);
+  });
+
+  it("Azure Standard: three warehouse OSHA rows, related-at-shop (operator ruling 2026-09-27), cost ethics 0.3125", () => {
+    const rows = [
+      oshaLabor('https://osha.example/azure-1', 1_800, 'related-at-shop'),
+      oshaLabor('https://osha.example/azure-2', 1_000, 'related-at-shop'),
+      oshaLabor('https://osha.example/azure-3', 570, 'related-at-shop'),
+    ];
+    expect(ethics([], rows, DOC).value).toBe(0.3125);
+  });
 });
 
 describe('proximity', () => {
@@ -299,6 +481,27 @@ describe('scoreCandidate', () => {
     for (const name of ['ethics', 'env', 'proximity']) {
       expect(r.components.find((c) => c.name === name)?.sources[0]?.url).toBe(DOC);
     }
+  });
+
+  it('attaches band, relation and cost to every negative signal, defaulting a missing relation to self (ADR 0006)', () => {
+    const sig = negative('labor', 1, { penalty_usd: 50_000, relation: undefined });
+    const r = scoreCandidate(input(online('x'), [], [sig]));
+    expect(r.signals[0]).toMatchObject({ band: 'minor', relation: 'self', cost: 0.0625 });
+  });
+
+  it('leaves positive signals and certifications untouched', () => {
+    const positive: Signal = { ...negative('labor'), polarity: 'positive' };
+    const r = scoreCandidate(input(online('x'), [], [positive]));
+    expect(r.signals[0]).toEqual(positive);
+  });
+
+  it('flags minor_cap_applied on ethics only when the cap actually reduced the total, and never on relevance or proximity', () => {
+    const rows = [1, 2, 3, 4, 5].map((n) => negative('labor', n, { penalty_usd: 0 }));
+    const r = scoreCandidate(input(online('x'), [], rows));
+    expect(r.components.find((c) => c.name === 'ethics')?.minor_cap_applied).toBe(true);
+    expect(r.components.find((c) => c.name === 'env')?.minor_cap_applied).toBe(false);
+    expect(r.components.find((c) => c.name === 'relevance')?.minor_cap_applied).toBeUndefined();
+    expect(r.components.find((c) => c.name === 'proximity')?.minor_cap_applied).toBeUndefined();
   });
 });
 

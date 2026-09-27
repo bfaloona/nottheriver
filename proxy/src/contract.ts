@@ -20,6 +20,10 @@ export type CertKind =
   | 'one_percent_planet' | 'climate_neutral'
   | 'independent_retailer_assoc';
 export type SignalKind = 'labor' | 'governance' | 'environmental';
+// ADR 0006 (weighted findings): how much a finding costs, read from the row, never guessed.
+export type Band = 'major' | 'standard' | 'minor';
+export type Relation = 'self' | 'related-at-shop' | 'related';
+export type CitationType = 'willful' | 'repeat' | 'serious' | 'other';
 // The model's judgment of one fetched page. "maybe" exists because a place listing often
 // gives too little to decide, and a forced yes/no would be a guess.
 export type SiteType = 'retailer' | 'marketplace' | 'editorial' | 'manufacturer_no_cart' | 'service' | 'other';
@@ -42,6 +46,15 @@ export interface Signal {
   source_url: string;
   origin: 'curated' | 'llm';
   action_date: string | null; // curated only
+  // Row fields (ADR 0006), curated negatives only; absent on an `llm`-origin signal, which
+  // scores as standard and self. `citation_type` is set only on osha.gov inspection-detail rows.
+  penalty_usd?: number | null;
+  relation?: Relation;
+  status?: 'final' | 'open';
+  citation_type?: CitationType;
+  // Computed (ADR 0006), attached to a negative signal before it reaches the API response.
+  band?: Band;
+  cost?: number;
 }
 
 export interface ScoreComponent {
@@ -50,6 +63,9 @@ export interface ScoreComponent {
   weight: number;       // from proxy/ranking/weights.ts
   contribution: number; // weight * value, 3 decimals
   sources: SourceRef[]; // length >= 1 whenever value > 0
+  // ethics and env only (ADR 0006): true when the dimension's minor findings totalled more
+  // than the 0.25 cap, so the cap actually reduced what they cost.
+  minor_cap_applied?: boolean;
 }
 
 export interface SearchResult {

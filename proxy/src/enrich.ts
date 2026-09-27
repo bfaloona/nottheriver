@@ -1,5 +1,5 @@
 import { normalizeName } from './blocklist';
-import type { Candidate, CertKind, Certification, Classification, SellsProduct, Signal, SignalKind, SiteType } from './contract';
+import type { Candidate, CertKind, Certification, CitationType, Classification, Relation, SellsProduct, Signal, SignalKind, SiteType } from './contract';
 import { domainLabel, registrableDomain } from './domain';
 import { ENRICH_MAX_TOKENS, type LlmClient } from './llm';
 import { buildEnrichPrompt, type EnrichProduct, type LlmView } from './prompts';
@@ -12,7 +12,14 @@ export const LLM_TITLE_CHARS = 120;
 export const LLM_SNIPPET_CHARS = 400;
 
 export interface CertificationRow { domain: string; kind: CertKind; source_url: string; checked: string }
-export interface NegativeRow { domain: string; kind: SignalKind; claim: string; source_url: string; action_date: string }
+export interface NegativeRow {
+  domain: string; kind: SignalKind; claim: string; source_url: string; action_date: string;
+  // ADR 0006 (weighted findings)
+  penalty_usd: number | null;
+  relation: Relation;
+  status: 'final' | 'open';
+  citation_type?: CitationType; // osha.gov inspection-detail rows only
+}
 export interface CuratedData {
   certifications: CertificationRow[];
   negatives: NegativeRow[];
@@ -50,7 +57,10 @@ export function certificationsFor(domain: string, rows: CertificationRow[]): Cer
 export function negativesFor(domain: string, rows: NegativeRow[]): Signal[] {
   return rows
     .filter((r) => r.domain === domain)
-    .map((r) => ({ kind: r.kind, polarity: 'negative', claim: r.claim, source_url: r.source_url, origin: 'curated', action_date: r.action_date }));
+    .map((r) => ({
+      kind: r.kind, polarity: 'negative', claim: r.claim, source_url: r.source_url, origin: 'curated', action_date: r.action_date,
+      penalty_usd: r.penalty_usd, relation: r.relation, status: r.status, citation_type: r.citation_type,
+    }));
 }
 
 // Candidates arrive with location fields; this projection is the only shape the model sees.

@@ -6,6 +6,13 @@ import negatives from '../../data/negatives.json';
 import registry from '../../data/negative-sources.json';
 import type { CertKind, SignalKind } from '../src/contract';
 import { registrableDomain } from '../src/domain';
+import { negativesFor, type NegativeRow } from '../src/enrich';
+import { findingCost } from '../ranking/score';
+
+// The JSON import types `relation`/`status`/`citation_type` as plain strings; the row test below
+// checks each against its contract union, which is what makes this cast safe.
+type NegativeEntry = NegativeRow & { name: string; checked: string; note?: string };
+const negativeEntries = negatives.entries as unknown as NegativeEntry[];
 
 // Records keyed by the contract unions, so adding or renaming a kind fails typecheck here.
 const CERT_KINDS = {
@@ -16,6 +23,14 @@ const CERT_KINDS = {
 const SIGNAL_KINDS = { labor: true, governance: true, environmental: true } satisfies Record<SignalKind, true>;
 
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+// ADR 0006 (weighted findings)
+const RELATIONS = ['self', 'related-at-shop', 'related'];
+const STATUSES = ['final', 'open'];
+const CITATION_TYPES = ['willful', 'repeat', 'serious', 'other'];
+const AMOUNT_STATED_DOMAINS = ['osha.gov', 'oag.ca.gov'];
+// A citation type comes off an inspection's own citation-type column, which exists only on an
+// inspection-detail page; a settlement press release elsewhere on osha.gov has no such column.
+const OSHA_INSPECTION = /^https:\/\/www\.osha\.gov\/ords\/imis\/establishment\.inspection_detail\?/;
 
 function expectSourced(e: { domain: string; source_url: string; checked: string }) {
   expect(e.source_url, e.domain).toMatch(/^https:\/\//);
@@ -57,7 +72,7 @@ describe('certifications.json', () => {
 });
 
 describe('negatives.json', () => {
-  it.each(negatives.entries)('$domain $kind is sourced from an accepted registry domain', (e) => {
+  it.each(negativeEntries)('$domain $kind is sourced from an accepted registry domain', (e) => {
     expectSourced(e);
     expect(e.name).not.toBe('');
     expect(Object.keys(SIGNAL_KINDS)).toContain(e.kind);
@@ -66,8 +81,34 @@ describe('negatives.json', () => {
     expect(registryDomains).toContain(registrableDomain(e.source_url));
   });
 
+  it.each(negativeEntries)('$domain $kind has the weighted-findings fields ADR 0006 requires', (e) => {
+    expect(e.penalty_usd === null || (Number.isInteger(e.penalty_usd) && e.penalty_usd >= 0), e.domain).toBe(true);
+    if (AMOUNT_STATED_DOMAINS.includes(registrableDomain(e.source_url) ?? '')) {
+      expect(e.penalty_usd, e.domain).not.toBeNull();
+    }
+    expect(RELATIONS, e.domain).toContain(e.relation);
+    if (e.relation === 'related' || e.relation === 'related-at-shop') {
+      expect(e.note, e.domain).toBeTruthy();
+    }
+    expect(STATUSES, e.domain).toContain(e.status);
+    if (e.status === 'open') expect(e.penalty_usd, e.domain).toBeNull();
+    if (OSHA_INSPECTION.test(e.source_url)) {
+      expect(CITATION_TYPES, e.domain).toContain(e.citation_type);
+    } else {
+      expect(e.citation_type, e.domain).toBeUndefined();
+    }
+  });
+
   it('has one row per domain and kind', () => {
     expectUnique(negatives.entries.map((e) => `${e.domain} ${e.kind}`));
+  });
+
+  // ADR 0006 (weighted findings): each of today's 4 live rows is major and self, so it must keep
+  // costing the flat 0.25 it always has; a live score changing here would be the bug.
+  it.each(negativeEntries)('$domain: major and self, so it costs the same 0.25 it always has', (e) => {
+    const [signal] = negativesFor(e.domain, negativeEntries);
+    expect(signal, e.domain).toBeDefined();
+    expect(findingCost(signal!), e.domain).toEqual({ band: 'major', relation: 'self', cost: 0.25 });
   });
 });
 

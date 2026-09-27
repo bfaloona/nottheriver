@@ -177,7 +177,7 @@ export async function enrichAndFilter(
 const coord = (x: number | null): number | null => (x === null || !Number.isFinite(x) ? null : Math.round(x * 1e4) / 1e4);
 
 function scoreRow(id: string, input: ScoreInput): ScoredRow {
-  const { candidate: c, certifications: certs, signals } = input;
+  const { candidate: c, certifications: certs } = input;
   const scored = scoreCandidate(input);
   const result = {
     id,
@@ -190,7 +190,7 @@ function scoreRow(id: string, input: ScoreInput): ScoredRow {
     lat: coord(c.lat),
     lon: coord(c.lon),
     certifications: certs,
-    signals,
+    signals: scored.signals,
     score: scored.score,
     components: scored.components,
   };

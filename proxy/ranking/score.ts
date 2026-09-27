@@ -1,5 +1,5 @@
 import type {
-  Candidate, CertKind, Certification, Classification, ComponentName, Normalized, ScoreComponent, SellsProduct, Signal, SignalKind, SourceRef,
+  Band, Candidate, CertKind, Certification, Classification, ComponentName, Normalized, Relation, ScoreComponent, SellsProduct, Signal, SignalKind, SourceRef,
 } from '../src/contract';
 import { haversineKm, type LatLon } from './geo';
 import { WEIGHTS } from './weights';
@@ -8,6 +8,36 @@ const BASELINE = 0.5;
 const STEP = 0.25;
 const PROXIMITY_RADIUS_KM = 40;
 const ONLINE_PROXIMITY = 0.5;
+
+// ADR 0006 (weighted findings): cost = STEP x band x relation.
+const BAND_WEIGHT: Record<Band, number> = { major: 1, standard: 0.5, minor: 0.25 };
+const RELATION_WEIGHT: Record<Relation, number> = { self: 1, 'related-at-shop': 1, related: 0.5 };
+const MAJOR_USD = 1_000_000;
+const STANDARD_USD = 100_000;
+const MINOR_CAP = 0.25; // total cost of minor findings, per dimension
+
+// The willful-or-repeat rule reads OSHA's own citation-type column, which exists only on an
+// inspection-detail page; a settlement press release on osha.gov (e.g. Dollar General's) has no
+// such column, so it is banded on the stated amount alone, same as any other source.
+const OSHA_INSPECTION_URL = /^https:\/\/www\.osha\.gov\/ords\/imis\/establishment\.inspection_detail\?/;
+
+function bandOf(s: Signal): Band {
+  if (s.status === 'open') return 'minor'; // no penalty imposed yet
+  if ((s.citation_type === 'willful' || s.citation_type === 'repeat') && OSHA_INSPECTION_URL.test(s.source_url)) return 'standard';
+  const amount = s.penalty_usd;
+  if (amount === undefined || amount === null) return 'standard'; // not stated, or no fields recorded at all (llm origin)
+  if (amount >= MAJOR_USD) return 'major';
+  if (amount >= STANDARD_USD) return 'standard';
+  return 'minor';
+}
+
+// Pure function of the row's own fields, never the source text at request time. An llm-origin
+// signal carries none of these fields and so scores as standard and self (cost 0.125).
+export function findingCost(s: Signal): { band: Band; relation: Relation; cost: number } {
+  const band = bandOf(s);
+  const relation: Relation = s.relation ?? 'self';
+  return { band, relation, cost: STEP * BAND_WEIGHT[band] * RELATION_WEIGHT[relation] };
+}
 
 interface Dimension {
   certs: readonly CertKind[];
@@ -67,22 +97,25 @@ function uniqueBy<T>(items: T[], key: (item: T) => string): T[] {
 
 function dimension(
   d: Dimension, certs: Certification[], signals: Signal[], baselineUrl: string,
-): { value: number; sources: SourceRef[] } {
+): { value: number; sources: SourceRef[]; minor_cap_applied: boolean } {
   // A curated and an LLM entry can record the same fact, so each certification kind earns one step
   // and each negative counts once per (kind, page), the identity enrichment dedupes on.
   const counted = uniqueBy(certs.filter((c) => d.certs.includes(c.kind)), (c) => c.kind);
   const negatives = uniqueBy(
     signals.filter((s) => s.polarity === 'negative' && d.negatives.includes(s.kind)),
     (s) => `${s.kind}|${s.source_url}`,
-  );
+  ).map((s) => ({ signal: s, ...findingCost(s) }));
+  const minorTotal = negatives.filter((n) => n.band === 'minor').reduce((sum, n) => sum + n.cost, 0);
+  const otherTotal = negatives.filter((n) => n.band !== 'minor').reduce((sum, n) => sum + n.cost, 0);
   // Cap before subtracting, so a negative lowers even a fully certified retailer.
-  const value = Math.max(0, Math.min(1, BASELINE + STEP * counted.length) - STEP * negatives.length);
+  const value = Math.max(0, Math.min(1, BASELINE + STEP * counted.length) - Math.min(MINOR_CAP, minorTotal) - otherTotal);
   return {
     value,
+    minor_cap_applied: minorTotal > MINOR_CAP,
     sources: [
       { label: `Baseline ${BASELINE}`, url: baselineUrl },
       ...counted.map((c) => ({ label: c.label, url: c.source_url })),
-      ...negatives.map((s) => ({ label: `${KIND_LABEL[s.kind]}: ${s.claim}`, url: s.source_url })),
+      ...negatives.map((n) => ({ label: `${KIND_LABEL[n.signal.kind]}: ${n.signal.claim}`, url: n.signal.source_url })),
     ],
   };
 }
@@ -125,22 +158,26 @@ export interface ScoreInput {
 
 export function scoreCandidate(
   input: ScoreInput, weights: Readonly<Record<ComponentName, number>> = WEIGHTS,
-): { score: number; matched_product: string; distance_km: number | null; components: ScoreComponent[] } {
+): { score: number; matched_product: string; distance_km: number | null; components: ScoreComponent[]; signals: Signal[] } {
   const docUrl = `${input.siteUrl}/about.html#ranking`;
   const rel = relevance(input.candidate, input.normalized, input.classification?.sells_product);
   const prox = proximity(input.candidate, input.origin, docUrl);
-  const parts: [ComponentName, { value: number; sources: SourceRef[] }][] = [
+  const parts: [ComponentName, { value: number; sources: SourceRef[]; minor_cap_applied?: boolean }][] = [
     ['relevance', { value: rel.value, sources: [rel.source] }],
     ['ethics', ethics(input.certifications, input.signals, docUrl)],
     ['env', env(input.certifications, input.signals, docUrl)],
     ['proximity', prox],
   ];
-  const components = parts.map(([name, { value, sources }]) => ({
+  const components = parts.map(([name, { value, sources, minor_cap_applied }]) => ({
     name, value, weight: weights[name], contribution: round(weights[name] * value, 3), sources,
+    ...(minor_cap_applied === undefined ? {} : { minor_cap_applied }),
   }));
   // Sum unrounded products so the total does not accumulate per-row rounding.
   const score = round(components.reduce((sum, c) => sum + c.weight * c.value, 0), 3);
-  return { score, matched_product: rel.matched, distance_km: prox.distance_km, components };
+  // Attach band, relation and cost per finding (ADR 0006) so the API response can show them;
+  // positive signals and certifications are untouched.
+  const signals = input.signals.map((s) => (s.polarity === 'negative' ? { ...s, ...findingCost(s) } : s));
+  return { score, matched_product: rel.matched, distance_km: prox.distance_km, components, signals };
 }
 
 // Array.prototype.sort is stable, so equal scores keep fetch order.

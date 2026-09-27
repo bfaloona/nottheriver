@@ -126,7 +126,10 @@ describe('curated lookups', () => {
       { domain: 'shop.example', kind: 'one_percent_planet', source_url: 'https://cert.example/b', checked: '2026-09-23' },
       { domain: 'else.example', kind: 'fair_trade', source_url: 'https://cert.example/c', checked: '2026-09-23' },
     ],
-    negatives: [{ domain: 'shop.example', kind: 'governance', claim: 'Agency page title', source_url: 'https://www.ftc.gov/x', action_date: '2022-04-08' }],
+    negatives: [{
+      domain: 'shop.example', kind: 'governance', claim: 'Agency page title', source_url: 'https://www.ftc.gov/x', action_date: '2022-04-08',
+      penalty_usd: 1_000_000, relation: 'self', status: 'final',
+    }],
     negativeSources: REGISTRY,
   };
 
@@ -140,7 +143,10 @@ describe('curated lookups', () => {
 
   it('attaches curated negatives without needing a fetched URL', () => {
     expect(negativesFor('shop.example', data.negatives)).toEqual([
-      { kind: 'governance', polarity: 'negative', claim: 'Agency page title', source_url: 'https://www.ftc.gov/x', origin: 'curated', action_date: '2022-04-08' },
+      {
+        kind: 'governance', polarity: 'negative', claim: 'Agency page title', source_url: 'https://www.ftc.gov/x', origin: 'curated', action_date: '2022-04-08',
+        penalty_usd: 1_000_000, relation: 'self', status: 'final',
+      },
     ]);
   });
 
