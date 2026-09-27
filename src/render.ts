@@ -99,8 +99,8 @@ const isRankingDoc = (url: string) => url.endsWith('about.html#ranking');
 
 function sellsText(c: SearchResult['components'][number]): string {
   const judged = c.sources.some((s) => s.label.startsWith('Model judgment'));
-  if (c.value >= 1) return judged ? "Likely (model's judgment)" : 'Product named in listing';
-  if (c.value >= 0.5) return judged ? "Maybe (model's judgment)" : 'Category named in listing';
+  if (c.value >= 1) return judged ? 'Likely, judged from shop type' : 'Product named in listing';
+  if (c.value >= 0.5) return judged ? 'Possibly, judged from shop type' : 'Category named in listing';
   return 'Not confirmed';
 }
 

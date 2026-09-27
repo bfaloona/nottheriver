@@ -87,8 +87,8 @@ describe('renderResults (HR5)', () => {
     });
     const rows = (r: SearchResult) =>
       [...renderResult(r, config).querySelectorAll('[data-component]')].map((row) => row.querySelector('.component-text')!.textContent);
-    expect(rows(judged(1, 'Model judgment: likely sells it'))).toEqual(["Likely (model's judgment)", 'B Corp', 'Nothing found', 'Unknown']);
-    expect(rows(judged(0.5, 'Model judgment: may sell it'))[0]).toBe("Maybe (model's judgment)");
+    expect(rows(judged(1, 'Model judgment: likely sells it'))).toEqual(['Likely, judged from shop type', 'B Corp', 'Nothing found', 'Unknown']);
+    expect(rows(judged(0.5, 'Model judgment: may sell it'))[0]).toBe('Possibly, judged from shop type');
     expect(rows(judged(0.2, base.retailer.name))[0]).toBe('Not confirmed');
   });
 
