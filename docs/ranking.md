@@ -36,8 +36,8 @@ Every component is between 0 and 1, and the weights sum to 1, so the score is to
 | Component | Rule | Source shown |
 |---|---|---|
 | Relevance | 1.0 if the result's title or snippet contains the product name or one of the similar products the model suggested; 0.5 if it contains only the product category; otherwise 0.2. A local shop also gets 1.0 when the classifier judged that it sells the product ("yes") and 0.5 when it judged "maybe", if that is higher | The result's own page, labeled "Model judgment" when the judgment set the value |
-| Ethics | See [Baseline](#baseline). +0.25 per ethics certification kind, capped at 1.0; then −0.25 per accepted labor or governance finding, floored at 0 | This page, plus each counted certification and finding |
-| Environment | See [Baseline](#baseline). +0.25 per environmental certification kind, capped at 1.0; then −0.25 per accepted environmental finding, floored at 0 | This page, plus each counted certification and finding |
+| Ethics | See [Baseline](#baseline). +0.25 per ethics certification kind, capped at 1.0; then a finding subtracts up to 0.25 per accepted labor or governance finding (see [Weighted findings](#weighted-findings)), floored at 0 | This page, plus each counted certification and finding |
+| Environment | See [Baseline](#baseline). +0.25 per environmental certification kind, capped at 1.0; then a finding subtracts up to 0.25 per accepted environmental finding (see [Weighted findings](#weighted-findings)), floored at 0 | This page, plus each counted certification and finding |
 | Proximity | See [Proximity](#proximity) | This page |
 
 Relevance is a plain substring match on lowercased text with punctuation turned into spaces, so a short product name can match inside a longer word ("pan" in "Japan"). For a local shop the snippet is Brave's store-type word (such as "hardware") plus any categories, so the text rule leaves most local shops at 0.5 or 0.2; the classifier's judgment is what separates them. On the graded searches of 2026-09-24, local shops the classifier called "yes" were good 80% of the time (53 of 66) and "maybe" 40% (58 of 146); re-ranking the graded nearby shops this way raised good shops in each search's top 3 from 23 to 29 and lowered bad ones from 20 to 15. A live rerun of the same searches showed no change (30 of 54 judged top-3 shops good before, 29 of 51 after), because Brave returned different shops ([quality.md](quality.md#rerun-after-distance-groups-and-classifier-judged-ranking)). The judgment comes from a shop's name and store type only, so it is a likelihood, not a stock check. Both limits of the text rule are listed in [debt.md](debt.md).
@@ -48,7 +48,28 @@ Ethics and environment start at 0.5, not 0: a shop with no certification and no 
 
 - Certifications count once per kind: two B Corp rows for one shop add 0.25 once.
 - A finding counts once per kind and source page, so the same case cannot lower a score twice.
-- The cap is applied before findings are subtracted, so a finding still costs 0.25 even when a shop holds every certification in that component.
+- The cap is applied before findings are subtracted, so a finding still costs up to 0.25 even when a shop holds every certification in that component.
+
+### Weighted findings
+
+A finding's cost is 0.25 scaled by two factors read from the row, never guessed from the source text: how serious the finding is (band) and how directly it ties to the shop (relation). No age or company-size factor is applied ([ADR 0006](decisions/0006-weighted-findings.md)).
+
+```
+cost = 0.25 × band × relation
+```
+
+| Band | Weight | When |
+|---|---|---|
+| Major | 1.0 | Penalty of $1,000,000 or more |
+| Standard | 0.5 | $100,000 to $999,999; the source states no amount; or an OSHA citation the inspection page marks willful or repeat, whatever its amount |
+| Minor | 0.25 | Under $100,000, including $0; or the case is still open |
+
+| Relation | Weight | When |
+|---|---|---|
+| Self, or related-at-shop | 1.0 | The page names the shop, or names a parent, subsidiary or sister company for something at the shop's own site |
+| Related | 0.5 | Any other parent, subsidiary, sister-company or address-tied finding |
+
+So one finding costs 0.25 (major), 0.125 (standard) or 0.0625 (minor), halved again for a `related` row. Minor findings on one dimension cost at most 0.25 together (four full-weight minor findings, or eight halved ones); beyond that, more findings show but do not lower the score further. The API response carries, per finding, which band and relation it counted as and its cost, and per dimension whether the minor cap applied; the page itself still shows only the finding's kind, claim, source and date.
 
 ### Proximity
 
@@ -88,7 +109,7 @@ A finding lowers a score only if all of these hold:
 3. **No model-authored text.** The page shows the finding's kind and the source's own title. The language model never writes the claim.
 4. **Dispute link.** Every finding shown has a "Dispute this" link.
 
-**What can appear today.** Only curated findings, from `data/negatives.json`: four rows, each citing a regulator's own release with its action date (Kohl's and Walmart, FTC, 2022-04-08; The Home Depot, EPA, 2020-12-17; Dollar General, OSHA, 2024-07-11).
+**What can appear today.** Only curated findings, from `data/negatives.json`: four rows, each citing a regulator's own release with its action date (Kohl's and Walmart, FTC, 2022-04-08; The Home Depot, EPA, 2020-12-17; Dollar General, OSHA, 2024-07-11). Each states a penalty of $1,000,000 or more against the shop itself, so each still costs the full 0.25 under [weighted findings](#weighted-findings) (major band, self relation).
 
 **The model path cannot fire yet.** The code accepts a model-suggested finding only when it cites a page that was among the fetched search results, that page names the shop, and that page sits on an accepted-source domain. But the Worker drops every search result on an accepted-source domain before ranking (a regulator's page must never be ranked as a shop), so no such page is ever citable. The path stays in the code, and becomes live only if registry pages are someday fetched as citable evidence rows separate from shop results.
 

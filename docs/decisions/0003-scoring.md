@@ -26,6 +26,7 @@ What that means in points: one certification or one negative finding moves a sco
 
 - Relevance: 1.0 if the title or snippet contains the canonical name or a similar product, 0.5 if only the category, else 0.2; plain substring match on normalized text. Never 0, so relevance always shows with the result's own page as its source.
 - Ethics and environment: baseline 0.5, +0.25 per certification kind that scores in that component, capped at 1.0, then −0.25 per accepted negative finding of a matching kind, floored at 0. Baselines are non-zero because no data is not bad data, and so both components always carry a source (the ranking doc).
+  - Amended 2026-09-27: see [0006](0006-weighted-findings.md).
 - Duplicates count once: each certification kind earns one step even when a shop has two rows of that kind, and a finding counts once per kind and source page, so a curated row and a model-cited row of the same page cannot penalize twice.
 - The cap applies before findings are subtracted, so a finding still costs 0.25 for a shop that holds every certification.
 - Proximity: `max(0, 1 − distance_km / 40)` for local shops, haversine from the request centroid to the shop's coordinates, rounded to 0.1 km before scoring so a reader can recompute it from the display. No coordinates or beyond 40 km gives 0. Online retailers: fixed 0.5.
