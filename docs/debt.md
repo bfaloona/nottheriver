@@ -61,7 +61,6 @@ Shortcuts taken for the proof of concept, each with the best-practice alternativ
 | How disputes are reviewed and resolved is not defined; the About page says TBD | A written review process with a response time |
 | Certifier directories (bcorporation.net returns a Cloudflare 403; the 1% for the Planet directory is JavaScript-only) cannot be re-checked by a script, so those 12 rows' check dates will go stale | Automated re-check in a real browser |
 | Fair Trade rows are product-level, not whole-company | Keep the badge text 'Sells Fair Trade Certified products' |
-| The certification and signal kind lists in `score.ts` are hardcoded; no test checks they match the `kinds` map in `data/certifications.json` | A cross-file assertion in `pipeline.test.ts` |
 | Local relevance uses only the place title and its categories list (`/local/descriptions` is not called), so most local results score 0.5 or 0.2 | Fetch `/local/descriptions` or the store's product page |
 | Relevance is a substring match on normalized text, so a short product name matches inside a longer word ('pan' in 'Japan') and a plural product name does not match singular text | Whole-word matching with an optional plural s, or a structured relevance judgment validated in code |
 | The model view (`llmView` in `proxy/src/enrich.ts`) caps title and snippet but not URL, so a long URL raises prompt size and cost | Cap or drop the URL in the model view |

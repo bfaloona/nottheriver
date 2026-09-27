@@ -7,7 +7,7 @@ import registry from '../../data/negative-sources.json';
 import type { CertKind, SignalKind } from '../src/contract';
 import { registrableDomain } from '../src/domain';
 import { negativesFor, type NegativeRow } from '../src/enrich';
-import { findingCost } from '../ranking/score';
+import { ENV, ETHICS, findingCost } from '../ranking/score';
 
 // The JSON import types `relation`/`status`/`citation_type` as plain strings; the row test below
 // checks each against its contract union, which is what makes this cast safe.
@@ -69,6 +69,14 @@ describe('certifications.json', () => {
   it('has one row per domain and kind', () => {
     expectUnique(certifications.entries.map((e) => `${e.domain} ${e.kind}`));
   });
+
+  // score.ts hardcodes its own ETHICS/ENV.certs lists rather than reading this file's `kinds`
+  // map, so nothing else catches the two drifting apart if one side gets a cert kind added,
+  // renamed or moved.
+  it("matches score.ts's ETHICS and ENV cert lists exactly", () => {
+    expect([...ETHICS.certs].sort()).toEqual([...certifications.kinds.ethics].sort());
+    expect([...ENV.certs].sort()).toEqual([...certifications.kinds.env].sort());
+  });
 });
 
 describe('negatives.json', () => {
@@ -101,6 +109,14 @@ describe('negatives.json', () => {
 
   it('has one row per domain and kind', () => {
     expectUnique(negatives.entries.map((e) => `${e.domain} ${e.kind}`));
+  });
+
+  // Same drift risk as the cert lists above: score.ts hardcodes ETHICS.negatives/ENV.negatives,
+  // and no `kinds` map exists for signals to check against, so check the two lists cover every
+  // SignalKind between them (a duplicate would also fail this: the lengths would no longer match).
+  it("scores every SignalKind once, split between score.ts's ETHICS and ENV negatives lists", () => {
+    const scored = [...ETHICS.negatives, ...ENV.negatives];
+    expect(scored.sort()).toEqual(Object.keys(SIGNAL_KINDS).sort());
   });
 
   // ADR 0006 (weighted findings): each of today's 4 live rows is major and self, so it must keep

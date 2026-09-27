@@ -46,8 +46,9 @@ interface Dimension {
   negatives: readonly SignalKind[];
 }
 // independent_retailer_assoc is in neither list: it is a badge with no score effect.
-const ETHICS: Dimension = { certs: ['b_corp', 'fair_trade', 'worker_coop'], negatives: ['labor', 'governance'] };
-const ENV: Dimension = { certs: ['one_percent_planet', 'climate_neutral'], negatives: ['environmental'] };
+// Exported so data.test.ts can assert these stay in step with certifications.json's `kinds` map.
+export const ETHICS: Dimension = { certs: ['b_corp', 'fair_trade', 'worker_coop'], negatives: ['labor', 'governance'] };
+export const ENV: Dimension = { certs: ['one_percent_planet', 'climate_neutral'], negatives: ['environmental'] };
 
 const KIND_LABEL: Record<SignalKind, string> = { labor: 'Labor', governance: 'Governance', environmental: 'Environmental' };
 

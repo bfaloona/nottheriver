@@ -1,0 +1,21 @@
+Cert kind cross-check red run, 2026-09-27
+
+Reproduced by removing 'fair_trade' from score.ts's exported ETHICS.certs list, leaving
+data/certifications.json's kinds.ethics list unchanged, then restoring it.
+
+$ npx vitest run test/data.test.ts
+
+ FAIL  proxy/test/data.test.ts > certifications.json > matches score.ts's ETHICS and ENV cert lists exactly
+AssertionError: expected [ 'b_corp', 'worker_coop' ] to deeply equal [ 'b_corp', 'fair_trade', …(1) ]
+
+- Expected
++ Received
+
+  [
+    "b_corp",
+-   "fair_trade",
+    "worker_coop",
+  ]
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 64 passed (65)
