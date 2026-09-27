@@ -15,3 +15,5 @@ plan.bin
 infra/*.tfvars*
 crash.log
 infra/deploy.local.env
+.claude/worktrees/
+.DS_Store
