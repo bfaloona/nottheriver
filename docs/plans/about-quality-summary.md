@@ -1,6 +1,6 @@
 # Plan: short quality summary on the About page, raw evidence one link away
 
-Status: planned 2026-09-24, not started. Operator direction: keep collecting evidence that anyone can inspect in the repo; the About page summarizes it with much less detail; a link takes readers to the raw evidence.
+Status: steps 1-5 done 2026-09-26 (evidence index at `docs/evidence/quality/README.md`; `src/quality.json` carries `evidence`; About page shows a shorter two-line summary with a "Raw evidence" link; headline refreshed from `eval20-0925`, both runs). Committed, not pushed (operator holds push). Operator direction: keep collecting evidence that anyone can inspect in the repo; the About page summarizes it with much less detail; a link takes readers to the raw evidence.
 
 ## Today
 

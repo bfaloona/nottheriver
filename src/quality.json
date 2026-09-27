@@ -1,14 +1,21 @@
 {
   "measured": {
-    "date": "2026-09-23",
+    "date": "2026-09-26",
     "searches": 20,
     "precision": {
-      "online": 0.99,
-      "local": 0.514
+      "online": 0.979,
+      "local": [
+        0.617,
+        0.636
+      ]
     },
     "recall": {
-      "online": 0.3,
-      "local": 0.302
-    }
+      "online": 0.31,
+      "local": [
+        0.326,
+        0.349
+      ]
+    },
+    "evidence": "docs/evidence/quality/eval20-0925"
   }
 }
