@@ -1,12 +1,22 @@
 import { createServer, type IncomingMessage } from 'node:http';
 import type { Env, SearchResponse } from '../proxy/src/contract';
 import { isBlockedDomain, isBlockedUrl } from '../proxy/src/blocklist';
+import type { CuratedData } from '../proxy/src/enrich';
 import { createHandler } from '../proxy/src/handler';
 import { runSearch } from '../proxy/src/pipeline';
 import { validateAgainst } from '../proxy/src/validate';
 import { defaultRoutes, makeFixtureFetch } from './fixtures/fixture-fetch';
 import web1 from './fixtures/brave/web-1.json';
 import place1 from './fixtures/brave/place-1.json';
+import negativesFixture from './fixtures/negatives.json';
+
+// Two rows for northfork-kitchen.example (an online result for "cast iron skillet"), so the
+// e2e screenshots exercise the grouped-concerns UI without the real data/negatives.json rows.
+const curated: CuratedData = {
+  certifications: [],
+  negatives: negativesFixture.entries as CuratedData['negatives'],
+  negativeSources: new Set<string>(),
+};
 
 // The real Worker handler and pipeline, with only the upstream fetch swapped for fixtures,
 // so the browser test exercises both blocklist passes rather than a canned response.
@@ -42,7 +52,7 @@ const routes = () => defaultRoutes().map((route) => (route.match(new URL('https:
 
 const handle = createHandler(
   (req, e, deps) => runSearch(req, e, { ...deps, fetch: makeFixtureFetch(routes()) }),
-  { fetch: makeFixtureFetch([]), now: Date.now, log: () => {} },
+  { fetch: makeFixtureFetch([]), now: Date.now, log: () => {}, curated },
 );
 
 async function toRequest(req: IncomingMessage): Promise<Request> {

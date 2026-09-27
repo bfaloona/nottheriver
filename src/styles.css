@@ -196,11 +196,11 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 .negative a { color: var(--warn); margin-right: var(--space-4); }
 .negative p { margin: 0; }
 .negative p + p { margin-top: var(--space-1); }
-.concerns summary { cursor: pointer; color: var(--warn); padding-block: var(--space-2); width: fit-content; }
-.concerns[open] summary { margin-bottom: var(--space-2); }
 
 .why { margin-top: var(--space-2); font-size: var(--text-sm); }
-.why summary { cursor: pointer; color: var(--accent); padding-block: var(--space-2); width: fit-content; }
+.why summary, .concerns summary { cursor: pointer; padding-block: var(--space-2); width: fit-content; }
+.why summary { color: var(--accent); }
+.concerns summary { color: var(--warn); }
 .why-panel { padding-top: var(--space-1); }
 .why-total, .why-help { margin: 0; }
 .why-help { margin-top: var(--space-2); }

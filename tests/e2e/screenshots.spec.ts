@@ -23,6 +23,11 @@ test('landing, results and about, desktop width', async ({ page }) => {
   await page.getByLabel('Zip code').fill(ZIP);
   await page.getByRole('button', { name: 'Search' }).click();
   await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
+  // A curated fixture (tests/fixtures/negatives.json) gives Northfork Kitchen Supply two
+  // findings, so opening its group here makes the grouped-concerns UI visible in the shot.
+  // Before the "Why this rank" click: wirePopovers' outside-click handler unpins any open
+  // .why panel on a click elsewhere, and .concerns has no such handler to undo it.
+  await page.locator('[data-concerns] summary').first().click();
   // The last block, so its open panel covers no other result.
   await page.locator('[data-why] summary').last().click();
   await page.screenshot({ path: `${OUT}/results.png`, fullPage: true });

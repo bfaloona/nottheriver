@@ -1,6 +1,9 @@
 // Shared types for POST /search. The site imports this file type-only; nothing
 // here may import from @cloudflare/workers-types (the mock proxy runs under Node).
 
+// Type-only, so it never creates a runtime cycle with enrich.ts (which imports this file's types).
+import type { CuratedData } from './enrich';
+
 export interface SearchRequest {
   product: string; // 1..120 chars after trim
   city: string;    // from public/zips.json
@@ -149,6 +152,7 @@ export interface Deps {
   fetch: typeof globalThis.fetch;
   now: () => number;
   log: (line: string) => void;
+  curated?: CuratedData; // test-only override of the real data/*.json rows; omit in production
 }
 
 export type RunSearch = (req: SearchRequest, env: Env, deps: Deps) => Promise<SearchResponse>;

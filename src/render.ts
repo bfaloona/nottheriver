@@ -107,7 +107,9 @@ function sellsText(c: SearchResult['components'][number]): string {
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 // Avoids the Date object so a YYYY-MM-DD string never shifts a day across a local timezone.
+// A malformed date (data drift, not expected from the schema) shows as-is rather than "undefined".
 function actionDateText(iso: string): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso;
   const [y, m, d] = iso.split('-');
   return `${MONTHS[Number(m) - 1]} ${Number(d)}, ${y}`;
 }
@@ -132,6 +134,12 @@ function concernBox(s: Signal, config: RenderConfig): HTMLDivElement {
   );
 }
 
+// Newest first, undated (model-origin) findings last, so the list order matches the summary's range.
+function byNewestFirst(a: Signal, b: Signal): number {
+  if (a.action_date && b.action_date) return b.action_date.localeCompare(a.action_date);
+  return a.action_date ? -1 : b.action_date ? 1 : 0;
+}
+
 // Several concerns collapse to one line ("3 concerns, 2019 to 2025") that expands to the
 // list, so a well-documented shop doesn't show a wall of warning boxes by default.
 function concernsGroup(signals: Signal[], config: RenderConfig): HTMLDetailsElement {
@@ -143,7 +151,7 @@ function concernsGroup(signals: Signal[], config: RenderConfig): HTMLDetailsElem
     'details',
     { className: 'concerns', data: { concerns: '' } },
     el('summary', {}, `${plural(signals.length, 'concern', 'concerns')}${range}`),
-    ...signals.map((s) => concernBox(s, config)),
+    ...[...signals].sort(byNewestFirst).map((s) => concernBox(s, config)),
   );
 }
 

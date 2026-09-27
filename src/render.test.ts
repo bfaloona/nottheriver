@@ -124,6 +124,12 @@ describe('renderResults (HR5)', () => {
     expect(row.querySelector('[data-dispute]')!.getAttribute('href')).toBe('about.html#dispute');
   });
 
+  it('shows a malformed action_date as-is rather than "undefined"', () => {
+    const signal: Signal = { ...response.local[1]!.signals[0]!, action_date: 'not-a-date' };
+    const li = renderResult({ ...response.local[1]!, signals: [signal] }, config);
+    expect(li.querySelector('[data-action-date]')!.textContent).toBe('not-a-date');
+  });
+
   it('points the dispute link at the issue template when a repo URL is set', () => {
     const repo = 'https://github.com/example/example';
     const li = renderResult(response.local[1]!, { disputeUrl: disputeUrlFor(repo) });
@@ -160,19 +166,54 @@ describe('renderResults (HR5)', () => {
     expect(details.tagName).toBe('DETAILS'); // native, keyboard- and screen-reader-reachable
     expect(details.querySelector('summary')!.textContent).toBe('5 concerns, 2019 to 2025');
 
+    // Newest first, so the list order matches the summary's "2019 to 2025" range.
+    const newestFirst = [...signals].reverse();
     const boxes = details.querySelectorAll('[data-negative]');
     expect(boxes).toHaveLength(5);
     boxes.forEach((box, i) => {
-      expect(box.textContent).toContain(signals[i]!.claim);
-      expect(box.querySelector('a.negative-source')!.getAttribute('href')).toBe(signals[i]!.source_url);
+      expect(box.textContent).toContain(newestFirst[i]!.claim);
+      expect(box.querySelector('a.negative-source')!.getAttribute('href')).toBe(newestFirst[i]!.source_url);
     });
     expect(details.querySelectorAll('[data-dispute]')).toHaveLength(5); // one per finding, not one for the group
     expect([...details.querySelectorAll('[data-action-date]')].map((p) => p.textContent)).toEqual([
-      'Mar 1, 2019',
-      'Jun 15, 2020',
-      'Sep 9, 2021',
-      'Jan 20, 2023',
       'Dec 5, 2025',
+      'Jan 20, 2023',
+      'Sep 9, 2021',
+      'Jun 15, 2020',
+      'Mar 1, 2019',
+    ]);
+  });
+
+  it('sorts a group with the same year into one range label, not a redundant "to"', () => {
+    const signals: Signal[] = [
+      { kind: 'labor', polarity: 'negative', claim: 'A', source_url: 'https://a.example', origin: 'curated', action_date: '2024-01-05' },
+      { kind: 'environmental', polarity: 'negative', claim: 'B', source_url: 'https://b.example', origin: 'curated', action_date: '2024-11-20' },
+    ];
+    const li = renderResult({ ...response.local[1]!, signals }, config);
+    expect(li.querySelector('[data-concerns] summary')!.textContent).toBe('2 concerns, 2024');
+  });
+
+  it('sorts undated (model-origin) findings after every dated one, regardless of input order', () => {
+    const dated: Signal = { kind: 'labor', polarity: 'negative', claim: 'Dated', source_url: 'https://dated.example', origin: 'curated', action_date: '2022-06-01' };
+    const undated: Signal = { kind: 'environmental', polarity: 'negative', claim: 'Undated', source_url: 'https://undated.example', origin: 'llm', action_date: null };
+    // Undated listed first in the input, to prove the output order is sorted, not preserved.
+    const li = renderResult({ ...response.local[1]!, signals: [undated, dated] }, config);
+    const boxes = li.querySelectorAll('[data-negative]');
+    expect([...boxes].map((b) => b.textContent)).toEqual([expect.stringContaining('Dated'), expect.stringContaining('Undated')]);
+    expect(li.querySelector('[data-concerns] summary')!.textContent).toBe('2 concerns, 2022'); // the undated row doesn't widen the range
+  });
+
+  it('sorts three unsorted dates into newest-first order', () => {
+    const mk = (claim: string, action_date: string): Signal =>
+      ({ kind: 'labor', polarity: 'negative', claim, source_url: `https://${claim}.example`, origin: 'curated', action_date });
+    // Deliberately out of order: middle, oldest, newest.
+    const signals = [mk('Middle', '2021-01-01'), mk('Oldest', '2018-01-01'), mk('Newest', '2023-01-01')];
+    const li = renderResult({ ...response.local[1]!, signals }, config);
+    const boxes = li.querySelectorAll('[data-negative]');
+    expect([...boxes].map((b) => b.textContent)).toEqual([
+      expect.stringContaining('Newest'),
+      expect.stringContaining('Middle'),
+      expect.stringContaining('Oldest'),
     ]);
   });
 

@@ -91,6 +91,17 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   expect(retailers.length).toBeGreaterThan(0);
   expect(retailers.filter((name) => isBlockedName(name))).toEqual([]);
 
+  // A curated fixture (tests/fixtures/negatives.json) attaches two findings to Northfork
+  // Kitchen Supply, so the grouped concerns UI has something real to render end to end.
+  // The domain can appear more than once (online, and as more than one local branch);
+  // every row for that domain gets the same two curated findings.
+  const northfork = page.locator('[data-result]').filter({ has: page.locator('[data-retailer]', { hasText: 'Northfork Kitchen Supply' }) }).first();
+  await expect(northfork).toBeVisible();
+  const concerns = northfork.locator('[data-concerns]');
+  await expect(concerns.locator('summary')).toHaveText('2 concerns, 2021 to 2023');
+  await expect(concerns.locator('[data-negative]')).toHaveCount(2);
+  await expect(concerns.locator('[data-action-date]')).toHaveText(['Nov 2, 2023', 'May 14, 2021']); // newest first
+
   const results = page.locator('[data-result]');
   const count = await results.count();
   for (let i = 0; i < count; i++) {

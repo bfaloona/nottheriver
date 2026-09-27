@@ -308,6 +308,24 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     ]);
   });
 
+  it('omitting deps.curated falls back to the real data/negatives.json rows', async () => {
+    const shop = candidate({ name: 'The Home Depot', domain: 'homedepot.com', url: 'https://homedepot.com/skillet' });
+    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [] }));
+    const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
+    const kept = await enrichAndFilter([shop], llm, normalized);
+    expect(kept[0]!.signals).toEqual(
+      expect.arrayContaining([expect.objectContaining({ kind: 'environmental', source_url: expect.stringContaining('epa.gov') })]),
+    );
+  });
+
+  it('an explicit deps.curated overrides the real data, e.g. for a test that must not depend on data/negatives.json staying the same', async () => {
+    const shop = candidate({ name: 'The Home Depot', domain: 'homedepot.com', url: 'https://homedepot.com/skillet' });
+    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [] }));
+    const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
+    const kept = await enrichAndFilter([shop], llm, normalized, [], { curated: CURATED });
+    expect(kept[0]!.signals).toEqual([]);
+  });
+
   it('a flagged page is not a result but can still be cited as evidence for a shop', async () => {
     const shop = candidate({ name: 'Riverbend Outfitters', domain: 'riverbend.example', url: 'https://riverbend.example/tents', title: 'Tents' });
     const article = candidate({ name: 'Mag', domain: 'mag.example', url: 'https://mag.example/blog/tents', title: 'Riverbend Outfitters repairs tents for free' });

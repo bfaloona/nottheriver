@@ -153,12 +153,18 @@ export function dedupe(candidates: Candidate[]): Candidate[] {
 // Editorial pages go to the model after the shops, so a cap cuts them first; they stay as
 // citable evidence for signals but are never results. A row the model judged not to be a shop
 // selling the product is dropped; one it did not judge is kept.
-export async function enrichAndFilter(pass1: Candidate[], llm: LlmClient, n: Normalized, dropped: Dropped[] = []): Promise<EnrichedRow[]> {
+export async function enrichAndFilter(
+  pass1: Candidate[],
+  llm: LlmClient,
+  n: Normalized,
+  dropped: Dropped[] = [],
+  deps: Pick<Deps, 'curated'> = {},
+): Promise<EnrichedRow[]> {
   const { shops, editorial } = splitEditorial(pass1);
   for (const c of editorial) dropped.push({ kind: c.kind, domain: c.domain, reason: 'editorial_url' });
   if (shops.length === 0) return [];
   const evidenceOnly = new Set(editorial);
-  const rows = await enrichAll([...shops, ...editorial], llm, curated, n);
+  const rows = await enrichAll([...shops, ...editorial], llm, deps.curated ?? curated, n);
   return rows.filter((r) => {
     if (evidenceOnly.has(r.candidate)) return false;
     const reason = dropReason(r.classification);
@@ -313,7 +319,7 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   const n = await normalize(req, llm, env.NORMALIZE_CACHE);
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
   const dropped = placeCategoryDrops(brave.rejected);
-  const kept = await enrichAndFilter(pass1, llm, n, dropped); // no model call when no shop survives pass 1
+  const kept = await enrichAndFilter(pass1, llm, n, dropped, deps); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
   const res = finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
   const unjudged = new Set(kept.filter((r) => r.classification === null).map((r) => r.candidate));
