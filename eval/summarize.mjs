@@ -140,8 +140,9 @@ export function siteMeasure(reports, evidence) {
     return new Set(vs.map((v) => Math.round(v * 100))).size === 1 ? vs[0] : [Math.min(...vs), Math.max(...vs)];
   };
   const both = (kind) => ({ online: figure(kind, 'online'), local: figure(kind, 'local') });
-  // A sampled run grades only some searches; the headline names how many it rests on.
-  return { date: first.graded_through, searches: first.searches.graded, precision: both('precision'), recall: both('recall'), evidence };
+  // A sampled run grades only some searches; the headline names how many it rests on. `runs` lets the
+  // About page's wording depend on whether this ran once or twice, rather than assuming twice.
+  return { date: first.graded_through, searches: first.searches.graded, runs: reports.length, precision: both('precision'), recall: both('recall'), evidence };
 }
 
 async function readJson(path, fallback) {

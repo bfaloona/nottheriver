@@ -202,7 +202,7 @@ describe('summarize', () => {
 
   it('publishes a headline only when every figure was measured', () => {
     expect(siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4))], 'docs/evidence/quality/eval20-0925')).toEqual({
-      date: '2026-10-01', searches: 20, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
+      date: '2026-10-01', searches: 20, runs: 1, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
       evidence: 'docs/evidence/quality/eval20-0925',
     });
     // Grades exist but no confirmed baseline yet: recall is null, so nothing is published.
@@ -216,6 +216,7 @@ describe('summarize', () => {
     expect(siteMeasure([run1, run2], 'docs/evidence/quality/eval20-0925')).toEqual({
       date: '2026-10-01',
       searches: 20,
+      runs: 2,
       precision: { online: 0.979, local: [0.617, 0.636] },
       recall: { online: 0.31, local: [0.326, 0.349] },
       evidence: 'docs/evidence/quality/eval20-0925',

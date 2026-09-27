@@ -9,6 +9,7 @@ export type Figure = number | [number, number];
 export interface QualityMeasure {
   date: string; // YYYY-MM-DD
   searches: number; // searches graded; a run may grade a sample of those it made
+  runs: number; // how many graded runs this headline draws from (usually 2, operator ruling 2026-09-26)
   precision: { online: Figure; local: Figure };
   recall: { online: Figure; local: Figure };
   evidence: string; // this run's evidence folder, e.g. docs/evidence/quality/eval20-0925
@@ -19,10 +20,11 @@ const fig = (f: Figure) => (Array.isArray(f) ? `${whole(f[0])} to ${whole(f[1])}
 
 export function precisionText(measured: QualityMeasure | null): string {
   if (!measured) return 'Not yet measured.';
-  const { date, searches } = measured;
+  const { date, searches, runs } = measured;
   const { online, local } = measured.precision;
+  const runsClause = runs > 1 ? `, each run ${runs === 2 ? 'twice' : `${runs} times`}` : '';
   return (
-    `Checked ${date} on ${searches} graded searches, each run twice. Online, ${fig(online)} of results sold the product or a close ` +
+    `Checked ${date} on ${searches} graded searches${runsClause}. Online, ${fig(online)} of results sold the product or a close ` +
     `equivalent; nearby, ${fig(local)} did (a figure that mixes two graders' answers).`
   );
 }

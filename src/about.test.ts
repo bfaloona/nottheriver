@@ -25,21 +25,26 @@ describe('about page', () => {
   });
 
   it('states the measured precision and recall with the date', async () => {
-    await load({ date: '2026-10-01', searches: 20, precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 }, evidence: 'docs/evidence/quality/eval20-0925' });
+    await load({ date: '2026-10-01', searches: 20, runs: 2, precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 }, evidence: 'docs/evidence/quality/eval20-0925' });
     const text = $('[data-quality]').textContent!;
-    for (const part of ['2026-10-01', '20 graded searches', '80%', '63%', "mixes two graders' answers"]) expect(text).toContain(part);
+    for (const part of ['2026-10-01', '20 graded searches', 'each run twice', '80%', '63%', "mixes two graders' answers"]) expect(text).toContain(part);
     const recall = $('[data-quality-recall]').textContent!;
     for (const part of ['50%', '40%']) expect(recall).toContain(part);
   });
 
   it('shows a figure as a range when the two graded runs rounded to different percentages', async () => {
     await load({
-      date: '2026-09-26', searches: 20,
+      date: '2026-09-26', searches: 20, runs: 2,
       precision: { online: 0.979, local: [0.617, 0.636] }, recall: { online: 0.31, local: [0.326, 0.349] },
       evidence: 'docs/evidence/quality/eval20-0925',
     });
     expect($('[data-quality]').textContent).toContain('62 to 64%');
     expect($('[data-quality-recall]').textContent).toContain('33 to 35%');
+  });
+
+  it('does not claim a second run when the headline rests on only one', async () => {
+    await load({ date: '2026-09-24', searches: 20, runs: 1, precision: { online: 0.98, local: 0.59 }, recall: { online: 0.3, local: 0.28 }, evidence: 'docs/evidence/quality/eval20-0924' });
+    expect($('[data-quality]').textContent).not.toContain('each run');
   });
 
   it('hides the recall line until an evaluation has run', async () => {
