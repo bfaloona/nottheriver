@@ -5,14 +5,16 @@
       "kind": "labor",
       "claim": "Fixture only: Department of Labor settlement for wage violations at a distribution center",
       "source_url": "https://www.osha.gov/fixture/northfork-kitchen-wage-settlement",
-      "action_date": "2021-05-14"
+      "action_date": "2021-05-14",
+      "penalty_usd": 1000000, "relation": "self", "status": "final"
     },
     {
       "domain": "northfork-kitchen.example",
       "kind": "environmental",
       "claim": "Fixture only: EPA penalty for stormwater discharge violations at a distribution facility",
       "source_url": "https://www.epa.gov/fixture/northfork-kitchen-stormwater-penalty",
-      "action_date": "2023-11-02"
+      "action_date": "2023-11-02",
+      "penalty_usd": 1000000, "relation": "self", "status": "final"
     }
   ]
 }
