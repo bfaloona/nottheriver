@@ -1,0 +1,22 @@
+$ npm test -- eval/eval.test.mjs
+> nottheriver@0.0.0 test
+> vitest run eval/eval.test.mjs
+
+ RUN  v5.0.1
+
+ ❯ eval/eval.test.mjs (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  eval/eval.test.mjs [ eval/eval.test.mjs ]
+Error: Cannot find module './compare.mjs' imported from eval/eval.test.mjs
+ ❯ eval/eval.test.mjs:7:1
+      5| import { pickTargets } from './access-probe/run-probe.mjs';
+      6| import { parseTarget } from './access-probe/target';
+      7| import { compareRow } from './compare.mjs';
+       | ^
+      8| import { buildRequest } from './run-searches.mjs';
+      9| import { agreement, precision, probeRates, recall, sectionResults, sit...
+
+ Test Files  1 failed (1)
+      Tests  no tests

@@ -9,6 +9,7 @@ Measures whether searches return shops that really sell the product, how many go
 | `grade-schema.json` | Shape of the hand grades and the recall baseline |
 | `access-probe/` | Throwaway Worker plus driver that fetches retailer pages as a declared bot |
 | `summarize.mjs` | Computes `report.json` from the evidence files |
+| `compare.mjs` | Compares wording and shop overlap between two saved runs |
 | `eval.test.mjs` | Unit tests for all of the above (`npx vitest run eval`) |
 
 ## Test set
@@ -79,6 +80,17 @@ node eval/summarize.mjs --site   # also writes src/quality.json for the About pa
 
 Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` (on either question) out of the denominator, reporting how many were left out; a local shop confirmed not to exist (`local_exists: no`) counts as bad even when `sells_product` is `unknown` (operator ruling, 2026-09-26). `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.
 
-## 6. Index the run
+## 6. Compare two runs
+
+The Worker caches the model's normalize reading (`online_queries`/`local_queries`, the terms it sends Brave) for 30 days (`proxy/src/normalize-cache.ts`); while an entry holds, two runs should send Brave the same wording, so any drift in shown shops is Brave's own change plus anything downstream of it (such as the model's sells-it judgment flipping), not a wording change. Once an entry expires, wording can drift too, and that alone can move the shown-shop numbers below. `compare.mjs` flags that case before it's mistaken for a ranking regression.
+
+```sh
+node eval/compare.mjs <runA responses dir> <runB responses dir>
+# e.g. node eval/compare.mjs docs/evidence/quality/eval20-0925/responses docs/evidence/quality/eval20-0925/run2/responses
+```
+
+Ids come from `queries.json`, like `summarize.mjs`; an id missing or not `status: 200` in either run is skipped. Per-search wording changes print to stderr as they're found (`<id>: wording changed (...)`); the JSON on stdout carries `same_queries`/`same_online_queries` (wording match, local/online) plus `run2-compare.mjs`'s original shown-shop metrics (`mean_returned_jaccard`, `mean_shown_jaccard`, `same_nearby_top3`, `sells_flips`), so a rerun's numbers stay comparable with earlier ones.
+
+## 7. Index the run
 
 Every graded run gets its own folder under `docs/evidence/quality/` (its own `OUT_DIR`) and a row in [`docs/evidence/quality/README.md`](../docs/evidence/quality/README.md): date, folder, what changed in the pipeline, searches graded, online and local precision, and local recall, newest first.

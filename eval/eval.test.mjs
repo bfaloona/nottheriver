@@ -4,6 +4,7 @@ import { classify, pageTitle } from './access-probe/classify';
 import { isAllowed } from './access-probe/robots';
 import { pickTargets } from './access-probe/run-probe.mjs';
 import { parseTarget } from './access-probe/target';
+import { compareRow } from './compare.mjs';
 import { buildRequest } from './run-searches.mjs';
 import { agreement, precision, probeRates, recall, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
 
@@ -227,6 +228,34 @@ describe('summarize', () => {
       evidence: 'docs/evidence/quality/eval20-0925',
       note: "a figure that mixes two graders' answers",
     });
+  });
+});
+
+describe('compare', () => {
+  const body = (over) => ({
+    query: { local_queries: ['cookware store'], online_queries: ['buy cast iron skillet'] },
+    local: [{ retailer: { domain: 'a.com' } }],
+    local_farther: [],
+    dropped: [],
+    ...over,
+  });
+
+  it('flags local wording that changed between runs', () => {
+    const b = body({ query: { local_queries: ['kitchen supply store'], online_queries: ['buy cast iron skillet'] } });
+    expect(compareRow('s1', body({}), b).same_queries).toBe(false);
+  });
+
+  it('treats identical wording on both sections as unchanged', () => {
+    const row = compareRow('s1', body({}), body({}));
+    expect(row.same_queries).toBe(true);
+    expect(row.same_online_queries).toBe(true);
+  });
+
+  it('flags an online-only wording change even when local wording matches', () => {
+    const b = body({ query: { local_queries: ['cookware store'], online_queries: ['cast iron skillet shop'] } });
+    const row = compareRow('s1', body({}), b);
+    expect(row.same_queries).toBe(true);
+    expect(row.same_online_queries).toBe(false);
   });
 });
 
