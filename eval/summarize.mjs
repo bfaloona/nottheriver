@@ -125,10 +125,13 @@ export function agreement(probeResults, grades) {
 }
 
 /**
- * The About page's headline, or null unless every figure was actually measured. `reports` is one or two
- * graded runs of the same eval (every graded eval now runs twice, operator ruling 2026-09-26); a figure
- * that rounds to a different percentage between runs is given as a [low, high] range rather than picking
- * one. `evidence` is the (first) run's evidence folder (OUT_DIR).
+ * The About page's headline, or null unless every figure was actually measured.
+ * @param {object[]} reports One or two graded runs of the same eval (every graded eval now runs twice,
+ *   operator ruling 2026-09-26); a figure that rounds to a different percentage between runs is given
+ *   as a [low, high] range rather than picking one. More than one run means its new rows were graded by
+ *   a second agent that did not see the first run's grades, so the local precision figure gets a note.
+ * @param {string} evidence The (first) run's evidence folder (OUT_DIR).
+ * @returns {object|null}
  */
 export function siteMeasure(reports, evidence) {
   const [first] = reports;
@@ -142,7 +145,8 @@ export function siteMeasure(reports, evidence) {
   const both = (kind) => ({ online: figure(kind, 'online'), local: figure(kind, 'local') });
   // A sampled run grades only some searches; the headline names how many it rests on. `runs` lets the
   // About page's wording depend on whether this ran once or twice, rather than assuming twice.
-  return { date: first.graded_through, searches: first.searches.graded, runs: reports.length, precision: both('precision'), recall: both('recall'), evidence };
+  const note = reports.length > 1 ? "a figure that mixes two graders' answers" : undefined;
+  return { date: first.graded_through, searches: first.searches.graded, runs: reports.length, precision: both('precision'), recall: both('recall'), evidence, note };
 }
 
 async function readJson(path, fallback) {

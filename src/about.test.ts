@@ -25,7 +25,10 @@ describe('about page', () => {
   });
 
   it('states the measured precision and recall with the date', async () => {
-    await load({ date: '2026-10-01', searches: 20, runs: 2, precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 }, evidence: 'docs/evidence/quality/eval20-0925' });
+    await load({
+      date: '2026-10-01', searches: 20, runs: 2, precision: { online: 0.8, local: 0.625 }, recall: { online: 0.5, local: 0.4 },
+      evidence: 'docs/evidence/quality/eval20-0925', note: "a figure that mixes two graders' answers",
+    });
     const text = $('[data-quality]').textContent!;
     for (const part of ['2026-10-01', '20 graded searches', 'each run twice', '80%', '63%', "mixes two graders' answers"]) expect(text).toContain(part);
     const recall = $('[data-quality-recall]').textContent!;
@@ -42,9 +45,11 @@ describe('about page', () => {
     expect($('[data-quality-recall]').textContent).toContain('33 to 35%');
   });
 
-  it('does not claim a second run when the headline rests on only one', async () => {
+  it('does not claim a second run or a mixed-graders note when the headline rests on only one run', async () => {
     await load({ date: '2026-09-24', searches: 20, runs: 1, precision: { online: 0.98, local: 0.59 }, recall: { online: 0.3, local: 0.28 }, evidence: 'docs/evidence/quality/eval20-0924' });
-    expect($('[data-quality]').textContent).not.toContain('each run');
+    const text = $('[data-quality]').textContent!;
+    expect(text).not.toContain('each run');
+    expect(text).not.toContain('mixes');
   });
 
   it('hides the recall line until an evaluation has run', async () => {
@@ -52,16 +57,20 @@ describe('about page', () => {
     expect($('[data-quality-recall]').hidden).toBe(true);
   });
 
-  it('links raw evidence to the measured run\'s own folder', async () => {
+  it('links raw evidence to the measured run\'s own folder, its path as the link text', async () => {
     const repo = 'https://github.com/example/example';
     await load({ date: '2026-09-26', searches: 20, precision: { online: 0.98, local: 0.6 }, recall: { online: 0.3, local: 0.3 }, evidence: 'docs/evidence/quality/eval20-0925' }, repo);
-    expect($('[data-evidence-link]').getAttribute('href')).toBe(`${repo}/tree/main/docs/evidence/quality/eval20-0925`);
+    const link = $('[data-evidence-link]');
+    expect(link.getAttribute('href')).toBe(`${repo}/tree/main/docs/evidence/quality/eval20-0925`);
+    expect(link.textContent).toBe('docs/evidence/quality/eval20-0925');
   });
 
-  it('links raw evidence to the general index before anything has been measured', async () => {
+  it('links raw evidence to the general index before anything has been measured, its path as the link text', async () => {
     const repo = 'https://github.com/example/example';
     await load(null, repo);
-    expect($('[data-evidence-link]').getAttribute('href')).toBe(`${repo}/tree/main/docs/evidence/quality`);
+    const link = $('[data-evidence-link]');
+    expect(link.getAttribute('href')).toBe(`${repo}/tree/main/docs/evidence/quality`);
+    expect(link.textContent).toBe('docs/evidence/quality');
   });
 
   it('keeps repo links and the dispute form out when no repo URL is configured', async () => {

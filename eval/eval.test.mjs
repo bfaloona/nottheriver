@@ -134,8 +134,10 @@ describe('summarize', () => {
     const grades = [
       grade({ kind: 'local', sells_product: 'yes', local_exists: 'yes' }),
       grade({ kind: 'local', sells_product: 'unknown', local_exists: 'no' }),
+      // Existence itself unknown (not confirmed absent), so this one stays excluded like any other unknown.
+      grade({ kind: 'local', sells_product: 'unknown', local_exists: 'unknown' }),
     ];
-    expect(precision(grades)).toEqual({ graded: 2, relevant: 1, unknown: 0, precision: 0.5 });
+    expect(precision(grades)).toEqual({ graded: 2, relevant: 1, unknown: 1, precision: 0.5 });
   });
 
   it('computes recall by registrable domain, or by name for shops without a website', () => {
@@ -201,10 +203,13 @@ describe('summarize', () => {
   });
 
   it('publishes a headline only when every figure was measured', () => {
-    expect(siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4))], 'docs/evidence/quality/eval20-0925')).toEqual({
+    const measured = siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4))], 'docs/evidence/quality/eval20-0925');
+    expect(measured).toEqual({
       date: '2026-10-01', searches: 20, runs: 1, precision: { online: 0.9, local: 0.8 }, recall: { online: 0.5, local: 0.4 },
       evidence: 'docs/evidence/quality/eval20-0925',
     });
+    // A single run was not graded by a second agent, so there is no mixed-graders note.
+    expect(measured.note).toBeUndefined();
     // Grades exist but no confirmed baseline yet: recall is null, so nothing is published.
     expect(siteMeasure([report(sec(0.9, null), sec(0.8, null))], 'x')).toBeNull();
     expect(siteMeasure([report(sec(0.9, 0.5), sec(0.8, 0.4), null)], 'x')).toBeNull();
@@ -220,6 +225,7 @@ describe('summarize', () => {
       precision: { online: 0.979, local: [0.617, 0.636] },
       recall: { online: 0.31, local: [0.326, 0.349] },
       evidence: 'docs/evidence/quality/eval20-0925',
+      note: "a figure that mixes two graders' answers",
     });
   });
 });

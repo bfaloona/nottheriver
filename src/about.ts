@@ -13,6 +13,7 @@ export interface QualityMeasure {
   precision: { online: Figure; local: Figure };
   recall: { online: Figure; local: Figure };
   evidence: string; // this run's evidence folder, e.g. docs/evidence/quality/eval20-0925
+  note?: string; // caveat on the local precision figure, e.g. that it mixes more than one grader's answers
 }
 
 const whole = (n: number) => Math.round(n * 100);
@@ -20,12 +21,13 @@ const fig = (f: Figure) => (Array.isArray(f) ? `${whole(f[0])} to ${whole(f[1])}
 
 export function precisionText(measured: QualityMeasure | null): string {
   if (!measured) return 'Not yet measured.';
-  const { date, searches, runs } = measured;
+  const { date, searches, runs, note } = measured;
   const { online, local } = measured.precision;
   const runsClause = runs > 1 ? `, each run ${runs === 2 ? 'twice' : `${runs} times`}` : '';
+  const noteClause = note ? ` (${note})` : '';
   return (
     `Checked ${date} on ${searches} graded searches${runsClause}. Online, ${fig(online)} of results sold the product or a close ` +
-    `equivalent; nearby, ${fig(local)} did (a figure that mixes two graders' answers).`
+    `equivalent; nearby, ${fig(local)} did${noteClause}.`
   );
 }
 
@@ -47,9 +49,13 @@ if (recallEl) {
   recallEl.textContent = recallText(measured);
   recallEl.hidden = !measured;
 }
-// The HTML points at the index of all runs; once measured, point at that run's own folder instead.
+// The HTML points at the index of all runs; once measured, point at that run's own folder instead,
+// with its path as the link text, like every other repo reference on this page.
 const evidenceLink = document.querySelector<HTMLAnchorElement>('[data-evidence-link]');
-if (evidenceLink && measured) evidenceLink.dataset.repoPath = `tree/main/${measured.evidence}`;
+if (evidenceLink && measured) {
+  evidenceLink.dataset.repoPath = `tree/main/${measured.evidence}`;
+  evidenceLink.textContent = measured.evidence;
+}
 
 // Without a repo URL (dev, e2e) doc references stay plain text and repo-only sentences stay hidden.
 if (repoUrl) {
