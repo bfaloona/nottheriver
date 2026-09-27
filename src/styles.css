@@ -190,12 +190,14 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
   color: var(--accent);
   border-radius: var(--radius-control);
 }
-.signal, .negative { margin: var(--space-3) 0 0; font-size: var(--text-sm); }
+.signal, .negative, .concerns { margin: var(--space-3) 0 0; font-size: var(--text-sm); }
 .signal-kind { font-weight: 600; }
 .negative { padding: var(--space-3); background: var(--warn-bg); color: var(--warn); border-radius: var(--radius-panel); }
 .negative a { color: var(--warn); margin-right: var(--space-4); }
 .negative p { margin: 0; }
 .negative p + p { margin-top: var(--space-1); }
+.concerns summary { cursor: pointer; color: var(--warn); padding-block: var(--space-2); width: fit-content; }
+.concerns[open] summary { margin-bottom: var(--space-2); }
 
 .why { margin-top: var(--space-2); font-size: var(--text-sm); }
 .why summary { cursor: pointer; color: var(--accent); padding-block: var(--space-2); width: fit-content; }

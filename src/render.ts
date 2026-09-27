@@ -1,4 +1,4 @@
-import type { ComponentName, SearchResponse, SearchResult, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
+import type { ComponentName, SearchResponse, SearchResult, Signal, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
 import { defaultView, filterResults, sortResults, type View } from './controls';
 import { wirePopovers } from './popover';
 
@@ -104,6 +104,49 @@ function sellsText(c: SearchResult['components'][number]): string {
   return 'Not confirmed';
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+// Avoids the Date object so a YYYY-MM-DD string never shifts a day across a local timezone.
+function actionDateText(iso: string): string {
+  const [y, m, d] = iso.split('-');
+  return `${MONTHS[Number(m) - 1]} ${Number(d)}, ${y}`;
+}
+
+function disputeLink(config: RenderConfig): HTMLAnchorElement {
+  return config.disputeUrl.startsWith('http')
+    ? outbound(config.disputeUrl, 'Dispute this', { data: { dispute: '' } })
+    : internal(config.disputeUrl, 'Dispute this', { data: { dispute: '' } });
+}
+
+// One finding: kind, the source's own title (never model prose), its action date, the
+// source link and a dispute link. Grouping (concernsGroup) wraps several of these.
+function concernBox(s: Signal, config: RenderConfig): HTMLDivElement {
+  const kind = `${SIGNAL_LABELS[s.kind]}: `;
+  const source = outbound(s.source_url, `Source: ${hostOf(s.source_url)}`, { className: 'negative-source' });
+  return el(
+    'div',
+    { className: 'negative', data: { negative: '' } },
+    el('p', {}, el('span', { className: 'signal-kind' }, kind), s.claim),
+    ...(s.action_date ? [el('p', { data: { actionDate: '' } }, actionDateText(s.action_date))] : []),
+    el('p', {}, source, ' ', disputeLink(config)),
+  );
+}
+
+// Several concerns collapse to one line ("3 concerns, 2019 to 2025") that expands to the
+// list, so a well-documented shop doesn't show a wall of warning boxes by default.
+function concernsGroup(signals: Signal[], config: RenderConfig): HTMLDetailsElement {
+  // YYYY strings sort correctly as plain strings.
+  const years = signals.flatMap((s) => (s.action_date ? [s.action_date.slice(0, 4)] : [])).sort();
+  const [min, max] = [years[0], years.at(-1)];
+  const range = min === undefined ? '' : min === max ? `, ${min}` : `, ${min} to ${max}`;
+  return el(
+    'details',
+    { className: 'concerns', data: { concerns: '' } },
+    el('summary', {}, `${plural(signals.length, 'concern', 'concerns')}${range}`),
+    ...signals.map((s) => concernBox(s, config)),
+  );
+}
+
 // A negative's source label is "<Kind>: <claim>"; the claim is already on the card.
 function sourceLink(s: SourceRef): HTMLAnchorElement {
   const kind = Object.values(SIGNAL_LABELS).find((k) => s.label.startsWith(`${k}: `));
@@ -158,25 +201,14 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
 
   // The claim is the source's own title; this code only labels its kind.
   for (const s of result.signals) {
+    if (s.polarity === 'negative') continue;
     const kind = `${SIGNAL_LABELS[s.kind]}: `;
-    const negative = s.polarity === 'negative';
-    const source = outbound(s.source_url, `Source: ${hostOf(s.source_url)}`, negative ? { className: 'negative-source' } : {});
-    if (negative) {
-      const dispute = config.disputeUrl.startsWith('http')
-        ? outbound(config.disputeUrl, 'Dispute this', { data: { dispute: '' } })
-        : internal(config.disputeUrl, 'Dispute this', { data: { dispute: '' } });
-      body.append(
-        el(
-          'div',
-          { className: 'negative', data: { negative: '' } },
-          el('p', {}, el('span', { className: 'signal-kind' }, kind), s.claim),
-          el('p', {}, source, ' ', dispute),
-        ),
-      );
-    } else {
-      body.append(el('p', { className: 'signal' }, el('span', { className: 'signal-kind' }, kind), s.claim, ' ', source));
-    }
+    const source = outbound(s.source_url, `Source: ${hostOf(s.source_url)}`);
+    body.append(el('p', { className: 'signal' }, el('span', { className: 'signal-kind' }, kind), s.claim, ' ', source));
   }
+  const negatives = result.signals.filter((s) => s.polarity === 'negative');
+  if (negatives.length === 1) body.append(concernBox(negatives[0]!, config));
+  else if (negatives.length > 1) body.append(concernsGroup(negatives, config));
 
   const rows = result.components.map((c) => componentRow(c, result));
   body.append(

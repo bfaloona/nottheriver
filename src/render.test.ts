@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import type { SearchResponse, SearchResult } from '../proxy/src/contract';
+import type { SearchResponse, SearchResult, Signal } from '../proxy/src/contract';
 import fixture from '../tests/fixtures/search-response.json';
 import { disputeUrlFor } from './config';
 import { defaultView } from './controls';
@@ -107,15 +107,20 @@ describe('renderResults (HR5)', () => {
     expect(badge.getAttribute('href')).toBe(first.certifications[0]!.source_url);
   });
 
-  it('shows a negative signal with its kind, source link, and a dispute link', () => {
+  it('shows a negative signal with its kind, source link, action date, and a dispute link', () => {
     const second = response.local[1]!;
     const signal = second.signals[0]!;
-    const row = item(second).querySelector('[data-negative]')!;
+    const li = item(second);
+    // One finding renders directly, ungrouped: no "N concerns" summary to click through.
+    expect(li.querySelector('[data-concerns]')).toBeNull();
+    const row = li.querySelector('[data-negative]')!;
     expect(row.textContent).toContain('Labor');
     expect(row.textContent).toContain(signal.claim);
+    expect(row.textContent).toContain('Jul 11, 2024');
     const source = row.querySelector<HTMLAnchorElement>('a.negative-source')!;
     expect(source.getAttribute('href')).toBe(signal.source_url);
     expect(source.textContent).toContain('osha.gov');
+    expect(li.querySelectorAll('[data-dispute]')).toHaveLength(1);
     expect(row.querySelector('[data-dispute]')!.getAttribute('href')).toBe('about.html#dispute');
   });
 
@@ -125,6 +130,50 @@ describe('renderResults (HR5)', () => {
     expect(li.querySelector('[data-dispute]')!.getAttribute('href')).toBe(
       `${repo}/issues/new?template=dispute-a-ranking.md`,
     );
+  });
+
+  it('shows no concern box or group when a result has no negative findings', () => {
+    const clean = response.local[0]!;
+    expect(clean.signals.filter((s) => s.polarity === 'negative')).toHaveLength(0);
+    const li = item(clean);
+    expect(li.querySelector('[data-negative]')).toBeNull();
+    expect(li.querySelector('[data-concerns]')).toBeNull();
+    expect(li.querySelectorAll('[data-dispute]')).toHaveLength(0);
+  });
+
+  it('groups five findings behind one summary line, each still disputable and dated', () => {
+    const kinds: Signal['kind'][] = ['labor', 'governance', 'environmental', 'labor', 'environmental'];
+    const dates = ['2019-03-01', '2020-06-15', '2021-09-09', '2023-01-20', '2025-12-05'];
+    const signals: Signal[] = kinds.map((kind, i) => ({
+      kind,
+      polarity: 'negative',
+      claim: `Finding ${i}`,
+      source_url: `https://example-source.gov/${i}`,
+      origin: 'curated',
+      action_date: dates[i]!,
+    }));
+    const grouped: SearchResult = { ...response.local[1]!, signals };
+    const li = renderResult(grouped, config);
+
+    expect(li.querySelectorAll('[data-negative]')).toHaveLength(5); // none render outside the group
+    const details = li.querySelector<HTMLDetailsElement>('[data-concerns]')!;
+    expect(details.tagName).toBe('DETAILS'); // native, keyboard- and screen-reader-reachable
+    expect(details.querySelector('summary')!.textContent).toBe('5 concerns, 2019 to 2025');
+
+    const boxes = details.querySelectorAll('[data-negative]');
+    expect(boxes).toHaveLength(5);
+    boxes.forEach((box, i) => {
+      expect(box.textContent).toContain(signals[i]!.claim);
+      expect(box.querySelector('a.negative-source')!.getAttribute('href')).toBe(signals[i]!.source_url);
+    });
+    expect(details.querySelectorAll('[data-dispute]')).toHaveLength(5); // one per finding, not one for the group
+    expect([...details.querySelectorAll('[data-action-date]')].map((p) => p.textContent)).toEqual([
+      'Mar 1, 2019',
+      'Jun 15, 2020',
+      'Sep 9, 2021',
+      'Jan 20, 2023',
+      'Dec 5, 2025',
+    ]);
   });
 
   it('lists all four weights once per response', () => {
