@@ -40,10 +40,11 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 
 | # | Work | Next step | Waits on |
 |---|---|---|---|
-| 1 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)) | Prepare the claim-wording checklist under `docs/evidence/` (review item R1) | Operator sign-off on every claim before import |
-| 2 | Analysis and triage of [caching-and-store-types.md](caching-and-store-types.md): caching candidates, store-type and chain handling (in the skillet walkthrough, Home Depot and Walmart outrank an independent hardware store), S1 to S5, CQ1 to CQ5 | Detailed analysis per issue, with a proposed triage (do, defer, drop) and the evidence behind each | Operator answers to CQ1 to CQ5 for the final triage |
-| 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
-| 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
+| 1 | Low-hanging fruit from [caching-and-store-types.md](caching-and-store-types.md) | Split its items (caching candidates, S1 to S5, CQ1 to CQ5) into small changes with no operator decision, and implement those; list the rest with a proposed triage (do, defer, drop) | Nothing for the small changes; operator answers to CQ1 to CQ5 for the rest |
+| 2 | A way to run Amazon plan Phases B, C and D without getting sidetracked | Propose an execution approach (for example one plan checklist per phase run with /implement-plan, a scope rule that parks side findings as new Priorities rows, and a stop point for each operator gate) | Operator approval of the approach |
+| 3 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)) | Prepare the claim-wording checklist under `docs/evidence/` (review item R1) | Operator sign-off on every claim before import |
+| 4 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
+| 5 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 
 ## Blocked on operator
 
