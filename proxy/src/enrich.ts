@@ -22,7 +22,7 @@ export interface NegativeRow {
 }
 // stores is the count the source states, never rounded or invented; stores_at_least marks a
 // source that only gives a floor ("over 30"), so the label reads "Chain, 30+ stores".
-export interface ChainRow { domain: string; name: string; stores: number; stores_at_least?: boolean; source_url: string; checked: string }
+export interface ChainRow { domain: string; name: string; stores: number; stores_at_least?: boolean; source_url: string; checked: string; note?: string }
 export interface CuratedData {
   certifications: CertificationRow[];
   negatives: NegativeRow[];
@@ -59,9 +59,13 @@ export function certificationsFor(domain: string, rows: CertificationRow[]): Cer
     .map((r) => ({ kind: r.kind, label: CERT_LABELS[r.kind], source_url: r.source_url, checked: r.checked }));
 }
 
-// Badge copy per the operator's Q3 ruling: the source's own count, never "Chain" alone.
-export function chainLabel(row: Pick<ChainRow, 'stores' | 'stores_at_least'>): string {
-  return `Chain, ${row.stores}${row.stores_at_least ? '+' : ''} stores`;
+// The badge shows the source's own count, never "Chain" alone, so a reader can check the number
+// at the link; a dealer-owned chain (data/chains.json's `note` says so) says so in the badge too,
+// since the site cannot tell one dealer's store from another's.
+export function chainLabel(row: Pick<ChainRow, 'stores' | 'stores_at_least' | 'note'>): string {
+  const count = row.stores.toLocaleString('en-US');
+  const dealerOwned = row.note?.toLowerCase().includes('dealer-owned') ?? false;
+  return `Chain, ${count}${row.stores_at_least ? '+' : ''} stores${dealerOwned ? ', dealer-owned' : ''}`;
 }
 
 export function chainFor(domain: string, rows: ChainRow[]): Chain | null {

@@ -14,7 +14,7 @@ Graded 2026-09-23 (US Pacific time; baseline top-up and access probe finished 20
 
 Local precision by area: urban 48% (23 of 48), suburban 53% (30 of 57), rural 54% (19 of 35).
 
-Local recall by kind of shop: independents 17% (4 of 23), chains 35% (22 of 63). A chain here is a brand with 10 or more US stores under one name; Ace Hardware dealers count as Ace. The labels are this report's judgment, one per baseline shop.
+Local recall by kind of shop: independents 23% (5 of 22), chains 36% (23 of 64). A chain here is a brand with 10 or more US stores under one name; Ace Hardware dealers count as Ace. The labels are this report's judgment, one per baseline shop.
 
 Evaluation cost: the 60 searches made 240 Brave calls and used 313,981 model tokens, an estimated $1.25 in total.
 

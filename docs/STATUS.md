@@ -81,7 +81,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 
 ## Decisions needed
 
-- Whether local recall should favor independents: the site finds 17% of independent baseline shops against 35% of chain stores (a gap within noise at this sample size).
+- Whether local recall should favor independents: the site finds 23% of independent baseline shops against 36% of chain stores (a gap within noise at this sample size).
 - Whether marketplaces (Facebook Marketplace is classified `marketplace` and kept) should appear at all.
 - How disputes are reviewed and resolved (the About page and [ranking.md](ranking.md) say TBD).
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.

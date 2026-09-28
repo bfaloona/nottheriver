@@ -156,6 +156,17 @@ describe('curated lookups', () => {
     expect(chainLabel({ stores: 30 })).toBe('Chain, 30 stores');
   });
 
+  it('formats the count with thousands separators', () => {
+    expect(chainLabel({ stores: 5000, stores_at_least: true })).toBe('Chain, 5,000+ stores');
+    expect(chainLabel({ stores: 1995 })).toBe('Chain, 1,995 stores');
+  });
+
+  it('adds "dealer-owned" to the label when the row\'s note says so, but not otherwise', () => {
+    expect(chainLabel({ stores: 5000, stores_at_least: true, note: 'dealer-owned: stores are independently owned' })).toBe('Chain, 5,000+ stores, dealer-owned');
+    expect(chainLabel({ stores: 1995, note: 'more than 2,000 stores in the U.S.' })).toBe('Chain, 1,995 stores');
+    expect(chainLabel({ stores: 1995 })).toBe('Chain, 1,995 stores');
+  });
+
   it('attaches curated negatives without needing a fetched URL', () => {
     expect(negativesFor('shop.example', data.negatives)).toEqual([
       {

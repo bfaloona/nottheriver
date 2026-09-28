@@ -10,9 +10,10 @@ import { registrableDomain } from '../src/domain';
 import { negativesFor, type NegativeRow } from '../src/enrich';
 import { ENV, ETHICS, findingCost } from '../ranking/score';
 
-// docs/evidence/quality/eval20-0925/grades.json's baseline rows carry a `chain` label (Phase 0 of
-// docs/plans/store-types.md), so chains.json can be cross-checked against it offline: this covers
-// all 94 local baseline rows rather than the 20 to 30 a live search returns (M3, offline form).
+// docs/evidence/quality/eval20-0925/grades.json's baseline rows each carry a `chain` label (10 or
+// more US stores under one name; Ace Hardware dealers count as Ace) for every local and online
+// shop the eval graded, so chains.json can be cross-checked against it offline: this covers all
+// 94 local baseline rows rather than the 20 to 30 a live search returns (M3, offline form).
 interface BaselineRow { url: string | null; also_urls?: string[]; chain: boolean | null }
 function gradesBaseline(): BaselineRow[] {
   const raw = readFileSync(new URL('../../docs/evidence/quality/eval20-0925/grades.json', import.meta.url), 'utf8');

@@ -92,3 +92,76 @@ undefined
    Start at  20:33:36
    Duration  246ms (transform 53%, tests 26%, import 19%, worker 2%)
 
+--- Review-fixes red run: these two checks never went red above because data.test.ts and
+--- pipeline.test.ts died at import before chains.json existed. Shown here by a temporary
+--- mutation, reverted immediately after capture (not part of any commit).
+
+--- Mutation A: added a chains.json row for lodgecastiron.com, a domain the eval baseline
+--- (docs/evidence/quality/eval20-0925/grades.json) grades chain: false. Reverted after capture.
+
+ RUN  v5.0.1
+
+ ❯ proxy/test/data.test.ts (102 tests | 1 failed) 12ms
+   ❯ chains.json (37)
+     × never lists a domain that the eval baseline confirms is not a chain 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  proxy/test/data.test.ts > chains.json > never lists a domain that the eval baseline confirms is not a chain
+AssertionError: expected [ 'lodgecastiron.com', …(2) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "lodgecastiron.com",
++   "lodgecastiron.com",
++   "lodgecastiron.com",
++ ]
+
+ ❯ proxy/test/data.test.ts:171:23
+    169|       .map((u) => registrableDomain(u))
+    170|       .filter((d): d is string => d !== null && chainDomains.has(d));
+    171|     expect(conflicts).toEqual([]);
+       |                       ^
+    172|   });
+    173| });
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 101 passed (102)
+
+--- Mutation B: in pipeline.ts's scrubSources, replaced the blocked-source check with
+--- `row.input.chain ?? null` (keeps a blocked chain instead of dropping it). Reverted after capture.
+
+ RUN  v5.0.1
+
+ ❯ proxy/test/pipeline.test.ts (116 tests | 1 failed) 106ms
+   ❯ the chain badge (4)
+     × drops the chain badge, but not the row, when its source is blocked 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  proxy/test/pipeline.test.ts > the chain badge > drops the chain badge, but not the row, when its source is blocked
+AssertionError: expected { label: 'Chain, 25 stores', …(3) } to be undefined
+
+- Expected:
+undefined
+
++ Received:
+{
+  "checked": "2026-09-27",
+  "label": "Chain, 25 stores",
+  "source_url": "https://www.amazon.com/about",
+  "stores": 25,
+}
+
+ ❯ proxy/test/pipeline.test.ts:509:34
+    507|     const res = finalizeResponse(scored, NORMALIZED, REQ, NO_USAGE);
+    508|     expect(res.online).toHaveLength(1);
+    509|     expect(res.online[0]!.chain).toBeUndefined();
+       |                                  ^
+    510|   });
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 115 passed (116)
