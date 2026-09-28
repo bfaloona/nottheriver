@@ -9,7 +9,7 @@ DATA>>>
 
 Some candidates are map listings of physical stores. Their snippet is a short list of map categories and is often empty, so judge those from the name and URL.
 
-Return a JSON object {"retailers": [...], "candidates": [...]}.
+Return a JSON object {"retailers": [...], "candidates": [...]}. Write it on one line, with no spaces or line breaks outside string values.
 
 "candidates" has one entry per candidate, in any order:
 - id: copy the candidate's "id" value exactly.
@@ -32,4 +32,4 @@ Return a JSON object {"retailers": [...], "candidates": [...]}.
   - source_url: copy one "url" value from the data exactly. Never write any other URL.
   - confidence: a number from 0 to 1.
 
-Report only what a result's own text states about that retailer. If a result says nothing about these practices, report no signal for it.`;
+A retailer's own pages are never evidence about that retailer: cite only another site's page. Report only what a result's own text states about that retailer. If a result says nothing about these practices, report no signal for it.`;
