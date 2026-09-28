@@ -4715,7 +4715,9 @@
    "url": "https://www.lodgecastiron.com/collections/skillets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.lodgecastiron.com/pages/locations"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4724,7 +4726,9 @@
    "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4733,7 +4737,9 @@
    "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4742,7 +4748,9 @@
    "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4751,7 +4759,9 @@
    "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.surlatable.com/stores"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4760,7 +4770,9 @@
    "url": "https://blackstonesboston.com/products/no-14-cast-iron-skillet",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://blackstonesboston.com/"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4769,7 +4781,9 @@
    "url": "https://www.bostongeneralstore.com/products/cast-iron-skillet-11",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.bostongeneralstore.com/"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4778,7 +4792,9 @@
    "url": "https://www.homedepot.com/l/Somerville/MA/Somerville/02145/2667",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/The_Home_Depot"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4787,7 +4803,9 @@
    "url": "https://www.acehardware.com/store-details/16390",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "cast-iron-skillet-urban",
@@ -4796,7 +4814,9 @@
    "url": "http://chinafairinc.com/",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.yelp.com/biz/china-fair-cambridge"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4805,7 +4825,9 @@
    "url": "https://www.lodgecastiron.com/collections/skillets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.lodgecastiron.com/pages/locations"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4814,7 +4836,9 @@
    "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4823,7 +4847,9 @@
    "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4832,7 +4858,9 @@
    "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4841,7 +4869,9 @@
    "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.surlatable.com/stores"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4850,7 +4880,9 @@
    "url": "https://www.surlatable.com/locations/ma/natick/store-168.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Sur_La_Table"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4859,7 +4891,9 @@
    "url": "https://www.crateandbarrel.com/stores/natick-mall/str211",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Crate_%26_Barrel"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4868,7 +4902,9 @@
    "url": "https://www.homedepot.com/l/Natick/MA/Natick/01760/2669",
    "confirmed": true,
    "miss_reason": "ranked_low",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/The_Home_Depot"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4877,7 +4913,9 @@
    "url": "https://www.target.com/sl/framingham/1308",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "cast-iron-skillet-suburban",
@@ -4886,7 +4924,9 @@
    "url": "https://www.kitchen-outfitters.com/pages/cookware",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.kitchen-outfitters.com/pages/about-us"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4895,7 +4935,9 @@
    "url": "https://www.lodgecastiron.com/collections/skillets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.lodgecastiron.com/pages/locations"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4904,7 +4946,9 @@
    "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4913,7 +4957,9 @@
    "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4922,7 +4968,9 @@
    "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4931,7 +4979,9 @@
    "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.surlatable.com/stores"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4940,7 +4990,9 @@
    "url": "https://thebakerspin.com/cookware/shop-by-brand/le-creuset/cast-iron-cookware.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://thebakerspin.com/"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4949,7 +5001,9 @@
    "url": "https://www.target.com/sl/hadley/1839",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4958,7 +5012,9 @@
    "url": "https://www.homedepot.com/l/Hadley/MA/Hadley/01035/8452",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/The_Home_Depot"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4967,7 +5023,9 @@
    "url": "https://www.walmart.com/store/2901-northampton-ma/kitchen-supply-store",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "cast-iron-skillet-rural",
@@ -4976,7 +5034,9 @@
    "url": "https://explorecedarchest.com/collections/food-drink",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://explorecedarchest.com/"
   },
   {
    "search_id": "camping-tent-urban",
@@ -4985,7 +5045,9 @@
    "url": "https://www.rei.com/c/camping-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-"
   },
   {
    "search_id": "camping-tent-urban",
@@ -4994,7 +5056,9 @@
    "url": "https://www.dickssportinggoods.com/f/camping-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.dickssportinggoods.com/"
   },
   {
    "search_id": "camping-tent-urban",
@@ -5003,7 +5067,9 @@
    "url": "https://www.walmart.com/cp/tents/887708",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "camping-tent-urban",
@@ -5012,7 +5078,9 @@
    "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "camping-tent-urban",
@@ -5021,7 +5089,9 @@
    "url": "https://www.cabelas.com/l/tents",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.cabelas.com/"
   },
   {
    "search_id": "camping-tent-urban",
@@ -5030,7 +5100,9 @@
    "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "camping-tent-urban",
@@ -5039,7 +5111,9 @@
    "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "camping-tent-urban",
@@ -5048,7 +5122,9 @@
    "url": "https://stores.dickssportinggoods.com/pa/philadelphia/4410/",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5057,7 +5133,9 @@
    "url": "https://www.rei.com/c/camping-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5066,7 +5144,9 @@
    "url": "https://www.dickssportinggoods.com/f/camping-family-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.dickssportinggoods.com/"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5075,7 +5155,9 @@
    "url": "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5084,7 +5166,9 @@
    "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5093,7 +5177,9 @@
    "url": "https://www.homedepot.com/b/Sports-Outdoors-Camping-Gear-Tents-Camping-Tents/N-5yc1vZc45r",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.homedepot.com/news/company/theres-no-place-home-depot-now-there-are-even-more-them"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5102,7 +5188,9 @@
    "url": "https://www.rei.com/stores/conshohocken-plymouth-meeting",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5111,7 +5199,9 @@
    "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5120,7 +5210,9 @@
    "url": "https://www.rei.com/stores/king-of-prussia",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5129,7 +5221,9 @@
    "url": "https://www.llbean.com/llb/shop/509115?page=store-king-of-prussia",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.forbes.com/sites/pamdanziger/2024/08/14/ll-bean-continues-to-expand-its-national-footprint-totaling-60-stores-this-year/"
   },
   {
    "search_id": "camping-tent-suburban",
@@ -5138,7 +5232,9 @@
    "url": "https://www.walmart.com/store/3475-norristown-pa/camping-store",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5147,7 +5243,9 @@
    "url": "https://www.rei.com/c/camping-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5156,7 +5254,9 @@
    "url": "https://www.dickssportinggoods.com/f/camping-family-tents",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.dickssportinggoods.com/"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5165,7 +5265,9 @@
    "url": "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.walmart.com/about/location-facts"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5174,7 +5276,9 @@
    "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5183,7 +5287,9 @@
    "url": "https://www.homedepot.com/b/Sports-Outdoors-Camping-Gear-Tents-Camping-Tents/N-5yc1vZc45r",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.homedepot.com/news/company/theres-no-place-home-depot-now-there-are-even-more-them"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5192,7 +5298,9 @@
    "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Cabela%27s"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5201,7 +5309,9 @@
    "url": "https://www.walmart.com/store/4612-hamburg-pa/camping-store",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5210,7 +5320,9 @@
    "url": "https://www.dunhamssports.com/store-details?storeID=255&city=POTTSVILLE&state=PA",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dunham%27s_Sports"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5219,7 +5331,9 @@
    "url": "https://stores.dickssportinggoods.com/pa/reading/23/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods"
   },
   {
    "search_id": "camping-tent-rural",
@@ -5228,7 +5342,9 @@
    "url": "https://coal-cracker.com/",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://coal-cracker.com/"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5237,7 +5353,9 @@
    "url": "https://www.smartwool.com/en-us/collections/socks",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.smartwool.com/pages/store-locator"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5246,7 +5364,9 @@
    "url": "https://www.duckworthco.com/collections/socks",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.duckworthco.com/"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5255,7 +5375,9 @@
    "url": "https://www.gobros.com/collections/darn-tough-socks",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://gobros.com/"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5264,7 +5386,9 @@
    "url": "https://highcountryoutfitters.com/pages/locations",
    "confirmed": true,
    "miss_reason": "ranked_low",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://highcountryoutfitters.com/pages/locations"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5273,7 +5397,9 @@
    "url": "https://mountainhighoutfitters.com/pages/locations-buckhead",
    "confirmed": true,
    "miss_reason": "ranked_low",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.farragutpress.com/articles/2023/08/13087"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5282,7 +5408,9 @@
    "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.woolx.com/"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5291,7 +5419,9 @@
    "url": "https://darntough.com/collections/all-socks",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://darntough.com/pages/store-locator"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5300,7 +5430,9 @@
    "url": "https://www.coolshoes.com/little-five-location.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.coolshoes.com/"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5309,7 +5441,9 @@
    "url": "https://www.theteaspot.com/products/sencha-green-tea",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.theteaspot.com/"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5318,7 +5452,9 @@
    "url": "https://tiestatea.com/products/japanese-sencha",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://tiestatea.com/"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5327,7 +5463,9 @@
    "url": "https://www.herbco.com/p-308-green-tea-sencha-organic.aspx",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.herbco.com/"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5336,7 +5474,9 @@
    "url": "https://www.japanesegreenteain.com/collections/loose-leaf-tea",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.japanesegreenteain.com/"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5345,7 +5485,9 @@
    "url": "https://www.harney.com/collections/green-tea",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.harney.com/pages/about-us"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5354,7 +5496,9 @@
    "url": null,
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.yelp.com/biz/melva-jeans-coffee-tea-and-spices-lasalle"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5363,7 +5507,9 @@
    "url": "https://www.hy-vee.com/stores/detail.aspx?s=135",
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Hy-Vee"
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
@@ -5372,7 +5518,9 @@
    "url": null,
    "confirmed": false,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.yelp.com/biz/letty-maes-tea-room-morris-3"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5381,7 +5529,9 @@
    "url": "https://www.anker.com/collections/usb-c-to-usb-c-cable",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.anker.com/"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5390,7 +5540,9 @@
    "url": "https://www.bestbuy.com/site/shop/usb-c-cables",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.bestbuy.com/"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5399,7 +5551,9 @@
    "url": "https://www.target.com/c/cables-connectors-tech-accessories-electronics/-/N-uufc7",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5408,7 +5562,9 @@
    "url": "https://satechi.com/collections/cables",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.satechi.com/"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5417,7 +5573,9 @@
    "url": "https://www.att.com/buy/accessories/browse/chargers/cables/",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.att.com/stores/"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5426,7 +5584,9 @@
    "url": "https://www.att.com/stores/texas/buda/176039",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/AT%26T_Mobility"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5435,7 +5595,9 @@
    "url": "https://www.target.com/sl/kyle/2725",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5444,7 +5606,9 @@
    "url": "https://stores.bestbuy.com/tx/austin/9600-s-interstate-35-2516.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Best_Buy"
   },
   {
    "search_id": "headlamp-urban",
@@ -5453,7 +5617,9 @@
    "url": "https://blackdiamondequipment.com/collections/headlamps",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://blackdiamondequipment.com/pages/retail-stores"
   },
   {
    "search_id": "headlamp-urban",
@@ -5462,7 +5628,9 @@
    "url": "https://jhoutdoors.com/collections/headlamps",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.jhoutdoors.com/pages/about-us"
   },
   {
    "search_id": "headlamp-urban",
@@ -5471,7 +5639,9 @@
    "url": "https://www.neptunemountaineering.com/collections/lighting",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.neptunemountaineering.com/"
   },
   {
    "search_id": "headlamp-urban",
@@ -5480,7 +5650,9 @@
    "url": "https://www.target.com/s/headlamp+headlamps",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "headlamp-urban",
@@ -5489,7 +5661,9 @@
    "url": "https://www.harborfreight.com/lighting/flashlights/all-head-lamps.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.harborfreight.com/about-us"
   },
   {
    "search_id": "headlamp-urban",
@@ -5498,7 +5672,9 @@
    "url": "https://www.sportsbasement.com/blogs/stores/san-francisco-bryant-street",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.sportsbasement.com/blogs/stores"
   },
   {
    "search_id": "headlamp-urban",
@@ -5507,7 +5683,9 @@
    "url": "https://www.target.com/sl/san-francisco-central/2766",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "headlamp-urban",
@@ -5516,7 +5694,9 @@
    "url": "https://www.harborfreight.com/storelocator/863-east-francisco-blvd-san-rafael-94901?number=386",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5525,7 +5705,9 @@
    "url": "https://www.1000bulbs.com/product/226150/PLT-12651.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.1000bulbs.com/"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5534,7 +5716,9 @@
    "url": "https://store.waveformlighting.com/collections/a19-bulbs",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.waveformlighting.com/"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5543,7 +5727,9 @@
    "url": "https://www.target.com/s/led+light+bulbs",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5552,7 +5738,9 @@
    "url": "https://www.superbrightleds.com/a19-led-light-bulb-9w-dimmable-60w-equivalent-3000k-4000k-single-6-pack",
    "confirmed": true,
    "miss_reason": "ranked_low",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.superbrightleds.com/"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5561,7 +5749,9 @@
    "url": "https://www.acehardware.com/store-details/17093",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5570,7 +5760,9 @@
    "url": "https://www.dewaldandlengle.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://doitbest.com/?member=dewald-and-lengle-hardware"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5579,7 +5771,9 @@
    "url": "https://shop.denneyelectricsupply.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://shop.denneyelectricsupply.com/pages/locations"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -5588,7 +5782,9 @@
    "url": "https://www.lowes.com/store/PA-Hamburg/2894",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Lowe%27s"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5597,7 +5793,9 @@
    "url": "https://www.target.com/s/brio+wooden+train",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5606,7 +5804,9 @@
    "url": "https://toys.hape.com/collections/category-trains-railway-sets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://toys.hape.com/"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5615,7 +5815,9 @@
    "url": "https://www.maziply.com/products/hape-figure-8-safety-set",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.maziply.com/"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5624,7 +5826,9 @@
    "url": "https://www.melissaanddoug.com/products/wooden-railway-set",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.melissaanddoug.com/"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5636,7 +5840,9 @@
    ],
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://storestip.com/store-locator/brilliant-sky-toys-and-books"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5645,7 +5851,9 @@
    "url": "https://www.phillipstoymart.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.phillipstoymart.com/"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -5654,7 +5862,9 @@
    "url": "https://www.target.com/sl/cool-springs/695",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5663,7 +5873,9 @@
    "url": "https://www.coyuchi.com/collections/organic-bath-towels",
    "confirmed": true,
    "miss_reason": "ranked_low",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.coyuchi.com/pages/store-locator"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5672,7 +5884,9 @@
    "url": "https://www.bollandbranch.com/products/plush-bath-towel/",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://finance.yahoo.com/news/boll-branch-grows-15-stores-150000528.html"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5681,7 +5895,9 @@
    "url": "https://lynnens.com/collections/bath-towels",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.lynnens.com/"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5690,7 +5906,9 @@
    "url": "https://www.target.com/s/bath+towels",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5699,7 +5917,9 @@
    "url": "https://hammamlinen.com/collections/bath-towels",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.hammamlinen.com/"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5708,7 +5928,9 @@
    "url": "https://www.target.com/sl/st-louis-park-hwy-100/260",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "bath-towels-urban",
@@ -5717,7 +5939,9 @@
    "url": "https://www.homegoods.com/store-details/St.%20Louis%20Park-MN-55426/0350",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/HomeGoods"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -5726,7 +5950,9 @@
    "url": "https://www.heb.com/heb-store/tx/buda/buda-h-e-b-477",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/H-E-B"
   },
   {
    "search_id": "wool-socks-urban",
@@ -5735,7 +5961,9 @@
    "url": "https://www.rei.com/stores/atlanta",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5744,7 +5972,9 @@
    "url": "https://www.acehardware.com/store-details/18050",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5753,7 +5983,9 @@
    "url": "https://www.acehardware.com/store-details/05576",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5762,7 +5994,9 @@
    "url": "https://www.acehardware.com/store-details/00855",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5771,7 +6005,9 @@
    "url": "https://www.doitbest.com/hillsboro-hardware-tn/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.doitbest.com/hillsboro-hardware-tn/"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5780,7 +6016,9 @@
    "url": "https://www.harborfreight.com/storelocator/5211-hickory-hollow-pkwy-101-antioch-37013?number=270",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5789,7 +6027,9 @@
    "url": "https://www.harborfreight.com/power-tools/drills-drivers/cordless-drills-drivers.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.harborfreight.com/about-us"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5798,7 +6038,9 @@
    "url": "https://www.cpooutlets.com/drills",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.cpooutlets.com/"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5807,7 +6049,9 @@
    "url": "https://www.toolnut.com/collections/dewalt-drills",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.toolnut.com/"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5816,7 +6060,9 @@
    "url": "https://www.ohiopowertool.com/power-tools/drills-drivers-hammer-drills",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.ohiopowertool.com/about-us"
   },
   {
    "search_id": "cordless-drill-suburban",
@@ -5825,7 +6071,9 @@
    "url": "https://www.target.com/s/cordless+drills",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5834,7 +6082,9 @@
    "url": "https://kinokokids.com/collections/games-and-puzzles",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://kinokokids.com/pages/about-us"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5843,7 +6093,9 @@
    "url": "https://shop.artsmia.org/collections/puzzles",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://shop.artsmia.org/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5852,7 +6104,9 @@
    "url": "https://www.gamesbyjames.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.gamesbyjames.com/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5861,7 +6115,9 @@
    "url": null,
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.yelp.com/biz/pinwheels-and-play-toys-minneapolis"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5870,7 +6126,9 @@
    "url": "https://stores.barnesandnoble.com/store/3301",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Barnes_%26_Noble"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5879,7 +6137,9 @@
    "url": "https://www.puzzlewarehouse.com/1000-piece-jigsaw-puzzles/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.puzzlewarehouse.com/blog/Working-At-Puzzle-Warehouse-Retail-Store/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5888,7 +6148,9 @@
    "url": "https://www.barnesandnoble.com/b/toys-games/puzzles/_/N-8qfZ1hox",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://stores.barnesandnoble.com/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5897,7 +6159,9 @@
    "url": "https://www.whitemountainpuzzles.com/collections/1000-piece-puzzles",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.whitemountainpuzzles.com/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5906,7 +6170,9 @@
    "url": "https://www.bitsandpieces.com/collections/1000-piece-jigsaw-puzzles",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.bitsandpieces.com/"
   },
   {
    "search_id": "jigsaw-puzzle-urban",
@@ -5915,7 +6181,9 @@
    "url": "https://www.puzzletwist.com/collections/jigsaw-puzzles",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.puzzletwist.com/"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5924,7 +6192,9 @@
    "url": "https://downtownfortcollins.com/go/pendleton-woolen-mills",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.pendleton-usa.com/company-fact-sheet.html"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5933,7 +6203,9 @@
    "url": "https://jaxgoods.com/products/pendleton-chief-joseph-blanket",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://stores.jaxgoods.com/"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5942,7 +6214,9 @@
    "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.pendleton-usa.com/help-center/about-us/our-store-locations.html"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5951,7 +6225,9 @@
    "url": "https://www.faribaultmill.com/collections/wool-blankets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.faribaultmill.com/pages/store-locator"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5960,7 +6236,9 @@
    "url": "https://colemans.com/shop/product-category/military-blankets/",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.colemans.com/"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5969,7 +6247,9 @@
    "url": "https://armynavymarinestore.com/collections/blankets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.armynavymarinestore.com/"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -5978,7 +6258,9 @@
    "url": "https://arvadasurplus.com/product/genuine-gi-wool-blanket/",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.arvadasurplus.com/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -5987,7 +6269,9 @@
    "url": "https://locations.thenorthface.com/en-us/ma/natick/usa23/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://locations.thenorthface.com/en-us/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -5996,7 +6280,9 @@
    "url": "https://natickoutdoorstore.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://natickoutdoorstore.com/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6005,7 +6291,9 @@
    "url": "https://www.llbean.com/llb/shop/20010311?page=",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.forbes.com/sites/pamdanziger/2024/08/14/ll-bean-continues-to-expand-its-national-footprint-totaling-60-stores-this-year/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6014,7 +6302,9 @@
    "url": "https://www.llbean.com/llb/shop/121904?page=mens-trail-model-rain-jacket-mens-tall",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.llbean.com/llb/shop/1000001703?page=stores-lander"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6023,7 +6313,9 @@
    "url": "https://www.ems.com/collections/mens-rain-jackets",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://finance.yahoo.com/news/seven-core-eastern-mountain-sports-152027277.html"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6032,7 +6324,9 @@
    "url": "https://www.outdoorresearch.com/collections/rain-jackets",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.outdoorresearch.com/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6041,7 +6335,9 @@
    "url": "https://www.mountainsports.com/collections/mens-rain-jackets-shells",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.mountainsports.com/"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6050,7 +6346,9 @@
    "url": "https://www.target.com/p/rokka-rolla-women-s-waterproof-rain-coats-hooded-jackets/-/A-92611353",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6059,7 +6357,9 @@
    "url": "https://www.publix.com/locations/1061-the-plaza-midtown",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Publix"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6068,7 +6368,9 @@
    "url": "https://www.petitevioletterestaurant.com/olive-oil-boutique",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.petitevioletterestaurant.com/olive-oil-boutique"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6077,7 +6379,9 @@
    "url": null,
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.joinlolo.com/merchants/splash-of-olive-decatur-ga-30030/"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6086,7 +6390,9 @@
    "url": "https://vsoptaproom.com/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://vsoptaproom.com/"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6095,7 +6401,9 @@
    "url": "https://www.zingermans.com/Product/roi-olive-oil/O-ROI-500",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.zingermans.com/aboutus.aspx"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6104,7 +6412,9 @@
    "url": "https://laconiko.com/products/laconiko-extra-virgin-olive-oil",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.laconiko.com/"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6113,7 +6423,9 @@
    "url": "https://brightland.co/products/kalamata",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.brightland.co/pages/store-locator"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6122,7 +6434,9 @@
    "url": "https://kosterina.com/products/olive-oil-trio-gift-set",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.kosterina.com/"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6131,7 +6445,9 @@
    "url": "https://graza.co/products/sizzle-2l",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.graza.co/"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6140,7 +6456,9 @@
    "url": "https://www.harborfreight.com/storelocator/1604-36th-street-peru-61354?number=694",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6149,7 +6467,9 @@
    "url": "https://www.acehardware.com/store-details/16926",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Ace_Hardware"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6158,7 +6478,9 @@
    "url": "https://www.walgreens.com/locator/walgreens-100+bedford+rd-morris-il-60450/id=4348",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walgreens"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6167,7 +6489,9 @@
    "url": "https://www.harborfreight.com/search?q=rechargeable%20aa%20batteries",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.harborfreight.com/about-us"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6176,7 +6500,9 @@
    "url": "https://www.batteryjunction.com/products/energizer-nh15bp-4",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.batteryjunction.com/"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6185,7 +6511,9 @@
    "url": "https://www.18650batterystore.com/products/epoch-aa-usb-battery",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.18650batterystore.com/"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6194,7 +6522,9 @@
    "url": "https://www.eblofficial.com/products/rechargeable-nimh-aa-battery",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.eblofficial.com/"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6203,7 +6533,9 @@
    "url": "https://www.officedepot.com/a/search/?q=rechargeable+aa+batteries",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6212,7 +6544,9 @@
    "url": "https://www.dandelionchocolate.com/pages/valencia-street",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.dandelionchocolate.com/pages/visit-us"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6221,7 +6555,9 @@
    "url": "https://www.recchiuti.com/pages/retail-store",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.recchiuti.com/pages/retail-store"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6230,7 +6566,9 @@
    "url": "https://local.safeway.com/safeway/ca/burlingame/1450-howard-ave.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Safeway_Inc."
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6239,7 +6577,9 @@
    "url": "https://www.sees.com/chocolate/chocolate-bars",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://chocolateshops.sees.com/"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6248,7 +6588,9 @@
    "url": "https://tcho.com/products/dark-salty",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.tcho.com/"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6257,7 +6599,9 @@
    "url": "https://www.alterecofoods.com/products/dark-blackout",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.alterecofoods.com/"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6266,7 +6610,9 @@
    "url": "https://dicktaylorchocolate.com/products/fleur-de-sel",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": false,
+   "chain_source": "https://www.dicktaylorchocolate.com/"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -6275,7 +6621,9 @@
    "url": "https://www.murdochs.com/stores/greeley/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://www.murdochs.com/stores"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -6284,7 +6632,9 @@
    "url": "https://www.lowes.com/search?searchTerm=led+light+bulbs",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-23"
+   "checked": "2026-09-23",
+   "chain": true,
+   "chain_source": "https://corporate.lowes.com/who-we-are/our-business"
   },
   {
    "search_id": "wool-blanket-rural",
@@ -6293,7 +6643,9 @@
    "url": "https://www.tractorsupply.com/tsc/store_Greeley-CO-80631_1614",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Tractor_Supply_Company"
   },
   {
    "search_id": "bath-towels-urban",
@@ -6302,7 +6654,9 @@
    "url": "https://www.macys.com/stores/mn/edina/southdale-center_231.html",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Macy%27s"
   },
   {
    "search_id": "bath-towels-urban",
@@ -6311,7 +6665,9 @@
    "url": "https://www.crateandbarrel.com/stores/galleria-in-edina/str702",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Crate_%26_Barrel"
   },
   {
    "search_id": "bath-towels-urban",
@@ -6320,7 +6676,9 @@
    "url": "https://www.potterybarn.com/stores/us-mn-edina-galleria-edina/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Pottery_Barn"
   },
   {
    "search_id": "headlamp-urban",
@@ -6329,7 +6687,9 @@
    "url": "https://www.rei.com/stores/san-francisco",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "headlamp-urban",
@@ -6338,7 +6698,9 @@
    "url": "https://www.lowes.com/store/CA-San-Francisco/3095",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Lowe%27s"
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6347,7 +6709,9 @@
    "url": "https://www.rei.com/stores/framingham",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Recreational_Equipment,_Inc."
   },
   {
    "search_id": "rain-jacket-suburban",
@@ -6356,7 +6720,9 @@
    "url": "https://stores.dickssportinggoods.com/ma/natick/255/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods"
   },
   {
    "search_id": "wool-socks-urban",
@@ -6365,7 +6731,9 @@
    "url": "https://stores.dickssportinggoods.com/ga/atlanta/418/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods"
   },
   {
    "search_id": "usb-c-charging-cable-suburban",
@@ -6374,7 +6742,9 @@
    "url": "https://www.walmart.com/store/4219-buda-tx",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6383,7 +6753,9 @@
    "url": "https://www.walmart.com/store/844-morris-il",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   },
   {
    "search_id": "rechargeable-aa-batteries-rural",
@@ -6392,7 +6764,9 @@
    "url": "https://www.menards.com/store-details/store.html?store=3215",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Menards"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6401,7 +6775,9 @@
    "url": "https://www.target.com/sl/san-mateo-fashion-island/1122",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Target_Corporation"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6410,7 +6786,9 @@
    "url": "https://www.target.com/s?searchTerm=dark+chocolate+bar",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://corporate.target.com/about"
   },
   {
    "search_id": "dark-chocolate-bar-suburban",
@@ -6419,7 +6797,9 @@
    "url": "https://locations.traderjoes.com/ca/san-mateo/67/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Trader_Joe%27s"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -6428,7 +6808,9 @@
    "url": "https://www.lakeshorelearning.com/search/products/?Ntt=wooden%20train%20set",
    "confirmed": true,
    "miss_reason": "other",
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://www.prnewswire.com/news-releases/lakeshore-opens-new-retail-stores-to-serve-local-communities-in-florida--tennessee-301010670.html"
   },
   {
    "search_id": "wooden-train-set-suburban",
@@ -6437,7 +6819,9 @@
    "url": "https://www.lakeshorelearning.com/stores/locator/nashville/073/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Lakeshore_Learning_Materials"
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
@@ -6446,7 +6830,9 @@
    "url": "https://locations.traderjoes.com/ga/atlanta/730/",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Trader_Joe%27s"
   },
   {
    "search_id": "led-light-bulbs-rural",
@@ -6455,7 +6841,9 @@
    "url": "https://www.walmart.com/store/4612-hamburg-pa",
    "confirmed": true,
    "miss_reason": null,
-   "checked": "2026-09-24"
+   "checked": "2026-09-24",
+   "chain": true,
+   "chain_source": "https://en.wikipedia.org/wiki/Walmart"
   }
  ]
 }

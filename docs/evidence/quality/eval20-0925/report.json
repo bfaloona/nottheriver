@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T03:21:28.986Z",
+  "generated": "2026-09-28T03:18:32.837Z",
   "graded_through": "2026-09-26",
   "searches": {
     "planned": 60,
@@ -83,6 +83,75 @@
         "ranked_low": 1
       }
     }
+  },
+  "labels": {
+    "online": {
+      "chain": 48,
+      "not_chain": 52,
+      "unlabelled": 0
+    },
+    "local": {
+      "chain": 67,
+      "not_chain": 27,
+      "unlabelled": 0
+    }
+  },
+  "recall_by_kind": {
+    "online": {
+      "chain": {
+        "confirmed": 48,
+        "found": 16,
+        "recall": 0.333,
+        "miss_reasons": {
+          "other": 26,
+          "unclassified": 6
+        }
+      },
+      "not_chain": {
+        "confirmed": 52,
+        "found": 15,
+        "recall": 0.288,
+        "miss_reasons": {
+          "other": 22,
+          "ranked_low": 1,
+          "unclassified": 14
+        }
+      },
+      "unlabelled": {
+        "confirmed": 0,
+        "found": 0,
+        "recall": null,
+        "miss_reasons": {}
+      }
+    },
+    "local": {
+      "chain": {
+        "confirmed": 64,
+        "found": 23,
+        "recall": 0.359,
+        "miss_reasons": {
+          "unclassified": 40,
+          "ranked_low": 1
+        }
+      },
+      "not_chain": {
+        "confirmed": 22,
+        "found": 5,
+        "recall": 0.227,
+        "miss_reasons": {
+          "unclassified": 17
+        }
+      },
+      "unlabelled": {
+        "confirmed": 0,
+        "found": 0,
+        "recall": null,
+        "miss_reasons": {}
+      }
+    }
+  },
+  "chain_badges": {
+    "measured": false
   },
   "probe": {
     "online": {

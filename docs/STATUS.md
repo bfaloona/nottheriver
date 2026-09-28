@@ -27,14 +27,15 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 | About quality summary | Two plain lines from eval20-0925 (both runs) plus the path to the raw evidence; index of runs in [evidence/quality/README.md](evidence/quality/README.md). A local shop that does not exist now counts as bad, and every graded eval runs twice ([eval/README.md](../eval/README.md)) |
 | Local ranking | Local relevance from the classifier's sells judgment (yes 1.0, maybe 0.5); offline, good shops in each nearby top 3 went from 23 to 29; a live rerun showed no change (30 of 54 before, 29 of 51 after) ([quality.md](quality.md#rerun-after-distance-groups-and-classifier-judged-ranking)) |
 | Caching and store-types triage (priority 1, 2026-09-27) | Test tying `score.ts` kind lists to `data/certifications.json` (red run in [evidence/cert-kinds-red-run.txt](evidence/cert-kinds-red-run.txt)); `eval/compare.mjs` compares wording and results between two saved runs (reproduces eval20-0925 run2 numbers); the rest triaged in [caching-and-store-types.md](caching-and-store-types.md#triage-2026-09-27) |
+| Amazon execution approach (priority 2, 2026-09-27) | [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md): gate-to-gate stretches, one per session, side findings parked as Priorities or debt rows, deploys by hand; approved by the operator |
 | Worker deploys | Agents deploy the Worker with `infra/deploy.sh` (operator grant, 2026-09-24): committed and pushed code only, and only a new bundle; any other infrastructure change stops for the operator. When to run it: `.claude/skills/deploy/SKILL.md` |
 | Positive signals | A positive signal must cite a fetched page on another site that names the shop; a shop's own page no longer counts ([ADR 0004](decisions/0004-down-ranking.md)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0006](decisions/0006-weighted-findings.md) |
 
 ## In flight
 
-- Store types Phase 0 (priority 1).
-- Execution approach for Amazon plan Phases B to D (priority 2): proposal being drafted.
+- Store types Phase 1 (priority 1): chain badge in the Worker.
+- Amazon plan (priority 2): applying the approved approach's fixes CA-1 to CA-9 and the B1 and B2 checklist to the plan.
 
 ## Priorities
 
@@ -42,11 +43,11 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 
 | # | Work | Next step | Waits on |
 |---|---|---|---|
-| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 0: chain labels (10+ US stores, sourced) on all 194 eval20-0925 baseline rows, recall by kind and badge checks in `eval/summarize.mjs` | Nothing; Q5 and Q6 wait on Phase 4 |
-| 2 | A way to run Amazon plan Phases B, C and D without getting sidetracked | Propose an execution approach (for example one plan checklist per phase run with /implement-plan, a scope rule that parks side findings as new Priorities rows, and a stop point for each operator gate) | Operator approval of the approach |
-| 3 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)) | Prepare the claim-wording checklist under `docs/evidence/` (review item R1) | Operator sign-off on every claim before import |
-| 4 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
-| 5 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
+| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 1: `data/chains.json` and the optional `chain` response field, then `infra/deploy.sh`. Phase 0 done: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)); local recall 23 of 64 chain shops vs 5 of 22 others ([report](evidence/quality/eval20-0925/report.json)) | Nothing; Q5 and Q6 wait on Phase 4 |
+| 2 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)), run under [the approved approach](plans/amazon-execution-approach.md) | Apply fixes CA-1 to CA-9 to the plan and add the B1 and B2 checklist; then B1, the claim-wording sheet (review item R1), as its own session | Operator sign-off on every claim at B2 |
+| 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
+| 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
+| 5 | Consumer co-ops (REI) as a positive signal: `worker_coop` scores today, consumer co-ops do not (operator remark, 2026-09-27) | Propose badge vs ethics score, with sources for co-op status; proposed position: after Phase C | Operator decision on the proposal |
 
 ## Blocked on operator
 
@@ -76,6 +77,8 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 - Local searches always end in "store", and the model's reading of a product is cached per product in Workers KV; the normalize prompt no longer receives city and state (2026-09-25, [plans/search-variation.md](plans/search-variation.md)). The 30-day cache lifetime was the agent's pick; change it in `proxy/src/normalize-cache.ts`.
 - Caching and store types (2026-09-27, [caching-and-store-types.md](caching-and-store-types.md)): no place-search cache for now (CQ1); the 2026-09-26 ruling accepting shop-judging variance stands (CQ2); independent vs chain shows as a badge only, no score effect and no filter (CQ3); specialist vs generalist is a relevance question and also a values question, the values part only if easy (CQ4); chain labels are recorded per baseline shop, local and online (CQ5).
 - Chain badge (2026-09-27, [plans/store-types.md](plans/store-types.md)): dealer-owned chains such as Ace count as chains with a note; the badge shows on nearby and online rows as "Chain, <count> stores" linked to its source, in a neutral style distinct from the teal certification badge.
+- Chain labels (2026-09-27): stores in the Do It Best buying co-op that trade under their own name are not chains; REI counts as a chain.
+- Amazon Phases B to D run under [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md) (approved 2026-09-27): one gate per phase B (claim sign-off), an operator ruling (not an automatic rollback) on a Phase C target miss, Phase C rows graded by an agent blind.
 
 ## Decisions needed
 

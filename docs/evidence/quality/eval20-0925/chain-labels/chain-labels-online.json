@@ -1,0 +1,1597 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "search_id": "cast-iron-skillet-urban",
+      "name": "Lodge Cast Iron",
+      "url": "https://www.lodgecastiron.com/collections/skillets",
+      "chain": false,
+      "chain_source": "https://www.lodgecastiron.com/pages/locations",
+      "stores": 6,
+      "note": "6 factory stores (TN/AL/LA); sold mainly via retailers; fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 1,
+      "search_id": "cast-iron-skillet-urban",
+      "name": "Target",
+      "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 2,
+      "search_id": "cast-iron-skillet-urban",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 3,
+      "search_id": "cast-iron-skillet-urban",
+      "name": "Williams Sonoma",
+      "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html",
+      "stores": null,
+      "note": "brand locator spans most US states + Puerto Rico + intl; exact brand count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 4,
+      "search_id": "cast-iron-skillet-urban",
+      "name": "Sur La Table",
+      "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.surlatable.com/stores",
+      "stores": null,
+      "note": "locator spans 26 US states; exact count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 10,
+      "search_id": "cast-iron-skillet-suburban",
+      "name": "Lodge Cast Iron",
+      "url": "https://www.lodgecastiron.com/collections/skillets",
+      "chain": false,
+      "chain_source": "https://www.lodgecastiron.com/pages/locations",
+      "stores": 6,
+      "note": "6 factory stores (TN/AL/LA); sold mainly via retailers; fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 11,
+      "search_id": "cast-iron-skillet-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 12,
+      "search_id": "cast-iron-skillet-suburban",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 13,
+      "search_id": "cast-iron-skillet-suburban",
+      "name": "Williams Sonoma",
+      "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html",
+      "stores": null,
+      "note": "brand locator spans most US states + Puerto Rico + intl; exact brand count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 14,
+      "search_id": "cast-iron-skillet-suburban",
+      "name": "Sur La Table",
+      "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.surlatable.com/stores",
+      "stores": null,
+      "note": "locator spans 26 US states; exact count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 20,
+      "search_id": "cast-iron-skillet-rural",
+      "name": "Lodge Cast Iron",
+      "url": "https://www.lodgecastiron.com/collections/skillets",
+      "chain": false,
+      "chain_source": "https://www.lodgecastiron.com/pages/locations",
+      "stores": 6,
+      "note": "6 factory stores (TN/AL/LA); sold mainly via retailers; fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 21,
+      "search_id": "cast-iron-skillet-rural",
+      "name": "Target",
+      "url": "https://www.target.com/c/skillets-frying-pans-pots-cookware-kitchen-dining/cast-iron/-/N-5xts0Z8k37l",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 22,
+      "search_id": "cast-iron-skillet-rural",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/c/kp/cast-iron-skillet",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 23,
+      "search_id": "cast-iron-skillet-rural",
+      "name": "Williams Sonoma",
+      "url": "https://www.williams-sonoma.com/search/results.html?words=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html",
+      "stores": null,
+      "note": "brand locator spans most US states + Puerto Rico + intl; exact brand count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 24,
+      "search_id": "cast-iron-skillet-rural",
+      "name": "Sur La Table",
+      "url": "https://www.surlatable.com/search?q=cast+iron+skillet",
+      "chain": true,
+      "chain_source": "https://www.surlatable.com/stores",
+      "stores": null,
+      "note": "locator spans 26 US states; exact count not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 30,
+      "search_id": "camping-tent-urban",
+      "name": "REI Co-op",
+      "url": "https://www.rei.com/c/camping-tents",
+      "chain": true,
+      "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+      "stores": 190,
+      "note": "more than 190 US stores by end of 2024, per REI newsroom; direct site fetch blocked (403), figure via search summary of that page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 31,
+      "search_id": "camping-tent-urban",
+      "name": "DICK'S Sporting Goods",
+      "url": "https://www.dickssportinggoods.com/f/camping-tents",
+      "chain": true,
+      "chain_source": "https://stores.dickssportinggoods.com/",
+      "stores": null,
+      "note": "store locator confirms locations in all 50 states + DC; ~888 DICK'S-branded stores per public reporting, not independently confirmed with exact figure",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 32,
+      "search_id": "camping-tent-urban",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/cp/tents/887708",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 33,
+      "search_id": "camping-tent-urban",
+      "name": "Target",
+      "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 34,
+      "search_id": "camping-tent-urban",
+      "name": "Cabela's",
+      "url": "https://www.cabelas.com/l/tents",
+      "chain": true,
+      "chain_source": "https://stores.cabelas.com/",
+      "stores": null,
+      "note": "locator lists ~147 US entries across 48 states (locator may mix co-branded Bass Pro Shops); third-party aggregator counts 43 Cabela's-only US stores; either way exceeds 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 38,
+      "search_id": "camping-tent-suburban",
+      "name": "REI Co-op",
+      "url": "https://www.rei.com/c/camping-tents",
+      "chain": true,
+      "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+      "stores": 190,
+      "note": "more than 190 US stores by end of 2024, per REI newsroom; direct site fetch blocked (403), figure via search summary of that page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 39,
+      "search_id": "camping-tent-suburban",
+      "name": "DICK'S Sporting Goods",
+      "url": "https://www.dickssportinggoods.com/f/camping-family-tents",
+      "chain": true,
+      "chain_source": "https://stores.dickssportinggoods.com/",
+      "stores": null,
+      "note": "store locator confirms locations in all 50 states + DC; ~888 DICK'S-branded stores per public reporting, not independently confirmed with exact figure",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 40,
+      "search_id": "camping-tent-suburban",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 41,
+      "search_id": "camping-tent-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 42,
+      "search_id": "camping-tent-suburban",
+      "name": "The Home Depot",
+      "url": "https://www.homedepot.com/b/Sports-Outdoors-Camping-Gear-Tents-Camping-Tents/N-5yc1vZc45r",
+      "chain": true,
+      "chain_source": "https://corporate.homedepot.com/news/company/theres-no-place-home-depot-now-there-are-even-more-them",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 48,
+      "search_id": "camping-tent-rural",
+      "name": "REI Co-op",
+      "url": "https://www.rei.com/c/camping-tents",
+      "chain": true,
+      "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+      "stores": 190,
+      "note": "more than 190 US stores by end of 2024, per REI newsroom; direct site fetch blocked (403), figure via search summary of that page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 49,
+      "search_id": "camping-tent-rural",
+      "name": "DICK'S Sporting Goods",
+      "url": "https://www.dickssportinggoods.com/f/camping-family-tents",
+      "chain": true,
+      "chain_source": "https://stores.dickssportinggoods.com/",
+      "stores": null,
+      "note": "store locator confirms locations in all 50 states + DC; ~888 DICK'S-branded stores per public reporting, not independently confirmed with exact figure",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 50,
+      "search_id": "camping-tent-rural",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
+      "chain": true,
+      "chain_source": "https://corporate.walmart.com/about/location-facts",
+      "stores": 5217,
+      "note": "Total U.S. retail units incl. Sam's Club: 3569 Supercenters+351 discount+674 Neighborhood Market+21 small formats+602 Sam's Club",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 51,
+      "search_id": "camping-tent-rural",
+      "name": "Target",
+      "url": "https://www.target.com/c/tents-camping-gear-sports-outdoors/-/N-5xt5u",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 52,
+      "search_id": "camping-tent-rural",
+      "name": "The Home Depot",
+      "url": "https://www.homedepot.com/b/Sports-Outdoors-Camping-Gear-Tents-Camping-Tents/N-5yc1vZc45r",
+      "chain": true,
+      "chain_source": "https://corporate.homedepot.com/news/company/theres-no-place-home-depot-now-there-are-even-more-them",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 58,
+      "search_id": "wool-socks-urban",
+      "name": "Smartwool",
+      "url": "https://www.smartwool.com/en-us/collections/socks",
+      "chain": false,
+      "chain_source": "https://www.smartwool.com/pages/store-locator",
+      "stores": 0,
+      "note": "no company stores; 'Find a Store'/Locally tool directs to retail partners",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 59,
+      "search_id": "wool-socks-urban",
+      "name": "Duckworth",
+      "url": "https://www.duckworthco.com/collections/socks",
+      "chain": false,
+      "chain_source": "https://www.duckworthco.com/",
+      "stores": 0,
+      "note": "online only; no company stores mentioned",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 60,
+      "search_id": "wool-socks-urban",
+      "name": "GoBros",
+      "url": "https://www.gobros.com/collections/darn-tough-socks",
+      "chain": false,
+      "chain_source": "https://gobros.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 63,
+      "search_id": "wool-socks-urban",
+      "name": "Woolx",
+      "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women",
+      "chain": false,
+      "chain_source": "https://www.woolx.com/",
+      "stores": 0,
+      "note": "online only; Endicott NY is a warehouse, not retail",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 64,
+      "search_id": "wool-socks-urban",
+      "name": "Darn Tough",
+      "url": "https://darntough.com/collections/all-socks",
+      "chain": false,
+      "chain_source": "https://darntough.com/pages/store-locator",
+      "stores": 0,
+      "note": "no company-owned stores; locator finds third-party authorized retailers only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 66,
+      "search_id": "loose-leaf-green-tea-rural",
+      "name": "The Tea Spot",
+      "url": "https://www.theteaspot.com/products/sencha-green-tea",
+      "chain": false,
+      "chain_source": "https://www.theteaspot.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 67,
+      "search_id": "loose-leaf-green-tea-rural",
+      "name": "Tiesta Tea",
+      "url": "https://tiestatea.com/products/japanese-sencha",
+      "chain": false,
+      "chain_source": "https://tiestatea.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 68,
+      "search_id": "loose-leaf-green-tea-rural",
+      "name": "Monterey Bay Herb Co",
+      "url": "https://www.herbco.com/p-308-green-tea-sencha-organic.aspx",
+      "chain": false,
+      "chain_source": "https://www.herbco.com/",
+      "stores": 0,
+      "note": "online only; Watsonville CA is a warehouse, not retail",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 69,
+      "search_id": "loose-leaf-green-tea-rural",
+      "name": "Japanese Green Tea Co.",
+      "url": "https://www.japanesegreenteain.com/collections/loose-leaf-tea",
+      "chain": false,
+      "chain_source": "https://www.japanesegreenteain.com/",
+      "stores": 0,
+      "note": "online only; products carried by a third-party store (Rice Market, DC), not company-owned",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 70,
+      "search_id": "loose-leaf-green-tea-rural",
+      "name": "Harney & Sons",
+      "url": "https://www.harney.com/collections/green-tea",
+      "chain": false,
+      "chain_source": "https://www.harney.com/pages/about-us",
+      "stores": 2,
+      "note": "2 tea shops (Millerton NY, SoHo NYC); mainly online/wholesale",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 74,
+      "search_id": "usb-c-charging-cable-suburban",
+      "name": "Anker",
+      "url": "https://www.anker.com/collections/usb-c-to-usb-c-cable",
+      "chain": false,
+      "chain_source": "https://www.anker.com/",
+      "stores": 0,
+      "note": "no company-operated stores mentioned; 'Where to Buy' directs to retail partners",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 75,
+      "search_id": "usb-c-charging-cable-suburban",
+      "name": "Best Buy",
+      "url": "https://www.bestbuy.com/site/shop/usb-c-cables",
+      "chain": true,
+      "chain_source": "https://stores.bestbuy.com/",
+      "stores": null,
+      "note": "store locator lists all 50 states + Puerto Rico + DC; exact total not shown on page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 76,
+      "search_id": "usb-c-charging-cable-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/c/cables-connectors-tech-accessories-electronics/-/N-uufc7",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 77,
+      "search_id": "usb-c-charging-cable-suburban",
+      "name": "Satechi",
+      "url": "https://satechi.com/collections/cables",
+      "chain": false,
+      "chain_source": "https://www.satechi.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 78,
+      "search_id": "usb-c-charging-cable-suburban",
+      "name": "AT&T",
+      "url": "https://www.att.com/buy/accessories/browse/chargers/cables/",
+      "chain": true,
+      "chain_source": "https://www.att.com/stores/",
+      "stores": null,
+      "note": "dealer-owned mix: ~2,300 company-owned + ~1,500 authorized retailers per industry reporting; att.com store locator confirms nationwide presence but no count shown",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 82,
+      "search_id": "headlamp-urban",
+      "name": "Black Diamond",
+      "url": "https://blackdiamondequipment.com/collections/headlamps",
+      "chain": false,
+      "chain_source": "https://blackdiamondequipment.com/pages/retail-stores",
+      "stores": 6,
+      "note": "6 North American company stores (Seattle, 2x Salt Lake City area, Boulder, Jackson Hole, Magna UT); fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 83,
+      "search_id": "headlamp-urban",
+      "name": "J&H Outdoors",
+      "url": "https://jhoutdoors.com/collections/headlamps",
+      "chain": false,
+      "chain_source": "https://www.jhoutdoors.com/pages/about-us",
+      "stores": 1,
+      "note": "single store, Lexington KY",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 84,
+      "search_id": "headlamp-urban",
+      "name": "Neptune Mountaineering",
+      "url": "https://www.neptunemountaineering.com/collections/lighting",
+      "chain": false,
+      "chain_source": "https://www.neptunemountaineering.com/",
+      "stores": 1,
+      "note": "single flagship store, Boulder CO",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 85,
+      "search_id": "headlamp-urban",
+      "name": "Target",
+      "url": "https://www.target.com/s/headlamp+headlamps",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 86,
+      "search_id": "headlamp-urban",
+      "name": "Harbor Freight",
+      "url": "https://www.harborfreight.com/lighting/flashlights/all-head-lamps.html",
+      "chain": true,
+      "chain_source": "https://www.harborfreight.com/about-us",
+      "stores": 1600,
+      "note": "more than 1600 locations nationwide",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 90,
+      "search_id": "led-light-bulbs-rural",
+      "name": "1000Bulbs.com",
+      "url": "https://www.1000bulbs.com/product/226150/PLT-12651.html",
+      "chain": false,
+      "chain_source": "https://www.1000bulbs.com/",
+      "stores": 0,
+      "note": "online only; Mesquite TX is a warehouse/will-call pickup, not a retail storefront",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 91,
+      "search_id": "led-light-bulbs-rural",
+      "name": "Waveform Lighting",
+      "url": "https://store.waveformlighting.com/collections/a19-bulbs",
+      "chain": false,
+      "chain_source": "https://www.waveformlighting.com/",
+      "stores": 0,
+      "note": "online only; Vancouver WA is HQ, not retail",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 92,
+      "search_id": "led-light-bulbs-rural",
+      "name": "Target",
+      "url": "https://www.target.com/s/led+light+bulbs",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 93,
+      "search_id": "led-light-bulbs-rural",
+      "name": "Super Bright LEDs",
+      "url": "https://www.superbrightleds.com/a19-led-light-bulb-9w-dimmable-60w-equivalent-3000k-4000k-single-6-pack",
+      "chain": false,
+      "chain_source": "https://www.superbrightleds.com/",
+      "stores": 0,
+      "note": "online only; St. Louis warehouse for fulfillment only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 98,
+      "search_id": "wooden-train-set-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/s/brio+wooden+train",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 99,
+      "search_id": "wooden-train-set-suburban",
+      "name": "Hape Toys",
+      "url": "https://toys.hape.com/collections/category-trains-railway-sets",
+      "chain": false,
+      "chain_source": "https://toys.hape.com/",
+      "stores": 0,
+      "note": "toy manufacturer; no company retail stores, sold via retail partners",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 100,
+      "search_id": "wooden-train-set-suburban",
+      "name": "Maziply Toys",
+      "url": "https://www.maziply.com/products/hape-figure-8-safety-set",
+      "chain": false,
+      "chain_source": "https://www.maziply.com/",
+      "stores": 1,
+      "note": "single store, Kingston MA",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 101,
+      "search_id": "wooden-train-set-suburban",
+      "name": "Melissa & Doug",
+      "url": "https://www.melissaanddoug.com/products/wooden-railway-set",
+      "chain": false,
+      "chain_source": "https://www.melissaanddoug.com/",
+      "stores": 0,
+      "note": "no company stores; sold via retailers",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 105,
+      "search_id": "bath-towels-urban",
+      "name": "Coyuchi",
+      "url": "https://www.coyuchi.com/collections/organic-bath-towels",
+      "chain": false,
+      "chain_source": "https://www.coyuchi.com/pages/store-locator",
+      "stores": 1,
+      "note": "1 flagship store (Point Reyes Station, CA); sold via retail partners not Coyuchi-owned",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 106,
+      "search_id": "bath-towels-urban",
+      "name": "Boll & Branch",
+      "url": "https://www.bollandbranch.com/products/plush-bath-towel/",
+      "chain": true,
+      "chain_source": "https://finance.yahoo.com/news/boll-branch-grows-15-stores-150000528.html",
+      "stores": 15,
+      "note": "per company press release (BusinessWire), Nov 2025: 'Boll & Branch Grows to 15 Stores Nationwide'",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 107,
+      "search_id": "bath-towels-urban",
+      "name": "Lynnens",
+      "url": "https://lynnens.com/collections/bath-towels",
+      "chain": false,
+      "chain_source": "https://www.lynnens.com/",
+      "stores": 1,
+      "note": "single store, Greenwich CT",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 108,
+      "search_id": "bath-towels-urban",
+      "name": "Target",
+      "url": "https://www.target.com/s/bath+towels",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 109,
+      "search_id": "bath-towels-urban",
+      "name": "Hammam Linen",
+      "url": "https://hammamlinen.com/collections/bath-towels",
+      "chain": false,
+      "chain_source": "https://www.hammamlinen.com/",
+      "stores": 0,
+      "note": "online only; Lorton VA address is an office, not retail",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 119,
+      "search_id": "cordless-drill-suburban",
+      "name": "Harbor Freight Tools",
+      "url": "https://www.harborfreight.com/power-tools/drills-drivers/cordless-drills-drivers.html",
+      "chain": true,
+      "chain_source": "https://www.harborfreight.com/about-us",
+      "stores": 1600,
+      "note": "more than 1600 locations nationwide (same brand as 'Harbor Freight' row)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 120,
+      "search_id": "cordless-drill-suburban",
+      "name": "CPO Outlets",
+      "url": "https://www.cpooutlets.com/drills",
+      "chain": false,
+      "chain_source": "https://www.cpooutlets.com/",
+      "stores": 0,
+      "note": "online only reconditioned power tool retailer",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 121,
+      "search_id": "cordless-drill-suburban",
+      "name": "The Tool Nut",
+      "url": "https://www.toolnut.com/collections/dewalt-drills",
+      "chain": false,
+      "chain_source": "https://www.toolnut.com/",
+      "stores": 1,
+      "note": "single store, Yorktown Heights NY",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 122,
+      "search_id": "cordless-drill-suburban",
+      "name": "Ohio Power Tool",
+      "url": "https://www.ohiopowertool.com/power-tools/drills-drivers-hammer-drills",
+      "chain": false,
+      "chain_source": "https://www.ohiopowertool.com/about-us",
+      "stores": 2,
+      "note": "1-2 showroom/store locations in Columbus (Grandview), OH; fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 123,
+      "search_id": "cordless-drill-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/s/cordless+drills",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 129,
+      "search_id": "jigsaw-puzzle-urban",
+      "name": "Puzzle Warehouse",
+      "url": "https://www.puzzlewarehouse.com/1000-piece-jigsaw-puzzles/",
+      "chain": false,
+      "chain_source": "https://www.puzzlewarehouse.com/blog/Working-At-Puzzle-Warehouse-Retail-Store/",
+      "stores": 1,
+      "note": "1 retail location (St. Louis/Kirkwood, MO area); primarily an online fulfillment business",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 130,
+      "search_id": "jigsaw-puzzle-urban",
+      "name": "Barnes & Noble",
+      "url": "https://www.barnesandnoble.com/b/toys-games/puzzles/_/N-8qfZ1hox",
+      "chain": true,
+      "chain_source": "https://stores.barnesandnoble.com/",
+      "stores": null,
+      "note": "company store locator; ~600 stores per public reporting, not shown as a total on fetched page",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 131,
+      "search_id": "jigsaw-puzzle-urban",
+      "name": "White Mountain Puzzles",
+      "url": "https://www.whitemountainpuzzles.com/collections/1000-piece-puzzles",
+      "chain": false,
+      "chain_source": "https://www.whitemountainpuzzles.com/",
+      "stores": 1,
+      "note": "single store, Jackson NH",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 132,
+      "search_id": "jigsaw-puzzle-urban",
+      "name": "Bits and Pieces",
+      "url": "https://www.bitsandpieces.com/collections/1000-piece-jigsaw-puzzles",
+      "chain": false,
+      "chain_source": "https://www.bitsandpieces.com/",
+      "stores": 0,
+      "note": "online/catalog only; PO box address",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 133,
+      "search_id": "jigsaw-puzzle-urban",
+      "name": "Puzzle Twist",
+      "url": "https://www.puzzletwist.com/collections/jigsaw-puzzles",
+      "chain": false,
+      "chain_source": "https://www.puzzletwist.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 136,
+      "search_id": "wool-blanket-rural",
+      "name": "Pendleton",
+      "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/",
+      "chain": true,
+      "chain_source": "https://www.pendleton-usa.com/help-center/about-us/our-store-locations.html",
+      "stores": null,
+      "note": "page states no total; ~33 locations counted from company store-locations table, incl. a few affiliate/non-Pendleton-owned",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 137,
+      "search_id": "wool-blanket-rural",
+      "name": "Faribault Woolen Mill",
+      "url": "https://www.faribaultmill.com/collections/wool-blankets",
+      "chain": false,
+      "chain_source": "https://www.faribaultmill.com/pages/store-locator",
+      "stores": 2,
+      "note": "2 company stores (Faribault MN, Edina MN)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 138,
+      "search_id": "wool-blanket-rural",
+      "name": "Colemans Military Surplus",
+      "url": "https://colemans.com/shop/product-category/military-blankets/",
+      "chain": false,
+      "chain_source": "https://www.colemans.com/",
+      "stores": 1,
+      "note": "single store; no longer accepts walk-in traffic, curbside pickup only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 139,
+      "search_id": "wool-blanket-rural",
+      "name": "Army Navy Marine Store",
+      "url": "https://armynavymarinestore.com/collections/blankets",
+      "chain": false,
+      "chain_source": "https://www.armynavymarinestore.com/",
+      "stores": 1,
+      "note": "single store, Central Point OR",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 140,
+      "search_id": "wool-blanket-rural",
+      "name": "Arvada Army Navy Surplus",
+      "url": "https://arvadasurplus.com/product/genuine-gi-wool-blanket/",
+      "chain": false,
+      "chain_source": "https://www.arvadasurplus.com/",
+      "stores": 1,
+      "note": "single store, Arvada CO",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 144,
+      "search_id": "rain-jacket-suburban",
+      "name": "L.L.Bean",
+      "url": "https://www.llbean.com/llb/shop/121904?page=mens-trail-model-rain-jacket-mens-tall",
+      "chain": true,
+      "chain_source": "https://www.llbean.com/llb/shop/1000001703?page=stores-lander",
+      "stores": null,
+      "note": "~90 store/outlet entries across 19+ states per company locator (page doesn't state a total)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 145,
+      "search_id": "rain-jacket-suburban",
+      "name": "Eastern Mountain Sports",
+      "url": "https://www.ems.com/collections/mens-rain-jackets",
+      "chain": false,
+      "chain_source": "https://finance.yahoo.com/news/seven-core-eastern-mountain-sports-152027277.html",
+      "stores": 7,
+      "note": "post-2024 bankruptcy; Mountain Warehouse kept 7 named stores open (Hadley MA, Burlington VT, Lake Placid NY, West Lebanon NH, Saratoga Springs NY, Portsmouth NH, North Conway NH); fewer than 10",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 146,
+      "search_id": "rain-jacket-suburban",
+      "name": "Outdoor Research",
+      "url": "https://www.outdoorresearch.com/collections/rain-jackets",
+      "chain": false,
+      "chain_source": "https://www.outdoorresearch.com/",
+      "stores": 1,
+      "note": "1 flagship store (Seattle); sold via retailers",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 147,
+      "search_id": "rain-jacket-suburban",
+      "name": "Mountain Sports",
+      "url": "https://www.mountainsports.com/collections/mens-rain-jackets-shells",
+      "chain": false,
+      "chain_source": "https://www.mountainsports.com/",
+      "stores": 1,
+      "note": "single store, Arlington TX",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 148,
+      "search_id": "rain-jacket-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/p/rokka-rolla-women-s-waterproof-rain-coats-hooded-jackets/-/A-92611353",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 153,
+      "search_id": "extra-virgin-olive-oil-urban",
+      "name": "Zingerman's Mail Order",
+      "url": "https://www.zingermans.com/Product/roi-olive-oil/O-ROI-500",
+      "chain": false,
+      "chain_source": "https://www.zingermans.com/aboutus.aspx",
+      "stores": null,
+      "note": "page describes 11 differently-named food businesses (deli, bakehouse, etc.), all in Ann Arbor MI only ('we don't have locations around the country'); not 10+ stores of one name, so not counted as a 'stores' figure",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 154,
+      "search_id": "extra-virgin-olive-oil-urban",
+      "name": "Laconiko",
+      "url": "https://laconiko.com/products/laconiko-extra-virgin-olive-oil",
+      "chain": false,
+      "chain_source": "https://www.laconiko.com/",
+      "stores": 1,
+      "note": "1 tasting room/store at company HQ, Manassas VA",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 155,
+      "search_id": "extra-virgin-olive-oil-urban",
+      "name": "Brightland",
+      "url": "https://brightland.co/products/kalamata",
+      "chain": false,
+      "chain_source": "https://www.brightland.co/pages/store-locator",
+      "stores": 0,
+      "note": "no company stores; store locator (Stockist widget) is for finding retail partners",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 156,
+      "search_id": "extra-virgin-olive-oil-urban",
+      "name": "Kosterina",
+      "url": "https://kosterina.com/products/olive-oil-trio-gift-set",
+      "chain": false,
+      "chain_source": "https://www.kosterina.com/",
+      "stores": 0,
+      "note": "no company stores; sold via third-party retailers (Whole Foods, Walmart, Target, etc.)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 157,
+      "search_id": "extra-virgin-olive-oil-urban",
+      "name": "Graza",
+      "url": "https://graza.co/products/sizzle-2l",
+      "chain": false,
+      "chain_source": "https://www.graza.co/",
+      "stores": 0,
+      "note": "no company stores; 'store locator' is for retail partners",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 161,
+      "search_id": "rechargeable-aa-batteries-rural",
+      "name": "Harbor Freight Tools",
+      "url": "https://www.harborfreight.com/search?q=rechargeable%20aa%20batteries",
+      "chain": true,
+      "chain_source": "https://www.harborfreight.com/about-us",
+      "stores": 1600,
+      "note": "more than 1600 locations nationwide (same brand as 'Harbor Freight' row)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 162,
+      "search_id": "rechargeable-aa-batteries-rural",
+      "name": "Battery Junction",
+      "url": "https://www.batteryjunction.com/products/energizer-nh15bp-4",
+      "chain": false,
+      "chain_source": "https://www.batteryjunction.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 163,
+      "search_id": "rechargeable-aa-batteries-rural",
+      "name": "18650 Battery Store",
+      "url": "https://www.18650batterystore.com/products/epoch-aa-usb-battery",
+      "chain": false,
+      "chain_source": "https://www.18650batterystore.com/",
+      "stores": 0,
+      "note": "online only; Marietta GA is corporate HQ/shipping, not a retail store",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 164,
+      "search_id": "rechargeable-aa-batteries-rural",
+      "name": "EBL",
+      "url": "https://www.eblofficial.com/products/rechargeable-nimh-aa-battery",
+      "chain": false,
+      "chain_source": "https://www.eblofficial.com/",
+      "stores": 0,
+      "note": "online only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 165,
+      "search_id": "rechargeable-aa-batteries-rural",
+      "name": "Office Depot",
+      "url": "https://www.officedepot.com/a/search/?q=rechargeable+aa+batteries",
+      "chain": true,
+      "chain_source": "https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/",
+      "stores": 922,
+      "note": "per ODP Corp press coverage; direct fetch of release timed out, figure via search summary",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 169,
+      "search_id": "dark-chocolate-bar-suburban",
+      "name": "See's Candies",
+      "url": "https://www.sees.com/chocolate/chocolate-bars",
+      "chain": true,
+      "chain_source": "https://chocolateshops.sees.com/",
+      "stores": 200,
+      "note": "more than 200 chocolate shops (See's Candies has 200+ chocolate shops)",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 170,
+      "search_id": "dark-chocolate-bar-suburban",
+      "name": "TCHO",
+      "url": "https://tcho.com/products/dark-salty",
+      "chain": false,
+      "chain_source": "https://www.tcho.com/",
+      "stores": 0,
+      "note": "no retail store; 'Flavor Labs' are production/sourcing facilities, not consumer retail",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 171,
+      "search_id": "dark-chocolate-bar-suburban",
+      "name": "Alter Eco",
+      "url": "https://www.alterecofoods.com/products/dark-blackout",
+      "chain": false,
+      "chain_source": "https://www.alterecofoods.com/",
+      "stores": 0,
+      "note": "no company stores; 'store finder' shows third-party retailers only",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 172,
+      "search_id": "dark-chocolate-bar-suburban",
+      "name": "Dick Taylor Craft Chocolate",
+      "url": "https://dicktaylorchocolate.com/products/fleur-de-sel",
+      "chain": false,
+      "chain_source": "https://www.dicktaylorchocolate.com/",
+      "stores": 1,
+      "note": "1 factory store/cafe, Eureka CA",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 174,
+      "search_id": "led-light-bulbs-rural",
+      "name": "Lowe's",
+      "url": "https://www.lowes.com/search?searchTerm=led+light+bulbs",
+      "chain": true,
+      "chain_source": "https://corporate.lowes.com/who-we-are/our-business",
+      "stores": 1700,
+      "note": "more than 1,700 home improvement stores",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 188,
+      "search_id": "dark-chocolate-bar-suburban",
+      "name": "Target",
+      "url": "https://www.target.com/s?searchTerm=dark+chocolate+bar",
+      "chain": true,
+      "chain_source": "https://corporate.target.com/about",
+      "stores": 2000,
+      "note": "more than 2,000 stores in the U.S.",
+      "checked": "2026-09-27"
+    },
+    {
+      "index": 190,
+      "search_id": "wooden-train-set-suburban",
+      "name": "Lakeshore Learning",
+      "url": "https://www.lakeshorelearning.com/search/products/?Ntt=wooden%20train%20set",
+      "chain": true,
+      "chain_source": "https://www.prnewswire.com/news-releases/lakeshore-opens-new-retail-stores-to-serve-local-communities-in-florida--tennessee-301010670.html",
+      "stores": 62,
+      "note": "62 stores nationwide as of Feb 2020 company press release; likely more today",
+      "checked": "2026-09-27"
+    }
+  ],
+  "brands": [
+    {
+      "brand": "Lodge Cast Iron",
+      "domain": "lodgecastiron.com",
+      "chain": false,
+      "stores": 6,
+      "chain_source": "https://www.lodgecastiron.com/pages/locations"
+    },
+    {
+      "brand": "Target",
+      "domain": "target.com",
+      "chain": true,
+      "stores": 2000,
+      "chain_source": "https://corporate.target.com/about"
+    },
+    {
+      "brand": "Walmart",
+      "domain": "walmart.com",
+      "chain": true,
+      "stores": 5217,
+      "chain_source": "https://corporate.walmart.com/about/location-facts"
+    },
+    {
+      "brand": "Williams Sonoma",
+      "domain": "williams-sonoma.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://www.williams-sonoma.com/customer-service/store-locator.html"
+    },
+    {
+      "brand": "Sur La Table",
+      "domain": "surlatable.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://www.surlatable.com/stores"
+    },
+    {
+      "brand": "REI Co-op",
+      "domain": "rei.com",
+      "chain": true,
+      "stores": 190,
+      "chain_source": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-"
+    },
+    {
+      "brand": "DICK'S Sporting Goods",
+      "domain": "dickssportinggoods.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://stores.dickssportinggoods.com/"
+    },
+    {
+      "brand": "Cabela's",
+      "domain": "cabelas.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://stores.cabelas.com/"
+    },
+    {
+      "brand": "The Home Depot",
+      "domain": "homedepot.com",
+      "chain": true,
+      "stores": 2000,
+      "chain_source": "https://corporate.homedepot.com/news/company/theres-no-place-home-depot-now-there-are-even-more-them"
+    },
+    {
+      "brand": "Harbor Freight / Harbor Freight Tools",
+      "domain": "harborfreight.com",
+      "chain": true,
+      "stores": 1600,
+      "chain_source": "https://www.harborfreight.com/about-us"
+    },
+    {
+      "brand": "Best Buy",
+      "domain": "bestbuy.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://stores.bestbuy.com/"
+    },
+    {
+      "brand": "AT&T",
+      "domain": "att.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://www.att.com/stores/"
+    },
+    {
+      "brand": "Barnes & Noble",
+      "domain": "barnesandnoble.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://stores.barnesandnoble.com/"
+    },
+    {
+      "brand": "Office Depot",
+      "domain": "officedepot.com",
+      "chain": true,
+      "stores": 922,
+      "chain_source": "https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/"
+    },
+    {
+      "brand": "Lowe's",
+      "domain": "lowes.com",
+      "chain": true,
+      "stores": 1700,
+      "chain_source": "https://corporate.lowes.com/who-we-are/our-business"
+    },
+    {
+      "brand": "Boll & Branch",
+      "domain": "bollandbranch.com",
+      "chain": true,
+      "stores": 15,
+      "chain_source": "https://finance.yahoo.com/news/boll-branch-grows-15-stores-150000528.html"
+    },
+    {
+      "brand": "Eastern Mountain Sports",
+      "domain": "ems.com",
+      "chain": false,
+      "stores": 7,
+      "chain_source": "https://finance.yahoo.com/news/seven-core-eastern-mountain-sports-152027277.html"
+    },
+    {
+      "brand": "Pendleton",
+      "domain": "pendleton-usa.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://www.pendleton-usa.com/help-center/about-us/our-store-locations.html"
+    },
+    {
+      "brand": "L.L.Bean",
+      "domain": "llbean.com",
+      "chain": true,
+      "stores": null,
+      "chain_source": "https://www.llbean.com/llb/shop/1000001703?page=stores-lander"
+    },
+    {
+      "brand": "Lakeshore Learning",
+      "domain": "lakeshorelearning.com",
+      "chain": true,
+      "stores": 62,
+      "chain_source": "https://www.prnewswire.com/news-releases/lakeshore-opens-new-retail-stores-to-serve-local-communities-in-florida--tennessee-301010670.html"
+    },
+    {
+      "brand": "Harney & Sons",
+      "domain": "harney.com",
+      "chain": false,
+      "stores": 2,
+      "chain_source": "https://www.harney.com/pages/about-us"
+    },
+    {
+      "brand": "Faribault Woolen Mill",
+      "domain": "faribaultmill.com",
+      "chain": false,
+      "stores": 2,
+      "chain_source": "https://www.faribaultmill.com/pages/store-locator"
+    },
+    {
+      "brand": "Coyuchi",
+      "domain": "coyuchi.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.coyuchi.com/pages/store-locator"
+    },
+    {
+      "brand": "Darn Tough",
+      "domain": "darntough.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://darntough.com/pages/store-locator"
+    },
+    {
+      "brand": "Black Diamond",
+      "domain": "blackdiamondequipment.com",
+      "chain": false,
+      "stores": 6,
+      "chain_source": "https://blackdiamondequipment.com/pages/retail-stores"
+    },
+    {
+      "brand": "Outdoor Research",
+      "domain": "outdoorresearch.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.outdoorresearch.com/"
+    },
+    {
+      "brand": "Zingerman's Mail Order",
+      "domain": "zingermans.com",
+      "chain": false,
+      "stores": null,
+      "chain_source": "https://www.zingermans.com/aboutus.aspx"
+    },
+    {
+      "brand": "J&H Outdoors",
+      "domain": "jhoutdoors.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.jhoutdoors.com/pages/about-us"
+    },
+    {
+      "brand": "1000Bulbs.com",
+      "domain": "1000bulbs.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.1000bulbs.com/"
+    },
+    {
+      "brand": "18650 Battery Store",
+      "domain": "18650batterystore.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.18650batterystore.com/"
+    },
+    {
+      "brand": "Army Navy Marine Store",
+      "domain": "armynavymarinestore.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.armynavymarinestore.com/"
+    },
+    {
+      "brand": "Arvada Army Navy Surplus",
+      "domain": "arvadasurplus.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.arvadasurplus.com/"
+    },
+    {
+      "brand": "Alter Eco",
+      "domain": "alterecofoods.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.alterecofoods.com/"
+    },
+    {
+      "brand": "Anker",
+      "domain": "anker.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.anker.com/"
+    },
+    {
+      "brand": "Battery Junction",
+      "domain": "batteryjunction.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.batteryjunction.com/"
+    },
+    {
+      "brand": "Bits and Pieces",
+      "domain": "bitsandpieces.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.bitsandpieces.com/"
+    },
+    {
+      "brand": "Brightland",
+      "domain": "brightland.co",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.brightland.co/pages/store-locator"
+    },
+    {
+      "brand": "CPO Outlets",
+      "domain": "cpooutlets.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.cpooutlets.com/"
+    },
+    {
+      "brand": "Colemans Military Surplus",
+      "domain": "colemans.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.colemans.com/"
+    },
+    {
+      "brand": "Dick Taylor Craft Chocolate",
+      "domain": "dicktaylorchocolate.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.dicktaylorchocolate.com/"
+    },
+    {
+      "brand": "Duckworth",
+      "domain": "duckworthco.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.duckworthco.com/"
+    },
+    {
+      "brand": "EBL",
+      "domain": "eblofficial.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.eblofficial.com/"
+    },
+    {
+      "brand": "GoBros",
+      "domain": "gobros.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://gobros.com/"
+    },
+    {
+      "brand": "Graza",
+      "domain": "graza.co",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.graza.co/"
+    },
+    {
+      "brand": "Hammam Linen",
+      "domain": "hammamlinen.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.hammamlinen.com/"
+    },
+    {
+      "brand": "Hape Toys",
+      "domain": "toys.hape.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://toys.hape.com/"
+    },
+    {
+      "brand": "Japanese Green Tea Co.",
+      "domain": "japanesegreenteain.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.japanesegreenteain.com/"
+    },
+    {
+      "brand": "Kosterina",
+      "domain": "kosterina.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.kosterina.com/"
+    },
+    {
+      "brand": "Laconiko",
+      "domain": "laconiko.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.laconiko.com/"
+    },
+    {
+      "brand": "Lynnens",
+      "domain": "lynnens.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.lynnens.com/"
+    },
+    {
+      "brand": "Maziply Toys",
+      "domain": "maziply.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.maziply.com/"
+    },
+    {
+      "brand": "Melissa & Doug",
+      "domain": "melissaanddoug.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.melissaanddoug.com/"
+    },
+    {
+      "brand": "Monterey Bay Herb Co",
+      "domain": "herbco.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.herbco.com/"
+    },
+    {
+      "brand": "Mountain Sports",
+      "domain": "mountainsports.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.mountainsports.com/"
+    },
+    {
+      "brand": "Neptune Mountaineering",
+      "domain": "neptunemountaineering.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.neptunemountaineering.com/"
+    },
+    {
+      "brand": "Ohio Power Tool",
+      "domain": "ohiopowertool.com",
+      "chain": false,
+      "stores": 2,
+      "chain_source": "https://www.ohiopowertool.com/about-us"
+    },
+    {
+      "brand": "Puzzle Twist",
+      "domain": "puzzletwist.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.puzzletwist.com/"
+    },
+    {
+      "brand": "Puzzle Warehouse",
+      "domain": "puzzlewarehouse.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.puzzlewarehouse.com/blog/Working-At-Puzzle-Warehouse-Retail-Store/"
+    },
+    {
+      "brand": "Satechi",
+      "domain": "satechi.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.satechi.com/"
+    },
+    {
+      "brand": "See's Candies",
+      "domain": "sees.com",
+      "chain": true,
+      "stores": 200,
+      "chain_source": "https://chocolateshops.sees.com/"
+    },
+    {
+      "brand": "Smartwool",
+      "domain": "smartwool.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.smartwool.com/pages/store-locator"
+    },
+    {
+      "brand": "Super Bright LEDs",
+      "domain": "superbrightleds.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.superbrightleds.com/"
+    },
+    {
+      "brand": "TCHO",
+      "domain": "tcho.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.tcho.com/"
+    },
+    {
+      "brand": "The Tea Spot",
+      "domain": "theteaspot.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.theteaspot.com/"
+    },
+    {
+      "brand": "The Tool Nut",
+      "domain": "toolnut.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.toolnut.com/"
+    },
+    {
+      "brand": "Tiesta Tea",
+      "domain": "tiestatea.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://tiestatea.com/"
+    },
+    {
+      "brand": "Waveform Lighting",
+      "domain": "store.waveformlighting.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.waveformlighting.com/"
+    },
+    {
+      "brand": "White Mountain Puzzles",
+      "domain": "whitemountainpuzzles.com",
+      "chain": false,
+      "stores": 1,
+      "chain_source": "https://www.whitemountainpuzzles.com/"
+    },
+    {
+      "brand": "Woolx",
+      "domain": "woolx.com",
+      "chain": false,
+      "stores": 0,
+      "chain_source": "https://www.woolx.com/"
+    }
+  ],
+  "needs_operator": [
+    {
+      "brand": "REI Co-op",
+      "domain": "rei.com",
+      "question": "rei.com and rei.com/stores return 403 (bot-blocked) to our fetch tool; the chain=true call rests on a search-engine summary of an REI newsroom article citing 190+ US stores (2024). Can you open https://www.rei.com/stores or the REI newsroom article and confirm REI Co-op operates 10 or more US stores under its own name?"
+    }
+  ],
+  "websearch_used": 24
+}
