@@ -90,6 +90,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 - Whether zips with no ZCTA get a fallback or a clearer message.
 - Whether to route the model for throughput (LQ1 in [search-latency.md](search-latency.md#open-questions-for-the-operator)): never slower in 3 paired runs, 0-75% faster depending on provider load, model cost 1.3-2.3x (1-8% of a search). Agent recommends yes.
 - Whether the split enrich call's verdict shift (fewer graded-bad shops shown, but many more flips than noise) is worth a graded review (LQ2).
+- Whether to keep asking the model for signals: none has reached a shown result since self-citations were dropped on 2026-09-24 (0 in about 360 searches), while the request still costs output tokens (LQ4).
 
 ## Questions guessed on
 
