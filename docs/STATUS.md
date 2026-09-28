@@ -30,7 +30,7 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 | Amazon execution approach (priority 2, 2026-09-27) | [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md): gate-to-gate stretches, one per session, side findings parked as Priorities or debt rows, deploys by hand; approved by the operator |
 | Worker deploys | Agents deploy the Worker with `infra/deploy.sh` (operator grant, 2026-09-24): committed and pushed code only, and only a new bundle; any other infrastructure change stops for the operator. When to run it: `.claude/skills/deploy/SKILL.md` |
 | Positive signals | A positive signal must cite a fetched page on another site that names the shop; a shop's own page no longer counts ([ADR 0004](decisions/0004-down-ranking.md)) |
-| Search latency (2026-09-28) | [search-latency.md](search-latency.md): the enrich model call is 76-93% of a search's time; the browser is under 1 s. One-line JSON and no self-citations in the enrich prompt (7c855e1) cut the median search from 25-29 s to 15-16 s on the 20 graded searches, twice, with recall, graded-bad shown and sell flips at noise level; the zip list now downloads on first form focus (af6f2cd). Both merged locally, not pushed or deployed. Provider throughput routing (LQ1) and a split enrich call (branch `proto/split-enrich`) measured, not shipped ([evidence](evidence/latency-0927/)) |
+| Search latency (2026-09-28) | [search-latency.md](search-latency.md): the enrich model call is 76-93% of a search's time; the browser is under 1 s. One-line JSON and no self-citations in the enrich prompt (7c855e1) cut the median search from 25-29 s to 15-16 s on the 20 graded searches, twice, with recall, graded-bad shown and sell flips at noise level; the zip list now downloads on first form focus (af6f2cd). Pushed 2026-09-28; the site change is live (checked in the live bundle); the prompt change waits on a Worker deploy by the operator (`infra/deploy.sh` was refused by the agent's permission check). Provider throughput routing (LQ1) and a split enrich call (branch `proto/split-enrich`) measured, not shipped ([evidence](evidence/latency-0927/)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0006](decisions/0006-weighted-findings.md) |
 
 ## In flight
@@ -48,6 +48,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 | 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
 | 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 | 5 | Consumer co-ops (REI) as a positive signal: `worker_coop` scores today, consumer co-ops do not (operator remark, 2026-09-27) | Propose badge vs ethics score, with sources for co-op status; proposed position: after Phase C | Operator decision on the proposal |
+| 6 | Latency follow-ups ([search-latency.md](search-latency.md#open-questions-for-the-operator), rulings 2026-09-28): (a) route the model for throughput (`provider.sort: "throughput"`, `proxy/src/llm.ts:75`); (b) stop asking the model for signals (`retailers` in the enrich prompt, schema and `acceptSignals`), with an ADR 0004 note; (c) graded review of the split enrich call (branch `proto/split-enrich`, evidence in `evidence/latency-0927/runs/split-enrich/`) | (a) and (b) are small: one change each, rerun `stage-timing.ts` twice on the 20 graded searches, deploy. (c) grades the shops the split flips; proposed position: (a) and (b) before item 1, since they are small; (c) after | Nothing |
 
 ## Blocked on operator
 
@@ -78,6 +79,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 - Caching and store types (2026-09-27, [caching-and-store-types.md](caching-and-store-types.md)): no place-search cache for now (CQ1); the 2026-09-26 ruling accepting shop-judging variance stands (CQ2); independent vs chain shows as a badge only, no score effect and no filter (CQ3); specialist vs generalist is a relevance question and also a values question, the values part only if easy (CQ4); chain labels are recorded per baseline shop, local and online (CQ5).
 - Chain badge (2026-09-27, [plans/store-types.md](plans/store-types.md)): dealer-owned chains such as Ace count as chains with a note; the badge shows on nearby and online rows as "Chain, <count> stores" linked to its source, in a neutral style distinct from the teal certification badge.
 - Chain labels (2026-09-27): stores in the Do It Best buying co-op that trade under their own name are not chains; REI counts as a chain.
+- Search latency (2026-09-28, [search-latency.md](search-latency.md#open-questions-for-the-operator)): route the model for throughput despite 1.3-2.3x model cost (LQ1 yes); stop asking the model for signals, since none has reached a result since 2026-09-24 (LQ4 drop); grade the split enrich call's verdict changes before deciding on it (LQ2 yes).
 - Amazon Phases B to D run under [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md) (approved 2026-09-27): one gate per phase B (claim sign-off), an operator ruling (not an automatic rollback) on a Phase C target miss, Phase C rows graded by an agent blind.
 
 ## Decisions needed
@@ -88,9 +90,6 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.
 - Whether to add labor or environmental watchdogs to the negative-source registry.
 - Whether zips with no ZCTA get a fallback or a clearer message.
-- Whether to route the model for throughput (LQ1 in [search-latency.md](search-latency.md#open-questions-for-the-operator)): never slower in 3 paired runs, 0-75% faster depending on provider load, model cost 1.3-2.3x (1-8% of a search). Agent recommends yes.
-- Whether the split enrich call's verdict shift (fewer graded-bad shops shown, but many more flips than noise) is worth a graded review (LQ2).
-- Whether to keep asking the model for signals: none has reached a shown result since self-citations were dropped on 2026-09-24 (0 in about 360 searches), while the request still costs output tokens (LQ4).
 
 ## Questions guessed on
 

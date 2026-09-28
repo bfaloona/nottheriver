@@ -72,7 +72,7 @@ Each change ran on the 20 eval20-0925 searches through the real pipeline, altern
 - **OPT-2.** About as fast as OPT-3 but moved sell verdicts well past noise (12 and 9 flips vs 1 and 4), and nearby top 3 matched in only 7-8 of 20 searches (noise: 13-15). Graded-bad shown fell (45-46 vs 51-53), so it may be better, not worse; telling which needs graded review. Not tested combined with OPT-3; parked on its branch, whose 11 tests still assume one enrich call.
 - **OPT-5 shipped** separately as af6f2cd: the zip list starts downloading when the visitor first focuses the form (unit test watched fail without it; e2e passes).
 
-Neither commit is pushed or deployed; that is the operator's step (`.claude/skills/deploy/SKILL.md`: push, then `infra/deploy.sh` for the prompt change).
+Both are pushed (2026-09-28) and the site change is live; the prompt change is live only after `infra/deploy.sh` deploys the Worker (`.claude/skills/deploy/SKILL.md`).
 
 ## Optimizations, ranked by expected seconds saved (before the results)
 
@@ -92,6 +92,8 @@ Not worth doing for speed: Brave caching (under 1 s; see caching doc Q1), map or
 Perceived speed is a separate lever: the page shows only "Searching" for 15-60 s. Streaming stages (e.g. "found 34 shops, checking them") would not make a search faster; it is a product decision, not listed above.
 
 ## Open questions for the operator
+
+Rulings 2026-09-28: LQ1 yes (ship throughput routing), LQ2 yes (graded review of the split), LQ4 drop (stop asking for signals). LQ3 open. Follow-up work is STATUS priority 6.
 
 - LQ1. Ship OPT-1? Measured: never slower, 0-75% faster depending on the moment, quality at noise level, model cost 1.3-2.3x (1-8% of a search's total). It is a one-line change at `proxy/src/llm.ts:75`. Agent's recommendation: ship it on top of OPT-3.
 - LQ2. Answered by doing it: OPT-2 and OPT-3 were each run twice on the graded searches (above). Open part: does OPT-2's verdict shift (fewer graded-bad shops shown) warrant a graded review of the split?
