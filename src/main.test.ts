@@ -92,6 +92,18 @@ describe('search page', () => {
     expect($<HTMLButtonElement>('button[type=submit]').disabled).toBe(false);
   });
 
+  it('starts the zip download on first focus, once, before any search', async () => {
+    const zipLoads = () => fetchMock.mock.calls.filter(([input]) => String(input) === zipsUrl).length;
+    expect(zipLoads()).toBe(0);
+    $('#product').dispatchEvent(new FocusEvent('focusin', { bubbles: true }));
+    $('#zip').dispatchEvent(new FocusEvent('focusin', { bubbles: true }));
+    expect(zipLoads()).toBe(1);
+    expect(searchCalls()).toHaveLength(0);
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    expect(zipLoads()).toBe(1);
+  });
+
   it('flags a zip missing from the dataset without calling the search', async () => {
     submit('kettle', '99999');
     await vi.waitFor(() => expect($('#zip-help').hidden).toBe(false));

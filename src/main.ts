@@ -71,6 +71,11 @@ function fieldError(input: HTMLInputElement, message: string): void {
   else input.removeAttribute('aria-invalid');
 }
 
+// The zip list is 341 KB; starting it when the visitor first touches the form takes it off the
+// search's critical path without loading it for visitors who never search. A failure here is
+// retried by the submit, which reports it.
+form.addEventListener('focusin', () => void loadZips(zipsUrl).catch(() => {}), { once: true });
+
 form.addEventListener('submit', (event) => {
   // First, so a later exception can never let the browser submit the form.
   event.preventDefault();
