@@ -86,3 +86,22 @@ A "yes" beats a "maybe" by 0.125, more than a major finding costs (0.075), so a 
 - CQ3. Is independent vs chain meant to be a ranking factor, a badge, or a filter on the page? (STATUS "Decisions needed".)
 - CQ4. Is specialist vs generalist a relevance question (a cookware store more likely stocks the skillet) or a values question (favor specialists even when both stock it)? The answer decides whether S1/S2 feed relevance or a new component.
 - CQ5. Should the eval's chain label (10+ stores) be recorded per baseline shop in a committed file so later evals reuse it?
+
+## Triage (2026-09-27)
+
+Operator answers: CQ1 no place-search cache for now; CQ2 the 2026-09-26 ruling stands; CQ3 chain vs independent is a badge; CQ4 specialist is a relevance question and a values question, values only if easy; CQ5 yes, local and online. Work that followed lives in [plans/store-types.md](plans/store-types.md).
+
+| Item | Triage | Waits on |
+|---|---|---|
+| Cache 1, place search | Deferred (CQ1) | A later need for eval repeatability |
+| Cache 2, web search | Deferred (same privacy shape as CQ1) | Same |
+| Cache 3, shop-judging verdict | Dropped (CQ2) | |
+| Cache 4, committed eval wording | Deferred; `eval/compare.mjs` now flags wording drift between two runs without freezing it | |
+| Cache 5, page content | Deferred | A decision to fetch pages at all |
+| Cache 6, certification and finding checks | Dropped as a caching item; automated re-check is already a [debt.md](debt.md) row | |
+| S1, which query found a place | Dropped: the specialist query runs first and dedupe keeps the first hit, so nearly every place would carry the tag ([plan](plans/store-types.md#design-choices)) | |
+| S2, model's store breadth | Planned, Phase 3a (relevance first) | |
+| S3, 3+ nearby addresses per domain | Research aid only: lists candidate chains for S4 | |
+| S4, curated chain list | Planned, Phases 1 and 2 (the badge) | |
+| S5, association membership scores | Open operator decision ([STATUS](STATUS.md#decisions-needed)); would also amend ADR 0003 | Operator |
+| Kind-list test (debt row) | Done: `proxy/test/data.test.ts` | |

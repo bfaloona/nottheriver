@@ -1,0 +1,108 @@
+# Plan: store types (chain badge, specialist relevance, specialist values)
+
+Status: draft 2026-09-27, not started. Review: Fable fresh-eyes 2026-09-27, 16 findings, 16 applied. Source: `docs/caching-and-store-types.md` (Q2, S1 to S5, CQ3 to CQ5). Operator answers 2026-09-27: CQ3 independent vs chain is a badge on results, no score effect, no filter; CQ4 specialist vs generalist is a relevance question first (must have) and a values question second (only if easy); CQ1 and CQ2 are out of scope; CQ5 (record the chain label per baseline shop) has no ruling yet, so Phase 0 is this plan's proposal for measuring the badge and is gated on Q8. Not decided here, left as recorded in `docs/STATUS.md` "Decisions needed": whether `independent_retailer_assoc` should score (S5) and whether local recall should favor independents. Plan review answers (operator, 2026-09-27): Q1 yes, with a dealer-owned note; Q2 yes; Q3 with the count; Q4 neutral style; Q7 label local AND online baseline shops (194 rows); Q8 yes. Q5 and Q6 wait on Phase 4.
+
+## Status checklist
+
+- [ ] Phase 0: chain labels in the eval baseline (CQ5), no deploy
+- [ ] Phase 1: chain badge, Worker (`data/chains.json`, response field), Worker deploy
+- [ ] Phase 2: chain badge, site, push to `main`
+- [ ] Phase 3a: `store_breadth` judgment in the enrich reply, no score effect, Worker deploy
+- [ ] Phase 4: measure (20 graded searches, run twice), operator gate
+- [ ] Phase 3b: specialist relevance tier, gated on Phase 4 numbers
+- [ ] Phase 5: specialist values component, gated on Q6 and ADR 0007
+
+## Design choices
+
+**Chain detection: S4 (curated sourced list), with S3 as a research aid.** A badge must be explainable and disputable like a certification, which means a `source_url` and a `checked` date (`proxy/src/contract.ts:35-40`, linked at `src/render.ts:205`). Only S4 gives that.
+
+| Option | Tradeoff (one line) | Use |
+|---|---|---|
+| S2 model field (`chain: yes/no/unknown`) | A guess from a name with nothing to link; a wrong "chain" on a small shop is the fairness problem CQ5 names | Not for the badge |
+| S3 3+ distinct nearby addresses per domain (`pipeline.ts:232-240`) | Deterministic, but it says "several branches nearby", not "this is a chain"; misses a chain with one nearby branch; Ace dealers share one domain (`caching-and-store-types.md:51,78`) | Offline script over saved responses that lists candidate domains for the curated list |
+| S4 curated list in `data/` | Sourced and disputable; needs upkeep and web checks per row; an unlisted chain looks unlabelled, never "independent" | The badge |
+
+Badge copy never says "independent": absence from the list is no evidence. The independent side stays the existing `independent_retailer_assoc` badge (`data/certifications.json:30-32`). The badge is a property of the domain, so it shows on online rows too (Q2).
+
+**Specialist relevance: S2 (`store_breadth` in the enrich reply), not S1.** S1 has two problems: Brave returns Home Depot for "cookware store" too (`caching-and-store-types.md:76`), and `dedupe` keeps the first-found candidate while `fetchCandidates` issues the specialist query first (`pipeline.ts:107-114,137-151`), so nearly every place would carry the specialist tag. S2 follows the `sells_product` precedent exactly: a loose `string` in `proxy/schemas/enrich.json`, accepted leniently at `proxy/src/enrich.ts:87-96`, off-list values left unclassified, and a tier in code, never a number from the model (ADR 0003). The tier value is set only after Phase 4 measures what a "maybe" from a specialist is worth (today: yes 80% good, maybe 40%, `docs/ranking.md:43`).
+
+**Values component: not easy.** A fifth component changes the published formula (`proxy/ranking/weights.ts`, ADR 0003, `about.html:33-39`), the response contract (`components` is `minItems 4, maxItems 4` with a name enum, `proxy/schemas/search-response.json:11,52`), the page (`src/render.ts:29-34,91-96`), the e2e contract (`tests/e2e/smoke.spec.ts` asserts four rows per result), and it rests a values judgment on a model guess from a shop's name. ADR 0006 declined a size factor because nothing recorded size; a model guess is not a record either, and a wrong "general" label would cost a shop points with only "Model judgment" to dispute. It needs a new ADR (0007, separate file with a one-line amendment note in 0003, the 0006 convention) and an operator weights ruling (Q6). Phase 5 is written so it can be dropped without touching Phases 0 to 4.
+
+**Privacy.** The request is unchanged (`smoke.spec.ts` asserts the exact key set); the chain list is repo data; `store_breadth` is one more field in a model reply over text the model already receives. `docs/privacy.md` needs no new row.
+
+## Phases
+
+Gates: Q1 to Q4, Q7 and Q8 are answered at plan review, before Phase 0 starts (the recommendation applies where the operator has not ruled); Q5 and Q6 are answered after Phase 4's numbers. Every phase ends with a push; a phase that deploys the Worker says so.
+
+**Phase 0. Chain labels in the eval baseline (CQ5).** No deploy; needs Q8 (CQ5 itself), Q1 and Q7; STATUS priority 1 material.
+- `eval/grade-schema.json`: `baselineItem` gains `chain: boolean` and `chain_source: string` (the store-count page or listing the label rests on; both optional, so the eval60 and eval20-0924 folders stay valid; `summarize.mjs` reports how many baseline shops are unlabelled) with the rule from `docs/quality.md:17`: 10 or more US stores under one name; Ace Hardware dealers count as Ace (Q1). `grade` gains optional `store_breadth: specialist | general | unknown`, the grader's own judgment, used in Phase 4.
+- Fill `chain` for every local baseline row in `docs/evidence/quality/eval20-0925/grades.json` (94 local rows, 86 of them `confirmed`, the recall denominator at `eval/summarize.mjs:85`; `summarize.mjs:170` reads this file when run with `OUT_DIR=docs/evidence/quality/eval20-0925`; the same 194-row baseline is also copied in the eval60 and eval20-0924 folders, left as they are; the top-level `docs/evidence/quality/grades.json` holds an older 58-row baseline and is not touched); and every online baseline row (Q7: local and online). Needs web checks: the implementer records the store-count source in `chain_source`.
+- `eval/summarize.mjs` computes local recall by kind from the field instead of prose, and a badge check: for baseline shops the site returned, badges on `chain: false` shops (must be 0) and share of `chain: true` shops carrying the badge (coverage). The badge field does not exist yet, so the check reports "not measured" until Phase 4.
+- Fails first: `eval/eval.test.mjs` recall-by-kind on a baseline with `chain` missing on some rows (they count as unlabelled and the report says how many; a non-boolean `chain` is what the schema rejects), and the badge check on a fixture response with and without the field.
+- Research aid: `docs/evidence/quality/chain-candidates.mjs` (typed, linted; memory: evidence scripts go through CI eslint) lists domains with 3+ distinct addresses across the saved responses under `docs/evidence/quality/*/responses`, as the input list for Phase 1's rows. Output committed as `chain-candidates.json`.
+
+**Phase 1. Chain badge, Worker.**
+- `data/chains.json`: `{ "checked", "threshold": 10, "entries": [{ "domain", "name", "stores", "source_url", "checked", "note" }] }`. `stores` is the count the source states (the company's own store-count page, locator or annual report), never rounded by hand; `source_url` https, not a blocklisted domain. Seed from Phase 0's labels and candidates plus the chains the saved evals show (Walmart, Best Buy, Costco, Target, Barnes & Noble per `plans/amazon-alternatives-in-ranking.md:7`; Home Depot, which has a row in `data/negatives.json:6`). Row for `data/README.md`.
+- `proxy/src/contract.ts`: `SearchResult.chain?: { label: string; stores: number; source_url: string; checked: string }` (label built by the Worker like `CERT_LABELS`, e.g. "Chain, <count> stores"; Q3). `proxy/schemas/search-response.json`: the same object, optional, `additionalProperties: false`. Not a `CertKind`: `src/controls.ts:34` would make "Has certification" pass Walmart.
+- `proxy/src/enrich.ts`: `CuratedData.chains`, `chainFor(domain)`, set on `EnrichedRow` like `certifications`; it travels in `ScoreInput` so `scoreRow` copies it to the result and `scrubSources` (`pipeline.ts:221-227`, which rescores from `...row.input`) can drop a chain whose source is blocked, the same rule as certifications.
+- Fails first: `proxy/test/data.test.ts` (one row per domain; `stores` integer at or above `threshold`; https source; dates; no domain is also `independent_retailer_assoc`; no domain matches the registrable domain of a `chain: false` baseline row's `url` or `also_urls` in `docs/evidence/quality/eval20-0925/grades.json` (a null `url`, a shop with no website, is skipped), the offline form of M3, which costs nothing and covers all 94 local rows rather than the 20 to 30 the site returns); `proxy/test/pipeline.test.ts` (a fixture domain carries the field, another does not; blocked source scrubbed; schema validation passes with and without). `tests/fixtures/chains.json` wired into `tests/mock-proxy.ts` `curated` so e2e has a badged row.
+- Deploy: push `main`, then `infra/deploy.sh` (bundle only). The old site ignores the field (`src/api.ts` does no schema check). Record the commit in the session note.
+
+**Phase 2. Chain badge, site.** After the Phase 1 Worker deploy.
+- `src/render.ts`: render the `.badges` list when `certifications.length > 0 || result.chain` (today it is skipped with no certifications, `render.ts:200`); the chain badge is an outbound link to its source like a certification badge, with class `badge badge-neutral`.
+- Design drift, named: `.badge` (`src/styles.css:185-192`) is teal `--badge-bg` on `--accent` and marks only credentials, so a chain badge in that style reads as praise. One new modifier `.badge-neutral` (border, default text color, same size and radius) is the only deviation (Q4).
+- "Has certification" must not count it (`src/controls.test.ts`). `about.html:41` gains one sentence: the chain badge comes from a curated list of chains with 10 or more US stores, each linking its source, disputable like a certification. `docs/ranking.md` gains one sentence after the certification kinds table (`ranking.md:95-101`, which lists `CertKind` values, so the chain badge is a sentence, not a row): the chain badge comes from `data/chains.json`, badge only, no score effect.
+- Fails first: `src/render.test.ts` (badge present with label and href; absent without the field; a result with a chain and no certification still renders the list), `controls.test.ts`, `smoke.spec.ts` (the fixture chain row shows the badge; results still explain in four rows). Regenerate `docs/evidence/results.png` (`tests/e2e/screenshots.spec.ts`).
+- Deploy: push `main` (site auto-deploys). Move `docs/STATUS.md` priority 1 forward.
+
+**Phase 3a. `store_breadth` judgment, no score effect.** After Phase 2.
+- `proxy/prompts/enrich.ts`: each candidate also gets `store_breadth`, exactly one of "specialist" (the shop's main line is the product's category, e.g. a cookware store for a skillet), "general" (many unrelated categories: department store, big-box, supermarket, general store), "unknown". Judged from name, URL and snippet like `site_type`.
+- `proxy/schemas/enrich.json`: `store_breadth` as `string maxLength 16` in `required` (strict `json_schema`, `proxy/src/llm.ts:74`). `proxy/src/enrich.ts`: `Classification.store_breadth: StoreBreadth | null`, off-list values null (the `SITE_TYPES` pattern, `enrich.ts:84-96`). `contract.ts`: `StoreBreadth` type and `SearchResult.store_breadth?: StoreBreadth` so the eval can join on it; `search-response.json` gains the optional enum. `score.ts` unchanged.
+- Fails first: `tests/mock-proxy.ts` self-test (the fixture reply `tests/fixtures/llm/enrich.json` lacks the field; add it); `proxy/test/prompts.test.ts` (prompt names the field and its three values); `enrich.test.ts` (accepts each value, a made-up value leaves `store_breadth` null and keeps `sells_product`); `pipeline.test.ts` (the response carries it; validates with and without).
+- Deploy: push `main`, `infra/deploy.sh`. The site ignores the field. One live search recorded in the session note.
+
+**Phase 4. Measure. Operator gate.** After Phases 1 and 3a are live.
+- Run the 20 graded searches twice, an hour or more apart (`eval/README.md:35`), into `docs/evidence/quality/eval20-store-types/` and `run2`: 160 Brave calls at 4 per search (`eval20-0925/run-summary.json`), about $0.80 at $0.005 a call (`docs/costs.md:11`) plus about $0.02 of model use per run (eval20-0925 measured $0.416 per run all in); searches that time out and are retried can add uncounted calls (up to 12 in eval20-0925, `docs/quality.md:91`). The Brave cap may be raised without asking through 2026-09-30 (operator instruction, not in the repo); after that the run needs the operator.
+- Grade new rows (grades reuse by URL and address, `docs/quality.md:91`); the grader also records `store_breadth` for every local graded row from the shop's own site or listing (about 185 local rows in eval20-0925, reused rows included, so this is the largest grading task in the phase), and grades the chain badge's source link under the existing `badges_sourced` field, so a badge whose linked page does not state the count is caught the same way a certification is.
+- Compare with eval20-0925 (both runs) with `node eval/compare.mjs <runA> <runB>` (wording, returned and shown overlap, sells flips; `eval/README.md` section 6), plus `docs/evidence/quality/eval20-0925/method/compare.mjs` for the "store" wording check. Report:
+
+| Label | Metric | Pass if |
+|---|---|---|
+| M1 | Online and local precision | T1 96%, T2 57.5% floors (`plans/amazon-alternatives-in-ranking.md:79-80`). A fail reverts the Phase 3a commit and redeploys (the deploy skill's rollback), since the prompt change is the one change this plan adds that can move precision (ADR 0006's Phase B0 scoring also shipped after eval20-0925 and is not this plan's to revert) |
+| M2 | `sells_product` flips between the two new runs | Reported against 8 of 248 (`plans/search-variation.md:25`); more than double fails, as the prompt change would be the likely cause. The bar rests on one run pair (the earlier pair had 1 of 230, `docs/quality.md:87`), so a fail is a reason to re-measure before ruling, not proof |
+| M3 | Badge on a `chain: false` baseline shop the site returned | 0 (confirmation of the Phase 1 data test; only about 4 of the 23 confirmed independents come back per run, so the data test is the real guard) |
+| M4 | Badge coverage of `chain: true` baseline shops returned | Reported; unlisted chains become Phase 1 rows |
+| M5 | Model `store_breadth` vs grader | Agreement reported on local rows; a "general" label on a grader-judged specialist counted separately (the harmful direction) |
+| M6 | Good rate of "maybe" rows, specialist vs general vs unknown | Reported with row counts; feeds Q5 |
+
+- Record in `docs/quality.md` and the `docs/evidence/quality/README.md` run table. **Stop:** the operator reads M1 to M6 and rules on Q5 (Phase 3b) and Q6 (Phase 5).
+
+**Phase 3b. Specialist relevance tier.** Only on a yes to Q5.
+- `proxy/ranking/score.ts:61-73`: `JUDGED` becomes a table on (sells, breadth): yes 1.0; maybe from a specialist 0.75, label "Model judgment: specialist shop, may sell it"; maybe otherwise 0.5; the text rule still wins when higher. Worked example, the `caching-and-store-types.md:55-63` walkthrough at 2 mi (proximity 0.92): a cookware shop judged maybe and specialist scores 0.25 × 0.75 + 0.15 + 0.15 + 0.138 = 0.626, above Home Depot's 0.613 (yes, one EPA row). A maybe-specialist edging a yes-generalist by 0.013 is why the tier waits for M6.
+- `src/render.ts:100-105` `sellsText` has no 0.75 branch: add "Maybe, specialist shop". ADR 0003 relevance bullet gets an amendment line; `docs/ranking.md` Components row and `about.html:35` relevance bullet updated.
+- Fails first: `proxy/test/score.test.ts` (the six cells of the table; text rule 1.0 still beats a 0.75), `src/render.test.ts` (0.75 wording). Deploy Worker first (the old site shows 0.75 as "Maybe, by shop type", acceptable), then push the site.
+
+**Phase 5. Specialist values component.** Only on a yes to Q6, and after ADR 0007 is accepted.
+- ADR 0007 (new file; one-line note in 0003): a fifth component `breadth`, tiers specialist 1.0, unjudged or unknown 0.5 (no data is not bad data, ADR 0003), general per Q6. Proposed weights, flagged as a proposal: relevance 0.20, ethics 0.30, env 0.30, proximity 0.10, breadth 0.10 (taken from relevance and proximity so practice keeps 0.60).
+- Arithmetic on the same three shops, all judged "yes", at 2 mi, general = 0: specialist cookware shop 0.20 + 0.15 + 0.15 + 0.092 + 0.10 = 0.692; Home Depot 0.20 + 0.15 + 0.075 + 0.092 + 0 = 0.517; Walmart 0.517; an unjudged independent 0.642. Steps: specialist over unknown 0.05, over general 0.10, while a certification or a major finding stays 0.075. With general = 0.25 the specialist-over-general step is 0.075, level with a major finding; that choice is Q6.
+- Order: site first (render any component name generically, weights line from the response keys, `smoke.spec.ts` "four rows" becomes "every component"), push; then Worker (`weights.ts`, `score.ts` `breadth()` with the judgment as its source, `ComponentName`, schema enum and `minItems`/`maxItems` 5, tests), `infra/deploy.sh`; then site labels ("Specialist" row: "Specialist shop, by model judgment" / "General store, by model judgment" / "Not judged"), `about.html`, `docs/ranking.md`.
+- Fails first: `proxy/test/score.test.ts` (weights sum to 1 with five components; the three breadth tiers), `smoke.spec.ts` (five rows per result).
+- Gate inside the gate: M5 agreement of at least 85% on at least 40 local rows (proposal), because a values penalty from a wrong "general" label is a fairness problem with only "Model judgment" to dispute.
+
+## Operator questions
+
+- Q1. Ace Hardware and other dealer-owned chains under one domain: list as a chain (the eval rule, `docs/quality.md:17`) or leave off? Recommendation: list, with `note` saying stores are dealer-owned; the site cannot tell dealers apart (`caching-and-store-types.md:51`) and the badge should match the eval it is measured against.
+- Q2. Show the chain badge on online rows too? Recommendation: yes; it is a property of the domain, and Walmart online without the badge would contradict Walmart nearby with it.
+- Q3. Badge copy: "Chain, <count> stores" (the source's count) or "Chain" alone? Recommendation: with the count; it is the explanation and the number a reader can check at the linked source.
+- Q4. Badge style: the teal certification style or a neutral modifier? Recommendation: neutral (`.badge-neutral`), the one design deviation, so a chain badge does not read as a credential.
+- Q5. Phase 3b go/no-go after Phase 4: ship the 0.75 tier if M6 shows maybe-specialist rows good at least 60% of the time (halfway between maybe 40% and yes 80%) on at least 20 rows? Recommendation: yes on that bar; below it, keep the field for display only.
+- Q6. Phase 5: build the values component, and if so, general = 0 (step 0.10) or 0.25 (step 0.075)? Recommendation: not now. It is not easy (see Design choices), and M5 has to show the label is right first; revisit after Phase 4 with 0.25 as the starting point, so being a big-box never costs more than a major finding.
+- Q7. Phase 0 labels for the 100 online baseline rows as well as the 94 local (86 confirmed)? Recommendation: local only now; recall by kind is a local figure, and M3/M4 on local rows already test the badge. Online labels can be added when the list is next extended.
+- Q8. CQ5 itself: record the chain label per baseline shop in the committed grades file (Phase 0)? Recommendation: yes; without it M3 and M4 cannot be computed and the badge ships unmeasured. If no, Phase 0 is dropped, M3 and M4 become a one-off hand check of the returned shops, and the Phase 1 data test loses its baseline cross-check.
+
+## Risks
+
+- RISK-1. An unlisted chain looks like every other unlabelled shop. Mitigation: M4 coverage feeds new rows; copy never claims independence.
+- RISK-2. Staleness: store counts change and nothing re-checks a row (the certifier-row gap, `docs/debt.md:62`). `checked` dates show on the source link; the threshold of 10 leaves a wide margin.
+- RISK-3. The prompt change in 3a shifts `sells_product` (M2). If it does, the fallback is to move the store-type question after `sells_product` in the prompt (and, failing that, to revert 3a), re-measured before any tier ships.
+- RISK-4. Grader `store_breadth` is itself a judgment; M5 measures agreement, not truth. Two graders on a 15-row subset, as `docs/evidence/quality/audit.json` did for `sells_product`, would bound it.
