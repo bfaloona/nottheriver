@@ -1,6 +1,6 @@
 # Amazon plan: how to run Phases B, C and D
 
-Status: approved by the operator 2026-09-27 as written; E1 one Phase B gate (B2); E3 a T1 to T3 fail waits for an operator ruling; E4 B1 runs as its own stretch; E5 Phase C rows graded by an agent, blind; E2 and E6 as recommended. Applies to `docs/plans/amazon-alternatives-in-ranking.md` (the plan). Not itself a plan to implement; on approval, its checklists go into the plan (E6) and this file stays as the rules. Review: Fable fresh-eyes 2026-09-27, 12 findings, 12 applied.
+Status: approved by the operator 2026-09-27 as written; E1 one Phase B gate (B2); E3 a T1 to T3 fail waits for an operator ruling; E4 B1 runs as its own stretch; E5 Phase C rows graded by an agent, blind; E2 and E6 as recommended. Fixes CA-1 to CA-9 applied in db6eab7; the plan:NN citations here refer to the plan as of f22659a, before those fixes. Applies to `docs/plans/amazon-alternatives-in-ranking.md` (the plan). Not itself a plan to implement; on approval, its checklists go into the plan (E6) and this file stays as the rules. Review: Fable fresh-eyes 2026-09-27, 12 findings, 12 applied.
 
 What the history shows (`git log --oneline`): Phase A ran as 3 commits on one day (6f3de02, 0046810, 255c2c2). B0 ran as 8 ADR commits, then 4 code and doc commits (da2a080 to 4855b7f); 5 commits on other subjects (3792ded, 2da6e92, c6cf60c, 28c43b3, a2661ff) landed between B0's first ADR commit (68329df) and its deploy (4855b7f). Neither phase had a checklist; the plan tracks state in one prose line (plan:3).
 

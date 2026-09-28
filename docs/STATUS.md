@@ -35,7 +35,6 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 ## In flight
 
 - Store types Phase 1 (priority 1): chain badge in the Worker.
-- Amazon plan (priority 2): applying the approved approach's fixes CA-1 to CA-9 and the B1 and B2 checklist to the plan.
 
 ## Priorities
 
@@ -44,7 +43,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 | # | Work | Next step | Waits on |
 |---|---|---|---|
 | 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 1: `data/chains.json` and the optional `chain` response field, then `infra/deploy.sh`. Phase 0 done: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)); local recall 23 of 64 chain shops vs 5 of 22 others ([report](evidence/quality/eval20-0925/report.json)) | Nothing; Q5 and Q6 wait on Phase 4 |
-| 2 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)), run under [the approved approach](plans/amazon-execution-approach.md) | Apply fixes CA-1 to CA-9 to the plan and add the B1 and B2 checklist; then B1, the claim-wording sheet (review item R1), as its own session | Operator sign-off on every claim at B2 |
+| 2 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)), run under [the approved approach](plans/amazon-execution-approach.md) | B1, the claim-wording sheet (review item R1), as its own session; the plan's status checklist holds B1 and the B2 gate | Operator sign-off on every claim at B2 |
 | 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
 | 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 | 5 | Consumer co-ops (REI) as a positive signal: `worker_coop` scores today, consumer co-ops do not (operator remark, 2026-09-27) | Propose badge vs ethics score, with sources for co-op status; proposed position: after Phase C | Operator decision on the proposal |
