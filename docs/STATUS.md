@@ -182,6 +182,13 @@ Every default below was taken without operator input; each is also reflected in 
 - STATUS records the operator decisions from the session note in generic wording: build prompt kept with no history rewrite, smoke-test zip kept, commit subjects kept. No location is named.
 - The 0003 weight rationale is written as reasoning plus arithmetic from the formula. No history or attribution was invented.
 
+**Store types (2026-09-27)**
+- A store count the source gives only as a floor shows as "5,000+ stores"; counts use thousands separators.
+- 23 of the 33 rows in `data/chains.json` cite Wikipedia, not the company's own page; Target and Walmart cite corporate pages. Swap the rest when re-checked.
+- Four rows' counts include stores outside the US (noted per row; `data/README.md` says the count is the source's stated total).
+- Four chains are unlisted because no source states a count (Williams Sonoma, L.L.Bean, Sports Basement, The North Face), and Costco has no sourced row yet; they show no badge, and Phase 4's coverage measure will count them as misses by construction.
+- Store breadth is required in the model's reply like the other judgments, so a reply without it fails validation and retries; an off-list value is kept as no judgment.
+
 ## Review passes
 
 Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and rejected counts were not recorded for the first nine.
@@ -204,6 +211,12 @@ Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and reje
 | Docs (second review) | 10 | 10 | 0 |
 | Project docs: simplify + Fable review (2 lenses) | 10 | 10 | 0 |
 | Adversarial review of blocklist, tests and docs (the rejected one asked to change the build prompt, smoke-test zip and history, which the operator decided to keep) | 18 | 17 | 1 |
+| Caching and store-types triage (Fable) | 4 corrections to the draft triage | 4 | 0 |
+| Store-types plan (Fable fresh-eyes) | 16 | 16 | 0 |
+| Amazon execution approach (Fable fresh-eyes) | 12 | 12 | 0 |
+| Store types Phases 0 and 1 (Fable; P2, adding Costco and more chains, deferred to Phase 4) | 7 | 6 | 0 |
+| Store types Phase 2, site badge (Fable) | 4 | 4 | 0 |
+| Store types Phase 3a, store breadth (Fable; T5, an isolated pipeline test, not done) | 7 | 4 | 0 |
 
 ## Evidence
 
