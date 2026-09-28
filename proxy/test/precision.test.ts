@@ -186,15 +186,15 @@ describe('T2: full pipeline replay with a stub classifier built from the labels'
     expect(shownUrls.sort()).toEqual(webRows.filter((r) => !isEditorialUrl(r.url)).map((r) => r.url).sort());
   });
 
-  it('keeps editorial pages in the model input, after the shops', async () => {
+  it('sends no editorial page to the model', async () => {
     const searchRows = rows.filter((r) => r.search_id === 'cast-iron-skillet-urban');
+    expect(searchRows.some((r) => r.kind === 'online' && isEditorialUrl(r.url))).toBe(true);
     const fetch = makeFixtureFetch(replayRoutes(searchRows));
     await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} });
     const call = fetch.calls.find((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))!;
     const urls = dataOf(promptOf({ body: call.body ?? '' })).candidates.map((c) => c.url);
-    expect(urls.filter(isEditorialUrl).length).toBeGreaterThan(0);
-    const onlineFlags = urls.filter((u) => searchRows.some((r) => r.kind === 'online' && r.url === u)).map(isEditorialUrl);
-    expect(onlineFlags).toEqual([...onlineFlags].sort((a, b) => Number(a) - Number(b)));
+    expect(urls.length).toBeGreaterThan(0);
+    expect(urls.filter((u) => searchRows.some((r) => r.kind === 'online' && r.url === u)).filter(isEditorialUrl)).toEqual([]);
   });
 });
 
@@ -326,14 +326,16 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     expect(kept[0]!.signals).toEqual([]);
   });
 
-  it('a flagged page is not a result', async () => {
+  it('a flagged page is not a result and is not sent to the model', async () => {
     const shop = candidate({ name: 'Riverbend Outfitters', domain: 'riverbend.example', url: 'https://riverbend.example/tents', title: 'Tents' });
     const article = candidate({ name: 'Mag', domain: 'mag.example', url: 'https://mag.example/blog/tents', title: 'Riverbend Outfitters repairs tents for free' });
-    const { llm } = fakeLlm(() => ({ candidates: [] }));
+    const { llm, prompts } = fakeLlm(() => ({ candidates: [] }));
     const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
     const kept = await enrichAndFilter([article, shop], llm, normalized);
     expect(kept.map((r) => r.candidate)).toEqual([shop]);
-    expect(kept[0]!.signals).toEqual([]);
+    expect(prompts).toHaveLength(1);
+    expect(prompts[0]).toContain(shop.url);
+    expect(prompts[0]).not.toContain(article.url);
   });
 
   it('an unknown classification value leaves that candidate unclassified, and the search still succeeds', async () => {

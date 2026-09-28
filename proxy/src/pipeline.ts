@@ -151,9 +151,8 @@ export function dedupe(candidates: Candidate[]): Candidate[] {
   return out;
 }
 
-// Editorial pages go to the model after the shops, so a cap cuts them first; they stay as
-// citable evidence for signals but are never results. A row the model judged not to be a shop
-// selling the product is dropped; one it did not judge is kept.
+// Editorial pages are never results and never go to the model. A row the model judged not to be
+// a shop selling the product is dropped; one it did not judge is kept.
 export async function enrichAndFilter(
   pass1: Candidate[],
   llm: LlmClient,
@@ -164,10 +163,8 @@ export async function enrichAndFilter(
   const { shops, editorial } = splitEditorial(pass1);
   for (const c of editorial) dropped.push({ kind: c.kind, domain: c.domain, reason: 'editorial_url' });
   if (shops.length === 0) return [];
-  const evidenceOnly = new Set(editorial);
-  const rows = await enrichAll([...shops, ...editorial], llm, deps.curated ?? curated, n);
+  const rows = await enrichAll(shops, llm, deps.curated ?? curated, n);
   return rows.filter((r) => {
-    if (evidenceOnly.has(r.candidate)) return false;
     const reason = dropReason(r.classification);
     if (reason) dropped.push({ kind: r.candidate.kind, domain: r.candidate.domain, reason });
     return reason === null;
