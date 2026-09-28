@@ -1,0 +1,161 @@
+# Red run: Phase 3a (store_breadth), before implementation
+# npx vitest run, trimmed: full summary tree, then one representative diff per distinct failure cause.
+# (pipeline.test.ts and precision.test.ts each fail ~14-31 times for the same root cause: the
+# updated fixtures now send store_breadth, which the not-yet-updated schema rejects as an
+# additional property, so every real-pipeline test throws InvalidLlmOutput.)
+
+ RUN  v5.0.1 /Users/brandon/dev/ai/nottheriver/.claude/worktrees/agent-a3639cef8c53e9d0e
+
+ ❯ proxy/test/prompts.test.ts (14 tests | 2 failed) 18ms
+   ❯ template wording (4)
+     × spells out the enum values the model-facing schema omits 7ms
+     × names the store_breadth field and its three values 2ms
+ ❯ proxy/test/validate.test.ts (16 tests | 4 failed) 14ms
+   ❯ validateAgainst (13)
+     × accepts every fixture for its schema 9ms
+     × rejects a candidate missing store_breadth 0ms
+   ❯ structuralOnly (3)
+     × strips value constraints from the enrich schema and keeps structure 0ms
+     × keeps nested object structure in enrich 1ms
+ ❯ proxy/test/llm.test.ts (13 tests | 2 failed) 21ms
+   ❯ request (3)
+     × names the enrich schema and passes its token cap 2ms
+   ❯ usage (2)
+     × records model, tokens and cost from the response 1ms
+ ❯ proxy/test/enrich.test.ts (26 tests | 6 failed) 46ms
+   ❯ acceptClassifications: store_breadth (5)
+     × accepts "specialist" 3ms
+     × accepts "general" 1ms
+     × accepts "unknown" 1ms
+     × a made-up value leaves store_breadth null and keeps sells_product 0ms
+     × a missing value leaves store_breadth null 0ms
+   ❯ curated lookups (9)
+     × enrichAll joins curated data and the model reply for every candidate 16ms
+ ❯ proxy/test/precision.test.ts (80 tests | 14 failed) 151ms
+   ❯ T2: full pipeline replay with a stub classifier built from the labels (13)
+     × cast-iron-skillet-urban: drops every graded "no", keeps every seller or its same-store twin 62ms
+     × cast-iron-skillet-suburban: drops every graded "no", keeps every seller or its same-store twin 5ms
+     × cast-iron-skillet-rural: drops every graded "no", keeps every seller or its same-store twin 5ms
+     × camping-tent-urban: drops every graded "no", keeps every seller or its same-store twin 3ms
+     × camping-tent-suburban: drops every graded "no", keeps every seller or its same-store twin 1ms
+     × camping-tent-rural: drops every graded "no", keeps every seller or its same-store twin 3ms
+     × cast-iron-skillet-urban: a flagged page is dropped even when the model calls it a shop 3ms
+     × cast-iron-skillet-suburban: a flagged page is dropped even when the model calls it a shop 15ms
+     × cast-iron-skillet-rural: a flagged page is dropped even when the model calls it a shop 3ms
+     × camping-tent-urban: a flagged page is dropped even when the model calls it a shop 2ms
+     × camping-tent-suburban: a flagged page is dropped even when the model calls it a shop 3ms
+     × camping-tent-rural: a flagged page is dropped even when the model calls it a shop 4ms
+     × keeps editorial pages in the model input, after the shops 1ms
+   ❯ T4: fail open on gaps and unknown values, fail closed on an invalid reply (9)
+     × an unknown classification value leaves that candidate unclassified, and the search still succeeds 2ms
+ ❯ proxy/test/pipeline.test.ts (120 tests | 31 failed) 177ms
+   ❯ runSearch over the fixtures (21)
+     × returns a response that matches the published schema 60ms
+     × echoes exactly the queries that went to Brave 2ms
+     × reports a restaurant from the place search as a place_category drop, not as a result 4ms
+     × lists what the precision filters dropped, by kind, domain and reason only 2ms
+     × makes one Brave call per query and reports usage and cost 4ms
+     × counts shown results the model did not judge 1ms
+     × sends the model no location: no location keys and no coordinates 1ms
+     × removes every blocked retailer, URL and mention 1ms
+     × dedupes within a section in fetch order, but keeps a shop that is both online and local 1ms
+     × ranks 1..n by score and gives every counted component a source 1ms
+     × gives each local shop its listed coordinates to 4 decimals, online none, and no request centroid 1ms
+     × builds ranking-doc links with one slash when SITE_URL ends in a slash 1ms
+   ❯ query handling (9)
+     × truncates the model queries to 3 online and 2 local, so a search stays under the 6-call cap 1ms
+     × matches only the first 6 similar products 5ms
+     × skips place search when there are no local queries 2ms
+     × strips a blocked brand from the model output before any query is sent 1ms
+     × drops blocked queries before capping, so a usable fourth query is still sent 1ms
+     × falls back to the product when the canonical name is empty 3ms
+     × scrubs a blocked brand from the product fallback 3ms
+   ❯ the second blocklist pass (6)
+     × runs twice, and the model enrichment cannot bring a blocked retailer back 3ms
+     × removes a blocked retailer that enters after the first pass 25ms
+   ❯ the chain badge (4)
+     × carries a chain badge through the full pipeline for a fixture domain in data.chains 1ms
+   ❯ the store_breadth field (4)
+     × carries store_breadth for a row the model classified, and omits it for a row it did not 1ms
+   ❯ normalize cache (10)
+     × a repeat search for the same product skips the normalize call and sends the same queries 6ms
+     × does not cache a reading with no local search, so nearby shops are not hidden for 30 days 2ms
+     × keys by product only: another town and different case or spacing is a hit 2ms
+     × stores the model output for 30 days under a hashed key that holds no product text 4ms
+     × a cached value that fails the schema is a miss, and the fresh model output replaces it 3ms
+     × a cached value that has only banned online queries is a miss, and the fresh model output replaces it 4ms
+     × a failing cache get still returns the search 2ms
+     × a failing cache put still returns the search 2ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 59 ⎯⎯⎯⎯⎯⎯⎯
+
+--- acceptClassifications does not yet know store_breadth ---
+
+ FAIL  proxy/test/enrich.test.ts > acceptClassifications: store_breadth > accepts "specialist"
+AssertionError: expected { site_type: 'retailer', …(1) } to deeply equal { site_type: 'retailer', …(2) }
+- Expected
++ Received
+  {
+    "sells_product": "yes",
+    "site_type": "retailer",
+-   "store_breadth": "specialist",
+  }
+ ❯ proxy/test/enrich.test.ts:76:65
+
+--- fixtures now send store_breadth; llm.complete rejects it (schema not updated yet) ---
+
+ FAIL  proxy/test/enrich.test.ts > curated lookups > enrichAll joins curated data and the model reply for every candidate
+InvalidLlmOutput: model output failed validation
+ ❯ Object.complete proxy/src/llm.ts:83:13
+ ❯ enrichAll proxy/src/enrich.ts:181:18
+ ❯ proxy/test/enrich.test.ts:211:18
+
+(same InvalidLlmOutput at the same throw site is the root cause of every pipeline.test.ts and
+precision.test.ts failure listed above, and of both llm.test.ts failures.)
+
+--- schema itself: store_breadth not yet a property, so the fixture reply is now rejected ---
+
+ FAIL  proxy/test/validate.test.ts > validateAgainst > accepts every fixture for its schema
+AssertionError: expected { ok: false, errors: [ …(6) ] } to deeply equal { ok: true }
+  {
+-   "ok": true,
++   "errors": [
++     "#: Property \"candidates\" does not match schema.",
++     "#/candidates: Items did not match schema.",
++     "#/candidates/0: Property \"store_breadth\" does not match additional properties schema.",
++     "#/candidates/0/store_breadth: False boolean schema.",
++     "#: Property \"candidates\" does not match additional properties schema.",
++     "#/candidates: False boolean schema.",
++   ],
++   "ok": false,
+  }
+ ❯ proxy/test/validate.test.ts:21:65
+
+ FAIL  proxy/test/validate.test.ts > validateAgainst > rejects a candidate missing store_breadth
+AssertionError: expected true to be false // Object.is equality
+- false
++ true
+ ❯ proxy/test/validate.test.ts:42:23
+
+ FAIL  proxy/test/validate.test.ts > structuralOnly > strips value constraints from the enrich schema and keeps structure
+AssertionError: expected false to be true // Object.is equality
+ ❯ proxy/test/validate.test.ts:66:46
+
+ FAIL  proxy/test/validate.test.ts > structuralOnly > keeps nested object structure in enrich
+AssertionError: expected [ 'id', 'site_type', 'sells_product' ] to include 'store_breadth'
+ ❯ proxy/test/validate.test.ts:76:32
+
+--- prompt does not yet mention store_breadth ---
+
+ FAIL  proxy/test/prompts.test.ts > template wording > spells out the enum values the model-facing schema omits
+AssertionError: expected '...' to contain '"specialist"'
+ ❯ proxy/test/prompts.test.ts:108:48
+
+ FAIL  proxy/test/prompts.test.ts > template wording > names the store_breadth field and its three values
+AssertionError: expected '...' to contain 'store_breadth'
+ ❯ proxy/test/prompts.test.ts:113:20
+
+ Test Files  6 failed | 19 passed (25)
+      Tests  59 failed | 809 passed (868)
+   Start at  21:11:39
+   Duration  782ms (tests 38%, transform 31%, import 16%, environment 13%, worker 1%)

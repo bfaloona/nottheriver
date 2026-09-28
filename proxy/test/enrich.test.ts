@@ -7,6 +7,7 @@ import {
   LLM_TITLE_CHARS,
   MAX_LLM_LOCAL,
   MAX_LLM_ONLINE,
+  acceptClassifications,
   acceptSignals,
   certificationsFor,
   chainFor,
@@ -61,6 +62,33 @@ describe('llmView', () => {
       expect(v.title).toHaveLength(LLM_TITLE_CHARS);
       expect(v.snippet).toHaveLength(LLM_SNIPPET_CHARS);
     }
+  });
+});
+
+describe('acceptClassifications: store_breadth', () => {
+  const view = [{ id: 'c0', domain: 'shop.example', title: 'Shop', snippet: '', url: 'https://shop.example/' }];
+  const reply = (store_breadth: string): EnrichOutput => ({
+    retailers: [],
+    candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes', store_breadth }],
+  });
+
+  it.each(['specialist', 'general', 'unknown'])('accepts "%s"', (value) => {
+    expect(acceptClassifications(reply(value), view).get('c0')).toEqual({
+      site_type: 'retailer', sells_product: 'yes', store_breadth: value,
+    });
+  });
+
+  it('a made-up value leaves store_breadth null and keeps sells_product', () => {
+    expect(acceptClassifications(reply('department_store'), view).get('c0')).toEqual({
+      site_type: 'retailer', sells_product: 'yes', store_breadth: null,
+    });
+  });
+
+  it('a missing value leaves store_breadth null', () => {
+    const missing: EnrichOutput = { retailers: [], candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }] };
+    expect(acceptClassifications(missing, view).get('c0')).toEqual({
+      site_type: 'retailer', sells_product: 'yes', store_breadth: null,
+    });
   });
 });
 
@@ -189,7 +217,7 @@ describe('curated lookups', () => {
     expect(rows.find((r) => r.candidate.domain === 'granite-outfitters.example')!.chain).toBeNull();
     // The reply's one classification (c0, the first candidate) lands on its row; its only
     // acceptable-looking signal cites the shop's own page and is dropped.
-    expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes' });
+    expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes', store_breadth: 'specialist' });
     expect(rows.find((r) => r.candidate.domain === 'blue-heron-goods.example')!.signals).toEqual([]);
     expect(llm.usage.map((u) => u.call)).toEqual(['enrich']);
   });

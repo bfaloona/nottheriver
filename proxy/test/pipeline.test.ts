@@ -167,7 +167,7 @@ describe('runSearch over the fixtures', () => {
   it("ranks a nearby store the model judged to sell the product above one it only thought might", () => {
     const store = (name: string, sells: 'yes' | 'maybe'): EnrichedRow => ({
       ...row(candidate({ kind: 'local', name, title: name, snippet: 'shop', domain: `${name.toLowerCase()}.example`, url: `https://${name.toLowerCase()}.example/`, address: '1 Main St', lat: REQ.lat + 0.01, lon: REQ.lon, place_id: name })),
-      classification: { site_type: 'retailer', sells_product: sells },
+      classification: { site_type: 'retailer', sells_product: sells, store_breadth: null },
     });
     // The "maybe" store is closer, so without the judgment it would rank first.
     const maybe = store('Maybe', 'maybe');
@@ -236,7 +236,7 @@ describe('runSearch over the fixtures', () => {
       respond: (_u, init) => {
         const prompt = (JSON.parse(String(init?.body)) as { messages: Array<{ content: string }> }).messages[0]!.content;
         const { candidates } = JSON.parse(/<<<DATA\n([\s\S]*?)\nDATA>>>/.exec(prompt)![1]!) as { candidates: Array<{ id: string }> };
-        return { body: llmReply({ retailers: [], candidates: candidates.map((c) => ({ id: c.id, site_type: 'retailer', sells_product: 'yes' })) }) };
+        return { body: llmReply({ retailers: [], candidates: candidates.map((c) => ({ id: c.id, site_type: 'retailer', sells_product: 'yes', store_breadth: 'unknown' })) }) };
       },
     };
     const judged = await search([...defaultRoutes().slice(0, 3), judgeAll]);
@@ -467,7 +467,7 @@ describe('the second blocklist pass', () => {
     // it a shop selling the product, so the classification filter keeps it and only pass 2 can drop it.
     const injected: EnrichedRow = {
       ...row(candidate({ name: 'Prime Deals', domain: 'amazon.com', url: 'https://www.amazon.com/dp/B0' })),
-      classification: { site_type: 'retailer', sells_product: 'yes' },
+      classification: { site_type: 'retailer', sells_product: 'yes', store_breadth: null },
     };
     vi.mocked(enrichAll).mockImplementationOnce(async (...args) => [...(await realEnrichAll(...args)), injected]);
 
@@ -528,6 +528,42 @@ describe('the chain badge', () => {
     const res = await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {}, curated });
     const chained = res.online.find((r) => r.retailer.domain === 'granite-outfitters.example');
     expect(chained?.chain).toEqual({ label: 'Chain, 25 stores', stores: 25, source_url: 'https://granite-outfitters.example/about', checked: '2026-09-27' });
+  });
+});
+
+describe('the store_breadth field', () => {
+  const withBreadth = (breadth: 'specialist' | 'general' | 'unknown' | null): EnrichedRow => ({
+    ...row(candidate({ domain: 'shop.example', url: 'https://shop.example/skillet' })),
+    classification: { site_type: 'retailer', sells_product: 'yes', store_breadth: breadth },
+  });
+
+  it('carries store_breadth for a row the model classified, and omits it for a row it did not', () => {
+    const res = finalizeResponse(
+      scoreAll([withBreadth('specialist'), row(candidate({}))], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE,
+    );
+    const classified = res.online.find((r) => r.retailer.domain === 'shop.example');
+    expect(classified?.store_breadth).toBe('specialist');
+    const plain = res.online.find((r) => r.retailer.domain === 'clean.example');
+    expect(plain?.store_breadth).toBeUndefined();
+  });
+
+  it('omits store_breadth when the model left it null (off-list or unclassified)', () => {
+    const res = finalizeResponse(scoreAll([withBreadth(null)], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    expect(res.online[0]!.store_breadth).toBeUndefined();
+  });
+
+  it('validates against the schema whether or not a result carries store_breadth', () => {
+    const rows = [withBreadth('general'), withBreadth(null)];
+    const res = finalizeResponse(scoreAll(rows, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    const result = validateAgainst('search-response', res);
+    expect(result.ok ? [] : result.errors).toEqual([]);
+  });
+
+  it('never affects the score or components, with or without a value', () => {
+    const withValue = scoreAll([withBreadth('specialist')], NORMALIZED, REQ, ENV.SITE_URL)[0]!;
+    const withoutValue = scoreAll([withBreadth(null)], NORMALIZED, REQ, ENV.SITE_URL)[0]!;
+    expect(withValue.result.score).toEqual(withoutValue.result.score);
+    expect(withValue.result.components).toEqual(withoutValue.result.components);
   });
 });
 

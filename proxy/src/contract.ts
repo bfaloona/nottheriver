@@ -28,7 +28,10 @@ export type CitationType = 'willful' | 'repeat' | 'serious' | 'other';
 // gives too little to decide, and a forced yes/no would be a guess.
 export type SiteType = 'retailer' | 'marketplace' | 'editorial' | 'manufacturer_no_cart' | 'service' | 'other';
 export type SellsProduct = 'yes' | 'maybe' | 'no';
-export interface Classification { site_type: SiteType; sells_product: SellsProduct }
+// S2 (docs/plans/store-types.md): a relevance judgment only, no score effect (ranking/score.ts
+// never reads it). null covers both an off-list model value and a candidate never classified.
+export type StoreBreadth = 'specialist' | 'general' | 'unknown';
+export interface Classification { site_type: SiteType; sells_product: SellsProduct; store_breadth: StoreBreadth | null }
 
 export interface SourceRef { label: string; url: string }
 
@@ -93,6 +96,7 @@ export interface SearchResult {
   score: number;               // 0..1, 3 decimals
   components: ScoreComponent[]; // always all four
   chain?: Chain; // absent unless the domain is in data/chains.json (and its source survives scrubbing)
+  store_breadth?: StoreBreadth; // absent when unclassified or off-list; "unknown" is a real judgment and is present
 }
 
 export interface LlmUsage {

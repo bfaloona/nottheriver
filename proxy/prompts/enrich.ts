@@ -21,6 +21,7 @@ Return a JSON object {"retailers": [...], "candidates": [...]}.
   - "service": a contractor, installer, repair shop, showroom, camp, or other business that sells a service, not goods.
   - "other": anything else.
 - sells_product: exactly one of "yes" (this site sells the product or a close equivalent), "maybe" (it could, but the data does not show it), "no" (it plainly does not).
+- store_breadth: exactly one of "specialist" (the shop's main line is the product's category, e.g. a cookware store for a skillet), "general" (many unrelated categories: department store, big-box, supermarket, general store), "unknown" (the data does not show it). Judge from the name, URL and snippet, like site_type.
 
 "retailers" has one entry per retailer you have evidence for:
 - domain: copy the retailer's "domain" value exactly.

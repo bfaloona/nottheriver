@@ -103,8 +103,15 @@ describe('template wording', () => {
     const values = [
       '"labor"', '"governance"', '"environmental"', '"positive"', '"negative"',
       '"retailer"', '"marketplace"', '"editorial"', '"manufacturer_no_cart"', '"service"', '"other"', '"yes"', '"maybe"', '"no"',
+      '"specialist"', '"general"', '"unknown"',
     ];
     for (const value of values) expect(prompt).toContain(value);
+  });
+
+  it('names the store_breadth field and its three values', () => {
+    const prompt = buildEnrichPrompt([], PRODUCT);
+    expect(prompt).toContain('store_breadth');
+    for (const value of ['"specialist"', '"general"', '"unknown"']) expect(prompt).toContain(value);
   });
 
   it('asks for shop-style online queries and store-type local queries', () => {

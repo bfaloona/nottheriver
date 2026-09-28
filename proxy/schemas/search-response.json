@@ -56,7 +56,8 @@
         "signals": { "type": "array", "items": { "$ref": "#/definitions/signal" } },
         "score": { "type": "number", "minimum": 0, "maximum": 1 },
         "components": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "$ref": "#/definitions/component" } },
-        "chain": { "$ref": "#/definitions/chain" } } }
+        "chain": { "$ref": "#/definitions/chain" },
+        "store_breadth": { "enum": ["specialist", "general", "unknown"] } } }
   },
   "properties": {
     "query": { "type": "object", "additionalProperties": false,
