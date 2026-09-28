@@ -6,7 +6,7 @@ import { pickTargets } from './access-probe/run-probe.mjs';
 import { parseTarget } from './access-probe/target';
 import { compareRow } from './compare.mjs';
 import { buildRequest } from './run-searches.mjs';
-import { agreement, precision, probeRates, recall, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
+import { agreement, badgeCheck, labelCounts, precision, probeRates, recall, recallByKind, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
 
 const { queries } = JSON.parse(readFileSync('eval/queries.json', 'utf8'));
 const zips = JSON.parse(readFileSync('public/zips.json', 'utf8'));
@@ -227,6 +227,69 @@ describe('summarize', () => {
       recall: { online: 0.31, local: [0.326, 0.349] },
       evidence: 'docs/evidence/quality/eval20-0925',
       note: "a figure that mixes two graders' answers",
+    });
+  });
+});
+
+describe('chain labels', () => {
+  const base = (over) => ({
+    search_id: 's1', section: 'local', name: 'x', url: 'https://a.com/', confirmed: true, miss_reason: null, checked: '2026-10-01', ...over,
+  });
+
+  it('rejects a non-boolean chain on a baseline row, and accepts chain with chain_source', () => {
+    expect(() => validateGrades({ grades: [], baseline: [base({ chain: 'yes' })] }, schema)).toThrow(/grade-schema/);
+    expect(() => validateGrades({ grades: [], baseline: [base({ chain: true, chain_source: 'https://x.example/stores' })] }, schema)).not.toThrow();
+    expect(() => validateGrades({ grades: [], baseline: [base({ chain: false })] }, schema)).not.toThrow();
+  });
+
+  it('rejects a store_breadth value outside the enum, and accepts the three allowed values', () => {
+    expect(() => validateGrades({ grades: [grade({ store_breadth: 'huge' })], baseline: [] }, schema)).toThrow(/grade-schema/);
+    for (const v of ['specialist', 'general', 'unknown']) {
+      expect(() => validateGrades({ grades: [grade({ store_breadth: v })], baseline: [] }, schema)).not.toThrow();
+    }
+  });
+
+  it('counts a baseline row with no chain field as unlabelled, separate from chain:true/false', () => {
+    const results = { 's1:local': [{ retailer: { name: 'A', domain: 'a.com' } }] };
+    const resultsFor = (id, sec) => results[`${id}:${sec}`] ?? [];
+    const baseline = [
+      base({ url: 'https://a.com/', chain: true }),
+      base({ url: 'https://b.com/', chain: false }),
+      base({ url: 'https://c.com/' }), // no chain field at all: unlabelled, not a miss on either label
+    ];
+    const r = recallByKind(baseline, resultsFor);
+    expect(r.chain).toEqual({ confirmed: 1, found: 1, recall: 1, miss_reasons: {} });
+    expect(r.not_chain).toEqual({ confirmed: 1, found: 0, recall: 0, miss_reasons: { unclassified: 1 } });
+    expect(r.unlabelled).toEqual({ confirmed: 1, found: 0, recall: 0, miss_reasons: { unclassified: 1 } });
+  });
+
+  it('counts unlabelled rows even when unconfirmed, unlike the recall figures', () => {
+    const baseline = [
+      base({ chain: true }),
+      base({ url: 'https://b.com/', chain: false, confirmed: false }),
+      base({ url: 'https://c.com/', confirmed: false }), // unlabelled and unconfirmed: recall skips it, this must not
+    ];
+    expect(labelCounts(baseline)).toEqual({ chain: 1, not_chain: 1, unlabelled: 1 });
+  });
+
+  it('reports the badge check as not measured before any returned result carries a chain field', () => {
+    const results = { 's1:local': [{ retailer: { name: 'A', domain: 'a.com' } }] };
+    const resultsFor = (id, sec) => results[`${id}:${sec}`] ?? [];
+    expect(badgeCheck([base({ url: 'https://a.com/', chain: true })], resultsFor)).toEqual({ measured: false });
+  });
+
+  it('flags a badge on a chain:false shop and reports coverage of chain:true shops once the field exists', () => {
+    const results = {
+      's1:local': [{ retailer: { name: 'A', domain: 'a.com' }, chain: { label: 'Chain, 20 stores' } }],
+      's1:online': [{ retailer: { name: 'B', domain: 'b.com' } }],
+    };
+    const resultsFor = (id, sec) => results[`${id}:${sec}`] ?? [];
+    const baseline = [
+      base({ url: 'https://a.com/', chain: false }),
+      base({ section: 'online', url: 'https://b.com/', chain: true }),
+    ];
+    expect(badgeCheck(baseline, resultsFor)).toEqual({
+      measured: true, false_badges: 1, chain_false_returned: 1, chain_true_returned: 1, chain_true_badged: 0, coverage: 0,
     });
   });
 });

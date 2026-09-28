@@ -72,12 +72,16 @@ export function tally(grades, field) {
   return counts;
 }
 
-function returned(item, results) {
+function matchResults(item, results) {
   // A shop can own several domains (one redirecting to another); any of them counts.
   const urls = item.url ? [item.url, ...(item.also_urls ?? [])] : [];
   const domains = new Set(urls.map((u) => getDomain(u)).filter(Boolean));
-  if (domains.size === 0) return results.some((r) => normName(r.retailer.name) === normName(item.name));
-  return results.some((r) => domains.has(r.retailer.domain));
+  if (domains.size === 0) return results.filter((r) => normName(r.retailer.name) === normName(item.name));
+  return results.filter((r) => domains.has(r.retailer.domain));
+}
+
+function returned(item, results) {
+  return matchResults(item, results).length > 0;
 }
 
 /** Recall against confirmed baseline retailers; `resultsFor(search_id, section)` gives the site's results. */
@@ -91,6 +95,63 @@ export function recall(baseline, resultsFor) {
   }
   const found = confirmed.length - misses.length;
   return { confirmed: confirmed.length, found, recall: ratio(found, confirmed.length), miss_reasons: reasons };
+}
+
+const kindOf = (b) => (b.chain === true ? 'chain' : b.chain === false ? 'not_chain' : 'unlabelled');
+
+/** How many baseline rows carry each chain label, regardless of `confirmed`, so an unlabelled row is visible even when it's a miss the recall figures below never count. @param {object[]} baseline */
+export function labelCounts(baseline) {
+  const counts = { chain: 0, not_chain: 0, unlabelled: 0 };
+  for (const b of baseline) counts[kindOf(b)] += 1;
+  return counts;
+}
+
+/**
+ * Recall split by the chain label: a row the label hasn't reached yet must not be silently folded
+ * into either the chain or the non-chain figure, so it gets its own bucket and its own (small,
+ * expected) recall number rather than vanishing.
+ * @param {object[]} baseline @param {(id: string, section: string) => object[]} resultsFor
+ */
+export function recallByKind(baseline, resultsFor) {
+  const groups = { chain: [], not_chain: [], unlabelled: [] };
+  for (const b of baseline) groups[kindOf(b)].push(b);
+  return Object.fromEntries(Object.entries(groups).map(([kind, rows]) => [kind, recall(rows, resultsFor)]));
+}
+
+/**
+ * A badge on a labelled `chain: false` shop (must be 0), and coverage of labelled `chain: true` shops,
+ * over baseline rows the site returned. The badge field does not exist on any result yet; while none
+ * carries it, 0 false badges and 0% coverage would read as a pass for the wrong reason, so this
+ * reports "not measured" until some returned result actually has a `chain` field.
+ * @param {object[]} baseline @param {(id: string, section: string) => object[]} resultsFor
+ */
+export function badgeCheck(baseline, resultsFor) {
+  const cache = new Map();
+  const resultsCached = (id, sec) => {
+    const key = `${id}\u0000${sec}`;
+    if (!cache.has(key)) cache.set(key, resultsFor(id, sec));
+    return cache.get(key);
+  };
+  const anyChainField = baseline.some((b) => resultsCached(b.search_id, b.section).some((r) => 'chain' in r));
+  if (!anyChainField) return { measured: false };
+
+  let falseBadges = 0, chainFalseReturned = 0, chainTrueReturned = 0, chainTrueBadged = 0;
+  for (const b of baseline) {
+    if (b.chain === undefined) continue;
+    const matched = matchResults(b, resultsCached(b.search_id, b.section));
+    if (matched.length === 0) continue;
+    const badged = matched.some((r) => r.chain);
+    if (b.chain === false) { chainFalseReturned += 1; if (badged) falseBadges += 1; }
+    else { chainTrueReturned += 1; if (badged) chainTrueBadged += 1; }
+  }
+  return {
+    measured: true,
+    false_badges: falseBadges,
+    chain_false_returned: chainFalseReturned,
+    chain_true_returned: chainTrueReturned,
+    chain_true_badged: chainTrueBadged,
+    coverage: ratio(chainTrueBadged, chainTrueReturned),
+  };
 }
 
 export function probeRates(results) {
@@ -190,6 +251,11 @@ async function main() {
     badges_sourced: Object.fromEntries(SECTIONS.map((sec) => [sec, tally(gradesIn(sec), 'badges_sourced')])),
     distance_plausible: tally(gradesIn('local'), 'distance_plausible'),
     recall: Object.fromEntries(SECTIONS.map((sec) => [sec, recall(grades.baseline.filter((b) => b.section === sec), resultsFor)])),
+    // How many baseline rows (any confirmed status) carry each chain label, and confirmed-only recall
+    // split the same way; see docs/quality.md:17 for the chain rule these labels follow.
+    labels: Object.fromEntries(SECTIONS.map((sec) => [sec, labelCounts(grades.baseline.filter((b) => b.section === sec))])),
+    recall_by_kind: Object.fromEntries(SECTIONS.map((sec) => [sec, recallByKind(grades.baseline.filter((b) => b.section === sec), resultsFor)])),
+    chain_badges: badgeCheck(grades.baseline, resultsFor),
     probe: Object.fromEntries(SECTIONS.map((sec) => [sec, probeRates(probe.results.filter((r) => r.kind === sec))])),
     probe_vs_person: agreement(probe.results, grades.grades),
   };

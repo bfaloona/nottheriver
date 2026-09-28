@@ -1,0 +1,33 @@
+npx vitest run eval/eval.test.mjs (before Phase 0 chain-fields implementation)
+
+ ❯ eval/eval.test.mjs (35 tests | 5 failed) 19ms
+   ❯ chain labels (Phase 0, CQ5) (5)
+     × rejects a non-boolean chain on a baseline row, and accepts chain with chain_source 4ms
+     × rejects a store_breadth value outside the enum, and accepts the three allowed values 0ms
+     × counts a baseline row with no chain field as unlabelled, separate from chain:true/false 0ms
+     × reports the badge check as not measured before any returned result carries a chain field 0ms
+     × flags a badge on a chain:false shop and reports coverage of chain:true shops once the field exists 0ms
+
+FAIL  eval/eval.test.mjs > chain labels (Phase 0, CQ5) > rejects a non-boolean chain on a baseline row, and accepts chain with chain_source
+AssertionError: expected [Function] to not throw an error but 'Error: grades.json does not match eva…' was thrown
+"Error: grades.json does not match eval/grade-schema.json
+#/baseline/0: Property \"chain\" does not match additional properties schema.
+#/baseline/0/chain: False boolean schema."
+
+FAIL  eval/eval.test.mjs > chain labels (Phase 0, CQ5) > rejects a store_breadth value outside the enum, and accepts the three allowed values
+AssertionError: expected [Function] to not throw an error but 'Error: grades.json does not match eva…' was thrown
+"Error: grades.json does not match eval/grade-schema.json
+#/grades/0: Property \"store_breadth\" does not match additional properties schema.
+#/grades/0/store_breadth: False boolean schema."
+
+FAIL  eval/eval.test.mjs > chain labels (Phase 0, CQ5) > counts a baseline row with no chain field as unlabelled, separate from chain:true/false
+TypeError: recallByKind is not a function
+
+FAIL  eval/eval.test.mjs > chain labels (Phase 0, CQ5) > reports the badge check as not measured before any returned result carries a chain field
+TypeError: badgeCheck is not a function
+
+FAIL  eval/eval.test.mjs > chain labels (Phase 0, CQ5) > flags a badge on a chain:false shop and reports coverage of chain:true shops once the field exists
+TypeError: badgeCheck is not a function
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 30 passed (35)

@@ -26,7 +26,8 @@
         "badges_sourced": { "enum": ["yes", "no", "n/a"], "description": "Every certification badge's source link supports it; n/a when there are none" },
         "page_access": { "enum": ["ok", "challenge", "blocked", "error"], "description": "What a person in a real browser got" },
         "notes": { "type": "string" },
-        "checked": { "$ref": "#/$defs/date" }
+        "checked": { "$ref": "#/$defs/date" },
+        "store_breadth": { "enum": ["specialist", "general", "unknown"], "description": "The grader's own judgment of the shop's product breadth, not the model's" }
       }
     },
     "baselineItem": {
@@ -44,7 +45,9 @@
           "enum": [null, "not_in_brave_index", "weak_snippet", "ranked_low", "filtered", "other"],
           "description": "Null when the site returned this retailer; set by the grader when it did not"
         },
-        "checked": { "$ref": "#/$defs/date" }
+        "checked": { "$ref": "#/$defs/date" },
+        "chain": { "type": "boolean", "description": "10 or more US stores under one name; Ace Hardware and other dealer-owned chains count as the chain (docs/quality.md:17, operator Q1). Optional so older baseline files stay valid; absent means not yet labelled, not 'independent'" },
+        "chain_source": { "type": "string", "description": "The store-count page, locator or listing the chain label rests on" }
       }
     }
   }
