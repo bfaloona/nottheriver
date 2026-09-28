@@ -5,7 +5,7 @@ import { filterResults, sortResults } from './controls';
 
 const base = (fixture as SearchResponse).local[0]!;
 
-function make(name: string, rank: number, distance_km: number | null, certified = false): SearchResult {
+function make(name: string, rank: number, distance_km: number | null, certified = false, chain = false): SearchResult {
   return {
     ...base,
     id: `local:${name}:${rank}`,
@@ -14,6 +14,7 @@ function make(name: string, rank: number, distance_km: number | null, certified 
     retailer: { ...base.retailer, name },
     distance_km,
     certifications: certified ? base.certifications : [],
+    chain: chain ? { label: 'Chain, 25 stores', stores: 25, source_url: 'https://chain.example/about', checked: '2026-09-27' } : undefined,
   };
 }
 
@@ -60,6 +61,14 @@ describe('filterResults', () => {
 
   it('keeps only certified results when asked', () => {
     expect(names(filterResults(list, { near: true, online: true, certifiedOnly: true }))).toEqual([
+      'Near certified',
+      'Web certified',
+    ]);
+  });
+
+  it('does not count a chain badge as a certification', () => {
+    const withChain = [...list, make('Chain only', 3, 4, false, true)];
+    expect(names(filterResults(withChain, { near: true, online: true, certifiedOnly: true }))).toEqual([
       'Near certified',
       'Web certified',
     ]);

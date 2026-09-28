@@ -197,12 +197,15 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
     body.append(el('p', { className: 'distance' }, where));
   }
 
-  if (result.certifications.length > 0) {
+  if (result.certifications.length > 0 || result.chain) {
     body.append(
       el(
         'ul',
         { className: 'badges' },
         ...result.certifications.map((c) => el('li', {}, outbound(c.source_url, c.label, { className: 'badge' }))),
+        // Not a certification: a chain is a property of the domain (Chain, docs/ranking.md), so
+        // it gets its own neutral style rather than the teal certification look.
+        ...(result.chain ? [el('li', {}, outbound(result.chain.source_url, result.chain.label, { className: 'badge badge-neutral' }))] : []),
       ),
     );
   }

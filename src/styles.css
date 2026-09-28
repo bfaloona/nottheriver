@@ -190,6 +190,9 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
   color: var(--accent);
   border-radius: var(--radius-control);
 }
+/* A chain badge is a fact about the domain, not a credential, so it stays out of the
+   teal certification style: a border instead of the accent fill, plain text color. */
+.badge-neutral { background: none; color: var(--ink); border: 1px solid var(--border-input); }
 .signal, .negative, .concerns { margin: var(--space-3) 0 0; font-size: var(--text-sm); }
 .signal-kind { font-weight: 600; }
 .negative { padding: var(--space-3); background: var(--warn-bg); color: var(--warn); border-radius: var(--radius-panel); }

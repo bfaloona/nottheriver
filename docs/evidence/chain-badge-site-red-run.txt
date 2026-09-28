@@ -1,0 +1,39 @@
+Red run for Phase 2 (chain badge, site), before src/render.ts and src/styles.css changed.
+Commands: npx vitest run src/render.test.ts src/controls.test.ts; npx playwright test tests/e2e/smoke.spec.ts
+
+$ npx vitest run src/render.test.ts src/controls.test.ts
+
+ FAIL  src/render.test.ts > renderResults (HR5) > shows the chain badge as a neutral badge linking to its source
+TypeError: Cannot read properties of null (reading 'textContent')
+ ❯ src/render.test.ts:113:18
+    111|     const chainResult = response.online[1]!;
+    112|     const badge = item(chainResult).querySelector<HTMLAnchorElement>('.badge-neutral')!;
+    113|     expect(badge.textContent).toBe(chainResult.chain!.label);
+       |                  ^
+
+ FAIL  src/render.test.ts > renderResults (HR5) > renders the badges list for a chain even with no certifications
+AssertionError: expected  to have a length of 1 but got +0
+ ❯ src/render.test.ts:121:62
+    119|     const chainResult = response.online[1]!;
+    120|     expect(chainResult.certifications).toHaveLength(0);
+    121|     expect(item(chainResult).querySelectorAll('.badges li')).toHaveLength(1);
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  2 failed | 45 passed (47)
+
+(controls.test.ts's new "does not count a chain badge as a certification" test already
+passes: filterResults never read `chain`. Kept as a regression guard for Phase 2.)
+
+$ npx playwright test tests/e2e/smoke.spec.ts
+
+  1) [chromium] › tests/e2e/smoke.spec.ts:18:1 › a search renders ranked, explained, Amazon-free results under the CSP
+
+    Error: expect(locator).toHaveText(expected) failed
+    Locator: ... .locator('.badge-neutral')
+    Expected pattern: /^Chain, \d+ stores$/
+    Error: element(s) not found
+      108 |   await expect(granite).toBeVisible();
+      109 |   const chainBadge = granite.locator('.badge-neutral');
+    > 110 |   await expect(chainBadge).toHaveText(/^Chain, \d+ stores$/);
+
+  1 failed

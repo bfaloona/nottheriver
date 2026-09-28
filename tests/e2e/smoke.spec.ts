@@ -102,6 +102,14 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(concerns.locator('[data-negative]')).toHaveCount(2);
   await expect(concerns.locator('[data-action-date]')).toHaveText(['Nov 2, 2023', 'May 14, 2021']); // newest first
 
+  // A curated fixture (tests/fixtures/chains.json) badges Granite Outfitters as a chain; it
+  // carries no certification, so this also proves the badge shows without one.
+  const granite = page.locator('[data-result]').filter({ has: page.locator('[data-retailer]', { hasText: 'Granite Outfitters' }) }).first();
+  await expect(granite).toBeVisible();
+  const chainBadge = granite.locator('.badge-neutral');
+  await expect(chainBadge).toHaveText(/^Chain, \d+ stores$/);
+  await expect(chainBadge).toHaveAttribute('href', /granite-outfitters\.example\/about$/);
+
   const results = page.locator('[data-result]');
   const count = await results.count();
   for (let i = 0; i < count; i++) {

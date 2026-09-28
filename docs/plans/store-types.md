@@ -6,7 +6,7 @@ Status: draft 2026-09-27, not started. Review: Fable fresh-eyes 2026-09-27, 16 f
 
 - [x] Phase 0: chain labels in the eval baseline (CQ5), no deploy
 - [x] Phase 1: chain badge, Worker (`data/chains.json`, response field), Worker deploy
-- [ ] Phase 2: chain badge, site, push to `main`
+- [x] Phase 2: chain badge, site, push to `main`
 - [ ] Phase 3a: `store_breadth` judgment in the enrich reply, no score effect, Worker deploy
 - [ ] Phase 4: measure (20 graded searches, run twice), operator gate
 - [ ] Phase 3b: specialist relevance tier, gated on Phase 4 numbers

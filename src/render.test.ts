@@ -107,6 +107,27 @@ describe('renderResults (HR5)', () => {
     expect(badge.getAttribute('href')).toBe(first.certifications[0]!.source_url);
   });
 
+  it('shows the chain badge as a neutral badge linking to its source', () => {
+    const chainResult = response.online[1]!;
+    const badge = item(chainResult).querySelector<HTMLAnchorElement>('.badge-neutral')!;
+    expect(badge.textContent).toBe(chainResult.chain!.label);
+    expect(badge.getAttribute('href')).toBe(chainResult.chain!.source_url);
+    expect(badge.classList.contains('badge')).toBe(true);
+  });
+
+  it('renders the badges list for a chain even with no certifications', () => {
+    const chainResult = response.online[1]!;
+    expect(chainResult.certifications).toHaveLength(0);
+    expect(item(chainResult).querySelectorAll('.badges li')).toHaveLength(1);
+  });
+
+  it('shows no badges list when a result has neither certifications nor a chain', () => {
+    const plain = response.local[1]!;
+    expect(plain.certifications).toHaveLength(0);
+    expect(plain.chain).toBeUndefined();
+    expect(item(plain).querySelector('.badges')).toBeNull();
+  });
+
   it('shows a negative signal with its kind, source link, action date, and a dispute link', () => {
     const second = response.local[1]!;
     const signal = second.signals[0]!;

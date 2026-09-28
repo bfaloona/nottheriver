@@ -100,6 +100,8 @@ Curated in `data/certifications.json`; every row has a source URL and a check da
 | `climate_neutral` | Climate Label certified (the Climate Neutral certification, now branded The Climate Label) | Environment |
 | `independent_retailer_assoc` | Independent retailer association | Badge only, no score effect |
 
+The chain badge is not a `CertKind`: it comes from `data/chains.json` (a domain with 10 or more US stores), shown with a neutral badge style rather than the certification style, badge only, no score effect.
+
 ## Negative findings (down-ranking policy)
 
 A finding lowers a score only if all of these hold:

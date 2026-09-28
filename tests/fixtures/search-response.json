@@ -62,7 +62,8 @@
         { "name": "ethics", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
         { "name": "env", "value": 0.5, "weight": 0.3, "contribution": 0.15, "sources": [ { "label": "Baseline 0.5", "url": "http://localhost:5173/about.html#ranking" } ] },
         { "name": "proximity", "value": 0.5, "weight": 0.15, "contribution": 0.075, "sources": [ { "label": "Online retailer, fixed 0.5", "url": "http://localhost:5173/about.html#ranking" } ] }
-      ]
+      ],
+      "chain": { "label": "Chain, 25 stores", "stores": 25, "source_url": "https://granite-outfitters.example/about", "checked": "2026-09-27" }
     }
   ],
   "usage": { "brave_calls": 4, "llm": [ { "call": "normalize", "model": "google/gemma-4-31b-it", "prompt_tokens": 400, "completion_tokens": 120, "cost_usd": 0.0000768 }, { "call": "enrich", "model": "google/gemma-4-31b-it", "prompt_tokens": 2100, "completion_tokens": 300, "cost_usd": 0.000291 } ], "llm_tokens": 2920, "estimated_cost_usd": 0.0204 }
