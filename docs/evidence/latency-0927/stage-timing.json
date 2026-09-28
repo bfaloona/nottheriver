@@ -1,0 +1,274 @@
+{
+  "zip": "97214",
+  "ran": "2026-09-28T06:50:56.083Z",
+  "runs": [
+    {
+      "product": "bike pump",
+      "status": "ok",
+      "total_ms": 45228,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 364,
+          "total_ms": 2055,
+          "call": "normalize",
+          "provider": "DeepInfra",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 76,
+          "out_chars": 291
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 2089,
+          "headers_ms": 798,
+          "total_ms": 800
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 2090,
+          "headers_ms": 819,
+          "total_ms": 821
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2091,
+          "headers_ms": 837,
+          "total_ms": 838
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2091,
+          "headers_ms": 874,
+          "total_ms": 875
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2971,
+          "headers_ms": 401,
+          "total_ms": 42236,
+          "call": "enrich",
+          "provider": "CoreWeave",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4330,
+          "completion_tokens": 1634,
+          "out_chars": 4256
+        }
+      ]
+    },
+    {
+      "product": "beeswax candles",
+      "status": "ok",
+      "total_ms": 35204,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 392,
+          "total_ms": 7765,
+          "call": "normalize",
+          "provider": "CoreWeave",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 75,
+          "out_chars": 291
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 7767,
+          "headers_ms": 602,
+          "total_ms": 603
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 7769,
+          "headers_ms": 629,
+          "total_ms": 631
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 7771,
+          "headers_ms": 678,
+          "total_ms": 680
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 7772,
+          "headers_ms": 744,
+          "total_ms": 745
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8520,
+          "headers_ms": 465,
+          "total_ms": 26666,
+          "call": "enrich",
+          "provider": "CoreWeave",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4253,
+          "completion_tokens": 2229,
+          "out_chars": 6502
+        }
+      ]
+    },
+    {
+      "product": "hiking boots",
+      "status": "ok",
+      "total_ms": 13822,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 245,
+          "total_ms": 903,
+          "call": "normalize",
+          "provider": "CoreWeave",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 76,
+          "out_chars": 304
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 907,
+          "headers_ms": 739,
+          "total_ms": 742
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 904,
+          "headers_ms": 743,
+          "total_ms": 746
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 908,
+          "headers_ms": 740,
+          "total_ms": 744
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 906,
+          "headers_ms": 741,
+          "total_ms": 747
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1655,
+          "headers_ms": 445,
+          "total_ms": 12156,
+          "call": "enrich",
+          "provider": "CoreWeave",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3825,
+          "completion_tokens": 1409,
+          "out_chars": 3763
+        }
+      ]
+    },
+    {
+      "product": "cast iron skillet",
+      "status": "ok",
+      "total_ms": 45322,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 3180,
+          "total_ms": 6569,
+          "call": "normalize",
+          "provider": "Reka",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 78,
+          "out_chars": 317
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 6572,
+          "headers_ms": 720,
+          "total_ms": 721
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 6571,
+          "headers_ms": 730,
+          "total_ms": 731
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 6573,
+          "headers_ms": 753,
+          "total_ms": 754
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 6570,
+          "headers_ms": 785,
+          "total_ms": 792
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 7363,
+          "headers_ms": 301,
+          "total_ms": 37947,
+          "call": "enrich",
+          "provider": "DeepInfra",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3527,
+          "completion_tokens": 1802,
+          "out_chars": 5166
+        }
+      ]
+    }
+  ]
+}

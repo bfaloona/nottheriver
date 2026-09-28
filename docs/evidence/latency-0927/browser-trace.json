@@ -1,0 +1,689 @@
+{
+  "site": "https://bfaloona.github.io/nottheriver/",
+  "zip": "97214",
+  "throttle": false,
+  "ran": "2026-09-28T06:40:47.559Z",
+  "phases": [
+    {
+      "name": "load",
+      "at_ms": 447
+    },
+    {
+      "name": "nav",
+      "at_ms": 458,
+      "ttfb": 229.5,
+      "dcl": 444.69999998807907,
+      "load": 444.80000001192093,
+      "fcp": 448
+    },
+    {
+      "name": "search",
+      "at_ms": 66984,
+      "product": "bike pump",
+      "click_to_response_ms": 63423,
+      "response_to_rendered_ms": 61,
+      "click_to_rendered_ms": 63484,
+      "status": 200,
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 348,
+          "completion": 73
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 3707,
+          "completion": 1242
+        }
+      ],
+      "results": {
+        "local": 8,
+        "farther": 0,
+        "online": 10
+      },
+      "requests_after_click": 8
+    },
+    {
+      "name": "search",
+      "at_ms": 98403,
+      "product": "bike pump",
+      "click_to_response_ms": 27369,
+      "response_to_rendered_ms": 21,
+      "click_to_rendered_ms": 27390,
+      "status": 200,
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 3707,
+          "completion": 1242
+        }
+      ],
+      "results": {
+        "local": 8,
+        "farther": 0,
+        "online": 10
+      },
+      "requests_after_click": 3
+    },
+    {
+      "name": "search",
+      "at_ms": 168431,
+      "product": "beeswax candles",
+      "click_to_response_ms": 65987,
+      "response_to_rendered_ms": 20,
+      "click_to_rendered_ms": 66007,
+      "status": 200,
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 349,
+          "completion": 77
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 4253,
+          "completion": 2524
+        }
+      ],
+      "results": {
+        "local": 10,
+        "farther": 0,
+        "online": 10
+      },
+      "requests_after_click": 8
+    },
+    {
+      "name": "search",
+      "at_ms": 212580,
+      "product": "hiking boots",
+      "click_to_response_ms": 40111,
+      "response_to_rendered_ms": 17,
+      "click_to_rendered_ms": 40128,
+      "status": 200,
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 348,
+          "completion": 119
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt": 3825,
+          "completion": 1409
+        }
+      ],
+      "results": {
+        "local": 10,
+        "farther": 0,
+        "online": 9
+      },
+      "requests_after_click": 5
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://bfaloona.github.io/nottheriver/",
+      "method": "GET",
+      "type": "Document",
+      "start": 383893.394543,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 6.437,
+        "connect": 75.461,
+        "ssl": 49.169999999999995,
+        "send": 0.2289999999999992,
+        "ttfb": 140.562
+      },
+      "total_ms": 234,
+      "bytes": 1970
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/assets/config-CyqTUigD.css",
+      "method": "GET",
+      "type": "Stylesheet",
+      "start": 383893.652718,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.14600000000000002,
+        "ttfb": 130.25799999999998
+      },
+      "total_ms": 135,
+      "bytes": 2491
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/assets/config-CpbWelt5.js",
+      "method": "GET",
+      "type": "Script",
+      "start": 383893.65266,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.097,
+        "ttfb": 131.779
+      },
+      "total_ms": 137,
+      "bytes": 730
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/assets/main-D10Ho4G0.js",
+      "method": "GET",
+      "type": "Script",
+      "start": 383893.651616,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.11499999999999999,
+        "ttfb": 134.26899999999998
+      },
+      "total_ms": 140,
+      "bytes": 5711
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/zips.json",
+      "method": "GET",
+      "type": "Fetch",
+      "start": 383893.925031,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.07900000000000001,
+        "ttfb": 143.017
+      },
+      "total_ms": 217,
+      "bytes": 341511
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "OPTIONS",
+      "type": "Other",
+      "start": 383894.168187,
+      "status": 204,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 55.856,
+        "connect": 61.658,
+        "ssl": 36.245000000000005,
+        "send": 0.12699999999999534,
+        "ttfb": 78.59600000000002
+      },
+      "total_ms": 200,
+      "bytes": 0
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "POST",
+      "type": "Fetch",
+      "start": 383894.167669,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "zstd",
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.359,
+        "ttfb": 62924.882
+      },
+      "total_ms": 63141,
+      "bytes": 7269
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/assets/map-CGXxsHr-.js",
+      "method": "GET",
+      "type": "Script",
+      "start": 383957.350447,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 1.004,
+        "ttfb": 119.016
+      },
+      "total_ms": 129,
+      "bytes": 44653
+    },
+    {
+      "url": "https://bfaloona.github.io/nottheriver/assets/map-vh-t_kPv.css",
+      "method": "GET",
+      "type": "Stylesheet",
+      "start": 383957.350753,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": "gzip",
+      "cacheControl": "max-age=600",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 1.0599999999999998,
+        "ttfb": 370.71000000000004
+      },
+      "total_ms": 375,
+      "bytes": 6563
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/326/732.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 383957.758969,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=97160, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 50.02,
+        "connect": 61.733999999999995,
+        "ssl": 38.414,
+        "send": 0.25500000000000966,
+        "ttfb": 34.272999999999996
+      },
+      "total_ms": 157,
+      "bytes": 38107
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/325/732.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 383957.75905,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=94079, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.17099999999999227,
+        "ttfb": 42.45100000000001
+      },
+      "total_ms": 182,
+      "bytes": 39812
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/327/732.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 383957.759081,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=95489, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.12699999999999534,
+        "ttfb": 67.02000000000001
+      },
+      "total_ms": 197,
+      "bytes": 34350
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "OPTIONS",
+      "type": "Other",
+      "start": 383961.427807,
+      "status": 204,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.09700000000000042,
+        "ttfb": 66.36
+      },
+      "total_ms": 72,
+      "bytes": 0
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "POST",
+      "type": "Fetch",
+      "start": 383961.42739,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": "zstd",
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 1.404,
+        "ttfb": 27265.494
+      },
+      "total_ms": 27343,
+      "bytes": 7427
+    },
+    {
+      "url": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+      "method": "GET",
+      "type": "Image",
+      "start": 383988.789213,
+      "status": 200,
+      "protocol": "data",
+      "encoding": null,
+      "cacheControl": null,
+      "fromCache": false,
+      "total_ms": 0,
+      "bytes": 0
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "OPTIONS",
+      "type": "Other",
+      "start": 383992.843956,
+      "status": 204,
+      "protocol": "h3",
+      "encoding": null,
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.20600000000000002,
+        "ttfb": 68.255
+      },
+      "total_ms": 69,
+      "bytes": 0
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "POST",
+      "type": "Fetch",
+      "start": 383992.843636,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": "zstd",
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.28800000000000003,
+        "ttfb": 65880.057
+      },
+      "total_ms": 65953,
+      "bytes": 7270
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/652/1465.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.817405,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=92195, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.277000000000001,
+        "ttfb": 13.396
+      },
+      "total_ms": 52,
+      "bytes": 36481
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/651/1464.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.817458,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=97000, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.24799999999999756,
+        "ttfb": 21.514000000000003
+      },
+      "total_ms": 53,
+      "bytes": 31165
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/652/1464.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.817282,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=96291, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.35300000000000153,
+        "ttfb": 21.793999999999997
+      },
+      "total_ms": 59,
+      "bytes": 34624
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/651/1465.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.817522,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=87160, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.19200000000000017,
+        "ttfb": 27.838000000000005
+      },
+      "total_ms": 60,
+      "bytes": 41327
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/653/1465.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.81755,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=96941, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.1700000000000017,
+        "ttfb": 28.010999999999996
+      },
+      "total_ms": 71,
+      "bytes": 34197
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/653/1464.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384058.817493,
+      "status": 200,
+      "protocol": "h2",
+      "encoding": null,
+      "cacheControl": "max-age=95800, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.22100000000000009,
+        "ttfb": 40.05799999999999
+      },
+      "total_ms": 76,
+      "bytes": 31123
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "OPTIONS",
+      "type": "Other",
+      "start": 384062.873993,
+      "status": 204,
+      "protocol": "h3",
+      "encoding": null,
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.22099999999999997,
+        "ttfb": 39.513
+      },
+      "total_ms": 40,
+      "bytes": 0
+    },
+    {
+      "url": "https://<worker>/search",
+      "method": "POST",
+      "type": "Fetch",
+      "start": 384062.873626,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": "zstd",
+      "cacheControl": "no-store",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.197,
+        "ttfb": 40035.998
+      },
+      "total_ms": 40078,
+      "bytes": 6767
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/326/733.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384102.965902,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": null,
+      "cacheControl": "max-age=89280, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0.633,
+        "connect": 30.864,
+        "ssl": 30.864,
+        "send": 0.2749999999999999,
+        "ttfb": 31.548
+      },
+      "total_ms": 67,
+      "bytes": 37475
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/327/733.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384102.965994,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": null,
+      "cacheControl": "max-age=95092, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.039000000000000035,
+        "ttfb": 32.442
+      },
+      "total_ms": 68,
+      "bytes": 27282
+    },
+    {
+      "url": "https://tile.openstreetmap.org/11/325/733.png",
+      "method": "GET",
+      "type": "Image",
+      "start": 384102.965966,
+      "status": 200,
+      "protocol": "h3",
+      "encoding": null,
+      "cacheControl": "max-age=93031, stale-while-revalidate=604800, stale-if-error=604800",
+      "fromCache": false,
+      "timing": {
+        "dns": 0,
+        "connect": 0,
+        "ssl": 0,
+        "send": 0.30500000000000005,
+        "ttfb": 32.361999999999995
+      },
+      "total_ms": 72,
+      "bytes": 40278
+    }
+  ]
+}

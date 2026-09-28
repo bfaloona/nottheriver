@@ -1,0 +1,78 @@
+# Search latency: where a search's time goes
+
+Measured 2026-09-27 on `main` at ab998fd. Zip 97214 (Portland, OR). Raw data in [evidence/latency-0927](evidence/latency-0927/). Companion to [caching-and-store-types.md](caching-and-store-types.md).
+
+**Short answer:** one model call, enrich (`proxy/src/enrich.ts:189`), is 76-93% of a search's time, and its time is output tokens divided by whichever provider OpenRouter picks. Everything the browser does is under 1 s. The biggest levers are provider speed, splitting enrich into parallel calls, and emitting fewer output tokens.
+
+## Method
+
+| Trace | What | Tool |
+|---|---|---|
+| T1. Browser | Live site, fresh profile, 4 searches (bike pump twice, beeswax candles, hiking boots); CDP network timings | `node trace-search.mjs <out.json>` → `browser-trace.json` |
+| T2. Worker stages | The real `runSearch` run locally with a timing `fetch`, no KV cache (normalize always runs), 4 products; keys read from the files `infra/deploy.local.env` names, never printed | `npx tsx stage-timing.ts <outdir> "product" ...` → `stage-timing.json`, `*-enrich-out.json` |
+| T3. History | `elapsed_ms` from saved eval responses | `docs/evidence/quality/{eval20-0925,eval60}/responses` |
+
+T2 runs from a home network, not Cloudflare's edge; network time to OpenRouter and Brave is tens of ms either way, which does not change the ranking below.
+
+## T1. Browser: the POST is the search
+
+| Step | Measured |
+|---|---|
+| Page load (first contentful paint) | 0.45 s |
+| `zips.json`, 341 KB gzip, fetched on first submit before the POST (`src/main.ts:90`) | 0.22 s |
+| CORS preflight | 0.04-0.20 s (first one includes DNS + TLS to the Worker) |
+| `/search` POST | 63.1 s, 27.3 s (same product, normalize cached), 65.9 s, 40.0 s |
+| Render after the response | 17-61 ms |
+| Map chunk + tiles, after render | ~0.4 s, off the critical path |
+
+Two of four live searches passed the eval client's 60 s limit. History (T3): eval60 p50 19.0 s, p90 30.5 s; eval20-0925 p50 29.7 s, p90 38.7 s, max 59.3 s.
+
+## T2. Worker stages (serial: normalize, then Brave, then enrich)
+
+| Product | Normalize | Brave (4 calls, parallel) | Enrich | Enrich share | Enrich output tokens | Enrich tokens/s | Enrich provider |
+|---|---|---|---|---|---|---|---|
+| bike pump | 2.1 s | 0.9 s | 42.2 s | 93% | 1,634 | 39 | CoreWeave |
+| beeswax candles | 7.8 s | 0.8 s | 26.7 s | 76% | 2,229 | 84 | CoreWeave |
+| hiking boots | 0.9 s | 0.8 s | 12.2 s | 88% | 1,409 | 116 | CoreWeave |
+| cast iron skillet | 6.6 s | 0.8 s | 37.9 s | 84% | 1,802 | 47 | DeepInfra |
+
+- Headers arrived in 0.2-0.5 s on 7 of 8 model calls; the rest is generation. Speed varied 3x on the same provider, so it is load, not only provider choice.
+- Normalize emits ~76 tokens yet took 0.9-7.8 s; the 6.6 s one waited 3.2 s for headers from Reka. It is provider queueing, not work.
+- Brave is under 1 s and not worth optimizing.
+
+### What enrich's output tokens are
+
+| Product | Output chars | Whitespace | Candidate verdicts | Signals emitted | Signals the code then discards |
+|---|---|---|---|---|---|
+| bike pump | 4,256 | 1,398 (33%) | 33 rows, 2,828 chars | 0 | 0 |
+| beeswax candles | 6,502 | 1,192 (18%) | 34 rows, 2,928 chars | 10 | 10 |
+| hiking boots | 3,763 | 1,218 (32%) | 2,256 chars | 1 | 1 |
+| cast iron skillet | 5,166 | 1,731 (34%) | 2,154 chars | 6 | 6 |
+
+- The model pretty-prints its JSON: 18-34% of output characters (not tokens) are indentation and newlines.
+- Every candidate row repeats three long key names (`site_type`, `sells_product`, `store_breadth`) around three one-word values.
+- All 17 signals in this sample were a shop citing its own page as a positive, which `acceptSignals` drops (`proxy/src/enrich.ts:167,174`: a citation of a URL not among the candidates, or of the shop's own domain). Across the 80 saved eval searches, 70 model signals did survive (in 31 searches), so the channel matters; the self-citations are the waste.
+- `confidence` is requested for every signal (`proxy/prompts/enrich.ts:33`) and never read.
+- `ENRICH_MAX_TOKENS` is 3,000 (`proxy/src/llm.ts:7`); T1 saw 2,524. A reply cut off at the cap fails validation and is retried once (`llm.ts:79-82`), which about doubles that search's time before a 502.
+
+## Optimizations, ranked by expected seconds saved
+
+"Estimated" figures are arithmetic on the tables above, not measurements. OPT-1 is the cheapest to try and the least certain; OPT-2 is the most certain.
+
+| Rank | Change | Expected effect | Evidence | Risk / cost | Where |
+|---|---|---|---|---|---|
+| OPT-1 | Route for throughput: OpenRouter `provider.sort: "throughput"` (or `preferred_min_throughput`), keeping `data_collection: 'deny'` and `require_parameters`. OpenRouter ranks on throughput measured over a rolling 5-minute window ([provider routing docs](https://openrouter.ai/docs/features/provider-routing)), so it can steer around a busy endpoint, not just a slow provider | Enrich ran 39-116 tok/s, with a 3x spread on CoreWeave alone, so the gain depends on how well a 5-minute window predicts the next 30 s. If it held enrich near 100 tok/s, the four searches' enrich would take ~14-22 s instead of 12-42 s (estimated upper bound) | T2 speed column | One-line change, easy to A/B; price may differ per provider. A sort across both `MODELS` (`partition: "none"`) would also reach the smaller gemma-4-26b-a4b, a quality change, not just speed | `proxy/src/llm.ts:5,75` |
+| OPT-2 | Split enrich into two parallel calls, online and local | Output generation runs side by side, so enrich wall time roughly halves (estimated); also keeps each reply far from the 3,000 cap | Output tokens scale with candidates (T2); calls are independent after Brave | Input tokens rise because the instructions are sent twice (cheap next to Brave); editorial pages (all online) are sent as evidence for signals about any shop (`proxy/src/pipeline.ts:165-169`), so a plain split by kind leaves local shops with no evidence pages; the editorial rows must go to both calls, or signals stay in the online call only. Needs an eval rerun for verdict drift | `enrichAll`, `proxy/src/enrich.ts:186-199` |
+| OPT-3 | Emit fewer output tokens: ask for compact JSON, short keys or one-letter codes mapped back in code, drop `confidence`, tell the model a shop's own page is never a signal Seconds fall in proportion to output tokens. The whitespace share above is in characters; a run of spaces is often one token, so the token saving is smaller than 18-34% and unmeasured. Key names and self-citations are the surer part | Output breakdown table | Schema, prompt and parser change; wording change can move verdicts, so eval rerun; whitespace instructions are not always obeyed under `json_schema` | `proxy/prompts/enrich.ts`, `proxy/schemas`, `enrich.ts:39-45,112-124` |
+| OPT-4 | Raise normalize cache hit rate (pre-warm common products, or key on a looser product form) | Saves the normalize call, 0.9-7.8 s, on a hit | T1: same product 63.1 s cold, 27.3 s cached (that gap also includes enrich variance) | Live hit rate unknown; a looser key changes wording for near-duplicates | `proxy/src/normalize-cache.ts` |
+| OPT-5 | Fetch `zips.json` at page load instead of on submit | 0.2 s on broadband, first search only; ~1.7 s on slow mobile (estimated: 341 KB at 1.6 Mbps) | T1 | None worth naming; 341 KB loads for visitors who never search | `src/main.ts:90` |
+| OPT-6 | Stage timings in the Worker (`Server-Timing` header or the existing log line): normalize, Brave, enrich ms and provider only | Nothing directly; makes OPT-1 to OPT-4 measurable in production (observability is off today) | `proxy/src/handler.ts:178` logs only total ms | Must stay free of query text and coordinates, like the current log line | `handler.ts`, `pipeline.ts:320-337` |
+
+Not worth doing for speed: Brave caching (under 1 s; see caching doc Q1), map or tile loading (after render), the site's JS/CSS (0.45 s cold).
+
+Perceived speed is a separate lever: the page shows only "Searching" for 15-60 s. Streaming stages (e.g. "found 34 shops, checking them") would not make a search faster; it is a product decision, not listed above.
+
+## Open questions for the operator
+
+- LQ1. Is a higher per-search model price acceptable for faster providers (OPT-1)? Model use is ~$0.0008 of a ~$0.02 search today (caching doc Q1), so even 2-3x would be small.
+- LQ2. Is an eval rerun acceptable for OPT-2/OPT-3, given either can move `sells_product` verdicts?
