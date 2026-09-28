@@ -34,7 +34,7 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 
 ## In flight
 
-- Store types Phase 1 (priority 1): chain badge in the Worker.
+- Store types Phase 2 (priority 1): chain badge on the site.
 
 ## Priorities
 
@@ -42,7 +42,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 
 | # | Work | Next step | Waits on |
 |---|---|---|---|
-| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 1: `data/chains.json` and the optional `chain` response field, then `infra/deploy.sh`. Phase 0 done: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)); local recall 23 of 64 chain shops vs 5 of 22 others ([report](evidence/quality/eval20-0925/report.json)) | Nothing; Q5 and Q6 wait on Phase 4 |
+| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 2: render the chain badge on the site (neutral style), About and ranking.md sentences. Phase 1 live at 7a97c70: `data/chains.json` (33 sourced chains), the optional `chain` response field; a live search showed 4 of 9 nearby and 5 of 10 online results badged ([evidence](evidence/chain-badge-live.txt)). Phase 0: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)) | Nothing; Q5 and Q6 wait on Phase 4 |
 | 2 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)), run under [the approved approach](plans/amazon-execution-approach.md) | B1, the claim-wording sheet (review item R1), as its own session; the plan's status checklist holds B1 and the B2 gate | Operator sign-off on every claim at B2 |
 | 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
 | 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
