@@ -30,6 +30,7 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 | Amazon execution approach (priority 2, 2026-09-27) | [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md): gate-to-gate stretches, one per session, side findings parked as Priorities or debt rows, deploys by hand; approved by the operator |
 | Worker deploys | Agents deploy the Worker with `infra/deploy.sh` (operator grant, 2026-09-24): committed and pushed code only, and only a new bundle; any other infrastructure change stops for the operator. When to run it: `.claude/skills/deploy/SKILL.md` |
 | Positive signals | A positive signal must cite a fetched page on another site that names the shop; a shop's own page no longer counts ([ADR 0004](decisions/0004-down-ranking.md)) |
+| Search latency (2026-09-28) | [search-latency.md](search-latency.md): the enrich model call is 76-93% of a search's time; the browser is under 1 s. One-line JSON and no self-citations in the enrich prompt (7c855e1) cut the median search from 25-29 s to 15-16 s on the 20 graded searches, twice, with recall, graded-bad shown and sell flips at noise level; the zip list now downloads on first form focus (af6f2cd). Both merged locally, not pushed or deployed. Provider throughput routing (LQ1) and a split enrich call (branch `proto/split-enrich`) measured, not shipped ([evidence](evidence/latency-0927/)) |
 | Docs | [architecture](architecture.md), [privacy](privacy.md), [ranking](ranking.md), [costs](costs.md), [debt](debt.md), ADRs [0001](decisions/0001-external-services.md) to [0006](decisions/0006-weighted-findings.md) |
 
 ## In flight
@@ -87,6 +88,8 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 - Whether `independent_retailer_assoc` membership or positive signals should ever affect the score.
 - Whether to add labor or environmental watchdogs to the negative-source registry.
 - Whether zips with no ZCTA get a fallback or a clearer message.
+- Whether to route the model for throughput (LQ1 in [search-latency.md](search-latency.md#open-questions-for-the-operator)): never slower in 3 paired runs, 0-75% faster depending on provider load, model cost 1.3-2.3x (1-8% of a search). Agent recommends yes.
+- Whether the split enrich call's verdict shift (fewer graded-bad shops shown, but many more flips than noise) is worth a graded review (LQ2).
 
 ## Questions guessed on
 
@@ -96,6 +99,7 @@ Every default below was taken without operator input; each is also reflected in 
 - Local results come from Brave `place_search` only; the web-search fallback is not built (verified: place_search 200, 3 results, 2026-09-23).
 - Rate limit: 30 per 60 s per client key plus a global 60 per 60 s circuit breaker, because Cloudflare periods are only 10 or 60 s. The UI says "Try again in about a minute", matching `Retry-After: 60`.
 - The Worker sends `provider.data_collection: "deny"` and fails rather than relaxing it.
+- Search latency, overnight 2026-09-28 (operator: "implement clear wins and fixes, testing and merging to main as needed"): "merging to main" read as local main only, so nothing was pushed or deployed. "Clear win" read as faster with recall, graded-bad shown and sell flips within noise on two graded-search runs and no cost increase; the compact enrich prompt met it, throughput routing did not (cost rises, and LQ1 was already put to the operator).
 - The model gets a structure-only schema; the full schema is enforced on its reply. Response validation against `search-response.json` runs only in tests, to fit the 10 ms CPU budget.
 - JSON Schema library: `@cfworker/json-schema` (no `eval`, compiled at module scope).
 - No retailer classification: every web result outside the negative-source domains is a candidate.
