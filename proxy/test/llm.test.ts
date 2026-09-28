@@ -26,7 +26,7 @@ describe('request', () => {
       models: ['google/gemma-4-31b-it', 'google/gemma-4-26b-a4b-it'],
       messages: [{ role: 'user', content: 'PROMPT TEXT' }],
       response_format: { type: 'json_schema', json_schema: { name: 'normalize', strict: true, schema: structuralOnly(schemas.normalize) } },
-      provider: { require_parameters: true, data_collection: 'deny' },
+      provider: { require_parameters: true, data_collection: 'deny', sort: 'throughput' },
       max_completion_tokens: 400,
       temperature: 0,
     });

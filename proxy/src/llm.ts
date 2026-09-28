@@ -72,7 +72,10 @@ export function createLlmClient(opts: { fetch: typeof globalThis.fetch; apiKey: 
         models: MODELS,
         messages: [{ role: 'user', content: prompt }],
         response_format: { type: 'json_schema', json_schema: { name: call, strict: true, schema: modelSchemas[call] } },
-        provider: { require_parameters: true, data_collection: 'deny' },
+        // Throughput routing measured 0-75% faster enrich at 1.3-2.3x model cost (docs/search-latency.md,
+        // OPT-1). The default partition sorts within each model's providers, so the sort alone never
+        // picks the smaller fallback model.
+        provider: { require_parameters: true, data_collection: 'deny', sort: 'throughput' },
         max_completion_tokens: maxCompletionTokens,
         temperature: 0,
       });
