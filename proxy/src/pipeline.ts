@@ -1,4 +1,5 @@
 import certifications from '../../data/certifications.json';
+import chains from '../../data/chains.json';
 import negatives from '../../data/negatives.json';
 import registry from '../../data/negative-sources.json';
 import { WEIGHTS } from '../ranking/weights';
@@ -8,7 +9,7 @@ import { createBraveClient, type BraveClient } from './brave';
 import type {
   Candidate, Dropped, Env, Deps, KvStore, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
 } from './contract';
-import { enrichAll, type CertificationRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
+import { enrichAll, type CertificationRow, type ChainRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
 import { InvalidLlmOutput } from './errors';
 import { NORMALIZE_MAX_TOKENS, createLlmClient, type LlmClient } from './llm';
 import { dropReason, isEditorialUrl, splitEditorial } from './precision';
@@ -40,6 +41,7 @@ const curated: CuratedData = {
   certifications: certifications.entries as CertificationRow[],
   negatives: negatives.entries as NegativeRow[],
   negativeSources: negativeSourceDomains,
+  chains: chains.entries as ChainRow[],
 };
 
 // A place the category rule removed is reported once per domain, and only if the blocklist
@@ -179,7 +181,7 @@ const coord = (x: number | null): number | null => (x === null || !Number.isFini
 function scoreRow(id: string, input: ScoreInput): ScoredRow {
   const { candidate: c, certifications: certs } = input;
   const scored = scoreCandidate(input);
-  const result = {
+  const result: Omit<SearchResult, 'rank'> = {
     id,
     kind: c.kind,
     retailer: { name: c.name, domain: c.domain, url: c.url },
@@ -194,17 +196,18 @@ function scoreRow(id: string, input: ScoreInput): ScoredRow {
     score: scored.score,
     components: scored.components,
   };
+  if (input.chain) result.chain = input.chain;
   return { input, result };
 }
 
 export function scoreAll(rows: EnrichedRow[], n: Normalized, req: SearchRequest, siteUrl: string): ScoredRow[] {
   const origin = { lat: req.lat, lon: req.lon };
   let localIndex = 0;
-  return rows.map(({ candidate, certifications: certs, signals, classification }) => {
+  return rows.map(({ candidate, certifications: certs, signals, classification, chain }) => {
     const id = candidate.kind === 'online'
       ? `online:${candidate.domain}`
       : `local:${candidate.place_id ?? candidate.domain}:${localIndex++}`;
-    return scoreRow(id, { candidate, certifications: certs, signals, normalized: n, origin, siteUrl, classification });
+    return scoreRow(id, { candidate, certifications: certs, signals, normalized: n, origin, siteUrl, classification, chain });
   });
 }
 
@@ -216,12 +219,15 @@ export function hasBlockedText(row: ScoredRow): boolean {
 
 const allowedUrl = (url: string) => !isBlockedDomain(url) && !isBlockedUrl(url);
 
-// Drops any certification or signal whose source is blocked and rescores from what is left, so a
-// dropped badge leaves no score behind. A signal's claim is a fetched page title, so it gets the text rule too.
+// Drops any certification, signal or chain badge whose source is blocked and rescores from what is
+// left, so a dropped badge leaves no score behind. A signal's claim is a fetched page title, so it
+// gets the text rule too. A chain never affects the score, but a blocked source is still dropped,
+// the same rule as certifications.
 export function scrubSources(row: ScoredRow): ScoredRow {
   const certs = row.input.certifications.filter((c) => allowedUrl(c.source_url));
   const signals = row.input.signals.filter((s) => allowedUrl(s.source_url) && !mentionsAmazon(s.claim));
-  const rescored = scoreRow(row.result.id, { ...row.input, certifications: certs, signals });
+  const chain = row.input.chain && allowedUrl(row.input.chain.source_url) ? row.input.chain : null;
+  const rescored = scoreRow(row.result.id, { ...row.input, certifications: certs, signals, chain });
   const components = rescored.result.components.map((c) => ({ ...c, sources: c.sources.filter((s) => allowedUrl(s.url)) }));
   return { input: rescored.input, result: { ...rescored.result, components } };
 }

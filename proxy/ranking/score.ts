@@ -1,5 +1,5 @@
 import type {
-  Band, Candidate, CertKind, Certification, Classification, ComponentName, Normalized, Relation, ScoreComponent, SellsProduct, Signal, SignalKind, SourceRef,
+  Band, Candidate, CertKind, Certification, Chain, Classification, ComponentName, Normalized, Relation, ScoreComponent, SellsProduct, Signal, SignalKind, SourceRef,
 } from '../src/contract';
 import { haversineKm, type LatLon } from './geo';
 import { WEIGHTS } from './weights';
@@ -157,6 +157,7 @@ export interface ScoreInput {
   origin: LatLon;
   siteUrl: string; // no trailing slash
   classification?: Classification | null; // the model's judgment; null when it did not judge
+  chain?: Chain | null; // from data/chains.json; never read below, carried through to the result as-is
 }
 
 export function scoreCandidate(

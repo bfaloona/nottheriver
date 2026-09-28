@@ -1,5 +1,9 @@
 # Data
 
+## Chain list (`data/chains.json`)
+
+A curated list of retail chains (`threshold` or more US stores under one name), used for the "Chain, `<count>` stores" badge (`proxy/src/enrich.ts`'s `chainFor`). One row per domain: `domain` (the shop's own site, a registrable domain), `name`, `stores` (the count the source states, never rounded or invented), an optional `stores_at_least: true` when the source gives only a floor ("over 30 stores" becomes "Chain, 30+ stores"), `source_url` (https, and never a blocklisted domain), `checked`, and an optional `note`. Seeded from `docs/evidence/quality/eval20-0925/chain-labels/*.json` (Phase 0 of `docs/plans/store-types.md`) plus the chains those saved evals otherwise show. The badge is a property of the domain (shows on local and online rows alike) and never affects the score; `proxy/src/pipeline.ts`'s `scrubSources` drops a row's badge, not the row, if its source is later blocklisted.
+
 ## Zip dataset (`public/zips.json`)
 
 Built by `data/build-zips.mjs` from three sources. The file contains, for every 2020 ZIP Code Tabulation Area (ZCTA), the ZCTA code, a place name, a state or territory abbreviation, the ZCTA internal-point coordinates rounded to two decimal places (about 1 km), and the primary RUCA code (`ruca`, 1 to 10, or null for the 4 ZCTAs the RUCA file lacks). The browser fetches it on first search and converts the typed zip to city, state, and those coordinates; the zip itself never leaves the browser.

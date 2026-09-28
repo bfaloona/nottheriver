@@ -9,6 +9,8 @@ import {
   MAX_LLM_ONLINE,
   acceptSignals,
   certificationsFor,
+  chainFor,
+  chainLabel,
   enrichAll,
   llmView,
   negativesFor,
@@ -131,6 +133,7 @@ describe('curated lookups', () => {
       penalty_usd: 1_000_000, relation: 'self', status: 'final',
     }],
     negativeSources: REGISTRY,
+    chains: [{ domain: 'shop.example', name: 'Shop', stores: 50, source_url: 'https://cert.example/chain', checked: '2026-09-23' }],
   };
 
   it('attaches every certification row for a domain with its badge label', () => {
@@ -139,6 +142,18 @@ describe('curated lookups', () => {
       { kind: 'one_percent_planet', label: '1% for the Planet', source_url: 'https://cert.example/b', checked: '2026-09-23' },
     ]);
     expect(certificationsFor('none.example', data.certifications)).toEqual([]);
+  });
+
+  it('builds the chain badge for a domain in data.chains, "Chain, <count> stores"', () => {
+    expect(chainFor('shop.example', data.chains)).toEqual({
+      label: 'Chain, 50 stores', stores: 50, source_url: 'https://cert.example/chain', checked: '2026-09-23',
+    });
+    expect(chainFor('none.example', data.chains)).toBeNull();
+  });
+
+  it('marks a floor count with a "+" in the label', () => {
+    expect(chainLabel({ stores: 30, stores_at_least: true })).toBe('Chain, 30+ stores');
+    expect(chainLabel({ stores: 30 })).toBe('Chain, 30 stores');
   });
 
   it('attaches curated negatives without needing a fetched URL', () => {
@@ -159,6 +174,8 @@ describe('curated lookups', () => {
     const shopRow = rows.find((r) => r.candidate.domain === 'shop.example')!;
     expect(shopRow.certifications).toHaveLength(2);
     expect(shopRow.signals).toEqual([expect.objectContaining({ origin: 'curated' })]);
+    expect(shopRow.chain).toEqual({ label: 'Chain, 50 stores', stores: 50, source_url: 'https://cert.example/chain', checked: '2026-09-23' });
+    expect(rows.find((r) => r.candidate.domain === 'granite-outfitters.example')!.chain).toBeNull();
     // The reply's one classification (c0, the first candidate) lands on its row; its only
     // acceptable-looking signal cites the shop's own page and is dropped.
     expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes' });

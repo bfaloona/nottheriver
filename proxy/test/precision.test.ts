@@ -235,7 +235,7 @@ function candidate(overrides: Partial<Candidate>): Candidate {
 }
 
 describe('T4: fail open on gaps and unknown values, fail closed on an invalid reply', () => {
-  const CURATED = { certifications: [], negatives: [], negativeSources: new Set<string>() };
+  const CURATED = { certifications: [], negatives: [], negativeSources: new Set<string>(), chains: [] };
   const PRODUCT = { canonical_name: 'tent', category: 'outdoor gear' };
 
   function fakeLlm(reply: (ids: string[]) => unknown) {

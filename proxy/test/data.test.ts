@@ -2,12 +2,22 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import certifications from '../../data/certifications.json';
+import chains from '../../data/chains.json';
 import negatives from '../../data/negatives.json';
 import registry from '../../data/negative-sources.json';
 import type { CertKind, SignalKind } from '../src/contract';
 import { registrableDomain } from '../src/domain';
 import { negativesFor, type NegativeRow } from '../src/enrich';
 import { ENV, ETHICS, findingCost } from '../ranking/score';
+
+// docs/evidence/quality/eval20-0925/grades.json's baseline rows carry a `chain` label (Phase 0 of
+// docs/plans/store-types.md), so chains.json can be cross-checked against it offline: this covers
+// all 94 local baseline rows rather than the 20 to 30 a live search returns (M3, offline form).
+interface BaselineRow { url: string | null; also_urls?: string[]; chain: boolean | null }
+function gradesBaseline(): BaselineRow[] {
+  const raw = readFileSync(new URL('../../docs/evidence/quality/eval20-0925/grades.json', import.meta.url), 'utf8');
+  return (JSON.parse(raw) as { baseline: BaselineRow[] }).baseline;
+}
 
 // The JSON import types `relation`/`status`/`citation_type` as plain strings; the row test below
 // checks each against its contract union, which is what makes this cast safe.
@@ -125,6 +135,39 @@ describe('negatives.json', () => {
     const [signal] = negativesFor(e.domain, negativeEntries);
     expect(signal, e.domain).toBeDefined();
     expect(findingCost(signal!), e.domain).toEqual({ band: 'major', relation: 'self', cost: 0.25 });
+  });
+});
+
+describe('chains.json', () => {
+  it.each(chains.entries)('$domain is sourced and well formed', (e) => {
+    expectSourced(e);
+    expect(e.name).not.toBe('');
+    expect(Number.isInteger(e.stores), e.domain).toBe(true);
+    expect(e.stores, e.domain).toBeGreaterThanOrEqual(chains.threshold);
+  });
+
+  it('has one row per domain', () => {
+    expectUnique(chains.entries.map((e) => e.domain));
+  });
+
+  it('never lists a domain that is also independent_retailer_assoc: a chain badge and the independent badge would contradict each other', () => {
+    const independents = new Set(certifications.entries.filter((e) => e.kind === 'independent_retailer_assoc').map((e) => e.domain));
+    expect(chains.entries.filter((e) => independents.has(e.domain)).map((e) => e.domain)).toEqual([]);
+  });
+
+  // Offline form of M3 (docs/plans/store-types.md): no chains.json domain matches the registrable
+  // domain of a baseline shop the eval graded `chain: false`. A null url (no company website) is
+  // skipped, since there is nothing to resolve to a domain.
+  it('never lists a domain that the eval baseline confirms is not a chain', () => {
+    const chainDomains = new Set(chains.entries.map((e) => e.domain));
+    const independentUrls = gradesBaseline()
+      .filter((b) => b.chain === false)
+      .flatMap((b) => [b.url, ...(b.also_urls ?? [])])
+      .filter((u): u is string => u !== null);
+    const conflicts = independentUrls
+      .map((u) => registrableDomain(u))
+      .filter((d): d is string => d !== null && chainDomains.has(d));
+    expect(conflicts).toEqual([]);
   });
 });
 

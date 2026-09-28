@@ -9,13 +9,17 @@ import { defaultRoutes, makeFixtureFetch } from './fixtures/fixture-fetch';
 import web1 from './fixtures/brave/web-1.json';
 import place1 from './fixtures/brave/place-1.json';
 import negativesFixture from './fixtures/negatives.json';
+import chainsFixture from './fixtures/chains.json';
 
 // Two rows for northfork-kitchen.example (an online result for "cast iron skillet"), so the
 // e2e screenshots exercise the grouped-concerns UI without the real data/negatives.json rows.
+// One chain row for granite-outfitters.example (also an online result), so a badged row exists
+// without the real data/chains.json entries.
 const curated: CuratedData = {
   certifications: [],
   negatives: negativesFixture.entries as CuratedData['negatives'],
   negativeSources: new Set<string>(),
+  chains: chainsFixture.entries as CuratedData['chains'],
 };
 
 // The real Worker handler and pipeline, with only the upstream fetch swapped for fixtures,

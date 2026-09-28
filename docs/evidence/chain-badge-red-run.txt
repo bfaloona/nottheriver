@@ -1,0 +1,94 @@
+
+ RUN  v5.0.1 
+
+ ❯ proxy/test/data.test.ts (0 test)
+ ❯ proxy/test/pipeline.test.ts (0 test)
+ ❯ proxy/test/enrich.test.ts (19 tests | 3 failed) 19ms
+   ❯ curated lookups (7)
+     × builds the chain badge for a domain in data.chains, "Chain, <count> stores" 1ms
+     × marks a floor count with a "+" in the label 0ms
+     × enrichAll joins curated data and the model reply for every candidate 11ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  proxy/test/data.test.ts [ proxy/test/data.test.ts ]
+Error: Cannot find module '../../data/chains.json' imported from proxy/test/data.test.ts
+ ❯ proxy/test/data.test.ts:5:1
+      3| import { describe, expect, it } from 'vitest';
+      4| import certifications from '../../data/certifications.json';
+      5| import chains from '../../data/chains.json';
+       | ^
+      6| import negatives from '../../data/negatives.json';
+      7| import registry from '../../data/negative-sources.json';
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  proxy/test/pipeline.test.ts [ proxy/test/pipeline.test.ts ]
+Error: Cannot find module '/data/chains.json' imported from proxy/test/pipeline.test.ts
+ ❯ proxy/test/pipeline.test.ts:3:1
+      1| import { beforeEach, describe, expect, it, vi } from 'vitest';
+      2| import certifications from '../../data/certifications.json';
+      3| import chains from '../../data/chains.json';
+       | ^
+      4| import negatives from '../../data/negatives.json';
+      5| import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl } fro…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  proxy/test/enrich.test.ts > curated lookups > builds the chain badge for a domain in data.chains, "Chain, <count> stores"
+TypeError: chainFor is not a function
+ ❯ proxy/test/enrich.test.ts:148:12
+    146|
+    147|   it('builds the chain badge for a domain in data.chains, "Chain, <cou…
+    148|     expect(chainFor('shop.example', data.chains)).toEqual({
+       |            ^
+    149|       label: 'Chain, 50 stores', stores: 50, source_url: 'https://cert…
+    150|     });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+ FAIL  proxy/test/enrich.test.ts > curated lookups > marks a floor count with a "+" in the label
+TypeError: chainLabel is not a function
+ ❯ proxy/test/enrich.test.ts:155:12
+    153|
+    154|   it('marks a floor count with a "+" in the label', () => {
+    155|     expect(chainLabel({ stores: 30, stores_at_least: true })).toBe('Ch…
+       |            ^
+    156|     expect(chainLabel({ stores: 30 })).toBe('Chain, 30 stores');
+    157|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯
+
+ FAIL  proxy/test/enrich.test.ts > curated lookups > enrichAll joins curated data and the model reply for every candidate
+AssertionError: expected undefined to deeply equal { label: 'Chain, 50 stores', …(3) }
+
+- Expected:
+{
+  "checked": "2026-09-23",
+  "label": "Chain, 50 stores",
+  "source_url": "https://cert.example/chain",
+  "stores": 50,
+}
+
++ Received:
+undefined
+
+ ❯ proxy/test/enrich.test.ts:177:27
+    175|     expect(shopRow.certifications).toHaveLength(2);
+    176|     expect(shopRow.signals).toEqual([expect.objectContaining({ origin:…
+    177|     expect(shopRow.chain).toEqual({ label: 'Chain, 50 stores', stores:…
+       |                           ^
+    178|     expect(rows.find((r) => r.candidate.domain === 'granite-outfitters…
+    179|     // The reply's one classification (c0, the first candidate) lands …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯
+
+
+ Test Files  3 failed | 1 passed (4)
+      Tests  3 failed | 96 passed (99)
+   Start at  20:33:36
+   Duration  246ms (transform 53%, tests 26%, import 19%, worker 2%)
+

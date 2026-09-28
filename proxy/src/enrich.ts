@@ -1,5 +1,5 @@
 import { normalizeName } from './blocklist';
-import type { Candidate, CertKind, Certification, CitationType, Classification, Relation, SellsProduct, Signal, SignalKind, SiteType } from './contract';
+import type { Candidate, CertKind, Certification, Chain, CitationType, Classification, Relation, SellsProduct, Signal, SignalKind, SiteType } from './contract';
 import { domainLabel, registrableDomain } from './domain';
 import { ENRICH_MAX_TOKENS, type LlmClient } from './llm';
 import { buildEnrichPrompt, type EnrichProduct, type LlmView } from './prompts';
@@ -20,16 +20,21 @@ export interface NegativeRow {
   status: 'final' | 'open';
   citation_type?: CitationType; // osha.gov inspection-detail rows only
 }
+// stores is the count the source states, never rounded or invented; stores_at_least marks a
+// source that only gives a floor ("over 30"), so the label reads "Chain, 30+ stores".
+export interface ChainRow { domain: string; name: string; stores: number; stores_at_least?: boolean; source_url: string; checked: string }
 export interface CuratedData {
   certifications: CertificationRow[];
   negatives: NegativeRow[];
   negativeSources: ReadonlySet<string>;
+  chains: ChainRow[];
 }
 export interface EnrichedRow {
   candidate: Candidate;
   certifications: Certification[];
   signals: Signal[];
   classification: Classification | null; // null: the model did not judge this candidate
+  chain: Chain | null; // null: the domain is not in data/chains.json
 }
 export interface EnrichOutput {
   retailers: Array<{
@@ -52,6 +57,16 @@ export function certificationsFor(domain: string, rows: CertificationRow[]): Cer
   return rows
     .filter((r) => r.domain === domain)
     .map((r) => ({ kind: r.kind, label: CERT_LABELS[r.kind], source_url: r.source_url, checked: r.checked }));
+}
+
+// Badge copy per the operator's Q3 ruling: the source's own count, never "Chain" alone.
+export function chainLabel(row: Pick<ChainRow, 'stores' | 'stores_at_least'>): string {
+  return `Chain, ${row.stores}${row.stores_at_least ? '+' : ''} stores`;
+}
+
+export function chainFor(domain: string, rows: ChainRow[]): Chain | null {
+  const row = rows.find((r) => r.domain === domain);
+  return row ? { label: chainLabel(row), stores: row.stores, source_url: row.source_url, checked: row.checked } : null;
 }
 
 export function negativesFor(domain: string, rows: NegativeRow[]): Signal[] {
@@ -167,5 +182,6 @@ export async function enrichAll(pass1: Candidate[], llm: LlmClient, data: Curate
     certifications: certificationsFor(candidate.domain, data.certifications),
     signals: [...negativesFor(candidate.domain, data.negatives), ...(accepted.get(candidate.domain) ?? [])],
     classification: classified.get(`c${i}`) ?? null,
+    chain: chainFor(candidate.domain, data.chains),
   }));
 }

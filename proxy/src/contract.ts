@@ -39,6 +39,15 @@ export interface Certification {
   checked: string;    // YYYY-MM-DD
 }
 
+// Not a CertKind: a chain is a property of the domain, sourced from data/chains.json, with no
+// score effect (proxy/ranking/score.ts never reads it). `stores` is the count the source states.
+export interface Chain {
+  label: string;   // e.g. "Chain, 30+ stores"
+  stores: number;
+  source_url: string;
+  checked: string;  // YYYY-MM-DD
+}
+
 export interface Signal {
   kind: SignalKind;
   polarity: 'positive' | 'negative';
@@ -83,6 +92,7 @@ export interface SearchResult {
   signals: Signal[];
   score: number;               // 0..1, 3 decimals
   components: ScoreComponent[]; // always all four
+  chain?: Chain; // absent unless the domain is in data/chains.json (and its source survives scrubbing)
 }
 
 export interface LlmUsage {

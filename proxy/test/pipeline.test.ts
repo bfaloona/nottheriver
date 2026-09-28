@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import certifications from '../../data/certifications.json';
+import chains from '../../data/chains.json';
 import negatives from '../../data/negatives.json';
 import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl } from '../src/blocklist';
-import type { Candidate, Certification, Env, KvStore, SearchRequest, SearchResponse, SearchResult, Signal } from '../src/contract';
+import type { Candidate, Certification, Chain, Env, KvStore, SearchRequest, SearchResponse, SearchResult, Signal } from '../src/contract';
 import { enrichAll, type EnrichedRow } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
 import { MAX_BRAVE_CALLS } from '../src/brave';
@@ -62,8 +63,8 @@ function candidate(overrides: Partial<Candidate>): Candidate {
   };
 }
 
-const row = (c: Candidate, certs: Certification[] = [], signals: Signal[] = []): EnrichedRow =>
-  ({ candidate: c, certifications: certs, signals, classification: null });
+const row = (c: Candidate, certs: Certification[] = [], signals: Signal[] = [], chain: Chain | null = null): EnrichedRow =>
+  ({ candidate: c, certifications: certs, signals, classification: null, chain });
 const NO_USAGE = { brave_calls: 0, llm: [], llm_tokens: 0, estimated_cost_usd: 0 };
 
 // The blocklist comes from data/blocklist.json, so this checks every entry, not a fixed list.
@@ -480,9 +481,53 @@ describe('the second blocklist pass', () => {
 });
 
 describe('curated data against the blocklist', () => {
-  it.each([...certifications.entries, ...negatives.entries])('$domain is not blocked and cites an allowed source', (e) => {
+  it.each([...certifications.entries, ...negatives.entries, ...chains.entries])('$domain is not blocked and cites an allowed source', (e) => {
     expect(isBlocked({ name: e.name, domain: e.domain })).toBe(false);
     expect(isBlockedDomain(e.source_url) || isBlockedUrl(e.source_url)).toBe(false);
+  });
+});
+
+describe('the chain badge', () => {
+  const chainBadge: Chain = { label: 'Chain, 25 stores', stores: 25, source_url: 'https://chain.example/about', checked: '2026-09-27' };
+
+  it('carries the chain badge for a row that has one and omits it for a row that does not', () => {
+    const withChain = row(candidate({ domain: 'chain.example', url: 'https://chain.example/skillet' }), [], [], chainBadge);
+    const without = row(candidate({}));
+    const res = finalizeResponse(scoreAll([withChain, without], NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    const chained = res.online.find((r) => r.retailer.domain === 'chain.example');
+    expect(chained?.chain).toEqual(chainBadge);
+    const plain = res.online.find((r) => r.retailer.domain === 'clean.example');
+    expect(plain?.chain).toBeUndefined();
+  });
+
+  it('drops the chain badge, but not the row, when its source is blocked', () => {
+    const blocked: Chain = { ...chainBadge, source_url: 'https://www.amazon.com/about' };
+    const scored = scoreAll([row(candidate({}), [], [], blocked)], NORMALIZED, REQ, ENV.SITE_URL);
+    expect(scored[0]!.result.chain).toEqual(blocked);
+    const res = finalizeResponse(scored, NORMALIZED, REQ, NO_USAGE);
+    expect(res.online).toHaveLength(1);
+    expect(res.online[0]!.chain).toBeUndefined();
+  });
+
+  it('validates against the schema whether or not a result carries a chain badge', () => {
+    const rows = [row(candidate({ domain: 'chain.example', url: 'https://chain.example/skillet' }), [], [], chainBadge), row(candidate({}))];
+    const res = finalizeResponse(scoreAll(rows, NORMALIZED, REQ, ENV.SITE_URL), NORMALIZED, REQ, NO_USAGE);
+    const result = validateAgainst('search-response', res);
+    expect(result.ok ? [] : result.errors).toEqual([]);
+  });
+
+  // End to end over the real fixtures (not a hand-built row), the same shape tests/mock-proxy.ts
+  // wires for e2e: a fixture chain row must still be standing after dedupe, enrichment and the
+  // precision filters, or the badge is untested past the unit level.
+  it('carries a chain badge through the full pipeline for a fixture domain in data.chains', async () => {
+    const curated = {
+      certifications: [], negatives: [], negativeSources: new Set<string>(),
+      chains: [{ domain: 'granite-outfitters.example', name: 'Granite Outfitters', stores: 25, source_url: 'https://granite-outfitters.example/about', checked: '2026-09-27' }],
+    };
+    const fetch = makeFixtureFetch(defaultRoutes());
+    const res = await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {}, curated });
+    const chained = res.online.find((r) => r.retailer.domain === 'granite-outfitters.example');
+    expect(chained?.chain).toEqual({ label: 'Chain, 25 stores', stores: 25, source_url: 'https://granite-outfitters.example/about', checked: '2026-09-27' });
   });
 });
 
