@@ -68,7 +68,7 @@ function stubClassifier(labelled: PilotRow[]): FixtureRoute {
         // so the reply satisfies the (required) schema without inventing a real judgment.
         return label ? [{ id: c.id, ...label, store_breadth: 'unknown' }] : [];
       });
-      return { body: llmReply({ retailers: [], candidates }) };
+      return { body: llmReply({ candidates }) };
     },
   };
 }
@@ -237,7 +237,7 @@ function candidate(overrides: Partial<Candidate>): Candidate {
 }
 
 describe('T4: fail open on gaps and unknown values, fail closed on an invalid reply', () => {
-  const CURATED = { certifications: [], negatives: [], negativeSources: new Set<string>(), chains: [] };
+  const CURATED = { certifications: [], negatives: [], chains: [] };
   const PRODUCT = { canonical_name: 'tent', category: 'outdoor gear' };
 
   function fakeLlm(reply: (ids: string[]) => unknown) {
@@ -257,7 +257,6 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
   it('keeps a candidate the model omits, and ignores an id it never sent', async () => {
     const list = [candidate({ domain: 'a.example', url: 'https://a.example/' }), candidate({ domain: 'b.example', url: 'https://b.example/' })];
     const { llm } = fakeLlm(() => ({
-      retailers: [],
       candidates: [{ id: 'c0', site_type: 'editorial', sells_product: 'no' }, { id: 'c9', site_type: 'editorial', sells_product: 'no' }],
     }));
     const out = await enrichAll(list, llm, CURATED, PRODUCT);
@@ -271,7 +270,6 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
       ...Array.from({ length: 25 }, (_, i) => candidate({ kind: 'local', domain: `l${i}.example`, url: `https://l${i}.example/`, place_id: `p${i}` })),
     ];
     const { llm, prompts } = fakeLlm((ids) => ({
-      retailers: [],
       // Also answers for every id it could guess, including the ones past the cap.
       candidates: [...ids, ...many.map((_, i) => `c${i}`)].map((id) => ({ id, site_type: 'editorial', sells_product: 'no' })),
     }));
@@ -287,7 +285,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
   });
 
   it('sends the product inside the data block and no location', async () => {
-    const { llm, prompts } = fakeLlm(() => ({ retailers: [], candidates: [] }));
+    const { llm, prompts } = fakeLlm(() => ({ candidates: [] }));
     await enrichAll([candidate({ kind: 'local', address: '1 Main St', lat: 39.8, lon: -89.6, place_id: 'p' })], llm, CURATED, PRODUCT);
     const data = dataOf(prompts[0]!);
     expect(data.product).toEqual(PRODUCT);
@@ -299,7 +297,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     const shop = candidate({ domain: 'shop.example', url: 'https://shop.example/tents' });
     const cafe = candidate({ kind: 'local', domain: 'cafe.example', url: 'https://cafe.example/', address: '1 Main St', place_id: 'p1' });
     const article = candidate({ domain: 'mag.example', url: 'https://mag.example/blog/best-tents' });
-    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [{ id: 'c1', site_type: 'retailer', sells_product: 'no' }] }));
+    const { llm } = fakeLlm(() => ({ candidates: [{ id: 'c1', site_type: 'retailer', sells_product: 'no' }] }));
     const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
     const dropped: Dropped[] = [];
     const kept = await enrichAndFilter([shop, cafe, article], llm, normalized, dropped);
@@ -312,7 +310,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
 
   it('omitting deps.curated falls back to the real data/negatives.json rows', async () => {
     const shop = candidate({ name: 'The Home Depot', domain: 'homedepot.com', url: 'https://homedepot.com/skillet' });
-    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [] }));
+    const { llm } = fakeLlm(() => ({ candidates: [] }));
     const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
     const kept = await enrichAndFilter([shop], llm, normalized);
     expect(kept[0]!.signals).toEqual(
@@ -322,38 +320,37 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
 
   it('an explicit deps.curated overrides the real data, e.g. for a test that must not depend on data/negatives.json staying the same', async () => {
     const shop = candidate({ name: 'The Home Depot', domain: 'homedepot.com', url: 'https://homedepot.com/skillet' });
-    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [] }));
+    const { llm } = fakeLlm(() => ({ candidates: [] }));
     const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
     const kept = await enrichAndFilter([shop], llm, normalized, [], { curated: CURATED });
     expect(kept[0]!.signals).toEqual([]);
   });
 
-  it('a flagged page is not a result but can still be cited as evidence for a shop', async () => {
+  it('a flagged page is not a result', async () => {
     const shop = candidate({ name: 'Riverbend Outfitters', domain: 'riverbend.example', url: 'https://riverbend.example/tents', title: 'Tents' });
     const article = candidate({ name: 'Mag', domain: 'mag.example', url: 'https://mag.example/blog/tents', title: 'Riverbend Outfitters repairs tents for free' });
-    const signal = { kind: 'environmental', polarity: 'positive', claim: 'x', source_url: article.url, confidence: 0.8 };
-    const { llm } = fakeLlm(() => ({ retailers: [{ domain: shop.domain, signals: [signal] }], candidates: [] }));
+    const { llm } = fakeLlm(() => ({ candidates: [] }));
     const normalized = { ...PRODUCT, similar_products: [], online_queries: ['q'], local_queries: [] };
     const kept = await enrichAndFilter([article, shop], llm, normalized);
     expect(kept.map((r) => r.candidate)).toEqual([shop]);
-    expect(kept[0]!.signals).toEqual([expect.objectContaining({ source_url: article.url, claim: article.title, origin: 'llm' })]);
+    expect(kept[0]!.signals).toEqual([]);
   });
 
   it('an unknown classification value leaves that candidate unclassified, and the search still succeeds', async () => {
-    const odd = llmReply({ retailers: [], candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'probably', store_breadth: 'department_store' }] });
+    const odd = llmReply({ candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'probably', store_breadth: 'department_store' }] });
     const routes = [{ match: isEnrich, respond: () => ({ body: odd }) }, ...defaultRoutes()];
     const fetch = makeFixtureFetch(routes);
     const res = await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} });
     expect(fetch.calls.filter((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))).toHaveLength(1);
     expect(res.online.length + res.local.length).toBeGreaterThan(0);
 
-    const { llm } = fakeLlm(() => ({ retailers: [], candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'no' }] }));
+    const { llm } = fakeLlm(() => ({ candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'no' }] }));
     const out = await enrichAll([candidate({ domain: 'a.example', url: 'https://a.example/' })], llm, CURATED, PRODUCT);
     expect(out[0]!.classification).toBeNull();
   });
 
   it('a structurally invalid reply is retried once, then the search fails with a 502', async () => {
-    const invalid = llmReply({ retailers: [], candidates: 'none' });
+    const invalid = llmReply({ candidates: 'none' });
     const routes = [{ match: isEnrich, respond: () => ({ body: invalid }) }, ...defaultRoutes()];
     const fetch = makeFixtureFetch(routes);
     await expect(runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} })).rejects.toBeInstanceOf(InvalidLlmOutput);

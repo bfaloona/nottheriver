@@ -236,12 +236,12 @@ describe('runSearch over the fixtures', () => {
       respond: (_u, init) => {
         const prompt = (JSON.parse(String(init?.body)) as { messages: Array<{ content: string }> }).messages[0]!.content;
         const { candidates } = JSON.parse(/<<<DATA\n([\s\S]*?)\nDATA>>>/.exec(prompt)![1]!) as { candidates: Array<{ id: string }> };
-        return { body: llmReply({ retailers: [], candidates: candidates.map((c) => ({ id: c.id, site_type: 'retailer', sells_product: 'yes', store_breadth: 'unknown' })) }) };
+        return { body: llmReply({ candidates: candidates.map((c) => ({ id: c.id, site_type: 'retailer', sells_product: 'yes', store_breadth: 'unknown' })) }) };
       },
     };
     const judged = await search([...defaultRoutes().slice(0, 3), judgeAll]);
     expect(judged.res.usage.unclassified_shown).toEqual({ online: 0, local: 0 });
-    const { res } = await search(defaultRoutes({ enrich: llmReply({ retailers: [], candidates: [] }) }));
+    const { res } = await search(defaultRoutes({ enrich: llmReply({ candidates: [] }) }));
     expect(res.local.length + res.online.length).toBeGreaterThan(0);
     expect(res.usage.unclassified_shown).toEqual({ online: res.online.length, local: res.local.length });
   });
@@ -521,7 +521,7 @@ describe('the chain badge', () => {
   // precision filters, or the badge is untested past the unit level.
   it('carries a chain badge through the full pipeline for a fixture domain in data.chains', async () => {
     const curated = {
-      certifications: [], negatives: [], negativeSources: new Set<string>(),
+      certifications: [], negatives: [],
       chains: [{ domain: 'granite-outfitters.example', name: 'Granite Outfitters', stores: 25, source_url: 'https://granite-outfitters.example/about', checked: '2026-09-27' }],
     };
     const fetch = makeFixtureFetch(defaultRoutes());

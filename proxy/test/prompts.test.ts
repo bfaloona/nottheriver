@@ -101,11 +101,16 @@ describe('template wording', () => {
   it('spells out the enum values the model-facing schema omits', () => {
     const prompt = buildEnrichPrompt([], PRODUCT);
     const values = [
-      '"labor"', '"governance"', '"environmental"', '"positive"', '"negative"',
       '"retailer"', '"marketplace"', '"editorial"', '"manufacturer_no_cart"', '"service"', '"other"', '"yes"', '"maybe"', '"no"',
       '"specialist"', '"general"', '"unknown"',
     ];
     for (const value of values) expect(prompt).toContain(value);
+  });
+
+  // Model signals never reached a shown result once self-citations were dropped, so they are not asked for.
+  it('does not ask the enrich model for signals', () => {
+    const prompt = buildEnrichPrompt([], PRODUCT);
+    for (const word of ['"retailers"', 'signal', 'source_url', 'confidence']) expect(prompt).not.toContain(word);
   });
 
   it('names the store_breadth field and its three values', () => {

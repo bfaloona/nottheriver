@@ -18,7 +18,6 @@ import chainsFixture from './fixtures/chains.json';
 const curated: CuratedData = {
   certifications: [],
   negatives: negativesFixture.entries as CuratedData['negatives'],
-  negativeSources: new Set<string>(),
   chains: chainsFixture.entries as CuratedData['chains'],
 };
 

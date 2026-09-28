@@ -40,7 +40,6 @@ const negativeSourceDomains: ReadonlySet<string> = new Set(registry.sources.map(
 const curated: CuratedData = {
   certifications: certifications.entries as CertificationRow[],
   negatives: negatives.entries as NegativeRow[],
-  negativeSources: negativeSourceDomains,
   chains: chains.entries as ChainRow[],
 };
 

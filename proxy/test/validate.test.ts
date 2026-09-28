@@ -33,9 +33,8 @@ describe('validateAgainst', () => {
     ['a city with a control character', 'search-request', { ...REQUEST, city: 'Spring\u0007field' }],
     ['a city with digits', 'search-request', { ...REQUEST, city: 'Springfield 9' }],
     ['a city over 80 characters', 'search-request', { ...REQUEST, city: 'A'.repeat(81) }],
-    ['a wrong enum', 'enrich', { retailers: [{ domain: 'a.example', signals: [{ kind: 'pricing', polarity: 'positive', claim: 'c', source_url: 'https://a.example/', confidence: 0.5 }] }] }],
-    ['a candidate missing store_breadth', 'enrich', { retailers: [], candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }] }],
-    ['a confidence above 1', 'enrich', { retailers: [{ domain: 'a.example', signals: [{ kind: 'labor', polarity: 'positive', claim: 'c', source_url: 'https://a.example/', confidence: 2 }] }] }],
+    ['an enrich reply that still carries signals', 'enrich', { retailers: [], candidates: [] }],
+    ['a candidate missing store_breadth', 'enrich', { candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }] }],
     ['a response with three components', 'search-response', { ...searchResponse, online: [{ ...searchResponse.online[0], components: searchResponse.online[0]!.components.slice(0, 3) }] }],
     ['an off-list store_breadth', 'search-response', { ...searchResponse, online: [{ ...searchResponse.online[0], store_breadth: 'blog' }] }],
   ] as const)('rejects %s', (_label, name, value) => {
@@ -70,10 +69,8 @@ describe('structuralOnly', () => {
 
   it('keeps nested object structure in enrich', () => {
     const structural = structuralOnly(schemas.enrich);
-    const retailer = (structural.properties!.retailers as { items: { additionalProperties: boolean; required: string[] } }).items;
-    expect(retailer.additionalProperties).toBe(false);
-    expect(retailer.required).toEqual(['domain', 'signals']);
-    const candidate = (structural.properties!.candidates as { items: { required: string[] } }).items;
+    const candidate = (structural.properties!.candidates as { items: { additionalProperties: boolean; required: string[] } }).items;
+    expect(candidate.additionalProperties).toBe(false);
     expect(candidate.required).toContain('store_breadth');
   });
 });

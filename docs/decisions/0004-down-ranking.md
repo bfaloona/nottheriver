@@ -12,6 +12,7 @@ Negative findings (labor, governance, environmental) lower a shop's score. A wro
 - **Curated first.** The main path is `data/negatives.json`: rows curated by hand, joined by registrable domain, each with its source URL, the action date and a check date. They need no fetched page.
   - Amended 2026-09-27: see [0006](0006-weighted-findings.md) for the row fields a curated finding also carries (`penalty_usd`, `relation`, `status`, `citation_type`).
 - **The model only points.** The model may suggest a finding by citing a URL. Code accepts it only if the URL is one of the pages fetched for this search (after the first blocklist pass, so a blocked page can never be cited), the page is the shop's own or names the shop by name or domain label (the mention rule: a regulator page that does not name the shop cannot down-rank it), and, for a negative, the page's domain is an accepted source.
+  - Amended 2026-09-28: the model is no longer asked for findings or positive signals, and the code path above is removed. None had reached a shown result since the no-self-vouching rule below (0 in about 360 searches measured 2026-09-27/28, [search-latency.md](../search-latency.md#what-enrichs-output-tokens-are)), and asking for them cost output tokens on every search. Every finding shown is now curated. Reviving the path means restoring the rules in this bullet.
 - **No self-vouching (amended 2026-09-24).** A positive signal citing the shop's own site is dropped: the page is the shop describing itself, and the claim shown would be its page title.
 - **Accepted-source pages are never shops.** Brave results on an accepted-source domain are dropped before ranking, so a regulator can never appear as a retailer, and a registry page cannot be ranked and then cited against an unrelated shop.
 - **No model-authored text.** The page shows the finding's kind, the source's own title as the claim, the source link and, for curated rows, the action date. Model prose is discarded.
@@ -20,7 +21,7 @@ Negative findings (labor, governance, environmental) lower a shop's score. A wro
 
 ## Consequences
 
-- The two rules together mean the model path cannot fire today: a negative must cite a fetched page on an accepted-source domain, and no such page survives the fetch step. The code path is kept and tested, and becomes live only if registry pages are someday fetched as citable evidence rows, separate from shop results.
+- The two rules together meant the model path could not fire for a negative: a negative had to cite a fetched page on an accepted-source domain, and no such page survives the fetch step. The path was removed on 2026-09-28 (see the amendment under "The model only points").
 - Findings shown today are the four curated rows in `data/negatives.json`.
 - Coverage of negatives is small and hand-maintained; the registry has one watchdog. Both are listed in [debt.md](../debt.md).
 - How disputes are reviewed and resolved is not yet defined.
