@@ -86,6 +86,15 @@ Operator rulings LQ1 (route for throughput) and LQ4 (stop asking for signals), p
 - **Speed.** Throughput routing sent 117 of 121 enrich calls to ModelRun (median 158 tok/s in this run, 265 in the bisect round); 208222d spread over six providers at a median 79 tok/s. Output tokens barely moved (785 to 756), so the gain is routing. ModelRun costs about 5x per call ($0.0032-0.0036 vs $0.0005-0.0007); model cost is still about 15% of a search's estimated $0.023, which is mostly Brave (estimated from the published price, not billed data).
 - **Nearby sell verdicts moved past noise.** 30 and 35 shops flipped between shown and dropped-as-not-selling, against 21 and 15 for the same code run twice (`eval/compare.mjs`, local results only). The change is stricter: every graded shop it newly dropped was graded "doesn't sell" (7 and 8 per round), none graded "sells"; it newly showed 0 and 2 graded "doesn't sell". 18 newly dropped shops per round are ungraded. Online shown results moved at noise level, none by a sell verdict.
 - **Cause: likely the prompt without signals, not routing or editorial pages.** Baseline searches that happened to run on ModelRun dropped 1.57 nearby shops per search as not selling, others 1.61, the priority 6 code 1.78. A bisect round with 64cdd9d reverted (same routing, both arms on ModelRun) dropped 1.78 vs 1.83, with 19 flips, inside noise. Median search in that round was 4 s for both arms.
+- **Grading the ungraded flips (2026-09-28).** The 37 nearby shops that flipped and had no grade were graded by two agents that saw only the shop, product and place, not which version showed it (31 new grades, 6 reused from earlier runs; [grading/](evidence/latency-0927/grading/)). Good means sells the product or a close substitute and is at the address; bad means it does not sell it or is not there.
+
+  | Flip | Shops | Good | Bad | Could not tell |
+  |---|---|---|---|---|
+  | Shown by 208222d, dropped by the new code | 26 | 4 | 18 | 4 |
+  | Shown by the new code, dropped by 208222d | 10 | 2 | 8 | 0 |
+  | Both, in different rounds | 1 | 0 | 0 | 1 |
+
+  So the new code removes 18 bad shops for 4 good ones and adds 8 bad for 2 good: about 10 fewer bad shops and 2 fewer good ones across the two rounds. Of the 4 good shops it drops, only YETI (Austin) sells the product itself; the other 3 sell a close substitute (a non-wool blanket at two Tattered Cover stores, a French press at Hobby Lobby). Two of the 4 unknowns (Great Wall Supermarket and Trader Joe's, Denver) needed a browser the graders did not use.
 - **Cost of the measurement:** 360 searches, about $8.30 estimated (Brave $7.20 estimated, model $1.10 reported by OpenRouter).
 
 ## Optimizations, ranked by expected seconds saved (before the results)

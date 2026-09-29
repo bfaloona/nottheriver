@@ -12,6 +12,7 @@ Backs [docs/search-latency.md](../../search-latency.md). Every search here ran t
 | `runs/compact-output-round2/` | 20 searches, current vs compact prompt, second round |
 | `runs/priority6/` | All 60 eval20-0925 searches (20 products x 3 locations) x 2 rounds. `alt-base` = 208222d (compact prompt); `p6` = c504d1a (throughput routing, no signals, no editorial pages) |
 | `runs/priority6-bisect/` | 60 searches x 1 round. `p6` = c504d1a; `alt-noedit` = c504d1a with 64cdd9d reverted |
+| `grading/` | Blind grades of the 37 ungraded nearby shops that flipped in `runs/priority6/`: `to-grade.json` (the graders' input), `grades-new-a.json` and `grades-new-b.json` (two graders), `reused-grades.json` (6 from earlier grade sets, matched on URL and address), `directions.json` (which arm showed each shop, kept from the graders), `joined.json` (grade and direction per shop) |
 
 Each `runs/*/<arm>-r<round>/responses/<id>.json` has the shape `eval/run-searches.mjs` saves, so `eval/compare.mjs` reads it. Arm `default` is the code on `main` before 7c855e1.
 

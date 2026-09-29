@@ -1,0 +1,376 @@
+{
+ "rule": "good = sells yes/equivalent and local_exists yes; bad = sells no or local_exists no; else unknown",
+ "direction": "base-only = shown by 208222d, dropped as not selling by c504d1a in the same round; p6-only = the reverse",
+ "rows": [
+  {
+   "search_id": "cordless-drill-urban",
+   "name": "GWS Tool Group",
+   "url": "https://gwstoolgroup.com/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "headlamp-rural",
+   "name": "Fox equipment",
+   "url": "https://foxequipment.net/contact",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "new"
+  },
+  {
+   "search_id": "headlamp-rural",
+   "name": "Manteca Sportsmen Inc",
+   "url": "https://mantecasportsmeninc.org/",
+   "direction": "base-only+p6-only",
+   "verdict": "unknown",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "headlamp-rural",
+   "name": "Nautical power marine",
+   "url": "https://nauticalpowermarine.com/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "source": "new"
+  },
+  {
+   "search_id": "insulated-water-bottle-suburban",
+   "name": "Triple J Armory Retail Shop and Indoor Shooting Range",
+   "url": "https://triplejarmory.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "loose-leaf-green-tea-urban",
+   "name": "Uni Uni Bubble Tea Lincoln Park",
+   "url": "https://doordash.com/en/store/uni-uni-bubble-tea-@-lincoln-park-chicago-23739612",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "name": "Breed & Co Ace Hardware",
+   "url": "https://acehardware.com/store-details/19140",
+   "direction": "p6-only",
+   "verdict": "good",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "name": "Prufrock’s",
+   "url": "https://housing.utexas.edu/dining/dining-locations/coffee-shops/prufrocks",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "name": "YETI",
+   "url": "https://yeti.com/austin-tx-flagship.html",
+   "direction": "base-only",
+   "verdict": "good",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-suburban",
+   "name": "GadgetWise",
+   "url": "https://mixo.io/site/gadgetwise-t0iqm/index.html",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "source": "new"
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "name": "Antique Archaeology Nashville",
+   "url": "https://antiquearchaeology.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "new"
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "name": "Game Point - A Game Store",
+   "url": "https://gamepointcafe.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "name": "Hard Rock Cafe Gift Shop",
+   "url": "https://hardrock.com/gift-cards.aspx",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "name": "Vanderbilt Medical Center Gift Shop",
+   "url": "https://vanderbilthealth.com/information/dining-and-gift-shops",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "name": "Royal Textile Products Co",
+   "url": "https://rtpdenver.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "name": "Sewn Denver",
+   "url": "https://sewndenver.com/",
+   "direction": "base-only",
+   "verdict": "unknown",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "name": "St. John Knits Boutique",
+   "url": "https://stjohnknits.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "name": "Tattered Cover Union Station",
+   "url": "https://tatteredcover.com/",
+   "direction": "base-only",
+   "verdict": "good",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-socks-urban",
+   "name": "Specialized Atlanta",
+   "url": "https://specialized.com/us/en/store-finder/specialized-atlanta/6791502",
+   "direction": "p6-only",
+   "verdict": "good",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "garden-hose-urban",
+   "name": "Valley Garden Center",
+   "url": "https://valleygardencenterphx.org/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "headlamp-suburban",
+   "name": "The Golf Mart",
+   "url": "https://stores.worldwidegolfshops.com/ca/southsanfrancisco/the-golf-mart-ssf.html",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "insulated-water-bottle-urban",
+   "name": "Great Wall Supermarket",
+   "url": "https://gw-supermarket.com/our-store",
+   "direction": "base-only",
+   "verdict": "unknown",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "insulated-water-bottle-urban",
+   "name": "Trader Joe's",
+   "url": "https://locations.traderjoes.com/co/denver/302",
+   "direction": "base-only",
+   "verdict": "unknown",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "name": "Hobby Lobby",
+   "url": "https://hobbylobby.com/stores/search/37",
+   "direction": "base-only",
+   "verdict": "good",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "rain-jacket-urban",
+   "name": "Outdoor Cover Warehouse",
+   "url": "https://outdoorcoverwarehouse.com/Cambridge-Massachusetts",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "new"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-urban",
+   "name": "Apple Lincoln Park",
+   "url": "https://apple.com/retail/lincolnpark?cid=aos-us-seo-maps",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-urban",
+   "name": "Ford General",
+   "url": "https://fordgeneral.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-urban",
+   "name": "Verizon",
+   "url": "https://themobilegeneration.com/?y_source=1_MjEwMzY0ODAtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-suburban",
+   "name": "Needleworks USA",
+   "url": "https://needleworksusa.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-blanket-suburban",
+   "name": "Tattered Cover Aspen Grove",
+   "url": "https://tatteredcover.com/",
+   "direction": "base-only",
+   "verdict": "good",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "source": "new"
+  },
+  {
+   "search_id": "wool-socks-suburban",
+   "name": "Outdoor Cover Warehouse",
+   "url": "https://outdoorcoverwarehouse.com/Atlanta-Georgia-01",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "new"
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "name": "Leverett Village Co-Op",
+   "url": "https://leverettcoop.com/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "reused:after"
+  },
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "name": "kitchen cornerstones",
+   "url": "https://kitchencornerstones.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "reused:after3"
+  },
+  {
+   "search_id": "insulated-water-bottle-suburban",
+   "name": "Ewing Outdoor Supply",
+   "url": "https://ewingoutdoorsupply.com/",
+   "direction": "base-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "reused:eval20-0924"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "name": "HomeGoods",
+   "url": "https://homegoods.com/",
+   "direction": "base-only",
+   "verdict": "unknown",
+   "sells_product": "unknown",
+   "local_exists": "n/a",
+   "source": "reused:after"
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "name": "gethandyoutdoors",
+   "url": "https://gethandyoutdoors.com/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "no",
+   "source": "reused:after"
+  },
+  {
+   "search_id": "cast-iron-skillet-rural",
+   "name": "New Salem General Store",
+   "url": "https://newsalemgeneralstore.com/",
+   "direction": "p6-only",
+   "verdict": "bad",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "source": "reused:after3"
+  }
+ ]
+}
