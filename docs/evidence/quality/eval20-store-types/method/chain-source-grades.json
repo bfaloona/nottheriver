@@ -1,0 +1,294 @@
+{
+ "grades": [
+  {
+   "source_url": "https://en.wikipedia.org/wiki/The_Home_Depot",
+   "supports": "yes",
+   "count_on_page": 2347,
+   "count_scope": "worldwide",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '2,347 (2025)', a total across the US and territories, Canada and Mexico per the lead paragraph.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://corporate.walmart.com/about/location-facts",
+   "supports": "yes",
+   "count_on_page": 4615,
+   "count_scope": "us",
+   "matches_stated": "no",
+   "needs_browser": false,
+   "notes": "Quick Facts lists 'Walmart U.S.: 4,615' stores; the badge's 5,217 is the page's 'Total U.S. retail units', which adds 602 Sam's Club clubs (a separate banner and domain).",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/HomeGoods",
+   "supports": "yes",
+   "count_on_page": 914,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '914 (January 11, 2024)' for the US-only chain; no other count in the body.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Crate_%26_Barrel",
+   "supports": "yes",
+   "count_on_page": 75,
+   "count_scope": "unclear",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '75 Crate & Barrel stores / 16 outlets / 31 warehouses ... (2022)' without a country split; the Growth section says '93 Crate & Barrel Stores in the United States and Canada, including 10 outlets'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Macy%27s",
+   "supports": "yes",
+   "count_on_page": 450,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '450 (2025)' in the United States, Puerto Rico and Guam.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Lowe%27s",
+   "supports": "yes",
+   "count_on_page": 1748,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '1,748 (2025)' with 'Area served: United States' (the article notes the Canadian business was sold in 2023).",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Ace_Hardware",
+   "supports": "yes",
+   "count_on_page": 5700,
+   "count_scope": "worldwide",
+   "matches_stated": "no",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads 'Over 5,700 (2022)' worldwide (14% above the badge's 5,000); the lead's older 'over 5,200 locations in 60 countries' (2019) is within 10%, and both are consistent with the badge's '5,000+' wording.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+   "supports": "unknown",
+   "count_on_page": null,
+   "count_scope": null,
+   "matches_stated": "unknown",
+   "needs_browser": true,
+   "notes": "Fetch returned HTTP 403 Forbidden on two attempts (Wayback copy not reachable by the fetch tool), so no figure could be read.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods",
+   "supports": "yes",
+   "count_on_page": 888,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox lists '888 DICK'S locations' (2026) in 47 states, alongside '3,195 (total with Foot Locker stores)'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Cabela%27s",
+   "supports": "yes",
+   "count_on_page": 49,
+   "count_scope": "worldwide",
+   "matches_stated": "no",
+   "needs_browser": false,
+   "notes": "Infobox reads '49 (2025)' for US and Canada combined and the Retail stores section says '49 stores remained with the Cabela's branding as of April 2025'; the badge's 70 matches the same section's older 'As of January 2024, there were 70 Cabela's stores in the U.S.'",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Tractor_Supply_Company",
+   "supports": "yes",
+   "count_on_page": 2446,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '2,446 (2026)' and the lead says 'As of 2026, the company had 2,446 stores', serving 49 US states.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.farragutpress.com/articles/2023/08/13087",
+   "supports": "yes",
+   "count_on_page": 21,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Article body (fourth-to-last paragraph) says the chain 'has 21 stores in the South — Alabama, Georgia, Tennessee and Florida'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "supports": "yes",
+   "count_on_page": 20959,
+   "count_scope": "worldwide",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Item 1 Business states '20,959 stores located in 48 U.S. states and Mexico as of February 27, 2026'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools",
+   "supports": "yes",
+   "count_on_page": 1600,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '1,600+' and the lead says 'over 1,600 locations in 48 states'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Best_Buy",
+   "supports": "yes",
+   "count_on_page": 1117,
+   "count_scope": "unclear",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '1,117 (2025)' with areas served United States and Canada, without a country split.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+   "supports": "yes",
+   "count_on_page": 647,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Press release body says 'Costco currently operates 939 warehouses, including 647 in the United States and Puerto Rico'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://corporate.target.com/about",
+   "supports": "yes",
+   "count_on_page": 2000,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "The 'Our locations at a glance' section reads '2,000+ Stores in the U.S.'",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/",
+   "supports": "unknown",
+   "count_on_page": null,
+   "count_scope": null,
+   "matches_stated": "unknown",
+   "needs_browser": true,
+   "notes": "Fetch timed out after 60 seconds on four attempts (with and without the trailing slash), so no figure could be read.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1326380/000132638026000013/gme-20260131.htm",
+   "supports": "yes",
+   "count_on_page": 1598,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Item 1 Business (Reportable Segments) states '2,206 stores across all of our segments: 1,598 in the United States' as of January 31, 2026.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.pendleton-usa.com/company-fact-sheet.html",
+   "supports": "yes",
+   "count_on_page": 30,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "The Distribution section says the company 'owns and operates more than 30 Pendleton stores across the United States'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912615/000119312526137916/urbn-20260131.htm",
+   "supports": "yes",
+   "count_on_page": 177,
+   "count_scope": "worldwide",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Item 1 Business states '253 Urban Outfitters stores, of which 177 were located in North America and 76 were located in Europe'; 177 combines US and Canada with no US-only split.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Trader_Joe%27s",
+   "supports": "yes",
+   "count_on_page": 661,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '661' and the lead says '661 locations across the United States as of August 18, 2026'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Barnes_%26_Noble",
+   "supports": "yes",
+   "count_on_page": 600,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads 'Approx. 600 (As of 2026)' and the lead says 'approximately 600 retail stores across the United States' (a body section's older figure is 'over 660', as of 2023).",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Walgreens",
+   "supports": "yes",
+   "count_on_page": 8000,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '8000 stores (2026)' and the lead says 'As of 2026, Walgreens operated 8,000 stores in the United States'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Micro_Center",
+   "supports": "yes",
+   "count_on_page": 30,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox reads '30 (2025)' and the lead says 'as of November 2025, has 30 stores in 20 US states'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Pottery_Barn",
+   "supports": "yes",
+   "count_on_page": 184,
+   "count_scope": "worldwide",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '184 (2022)', with stores described in the United States, Canada, Mexico and Australia.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://www.llbean.com/llb/shop/518784?page=inside-llbean-10",
+   "supports": "yes",
+   "count_on_page": 57,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "The 'About L.L.Bean' boilerplate at the bottom says it 'operates 57 stores in 19 states across the United States, along with 22 stores in Japan and 13 stores in Canada'.",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://chocolateshops.sees.com/",
+   "supports": "yes",
+   "count_on_page": 200,
+   "count_scope": "unclear",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Store locator's 'More About See's' section says 'See's Candies has 200+ chocolate shops', without a country split (the locator lists US states and international regions).",
+   "checked": "2026-09-29"
+  },
+  {
+   "source_url": "https://en.wikipedia.org/wiki/Safeway_Inc.",
+   "supports": "yes",
+   "count_on_page": 912,
+   "count_scope": "us",
+   "matches_stated": "yes",
+   "needs_browser": false,
+   "notes": "Infobox 'Number of locations' reads '912 stores (2025)' across 18 US states plus Washington D.C.; the lead gives no number.",
+   "checked": "2026-09-29"
+  }
+ ]
+}

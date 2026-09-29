@@ -1,0 +1,172 @@
+{
+ "grades": [
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4MM3X3B7MGFCUB34SSPSBJRKRYD4FWM7JAAAAAAA=:0",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Big-box home improvement store (tools, building materials, appliances, garden, kitchen and household goods), cookware only a side department; row url returned 403, judged from one web search and store listings.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4CJI2PF3T75AUB5RFDMH3NOCVYCGCUD5EAAAAAAA=:9",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Farm and ranch chain selling livestock feed, pet food, fencing, garden, lawn equipment and hardware; row url timed out twice, judged from one web search showing the store page title and listings.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4GBFNAX7I7JAUAOBZGJCW7NCVYBNRKWMMAAAAAAA=:10",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Narrow maker of ladder-leveling and work-platform accessories (PiViT line), not a power-tool or hardware seller, so neither specialist for drills nor general; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4TGNW6RHX7BAUBDIJGGLVJNCVYBK3CIWXAAAAAAA=:0",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Big-box home improvement store (appliances, lumber, kitchen, tile, patio, garden) where tools are one main department, graded general per the big-box rule; row url returned 403, judged from one web search of this store's pages.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4OWX65MZF6RAUALFR25QANOCVYDOVWVYBAAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Hardware store in the True Value co-op (tools, hardware, electrical, lawn and garden, building materials); row url redirected to a 404, judged from the truevalue.com chain homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4BYHPMJUGAVBEANTDQ7TVXPKVYCBKJFOKAAAAAAA=:3",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Ace Hardware franchise selling hardware and tools, electrical, plumbing, paint, lawn and garden, plus a home and gift section; judged from the row url location page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4UJTQ5JHG6VAUBYX46JXNDNCVYC4GIUJUAAAAAAA=:2",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Decorative hardware showroom selling cabinet knobs, door levers, hinges, locksets and faucets, not tools, so neither specialist for drills nor general; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4U46LUEIW7FAUBUXUEOHXDOCVYDIE2EIFAAAAAAA=:11",
+   "store_breadth": "unknown",
+   "needs_browser": true,
+   "notes": "Landscape trade supplier (irrigation, hardscape, lighting, turf, nursery, mulch, pest control), not a tool or hardware seller, so neither specialist for drills nor general; row url returned 403, judged from one web search, and a browser check is unlikely to change the grade.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4MA3RDIRB7JAUBVWIBFXP7NCVYDEPY6J5AAAAAAA=:6",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Millwork supplier selling interior and exterior doors, door and cabinet hardware, stair parts and trim, with no tool line shown, so neither specialist for drills nor general; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc4OCPKAA4B6ZAUA2IF4FS6DNSVYCSB65WZAAAAAAA=:12",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Building materials supplier to builders and contractors (lumber, trusses, windows, doors, roofing, siding) with hardware and tools as one minor category, so neither specialist for drills nor general; judged from the row url quote page, read without submitting the form.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4CEX7ILIYZNBEAC4NOEHVHF26YDVGYPQMGV5BH4Q=:3",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Artisan chocolate shop selling handmade chocolate bars, confections and seasonal chocolate boxes; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4AQRB6TZGZRBEA72FZCFKXGC6YAHQY3NXYSU2RRY=:7",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Chocolate and candy chain shop selling boxed chocolates, truffles, nuts and chews; judged from the row url store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4TPDJXIK5ZRBEAMVYTQAWJGC6YBAGYAKWAAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Chocolate manufacturer selling couverture, baking bars, chips and cocoa to professionals and home bakers; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc46NZNQ7OHZFBEBALJA4JEVFS6YDHCJ6LAXOAHULY=:15",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Full-service supermarket with produce, meat, bakery, deli, pharmacy, liquor and floral departments; judged from the row url store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4RV77UKSUZZBEA4J5BLL2HGC6YBW24CR4AAAAAAA=:2",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Airport chocolate boutique selling small-batch artisan chocolates plus pastries and espresso; row url on flysfo.com could not be fetched, judged from the owning bakery's rulli.com location page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4DA4OUMSGZBBEA2LIVD3I5FC6YAGWELBIAAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Chocolate confectioner making Brazilian brigadeiros, chocolate spreads and chocolate gift boxes; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4NBAL2GJVZ5BEA7WJEE62BGC6YB4T4PYVAAAAAAA=:5",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Artisan chocolatier selling truffles, chocolate bars and caramels, with an SFO Terminal 3 shop named on the site; judged from the row url homepage after redirects.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4WAJD2OV7YRBEAG4YQFXT7E26YCS7BRLRQT65FDY=:4",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Chocolate and candy chain shop selling boxed chocolates, truffles, nuts and chews; judged from the row url store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc42NMXOPPCZFBEBK2CAOYWZFS6YBRXWZFKAAAAAAA=:14",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Regional grocery chain selling produce, seafood, prepared foods and general groceries; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "local:loc4E3IBNRWMZFBEBBOAQAKKXFK6YCGZULKLNB6FVBQ=:10",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Specialty French gourmet grocer selling wine, cheese, charcuterie, caviar, seafood, bakery and pantry goods, with sweets as one section; broad food line, not a chocolate shop; judged from the row url homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "local:loc4GEYODBWO4NAEAZ656WEIOF2VYDBGO4S2HNTEUFQ=:9",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Neighborhood grocery chain selling produce, dairy, frozen foods, pantry staples, snacks, flowers and alcohol; judged from the row url store page.",
+   "checked": "2026-09-29"
+  }
+ ]
+}

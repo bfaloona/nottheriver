@@ -1,0 +1,172 @@
+{
+ "grades": [
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4AR3DK6OKPRDEAM2PVYUZAUKXYB7VV3TPVUASI6A=:8",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "General merchandise retailer selling grocery, apparel, home, electronics, toys, beauty and pharmacy, per the Target Nicollet Mall store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4H7O6LRYEPBDEBYSXVTQ2EWCXYALN5AL3AAAAAAA=:6",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Off-price combo store selling apparel, accessories and home goods; the row's TJX store-locator url returned an error page, so this relies on one web search (local listings describing the combo store).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4WDDNS5AEPBDEA2PBWIFJWWCXYDKPCIHWAAAAAAA=:7",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Home goods store (decor, furniture, bedding and bath including towels, kitchen, tableware), per the homegoods.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4RAO5PUAXN5DEAL3PB3L6UVCXYABYRTVHAAAAAAA=:4",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Home goods store (decor, furniture, bedding and bath including towels, kitchen, tableware), per the homegoods.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4F7G34PFOQBDEBNTDR727STSXYDUCBFO7AAAAAAA=:5",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Home improvement big-box (tools, lumber, paint, flooring, plumbing, appliances, garden), a line other than towels; store page returned 403, so this relies on one web search (store listings).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4Q2X265NJOZDEABIAEJMDAUSXYDHFZQBOAAAAAAA=:3",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Fabric shop selling cotton and linen yardage, patterns, notions and thread for quilters and sewists, a focused line other than bath towels, per goodyardgoods.com.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4O5TIFYK4PZDEBF3WYXTSSUSXYBS6TJ2MAAAAAAA=:2",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Curated home goods shop (living, kitchen, dining, bed and bath with bath linens, storage), per the thefoundryhomegoods.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4K7U64OQ3PZDEB4TARPOT4UKXYDTGKFV4AAAAAAA=:9",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Interior design studio with a home store selling furnishings, linens, entertaining ware and apothecary, per vividhomempls.com and its /store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4YFQ3G3LCORDEBVUWSWAV4VSXYDVKYQW3AAAAAAA=:1",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Single-product baby bedding brand selling organic cotton pack-and-play sheets, a focused line other than bath towels, per the linenandleah.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "result_id": "local:loc4QYAOBWFTQFDEANXKEENN2T2XYDXF7UMEAAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Linen and home textile store (sheets, comforters, blankets, curtains, rugs, mattresses); the Facebook url would not load, so this relies on one web search (Yelp and directory listings).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4RB27ICPKI5CEA3PUPOWKUACTYAELSGRCAAAAAAA=:2",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Military surplus and tactical store (surplus clothing, MREs, ponchos, firearm accessories, some survival gear), a focused line other than camping tents, per the priorityonesurplus.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc42PHHUQWAI5CEBLYJNGG4D72SYAO2GX26AAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "RV dealer whose flagship line is new and used RVs, with a secondary camping and outdoors gear line including tents, per the Camping World Hamburg dealer page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4PBC7BP4VKBCEAK4DNKBRH7KSYCX6IH36AAAAAAA=:3",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Small hunting-gear maker selling mobile hunting blinds and tree-stand beverage holders, a focused line other than camping tents; the row myshopify url returned 404, so this relies on one web search (the shop about page and social listings).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "local:loc4ICOZOL6UIBCEBLOYAS65Z7KSYCO4KO6WAAAAAAA=:4",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Farm and ranch supply chain (livestock supplies, fencing, trailers, pet, garden, hardware), a line other than camping; store page timed out twice, so this relies on one web search (store listings).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4V6JZ76KBBRCEBUK3HS6GPUSSYCTOMEUTAAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Outdoor gear co-op selling camping, climbing, cycling, hiking and paddling gear and clothing; store page returned 403, so this relies on one web search (REI store listing snippet).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4ZHIAYPN5BZCEB2XHJVCSVUSSYAPZSQYPAAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Sporting goods store (athletic gear, footwear, golf, fitness, camping gear, bikes, kayaks), per the DICK'S Plymouth Meeting store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:3",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Sporting goods chain; the DICK'S store page confirmed the banner but listed little, so this follows the chain's main line of sports and outdoor equipment.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4WZK77VQEB5CEAOEEFI27XUKSYDCGCJVYAAAAAAA=:4",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Department store selling apparel, footwear, accessories, home, beauty, jewelry and toys, per the Boscov's Plymouth Meeting location page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:5",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Fly-fishing and outdoor lifestyle retailer (fly-fishing gear, country clothing, hunting, dog goods) with no tents, a focused line other than camping; the store url redirected to a 404, so this relies on the orvis.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4DZMOSSPUB5CEAD6ZTNZUXV2SYBI4ZGRXAAAAAAA=:2",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Firearms, hunting and tactical gear shop (guns, optics, knives, tree stands) with no camping line, a focused line other than camping tents, per the www.treelinesports.com homepage (bare domain refused connection).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4V6HIRTWX7FBUAPCYWVNJNS2SYAE4XLY5AAAAAAA=:1",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Kayak tour operator on the Schuylkill River, not a retail shop, so product breadth does not apply, per the hiddenriveroutfitters.com homepage.",
+   "checked": "2026-09-29"
+  }
+ ]
+}

@@ -2,6 +2,7 @@
  "rows": [
   {
    "search_id": "cast-iron-skillet-suburban",
+   "product": "cast iron skillet",
    "result_id": "local:loc466AC6O32EZCUBTBT4X44FWCRYDM52CXKAAAAAAA=:4",
    "kind": "local",
    "name": "Macy's",
@@ -14,6 +15,7 @@
   },
   {
    "search_id": "cast-iron-skillet-rural",
+   "product": "cast iron skillet",
    "result_id": "local:loc4R7FKRDKFH5CUBDM5JPGA4HSSYBBFYIKYBCKYH7A=:1",
    "kind": "local",
    "name": "Leverett Village Co-Op",
@@ -26,6 +28,7 @@
   },
   {
    "search_id": "camping-tent-urban",
+   "product": "camping tent",
    "result_id": "online:walmart.com",
    "kind": "online",
    "name": "Walmart",
@@ -38,6 +41,7 @@
   },
   {
    "search_id": "camping-tent-urban",
+   "product": "camping tent",
    "result_id": "online:steepandcheap.com",
    "kind": "online",
    "name": "Steep & Cheap",
@@ -50,6 +54,7 @@
   },
   {
    "search_id": "camping-tent-suburban",
+   "product": "camping tent",
    "result_id": "online:steepandcheap.com",
    "kind": "online",
    "name": "Steep & Cheap",
@@ -62,6 +67,7 @@
   },
   {
    "search_id": "camping-tent-rural",
+   "product": "camping tent",
    "result_id": "online:steepandcheap.com",
    "kind": "online",
    "name": "Steep & Cheap",
@@ -74,6 +80,7 @@
   },
   {
    "search_id": "camping-tent-rural",
+   "product": "camping tent",
    "result_id": "local:loc4WFZMGSTAI5CEAPNMQH3R6ACTYAH2CQNZWJAUEMQ=:0",
    "kind": "local",
    "name": "Cabela's",
@@ -86,6 +93,7 @@
   },
   {
    "search_id": "wool-socks-urban",
+   "product": "wool socks",
    "result_id": "online:dickssportinggoods.com",
    "kind": "online",
    "name": "DICK'S Sporting Goods",
@@ -98,6 +106,7 @@
   },
   {
    "search_id": "cordless-drill-suburban",
+   "product": "cordless drill",
    "result_id": "local:loc45JU5CTCB7NAUB2E6OWGZNM2VYCKSYQPPAAAAAAA=:4",
    "kind": "local",
    "name": "The Home Depot",
@@ -110,6 +119,7 @@
   },
   {
    "search_id": "loose-leaf-green-tea-rural",
+   "product": "loose leaf green tea",
    "result_id": "local:loc4DEAKVODR5VCEBCILICRXJ2CVYCUJZLGPPAX2DWQ=:2",
    "kind": "local",
    "name": "UMe Tea",
@@ -122,6 +132,7 @@
   },
   {
    "search_id": "jigsaw-puzzle-urban",
+   "product": "jigsaw puzzle",
    "result_id": "local:loc4VC2XVGAHNZDEAJXOM5TQOVCXYAQAS7EPAAAAAAA=:9",
    "kind": "local",
    "name": "Hobby Lobby",
@@ -134,6 +145,7 @@
   },
   {
    "search_id": "jigsaw-puzzle-urban",
+   "product": "jigsaw puzzle",
    "result_id": "local:loc4SVN76UYWPNDEBFZU5MY3MU2XYDJT7676BRJD7CY=:14",
    "kind": "local",
    "name": "Birchbark Books & Native Arts",
@@ -146,6 +158,7 @@
   },
   {
    "search_id": "wool-blanket-rural",
+   "product": "wool blanket",
    "result_id": "online:ebay.com",
    "kind": "online",
    "name": "eBay",
@@ -158,6 +171,7 @@
   },
   {
    "search_id": "wool-blanket-rural",
+   "product": "wool blanket",
    "result_id": "local:loc4IWRZMQIQ35BUBG5ZOZMBORK2YAOXFI6RGVA7OJA=:1",
    "kind": "local",
    "name": "Walmart Supercenter",
@@ -170,6 +184,7 @@
   },
   {
    "search_id": "wool-blanket-rural",
+   "product": "wool blanket",
    "result_id": "local:loc4MN3LWA7B6VBUAQCL7T3BUP22YCXIVL3UAAAAAAA=:5",
    "kind": "local",
    "name": "H&J HomeGoods",
@@ -182,6 +197,7 @@
   },
   {
    "search_id": "headlamp-urban",
+   "product": "headlamp",
    "result_id": "online:locally.com",
    "kind": "online",
    "name": "Locally",
@@ -194,6 +210,7 @@
   },
   {
    "search_id": "rain-jacket-suburban",
+   "product": "rain jacket",
    "result_id": "online:columbia.com",
    "kind": "online",
    "name": "Columbia Sportswear",
@@ -206,6 +223,7 @@
   },
   {
    "search_id": "rain-jacket-suburban",
+   "product": "rain jacket",
    "result_id": "local:loc44C542GZHEZCUBHOGVTGTLW2RYBI43TXYAAAAAAA=:6",
    "kind": "local",
    "name": "Ski Haus - NOTB Snowboards - Patio Place at Ski Haus",
@@ -218,6 +236,7 @@
   },
   {
    "search_id": "extra-virgin-olive-oil-urban",
+   "product": "extra virgin olive oil",
    "result_id": "local:loc4IZ5FDO273NAEAH5A7NZGMFSVYBB2TWLRLCDZRZI=:10",
    "kind": "local",
    "name": "ALDI",

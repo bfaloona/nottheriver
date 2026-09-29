@@ -1,0 +1,172 @@
+{
+ "grades": [
+  {
+   "search_id": "jigsaw-puzzle-urban",
+   "result_id": "local:loc4MACOQUVXPNDEBMHYS7XD6VSXYDL4H7LDAAAAAAA=:4",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Children's toy and game store (toys, games, crafts, science kits) per a web search, since the site now redirects to an unrelated charity shop; news results report all its stores closed in 2019.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "jigsaw-puzzle-urban",
+   "result_id": "local:loc4VVGPRJL6OFDEACW5QAVMSU2XYAXPW2BFAAAAAAA=:6",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Independent hobby superstore (model trains, radio control, plastic models, games and puzzles) per a web search, since hubhobby.com refused the HTTPS connection.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4U5ICP2QWJBCEB5FCO27YUACTYCIO4O5ZAAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Home improvement chain per the Lowe's corporate who-we-are page, since the garden-center URL returned 403.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4RZSELQYYJBCEBLXCIM7QSACTYA6GM57WAAAAAAA=:8",
+   "store_breadth": "unknown",
+   "needs_browser": true,
+   "notes": "Building-supply manufacturer and distributor (siding, windows, entry doors) per a web search, since wausausupply.com returned an empty page; a specialist in another category, not lighting, so neither label fits.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc47QGF5KUIJRCEBGKJ2QF34BKTYDMBCIZSAAAAAAA=:1",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Discount surplus building materials store (cabinets, vanities, flooring, windows, doors, roofing) per jacksdiy.com about page and a web search, with no lighting or electrical line shown, so neither label fits.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4JEVWH2D5IJCEAXHBLUXGEBCTYBWQJJRSAAAAAAA=:6",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Ace-affiliated hardware and rental store with an electrical department per mtviewsupply.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4GAF63HDGIFCEBWXCDKP4T7KSYCT3K5I2AAAAAAA=:2",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "True Value hardware and rental store with electrical supplies and lighting departments per kuzanshardware.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4Z337QKJTJBCEAKP4MNV4OACTYCZ2FBAZAAAAAAA=:5",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Walmart, an omnichannel retailer with a broad assortment, per its corporate about page, since the store page showed a bot-check CAPTCHA.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4E5IB7XHYI5CEA734KORLMACTYCKQ2VQQAAAAAAA=:4",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Discount variety store (housewares, cleaning, food, health and beauty, toys, party, craft, seasonal) per the Dollar Tree corporate about page, since the locator page content was truncated.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc42PHHUQWAI5CEBLYJNGG4D72SYAO2GX26AAAAAAA=:7",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "RV dealership with RV service, RV parts and accessories, camping and boating gear per the Camping World Hamburg dealer page; a specialist in another category, not lighting, so neither label fits.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4WFZMGSTAI5CEAPNMQH3R6ACTYAH2CQNZWJAUEMQ=:9",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Hunting, fishing, shooting, camping and outdoor apparel store per the Cabela's Hamburg store page; a specialist in another category, not lighting, so neither label fits.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "result_id": "local:loc4LD4J7IJEI5CEAJ4PLVMG372SYATYSC7RAAAAAAA=:3",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Bulk landscape materials yard (soil, mulch, stone, pavers, sand) with some landscape lighting per keystonelandscapesupply.com homepage; a specialist in another category, not light bulbs, so neither label fits.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "loose-leaf-green-tea-rural",
+   "result_id": "local:loc4F3WYVT2TVJCEB6VOVVCEKLKWYB7DEXDZCJKJRFQ=:5",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Local grocery store per directory listings found by a web search, since the Facebook page was blocked for the fetcher.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "loose-leaf-green-tea-rural",
+   "result_id": "local:loc4DDU6UMYMVFCEBU63T6FQMJ2WYBE3OY34AAAAAAA=:6",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Discount everyday-essentials store (food, cleaning, household, health, toys, apparel, hardware) per the dollargeneral.com homepage, since the store-directory page returned 401.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "loose-leaf-green-tea-rural",
+   "result_id": "local:loc4MXYECGPU4JCEAARPRYSYOCKWYDK7PROBGDMJDCY=:0",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Loose leaf tea and teaware shop per the Adagio Teas Naperville store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "loose-leaf-green-tea-rural",
+   "result_id": "local:loc4DJK6CKVK6NCEALL43BTD52CVYCITVUZ3WJZ7EZA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Retail loose leaf tea shop with teaware per chicagoteahouse.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4WPVHHNIVE5CUBDWMEN7TBWKRYDFGLOWGAAAAAAA=:2",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Outdoor gear and clothing store (camping, climbing, cycling, hiking, paddling) per a web search showing the REI Framingham store page, since rei.com returned 403.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc43Q53JWNCERCUALEBSTMDLVSRYCTWIGYRAAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Full-line sporting goods, outdoor clothing and footwear store per natickoutdoorstore.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4CDINR4RFEZCUB4CUDP34DWCRYCV65EN7AAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Sporting goods chain (athletic apparel, footwear, sports, golf, outdoor and camping including outerwear) per the DICK'S Natick store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4D2U3544LEZCUBNP4YBKZ5WCRYBKJYI42CXUTU6I=:3",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Outdoor apparel brand store (outerwear including rain jackets, footwear, equipment) per The North Face Natick Mall locator page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4L7UXY6EWEZCUA4HFSHSF5WKRYBY5IBAMGH4DNHY=:12",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Off-price retailer mainly of outdoor and active apparel, footwear and gear (with some home decor and pet) per a web search, since sierra.com returned an error page.",
+   "checked": "2026-09-29"
+  }
+ ]
+}

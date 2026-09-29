@@ -1,0 +1,172 @@
+{
+  "grades": [
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4A3N6HYBN4JAEBHPJN5JU2FSVYDTY6S5BH2KEOQY=:0",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "Natural foods grocery co-op selling produce, pantry groceries, supplements, herbs and pet food, per its home page sevananda.coop.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4SI7RQ6HO45AEAC4XKXMAYGKVYCDZ2I33R243V7I=:7",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "Upscale grocery store with meat and seafood, produce, bakery, deli and prepared foods departments, per the chain's Atlanta store page.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4LDOY7ADW3VAEAHCR5ND5IGSVYCYOVUGVAAAAAAA=:1",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Olive oil and balsamic vinegar shop with a few complementary gourmet items, per its home page vineandolives.com.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4MLFNCLMF5BAEBWE2VW6GIFKVYCNO5WHIZGB7VDI=:3",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "Kosher market with butcher, deli, bakery, catering, wine, dairy and grocery departments, per its home page kgatl.com.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4U5LF6XIV4ZAEADSKTBU7WEKVYAZDRTIZI2NMK6Y=:5",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "South Asian grocery chain selling spices, produce, groceries and prepared foods, per the chain's Decatur specials page.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4LYTZVLHW4NAEBLCSPKTJOGCVYBII3SAK6QHNSKY=:2",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "Neighborhood market selling prepared foods, fresh grocery, pantry items, wine, spirits and beer, per its home page saviprovisions.com.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "extra-virgin-olive-oil-urban",
+      "result_id": "local:loc4WEFOLDSI4RAEBMNX32AGAGSVYD5WPZ7SAAAAAAA=:4",
+      "store_breadth": "general",
+      "needs_browser": false,
+      "notes": "Location page returned 404, so judged from the chain home page saviprovisions.com: a neighborhood market selling prepared foods, grocery, pantry items, wine and beer.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4ZCY7KDHB4JBEBRZPXSJOJGK6YCBTX2ATAAAAAAA=:1",
+      "store_breadth": "specialist",
+      "needs_browser": true,
+      "notes": "Store page returned 403; a web search of store listings shows an outdoor gear and clothing store for camping, climbing, cycling, paddling, hiking and snow sports.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4RDOGP4CS4BBEBM764CGZNGS6YD3LIMYZTJBGKMI=:2",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Camping, climbing and snow gear rental and sales shop, which its site (redirected to snow.lastminutegear.com) says has closed.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4OLW7VOZN4JBEARAX2S3UZGS6YCTKW5JULZJXR5Q=:0",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Sporting goods and outdoor store covering camping and hiking, snow, cycling, running and other sports, per its Bryant Street store page (redirected to www.sportsbasement.com).",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4ML6I7J2A4FBEA52YS4EXLGK6YAEWDT7RAAAAAAA=:6",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Camping, climbing and snow gear rental and sales shop, which its site (redirected to snow.lastminutegear.com) says has closed.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4LJ3T3YVB3ZBEAAKICIU7FGC6YAQLBHD2AAAAAAA=:5",
+      "store_breadth": "unknown",
+      "needs_browser": true,
+      "notes": "Home page showed no content; a web search of listings shows an irrigation, drainage and landscape supply shop for contractors, a narrow shop outside the headlamp's category.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4IPPBOPHR4VBEABPND5K55GK6YD4VYVSAAAAAAAA=:7",
+      "store_breadth": "unknown",
+      "needs_browser": false,
+      "notes": "Fly fishing shop selling rods, reels, waders, flies and fishing apparel, per its home page www.lostcoastoutfitters.com; a narrow shop outside the headlamp's category.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4S676OLCY3VBEAWJXHHLYXHS6YBP34GXSAAAAAAA=:3",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Sporting goods and outdoor store covering camping and hiking, snow, cycling, running and other sports, per its Stonestown store page (redirected to www.sportsbasement.com).",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "headlamp-urban",
+      "result_id": "local:loc4EMYDD4NC4JBEAQDBTIZWZGS6YCFVHLSJAAAAAAA=:4",
+      "store_breadth": "unknown",
+      "needs_browser": false,
+      "notes": "Motorcycle and ATV gear, helmets, parts and tires retailer, per the chain's San Francisco store page; a narrow shop outside the headlamp's category.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc4RF4VNUUKO5DEB746BYNDAUSXYDFEX3BTAAAAAAA=:1",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Toy and gift shop selling toys, games and puzzles, books and art supplies, per its home page kinokokids.com.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc4BSBH2KS5PFDEAPJ6Y2AXYUSXYCCKF3QCAAAAAAA=:5",
+      "store_breadth": "unknown",
+      "needs_browser": true,
+      "notes": "Site returned 403; a web search of listings shows a trading card game shop with a coffee bar, a narrow shop outside the jigsaw puzzle's category.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc45TS5EUZ7O5DEBTKZT5ZMYUKXYCZCX5XGAAAAAAA=:8",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Tabletop game store selling board games, collectible card games, miniatures and role-playing games, per its home page towergamesmn.com.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc4RUNF332IOZDEBKDTIUUSCVCXYBYJ75DCAAAAAAA=:0",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Domain now redirects to an unrelated marketplace; a web search of listings shows a toy store (toys, crafts, games, science kits) whose stores closed in 2019.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc4RUNF332IOZDEBKDTIUUSCVCXYBEIAWSNAAAAAAA=:2",
+      "store_breadth": "specialist",
+      "needs_browser": true,
+      "notes": "Facebook page showed only the name; a web search of listings shows a toy store selling toys, games and gifts.",
+      "checked": "2026-09-29"
+    },
+    {
+      "search_id": "jigsaw-puzzle-urban",
+      "result_id": "local:loc4CUN7GOXCPNDEAER7WWYN2UKXYASF32K7AAAAAAA=:10",
+      "store_breadth": "specialist",
+      "needs_browser": false,
+      "notes": "Game shop selling board games, video games, trading cards and comics, per its home page levelupshoponline.com.",
+      "checked": "2026-09-29"
+    }
+  ]
+}

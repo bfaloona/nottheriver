@@ -1,0 +1,172 @@
+{
+ "grades": [
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc43UDFUJTIEZCUBIZTPJ743VSRYCUE47UTAAAAAAA=:4",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "SkiMD mainly sells corrective ski tuning, boot fitting and ski/binding/boot equipment, with no outerwear per its homepage (skimd.com), so its line is not rain jackets and it is not a general store.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4EVKYBFD5EZCUBZ2EZQ3IDWCRYACAGTYTAAAAAAA=:7",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "JD Sports mainly sells athletic sneakers plus sportswear apparel (borderline: footwear-led); jdsports.com was refused, relied on a search showing its Natick store pages on stores.jdsports.com.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4NBBJHRESEZCUAUH5QNEINWCRYAEFV6RYAAAAAAA=:9",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Urban Outfitters mainly sells young-adult fashion apparel, with secondary home decor, beauty and music (borderline); the store page returned 403, relied on a search citing its Natick store listing.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "local:loc4C5TQY44CEZCUB2DQBCYKHWCRYBG5T3LEAAAAAAA=:10",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "American Eagle / Aerie combined store mainly sells casual apparel (jeans, tops, loungewear, activewear), per its Natick store locator page on storelocations.ae.com.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc4ASGT5C2KU5CEB6LN4OVA2J2WYB4IHESSAAAAAAA=:3",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Seneca Ace Hardware is a hardware store (tools, paint, electrical, plumbing, lawn and garden, plus housewares and sporting goods), per its acehardware.com store-details page; batteries sit in its electrical line (borderline).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc44F6OUWFFVFCEBXA3GLKJOLKWYCISTKSGAAAAAAA=:5",
+   "store_breadth": "unknown",
+   "needs_browser": false,
+   "notes": "Illinois Valley Cellular is a rural wireless carrier selling cell phone service and phones, not a battery or electronics store; its site no longer resolves (DNS failure), relied on a search of business listings.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc4DDU6UMYMVFCEBU63T6FQMJ2WYBE3OY34AAAAAAA=:7",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Dollar General (Market format) is a discount variety store selling food, household, health, apparel, toys, hardware and electronics; store page returned 401, relied on the dollargeneral.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc45AABZVVPVNCEAJCE7GBBMLKWYDNRVILBAAAAAAA=:8",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Dollar General is a discount variety store selling food, household, health, apparel, toys, hardware and electronics; store page returned 401, relied on the dollargeneral.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc4UWF2RZHXBFCUBPT4K6UUL52VYDTYB3PQAAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Abt mainly sells consumer electronics and home appliances, with secondary furniture, mattresses and watches (borderline), per the abt.com homepage navigation.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc4ZVS3JH6W45CEBMBJIZGD77SVYBMM3LIWYVQU3II=:2",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Micro Center is a computer and electronics store (PCs, components, networking, accessories); the store page returned 403, relied on a search citing its microcenter.com Westmont store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc43O7EP7PV5ZCEANAQZNTA52KVYCYVWHDEF4BS7XI=:4",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Best Buy mainly sells consumer electronics (computers, TVs, phones, audio, accessories) plus appliances, per its stores.bestbuy.com South Loop store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4HQG322QKCU7EAFJLLECLK5CYYC7OTBRSAAAAAAA=:1",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Cellular Sales is a Verizon authorized retailer selling phones, wireless plans and phone accessories; its store page returned 403, relied on a search citing its verizon.com store locator listing.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4Q4NOBXJFBA7EBNZYOTCGW5SYYDFQRZYLAAAAAAA=:5",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Costco is a membership warehouse club selling groceries, electronics, clothing, furniture, pharmacy, tires and more, per its costco.com Kyle warehouse page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4JCKKY6KEAM7EBICUKYXC652YYDMMSFYZAAAAAAA=:4",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Russell Cellular is a Verizon authorized retailer selling smartphones, tablets, wireless plans and accessories including chargers, per its russellcellular.com homepage.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc43C7UN3OZAI7EB3XPY5EFC52YYDRQ3GKBYBFI33I=:7",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Target is a general merchandise store selling groceries, clothing, home, electronics, toys, beauty and pharmacy, per its target.com Kyle store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4TA7IK3OVE47EBPMKGFK5K4SYYDPMBXLMAAAAAAA=:9",
+   "store_breadth": "general",
+   "needs_browser": false,
+   "notes": "Sam's Club is a membership warehouse club selling groceries, electronics, furniture, appliances, office supplies, pharmacy and more, per its samsclub.com Austin club page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4ZNDVFUWDFA7EBAYT2GX224SYYAVXJHH4AAAAAAA=:0",
+   "store_breadth": "specialist",
+   "needs_browser": false,
+   "notes": "Best Buy mainly sells consumer electronics (computers, TVs, phones, audio, accessories) plus appliances, per its stores.bestbuy.com Southpark Meadows store page.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4YBY347OCFA7EB4RJLN72M4SYYC44YUXIAAAAAAA=:8",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "Office Depot is an office-supply store selling paper, ink, furniture and technology plus print services (borderline: cables fall in its technology line); site fetches timed out, relied on a search of store listings.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc4N3EWA6Y4CY7EB2YCXEP4W5CYYAL2C6HYAAAAAAA=:2",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Walmart Supercenter is a general merchandise and grocery store; its store page showed a bot check, relied on a search listing the chain's supercenter departments (grocery, clothing, electronics, hardware, pharmacy, auto).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc42PG3JM46AI7EAIHGG7Y7U5SYYDZAGX5IAAAAAAA=:6",
+   "store_breadth": "general",
+   "needs_browser": true,
+   "notes": "Walmart Supercenter is a general merchandise and grocery store (grocery, clothing, electronics, hardware, pharmacy, auto); its store page showed a bot check, relied on a search of its Kyle store listing.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "usb-c-charging-cable-suburban",
+   "result_id": "local:loc44SGYFFTEAM7EAKLSFX7UM52YYCHJ5JUFAAAAAAA=:3",
+   "store_breadth": "specialist",
+   "needs_browser": true,
+   "notes": "GameStop mainly sells video games, consoles, gaming accessories, electronics and trading cards (borderline for a USB-C cable); store page returned 403, relied on a search citing its gamestop.com Kyle Crossing page.",
+   "checked": "2026-09-29"
+  }
+ ]
+}
