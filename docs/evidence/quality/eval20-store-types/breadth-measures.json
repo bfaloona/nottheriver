@@ -1,0 +1,407 @@
+{
+  "m5": {
+    "run1": {
+      "rows": 158,
+      "rows_with_both_labels_known": 118,
+      "agree": 90,
+      "agreement": 0.763,
+      "model_general_on_grader_specialist": 28,
+      "model_specialist_on_grader_general": 0,
+      "model_unknown_or_missing": 7,
+      "grader_unknown": 37,
+      "grader_unknown_by_kind": {
+        "off_category": 30,
+        "not_a_retailer": 5,
+        "unresolved": 2,
+        "unclassified": 0
+      },
+      "specialist_or_not": {
+        "rows": 151,
+        "agree": 108,
+        "agreement": 0.715,
+        "model_specialist_grader_not": 12,
+        "grader_specialist_model_not": 31
+      },
+      "matrix": {
+        "model specialist / grader specialist": 41,
+        "model general / grader general": 49,
+        "model specialist / grader unknown": 16,
+        "model general / grader specialist": 28,
+        "model general / grader unknown": 17,
+        "model unknown / grader unknown": 4,
+        "model unknown / grader specialist": 3
+      }
+    },
+    "run2": {
+      "rows": 161,
+      "rows_with_both_labels_known": 118,
+      "agree": 89,
+      "agreement": 0.754,
+      "model_general_on_grader_specialist": 29,
+      "model_specialist_on_grader_general": 0,
+      "model_unknown_or_missing": 9,
+      "grader_unknown": 38,
+      "grader_unknown_by_kind": {
+        "off_category": 30,
+        "not_a_retailer": 6,
+        "unresolved": 2,
+        "unclassified": 0
+      },
+      "specialist_or_not": {
+        "rows": 153,
+        "agree": 106,
+        "agreement": 0.693,
+        "model_specialist_grader_not": 13,
+        "grader_specialist_model_not": 34
+      },
+      "matrix": {
+        "model specialist / grader specialist": 41,
+        "model general / grader general": 48,
+        "model specialist / grader unknown": 17,
+        "model unknown / grader specialist": 5,
+        "model general / grader specialist": 29,
+        "model general / grader unknown": 17,
+        "model unknown / grader unknown": 4
+      }
+    },
+    "unique_shops_both_runs": {
+      "rows": 169,
+      "rows_with_both_labels_known": 125,
+      "agree": 96,
+      "agreement": 0.768,
+      "model_general_on_grader_specialist": 29,
+      "model_specialist_on_grader_general": 0,
+      "model_unknown_or_missing": 9,
+      "grader_unknown": 39,
+      "grader_unknown_by_kind": {
+        "off_category": 31,
+        "not_a_retailer": 6,
+        "unresolved": 2,
+        "unclassified": 0
+      },
+      "specialist_or_not": {
+        "rows": 161,
+        "agree": 114,
+        "agreement": 0.708,
+        "model_specialist_grader_not": 13,
+        "grader_specialist_model_not": 34
+      },
+      "matrix": {
+        "model specialist / grader specialist": 42,
+        "model general / grader general": 54,
+        "model specialist / grader unknown": 17,
+        "model general / grader specialist": 29,
+        "model general / grader unknown": 18,
+        "model unknown / grader unknown": 4,
+        "model unknown / grader specialist": 5
+      }
+    }
+  },
+  "m6": {
+    "run1": {
+      "by_model_label": {
+        "maybe / model general": {
+          "rows": 51,
+          "good": 28,
+          "bad": 15,
+          "unknown": 8,
+          "good_rate": 0.651
+        },
+        "maybe / model specialist": {
+          "rows": 25,
+          "good": 10,
+          "bad": 10,
+          "unknown": 5,
+          "good_rate": 0.5
+        },
+        "maybe / model unknown": {
+          "rows": 7,
+          "good": 3,
+          "bad": 4,
+          "unknown": 0,
+          "good_rate": 0.429
+        },
+        "text / model specialist": {
+          "rows": 3,
+          "good": 1,
+          "bad": 0,
+          "unknown": 2,
+          "good_rate": 1
+        },
+        "yes / model general": {
+          "rows": 43,
+          "good": 35,
+          "bad": 5,
+          "unknown": 3,
+          "good_rate": 0.875
+        },
+        "yes / model specialist": {
+          "rows": 29,
+          "good": 22,
+          "bad": 7,
+          "unknown": 0,
+          "good_rate": 0.759
+        }
+      },
+      "by_grader_label": {
+        "maybe / grader general": {
+          "rows": 26,
+          "good": 17,
+          "bad": 6,
+          "unknown": 3,
+          "good_rate": 0.739
+        },
+        "maybe / grader specialist": {
+          "rows": 27,
+          "good": 17,
+          "bad": 7,
+          "unknown": 3,
+          "good_rate": 0.708
+        },
+        "maybe / grader unknown": {
+          "rows": 30,
+          "good": 7,
+          "bad": 16,
+          "unknown": 7,
+          "good_rate": 0.304
+        },
+        "text / grader specialist": {
+          "rows": 3,
+          "good": 1,
+          "bad": 0,
+          "unknown": 2,
+          "good_rate": 1
+        },
+        "yes / grader general": {
+          "rows": 23,
+          "good": 20,
+          "bad": 1,
+          "unknown": 2,
+          "good_rate": 0.952
+        },
+        "yes / grader specialist": {
+          "rows": 42,
+          "good": 36,
+          "bad": 6,
+          "unknown": 0,
+          "good_rate": 0.857
+        },
+        "yes / grader unknown": {
+          "rows": 7,
+          "good": 1,
+          "bad": 5,
+          "unknown": 1,
+          "good_rate": 0.167
+        }
+      }
+    },
+    "run2": {
+      "by_model_label": {
+        "maybe / model general": {
+          "rows": 56,
+          "good": 32,
+          "bad": 16,
+          "unknown": 8,
+          "good_rate": 0.667
+        },
+        "maybe / model specialist": {
+          "rows": 25,
+          "good": 9,
+          "bad": 11,
+          "unknown": 5,
+          "good_rate": 0.45
+        },
+        "maybe / model unknown": {
+          "rows": 9,
+          "good": 5,
+          "bad": 4,
+          "unknown": 0,
+          "good_rate": 0.556
+        },
+        "text / model general": {
+          "rows": 1,
+          "good": 0,
+          "bad": 0,
+          "unknown": 1,
+          "good_rate": null
+        },
+        "text / model specialist": {
+          "rows": 2,
+          "good": 1,
+          "bad": 0,
+          "unknown": 1,
+          "good_rate": 1
+        },
+        "yes / model general": {
+          "rows": 37,
+          "good": 31,
+          "bad": 4,
+          "unknown": 2,
+          "good_rate": 0.886
+        },
+        "yes / model specialist": {
+          "rows": 31,
+          "good": 24,
+          "bad": 7,
+          "unknown": 0,
+          "good_rate": 0.774
+        }
+      },
+      "by_grader_label": {
+        "maybe / grader general": {
+          "rows": 27,
+          "good": 19,
+          "bad": 6,
+          "unknown": 2,
+          "good_rate": 0.76
+        },
+        "maybe / grader specialist": {
+          "rows": 30,
+          "good": 20,
+          "bad": 7,
+          "unknown": 3,
+          "good_rate": 0.741
+        },
+        "maybe / grader unknown": {
+          "rows": 33,
+          "good": 7,
+          "bad": 18,
+          "unknown": 8,
+          "good_rate": 0.28
+        },
+        "text / grader specialist": {
+          "rows": 3,
+          "good": 1,
+          "bad": 0,
+          "unknown": 2,
+          "good_rate": 1
+        },
+        "yes / grader general": {
+          "rows": 21,
+          "good": 18,
+          "bad": 1,
+          "unknown": 2,
+          "good_rate": 0.947
+        },
+        "yes / grader specialist": {
+          "rows": 42,
+          "good": 36,
+          "bad": 6,
+          "unknown": 0,
+          "good_rate": 0.857
+        },
+        "yes / grader unknown": {
+          "rows": 5,
+          "good": 1,
+          "bad": 4,
+          "unknown": 0,
+          "good_rate": 0.2
+        }
+      }
+    },
+    "both_runs_rows": {
+      "by_model_label": {
+        "maybe / model general": {
+          "rows": 107,
+          "good": 60,
+          "bad": 31,
+          "unknown": 16,
+          "good_rate": 0.659
+        },
+        "maybe / model specialist": {
+          "rows": 50,
+          "good": 19,
+          "bad": 21,
+          "unknown": 10,
+          "good_rate": 0.475
+        },
+        "maybe / model unknown": {
+          "rows": 16,
+          "good": 8,
+          "bad": 8,
+          "unknown": 0,
+          "good_rate": 0.5
+        },
+        "text / model general": {
+          "rows": 1,
+          "good": 0,
+          "bad": 0,
+          "unknown": 1,
+          "good_rate": null
+        },
+        "text / model specialist": {
+          "rows": 5,
+          "good": 2,
+          "bad": 0,
+          "unknown": 3,
+          "good_rate": 1
+        },
+        "yes / model general": {
+          "rows": 80,
+          "good": 66,
+          "bad": 9,
+          "unknown": 5,
+          "good_rate": 0.88
+        },
+        "yes / model specialist": {
+          "rows": 60,
+          "good": 46,
+          "bad": 14,
+          "unknown": 0,
+          "good_rate": 0.767
+        }
+      },
+      "by_grader_label": {
+        "maybe / grader general": {
+          "rows": 53,
+          "good": 36,
+          "bad": 12,
+          "unknown": 5,
+          "good_rate": 0.75
+        },
+        "maybe / grader specialist": {
+          "rows": 57,
+          "good": 37,
+          "bad": 14,
+          "unknown": 6,
+          "good_rate": 0.725
+        },
+        "maybe / grader unknown": {
+          "rows": 63,
+          "good": 14,
+          "bad": 34,
+          "unknown": 15,
+          "good_rate": 0.292
+        },
+        "text / grader specialist": {
+          "rows": 6,
+          "good": 2,
+          "bad": 0,
+          "unknown": 4,
+          "good_rate": 1
+        },
+        "yes / grader general": {
+          "rows": 44,
+          "good": 38,
+          "bad": 2,
+          "unknown": 4,
+          "good_rate": 0.95
+        },
+        "yes / grader specialist": {
+          "rows": 84,
+          "good": 72,
+          "bad": 12,
+          "unknown": 0,
+          "good_rate": 0.857
+        },
+        "yes / grader unknown": {
+          "rows": 12,
+          "good": 2,
+          "bad": 9,
+          "unknown": 1,
+          "good_rate": 0.182
+        }
+      }
+    }
+  }
+}

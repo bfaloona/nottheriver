@@ -1,0 +1,46 @@
+{
+ "grades": [
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "local:loc4GGGALT6O7RBUAUFT6YWSTSKSYBC4DACEAAAAAAA=:1",
+   "store_breadth": "unknown",
+   "page_opened": true,
+   "notes": "NOT A RETAILER: https://gethandyoutdoors.com/ is a Pennsylvania gardening guide site (vegetable, tree and planting guides) with no shop or product listings."
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4NKRTUHOIAVCEBGEOSSEMXWCSYAC7GCIFAAAAAAA=:6",
+   "store_breadth": "unknown",
+   "page_opened": true,
+   "notes": "OFF-CATEGORY: outdoor lifestyle apparel (Patagonia, Marine Layer, Johnnie-O) plus travel accessories; https://outthereoutfitters.com/collections/equipment-travel has only bags, drinkware, coolers and accessories, with no camping or tent section."
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "local:loc4QAAGHR4Q5ZBUAIINLU73HYSSYAOEDEX3AAAAAAA=:7",
+   "store_breadth": "specialist",
+   "page_opened": true,
+   "notes": "Self-described outdoor gear retailer (apparel, footwear, travel and equipment) at 487 W Chester Pike, Glen Mills per https://trailcreekoutfitters.com/, with a Camping collection of 94 products (https://trailcreekoutfitters.com/collections/camping); no tent seen on its first page."
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "local:loc4SVKLPRG34RAEAW6SVTD5QFCVYCQK2RYMAAAAAAA=:8",
+   "store_breadth": "general",
+   "page_opened": true,
+   "notes": "Neighborhood grocery market selling prepared foods, produce, dairy, pantry staples, wine and beer per https://www.saviprovisions.com/."
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "local:loc42VR3NPYO4BAEBDNGYS7RSH2VYB4ZMCSVAAAAAAA=:7",
+   "store_breadth": "general",
+   "page_opened": true,
+   "notes": "Supermarket chain (seven Atlanta-area stores including MLK Drive, weekly ad, coupons, full meat department) per https://wayfieldfoods.com/."
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "local:loc47GRJQF534RAEBIOFBCLUIEKVYA274GGZXLEGUHQ=:5",
+   "store_breadth": "general",
+   "page_opened": true,
+   "notes": "Large food market with produce, meat, seafood, bakery, deli, cheese, beer and wine, international products, floral and kitchen gadgets per http://www.dekalbfarmersmarket.com/ (https failed with certificate errors on both the bare and www hosts; plain http loaded)."
+  }
+ ]
+}

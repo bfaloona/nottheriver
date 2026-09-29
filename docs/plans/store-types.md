@@ -8,7 +8,7 @@ Status: in progress 2026-09-27; Phases 0 to 3a shipped. Review: Fable fresh-eyes
 - [x] Phase 1: chain badge, Worker (`data/chains.json`, response field), Worker deploy
 - [x] Phase 2: chain badge, site, push to `main`
 - [x] Phase 3a: `store_breadth` judgment in the enrich reply, no score effect, Worker deploy
-- [ ] Phase 4: measure (20 graded searches, run twice), operator gate
+- [ ] Phase 4: measure (20 graded searches, run twice), operator gate. Measured 2026-09-29 ([results](../quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)); waits on the operator's rulings on Q5 and Q6 and on the operator checks
 - [ ] Phase 3b: specialist relevance tier, gated on Phase 4 numbers
 - [ ] Phase 5: specialist values component, gated on Q6 and ADR 0007
 

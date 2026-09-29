@@ -29,5 +29,6 @@ for (const dir of [BASE, `${BASE}/run2`]) {
   }
 }
 const todo = [...sources.values()].filter((e) => !graded.has(e.source_url)).map((e) => ({ source_url: e.source_url, badge_label: e.label, stated_stores: e.stores, domains: [...e.domains] }));
-writeFileSync(`${OUT}/chain-sources.json`, JSON.stringify({ rows: todo }, null, 1) + '\n');
+// Nothing to check must not overwrite the list the last grader was given.
+if (todo.length > 0) writeFileSync(`${OUT}/chain-sources.json`, JSON.stringify({ rows: todo }, null, 1) + '\n');
 console.log({ distinct_sources: sources.size, already_graded: graded.size, to_check: todo.length });

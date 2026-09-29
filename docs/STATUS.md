@@ -35,7 +35,7 @@ As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type f
 
 ## In flight
 
-- Store types Phase 4 (priority 1): run 1 of the 20 graded searches saved 2026-09-29 in `evidence/quality/eval20-store-types/`; run 2 (an hour or more later) and grading are next.
+- None; store types Phase 4 is measured and waits on the operator (priority 1).
 
 ## Priorities
 
@@ -43,11 +43,12 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 
 | # | Work | Next step | Waits on |
 |---|---|---|---|
-| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 4: rerun the 20 graded searches twice (about 160 Brave calls, about $0.83) and grade store breadth, then the operator rules on Q5 and Q6. Phase 3a live at eee77d0: the model judges each shop specialist, general or unknown, in the response only, no score effect ([evidence](evidence/store-breadth-live.txt)). Phase 2 live: the site shows the chain badge in a neutral style. Phase 1 live at 7a97c70: `data/chains.json` (39 sourced chains), the optional `chain` response field; a live search showed 4 of 9 nearby and 5 of 10 online results badged ([evidence](evidence/chain-badge-live.txt)). Phase 0: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)) | Nothing; Q5 and Q6 wait on Phase 4 |
+| 1 | Store types: chain badge and specialist relevance ([plans/store-types.md](plans/store-types.md)) | Phase 4 measured 2026-09-29, both runs graded ([results](quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)): M1 to M4 met (online 98.4%, local 70.7% and 70.8%; 2 of 241 sells flips; 0 wrong badges; 95% badge coverage); M5 76% agreement; M6 not met: "may sell it" shops the model called specialist were 47.5% good (19 of 40 judged) against the 60% bar. Operator: rule on Q5 (proposed: no, keep the field for display only) and Q6, and open 6 blocked pages ([list](evidence/quality/eval20-store-types/operator-checks-needed.md)). Phase 3a live at eee77d0: the model judges each shop specialist, general or unknown, in the response only, no score effect ([evidence](evidence/store-breadth-live.txt)). Phase 2 live: the site shows the chain badge in a neutral style. Phase 1 live at 7a97c70: `data/chains.json` (39 sourced chains), the optional `chain` response field; a live search showed 4 of 9 nearby and 5 of 10 online results badged ([evidence](evidence/chain-badge-live.txt)). Phase 0: all 194 eval20-0925 baseline rows carry a sourced chain label ([chain-labels](evidence/quality/eval20-0925/chain-labels/)) | Operator rulings on Q5 and Q6; operator checks of 6 blocked pages
 | 2 | Amazon plan Phase B: import 54 findings and 6 certifications ([plan](plans/amazon-alternatives-in-ranking.md)), run under [the approved approach](plans/amazon-execution-approach.md) | B1, the claim-wording sheet (review item R1), as its own session; the plan's status checklist holds B1 and the B2 gate | Operator sign-off on every claim at B2 |
 | 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
 | 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 | 5 | Consumer co-ops (REI) as a positive signal: `worker_coop` scores today, consumer co-ops do not (operator remark, 2026-09-27) | Propose badge vs ethics score, with sources for co-op status; proposed position: after Phase C | Operator decision on the proposal |
+| 6 | Chain list upkeep (proposed position: after item 1): fix or add rows in `data/chains.json` from Phase 4 ([results](quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)): Walmart's 5,217 counts 602 Sam's Club clubs the page lists apart from 4,615 Walmart stores; the Cabela's and Ace Hardware counts are older than their pages' newest figures; REI's source page needs an operator check; Sports Basement and The North Face were returned without a badge | Re-read each source, correct the counts, add the two rows, run the data test, then push and `infra/deploy.sh` | Nothing |
 
 ## Blocked on operator
 

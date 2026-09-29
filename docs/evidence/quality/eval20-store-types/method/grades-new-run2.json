@@ -1,0 +1,100 @@
+{
+ "grades": [
+  {
+   "search_id": "cast-iron-skillet-urban",
+   "result_id": "local:loc4GFJDSN5XFVCUAMFY42HH5RCRYD736PRXCDQQPEI=:5",
+   "kind": "local",
+   "url": "https://blackstonesboston.com/",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "store_breadth": "specialist",
+   "notes": "Homepage (https://blackstonesboston.com/) gives 40 Charles St, Boston, MA 02114 and calls itself a destination for cookware, cutlery and kitchenware, with home goods and gifts secondary. Fry Pans & Skillets page (https://blackstonesboston.com/products/fry-pans--skillets) lists Lodge Cast Iron Skillets 10.25/12/15 in and No. 8/10/12/14 cast iron skillets with prices. Distance: search origin not given to grader; 3.9 mi is plausible for an urban Boston search to Beacon Hill.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:campingworld.com",
+   "kind": "online",
+   "url": "https://www.campingworld.com/c/camping-outdoors/tents-canopies-shelters/camping-tents",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "Camping Tents category page (https://www.campingworld.com/c/camping-outdoors/tents-canopies-shelters/camping-tents) shows 20 items with Add to Cart, e.g. Coleman Montana 8-Person Tent, Coleman Sundome 6-Person Camping Tent, Stansport dome tents.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "wool-blanket-rural",
+   "result_id": "local:loc4R4RMNRQXJNCEBG7PS2NPGRC2YD3LNRTWAAAAAAA=:1",
+   "kind": "local",
+   "url": "https://pendleton-usa.com/",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "store_breadth": "specialist",
+   "notes": "Homepage (https://www.pendleton-usa.com/) is titled 'World-Class Wool Clothing, Blankets & Decor' with Home & Blankets as first nav item; Wool Blankets category (https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/) shows 135 products, e.g. Lookout Valley Blanket $325. Store list (https://www.pendleton-usa.com/help-center/about-us/our-store-locations.html) shows Downtown Fort Collins, 107 South College Avenue. Breadth is my judgment (wool blankets and wool apparel as main lines), not the input's 'clothing store' label. Distance: origin not given to grader; 33.6 mi here and 61.1 mi to the Denver store are mutually consistent with the roughly 60 mi between the two stores.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "wool-blanket-rural",
+   "result_id": "local:loc4Y7XREQKB4FBUBDS6NAEQ2P22YD3K3ILKAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://pendleton-usa.com/",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "store_breadth": "specialist",
+   "notes": "Same site as the Fort Collins row: Wool Blankets category (https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/) shows 135 products. Store list (https://www.pendleton-usa.com/help-center/about-us/our-store-locations.html) shows Denver Walnut Street, 2650 Walnut Street. Breadth is my judgment (wool blankets and wool apparel as main lines), not the input's 'clothing store' label. Distance: origin not given to grader; 61.1 mi here and 33.6 mi to the Fort Collins store are mutually consistent with the roughly 60 mi between the two stores.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "result_id": "local:loc4CUHM54I35NAEBMACPS37SJCVYBDREI6MAAAAAAA=:10",
+   "kind": "local",
+   "url": "https://lidl.com/s/en-US/stores/mableton/floyd-road-sw-4844",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "badges_sourced": "n/a",
+   "page_access": "error",
+   "store_breadth": "general",
+   "notes": "The verbatim URL (no trailing slash) redirects to www and shows Lidl's 'page you were looking for can't be found' page on load and on reload. The same path with a trailing slash (https://www.lidl.com/s/en-US/stores/mableton/floyd-road-sw-4844/) loads the store page: 4844 Floyd Road SW, Mableton 30126-1324, hours 8 AM-9 PM. sells_product rests on the chain product page https://www.lidl.com/p/extra-virgin-olive-oil/p11240302 (extra virgin olive oil 25.3 fl oz, $8.59, 'only available in certain stores'); Mableton store stock not checked. Supermarket, so general. Distance: origin not given to grader; 12.2 mi is plausible for an urban Atlanta search (the store page lists the Northside Dr NW, Atlanta Lidl 10.4 mi from this store).",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "result_id": "local:loc4QATGPTJU3JCEAOGTFE2DKCCWYDLAWPQYAAAAAAA=:2",
+   "kind": "local",
+   "url": "https://stores.bestbuy.com/il/bolingbrook/315-n-weber-rd-813.html/?loc=ns100",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "store_breadth": "general",
+   "notes": "Store page (https://stores.bestbuy.com/il/bolingbrook/315-n-weber-rd-813.html?loc=ns100) shows Best Buy Bolingbrook, 315 N Weber Rd, Bolingbrook, IL 60490 with current hours. sells_product rests on the chain category page https://www.bestbuy.com/site/household-batteries/rechargeable-batteries-chargers/abcat0208005.c?id=abcat0208005 (Energizer Rechargeable AA Batteries 4 Pack, Panasonic eneloop 4 AA kit); Bolingbrook store stock not checked. Breadth: electronics-and-appliances big-box (computers, TV, games, phones, appliances), not a battery specialist. Distance: origin not given to grader; 35.6 mi is plausible for a rural search in the Chicago region.",
+   "checked": "2026-09-29"
+  },
+  {
+   "search_id": "dark-chocolate-bar-suburban",
+   "result_id": "online:barandcocoa.com",
+   "kind": "online",
+   "url": "https://barandcocoa.com/collections/100-dark-chocolate",
+   "sells_product": "yes",
+   "local_exists": "n/a",
+   "distance_plausible": "n/a",
+   "badges_sourced": "n/a",
+   "page_access": "ok",
+   "notes": "100% Dark Chocolate collection (https://barandcocoa.com/collections/100-dark-chocolate) shows 79 items with ADD buttons, e.g. Labooko Peru 100% $13, Soma Arcana Special Porcelana 100% $21, Amedei Toscano Black 100% $10.",
+   "checked": "2026-09-29"
+  }
+ ]
+}
