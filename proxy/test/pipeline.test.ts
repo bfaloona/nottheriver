@@ -223,8 +223,9 @@ describe('runSearch over the fixtures', () => {
     const expected = NORMALIZED.online_queries.length + NORMALIZED.local_queries.length;
     expect(fetch.calls.filter((c) => isBrave(c.url))).toHaveLength(expected);
     expect(res.usage.brave_calls).toBe(expected);
-    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich']);
-    expect(res.usage.llm_tokens).toBe(400 + 120 + 2100 + 300);
+    // One enrich call per kind; the fixture answers each with the same 2100 + 300 tokens.
+    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich', 'enrich']);
+    expect(res.usage.llm_tokens).toBe(400 + 120 + 2 * (2100 + 300));
     expect(res.usage.estimated_cost_usd).toBe(estimateCost(res.usage));
     expect(res.usage.estimated_cost_usd).toBeGreaterThan(0);
   });
@@ -249,7 +250,7 @@ describe('runSearch over the fixtures', () => {
   it('sends the model no location: no location keys and no coordinates', async () => {
     const { fetch } = await search();
     const bodies = fetch.calls.filter((c) => isLlm(c.url)).map((c) => c.body ?? '');
-    expect(bodies).toHaveLength(2);
+    expect(bodies).toHaveLength(3);
     const coordinates = [...place1.results.flatMap((r) => r.coordinates ?? []), REQ.lat, REQ.lon].map(String);
     for (const body of bodies) {
       const prompt = (JSON.parse(body) as { messages: Array<{ content: string }> }).messages.map((m) => m.content).join('\n');

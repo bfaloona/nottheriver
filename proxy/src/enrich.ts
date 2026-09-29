@@ -116,11 +116,19 @@ export function acceptClassifications(output: EnrichOutput, view: LlmView[]): Ma
   return accepted;
 }
 
+// The model's time is almost all output generation, so judging online and local candidates in two
+// calls side by side finishes in about the time of the longer one. An empty half is not sent.
+export function splitView(pass1: Candidate[], view: LlmView[]): LlmView[][] {
+  const isLocal = (v: LlmView) => pass1[Number(v.id.slice(1))]!.kind === 'local';
+  return [view.filter((v) => !isLocal(v)), view.filter(isLocal)].filter((part) => part.length > 0);
+}
+
 export async function enrichAll(pass1: Candidate[], llm: LlmClient, data: CuratedData, product: EnrichProduct): Promise<EnrichedRow[]> {
   if (pass1.length === 0) return [];
-  const view = llmView(pass1);
-  const output = await llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(view, product), ENRICH_MAX_TOKENS);
-  const classified = acceptClassifications(output, view);
+  const parts = splitView(pass1, llmView(pass1));
+  const replies = await Promise.all(parts.map((part) => llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(part, product), ENRICH_MAX_TOKENS)));
+  // Each reply is checked against the ids sent in its own call, so a half cannot judge the other's rows.
+  const classified = new Map(replies.flatMap((reply, i) => [...acceptClassifications(reply, parts[i]!)]));
   return pass1.map((candidate, i) => ({
     candidate,
     certifications: certificationsFor(candidate.domain, data.certifications),

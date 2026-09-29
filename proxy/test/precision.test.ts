@@ -172,7 +172,7 @@ describe('T2: full pipeline replay with a stub classifier built from the labels'
         || (r.kind === 'local' && storeKeys.has(`${registrableDomain(r.url)}|${addressKey(r.address)}`));
       expect(kept, `${r.url} ${r.name}`).toBe(true);
     }
-    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich']);
+    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich', 'enrich']);
   });
 
   it.each(searches)('%s: a flagged page is dropped even when the model calls it a shop', async (searchId) => {
@@ -274,14 +274,35 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
       candidates: [...ids, ...many.map((_, i) => `c${i}`)].map((id) => ({ id, site_type: 'editorial', sells_product: 'no' })),
     }));
     const out = await enrichAll(many, llm, CURATED, PRODUCT);
-    const sent = dataOf(prompts[0]!).candidates.map((c) => c.id);
     expect(MAX_LLM_ONLINE).toBe(24);
     expect(MAX_LLM_LOCAL).toBe(20);
-    expect(sent).toHaveLength(44);
-    expect(sent.slice(0, 24)).toEqual(Array.from({ length: 24 }, (_, i) => `c${i}`));
-    expect(sent.slice(24)).toEqual(Array.from({ length: 20 }, (_, i) => `c${30 + i}`));
+    expect(prompts).toHaveLength(2);
+    const [onlineSent, localSent] = prompts.map((p) => dataOf(p).candidates.map((c) => c.id));
+    expect(onlineSent).toEqual(Array.from({ length: 24 }, (_, i) => `c${i}`));
+    expect(localSent).toEqual(Array.from({ length: 20 }, (_, i) => `c${30 + i}`));
     const classified = out.map((r) => r.classification !== null);
     expect(classified).toEqual(many.map((_, i) => i < 24 || (i >= 30 && i < 50)));
+  });
+
+  it('judges online and local candidates in separate calls, and makes one call when only one kind is present', async () => {
+    const shop = candidate({ domain: 'a.example', url: 'https://a.example/' });
+    const store = candidate({ kind: 'local', domain: 'b.example', url: 'https://b.example/', place_id: 'p' });
+    const both = fakeLlm(() => ({ candidates: [] }));
+    await enrichAll([shop, store], both.llm, CURATED, PRODUCT);
+    expect(both.prompts.map((p) => dataOf(p).candidates.map((c) => c.id))).toEqual([['c0'], ['c1']]);
+    const single = fakeLlm(() => ({ candidates: [] }));
+    await enrichAll([shop], single.llm, CURATED, PRODUCT);
+    expect(single.prompts).toHaveLength(1);
+  });
+
+  it('ignores a judgment for an id that went to the other call', async () => {
+    const list = [candidate({ domain: 'a.example', url: 'https://a.example/' }), candidate({ kind: 'local', domain: 'b.example', url: 'https://b.example/', place_id: 'p' })];
+    // The online call also answers for the local candidate; the local call answers for nothing.
+    const { llm } = fakeLlm((ids) => ({
+      candidates: ids.includes('c0') ? [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }, { id: 'c1', site_type: 'editorial', sells_product: 'no' }] : [],
+    }));
+    const out = await enrichAll(list, llm, CURATED, PRODUCT);
+    expect(out.map((r) => r.classification?.site_type ?? null)).toEqual(['retailer', null]);
   });
 
   it('sends the product inside the data block and no location', async () => {
@@ -343,7 +364,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     const routes = [{ match: isEnrich, respond: () => ({ body: odd }) }, ...defaultRoutes()];
     const fetch = makeFixtureFetch(routes);
     const res = await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} });
-    expect(fetch.calls.filter((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))).toHaveLength(1);
+    expect(fetch.calls.filter((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))).toHaveLength(2);
     expect(res.online.length + res.local.length).toBeGreaterThan(0);
 
     const { llm } = fakeLlm(() => ({ candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'no' }] }));
@@ -356,7 +377,8 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
     const routes = [{ match: isEnrich, respond: () => ({ body: invalid }) }, ...defaultRoutes()];
     const fetch = makeFixtureFetch(routes);
     await expect(runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} })).rejects.toBeInstanceOf(InvalidLlmOutput);
-    expect(fetch.calls.filter((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))).toHaveLength(2);
+    // Each half is retried once, and both fail.
+    expect(fetch.calls.filter((c) => isEnrich(new URL(c.url), { body: c.body ?? '' }))).toHaveLength(4);
 
     const handle = createHandler(runSearch, { fetch: makeFixtureFetch(routes), now: () => 0, log: () => {} });
     const request = new Request('https://proxy.example/search', {
