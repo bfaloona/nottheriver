@@ -1,6 +1,10 @@
 # Operator checks needed (store types Phase 4, 2026-09-29)
 
-Six pages the graders' browsers could not open. Open each in your own browser and answer the yes/no question. Answers go in `method/operator-checks.json` (run 1) and `method/operator-checks-run2.json` (run 2), applied by `method/merge.mjs`; until then these rows count as "unknown" and stay out of precision.
+Six pages the graders' browsers could not open. Open each in your own browser and answer the yes/no question. Until answered, these rows count as "unknown" and stay out of precision.
+
+**How to apply an answer (cold-resume order).** Write each row's answer in `method/operator-checks.json` as `{"checks":[{"search_id", "result_id", "url", "sells_product", "page_access", "notes"}]}` (same shape as `eval20-0925/method/operator-checks.json`), then run from the repo root: `node docs/evidence/quality/eval20-store-types/method/merge.mjs`, `node docs/evidence/quality/eval20-store-types/method/reuse.mjs run2` (so run 2 picks up run 1's corrected grades; it takes them from `grades.json`), `node docs/evidence/quality/eval20-store-types/method/merge.mjs run2`, then `OUT_DIR=<run folder> node eval/summarize.mjs` for `eval20-store-types` and `eval20-store-types/run2`. Run 2 rows on these pages (5) update through that reuse; `operator-checks-run2.json` is only for rows that exist in run 2 alone. OC6 is a chain source, not a grade: record the answer as a `supports` row (`yes`, `no` or `unknown`, with `count_on_page`, `notes`, `checked`) in `method/chain-source-grades-browser.json`, which `merge.mjs` reads over the first pass.
+
+Run 1 keys (`search_id|result_id`): OC1 `camping-tent-urban|online:walmart.com`; OC2 `camping-tent-urban|online:steepandcheap.com`, `camping-tent-suburban|online:steepandcheap.com`, `camping-tent-rural|online:steepandcheap.com`; OC3 `cordless-drill-suburban|local:loc45JU5CTCB7NAUB2E6OWGZNM2VYCKSYQPPAAAAAAA=:4`; OC4 `headlamp-urban|online:locally.com`; OC5 `rain-jacket-suburban|online:columbia.com`.
 
 | Ref | Page | Searches | Question |
 |---|---|---|---|
