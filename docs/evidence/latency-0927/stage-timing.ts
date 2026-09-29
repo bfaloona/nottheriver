@@ -52,6 +52,7 @@ const env = {
 async function searchOnce(job: Job, arm: string, round: number) {
   const t0 = performance.now();
   const calls: Record<string, unknown>[] = [];
+  let enrichCalls = 0;
   const timedFetch: typeof fetch = async (input, init) => {
     const url = new URL(typeof input === 'string' ? input : (input as Request).url);
     let body = init?.body;
@@ -71,7 +72,11 @@ async function searchOnce(job: Job, arm: string, round: number) {
         const j = JSON.parse(text);
         const call = String(body ?? '').includes('"name":"enrich"') ? 'enrich' : 'normalize';
         Object.assign(entry, { call, provider: j.provider, model: j.model, prompt_tokens: j.usage?.prompt_tokens, completion_tokens: j.usage?.completion_tokens, out_chars: j.choices?.[0]?.message?.content?.length });
-        if (call === 'enrich' && !evalMode) fs.writeFileSync(path.join(outDir!, `${job.id}-enrich-out.json`), j.choices?.[0]?.message?.content ?? '');
+        if (call === 'enrich' && !evalMode) {
+          // A split arm makes two enrich calls; the second is kept as -enrich-out-2 instead of overwriting the first.
+          enrichCalls++;
+          fs.writeFileSync(path.join(outDir!, `${job.id}-enrich-out${enrichCalls > 1 ? `-${enrichCalls}` : ''}.json`), j.choices?.[0]?.message?.content ?? '');
+        }
       } catch { /* timing still recorded */ }
     }
     calls.push(entry);
@@ -98,7 +103,9 @@ async function searchOnce(job: Job, arm: string, round: number) {
 }
 
 fs.mkdirSync(outDir!, { recursive: true });
-const runs = [];
+const runs: Awaited<ReturnType<typeof searchOnce>>[] = [];
+// Rewritten after every search, so a crash partway through a long run keeps the timings so far.
+const save = () => fs.writeFileSync(path.join(outDir!, 'stage-timing.json'), JSON.stringify({ zip: evalMode ? 'per eval query' : DEFAULT_ZIP, arms, rounds, ran: new Date().toISOString(), runs }, null, 2));
 for (let round = 1; round <= rounds; round++) {
   for (const [n, job] of jobs.entries()) {
     // Alternate which arm goes first so neither always gets the fresher provider queue.
@@ -106,9 +113,13 @@ for (let round = 1; round <= rounds; round++) {
     for (const arm of order) {
       const run = await searchOnce(job, arm, round);
       runs.push(run);
-      const enrich = run.calls.find((c) => c.call === 'enrich');
-      console.log(`${run.id} ${arm} r${round}: ${run.status} ${run.total_ms} ms; enrich ${enrich?.total_ms ?? '-'} ms, ${enrich?.completion_tokens ?? '-'} tok, ${enrich?.provider ?? '-'}`);
+      save();
+      // With a split arm there are two enrich calls; show the pair's wall time and summed tokens.
+      const enrich = run.calls.filter((c) => c.call === 'enrich') as Array<{ start: number; total_ms: number; completion_tokens?: number; provider?: string }>;
+      const wall = Math.max(...enrich.map((c) => c.start + c.total_ms)) - Math.min(...enrich.map((c) => c.start));
+      const tokens = enrich.reduce((t, c) => t + (c.completion_tokens ?? 0), 0);
+      const summary = enrich.length ? `${wall} ms, ${tokens} tok, ${enrich.map((c) => c.provider ?? '-').join('+')}` : '- ms, - tok, -';
+      console.log(`${run.id} ${arm} r${round}: ${run.status} ${run.total_ms} ms; enrich ${summary}`);
     }
   }
 }
-fs.writeFileSync(path.join(outDir!, 'stage-timing.json'), JSON.stringify({ zip: evalMode ? 'per eval query' : DEFAULT_ZIP, arms, rounds, ran: new Date().toISOString(), runs }, null, 2));
