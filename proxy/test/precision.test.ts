@@ -240,15 +240,21 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
   const CURATED = { certifications: [], negatives: [], chains: [] };
   const PRODUCT = { canonical_name: 'tent', category: 'outdoor gear' };
 
+  const SHOP = candidate({ domain: 'a.example', url: 'https://a.example/' });
+  const STORE = candidate({ kind: 'local', domain: 'b.example', url: 'https://b.example/', place_id: 'p' });
+
   function fakeLlm(reply: (ids: string[]) => unknown) {
     const prompts: string[] = [];
+    const sent: string[][] = [];
     return {
       prompts,
+      sent,
       llm: {
         usage: [],
         complete: async (_call: string, prompt: string) => {
           prompts.push(prompt);
-          return reply(dataOf(prompt).candidates.map((c) => c.id));
+          sent.push(dataOf(prompt).candidates.map((c) => c.id));
+          return reply(sent[sent.length - 1]!);
         },
       } as never,
     };
@@ -269,39 +275,33 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
       ...Array.from({ length: 30 }, (_, i) => candidate({ domain: `o${i}.example`, url: `https://o${i}.example/` })),
       ...Array.from({ length: 25 }, (_, i) => candidate({ kind: 'local', domain: `l${i}.example`, url: `https://l${i}.example/`, place_id: `p${i}` })),
     ];
-    const { llm, prompts } = fakeLlm((ids) => ({
+    const { llm, sent } = fakeLlm((ids) => ({
       // Also answers for every id it could guess, including the ones past the cap.
       candidates: [...ids, ...many.map((_, i) => `c${i}`)].map((id) => ({ id, site_type: 'editorial', sells_product: 'no' })),
     }));
     const out = await enrichAll(many, llm, CURATED, PRODUCT);
     expect(MAX_LLM_ONLINE).toBe(24);
     expect(MAX_LLM_LOCAL).toBe(20);
-    expect(prompts).toHaveLength(2);
-    const [onlineSent, localSent] = prompts.map((p) => dataOf(p).candidates.map((c) => c.id));
-    expect(onlineSent).toEqual(Array.from({ length: 24 }, (_, i) => `c${i}`));
-    expect(localSent).toEqual(Array.from({ length: 20 }, (_, i) => `c${30 + i}`));
+    expect(sent).toEqual([Array.from({ length: 24 }, (_, i) => `c${i}`), Array.from({ length: 20 }, (_, i) => `c${30 + i}`)]);
     const classified = out.map((r) => r.classification !== null);
     expect(classified).toEqual(many.map((_, i) => i < 24 || (i >= 30 && i < 50)));
   });
 
   it('judges online and local candidates in separate calls, and makes one call when only one kind is present', async () => {
-    const shop = candidate({ domain: 'a.example', url: 'https://a.example/' });
-    const store = candidate({ kind: 'local', domain: 'b.example', url: 'https://b.example/', place_id: 'p' });
     const both = fakeLlm(() => ({ candidates: [] }));
-    await enrichAll([shop, store], both.llm, CURATED, PRODUCT);
-    expect(both.prompts.map((p) => dataOf(p).candidates.map((c) => c.id))).toEqual([['c0'], ['c1']]);
+    await enrichAll([SHOP, STORE], both.llm, CURATED, PRODUCT);
+    expect(both.sent).toEqual([['c0'], ['c1']]);
     const single = fakeLlm(() => ({ candidates: [] }));
-    await enrichAll([shop], single.llm, CURATED, PRODUCT);
-    expect(single.prompts).toHaveLength(1);
+    await enrichAll([SHOP], single.llm, CURATED, PRODUCT);
+    expect(single.sent).toHaveLength(1);
   });
 
   it('ignores a judgment for an id that went to the other call', async () => {
-    const list = [candidate({ domain: 'a.example', url: 'https://a.example/' }), candidate({ kind: 'local', domain: 'b.example', url: 'https://b.example/', place_id: 'p' })];
     // The online call also answers for the local candidate; the local call answers for nothing.
     const { llm } = fakeLlm((ids) => ({
       candidates: ids.includes('c0') ? [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }, { id: 'c1', site_type: 'editorial', sells_product: 'no' }] : [],
     }));
-    const out = await enrichAll(list, llm, CURATED, PRODUCT);
+    const out = await enrichAll([SHOP, STORE], llm, CURATED, PRODUCT);
     expect(out.map((r) => r.classification?.site_type ?? null)).toEqual(['retailer', null]);
   });
 

@@ -51,6 +51,13 @@ describe('llmView', () => {
       expect(v.snippet).toHaveLength(LLM_SNIPPET_CHARS);
     }
   });
+
+  it('with a kind, keeps only that kind and each candidate\'s index in the whole list as its id', () => {
+    const list = [candidate({ domain: 'a.example' }), candidate({ kind: 'local', domain: 'b.example', place_id: 'p' }), candidate({ domain: 'c.example' })];
+    expect(llmView(list, 'online').map((v) => v.id)).toEqual(['c0', 'c2']);
+    expect(llmView(list, 'local').map((v) => v.id)).toEqual(['c1']);
+    expect(llmView(list, 'local')).toEqual(llmView(list).filter((v) => v.domain === 'b.example'));
+  });
 });
 
 describe('acceptClassifications: store_breadth', () => {

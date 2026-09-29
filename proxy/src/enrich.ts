@@ -76,12 +76,13 @@ export function negativesFor(domain: string, rows: NegativeRow[]): Signal[] {
 }
 
 // Candidates arrive with location fields; this projection is the only shape the model sees.
-// An id is the candidate's index in the input, so it still points at the right row when a cap skips some.
-export function llmView(candidates: Candidate[]): LlmView[] {
+// An id is the candidate's index in the input, so it still points at the right row when a cap skips some
+// or a kind is asked for alone.
+export function llmView(candidates: Candidate[], kind?: Candidate['kind']): LlmView[] {
   const seen = { online: 0, local: 0 };
   const cap = { online: MAX_LLM_ONLINE, local: MAX_LLM_LOCAL };
   return candidates.flatMap((c, i) => {
-    if (seen[c.kind]++ >= cap[c.kind]) return [];
+    if ((kind !== undefined && c.kind !== kind) || seen[c.kind]++ >= cap[c.kind]) return [];
     return [{
       id: `c${i}`,
       domain: c.domain,
@@ -116,19 +117,17 @@ export function acceptClassifications(output: EnrichOutput, view: LlmView[]): Ma
   return accepted;
 }
 
-// The model's time is almost all output generation, so judging online and local candidates in two
-// calls side by side finishes in about the time of the longer one. An empty half is not sent.
-export function splitView(pass1: Candidate[], view: LlmView[]): LlmView[][] {
-  const isLocal = (v: LlmView) => pass1[Number(v.id.slice(1))]!.kind === 'local';
-  return [view.filter((v) => !isLocal(v)), view.filter(isLocal)].filter((part) => part.length > 0);
-}
-
 export async function enrichAll(pass1: Candidate[], llm: LlmClient, data: CuratedData, product: EnrichProduct): Promise<EnrichedRow[]> {
   if (pass1.length === 0) return [];
-  const parts = splitView(pass1, llmView(pass1));
-  const replies = await Promise.all(parts.map((part) => llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(part, product), ENRICH_MAX_TOKENS)));
+  // The model's time is almost all output generation, so judging online and local candidates in two
+  // calls side by side finishes in about the time of the longer one. A kind with no candidates is not sent.
+  const parts = (['online', 'local'] as const).map((kind) => llmView(pass1, kind)).filter((part) => part.length > 0);
   // Each reply is checked against the ids sent in its own call, so a half cannot judge the other's rows.
-  const classified = new Map(replies.flatMap((reply, i) => [...acceptClassifications(reply, parts[i]!)]));
+  const accepted = await Promise.all(parts.map(async (part) => {
+    const reply = await llm.complete<EnrichOutput>('enrich', buildEnrichPrompt(part, product), ENRICH_MAX_TOKENS);
+    return acceptClassifications(reply, part);
+  }));
+  const classified = new Map(accepted.flatMap((m) => [...m]));
   return pass1.map((candidate, i) => ({
     candidate,
     certifications: certificationsFor(candidate.domain, data.certifications),
