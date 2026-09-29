@@ -1,0 +1,1851 @@
+{
+ "rule": "as eval/summarize.mjs precision(): good = sells the product (yes or equivalent) and the shop exists; bad = does not sell it, or confirmed not to exist; unknown = either answer unknown",
+ "rows": [
+  {
+   "search_id": "chef-s-knife-suburban",
+   "product": "chef's knife",
+   "place": "Scottsdale, AZ",
+   "name": "Affinity Kitchens",
+   "url": "https://affinitykitchens.com/",
+   "address": "7848 E Redfield Rd #10, Scottsdale, AZ 85260",
+   "distance_mi": 4,
+   "map_categories": "hardware",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Cabinetry and kitchen design/remodeling firm with design showrooms, not a retailer of kitchen goods; no knives or cutlery on the site. Its own showroom page lists 7848 East Redfield Road #10, Scottsdale (https://www.affinitykitchens.com/contact/scottsdale-kitchen-design-showroom).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "chef-s-knife-suburban",
+   "product": "chef's knife",
+   "place": "Scottsdale, AZ",
+   "name": "Jetta Bath & Kitchen",
+   "url": "https://jettabathandkitchen.com/",
+   "address": "15250 Hayden Rd Ste 2, Scottsdale, AZ 85260",
+   "distance_mi": 4.5,
+   "map_categories": "hardware",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "needs_browser": true,
+   "notes": "Domain no longer resolves (DNS failure); listings describe a bath/kitchen fixtures showroom (decorative plumbing, cabinet hardware, bathtubs), not cutlery. Conflicting status: Yelp's listing title reads 'CLOSED' (https://www.yelp.com/biz/jetta-bath-and-kitchen-scottsdale-2) while https://www.theremodelingfirmllc.com/contact still places its showroom inside Jetta at 15250 N Hayden Rd Ste 2.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "chef-s-knife-suburban",
+   "product": "chef's knife",
+   "place": "Scottsdale, AZ",
+   "name": "The House of Rice Store",
+   "url": "https://aandbcoffeehouseandcafe.com/the-house-of-rice-store",
+   "address": "3221 Hayden Rd, Scottsdale, AZ 85251",
+   "distance_mi": 5.3,
+   "map_categories": "grocery",
+   "sells_product": "unknown",
+   "local_exists": "no",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "needs_browser": false,
+   "notes": "URL (on an unrelated cafe domain) returns 404. Listings described an Asian grocery/housewares store with kitchen items and cutlery, but it has closed: Sphinx Date Co. announced it is moving into 3221 N Hayden Rd, 'the iconic House of Rice' space (https://sphinxdateranch.com/blogs/news/moving-news-and-preorder-2025-harvest), and Yelp marks it CLOSED.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "chef-s-knife-urban",
+   "product": "chef's knife",
+   "place": "Phoenix, AZ",
+   "name": "KoKoMo Grills & BBQ Islands & Outdoor Kitchens",
+   "url": "https://kokomogrills.com/",
+   "address": "1325 E Gibson Ln, Phoenix, AZ 85034",
+   "distance_mi": 1.9,
+   "map_categories": "bbq",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Outdoor kitchen retailer (built-in grills, pizza ovens, cabinets, refrigeration); a site search for 'knife' returns only grills and kitchen components (https://kokomogrills.com/search?q=knife). Homepage names 1325 E Gibson Lane as its central Phoenix showroom (https://kokomogrills.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "product": "cordless drill",
+   "place": "Franklin, TN",
+   "name": "TriGreen Equipment",
+   "url": "https://trigreenequipment.com/location/franklin",
+   "address": "340 9th Ave N, Franklin, TN 37064",
+   "distance_mi": 4,
+   "map_categories": "car",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "John Deere dealer at 340 9th Ave N selling mowers, tractors, compact construction equipment and STIHL/ECHO/EGO outdoor power tools (chainsaws, blowers, trimmers), none of which is a drill; the location page lists no drills (https://trigreenequipment.com/location/franklin).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "cordless-drill-urban",
+   "product": "cordless drill",
+   "place": "Nashville, TN",
+   "name": "Cumberland Hardware Co",
+   "url": "https://facebook.com/pages/category/Hardware-Store/Cumberland-Hardware-Co-119196928132823",
+   "address": "1018 Woodland St, Nashville, TN 37206",
+   "distance_mi": 2.9,
+   "map_categories": "hardware",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Long-running neighborhood hardware store at 1018 Woodland St with current hours (Yelp updated July 2026; https://local.yahoo.com/info-14932034-cumberland-hardware-nashville/), but no listing or review mentions drills or power tools. The Facebook URL returned almost no content.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-suburban",
+   "product": "extra virgin olive oil",
+   "place": "Red Oak, GA",
+   "name": "TreeHouse Foods - Naturally Fresh",
+   "url": "https://treehousefoods.com/",
+   "address": "1000 Naturally Fresh Blvd, College Park, GA 30349",
+   "distance_mi": 0.9,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "TreeHouse is a private-label food manufacturer, not a retailer (https://treehousefoods.com/); the Naturally Fresh site is a dressings/sauces plant. Map listings still show Naturally Fresh at this address, but TreeHouse's site never mentions it and a CoStar headline reports the plant being sold, so current operation is unclear.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "headlamp-rural",
+   "product": "headlamp",
+   "place": "Vernalis, CA",
+   "name": "ampm",
+   "url": "https://ampm.com/",
+   "address": "7125 McCracken Rd, Westley, CA 95387",
+   "distance_mi": 4.8,
+   "map_categories": "convenience store",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Chain convenience store; the national homepage shows only food and drinks and says nothing about flashlights or headlamps (https://ampm.com/). A 24-hour ARCO/ampm operates at 7125 McCracken Rd per GasBuddy (https://www.gasbuddy.com/station/205206) and Yelp.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "headlamp-suburban",
+   "product": "headlamp",
+   "place": "Burlingame, CA",
+   "name": "Califa Sports Store",
+   "url": "https://califasports.com/",
+   "address": "700 Edgewater Blvd, Foster City, CA 94404",
+   "distance_mi": 5.8,
+   "map_categories": "clothing store",
+   "sells_product": "unknown",
+   "local_exists": "unknown",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "needs_browser": false,
+   "notes": "https://califasports.com/ has an expired TLS certificate, and behind it is a Network Solutions 'under construction' placeholder. Two web searches found no Califa Sports listing at 700 Edgewater Blvd or elsewhere in Foster City.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "headlamp-suburban",
+   "product": "headlamp",
+   "place": "Burlingame, CA",
+   "name": "Outdoor Supply Hardware",
+   "url": "https://outdoorsupplyhardware.com/",
+   "address": "900 El Camino Real, Millbrae, CA 94030",
+   "distance_mi": 2.6,
+   "map_categories": "garden center",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "blocked",
+   "needs_browser": false,
+   "notes": "Site returns a Cloudflare 403 to automated fetches, but search-indexed product pages on the chain's own site list headlamps (e.g. NEBO Einstein https://www.outdoorsupplyhardware.com/2797444/product/Nebo-NEB-HLP-0005, Coast XPH30R, Energizer HDA32E); this is chain-wide, not Millbrae-specific stock. The Millbrae store at 900 El Camino Real has current hours (Yelp updated Sept 2026).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "headlamp-suburban",
+   "product": "headlamp",
+   "place": "Burlingame, CA",
+   "name": "Summit Bicycles",
+   "url": "https://summitbicycles.com/about/burlingame-pg416.htm",
+   "address": "1031 California Dr, Burlingame, CA 94010",
+   "distance_mi": 1.6,
+   "map_categories": "bicycle",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "needs_browser": false,
+   "notes": "The bare-domain URL has an expired certificate, but the www page loads and shows the store open at 1031 California Dr. Its lighting category lists handlebar/seatpost bike lights, not headlamps; one Knog light includes a helmet mount (https://www.summitbicycles.com/product-list/accessories-1109/lighting-1130/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "insulated-water-bottle-rural",
+   "product": "insulated water bottle",
+   "place": "Galeton, CO",
+   "name": "The Gearage",
+   "url": "https://gearageoutdoorsports.com/",
+   "address": "142 Remington St, Fort Collins, CO 80524",
+   "distance_mi": 33.5,
+   "map_categories": "sportevent",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "New and used outdoor gear shop at 142 Remington St with current hours (https://gearageoutdoorsports.com/). Its 79-item online sample (the site says it is not the full inventory) has no water bottles; the only bottle mention is a photo caption showing 'a Gearage water bottle'.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "jigsaw-puzzle-rural",
+   "product": "jigsaw puzzle",
+   "place": "Ogilvie, MN",
+   "name": "Toy Store",
+   "url": "https://mallofamerica.com/directory/toys",
+   "address": "60 E Broadway, Bloomington, MN 55425",
+   "distance_mi": 68.8,
+   "map_categories": "shop",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "The Mall of America directory lists this general toy store inside Nickelodeon Universe (Pokemon, Hot Wheels, Barbie, Schleich, Sanrio) but doesn't mention puzzles (https://mallofamerica.com/directory/toys). A mall holiday press release mentions Wicked puzzles but doesn't say which store sells them.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "product": "LED light bulbs",
+   "place": "Port Clinton, PA",
+   "name": "Cabela's",
+   "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+   "address": "100 Cabela Dr, Hamburg, PA 19526",
+   "distance_mi": 2.1,
+   "map_categories": "shop",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Store page confirms the Hamburg store at 100 Cabela Drive; its listed departments (hunting, fishing, camping, clothing, home and gifts) include no lighting or bulbs (https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html). The national site sells LED flashlights and lanterns and has a 'Lightbulbs' accessories category (blocked to fetch), with no evidence of household LED bulbs.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "loose-leaf-green-tea-suburban",
+   "product": "loose leaf green tea",
+   "place": "Melrose Park, IL",
+   "name": "Boba Heaven Of Elmhurst",
+   "url": "https://online.skytab.com/s/bobaheavenofelmhurst",
+   "address": "573 N York St, Elmhurst, IL 60126, United States",
+   "distance_mi": 2.1,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Bubble tea shop: its online-ordering page is a JS app, and its menu on delivery listings is prepared drinks (boba, fruit drinks, flavored teas, coffee), with no packaged tea. Active at 573 N York St with daily hours (Yelp updated May 2026; https://www.doordash.com/store/boba-heaven-elmhurst-25987060/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "loose-leaf-green-tea-suburban",
+   "product": "loose leaf green tea",
+   "place": "Melrose Park, IL",
+   "name": "Dreamers Gourmet - Specialty Food Manufacturer",
+   "url": "https://dreamersgourmet.com/",
+   "address": "4318 River Rd, Schiller Park, IL 60176",
+   "distance_mi": 3.3,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Specialty food manufacturer (taco shells, edible spoons, cannoli shells) run as a division of a foodservice company; no tea and no retail storefront. Site lists 4318 River Road, Schiller Park (https://dreamersgourmet.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "loose-leaf-green-tea-suburban",
+   "product": "loose leaf green tea",
+   "place": "Melrose Park, IL",
+   "name": "Milkteaful",
+   "url": "https://milkteaful.square.site/",
+   "address": "3122 W North Ave, Stone Park, IL 60165",
+   "distance_mi": 1.7,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "The Square Online catalog behind https://milkteaful.square.site/ is 50 prepared drinks (boba milk teas, iced jasmine green tea, smoothies) with no loose tea. The store location data gives 3122 W North Ave, Stone Park, with daily pickup hours.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "loose-leaf-green-tea-urban",
+   "product": "loose leaf green tea",
+   "place": "Chicago, IL",
+   "name": "Garden Gourmet Market",
+   "url": "https://facebook.com/pages/Garden-Gourmet-Market/268036486588878",
+   "address": "1130 N Ashland Ave, Chicago, IL 60622",
+   "distance_mi": 1.5,
+   "map_categories": "grocery, grocery",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Gourmet grocery at 1130 N Ashland (produce, cheese, fresh-ground coffee, wine, craft beer), active per Yelp updated Aug 2026 and DoorDash (https://www.doordash.com/en/convenience/store/garden-gourmet-market-chicago-2526442/). No source mentions tea; the Facebook URL returned almost no content.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Austin Coffee Technician",
+   "url": "https://austincoffeetechnician.com/",
+   "address": "2119 Frate Barker Rd #1101, Austin, TX 78748",
+   "distance_mi": 4.8,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Espresso machine repair service (by appointment) that also deals Rocket/La Pavoni/Rancilio machines; no pour-over gear on https://austincoffeetechnician.com/. Address conflict: its own site lists 217 Millington Lane, Buda, while Birdeye lists 2119 Frate Barker Rd #1101 (a search result suggests that is a live-work apartment building).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Embrace The Grind BTX",
+   "url": "https://embracethegrindbtx.com/",
+   "address": "824 Main St, Buda, TX 78610",
+   "distance_mi": 0.5,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Espresso truck; the Square Online catalog behind https://embracethegrindbtx.com/ is only coffee beans, a shirt and a sticker. Listed as an espresso truck at 824 Main St, Buda, on Yelp (updated Dec 2025) and Apple Maps.",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Kyle's Daily Grind",
+   "url": "https://kylesdailygrind.com/",
+   "address": "607a W Center St, Kyle, TX 78640",
+   "distance_mi": 6.8,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Cafe; its Square Online catalog (45 items) is drinks, pastries, whole-bean coffee, a tea box set and a T-shirt, with no brewing equipment. Site lists 607 West Center Street Unit A, Kyle (https://kylesdailygrind.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Praxis Coffee Roasters",
+   "url": "https://praxiscoffee.com/",
+   "address": "10400 Menchaca Rd, Austin, TX 78748",
+   "distance_mi": 6.1,
+   "map_categories": "cafe",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Roaster cafe whose Square catalog includes some brewing gear (Baratza Encore grinder, Fellow Atmos canister, Fellow mug) but no dripper; its 'Pour Over' item is a brewed drink made with an Origami or Chemex. Site lists 10400 Menchaca Road, open daily 7a-2p (https://praxiscoffee.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Tiny House Coffee Roasters",
+   "url": "https://tinyhousecoffeeroasters.com/",
+   "address": "120 Precision Dr, Buda, TX 78610",
+   "distance_mi": 0.8,
+   "map_categories": "bakery",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Roaster whose full catalog is whole-bean coffee, cold brew concentrate and kegs, subscriptions and merch, with no drippers or brewing gear (https://tinyhousecoffeeroasters.com/collections/all). Site lists 120 Precision Drive Unit B100, Buda as a warehouse open by appointment only (https://tinyhousecoffeeroasters.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "product": "pour-over coffee dripper",
+   "place": "Austin, TX",
+   "name": "Callahan's General Store",
+   "url": "https://callahansgs.com/",
+   "address": "501 S Hwy 183, Austin, TX 78741",
+   "distance_mi": 3.9,
+   "map_categories": "hardware",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "General store at 501 S Hwy 183 (western wear, hardware, feed); its Home and Garden page lists Lodge cast iron, canning and kitchen gadgets but no coffee drippers or coffee makers (https://callahansgs.com/homeandgarden/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "product": "pour-over coffee dripper",
+   "place": "Austin, TX",
+   "name": "CoffeePeople",
+   "url": "https://bookpeople.com/",
+   "address": "603 N Lamar Blvd, Austin, TX 78703",
+   "distance_mi": 0.8,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Cafe inside BookPeople serving coffee drinks and food for dine-in and takeout, with no brewing gear listed (https://bookpeople.com/cafe). Yelp lists it at 603 N Lamar Blvd, updated May 2026 (https://www.yelp.com/biz/coffeepeople-austin-3).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "product": "pour-over coffee dripper",
+   "place": "Austin, TX",
+   "name": "Cutco® Kitchen",
+   "url": "https://cutco.com/",
+   "address": "3201 Bee Caves Rd #172A, Austin, TX 78746",
+   "distance_mi": 3.6,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Cutco sells knives, cutlery sets, cooking tools, tableware and outdoor knives, with no coffee brewing equipment (https://cutco.com/). The Austin store at 3201 Bee Caves Rd is listed on Yelp, updated September 2026 (https://www.yelp.com/biz/cutco-kitchen-austin-2).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rain-jacket-rural",
+   "product": "rain jacket",
+   "place": "Shutesbury, MA",
+   "name": "Amherst Market",
+   "url": "https://amherstmarketma.com/",
+   "address": "259 Triangle St, Amherst, MA 01002",
+   "distance_mi": 7.4,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "needs_browser": false,
+   "notes": "Site domain does not resolve (DNS not found). Directory listings show a grocery/convenience store with a deli at 259 Triangle St, licensed as Amherst Market since 2020, with no clothing (https://www.merchantcircle.com/amherst-market2-amherst-ma, https://maps.apple.com/place?place-id=IA3A1D92C11F5098D).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rain-jacket-rural",
+   "product": "rain jacket",
+   "place": "Shutesbury, MA",
+   "name": "Wendell Country Store",
+   "url": "https://wendellcountrystore.wordpress.com/",
+   "address": "57 Lockes Village Rd, Wendell, MA 01379",
+   "distance_mi": 5.7,
+   "map_categories": "convenience store",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Country store selling milk, eggs, groceries, beer, wine, snacks and movies, with no clothing or rain gear listed; blog last posted 2011 (https://wendellcountrystore.wordpress.com/). Yelp lists it at 57 Lockes Village Rd, updated April 2026 (https://www.yelp.com/biz/wendell-country-store-wendell).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rain-jacket-urban",
+   "product": "rain jacket",
+   "place": "Cambridge, MA",
+   "name": "Hilton's Tent City",
+   "url": "https://hiltonstentcity.com/",
+   "address": "565 Massachusetts Ave, Cambridge, MA 02139",
+   "distance_mi": 2.2,
+   "map_categories": "shop",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Outdoor gear and apparel store listing rain jackets such as the Marmot PreCip Eco Jacket and a Marmot GORE-TEX jacket, at 565 Mass Ave, Cambridge, open Mon-Sat 11-6 (https://hiltonstentcity.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-suburban",
+   "product": "rechargeable AA batteries",
+   "place": "Melrose Park, IL",
+   "name": "AT&T Store",
+   "url": "https://att.com/stores/illinois/elmhurst/81521?wtExtndSource=stores",
+   "address": "291 N York St, Elmhurst, IL 60126",
+   "distance_mi": 2.2,
+   "map_categories": "mobile phone",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "AT&T store page for 291 N York St lists phones, cases, phone chargers, headphones and wearables; no AA or rechargeable household batteries (https://att.com/stores/illinois/elmhurst/81521?wtExtndSource=stores).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-suburban",
+   "product": "rechargeable AA batteries",
+   "place": "Melrose Park, IL",
+   "name": "Verizon",
+   "url": "https://russellcellular.com/?y_source=1_NjE5MDI3My03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+   "address": "75 W North Ave, Northlake, IL 60164",
+   "distance_mi": 1,
+   "map_categories": "mobile phone",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Russell Cellular is a Verizon authorized retailer selling phones, tablets, cases, chargers and protection plans, not household batteries (https://russellcellular.com/). Verizon's locator lists Russell Cellular Northlake at 75 W North Ave (https://www.verizon.com/stores/details/illinois/northlake/russell-cellular-northlake-1361722/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "usb-c-charging-cable-urban",
+   "product": "USB-C charging cable",
+   "place": "Austin, TX",
+   "name": "BOND'S Television & Electronics",
+   "url": "https://bondstv.com/",
+   "address": "1010 W Lynn St, Austin, TX 78703",
+   "distance_mi": 1.4,
+   "map_categories": "service",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "blocked",
+   "needs_browser": true,
+   "notes": "Site returned HTTP 403 to the fetch, while search-indexed pages show it live. Listings describe a home theater and TV sales/service business at 1010 W Lynn St, with no mention of USB-C cables (https://www.yelp.com/biz/bonds-television-and-electronics-austin-4, https://www.bbb.org/us/tx/austin/profile/home-theater-systems/bonds-television-electronics-0825-39228).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "usb-c-charging-cable-urban",
+   "product": "USB-C charging cable",
+   "place": "Austin, TX",
+   "name": "CompuPlus",
+   "url": "https://compuplus.shop/",
+   "address": "5555 N Lamar Blvd Ste C122, Austin, TX 78751",
+   "distance_mi": 3.9,
+   "map_categories": "car repair",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Computer and phone repair shop at 5555 N Lamar Blvd Suite C122 with posted hours; its online catalog shows used laptops, parts and a KVM switch but no USB-C cables (https://compuplus.shop/, https://www.compuplus.shop/category/all-products).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-rural",
+   "product": "wooden train set",
+   "place": "Whitleyville, TN",
+   "name": "Dollar General",
+   "url": "https://dollargeneral.com/store-directory/tn/gainesboro/350",
+   "address": "241 N Grundy Quarles Hwy, Gainesboro, TN 38562",
+   "distance_mi": 7.5,
+   "map_categories": "convenience store",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "blocked",
+   "needs_browser": false,
+   "notes": "Chain catalog lists a Wooden Train Set and a Melissa & Doug wooden stacking train (https://www.dollargeneral.com/p/wooden-train-set/653899617172); this is chain-level evidence, not store-level stock. Store page returned HTTP 401 to the fetch; Yelp lists the store at 241 N Grundy Quarles Hwy, updated November 2025 (https://www.yelp.com/biz/dollar-general-gainesboro).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-suburban",
+   "product": "wooden train set",
+   "place": "Franklin, TN",
+   "name": "Kid to Kid Brentwood",
+   "url": "https://kidtokid.com/brentwood",
+   "address": "95 Seaboard Ln, Brentwood, TN 37027",
+   "distance_mi": 4.7,
+   "map_categories": "clothing store",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Resale kids store at 95 Seaboard Ln with posted hours; it sells used toys, puzzles and books, but inventory varies and no train sets are listed (https://kidtokid.com/brentwood).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "product": "wooden train set",
+   "place": "Nashville, TN",
+   "name": "The Museum Store",
+   "url": "https://shop.countrymusichalloffame.org/",
+   "address": "222 Rep. John Lewis Way S, Nashville, TN 37203",
+   "distance_mi": 0.9,
+   "map_categories": "gift",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Country Music Hall of Fame shop at 222 Rep. John Lewis Way S, open daily; its kids section and a search for \"train\" return music books, records, apparel and plush, with no toy trains (https://shop.countrymusichalloffame.org/search?q=train).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "product": "wooden train set",
+   "place": "Nashville, TN",
+   "name": "Wildhorse Gift Shop",
+   "url": "https://store.wildhorsesaloon.com/",
+   "address": "120 2nd Ave N, Nashville, TN 37201",
+   "distance_mi": 1.2,
+   "map_categories": "gift",
+   "sells_product": "no",
+   "local_exists": "no",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Wildhorse Saloon at 120 2nd Ave N closed in January 2024 and the building is being reopened as Category 10 (https://en.wikipedia.org/wiki/Wildhorse_Saloon). The URL redirects to shop.opry.com, whose search for \"train\" shows no toy trains (https://shop.opry.com/search?q=train).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-suburban",
+   "product": "wool blanket",
+   "place": "Littleton, CO",
+   "name": "Designer Fabrics (by appt only) Hunter Douglas Dealer",
+   "url": "https://designerfabricsdenver.com/",
+   "address": "2555 E Jamison Ave, Centennial, CO 80122",
+   "distance_mi": 3.3,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "By-appointment Hunter Douglas window treatment and custom drapery/upholstery business at 2555 E Jamison Ave; no blankets offered (https://designerfabricsdenver.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "product": "wool blanket",
+   "place": "Denver, CO",
+   "name": "Allyn's Fabric and Bridal",
+   "url": "https://allynsfabricandbridal.com/",
+   "address": "3200 S Acoma St, Englewood, CO 80110",
+   "distance_mi": 5,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Bridal, special-occasion and apparel fabric and notions shop; no finished blankets (https://allynsfabricandbridal.com/). Contact page lists 3200 S Acoma St, Englewood with Tue-Sat hours (https://allynsfabricandbridal.com/pages/contact).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "product": "wool blanket",
+   "place": "Denver, CO",
+   "name": "Ibraheems Rugs",
+   "url": "https://ibraheems.com/",
+   "address": "5090 Acoma St, Denver, CO 80216",
+   "distance_mi": 4.2,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Handmade and oriental rug and furniture showroom; menu lists only rug categories, no blankets or throws (https://www.ibraheems.com/). Contact page names 5090 Acoma St as the showroom, though the homepage also shows 636 S Broadway (https://ibraheems.com/contact).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "product": "wool blanket",
+   "place": "Denver, CO",
+   "name": "Treelotta: Fabric + Craft Studio",
+   "url": "https://treelotta.com/",
+   "address": "3370 S Broadway, Englewood, CO 80113",
+   "distance_mi": 5.2,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Fabric and craft store selling wool and wool felt by the yard plus yarn, but no finished blankets (https://treelotta.com/). Yelp lists it at 3370 S Broadway, updated June 2026 (https://www.yelp.com/biz/treelotta-fabric-craft-studio-englewood).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "product": "wool blanket",
+   "place": "Denver, CO",
+   "name": "Yarn Shoppe Denver",
+   "url": "https://yarnshoppedenver.com/",
+   "address": "331 14th St #216, Denver, CO 80202",
+   "distance_mi": 1.4,
+   "map_categories": "shop, clothing_store",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Yarn store at 331 14th St #216 with posted hours, selling hand-dyed yarn, classes and handmade bags; no blankets or throws (https://yarnshoppedenver.com/).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-socks-urban",
+   "product": "wool socks",
+   "place": "Atlanta, GA",
+   "name": "Dollar General",
+   "url": "https://dollargeneral.com/store-directory/ga/atlanta/8589",
+   "address": "1241 A Moreland Ave SE, Atlanta, GA 30316",
+   "distance_mi": 3.8,
+   "map_categories": "convenience store",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "blocked",
+   "needs_browser": false,
+   "notes": "Chain catalog shows crew, work and cozy socks but no wool socks (https://www.dollargeneral.com/c/apparel/socks-for-the-family). Store page returned HTTP 401 to the fetch; Yelp lists the store at 1241 A Moreland Ave SE, updated May 2026 (https://www.yelp.com/biz/dollar-general-atlanta-12).",
+   "checked": "2026-09-28",
+   "source": "new",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "bath-towels-urban",
+   "product": "bath towels",
+   "place": "Minneapolis, MN",
+   "name": "Mecca Linen",
+   "url": "https://m.facebook.com/pages/category/Home-Decor/Mecca-Linen-LLC-230565993966724",
+   "address": "2500 Central Ave NE, Minneapolis, MN 55418",
+   "distance_mi": 5.5,
+   "map_categories": "shop",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "blocked",
+   "notes": "FB url showed 'not available on this browser'. Google snippets of the store's own FB/Instagram describe a retail+wholesale home-linens shop at 2500 Central Ave NE (linens, sheets, comforters, 'Bath'), open 7 days; towels not named explicitly, and meccalinen.com webstore is furniture only. About 5 mi from 55408, matches 5.5 mi. [second-pass grade] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "product": "camping tent",
+   "place": "Plymouth Meeting, PA",
+   "name": "Buckman's Ski and Snowboard Shop - King of Prussia",
+   "url": "https://buckmans.com/",
+   "address": "740 W Dekalb Pike, King of Prussia, PA 19406",
+   "distance_mi": 6.2,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Ski/snowboard shop; retail-stores page lists 740 DeKalb Pike King of Prussia 19406; Sleeping and Shelter category has sleeping bags and a hammock, no tents [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "product": "camping tent",
+   "place": "Plymouth Meeting, PA",
+   "name": "Founding Fathers Outfitters",
+   "url": "https://foundingfathersphilly.com/",
+   "address": "9280 Ridge Pike, Lafayette Hill, PA 19444",
+   "distance_mi": 3.7,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "unknown",
+   "distance_plausible": "yes",
+   "page_access": "error",
+   "notes": "Gun shop and gunsmith (Yelp 'Guns & Ammo', BBB 'Gunsmiths'), no camping gear. Its site no longer resolves and FFLs.com shows its firearms license expired; Yelp still lists hours at 9280 Ridge Pike. [second-pass grade] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "product": "camping tent",
+   "place": "Plymouth Meeting, PA",
+   "name": "Sport Fishing Outlet",
+   "url": "https://sfotackle.com/",
+   "address": "230 W Germantown Pike, East Norriton Township, PA 19401",
+   "distance_mi": 3,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "fishing tackle shop; site search for tent returns lures only; homepage lists this address [reused from an earlier run of this search, same URL] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "product": "camping tent",
+   "place": "Philadelphia, PA",
+   "name": "gethandyoutdoors",
+   "url": "https://gethandyoutdoors.com/",
+   "address": "1546 N Lawrence St, Philadelphia, PA 19122",
+   "distance_mi": 2.2,
+   "map_categories": "hardware",
+   "sells_product": "no",
+   "local_exists": "no",
+   "notes": "Pennsylvania gardening guides blog, not a shop; no address on site",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "cast-iron-skillet-suburban",
+   "product": "cast iron skillet",
+   "place": "Natick, MA",
+   "name": "Harbor Freight",
+   "url": "https://harborfreight.com/storelocator/321-spleen-st-ste-3a-natick-1760?number=342",
+   "address": "321 Speen St #3a, Natick, MA 01760",
+   "distance_mi": 2.2,
+   "map_categories": "hardware",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "tool store; site search for cast iron skillet returns pumps and engines; URL slug says spleen, page shows 321 Speen St [reused from an earlier run of this search, same URL] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "cordless-drill-urban",
+   "product": "cordless drill",
+   "place": "Nashville, TN",
+   "name": "GWS Tool Group",
+   "url": "https://gwstoolgroup.com/",
+   "address": "739 Fesslers Ln, Nashville, TN 37224",
+   "distance_mi": 2.5,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "product": "extra virgin olive oil",
+   "place": "Atlanta, GA",
+   "name": "14TH ST GROCERY AND HALAL MEAT (Near Atlanta Airport)",
+   "url": "https://ruspagesusa.com/catalog/atlanta/14_th_st_grocery_and_halal_meat",
+   "address": "398 14th St NW, Atlanta, GA 30318",
+   "distance_mi": 1.6,
+   "map_categories": "grocery",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Result URL is a third-party directory (ruspagesusa.com), not the shop's site. Listing and Yelp (May 2026), Apple Maps, Zabihah all show 14th St Grocery and Halal Meat at 398 14th St NW (Home Park). Directory says it carries 'a specialized selection of Mediterranean oils'; olive oil / EVOO not named. Name's 'Near Atlanta Airport' is odd: address is Midtown/Home Park, ~9 mi from the airport. ~1.7 mi from 30308. [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "garden-hose-urban",
+   "product": "garden hose",
+   "place": "Phoenix, AZ",
+   "name": "Valley Garden Center",
+   "url": "https://valleygardencenterphx.org/",
+   "address": "1809 N 15th Ave, Phoenix, AZ 85007",
+   "distance_mi": 1.7,
+   "map_categories": "event",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "headlamp-rural",
+   "product": "headlamp",
+   "place": "Vernalis, CA",
+   "name": "Manteca Sportsmen Inc",
+   "url": "https://mantecasportsmeninc.org/",
+   "address": "30261 S Airport Way, Manteca, CA 95337",
+   "distance_mi": 4.8,
+   "map_categories": "",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "product": "LED light bulbs",
+   "place": "Port Clinton, PA",
+   "name": "Camping World - Hamburg",
+   "url": "https://rv.campingworld.com/dealer/hamburg-pennsylvania",
+   "address": "20 Industrial Dr, Hamburg, PA 19526",
+   "distance_mi": 2.2,
+   "map_categories": "car",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Dealer page structured data: Camping World RV Sales, 20 Industrial Dr, Hamburg PA 19526; has an RV parts & supplies store page (/rv-parts-supplies). Chain site sells 'RV LED Light Bulbs' (12V RV interior bulbs), a substitute for household LED bulbs; chain evidence, not this store's shelf. ~2.2 mi from 19549. [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "led-light-bulbs-rural",
+   "product": "LED light bulbs",
+   "place": "Port Clinton, PA",
+   "name": "Fastener Place",
+   "url": "https://thefastenerplace.com/",
+   "address": "137 Schuylkill Ave, Hamburg, PA 19526",
+   "distance_mi": 2.8,
+   "map_categories": "hardware, shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Industrial fastener supplier (bolts, anchors, abrasives); Electrical Supplies = terminals/wire loom, no bulbs; LED search empty. Contact page: 137 Schuylkill Ave Hamburg PA. WebFetch 403, browser ok. Calc 2.8 mi. [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-suburban",
+   "product": "pour-over coffee dripper",
+   "place": "Buda, TX",
+   "name": "Hobby Lobby",
+   "url": "https://hobbylobby.com/stores/search/37",
+   "address": "9600 S I-35 Frontage Rd Ste L, Austin, TX 78748",
+   "distance_mi": 6.2,
+   "map_categories": "shop",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "product": "pour-over coffee dripper",
+   "place": "Austin, TX",
+   "name": "Breed & Co Ace Hardware",
+   "url": "https://acehardware.com/store-details/19140",
+   "address": "718 W 29th St, Austin, TX 78705",
+   "distance_mi": 1.9,
+   "map_categories": "hardware",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "pour-over-coffee-dripper-urban",
+   "product": "pour-over coffee dripper",
+   "place": "Austin, TX",
+   "name": "Prufrock’s",
+   "url": "https://housing.utexas.edu/dining/dining-locations/coffee-shops/prufrocks",
+   "address": "2018-2064 Speedway, Austin, TX 78712",
+   "distance_mi": 0.9,
+   "map_categories": "cafe",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "product": "rain jacket",
+   "place": "Natick, MA",
+   "name": "Foot Locker",
+   "url": "https://stores.footlocker.com/ma/natick/1245-worcester-street-6944.html",
+   "address": "1245 Worcester St #2190, Natick, MA 01760",
+   "distance_mi": 2.2,
+   "map_categories": "clothing store",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Foot Locker's online catalog lists rain jackets (Nike Repel, Nike Storm-FIT, UA Storm); Natick Mall stock not checked, and stores are mainly footwear. Store page confirms 1245 Worcester St with current hours. [second-pass grade] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "rain-jacket-urban",
+   "product": "rain jacket",
+   "place": "Cambridge, MA",
+   "name": "Outdoor Cover Warehouse",
+   "url": "https://outdoorcoverwarehouse.com/Cambridge-Massachusetts",
+   "address": "234 Monsignor O'Brien Hwy #446, Cambridge, MA 02141",
+   "distance_mi": 3,
+   "map_categories": "sportevent",
+   "sells_product": "no",
+   "local_exists": "no",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-suburban",
+   "product": "wooden train set",
+   "place": "Franklin, TN",
+   "name": "Bricks & Minifigs Brentwood",
+   "url": "https://bricksandminifigs.com/brentwood-tn",
+   "address": "91 Seaboard Ln #108, Brentwood, TN 37027",
+   "distance_mi": 4.8,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "LEGO resale store page, 91 Seaboard Ln Ste. 108 Brentwood; sells LEGO only, no wooden trains [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-suburban",
+   "product": "wooden train set",
+   "place": "Franklin, TN",
+   "name": "LEGO® Store CoolSprings Galleria",
+   "url": "https://lego.com/en-us/stores/store/lego-store-coolsprings-galleria?cmp=REF-202601-GBP-123&y_source=1_MTAyMTExOTUyMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+   "address": "1800 Galleria Blvd #2360, Franklin, TN 37067",
+   "distance_mi": 5.1,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Own store page shows 1800 Galleria Blvd Ste 2360 with hours; LEGO sells plastic brick trains only, not treated as equivalent to wooden [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-suburban",
+   "product": "wooden train set",
+   "place": "Franklin, TN",
+   "name": "Sew What Gifts & Stitches",
+   "url": "https://sewwhatgifts.com/",
+   "address": "6950 Moores Ln, Brentwood, TN 37027",
+   "distance_mi": 3.9,
+   "map_categories": "gift",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Monogram gift shop; site search 'train' returns 10 items (train cases, bib, stocking), no train sets; site shows no address, directory listings (Superpages, MapQuest via DuckDuckGo) give 6950 Moores Ln [reused from eval60, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wooden-train-set-urban",
+   "product": "wooden train set",
+   "place": "Nashville, TN",
+   "name": "Vanderbilt Medical Center Gift Shop",
+   "url": "https://vanderbilthealth.com/information/dining-and-gift-shops",
+   "address": "1211 Medical Center Dr, Nashville, TN 37232",
+   "distance_mi": 0.8,
+   "map_categories": "gift",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    },
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-rural",
+   "product": "wool blanket",
+   "place": "Galeton, CO",
+   "name": "Elfriede's Fine Fabrics",
+   "url": "https://elfriedesfinefabrics.com/",
+   "address": "2425 Canyon Blvd, Boulder, CO 80302",
+   "distance_mi": 56.4,
+   "map_categories": "",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Quilting/garment fabric shop, no blankets; 2425 Canyon Blvd Boulder per Yelp/own contact page; ~90 km [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-rural",
+   "product": "wool blanket",
+   "place": "Galeton, CO",
+   "name": "Treelotta: Fabric + Craft Studio",
+   "url": "https://treelotta.com/",
+   "address": "3370 S Broadway, Englewood, CO 80113",
+   "distance_mi": 67.6,
+   "map_categories": "shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Fabric/craft shop; only 'Wool & Wool Felt' fabric by the yard, no blankets; 3370 S Broadway Englewood per Yelp; ~105 km, not near [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-blanket-urban",
+   "product": "wool blanket",
+   "place": "Denver, CO",
+   "name": "St. John Knits Boutique",
+   "url": "https://stjohnknits.com/",
+   "address": "224 Steele St, Denver, CO 80206",
+   "distance_mi": 1.3,
+   "map_categories": "clothing store",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "alt-split-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-socks-urban",
+   "product": "wool socks",
+   "place": "Atlanta, GA",
+   "name": "Specialized Atlanta",
+   "url": "https://specialized.com/us/en/store-finder/specialized-atlanta/6791502",
+   "address": "112 Krog St NE #10, Atlanta, GA 30307",
+   "distance_mi": 1.3,
+   "map_categories": "car rental",
+   "sells_product": "yes",
+   "local_exists": "yes",
+   "from": "latency-0927/grading",
+   "source": "reused",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "2",
+     "direction": "main-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  }
+ ]
+}
