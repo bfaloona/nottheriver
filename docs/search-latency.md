@@ -2,7 +2,7 @@
 
 Measured 2026-09-27 on `main` at ab998fd. Zip 97214 (Portland, OR). Raw data in [evidence/latency-0927](evidence/latency-0927/). Companion to [caching-and-store-types.md](caching-and-store-types.md).
 
-**Short answer:** one model call, enrich (`proxy/src/enrich.ts:189`), is 76-93% of a search's time, and its time is output tokens divided by whichever provider OpenRouter picks. Everything the browser does is under 1 s. Asking the model for one-line JSON halved its output and cut the median search from 25-29 s to 15-16 s with no measurable quality change; that shipped as 7c855e1 (see [Results](#results-2026-09-28)). Provider routing and a split enrich call are measured but not shipped.
+**Short answer:** one model call, enrich (`proxy/src/enrich.ts:189`), is 76-93% of a search's time, and its time is output tokens divided by whichever provider OpenRouter picks. Everything the browser does is under 1 s. Asking the model for one-line JSON halved its output and cut the median search from 25-29 s to 15-16 s with no measurable quality change; that shipped as 7c855e1 (see [Results](#results-2026-09-28)). Routing to the fastest provider, no longer asking for signals, and no longer sending editorial pages then cut the median to 7-8 s (see [Priority 6 changes](#priority-6-changes-2026-09-28)). A split enrich call is measured but not shipped.
 
 ## Method
 
@@ -74,6 +74,20 @@ Each change ran on the 20 eval20-0925 searches through the real pipeline, altern
 
 Both are pushed (2026-09-28) and the site change is live; the prompt change is live only after `infra/deploy.sh` deploys the Worker (`.claude/skills/deploy/SKILL.md`).
 
+### Priority 6 changes (2026-09-28)
+
+Operator rulings LQ1 (route for throughput) and LQ4 (stop asking for signals), plus one change that follows from LQ4: editorial pages were sent to the model only as evidence for signals, so they are no longer sent. Commits c504d1a, e07c707, 64cdd9d; measured together against 208222d (the compact prompt) on all 60 eval20-0925 searches (20 products x 3 locations; the rows above used 20 of them, so counts are not comparable) x 2 rounds, arms alternating. Evidence: `evidence/latency-0927/runs/priority6/` and `runs/priority6-bisect/`.
+
+| Arm | Median search (p90) | Enrich median | Recall online / local | Graded-good shown | Graded-bad shown | Model $ per search |
+|---|---|---|---|---|---|---|
+| 208222d | 14.8 s (40.8), 14.0 s (31.5) | 10.0 s | 0.35, 0.33 / 0.337 | 257, 247 | 53, 51 | $0.0022 |
+| Priority 6 | 7.9 s (12.8), 7.0 s (9.6) | 4.8 s | 0.34, 0.35 / 0.349 | 251, 244 | 47, 44 | $0.0034 |
+
+- **Speed.** Throughput routing sent 117 of 121 enrich calls to ModelRun (median 158 tok/s in this run, 265 in the bisect round); 208222d spread over six providers at a median 79 tok/s. Output tokens barely moved (785 to 756), so the gain is routing. ModelRun costs about 5x per call ($0.0032-0.0036 vs $0.0005-0.0007); model cost is still about 15% of a search's estimated $0.023, which is mostly Brave (estimated from the published price, not billed data).
+- **Nearby sell verdicts moved past noise.** 30 and 35 shops flipped between shown and dropped-as-not-selling, against 21 and 15 for the same code run twice (`eval/compare.mjs`, local results only). The change is stricter: every graded shop it newly dropped was graded "doesn't sell" (7 and 8 per round), none graded "sells"; it newly showed 0 and 2 graded "doesn't sell". 18 newly dropped shops per round are ungraded. Online shown results moved at noise level, none by a sell verdict.
+- **Cause: likely the prompt without signals, not routing or editorial pages.** Baseline searches that happened to run on ModelRun dropped 1.57 nearby shops per search as not selling, others 1.61, the priority 6 code 1.78. A bisect round with 64cdd9d reverted (same routing, both arms on ModelRun) dropped 1.78 vs 1.83, with 19 flips, inside noise. Median search in that round was 4 s for both arms.
+- **Cost of the measurement:** 360 searches, about $8.30 estimated (Brave $7.20 estimated, model $1.10 reported by OpenRouter).
+
 ## Optimizations, ranked by expected seconds saved (before the results)
 
 "Estimated" figures are arithmetic on the tables above, not measurements. The Results section supersedes the expected effects below.
@@ -93,9 +107,9 @@ Perceived speed is a separate lever: the page shows only "Searching" for 15-60 s
 
 ## Open questions for the operator
 
-Rulings 2026-09-28: LQ1 yes (ship throughput routing), LQ2 yes (graded review of the split), LQ4 drop (stop asking for signals). LQ3 open. Follow-up work is STATUS priority 6.
+Rulings 2026-09-28: LQ1 yes (ship throughput routing), LQ2 yes (graded review of the split), LQ4 drop (stop asking for signals). LQ1 and LQ4 shipped (above). LQ3 open. LQ2 is STATUS priority 6.
 
 - LQ1. Ship OPT-1? Measured: never slower, 0-75% faster depending on the moment, quality at noise level, model cost 1.3-2.3x (1-8% of a search's total). It is a one-line change at `proxy/src/llm.ts:75`. Agent's recommendation: ship it on top of OPT-3.
 - LQ2. Answered by doing it: OPT-2 and OPT-3 were each run twice on the graded searches (above). Open part: does OPT-2's verdict shift (fewer graded-bad shops shown) warrant a graded review of the split?
-- LQ3. Beyond OPT-3, the remaining output-token cuts (short keys, dropping the unread `confidence` field) change the reply schema and parser; worth a session?
+- LQ3. Beyond OPT-3, the remaining output-token cuts (short keys; `confidence` went with the signals) change the reply schema and parser; worth a session?
 - LQ4. The model's `retailers`/`signals` output has put no signal on a shown result since 2026-09-24 (above). Keep asking for it (ADR 0004 still allows a positive signal cited from another site's page, such as an editorial one), or drop it and save its output tokens?

@@ -1,0 +1,1553 @@
+{
+  "id": "jigsaw-puzzle-suburban",
+  "checked": "2026-09-29T00:06:15.075Z",
+  "request": {
+    "product": "jigsaw puzzle",
+    "city": "South Saint Paul",
+    "state": "MN",
+    "lat": 44.89,
+    "lon": -93.04,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 3460,
+  "body": {
+    "query": {
+      "product": "jigsaw puzzle",
+      "city": "South Saint Paul",
+      "state": "MN",
+      "canonical_name": "jigsaw puzzle",
+      "category": "toys and games",
+      "online_queries": [
+        "buy jigsaw puzzles",
+        "jigsaw puzzle shop"
+      ],
+      "local_queries": [
+        "toy store",
+        "hobby store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4PHPZ2IOBOFDEBX3N3Y4CSQ2XYCJRJKOAAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Dreamers Vault Games South Saint Paul",
+          "domain": "dreamersvault.com",
+          "url": "https://dreamersvault.com/"
+        },
+        "matched_product": "",
+        "snippet": "gaming",
+        "address": "207 13th Ave S, South St Paul, MN 55075",
+        "distance_km": 0.8,
+        "lat": 44.8887,
+        "lon": -93.0494,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://dreamersvault.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.98,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.5 mi (0.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "local:loc4SB6TLLCOOJDEBIVEOZ272RCXYCIXMHC2WCMJLLY=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://target.com/sl/west-st-paul/2046"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1750 S Robert St, West St Paul, MN 55118",
+        "distance_km": 3,
+        "lat": 44.893,
+        "lon": -93.078,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://target.com/sl/west-st-paul/2046"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.925,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.9 mi (3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,000+ stores",
+          "stores": 2000,
+          "source_url": "https://corporate.target.com/about",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4XRZL23NGOJDEB2VEBC5AORKXYDXLYE4KAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Hobby Lobby",
+          "domain": "hobbylobby.com",
+          "url": "https://hobbylobby.com/stores/search/753"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1660 S Robert St, West St Paul, MN 55118",
+        "distance_km": 3.1,
+        "lat": 44.8957,
+        "lon": -93.0786,
+        "certifications": [],
+        "signals": [],
+        "score": 0.563,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://hobbylobby.com/stores/search/753"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9225,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "1.9 mi (3.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4WYPM66DMOZDEB3QDGUQVEPSXYBMET42FAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Hi-Score Video Games",
+          "domain": "hiscoregames.com",
+          "url": "https://hiscoregames.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1750 Weir Dr Ste 19, Woodbury, MN 55125",
+        "distance_km": 6.5,
+        "lat": 44.9252,
+        "lon": -92.9738,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://hiscoregames.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8375,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "4.0 mi (6.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4VIEUONMRPFDEAWOXBWAN2QKXYA3TKC2UK77O2EQ=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://target.com/sl/east-st-paul/68"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1744 Suburban Ave, St Paul, MN 55106",
+        "distance_km": 6.7,
+        "lat": 44.9497,
+        "lon": -93.0291,
+        "certifications": [],
+        "signals": [],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://target.com/sl/east-st-paul/68"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8325,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "4.2 mi (6.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,000+ stores",
+          "stores": 2000,
+          "source_url": "https://corporate.target.com/about",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4FAEMGJLMOZDEAJVVA2SR4PKXYBDNJROOAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "GameStop",
+          "domain": "gamestop.com",
+          "url": "https://gamestop.com/store/us/mn/woodbury/600/woodbury-village-gamestop"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "7455 Currell Blvd #109, Woodbury, MN 55125",
+        "distance_km": 7.8,
+        "lat": 44.9252,
+        "lon": -92.955,
+        "certifications": [],
+        "signals": [],
+        "score": 0.546,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://gamestop.com/store/us/mn/woodbury/600/woodbury-village-gamestop"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8049999999999999,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "4.8 mi (7.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,598 stores",
+          "stores": 1598,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1326380/000132638026000013/gme-20260131.htm",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "local:loc4SL7W4JSLPFDEABL26L5N2PSXYB7O6IHWAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Mana Dork Cards & Games - Online Retailer (Appointment Only)",
+          "domain": "manadork.com",
+          "url": "https://manadork.com/"
+        },
+        "matched_product": "",
+        "snippet": "gaming",
+        "address": "6043 Hudson Rd #100, Woodbury, MN 55125",
+        "distance_km": 7.9,
+        "lat": 44.9476,
+        "lon": -92.9823,
+        "certifications": [],
+        "signals": [],
+        "score": 0.545,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://manadork.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "4.9 mi (7.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "local:loc4IMC6FUFWNBDEA2FWQ2W3IQSXYBYYKGZXAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "NerdinOut-Inver Grove Heights",
+          "domain": "nerdinout.com",
+          "url": "https://nerdinout.com/locations/inver-grove-heights-mn"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "9079 Buchanan Trail, Inver Grove Heights, MN 55076",
+        "distance_km": 8,
+        "lat": 44.8181,
+        "lon": -93.0423,
+        "certifications": [],
+        "signals": [],
+        "score": 0.545,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://nerdinout.com/locations/inver-grove-heights-mn"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "5.0 mi (8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4XUKMG6SIPBDEAK2BSDGZ6SCXYCKPOSEMAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Mischief Toy Store",
+          "domain": "mischieftoy.com",
+          "url": "https://mischieftoy.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "818 Grand Ave, St Paul, MN 55105",
+        "distance_km": 9.3,
+        "lat": 44.9397,
+        "lon": -93.1348,
+        "certifications": [],
+        "signals": [],
+        "score": 0.54,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://mischieftoy.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7675,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "5.8 mi (9.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 10
+      },
+      {
+        "id": "local:loc4FCB75HKIPBDEATBUJDAVGSKXYBW7BDMMAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Creative Kidstuff Toy Store",
+          "domain": "creativekidstuff.com",
+          "url": "https://creativekidstuff.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1074 Grand Ave, St Paul, MN 55105",
+        "distance_km": 10,
+        "lat": 44.9397,
+        "lon": -93.1457,
+        "certifications": [],
+        "signals": [],
+        "score": 0.538,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://creativekidstuff.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.75,
+            "weight": 0.15,
+            "contribution": 0.112,
+            "sources": [
+              {
+                "label": "6.2 mi (10 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 11
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:whitemountainpuzzles.com",
+        "kind": "online",
+        "retailer": {
+          "name": "White Mountain Puzzles",
+          "domain": "whitemountainpuzzles.com",
+          "url": "https://www.whitemountainpuzzles.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "For over 30 years White Mountain Puzzles has offered the best jigsaw puzzles for adults, kids and families. Click or call 1-800-548-8009 to order now. For over 30 years, White Mountain Puzzles has crafted the highest quality puzzles for the entire family to enjoy. We offer colorful jigsaw puzzles from recognized artists, available for all ages and all levels of difficulty. Collage puzzles are actually easier to solve than a typical photo puzzle. That variety of pictures and text gives you way more clues to work with, making sorting and matching a breeze. More visual interest, less frustration. ... Jigsaw Puzzles are more than just fun. Every puzzle is packed with sayings, trivia, and vintage finds worth a second look. For a limited time, enjoy 10% off all Steve Cameron puzzles and see how much you can spot. Sign up to receive exclusive discount offers, our latest puzzle releases, our printed catalog, and customer surveys so you can tell us what puzzle to print next!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "America's Favorite Jigsaw Puzzles for Adults, Kids and Families – White Mountain Puzzles",
+                "url": "https://www.whitemountainpuzzles.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:buffalogames.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Buffalo Games",
+          "domain": "buffalogames.com",
+          "url": "https://www.buffalogames.com/collections/jigsaw-puzzles"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Find the perfect puzzle to suit your taste and skill level at Buffalo Games. Our jigsaw puzzles come in various sizes, themes, and difficulties. Shop now! Find the perfect puzzle to suit your taste and skill level at Buffalo Games. Our jigsaw puzzles come in various sizes, themes, and difficulties. Shop now! Fresh puzzles delivered every month. Explore Subscriptions ... Limit: count_product products for comparison. ... This 1000 piece jigsaw puzzle features Cinque Terre on the stunning Italian coastline. A popular destination for European travelers, this nighttime scene is a masterpiece to snap together piece by piece. Savor the challenge and enjoy the highest level of Puzzle crafting with this, our premium Signature Collection. Every Buffalo Games jigsaw Puzzle is manufactured in the United States from recycled Puzzle board. A precision cutting technique guarantees that every piece will fit soundly with the company's signature Perfect SnapTM. Buffalo Games puzzles are manufactured using trademarked \"Perfect Snap\" technology ensuring a tight interlocking fit between pieces · Receives in 5 days. Limit: count_product products for comparison. ... Limit: count_product products for comparison. ... Charles Wysocki shows his spooky side with this 1000-piece jigsaw puzzle titled Trick or Treat Hotel.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jigsaw Puzzles for All Ages and Skill Levels - Buffalo Games",
+                "url": "https://www.buffalogames.com/collections/jigsaw-puzzles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:bitsandpieces.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bits and Pieces",
+          "domain": "bitsandpieces.com",
+          "url": "https://www.bitsandpieces.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Shop for high-quality jigsaw puzzles, personalized gifts, and more from Bits and Pieces. We are one of the foremost jigsaw puzzle destination. I volunteer at a cancer treatment center. Our clients and families love to work puzzles ...I keep a puzzle out at all times. I love jigsaw puzzles & putting them together, it manages to get the whole family involved. When I was a kid my mother got us started when dad had a business trip. Indulge in the enchanting jigsaw puzzles of artist Alan Giana, where artistry meets entertainment. Our Alan Giana artist puzzle collection showcases the beauty of nature and the artist's unique vision. Bits and Pieces has been designing colorful, high-quality jigsaw puzzles for over 40 years. I have ordered several times online ...and have always enjoyed putting their puzzles together.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bits and Pieces | Buy Jigsaw Puzzles, Personalized Gifts & More",
+                "url": "https://www.bitsandpieces.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:springbok-puzzles.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Springbok Puzzles",
+          "domain": "springbok-puzzles.com",
+          "url": "https://www.springbok-puzzles.com/sale_puzzles-s/1826.htm/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Sale Puzzles Sort by newly added or piece count to find savings just right for you. Our selection of discounted jigsaw puzzles are featured for a limited time but will provide you and your family with an activity that last for hours! Discover the joy of puzzling with our collection of sale puzzles, where affordability meets quality and entertainment. Whether you're a seasoned puzzle enthusiast or new to the world of jigsaws, our selection offers an engaging challenge for all skill levels. These discounted jigsaw puzzles may come at a lower price, but they promise hours of entertainment for you and your family.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Sale Puzzles | Springbok-puzzles",
+                "url": "https://www.springbok-puzzles.com/sale_puzzles-s/1826.htm/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:puzzlewarehouse.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Puzzle Warehouse",
+          "domain": "puzzlewarehouse.com",
+          "url": "https://www.puzzlewarehouse.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Largest selection of jigsaw puzzles, games and brain teasers anywhere. Low prices, free shipping &amp; 1 yr returns. Click or call 866-539-4278 to order. Puzzle Warehouse is the go-to destination for jigsaw puzzles, brain teasers, and accessories. Whether you’re just getting started or have completed hundreds of puzzles, you’ll find a wide selection designed for every skill level and interest. Connect with other puzzle enthusiasts through our Facebook, Instagram, and our Jigsaw Junkies Blog. I look at puzzles every single day for work, which you would think would make me less likely to buy them. And you think as someone who does over 300 puzzles a year, I'd get sick of them. Well I'm not... I'm a bit obsessed and still get VERY excited over new puzzles. Browse popular brands like Ravensburger, Cobble Hill, Buffalo Games, White Mountain, and SunsOut, along with unique and hard-to-find puzzle brands you may not see anywhere else.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jigsaw Puzzles, Games and Toys for Kids | PuzzleWarehouse.com",
+                "url": "https://www.puzzlewarehouse.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:seriouspuzzles.com",
+        "kind": "online",
+        "retailer": {
+          "name": "SeriousPuzzles",
+          "domain": "seriouspuzzles.com",
+          "url": "https://www.seriouspuzzles.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Looking for the perfect jigsaw puzzle or brain teaser challenge? Serious Puzzles is the shop for you, offering puzzles and games for kids of all ages. Welcome to SeriousPuzzles.com, your go-to destination for top-quality jigsaw puzzles, mind-bending brain teasers, handcrafted puzzle boxes, and other delightfully unique gifts for both kids and adults. From oversized floor puzzles for little ones to intricate 1,000-piece masterpieces and even the world's largest 42,000-piece challenge, we have something for every puzzler. With new arrivals added all the time, Serious Puzzles is your trusted source for discovering the next piece in your puzzle journey. We proudly carry over 100 exceptional jigsaw puzzle brands from the U.S. We're puzzle people, just like you and we're serious about making your shopping experience a great one. \"I have used Serious Puzzles for years, and the experience has always been exceptional.\" - February 2025",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jigsaw Puzzles, Brain Teasers & Games | SeriousPuzzles.com",
+                "url": "https://www.seriouspuzzles.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "online:masterpiecesinc.com",
+        "kind": "online",
+        "retailer": {
+          "name": "MasterPieces",
+          "domain": "masterpiecesinc.com",
+          "url": "https://www.masterpiecesinc.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "MasterPieces produces high-quality jigsaw puzzles, games, toys, and more for all age groups and skill levels. Visit our online puzzle store here. For over 30 years, MasterPieces® has enjoyed making quality jigsaw puzzles and games, toys, do-it-yourself wood craft kits, and much more. As an American jigsaw puzzles company and game store, innovation and premium quality are the MasterPieces® hallmark. We create puzzles that are made from recycled paper and soy-based inks to ensure you have nothing less than the best. Our pledge as your trusted jigsaw puzzle company is to make top quality kids’ puzzles, 300pc EZGrip puzzles, 550pc puzzles, 750pc puzzles, 1000pc puzzles, 1000pc panoramic puzzles, 2000pc puzzles, and multi-pack puzzles for puzzlers of all ages. We also deliver quality games and toys, including Checkers, ‘Opoly, Shake n’ Score, and more. If you want to piece together a complex jigsaw or solve a fun brainteaser, look no further than MasterPieces®. Our products take family game night to the next level! As a puzzle manufacturer, we take pride in crafting high-quality games, toys, wood craft kits, and puzzles so our customers can have the best experience possible. This, along with our exceptional customer service, has earned us worldwide customer loyalty. Whether you’re looking for the perfect gift for the avid puzzler in your life or just want to add some challenge to family game night, our online puzzle shop has got you covered.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jigsaw Puzzles, Games, Toys, and More! – MasterPieces Puzzle Company INC",
+                "url": "https://www.masterpiecesinc.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "online:galison.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Galison",
+          "domain": "galison.com",
+          "url": "https://www.galison.com/collections/jigsaw-puzzles"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Our jigsaw puzzle collection includes over 500 designs across every piece count, format, and theme we make - from 100-piece minis to 2000-piece projects, in standard, foil, shaped, double-sided, panoramic, and wooden formats. Special Features Foil Puzzles Book Puzzles Greeting Card Puzzles Panoramic Puzzles Shaped Puzzles Advent Calendar Puzzles Puzzle Ornaments Wooden Puzzles Mini Puzzles ... Our jigsaw puzzle collection includes over 500 designs across every piece count, format, and theme we make - from 100-piece minis to 2000-piece projects, in standard, foil, shaped, double-sided, panoramic, and wooden formats. This is our full puzzle catalog. It includes every jigsaw puzzle we currently sell - all piece counts, all formats, all themes, all artists. If you already know what you're looking for, use the filters on this page or jump directly to a sub-collection linked below. Pick by format. If you've done a lot of standard rectangles, try a shaped, foil, or double-sided puzzle for a different experience. What piece counts are available for Galison jigsaw puzzles? All surprise puzzles are 1000 pieces. 100 Piece Jigsaw Puzzles 300 Piece Jigsaw Puzzles 500 Piece Jigsaw Puzzles 750 Piece Jigsaw Puzzles 1000 Piece Jigsaw Puzzles Shaped Jigsaw Puzzles Wooden Puzzles Joy Laforme Collection Michael Storrings Collection Andy Warhol Collection Anne Bentley Collection",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Jigsaw Puzzles | 100, 500, 1000, up to 2000 pieces | Galison",
+                "url": "https://www.galison.com/collections/jigsaw-puzzles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "online:fineartamerica.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Fine Art America",
+          "domain": "fineartamerica.com",
+          "url": "https://fineartamerica.com/shop/puzzles/st+pauls"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Shop for st pauls jigsaw puzzles from 1,423 independent artists. Shop for st pauls jigsaw puzzles from 1,423 independent artists. Miracles of St. Francis Xavier by Peter Paul Rubens St. Paul Cathedral Dome London, Fine Art Architecture in Black and White St. Pauls Anglican Church",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "St Pauls Jigsaw Puzzles for Sale - Fine Art America",
+                "url": "https://fineartamerica.com/shop/puzzles/st+pauls"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "online:toppuzzleshop.com",
+        "kind": "online",
+        "retailer": {
+          "name": "TopPuzzleShop",
+          "domain": "toppuzzleshop.com",
+          "url": "https://toppuzzleshop.com/"
+        },
+        "matched_product": "jigsaw puzzle",
+        "snippet": "Toppuzzleshop is an online jigsaw puzzle shop that ships worldwide! Secure packaging and tracking ensure your puzzles&#x27; safe delivery. I also ordered Hat Theatre Party and can't wait to start on it! Oh, also very fast shipping. My only complaint is that there is not enough puzzle in this collection! ... (Freeshipping from USA)1000 Piece Jigsaw Puzzles for Adults-Adorable Animal Series, Premium Non-AI Art I got the Puffinkid mini puzzles because they looked so cute. I love Drunk Momi cats. The puzzles did not disappoint. Very good quality and no regrets getting these. ... (Freeshipping from USA)1000 Piece Jigsaw Puzzles for Adults-Adorable Animal Series, Premium Non-AI Art 🚚 Fast Local Shipping | 📦 Safe Arrival | ✨ Zero Customs Fees Get your puzzle fix in days, not weeks. Shop the “Ready-to-Ship” collection now! When I saw that I did expect my box to come a little damages, but the box (which is flimsier and more delicate than other boxes for sure) was wrapped so securely the box was in pristine condition. This was the first plastic puzzle I've ever done, and I really loved it.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Online Jigsaw Puzzle Shop, shipping worldwide, 3000+ Models",
+                "url": "https://toppuzzleshop.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 65,
+          "cost_usd": 0.00032675
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3511,
+          "completion_tokens": 737,
+          "cost_usd": 0.00337025
+        }
+      ],
+      "llm_tokens": 4662,
+      "estimated_cost_usd": 0.023697,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "yelp.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "fractionaltoys.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "target.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "pixels.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

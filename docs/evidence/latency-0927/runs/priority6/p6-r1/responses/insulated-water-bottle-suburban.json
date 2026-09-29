@@ -1,0 +1,1695 @@
+{
+  "id": "insulated-water-bottle-suburban",
+  "checked": "2026-09-28T16:03:41.236Z",
+  "request": {
+    "product": "insulated water bottle",
+    "city": "Littleton",
+    "state": "CO",
+    "lat": 39.55,
+    "lon": -105.01,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 6263,
+  "body": {
+    "query": {
+      "product": "insulated water bottle",
+      "city": "Littleton",
+      "state": "CO",
+      "canonical_name": "insulated water bottle",
+      "category": "drinkware",
+      "online_queries": [
+        "buy insulated water bottle",
+        "stainless steel flask shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "general store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4P7JQKBS2YZBUA4YOINIFUQC2YBELMB6XAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://target.com/sl/highlands-ranch/2716"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1265 Sergeant Jon Stiles Dr, Highlands Ranch, CO 80129",
+        "distance_km": 0.4,
+        "lat": 39.5496,
+        "lon": -105.0055,
+        "certifications": [],
+        "signals": [],
+        "score": 0.574,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://target.com/sl/highlands-ranch/2716"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.99,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.2 mi (0.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,000+ stores",
+          "stores": 2000,
+          "source_url": "https://corporate.target.com/about",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 1
+      },
+      {
+        "id": "local:loc43BFEH2H3YVBUBYUQBWSAWQC2YAOPWWO7AAAAAAA=:14",
+        "kind": "local",
+        "retailer": {
+          "name": "Natural Grocers",
+          "domain": "naturalgrocers.com",
+          "url": "https://naturalgrocers.com/store/highlands-ranch"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "9315 Dorchester St Ste 100, Highlands Ranch, CO 80129",
+        "distance_km": 0.9,
+        "lat": 39.5468,
+        "lon": -105.0007,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://naturalgrocers.com/store/highlands-ranch"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9775,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.6 mi (0.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4M4ALSDQ7YZBUBULCQRF2EP22YAEG2EQVAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Safeway",
+          "domain": "safeway.com",
+          "url": "https://local.safeway.com/safeway/co/highlands-ranch/9255-s-broadway.html"
+        },
+        "matched_product": "",
+        "snippet": "grocery, bakery, convenience_store, florist, grocery",
+        "address": "9255 S Broadway, Highlands Ranch, CO 80129",
+        "distance_km": 1.4,
+        "lat": 39.5478,
+        "lon": -104.9943,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://local.safeway.com/safeway/co/highlands-ranch/9255-s-broadway.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.965,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.9 mi (1.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 912 stores",
+          "stores": 912,
+          "source_url": "https://en.wikipedia.org/wiki/Safeway_Inc.",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4XOQYJ5DPYZBUAC6PJPCUMQS2YBPQJRKLAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Ewing Outdoor Supply",
+          "domain": "ewingoutdoorsupply.com",
+          "url": "https://ewingoutdoorsupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "9105 Commerce Center Cir, Highlands Ranch, CO 80129",
+        "distance_km": 2.2,
+        "lat": 39.5503,
+        "lon": -105.0356,
+        "certifications": [],
+        "signals": [],
+        "score": 0.567,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://ewingoutdoorsupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.945,
+            "weight": 0.15,
+            "contribution": 0.142,
+            "sources": [
+              {
+                "label": "1.4 mi (2.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4B67IWUU5ZBBUBRGY7ABGSP22YDD3WX67AAAAAAA=:15",
+        "kind": "local",
+        "retailer": {
+          "name": "Dollar Tree",
+          "domain": "dollartree.com",
+          "url": "https://locations.dollartree.com/co/littleton/171-w-county-line-rd"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "171 W County Line Rd, Littleton, CO 80129",
+        "distance_km": 2.5,
+        "lat": 39.5673,
+        "lon": -104.9908,
+        "certifications": [],
+        "signals": [],
+        "score": 0.566,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://locations.dollartree.com/co/littleton/171-w-county-line-rd"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.6 mi (2.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4QO4YEEQLYVBUAC3ZVF6V6QS2YCCQBCQ5AAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Murdoch's Ranch & Home Supply",
+          "domain": "murdochs.com",
+          "url": "https://murdochs.com/stores/littleton"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "12154 N Dumont Way, Littleton, CO 80125",
+        "distance_km": 2.6,
+        "lat": 39.5394,
+        "lon": -105.0371,
+        "certifications": [],
+        "signals": [],
+        "score": 0.565,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://murdochs.com/stores/littleton"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.935,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "1.6 mi (2.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 45+ stores",
+          "stores": 45,
+          "source_url": "https://www.murdochs.com/stores",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4Q6P2IZKJZBBUAP3QSUTZAPK2YB7I4FNXAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Mike's Bikes of Highlands Ranch",
+          "domain": "mikesbikes.com",
+          "url": "https://mikesbikes.com/pages/highlands-ranch"
+        },
+        "matched_product": "",
+        "snippet": "bicycle",
+        "address": "2030 E County Line Rd, Highlands Ranch, CO 80126",
+        "distance_km": 4.4,
+        "lat": 39.5647,
+        "lon": -104.9619,
+        "certifications": [],
+        "signals": [],
+        "score": 0.559,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://mikesbikes.com/pages/highlands-ranch"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.89,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "2.7 mi (4.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "local:loc4RH55TWNBYBBUBSD5VN2WEQK2YBZC2AWIAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Hornet Outdoors Shopping Site",
+          "domain": "shophornetoutdoors.com",
+          "url": "https://shophornetoutdoors.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "9861 Titan Park Cir, Sedalia, CO 80135",
+        "distance_km": 5.1,
+        "lat": 39.5049,
+        "lon": -105.0216,
+        "certifications": [],
+        "signals": [],
+        "score": 0.556,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://shophornetoutdoors.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8725,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "3.2 mi (5.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "local:loc4VLB4AKLCZRBUAMNPZBKGMQK2YC36C3BEAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Ewing Outdoor Supply",
+          "domain": "ewingoutdoorsupply.com",
+          "url": "https://ewingoutdoorsupply.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "6601 S Santa Fe Dr, Littleton, CO 80120",
+        "distance_km": 5.3,
+        "lat": 39.5967,
+        "lon": -105.0219,
+        "certifications": [],
+        "signals": [],
+        "score": 0.555,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://ewingoutdoorsupply.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8674999999999999,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "3.3 mi (5.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4ZHGGBZYBZRBUAAZASMYWGPK2YDFH5WRJAAAAAAA=:16",
+        "kind": "local",
+        "retailer": {
+          "name": "Natural Grocers",
+          "domain": "naturalgrocers.com",
+          "url": "https://naturalgrocers.com/store/centennial-cherry-knolls"
+        },
+        "matched_product": "",
+        "snippet": "grocery, grocery",
+        "address": "6774 S University Blvd, Centennial, CO 80122",
+        "distance_km": 6.5,
+        "lat": 39.5938,
+        "lon": -104.9592,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://naturalgrocers.com/store/centennial-cherry-knolls"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8375,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "4.0 mi (6.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "local_farther": [
+      {
+        "id": "local:loc45VSMWTJP4FBUA6SSEY23IQC2YC3MI4QMAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "General Store 45",
+          "domain": "generalstore45.com",
+          "url": "https://generalstore45.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1575 Boulder St D, Denver, CO 80211",
+        "distance_km": 23.3,
+        "lat": 39.7593,
+        "lon": -105.011,
+        "certifications": [],
+        "signals": [],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://generalstore45.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.4175,
+            "weight": 0.15,
+            "contribution": 0.063,
+            "sources": [
+              {
+                "label": "14 mi (23.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 11
+      }
+    ],
+    "online": [
+      {
+        "id": "online:kleankanteen.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Klean Kanteen",
+          "domain": "kleankanteen.com",
+          "url": "https://www.kleankanteen.com/collections/insulated-water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Our insulated water bottles and insulated coffee mugs are made to eliminate single-use with high-performance in mind. Our 64 oz insulated keeps drinks cold up to 145 hours iced! Our 20 oz insulated keeps drinks hot 17 hours! Our insulated water bottles and insulated coffee mugs are made to eliminate single-use with high-performance in mind. Our 64 oz insulated keeps drinks cold up to 145 hours iced! Our 20 oz insulated keeps drinks hot 17 hours! Shop your favorite insulated bottle or mug - styles, colors and caps from sports to straws. Stainless Steel Insulated Water Bottles Our full line of Climate Lock™ Vacuum Insulated stainless steel water bottles get rave reviews due to their high performance, durable construction and lifetime guarantee. Keeping drinks cold up to 145 hours, and hot up to 47 hours. Our full line of Climate Lock™ Vacuum Insulated stainless steel water bottles get rave reviews due to their high performance, durable construction and lifetime guarantee. Keeping drinks cold up to 145 hours, and hot up to 47 hours. From narrow profile Classic and Kid Kanteen to wide mouth TKWide and TKPro with pour through cap, we have bottle options, colors and sizes for any lifestyle. Pick up your favorite insulated bottle for water, coffee, tea, iced coffee, smoothies, juice or other drinks; iced cold or piping hot.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "b_corp",
+            "label": "B Corp",
+            "source_url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/klean-kanteen/",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "one_percent_planet",
+            "label": "1% for the Planet",
+            "source_url": "https://directories.onepercentfortheplanet.org/profile/klean-kanteen",
+            "checked": "2026-09-23"
+          },
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/klean-kanteen",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.85,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Steel Water Bottles and Coffee Mugs | Klean Kanteen",
+                "url": "https://www.kleankanteen.com/collections/insulated-water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "B Corp",
+                "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/klean-kanteen/"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 1,
+            "weight": 0.3,
+            "contribution": 0.3,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "1% for the Planet",
+                "url": "https://directories.onepercentfortheplanet.org/profile/klean-kanteen"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/klean-kanteen"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/water-bottles/f/f-insulated"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Add Micro Hydro Vacuum Water Bottle with Screw Cap - 10 fl. oz. to Compare · Top RatedYETIRambler Vacuum Bottle with Chug Cap - 18 fl. oz. ... Add Rambler Vacuum Bottle with Chug Cap - 18 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 25 fl. Add Lightweight Wide-Mouth Vacuum Water Bottle with Flex Chug Cap - 24 fl. oz. to Compare · Staff PickBivoTrio Insulated Water Bottle - 21 fl. Add Lightweight Wide-Mouth Vacuum Water Bottle with Flex Chug Cap - 32 fl. oz. to Compare · CamelBakPodium Big Chill Insulated Water Bottle - 24 fl. Add Micro Hydro Vacuum Water Bottle with Screw Cap - 10 fl. oz. to Compare · Top RatedYETIRambler Vacuum Bottle with Chug Cap - 18 fl. oz. ... Add Rambler Vacuum Bottle with Chug Cap - 18 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 25 fl. Add Rambler Vacuum Water Bottle with Flip Chug Cap - 26 fl. oz. to Compare · Top RatedBruMateRise Insulated Water Bottle - 35 fl.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Water Bottles | REI Co-op",
+                "url": "https://www.rei.com/c/water-bottles/f/f-insulated"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 190+ stores",
+          "stores": 190,
+          "source_url": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "online:stanley1913.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Stanley 1913",
+          "domain": "stanley1913.com",
+          "url": "https://www.stanley1913.com/collections/water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Shop Stanley 1913 stainless steel water bottles. Explore our best insulated water bottles that keep water cold wherever you go. Free shipping on orders over $75! Our iconic insulated bottles start with two layers of stainless-steel metal. The air separating these layers is removed to create a vacuum. As a result of this highly efficient, double-wall vacuum insulation, beverages stay hotter or colder longer. Another great benefit: your Stanley 1913 water bottle is also designed to eliminate condensation when filled with a cold or iced drink. What is the best Stanley 1913 water bottle size for me? Stanley 1913's insulated, stainless-steel water bottles range in size from 25 oz–40 oz. For a streamlined design that fits easily into a backpack, bag, or car cup holder, look for a water bottle under 36 oz. When you've been keeping water icy cold for over a century, you learn what makes the best water bottle. We don't just specialize in making lasting stainless steel insulated water bottles for every trail, commute and adventure; we craft lifelong companions tough enough to keep your cool, literally. Insulated cups & mugs for hot morning coffee or evening tea. Water jugs for major hydration needs. Water bottle holders to keep your bottle secure and easy to access.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Stainless Steel Water Bottles – Stanley 1913",
+                "url": "https://www.stanley1913.com/collections/water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:bulktumblers.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bulk Tumblers",
+          "domain": "bulktumblers.com",
+          "url": "https://bulktumblers.com/collections/insulated-water-bottles"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Blank and Powder Coated Stainless Steel Insulated Water Bottles, sold individually or by the case. Bulk Case Pricing - 32 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistan... 32 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ... 20 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ... 40 oz. Powder-coated Vacuum Insulated Sport Water Bottle features double-wall vacuum insulation with a flip-top, spill resistant lid. The screw on ...",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Water Bottles — Bulk Tumblers",
+                "url": "https://bulktumblers.com/collections/insulated-water-bottles"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:ironflask.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Iron Flask",
+          "domain": "ironflask.com",
+          "url": "https://www.ironflask.com/"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Iron Flask proudly offers high quality insulated stainless steel water bottles, tumblers, mugs &amp; more that are reliable, elegant &amp; backed with a lifetime warranty. Get your flask today! We empower everyday adventurers with simple, reliable, and stylish hydration solutions. Iron Flask delivers durable, high-performance water bottles without the fuss or premium price tag. Ready for a reset? Discover how hydration transforms sleep, energy, and focus. Start your wellness reset today with Iron Flask.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Insulated Water Bottles in Stainless Steel | Iron Flask",
+                "url": "https://www.ironflask.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:truflask.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Tru Flask",
+          "domain": "truflask.com",
+          "url": "https://truflask.com/"
+        },
+        "matched_product": "stainless steel water bottle",
+        "snippet": "Tru Flask is an outdoor adventure company based in the USA, offering stainless steel water bottles, coolers, and accessories. Shop our top-notch, stainless steel products at affordable prices today! Tru Flask offers some of the best outdoor stainless steel drinkware options to help you do just that! Your new favorite every day accessory! Shop · Promote your business, reward employees, or support the local high school team. Get Started · We started the Tru Flask Adventure Club™ to help foster a love of adventure in youth, primarily those from under served and overlooked communities. Whether you're on the go, in the wilderness, at school, work, or on vacation, Tru Flask has the perfect portable drinkware for all your needs.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Stainless Steel Water Bottle Company USA | Tru Flask",
+                "url": "https://truflask.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/insulated-water-bottles/4044_623679_639999_7751805_4269055_6031069"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Shop insulated water bottles designed for travel, outdoor activities, and daily hydration needs. Water Bottle Feature · Color · Material · Lifestage · Gender · Features · Cleaning Care and Maintenance · Availability · Departments · Deals · Customer Rating · Retailer · Gifting · Uses item details. Price when purchased online · Options · Sponsored ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated Water Bottles for Travel and Outdoors - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/insulated-water-bottles/4044_623679_639999_7751805_4269055_6031069"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Sports-Outdoors-Water-Bottles/Insulated/N-5yc1vZcexkZ1z0lzhv"
+        },
+        "matched_product": "insulated water bottle",
+        "snippet": "Get free shipping on qualified Insulated Water Bottles products or Buy Online Pick Up in Store today in the Sports &amp; Outdoors Department.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17",
+            "penalty_usd": 20750000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Insulated - Water Bottles - The Home Depot",
+                "url": "https://www.homedepot.com/b/Sports-Outdoors-Water-Bottles/Insulated/N-5yc1vZcexkZ1z0lzhv"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,347 stores",
+          "stores": 2347,
+          "source_url": "https://en.wikipedia.org/wiki/The_Home_Depot",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "online:highcampflasks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "High Camp Flasks",
+          "domain": "highcampflasks.com",
+          "url": "https://highcampflasks.com/collections/all-flasks"
+        },
+        "matched_product": "",
+        "snippet": "Onyx Firelight Flask® 750 · Sale price$129 4.9 · 1018 reviews 4.9 · 1018 reviews · Founder&#x27;s Favorites · Stainless Steel Firelight Flask® 750 · Sale price$129 4.9 · 1018 reviews 4.9 · 1018 reviews · Founder&#x27;s Favorites · Copper Firelight Flask® 750 · Explore all High Camp Flasks. Stylish and rugged construction, integrated magnetic tumblers, 24 hour temperature control, hold up to a full bottle of wine or spirits. Onyx Firelight Flask® 750 · Sale price$129 4.9 · 1018 reviews 4.9 · 1018 reviews · Founder's Favorites · Stainless Steel Firelight Flask® 750 · Sale price$129 4.9 · 1018 reviews 4.9 · 1018 reviews · Founder's Favorites · Copper Firelight Flask® 750 · Onyx Torch™ Flask · Sale price$119 4.9 · 634 reviews 4.9 · 634 reviews · NEW! Flip Lid Functionality · Stainless Steel Torch™ Flask · Sale price$119 4.9 · 634 reviews 4.9 · 634 reviews · NEW! Flip Lid Functionality · Gunmetal Torch™ Flask · Sale price$119 4.9 ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Premium Stainless Steel Flasks | High Camp Flasks",
+                "url": "https://highcampflasks.com/collections/all-flasks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 67,
+          "cost_usd": 0.00032875
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3788,
+          "completion_tokens": 906,
+          "cost_usd": 0.003747
+        }
+      ],
+      "llm_tokens": 5110,
+      "estimated_cost_usd": 0.024076,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "gearjunkie.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "foodandwine.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "ckbproducts.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "online",
+        "domain": "distilleryproducts.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "online",
+        "domain": "makerflo.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "pdaroadgear.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "triplejarmory.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "kimcorealty.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstore45.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "eskimoshop.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "anglersall.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "big5sportinggoods.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "costco.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

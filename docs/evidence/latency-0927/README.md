@@ -10,6 +10,8 @@ Backs [docs/search-latency.md](../../search-latency.md). Every search here ran t
 | `runs/split-enrich/` | 20 eval20-0925 searches x 4 arms x 2 rounds. Here `alt` = the split-enrich prototype (branch `proto/split-enrich`) |
 | `runs/compact-output/` | 20 searches x 4 arms x 1 round. Here `alt` = the compact-output prompt (7c855e1) |
 | `runs/compact-output-round2/` | 20 searches, current vs compact prompt, second round |
+| `runs/priority6/` | All 60 eval20-0925 searches (20 products x 3 locations) x 2 rounds. `alt-base` = 208222d (compact prompt); `p6` = c504d1a (throughput routing, no signals, no editorial pages) |
+| `runs/priority6-bisect/` | 60 searches x 1 round. `p6` = c504d1a; `alt-noedit` = c504d1a with 64cdd9d reverted |
 
 Each `runs/*/<arm>-r<round>/responses/<id>.json` has the shape `eval/run-searches.mjs` saves, so `eval/compare.mjs` reads it. Arm `default` is the code on `main` before 7c855e1.
 

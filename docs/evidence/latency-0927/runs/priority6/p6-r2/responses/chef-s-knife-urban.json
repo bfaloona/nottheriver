@@ -1,0 +1,1717 @@
+{
+  "id": "chef-s-knife-urban",
+  "checked": "2026-09-28T16:14:51.741Z",
+  "request": {
+    "product": "chef's knife",
+    "city": "Phoenix",
+    "state": "AZ",
+    "lat": 33.45,
+    "lon": -112.07,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 6760,
+  "body": {
+    "query": {
+      "product": "chef's knife",
+      "city": "Phoenix",
+      "state": "AZ",
+      "canonical_name": "chef's knife",
+      "category": "cookware",
+      "online_queries": [
+        "buy chef's knife",
+        "chef's knife shop"
+      ],
+      "local_queries": [
+        "cutlery store",
+        "kitchen supply store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4KCM2ZG44WZAEAE3LU6OGKA24YA6JZ6CG5CLLR5Q=:12",
+        "kind": "local",
+        "retailer": {
+          "name": "KoKoMo Grills & BBQ Islands & Outdoor Kitchens",
+          "domain": "kokomogrills.com",
+          "url": "https://kokomogrills.com/"
+        },
+        "matched_product": "",
+        "snippet": "bbq",
+        "address": "1325 E Gibson Ln, Phoenix, AZ 85034",
+        "distance_km": 3,
+        "lat": 33.4267,
+        "lon": -112.0531,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://kokomogrills.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.925,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.9 mi (3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "local:loc453KX3NWEXNAEBEJNE2IVQAS4YCVRT3ZAAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Food City",
+          "domain": "myfoodcity.com",
+          "url": "https://myfoodcity.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "2124 E McDowell Rd, Phoenix, AZ 85006",
+        "distance_km": 3.6,
+        "lat": 33.4669,
+        "lon": -112.0367,
+        "certifications": [],
+        "signals": [],
+        "score": 0.562,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://myfoodcity.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.91,
+            "weight": 0.15,
+            "contribution": 0.137,
+            "sources": [
+              {
+                "label": "2.2 mi (3.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc44PVLN6VAXJAEAJHKVLS7GAK4YAWD57EOAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Home Improvement Warehouse",
+          "domain": "hiwphx.com",
+          "url": "https://hiwphx.com/"
+        },
+        "matched_product": "",
+        "snippet": "furniture, service, shop",
+        "address": "906 N 24th St, Phoenix, AZ 85008",
+        "distance_km": 3.8,
+        "lat": 33.458,
+        "lon": -112.0305,
+        "certifications": [],
+        "signals": [],
+        "score": 0.561,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://hiwphx.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.905,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "2.4 mi (3.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4IRFFRQFJXFAEAHP7VLEI2B24YDKGL76V2M6JKJY=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Food City",
+          "domain": "myfoodcity.com",
+          "url": "https://myfoodcity.com/"
+        },
+        "matched_product": "",
+        "snippet": "grocery",
+        "address": "2709 W Van Buren St, Phoenix, AZ 85009",
+        "distance_km": 4.5,
+        "lat": 33.4505,
+        "lon": -112.118,
+        "certifications": [],
+        "signals": [],
+        "score": 0.558,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://myfoodcity.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8875,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "2.8 mi (4.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4XJ5LUX5KXNAEBYULTO7S4AK4YDSDXXUHAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Standard Restaurant Supply",
+          "domain": "standardrestaurant.com",
+          "url": "https://phoenix.standardrestaurant.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2922 E McDowell Rd, Phoenix, AZ 85008",
+        "distance_km": 5.1,
+        "lat": 33.4661,
+        "lon": -112.0185,
+        "certifications": [],
+        "signals": [],
+        "score": 0.556,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://phoenix.standardrestaurant.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8725,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "3.2 mi (5.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4IAW2WVLAWJAEARWMSE5KMBC4YCEXDJYQAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/5813-south-central-avenue-phoenix-85040?number=510"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "5813 S Central Ave, Phoenix, AZ 85040",
+        "distance_km": 6.3,
+        "lat": 33.3936,
+        "lon": -112.0726,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://harborfreight.com/storelocator/5813-south-central-avenue-phoenix-85040?number=510"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8425,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "3.9 mi (6.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,600+ stores",
+          "stores": 1600,
+          "source_url": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4AGUD3AFAXVAEBXYYAKAOGAC4YDV6BQDJAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://harborfreight.com/storelocator/3146-east-thomas-road-phoenix-85016?number=447"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "3146 E Thomas Rd, Phoenix, AZ 85016",
+        "distance_km": 6.3,
+        "lat": 33.4815,
+        "lon": -112.0139,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://harborfreight.com/storelocator/3146-east-thomas-road-phoenix-85016?number=447"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8425,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "3.9 mi (6.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,600+ stores",
+          "stores": 1600,
+          "source_url": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "local:loc45D7QXOTTX5AEBD565YMS4B24YB4LGW2QAAAAAAA=:14",
+        "kind": "local",
+        "retailer": {
+          "name": "Shamrock Foodservice Warehouse",
+          "domain": "shamrockfsw.com",
+          "url": "https://shamrockfsw.com/locations/phoenix-az"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2430 W Indian School Rd, Phoenix, AZ 85015",
+        "distance_km": 6.4,
+        "lat": 33.4957,
+        "lon": -112.1122,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://shamrockfsw.com/locations/phoenix-az"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.84,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "4.0 mi (6.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "local:loc45J6T4JKCX5AEAN6AOG7H37S3YAQDZNRYAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Phoenix Knife House",
+          "domain": "knifehouse.com",
+          "url": "https://knifehouse.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "4837 E Indian School Rd, Phoenix, AZ 85018",
+        "distance_km": 10,
+        "lat": 33.4942,
+        "lon": -111.9764,
+        "certifications": [],
+        "signals": [],
+        "score": 0.538,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://knifehouse.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.75,
+            "weight": 0.15,
+            "contribution": 0.112,
+            "sources": [
+              {
+                "label": "6.2 mi (10 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4JMXXWIYEYJAEBD5WHO24ICS4YCIR7EZKAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Los Martinez Home Improvement & Tools",
+          "domain": "losmartinezhomeimprovement.com",
+          "url": "https://losmartinezhomeimprovement.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "5449 N 51st Ave #104, Glendale, AZ 85301",
+        "distance_km": 11.7,
+        "lat": 33.5158,
+        "lon": -112.1683,
+        "certifications": [],
+        "signals": [],
+        "score": 0.531,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://losmartinezhomeimprovement.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7075,
+            "weight": 0.15,
+            "contribution": 0.106,
+            "sources": [
+              {
+                "label": "7.3 mi (11.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 11
+      }
+    ],
+    "local_farther": [
+      {
+        "id": "local:loc45WQG3EFEZJAEAWFOW7GVJ623YCP4WGG3AAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Sharpe Haus",
+          "domain": "thesharpehaus.com",
+          "url": "https://thesharpehaus.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "7126 E Becker Ln, Scottsdale, AZ 85254",
+        "distance_km": 19.9,
+        "lat": 33.5831,
+        "lon": -111.9271,
+        "certifications": [],
+        "signals": [],
+        "score": 0.5,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://thesharpehaus.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5025000000000001,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "12 mi (19.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 11
+      },
+      {
+        "id": "local:loc4E5NW46TBZ5AEAFHPLMEE36C3YDIIU3AIAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "CUTCO Scottsdale",
+          "domain": "cutco.com",
+          "url": "https://cutco.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "9324 E Raintree Dr Ste 100B, Scottsdale, AZ 85260",
+        "distance_km": 25.9,
+        "lat": 33.6202,
+        "lon": -111.8797,
+        "certifications": [],
+        "signals": [],
+        "score": 0.478,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://cutco.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.35250000000000004,
+            "weight": 0.15,
+            "contribution": 0.053,
+            "sources": [
+              {
+                "label": "16 mi (25.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 12
+      }
+    ],
+    "online": [
+      {
+        "id": "online:cutleryandmore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Cutlery and More",
+          "domain": "cutleryandmore.com",
+          "url": "https://cutleryandmore.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "MAC Professional 8&quot; Hollow Edge Chef&#x27;s Knife · $159.95 · Saleexclusive · Miyabi Koya 8&quot; Chef&#x27;s Knife · $139.95 · $169.95 · Saleexclusive · Miyabi Mizu SG2 8&quot; Chef&#x27;s Knife · $199.95 · $234.95 · exclusive · Enso HD 8&quot; Chef&#x27;s Knife · ... MAC Professional 8\" Hollow Edge Chef's Knife · $159.95 · Saleexclusive · Miyabi Koya 8\" Chef's Knife · $139.95 · $169.95 · Saleexclusive · Miyabi Mizu SG2 8\" Chef's Knife · $199.95 · $234.95 · exclusive · Enso HD 8\" Chef's Knife · $159.95 · Zwilling Four Star 8\" Chef's Knife · Miyabi Birchwood SG2 8\" Chef's Knife · $299.95 · $364.95 · exclusive · Enso Hizashi 8\" Chef's Knife · $159.95 · exclusive · Yaxell Hana 8\" Chef's Knife · $99.00 · Tojiro Classic 8.25\" Chef's Knife · $139.00 · exclusive · Wusthof Classic Ikon Creme 8\" Chef's Knife · This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef's Knives – Cutlery and More",
+                "url": "https://cutleryandmore.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:wusthof.com",
+        "kind": "online",
+        "retailer": {
+          "name": "WÜSTHOF",
+          "domain": "wusthof.com",
+          "url": "https://wusthof.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Over two centuries and seven generations, WÜSTHOF has become synonymous with the European-style chef’s knife: blades crafted with a pointed tip and a slightly curved edge to encourage a smooth rocking motion during chopping. We also carry a range of Asian-style chef’s knives, including the Santoku and the Chinese Chef’s Knife. Unfortunately, we don't ship to all countries; But we do offer details and overviews of our knife series, styles, and categories. Which region are you located in? ... Typically ranging from 6 to 12 inches, chef’s knives are all-purpose kitchen companions that slice, dice, smash, and cut virtually any ingredient. They come in various shapes, weights, and sizes, depending on each cook’s unique needs, and their most notable trait is their versatility. Whether you’re mincing fresh herbs, julienning carrots, or cutting into a juicy roast chicken, your chef’s knife is the one you’ll reach for the most. Over two centuries and seven generations, WÜSTHOF has become synonymous with the European-style chef’s knife: blades crafted with a pointed tip and a slightly curved edge to encourage a smooth rocking motion during chopping. We also carry a range of Asian-style chef’s knives, including the Santoku and the Chinese Chef’s Knife. There is plenty of range when it comes to the world of chef’s knives, including materials, tang, weight, size, and shape. These variables are a matter of personal preference, which is why we like to think there is no perfect chef’s knife for everyone, just the perfect chef’s knife for you.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Forged Chef's Knives: German Precision & Quality – WÜSTHOF",
+                "url": "https://wusthof.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:messermeister.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Messermeister",
+          "domain": "messermeister.com",
+          "url": "https://www.messermeister.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Messermeister chef&#x27;s knives are handcrafted in Solingen, Germany. Shop our most versatile &amp; popular knife in the kitchen. Order today. Adventure Chef Folding 6 Inch Chef's Knife - Maple Adventure Chef Folding 6 Inch Chef's Knife - Distressed Linen Notify Me When Available Add To Cart Successfully Added! Add To Cart Failed! Oliva Elite O.T. Prep Knife - 6.5\" Your go-to for 90% of kitchen tasks, Messermeister’s Chef’s Knives are built for unmatched versatility and precision. From slicing and dicing to mincing and chopping, these expertly crafted knives deliver superior sharpness, balance, and comfort.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef's Knives | Professional Chef Knife | Messermeister",
+                "url": "https://www.messermeister.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:hedleyandbennett.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Hedley & Bennett",
+          "domain": "hedleyandbennett.com",
+          "url": "https://www.hedleyandbennett.com/collections/knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Our collection features knives suitable for various tasks, including slicing, dicing, and chopping. Whether you&#x27;re a seasoned chef in need of a new set of knives or a home cook looking for your first chef&#x27;s knife, you&#x27;ll find high-quality options to suit your needs. They pair great with our knife sheaths which offer a stylish and functional way to store and transport your knives safely, and our cutting boards designed to prevent slippage and elevate your kitchen. Explore our collection and find the perfect tools to level up your cooking skills. ... With a wide range of chef knives, knife sets, and knife accessories, Hedley & Bennett caters to both professional chefs and home cooks. Our collection features knives suitable for various tasks, including slicing, dicing, and chopping. Whether you're a seasoned chef in need of a new set of knives or a home cook looking for your first chef's knife, you'll find high-quality options to suit your needs. Our chef's knives are made with three-layer Japanese steel, ensuring their durability and sharpness. The ergonomic handle design provides a comfortable grip, allowing you to work with precision and ease. Hedley & Bennett is committed to providing top-quality products that help you create culinary masterpieces. Our knives and knife accessories are designed with both form and function in mind, offering an exceptional balance of quality, performance, and style. Used by the best chefs, home cooks and makers in the world. Shop our quality aprons, knives, hats and kitchen gear for men, women, chefs, and kids.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef Knives | Hedley & Bennett",
+                "url": "https://www.hedleyandbennett.com/collections/knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:knifewear.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Knifewear",
+          "domain": "knifewear.com",
+          "url": "https://knifewear.com/en-us"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Canada&#x27;s best selection of Japanese Knives, sharpening stones, and chef&#x27;s tools. Mail-in and in-store knife sharpening services available. Our knife stores have become a destination/hang-out for those who love Japanese steel and are addicted to sharp. We carry knives not found in any other shop in Canada. We like exclusive, scary sharp, high performance blades, and travel all over Japan to find them. We also aim to have awesome selection of chef quality tools for your kitchen, whether you are a professional working the line, or someone at home looking for tools to kick it up a notch. Canada's best selection of Japanese Knives, sharpening stones, and chef's tools. Mail-in and in-store knife sharpening services available. Gyuto means \"cow sword\", cool huh? Inspired by the profile of a traditional European chef knife, gyutos are... The classic chef's knife.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Knifewear | Canada's best selection of Japanese Knives – Knifewear - Handcrafted Japanese Kitchen Knives",
+                "url": "https://knifewear.com/en-us"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:chefknivestogo.com",
+        "kind": "online",
+        "retailer": {
+          "name": "ChefKnivesToGo",
+          "domain": "chefknivestogo.com",
+          "url": "https://www.chefknivestogo.com/"
+        },
+        "matched_product": "",
+        "snippet": "The Japanese knife specialist since 2002. Hatsukokoro, Tojiro and CCK always in stock, plus dozens of top makers. Free US shipping over $100. Chef Knives To Go offers unmatched selection of kitchen knives! We are committed to bringing you unique knives and sharpening stones from a wide range of makers from around the world. Stay Sharp! Read More About Us · Knife Brands · Knife Types · Accessories · The Japanese knife specialist since 2002. Hatsukokoro, Tojiro and CCK always in stock, plus dozens of top makers. Free US shipping over $100. Shop All Knife Types · Accessories · Chef Equipment · Cutting Boards · Kitchen Tools · Knife Bags · Knife Sharpening Service · Knife Storage · Sayas · Sharpening Accessories · Sharpening Rods · Sharpening Stones · Shop All Accessories · Shop by Steel · Free USA Shipping Over $99! ... Chef Knives To Go offers unmatched selection of kitchen knives! We are committed to bringing you unique knives and sharpening stones from a wide range of makers from around the world.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Japanese Kitchen Knives | Chef Knives To Go",
+                "url": "https://www.chefknivestogo.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "online:williams-sonoma.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Williams Sonoma",
+          "domain": "williams-sonoma.com",
+          "url": "https://www.williams-sonoma.com/shop/cutlery/cutlery-chef-knives/"
+        },
+        "matched_product": "",
+        "snippet": "Elevate your culinary skills with Williams Sonoma&#x27;s premium chef&#x27;s knives. Discover the best chef knife and chef knife sets for every kitchen. Shop now! Small details change how safe and smooth a knife feels. Know the basics to pick the right tool. Full, half, or no bolster affects grip space and edge reach. Hollow-ground edges help thin slices release with less drag. Some edges use a diamond-wheel finish for a sharp, clean cut. Start with chef knife sets for a ready kit, or upgrade a single blade. Focus on fit to get the best chef knife for your grip. Match blade size to your board space and the foods you prep most. Shop Williams Sonoma for chef's knives that balance performance and comfort. Compare trusted brands, blade steels, and handle styles in one place. Events In-Store Events Skills Series Book Tours Virtual Events Private Events Services Free Kitchen Design Services Free Registry Services Free Trade Services Knife Sharpening: In-Store & Online",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Chef's Knives + Knife Sets | Williams Sonoma",
+                "url": "https://www.williams-sonoma.com/shop/cutlery/cutlery-chef-knives/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "online:webstaurantstore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Web Restaurant Store",
+          "domain": "webstaurantstore.com",
+          "url": "https://www.webstaurantstore.com/2835/chef-knives.html"
+        },
+        "matched_product": "",
+        "snippet": "Buy More, Save More · Last Purchased Choice Classic 8&quot; Chef Knife with POM Handle · Rated 4.2 out of 5 stars · Item number#407kpomchef8 · $15.49/Each · Buy More, Save More · Last Purchased Schraf 10&quot; Chef Knife with TPRgrip Handle · Rated 4 out of 5 stars · Last Purchased Choice 10\" Chef Knife with White Handle · Rated 4.8 out of 5 stars · Item number#220kwchef10 · $7.19/Each · Buy More, Save More · Last Purchased Choice 8\" Chef Knife with White Handle · Rated 4.8 out of 5 stars · Item number#220kwchef8 · Buy More, Save More · Last Purchased Choice Classic 8\" Chef Knife with POM Handle · Rated 4.2 out of 5 stars · Item number#407kpomchef8 · $15.49/Each · Buy More, Save More · Last Purchased Schraf 10\" Chef Knife with TPRgrip Handle · Rated 4 out of 5 stars · Whether you operate a restaurant, diner, or cafeteria, our selection of professional chef knives is ideal for your foodservice business. Our assortment of kitchen knives is made of durable materials, such as stainless steel, high carbon stainless ste Add to cart or login to see our price!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Professional Chef Knives - WebstaurantStore",
+                "url": "https://www.webstaurantstore.com/2835/chef-knives.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "online:couteliernola.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Coutelier",
+          "domain": "couteliernola.com",
+          "url": "https://couteliernola.com/"
+        },
+        "matched_product": "",
+        "snippet": "Curated by the chefs who use them, sharpened by the same hands. Based in New Orleans, offering everything from hand-forged Japanese chef knives to whetstones, cutting boards, and kitchen tools built to last. Shop Now ... Looking forward to getting to the shop in the future. ... Great addition to my Tojiro collection! Thanks Coutelier for always having the best selections. Always great delivery to NY as well. ... This is an absolutely gorgeous piece that pairs perfectly with my Takeshi Saji Rainbow nakiri and gyuto. ... Great place. ... Fast shipping! Thanks! ... Great people doing excellent work in a beautiful retail store. We bought a second chef knife from their extensive inventory as well, which he helped us pick out. His feedback enhanced my sharpening skills. Highly recommended. ... I really enjoyed this advanced knife sharpening class! Gavin is an excellent teacher who does a fantastic job building on what is learned in the beginner class and taking you well beyond the basics. If you are a cooking or cutlery enthusiast, you will benefit greatly from this class! Highly recommended! ... The best online knife shopping, in my opinion. Discover hand-forged Japanese chef knives and professional culinary tools at Coutelier. Expertly curated for precision and performance. Free U.S. shipping on orders over $250. Shipping nationwide from New Orleans. Always great service when ordering from Coutelier! ... I’ve been wanting this Takeda for awhile! Incredibly sharp out of the box, very light in the hand. I believe the technical definition of this knife is a “laser”. I love the additional height of the knife as a Gyuto.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Japanese Chef Knives & Premium Culinary Tools | Coutelier",
+                "url": "https://couteliernola.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:knifecenter.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Knife Center",
+          "domain": "knifecenter.com",
+          "url": "https://www.knifecenter.com/listing/chefs-knives-at-knife-center"
+        },
+        "matched_product": "",
+        "snippet": "Explore our selection of Chef&#x27;s Knives designed for precision and durability. Elevate your culinary skills with the best tools. Shop now at KnifeCenter! IN COMPLIANCE WITH FEDERAL STATUTES REGARDING INTERSTATE SHIPPING OF AUTOMATIC KNIVES, KnifeCenter, Inc requests that you read carefully the requirements set forth below, and agree to this prior to your purchase or receipt of any automatic opening knife from our company. By signing and submitting this form, you (KnifeCenter, Inc Customer/Buyer) hereby recognize and acknowledge that it is your responsibility as the buyer to ascertain and obey all applicable laws (local, state, federal and international) in regard to the possession or purchase of any item from KnifeCenter, Inc. You further hereby represent and certify that your purchase or ownership of automatic opening knives from KnifeCenter, Inc meets one or more of the criteria set forth above and agree to use these knives in connection of duties as described above in sections 1, 2, 3, 4 and 5. No Thanks You have been subscribed successfully! Close-up of hand holding knife, opening knife, and then closing knife.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Chef's Knives | Shop Our Top Brands and Collection",
+                "url": "https://www.knifecenter.com/listing/chefs-knives-at-knife-center"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 350,
+          "completion_tokens": 71,
+          "cost_usd": 0.0003335
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3688,
+          "completion_tokens": 796,
+          "cost_usd": 0.003562
+        }
+      ],
+      "llm_tokens": 4905,
+      "estimated_cost_usd": 0.023896,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "starchefstore.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "cabinetsphx.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "harborfreight.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "potbelly.com",
+        "reason": "place_category"
+      },
+      {
+        "kind": "local",
+        "domain": "nookkitchen.com",
+        "reason": "place_category"
+      },
+      {
+        "kind": "local",
+        "domain": "irmaskitchenaz.com",
+        "reason": "place_category"
+      }
+    ]
+  }
+}

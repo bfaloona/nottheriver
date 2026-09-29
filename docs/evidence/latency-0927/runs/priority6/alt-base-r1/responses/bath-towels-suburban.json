@@ -1,0 +1,1665 @@
+{
+  "id": "bath-towels-suburban",
+  "checked": "2026-09-28T16:00:01.731Z",
+  "request": {
+    "product": "bath towels",
+    "city": "South Saint Paul",
+    "state": "MN",
+    "lat": 44.89,
+    "lon": -93.04,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 34727,
+  "body": {
+    "query": {
+      "product": "bath towels",
+      "city": "South Saint Paul",
+      "state": "MN",
+      "canonical_name": "bath towels",
+      "category": "bath linens",
+      "online_queries": [
+        "buy bath towels",
+        "cotton bath towel shop"
+      ],
+      "local_queries": [
+        "linen store",
+        "home goods store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4SB6TLLCOOJDEBIVEOZ272RCXYCIXMHC2WCMJLLY=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://target.com/sl/west-st-paul/2046"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1750 S Robert St, West St Paul, MN 55118",
+        "distance_km": 3,
+        "lat": 44.893,
+        "lon": -93.078,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://target.com/sl/west-st-paul/2046"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.925,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.9 mi (3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,000+ stores",
+          "stores": 2000,
+          "source_url": "https://corporate.target.com/about",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 1
+      },
+      {
+        "id": "local:loc4XRZL23NGOJDEB2VEBC5AORKXYDXLYE4KAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Hobby Lobby",
+          "domain": "hobbylobby.com",
+          "url": "https://hobbylobby.com/stores/search/753"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "1660 S Robert St, West St Paul, MN 55118",
+        "distance_km": 3.1,
+        "lat": 44.8957,
+        "lon": -93.0786,
+        "certifications": [],
+        "signals": [],
+        "score": 0.563,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://hobbylobby.com/stores/search/753"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9225,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "1.9 mi (3.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4GOTGBDNTOZDEBRVFFJWXCPKXYBKUHU56AAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Daiso - Japanese Household Goods",
+          "domain": "daisous.com",
+          "url": "https://daisous.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop, shop",
+        "address": "7150 Valley Creek Plaza #226, Woodbury, MN 55125",
+        "distance_km": 7.5,
+        "lat": 44.9274,
+        "lon": -92.96,
+        "certifications": [],
+        "signals": [],
+        "score": 0.547,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://daisous.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8125,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "4.7 mi (7.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4EUISX3I6PFDEACZNI24CIRSXYBLWAWKEAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "F & B Specialty Linen",
+          "domain": "fblinen.com",
+          "url": "https://fblinen.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop, clothing_store",
+        "address": "21 W 6th St, St Paul, MN 55102",
+        "distance_km": 7.7,
+        "lat": 44.9463,
+        "lon": -93.096,
+        "certifications": [],
+        "signals": [],
+        "score": 0.546,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://fblinen.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8075,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "4.8 mi (7.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "unknown",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4BLJZYYIPNZDEA5AECX5AKSKXYAJIILW3AAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Costco Wholesale",
+          "domain": "costco.com",
+          "url": "https://costco.com/w/-/mn/eagan/1363"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "995 Blue Gentian Rd, Eagan, MN 55121",
+        "distance_km": 8.6,
+        "lat": 44.8598,
+        "lon": -93.141,
+        "certifications": [],
+        "signals": [],
+        "score": 0.543,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://costco.com/w/-/mn/eagan/1363"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.785,
+            "weight": 0.15,
+            "contribution": 0.118,
+            "sources": [
+              {
+                "label": "5.3 mi (8.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 647 stores",
+          "stores": 647,
+          "source_url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc466KJYE33NJDEA42Y2BVDOPKXYBC3PQMPWL3LSDI=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/store-details/Cottage-Grove-MN-55016/0819"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "Grove Plaza, 7240 E Point Douglas Rd S, Cottage Grove, MN 55016",
+        "distance_km": 9.2,
+        "lat": 44.8319,
+        "lon": -92.9565,
+        "certifications": [],
+        "signals": [],
+        "score": 0.541,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://homegoods.com/store-details/Cottage-Grove-MN-55016/0819"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.77,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "5.7 mi (9.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 914 stores",
+          "stores": 914,
+          "source_url": "https://en.wikipedia.org/wiki/HomeGoods",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4ZK4E5SDTNJDEAGBVVGZDSPKXYDFHA5Q5WL3LSDI=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "T.J. Maxx & HomeGoods",
+          "domain": "tjx.com",
+          "url": "https://tjmaxx.tjx.com/store/index.jsp"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "7240 E Point Douglas Rd S S170, Cottage Grove, MN 55016",
+        "distance_km": 9.2,
+        "lat": 44.8317,
+        "lon": -92.9566,
+        "certifications": [],
+        "signals": [],
+        "score": 0.541,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://tjmaxx.tjx.com/store/index.jsp"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.77,
+            "weight": 0.15,
+            "contribution": 0.115,
+            "sources": [
+              {
+                "label": "5.7 mi (9.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "local:loc4ZPAFZZWPOJDEBCDEZCY7KRCXYAXQTVF7AAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Walmart Supercenter",
+          "domain": "walmart.com",
+          "url": "https://walmart.com/store/3364-saint-paul-mn/?veh=seo_loc"
+        },
+        "matched_product": "",
+        "snippet": "shop, bakery",
+        "address": "1644 S Robert St, St Paul, MN 55118",
+        "distance_km": 3.1,
+        "lat": 44.897,
+        "lon": -93.0775,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.488,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://walmart.com/store/3364-saint-paul-mn/?veh=seo_loc"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9225,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "1.9 mi (3.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "local:loc44SFVCMUUNBDEBATRODUZQQSXYB5ZN4XAAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://walmart.com/store/5089-inver-grove-heights-mn?veh=seo_loc"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "9165 Cahill Ave, Inver Grove Heights, MN 55076",
+        "distance_km": 8.1,
+        "lat": 44.817,
+        "lon": -93.0406,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.47,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://walmart.com/store/5089-inver-grove-heights-mn?veh=seo_loc"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7975,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "5.0 mi (8.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4VUY6RBGQPBDEAO2HFZES6PCXYBFSULLWAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://homedepot.com/l/Woodbury/MN/Woodbury/55125/2810?emt=MSGoogleMaps"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "8334 Tamarack Village, Woodbury, MN 55125",
+        "distance_km": 9.9,
+        "lat": 44.9439,
+        "lon": -92.9404,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17",
+            "penalty_usd": 20750000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.463,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://homedepot.com/l/Woodbury/MN/Woodbury/55125/2810?emt=MSGoogleMaps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7525,
+            "weight": 0.15,
+            "contribution": 0.113,
+            "sources": [
+              {
+                "label": "6.2 mi (9.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,347 stores",
+          "stores": 2347,
+          "source_url": "https://en.wikipedia.org/wiki/The_Home_Depot",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:thecompanystore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Company Store",
+          "domain": "thecompanystore.com",
+          "url": "https://www.thecompanystore.com/bath-towels"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Discover plush, absorbent bath towels in long-staple Egyptian cotton, Supima®, and Turkish cotton, available in solids, neutrals, and coordinating patterns. Choose plush and absorbent cotton bath towels from The Company Store. Our collection features Supima®, Turkish, and Egyptian cotton bath towels, which are luxuriously soft and absorbent. We also have quick-drying bath towels made from cotton and TENCEL™ Lyocell, linen and cotton, and bamboo blends. These towels wick away moisture, so you—and your towels—dry faster. They come in gorgeous solid colors, subtle neutral hues, and a range of patterns so you get the best in both style and function. We make finding the perfect towels easy with coordinating bath towel sets and mix-and-match separates. Plus, we offer monogrammable options, which make a thoughtful gift or the perfect bathroom accent. Whether you opt for complementary solid colors or patterned towels, you’ll find the ultimate in plush bath linens at The Company Store. Shop bath towels in long-staple Egyptian cotton, Supima®, and Turkish cotton.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bath Towels | Cotton, Supima®, Egyptian & Turkish Cotton",
+                "url": "https://www.thecompanystore.com/bath-towels"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:ikea.com",
+        "kind": "online",
+        "retailer": {
+          "name": "IKEA",
+          "domain": "ikea.com",
+          "url": "https://www.ikea.com/us/en/cat/bath-towels-20523/"
+        },
+        "matched_product": "bath towels",
+        "snippet": "More optionsBROKGLIMOption: BROKGLIM, Bath towel, pink, 28x55 &quot;Option: BROKGLIM, Bath towel, dark blue, 28x55 &quot;Option: BROKGLIM, Bath towel, green, 28x55 &quot;Option: BROKGLIM, Bath towel, gray, 28x55 &quot;Option: BROKGLIM, Bath towel, beige, 28x55 &quot; ... Review: 4.7 out of 5 stars. Total reviews: (543) More optionsVALLASÅNOption: VALLASÅN, Bath towel, light gray/brown, 28x55 &quot; Whether you’re a bedtime bather or a morning shower is a must, our lush and plush bath towels will quickly become a favorite part of your routine. With pure cotton and cotton blends to choose from in an array of designs, thicknesses, colors, patterns and prints, we make it easy to find towels you love using as much as you love looking at them! More optionsVÅGSJÖNOption: VÅGSJÖN, Towel, set of 6, white, 12x12\"/16x28\"/28x55\" ... Review: 4.4 out of 5 stars. Total reviews: (3985) More optionsVÅGSJÖNOption: VÅGSJÖN, Bath towel, light beige, 28x55 \"Option: VÅGSJÖN, Bath towel, light green, 28x55 \"Option: VÅGSJÖN, Bath towel, pink, 28x55 \"Option: VÅGSJÖN, Bath towel, orange-red, 28x55 \"Option: VÅGSJÖN, Bath towel, bright blue, 28x55 \"Option: VÅGSJÖN, Bath towel, white, 28x55 \" More optionsSALVIKENOption: SALVIKEN, Bath towel, anthracite, 28x55 \" ... Review: 4.3 out of 5 stars. Total reviews: (710) More optionsSLÅNHÖSTMALOption: SLÅNHÖSTMAL, Bath towel, black/light beige stripe, 28x55 \"Option: SLÅNHÖSTMAL, Bath towel, bright blue/light blue stripe, 28x55 \" More optionsBROKGLIMOption: BROKGLIM, Bath towel, pink, 28x55 \"Option: BROKGLIM, Bath towel, dark blue, 28x55 \"Option: BROKGLIM, Bath towel, green, 28x55 \"Option: BROKGLIM, Bath towel, gray, 28x55 \"Option: BROKGLIM, Bath towel, beige, 28x55 \" ... Review: 4.7 out of 5 stars. Total reviews: (543) More optionsVALLASÅNOption: VALLASÅN, Bath towel, light gray/brown, 28x55 \"",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bath Towels & Sets - IKEA",
+                "url": "https://www.ikea.com/us/en/cat/bath-towels-20523/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "online:costco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Costco",
+          "domain": "costco.com",
+          "url": "https://www.costco.com/bath-towels.html"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Wrap yourself in comfort with Costco’s Bath Towels and Bath Sheets collection, designed for superior softness, maximum absorbency, and long lasting durability. Our collection includes bath towels, bath sheets, hand towels, and washcloths, and ultra-absorbent beach towels, offering complete solutions for both personal care and guest-ready bathrooms. Wrap yourself in comfort with Costco’s Bath Towels and Bath Sheets collection, designed for superior softness, maximum absorbency, and long lasting durability. Our collection includes bath towels, bath sheets, hand towels, and washcloths, and ultra-absorbent beach towels, offering complete solutions for both personal care and guest-ready bathrooms. Whether you’re refreshing your towel set or upgrading to a more luxurious feel, these essentials help create a spa like experience at home. Crafted from premium materials such as cotton, Turkish cotton, Egyptian cotton, and high performance fabric blends, Costco bath towels are designed to provide exceptional softness. A wide range of colors and textures allows you to complement any bathroom décor, from modern minimalist to classic, elegant designs. Bath towels from Costco offer a sophisticated blend of lush comfort and premium quality materials, ensuring you enjoy a refreshing, comfortable, and stylish bathroom experience every day. Our oversized bath sheets offer extra coverage and comfort, making them ideal for those who prefer larger, more luxurious towels, while coordinated sets provide convenience and a cohesive look.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Bath Towels & Sheets | Costco",
+                "url": "https://www.costco.com/bath-towels.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 647 stores",
+          "stores": 647,
+          "source_url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "online:potterybarn.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Pottery Barn",
+          "domain": "potterybarn.com",
+          "url": "https://www.potterybarn.com/shop/bath/bath-linens/"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Discover our premium bath towels including plush towels and bundles made from organic cotton. Experience ultimate comfort and style! Bath sheets offer a spa-like feel after a shower or bath. Pick materials like organic cotton for softness and durability. Consider towel thickness and absorbency for your daily needs. Our bath linens bring comfort and style to your bathroom. This collection offers soft, durable towels and bath towel sets that refresh your space with ease. Choose from a wide range of bathroom towels designed to fit every need. Whether you want a single bath towel or a full towel set, we have options that blend quality with timeless design.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Luxurious Bath Towels - Plush Towels & Bundles | Pottery Barn",
+                "url": "https://www.potterybarn.com/shop/bath/bath-linens/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 184 stores",
+          "stores": 184,
+          "source_url": "https://en.wikipedia.org/wiki/Pottery_Barn",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "online:jcpenney.com",
+        "kind": "online",
+        "retailer": {
+          "name": "JCPenney",
+          "domain": "jcpenney.com",
+          "url": "https://www.jcpenney.com/g/home/view-all-bath/bath-towels?id=cat100250084"
+        },
+        "matched_product": "bath towels",
+        "snippet": "When shopping for bath towels, you don&#x27;t have to choose between price and quality. You will have plenty of patterns, fabric choices, and size choices available in JCPenney’s towels collection. Whether you are looking for individual towels or bath towel sets, we have them all. Discover the perfect guest towels or a new set of towels to match your new bathroom design. Choose from microfiber towels that are soft to the touch or fluffy cotton bath towels for quick absorption. Bath towels are an often-overlooked aspect of bathroom decoration. Most people go for neutral colors like beige and white. One easy way to give your bathroom accent colors is to get creative with your bath towels. Our towel collections are full of color, embroidery, textures, and other variety. From beach towels for those fun outings to hooded and fingertip towels, we have everything you will need to keep your home ready for yourself and the guests. Looking for quick drying and soft cotton bath towels and hand towels? Don’t worry, we got you covered! The selection at JCPenney is about to open a whole new world of towel options. Do you want something extremely soft, or very absorbent? With Quick-Dri technology, these towels dry quickly without any compromises on absorbency. Check out Linden Street’s organic cotton bath towel that is fade-resistant and feels naturally soft.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Towels | Bath Towels & Sets | JCPenney",
+                "url": "https://www.jcpenney.com/g/home/view-all-bath/bath-towels?id=cat100250084"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "online:target.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Target",
+          "domain": "target.com",
+          "url": "https://www.target.com/c/bath-towels-home/-/N-5xtv9"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Shop towels, including bath towels, hand towels, washcloths and bath sheets for bathrooms, guest baths and everyday routines. Bring style and functionality to your bath space with plush bath towels that help transform your daily routine into a spa-like experience. There are many options & stunning styles available in the market, here are a few suggestions to help you find the right towels for every corner of your home. When it comes to bath linens, the material is paramount, choose the right material and fabric for your comfort. Cotton reigns supreme for its absorbency, durability and softness. Different cotton fibers affect the look, feel, performance and price of your towel. Pick your bath towels crafted from high-quality materials like Egyptian and Turkish cotton. These cotton towels are known to be supple, attractive and soft to the touch plus they are super absorbent and durable. Look for eco-friendly options like organic towels that are soft to touch and also environment friendly. Other than the fabric the thickness and size of your towel also contributes in giving you a comfy feel. Choose the perfect size for every occasion. Standard bath towels and hand towels are versatile, while bath sheets provide extra coverage for a more indulgent experience.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Towels",
+                "url": "https://www.target.com/c/bath-towels-home/-/N-5xtv9"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,000+ stores",
+          "stores": 2000,
+          "source_url": "https://corporate.target.com/about",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "online:llbean.com",
+        "kind": "online",
+        "retailer": {
+          "name": "L.L.Bean",
+          "domain": "llbean.com",
+          "url": "https://www.llbean.com/llb/shop/70748?page=premium-cotton-towels"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Please upgrade to one of the following ... safer shopping experience with us: ... Save 25%: $29.96 upon approval. Learn More and Apply Now. Or see if you prequalify with no impact to your credit score. ... FREE SHIPPING with $75 Purchase. Details ... Start your morning right with our luxurious 100% cotton bath towels... Please upgrade to one of the following for a smoother, safer shopping experience with us: ... Save 25%: $29.96 upon approval. Learn More and Apply Now. Or see if you prequalify with no impact to your credit score. ... FREE SHIPPING with $75 Purchase. Details ... Start your morning right with our luxurious 100% cotton bath towels. Find the best Premium Cotton Towels at L.L.Bean. Our high quality home goods are designed to help turn any space into an outdoor-inspired retreat.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Premium Cotton Towels",
+                "url": "https://www.llbean.com/llb/shop/70748?page=premium-cotton-towels"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 57 stores",
+          "stores": 57,
+          "source_url": "https://www.llbean.com/llb/shop/518784?page=inside-llbean-10",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "online:macys.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Macys",
+          "domain": "macys.com",
+          "url": "https://www.macys.com/shop/home/bed-bath/bath/towels/Fabric/Cotton?id=16853"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Wrap yourself in luxury with Cotton Bath Towels. Explore all the soft &amp; absorbent towels in various sizes &amp; colors to suit your style. Shop now at Macys.com You can ask me to help you shop, discover new trends or compare favorites. ... Current price From $42.00 to $135.66; From 30% to 60% off; with code BEST;$42.00 - $135.66 (30-60% off) ... Bath TowelsHand TowelsWashclothsBath SheetsBath Towel SetsBeach TowelsTurkish TowelsKids Bath Towels",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cotton Bath Towels - Macy's",
+                "url": "https://www.macys.com/shop/home/bed-bath/bath/towels/Fabric/Cotton?id=16853"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 450 stores",
+          "stores": 450,
+          "source_url": "https://en.wikipedia.org/wiki/Macy%27s",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "online:superiorbrand.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Superior Brand",
+          "domain": "superiorbrand.com",
+          "url": "https://www.superiorbrand.com/collections/organic-cotton-bath"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Bath · Save up to 25% Add to cart · Superior Oregon Organic Cotton Medium Weight Solid 6-Piece Towel Set · Include 2 Face Towels, 2 Hand Towels, and 2 Bath Towels · From $57.00 $76.00 · Black · Forest Green · Gold · Ivory · Navy Blue ... Oregon Organic Cotton Medium-Weight Bath Towels – 2-Piece Set · Includes 2 Bath Towels · From $59.40 $79.25 · Silver · Black · Forest Green · Gold · Ivory · +3 · +5 8 colors · Add to cart · Save up to 24% Add to cart · Superior Oregon Organic Cotton Medium Weight Solid 12-Piece Towel Set · Bath · Save up to 25% Add to cart · Superior Oregon Organic Cotton Medium Weight Solid 6-Piece Towel Set · Include 2 Face Towels, 2 Hand Towels, and 2 Bath Towels · From $57.00 $76.00 · Black · Forest Green · Gold · Ivory · Navy Blue · +3 · +5 8 colors ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Organic Cotton Bath Towels | Superior – Superior Brand",
+                "url": "https://www.superiorbrand.com/collections/organic-cotton-bath"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:bloomingdales.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bloomingdale's",
+          "domain": "bloomingdales.com",
+          "url": "https://www.bloomingdales.com/shop/home/luxury-bath-towels/Fabric/Cotton/Cotton%20Blend?id=1005698"
+        },
+        "matched_product": "bath towels",
+        "snippet": "Shop Bath Towels at Bloomingdale&#x27;s. Free shipping &amp; free returns available or buy online and pick up in store. The Memorial Day Sale: 25–65% off a great selection of home items. Ends 5/25. SHOP NOW GET YOUR ORDER TODAY with Curbside or In-Store Pickup, or Same Day Delivery. SHOP NOW BECOME A LOYALLIST and get rewards when you shop, free shipping every day & more!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cotton Blend Bath Towels - Bloomingdale's",
+                "url": "https://www.bloomingdales.com/shop/home/luxury-bath-towels/Fabric/Cotton/Cotton%20Blend?id=1005698"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 73,
+          "cost_usd": 0.00008104
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4145,
+          "completion_tokens": 726,
+          "cost_usd": 0.00075876
+        }
+      ],
+      "llm_tokens": 5292,
+      "estimated_cost_usd": 0.02084,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "cnn.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "stcroixlinen.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "cleannpress.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "theartisanmarketsfurniture.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "online",
+        "domain": "bedbathandbeyond.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "americanblanketcompany.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

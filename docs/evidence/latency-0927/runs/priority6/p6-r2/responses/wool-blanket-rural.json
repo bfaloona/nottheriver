@@ -1,0 +1,1102 @@
+{
+  "id": "wool-blanket-rural",
+  "checked": "2026-09-28T16:14:44.980Z",
+  "request": {
+    "product": "wool blanket",
+    "city": "Galeton",
+    "state": "CO",
+    "lat": 40.54,
+    "lon": -104.44,
+    "ruca": 10
+  },
+  "status": 200,
+  "elapsed_ms": 8303,
+  "body": {
+    "query": {
+      "product": "wool blanket",
+      "city": "Galeton",
+      "state": "CO",
+      "canonical_name": "wool blanket",
+      "category": "home textiles",
+      "online_queries": [
+        "buy wool blanket",
+        "wool blanket shop"
+      ],
+      "local_queries": [
+        "textile store",
+        "general store"
+      ],
+      "near_radius_mi": 30
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4LX5QE6XBHZCEBI3ZACF7YI22YAIZRDHLAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Dit-R-Done Tack & Supply",
+          "domain": "ditrdone.com",
+          "url": "https://ditrdone.com/contact-us"
+        },
+        "matched_product": "",
+        "snippet": "shop, shop",
+        "address": "33818 Co Rd 53, Gill, CO 80624",
+        "distance_km": 11.7,
+        "lat": 40.4913,
+        "lon": -104.5623,
+        "certifications": [],
+        "signals": [],
+        "score": 0.531,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://ditrdone.com/contact-us"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7075,
+            "weight": 0.15,
+            "contribution": 0.106,
+            "sources": [
+              {
+                "label": "7.3 mi (11.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 1
+      }
+    ],
+    "local_farther": [
+      {
+        "id": "local:loc4NPWLOG7J2NBUB3JQQG3DAP22YDDS3R57AAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Treelotta: Fabric + Craft Studio",
+          "domain": "treelotta.com",
+          "url": "https://treelotta.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "3370 S Broadway, Englewood, CO 80113",
+        "distance_km": 108.8,
+        "lat": 39.6556,
+        "lon": -104.9873,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://treelotta.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4AJTSSWKOAJCEBS4XMHW3SUC2YAZSNS2FAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Elfriede's Fine Fabrics",
+          "domain": "elfriedesfinefabrics.com",
+          "url": "https://elfriedesfinefabrics.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "2425 Canyon Blvd, Boulder, CO 80302",
+        "distance_km": 90.7,
+        "lat": 40.018,
+        "lon": -105.2613,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://elfriedesfinefabrics.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "local:loc45VSMWTJP4FBUA6SSEY23IQC2YC3MI4QMAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "General Store 45",
+          "domain": "generalstore45.com",
+          "url": "https://generalstore45.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1575 Boulder St D, Denver, CO 80211",
+        "distance_km": 99.5,
+        "lat": 39.7593,
+        "lon": -105.011,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://generalstore45.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0,
+            "weight": 0.15,
+            "contribution": 0,
+            "sources": []
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      }
+    ],
+    "online": [
+      {
+        "id": "online:faribaultmill.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Faribault Mill",
+          "domain": "faribaultmill.com",
+          "url": "https://www.faribaultmill.com/collections/wool-bed-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Wool bed blankets from Faribault Mill. Solid, stripe, and plaid designs made with high quality wool. Since 1865, Faribault Mill has been crafting premium wool blankets in the USA with an unwavering commitment to quality, durability, and heritage. For more than 150 years, our mill has perfected the art of wool blanket making—ensuring every piece we produce is made to last and designed to bring lasting comfort. Wool bed blankets from Faribault Mill. Solid, stripe, and plaid designs made with high quality wool. Wool is the world’s most sustainable fiber, and we honor its natural performance by maintaining a production process that prioritizes responsibility, longevity, and low environmental impact. The result: blankets that offer natural insulation, moisture-wicking comfort, and hypoallergenic benefits—ideal for year-round use and restful sleep. For over 160 years, we’ve crafted blankets and throws in the USA with timeless design, natural fibers, and unmatched craftsmanship.OUR STORY ... Natural fibers like wool and cotton help regulate body temperature for a deeper, more restful sleep — naturally.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Bed Blankets",
+                "url": "https://www.faribaultmill.com/collections/wool-bed-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:pendleton-usa.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Pendleton",
+          "domain": "pendleton-usa.com",
+          "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop made in USA wool blankets &amp; throws from Pendleton. Fine wool throw blankets woven in America for over a century. Sourced through wool-grower partnerships that in some cases go back over a hundred years, wool is a naturally renewable, biodegradable fiber that acts as a natural heat regulator, insulating against both cold and heat while resisting stains and wrinkles. From the softness of Eco-Wise Wool® to our traditional jacquard weaves, each blanket blends heritage design with everyday durability. Pendleton wool blankets are well known for their bold patterns and vibrant color combinations. Many of these designs draw inspiration from the American West and are rooted in Pendleton's century-old archives. Where are Pendleton blankets made? Most Pendleton wool blankets are woven in Pendleton's historic Pacific Northwest mills in Oregon and Washington. Our jacquard-patterned wool blankets are woven at our original mill in Pendleton, Oregon, which has been producing blankets since 1909. What is the difference between \"napped\" and \"unnapped\" on a wool blanket? Napped wool has been brushed to raise the fiber ends from the weave, creating a softer, thicker feel. An unnapped blanket has not been combed so the pattern is sharper with cleaner edges.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Made in USA Wool Blankets & Throw Blankets | Pendleton",
+                "url": "https://www.pendleton-usa.com/home-blankets/blankets-bedding/wool-blankets/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 30+ stores",
+          "stores": 30,
+          "source_url": "https://www.pendleton-usa.com/company-fact-sheet.html",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:coloradosheep.org",
+        "kind": "online",
+        "retailer": {
+          "name": "Coloradosheep",
+          "domain": "coloradosheep.org",
+          "url": "https://www.coloradosheep.org/marketplace-1/6ugdrjqk91auknzbplzkemkjzl6p3g"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Colorado Sheep Industry · ← Back to Marketplace · HIGH COUNTRY WOOLENS WOOL BLANKET · from $60.00 · MEMBER PRICING: · Select MEMBER PRICING · CWGA MEMBER · NONMEMBER",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "HIGH COUNTRY WOOLENS WOOL BLANKET — Colorado Sheep Industry",
+                "url": "https://www.coloradosheep.org/marketplace-1/6ugdrjqk91auknzbplzkemkjzl6p3g"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:arcturusgear.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Arcturus Gear",
+          "domain": "arcturusgear.com",
+          "url": "https://arcturusgear.com/collections/virgin-wool-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "You asked - we listened. Introducing our new Bighorn wool blankets made with 100% virgin wool. Why virgin wool? Since it&#x27;s never been used before, strands of virgin wool are longer than reclaimed wool, which means a softer, even more durable blanket. Reclaimed wool is a great choice but virgin ... You asked - we listened. Introducing our new Bighorn wool blankets made with 100% virgin wool. Why virgin wool? Since it's never been used before, strands of virgin wool are longer than reclaimed wool, which means a softer, even more durable blanket. Reclaimed wool is a great choice but virgin wool delivers unmatched",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "100% Virgin Wool Blankets - Arcturus Gear",
+                "url": "https://arcturusgear.com/collections/virgin-wool-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:ebay.com",
+        "kind": "online",
+        "retailer": {
+          "name": "eBay",
+          "domain": "ebay.com",
+          "url": "https://www.ebay.com/b/100-Wool-Blankets/bn_7006310918"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Get the best deals on 100% Wool Blankets when you shop the largest online selection at eBay.com. Free shipping on many items | Browse your favorite brands | affordable prices. Woolrich(53) Unbranded(475) Style · 1950s(95) 1960s(72) 1970s(33) 1980s(24) Antique(68) Aztec(23) Cottage(89) Country(37) English(14) Farmhouse(24) Indian(54) Irish(49) Lodge(48) Modern(39) Moroccan(16) Scottish(77) Southwestern(107) Traditional(127) Vintage(3,555) Welsh(14) Condition · New(23,947) Used(7,718) Not Specified(226) Price · Under $35 · $35 to $50 · Over $50 · Buying Format ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "100% Wool Blankets products for sale | eBay",
+                "url": "https://www.ebay.com/b/100-Wool-Blankets/bn_7006310918"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "online:bloomingdales.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bloomingdale's",
+          "domain": "bloomingdales.com",
+          "url": "https://www.bloomingdales.com/buy/wool-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop Wool Blankets at Bloomingdales.com. Free Shipping and Free Returns available, or buy online and pick up in store! July 4th Sale: Save 40–65% on a large selection of items. Ends 7/5. SHOP NOW GET YOUR ORDER TODAY with Curbside or In-Store Pickup, or Same Day Delivery. SHOP NOW BECOME A LOYALLIST and get rewards when you shop, free shipping every day & more! 2 days only! 30–60% off a great selection of swim styles. Ends 7/3. SHOP NOW",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Blankets - Bloomingdale's",
+                "url": "https://www.bloomingdales.com/buy/wool-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "online:organiclamb.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Shepherd's Lamb",
+          "domain": "organiclamb.com",
+          "url": "https://www.organiclamb.com/classic-organic-wool-blankets"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "You can purchase yours from the Tierra Wools Online Store, or in person at their showroom and workshop at 2540 US Highway 64/84 in Chama, NM. ... If you are in northern New Mexico and would like to pick up your blanket in person, you can visit ... No need for expensive dry-cleaning, either – wool's naturally resilient fibers can be washed easily in the comfort of your home throughout years of use. When it's finally time to retire your blanket, you can rest easy knowing that wool is 100% biodegradable. Wool absorbs moisture, keeping a dry layer of air next to your skin that helps hold in body heat. Because it has a porous fiber core, when you air your blanket it releases moisture, refreshing it over and over again. You can purchase yours from the Tierra Wools Online Store, or in person at their showroom and workshop at 2540 US Highway 64/84 in Chama, NM. ... If you are in northern New Mexico and would like to pick up your blanket in person, you can visit the Shepherd's Lamb stall at the Santa Fe Farmers Market. I have given these wool blankets as gifts to family members as far away as upstate New York, Boulder Colorado, and southern Florida.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Organic Wool Blankets & Throws | Classic Wool Blankets by Shepherd's Lamb — Shepherd's Lamb",
+                "url": "https://www.organiclamb.com/classic-organic-wool-blankets"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/home/wool-blankets/4044_539103_4756_5185109_3958530"
+        },
+        "matched_product": "wool blanket",
+        "snippet": "Shop for Wool Blankets in Bed Blankets. Buy products such as Arcturus Military Wool Blanket - 4.5 lbs, Warm, Thick, Washable, Large 64&quot; x 88&quot; - Great for Camping, Outdoors, Sporting Events, and Survival Kits (Military Gray) at Walmart and save. Military Outdoor Clothing U.S. Style Wool 3-Pound Military Blanket",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Blankets in Bed Blankets - Walmart.com",
+                "url": "https://www.walmart.com/browse/home/wool-blankets/4044_539103_4756_5185109_3958530"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "rank": 8
+      },
+      {
+        "id": "online:macys.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Macys",
+          "domain": "macys.com",
+          "url": "https://www.macys.com/shop/home/bed-bath/bedding/blankets-throws/Fabric/Wool%20%26%20Wool%20Blend?id=29405"
+        },
+        "matched_product": "",
+        "snippet": "Shop Wool &amp; Wool Blend blankets and throws at Macy&#x27;s to add warmth, softness and an inviting finishing layer to beds, sofas and chairs. Free shipping available. I’m an AI-powered assistant. You can ask me to help you shop, discover new trends or compare favorites.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Wool & Blend Blankets & Throw Blankets | Macy's",
+                "url": "https://www.macys.com/shop/home/bed-bath/bedding/blankets-throws/Fabric/Wool%20%26%20Wool%20Blend?id=29405"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 450 stores",
+          "stores": 450,
+          "source_url": "https://en.wikipedia.org/wiki/Macy%27s",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 9
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 76,
+          "cost_usd": 0.00005952
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3293,
+          "completion_tokens": 764,
+          "cost_usd": 0.00323375
+        }
+      ],
+      "llm_tokens": 4481,
+      "estimated_cost_usd": 0.023293,
+      "unclassified_shown": {
+        "online": 1,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "thereformation.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "uranusgeneralstore.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstore45.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "thelocalgeneral.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "textilefabricstore.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "fabricmartfabrics.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "directtextilestore.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "afabricplace.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "textilesfabricshop.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "lcgeneralstore.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "shop-generalstore.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstorestockyards.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "twinlakesgs.com",
+        "reason": "too_far"
+      },
+      {
+        "kind": "local",
+        "domain": "generalstoreofminnetonka.com",
+        "reason": "too_far"
+      }
+    ]
+  }
+}

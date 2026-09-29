@@ -1,0 +1,1606 @@
+{
+  "id": "chef-s-knife-suburban",
+  "checked": "2026-09-29T00:07:22.686Z",
+  "request": {
+    "product": "chef's knife",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "lat": 33.56,
+    "lon": -111.89,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 4290,
+  "body": {
+    "query": {
+      "product": "chef's knife",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "canonical_name": "chef's knife",
+      "category": "cookware",
+      "online_queries": [
+        "buy chef's knife",
+        "chef's knife shop"
+      ],
+      "local_queries": [
+        "cutlery store",
+        "kitchen supply store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4E5NW46TBZ5AEAFHPLMEE36C3YDIIU3AIAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "CUTCO Scottsdale",
+          "domain": "cutco.com",
+          "url": "https://cutco.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "9324 E Raintree Dr Ste 100B, Scottsdale, AZ 85260",
+        "distance_km": 6.8,
+        "lat": 33.6202,
+        "lon": -111.8797,
+        "certifications": [],
+        "signals": [],
+        "score": 0.675,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Model judgment: likely sells it",
+                "url": "https://cutco.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8300000000000001,
+            "weight": 0.15,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "4.2 mi (6.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "local:loc423MG6N6SZ5AEBXAU5JCF3623YDKIJB4P3BCHVUA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Sur La Table",
+          "domain": "surlatable.com",
+          "url": "https://surlatable.com/locations/az/scottsdale/store-21.html"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "7122 E Greenway Pkwy Suite #100, Scottsdale, AZ 85254",
+        "distance_km": 7.9,
+        "lat": 33.6236,
+        "lon": -111.9276,
+        "certifications": [],
+        "signals": [],
+        "score": 0.67,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Model judgment: likely sells it",
+                "url": "https://surlatable.com/locations/az/scottsdale/store-21.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "4.9 mi (7.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 59 stores",
+          "stores": 59,
+          "source_url": "https://en.wikipedia.org/wiki/Sur_La_Table",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4UYB75FJ2ZJAEAWBT24HOX6C3YBVFNUGMAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "HomeGoods",
+          "domain": "homegoods.com",
+          "url": "https://homegoods.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "10330 N 90th St, Scottsdale, AZ 85258",
+        "distance_km": 2.2,
+        "lat": 33.5799,
+        "lon": -111.8893,
+        "certifications": [],
+        "signals": [],
+        "score": 0.567,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://homegoods.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.945,
+            "weight": 0.15,
+            "contribution": 0.142,
+            "sources": [
+              {
+                "label": "1.4 mi (2.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 914 stores",
+          "stores": 914,
+          "source_url": "https://en.wikipedia.org/wiki/HomeGoods",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc45WQG3EFEZJAEAWFOW7GVJ623YCP4WGG3AAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Sharpe Haus",
+          "domain": "thesharpehaus.com",
+          "url": "https://thesharpehaus.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "7126 E Becker Ln, Scottsdale, AZ 85254",
+        "distance_km": 4.3,
+        "lat": 33.5831,
+        "lon": -111.9271,
+        "certifications": [],
+        "signals": [],
+        "score": 0.559,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://thesharpehaus.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8925,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "2.7 mi (4.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4EUVXK75LZZAEAKXRZI7UJ6S3YBS5GOWKAAAAAAA=:10",
+        "kind": "local",
+        "retailer": {
+          "name": "Affinity Kitchens",
+          "domain": "affinitykitchens.com",
+          "url": "https://affinitykitchens.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "7848 E Redfield Rd #10, Scottsdale, AZ 85260",
+        "distance_km": 6.4,
+        "lat": 33.6146,
+        "lon": -111.9104,
+        "certifications": [],
+        "signals": [],
+        "score": 0.551,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://affinitykitchens.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.84,
+            "weight": 0.15,
+            "contribution": 0.126,
+            "sources": [
+              {
+                "label": "4.0 mi (6.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4KPOW2KGGZ5AEBH3W7BV3F6K3YCYS6RLOAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Costco Wholesale",
+          "domain": "costco.com",
+          "url": "https://costco.com/w/-/az/scottsdale/427"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "15255 Hayden Rd, Scottsdale, AZ 85260",
+        "distance_km": 7.1,
+        "lat": 33.6232,
+        "lon": -111.9015,
+        "certifications": [],
+        "signals": [],
+        "score": 0.548,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://costco.com/w/-/az/scottsdale/427"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8225,
+            "weight": 0.15,
+            "contribution": 0.123,
+            "sources": [
+              {
+                "label": "4.4 mi (7.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 647 stores",
+          "stores": 647,
+          "source_url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4MN47ZA7NZ5AEAJCIACJMJ6K3YDYUABSWAAAAAAA=:13",
+        "kind": "local",
+        "retailer": {
+          "name": "Jetta Bath & Kitchen",
+          "domain": "jettabathandkitchen.com",
+          "url": "https://jettabathandkitchen.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "15250 Hayden Rd Ste 2, Scottsdale, AZ 85260",
+        "distance_km": 7.3,
+        "lat": 33.6244,
+        "lon": -111.9026,
+        "certifications": [],
+        "signals": [],
+        "score": 0.548,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://jettabathandkitchen.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8175,
+            "weight": 0.15,
+            "contribution": 0.123,
+            "sources": [
+              {
+                "label": "4.5 mi (7.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "local:loc45NOAPPPNZ5AEB7MMM3ADJ623YDALGXRNAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Pottery Barn",
+          "domain": "potterybarn.com",
+          "url": "https://potterybarn.com/stores/us-az-scottsdale-quarter"
+        },
+        "matched_product": "",
+        "snippet": "furniture",
+        "address": "15279 N Scottsdale Rd Spc 100, Scottsdale, AZ 85254",
+        "distance_km": 7.9,
+        "lat": 33.6244,
+        "lon": -111.9251,
+        "certifications": [],
+        "signals": [],
+        "score": 0.545,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://potterybarn.com/stores/us-az-scottsdale-quarter"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "4.9 mi (7.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 184 stores",
+          "stores": 184,
+          "source_url": "https://en.wikipedia.org/wiki/Pottery_Barn",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "local:loc44TAXC5HQZ5AEAU7554WVD623YB2BBQP6AAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Crate & Barrel",
+          "domain": "crateandbarrel.com",
+          "url": "https://crateandbarrel.com/stores/kierland-commons/str553"
+        },
+        "matched_product": "",
+        "snippet": "furniture",
+        "address": "15220 N Scottsdale Rd, Scottsdale, AZ 85254",
+        "distance_km": 7.9,
+        "lat": 33.6245,
+        "lon": -111.9268,
+        "certifications": [],
+        "signals": [],
+        "score": 0.545,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://crateandbarrel.com/stores/kierland-commons/str553"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8025,
+            "weight": 0.15,
+            "contribution": 0.12,
+            "sources": [
+              {
+                "label": "4.9 mi (7.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 75 stores",
+          "stores": 75,
+          "source_url": "https://en.wikipedia.org/wiki/Crate_%26_Barrel",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4FFWFARJ32FAEA5HX56YL76S3YA4GVXFAAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Lowe's Home Improvement",
+          "domain": "lowes.com",
+          "url": "https://lowes.com/store/AZ-Scottsdale/0792?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-792-_-na-_-0-_-0&y_source=1_MTE4MzM5OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "16285 N Scottsdale Rd, Scottsdale, AZ 85254",
+        "distance_km": 8.7,
+        "lat": 33.6346,
+        "lon": -111.9179,
+        "certifications": [],
+        "signals": [],
+        "score": 0.542,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://lowes.com/store/AZ-Scottsdale/0792?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-792-_-na-_-0-_-0&y_source=1_MTE4MzM5OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.7825,
+            "weight": 0.15,
+            "contribution": 0.117,
+            "sources": [
+              {
+                "label": "5.4 mi (8.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,748 stores",
+          "stores": 1748,
+          "source_url": "https://en.wikipedia.org/wiki/Lowe%27s",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:cutleryandmore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Cutlery and More",
+          "domain": "cutleryandmore.com",
+          "url": "https://cutleryandmore.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "MAC Professional 8&quot; Hollow Edge Chef&#x27;s Knife · $159.95 · Saleexclusive · Miyabi Koya 8&quot; Chef&#x27;s Knife · $139.95 · $169.95 · Saleexclusive · Miyabi Mizu SG2 8&quot; Chef&#x27;s Knife · $199.95 · $234.95 · exclusive · Enso HD 8&quot; Chef&#x27;s Knife · ... MAC Professional 8\" Hollow Edge Chef's Knife · $159.95 · Saleexclusive · Miyabi Koya 8\" Chef's Knife · $139.95 · $169.95 · Saleexclusive · Miyabi Mizu SG2 8\" Chef's Knife · $199.95 · $234.95 · exclusive · Enso HD 8\" Chef's Knife · $159.95 · Zwilling Four Star 8\" Chef's Knife · Miyabi Birchwood SG2 8\" Chef's Knife · $299.95 · $364.95 · exclusive · Enso Hizashi 8\" Chef's Knife · $159.95 · exclusive · Yaxell Hana 8\" Chef's Knife · $99.00 · Tojiro Classic 8.25\" Chef's Knife · $139.00 · exclusive · Wusthof Classic Ikon Creme 8\" Chef's Knife · This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef's Knives – Cutlery and More",
+                "url": "https://cutleryandmore.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:wusthof.com",
+        "kind": "online",
+        "retailer": {
+          "name": "WÜSTHOF",
+          "domain": "wusthof.com",
+          "url": "https://wusthof.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Over two centuries and seven generations, WÜSTHOF has become synonymous with the European-style chef’s knife: blades crafted with a pointed tip and a slightly curved edge to encourage a smooth rocking motion during chopping. We also carry a range of Asian-style chef’s knives, including the Santoku and the Chinese Chef’s Knife. Unfortunately, we don't ship to all countries; But we do offer details and overviews of our knife series, styles, and categories. Which region are you located in? ... Typically ranging from 6 to 12 inches, chef’s knives are all-purpose kitchen companions that slice, dice, smash, and cut virtually any ingredient. They come in various shapes, weights, and sizes, depending on each cook’s unique needs, and their most notable trait is their versatility. Whether you’re mincing fresh herbs, julienning carrots, or cutting into a juicy roast chicken, your chef’s knife is the one you’ll reach for the most. Over two centuries and seven generations, WÜSTHOF has become synonymous with the European-style chef’s knife: blades crafted with a pointed tip and a slightly curved edge to encourage a smooth rocking motion during chopping. We also carry a range of Asian-style chef’s knives, including the Santoku and the Chinese Chef’s Knife. There is plenty of range when it comes to the world of chef’s knives, including materials, tang, weight, size, and shape. These variables are a matter of personal preference, which is why we like to think there is no perfect chef’s knife for everyone, just the perfect chef’s knife for you.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Forged Chef's Knives: German Precision & Quality – WÜSTHOF",
+                "url": "https://wusthof.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:messermeister.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Messermeister",
+          "domain": "messermeister.com",
+          "url": "https://www.messermeister.com/collections/chefs-knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Messermeister chef&#x27;s knives are handcrafted in Solingen, Germany. Shop our most versatile &amp; popular knife in the kitchen. Order today. Adventure Chef Folding 6 Inch Chef's Knife - Maple Adventure Chef Folding 6 Inch Chef's Knife - Distressed Linen Notify Me When Available Add To Cart Successfully Added! Add To Cart Failed! Oliva Elite O.T. Prep Knife - 6.5\" Your go-to for 90% of kitchen tasks, Messermeister’s Chef’s Knives are built for unmatched versatility and precision. From slicing and dicing to mincing and chopping, these expertly crafted knives deliver superior sharpness, balance, and comfort.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef's Knives | Professional Chef Knife | Messermeister",
+                "url": "https://www.messermeister.com/collections/chefs-knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:hedleyandbennett.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Hedley & Bennett",
+          "domain": "hedleyandbennett.com",
+          "url": "https://www.hedleyandbennett.com/collections/knives"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Our collection features knives suitable for various tasks, including slicing, dicing, and chopping. Whether you&#x27;re a seasoned chef in need of a new set of knives or a home cook looking for your first chef&#x27;s knife, you&#x27;ll find high-quality options to suit your needs. They pair great with our knife sheaths which offer a stylish and functional way to store and transport your knives safely, and our cutting boards designed to prevent slippage and elevate your kitchen. Explore our collection and find the perfect tools to level up your cooking skills. ... With a wide range of chef knives, knife sets, and knife accessories, Hedley & Bennett caters to both professional chefs and home cooks. Our collection features knives suitable for various tasks, including slicing, dicing, and chopping. Whether you're a seasoned chef in need of a new set of knives or a home cook looking for your first chef's knife, you'll find high-quality options to suit your needs. Our chef's knives are made with three-layer Japanese steel, ensuring their durability and sharpness. The ergonomic handle design provides a comfortable grip, allowing you to work with precision and ease. Hedley & Bennett is committed to providing top-quality products that help you create culinary masterpieces. Our knives and knife accessories are designed with both form and function in mind, offering an exceptional balance of quality, performance, and style. Used by the best chefs, home cooks and makers in the world. Shop our quality aprons, knives, hats and kitchen gear for men, women, chefs, and kids.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Chef Knives | Hedley & Bennett",
+                "url": "https://www.hedleyandbennett.com/collections/knives"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:knifewear.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Knifewear",
+          "domain": "knifewear.com",
+          "url": "https://knifewear.com/en-us"
+        },
+        "matched_product": "chef's knife",
+        "snippet": "Canada&#x27;s best selection of Japanese Knives, sharpening stones, and chef&#x27;s tools. Mail-in and in-store knife sharpening services available. Our knife stores have become a destination/hang-out for those who love Japanese steel and are addicted to sharp. We carry knives not found in any other shop in Canada. We like exclusive, scary sharp, high performance blades, and travel all over Japan to find them. We also aim to have awesome selection of chef quality tools for your kitchen, whether you are a professional working the line, or someone at home looking for tools to kick it up a notch. Canada's best selection of Japanese Knives, sharpening stones, and chef's tools. Mail-in and in-store knife sharpening services available. Gyuto means \"cow sword\", cool huh? Inspired by the profile of a traditional European chef knife, gyutos are... The classic chef's knife.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Knifewear | Canada's best selection of Japanese Knives – Knifewear - Handcrafted Japanese Kitchen Knives",
+                "url": "https://knifewear.com/en-us"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:chefknivestogo.com",
+        "kind": "online",
+        "retailer": {
+          "name": "ChefKnivesToGo",
+          "domain": "chefknivestogo.com",
+          "url": "https://www.chefknivestogo.com/"
+        },
+        "matched_product": "",
+        "snippet": "The Japanese knife specialist since 2002. Hatsukokoro, Tojiro and CCK always in stock, plus dozens of top makers. Free US shipping over $100. Chef Knives To Go offers unmatched selection of kitchen knives! We are committed to bringing you unique knives and sharpening stones from a wide range of makers from around the world. Stay Sharp! Read More About Us · Knife Brands · Knife Types · Accessories · The Japanese knife specialist since 2002. Hatsukokoro, Tojiro and CCK always in stock, plus dozens of top makers. Free US shipping over $100. Shop All Knife Types · Accessories · Chef Equipment · Cutting Boards · Kitchen Tools · Knife Bags · Knife Sharpening Service · Knife Storage · Sayas · Sharpening Accessories · Sharpening Rods · Sharpening Stones · Shop All Accessories · Shop by Steel · Free USA Shipping Over $99! ... Chef Knives To Go offers unmatched selection of kitchen knives! We are committed to bringing you unique knives and sharpening stones from a wide range of makers from around the world.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Japanese Kitchen Knives | Chef Knives To Go",
+                "url": "https://www.chefknivestogo.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "online:williams-sonoma.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Williams Sonoma",
+          "domain": "williams-sonoma.com",
+          "url": "https://www.williams-sonoma.com/shop/cutlery/cutlery-chef-knives/"
+        },
+        "matched_product": "",
+        "snippet": "Elevate your culinary skills with Williams Sonoma&#x27;s premium chef&#x27;s knives. Discover the best chef knife and chef knife sets for every kitchen. Shop now! Small details change how safe and smooth a knife feels. Know the basics to pick the right tool. Full, half, or no bolster affects grip space and edge reach. Hollow-ground edges help thin slices release with less drag. Some edges use a diamond-wheel finish for a sharp, clean cut. Start with chef knife sets for a ready kit, or upgrade a single blade. Focus on fit to get the best chef knife for your grip. Match blade size to your board space and the foods you prep most. Shop Williams Sonoma for chef's knives that balance performance and comfort. Compare trusted brands, blade steels, and handle styles in one place. Events In-Store Events Skills Series Book Tours Virtual Events Private Events Services Free Kitchen Design Services Free Registry Services Free Trade Services Knife Sharpening: In-Store & Online",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Chef's Knives + Knife Sets | Williams Sonoma",
+                "url": "https://www.williams-sonoma.com/shop/cutlery/cutlery-chef-knives/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "online:webstaurantstore.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Web Restaurant Store",
+          "domain": "webstaurantstore.com",
+          "url": "https://www.webstaurantstore.com/2835/chef-knives.html"
+        },
+        "matched_product": "",
+        "snippet": "Buy More, Save More · Last Purchased Choice Classic 8&quot; Chef Knife with POM Handle · Rated 4.2 out of 5 stars · Item number#407kpomchef8 · $15.49/Each · Buy More, Save More · Last Purchased Schraf 10&quot; Chef Knife with TPRgrip Handle · Rated 4 out of 5 stars · Last Purchased Choice 10\" Chef Knife with White Handle · Rated 4.8 out of 5 stars · Item number#220kwchef10 · $7.19/Each · Buy More, Save More · Last Purchased Choice 8\" Chef Knife with White Handle · Rated 4.8 out of 5 stars · Item number#220kwchef8 · Buy More, Save More · Last Purchased Choice Classic 8\" Chef Knife with POM Handle · Rated 4.2 out of 5 stars · Item number#407kpomchef8 · $15.49/Each · Buy More, Save More · Last Purchased Schraf 10\" Chef Knife with TPRgrip Handle · Rated 4 out of 5 stars · Whether you operate a restaurant, diner, or cafeteria, our selection of professional chef knives is ideal for your foodservice business. Our assortment of kitchen knives is made of durable materials, such as stainless steel, high carbon stainless ste Add to cart or login to see our price!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Professional Chef Knives - WebstaurantStore",
+                "url": "https://www.webstaurantstore.com/2835/chef-knives.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "online:couteliernola.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Coutelier",
+          "domain": "couteliernola.com",
+          "url": "https://couteliernola.com/"
+        },
+        "matched_product": "",
+        "snippet": "Curated by the chefs who use them, sharpened by the same hands. Based in New Orleans, offering everything from hand-forged Japanese chef knives to whetstones, cutting boards, and kitchen tools built to last. Shop Now ... Looking forward to getting to the shop in the future. ... Great addition to my Tojiro collection! Thanks Coutelier for always having the best selections. Always great delivery to NY as well. ... This is an absolutely gorgeous piece that pairs perfectly with my Takeshi Saji Rainbow nakiri and gyuto. ... Great place. ... Fast shipping! Thanks! ... Great people doing excellent work in a beautiful retail store. We bought a second chef knife from their extensive inventory as well, which he helped us pick out. His feedback enhanced my sharpening skills. Highly recommended. ... I really enjoyed this advanced knife sharpening class! Gavin is an excellent teacher who does a fantastic job building on what is learned in the beginner class and taking you well beyond the basics. If you are a cooking or cutlery enthusiast, you will benefit greatly from this class! Highly recommended! ... The best online knife shopping, in my opinion. Discover hand-forged Japanese chef knives and professional culinary tools at Coutelier. Expertly curated for precision and performance. Free U.S. shipping on orders over $250. Shipping nationwide from New Orleans. Always great service when ordering from Coutelier! ... I’ve been wanting this Takeda for awhile! Incredibly sharp out of the box, very light in the hand. I believe the technical definition of this knife is a “laser”. I love the additional height of the knife as a Gyuto.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Japanese Chef Knives & Premium Culinary Tools | Coutelier",
+                "url": "https://couteliernola.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:lamsonproducts.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lamson",
+          "domain": "lamsonproducts.com",
+          "url": "https://lamsonproducts.com/shop/individual-knives/chefs/"
+        },
+        "matched_product": "",
+        "snippet": "Unleash your culinary artistry with Lamson Chef&#x27;s Knives, designed for optimal performance and durability. Backed by a lifetime guarantee, our knives are the choice of elite chefs. Shop now. NEW: Vintage Tomato & Cheese Knife | NEW: Vintage Santoku Style Chef Knife | Save up to 78% off on our closeout dealsNEW: Vintage Tomato & Cheese Knife | NEW: Vintage Santoku Style Chef Knife | Save up to 78% off on our closeout deals Sign up and receive 100 points (a $5 value) to use in the shop! The perfect blend of artistry and functionality, empowering both professional chefs and home cooks with exceptional cutting performance. Buy any 2 items and get 10% off your entire order! MUST enter code BUNDLE10 at checkout · Buy any 3 or more products and save 15% on entire order! MUST enter code BUNDLE03 at checkout. Buy any 5 or more products and save 20% on entire order! MUST enter code BUNDLE05 at checkout. ... Unlock exclusive benefits, rewards, and special offers. Earn points with every purchase and enjoy a personalized culinary experience. Sign up today and be part of the Lamson culinary community.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Lamson Chef Knives - The Pinnacle of Culinary Excellence",
+                "url": "https://lamsonproducts.com/shop/individual-knives/chefs/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 350,
+          "completion_tokens": 71,
+          "cost_usd": 0.0003335
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3994,
+          "completion_tokens": 843,
+          "cost_usd": 0.0038385
+        }
+      ],
+      "llm_tokens": 5258,
+      "estimated_cost_usd": 0.024172,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "starchefstore.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "trueclassictees.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "tileshop.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "aandbcoffeehouseandcafe.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "villagiotile.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "bestbuy.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "walmart.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "online",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

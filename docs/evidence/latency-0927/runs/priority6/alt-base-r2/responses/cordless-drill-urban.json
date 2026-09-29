@@ -1,0 +1,1605 @@
+{
+  "id": "cordless-drill-urban",
+  "checked": "2026-09-28T16:08:49.476Z",
+  "request": {
+    "product": "cordless drill",
+    "city": "Nashville",
+    "state": "TN",
+    "lat": 36.15,
+    "lon": -86.79,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 8750,
+  "body": {
+    "query": {
+      "product": "cordless drill",
+      "city": "Nashville",
+      "state": "TN",
+      "canonical_name": "cordless drill",
+      "category": "power tools",
+      "online_queries": [
+        "buy cordless drill",
+        "cordless drill shop"
+      ],
+      "local_queries": [
+        "hardware store",
+        "tool store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4WKO67J6GCRBEAKLCNR6IDMSVYCL5FBFSAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Grainger Industrial Supply",
+          "domain": "grainger.com",
+          "url": "https://grainger.com/branch/Nashville-Branch-513"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1021 Dr. M.L.K. Jr Blvd, Nashville, TN 37203",
+        "distance_km": 1.4,
+        "lat": 36.1623,
+        "lon": -86.7892,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://grainger.com/branch/Nashville-Branch-513"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.965,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.9 mi (1.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "local:loc4VKYGG3M5CBBEBCDM23HVDM2VYBMJHNVWAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Hillsboro Hardware and Repair Shop",
+          "domain": "hillsborohardware.net",
+          "url": "https://hillsborohardware.net/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "2204 21st Ave S, Nashville, TN 37212",
+        "distance_km": 2.5,
+        "lat": 36.1298,
+        "lon": -86.8019,
+        "certifications": [],
+        "signals": [],
+        "score": 0.566,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://hillsborohardware.net/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9375,
+            "weight": 0.15,
+            "contribution": 0.141,
+            "sources": [
+              {
+                "label": "1.6 mi (2.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4QJCMTGSHCZBEBHUHZEFLJMCVYB2XMQISAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Raven Tools",
+          "domain": "raventools.com",
+          "url": "https://raventools.com/"
+        },
+        "matched_product": "",
+        "snippet": "commercial",
+        "address": "Loft, 626B Main St Suite 204, Nashville, TN 37206",
+        "distance_km": 3.7,
+        "lat": 36.1741,
+        "lon": -86.761,
+        "certifications": [],
+        "signals": [],
+        "score": 0.561,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://raventools.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9075,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "2.3 mi (3.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "local:loc45RXPTIYDCJBEAKTX7KOJNL2VYAP5NXMKAAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Industrial Machine & Tool Co",
+          "domain": "industrialmachinetn.com",
+          "url": "https://industrialmachinetn.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware, hardware",
+        "address": "88 Polk Ave, Nashville, TN 37210",
+        "distance_km": 4.3,
+        "lat": 36.1407,
+        "lon": -86.7436,
+        "certifications": [],
+        "signals": [],
+        "score": 0.559,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://industrialmachinetn.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8925,
+            "weight": 0.15,
+            "contribution": 0.134,
+            "sources": [
+              {
+                "label": "2.7 mi (4.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4KTL6WJ5NCZBEB3B5JNDAJMCVYBWLMBWAAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Cumberland Hardware Co",
+          "domain": "facebook.com",
+          "url": "https://facebook.com/pages/category/Hardware-Store/Cumberland-Hardware-Co-119196928132823"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1018 Woodland St, Nashville, TN 37206",
+        "distance_km": 4.7,
+        "lat": 36.1772,
+        "lon": -86.7503,
+        "certifications": [],
+        "signals": [],
+        "score": 0.557,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://facebook.com/pages/category/Hardware-Store/Cumberland-Hardware-Co-119196928132823"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8825,
+            "weight": 0.15,
+            "contribution": 0.132,
+            "sources": [
+              {
+                "label": "2.9 mi (4.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4PNBBWJKUDFBEATL2QQ7WRL2VYAP62KAUAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Elder's Ace Hardware - East Nashville",
+          "domain": "eldershardware.com",
+          "url": "https://eldershardware.com/locations/east-nashville"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "2622 Gallatin Pike, Nashville, TN 37216",
+        "distance_km": 6.9,
+        "lat": 36.1979,
+        "lon": -86.7407,
+        "certifications": [],
+        "signals": [],
+        "score": 0.549,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://eldershardware.com/locations/east-nashville"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8275,
+            "weight": 0.15,
+            "contribution": 0.124,
+            "sources": [
+              {
+                "label": "4.3 mi (6.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4IGZCKUDJCJBEA2WG7WRN7N2VYCXY32POAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Guthrie's Ace Hardware- West Nashville",
+          "domain": "acehardware.com",
+          "url": "https://acehardware.com/store-details/00855"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "6401 Charlotte Pike Ste B, Nashville, TN 37209",
+        "distance_km": 7.5,
+        "lat": 36.1438,
+        "lon": -86.873,
+        "certifications": [],
+        "signals": [],
+        "score": 0.547,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://acehardware.com/store-details/00855"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8125,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "4.7 mi (7.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,000+ stores, dealer-owned",
+          "stores": 5000,
+          "source_url": "https://en.wikipedia.org/wiki/Ace_Hardware",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "local:loc44L22VX4WCJBEBNNXUUPR5LKVYBAC72HFAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Brookmeade Hardware",
+          "domain": "brookmeadehardware.com",
+          "url": "https://brookmeadehardware.com/"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "1810 Air Lane Dr, Nashville, TN 37210",
+        "distance_km": 7.7,
+        "lat": 36.1452,
+        "lon": -86.705,
+        "certifications": [],
+        "signals": [],
+        "score": 0.546,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://brookmeadehardware.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8075,
+            "weight": 0.15,
+            "contribution": 0.121,
+            "sources": [
+              {
+                "label": "4.8 mi (7.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "local:loc4NJRMWPADBVBEBYKGEXILXN2VYB2BTZXWAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Elder's Ace Hardware-Belle Meade",
+          "domain": "eldershardware.com",
+          "url": "https://eldershardware.com/locations/belle-meade"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "5304 Harding Pike, Nashville, TN 37205",
+        "distance_km": 9,
+        "lat": 36.1017,
+        "lon": -86.8708,
+        "certifications": [],
+        "signals": [],
+        "score": 0.541,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://eldershardware.com/locations/belle-meade"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.775,
+            "weight": 0.15,
+            "contribution": 0.116,
+            "sources": [
+              {
+                "label": "5.6 mi (9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4CZ4URZ5SBVBEABIIGB3AZMKVYAYXII57AAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://homedepot.com/l/Thompson-Lane/TN/Nashville/37204/732?emt=MSGoogleMaps"
+        },
+        "matched_product": "",
+        "snippet": "hardware",
+        "address": "2535 Powell Ave, Nashville, TN 37204",
+        "distance_km": 5.2,
+        "lat": 36.107,
+        "lon": -86.7664,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17",
+            "penalty_usd": 20750000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.481,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://homedepot.com/l/Thompson-Lane/TN/Nashville/37204/732?emt=MSGoogleMaps"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.87,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "3.2 mi (5.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,347 stores",
+          "stores": 2347,
+          "source_url": "https://en.wikipedia.org/wiki/The_Home_Depot",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:lowes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lowe's",
+          "domain": "lowes.com",
+          "url": "https://www.lowes.com/pl/power-tools/drills-drivers/drills/cordless/4294607722-4294776932"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Discover an extensive selection of high-quality cordless drills, including advanced brushless drills, available at Lowe&#x27;s. Upgrade your toolkit with cordless drills, essential tools designed for convenience, flexibility, and efficiency in both DIY and professional projects. Cordless drills offer freedom of movement, making them ideal for drilling holes and driving screws in various materials. Cleaning: Keep drills clean from dust and debris to maintain optimal performance. Proper Storage: Store cordless drills in a dry, clean environment to prevent corrosion. Battery Care: Regularly charge and discharge drill batteries to maintain battery health and longevity. Prepare your toolkit for efficiency and versatility with dependable cordless drills. Whether selecting powerful brushless drills for demanding tasks or standard cordless drills for versatile use, you'll find high-quality options at Lowe's. Discover an extensive selection of high-quality cordless drills, including advanced brushless drills, available at Lowe's.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills- Freedom & Power for Any Project | Lowe's",
+                "url": "https://www.lowes.com/pl/power-tools/drills-drivers/drills/cordless/4294607722-4294776932"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,748 stores",
+          "stores": 1748,
+          "source_url": "https://en.wikipedia.org/wiki/Lowe%27s",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 1
+      },
+      {
+        "id": "online:harborfreight.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Harbor Freight",
+          "domain": "harborfreight.com",
+          "url": "https://www.harborfreight.com/power-tools/drills-drivers/cordless-drills-drivers.html"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Convenient and portable cordless drills for every job and every budget. Choose from a wide range of cordless drills and drivers from professional-grade the Hercules 20 volt drill to the versatile Bauer 20 volt cordless drill, or check out Warrior and Drill Master. BAUER 20V Cordless, 1/2 in. Drill/Driver Kit with 2 Ah Battery and Charger BAUER 20V Brushless Cordless, 1/2 in. Drill/Driver - Tool Only BAUER 20V Cordless, 1/2 in. Hammer Drill/Driver Kit with 1.5 Ah Battery and Charger BAUER 20V Brushless Cordless, 1/2 in. Hammer Drill - Tool Only",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills & Drivers - Harbor Freight Tools",
+                "url": "https://www.harborfreight.com/power-tools/drills-drivers/cordless-drills-drivers.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,600+ stores",
+          "stores": 1600,
+          "source_url": "https://en.wikipedia.org/wiki/Harbor_Freight_Tools",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:bestbuy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://www.bestbuy.com/site/power-tools/drills/pcmcat1616429511771.c?id=pcmcat1616429511771"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Find an assortment of cordless drills, drill sets and other hand tools at Best Buy. Greenworks - 24V 5pcs Combo, Drill/Driver+Impact Driver+Circular Saw+Oscillating Tool+Flashlight - Green · Syndicated rating, 4.704918 out of 5 stars with 122 reviews on greenworkstools.com.(122) WORX - 4V Electric Rechargeable Cordless Power Screwdriver Set with 6 Bits, Screw Holder, Charger, and 18 Month Battery Life - Black Greenworks - 24V Cordless 4pcs Combo, Drill/Driver+Impact Driver+6.5\" Circular Saw+Flashlight - Green VEVOR - Cordless Drill Driver, 1/2 inch Metal Chuck, Dual-Speed Variable, Drill Driver Kit with Lithium Battery and Charger - Black,Orange WORX - WX109L 20V PowerShare 105 Nm Brushless Cordless Drill/Driver (Battery & Charger Included) - Black",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Drills & Drivers - Best Buy",
+                "url": "https://www.bestbuy.com/site/power-tools/drills/pcmcat1616429511771.c?id=pcmcat1616429511771"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,117 stores",
+          "stores": 1117,
+          "source_url": "https://en.wikipedia.org/wiki/Best_Buy",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "online:acehardware.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Ace Hardware",
+          "domain": "acehardware.com",
+          "url": "https://www.acehardware.com/departments/tools/power-tools/cordless-drills"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Upgrade your toolkit with cordless power drills at Ace. Find a range of standard and cordless hammer drills and sets from Milwaukee, DeWalt, Makita and more. Browse several types of battery-powered cordless drills with powerful features to make work easier than ever. Whether you're upgrading your DIY toolkit or buying your first portable drill, Ace has a cordless drill set for any kind of project, including standard battery-powered drills and hammer drills. Upgrade your toolkit with cordless power drills at Ace. Find a range of standard and cordless hammer drills and sets from Milwaukee, DeWalt, Makita and more. Look for models with a quick-change keyless chuck that makes bit changes a breeze, as well as an array of power options that deliver the strength and performance you need. Look for drills from Milwaukee, DeWalt, Craftsman and other reputable brands. What helps cordless hammer drills stand out is the special feature that delivers additional power for drilling through tough surfaces like concrete, masonry, stone and brick. Cordless impact drivers, designed for 1/4 -inch hex-shanked bits, excel at driving long screws and handling projects like decking, drywall and roofing. They provide high torque for wood, metal and plastic. Owning both tools and others like impact wrenches ensures you are prepared for any DIY project. project, Drills have versatility that allows you to adjust the speed and torque for your specific project.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills & Cordless Drill Sets - Ace Hardware",
+                "url": "https://www.acehardware.com/departments/tools/power-tools/cordless-drills"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,000+ stores, dealer-owned",
+          "stores": 5000,
+          "source_url": "https://en.wikipedia.org/wiki/Ace_Hardware",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "online:ridgid.com",
+        "kind": "online",
+        "retailer": {
+          "name": "RIDGID",
+          "domain": "ridgid.com",
+          "url": "https://www.ridgid.com/us/en/cordless-drills"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Get all the tools you need with the flexibility of battery operated drills and drivers. Shop RIDGID cordless drills here.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drill and Impact Driver Kits | RIDGID Tools",
+                "url": "https://www.ridgid.com/us/en/cordless-drills"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:scheels.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Scheels",
+          "domain": "scheels.com",
+          "url": "https://www.scheels.com/c/cordless-drills/"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Shop cordless drills at SCHEELS and get the job done! We offer power drills from Dewalt, Milwaukee Tool, and more. When you’re hard at work, you need a cordless drill you can rely on. That’s why SCHEELS carries drills from leading tool brands like Milwaukee Tool, Dewalt, and more. Whether you’re an at-home handyman or a hardworking hobbyist, we have the right power drill for you. Don’t forget to pick up an extra · drill battery to keep your project on time. Shop cordless drills at SCHEELS and get the job done!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills",
+                "url": "https://www.scheels.com/c/cordless-drills/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "online:mccoys.com",
+        "kind": "online",
+        "retailer": {
+          "name": "McCoy's",
+          "domain": "mccoys.com",
+          "url": "https://www.mccoys.com/shop/c/111104107101000000/cordless-drills-drivers"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Shop Cordless Drills &amp; Drivers at McCoy&#x27;s Building Supply. ATOMIC 20V MAX Series DCD794D1 Drill/Driver Kit, Battery Included, 20 V, 2 Ah, 1/2 in Chuck, Keyless Chuck ... MAX XR DCD801QQ2 Cordless Drill/Driver Kit, Battery Included, 20 V, 4 Ah, 1/2 in Chuck, Keyless Chuck DeWALT DCD740C1 Drill/Driver Kit, Battery Included, 20 V, 1.3 Ah, 3/8 in Chuck, Keyless, Ratcheting Chuck ... 20V Max Series DCD740B Cordless Drill/Driver, 20 V, 3/8 in Chuck, Keyless, Ratcheting Chuck, TOOL ONLY Flexiclick GSR12V-140FCB22 Drill/Driver System, Battery Included, 12 V, 2 Ah, 1/4 in Chuck, Keyless Chuck ... 60V Max Series DCD470B Cordless In-Line Stud and Joist Drill, 60 VDC, 1/2 in Chuck, Keyed Chuck, TOOL ONLY 20V Max XR Series DCD446B Brushless Cordless Stud and Joist Drill, 20 V, 1/2 in Chuck, Keyed Chuck, TOOL ONLY",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Cordless Drills & Drivers",
+                "url": "https://www.mccoys.com/shop/c/111104107101000000/cordless-drills-drivers"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "online:truevalue.com",
+        "kind": "online",
+        "retailer": {
+          "name": "True Value Hardware",
+          "domain": "truevalue.com",
+          "url": "https://www.truevalue.com/shop/tools/power-tools/drills/cordless-drills"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Shop high-quality cordless drills and drivers at True Value Hardware. Find impact drivers, hammer drills, screwguns, and more for every job and skill level.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills & Drivers | True Value Hardware",
+                "url": "https://www.truevalue.com/shop/tools/power-tools/drills/cordless-drills"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 8
+      },
+      {
+        "id": "online:zoro.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Zoro",
+          "domain": "zoro.com",
+          "url": "https://www.zoro.com/cordless-drills/c/5861/"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Shop Zoro for a wide variety of Cordless Drills featuring 12V, 18V, 20V, 60V battery platforms from top brands like Milwaukee, DeWalt, Makita, Bosch &amp; many more. Shop these essential power tools for a wide range of industries and jobs and improve your efficiency and freedom by cutting the cord. Our wide selection of cordless power drills includes many high-end battery-powered options that are highly portable and manufactured by the top names in the industry, including Milwaukee, DeWalt, Makita, Bosch, and many others. Simply search for the drill you need or use our convenient filters to narrow down our selection until you find the exact item you're looking for. You’ll find a great selection of cordless tool accessories, power tool combo kits, and other cordless power tools to make every project a success. Plus, when you order from Zoro, we always make the shopping experience as fast and seamless as possible with free shipping, Net 30 payment terms available for qualifying customers, and an unparalleled customer experience. Choose from a variety of battery-powered options, including drills with and without brushless motors, to find the perfect product for your particular needs. Whether you apply your skills as a do-it-yourselfer or in any of the trades, it's likely that you’re already using a cordless drill with regularity on the job. And whether you're looking to upgrade, add a new tool to your arsenal, or simply boost your team's productivity, you'll find all of the premium cordless drills you need to get every job done right here at Zoro.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills - Battery Power Drills & Volt Drills | Zoro",
+                "url": "https://www.zoro.com/cordless-drills/c/5861/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:tractorsupply.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Tractor Supply Co.",
+          "domain": "tractorsupply.com",
+          "url": "https://www.tractorsupply.com/a/cordless-drills"
+        },
+        "matched_product": "cordless drill",
+        "snippet": "Tackle any project with cordless drills from Tractor Supply. Durable, powerful, and built for the farm or shop. Shop now! Cordless drills make tackling jobs around the farm, shop, or home a whole lot easier. Whether you’re hanging gates, fixing fences, or working on a new project in the barn, these handy tools offer freedom to move without being tied down by cords. Find the right cordless drill to keep your projects moving and your toolbox ready for anything that comes your way. Cordless drills are handy, hardworking tools for making holes and driving screws without dragging an extension cord across the shop, barn, or living room. They are useful for everyday repairs, weekend projects, fence work, furniture assembly, and all the little jobs that pop up around a home or property. Around a farm or rural property, a cordless drill earns its keep on jobs such as repairing gates, replacing hinges, mounting signs, attaching brackets, fixing stall hardware, and building simple storage. During the cooler months, it can help with indoor projects when outdoor work slows down, from assembling shop benches to preparing a mudroom for wet boots and coats. As the weather shifts and chores move between the house, garage, and barn, cordless convenience means less time hunting for an outlet and more time getting the job done. Keep a basic assortment of bits nearby, including several Phillips and slotted driver bits, nut drivers, wood bits, metal bits, and a bit sized for the fasteners you use most often. Let the drill do the work rather than forcing it, keep the bit straight, and back the tool out occasionally when drilling deep holes to clear dust and shavings.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Cordless Drills at Tractor Supply Co.",
+                "url": "https://www.tractorsupply.com/a/cordless-drills"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,446 stores",
+          "stores": 2446,
+          "source_url": "https://en.wikipedia.org/wiki/Tractor_Supply_Company",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 74,
+          "cost_usd": 0.0000666
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 4101,
+          "completion_tokens": 731,
+          "cost_usd": 0.00380675
+        }
+      ],
+      "llm_tokens": 5255,
+      "estimated_cost_usd": 0.023873,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "consumerreports.org",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "popularmechanics.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "thespruce.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "protoolreviews.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "gwstoolgroup.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "efitn.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "homedepot.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1687 @@
+{
+  "id": "rechargeable-aa-batteries-urban",
+  "checked": "2026-09-28T16:23:10.964Z",
+  "request": {
+    "product": "rechargeable AA batteries",
+    "city": "Chicago",
+    "state": "IL",
+    "lat": 41.92,
+    "lon": -87.65,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 7779,
+  "body": {
+    "query": {
+      "product": "rechargeable AA batteries",
+      "city": "Chicago",
+      "state": "IL",
+      "canonical_name": "rechargeable AA batteries",
+      "category": "electronics accessories",
+      "online_queries": [
+        "buy rechargeable AA batteries",
+        "rechargeable AA battery shop"
+      ],
+      "local_queries": [
+        "electronics store",
+        "general store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4ZQRLTIOO6RCEBWGIX7QOJ2KVYAT6KXL5ZGP3NQQ=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://stores.bestbuy.com/il/chicago/1000-w-north-ave-323.html/?loc=ns100"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "1000 W North Ave, Chicago, IL 60642",
+        "distance_km": 0.9,
+        "lat": 41.9126,
+        "lon": -87.6546,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://stores.bestbuy.com/il/chicago/1000-w-north-ave-323.html/?loc=ns100"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9775,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.6 mi (0.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,117 stores",
+          "stores": 1117,
+          "source_url": "https://en.wikipedia.org/wiki/Best_Buy",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 1
+      },
+      {
+        "id": "local:loc4WN5IPW5B6VCEBIXOAOINV2SVYDB7B3CWLII4SLQ=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://stores.bestbuy.com/il/chicago/2100-n-elston-ave-814.html/?loc=ns100"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2100 N Elston Ave, Chicago, IL 60614",
+        "distance_km": 1.6,
+        "lat": 41.919,
+        "lon": -87.6696,
+        "certifications": [],
+        "signals": [],
+        "score": 0.569,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://stores.bestbuy.com/il/chicago/2100-n-elston-ave-814.html/?loc=ns100"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.96,
+            "weight": 0.15,
+            "contribution": 0.144,
+            "sources": [
+              {
+                "label": "1.0 mi (1.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,117 stores",
+          "stores": 1117,
+          "source_url": "https://en.wikipedia.org/wiki/Best_Buy",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4GRN4GVQ265CEADLFJXI3N22VYBIRIL5HL4Q42DI=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "Micro Center",
+          "domain": "microcenter.com",
+          "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2645 N Elston Ave, Chicago, IL 60647",
+        "distance_km": 3,
+        "lat": 41.9305,
+        "lon": -87.683,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.925,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.9 mi (3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 30 stores",
+          "stores": 30,
+          "source_url": "https://en.wikipedia.org/wiki/Micro_Center",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4RBCENLDK6ZCEAOTQOPH5722VYBZBWN6IAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Grand Appliance and Tv",
+          "domain": "grandappliance.com",
+          "url": "https://grandappliance.com/locations/chicago"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "2300 W Fullerton Ave, Chicago, IL 60647",
+        "distance_km": 3,
+        "lat": 41.9251,
+        "lon": -87.6855,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://grandappliance.com/locations/chicago"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.925,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.9 mi (3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "local:loc47IGKQN5D6FCEBDXKZ7MV32SVYD7KJ2KOV34SYBI=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "ReVamp Electronics",
+          "domain": "revampelectronics.com",
+          "url": "https://revampelectronics.com/"
+        },
+        "matched_product": "",
+        "snippet": "electronics",
+        "address": "344 N Ogden Ave, Chicago, IL 60607",
+        "distance_km": 3.7,
+        "lat": 41.8878,
+        "lon": -87.662,
+        "certifications": [],
+        "signals": [],
+        "score": 0.561,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://revampelectronics.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9075,
+            "weight": 0.15,
+            "contribution": 0.136,
+            "sources": [
+              {
+                "label": "2.3 mi (3.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "local:loc43KGNGECV7JCEBNH7AHLCV22VYALCNNCZAAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "San Gregorio General Store",
+          "domain": "sangregoriogeneralstore.shop",
+          "url": "https://sangregoriogeneralstore.shop/"
+        },
+        "matched_product": "",
+        "snippet": "service",
+        "address": "1801 W Belle Plaine Ave, Chicago, IL 60613",
+        "distance_km": 4.5,
+        "lat": 41.9557,
+        "lon": -87.6745,
+        "certifications": [],
+        "signals": [],
+        "score": 0.558,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://sangregoriogeneralstore.shop/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8875,
+            "weight": 0.15,
+            "contribution": 0.133,
+            "sources": [
+              {
+                "label": "2.8 mi (4.5 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4525G3FIW7NCEA3VFGIQFN22VYBN3PU7NKZCYUJQ=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Gi Gi's General Store",
+          "domain": "gigisgeneralstore.com",
+          "url": "https://gigisgeneralstore.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1926 W Montrose Ave, Chicago, IL 60613",
+        "distance_km": 5.1,
+        "lat": 41.9616,
+        "lon": -87.6771,
+        "certifications": [],
+        "signals": [],
+        "score": 0.556,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://gigisgeneralstore.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8725,
+            "weight": 0.15,
+            "contribution": 0.131,
+            "sources": [
+              {
+                "label": "3.2 mi (5.1 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "local:loc4YQ7WZ2OR6RCEAGCMWLCDT32VYCSBYWNUAAAAAAA=:11",
+        "kind": "local",
+        "retailer": {
+          "name": "Cook Brothers",
+          "domain": "cookbrothers.com",
+          "url": "https://cookbrothers.com/"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "1740 N Kostner Ave, Chicago, IL 60639",
+        "distance_km": 7.3,
+        "lat": 41.9127,
+        "lon": -87.7379,
+        "certifications": [],
+        "signals": [],
+        "score": 0.548,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://cookbrothers.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8175,
+            "weight": 0.15,
+            "contribution": 0.123,
+            "sources": [
+              {
+                "label": "4.5 mi (7.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 9
+      },
+      {
+        "id": "local:loc4Q6VV5WLA6VCEAFUFLUKL33KVYCDT3ZP6AAAAAAA=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Dollar General",
+          "domain": "dollargeneral.com",
+          "url": "https://dollargeneral.com/store-directory/il/chicago/11833"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "3527 W Armitage Ave, Chicago, IL 60647",
+        "distance_km": 5.4,
+        "lat": 41.917,
+        "lon": -87.7147,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "labor",
+            "polarity": "negative",
+            "claim": "Department of Labor announces settlement with Dollar General requiring corporate-wide safety investments in stores nationwide",
+            "source_url": "https://www.osha.gov/news/newsreleases/national/07112024-0",
+            "origin": "curated",
+            "action_date": "2024-07-11",
+            "penalty_usd": 12000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.48,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://dollargeneral.com/store-directory/il/chicago/11833"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Labor: Department of Labor announces settlement with Dollar General requiring corporate-wide safety investments in stores nationwide",
+                "url": "https://www.osha.gov/news/newsreleases/national/07112024-0"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.865,
+            "weight": 0.15,
+            "contribution": 0.13,
+            "sources": [
+              {
+                "label": "3.4 mi (5.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 20,959 stores",
+          "stores": 20959,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      },
+      {
+        "id": "local:loc4UTBUGGB77ZCEBO453CPDJ2SVYCHW4FKWAAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Dollar General",
+          "domain": "dollargeneral.com",
+          "url": "https://dollargeneral.com/store-directory/il/chicago/19102"
+        },
+        "matched_product": "",
+        "snippet": "convenience store",
+        "address": "5725 N Broadway, Chicago, IL 60660",
+        "distance_km": 7.4,
+        "lat": 41.9863,
+        "lon": -87.6595,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "labor",
+            "polarity": "negative",
+            "claim": "Department of Labor announces settlement with Dollar General requiring corporate-wide safety investments in stores nationwide",
+            "source_url": "https://www.osha.gov/news/newsreleases/national/07112024-0",
+            "origin": "curated",
+            "action_date": "2024-07-11",
+            "penalty_usd": 12000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.472,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://dollargeneral.com/store-directory/il/chicago/19102"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Labor: Department of Labor announces settlement with Dollar General requiring corporate-wide safety investments in stores nationwide",
+                "url": "https://www.osha.gov/news/newsreleases/national/07112024-0"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.815,
+            "weight": 0.15,
+            "contribution": 0.122,
+            "sources": [
+              {
+                "label": "4.6 mi (7.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 20,959 stores",
+          "stores": 20959,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 11
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:bestbuy.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Best Buy",
+          "domain": "bestbuy.com",
+          "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rechargeable+aa+batteries"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "Shop for rechargeable aa batteries at Best Buy. Find low everyday prices and buy online for delivery or in-store pick-up",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "rechargeable aa batteries - Best Buy",
+                "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rechargeable+aa+batteries"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,117 stores",
+          "stores": 1117,
+          "source_url": "https://en.wikipedia.org/wiki/Best_Buy",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 1
+      },
+      {
+        "id": "online:lowes.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Lowe's",
+          "domain": "lowes.com",
+          "url": "https://www.lowes.com/pl/batteries/aa-batteries/rechargeable/3574303452-4294816768"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "Rechargeable AA batteries provide dependable power for cameras, toys, and controllers while reducing waste. Shop online or pick up at Lowe&#x27;s. Rechargeable AA batteries are a great option for devices used on a regular basis like video game controllers. This type of battery is often charged in an A/C adapter, which can be plugged into any home outlet. In case you're still on the fence about which type of battery to purchase, you can read our buying guide — Should I Buy Lithium Batteries or Alkaline Batteries — to learn more. Rechargeable AA batteries provide dependable power for cameras, toys, and controllers while reducing waste. Shop online or pick up at Lowe's. Nothing outlasts the long-lasting power of Energizer Ultimate Lithium AA batteries. Each battery’s safety-conscious, leak-proof design gives you confidence that your most-loved devices are protected against leaks and corrosion. These batteries can perform in extreme temperatures (from -40F to 140° F) and last in storage for up to 20 years… making Ultimate Lithium batteries the clear choice to dependably power the essential devices in your life.View More · Energizer Power Plus Rechargeable Nickel Metal Hydride (NiMH) AA Batteries ( 4 -Pack) Energizer Power Plus rechargeable AA batteries offer a convenient way to power your gadgets while saving money and reducing waste. Made with 15% recycled materials, these AA rechargeable batteries use innovative, industry-leading technology for reliable use. These chargeable batteries are designed to prevent damaging leaks.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rechargeable AA Batteries for Reuse & Savings | Lowe's",
+                "url": "https://www.lowes.com/pl/batteries/aa-batteries/rechargeable/3574303452-4294816768"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 1,748 stores",
+          "stores": 1748,
+          "source_url": "https://en.wikipedia.org/wiki/Lowe%27s",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "online:walgreens.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walgreens",
+          "domain": "walgreens.com",
+          "url": "https://www.walgreens.com/q/aa+rechargeable+batteries"
+        },
+        "matched_product": "rechargeable AAA batteries",
+        "snippet": "Energizer Recharge Power Plus Rechargeable AAA Batteries AAA (Packaging May Vary) - 4 ea Energizer Recharge Energizer Power Plus Batteries AA - 4 ea Energizer ... Extra $10 off $50+ sitewi... ... Extra $10 off $50+ sitewi... ... 12Add to cartwill open overlay for Energizer Value Charger for NiMH Rechargeable AA and AAA Batteries Energizer Recharge Power Plus Rechargeable AAA Batteries AAA (Packaging May Vary) - 4 ea Energizer Recharge",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "AA Rechargeable Batteries | Walgreens",
+                "url": "https://www.walgreens.com/q/aa+rechargeable+batteries"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 8,000 stores",
+          "stores": 8000,
+          "source_url": "https://en.wikipedia.org/wiki/Walgreens",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "online:paleblueearth.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Paleblue",
+          "domain": "paleblueearth.com",
+          "url": "https://paleblueearth.com/products/pale-blue-lithium-rechargeable-aa-batteries"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "Paleblue utilizes the latest technologies to bring you state-of-the-art lithium rechargeable AA batteries. Our batteries offer 1000+ charges along with the convenience of USB-C charging – no special charger needed! In terms of powering electronic devices, a single charge of our rechargeable AA battery is comparable to alkaline batteries. Each device varies, so it's not appropriate to specify a certain number of hours. In terms of total battery life, lithium-ion batteries boast 1000+ charge cycles, potentially offering years of service before having to return to a store to buy more. Why choose Paleblue’s lithium rechargeable AA batteries? Paleblue utilizes the latest technologies to bring you state-of-the-art lithium rechargeable AA batteries. Our batteries offer 1000+ charges along with the convenience of USB-C charging – no special charger needed! The World's Best USB Rechargeable Lithium Batteries. Paleblue is the high performance and sustainable means to ditching disposables. Shop Here! 1,000+ recharge cycles per battery, replacing over 50lbs of single-use batteries · LED ring indicator shows charge status at a glance · Pays for themselves. One set replaces drawers full of disposables, for a fraction of the cost long-term ... We built the battery we wished existed: one that charges like your phone, hits full 1.5V like the alkalines you grew up with, and doesn't end up in a landfill every few weeks. Voyager AA charges over USB-C, so it works just like your other USB-powered devices.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Voyager AA USB-C Rechargeable Batteries – Paleblue",
+                "url": "https://paleblueearth.com/products/pale-blue-lithium-rechargeable-aa-batteries"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 4
+      },
+      {
+        "id": "online:ikea.com",
+        "kind": "online",
+        "retailer": {
+          "name": "IKEA",
+          "domain": "ikea.com",
+          "url": "https://www.ikea.com/us/en/cat/batteries-battery-chargers-41070/"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "Shop rechargeable AA &amp; AAA batteries, battery chargers and battery packs at IKEA. Find a variety of uses including remotes, toys and more! Why keep charging new batteries on your credit card when you can recharge them at home? Shop our rechargeable AA batteries, AAA rechargeable batteries, battery chargers and more for a more sustainable battery solution Our rechargeable batteries make it easy to keep a fresh set at the ready, and are an environmentally-conscious choice over single-use alkaline batteries. Keep your electronics powered without constantly buying pricey disposable batteries with an affordable investment in AA and AAA battery chargers, rechargeable batteries, battery packs and more. We offer affordable rechargeable batteries and chargers in some of the most commonly used household sizes. Our AA and AAA battery chargers and batteries are a popular pick for powering everything from radios to remote controls. Complete the set with one of our AA and AAA battery chargers and help them start out in their new home with a smart, sustainable battery solution. Rechargeable batteries help save money over time and offer the convenience of always having a fully-charged batch of batteries at the ready.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rechargeable Batteries - AA & AAA Battery Chargers - IKEA",
+                "url": "https://www.ikea.com/us/en/cat/batteries-battery-chargers-41070/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 5
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/browse/household-essentials/aa-rechargeable-batteries/1115193_1076905_7114176_5347986"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "EBL AA Lithium Batteries, 1.5V 3000mWh Rechargeable AA Batteries Long Lasting Double A Battery 4 Pack Cirket 8-Pack Rechargeable AA Lithium Batteries 1.5V 3600mWh with Charger, LED Indicator & Storage Case, Long-Lasting for Xbox, Blink, Remote Controls EBL AA Lithium Batteries, 1.5V 3000mWh Rechargeable AA Batteries Long Lasting Double A Battery 4 Pack LiCB Rechargeable Batteries AA 2800mAh & AAA 1100mAh with Smart 8 Bay Battery Charger, 1.2V NiMH Battery, 8 Count - 4 AA and 4 AAA EBL 16 Count AA Rechargeable Batteries, 2900mAh High Capacity Batteries 1.2V NiMH Low Self Discharge Zero Leak Wide Compatible for Household Office Electronics",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "AA Rechargeable Batteries for Household Use - Walmart.com",
+                "url": "https://www.walmart.com/browse/household-essentials/aa-rechargeable-batteries/1115193_1076905_7114176_5347986"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 6
+      },
+      {
+        "id": "online:homedepot.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Home Depot",
+          "domain": "homedepot.com",
+          "url": "https://www.homedepot.com/b/Electrical-Batteries-AA-Batteries/Rechargeable/N-5yc1vZcbv2Z1z17k9q"
+        },
+        "matched_product": "rechargeable AA batteries",
+        "snippet": "Get free shipping on qualified Rechargeable AA Batteries products or Buy Online Pick Up in Store today in the Electrical Department.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "environmental",
+            "polarity": "negative",
+            "claim": "Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+            "source_url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations",
+            "origin": "curated",
+            "action_date": "2020-12-17",
+            "penalty_usd": 20750000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Rechargeable - AA Batteries - The Home Depot",
+                "url": "https://www.homedepot.com/b/Electrical-Batteries-AA-Batteries/Rechargeable/N-5yc1vZcbv2Z1z17k9q"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Environmental: Home Depot To Pay $20,750,000 Penalty for Nationwide Failure to Follow Rules for Conducting Renovations Involving Lead Paint",
+                "url": "https://www.epa.gov/newsreleases/home-depot-pay-20750000-penalty-nationwide-failure-follow-rules-conducting-renovations"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 2,347 stores",
+          "stores": 2347,
+          "source_url": "https://en.wikipedia.org/wiki/The_Home_Depot",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 7
+      },
+      {
+        "id": "online:batterymart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "BatteryMart",
+          "domain": "batterymart.com",
+          "url": "https://www.batterymart.com/c-aa-rechargeable-batteries.html"
+        },
+        "matched_product": "",
+        "snippet": "Browse a quality selection of AA rechargeable batteries for sale at Battery Mart. Here you can find discount AA batteries and chargers from popular brands. If you use electronics every day, buying disposable alkaline batteries gets expensive fast. Wireless controllers, flashlights, digital cameras, and smart home remotes can drain standard batteries in no time. Making the switch to AA rechargeable batteries lets you power your gear hundreds of times using a single set of cells. Browse a quality selection of AA rechargeable batteries for sale at Battery Mart. Here you can find discount AA batteries and chargers from popular brands. Fast Order Shipping, Friendly Service, & the Best Value in Batteries! ... Power your everyday electronics and high-drain devices with our dependable selection of AA rechargeable batteries. Choosing rechargeable cells saves you money and keeps your favorite gadgets running strong without the hassle. Explore our collection of reliable batteries and compatible chargers to keep your home fully powered. Power your everyday electronics and high-drain devices with our dependable selection of AA rechargeable batteries. Choosing rechargeable cells saves you money and keeps your favorite gadgets running strong without the hassle.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "AA Rechargeable Batteries & Chargers | Battery Mart",
+                "url": "https://www.batterymart.com/c-aa-rechargeable-batteries.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "online:batteryproducts.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Battery Products",
+          "domain": "batteryproducts.com",
+          "url": "https://www.batteryproducts.com/C/601/AARechargeableBatteries"
+        },
+        "matched_product": "",
+        "snippet": "Battery Products is your trusted source for premium AA rechargeable batteries at competitive wholesale prices. Whether you're equipping high-use devices, stocking up for your business, or embracing eco-friendly power solutions, our bulk AA rechargeables offer long-lasting performance and excellent value for both personal and professional use. ... Long-Term Savings - While initially more expensive than disposables, rechargeable batteries pay for themselves after just 5-10 recharge cycles. Battery Products is your trusted source for premium AA rechargeable batteries at competitive wholesale prices. Shop for AA rechargeable batteries online. Bulk discounts are available on top brands such as Energizer. Free shipping on orders over $80! Eco-Friendly Choice - Reduce waste and your carbon footprint by using batteries that can be recharged hundreds of times. Variety of Capacities - Choose from different mAh ratings to suit your specific power needs. Bulk Discounts - Enjoy significant savings on large quantity orders, with per-unit prices up to 14% lower than retail. Free Shipping - Take advantage of complimentary shipping on orders over $80, maximizing your cost savings. Our volume-based pricing ensures that larger orders result in greater savings per battery.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "AA Rechargeable Batteries for Sale: Bulk Discounts Available | Battery Products",
+                "url": "https://www.batteryproducts.com/C/601/AARechargeableBatteries"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:batteriesplus.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Batteries Plus",
+          "domain": "batteriesplus.com",
+          "url": "https://www.batteriesplus.com/battery/rechargeable"
+        },
+        "matched_product": "",
+        "snippet": "Whether you&#x27;re looking to power everyday appliances or specialty devices, Batteries Plus makes it easy to find the rechargeable batteries you need. Our selection of rechargeable batteries includes top brands in typical voltages, including AA, ... Keep the power flowing while reducing waste with Rechargeable Battery at Batteries Plus. Shop a selection of rechargeable formats for the right fit. Nickel cadmium, lithium ion and nickel metal hydride are common rechargeable battery chemistries and are available in a wide range of battery formats. If you're unsure how to find the best fit for your needs, bring your device or your old batteries to your local Batteries Plus location and one of our experts will be happy to match you with the right replacement rechargeable batteries near you. The Nuon 18650 Lithium-Ion Rechargeable Battery delivers dependable 3.6V power for compatible rechargeable flashlights, with built-in protection designed to support safe, reliable everyday use. Sustainable Choice: Using rechargeables significantly reduces landfill waste and minimizes the environmental impact of battery disposal.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.425,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.2,
+            "weight": 0.25,
+            "contribution": 0.05,
+            "sources": [
+              {
+                "label": "Rechargeable Battery at Batteries Plus",
+                "url": "https://www.batteriesplus.com/battery/rechargeable"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "normalize",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 351,
+          "completion_tokens": 82,
+          "cost_usd": 0.00006972
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 3377,
+          "completion_tokens": 786,
+          "cost_usd": 0.00331875
+        }
+      ],
+      "llm_tokens": 4596,
+      "estimated_cost_usd": 0.023388,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "nytimes.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "local",
+        "domain": "apple.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "apple.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "themobilegeneration.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "fordgeneral.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "bestbuy.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "branch_cap"
+      }
+    ]
+  }
+}
