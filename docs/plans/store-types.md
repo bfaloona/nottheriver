@@ -8,7 +8,7 @@ Status: in progress 2026-09-27; Phases 0 to 3a shipped; Phase 4 measured 2026-09
 - [x] Phase 1: chain badge, Worker (`data/chains.json`, response field), Worker deploy
 - [x] Phase 2: chain badge, site, push to `main`
 - [x] Phase 3a: `store_breadth` judgment in the enrich reply, no score effect, Worker deploy
-- [ ] Phase 4: measure (20 graded searches, run twice), operator gate. Measured 2026-09-29 ([results](../quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)); operator gate passed 2026-09-30 (Q5 no, Q6 no); waits only on the operator checks of 6 blocked pages ([list](../evidence/quality/eval20-store-types/operator-checks-needed.md))
+- [x] Phase 4: measure (20 graded searches, run twice), operator gate. Measured 2026-09-29 ([results](../quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)); operator gate passed 2026-09-30 (Q5 no, Q6 no); operator checks of the 6 blocked pages answered and applied 2026-09-30 ([list](../evidence/quality/eval20-store-types/operator-checks-needed.md))
 - [x] Phase 3b: specialist relevance tier. Dropped, not built: Q5 no (2026-09-30; maybe-specialist rows 47.5% good against the 60% bar)
 - [x] Phase 5: specialist values component. Dropped, not built: Q6 no (2026-09-30; M5 agreement 76% against the 85% gate)
 

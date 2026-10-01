@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T08:42:44.904Z",
+  "generated": "2026-10-01T02:54:31.879Z",
   "graded_through": "2026-09-29",
   "searches": {
     "planned": 60,
@@ -14,16 +14,16 @@
   },
   "precision": {
     "online": {
-      "graded": 187,
-      "relevant": 184,
-      "unknown": 4,
+      "graded": 191,
+      "relevant": 188,
+      "unknown": 0,
       "precision": 0.984
     },
     "local": {
-      "graded": 144,
-      "relevant": 102,
-      "unknown": 17,
-      "precision": 0.708
+      "graded": 145,
+      "relevant": 103,
+      "unknown": 16,
+      "precision": 0.71
     }
   },
   "precision_local_by_zip_kind": {
@@ -34,10 +34,10 @@
       "precision": 0.685
     },
     "suburban": {
-      "graded": 59,
-      "relevant": 41,
-      "unknown": 3,
-      "precision": 0.695
+      "graded": 60,
+      "relevant": 42,
+      "unknown": 2,
+      "precision": 0.7
     },
     "rural": {
       "graded": 31,
@@ -48,13 +48,13 @@
   },
   "badges_sourced": {
     "online": {
-      "yes": 49,
-      "no": 0,
+      "yes": 43,
+      "no": 6,
       "n/a": 142
     },
     "local": {
-      "yes": 54,
-      "no": 0,
+      "yes": 50,
+      "no": 4,
       "n/a": 107
     }
   },

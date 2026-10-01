@@ -1,4 +1,6 @@
-# Operator checks needed (store types Phase 4, 2026-09-29)
+# Operator checks (store types Phase 4, 2026-09-29)
+
+**Answered 2026-09-30 and applied** (`method/operator-checks.json`, `method/chain-source-grades-browser.json`): OC1 to OC5 yes, each page loads and lists the product; OC6 loads and announces new stores but does not state how many REI stores there are overall.
 
 Six pages the graders' browsers could not open. Open each in your own browser and answer the yes/no question. Until answered, these rows count as "unknown" and stay out of precision.
 

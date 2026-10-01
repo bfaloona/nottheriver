@@ -130,10 +130,10 @@
         },
         "yes / model general": {
           "rows": 43,
-          "good": 35,
+          "good": 36,
           "bad": 5,
-          "unknown": 3,
-          "good_rate": 0.875
+          "unknown": 2,
+          "good_rate": 0.878
         },
         "yes / model specialist": {
           "rows": 29,
@@ -174,10 +174,10 @@
         },
         "yes / grader general": {
           "rows": 23,
-          "good": 20,
+          "good": 21,
           "bad": 1,
-          "unknown": 2,
-          "good_rate": 0.952
+          "unknown": 1,
+          "good_rate": 0.955
         },
         "yes / grader specialist": {
           "rows": 42,
@@ -234,10 +234,10 @@
         },
         "yes / model general": {
           "rows": 37,
-          "good": 31,
+          "good": 32,
           "bad": 4,
-          "unknown": 2,
-          "good_rate": 0.886
+          "unknown": 1,
+          "good_rate": 0.889
         },
         "yes / model specialist": {
           "rows": 31,
@@ -278,10 +278,10 @@
         },
         "yes / grader general": {
           "rows": 21,
-          "good": 18,
+          "good": 19,
           "bad": 1,
-          "unknown": 2,
-          "good_rate": 0.947
+          "unknown": 1,
+          "good_rate": 0.95
         },
         "yes / grader specialist": {
           "rows": 42,
@@ -338,10 +338,10 @@
         },
         "yes / model general": {
           "rows": 80,
-          "good": 66,
+          "good": 68,
           "bad": 9,
-          "unknown": 5,
-          "good_rate": 0.88
+          "unknown": 3,
+          "good_rate": 0.883
         },
         "yes / model specialist": {
           "rows": 60,
@@ -382,10 +382,10 @@
         },
         "yes / grader general": {
           "rows": 44,
-          "good": 38,
+          "good": 40,
           "bad": 2,
-          "unknown": 4,
-          "good_rate": 0.95
+          "unknown": 2,
+          "good_rate": 0.952
         },
         "yes / grader specialist": {
           "rows": 84,

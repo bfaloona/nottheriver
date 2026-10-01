@@ -1,0 +1,60 @@
+{
+ "checks": [
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:walmart.com",
+   "url": "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists camping tents for sale. The grader browser got a bot challenge or block."
+  },
+  {
+   "search_id": "camping-tent-urban",
+   "result_id": "online:steepandcheap.com",
+   "url": "https://www.steepandcheap.com/cat/tents",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists camping tents for sale. The grader browser got a bot challenge or block."
+  },
+  {
+   "search_id": "camping-tent-suburban",
+   "result_id": "online:steepandcheap.com",
+   "url": "https://www.steepandcheap.com/cat/tents",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists camping tents for sale. The grader browser got a bot challenge or block."
+  },
+  {
+   "search_id": "camping-tent-rural",
+   "result_id": "online:steepandcheap.com",
+   "url": "https://www.steepandcheap.com/cat/tents",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists camping tents for sale. The grader browser got a bot challenge or block."
+  },
+  {
+   "search_id": "cordless-drill-suburban",
+   "result_id": "local:loc45JU5CTCB7NAUB2E6OWGZNM2VYCKSYQPPAAAAAAA=:4",
+   "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: the store page loads and cordless drills are sold at that store. The grader browser got \"Oops!! Something went wrong\" (probably a bot block)."
+  },
+  {
+   "search_id": "headlamp-urban",
+   "result_id": "online:locally.com",
+   "url": "https://www.locally.com/search/all/activities/headlamps?price=%2475-%24100-USD&location=San+Francisco+CA&store=348522&distance=%3C+100mi&sort=all",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists headlamps for sale. The grader browser got a bot challenge or block."
+  },
+  {
+   "search_id": "rain-jacket-suburban",
+   "result_id": "online:columbia.com",
+   "url": "https://www.columbia.com/c/rainwear/",
+   "sells_product": "yes",
+   "page_access": "ok",
+   "notes": "Operator checked in own browser 2026-09-30: page loads and lists rain jackets for sale. The grader browser got a bot challenge or block."
+  }
+ ]
+}

@@ -1,4 +1,22 @@
-{"grades":[
-{"source_url":"https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-","supports":"unknown","count_on_page":null,"count_scope":null,"matches_stated":"unknown","notes":"UNREACHABLE: the page returned Access Denied on load and on reload, after one rei.com store page had loaded earlier in this session, so a later retry from a fresh session may succeed.","checked":"2026-09-29"},
-{"source_url":"https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/","supports":"yes","count_on_page":834,"count_scope":"unclear","matches_stated":"yes","notes":"The Office Depot Division section states the company closed 23 retail stores in the quarter, ending with 834 retail locations (Office Depot and OfficeMax), without saying whether that is US-only; 834 is 9.5% below the stated 922.","checked":"2026-09-29"}
-]}
+{
+ "grades": [
+  {
+   "source_url": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+   "supports": "no",
+   "count_on_page": null,
+   "count_scope": null,
+   "matches_stated": "unknown",
+   "notes": "Operator checked in own browser 2026-09-30: the page loads and announces new REI stores, but does not state how many stores REI has overall (the grader browser got Access Denied). It does not support the badge count.",
+   "checked": "2026-09-30"
+  },
+  {
+   "source_url": "https://www.theodpcorp.com/news-releases/news-release-details/odp-corporation-announces-second-quarter-2025-results/",
+   "supports": "yes",
+   "count_on_page": 834,
+   "count_scope": "unclear",
+   "matches_stated": "yes",
+   "notes": "The Office Depot Division section states the company closed 23 retail stores in the quarter, ending with 834 retail locations (Office Depot and OfficeMax), without saying whether that is US-only; 834 is 9.5% below the stated 922.",
+   "checked": "2026-09-29"
+  }
+ ]
+}
