@@ -1,6 +1,6 @@
 # Status
 
-As of 2026-09-27. Pushed to `main`; the Worker is deployed with the store-type filter, distance groups, classifier-judged local ranking, "store"-always local searches and the normalize cache. The quality evaluation was measured on a 20-search sample and rerun twice: after distance groups and ranking (no measurable change) and after the wording fix (local precision 58.1% before, 63.6% and 61.7% in two graded runs, counting a shop that does not exist as bad) ([quality.md](quality.md)).
+As of 2026-10-01. Pushed to `main`; the Worker is deployed at `975dfdd` with the store-type filter, distance groups, classifier-judged local ranking, "store"-always local searches, the normalize cache, the chain badge, and the faster enrich path (compact prompt, throughput routing, no model signals, enrich split into one call for online and one for local candidates). The quality evaluation was measured on a 20-search sample and rerun twice at each step; the latest two runs (2026-09-29, with the chain badge and split enrich) show online precision 98.4% and local precision 70.9% and 71.0%, counting a shop that does not exist as bad ([quality.md](quality.md#store-types-chain-badge-and-shop-breadth-2026-09-29)). Store types is finished (the operator ruled no on a specialist tier and a values component; the `store_breadth` field was removed again). Nothing is in flight; the next work is priority 6 (chain list fixes) and the Amazon plan.
 
 ## Done
 
@@ -55,6 +55,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 | Gate | What it unblocks |
 |---|---|
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
+| Brave call budget for eval runs: the standing authorization to raise the cap ended 2026-09-30 | Any further graded rerun (about 80 Brave calls each) |
 
 ## Deploy (2026-09-23)
 
@@ -191,8 +192,8 @@ Every default below was taken without operator input; each is also reflected in 
 - A store count the source gives only as a floor shows as "5,000+ stores"; counts use thousands separators.
 - 23 of the 33 rows in `data/chains.json` cite Wikipedia, not the company's own page; Target and Walmart cite corporate pages. Swap the rest when re-checked.
 - Four rows' counts include stores outside the US (noted per row; `data/README.md` says the count is the source's stated total).
-- Chains unlisted because no source found states a count: Williams Sonoma, Sports Basement, The North Face, Patagonia (patagonia.com blocks agents; an operator check could confirm its own count), and the TJX banners (only the corporate site tjx.com appeared, with a multi-brand total). They show no badge, and Phase 4's coverage measure counts them as misses by construction. Costco, Dollar General, Urban Outfitters, GameStop, Micro Center and L.L.Bean were added 2026-09-27 (39 rows); Dollar General and GameStop counts checked against their 10-K text.
-- Store breadth is required in the model's reply like the other judgments, so a reply without it fails validation and retries; an off-list value is kept as no judgment.
+- Chains unlisted because no source found states a count: Williams Sonoma, Sports Basement, The North Face, Patagonia (patagonia.com blocks agents; an operator check could confirm its own count), and the TJX banners (only the corporate site tjx.com appeared, with a multi-brand total). They show no badge, and Phase 4's coverage measure counted them as misses by construction: Sports Basement and The North Face were returned without a badge in both runs (38 to 39 of 40 to 41 chain shops badged). Costco, Dollar General, Urban Outfitters, GameStop, Micro Center and L.L.Bean were added 2026-09-27 (39 rows); Dollar General and GameStop counts checked against their 10-K text.
+- The `store_breadth` judgment was added in Phase 3a (required in the model's reply, off-list values kept as no judgment) and removed 2026-10-01 after the measure showed it did not separate good shops from bad ([review](store-breadth-review.md)); the grader labels and saved responses that contain it stay as evidence.
 
 ## Review passes
 
@@ -222,10 +223,12 @@ Each subject got `/simplify` plus a two-lens fresh-eyes review. Applied and reje
 | Store types Phases 0 and 1 (Fable; P2, adding Costco and more chains, deferred to Phase 4) | 7 | 6 | 0 |
 | Store types Phase 2, site badge (Fable) | 4 | 4 | 0 |
 | Store types Phase 3a, store breadth (Fable; T5, an isolated pipeline test, not done) | 7 | 4 | 0 |
+| Store types Phase 4, measure (advisor; every figure traced to `report.json` and `breadth-measures.json`; the rejected one is a cosmetic duplicate marker in run 2 grade notes) | 8 | 7 | 1 |
+| Store breadth value (Fable memo; recommendation to remove the field, and 3 corrections to the brief) | 1 + 3 | 1 (removed at `975dfdd`) | 0 |
 
 ## Evidence
 
-Run on 2026-09-23 against the working tree at `8cce4d6`. Latest checks, 2026-09-24 at `abcf222`: 651 unit tests passed, `npm run e2e` 3 passed, lint and site build clean, CI and Pages `success`.
+Run on 2026-09-23 against the working tree at `8cce4d6`. Latest checks, 2026-10-01 at `975dfdd`: 872 unit tests passed (25 files), `npm run e2e` 3 passed, lint and typecheck clean, CI and Pages `success`; the table below is the 2026-09-23 run.
 
 | Check | Command | Result |
 |---|---|---|
