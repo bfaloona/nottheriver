@@ -2,7 +2,7 @@
 
 Read-only review (Claude Fable 5.1). "Computed here" marks figures from a one-off script over the saved responses and grades, not in the repo.
 
-**Outcome (2026-10-01).** The operator approved O1 (remove the field); done in commit `10cc13f`, not yet deployed. Correction to O5: `docs/STATUS.md` records the stronger classifier as not shipped (operator decision), so that question is closed, not pending; `docs/quality.md` now says so.
+**Outcome (2026-10-01).** The operator approved O1 (remove the field); done in commit `10cc13f`, Worker deployed at `975dfdd`. The review called the field's cost "a few tokens"; measured, it was a quarter of the enrich output tokens ([check](evidence/quality/eval20-breadth-removal/README.md)). Correction to O5: `docs/STATUS.md` records the stronger classifier as not shipped (operator decision), so that question is closed, not pending; `docs/quality.md` now says so.
 
 ## 1. Verdict
 

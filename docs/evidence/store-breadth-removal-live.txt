@@ -1,0 +1,5 @@
+Live check after the store_breadth removal was deployed (2026-10-01, Worker at 975dfdd, preflight 204).
+One search through eval/run-searches.mjs: cast-iron-skillet-urban.
+status 200 in 9039 ms (one sample, not a latency measure); 17 rows (online + nearby); rows carrying store_breadth: 0;
+usage.llm calls: enrich, enrich (completion tokens 166 and 278); brave_calls 4.
+Relevance labels on nearby rows: "Model judgment: likely sells it", "Model judgment: may sell it".
