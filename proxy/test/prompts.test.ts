@@ -102,7 +102,6 @@ describe('template wording', () => {
     const prompt = buildEnrichPrompt([], PRODUCT);
     const values = [
       '"retailer"', '"marketplace"', '"editorial"', '"manufacturer_no_cart"', '"service"', '"other"', '"yes"', '"maybe"', '"no"',
-      '"specialist"', '"general"', '"unknown"',
     ];
     for (const value of values) expect(prompt).toContain(value);
   });
@@ -113,10 +112,10 @@ describe('template wording', () => {
     for (const word of ['"retailers"', 'signal', 'source_url', 'confidence']) expect(prompt).not.toContain(word);
   });
 
-  it('names the store_breadth field and its three values', () => {
+  it('asks for site_type and sells_product only, with no store breadth judgment', () => {
     const prompt = buildEnrichPrompt([], PRODUCT);
-    expect(prompt).toContain('store_breadth');
-    for (const value of ['"specialist"', '"general"', '"unknown"']) expect(prompt).toContain(value);
+    expect(prompt).not.toContain('store_breadth');
+    for (const value of ['"specialist"', '"general"']) expect(prompt).not.toContain(value);
   });
 
   it('asks for shop-style online queries and store-type local queries', () => {

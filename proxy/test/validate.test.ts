@@ -34,9 +34,9 @@ describe('validateAgainst', () => {
     ['a city with digits', 'search-request', { ...REQUEST, city: 'Springfield 9' }],
     ['a city over 80 characters', 'search-request', { ...REQUEST, city: 'A'.repeat(81) }],
     ['an enrich reply that still carries signals', 'enrich', { retailers: [], candidates: [] }],
-    ['a candidate missing store_breadth', 'enrich', { candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }] }],
+    ['a candidate carrying store_breadth', 'enrich', { candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes', store_breadth: 'specialist' }] }],
     ['a response with three components', 'search-response', { ...searchResponse, online: [{ ...searchResponse.online[0], components: searchResponse.online[0]!.components.slice(0, 3) }] }],
-    ['an off-list store_breadth', 'search-response', { ...searchResponse, online: [{ ...searchResponse.online[0], store_breadth: 'blog' }] }],
+    ['a result carrying store_breadth', 'search-response', { ...searchResponse, online: [{ ...searchResponse.online[0], store_breadth: 'specialist' }] }],
   ] as const)('rejects %s', (_label, name, value) => {
     const result = validateAgainst(name, value);
     expect(result.ok).toBe(false);
@@ -71,6 +71,6 @@ describe('structuralOnly', () => {
     const structural = structuralOnly(schemas.enrich);
     const candidate = (structural.properties!.candidates as { items: { additionalProperties: boolean; required: string[] } }).items;
     expect(candidate.additionalProperties).toBe(false);
-    expect(candidate.required).toContain('store_breadth');
+    expect(candidate.required).toEqual(['id', 'site_type', 'sells_product']);
   });
 });

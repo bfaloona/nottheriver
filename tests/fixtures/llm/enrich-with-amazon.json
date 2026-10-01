@@ -5,7 +5,7 @@
     {
       "message": {
         "role": "assistant",
-        "content": "{\"candidates\":[{\"id\":\"c0\",\"site_type\":\"retailer\",\"sells_product\":\"yes\",\"store_breadth\":\"specialist\"}]}"
+        "content": "{\"candidates\":[{\"id\":\"c0\",\"site_type\":\"retailer\",\"sells_product\":\"yes\"}]}"
       }
     }
   ],

@@ -64,9 +64,7 @@ function stubClassifier(labelled: PilotRow[]): FixtureRoute {
     respond: (_u, init) => {
       const candidates = dataOf(promptOf(init)).candidates.flatMap((c) => {
         const label = byKey.get(`${c.url}|${c.title}`);
-        // The pilot fixture predates store_breadth; the stub answers "unknown" for every row
-        // so the reply satisfies the (required) schema without inventing a real judgment.
-        return label ? [{ id: c.id, ...label, store_breadth: 'unknown' }] : [];
+        return label ? [{ id: c.id, ...label }] : [];
       });
       return { body: llmReply({ candidates }) };
     },
@@ -266,7 +264,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
       candidates: [{ id: 'c0', site_type: 'editorial', sells_product: 'no' }, { id: 'c9', site_type: 'editorial', sells_product: 'no' }],
     }));
     const out = await enrichAll(list, llm, CURATED, PRODUCT);
-    expect(out.map((r) => r.classification)).toEqual([{ site_type: 'editorial', sells_product: 'no', store_breadth: null }, null]);
+    expect(out.map((r) => r.classification)).toEqual([{ site_type: 'editorial', sells_product: 'no' }, null]);
     expect(dropReason(out[1]!.classification)).toBeNull();
   });
 
@@ -360,7 +358,7 @@ describe('T4: fail open on gaps and unknown values, fail closed on an invalid re
   });
 
   it('an unknown classification value leaves that candidate unclassified, and the search still succeeds', async () => {
-    const odd = llmReply({ candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'probably', store_breadth: 'department_store' }] });
+    const odd = llmReply({ candidates: [{ id: 'c0', site_type: 'blog', sells_product: 'probably' }] });
     const routes = [{ match: isEnrich, respond: () => ({ body: odd }) }, ...defaultRoutes()];
     const fetch = makeFixtureFetch(routes);
     const res = await runSearch(REQ, ENV, { fetch, now: () => 0, log: () => {} });

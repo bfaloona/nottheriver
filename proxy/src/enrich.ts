@@ -1,4 +1,4 @@
-import type { Candidate, CertKind, Certification, Chain, CitationType, Classification, Relation, SellsProduct, Signal, SignalKind, SiteType, StoreBreadth } from './contract';
+import type { Candidate, CertKind, Certification, Chain, CitationType, Classification, Relation, SellsProduct, Signal, SignalKind, SiteType } from './contract';
 import { ENRICH_MAX_TOKENS, type LlmClient } from './llm';
 import { buildEnrichPrompt, type EnrichProduct, type LlmView } from './prompts';
 
@@ -34,7 +34,7 @@ export interface EnrichedRow {
   chain: Chain | null; // null: the domain is not in data/chains.json
 }
 export interface EnrichOutput {
-  candidates: Array<{ id: string; site_type: string; sells_product: string; store_breadth?: string }>;
+  candidates: Array<{ id: string; site_type: string; sells_product: string }>;
 }
 
 export const CERT_LABELS: Record<CertKind, string> = {
@@ -96,22 +96,17 @@ export function llmView(candidates: Candidate[], kind?: Candidate['kind']): LlmV
 // Only ids that were sent count, and the first answer for an id wins.
 const SITE_TYPES: ReadonlySet<string> = new Set<SiteType>(['retailer', 'marketplace', 'editorial', 'manufacturer_no_cart', 'service', 'other']);
 const SELLS: ReadonlySet<string> = new Set<SellsProduct>(['yes', 'maybe', 'no']);
-const STORE_BREADTH: ReadonlySet<string> = new Set<StoreBreadth>(['specialist', 'general', 'unknown']);
 
 // The reply schema takes any short string here, so one made-up value cannot fail the whole
 // search; a candidate with a value outside the lists stays unclassified and is kept.
-// store_breadth is looser still: an off-list value leaves it null (not dropped), since it has
-// no score effect and site_type/sells_product still stand on their own. The schema requires the
-// field, so a reply without it fails validation like any other missing field.
 export function acceptClassifications(output: EnrichOutput, view: LlmView[]): Map<string, Classification> {
   const sent = new Set(view.map((v) => v.id));
   const accepted = new Map<string, Classification>();
-  for (const { id, site_type, sells_product, store_breadth } of output.candidates) {
+  for (const { id, site_type, sells_product } of output.candidates) {
     if (!sent.has(id) || accepted.has(id) || !SITE_TYPES.has(site_type) || !SELLS.has(sells_product)) continue;
     accepted.set(id, {
       site_type: site_type as SiteType,
       sells_product: sells_product as SellsProduct,
-      store_breadth: store_breadth !== undefined && STORE_BREADTH.has(store_breadth) ? (store_breadth as StoreBreadth) : null,
     });
   }
   return accepted;

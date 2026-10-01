@@ -193,7 +193,6 @@ function scoreRow(id: string, input: ScoreInput): ScoredRow {
     components: scored.components,
   };
   if (input.chain) result.chain = input.chain;
-  if (input.classification?.store_breadth) result.store_breadth = input.classification.store_breadth;
   return { input, result };
 }
 

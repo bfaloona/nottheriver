@@ -60,29 +60,12 @@ describe('llmView', () => {
   });
 });
 
-describe('acceptClassifications: store_breadth', () => {
+describe('acceptClassifications: fields beyond site_type and sells_product', () => {
   const view = [{ id: 'c0', domain: 'shop.example', title: 'Shop', snippet: '', url: 'https://shop.example/' }];
-  const reply = (store_breadth: string): EnrichOutput => ({
-    candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes', store_breadth }],
-  });
 
-  it.each(['specialist', 'general', 'unknown'])('accepts "%s"', (value) => {
-    expect(acceptClassifications(reply(value), view).get('c0')).toEqual({
-      site_type: 'retailer', sells_product: 'yes', store_breadth: value,
-    });
-  });
-
-  it('a made-up value leaves store_breadth null and keeps sells_product', () => {
-    expect(acceptClassifications(reply('department_store'), view).get('c0')).toEqual({
-      site_type: 'retailer', sells_product: 'yes', store_breadth: null,
-    });
-  });
-
-  it('a missing value leaves store_breadth null', () => {
-    const missing: EnrichOutput = { candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes' }] };
-    expect(acceptClassifications(missing, view).get('c0')).toEqual({
-      site_type: 'retailer', sells_product: 'yes', store_breadth: null,
-    });
+  it('does not carry a store_breadth the model adds', () => {
+    const reply = { candidates: [{ id: 'c0', site_type: 'retailer', sells_product: 'yes', store_breadth: 'specialist' }] } as unknown as EnrichOutput;
+    expect(acceptClassifications(reply, view).get('c0')).toEqual({ site_type: 'retailer', sells_product: 'yes' });
   });
 });
 
@@ -153,7 +136,7 @@ describe('curated lookups', () => {
     expect(rows.find((r) => r.candidate.domain === 'granite-outfitters.example')!.chain).toBeNull();
     // The reply's one classification (c0, the first candidate) lands on its row; the model is
     // not asked for signals, so a shop with no curated row has none.
-    expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes', store_breadth: 'specialist' });
+    expect(rows[0]!.classification).toEqual({ site_type: 'retailer', sells_product: 'yes' });
     expect(rows.find((r) => r.candidate.domain === 'blue-heron-goods.example')!.signals).toEqual([]);
     expect(llm.usage.map((u) => u.call)).toEqual(['enrich']);
   });
