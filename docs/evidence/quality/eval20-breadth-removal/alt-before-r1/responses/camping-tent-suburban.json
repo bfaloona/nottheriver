@@ -1,0 +1,1492 @@
+{
+  "id": "camping-tent-suburban",
+  "checked": "2026-10-01T21:10:09.115Z",
+  "request": {
+    "product": "camping tent",
+    "city": "Plymouth Meeting",
+    "state": "PA",
+    "lat": 40.12,
+    "lon": -75.28,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 5587,
+  "body": {
+    "query": {
+      "product": "camping tent",
+      "city": "Plymouth Meeting",
+      "state": "PA",
+      "canonical_name": "camping tent",
+      "category": "outdoor gear",
+      "online_queries": [
+        "buy camping tent",
+        "camping tent shop"
+      ],
+      "local_queries": [
+        "outdoor gear store",
+        "outdoor outfitters store"
+      ],
+      "near_radius_mi": 10
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4V6JZ76KBBRCEBUK3HS6GPUSSYCTOMEUTAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "200 Ridge Pike Ste 115, Conshohocken, PA 19428",
+        "distance_km": 2.8,
+        "lat": 40.0958,
+        "lon": -75.2876,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.765,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Model judgment: likely sells it",
+                "url": "https://rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ=="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.93,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "1.7 mi (2.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 190+ stores",
+          "stores": 190,
+          "source_url": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "local:loc4ZHIAYPN5BZCEB2XHJVCSVUSSYAPZSQYPAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+        "distance_km": 0.6,
+        "lat": 40.1152,
+        "lon": -75.2838,
+        "certifications": [],
+        "signals": [],
+        "score": 0.698,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Model judgment: likely sells it",
+                "url": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/?seo=localpack"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.985,
+            "weight": 0.15,
+            "contribution": 0.148,
+            "sources": [
+              {
+                "label": "0.4 mi (0.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 888 stores",
+          "stores": 888,
+          "source_url": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 2
+      },
+      {
+        "id": "local:loc4QKYK4ZMNBVCEAYAHFHJ4HUSSYBSGY4VNAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime="
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "THE METROPLEX 2430, Chemical Rd, Plymouth Meeting, PA 19462",
+        "distance_km": 1.9,
+        "lat": 40.1059,
+        "lon": -75.2932,
+        "certifications": [],
+        "signals": [],
+        "score": 0.693,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Model judgment: likely sells it",
+                "url": "https://stores.dickssportinggoods.com/pa/PLYMOUTH%20MEETING/99/?DSGFetchPromoESB=Y&DSGFetchPromoESBAPI=fec9b1d0-47c5-11e7-949f-bd36d1ca45b0&DSGFetchPromoESBENV=np5qaprd&DSGFetchPromoESBURLMultiProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescription%2F&DSGFetchPromoESBURLSingleProduct=https%3A%2F%2Fgateway.dksxchange.com%2Fws%2FWCS%2Fv2%2Fapi%2Fpromotiondescforoneproduct%2F&channelId=-1&strPreviewTime="
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9525,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.2 mi (1.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 888 stores",
+          "stores": 888,
+          "source_url": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 3
+      },
+      {
+        "id": "local:loc4WZK77VQEB5CEAOEEFI27XUKSYDCGCJVYAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "Boscov's",
+          "domain": "boscovs.com",
+          "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+        "distance_km": 0.3,
+        "lat": 40.1173,
+        "lon": -75.281,
+        "certifications": [],
+        "signals": [],
+        "score": 0.574,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://locations.boscovs.com/pa/plymouthmeeting/500-w-germantown-pike.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9925,
+            "weight": 0.15,
+            "contribution": 0.149,
+            "sources": [
+              {
+                "label": "0.2 mi (0.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "local:loc4PVLJSKNNBZCEBJH6PKCQLUSSYAQCDYCOAAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Orvis",
+          "domain": "orvis.com",
+          "url": "https://orvis.com/plymouthmeeting"
+        },
+        "matched_product": "",
+        "snippet": "clothing store",
+        "address": "500 W Germantown Pike Space 1515, Plymouth Meeting, PA 19462",
+        "distance_km": 0.6,
+        "lat": 40.1147,
+        "lon": -75.2816,
+        "certifications": [],
+        "signals": [],
+        "score": 0.573,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://orvis.com/plymouthmeeting"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.985,
+            "weight": 0.15,
+            "contribution": 0.148,
+            "sources": [
+              {
+                "label": "0.4 mi (0.6 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "local:loc4DZMOSSPUB5CEAD6ZTNZUXV2SYBI4ZGRXAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Treeline Sports, Inc.",
+          "domain": "treelinesports.com",
+          "url": "https://treelinesports.com/"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1447 W Main St, Norristown, PA 19403",
+        "distance_km": 7.2,
+        "lat": 40.1246,
+        "lon": -75.364,
+        "certifications": [],
+        "signals": [],
+        "score": 0.548,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://treelinesports.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.8200000000000001,
+            "weight": 0.15,
+            "contribution": 0.123,
+            "sources": [
+              {
+                "label": "4.5 mi (7.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "local:loc4NKRTUHOIAVCEBGEOSSEMXWCSYAC7GCIFAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Out There Outfitters",
+          "domain": "outthereoutfitters.com",
+          "url": "https://outthereoutfitters.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "123 N Wayne Ave, Wayne, PA 19087",
+        "distance_km": 12.4,
+        "lat": 40.0452,
+        "lon": -75.3874,
+        "certifications": [],
+        "signals": [],
+        "score": 0.529,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://outthereoutfitters.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.69,
+            "weight": 0.15,
+            "contribution": 0.104,
+            "sources": [
+              {
+                "label": "7.7 mi (12.4 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      }
+    ],
+    "local_farther": [
+      {
+        "id": "local:loc4QAAGHR4Q5ZBUAIINLU73HYSSYAOEDEX3AAAAAAA=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Trail Creek Outfitters",
+          "domain": "trailcreekoutfitters.com",
+          "url": "https://trailcreekoutfitters.com/"
+        },
+        "matched_product": "",
+        "snippet": "shop",
+        "address": "487 Wilmington West Chester Pike, Glen Mills, PA 19342",
+        "distance_km": 36.2,
+        "lat": 39.8638,
+        "lon": -75.5422,
+        "certifications": [],
+        "signals": [],
+        "score": 0.439,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://trailcreekoutfitters.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.09499999999999997,
+            "weight": 0.15,
+            "contribution": 0.014,
+            "sources": [
+              {
+                "label": "22 mi (36.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      }
+    ],
+    "online": [
+      {
+        "id": "online:rei.com",
+        "kind": "online",
+        "retailer": {
+          "name": "REI",
+          "domain": "rei.com",
+          "url": "https://www.rei.com/c/camping-tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Shop for Camping Tents at REI - Browse our extensive selection of trusted outdoor brands and high-quality recreation gear. Top quality, great selection and expert advice you can trust. 100% Satisfaction Guarantee REI Co-op Members get 10% back annually on every eligible purchase, including most full-priced camping tents. (10% is typical but not guaranteed.) To earn or redeem rewards, buy a one-time $30 lifetime membership, or sign in as a member. Shop for Camping Tents at REI - Browse our extensive selection of trusted outdoor brands and high-quality recreation gear. Top quality, great selection and expert advice you can trust. 100% Satisfaction Guarantee Wondering what’s up with roof-top tents? We cover the basics so you can decide if this new style of camping is right for you. ... How many are in your group? Tents vary in size from 2- to 8-person. Doors: If multiple people are sleeping in the tent, you might want more than one door for more convenient access. Read full article: What to Look for in a Camping Tent",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [
+          {
+            "kind": "climate_neutral",
+            "label": "Climate Label certified",
+            "source_url": "https://explore.changeclimate.org/brand/rei",
+            "checked": "2026-09-23"
+          }
+        ],
+        "signals": [],
+        "score": 0.7,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Camping Tents: Large Tents for Family & Car Camping | REI Co-op",
+                "url": "https://www.rei.com/c/camping-tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.75,
+            "weight": 0.3,
+            "contribution": 0.225,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Climate Label certified",
+                "url": "https://explore.changeclimate.org/brand/rei"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 190+ stores",
+          "stores": 190,
+          "source_url": "https://www.rei.com/newsroom/article/rei-co-op-to-open-10-stores-in-2024-to-better-serve-outdoor-communities-",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "specialist",
+        "rank": 1
+      },
+      {
+        "id": "online:coreequipment.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Core Equipment",
+          "domain": "coreequipment.com",
+          "url": "https://www.coreequipment.com/collections/tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Shop camping tents from CORE for family trips, weekend getaways, and outdoor adventures. Find durable tents for every campsite. Need help choosing a tent? Check out our Tent Finder Tool! ... H2O Block Technology is designed with water-repellent fabrics and sealed seams to help protect against rain and wet conditions. ... When you're spending the night under the stars, the right camp shelter makes all the difference. Tents are essential camp shelters, offering a safe, dry, and comfortable place to rest after a day of hiking, fishing, or just enjoying nature. Whether you're heading out on a weekend getaway or planning an extended family vacation, we’re here to help you find the right tent for you and your crew. When it comes to convenience and ease of use, instant tents are the best of the best in camp shelters. Our innovative instant hub technology and pre-attached poles redefine camping with a setup so fast that your tent is ready in under two minutes. Whether you're a first-time camper, setting up in the dark, or just want more time to enjoy the outdoors and less time fiddling with poles, an instant tent is a total game-changer. They’re especially ideal for car camping, festivals, and weekend getaways where every minute counts. But that doesn’t mean traditional setup tents don’t have their perks. In fact, traditional tents still shine when pack size and weight are a priority. If you're backpacking, hiking into a remote site, or need to fit all your gear into a small car, a traditional tent may be a better fit for you.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Camping Tents for Families | Instant Setup | CORE Equipment – Core Equipment",
+                "url": "https://www.coreequipment.com/collections/tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 2
+      },
+      {
+        "id": "online:geartrade.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Geartrade",
+          "domain": "geartrade.com",
+          "url": "https://geartrade.com/collections/tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Geartrade is the best place to buy used camping tents. Save up to 80% on the top tenting brands now, at Geartrade! One of the most important pieces of your sleep system, and part of the 'big three,' is your tent. There are so many things to consider when choosing a tent and we know that getting a good nights sleep is just as important in the backcountry as it is at home. That's why we carry three season, and four season, tents in a variety of dependable brands like Big Agnes, ALPS Mountaineering, Zpacks, Big Agnes, Sierra Designs, Hilleberg and Nemo. Whether you are an ultralight backpacker or a weekend warrior, stretch your budget when you shop on Geartrade for UnNew and used tents. Another bonus? The planet appreciates every piece that you keep out of a landfill. This gear is built to last, so go wear it out!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Used Backpacking & Camping Tents – Geartrade.com",
+                "url": "https://geartrade.com/collections/tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 3
+      },
+      {
+        "id": "online:facebook.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Facebook Marketplace",
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/marketplace/philly/camping-tents/"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Marmot Tungsten 2 person tent. ... Large camping tent for 6–8 people — like new. Marmot Tungsten 2 person tent. ... Large camping tent for 6–8 people — like new. Marketplace › Sporting Goods › Outdoor Recreation Equipment › Camping & Hiking Equipment › Tents & Shelters",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Tents & Shelters for sale in Philadelphia, Pennsylvania | Facebook Marketplace | Facebook",
+                "url": "https://www.facebook.com/marketplace/philly/camping-tents/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "general",
+        "rank": 4
+      },
+      {
+        "id": "online:kodiakcanvas.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Kodiak Canvas",
+          "domain": "kodiakcanvas.com",
+          "url": "https://kodiakcanvas.com/"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Kodiak Canvas manufactures and sells high-quality canvas tents, sleeping bags and other camping gear. Kodiak Canvas tents and gear will take your family camping adventure to a whole new level! Shop Sleeping Bags & Quilts · Previous · 1 / of 3 · Pause slideshow Play slideshow Next · Stove-Ready Tents · View collection · Colorado Stoves · View collection · Flex-Bow Tents · View collection · Sleeping Bags & Quilts · View collection · Camp Furniture · 3 sizes to choose from: 8.5x6, 10x10, and 10x14. We also sell these tents in bundles -everything you need in one click!Shop VX Tents · Previous Next · Kodiak Canvas · 10 x 14 ft. Flex-Bow VX Canvas Camping Tent · 165 reviews · Regular price $899.99 · Unit price · Kodiak Canvas manufactures and sells high-quality canvas tents, sleeping bags and other camping gear. Kodiak Canvas tents and gear will take your family camping adventure to a whole new level! We are all about car or truck camping and base camping - if you're looking for backpacking tents, look elsewhere! Thank you for your prompt delivery and service after a tree fell on our tent during a wet micro burst in Wyoming.🤷🏼‍♂️🫣🌪️😇 We are ok and looking for canvas repair shop now.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Kodiak Canvas Camping Tents and Camping Gear",
+                "url": "https://kodiakcanvas.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 5
+      },
+      {
+        "id": "online:whiteduckoutdoors.com",
+        "kind": "online",
+        "retailer": {
+          "name": "White Duck Outdoors",
+          "domain": "whiteduckoutdoors.com",
+          "url": "https://whiteduckoutdoors.com/"
+        },
+        "matched_product": "camping tent",
+        "snippet": "White Duck Outdoors offers top-quality camping tents, gear, and more. Best for luxury safari, camping, glamping, hunting, music festivals, and family trips. White Duck Outdoors - Buy Camping Tents, Gear, and More! ... Pay later in 4 installments. The first payment is taken when the order is processed and the remaining 3 are automatically taken every two weeks. ... Shop Pay offers you the option to pay in full at checkout or to split your purchase into regular payments with Shop Pay Installments, both online and in-store. White Duck Outdoors offers top-quality camping tents, gear, and more. Best for luxury safari, camping, glamping, hunting, music festivals, and family trips. Make the most of cold weather camping while you can. Explore our complete collection of tents for hot tent camping before the snow melts. Premium camp blankets crafted for cozy nights, easy packing, and elevated outdoor living—wherever you go. ... Explore the complete tent collection now.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "White Duck Outdoors - Buy Camping Tents, Gear, and More!",
+                "url": "https://whiteduckoutdoors.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 6
+      },
+      {
+        "id": "online:basspro.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Bass Pro Shops",
+          "domain": "basspro.com",
+          "url": "https://www.basspro.com/l/tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Shop rugged camping tents from Bass Pro Shops for family or solo trips. Find the perfect shelter and start your adventure now!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Durable Camping Tents for Family & Solo Adventures",
+                "url": "https://www.basspro.com/l/tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 7
+      },
+      {
+        "id": "online:campingworld.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Camping World",
+          "domain": "campingworld.com",
+          "url": "https://www.campingworld.com/c/camping-outdoors/tents-canopies-shelters/camping-tents"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Gear up for your next adventure with durable camping tents in all sizes. Built for the outdoors and ready when you are. Browse the collection today. Shop Gear · Rent RVs · Need Help? (888)-626-7576| Home · Camping & Outdoors · Tents, Canopies & Shelters · Camping Tents · Products · Filters · Filters · View Results · Featured Products · Quick View · Add To Cart · Quick View · Add To Cart · Quick View · Items that can be returned within 30 days if unopened and unused are: electronics, skateboards, bikes, software, bedding, canoes, tents, drones and kayaks. Due to a period of inactivity, you will be redirected to the homepage to continue shopping. For web orders returned in-store, please take the item in original packaging, along with the invoice to any Camping World retail locations for a refund or exchange. Shipping charges are non-refundable.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Camping Tents",
+                "url": "https://www.campingworld.com/c/camping-outdoors/tents-canopies-shelters/camping-tents"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 8
+      },
+      {
+        "id": "online:lifeintents.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Life inTents",
+          "domain": "lifeintents.com",
+          "url": "https://www.lifeintents.com/"
+        },
+        "matched_product": "camping tent",
+        "snippet": "The Queen of Canvas Tents. Shop Stargazer Tents ... Glamping Tent, Bell camping tents, canvas tents, &amp; luxury glamping gear. Glamping Tent, Bell camping tents, canvas tents, & luxury glamping gear. ... The Queen of Canvas Tents. Shop Stargazer Tents The Queen of Canvas Tents. Shop Stargazer Tents ... Glamping Tent, Bell camping tents, canvas tents, & luxury glamping gear. Bring a sense of outdoor hospitality to your next campsite with a bell tent from Life inTents – we guarantee it'll be your most comfortable camp ever. Discover high-quality camping furniture for your next outdoor adventure. Explore our wide selection of camping chairs, cots, and tables. SHOP Discover a wide selection of stylish and practical camping gear, perfect for outfitting your campsite. From camping lanterns to blankets. SHOP · Explore our collection of bell tent tarps, fly covers, tent rugs, poles, pegs and canvas repair kits to keep your tent lasting for life.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Glamping Tents - Shop Luxury Canvas Tents & Bell Tents for Camping",
+                "url": "https://www.lifeintents.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "store_breadth": "specialist",
+        "rank": 9
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store"
+        },
+        "matched_product": "camping tent",
+        "snippet": "Family Camping Tents · Backpacking Tents · Bivys · Suspension Tents · Roof Top Tents · Shower Tents · Kid&#x27;s Tents · Tent Accessories · Mummy Sleeping Bags · Double Sleeping Bags · Kid&#x27;s Sleeping Bags · Down Sleeping Bags · Sleeping Bags Liners · Camping Shelters · Family Camping Tents · Backpacking Tents · Bivys · Suspension Tents · Roof Top Tents · Shower Tents · Kid's Tents · Tent Accessories · Mummy Sleeping Bags · Double Sleeping Bags · Kid's Sleeping Bags · Down Sleeping Bags · Sleeping Bags Liners · Camping Shelters ·",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Walmart Camping Store in Philadelphia, PA | Coolers, Tents, Canopies | Serving 19124 | Store 5103",
+                "url": "https://www.walmart.com/store/5103-philadelphia-pa/camping-store"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 5,217 stores",
+          "stores": 5217,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-09-27"
+        },
+        "store_breadth": "general",
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2715,
+          "completion_tokens": 379,
+          "cost_usd": 0.00241525
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1650,
+          "completion_tokens": 407,
+          "cost_usd": 0.0016445
+        }
+      ],
+      "llm_tokens": 5151,
+      "estimated_cost_usd": 0.02406,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "online",
+        "domain": "cleverhiker.com",
+        "reason": "editorial_url"
+      },
+      {
+        "kind": "online",
+        "domain": "lowergear.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "yelp.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "reddit.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "online",
+        "domain": "yellowpages.com",
+        "reason": "site_type"
+      },
+      {
+        "kind": "local",
+        "domain": "buckmans.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "sfotackle.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "pgatoursuperstore.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "ae.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "urbanoutfitters.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "foundingfathersphilly.com",
+        "reason": "sells_product"
+      }
+    ]
+  }
+}

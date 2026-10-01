@@ -1,0 +1,3010 @@
+{
+  "zip": "per eval query",
+  "arms": [
+    "default",
+    "alt-before"
+  ],
+  "rounds": 1,
+  "ran": "2026-10-01T21:13:46.671Z",
+  "runs": [
+    {
+      "id": "cast-iron-skillet-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 6616,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 3,
+          "headers_ms": 479,
+          "total_ms": 1513,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 70,
+          "out_chars": 307
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1542,
+          "headers_ms": 300,
+          "total_ms": 303
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1542,
+          "headers_ms": 587,
+          "total_ms": 587
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1543,
+          "headers_ms": 616,
+          "total_ms": 616
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1541,
+          "headers_ms": 662,
+          "total_ms": 662
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2205,
+          "headers_ms": 391,
+          "total_ms": 2272,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1770,
+          "completion_tokens": 219,
+          "out_chars": 701
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2205,
+          "headers_ms": 514,
+          "total_ms": 4389,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1349,
+          "completion_tokens": 373,
+          "out_chars": 1133
+        }
+      ]
+    },
+    {
+      "id": "cast-iron-skillet-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3583,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 473,
+          "total_ms": 2269,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1686,
+          "completion_tokens": 166,
+          "out_chars": 475
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 383,
+          "total_ms": 3571,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1265,
+          "completion_tokens": 265,
+          "out_chars": 783
+        }
+      ]
+    },
+    {
+      "id": "cast-iron-skillet-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4487,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 2
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 563,
+          "total_ms": 564
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2,
+          "headers_ms": 574,
+          "total_ms": 575
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 579,
+          "headers_ms": 370,
+          "total_ms": 1837,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1686,
+          "completion_tokens": 166,
+          "out_chars": 475
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 580,
+          "headers_ms": 359,
+          "total_ms": 3900,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1569,
+          "completion_tokens": 316,
+          "out_chars": 886
+        }
+      ]
+    },
+    {
+      "id": "cast-iron-skillet-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5295,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 6,
+          "headers_ms": 354,
+          "total_ms": 1858,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1770,
+          "completion_tokens": 220,
+          "out_chars": 701
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 6,
+          "headers_ms": 331,
+          "total_ms": 5278,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1653,
+          "completion_tokens": 422,
+          "out_chars": 1279
+        }
+      ]
+    },
+    {
+      "id": "cast-iron-skillet-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3452,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 3,
+          "headers_ms": 484,
+          "total_ms": 485
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 627,
+          "total_ms": 628
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 630,
+          "headers_ms": 559,
+          "total_ms": 2150,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1770,
+          "completion_tokens": 220,
+          "out_chars": 701
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 631,
+          "headers_ms": 381,
+          "total_ms": 2806,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1156,
+          "completion_tokens": 277,
+          "out_chars": 868
+        }
+      ]
+    },
+    {
+      "id": "cast-iron-skillet-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 2445,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 2
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 2
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 7,
+          "headers_ms": 335,
+          "total_ms": 1555,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1686,
+          "completion_tokens": 158,
+          "out_chars": 475
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 7,
+          "headers_ms": 483,
+          "total_ms": 2427,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1072,
+          "completion_tokens": 206,
+          "out_chars": 599
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4673,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 162,
+          "total_ms": 1020,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 66,
+          "out_chars": 280
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1022,
+          "headers_ms": 647,
+          "total_ms": 648
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1025,
+          "headers_ms": 662,
+          "total_ms": 663
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1026,
+          "headers_ms": 697,
+          "total_ms": 698
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1027,
+          "headers_ms": 747,
+          "total_ms": 748
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1777,
+          "headers_ms": 536,
+          "total_ms": 2557,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2631,
+          "completion_tokens": 272,
+          "out_chars": 819
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1778,
+          "headers_ms": 364,
+          "total_ms": 2892,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1293,
+          "completion_tokens": 300,
+          "out_chars": 825
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4271,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 0,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 0,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 0,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 0,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2,
+          "headers_ms": 356,
+          "total_ms": 2879,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2715,
+          "completion_tokens": 379,
+          "out_chars": 1210
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2,
+          "headers_ms": 363,
+          "total_ms": 4263,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1377,
+          "completion_tokens": 391,
+          "out_chars": 1207
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5587,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 597,
+          "total_ms": 615
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2,
+          "headers_ms": 610,
+          "total_ms": 620
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 623,
+          "headers_ms": 360,
+          "total_ms": 3072,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2715,
+          "completion_tokens": 379,
+          "out_chars": 1210
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 623,
+          "headers_ms": 519,
+          "total_ms": 4954,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1650,
+          "completion_tokens": 407,
+          "out_chars": 1220
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3752,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 3,
+          "headers_ms": 386,
+          "total_ms": 2371,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2631,
+          "completion_tokens": 286,
+          "out_chars": 819
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 661,
+          "total_ms": 3726,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1566,
+          "completion_tokens": 301,
+          "out_chars": 832
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3150,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 4
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 4
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 569,
+          "total_ms": 576
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 598,
+          "total_ms": 600
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 606,
+          "headers_ms": 341,
+          "total_ms": 2159,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2631,
+          "completion_tokens": 286,
+          "out_chars": 819
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 606,
+          "headers_ms": 349,
+          "total_ms": 2526,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1095,
+          "completion_tokens": 196,
+          "out_chars": 542
+        }
+      ]
+    },
+    {
+      "id": "camping-tent-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3245,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 9,
+          "headers_ms": 459,
+          "total_ms": 2744,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1179,
+          "completion_tokens": 257,
+          "out_chars": 797
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 6,
+          "headers_ms": 390,
+          "total_ms": 3218,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2715,
+          "completion_tokens": 379,
+          "out_chars": 1210
+        }
+      ]
+    },
+    {
+      "id": "wool-socks-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5820,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 3,
+          "headers_ms": 197,
+          "total_ms": 1094,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 63,
+          "out_chars": 270
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1111,
+          "headers_ms": 633,
+          "total_ms": 638
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1110,
+          "headers_ms": 655,
+          "total_ms": 663
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1112,
+          "headers_ms": 677,
+          "total_ms": 679
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1106,
+          "headers_ms": 731,
+          "total_ms": 732
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1841,
+          "headers_ms": 356,
+          "total_ms": 2199,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1773,
+          "completion_tokens": 221,
+          "out_chars": 704
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1843,
+          "headers_ms": 477,
+          "total_ms": 3969,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1599,
+          "completion_tokens": 440,
+          "out_chars": 1387
+        }
+      ]
+    },
+    {
+      "id": "wool-socks-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 3020,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 4,
+          "headers_ms": 0,
+          "total_ms": 4
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 5,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 5,
+          "headers_ms": 0,
+          "total_ms": 3
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 7,
+          "headers_ms": 1,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 15,
+          "headers_ms": 315,
+          "total_ms": 1912,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1689,
+          "completion_tokens": 166,
+          "out_chars": 475
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 16,
+          "headers_ms": 409,
+          "total_ms": 2931,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1515,
+          "completion_tokens": 341,
+          "out_chars": 959
+        }
+      ]
+    },
+    {
+      "id": "cordless-drill-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5615,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 222,
+          "total_ms": 1462,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 65,
+          "out_chars": 279
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1467,
+          "headers_ms": 330,
+          "total_ms": 335
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1468,
+          "headers_ms": 575,
+          "total_ms": 577
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1469,
+          "headers_ms": 621,
+          "total_ms": 622
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1468,
+          "headers_ms": 641,
+          "total_ms": 642
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2112,
+          "headers_ms": 454,
+          "total_ms": 2763,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1400,
+          "completion_tokens": 300,
+          "out_chars": 833
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2111,
+          "headers_ms": 416,
+          "total_ms": 3496,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2046,
+          "completion_tokens": 197,
+          "out_chars": 586
+        }
+      ]
+    },
+    {
+      "id": "cordless-drill-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4248,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 6,
+          "headers_ms": 331,
+          "total_ms": 3992,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1484,
+          "completion_tokens": 387,
+          "out_chars": 1206
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 5,
+          "headers_ms": 410,
+          "total_ms": 4239,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2130,
+          "completion_tokens": 270,
+          "out_chars": 855
+        }
+      ]
+    },
+    {
+      "id": "loose-leaf-green-tea-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 8124,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 150,
+          "total_ms": 1156,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 350,
+          "completion_tokens": 72,
+          "out_chars": 277
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1158,
+          "headers_ms": 597,
+          "total_ms": 599
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1157,
+          "headers_ms": 630,
+          "total_ms": 630
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1157,
+          "headers_ms": 654,
+          "total_ms": 654
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1157,
+          "headers_ms": 702,
+          "total_ms": 703
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1861,
+          "headers_ms": 416,
+          "total_ms": 2548,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1174,
+          "completion_tokens": 322,
+          "out_chars": 964
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1861,
+          "headers_ms": 490,
+          "total_ms": 6242,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2449,
+          "completion_tokens": 371,
+          "out_chars": 1137
+        }
+      ]
+    },
+    {
+      "id": "loose-leaf-green-tea-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5072,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 5,
+          "headers_ms": 346,
+          "total_ms": 1977,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1090,
+          "completion_tokens": 237,
+          "out_chars": 654
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 5,
+          "headers_ms": 573,
+          "total_ms": 5010,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2365,
+          "completion_tokens": 269,
+          "out_chars": 763
+        }
+      ]
+    },
+    {
+      "id": "jigsaw-puzzle-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5865,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 151,
+          "total_ms": 1010,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 63,
+          "out_chars": 259
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1012,
+          "headers_ms": 324,
+          "total_ms": 337
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1024,
+          "headers_ms": 648,
+          "total_ms": 661
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1023,
+          "headers_ms": 665,
+          "total_ms": 672
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1024,
+          "headers_ms": 683,
+          "total_ms": 688
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1716,
+          "headers_ms": 371,
+          "total_ms": 3595,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2347,
+          "completion_tokens": 246,
+          "out_chars": 708
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1717,
+          "headers_ms": 480,
+          "total_ms": 4140,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1364,
+          "completion_tokens": 343,
+          "out_chars": 971
+        }
+      ]
+    },
+    {
+      "id": "jigsaw-puzzle-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4621,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 5,
+          "headers_ms": 566,
+          "total_ms": 4568,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2431,
+          "completion_tokens": 327,
+          "out_chars": 1047
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 5,
+          "headers_ms": 322,
+          "total_ms": 4608,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1448,
+          "completion_tokens": 469,
+          "out_chars": 1429
+        }
+      ]
+    },
+    {
+      "id": "usb-c-charging-cable-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5065,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 160,
+          "total_ms": 1407,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 351,
+          "completion_tokens": 88,
+          "out_chars": 349
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1410,
+          "headers_ms": 575,
+          "total_ms": 580
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1409,
+          "headers_ms": 576,
+          "total_ms": 590
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1408,
+          "headers_ms": 586,
+          "total_ms": 593
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1410,
+          "headers_ms": 621,
+          "total_ms": 621
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2034,
+          "headers_ms": 352,
+          "total_ms": 2768,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1535,
+          "completion_tokens": 360,
+          "out_chars": 1116
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2033,
+          "headers_ms": 639,
+          "total_ms": 3022,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2257,
+          "completion_tokens": 246,
+          "out_chars": 784
+        }
+      ]
+    },
+    {
+      "id": "usb-c-charging-cable-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 2390,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8,
+          "headers_ms": 533,
+          "total_ms": 2359,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2173,
+          "completion_tokens": 186,
+          "out_chars": 532
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8,
+          "headers_ms": 445,
+          "total_ms": 2376,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1451,
+          "completion_tokens": 277,
+          "out_chars": 766
+        }
+      ]
+    },
+    {
+      "id": "wool-blanket-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 7673,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 230,
+          "total_ms": 1558,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 67,
+          "out_chars": 292
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1561,
+          "headers_ms": 539,
+          "total_ms": 540
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1560,
+          "headers_ms": 593,
+          "total_ms": 594
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1559,
+          "headers_ms": 609,
+          "total_ms": 610
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1560,
+          "headers_ms": 694,
+          "total_ms": 694
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2256,
+          "headers_ms": 382,
+          "total_ms": 2067,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2573,
+          "completion_tokens": 256,
+          "out_chars": 763
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2256,
+          "headers_ms": 368,
+          "total_ms": 5408,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1481,
+          "completion_tokens": 348,
+          "out_chars": 1001
+        }
+      ]
+    },
+    {
+      "id": "wool-blanket-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 6564,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 1,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 347,
+          "total_ms": 3123,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2657,
+          "completion_tokens": 357,
+          "out_chars": 1131
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4,
+          "headers_ms": 358,
+          "total_ms": 6553,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1565,
+          "completion_tokens": 489,
+          "out_chars": 1461
+        }
+      ]
+    },
+    {
+      "id": "headlamp-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 9243,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 0,
+          "headers_ms": 157,
+          "total_ms": 1512,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 61,
+          "out_chars": 260
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1518,
+          "headers_ms": 656,
+          "total_ms": 657
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1514,
+          "headers_ms": 648,
+          "total_ms": 671
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1518,
+          "headers_ms": 657,
+          "total_ms": 676
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1517,
+          "headers_ms": 702,
+          "total_ms": 709
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2233,
+          "headers_ms": 430,
+          "total_ms": 4753,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1375,
+          "completion_tokens": 364,
+          "out_chars": 1125
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2230,
+          "headers_ms": 515,
+          "total_ms": 7000,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2984,
+          "completion_tokens": 408,
+          "out_chars": 1297
+        }
+      ]
+    },
+    {
+      "id": "headlamp-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5333,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 2,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 3,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 10,
+          "headers_ms": 419,
+          "total_ms": 4347,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1291,
+          "completion_tokens": 278,
+          "out_chars": 766
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 9,
+          "headers_ms": 338,
+          "total_ms": 5277,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2900,
+          "completion_tokens": 309,
+          "out_chars": 880
+        }
+      ]
+    },
+    {
+      "id": "rain-jacket-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 7209,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 24,
+          "headers_ms": 351,
+          "total_ms": 1739,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 64,
+          "out_chars": 277
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1770,
+          "headers_ms": 617,
+          "total_ms": 618
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1770,
+          "headers_ms": 640,
+          "total_ms": 654
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1769,
+          "headers_ms": 695,
+          "total_ms": 704
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1766,
+          "headers_ms": 720,
+          "total_ms": 731
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2512,
+          "headers_ms": 367,
+          "total_ms": 1881,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1806,
+          "completion_tokens": 176,
+          "out_chars": 532
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2512,
+          "headers_ms": 458,
+          "total_ms": 4638,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1488,
+          "completion_tokens": 342,
+          "out_chars": 950
+        }
+      ]
+    },
+    {
+      "id": "rain-jacket-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 6318,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 11,
+          "headers_ms": 0,
+          "total_ms": 17
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 12,
+          "headers_ms": 0,
+          "total_ms": 17
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 12,
+          "headers_ms": 3,
+          "total_ms": 17
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 18,
+          "headers_ms": 0,
+          "total_ms": 11
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 42,
+          "headers_ms": 515,
+          "total_ms": 2608,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1890,
+          "completion_tokens": 245,
+          "out_chars": 781
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 43,
+          "headers_ms": 349,
+          "total_ms": 6233,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1572,
+          "completion_tokens": 448,
+          "out_chars": 1396
+        }
+      ]
+    },
+    {
+      "id": "led-light-bulbs-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 7379,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 11,
+          "headers_ms": 234,
+          "total_ms": 1316,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 63,
+          "out_chars": 274
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1330,
+          "headers_ms": 406,
+          "total_ms": 418
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1351,
+          "headers_ms": 676,
+          "total_ms": 702
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 1345,
+          "headers_ms": 683,
+          "total_ms": 712
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1343,
+          "headers_ms": 847,
+          "total_ms": 848
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2202,
+          "headers_ms": 373,
+          "total_ms": 4929,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1460,
+          "completion_tokens": 386,
+          "out_chars": 1216
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 2199,
+          "headers_ms": 482,
+          "total_ms": 5073,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2854,
+          "completion_tokens": 410,
+          "out_chars": 1294
+        }
+      ]
+    },
+    {
+      "id": "led-light-bulbs-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 4650,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 29,
+          "headers_ms": 0,
+          "total_ms": 7
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 29,
+          "headers_ms": 0,
+          "total_ms": 7
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 29,
+          "headers_ms": 0,
+          "total_ms": 7
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 30,
+          "headers_ms": 0,
+          "total_ms": 7
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 58,
+          "headers_ms": 420,
+          "total_ms": 3797,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2770,
+          "completion_tokens": 295,
+          "out_chars": 874
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 58,
+          "headers_ms": 379,
+          "total_ms": 4015,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1376,
+          "completion_tokens": 300,
+          "out_chars": 836
+        }
+      ]
+    },
+    {
+      "id": "extra-virgin-olive-oil-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 11530,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 25,
+          "headers_ms": 270,
+          "total_ms": 2182,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 350,
+          "completion_tokens": 79,
+          "out_chars": 328
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 2286,
+          "headers_ms": 901,
+          "total_ms": 913
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2288,
+          "headers_ms": 905,
+          "total_ms": 999
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 2237,
+          "headers_ms": 916,
+          "total_ms": 1064
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 2288,
+          "headers_ms": 999,
+          "total_ms": 1087
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 3436,
+          "headers_ms": 456,
+          "total_ms": 6413,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2701,
+          "completion_tokens": 309,
+          "out_chars": 879
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 3438,
+          "headers_ms": 1095,
+          "total_ms": 7495,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1148,
+          "completion_tokens": 237,
+          "out_chars": 661
+        }
+      ]
+    },
+    {
+      "id": "extra-virgin-olive-oil-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 10663,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 485,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 486,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 486,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 486,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 545,
+          "headers_ms": 769,
+          "total_ms": 5132,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1232,
+          "completion_tokens": 315,
+          "out_chars": 962
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 544,
+          "headers_ms": 3282,
+          "total_ms": 9970,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2785,
+          "completion_tokens": 427,
+          "out_chars": 1302
+        }
+      ]
+    },
+    {
+      "id": "wooden-train-set-suburban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 21108,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 101,
+          "headers_ms": 268,
+          "total_ms": 1518,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 66,
+          "out_chars": 296
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 5113,
+          "headers_ms": 2377,
+          "total_ms": 2400
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 5127,
+          "headers_ms": 2373,
+          "total_ms": 2622
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 5107,
+          "headers_ms": 2386,
+          "total_ms": 2726
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1650,
+          "headers_ms": 5793,
+          "total_ms": 6233
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8021,
+          "headers_ms": 5049,
+          "total_ms": 9243,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1446,
+          "completion_tokens": 391,
+          "out_chars": 1226
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 7995,
+          "headers_ms": 5098,
+          "total_ms": 10606,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2542,
+          "completion_tokens": 383,
+          "out_chars": 1218
+        }
+      ]
+    },
+    {
+      "id": "wooden-train-set-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5736,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 153,
+          "headers_ms": 1,
+          "total_ms": 72
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 154,
+          "headers_ms": 0,
+          "total_ms": 71
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 154,
+          "headers_ms": 7,
+          "total_ms": 71
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 161,
+          "headers_ms": 0,
+          "total_ms": 63
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 578,
+          "headers_ms": 613,
+          "total_ms": 4196,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2458,
+          "completion_tokens": 275,
+          "out_chars": 824
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 620,
+          "headers_ms": 1262,
+          "total_ms": 5079,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1362,
+          "completion_tokens": 301,
+          "out_chars": 841
+        }
+      ]
+    },
+    {
+      "id": "rechargeable-aa-batteries-rural",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 15705,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 30,
+          "headers_ms": 393,
+          "total_ms": 1494,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 351,
+          "completion_tokens": 71,
+          "out_chars": 350
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 4330,
+          "headers_ms": 3341,
+          "total_ms": 3581
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 4331,
+          "headers_ms": 3494,
+          "total_ms": 3700
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 4329,
+          "headers_ms": 3582,
+          "total_ms": 3702
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 1525,
+          "headers_ms": 6386,
+          "total_ms": 6596
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8122,
+          "headers_ms": 3791,
+          "total_ms": 6544,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1982,
+          "completion_tokens": 196,
+          "out_chars": 589
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 8122,
+          "headers_ms": 3780,
+          "total_ms": 7551,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1291,
+          "completion_tokens": 280,
+          "out_chars": 783
+        }
+      ]
+    },
+    {
+      "id": "rechargeable-aa-batteries-rural",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5378,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 40,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 41,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 41,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 41,
+          "headers_ms": 0,
+          "total_ms": 1
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 68,
+          "headers_ms": 336,
+          "total_ms": 3794,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2066,
+          "completion_tokens": 270,
+          "out_chars": 861
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 69,
+          "headers_ms": 333,
+          "total_ms": 5291,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1375,
+          "completion_tokens": 373,
+          "out_chars": 1142
+        }
+      ]
+    },
+    {
+      "id": "bath-towels-urban",
+      "arm": "alt-before",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 11107,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 1,
+          "headers_ms": 450,
+          "total_ms": 2157,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 348,
+          "completion_tokens": 64,
+          "out_chars": 265
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 3149,
+          "headers_ms": 822,
+          "total_ms": 848
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 2158,
+          "headers_ms": 1812,
+          "total_ms": 1839
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 3148,
+          "headers_ms": 822,
+          "total_ms": 854
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 3148,
+          "headers_ms": 894,
+          "total_ms": 908
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4082,
+          "headers_ms": 623,
+          "total_ms": 6028,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2769,
+          "completion_tokens": 379,
+          "out_chars": 1197
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4082,
+          "headers_ms": 680,
+          "total_ms": 6978,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1583,
+          "completion_tokens": 470,
+          "out_chars": 1460
+        }
+      ]
+    },
+    {
+      "id": "bath-towels-urban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 5933,
+      "calls": [
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 20,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "replayed": true,
+          "start": 20,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 20,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "replayed": true,
+          "start": 20,
+          "headers_ms": 0,
+          "total_ms": 0
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 53,
+          "headers_ms": 859,
+          "total_ms": 4729,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2685,
+          "completion_tokens": 290,
+          "out_chars": 821
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 53,
+          "headers_ms": 860,
+          "total_ms": 5520,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1499,
+          "completion_tokens": 345,
+          "out_chars": 1003
+        }
+      ]
+    },
+    {
+      "id": "dark-chocolate-bar-suburban",
+      "arm": "default",
+      "round": 1,
+      "status": "ok",
+      "total_ms": 11615,
+      "calls": [
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 50,
+          "headers_ms": 619,
+          "total_ms": 3066,
+          "call": "normalize",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 349,
+          "completion_tokens": 78,
+          "out_chars": 354
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 3117,
+          "headers_ms": 852,
+          "total_ms": 867
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/web/search",
+          "status": 200,
+          "start": 3220,
+          "headers_ms": 764,
+          "total_ms": 884
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 3221,
+          "headers_ms": 861,
+          "total_ms": 883
+        },
+        {
+          "host": "api.search.brave.com",
+          "path": "/res/v1/local/place_search",
+          "status": 200,
+          "start": 3220,
+          "headers_ms": 883,
+          "total_ms": 969
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4205,
+          "headers_ms": 488,
+          "total_ms": 4030,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1811,
+          "completion_tokens": 177,
+          "out_chars": 532
+        },
+        {
+          "host": "openrouter.ai",
+          "path": "/api/v1/chat/completions",
+          "status": 200,
+          "start": 4210,
+          "headers_ms": 462,
+          "total_ms": 6164,
+          "call": "enrich",
+          "provider": "ModelRun",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1669,
+          "completion_tokens": 382,
+          "out_chars": 1071
+        }
+      ]
+    }
+  ]
+}

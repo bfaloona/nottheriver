@@ -1,0 +1,28 @@
+[
+  {
+    "search_id": "wooden-train-set-suburban",
+    "name": "The Little Cottage Children's Shop at The Factory",
+    "url": "https://thelittlecottagechildrensshop.com/",
+    "address": "230 Franklin Rd Ste Suite 11-J, Franklin, TN 37064",
+    "sells_product": "equivalent",
+    "local_exists": "yes",
+    "distance_plausible": "no",
+    "page_access": "ok",
+    "needs_browser": false,
+    "notes": "Children's clothing boutique (site redirects to www). Site search https://www.thelittlecottagechildrensshop.com/search?q=train (all 3 pages read) lists single wooden train pieces from MasterPieces Puzzles: Polar Express Toy Train Engine ($13), Tennessee Volunteers Toy Train Engine and Box Car ($14), Flintstones Wood Toy Train Engine ($14). Product page https://www.thelittlecottagechildrensshop.com/products/the-polar-express-toy-train-engine describes a wooden engine with magnetic connectors 'compatible with most 1-inch wooden train tracks' and 'a perfect addition to any wooden train set'. No set with track found, so equivalent rather than yes. Address: https://www.thelittlecottagechildrensshop.com/policies/refund-policy gives '230 Franklin Road Suite 11-J, Franklin, Tn 37064', matching; the header 'THE STORE' link (/blogs/store-hours/tour-the-new-store) returns 404. Distance: OpenStreetMap Nominatim puts Franklin, TN center at 35.9252,-86.8689 and The Factory at Franklin (230 Franklin Rd) at 35.9325,-86.8605, about 0.7 mi straight line versus 4 mi shown; search origin not visible to grader, so a reviewer who knows it may override.",
+    "checked": "2026-10-01"
+  },
+  {
+    "search_id": "wool-socks-urban",
+    "name": "General Wholesale",
+    "url": "https://generalwholesalecompany.com/",
+    "address": "1595 Marietta Blvd NW, Atlanta, GA 30318",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "distance_plausible": "yes",
+    "page_access": "ok",
+    "needs_browser": false,
+    "notes": "Homepage https://generalwholesalecompany.com/ describes the business as a 'NA, beer and wine & spirits wholesaler serving the southeast United States'; nav covers brands, distributor information, locations, awards, careers; no socks, apparel or retail sales. Address: https://generalwholesalecompany.com/locations/ lists '1595 Marietta Blvd., Atlanta, Georgia 30318', matching. Distance: OpenStreetMap Nominatim puts Atlanta, GA center at 33.7545,-84.3898 and 1595 Marietta Blvd NW at 33.7986,-84.4333, about 3.9 mi straight line versus 3.7 mi shown; search origin not visible to grader.",
+    "checked": "2026-10-01"
+  }
+]

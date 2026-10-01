@@ -1,0 +1,107 @@
+{
+ "rule": "as eval/summarize.mjs precision(): good = sells the product (yes or equivalent) and the shop exists; bad = does not sell it, or confirmed not to exist; unknown = either answer unknown",
+ "rows": [
+  {
+   "search_id": "wooden-train-set-suburban",
+   "product": "wooden train set",
+   "place": "Franklin, TN",
+   "name": "The Little Cottage Children's Shop at The Factory",
+   "url": "https://thelittlecottagechildrensshop.com/",
+   "address": "230 Franklin Rd Ste Suite 11-J, Franklin, TN 37064",
+   "distance_mi": 4,
+   "map_categories": "clothing store",
+   "sells_product": "equivalent",
+   "local_exists": "yes",
+   "distance_plausible": "no",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Children's clothing boutique (site redirects to www). Site search https://www.thelittlecottagechildrensshop.com/search?q=train (all 3 pages read) lists single wooden train pieces from MasterPieces Puzzles: Polar Express Toy Train Engine ($13), Tennessee Volunteers Toy Train Engine and Box Car ($14), Flintstones Wood Toy Train Engine ($14). Product page https://www.thelittlecottagechildrensshop.com/products/the-polar-express-toy-train-engine describes a wooden engine with magnetic connectors 'compatible with most 1-inch wooden train tracks' and 'a perfect addition to any wooden train set'. No set with track found, so equivalent rather than yes. Address: https://www.thelittlecottagechildrensshop.com/policies/refund-policy gives '230 Franklin Road Suite 11-J, Franklin, Tn 37064', matching; the header 'THE STORE' link (/blogs/store-hours/tour-the-new-store) returns 404. Distance: OpenStreetMap Nominatim puts Franklin, TN center at 35.9252,-86.8689 and The Factory at Franklin (230 Franklin Rd) at 35.9325,-86.8605, about 0.7 mi straight line versus 4 mi shown; search origin not visible to grader, so a reviewer who knows it may override.",
+   "checked": "2026-10-01",
+   "source": "new",
+   "verdict": "good",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-before-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "wool-socks-urban",
+   "product": "wool socks",
+   "place": "Atlanta, GA",
+   "name": "General Wholesale",
+   "url": "https://generalwholesalecompany.com/",
+   "address": "1595 Marietta Blvd NW, Atlanta, GA 30318",
+   "distance_mi": 3.7,
+   "map_categories": "shop, shop",
+   "sells_product": "no",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "needs_browser": false,
+   "notes": "Homepage https://generalwholesalecompany.com/ describes the business as a 'NA, beer and wine & spirits wholesaler serving the southeast United States'; nav covers brands, distributor information, locations, awards, careers; no socks, apparel or retail sales. Address: https://generalwholesalecompany.com/locations/ lists '1595 Marietta Blvd., Atlanta, Georgia 30318', matching. Distance: OpenStreetMap Nominatim puts Atlanta, GA center at 33.7545,-84.3898 and 1595 Marietta Blvd NW at 33.7986,-84.4333, about 3.9 mi straight line versus 3.7 mi shown; search origin not visible to grader.",
+   "checked": "2026-10-01",
+   "source": "new",
+   "verdict": "bad",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-before-only",
+     "other_arm_drop_reason": "sells_product"
+    }
+   ]
+  },
+  {
+   "search_id": "extra-virgin-olive-oil-urban",
+   "product": "extra virgin olive oil",
+   "place": "Atlanta, GA",
+   "name": "14TH ST GROCERY AND HALAL MEAT (Near Atlanta Airport)",
+   "url": "https://ruspagesusa.com/catalog/atlanta/14_th_st_grocery_and_halal_meat",
+   "address": "398 14th St NW, Atlanta, GA 30318",
+   "distance_mi": 1.6,
+   "map_categories": "grocery",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Result URL is a third-party directory (ruspagesusa.com), not the shop's site. Listing and Yelp (May 2026), Apple Maps, Zabihah all show 14th St Grocery and Halal Meat at 398 14th St NW (Home Park). Directory says it carries 'a specialized selection of Mediterranean oils'; olive oil / EVOO not named. Name's 'Near Atlanta Airport' is odd: address is Midtown/Home Park, ~9 mi from the airport. ~1.7 mi from 30308. [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "alt-before-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  },
+  {
+   "search_id": "rechargeable-aa-batteries-rural",
+   "product": "rechargeable AA batteries",
+   "place": "Seneca, IL",
+   "name": "D & S Foods",
+   "url": "https://m.facebook.com/dsfood",
+   "address": "120 E Bluff St, Marseilles, IL 61341",
+   "distance_mi": 5.6,
+   "map_categories": "grocery",
+   "sells_product": "unknown",
+   "local_exists": "yes",
+   "distance_plausible": "yes",
+   "page_access": "ok",
+   "notes": "Small independent grocery at 120 E Bluff St (Facebook shows the address and 'open now'; a Sep 2026 post says it was restocked). No product list anywhere; its listed site dsfoods.com now redirects to an unrelated Wisconsin caterer. [second-pass grade] [reused from eval60, same URL and address] [reused from eval20-0924, same URL and address] [reused from eval20-0925, same URL and address]",
+   "from": "eval20-0925/run2",
+   "source": "reused",
+   "verdict": "unknown",
+   "directions": [
+    {
+     "round": "1",
+     "direction": "default-only",
+     "other_arm_drop_reason": "site_type"
+    }
+   ]
+  }
+ ]
+}

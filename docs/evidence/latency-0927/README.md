@@ -19,6 +19,8 @@ Backs [docs/search-latency.md](../../search-latency.md). Every search here ran t
 
 Each `runs/*/<arm>-r<round>/responses/<id>.json` has the shape `eval/run-searches.mjs` saves, so `eval/compare.mjs` reads it. Arm `default` is the code on `main` before 7c855e1.
 
+`stage-timing.ts` also takes `SHARED_CACHE=1` (all arms and rounds share one in-memory normalize cache, so they send Brave the same wording) and `REPLAY_BRAVE=1` (the first arm to make a Brave call pays; later arms get the saved reply, marked `replayed` in `stage-timing.json`), for an A/B where only the code and the model's answers differ. First used for the `store_breadth` removal check: [../quality/eval20-breadth-removal](../quality/eval20-breadth-removal/).
+
 Reproduce the tables:
 
 ```sh

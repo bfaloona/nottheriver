@@ -8,8 +8,13 @@
 //   ROUNDS=2                 repeats the whole set.
 //   EVAL=1                   takes eval/queries.json (or the ids given) instead of products, and
 //                            saves each response the way eval/run-searches.mjs does, for eval/compare.mjs.
+//   SHARED_CACHE=1           every arm and round reads and writes one in-memory normalize cache, so they all
+//                            send Brave the same wording (and the same similar_products).
+//   REPLAY_BRAVE=1           the first arm to make a Brave call pays for it; later arms get the saved reply, so
+//                            arms differ only in code and the model's answers. Replayed calls are marked.
 import fs from 'node:fs';
 import path from 'node:path';
+import type { KvStore } from '../../../proxy/src/contract';
 import { runSearch } from '../../../proxy/src/pipeline';
 
 type RunSearch = typeof runSearch;
@@ -41,7 +46,19 @@ const jobs: Job[] = evalMode
   ? (JSON.parse(fs.readFileSync(path.join(ROOT, 'eval/queries.json'), 'utf8')).queries as Job[]).filter((q) => args.length === 0 || args.includes(q.id))
   : args.map((product) => ({ id: product.replace(/\W+/g, '-'), product, zip: DEFAULT_ZIP }));
 
+// An in-memory stand-in for the Workers KV binding the normalize cache uses.
+function memoryCache(): KvStore {
+  const store = new Map<string, string>();
+  return {
+    get: async (key) => (store.has(key) ? JSON.parse(store.get(key)!) : null),
+    put: async (key, value) => void store.set(key, value),
+  };
+}
+const sharedCache = process.env.SHARED_CACHE === '1' ? memoryCache() : null;
+const braveReplay = process.env.REPLAY_BRAVE === '1' ? new Map<string, { status: number; headers: [string, string][]; text: string }>() : null;
+
 const env = {
+  ...(sharedCache && { NORMALIZE_CACHE: sharedCache }),
   BRAVE_API_KEY: readKey('BRAVE_API_KEY_FILE'),
   OPENROUTER_API_KEY: readKey('OPENROUTER_API_KEY_FILE'),
   ALLOWED_ORIGIN: conf.ALLOWED_ORIGIN!,
@@ -62,11 +79,14 @@ async function searchOnce(job: Job, arm: string, round: number) {
       body = JSON.stringify({ ...parsed, provider: { ...parsed.provider, sort } });
     }
     const start = performance.now() - t0;
-    const res = await fetch(input, { ...init, body });
+    const braveKey = braveReplay && url.host === 'api.search.brave.com' ? `${init?.method ?? 'GET'} ${url.href} ${typeof body === 'string' ? body : ''}` : null;
+    const replayed = braveKey ? braveReplay!.get(braveKey) : undefined;
+    const res = replayed ? new Response(replayed.text, { status: replayed.status, headers: replayed.headers }) : await fetch(input, { ...init, body });
     const headersAt = performance.now() - t0;
     const text = await res.text();
     const end = performance.now() - t0;
-    const entry: Record<string, unknown> = { host: url.host, path: url.pathname, status: res.status, start: Math.round(start), headers_ms: Math.round(headersAt - start), total_ms: Math.round(end - start) };
+    if (braveKey && !replayed && res.status === 200) braveReplay!.set(braveKey, { status: res.status, headers: [...res.headers.entries()], text });
+    const entry: Record<string, unknown> = { host: url.host, path: url.pathname, status: res.status, ...(replayed && { replayed: true }), start: Math.round(start), headers_ms: Math.round(headersAt - start), total_ms: Math.round(end - start) };
     if (url.host === 'openrouter.ai') {
       try {
         const j = JSON.parse(text);

@@ -1,0 +1,30 @@
+{
+ "extra-virgin-olive-oil-urban|https://ruspagesusa.com/catalog/atlanta/14_th_st_grocery_and_halal_meat|398 14th St NW, Atlanta, GA 30318": [
+  {
+   "round": "1",
+   "direction": "alt-before-only",
+   "other_arm_drop_reason": "site_type"
+  }
+ ],
+ "rechargeable-aa-batteries-rural|https://m.facebook.com/dsfood|120 E Bluff St, Marseilles, IL 61341": [
+  {
+   "round": "1",
+   "direction": "default-only",
+   "other_arm_drop_reason": "site_type"
+  }
+ ],
+ "wooden-train-set-suburban|https://thelittlecottagechildrensshop.com/|230 Franklin Rd Ste Suite 11-J, Franklin, TN 37064": [
+  {
+   "round": "1",
+   "direction": "alt-before-only",
+   "other_arm_drop_reason": "sells_product"
+  }
+ ],
+ "wool-socks-urban|https://generalwholesalecompany.com/|1595 Marietta Blvd NW, Atlanta, GA 30318": [
+  {
+   "round": "1",
+   "direction": "alt-before-only",
+   "other_arm_drop_reason": "sells_product"
+  }
+ ]
+}
