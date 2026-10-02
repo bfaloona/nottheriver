@@ -1,0 +1,9 @@
+Live check after the chain list upkeep was deployed (2026-10-01 Pacific, Worker at e573572, preflight 204).
+One search through eval/run-searches.mjs: camping-tent-suburban (Plymouth Meeting, PA). Before the fix, the same search showed REI "Chain, 190+ stores" and Walmart "Chain, 5,217 stores" (docs/evidence/quality/eval20-breadth-removal/default-r1/responses/camping-tent-suburban.json).
+status 200 in 2734 ms; brave_calls 4; usage.llm calls: enrich, enrich.
+Chain badges returned:
+  local  rei.com                 Chain, 195 stores  (checked 2026-10-01)
+  local  dickssportinggoods.com  Chain, 888 stores  (checked 2026-09-27), two rows
+  online rei.com                 Chain, 195 stores  (checked 2026-10-01)
+  online cabelas.com             Chain, 49 stores   (checked 2026-10-01)
+Walmart was not returned in this search, so its new count (4,615) was not seen live; proxy/test/data.test.ts covers the row.
