@@ -4,6 +4,9 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
+// The price every call was billed at in the 2026-10-01 check (ModelRun and SiliconFlow's list price).
+const ROUTED_USD_PER_TOKEN = { prompt: 0.75e-6, completion: 1.0e-6 };
+
 /** @param {number[]} xs */
 function spread(xs) {
   const a = [...xs].sort((x, y) => x - y);
@@ -36,6 +39,8 @@ for (const [name, cs] of Object.entries(calls)) {
     completion: spread(cs.map((c) => c.completion_tokens)),
     cost: spread(cs.flatMap((c) => (c.cost_usd === null ? [] : [c.cost_usd]))),
     cost_missing: cs.filter((c) => c.cost_usd === null).length,
+    billed_at_routed_price: cs.filter((c) => c.cost_usd !== null
+      && Math.abs(c.cost_usd - (c.prompt_tokens * ROUTED_USD_PER_TOKEN.prompt + c.completion_tokens * ROUTED_USD_PER_TOKEN.completion)) < 1e-9).length,
   }));
 }
 console.log('per search', JSON.stringify({

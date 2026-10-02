@@ -18,7 +18,8 @@ export interface NegativeRow {
   status: 'final' | 'open';
   citation_type?: CitationType; // osha.gov inspection-detail rows only
 }
-// stores is the count the source states, never rounded or invented; stores_at_least marks a
+// stores is the count the source states (or the length of a company's own full store list that
+// states no total), never rounded or invented; stores_at_least marks a
 // source that only gives a floor ("over 30"), so the label reads "Chain, 30+ stores".
 export interface ChainRow { domain: string; name: string; stores: number; stores_at_least?: boolean; source_url: string; checked: string; note?: string }
 export interface CuratedData {
