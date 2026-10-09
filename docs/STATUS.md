@@ -50,6 +50,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 | 3 | Amazon plan Phase C: measure (offline replay, then live rerun against T1 to T4) | After Phase B deploys | Phase B |
 | 4 | Amazon plan Phase D: suggested shops | Revisit after Phase C (operator ruling Q4: not yet) | Phase C |
 | 5 | Consumer co-ops (REI) as a positive signal: `worker_coop` scores today, consumer co-ops do not (operator remark, 2026-09-27) | Propose badge vs ethics score, with sources for co-op status; proposed position: after Phase C | Operator decision on the proposal |
+| 6 | Open place data coverage check: how many of the 86 graded nearby shops (eval20-0925 recall baseline) appear in OpenStreetMap or Overture Places with a category usable for "sells it" ([feasibility-overview.md](feasibility-overview.md), first steps) | An agent reads the open data for the 20 graded zip areas and reports hit rate by category; zero Brave calls; proposed position: 6, since it decides whether local search can leave Brave | Nothing |
 
 ## Blocked on operator
 
