@@ -24,11 +24,11 @@ Summary of the 2026-10-08 evaluation, for the operator. The evidence is in [scal
 |---|---|---|
 | Brave payment method and monthly quota | none | Whether a busy day can run up a bill |
 | Daily counters (searches, cache hits, Brave calls, model cost), with a privacy row | none | Turns every "hit rate unknown" into a number |
-| Coverage check: how many of the 86 graded nearby shops appear in OpenStreetMap or Overture with a usable category | no Brave calls | Whether open place data can carry local search |
+| Coverage check: how many of the 86 graded nearby shops appear in OpenStreetMap or Overture with a usable category | no Brave calls | Whether open place data can carry local search. Done 2026-10-09: 98% found in either, 70% with a tag that says "plausibly sells it" ([open-place-coverage.md](open-place-coverage.md)) |
 | Eval of 3 Brave calls a search instead of 4 | about 160 Brave calls | The one cost cut above 12% that needs no new data |
 
 ## Open
 
 - No measured searches-per-user figure exists; user counts in the scenarios are two stated guesses.
 - Whether Brave lets the operator set a per-key quota is unverified.
-- Coverage and freshness of open place data for US shops is unmeasured; the coverage check above is the test.
+- Coverage of open place data for the graded shops is measured ([open-place-coverage.md](open-place-coverage.md)); precision against shops that do not sell the product, closures and licensing are not.
