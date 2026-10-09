@@ -1,0 +1,107 @@
+{
+ "place": "Northampton, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.3178989,
+  "lon": -72.6311006,
+  "osm_type": "relation",
+  "osm_id": 1839161,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Northampton, Hampshire County, Massachusetts, United States"
+ },
+ "bbox": [
+  -72.75850152901528,
+  42.22369600144928,
+  -72.50369967098472,
+  42.41210179855073
+ ],
+ "pattern": "(?i)^(The )?Baker'?s Pin|^Walmart( Supercenter| Neighborhood Market)?$",
+ "fetched": "2026-10-09T17:51:36.676404+00:00",
+ "rows": [
+  {
+   "id": "0f3e9681-819e-42d3-9baf-8bf6807bf798",
+   "name": "The Baker's Pin",
+   "basic_category": "specialty_school",
+   "taxonomy_primary": "cooking_school",
+   "taxonomy_hierarchy": [
+    "education",
+    "place_of_learning",
+    "specialty_school",
+    "cooking_school"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://thebakerspin.com/"
+   ],
+   "phones": [
+    "+14135867978"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "34 Bridge St",
+   "locality": "Northampton",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -72.62767791748047,
+   "lat": 42.32188034057617
+  },
+  {
+   "id": "90e27e4b-32c5-4390-9fd6-cb9745a65272",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9088564515113831,
+   "websites": [
+    "https://www.walmart.com/store/2901"
+   ],
+   "phones": [
+    "+14135870001"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "180 N King St",
+   "locality": "Northampton",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -72.64360046386719,
+   "lat": 42.341514587402344
+  },
+  {
+   "id": "aeef6d23-1bb8-49f8-806d-b08855bed7a6",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/2683"
+   ],
+   "phones": [
+    "+14135864231"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "337 Russell St",
+   "locality": "Hadley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -72.55232238769531,
+   "lat": 42.35480499267578
+  }
+ ]
+}

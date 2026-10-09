@@ -1,0 +1,53 @@
+{
+ "place": "Ferry Building, San Francisco, CA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 37.7955487,
+  "lon": -122.3934746,
+  "osm_type": "way",
+  "osm_id": 558731934,
+  "category": "amenity",
+  "type": "ferry_terminal",
+  "display_name": "San Francisco Ferry Building, 1, The Embarcadero, Financial District, San Francisco, California, 94111, United States"
+ },
+ "bbox": [
+  -122.4118151535929,
+  37.78105594637681,
+  -122.37513404640711,
+  37.810041453623185
+ ],
+ "pattern": "(?i)^Recchiuti",
+ "fetched": "2026-10-09T17:52:01.362403+00:00",
+ "rows": [
+  {
+   "id": "6d5dde5f-6957-43e8-84f3-383bbd51d0db",
+   "name": "Recchiuti Confections",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "chocolatier",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "candy_store",
+    "chocolatier"
+   ],
+   "confidence": 0.9969743812084197,
+   "websites": [
+    "https://www.recchiuti.com/"
+   ],
+   "phones": [
+    "+14158349494"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "Ferry Building, 1, Shop #30",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -122.39340209960938,
+   "lat": 37.79553985595703
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "place": "100 Cabela Drive, Hamburg, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 40.5576934,
+  "lon": -76.0021434,
+  "osm_type": "way",
+  "osm_id": 485789140,
+  "category": "shop",
+  "type": "outdoor",
+  "display_name": "Cabela's, 100, Cabela Drive, West Hamburg, Hamburg, Berks County, Pennsylvania, 19526, United States"
+ },
+ "bbox": [
+  -76.0212190467558,
+  40.54320064637681,
+  -75.98306775324419,
+  40.572186153623186
+ ],
+ "pattern": "(?i)^Cabela'?s$",
+ "fetched": "2026-10-09T17:51:40.870641+00:00",
+ "rows": [
+  {
+   "id": "6b9e6671-bec1-4e40-8714-9d3d7e0e176a",
+   "name": "Cabela's",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+16109297000"
+   ],
+   "brand": "Cabela's",
+   "brand_wikidata": null,
+   "address": "100 Cabela Dr",
+   "locality": "Hamburg",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -76.00247192382812,
+   "lat": 40.557716369628906
+  }
+ ]
+}

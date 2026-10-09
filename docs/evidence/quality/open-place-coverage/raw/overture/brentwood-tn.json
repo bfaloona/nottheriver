@@ -1,0 +1,80 @@
+{
+ "place": "Brentwood, TN",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 36.0325687,
+  "lon": -86.7825235,
+  "osm_type": "relation",
+  "osm_id": 196062,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Brentwood, Williamson County, Middle Tennessee, Tennessee, United States"
+ },
+ "bbox": [
+  -86.89901281394707,
+  35.93836580144927,
+  -86.66603418605293,
+  36.126771598550725
+ ],
+ "pattern": "(?i)^Brilliant Sky|^B ?& ?C (Ace )?Hardware$|^Ace Hardware$",
+ "fetched": "2026-10-09T17:51:50.764441+00:00",
+ "rows": [
+  {
+   "id": "225f8078-369e-48a8-a494-22aecb92474d",
+   "name": "Brilliant Sky Toys & Books",
+   "basic_category": "toys_and_games_store",
+   "taxonomy_primary": "toy_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "toys_and_games_store",
+    "toy_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.brilliantskytoys.com/"
+   ],
+   "phones": [
+    "+16154344515"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1705 Mallory Ln",
+   "locality": "Brentwood",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -86.8146743774414,
+   "lat": 35.964988708496094
+  },
+  {
+   "id": "e8e472bc-dee2-4844-a84c-59724e4a26fa",
+   "name": "B & C Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.999752345790863,
+   "websites": null,
+   "phones": [
+    "16153731760"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "124 Pewitt Dr",
+   "locality": "Brentwood",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -86.78660583496094,
+   "lat": 36.03565979003906
+  }
+ ]
+}

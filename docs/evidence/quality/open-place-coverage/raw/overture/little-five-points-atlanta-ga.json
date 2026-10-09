@@ -1,0 +1,52 @@
+{
+ "place": "Little Five Points, Atlanta, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 33.7649773,
+  "lon": -84.3491749,
+  "osm_type": "node",
+  "osm_id": 2710191943,
+  "category": "place",
+  "type": "neighbourhood",
+  "display_name": "Little Five Points, Druid Hills, Atlanta, DeKalb County, Georgia, 30307, United States"
+ },
+ "bbox": [
+  -84.37532489822426,
+  33.74323816956522,
+  -84.32302490177572,
+  33.78671643043478
+ ],
+ "pattern": "(?i)^Abbadabba'?s",
+ "fetched": "2026-10-09T17:51:45.161383+00:00",
+ "rows": [
+  {
+   "id": "2ae99758-3a56-443b-9042-64538e1f4411",
+   "name": "Abbadabba's",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "shoe_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "shoe_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.coolshoes.com"
+   ],
+   "phones": [
+    "+14045889577"
+   ],
+   "brand": "Abbadabba's",
+   "brand_wikidata": null,
+   "address": "421 Moreland Ave NE",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -84.3490219116211,
+   "lat": 33.76598358154297
+  }
+ ]
+}

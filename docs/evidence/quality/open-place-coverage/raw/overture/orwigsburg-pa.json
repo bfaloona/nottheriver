@@ -1,0 +1,51 @@
+{
+ "place": "Orwigsburg, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6548566,
+  "lon": -76.1007318,
+  "osm_type": "relation",
+  "osm_id": 188913,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Orwigsburg, Schuylkill County, Pennsylvania, United States"
+ },
+ "bbox": [
+  -76.22490389593409,
+  40.560653701449276,
+  -75.97655970406592,
+  40.74905949855073
+ ],
+ "pattern": "(?i)^Heiser'?s( Ace Hardware)?$|^Ace Hardware$",
+ "fetched": "2026-10-09T17:51:49.328168+00:00",
+ "rows": [
+  {
+   "id": "6e780eff-2e29-4b05-9670-42857c4debb0",
+   "name": "Heiser's Ace Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": null,
+   "phones": [
+    "15703662323"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "715 W Market St",
+   "locality": "Orwigsburg",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -76.110107421875,
+   "lat": 40.654476165771484
+  }
+ ]
+}

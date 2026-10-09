@@ -1,0 +1,80 @@
+{
+ "place": "Hadley, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.3423259,
+  "lon": -72.5891221,
+  "osm_type": "relation",
+  "osm_id": 1839157,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Hadley, Hampshire County, Massachusetts, 01035, United States"
+ },
+ "bbox": [
+  -72.7165725137132,
+  42.24812300144927,
+  -72.46167168628679,
+  42.436528798550725
+ ],
+ "pattern": "(?i)^(Super)?Target$|^(The )?Home Depot$",
+ "fetched": "2026-10-09T17:51:37.047935+00:00",
+ "rows": [
+  {
+   "id": "80a3dd05-f970-455f-93c8-9f5cc5d0935c",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9891512393951416,
+   "websites": [
+    "https://www.homedepot.com/l/Hadley/MA/Hadley/01035/8452?emt=MSFBPage"
+   ],
+   "phones": [
+    "+14135872790"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "350 Russell Street",
+   "locality": "Hadley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -72.55210876464844,
+   "lat": 42.359779357910156
+  },
+  {
+   "id": "7753a401-6550-4120-8396-f8a70759f9de",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9427847266197205,
+   "websites": [
+    "https://www.target.com/sl/hadley/1839"
+   ],
+   "phones": [
+    "+14135865945"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "367 Russell St Hadley, MA 01035",
+   "locality": "Hadley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -72.54755401611328,
+   "lat": 42.35737609863281
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "place": "Natick, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.2836393,
+  "lon": -71.346996,
+  "osm_type": "relation",
+  "osm_id": 1865757,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Natick, Middlesex County, Massachusetts, United States"
+ },
+ "bbox": [
+  -71.47432762892204,
+  42.18943640144927,
+  -71.21966437107797,
+  42.377842198550724
+ ],
+ "pattern": "(?i)^(The )?Home Depot$|^Natick Outdoor|^Dick'?s Sporting Goods$",
+ "fetched": "2026-10-09T17:51:35.170094+00:00",
+ "rows": [
+  {
+   "id": "d9ec4b4e-999b-4e1f-a49c-ac74bbe3367e",
+   "name": "Natick Outdoor Store",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.natickoutdoor.com/"
+   ],
+   "phones": [
+    "+15086539400"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "38 North Ave",
+   "locality": "Natick",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.3471908569336,
+   "lat": 42.2861442565918
+  },
+  {
+   "id": "e70828fd-f40c-4a21-b7df-b8995adc4e07",
+   "name": "DICK'S Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.97,
+   "websites": [
+    "https://stores.dickssportinggoods.com/ma/natick/255/"
+   ],
+   "phones": [
+    "5086530908"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1336 Worcester St",
+   "locality": "Natick",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-10-05T23:41:31.597Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -71.39190673828125,
+   "lat": 42.29869842529297
+  },
+  {
+   "id": "db9bf02e-e860-4d4e-9803-674c7044edfb",
+   "name": "Dick's Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.990694522857666,
+   "websites": [
+    "https://stores.dickssportinggoods.com/ma/natick/255/"
+   ],
+   "phones": [
+    "+15086530908"
+   ],
+   "brand": "DICK'S Sporting Goods",
+   "brand_wikidata": null,
+   "address": "1336 Worcester St",
+   "locality": "Natick",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.38683319091797,
+   "lat": 42.29802703857422
+  },
+  {
+   "id": "b001e0e4-4c7a-4d80-9b36-58d27a072692",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.homedepot.com/l/Natick/MA/Natick/01760/2669?emt=MSFBPage"
+   ],
+   "phones": [
+    "+15086479600"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "339 Speen St",
+   "locality": "Natick",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.38129425048828,
+   "lat": 42.30690002441406
+  }
+ ]
+}

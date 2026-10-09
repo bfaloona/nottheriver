@@ -1,0 +1,53 @@
+{
+ "place": "1604 36th Street, Peru, IL 61354",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 41.3528299,
+  "lon": -89.1269074,
+  "osm_type": "way",
+  "osm_id": 21831851,
+  "category": "place",
+  "type": "house",
+  "display_name": "1604, 36th Street, Peru, LaSalle County, Illinois, 61354, United States"
+ },
+ "bbox": [
+  -89.14621420363406,
+  41.338337146376816,
+  -89.10760059636593,
+  41.36732265362319
+ ],
+ "pattern": "(?i)^Harbor Freight( Tools)?$",
+ "fetched": "2026-10-09T17:52:00.109663+00:00",
+ "rows": [
+  {
+   "id": "fcd7d75a-2c76-4590-81dc-b6fc8a69770f",
+   "name": "Harbor Freight Tools",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9999897403717041,
+   "websites": [
+    "https://go.harborfreight.com/store00694"
+   ],
+   "phones": [
+    "+18152200252"
+   ],
+   "brand": "Harbor Freight Tools",
+   "brand_wikidata": null,
+   "address": "1604 36th St",
+   "locality": "Peru",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -89.12686157226562,
+   "lat": 41.35179138183594
+  }
+ ]
+}

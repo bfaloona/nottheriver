@@ -1,0 +1,78 @@
+{
+ "place": "Ansley Mall, Midtown, Atlanta, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 3.5,
+ "center": {
+  "lat": 33.7816556,
+  "lon": -84.3840713,
+  "osm_type": "node",
+  "osm_id": 8433055871,
+  "category": "place",
+  "type": "neighbourhood",
+  "display_name": "Midtown, Old Fourth Ward, Atlanta, Fulton County, Georgia, 30361, United States"
+ },
+ "bbox": [
+  -84.44509984193662,
+  33.730930962318844,
+  -84.32304275806338,
+  33.83238023768116
+ ],
+ "pattern": "(?i)^High Country Outfitters$",
+ "fetched": "2026-10-09T17:51:44.208780+00:00",
+ "rows": [
+  {
+   "id": "0607ea3a-711d-4a6a-bf6a-518135f8f2ac",
+   "name": "High Country Outfitters Peachtree Battle",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "clothing_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "clothing_store"
+   ],
+   "confidence": 0.8321071863174438,
+   "websites": null,
+   "phones": [
+    "+16787225688"
+   ],
+   "brand": "High Country Outfitters",
+   "brand_wikidata": null,
+   "address": "2345 Peachtree Rd NE",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -84.38665008544922,
+   "lat": 33.819278717041016
+  },
+  {
+   "id": "9184a7dc-9484-4417-b67a-b473467b3164",
+   "name": "High Country Outfitters",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.highcountryoutfitters.com/"
+   ],
+   "phones": [
+    "+14049632618"
+   ],
+   "brand": "High Country Outfitters",
+   "brand_wikidata": null,
+   "address": "1544 Piedmont Ave NE",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -84.37041473388672,
+   "lat": 33.79765319824219
+  }
+ ]
+}

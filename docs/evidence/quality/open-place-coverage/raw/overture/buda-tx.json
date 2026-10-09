@@ -1,0 +1,470 @@
+{
+ "place": "Buda, TX",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 30.082475,
+  "lon": -97.8417144,
+  "osm_type": "relation",
+  "osm_id": 6586487,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Buda, Hays County, Texas, United States"
+ },
+ "bbox": [
+  -97.95058112660502,
+  29.988272101449272,
+  -97.73284767339499,
+  30.176677898550725
+ ],
+ "pattern": "(?i)^AT&T( Store)?$|^H-?E-?B( plus!?)?$|^Walmart( Supercenter| Neighborhood Market)?$",
+ "fetched": "2026-10-09T17:51:45.905529+00:00",
+ "rows": [
+  {
+   "id": "e1436c6e-f568-4b2c-b9db-36083ecb3a07",
+   "name": "H-E-B plus!",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.heb.com/heb-store/US/tx/kyle/kyle-h-e-b-plus--14"
+   ],
+   "phones": [
+    "+15122687900"
+   ],
+   "brand": "H-E-B",
+   "brand_wikidata": null,
+   "address": "5401 S FM 1626",
+   "locality": "Kyle",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -97.86149597167969,
+   "lat": 30.016422271728516
+  },
+  {
+   "id": "d2f1d1c1-56b1-4f5f-85bf-83a0544ffc46",
+   "name": "At&t Store",
+   "basic_category": "electronics_store",
+   "taxonomy_primary": "mobile_phone_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "electronics_store",
+    "mobile_phone_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.att.com"
+   ],
+   "phones": [
+    "15122680612"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "5695 Kyle Pkwy  Ste 300",
+   "locality": "Kyle",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -97.85823059082031,
+   "lat": 30.012550354003906
+  },
+  {
+   "id": "46c94463-c5fd-4065-b70f-ae6f8fea3618",
+   "name": "AT&T",
+   "basic_category": "electronics_store",
+   "taxonomy_primary": "mobile_phone_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "electronics_store",
+    "mobile_phone_store"
+   ],
+   "confidence": 0.9921745657920837,
+   "websites": [
+    "https://www.att.com/stores/texas/kyle/81279?source=E-Fls10000000000X&wtExtndSource=website"
+   ],
+   "phones": [
+    "+17373736215"
+   ],
+   "brand": "AT&T",
+   "brand_wikidata": null,
+   "address": "5695 Kyle Parkway Ste 300",
+   "locality": "Kyle",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -97.85850524902344,
+   "lat": 30.012300491333008
+  },
+  {
+   "id": "880b791b-5e9a-4b62-810b-a59f912f27b1",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/4130"
+   ],
+   "phones": [
+    "+15122681451"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "5754 Kyle Pkwy",
+   "locality": "Kyle",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -97.85907745361328,
+   "lat": 30.010231018066406
+  },
+  {
+   "id": "72b8cb43-6a87-441b-8394-661cc91e861c",
+   "name": "H-E-B",
+   "basic_category": "specialized_health_care",
+   "taxonomy_primary": "immunodermatology",
+   "taxonomy_hierarchy": [
+    "health_care",
+    "outpatient_care_facility",
+    "specialized_health_care",
+    "medical_skin_care",
+    "dermatology",
+    "immunodermatology"
+   ],
+   "confidence": 0.9655,
+   "websites": [
+    "https://www.heb.com/pharmacy/common/landing"
+   ],
+   "phones": [
+    "5122687955"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "5401 South FM 1626",
+   "locality": "Kyle",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-09-08T19:00:08.787Z",
+   "operating_status": null,
+   "version": 7,
+   "lon": -97.86126708984375,
+   "lat": 30.015764236450195
+  },
+  {
+   "id": "02cac588-6ffb-46d2-b1fa-37b42693e427",
+   "name": "H-E-B Bakery",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "bakery",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "bakery"
+   ],
+   "confidence": 0.8705534934997559,
+   "websites": [
+    "http://www.heb.com"
+   ],
+   "phones": [
+    "+15122687900"
+   ],
+   "brand": "H-E-B",
+   "brand_wikidata": null,
+   "address": "5401 Farm to Market 1626",
+   "locality": "Kyle",
+   "source_dataset": "meta",
+   "source_update_time": "2026-08-24T00:00:00.000Z",
+   "operating_status": null,
+   "version": 2,
+   "lon": -97.861572265625,
+   "lat": 30.016077041625977
+  },
+  {
+   "id": "81ad40d2-5cc7-4526-8a85-78fc51907124",
+   "name": "HEB",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.heb.com/heb-store/US/tx/austin/slaughter-and-manchaca-h-e-b-227"
+   ],
+   "phones": [
+    "+15122820182"
+   ],
+   "brand": "H-E-B",
+   "brand_wikidata": null,
+   "address": "2110 West Slaughter Ln",
+   "locality": "Austin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -97.82498168945312,
+   "lat": 30.17536163330078
+  },
+  {
+   "id": "f5c8c0f2-cc15-4aba-a1df-d5e9427f1b91",
+   "name": "Slaughter and Manchaca H-E-B",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://www.heb.com/heb-store/us/tx/austin/slaughter-and-manchaca-h-e-b-227"
+   ],
+   "phones": null,
+   "brand": "H-E-B",
+   "brand_wikidata": "Q830621",
+   "address": "2110 WEST SLAUGHTER LN",
+   "locality": "AUSTIN",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-09-09T08:16:19.000Z",
+   "operating_status": null,
+   "version": 7,
+   "lon": -97.82510375976562,
+   "lat": 30.17523956298828
+  },
+  {
+   "id": "6b7802ff-d793-4ced-bb1a-63f49cccb7cc",
+   "name": "At&t Store",
+   "basic_category": "electronics_store",
+   "taxonomy_primary": "mobile_phone_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "electronics_store",
+    "mobile_phone_store"
+   ],
+   "confidence": 0.9924999999999999,
+   "websites": [
+    "https://www.att.com"
+   ],
+   "phones": [
+    "15125238032"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1567 Main St  Ste 200",
+   "locality": "Buda",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -97.82496643066406,
+   "lat": 30.087844848632812
+  },
+  {
+   "id": "3eab34de-b822-4428-a45f-4cdb2ca42478",
+   "name": "Walmart",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/4219"
+   ],
+   "phones": [
+    "+15122951670"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "690 Old San Antonio Rd",
+   "locality": "Buda",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 14,
+   "lon": -97.82471466064453,
+   "lat": 30.086423873901367
+  },
+  {
+   "id": "78423e66-16c3-42eb-ac36-5ba8403de180",
+   "name": "H-E-B",
+   "basic_category": "shopping",
+   "taxonomy_primary": "shopping",
+   "taxonomy_hierarchy": [
+    "shopping"
+   ],
+   "confidence": 0.9973166024625302,
+   "websites": [
+    "https://www.heb.com/heb-store/US/tx/buda/buda-h-e-b-477"
+   ],
+   "phones": [
+    "5123121615"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "15300 S Ih-35",
+   "locality": "Buda",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-09-08T18:59:24.507Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -97.82147216796875,
+   "lat": 30.08786964416504
+  },
+  {
+   "id": "a5f88ce6-4591-4b6d-bd58-5532654317f6",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.walmart.com/store/5317"
+   ],
+   "phones": [
+    "+15122926973"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "9300 I-35 STE B",
+   "locality": "Austin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -97.78997039794922,
+   "lat": 30.164844512939453
+  },
+  {
+   "id": "f3f25cbc-94ea-48cd-91ce-3741bd324e5d",
+   "name": "AT&T",
+   "basic_category": "corporate_or_business_office",
+   "taxonomy_primary": "telecommunications_company",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "corporate_or_business_office",
+    "telecommunications_company"
+   ],
+   "confidence": 0.9998419769406318,
+   "websites": [
+    "https://www.att.com/stores/texas/austin/230?source=E-Fls10000000000X&wtExtndSource=website"
+   ],
+   "phones": [
+    "+17373736217"
+   ],
+   "brand": "AT&T",
+   "brand_wikidata": null,
+   "address": "9900 S Ih 35 Service Rd. Sb Ste. A-100",
+   "locality": "Austin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -97.7911148071289,
+   "lat": 30.158065795898438
+  },
+  {
+   "id": "8b7c697e-6646-4c8b-880c-ae07c7af9a5c",
+   "name": "At&t Store",
+   "basic_category": "electronics_store",
+   "taxonomy_primary": "mobile_phone_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "electronics_store",
+    "mobile_phone_store"
+   ],
+   "confidence": 0.25,
+   "websites": [
+    "https://www.att.com"
+   ],
+   "phones": [
+    "+15122919800"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "9900 S Interstate 35 Ste A100",
+   "locality": "Austin",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 2,
+   "lon": -97.79232788085938,
+   "lat": 30.153987884521484
+  },
+  {
+   "id": "c855db58-36c2-44a7-83a1-495730f60323",
+   "name": "Slaughter and South Congress H-E-B",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://www.heb.com/heb-store/us/tx/austin/slaughter-and-south-congress-h-e-b-710"
+   ],
+   "phones": null,
+   "brand": "H-E-B",
+   "brand_wikidata": "Q830621",
+   "address": "8801 SOUTH CONGRESS AVENUE",
+   "locality": "AUSTIN",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-09-09T08:16:19.000Z",
+   "operating_status": null,
+   "version": 7,
+   "lon": -97.7872314453125,
+   "lat": 30.16861915588379
+  },
+  {
+   "id": "993b2e76-7531-473b-a6dd-4dc4155aed0c",
+   "name": "HEB",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.heb.com/heb-store/US/tx/austin/slaughter-and-south-congress-h-e-b-710"
+   ],
+   "phones": [
+    "+17372368348"
+   ],
+   "brand": "H-E-B",
+   "brand_wikidata": null,
+   "address": "8801 South Congress Avenue",
+   "locality": "Austin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -97.7868881225586,
+   "lat": 30.168935775756836
+  }
+ ]
+}

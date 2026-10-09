@@ -1,0 +1,222 @@
+{
+ "place": "Nashville, TN",
+ "release": "2026-09-23.1",
+ "radius_mi": 10.5,
+ "center": {
+  "lat": 36.1622767,
+  "lon": -86.7742984,
+  "osm_type": "relation",
+  "osm_id": 197472,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Nashville, Davidson County, Middle Tennessee, Tennessee, United States"
+ },
+ "bbox": [
+  -86.96278431504165,
+  36.01010278695652,
+  -86.58581248495837,
+  36.314450613043476
+ ],
+ "pattern": "(?i)^Phillips Toy|^Guthrie'?s Ace Hardware$|^Ace Hardware$|^Hillsboro Hardware|^Lakeshore Learning",
+ "fetched": "2026-10-09T17:51:51.685100+00:00",
+ "rows": [
+  {
+   "id": "cb8d24d6-efa7-4a93-83cb-7f47b7b51734",
+   "name": "Elder's Ace Hardware-Bellevue",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "do_it_yourself_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "do_it_yourself_store"
+   ],
+   "confidence": 0.8,
+   "websites": null,
+   "phones": null,
+   "brand": "Ace Hardware",
+   "brand_wikidata": "Q4672981",
+   "address": "8203 Highway 100",
+   "locality": "Nashville",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-09-09T08:16:19.000Z",
+   "operating_status": null,
+   "version": 9,
+   "lon": -86.95872497558594,
+   "lat": 36.04317092895508
+  },
+  {
+   "id": "4e4befa6-b1dd-469e-a9fd-00045ab791dd",
+   "name": "Ace Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9996535092622042,
+   "websites": [
+    "https://www.hartacehardware.com/"
+   ],
+   "phones": [
+    "+16156626767"
+   ],
+   "brand": "Ace Hardware",
+   "brand_wikidata": null,
+   "address": "8203 Highway 100",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -86.95874786376953,
+   "lat": 36.04318618774414
+  },
+  {
+   "id": "dcf046fa-4042-4d65-9462-5e0a4bed745c",
+   "name": "Phillips Toy Mart",
+   "basic_category": "toys_and_games_store",
+   "taxonomy_primary": "toy_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "toys_and_games_store",
+    "toy_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.phillipstoymart.com/"
+   ],
+   "phones": [
+    "+16153525363"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "5207 Harding Pike",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -86.86984252929688,
+   "lat": 36.10264205932617
+  },
+  {
+   "id": "0c31cb31-7358-4d02-89da-6247850ca345",
+   "name": "Lakeshore Learning Store",
+   "basic_category": "specialty_store",
+   "taxonomy_primary": "educational_supply_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "educational_supply_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.lakeshorelearning.com/"
+   ],
+   "phones": [
+    "+16157476630"
+   ],
+   "brand": "Lakeshore Learning",
+   "brand_wikidata": null,
+   "address": "21 White Bridge Pike",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -86.85297393798828,
+   "lat": 36.12804412841797
+  },
+  {
+   "id": "7120cac0-6f9e-4886-bc5e-a99a6c9d44cb",
+   "name": "Hillsboro Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.hillsborohardware.net/"
+   ],
+   "phones": [
+    "+16152926683"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2204 21st Ave S",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -86.80204772949219,
+   "lat": 36.1298713684082
+  },
+  {
+   "id": "7ccc2488-72cc-4385-8613-f232644b4a80",
+   "name": "Ace Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9999988262912631,
+   "websites": [
+    "https://eldershardware.com/locations/east-nashville"
+   ],
+   "phones": [
+    "+16157619303"
+   ],
+   "brand": "Ace Hardware",
+   "brand_wikidata": null,
+   "address": "2620 Gallatin Pike",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -86.74085235595703,
+   "lat": 36.19790267944336
+  },
+  {
+   "id": "6ed8ac23-139b-4c73-9a79-f5301d47d3bd",
+   "name": "Antioch Ace Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9998587605416774,
+   "websites": [
+    "https://hardwareantioch.com/"
+   ],
+   "phones": [
+    "+16152801618"
+   ],
+   "brand": "Ace Hardware",
+   "brand_wikidata": null,
+   "address": "3540 Murfreesboro Pike",
+   "locality": "Antioch",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -86.61371612548828,
+   "lat": 36.05195617675781
+  }
+ ]
+}

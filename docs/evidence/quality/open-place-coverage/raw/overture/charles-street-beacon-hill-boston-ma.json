@@ -1,0 +1,53 @@
+{
+ "place": "Charles Street, Beacon Hill, Boston, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 42.3585732,
+  "lon": -71.0707002,
+  "osm_type": "way",
+  "osm_id": 8644437,
+  "category": "highway",
+  "type": "primary",
+  "display_name": "Charles Street, Beacon Hill, Boston, Suffolk County, Massachusetts, 02114, United States"
+ },
+ "bbox": [
+  -71.10011943737133,
+  42.33683406956522,
+  -71.04128096262868,
+  42.38031233043478
+ ],
+ "pattern": "(?i)^Blackstone'?s",
+ "fetched": "2026-10-09T17:51:32.509081+00:00",
+ "rows": [
+  {
+   "id": "334e227c-9e42-41f6-8bd8-756c873e5545",
+   "name": "Blackstone's of Beacon Hill",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.blackstonesboston.com/"
+   ],
+   "phones": [
+    "+16172274646"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "40 Charles St",
+   "locality": "Boston",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.07015991210938,
+   "lat": 42.357173919677734
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "place": "CoolSprings Galleria, Franklin, TN",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 35.9572905,
+  "lon": -86.8135103,
+  "osm_type": "way",
+  "osm_id": 250775498,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Coolsprings Galleria, Galleria Boulevard, Coolsprings Crossing, Cool Springs, Franklin, Williamson County, Middle Tennessee, Tennessee, 37067, United States"
+ },
+ "bbox": [
+  -86.84036680549639,
+  35.93555136956522,
+  -86.78665379450362,
+  35.97902963043478
+ ],
+ "pattern": "(?i)^(Super)?Target$",
+ "fetched": "2026-10-09T17:51:51.991095+00:00",
+ "rows": [
+  {
+   "id": "c9d49cd2-b247-4169-98ae-511297ec005d",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/cool-springs/695"
+   ],
+   "phones": [
+    "+16157712093"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "1701 Galleria Blvd Franklin, TN 37067",
+   "locality": "Franklin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -86.81272888183594,
+   "lat": 35.96600341796875
+  }
+ ]
+}

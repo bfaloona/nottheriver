@@ -1,0 +1,105 @@
+{
+ "place": "Norristown, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.1146022,
+  "lon": -75.3446458,
+  "osm_type": "relation",
+  "osm_id": 187789,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Norristown, Montgomery County, Pennsylvania, 19401, United States"
+ },
+ "bbox": [
+  -75.46782593672312,
+  40.020399301449274,
+  -75.22146566327687,
+  40.20880509855073
+ ],
+ "pattern": "(?i)^Walmart( Supercenter| Neighborhood Market)?$",
+ "fetched": "2026-10-09T17:51:40.093870+00:00",
+ "rows": [
+  {
+   "id": "dd790fa2-b494-4670-9c7a-771596ee7413",
+   "name": "Walmart",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9460802674293518,
+   "websites": [
+    "https://www.walmart.com/store/3475"
+   ],
+   "phones": [
+    "+16106316750"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "650 S Trooper Rd",
+   "locality": "West Norriton Twp",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 14,
+   "lon": -75.40181732177734,
+   "lat": 40.12740707397461
+  },
+  {
+   "id": "25afb596-9c3d-4426-8469-f1737bad7da3",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "http://www.walmart.com/store/4687-king-of-prussia-pa"
+   ],
+   "phones": [
+    "6107680530"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "275 N Gulph Rd",
+   "locality": "King Of Prussia",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2023-05-10T00:48:58.870Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -75.39881134033203,
+   "lat": 40.084014892578125
+  },
+  {
+   "id": "172f9e4c-7ef0-4fdf-9e12-e7a73cebe3b5",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    ""
+   ],
+   "phones": [
+    "6102750222"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "53 W Germantown Pike",
+   "locality": "Norristown",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2015-05-15T09:04:08.367Z",
+   "operating_status": "open",
+   "version": 6,
+   "lon": -75.31493377685547,
+   "lat": 40.14491653442383
+  }
+ ]
+}

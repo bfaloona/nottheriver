@@ -1,0 +1,80 @@
+{
+ "place": "Galleria Edina, Edina, MN",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.877525,
+  "lon": -93.3223514,
+  "osm_type": "way",
+  "osm_id": 241579915,
+  "category": "building",
+  "type": "hotel",
+  "display_name": "Westin Edina Galleria, 3201, West 69th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+ },
+ "bbox": [
+  -93.35302966561888,
+  44.85578586956522,
+  -93.29167313438113,
+  44.89926413043478
+ ],
+ "pattern": "(?i)^Barnes (&|and) Noble|^Crate (&|and) Barrel$|^Pottery Barn$",
+ "fetched": "2026-10-09T17:51:57.178344+00:00",
+ "rows": [
+  {
+   "id": "6f96a850-e39f-441a-af90-6cc06a877749",
+   "name": "Barnes & Noble",
+   "basic_category": "books_music_and_video_store",
+   "taxonomy_primary": "bookstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "books_music_and_video_store",
+    "bookstore"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://store-locator.barnesandnoble.com/store/3301"
+   ],
+   "phones": [
+    "+19529202124"
+   ],
+   "brand": "Barnes & Noble",
+   "brand_wikidata": null,
+   "address": "3230 Galleria",
+   "locality": "Edina",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.32366180419922,
+   "lat": 44.87737274169922
+  },
+  {
+   "id": "dd07f1ca-2058-4c86-91cb-6535d3e756fa",
+   "name": "Crate & Barrel",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "furniture_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "furniture_store"
+   ],
+   "confidence": 0.9995897564396262,
+   "websites": null,
+   "phones": [
+    "19529202300"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "3503 Galleria",
+   "locality": "Edina",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -93.32632446289062,
+   "lat": 44.87757110595703
+  }
+ ]
+}

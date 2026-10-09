@@ -1,0 +1,52 @@
+{
+ "place": "Kyle, TX",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 29.9892816,
+  "lon": -97.877174,
+  "osm_type": "relation",
+  "osm_id": 113301,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Kyle, Hays County, Texas, 78640, United States"
+ },
+ "bbox": [
+  -97.98593839240161,
+  29.895078701449275,
+  -97.76840960759839,
+  30.083484498550728
+ ],
+ "pattern": "(?i)^(Super)?Target$",
+ "fetched": "2026-10-09T17:51:46.210173+00:00",
+ "rows": [
+  {
+   "id": "9644ea14-67f4-444e-b000-797a070a3bb4",
+   "name": "Target Grocery",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9427847266197205,
+   "websites": [
+    "https://www.target.com/sl/kyle/2725"
+   ],
+   "phones": [
+    "+15122687550"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "5188 Kyle Centre Dr",
+   "locality": "Kyle",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -97.86433410644531,
+   "lat": 30.01103973388672
+  }
+ ]
+}

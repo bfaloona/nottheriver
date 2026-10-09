@@ -1,0 +1,53 @@
+{
+ "place": "Plymouth Meeting, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.102332,
+  "lon": -75.2743467,
+  "osm_type": "node",
+  "osm_id": 158303535,
+  "category": "place",
+  "type": "locality",
+  "display_name": "Plymouth Meeting, Harmonville, Whitemarsh Township, Montgomery County, Pennsylvania, 19462, United States"
+ },
+ "bbox": [
+  -75.39750461830171,
+  40.00812910144927,
+  -75.15118878169828,
+  40.19653489855072
+ ],
+ "pattern": "(?i)^REI( Co-op)?$",
+ "fetched": "2026-10-09T17:51:39.178246+00:00",
+ "rows": [
+  {
+   "id": "32f62475-941e-4ca1-8184-a6cb72df58b9",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9999938823282719,
+   "websites": [
+    "https://www.rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+16109400809"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "200 Ridge Pike Ste 115",
+   "locality": "Plymouth Twp",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 15,
+   "lon": -75.28775024414062,
+   "lat": 40.09584045410156
+  }
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "place": "San Francisco, CA",
+ "release": "2026-09-23.1",
+ "radius_mi": 7.5,
+ "center": {
+  "lat": 37.7879363,
+  "lon": -122.4075201,
+  "osm_type": "relation",
+  "osm_id": 111968,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "San Francisco, California, United States"
+ },
+ "bbox": [
+  -122.54506008085289,
+  37.679240647826084,
+  -122.2699801191471,
+  37.89663195217391
+ ],
+ "pattern": "(?i)^Sports Basement|^Dandelion|^REI( Co-op)?$|^Lowe'?s( Home Improvement)?$",
+ "fetched": "2026-10-09T17:51:47.945003+00:00",
+ "rows": [
+  {
+   "id": "9f8ab1e3-a896-4342-87ee-796a917e9f05",
+   "name": "Sports Basement",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://shop.sportsbasement.com/"
+   ],
+   "phones": [
+    "+14159342922"
+   ],
+   "brand": "Sports Basement",
+   "brand_wikidata": null,
+   "address": "3251 20th Ave Ste 390",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -122.47728729248047,
+   "lat": 37.72923278808594
+  },
+  {
+   "id": "cd7728f8-7b79-482f-8b2b-b23edbd8234c",
+   "name": "Lowe's",
+   "basic_category": "home_service",
+   "taxonomy_primary": "air_duct_cleaning_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "home_service",
+    "air_duct_cleaning_service"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://lowesair.com/california/san-francisco/"
+   ],
+   "phones": [
+    "4158586633"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1315 23rd Ave Ste 203",
+   "locality": "San Francisco",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-06-15T06:43:46.780Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -122.48140716552734,
+   "lat": 37.76314163208008
+  },
+  {
+   "id": "13bc3ebf-dedf-47eb-8d94-e50703b64e99",
+   "name": "Dandelion Chocolate",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "chocolatier",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "candy_store",
+    "chocolatier"
+   ],
+   "confidence": 0.9783961176872253,
+   "websites": [
+    "http://www.dandelionchocolate.com/visit/#valencia"
+   ],
+   "phones": [
+    "+14153490942"
+   ],
+   "brand": "Dandelion Chocolate",
+   "brand_wikidata": null,
+   "address": "740 Valencia St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -122.42166900634766,
+   "lat": 37.76102066040039
+  },
+  {
+   "id": "808affa4-3565-48d8-847d-88256a12d321",
+   "name": "Dandelion Dancetheater",
+   "basic_category": "event_or_party_service",
+   "taxonomy_primary": "musician",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "event_or_party_service",
+    "musician"
+   ],
+   "confidence": 0.55,
+   "websites": [
+    "https://www.dandeliondancetheater.org"
+   ],
+   "phones": [
+    "+14158060013"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2050 Bryant St",
+   "locality": "San Francisco",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 1,
+   "lon": -122.41057586669922,
+   "lat": 37.76131820678711
+  },
+  {
+   "id": "df590fe8-fa7d-4a6f-ae6f-1a04fa50735c",
+   "name": "Lowe's Home Improvement",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_improvement_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_improvement_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.lowes.com/store/CA-San-Francisco/3095?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-fb-_-3095-_-na-_-0-_-0&y_source=1_MTE4MzMwNS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14154868611"
+   ],
+   "brand": "Lowe's Home Improvement",
+   "brand_wikidata": null,
+   "address": "491 Bayshore Blvd",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -122.4051284790039,
+   "lat": 37.73963165283203
+  },
+  {
+   "id": "20a72cd8-3d52-4c41-b4d2-4c17e0d2c869",
+   "name": "Dandelion Chocolate",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "chocolatier",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "candy_store",
+    "chocolatier"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "http://www.dandelionchocolate.com/visit/#16thstreet"
+   ],
+   "phones": [
+    "+14153490942"
+   ],
+   "brand": "Dandelion Chocolate",
+   "brand_wikidata": null,
+   "address": "2600 16th St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.41290283203125,
+   "lat": 37.76567840576172
+  },
+  {
+   "id": "e34f6c48-296e-4f66-8918-bbdc652785d8",
+   "name": "Dandelion Chocolate Real Estate",
+   "basic_category": "real_estate_service",
+   "taxonomy_primary": "real_estate_agent",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "real_estate_service",
+    "real_estate_agent"
+   ],
+   "confidence": 0.77,
+   "websites": [
+    "http://www.dandelionchocolate.com"
+   ],
+   "phones": [
+    "(415) 801-5560"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "298 Alabama St",
+   "locality": "San Francisco",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2025-08-22T00:00:00.000",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -122.41272735595703,
+   "lat": 37.76580047607422
+  },
+  {
+   "id": "12a9dd9b-aaf3-43aa-8eb6-be1a03680e70",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/san-francisco?y_source=1_MTQ1MzQ4NS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14159341938"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "840 Brannan St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.40457916259766,
+   "lat": 37.772491455078125
+  },
+  {
+   "id": "3e8f69c6-038a-477e-a628-c3e96c6dbd6e",
+   "name": "Sports basement garage",
+   "basic_category": "sport_league",
+   "taxonomy_primary": "sport_league",
+   "taxonomy_hierarchy": [
+    "sports_and_recreation",
+    "sport_league"
+   ],
+   "confidence": 0.11321533471345901,
+   "websites": null,
+   "phones": [
+    "+923007798475"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1590 Bryant St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 1,
+   "lon": -122.41162109375,
+   "lat": 37.76704025268555
+  },
+  {
+   "id": "e01f45ae-7362-4314-899d-f7009b6cbfbd",
+   "name": "Sports Basement",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "bike_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "bike_store"
+   ],
+   "confidence": 0.9682165384292603,
+   "websites": [
+    "http://sportsbasement.com/"
+   ],
+   "phones": [
+    "+14155753001"
+   ],
+   "brand": "Sports Basement",
+   "brand_wikidata": null,
+   "address": "1590 Bryant St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.41114807128906,
+   "lat": 37.76715087890625
+  },
+  {
+   "id": "24455a12-e968-4f1f-8f56-58bf7613fc8b",
+   "name": "Sports Basement Outdoors",
+   "basic_category": "corporate_or_business_office",
+   "taxonomy_primary": "travel_company",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "corporate_or_business_office",
+    "travel_company"
+   ],
+   "confidence": 0.42584508657455444,
+   "websites": [
+    "http://www.tahoeskibus.com/"
+   ],
+   "phones": [
+    "+18008696670"
+   ],
+   "brand": "Sports Basement Outdoors",
+   "brand_wikidata": null,
+   "address": "653 Old Mason St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 3,
+   "lon": -122.45783233642578,
+   "lat": 37.803340911865234
+  },
+  {
+   "id": "792dadeb-2d1a-4be3-bf53-36f7cd7da9cb",
+   "name": "Sports Basement Presidio",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://sportsbasement.com/"
+   ],
+   "phones": [
+    "+14159342900"
+   ],
+   "brand": "Sports Basement",
+   "brand_wikidata": null,
+   "address": "610 Old Mason St",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.45919036865234,
+   "lat": 37.802879333496094
+  },
+  {
+   "id": "c79cc232-1b08-4a1a-9c4b-39f42008be46",
+   "name": "Dandelion Chocolate",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "chocolatier",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "candy_store",
+    "chocolatier"
+   ],
+   "confidence": 0.77,
+   "websites": [
+    "http://dandelionchocolate.com"
+   ],
+   "phones": [
+    "(415) 349-0942"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": null,
+   "locality": "San Francisco",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2026-04-09T00:00:00.000",
+   "operating_status": null,
+   "version": 4,
+   "lon": -122.4341812133789,
+   "lat": 37.7891845703125
+  },
+  {
+   "id": "f8b5ab98-b401-461e-90b9-e0d8eed3b311",
+   "name": "Sports Basement - SF Presidio",
+   "basic_category": null,
+   "taxonomy_primary": null,
+   "taxonomy_hierarchy": null,
+   "confidence": 0.85,
+   "websites": [
+    ""
+   ],
+   "phones": [
+    "4154370100"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "610 Old Mason St",
+   "locality": "San Francisco",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-07-24T21:23:44.677Z",
+   "operating_status": null,
+   "version": 2,
+   "lon": -122.41011047363281,
+   "lat": 37.78923416137695
+  },
+  {
+   "id": "756788d7-a1fd-4820-98b5-56377dba3614",
+   "name": "Sports Basement",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.sportsbasement.com"
+   ],
+   "phones": [
+    "(415) 553-4524"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1301 6th St Ste H",
+   "locality": "San Francisco",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2025-06-11T00:00:00.000",
+   "operating_status": "open",
+   "version": 4,
+   "lon": -122.39337921142578,
+   "lat": 37.76812744140625
+  },
+  {
+   "id": "80401e66-3b43-4de0-a16a-3445ca1d63f1",
+   "name": "Dandelion Chocolate",
+   "basic_category": "casual_eatery",
+   "taxonomy_primary": "chocolatier",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "casual_eatery",
+    "candy_store",
+    "chocolatier"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.dandelionchocolate.com/visit/#ferrybuilding"
+   ],
+   "phones": [
+    "+14153490942"
+   ],
+   "brand": "Dandelion Chocolate",
+   "brand_wikidata": null,
+   "address": "1 Ferry Building Shop 14",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -122.39380645751953,
+   "lat": 37.7957878112793
+  },
+  {
+   "id": "31aa0102-c132-45e5-8bb4-868f7a81c159",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/berkeley?y_source=1_MTQ1MzM3OS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+15105274140"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "1338 San Pablo Ave",
+   "locality": "Berkeley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -122.29615020751953,
+   "lat": 37.87911605834961
+  },
+  {
+   "id": "4e0e2ed1-a94d-4483-a815-9e943403be61",
+   "name": "Dandelion Kitchen",
+   "basic_category": "social_or_community_service",
+   "taxonomy_primary": "social_or_community_service",
+   "taxonomy_hierarchy": [
+    "community_and_government",
+    "social_or_community_service"
+   ],
+   "confidence": 0.2651938498020172,
+   "websites": [
+    "http://www.dandelionkitchen.org/"
+   ],
+   "phones": null,
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1345 8th St",
+   "locality": "Berkeley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-08-24T00:00:00.000Z",
+   "operating_status": null,
+   "version": 1,
+   "lon": -122.2985610961914,
+   "lat": 37.878299713134766
+  },
+  {
+   "id": "ef59fd5c-e699-40de-9337-0fada967b714",
+   "name": "Dandelion Cooperative Nursery School",
+   "basic_category": "preschool",
+   "taxonomy_primary": "preschool",
+   "taxonomy_hierarchy": [
+    "education",
+    "place_of_learning",
+    "school",
+    "preschool"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://www.dandelionnurseryschool.org"
+   ],
+   "phones": [
+    "15105261735"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "941 The Alameda",
+   "locality": "Berkeley",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.276123046875,
+   "lat": 37.89059066772461
+  }
+ ]
+}

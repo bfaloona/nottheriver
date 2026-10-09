@@ -1,0 +1,78 @@
+{
+ "place": "789 Mission St, San Francisco, CA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 37.7846295,
+  "lon": -122.403758,
+  "osm_type": "node",
+  "osm_id": 2730487173,
+  "category": "shop",
+  "type": "department_store",
+  "display_name": "Target, 789, Mission Street, South of Market, Financial District, San Francisco, California, 94103, United States"
+ },
+ "bbox": [
+  -122.42209584355268,
+  37.770136746376814,
+  -122.38542015644731,
+  37.79912225362319
+ ],
+ "pattern": "(?i)^(Super)?Target$",
+ "fetched": "2026-10-09T17:51:48.256435+00:00",
+ "rows": [
+  {
+   "id": "ab16287d-f001-45db-bc38-c1c3337ed2b9",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.target.com/sl/san-francisco-central/2766"
+   ],
+   "phones": [
+    "+14153436272"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "789 Mission St San Francisco, CA 94103",
+   "locality": "San Francisco",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 14,
+   "lon": -122.40393829345703,
+   "lat": 37.78459548950195
+  },
+  {
+   "id": "b373d93b-37d6-42c6-a650-9280f4fda642",
+   "name": "Target",
+   "basic_category": "warehouse_club_store",
+   "taxonomy_primary": "warehouse_club_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "warehouse_club_store"
+   ],
+   "confidence": 0.9697523713111877,
+   "websites": [
+    "https://www.target.com/sl/san-francisco-cbd-east/3201"
+   ],
+   "phones": [
+    "4153650834"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "225 Bush St Ste 100",
+   "locality": "San Francisco",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2021-11-17T18:30:22.187Z",
+   "operating_status": null,
+   "version": 9,
+   "lon": -122.40086364746094,
+   "lat": 37.79106903076172
+  }
+ ]
+}

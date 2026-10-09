@@ -1,0 +1,52 @@
+{
+ "place": "Reading, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.335345,
+  "lon": -75.9279495,
+  "osm_type": "relation",
+  "osm_id": 188481,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Reading, Berks County, Pennsylvania, United States"
+ },
+ "bbox": [
+  -76.05153169373745,
+  40.24114210144927,
+  -75.80436730626255,
+  40.42954789855072
+ ],
+ "pattern": "(?i)^Dick'?s Sporting Goods$",
+ "fetched": "2026-10-09T17:51:43.352069+00:00",
+ "rows": [
+  {
+   "id": "c97d0cb3-dfe2-4576-8241-b47203b8419b",
+   "name": "Dick's Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9891512393951416,
+   "websites": [
+    "https://stores.dickssportinggoods.com/pa/reading/23/"
+   ],
+   "phones": [
+    "+16103737366"
+   ],
+   "brand": "DICK'S Sporting Goods",
+   "brand_wikidata": null,
+   "address": "2767 Papermill Rd",
+   "locality": "Reading",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -75.98286437988281,
+   "lat": 40.359336853027344
+  }
+ ]
+}

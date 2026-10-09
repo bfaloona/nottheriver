@@ -1,0 +1,193 @@
+{
+ "place": "Atlanta, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 10.5,
+ "center": {
+  "lat": 33.7544657,
+  "lon": -84.3898151,
+  "osm_type": "relation",
+  "osm_id": 119557,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Atlanta, Fulton County, Georgia, United States"
+ },
+ "bbox": [
+  -84.57284264144558,
+  33.60229178695652,
+  -84.20678755855444,
+  33.906639613043474
+ ],
+ "pattern": "(?i)^REI( Co-op)?$|^Petite Violette|^Trader Joe'?s$",
+ "fetched": "2026-10-09T17:51:54.340520+00:00",
+ "rows": [
+  {
+   "id": "99523637-f064-442a-b314-790cdf50ad11",
+   "name": "Trader Joe's",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "specialty_foods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "specialty_foods_store"
+   ],
+   "confidence": 0.9999980352917314,
+   "websites": [
+    "https://locations.traderjoes.com/ga/atlanta/730/"
+   ],
+   "phones": [
+    "+14048159210"
+   ],
+   "brand": "Trader Joe's",
+   "brand_wikidata": null,
+   "address": "931 Monroe Dr",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -84.36779022216797,
+   "lat": 33.77971267700195
+  },
+  {
+   "id": "9e0f0e4f-7e13-43f4-84bf-effc11ce7768",
+   "name": "Trader Joe's",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://locations.traderjoes.com/ga/atlanta/735/"
+   ],
+   "phones": [
+    "+14048420907"
+   ],
+   "brand": "Trader Joe's",
+   "brand_wikidata": null,
+   "address": "3183 Peachtree Rd",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -84.3749771118164,
+   "lat": 33.84088897705078
+  },
+  {
+   "id": "5f6a4eea-4aa3-4000-97ff-9015059f8458",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/atlanta?y_source=1_MTQ1MzQwMS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14046336508"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "1800 NE Expy NE",
+   "locality": "Brookhaven",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -84.3214340209961,
+   "lat": 33.840030670166016
+  },
+  {
+   "id": "6e1d7ac0-be60-4e93-8161-8b01c97bdd45",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.85,
+   "websites": [
+    "http://www.rei.com/stores/atlanta.html?utm_source=bing&utm_medium=local&utm_campaign=localmaps&utm_content=33"
+   ],
+   "phones": [
+    "4046336508"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1800 N E Expy",
+   "locality": "Atlanta",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2013-05-22T17:14:06.323Z",
+   "operating_status": null,
+   "version": 5,
+   "lon": -84.31380462646484,
+   "lat": 33.84181213378906
+  },
+  {
+   "id": "863fb325-08d9-4dd3-9742-3c2f4b708d7b",
+   "name": "Petite Violette",
+   "basic_category": "restaurant",
+   "taxonomy_primary": "french_restaurant",
+   "taxonomy_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "european_restaurant",
+    "western_european_restaurant",
+    "french_restaurant"
+   ],
+   "confidence": 0.9832858443260193,
+   "websites": [
+    "https://www.petitevioletterestaurant.com/mystery-dinner-theater"
+   ],
+   "phones": [
+    "+14046346268"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2948 Clairmont Rd NE",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -84.3151626586914,
+   "lat": 33.843482971191406
+  },
+  {
+   "id": "15196ac6-0186-4f84-b6c0-0b05c5a485dd",
+   "name": "Trader Joe's",
+   "basic_category": "shopping",
+   "taxonomy_primary": "shopping",
+   "taxonomy_hierarchy": [
+    "shopping"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://locations.traderjoes.com/ga/sandy-springs/799/"
+   ],
+   "phones": [
+    "7706787294"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "4600 Roswell Rd",
+   "locality": "Sandy Springs",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-10-05T03:27:30.880Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -84.381591796875,
+   "lat": 33.87968826293945
+  }
+ ]
+}

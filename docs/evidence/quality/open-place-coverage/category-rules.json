@@ -1,0 +1,321 @@
+{
+ "about": "Rule from a search's product category (eval/queries.json `category`) to the place tags that let a classifier say 'plausibly sells it' from the tag alone. `yes`: the tag names a shop type that stocks the product as a matter of course. `weak`: a general merchant that may stock it (department, variety, discount, supermarket, drugstore, farm store). Anything else, or no shop/amenity/craft tag at all, is `no`. OSM entries are `key=value` over shop, amenity and craft; Overture entries are matched against any element of taxonomy.hierarchy (which includes taxonomy.primary) and against basic_category. The Overture lists were aligned to the vocabulary seen in the raw Overture rows (basic_category and taxonomy.primary values) before the match step ran; see README.md.",
+ "osm_weak_all": [
+  "shop=department_store",
+  "shop=variety_store",
+  "shop=general",
+  "shop=discount",
+  "shop=wholesale",
+  "shop=mall"
+ ],
+ "overture_weak_all": [
+  "department_store",
+  "discount_store",
+  "variety_store",
+  "general_store",
+  "big_box_store",
+  "superstore",
+  "warehouse_club_store",
+  "wholesale_store",
+  "shopping_center",
+  "shopping_mall",
+  "outlet_store"
+ ],
+ "categories": {
+  "kitchen": {
+   "products": [
+    "cast iron skillet"
+   ],
+   "osm_yes": [
+    "shop=houseware",
+    "shop=kitchen",
+    "shop=doityourself",
+    "shop=hardware",
+    "shop=interior_decoration",
+    "shop=cookware"
+   ],
+   "osm_weak": [
+    "shop=supermarket"
+   ],
+   "overture_yes": [
+    "kitchen_supply_store",
+    "kitchen_and_bath_store",
+    "cookware_store",
+    "home_goods_store",
+    "hardware_store",
+    "home_improvement_store",
+    "do_it_yourself_store",
+    "hardware_home_and_garden_store",
+    "furniture_store"
+   ],
+   "overture_weak": [
+    "grocery_store",
+    "supermarket"
+   ]
+  },
+  "outdoor": {
+   "products": [
+    "camping tent",
+    "headlamp"
+   ],
+   "osm_yes": [
+    "shop=outdoor",
+    "shop=sports",
+    "shop=hunting",
+    "shop=fishing",
+    "shop=hardware",
+    "shop=doityourself"
+   ],
+   "osm_weak": [
+    "shop=supermarket"
+   ],
+   "overture_yes": [
+    "outdoor_store",
+    "sporting_goods_store",
+    "camping_store",
+    "hunting_and_fishing_store",
+    "hardware_store",
+    "home_improvement_store",
+    "do_it_yourself_store",
+    "hardware_home_and_garden_store"
+   ],
+   "overture_weak": [
+    "grocery_store",
+    "supermarket"
+   ]
+  },
+  "clothing": {
+   "products": [
+    "wool socks",
+    "rain jacket"
+   ],
+   "osm_yes": [
+    "shop=clothes",
+    "shop=outdoor",
+    "shop=sports",
+    "shop=shoes",
+    "shop=fashion",
+    "shop=boutique"
+   ],
+   "osm_weak": [],
+   "overture_yes": [
+    "clothing_store",
+    "fashion_and_apparel_store",
+    "fashion_boutique",
+    "outdoor_store",
+    "sporting_goods_store",
+    "shoe_store"
+   ],
+   "overture_weak": []
+  },
+  "hardware": {
+   "products": [
+    "cordless drill",
+    "LED light bulbs"
+   ],
+   "osm_yes": [
+    "shop=hardware",
+    "shop=doityourself",
+    "shop=electrical",
+    "shop=lighting",
+    "shop=trade",
+    "shop=tool_hire",
+    "shop=farm",
+    "shop=agrarian",
+    "shop=country_store"
+   ],
+   "osm_weak": [
+    "shop=supermarket",
+    "shop=chemist",
+    "amenity=pharmacy"
+   ],
+   "overture_yes": [
+    "hardware_store",
+    "home_improvement_store",
+    "do_it_yourself_store",
+    "hardware_home_and_garden_store",
+    "electrical_supply_store",
+    "electrical_supplier",
+    "lighting_store",
+    "tool_store",
+    "farm_and_ranch_supply_store",
+    "farm_supply_store",
+    "building_supply_store"
+   ],
+   "overture_weak": [
+    "grocery_store",
+    "food_and_beverage_store",
+    "pharmacy",
+    "pharmacy_and_drug_store"
+   ]
+  },
+  "grocery": {
+   "products": [
+    "loose leaf green tea",
+    "extra virgin olive oil",
+    "dark chocolate bar"
+   ],
+   "osm_yes": [
+    "shop=supermarket",
+    "shop=convenience",
+    "shop=tea",
+    "shop=coffee",
+    "shop=deli",
+    "shop=chocolate",
+    "shop=confectionery",
+    "shop=greengrocer",
+    "shop=health_food",
+    "shop=food",
+    "shop=pastry",
+    "shop=grocery",
+    "shop=organic",
+    "shop=farm"
+   ],
+   "osm_weak": [
+    "shop=chemist",
+    "amenity=pharmacy",
+    "amenity=cafe",
+    "amenity=restaurant"
+   ],
+   "overture_yes": [
+    "grocery_store",
+    "food_and_beverage_store",
+    "supermarket",
+    "convenience_store",
+    "tea_store",
+    "coffee_shop",
+    "chocolatier",
+    "chocolate_shop",
+    "candy_store",
+    "deli",
+    "health_food_store",
+    "specialty_foods_store",
+    "specialty_food_store",
+    "gourmet_food_store",
+    "olive_oil_store",
+    "bakery"
+   ],
+   "overture_weak": [
+    "pharmacy",
+    "pharmacy_and_drug_store",
+    "cafe",
+    "restaurant"
+   ]
+  },
+  "books_toys": {
+   "products": [
+    "jigsaw puzzle",
+    "wooden train set"
+   ],
+   "osm_yes": [
+    "shop=toys",
+    "shop=books",
+    "shop=games",
+    "shop=hobby",
+    "shop=stationery"
+   ],
+   "osm_weak": [
+    "shop=gift",
+    "shop=educational"
+   ],
+   "overture_yes": [
+    "toy_store",
+    "toys_and_games_store",
+    "bookstore",
+    "books_music_and_video_store",
+    "game_store",
+    "hobby_shop",
+    "hobby_store",
+    "stationery_store",
+    "educational_supply_store"
+   ],
+   "overture_weak": [
+    "gift_shop",
+    "flowers_and_gifts_store",
+    "museum",
+    "art_museum"
+   ]
+  },
+  "electronics_accessories": {
+   "products": [
+    "USB-C charging cable",
+    "rechargeable AA batteries"
+   ],
+   "osm_yes": [
+    "shop=electronics",
+    "shop=mobile_phone",
+    "shop=computer",
+    "shop=hardware",
+    "shop=doityourself",
+    "shop=hifi",
+    "shop=telecommunication"
+   ],
+   "osm_weak": [
+    "shop=supermarket",
+    "shop=chemist",
+    "amenity=pharmacy",
+    "shop=convenience"
+   ],
+   "overture_yes": [
+    "electronics_store",
+    "mobile_phone_store",
+    "cell_phone_store",
+    "computer_store",
+    "hardware_store",
+    "home_improvement_store",
+    "do_it_yourself_store",
+    "hardware_home_and_garden_store",
+    "mobile_phone_accessories_store"
+   ],
+   "overture_weak": [
+    "grocery_store",
+    "food_and_beverage_store",
+    "pharmacy",
+    "pharmacy_and_drug_store",
+    "convenience_store"
+   ]
+  },
+  "home": {
+   "products": [
+    "wool blanket",
+    "bath towels"
+   ],
+   "osm_yes": [
+    "shop=interior_decoration",
+    "shop=houseware",
+    "shop=bed",
+    "shop=furniture",
+    "shop=fabric",
+    "shop=bathroom_furnishing",
+    "shop=textiles",
+    "shop=curtain"
+   ],
+   "osm_weak": [
+    "shop=clothes",
+    "shop=outdoor",
+    "shop=farm",
+    "shop=agrarian",
+    "shop=country_store",
+    "shop=sports"
+   ],
+   "overture_yes": [
+    "home_goods_store",
+    "home_decor_store",
+    "furniture_store",
+    "bedding_store",
+    "bed_and_bath_store",
+    "linens_store",
+    "fabric_store",
+    "hardware_home_and_garden_store"
+   ],
+   "overture_weak": [
+    "clothing_store",
+    "fashion_and_apparel_store",
+    "outdoor_store",
+    "farm_and_ranch_supply_store",
+    "farm_supply_store",
+    "sporting_goods_store"
+   ]
+  }
+ }
+}

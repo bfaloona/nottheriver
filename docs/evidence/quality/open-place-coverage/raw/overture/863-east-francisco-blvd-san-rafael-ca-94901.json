@@ -1,0 +1,53 @@
+{
+ "place": "863 East Francisco Blvd, San Rafael, CA 94901",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 37.9622188,
+  "lon": -122.5075359,
+  "osm_type": "node",
+  "osm_id": 13086739544,
+  "category": "shop",
+  "type": "hardware",
+  "display_name": "Harbor Freight Tools, 863, Francisco Boulevard East, Canal, San Rafael, Marin County, California, 94901, United States"
+ },
+ "bbox": [
+  -122.52591800215386,
+  37.947726046376815,
+  -122.48915379784613,
+  37.97671155362319
+ ],
+ "pattern": "(?i)^Harbor Freight( Tools)?$",
+ "fetched": "2026-10-09T17:51:49.039126+00:00",
+ "rows": [
+  {
+   "id": "0833c7c8-9022-4c8a-8dff-a8b80fbd0e30",
+   "name": "Harbor Freight Tools",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://go.harborfreight.com/store00386"
+   ],
+   "phones": [
+    "+14157210792"
+   ],
+   "brand": "Harbor Freight Tools",
+   "brand_wikidata": null,
+   "address": "863 Francisco Blvd E",
+   "locality": "San Rafael",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -122.50758361816406,
+   "lat": 37.96219253540039
+  }
+ ]
+}

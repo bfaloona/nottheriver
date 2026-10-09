@@ -1,0 +1,80 @@
+{
+ "place": "Brookline, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.332918,
+  "lon": -71.1187829,
+  "osm_type": "relation",
+  "osm_id": 2306361,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Brookline, Norfolk County, Massachusetts, United States"
+ },
+ "bbox": [
+  -71.24621424771055,
+  42.23871510144927,
+  -70.99135155228944,
+  42.427120898550726
+ ],
+ "pattern": "(?i)^Boston General Store",
+ "fetched": "2026-10-09T17:51:33.621327+00:00",
+ "rows": [
+  {
+   "id": "027a6549-ef6f-4562-a804-5c3b2ed92c3b",
+   "name": "Boston General Store",
+   "basic_category": "flowers_and_gifts_store",
+   "taxonomy_primary": "flowers_and_gifts_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "flowers_and_gifts_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.bostongeneralstore.com/"
+   ],
+   "phones": [
+    "+17813267560"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "626 High St",
+   "locality": "Dedham",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -71.1750259399414,
+   "lat": 42.24858856201172
+  },
+  {
+   "id": "8b243f5b-d563-4ad6-a33a-523b7b47e1f3",
+   "name": "Boston General Store",
+   "basic_category": "flowers_and_gifts_store",
+   "taxonomy_primary": "flowers_and_gifts_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "flowers_and_gifts_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.bostongeneralstore.com/"
+   ],
+   "phones": [
+    "+16172320103"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "313A Harvard St",
+   "locality": "Brookline",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.12289428710938,
+   "lat": 42.343265533447266
+  }
+ ]
+}

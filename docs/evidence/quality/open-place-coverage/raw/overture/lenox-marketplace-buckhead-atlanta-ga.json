@@ -1,0 +1,52 @@
+{
+ "place": "Lenox Marketplace, Buckhead, Atlanta, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 3.5,
+ "center": {
+  "lat": 33.8398137,
+  "lon": -84.3795589,
+  "osm_type": "node",
+  "osm_id": 154061351,
+  "category": "place",
+  "type": "suburb",
+  "display_name": "Buckhead, Atlanta, Fulton County, Georgia, 30305, United States"
+ },
+ "bbox": [
+  -84.44062894278558,
+  33.789089062318844,
+  -84.31848885721443,
+  33.89053833768116
+ ],
+ "pattern": "(?i)^Dick'?s Sporting Goods$",
+ "fetched": "2026-10-09T17:52:02.679232+00:00",
+ "rows": [
+  {
+   "id": "6b5074d1-8f76-4965-a399-f191f94326a2",
+   "name": "Dick's Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://stores.dickssportinggoods.com/ga/atlanta/418/"
+   ],
+   "phones": [
+    "+14042670200"
+   ],
+   "brand": "DICK'S Sporting Goods",
+   "brand_wikidata": null,
+   "address": "3535 Peachtree Rd",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -84.35989379882812,
+   "lat": 33.8529052734375
+  }
+ ]
+}

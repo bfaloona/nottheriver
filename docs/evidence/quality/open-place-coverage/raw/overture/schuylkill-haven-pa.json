@@ -1,0 +1,53 @@
+{
+ "place": "Schuylkill Haven, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6306464,
+  "lon": -76.171054,
+  "osm_type": "relation",
+  "osm_id": 187721,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Schuylkill Haven, Schuylkill County, Pennsylvania, 17972, United States"
+ },
+ "bbox": [
+  -76.29518106508831,
+  40.53644350144928,
+  -76.04692693491168,
+  40.72484929855073
+ ],
+ "pattern": "(?i)^Denney",
+ "fetched": "2026-10-09T17:51:49.919901+00:00",
+ "rows": [
+  {
+   "id": "75b0e23b-e1b2-4411-a686-84dca8c2c48c",
+   "name": "Denney Electric Supply",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.denneyelectricsupply.com"
+   ],
+   "phones": [
+    "+15703854412"
+   ],
+   "brand": "Denney Electric Supply",
+   "brand_wikidata": null,
+   "address": "375 Center Ave",
+   "locality": "Schuylkill Haven",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -76.17926788330078,
+   "lat": 40.637046813964844
+  }
+ ]
+}

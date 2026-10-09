@@ -1,0 +1,80 @@
+{
+ "place": "Norcross, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 33.9412127,
+  "lon": -84.2135309,
+  "osm_type": "relation",
+  "osm_id": 119593,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Norcross, Gwinnett County, Georgia, 30071, United States"
+ },
+ "bbox": [
+  -84.32708160209049,
+  33.847009801449275,
+  -84.0999801979095,
+  34.03541559855073
+ ],
+ "pattern": "(?i)^VSOP",
+ "fetched": "2026-10-09T17:51:59.450816+00:00",
+ "rows": [
+  {
+   "id": "6c823912-08f9-44e0-9f6f-84addab778b5",
+   "name": "VSOP Olive Oil & Vinegar Taproom",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.77,
+   "websites": [
+    "http://vsoptaproom.com"
+   ],
+   "phones": [
+    "(678) 795-2002"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "8400 Holcomb Bridge Rd",
+   "locality": "Alpharetta",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2025-08-22T00:00:00.000",
+   "operating_status": "open",
+   "version": 5,
+   "lon": -84.27091979980469,
+   "lat": 33.985572814941406
+  },
+  {
+   "id": "e0dc4fdc-8e4e-4c27-984e-b2cedb92abc5",
+   "name": "VSOP Olive Oil & Vinegar Taproom",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "specialty_foods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "specialty_foods_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://vsoptaproom.com/"
+   ],
+   "phones": [
+    "+16787952002"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "81 S Peachtree St",
+   "locality": "Norcross",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -84.21345520019531,
+   "lat": 33.94129943847656
+  }
+ ]
+}

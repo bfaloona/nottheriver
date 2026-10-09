@@ -1,0 +1,52 @@
+{
+ "place": "9600 S Interstate 35, Austin, TX",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 30.1604914,
+  "lon": -97.7944404,
+  "osm_type": "node",
+  "osm_id": 13118718279,
+  "category": "shop",
+  "type": "clothes",
+  "display_name": "Carter's, 9600, South Interstate 35, Austin, Travis County, Texas, 78748, United States"
+ },
+ "bbox": [
+  -97.81120236388041,
+  30.145998646376814,
+  -97.77767843611959,
+  30.17498415362319
+ ],
+ "pattern": "(?i)^Best Buy$",
+ "fetched": "2026-10-09T17:51:46.697117+00:00",
+ "rows": [
+  {
+   "id": "24c74a05-c370-4b86-889f-9293de33c77c",
+   "name": "Best Buy",
+   "basic_category": "electronics_store",
+   "taxonomy_primary": "electronics_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "electronics_store"
+   ],
+   "confidence": 0.9999716341349483,
+   "websites": [
+    "http://www.bestbuy.com/"
+   ],
+   "phones": [
+    "+15124373699"
+   ],
+   "brand": "Best Buy",
+   "brand_wikidata": null,
+   "address": "9600 S Interstate 35",
+   "locality": "Austin",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -97.79186248779297,
+   "lat": 30.159263610839844
+  }
+ ]
+}

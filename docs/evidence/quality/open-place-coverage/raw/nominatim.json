@@ -1,0 +1,842 @@
+{
+ "Brookline, MA": {
+  "queried": "Brookline, MA",
+  "used": "Brookline, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.332918,
+   "lon": -71.1187829,
+   "osm_type": "relation",
+   "osm_id": 2306361,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Brookline, Norfolk County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:38.841Z"
+ },
+ "Somerville, MA": {
+  "queried": "Somerville, MA",
+  "used": "Somerville, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.3875968,
+   "lon": -71.0994968,
+   "osm_type": "relation",
+   "osm_id": 1933746,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Somerville, Middlesex County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:40.208Z"
+ },
+ "Natick Mall, Natick, MA": {
+  "queried": "Natick Mall, Natick, MA",
+  "used": "Natick Mall, Natick, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.3017312,
+   "lon": -71.384253,
+   "osm_type": "way",
+   "osm_id": 336100152,
+   "category": "landuse",
+   "type": "retail",
+   "display_name": "Natick Mall, 1245, Natick, Middlesex County, Massachusetts, 01760, United States"
+  },
+  "fetched": "2026-10-09T17:27:41.435Z"
+ },
+ "Natick, MA": {
+  "queried": "Natick, MA",
+  "used": "Natick, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.2836393,
+   "lon": -71.346996,
+   "osm_type": "relation",
+   "osm_id": 1865757,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Natick, Middlesex County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:43.067Z"
+ },
+ "Framingham, MA": {
+  "queried": "Framingham, MA",
+  "used": "Framingham, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.2773177,
+   "lon": -71.4165905,
+   "osm_type": "relation",
+   "osm_id": 1863552,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Framingham, Middlesex County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:44.485Z"
+ },
+ "Acton, MA": {
+  "queried": "Acton, MA",
+  "used": "Acton, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.4850931,
+   "lon": -71.43284,
+   "osm_type": "relation",
+   "osm_id": 1832779,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Acton, Middlesex County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:45.775Z"
+ },
+ "Northampton, MA": {
+  "queried": "Northampton, MA",
+  "used": "Northampton, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.3178989,
+   "lon": -72.6311006,
+   "osm_type": "relation",
+   "osm_id": 1839161,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Northampton, Hampshire County, Massachusetts, United States"
+  },
+  "fetched": "2026-10-09T17:27:47.090Z"
+ },
+ "Hadley, MA": {
+  "queried": "Hadley, MA",
+  "used": "Hadley, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.3423259,
+   "lon": -72.5891221,
+   "osm_type": "relation",
+   "osm_id": 1839157,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Hadley, Hampshire County, Massachusetts, 01035, United States"
+  },
+  "fetched": "2026-10-09T17:27:48.845Z"
+ },
+ "Philadelphia, PA": {
+  "queried": "Philadelphia, PA",
+  "used": "Philadelphia, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 39.9527237,
+   "lon": -75.1635262,
+   "osm_type": "relation",
+   "osm_id": 188022,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Philadelphia, Philadelphia County, Pennsylvania, United States"
+  },
+  "fetched": "2026-10-09T17:27:50.099Z"
+ },
+ "Conshohocken, PA": {
+  "queried": "Conshohocken, PA",
+  "used": "Conshohocken, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.0738835,
+   "lon": -75.30625,
+   "osm_type": "relation",
+   "osm_id": 187776,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Conshohocken, Montgomery County, Pennsylvania, 19428, United States"
+  },
+  "fetched": "2026-10-09T17:27:51.557Z"
+ },
+ "Plymouth Meeting, PA": {
+  "queried": "Plymouth Meeting, PA",
+  "used": "Plymouth Meeting, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.102332,
+   "lon": -75.2743467,
+   "osm_type": "node",
+   "osm_id": 158303535,
+   "category": "place",
+   "type": "locality",
+   "display_name": "Plymouth Meeting, Harmonville, Whitemarsh Township, Montgomery County, Pennsylvania, 19462, United States"
+  },
+  "fetched": "2026-10-09T17:27:52.805Z"
+ },
+ "Plymouth Meeting Mall, Plymouth Meeting, PA": {
+  "queried": "Plymouth Meeting Mall, Plymouth Meeting, PA",
+  "used": "Plymouth Meeting Mall, Plymouth Meeting, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.115784,
+   "lon": -75.2827841,
+   "osm_type": "way",
+   "osm_id": 58745026,
+   "category": "shop",
+   "type": "mall",
+   "display_name": "Plymouth Meeting Mall, 500, West Germantown Pike, Plymouth Meeting Mall, Hickorytown, Plymouth Township, Montgomery County, Pennsylvania, 19462, United States"
+  },
+  "fetched": "2026-10-09T17:27:54.100Z"
+ },
+ "King of Prussia, PA": {
+  "queried": "King of Prussia, PA",
+  "used": "King of Prussia, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.0947625,
+   "lon": -75.3851334,
+   "osm_type": "relation",
+   "osm_id": 187769,
+   "category": "boundary",
+   "type": "census",
+   "display_name": "King of Prussia, Upper Merion Township, Montgomery County, Pennsylvania, 19406, United States"
+  },
+  "fetched": "2026-10-09T17:27:55.383Z"
+ },
+ "Norristown, PA": {
+  "queried": "Norristown, PA",
+  "used": "Norristown, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.1146022,
+   "lon": -75.3446458,
+   "osm_type": "relation",
+   "osm_id": 187789,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Norristown, Montgomery County, Pennsylvania, 19401, United States"
+  },
+  "fetched": "2026-10-09T17:27:56.991Z"
+ },
+ "100 Cabela Drive, Hamburg, PA": {
+  "queried": "100 Cabela Drive, Hamburg, PA",
+  "used": "100 Cabela Drive, Hamburg, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.5576934,
+   "lon": -76.0021434,
+   "osm_type": "way",
+   "osm_id": 485789140,
+   "category": "shop",
+   "type": "outdoor",
+   "display_name": "Cabela's, 100, Cabela Drive, West Hamburg, Hamburg, Berks County, Pennsylvania, 19526, United States"
+  },
+  "fetched": "2026-10-09T17:27:58.727Z"
+ },
+ "Hamburg, PA": {
+  "queried": "Hamburg, PA",
+  "used": "Hamburg, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.5553081,
+   "lon": -75.9824083,
+   "osm_type": "relation",
+   "osm_id": 188499,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Hamburg, Berks County, Pennsylvania, 19526, United States"
+  },
+  "fetched": "2026-10-09T17:28:00.339Z"
+ },
+ "Pottsville, PA": {
+  "queried": "Pottsville, PA",
+  "used": "Pottsville, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.6851324,
+   "lon": -76.1953701,
+   "osm_type": "relation",
+   "osm_id": 187735,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Pottsville, Schuylkill County, Pennsylvania, 17901, United States"
+  },
+  "fetched": "2026-10-09T17:28:01.964Z"
+ },
+ "Reading, PA": {
+  "queried": "Reading, PA",
+  "used": "Reading, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.335345,
+   "lon": -75.9279495,
+   "osm_type": "relation",
+   "osm_id": 188481,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Reading, Berks County, Pennsylvania, United States"
+  },
+  "fetched": "2026-10-09T17:28:03.364Z"
+ },
+ "Buckhead, Atlanta, GA": {
+  "queried": "Buckhead, Atlanta, GA",
+  "used": "Buckhead, Atlanta, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.8398137,
+   "lon": -84.3795589,
+   "osm_type": "node",
+   "osm_id": 154061351,
+   "category": "place",
+   "type": "suburb",
+   "display_name": "Buckhead, Atlanta, Fulton County, Georgia, 30305, United States"
+  },
+  "fetched": "2026-10-09T17:28:08.098Z"
+ },
+ "Little Five Points, Atlanta, GA": {
+  "queried": "Little Five Points, Atlanta, GA",
+  "used": "Little Five Points, Atlanta, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.7649773,
+   "lon": -84.3491749,
+   "osm_type": "node",
+   "osm_id": 2710191943,
+   "category": "place",
+   "type": "neighbourhood",
+   "display_name": "Little Five Points, Druid Hills, Atlanta, DeKalb County, Georgia, 30307, United States"
+  },
+  "fetched": "2026-10-09T17:28:09.985Z"
+ },
+ "Buda, TX": {
+  "queried": "Buda, TX",
+  "used": "Buda, TX",
+  "fallback": false,
+  "hit": {
+   "lat": 30.082475,
+   "lon": -97.8417144,
+   "osm_type": "relation",
+   "osm_id": 6586487,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Buda, Hays County, Texas, United States"
+  },
+  "fetched": "2026-10-09T17:28:11.618Z"
+ },
+ "Kyle, TX": {
+  "queried": "Kyle, TX",
+  "used": "Kyle, TX",
+  "fallback": false,
+  "hit": {
+   "lat": 29.9892816,
+   "lon": -97.877174,
+   "osm_type": "relation",
+   "osm_id": 113301,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Kyle, Hays County, Texas, 78640, United States"
+  },
+  "fetched": "2026-10-09T17:28:13.369Z"
+ },
+ "9600 S Interstate 35, Austin, TX": {
+  "queried": "9600 S Interstate 35, Austin, TX",
+  "used": "9600 S Interstate 35, Austin, TX",
+  "fallback": false,
+  "hit": {
+   "lat": 30.1604914,
+   "lon": -97.7944404,
+   "osm_type": "node",
+   "osm_id": 13118718279,
+   "category": "shop",
+   "type": "clothes",
+   "display_name": "Carter's, 9600, South Interstate 35, Austin, Travis County, Texas, 78748, United States"
+  },
+  "fetched": "2026-10-09T17:28:15.413Z"
+ },
+ "San Francisco, CA": {
+  "queried": "San Francisco, CA",
+  "used": "San Francisco, CA",
+  "fallback": false,
+  "hit": {
+   "lat": 37.7879363,
+   "lon": -122.4075201,
+   "osm_type": "relation",
+   "osm_id": 111968,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "San Francisco, California, United States"
+  },
+  "fetched": "2026-10-09T17:28:16.791Z"
+ },
+ "789 Mission St, San Francisco, CA": {
+  "queried": "789 Mission St, San Francisco, CA",
+  "used": "789 Mission St, San Francisco, CA",
+  "fallback": false,
+  "hit": {
+   "lat": 37.7846295,
+   "lon": -122.403758,
+   "osm_type": "node",
+   "osm_id": 2730487173,
+   "category": "shop",
+   "type": "department_store",
+   "display_name": "Target, 789, Mission Street, South of Market, Financial District, San Francisco, California, 94103, United States"
+  },
+  "fetched": "2026-10-09T17:28:18.691Z"
+ },
+ "863 East Francisco Blvd, San Rafael, CA 94901": {
+  "queried": "863 East Francisco Blvd, San Rafael, CA 94901",
+  "used": "863 East Francisco Blvd, San Rafael, CA 94901",
+  "fallback": false,
+  "hit": {
+   "lat": 37.9622188,
+   "lon": -122.5075359,
+   "osm_type": "node",
+   "osm_id": 13086739544,
+   "category": "shop",
+   "type": "hardware",
+   "display_name": "Harbor Freight Tools, 863, Francisco Boulevard East, Canal, San Rafael, Marin County, California, 94901, United States"
+  },
+  "fetched": "2026-10-09T17:28:20.226Z"
+ },
+ "Orwigsburg, PA": {
+  "queried": "Orwigsburg, PA",
+  "used": "Orwigsburg, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.6548566,
+   "lon": -76.1007318,
+   "osm_type": "relation",
+   "osm_id": 188913,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Orwigsburg, Schuylkill County, Pennsylvania, United States"
+  },
+  "fetched": "2026-10-09T17:28:21.442Z"
+ },
+ "Friedensburg, PA": {
+  "queried": "Friedensburg, PA",
+  "used": "Friedensburg, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.6071825,
+   "lon": -76.2298548,
+   "osm_type": "relation",
+   "osm_id": 189216,
+   "category": "boundary",
+   "type": "census",
+   "display_name": "Friedensburg, Wayne Township, Schuylkill County, Pennsylvania, 17933, United States"
+  },
+  "fetched": "2026-10-09T17:28:23.072Z"
+ },
+ "Schuylkill Haven, PA": {
+  "queried": "Schuylkill Haven, PA",
+  "used": "Schuylkill Haven, PA",
+  "fallback": false,
+  "hit": {
+   "lat": 40.6306464,
+   "lon": -76.171054,
+   "osm_type": "relation",
+   "osm_id": 187721,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Schuylkill Haven, Schuylkill County, Pennsylvania, 17972, United States"
+  },
+  "fetched": "2026-10-09T17:28:24.720Z"
+ },
+ "Brentwood, TN": {
+  "queried": "Brentwood, TN",
+  "used": "Brentwood, TN",
+  "fallback": false,
+  "hit": {
+   "lat": 36.0325687,
+   "lon": -86.7825235,
+   "osm_type": "relation",
+   "osm_id": 196062,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Brentwood, Williamson County, Middle Tennessee, Tennessee, United States"
+  },
+  "fetched": "2026-10-09T17:28:26.085Z"
+ },
+ "Nashville, TN": {
+  "queried": "Nashville, TN",
+  "used": "Nashville, TN",
+  "fallback": false,
+  "hit": {
+   "lat": 36.1622767,
+   "lon": -86.7742984,
+   "osm_type": "relation",
+   "osm_id": 197472,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Nashville, Davidson County, Middle Tennessee, Tennessee, United States"
+  },
+  "fetched": "2026-10-09T17:28:27.939Z"
+ },
+ "CoolSprings Galleria, Franklin, TN": {
+  "queried": "CoolSprings Galleria, Franklin, TN",
+  "used": "CoolSprings Galleria, Franklin, TN",
+  "fallback": false,
+  "hit": {
+   "lat": 35.9572905,
+   "lon": -86.8135103,
+   "osm_type": "way",
+   "osm_id": 250775498,
+   "category": "shop",
+   "type": "mall",
+   "display_name": "Coolsprings Galleria, Galleria Boulevard, Coolsprings Crossing, Cool Springs, Franklin, Williamson County, Middle Tennessee, Tennessee, 37067, United States"
+  },
+  "fetched": "2026-10-09T17:28:29.176Z"
+ },
+ "St. Louis Park, MN": {
+  "queried": "St. Louis Park, MN",
+  "used": "St. Louis Park, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.9475726,
+   "lon": -93.3569023,
+   "osm_type": "relation",
+   "osm_id": 136701,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Saint Louis Park, Hennepin County, Minnesota, United States"
+  },
+  "fetched": "2026-10-09T17:28:30.490Z"
+ },
+ "Knollwood Mall, St. Louis Park, MN": {
+  "queried": "Knollwood Mall, St. Louis Park, MN",
+  "used": "Knollwood Mall, St. Louis Park, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.9378561,
+   "lon": -93.3859653,
+   "osm_type": "way",
+   "osm_id": 40541021,
+   "category": "shop",
+   "type": "mall",
+   "display_name": "Knollwood Mall, 36th Street West, Aquila, Saint Louis Park, Hennepin County, Minnesota, 55426, United States"
+  },
+  "fetched": "2026-10-09T17:28:32.238Z"
+ },
+ "Atlanta, GA": {
+  "queried": "Atlanta, GA",
+  "used": "Atlanta, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.7544657,
+   "lon": -84.3898151,
+   "osm_type": "relation",
+   "osm_id": 119557,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Atlanta, Fulton County, Georgia, United States"
+  },
+  "fetched": "2026-10-09T17:28:33.363Z"
+ },
+ "Thompson's Station, TN": {
+  "queried": "Thompson's Station, TN",
+  "used": "Thompson's Station, TN",
+  "fallback": false,
+  "hit": {
+   "lat": 35.802011,
+   "lon": -86.9113908,
+   "osm_type": "relation",
+   "osm_id": 196051,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Thompson's Station, Williamson County, Middle Tennessee, Tennessee, 37179, United States"
+  },
+  "fetched": "2026-10-09T17:28:34.973Z"
+ },
+ "5211 Hickory Hollow Pkwy, Antioch, TN 37013": {
+  "queried": "5211 Hickory Hollow Pkwy, Antioch, TN 37013",
+  "used": "5211 Hickory Hollow Pkwy, Antioch, TN 37013",
+  "fallback": false,
+  "hit": {
+   "lat": 36.0485773,
+   "lon": -86.6608346,
+   "osm_type": "way",
+   "osm_id": 19464527,
+   "category": "place",
+   "type": "house",
+   "display_name": "5211, Hickory Hollow Parkway, Antioch, Nashville, Davidson County, Middle Tennessee, Tennessee, 37013, United States"
+  },
+  "fetched": "2026-10-09T17:28:36.715Z"
+ },
+ "Minneapolis, MN": {
+  "queried": "Minneapolis, MN",
+  "used": "Minneapolis, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.9772995,
+   "lon": -93.2654692,
+   "osm_type": "relation",
+   "osm_id": 136712,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Minneapolis, Hennepin County, Minnesota, United States"
+  },
+  "fetched": "2026-10-09T17:28:38.757Z"
+ },
+ "Minneapolis Institute of Art, Minneapolis, MN": {
+  "queried": "Minneapolis Institute of Art, Minneapolis, MN",
+  "used": "Minneapolis Institute of Art, Minneapolis, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.9584761,
+   "lon": -93.2741528,
+   "osm_type": "way",
+   "osm_id": 38898412,
+   "category": "tourism",
+   "type": "museum",
+   "display_name": "Minneapolis Institute of Art, 2400, 3rd Avenue South, Whittier, Eat Street, Powderhorn, Minneapolis, Hennepin County, Minnesota, 55404, United States"
+  },
+  "fetched": "2026-10-09T17:28:40.387Z"
+ },
+ "Southdale Center, Edina, MN": {
+  "queried": "Southdale Center, Edina, MN",
+  "used": "Southdale Center, Edina, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.8840496,
+   "lon": -93.3242685,
+   "osm_type": "way",
+   "osm_id": 52868480,
+   "category": "building",
+   "type": "yes",
+   "display_name": "Southdale Center, 3400, West 66th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+  },
+  "fetched": "2026-10-09T17:28:41.974Z"
+ },
+ "Galleria Edina, Edina, MN": {
+  "queried": "Galleria Edina, Edina, MN",
+  "used": "Galleria Edina, Edina, MN",
+  "fallback": false,
+  "hit": {
+   "lat": 44.877525,
+   "lon": -93.3223514,
+   "osm_type": "way",
+   "osm_id": 241579915,
+   "category": "building",
+   "type": "hotel",
+   "display_name": "Westin Edina Galleria, 3201, West 69th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+  },
+  "fetched": "2026-10-09T17:28:43.830Z"
+ },
+ "Fort Collins, CO": {
+  "queried": "Fort Collins, CO",
+  "used": "Fort Collins, CO",
+  "fallback": false,
+  "hit": {
+   "lat": 40.5871782,
+   "lon": -105.0770113,
+   "osm_type": "relation",
+   "osm_id": 112524,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Fort Collins, Larimer County, Colorado, United States"
+  },
+  "fetched": "2026-10-09T17:28:45.581Z"
+ },
+ "Plaza Midtown, Atlanta, GA": {
+  "queried": "Plaza Midtown, Atlanta, GA",
+  "used": "Plaza Midtown, Atlanta, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.7914007,
+   "lon": -84.3868337,
+   "osm_type": "way",
+   "osm_id": 1077709719,
+   "category": "landuse",
+   "type": "commercial",
+   "display_name": "Midtown Plaza, Atlanta, Fulton County, Georgia, United States"
+  },
+  "fetched": "2026-10-09T17:28:46.863Z"
+ },
+ "Norcross, GA": {
+  "queried": "Norcross, GA",
+  "used": "Norcross, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.9412127,
+   "lon": -84.2135309,
+   "osm_type": "relation",
+   "osm_id": 119593,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Norcross, Gwinnett County, Georgia, 30071, United States"
+  },
+  "fetched": "2026-10-09T17:28:50.127Z"
+ },
+ "1604 36th Street, Peru, IL 61354": {
+  "queried": "1604 36th Street, Peru, IL 61354",
+  "used": "1604 36th Street, Peru, IL 61354",
+  "fallback": false,
+  "hit": {
+   "lat": 41.3528299,
+   "lon": -89.1269074,
+   "osm_type": "way",
+   "osm_id": 21831851,
+   "category": "place",
+   "type": "house",
+   "display_name": "1604, 36th Street, Peru, LaSalle County, Illinois, 61354, United States"
+  },
+  "fetched": "2026-10-09T17:28:51.458Z"
+ },
+ "Seneca, IL": {
+  "queried": "Seneca, IL",
+  "used": "Seneca, IL",
+  "fallback": false,
+  "hit": {
+   "lat": 41.3107161,
+   "lon": -88.6090863,
+   "osm_type": "relation",
+   "osm_id": 126773,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Seneca, LaSalle County, Illinois, 61360, United States"
+  },
+  "fetched": "2026-10-09T17:28:53.210Z"
+ },
+ "100 Bedford Rd, Morris, IL 60450": {
+  "queried": "100 Bedford Rd, Morris, IL 60450",
+  "used": "100 Bedford Rd, Morris, IL 60450",
+  "fallback": false,
+  "hit": {
+   "lat": 41.3740037,
+   "lon": -88.4226728,
+   "osm_type": "way",
+   "osm_id": 437690750,
+   "category": "shop",
+   "type": "chemist",
+   "display_name": "Walgreens, 100, Bedford Road, Morris, Saratoga Township, Grundy County, Illinois, 60450, United States"
+  },
+  "fetched": "2026-10-09T17:28:54.855Z"
+ },
+ "Ferry Building, San Francisco, CA": {
+  "queried": "Ferry Building, San Francisco, CA",
+  "used": "Ferry Building, San Francisco, CA",
+  "fallback": false,
+  "hit": {
+   "lat": 37.7955487,
+   "lon": -122.3934746,
+   "osm_type": "way",
+   "osm_id": 558731934,
+   "category": "amenity",
+   "type": "ferry_terminal",
+   "display_name": "San Francisco Ferry Building, 1, The Embarcadero, Financial District, San Francisco, California, 94111, United States"
+  },
+  "fetched": "2026-10-09T17:28:56.487Z"
+ },
+ "1450 Howard Ave, Burlingame, CA": {
+  "queried": "1450 Howard Ave, Burlingame, CA",
+  "used": "1450 Howard Ave, Burlingame, CA",
+  "fallback": false,
+  "hit": {
+   "lat": 37.5763671,
+   "lon": -122.3483368,
+   "osm_type": "way",
+   "osm_id": 152910616,
+   "category": "shop",
+   "type": "supermarket",
+   "display_name": "Safeway, 1450, Howard Avenue, Burlingame, San Mateo County, California, 94010, United States"
+  },
+  "fetched": "2026-10-09T17:28:58.217Z"
+ },
+ "Greeley, CO": {
+  "queried": "Greeley, CO",
+  "used": "Greeley, CO",
+  "fallback": false,
+  "hit": {
+   "lat": 40.4233142,
+   "lon": -104.7091322,
+   "osm_type": "relation",
+   "osm_id": 112430,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Greeley, Weld County, Colorado, United States"
+  },
+  "fetched": "2026-10-09T17:28:59.977Z"
+ },
+ "Morris, IL": {
+  "queried": "Morris, IL",
+  "used": "Morris, IL",
+  "fallback": false,
+  "hit": {
+   "lat": 41.3574135,
+   "lon": -88.4215234,
+   "osm_type": "relation",
+   "osm_id": 126870,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Morris, Grundy County, Illinois, 60450, United States"
+  },
+  "fetched": "2026-10-09T17:29:04.843Z"
+ },
+ "San Mateo, CA": {
+  "queried": "San Mateo, CA",
+  "used": "San Mateo, CA",
+  "fallback": false,
+  "hit": {
+   "lat": 37.496904,
+   "lon": -122.3330573,
+   "osm_type": "relation",
+   "osm_id": 396498,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "San Mateo County, California, United States"
+  },
+  "fetched": "2026-10-09T17:29:06.615Z"
+ },
+ "Charles Street, Beacon Hill, Boston, MA": {
+  "queried": "Charles Street, Beacon Hill, Boston, MA",
+  "used": "Charles Street, Beacon Hill, Boston, MA",
+  "fallback": false,
+  "hit": {
+   "lat": 42.3585732,
+   "lon": -71.0707002,
+   "osm_type": "way",
+   "osm_id": 8644437,
+   "category": "highway",
+   "type": "primary",
+   "display_name": "Charles Street, Beacon Hill, Boston, Suffolk County, Massachusetts, 02114, United States"
+  },
+  "fetched": "2026-10-09T17:29:41.470Z"
+ },
+ "Ansley Mall, Midtown, Atlanta, GA": {
+  "queried": "Ansley Mall, Midtown, Atlanta, GA",
+  "used": "Midtown, Atlanta, GA",
+  "fallback": true,
+  "hit": {
+   "lat": 33.7816556,
+   "lon": -84.3840713,
+   "osm_type": "node",
+   "osm_id": 8433055871,
+   "category": "place",
+   "type": "neighbourhood",
+   "display_name": "Midtown, Old Fourth Ward, Atlanta, Fulton County, Georgia, 30361, United States"
+  },
+  "fetched": "2026-10-09T17:29:44.432Z"
+ },
+ "Decatur, DeKalb County, GA": {
+  "queried": "Decatur, DeKalb County, GA",
+  "used": "Decatur, DeKalb County, GA",
+  "fallback": false,
+  "hit": {
+   "lat": 33.7737582,
+   "lon": -84.296069,
+   "osm_type": "relation",
+   "osm_id": 119289,
+   "category": "boundary",
+   "type": "administrative",
+   "display_name": "Decatur, DeKalb County, Georgia, 30030, United States"
+  },
+  "fetched": "2026-10-09T17:29:46.294Z"
+ },
+ "Lenox Marketplace, Buckhead, Atlanta, GA": {
+  "queried": "Lenox Marketplace, Buckhead, Atlanta, GA",
+  "used": "Buckhead, Atlanta, GA",
+  "fallback": true,
+  "hit": {
+   "lat": 33.8398137,
+   "lon": -84.3795589,
+   "osm_type": "node",
+   "osm_id": 154061351,
+   "category": "place",
+   "type": "suburb",
+   "display_name": "Buckhead, Atlanta, Fulton County, Georgia, 30305, United States"
+  },
+  "fetched": "2026-10-09T17:29:48.659Z"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "place": "5211 Hickory Hollow Pkwy, Antioch, TN 37013",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 36.0485773,
+  "lon": -86.6608346,
+  "osm_type": "way",
+  "osm_id": 19464527,
+  "category": "place",
+  "type": "house",
+  "display_name": "5211, Hickory Hollow Parkway, Antioch, Nashville, Davidson County, Middle Tennessee, Tennessee, 37013, United States"
+ },
+ "bbox": [
+  -86.67875967672074,
+  36.03408454637681,
+  -86.64290952327926,
+  36.063070053623186
+ ],
+ "pattern": "(?i)^Harbor Freight( Tools)?$",
+ "fetched": "2026-10-09T17:51:55.255306+00:00",
+ "rows": [
+  {
+   "id": "4da46174-7c9f-4d3c-b2b8-c67d7cd3d475",
+   "name": "Harbor Freight Tools",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9988328635692596,
+   "websites": [
+    "https://go.harborfreight.com/store00270"
+   ],
+   "phones": [
+    "+16157172887"
+   ],
+   "brand": "Harbor Freight Tools",
+   "brand_wikidata": null,
+   "address": "5211 Hickory Hollow Pkwy #101",
+   "locality": "Nashville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 9,
+   "lon": -86.66031646728516,
+   "lat": 36.0482292175293
+  },
+  {
+   "id": "cdca96e4-7de3-44f4-a6bc-4b032bfc1864",
+   "name": "Harbor Freight",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9977,
+   "websites": [
+    "https://www.harborfreight.com"
+   ],
+   "phones": [
+    "16157172887"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "5211 Hickory Hollow Pkwy  Ste 101",
+   "locality": "Antioch",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -86.6604232788086,
+   "lat": 36.047977447509766
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+{
+ "place": "Plaza Midtown, Atlanta, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 33.7914007,
+  "lon": -84.3868337,
+  "osm_type": "way",
+  "osm_id": 1077709719,
+  "category": "landuse",
+  "type": "commercial",
+  "display_name": "Midtown Plaza, Atlanta, Fulton County, Georgia, United States"
+ },
+ "bbox": [
+  -84.41299176611055,
+  33.769661569565216,
+  -84.36067563388944,
+  33.81313983043478
+ ],
+ "pattern": "(?i)^Publix",
+ "fetched": "2026-10-09T17:51:58.304480+00:00",
+ "rows": [
+  {
+   "id": "6fdbbcdb-8b80-47db-93da-ca30c36cbd6a",
+   "name": "Publix",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9888681173324585,
+   "websites": [
+    "https://www.publix.com/?utm_medium=maps&utm_source=facebook&utm_content=psm_fb_override"
+   ],
+   "phones": [
+    "+14042533544"
+   ],
+   "brand": "Publix",
+   "brand_wikidata": null,
+   "address": "950 W Peachtree St NW",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 2,
+   "lon": -84.38880157470703,
+   "lat": 33.780479431152344
+  },
+  {
+   "id": "d8d7af03-92a3-47ae-bd6a-1bafdef6db08",
+   "name": "PUBLIX #1061",
+   "basic_category": "financial_service",
+   "taxonomy_primary": "money_transfer_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service",
+    "money_transfer_service"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://location.westernunion.com/us/ga/atlanta/63e536ac5f3fa44a2a24c725fc75df58"
+   ],
+   "phones": null,
+   "brand": "Western Union",
+   "brand_wikidata": "Q861042",
+   "address": "950 W Peachtree St Nw",
+   "locality": "Atlanta",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-08-18T22:27:36.000Z",
+   "operating_status": null,
+   "version": 4,
+   "lon": -84.38728332519531,
+   "lat": 33.780086517333984
+  },
+  {
+   "id": "1daefd51-54cb-4973-9422-85531d27de0d",
+   "name": "Publix",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9852100014686584,
+   "websites": [
+    "https://www.publix.com"
+   ],
+   "phones": [
+    "(404) 253-3544"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "950 W Peachtree St NW",
+   "locality": "Atlanta",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2026-04-08T00:00:00.000",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -84.3875961303711,
+   "lat": 33.78004837036133
+  },
+  {
+   "id": "aeec454d-c7ce-42e8-a351-1b92d8cdc0f5",
+   "name": "Publix Super Market At Piedmont",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.publix.com"
+   ],
+   "phones": [
+    "14048811750"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "595 Piedmont Ave NE",
+   "locality": "Atlanta",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -84.38114166259766,
+   "lat": 33.77037048339844
+  },
+  {
+   "id": "69e9a8b2-56ef-4f9e-979a-3ab3f2820ed6",
+   "name": "PUBLIX #0776",
+   "basic_category": "financial_service",
+   "taxonomy_primary": "money_transfer_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service",
+    "money_transfer_service"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://location.westernunion.com/us/ga/atlanta/012793e44b6708afa8b5559d49469bc9"
+   ],
+   "phones": null,
+   "brand": "Western Union",
+   "brand_wikidata": "Q861042",
+   "address": "595 Piedmont Ave",
+   "locality": "Atlanta",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-08-18T22:27:36.000Z",
+   "operating_status": null,
+   "version": 5,
+   "lon": -84.38133239746094,
+   "lat": 33.77051544189453
+  },
+  {
+   "id": "48ab8d11-a4e9-4d49-9e86-46f57b4b9338",
+   "name": "PUBLIX #1119",
+   "basic_category": "financial_service",
+   "taxonomy_primary": "money_transfer_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service",
+    "money_transfer_service"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://location.westernunion.com/us/ga/atlanta/c0cf6923eb38efc41ae52c19175e6404"
+   ],
+   "phones": null,
+   "brand": "Western Union",
+   "brand_wikidata": "Q861042",
+   "address": "2020 Howell Mill Rd Nw",
+   "locality": "Atlanta",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-08-18T22:27:36.000Z",
+   "operating_status": null,
+   "version": 5,
+   "lon": -84.41280364990234,
+   "lat": 33.80991744995117
+  },
+  {
+   "id": "91777d29-675a-4d5a-8679-302ba506da03",
+   "name": "Publix Super Market at Atlantic Station",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9989097343385219,
+   "websites": [
+    "https://www.publix.com/?utm_medium=maps&utm_source=facebook&utm_content=psm_fb_override"
+   ],
+   "phones": [
+    "+14048735055"
+   ],
+   "brand": "Publix",
+   "brand_wikidata": null,
+   "address": "1380 Atlantic Dr NW Ste 14135",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 4,
+   "lon": -84.39796447753906,
+   "lat": 33.7927131652832
+  },
+  {
+   "id": "854ddce9-731b-49b9-b97b-5847d70270c7",
+   "name": "Publix",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.publix.com/?utm_medium=maps&utm_source=facebook&utm_content=psm_fb_override"
+   ],
+   "phones": [
+    "+14048981850"
+   ],
+   "brand": "Publix",
+   "brand_wikidata": null,
+   "address": "1544 Piedmont Ave NE",
+   "locality": "Atlanta",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -84.37174987792969,
+   "lat": 33.799129486083984
+  },
+  {
+   "id": "740b64c1-558a-4669-90fc-48107af24b99",
+   "name": "PUBLIX #0599",
+   "basic_category": "financial_service",
+   "taxonomy_primary": "money_transfer_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service",
+    "money_transfer_service"
+   ],
+   "confidence": 0.8,
+   "websites": [
+    "https://location.westernunion.com/us/ga/atlanta/1a2c83eab7faeb6ffcba596212f1bc3f"
+   ],
+   "phones": null,
+   "brand": "Western Union",
+   "brand_wikidata": "Q861042",
+   "address": "1544 Piedmont Ave Ne",
+   "locality": "Atlanta",
+   "source_dataset": "AllThePlaces",
+   "source_update_time": "2026-08-18T22:27:36.000Z",
+   "operating_status": null,
+   "version": 5,
+   "lon": -84.36958312988281,
+   "lat": 33.79643630981445
+  }
+ ]
+}

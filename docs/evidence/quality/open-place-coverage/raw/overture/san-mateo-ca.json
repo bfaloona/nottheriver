@@ -1,0 +1,190 @@
+{
+ "place": "San Mateo, CA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 37.496904,
+  "lon": -122.3330573,
+  "osm_type": "relation",
+  "osm_id": 396498,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "San Mateo County, California, United States"
+ },
+ "bbox": [
+  -122.45179253201927,
+  37.402701101449274,
+  -122.21432206798072,
+  37.59110689855073
+ ],
+ "pattern": "(?i)^(Super)?Target$|^Trader Joe'?s$",
+ "fetched": "2026-10-09T17:52:03.683457+00:00",
+ "rows": [
+  {
+   "id": "68985c4f-5d2f-4ef3-a9ed-a6d57872f828",
+   "name": "Trader Joe's",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://locations.traderjoes.com/ca/san-carlos/174/"
+   ],
+   "phones": [
+    "+16505942138"
+   ],
+   "brand": "Trader Joe's",
+   "brand_wikidata": null,
+   "address": "1482 El Camino Real",
+   "locality": "San Carlos",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -122.24848175048828,
+   "lat": 37.49653244018555
+  },
+  {
+   "id": "99413898-a148-43e7-bfd0-9e70c40cf7da",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.97,
+   "websites": [
+    "https://www.target.com/sl/redwood-city/321"
+   ],
+   "phones": [
+    "6503638940"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2485 El Camino Real",
+   "locality": "Redwood City",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-09-26T15:08:16.407Z",
+   "operating_status": null,
+   "version": 11,
+   "lon": -122.21760559082031,
+   "lat": 37.47502517700195
+  },
+  {
+   "id": "528ef0f7-4135-408f-993b-5b3cb5bd3f7e",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9991509836912155,
+   "websites": [
+    "https://www.target.com/sl/redwood-city/321"
+   ],
+   "phones": [
+    "+16503638940"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "2485 El Camino Real Redwood City, CA 94063",
+   "locality": "Redwood City",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 6,
+   "lon": -122.21710968017578,
+   "lat": 37.47568130493164
+  },
+  {
+   "id": "db1d5f61-a133-4d0a-b504-fc6b04cc21aa",
+   "name": "Trader Joe's",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "specialty_foods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "specialty_foods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://locations.traderjoes.com/ca/san-mateo/67/"
+   ],
+   "phones": [
+    "+16505706140"
+   ],
+   "brand": "Trader Joe's",
+   "brand_wikidata": null,
+   "address": "1820-22 S Grant Street",
+   "locality": "San Mateo",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -122.30249786376953,
+   "lat": 37.55450439453125
+  },
+  {
+   "id": "35403454-f380-4b95-b08d-21b7e0fe27fe",
+   "name": "Trader Joe's",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "specialty_foods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "specialty_foods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://locations.traderjoes.com/ca/san-mateo/245/"
+   ],
+   "phones": [
+    "+16502861509"
+   ],
+   "brand": "Trader Joe's",
+   "brand_wikidata": null,
+   "address": "45 W Hillsdale Blvd",
+   "locality": "San Mateo",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -122.29834747314453,
+   "lat": 37.53553771972656
+  },
+  {
+   "id": "f4f36e3e-4cc4-40f3-ba14-60a84c539ff1",
+   "name": "Target Optical",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "eyewear_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "eyewear_store"
+   ],
+   "confidence": 0.9629726409912109,
+   "websites": [
+    "http://fayeyapod.com/"
+   ],
+   "phones": [
+    "+16502120941"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "2220 Bridgepointe Pkwy",
+   "locality": "San Mateo",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -122.28337097167969,
+   "lat": 37.55888366699219
+  }
+ ]
+}

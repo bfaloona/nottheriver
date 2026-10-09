@@ -1,0 +1,82 @@
+{
+ "place": "Hamburg, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.5553081,
+  "lon": -75.9824083,
+  "osm_type": "relation",
+  "osm_id": 188499,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Hamburg, Berks County, Pennsylvania, 19526, United States"
+ },
+ "bbox": [
+  -76.10639558646679,
+  40.46110520144927,
+  -75.85842101353322,
+  40.649510998550724
+ ],
+ "pattern": "(?i)^Walmart( Supercenter| Neighborhood Market)?$|^Lowe'?s( Home Improvement)?$",
+ "fetched": "2026-10-09T17:51:41.685908+00:00",
+ "rows": [
+  {
+   "id": "257e1171-bcd7-4aa9-bf9e-8d0c4de6faa3",
+   "name": "Walmart",
+   "basic_category": "pharmacy_and_drug_store",
+   "taxonomy_primary": "pharmacy",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "pharmacy_and_drug_store",
+    "pharmacy"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.walmart.com/store/4612-hamburg-pa/pharmacy/"
+   ],
+   "phones": [
+    "4846684008"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1800 Tilden Ridge Dr",
+   "locality": "Hamburg",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-02-18T16:54:18.587Z",
+   "operating_status": null,
+   "version": 13,
+   "lon": -76.01217651367188,
+   "lat": 40.564056396484375
+  },
+  {
+   "id": "104cd22a-98c3-4d59-8bf4-f521dc8d70f6",
+   "name": "Lowe's",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_improvement_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_improvement_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-fb-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14846607970"
+   ],
+   "brand": "Lowe's Home Improvement",
+   "brand_wikidata": null,
+   "address": "20 Wilderness Trail",
+   "locality": "Hamburg",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -76.00814819335938,
+   "lat": 40.5628662109375
+  }
+ ]
+}

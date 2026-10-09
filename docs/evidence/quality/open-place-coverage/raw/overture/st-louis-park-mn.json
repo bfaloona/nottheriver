@@ -1,0 +1,378 @@
+{
+ "place": "St. Louis Park, MN",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 44.9475726,
+  "lon": -93.3569023,
+  "osm_type": "relation",
+  "osm_id": 136701,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Saint Louis Park, Hennepin County, Minnesota, United States"
+ },
+ "bbox": [
+  -93.4900035807194,
+  44.853369701449274,
+  -93.2238010192806,
+  45.04177549855073
+ ],
+ "pattern": "(?i)^(Super)?Target$",
+ "fetched": "2026-10-09T17:51:53.125050+00:00",
+ "rows": [
+  {
+   "id": "161d11aa-2ca9-4068-8ae2-50833ee5f40c",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9427847266197205,
+   "websites": [
+    "https://www.target.com/sl/eden-prairie/220"
+   ],
+   "phones": [
+    "+19529440700"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "8225 Flying Cloud Dr",
+   "locality": "Eden Prairie",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.42505645751953,
+   "lat": 44.85517501831055
+  },
+  {
+   "id": "c720bfc3-609e-4705-b8ea-f267f9973f8c",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.target.com/sl/bloomington-79th-and-penn/5"
+   ],
+   "phones": [
+    "+19528887701"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "2555 W 79th St",
+   "locality": "Bloomington",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 7,
+   "lon": -93.31137084960938,
+   "lat": 44.85951232910156
+  },
+  {
+   "id": "99fcc99b-5400-48e6-8414-bcc36d5eff0b",
+   "name": "Target",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/knollwood/2189"
+   ],
+   "phones": [
+    "+19529356941"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "8900 Highway 7",
+   "locality": "St Louis Park",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -93.39324951171875,
+   "lat": 44.93602752685547
+  },
+  {
+   "id": "94c546d5-a100-48b5-9504-e5198b99f74e",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9709383249282837,
+   "websites": [
+    "https://www.target.com/sl/st-louis-park/260"
+   ],
+   "phones": [
+    "+19529268855"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "3601 Highway 100 S",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 11,
+   "lon": -93.3467788696289,
+   "lat": 44.9371337890625
+  },
+  {
+   "id": "0f66967a-4777-4e0e-9a8c-c280931f5f3a",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://www.target.com"
+   ],
+   "phones": [
+    "16126075016"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1300 W Lake St",
+   "locality": "Minneapolis",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -93.29609680175781,
+   "lat": 44.94890213012695
+  },
+  {
+   "id": "d4529ea5-4a91-460a-a503-e054b1ca1a13",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9922210574150085,
+   "websites": [
+    "https://www.target.com/sl/edina/2313"
+   ],
+   "phones": [
+    "+19529254610"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "7000 York Ave S",
+   "locality": "Edina",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -93.32350158691406,
+   "lat": 44.875370025634766
+  },
+  {
+   "id": "1a64186f-c0d7-4f55-8f09-f9a3bd39456d",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.target.com/sl/lake-street/52"
+   ],
+   "phones": [
+    "+16127215701"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "2500 E Lake St",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -93.23709869384766,
+   "lat": 44.94954299926758
+  },
+  {
+   "id": "0d51e25e-e5cd-4816-9c6c-96385fedb181",
+   "name": "Target Optical",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "eyewear_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "eyewear_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "http://www.targetoptical.com/"
+   ],
+   "phones": [
+    "+16122430201"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "6445 Richfield Pkwy N",
+   "locality": "Richfield",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.24870300292969,
+   "lat": 44.885765075683594
+  },
+  {
+   "id": "d5884bda-15ef-4a5a-97b9-daaf8a803f34",
+   "name": "Target Grocery",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9405344724655151,
+   "websites": [
+    "https://www.target.com/sl/plymouth/664"
+   ],
+   "phones": [
+    "+17635530302"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "4175 Vinewood Ln N",
+   "locality": "Plymouth",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.4506607055664,
+   "lat": 45.03163528442383
+  },
+  {
+   "id": "51693889-54b7-4730-8934-12da911cb1b4",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/ridgedale/100"
+   ],
+   "phones": [
+    "9525428250"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "13201 Ridgedale Dr",
+   "locality": "Minnetonka",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-09-26T15:01:40.197Z",
+   "operating_status": "open",
+   "version": 8,
+   "lon": -93.44851684570312,
+   "lat": 44.969635009765625
+  },
+  {
+   "id": "0dd1605f-336e-4494-a71f-381ba512603d",
+   "name": "Target Optical",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "eyewear_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "eyewear_store"
+   ],
+   "confidence": 0.9860072135925293,
+   "websites": [
+    "http://www.targetoptical.com/"
+   ],
+   "phones": [
+    "+16123387551"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "900 Nicollet Mall",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -93.2741470336914,
+   "lat": 44.97500228881836
+  },
+  {
+   "id": "18b9b73f-f98b-40b4-9690-93727cbc788b",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/minneapolis-dinkytown/3200"
+   ],
+   "phones": [
+    "+16123553857"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "1329 5th St SE",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.23515319824219,
+   "lat": 44.98167037963867
+  },
+  {
+   "id": "72daecf5-a420-4af5-946f-fe6a9547e042",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9492276906967163,
+   "websites": [
+    "https://www.target.com/sl/minneapolis-ne/1095"
+   ],
+   "phones": [
+    "+16127817033"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "1650 New Brighton Blvd",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -93.22944641113281,
+   "lat": 45.00497055053711
+  }
+ ]
+}

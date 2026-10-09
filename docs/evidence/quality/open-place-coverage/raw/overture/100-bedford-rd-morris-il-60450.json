@@ -1,0 +1,23 @@
+{
+ "place": "100 Bedford Rd, Morris, IL 60450",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 41.3740037,
+  "lon": -88.4226728,
+  "osm_type": "way",
+  "osm_id": 437690750,
+  "category": "shop",
+  "type": "chemist",
+  "display_name": "Walgreens, 100, Bedford Road, Morris, Saratoga Township, Grundy County, Illinois, 60450, United States"
+ },
+ "bbox": [
+  -88.44198588680561,
+  41.359510946376815,
+  -88.40335971319439,
+  41.38849645362319
+ ],
+ "pattern": "(?i)^Walgreens$",
+ "fetched": "2026-10-09T17:52:01.066323+00:00",
+ "rows": []
+}

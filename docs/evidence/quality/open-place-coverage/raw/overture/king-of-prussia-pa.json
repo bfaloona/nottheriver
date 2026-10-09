@@ -1,0 +1,109 @@
+{
+ "place": "King of Prussia, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.0947625,
+  "lon": -75.3851334,
+  "osm_type": "relation",
+  "osm_id": 187769,
+  "category": "boundary",
+  "type": "census",
+  "display_name": "King of Prussia, Upper Merion Township, Montgomery County, Pennsylvania, 19406, United States"
+ },
+ "bbox": [
+  -75.50827761854623,
+  40.000559601449275,
+  -75.26198918145377,
+  40.18896539855073
+ ],
+ "pattern": "(?i)^REI( Co-op)?$|^L\\.? ?L\\.? ?Bean$",
+ "fetched": "2026-10-09T17:51:39.796715+00:00",
+ "rows": [
+  {
+   "id": "b86ba295-22ab-4969-aac8-ea2b6da16f07",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/king-of-prussia?y_source=1_MzUyMDQxNC01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14842311703"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "161 Town Square Pl",
+   "locality": "King of Prussia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -75.40502166748047,
+   "lat": 40.082733154296875
+  },
+  {
+   "id": "5e6631db-4686-41fe-9fb9-1fa1bb999af0",
+   "name": "L.L.Bean",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9998766122162343,
+   "websites": [
+    "http://www.llbean.com/"
+   ],
+   "phones": [
+    "+12075528613"
+   ],
+   "brand": "L.L.Bean",
+   "brand_wikidata": null,
+   "address": "160 N Gulph Rd",
+   "locality": "King of Prussia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -75.39415740966797,
+   "lat": 40.088314056396484
+  },
+  {
+   "id": "32f62475-941e-4ca1-8184-a6cb72df58b9",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9999938823282719,
+   "websites": [
+    "https://www.rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+16109400809"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "200 Ridge Pike Ste 115",
+   "locality": "Plymouth Twp",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 15,
+   "lon": -75.28775024414062,
+   "lat": 40.09584045410156
+  }
+ ]
+}

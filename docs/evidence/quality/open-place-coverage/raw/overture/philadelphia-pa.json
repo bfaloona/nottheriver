@@ -1,0 +1,567 @@
+{
+ "place": "Philadelphia, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 10.5,
+ "center": {
+  "lat": 39.9527237,
+  "lon": -75.1635262,
+  "osm_type": "relation",
+  "osm_id": 188022,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Philadelphia, Philadelphia County, Pennsylvania, United States"
+ },
+ "bbox": [
+  -75.3620377606992,
+  39.80054978695652,
+  -74.96501463930082,
+  40.10489761304348
+ ],
+ "pattern": "(?i)^Walmart( Supercenter| Neighborhood Market)?$",
+ "fetched": "2026-10-09T17:51:38.607457+00:00",
+ "rows": [
+  {
+   "id": "f0df8770-eb6f-4564-be79-a89a61bff436",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "http://www.walmart.com/store/5881-springfield-pa"
+   ],
+   "phones": [
+    "6106053154"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "400 S State Rd",
+   "locality": "Springfield",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2023-05-10T00:53:41.493Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -75.35565185546875,
+   "lat": 39.93879699707031
+  },
+  {
+   "id": "5c6b0fa2-83ab-4d38-9658-b0577b73d3ed",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/5495"
+   ],
+   "phones": [
+    "+16105832682"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "50 N Macdade Blvd",
+   "locality": "Glenolden",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -75.29167175292969,
+   "lat": 39.90711212158203
+  },
+  {
+   "id": "77dd2375-bf7d-44c4-b8b8-9a3302cd9ee2",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/2830"
+   ],
+   "phones": [
+    "+16104471860"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "1570 Chester Pike",
+   "locality": "Eddystone",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 14,
+   "lon": -75.34095764160156,
+   "lat": 39.86404037475586
+  },
+  {
+   "id": "8e604d49-8a49-4207-9f63-55bd592754d6",
+   "name": "Walmart",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9460802674293518,
+   "websites": [
+    "https://www.walmart.com/store/5476"
+   ],
+   "phones": [
+    "+18566860133"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "820 Cooper St",
+   "locality": "Woodbury",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -75.1288833618164,
+   "lat": 39.83251190185547
+  },
+  {
+   "id": "6df6e781-8a65-4e23-88c1-9a21443798b9",
+   "name": "iFixandRepair",
+   "basic_category": "technical_service",
+   "taxonomy_primary": "it_service_and_computer_repair",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "technical_service",
+    "it_service_and_computer_repair"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://ifixandrepair.com/stores/deptford/"
+   ],
+   "phones": [
+    "+16094723423"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "2000 Clements Bridge Rd Ste 100",
+   "locality": "Woodbury",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -75.0917739868164,
+   "lat": 39.84405517578125
+  },
+  {
+   "id": "f60a9229-fae1-4b7d-95ca-747ab30727ed",
+   "name": "Walmart Supercenter",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.77,
+   "websites": [
+    "https://www.walmart.com/store/3422/deptford-nj/details"
+   ],
+   "phones": [
+    "(856) 384-3211"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2000 Clements Bridge Rd",
+   "locality": "Deptford",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2026-04-12T00:00:00.000",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -75.09149932861328,
+   "lat": 39.843994140625
+  },
+  {
+   "id": "84b61b2a-0961-4fbe-9420-b5d3cbcaadb3",
+   "name": "Walmart Money Center",
+   "basic_category": "financial_service",
+   "taxonomy_primary": "financial_service",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service"
+   ],
+   "confidence": 0.9648038744926453,
+   "websites": [
+    "https://www.walmart.com/store/3422"
+   ],
+   "phones": [
+    "+18563843211"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "2000 Clements Bridge Rd Ste 100",
+   "locality": "Woodbury",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -75.09158325195312,
+   "lat": 39.84389877319336
+  },
+  {
+   "id": "b4e67bc4-fd31-4f20-8fb4-0698e61128b1",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.walmart.com/store/3422-deptford-nj"
+   ],
+   "phones": [
+    "8563843211"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2000 Clements Bridge Rd Ste 100",
+   "locality": "Deptford",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2023-05-10T01:01:32.223Z",
+   "operating_status": "open",
+   "version": 6,
+   "lon": -75.08882904052734,
+   "lat": 39.83823776245117
+  },
+  {
+   "id": "c0063617-0dcb-41d4-ad12-d6d04798bd37",
+   "name": "Walmart",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9996575584411621,
+   "websites": [
+    "https://www.walmart.com/store/4456"
+   ],
+   "phones": [
+    "+18565459052"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "1 Coopertown Blvd",
+   "locality": "Somerdale",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 14,
+   "lon": -75.02425384521484,
+   "lat": 39.854827880859375
+  },
+  {
+   "id": "bf375806-5f4e-4b87-b04e-68cee594a0c0",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9999989505159855,
+   "websites": [
+    "https://www.walmart.com/store/5047"
+   ],
+   "phones": [
+    "+18563101470"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "130 Black Horse Pike",
+   "locality": "Audubon",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -75.08491516113281,
+   "lat": 39.89229965209961
+  },
+  {
+   "id": "a36a4f17-f245-4457-b8b5-f099e9b9c4c7",
+   "name": "Walmart Supercenter",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.walmart.com"
+   ],
+   "phones": [
+    "12154684220"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1675 Christopher Columbus Blvd",
+   "locality": "Philadelphia",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 15,
+   "lon": -75.14107513427734,
+   "lat": 39.92591094970703
+  },
+  {
+   "id": "efaad5d2-b299-4d32-a138-1aa4093442c1",
+   "name": "iFixandRepair",
+   "basic_category": "technical_service",
+   "taxonomy_primary": "it_service_and_computer_repair",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "technical_service",
+    "it_service_and_computer_repair"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://ifixandrepair.com/stores/philadelphia/"
+   ],
+   "phones": [
+    "+12678748180"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "1675 S Christopher Columbus Blvd",
+   "locality": "Philadelphia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 2,
+   "lon": -75.1412353515625,
+   "lat": 39.92620086669922
+  },
+  {
+   "id": "7c55afd4-4222-4568-8506-c4353f50a64e",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/5340"
+   ],
+   "phones": [
+    "+18566655430"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "500 NJ-38",
+   "locality": "Cherry Hill",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -75.0447006225586,
+   "lat": 39.93852996826172
+  },
+  {
+   "id": "8a17e42e-ea3d-413e-8f12-6376e09fbc11",
+   "name": "Walmart",
+   "basic_category": "atm",
+   "taxonomy_primary": "atm",
+   "taxonomy_hierarchy": [
+    "services_and_business",
+    "financial_service",
+    "atm"
+   ],
+   "confidence": 0.85,
+   "websites": [
+    "https://www.walmart.com/store/5340-cherry-hill-nj/auto-care-center/"
+   ],
+   "phones": [
+    "8566656172"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "500 Rte 38",
+   "locality": "Cherry Hill",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-02-18T18:13:53.290Z",
+   "operating_status": null,
+   "version": 8,
+   "lon": -75.000732421875,
+   "lat": 39.94137954711914
+  },
+  {
+   "id": "503e2298-36db-4c3b-8fad-e2089241df71",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/5229"
+   ],
+   "phones": [
+    "+12158876737"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "1000 S Easton Rd",
+   "locality": "Wyncote",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -75.16895294189453,
+   "lat": 40.081966400146484
+  },
+  {
+   "id": "0a23f19a-6eab-4ce0-aa40-0c3d0c859eff",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.5718957185745239,
+   "websites": [
+    "http://www.walmart.com"
+   ],
+   "phones": [
+    "+12152231590"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2900 N Broad St",
+   "locality": "Philadelphia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 10,
+   "lon": -75.15410614013672,
+   "lat": 39.99729919433594
+  },
+  {
+   "id": "9d997f04-4d98-48c5-a4ee-39de7d4a161a",
+   "name": "Walmart",
+   "basic_category": "discount_store",
+   "taxonomy_primary": "discount_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "discount_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.walmart.com/store/5891"
+   ],
+   "phones": [
+    "+12156132236"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "2200 Wheatsheaf Ln",
+   "locality": "Philadelphia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -75.09192657470703,
+   "lat": 39.99896240234375
+  },
+  {
+   "id": "6f5200a1-3d94-4ebb-bf4b-b5a27b079456",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.5590696930885315,
+   "websites": [
+    "http://www.walmart.com"
+   ],
+   "phones": [
+    "+12154371422"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "7232 Frankford Ave",
+   "locality": "Philadelphia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 7,
+   "lon": -75.04230499267578,
+   "lat": 40.036277770996094
+  },
+  {
+   "id": "11505251-9ac6-4100-b3d3-960ddf7606d0",
+   "name": "Walmart",
+   "basic_category": "superstore",
+   "taxonomy_primary": "superstore",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "superstore"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/5130"
+   ],
+   "phones": [
+    "+12156980350"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "9745 Roosevelt Blvd Ste A",
+   "locality": "Philadelphia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -75.02291870117188,
+   "lat": 40.082950592041016
+  },
+  {
+   "id": "7aad6da3-8917-444e-934b-57f1d0799ef8",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9907640218734741,
+   "websites": [
+    "https://www.walmart.com/store/2871"
+   ],
+   "phones": [
+    "+18563032119"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "2501 Route 130 S",
+   "locality": "Cinnaminson Twp",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 14,
+   "lon": -74.9809341430664,
+   "lat": 40.0078239440918
+  }
+ ]
+}

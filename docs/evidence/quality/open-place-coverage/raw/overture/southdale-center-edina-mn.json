@@ -1,0 +1,80 @@
+{
+ "place": "Southdale Center, Edina, MN",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.8840496,
+  "lon": -93.3242685,
+  "osm_type": "way",
+  "osm_id": 52868480,
+  "category": "building",
+  "type": "yes",
+  "display_name": "Southdale Center, 3400, West 66th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+ },
+ "bbox": [
+  -93.35495024481932,
+  44.862310469565216,
+  -93.29358675518068,
+  44.90578873043478
+ ],
+ "pattern": "(?i)^Games By James|^Macy'?s$",
+ "fetched": "2026-10-09T17:51:56.874268+00:00",
+ "rows": [
+  {
+   "id": "c4ea64d4-5f4f-4cf4-91f7-6b44c10fbc59",
+   "name": "Games by James",
+   "basic_category": "toys_and_games_store",
+   "taxonomy_primary": "toy_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "toys_and_games_store",
+    "toy_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.gamesbyjames.com/"
+   ],
+   "phones": [
+    "+19529259656"
+   ],
+   "brand": "Games by James",
+   "brand_wikidata": null,
+   "address": "1930 Southdale Ctr",
+   "locality": "Edina",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -93.3260498046875,
+   "lat": 44.880680084228516
+  },
+  {
+   "id": "3ad5da35-04ad-46a9-9a2e-453d2a41b67a",
+   "name": "Macy's",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.991375,
+   "websites": [
+    "https://www.macys.com/stores/mn/edina/le-furniture-clearance-center_225.html"
+   ],
+   "phones": [
+    "9529246600"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "7235 France Ave S",
+   "locality": "Edina",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-05-30T09:45:27.110Z",
+   "operating_status": "open",
+   "version": 4,
+   "lon": -93.32723236083984,
+   "lat": 44.87161636352539
+  }
+ ]
+}

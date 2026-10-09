@@ -1,0 +1,134 @@
+{
+ "place": "Framingham, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.2773177,
+  "lon": -71.4165905,
+  "osm_type": "relation",
+  "osm_id": 1863552,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Framingham, Middlesex County, Massachusetts, United States"
+ },
+ "bbox": [
+  -71.54390935484301,
+  42.18311480144927,
+  -71.28927164515699,
+  42.371520598550724
+ ],
+ "pattern": "(?i)^(Super)?Target$|^L\\.? ?L\\.? ?Bean$|^REI( Co-op)?$",
+ "fetched": "2026-10-09T17:51:35.474645+00:00",
+ "rows": [
+  {
+   "id": "1f070afb-6d4b-420b-a035-751187badbbd",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/marlborough-east/2570"
+   ],
+   "phones": [
+    "+15082516957"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "605 Boston Post Rd E",
+   "locality": "Marlborough",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.5052261352539,
+   "lat": 42.34846878051758
+  },
+  {
+   "id": "ab2e7711-8f2f-4274-8c28-79af1fcb5a9d",
+   "name": "L.L.Bean",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.6531254649162292,
+   "websites": [
+    "http://www.llbean.com/"
+   ],
+   "phones": [
+    "+12075528604"
+   ],
+   "brand": "L.L.Bean",
+   "brand_wikidata": null,
+   "address": "84 Worcester Rd",
+   "locality": "Framingham",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -71.3960189819336,
+   "lat": 42.29743194580078
+  },
+  {
+   "id": "161740fb-24ff-4583-bf8f-7a75058a2569",
+   "name": "Target",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9472025036811829,
+   "websites": [
+    "https://www.target.com/sl/framingham/1308"
+   ],
+   "phones": [
+    "+15086283136"
+   ],
+   "brand": "Target",
+   "brand_wikidata": null,
+   "address": "400 Cochituate Rd",
+   "locality": "Framingham",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.39817810058594,
+   "lat": 42.30556869506836
+  },
+  {
+   "id": "b546d2c5-703f-4b9e-a8b5-70e1a7541df5",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/framingham?y_source=1_MTQ1MzQ0Mi01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+15082706325"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "375 Cochituate Rd",
+   "locality": "Framingham",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -71.39378356933594,
+   "lat": 42.30535888671875
+  }
+ ]
+}

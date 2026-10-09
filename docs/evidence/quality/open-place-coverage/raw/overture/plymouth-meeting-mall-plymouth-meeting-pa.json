@@ -1,0 +1,80 @@
+{
+ "place": "Plymouth Meeting Mall, Plymouth Meeting, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 40.115784,
+  "lon": -75.2827841,
+  "osm_type": "way",
+  "osm_id": 58745026,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Plymouth Meeting Mall, 500, West Germantown Pike, Plymouth Meeting Mall, Hickorytown, Plymouth Township, Montgomery County, Pennsylvania, 19462, United States"
+ },
+ "bbox": [
+  -75.31121077940095,
+  40.09404486956522,
+  -75.25435742059905,
+  40.13752313043478
+ ],
+ "pattern": "(?i)^Dick'?s Sporting Goods$",
+ "fetched": "2026-10-09T17:51:39.481893+00:00",
+ "rows": [
+  {
+   "id": "e65cb2fc-c1fd-498d-87f0-ff2a6d407d06",
+   "name": "Dick's Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9999803045928478,
+   "websites": [
+    "http://www.dickssportinggoods.com"
+   ],
+   "phones": [
+    "+14843510045"
+   ],
+   "brand": "DICK'S Sporting Goods",
+   "brand_wikidata": null,
+   "address": "500 W Germantown Pike",
+   "locality": "Plymouth Meeting",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 8,
+   "lon": -75.28392028808594,
+   "lat": 40.11510467529297
+  },
+  {
+   "id": "3e1b36d6-47cb-4093-adea-34432ea8896e",
+   "name": "DICK'S Sporting Goods",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.77,
+   "websites": [
+    "https://stores.dickssportinggoods.com/wi/mount-pleasant/131/"
+   ],
+   "phones": [
+    "(610) 260-4400"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2430 Chemical Road",
+   "locality": "Plymouth Meeting",
+   "source_dataset": "Foursquare",
+   "source_update_time": "2026-04-03T00:00:00.000",
+   "operating_status": null,
+   "version": 5,
+   "lon": -75.29310607910156,
+   "lat": 40.10542678833008
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "place": "Morris, IL",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 41.3574135,
+  "lon": -88.4215234,
+  "osm_type": "relation",
+  "osm_id": 126870,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Morris, Grundy County, Illinois, 60450, United States"
+ },
+ "bbox": [
+  -88.54702646088948,
+  41.26321060144927,
+  -88.29602033911051,
+  41.451616398550726
+ ],
+ "pattern": "(?i)^Walmart( Supercenter| Neighborhood Market)?$|^Menards$",
+ "fetched": "2026-10-09T17:52:02.968067+00:00",
+ "rows": [
+  {
+   "id": "bcbc3bd6-e8f9-4c92-b153-ca934f8362ab",
+   "name": "Menards",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_improvement_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_improvement_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.menards.com/main/home.html"
+   ],
+   "phones": [
+    "+18154160219"
+   ],
+   "brand": "Menards",
+   "brand_wikidata": null,
+   "address": "500 Menard Dr",
+   "locality": "Morris",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -88.42851257324219,
+   "lat": 41.38894271850586
+  },
+  {
+   "id": "8b33fe56-465f-4d87-bcaa-589f25f5b82e",
+   "name": "Walmart",
+   "basic_category": "department_store",
+   "taxonomy_primary": "department_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "department_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://www.walmart.com/store/844"
+   ],
+   "phones": [
+    "+18159426306"
+   ],
+   "brand": "Walmart",
+   "brand_wikidata": null,
+   "address": "333 E Us Route 6",
+   "locality": "Morris",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -88.41759490966797,
+   "lat": 41.384639739990234
+  }
+ ]
+}

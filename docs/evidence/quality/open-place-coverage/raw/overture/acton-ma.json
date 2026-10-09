@@ -1,0 +1,53 @@
+{
+ "place": "Acton, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.4850931,
+  "lon": -71.43284,
+  "osm_type": "relation",
+  "osm_id": 1832779,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Acton, Middlesex County, Massachusetts, United States"
+ },
+ "bbox": [
+  -71.56058087016254,
+  42.390890201449274,
+  -71.30509912983746,
+  42.57929599855073
+ ],
+ "pattern": "(?i)^Kitchen Outfitters",
+ "fetched": "2026-10-09T17:51:35.762013+00:00",
+ "rows": [
+  {
+   "id": "570075db-be5b-4aee-96d8-4738e2e94416",
+   "name": "Kitchen Outfitters",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_goods_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "http://www.kitchen-outfitters.com/"
+   ],
+   "phones": [
+    "+19782631955"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "342 Great Rd",
+   "locality": "Acton",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.42086791992188,
+   "lat": 42.50205612182617
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "place": "1450 Howard Ave, Burlingame, CA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 37.5763671,
+  "lon": -122.3483368,
+  "osm_type": "way",
+  "osm_id": 152910616,
+  "category": "shop",
+  "type": "supermarket",
+  "display_name": "Safeway, 1450, Howard Avenue, Burlingame, San Mateo County, California, 94010, United States"
+ },
+ "bbox": [
+  -122.3666232346032,
+  37.56187434637681,
+  -122.3300503653968,
+  37.590859853623186
+ ],
+ "pattern": "(?i)^Safeway$",
+ "fetched": "2026-10-09T17:52:01.668973+00:00",
+ "rows": [
+  {
+   "id": "c0066982-0a45-46ae-a61d-d84f572969e0",
+   "name": "Safeway",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://local.safeway.com/safeway/ca/burlingame/1450-howard-ave.html"
+   ],
+   "phones": [
+    "+16503433488"
+   ],
+   "brand": "Safeway",
+   "brand_wikidata": null,
+   "address": "1450 Howard Ave",
+   "locality": "Burlingame",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -122.34820556640625,
+   "lat": 37.576419830322266
+  },
+  {
+   "id": "6289fd2c-cb72-47b2-95ef-b46b4270963c",
+   "name": "Safeway",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://local.safeway.com/safeway/ca/san-mateo/860-n-delaware-st.html"
+   ],
+   "phones": [
+    "+16503472704"
+   ],
+   "brand": "Safeway",
+   "brand_wikidata": null,
+   "address": "860 N Delaware St",
+   "locality": "San Mateo",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -122.33287811279297,
+   "lat": 37.58040237426758
+  }
+ ]
+}

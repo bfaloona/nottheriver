@@ -1,0 +1,53 @@
+{
+ "place": "Seneca, IL",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 41.3107161,
+  "lon": -88.6090863,
+  "osm_type": "relation",
+  "osm_id": 126773,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Seneca, LaSalle County, Illinois, 61360, United States"
+ },
+ "bbox": [
+  -88.7344994231725,
+  41.216513201449274,
+  -88.48367317682751,
+  41.40491899855073
+ ],
+ "pattern": "(?i)^(Seneca )?Ace Hardware$",
+ "fetched": "2026-10-09T17:52:00.776767+00:00",
+ "rows": [
+  {
+   "id": "4dc0c1a3-8913-4d4f-b44e-5136d1e67c38",
+   "name": "Ace Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9999491696536541,
+   "websites": [
+    "http://www.acehardware.com/store-details/16926"
+   ],
+   "phones": [
+    "+18153576144"
+   ],
+   "brand": "Ace Hardware",
+   "brand_wikidata": null,
+   "address": "255 S Main St",
+   "locality": "Seneca",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 10,
+   "lon": -88.61034393310547,
+   "lat": 41.307071685791016
+  }
+ ]
+}

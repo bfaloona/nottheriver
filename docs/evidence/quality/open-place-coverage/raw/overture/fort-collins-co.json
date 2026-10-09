@@ -1,0 +1,109 @@
+{
+ "place": "Fort Collins, CO",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.5871782,
+  "lon": -105.0770113,
+  "osm_type": "relation",
+  "osm_id": 112524,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Fort Collins, Larimer County, Colorado, United States"
+ },
+ "bbox": [
+  -105.20105765192396,
+  40.49297530144927,
+  -104.95296494807603,
+  40.68138109855072
+ ],
+ "pattern": "(?i)^Pendleton|^JAX( Outdoor Gear| Ranch & Home| Mercantile| Goods)?$",
+ "fetched": "2026-10-09T17:51:58.003747+00:00",
+ "rows": [
+  {
+   "id": "39f79c6a-49d1-46d1-9d89-0695d1c9d712",
+   "name": "JAX Fort Collins Outdoor Gear",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9722161889076233,
+   "websites": [
+    "https://jaxgoods.com/"
+   ],
+   "phones": [
+    "+19702210544"
+   ],
+   "brand": "JAX Outdoor Gear",
+   "brand_wikidata": null,
+   "address": "1200 N College Ave",
+   "locality": "Fort Collins",
+   "source_dataset": "meta",
+   "source_update_time": "2026-08-24T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -105.07572937011719,
+   "lat": 40.60242462158203
+  },
+  {
+   "id": "c1abf58d-35f6-4737-93b2-8a249e2892c5",
+   "name": "JAX Fort Collins Outdoor Gear",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9891512393951416,
+   "websites": [
+    "https://jaxgoods.com/"
+   ],
+   "phones": [
+    "+19702210544"
+   ],
+   "brand": "JAX Outdoor Gear",
+   "brand_wikidata": null,
+   "address": "1200 N College Ave",
+   "locality": "Fort Collins",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 7,
+   "lon": -105.07572937011719,
+   "lat": 40.60242462158203
+  },
+  {
+   "id": "87984d19-b138-4164-b988-d8932e6f0f65",
+   "name": "Pendleton",
+   "basic_category": "fashion_and_apparel_store",
+   "taxonomy_primary": "clothing_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "fashion_and_apparel_store",
+    "clothing_store"
+   ],
+   "confidence": 0.9199122190475464,
+   "websites": [
+    "https://www.pendleton-usa.com/"
+   ],
+   "phones": [
+    "+19704849993"
+   ],
+   "brand": "Pendleton Woolen Mills",
+   "brand_wikidata": null,
+   "address": "107 S College Ave",
+   "locality": "Fort Collins",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -105.0772933959961,
+   "lat": 40.5866584777832
+  }
+ ]
+}

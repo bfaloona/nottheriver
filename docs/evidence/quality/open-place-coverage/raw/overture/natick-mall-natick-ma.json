@@ -1,0 +1,83 @@
+{
+ "place": "Natick Mall, Natick, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 42.3017312,
+  "lon": -71.384253,
+  "osm_type": "way",
+  "osm_id": 336100152,
+  "category": "landuse",
+  "type": "retail",
+  "display_name": "Natick Mall, 1245, Natick, Middlesex County, Massachusetts, 01760, United States"
+ },
+ "bbox": [
+  -71.41364566385234,
+  42.27999206956522,
+  -71.35486033614767,
+  42.32347033043478
+ ],
+ "pattern": "(?i)^Sur La Table$|^Crate (&|and) Barrel$|^(The )?North Face$",
+ "fetched": "2026-10-09T17:51:34.279602+00:00",
+ "rows": [
+  {
+   "id": "742ba5c3-7deb-4c50-bd15-76adfb7b4575",
+   "name": "The North Face",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.999922980260849,
+   "websites": [
+    "https://thenorthface.com/en-us/stores/MA/Natick/USA23"
+   ],
+   "phones": [
+    "+15086517676"
+   ],
+   "brand": "The North Face",
+   "brand_wikidata": null,
+   "address": "1245 Worcester St #4016",
+   "locality": "Natick",
+   "source_dataset": "meta",
+   "source_update_time": "2026-08-24T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.38359069824219,
+   "lat": 42.301910400390625
+  },
+  {
+   "id": "52a11c8d-7b2f-4b49-acf2-a4e5bf055755",
+   "name": "Sur La Table",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "kitchen_supply_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "kitchen_and_bath_store",
+    "kitchen_supply_store"
+   ],
+   "confidence": 0.9716377258300781,
+   "websites": [
+    "https://www.surlatable.com/locations/ma/natick/store-168.html"
+   ],
+   "phones": [
+    "6174856268"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1245 Worcester St Ste #4014",
+   "locality": "Natick",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2025-08-29T14:10:22.580Z",
+   "operating_status": "open",
+   "version": 7,
+   "lon": -71.38568115234375,
+   "lat": 42.30073165893555
+  }
+ ]
+}

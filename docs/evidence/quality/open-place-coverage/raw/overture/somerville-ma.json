@@ -1,0 +1,198 @@
+{
+ "place": "Somerville, MA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.3875968,
+  "lon": -71.0994968,
+  "osm_type": "relation",
+  "osm_id": 1933746,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Somerville, Middlesex County, Massachusetts, United States"
+ },
+ "bbox": [
+  -71.22703908743978,
+  42.29339390144927,
+  -70.97195451256022,
+  42.481799698550724
+ ],
+ "pattern": "(?i)^(The )?Home Depot$",
+ "fetched": "2026-10-09T17:51:33.947828+00:00",
+ "rows": [
+  {
+   "id": "837212e3-305e-4952-8285-613f70e98732",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_improvement_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_improvement_store"
+   ],
+   "confidence": 0.9978988941788673,
+   "websites": [
+    "https://www.homedepot.com/l/South-Bay-Boston/MA/Boston/02125/2679"
+   ],
+   "phones": [
+    "6174426110"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "5 Allstate Rd",
+   "locality": "Boston",
+   "source_dataset": "Microsoft",
+   "source_update_time": "2019-05-16T01:00:01.390Z",
+   "operating_status": "open",
+   "version": 14,
+   "lon": -71.06389617919922,
+   "lat": 42.32832717895508
+  },
+  {
+   "id": "72a899c9-4da4-41ec-9672-34393fb1636d",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.homedepot.com/l/Watertown/MA/Watertown/02472/2602?emt=MSFBPage"
+   ],
+   "phones": [
+    "+16179260299"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "615 Arsenal St",
+   "locality": "Watertown",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.15583038330078,
+   "lat": 42.36213684082031
+  },
+  {
+   "id": "8b703a5d-7826-4b78-bc0a-aced8d512a6c",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_improvement_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_improvement_store"
+   ],
+   "confidence": 0.9825798869132996,
+   "websites": [
+    "https://www.homedepot.com/l/Somerville/MA/Somerville/02145/2667?emt=MSFBPage"
+   ],
+   "phones": [
+    "+16176230001"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "75 Mystic Ave",
+   "locality": "Somerville",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.07959747314453,
+   "lat": 42.38996887207031
+  },
+  {
+   "id": "f861f942-bb95-490e-8d24-41156d78369b",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9953737854957581,
+   "websites": [
+    "https://www.homedepot.com/l/Everett/MA/Everett/02149/2688?emt=MSFBPage"
+   ],
+   "phones": [
+    "+16173892323"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "3 Mystic View Rd",
+   "locality": "Everett",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.07008361816406,
+   "lat": 42.39776611328125
+  },
+  {
+   "id": "b729a534-f136-498b-8c46-5904a338dffa",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.homedepot.com/l/Chelsea/MA/Chelsea/02150/8979?emt=MSEN%3Femt%3DMSFBPage"
+   ],
+   "phones": [
+    "+16178879560"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "1100 Revere Beach Pkwy",
+   "locality": "Chelsea",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -71.02535247802734,
+   "lat": 42.403995513916016
+  },
+  {
+   "id": "36dfe5f4-b1db-4886-a91f-c8855b8ed4f3",
+   "name": "The Home Depot",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9813855886459351,
+   "websites": [
+    "https://www.homedepot.com/l/Saugus/MA/Saugus/01906/2653?emt=MSFBPage"
+   ],
+   "phones": [
+    "+17812319500"
+   ],
+   "brand": "The Home Depot",
+   "brand_wikidata": null,
+   "address": "564 Broadway",
+   "locality": "Saugus",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -71.02058410644531,
+   "lat": 42.47688674926758
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "place": "Decatur, DeKalb County, GA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 33.7737582,
+  "lon": -84.296069,
+  "osm_type": "relation",
+  "osm_id": 119289,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Decatur, DeKalb County, Georgia, 30030, United States"
+ },
+ "bbox": [
+  -84.40939727192725,
+  33.67955530144928,
+  -84.18274072807276,
+  33.86796109855073
+ ],
+ "pattern": "(?i)^Splash of Olive",
+ "fetched": "2026-10-09T17:51:58.612172+00:00",
+ "rows": [
+  {
+   "id": "648084d6-6918-4768-ac0f-e1e19d8eefdb",
+   "name": "Splash Of Olive",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "olive_oil_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "olive_oil_store"
+   ],
+   "confidence": 0.55,
+   "websites": [
+    "https://splashofolive.com"
+   ],
+   "phones": [
+    "+14046002414"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "55 Bennett St NW",
+   "locality": "Atlanta",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -84.39419555664062,
+   "lat": 33.81217956542969
+  },
+  {
+   "id": "af9ddc30-a2b9-451d-be37-8311829b1ce0",
+   "name": "Splash Of Olive Decatur",
+   "basic_category": "food_and_beverage_store",
+   "taxonomy_primary": "grocery_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "food_and_beverage_store",
+    "grocery_store"
+   ],
+   "confidence": 0.75,
+   "websites": [
+    "https://splashofolive.com"
+   ],
+   "phones": [
+    "4046002414"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "308 E Howard Ave",
+   "locality": "Decatur",
+   "source_dataset": "BrightQuery",
+   "source_update_time": "2026-09-17T20:01:51.007Z",
+   "operating_status": "open",
+   "version": 3,
+   "lon": -84.2925033569336,
+   "lat": 33.772193908691406
+  }
+ ]
+}

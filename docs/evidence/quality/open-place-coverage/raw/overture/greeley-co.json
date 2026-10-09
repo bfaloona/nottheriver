@@ -1,0 +1,81 @@
+{
+ "place": "Greeley, CO",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.4233142,
+  "lon": -104.7091322,
+  "osm_type": "relation",
+  "osm_id": 112430,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Greeley, Weld County, Colorado, United States"
+ },
+ "bbox": [
+  -104.83287586445198,
+  40.329111301449274,
+  -104.58538853554802,
+  40.51751709855073
+ ],
+ "pattern": "(?i)^Murdoch'?s|^Tractor Supply",
+ "fetched": "2026-10-09T17:52:02.387270+00:00",
+ "rows": [
+  {
+   "id": "950618fd-26cc-4205-bcb1-a238c13a1318",
+   "name": "Tractor Supply Co.",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.tractorsupply.com/tsc/store_Greeley-CO-80631_1614"
+   ],
+   "phones": [
+    "+19703303440"
+   ],
+   "brand": "Tractor Supply Co.",
+   "brand_wikidata": null,
+   "address": "3015 23rd Ave",
+   "locality": "Greeley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -104.71759033203125,
+   "lat": 40.38812255859375
+  },
+  {
+   "id": "7d1f57dc-cbd7-4bb2-b4d6-98790267e337",
+   "name": "Murdoch's Ranch & Home Supply",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9998714240193367,
+   "websites": [
+    "https://www.murdochs.com/stores/greeley/?utm_source=Facebook&utm_medium=Yext"
+   ],
+   "phones": [
+    "+19703520544"
+   ],
+   "brand": "Murdoch's Ranch & Home Supply",
+   "brand_wikidata": null,
+   "address": "310 8th St",
+   "locality": "Greeley",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": null,
+   "version": 11,
+   "lon": -104.6825180053711,
+   "lat": 40.42445755004883
+  }
+ ]
+}

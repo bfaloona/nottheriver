@@ -1,0 +1,81 @@
+{
+ "place": "Conshohocken, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.0738835,
+  "lon": -75.30625,
+  "osm_type": "relation",
+  "osm_id": 187776,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Conshohocken, Montgomery County, Pennsylvania, 19428, United States"
+ },
+ "bbox": [
+  -75.42935645735102,
+  39.979680601449274,
+  -75.18314354264899,
+  40.16808639855073
+ ],
+ "pattern": "(?i)^REI( Co-op)?$",
+ "fetched": "2026-10-09T17:51:38.886653+00:00",
+ "rows": [
+  {
+   "id": "b86ba295-22ab-4969-aac8-ea2b6da16f07",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "sporting_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "https://www.rei.com/stores/king-of-prussia?y_source=1_MzUyMDQxNC01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+14842311703"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "161 Town Square Pl",
+   "locality": "King of Prussia",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 9,
+   "lon": -75.40502166748047,
+   "lat": 40.082733154296875
+  },
+  {
+   "id": "32f62475-941e-4ca1-8184-a6cb72df58b9",
+   "name": "REI",
+   "basic_category": "sporting_goods_store",
+   "taxonomy_primary": "outdoor_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "outdoor_store"
+   ],
+   "confidence": 0.9999938823282719,
+   "websites": [
+    "https://www.rei.com/stores/conshohocken-plymouth-meeting?y_source=1_MTQ1MzQwNy01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+   ],
+   "phones": [
+    "+16109400809"
+   ],
+   "brand": "REI",
+   "brand_wikidata": null,
+   "address": "200 Ridge Pike Ste 115",
+   "locality": "Plymouth Twp",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 15,
+   "lon": -75.28775024414062,
+   "lat": 40.09584045410156
+  }
+ ]
+}

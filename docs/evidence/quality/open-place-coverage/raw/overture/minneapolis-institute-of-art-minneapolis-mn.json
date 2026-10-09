@@ -1,0 +1,52 @@
+{
+ "place": "Minneapolis Institute of Art, Minneapolis, MN",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.0,
+ "center": {
+  "lat": 44.9584761,
+  "lon": -93.2741528,
+  "osm_type": "way",
+  "osm_id": 38898412,
+  "category": "tourism",
+  "type": "museum",
+  "display_name": "Minneapolis Institute of Art, 2400, 3rd Avenue South, Whittier, Eat Street, Powderhorn, Minneapolis, Hennepin County, Minnesota, 55404, United States"
+ },
+ "bbox": [
+  -93.29463381093205,
+  44.94398334637681,
+  -93.25367178906794,
+  44.972968853623186
+ ],
+ "pattern": "(?i)^(The )?Store at Mia|^Mia Store|^Minneapolis Institute of Arts?$",
+ "fetched": "2026-10-09T17:51:56.582087+00:00",
+ "rows": [
+  {
+   "id": "79ecc0a3-41f6-433f-b55a-bac2f934d06c",
+   "name": "Minneapolis Institute of Art",
+   "basic_category": "museum",
+   "taxonomy_primary": "art_museum",
+   "taxonomy_hierarchy": [
+    "arts_and_entertainment",
+    "museum",
+    "art_museum"
+   ],
+   "confidence": 0.9089062213897705,
+   "websites": [
+    "https://new.artsmia.org/"
+   ],
+   "phones": [
+    "+18886422787"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "2400 3rd Ave S",
+   "locality": "Minneapolis",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 13,
+   "lon": -93.27330017089844,
+   "lat": 44.95850372314453
+  }
+ ]
+}

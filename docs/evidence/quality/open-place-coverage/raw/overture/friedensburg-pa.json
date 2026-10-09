@@ -1,0 +1,53 @@
+{
+ "place": "Friedensburg, PA",
+ "release": "2026-09-23.1",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6071825,
+  "lon": -76.2298548,
+  "osm_type": "relation",
+  "osm_id": 189216,
+  "category": "boundary",
+  "type": "census",
+  "display_name": "Friedensburg, Wayne Township, Schuylkill County, Pennsylvania, 17933, United States"
+ },
+ "bbox": [
+  -76.35393827464509,
+  40.512979601449274,
+  -76.10577132535491,
+  40.70138539855073
+ ],
+ "pattern": "(?i)^Dewald",
+ "fetched": "2026-10-09T17:51:49.623739+00:00",
+ "rows": [
+  {
+   "id": "eaea4b14-69a5-435d-b3fa-e03c05ce3cf1",
+   "name": "Dewald & Lengle Hardware",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "hardware_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "hardware_store"
+   ],
+   "confidence": 0.9986096411943436,
+   "websites": [
+    "http://www.dewaldandlengle.com/"
+   ],
+   "phones": [
+    "+15707392100"
+   ],
+   "brand": null,
+   "brand_wikidata": null,
+   "address": "1444 Long Run Rd",
+   "locality": "Wayne",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 11,
+   "lon": -76.23365783691406,
+   "lat": 40.60538101196289
+  }
+ ]
+}

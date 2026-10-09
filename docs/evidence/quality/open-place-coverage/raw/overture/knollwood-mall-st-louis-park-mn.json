@@ -1,0 +1,53 @@
+{
+ "place": "Knollwood Mall, St. Louis Park, MN",
+ "release": "2026-09-23.1",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.9378561,
+  "lon": -93.3859653,
+  "osm_type": "way",
+  "osm_id": 40541021,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Knollwood Mall, 36th Street West, Aquila, Saint Louis Park, Hennepin County, Minnesota, 55426, United States"
+ },
+ "bbox": [
+  -93.4166757820954,
+  44.916116969565216,
+  -93.3552548179046,
+  44.95959523043478
+ ],
+ "pattern": "(?i)^Home ?Goods$",
+ "fetched": "2026-10-09T17:51:53.511413+00:00",
+ "rows": [
+  {
+   "id": "f4180be9-accb-44d6-a839-0fec913af460",
+   "name": "HomeGoods",
+   "basic_category": "hardware_home_and_garden_store",
+   "taxonomy_primary": "home_goods_store",
+   "taxonomy_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "hardware_home_and_garden_store",
+    "home_goods_store"
+   ],
+   "confidence": 0.9902192950248718,
+   "websites": [
+    "http://www.homegoods.com/"
+   ],
+   "phones": [
+    "+19522381039"
+   ],
+   "brand": "HomeGoods",
+   "brand_wikidata": null,
+   "address": "8332 MN-7",
+   "locality": "St Louis Park",
+   "source_dataset": "meta",
+   "source_update_time": "2026-09-14T00:00:00.000Z",
+   "operating_status": "open",
+   "version": 12,
+   "lon": -93.38449096679688,
+   "lat": 44.93760299682617
+  }
+ ]
+}
