@@ -3,7 +3,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig(
-  globalIgnores(['dist', 'proxy/dist', 'public', 'data/raw', 'test-results', 'playwright-report', '.wrangler', '.claude']),
+  globalIgnores(['dist', 'proxy/dist', 'public', 'data/raw', 'test-results', 'playwright-report', '**/.wrangler', '.claude']),
   js.configs.recommended,
   tseslint.configs.recommended,
   {
