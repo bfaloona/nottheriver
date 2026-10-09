@@ -1,0 +1,87 @@
+{
+ "place": "Conshohocken, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.0738835,
+  "lon": -75.30625,
+  "osm_type": "relation",
+  "osm_id": 187776,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Conshohocken, Montgomery County, Pennsylvania, 19428, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:39.9797,-75.4294,40.1681,-75.1831];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^REI( Co-op)?$\",i];nwr.a[brand~\"^REI( Co-op)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:03:47.984Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:02:01Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 286268327,
+    "timestamp": "2024-07-05T03:48:00Z",
+    "version": 9,
+    "changeset": 153570968,
+    "center": {
+     "lat": 40.096225,
+     "lon": -75.2876817
+    },
+    "tags": {
+     "addr:city": "Conshohocken",
+     "addr:housenumber": "200",
+     "addr:postcode": "19428",
+     "addr:state": "PA",
+     "addr:street": "West Ridge Pike",
+     "branch": "Co op",
+     "brand": "REI",
+     "brand:wikidata": "Q3414933",
+     "building": "yes",
+     "check_date": "2024-03-31",
+     "name": "REI",
+     "official_name": "Recreational Equipment, Inc.",
+     "opening_hours": "Mo-Sa 10:00-21:00; Su 11:00-18:00",
+     "phone": "+1-610-940-0809",
+     "service:bicycle:repair": "yes",
+     "service:bicycle:retail": "yes",
+     "shop": "outdoor",
+     "website": "https://www.rei.com/stores/conshohocken-plymouth-meeting"
+    }
+   },
+   {
+    "type": "way",
+    "id": 772723806,
+    "timestamp": "2024-09-29T18:47:52Z",
+    "version": 6,
+    "changeset": 157267244,
+    "center": {
+     "lat": 40.0826964,
+     "lon": -75.40517
+    },
+    "tags": {
+     "addr:city": "King of Prussia",
+     "addr:housenumber": "161",
+     "addr:postcode": "19406",
+     "addr:state": "PA",
+     "addr:street": "Town Square Place",
+     "brand": "REI",
+     "brand:wikidata": "Q3414933",
+     "building": "yes",
+     "check_date": "2024-09-29",
+     "name": "REI",
+     "official_name": "Recreational Equipment, Inc.",
+     "opening_hours": "Mo-Sa 10:00-20:00; Su 11:00-18:00",
+     "phone": "+1-484-231-1703",
+     "service:bicycle:repair": "yes",
+     "service:bicycle:retail": "yes",
+     "shop": "outdoor",
+     "website": "https://www.rei.com/stores/king-of-prussia"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,692 @@
+{
+ "shops": 86,
+ "distinct_stores": 84,
+ "osm": {
+  "found": "64 of 86 (74%)",
+  "usable": {
+   "yes": 39,
+   "weak": 22,
+   "no": 3
+  },
+  "name_match": {
+   "exact": 52,
+   "partial": 9,
+   "pattern": 3
+  },
+  "freshness": {
+   "with_opening_hours": "50 of 64",
+   "with_website": "51 of 64",
+   "with_phone": "47 of 64",
+   "with_brand_wikidata": "49 of 64",
+   "edited_within_1_year": "19 of 64",
+   "edited_within_2_years": "31 of 64",
+   "median_last_edit_age_days": 758
+  },
+  "misses": [
+   {
+    "row": 1,
+    "name": "Blackstone's of Beacon Hill (Boston)",
+    "search_id": "cast-iron-skillet-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 4,
+    "name": "Sur La Table (Natick)",
+    "search_id": "cast-iron-skillet-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 24,
+    "name": "High Country Outfitters (Midtown, Ansley Mall)",
+    "search_id": "wool-socks-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 26,
+    "name": "Abbadabba's Little Five Points",
+    "search_id": "wool-socks-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 27,
+    "name": "AT&T Store (Buda, Main St)",
+    "search_id": "usb-c-charging-cable-suburban",
+    "reason": "name found only outside the accept radius (6.04 mi, AT&T)"
+   },
+   {
+    "row": 38,
+    "name": "Phillips Toy Mart (Nashville, Harding Pike)",
+    "search_id": "wooden-train-set-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 41,
+    "name": "HomeGoods (St. Louis Park, Knollwood)",
+    "search_id": "bath-towels-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 44,
+    "name": "Butters Ace Hardware (Thompsons Station)",
+    "search_id": "cordless-drill-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 45,
+    "name": "B & C Hardware (Ace, Brentwood)",
+    "search_id": "cordless-drill-suburban",
+    "reason": "name found only outside the accept radius (6.86 mi, Ace Hardware)"
+   },
+   {
+    "row": 47,
+    "name": "Hillsboro Hardware (Nashville)",
+    "search_id": "cordless-drill-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 48,
+    "name": "Harbor Freight Tools (Antioch)",
+    "search_id": "cordless-drill-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 53,
+    "name": "Barnes & Noble (Galleria, Edina)",
+    "search_id": "jigsaw-puzzle-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 55,
+    "name": "JAX Outdoor Gear (Fort Collins)",
+    "search_id": "wool-blanket-rural",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 56,
+    "name": "The North Face Natick Mall",
+    "search_id": "rain-jacket-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 57,
+    "name": "Natick Outdoor Store",
+    "search_id": "rain-jacket-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 60,
+    "name": "Petite Violette Olive Oil & Vinegar Boutique",
+    "search_id": "extra-virgin-olive-oil-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 61,
+    "name": "Splash of Olive (Decatur)",
+    "search_id": "extra-virgin-olive-oil-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 62,
+    "name": "VSOP Olive Oil & Vinegar Taproom (Norcross)",
+    "search_id": "extra-virgin-olive-oil-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 64,
+    "name": "Seneca Ace Hardware",
+    "search_id": "rechargeable-aa-batteries-rural",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 72,
+    "name": "Crate & Barrel (Galleria, Edina)",
+    "search_id": "bath-towels-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 73,
+    "name": "Pottery Barn (Galleria, Edina)",
+    "search_id": "bath-towels-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 84,
+    "name": "Lakeshore Learning (Nashville, White Bridge Rd)",
+    "search_id": "wooden-train-set-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   }
+  ],
+  "no_shop_tag": [
+   {
+    "row": 34,
+    "name": "Dewald & Lengle Hardware (Friedensburg)",
+    "search_id": "led-light-bulbs-rural",
+    "by": "no shop, amenity or craft tag"
+   },
+   {
+    "row": 35,
+    "name": "Denney Electric Supply (Schuylkill Haven)",
+    "search_id": "led-light-bulbs-rural",
+    "by": "craft=electrician"
+   },
+   {
+    "row": 50,
+    "name": "The Store at Mia (Minneapolis Institute of Art)",
+    "search_id": "jigsaw-puzzle-urban",
+    "by": "no shop, amenity or craft tag"
+   }
+  ],
+  "data_timestamps": [
+   "2026-10-09T17:50:41Z",
+   "2026-07-28T02:16:18Z",
+   "2026-10-09T17:51:46Z",
+   "2026-10-09T17:54:51Z",
+   "2026-10-09T17:55:51Z",
+   "2026-10-09T17:56:51Z",
+   "2026-10-09T17:59:54Z",
+   "2026-10-09T18:02:01Z",
+   "2026-10-09T18:04:06Z",
+   "2026-10-09T18:05:06Z",
+   "2026-10-09T18:06:05Z",
+   "2026-10-09T18:07:06Z",
+   "2026-10-09T18:08:06Z",
+   "2026-06-01T08:52:28Z",
+   "2026-10-09T18:09:06Z",
+   "2026-10-09T18:11:11Z",
+   "2026-10-09T18:13:18Z",
+   "2026-10-09T18:14:18Z",
+   "2026-10-09T18:15:20Z",
+   "2026-10-09T18:16:21Z",
+   "2026-10-09T18:17:20Z",
+   "2026-10-09T18:18:21Z",
+   "2026-10-09T18:19:21Z",
+   "2026-10-09T18:20:21Z",
+   "2026-10-09T18:21:20Z",
+   "2026-10-09T18:23:28Z",
+   "2026-10-09T18:24:31Z",
+   "2026-10-09T18:25:35Z",
+   "2026-10-09T18:27:36Z",
+   "2026-10-09T18:28:34Z",
+   "2026-10-09T18:29:31Z",
+   "2026-10-09T18:30:41Z",
+   "2026-10-09T18:31:41Z",
+   "2026-10-09T18:32:46Z",
+   "2026-10-09T18:38:51Z",
+   "2026-10-09T18:39:51Z"
+  ],
+  "endpoints": [
+   "https://overpass-api.de/api/interpreter",
+   "https://overpass.kumi.systems/api/interpreter",
+   "https://lz4.overpass-api.de/api/interpreter",
+   "https://z.overpass-api.de/api/interpreter"
+  ]
+ },
+ "overture": {
+  "found": "82 of 86 (95%)",
+  "usable": {
+   "yes": 59,
+   "weak": 18,
+   "no": 5
+  },
+  "name_match": {
+   "exact": 56,
+   "partial": 23,
+   "pattern": 3
+  },
+  "freshness": {
+   "with_website": "77 of 82",
+   "with_phone": "82 of 82",
+   "with_brand_wikidata": "0 of 82",
+   "operating_status_open": "74 of 82",
+   "source_updated_within_1_year": "77 of 82",
+   "median_source_update_age_days": 25,
+   "median_confidence": 0.9902192950248718,
+   "source_datasets": {
+    "meta": 71,
+    "Microsoft": 5,
+    "BrightQuery": 6
+   }
+  },
+  "misses": [
+   {
+    "row": 5,
+    "name": "Crate & Barrel (Natick Mall)",
+    "search_id": "cast-iron-skillet-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 44,
+    "name": "Butters Ace Hardware (Thompsons Station)",
+    "search_id": "cordless-drill-suburban",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 65,
+    "name": "Walgreens (Morris, 100 Bedford Rd)",
+    "search_id": "rechargeable-aa-batteries-rural",
+    "reason": "no object with a matching name or brand in the query radius"
+   },
+   {
+    "row": 73,
+    "name": "Pottery Barn (Galleria, Edina)",
+    "search_id": "bath-towels-urban",
+    "reason": "no object with a matching name or brand in the query radius"
+   }
+  ],
+  "no_category": [
+   {
+    "row": 2,
+    "name": "Boston General Store (Brookline)",
+    "search_id": "cast-iron-skillet-urban",
+    "by": "flowers_and_gifts_store / flowers_and_gifts_store"
+   },
+   {
+    "row": 9,
+    "name": "The Baker's Pin (Northampton)",
+    "search_id": "cast-iron-skillet-rural",
+    "by": "specialty_school / cooking_school"
+   },
+   {
+    "row": 21,
+    "name": "Walmart Supercenter (Hamburg)",
+    "search_id": "camping-tent-rural",
+    "by": "pharmacy_and_drug_store / pharmacy"
+   },
+   {
+    "row": 50,
+    "name": "The Store at Mia (Minneapolis Institute of Art)",
+    "search_id": "jigsaw-puzzle-urban",
+    "by": "museum / art_museum"
+   },
+   {
+    "row": 82,
+    "name": "Target (San Mateo Fashion Island)",
+    "search_id": "dark-chocolate-bar-suburban",
+    "by": "fashion_and_apparel_store / eyewear_store"
+   }
+  ],
+  "release": [
+   "2026-09-23.1"
+  ]
+ },
+ "either_found": "84 of 86 (98%)",
+ "either_usable_yes": "60 of 86 (70%)",
+ "either_usable_yes_or_weak": "83 of 86 (97%)",
+ "outside_nearby_radius": [
+  {
+   "row": 8,
+   "name": "Kitchen Outfitters (Acton)",
+   "distance_from_zip_mi": 14.79
+  },
+  {
+   "row": 14,
+   "name": "REI (Conshohocken)",
+   "distance_from_zip_mi": 11.19
+  },
+  {
+   "row": 32,
+   "name": "Harbor Freight (San Rafael)",
+   "distance_from_zip_mi": 15.42
+  },
+  {
+   "row": 38,
+   "name": "Phillips Toy Mart (Nashville, Harding Pike)",
+   "distance_from_zip_mi": 14.42
+  },
+  {
+   "row": 44,
+   "name": "Butters Ace Hardware (Thompsons Station)",
+   "distance_from_zip_mi": 12.31
+  },
+  {
+   "row": 46,
+   "name": "Guthrie's Ace Hardware (Nashville, Charlotte Pike)",
+   "distance_from_zip_mi": 14.42
+  },
+  {
+   "row": 47,
+   "name": "Hillsboro Hardware (Nashville)",
+   "distance_from_zip_mi": 14.42
+  },
+  {
+   "row": 48,
+   "name": "Harbor Freight Tools (Antioch)",
+   "distance_from_zip_mi": 14.18
+  },
+  {
+   "row": 54,
+   "name": "Pendleton Woolen Mills (Fort Collins)",
+   "distance_from_zip_mi": 33.59
+  },
+  {
+   "row": 55,
+   "name": "JAX Outdoor Gear (Fort Collins)",
+   "distance_from_zip_mi": 33.59
+  },
+  {
+   "row": 62,
+   "name": "VSOP Olive Oil & Vinegar Taproom (Norcross)",
+   "distance_from_zip_mi": 15.2
+  },
+  {
+   "row": 66,
+   "name": "Dandelion Chocolate (Valencia Street, SF)",
+   "distance_from_zip_mi": 15.13
+  },
+  {
+   "row": 67,
+   "name": "Recchiuti Confections (Ferry Building, SF)",
+   "distance_from_zip_mi": 15.6
+  },
+  {
+   "row": 84,
+   "name": "Lakeshore Learning (Nashville, White Bridge Rd)",
+   "distance_from_zip_mi": 14.42
+  }
+ ],
+ "by_zip_kind": {
+  "urban": {
+   "n": 30,
+   "osm_found": 20,
+   "osm_yes": 14,
+   "osm_yes_or_weak": 19,
+   "overture_found": 29,
+   "overture_yes": 22,
+   "overture_yes_or_weak": 27
+  },
+  "suburban": {
+   "n": 34,
+   "osm_found": 24,
+   "osm_yes": 16,
+   "osm_yes_or_weak": 24,
+   "overture_found": 32,
+   "overture_yes": 25,
+   "overture_yes_or_weak": 31
+  },
+  "rural": {
+   "n": 22,
+   "osm_found": 20,
+   "osm_yes": 9,
+   "osm_yes_or_weak": 18,
+   "overture_found": 21,
+   "overture_yes": 12,
+   "overture_yes_or_weak": 19
+  }
+ },
+ "by_category": {
+  "kitchen": {
+   "n": 12,
+   "osm_found": 10,
+   "osm_yes": 5,
+   "osm_yes_or_weak": 10,
+   "overture_found": 11,
+   "overture_yes": 6,
+   "overture_yes_or_weak": 9
+  },
+  "outdoor": {
+   "n": 16,
+   "osm_found": 16,
+   "osm_yes": 12,
+   "osm_yes_or_weak": 16,
+   "overture_found": 16,
+   "overture_yes": 12,
+   "overture_yes_or_weak": 15
+  },
+  "clothing": {
+   "n": 10,
+   "osm_found": 6,
+   "osm_yes": 6,
+   "osm_yes_or_weak": 6,
+   "overture_found": 10,
+   "overture_yes": 10,
+   "overture_yes_or_weak": 10
+  },
+  "electronics_accessories": {
+   "n": 10,
+   "osm_found": 8,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 8,
+   "overture_found": 9,
+   "overture_yes": 5,
+   "overture_yes_or_weak": 9
+  },
+  "hardware": {
+   "n": 10,
+   "osm_found": 6,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 4,
+   "overture_found": 9,
+   "overture_yes": 8,
+   "overture_yes_or_weak": 9
+  },
+  "books_toys": {
+   "n": 9,
+   "osm_found": 6,
+   "osm_yes": 4,
+   "osm_yes_or_weak": 5,
+   "overture_found": 9,
+   "overture_yes": 7,
+   "overture_yes_or_weak": 8
+  },
+  "home": {
+   "n": 9,
+   "osm_found": 5,
+   "osm_yes": 0,
+   "osm_yes_or_weak": 5,
+   "overture_found": 8,
+   "overture_yes": 3,
+   "overture_yes_or_weak": 8
+  },
+  "grocery": {
+   "n": 10,
+   "osm_found": 7,
+   "osm_yes": 6,
+   "osm_yes_or_weak": 7,
+   "overture_found": 10,
+   "overture_yes": 8,
+   "overture_yes_or_weak": 9
+  }
+ },
+ "by_chain": {
+  "independent": {
+   "n": 20,
+   "osm_found": 11,
+   "osm_yes": 8,
+   "osm_yes_or_weak": 9,
+   "overture_found": 20,
+   "overture_yes": 15,
+   "overture_yes_or_weak": 17
+  },
+  "chain": {
+   "n": 64,
+   "osm_found": 52,
+   "osm_yes": 31,
+   "osm_yes_or_weak": 52,
+   "overture_found": 60,
+   "overture_yes": 42,
+   "overture_yes_or_weak": 58
+  },
+  "unlabelled": {
+   "n": 2,
+   "osm_found": 1,
+   "osm_yes": 0,
+   "osm_yes_or_weak": 0,
+   "overture_found": 2,
+   "overture_yes": 2,
+   "overture_yes_or_weak": 2
+  }
+ },
+ "by_search": {
+  "cast-iron-skillet-urban": {
+   "n": 3,
+   "osm_found": 2,
+   "osm_yes": 1,
+   "osm_yes_or_weak": 2,
+   "overture_found": 3,
+   "overture_yes": 2,
+   "overture_yes_or_weak": 2
+  },
+  "cast-iron-skillet-suburban": {
+   "n": 5,
+   "osm_found": 4,
+   "osm_yes": 2,
+   "osm_yes_or_weak": 4,
+   "overture_found": 4,
+   "overture_yes": 3,
+   "overture_yes_or_weak": 4
+  },
+  "cast-iron-skillet-rural": {
+   "n": 4,
+   "osm_found": 4,
+   "osm_yes": 2,
+   "osm_yes_or_weak": 4,
+   "overture_found": 4,
+   "overture_yes": 1,
+   "overture_yes_or_weak": 3
+  },
+  "camping-tent-urban": {
+   "n": 2,
+   "osm_found": 2,
+   "osm_yes": 1,
+   "osm_yes_or_weak": 2,
+   "overture_found": 2,
+   "overture_yes": 1,
+   "overture_yes_or_weak": 2
+  },
+  "camping-tent-suburban": {
+   "n": 5,
+   "osm_found": 5,
+   "osm_yes": 4,
+   "osm_yes_or_weak": 5,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 5
+  },
+  "camping-tent-rural": {
+   "n": 4,
+   "osm_found": 4,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 4,
+   "overture_found": 4,
+   "overture_yes": 3,
+   "overture_yes_or_weak": 3
+  },
+  "wool-socks-urban": {
+   "n": 5,
+   "osm_found": 3,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 3,
+   "overture_found": 5,
+   "overture_yes": 5,
+   "overture_yes_or_weak": 5
+  },
+  "usb-c-charging-cable-suburban": {
+   "n": 5,
+   "osm_found": 4,
+   "osm_yes": 1,
+   "osm_yes_or_weak": 4,
+   "overture_found": 5,
+   "overture_yes": 2,
+   "overture_yes_or_weak": 5
+  },
+  "headlamp-urban": {
+   "n": 5,
+   "osm_found": 5,
+   "osm_yes": 4,
+   "osm_yes_or_weak": 5,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 5
+  },
+  "led-light-bulbs-rural": {
+   "n": 5,
+   "osm_found": 5,
+   "osm_yes": 2,
+   "osm_yes_or_weak": 3,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 5
+  },
+  "wooden-train-set-suburban": {
+   "n": 4,
+   "osm_found": 2,
+   "osm_yes": 1,
+   "osm_yes_or_weak": 2,
+   "overture_found": 4,
+   "overture_yes": 3,
+   "overture_yes_or_weak": 4
+  },
+  "bath-towels-urban": {
+   "n": 5,
+   "osm_found": 2,
+   "osm_yes": 0,
+   "osm_yes_or_weak": 2,
+   "overture_found": 4,
+   "overture_yes": 2,
+   "overture_yes_or_weak": 4
+  },
+  "cordless-drill-suburban": {
+   "n": 5,
+   "osm_found": 1,
+   "osm_yes": 1,
+   "osm_yes_or_weak": 1,
+   "overture_found": 4,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 4
+  },
+  "jigsaw-puzzle-urban": {
+   "n": 5,
+   "osm_found": 4,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 3,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 4
+  },
+  "wool-blanket-rural": {
+   "n": 4,
+   "osm_found": 3,
+   "osm_yes": 0,
+   "osm_yes_or_weak": 3,
+   "overture_found": 4,
+   "overture_yes": 1,
+   "overture_yes_or_weak": 4
+  },
+  "rain-jacket-suburban": {
+   "n": 5,
+   "osm_found": 3,
+   "osm_yes": 3,
+   "osm_yes_or_weak": 3,
+   "overture_found": 5,
+   "overture_yes": 5,
+   "overture_yes_or_weak": 5
+  },
+  "extra-virgin-olive-oil-urban": {
+   "n": 5,
+   "osm_found": 2,
+   "osm_yes": 2,
+   "osm_yes_or_weak": 2,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 5
+  },
+  "rechargeable-aa-batteries-rural": {
+   "n": 5,
+   "osm_found": 4,
+   "osm_yes": 2,
+   "osm_yes_or_weak": 4,
+   "overture_found": 4,
+   "overture_yes": 3,
+   "overture_yes_or_weak": 4
+  },
+  "dark-chocolate-bar-suburban": {
+   "n": 5,
+   "osm_found": 5,
+   "osm_yes": 4,
+   "osm_yes_or_weak": 5,
+   "overture_found": 5,
+   "overture_yes": 4,
+   "overture_yes_or_weak": 4
+  }
+ }
+}

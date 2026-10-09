@@ -1,0 +1,152 @@
+{
+ "place": "Plaza Midtown, Atlanta, GA",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 33.7914007,
+  "lon": -84.3868337,
+  "osm_type": "way",
+  "osm_id": 1077709719,
+  "category": "landuse",
+  "type": "commercial",
+  "display_name": "Midtown Plaza, Atlanta, Fulton County, Georgia, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.7697,-84.4130,33.8131,-84.3607];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Publix\",i];nwr.a[brand~\"^Publix\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:28:47.128Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:27:36Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 760929140,
+    "lat": 33.7927085,
+    "lon": -84.3978483,
+    "timestamp": "2026-09-03T01:31:22Z",
+    "version": 11,
+    "changeset": 188447642,
+    "tags": {
+     "addr:city": "Atlanta",
+     "addr:housenumber": "1380",
+     "addr:postcode": "30363",
+     "addr:state": "GA",
+     "addr:street": "Atlantic Drive Northwest",
+     "addr:unit": "14135",
+     "branch": "In Atlantic Station",
+     "brand": "Publix",
+     "brand:wikidata": "Q672170",
+     "disused:shop": "supermarket",
+     "name": "Publix",
+     "opening_hours": "closed",
+     "phone": "+1 404-873-5055",
+     "ref": "1010",
+     "website": "https://www.publix.com/locations/1010",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2423191306,
+    "lat": 33.780602,
+    "lon": -84.3886926,
+    "timestamp": "2013-08-18T18:20:35Z",
+    "version": 1,
+    "changeset": 17400316,
+    "tags": {
+     "bus": "yes",
+     "name": "Publix Supermarket",
+     "public_transport": "stop_position"
+    }
+   },
+   {
+    "type": "node",
+    "id": 9244488380,
+    "lat": 33.7804479,
+    "lon": -84.3887556,
+    "timestamp": "2024-02-07T09:58:02Z",
+    "version": 5,
+    "changeset": 147168875,
+    "tags": {
+     "addr:city": "Atlanta",
+     "addr:housenumber": "950",
+     "addr:postcode": "30309-3846",
+     "addr:state": "GA",
+     "addr:street": "West Peachtree Street Northwest",
+     "branch": "The Plaza Midtown",
+     "brand": "Publix",
+     "brand:wikidata": "Q672170",
+     "name": "Publix",
+     "opening_hours": "Mo-Su 06:45-22:00",
+     "phone": "+1 404-253-3544",
+     "ref": "1061",
+     "shop": "supermarket",
+     "website": "https://www.publix.com/locations/1061"
+    }
+   },
+   {
+    "type": "way",
+    "id": 208355419,
+    "timestamp": "2026-03-29T03:18:54Z",
+    "version": 6,
+    "changeset": 180565338,
+    "center": {
+     "lat": 33.7703628,
+     "lon": -84.3811515
+    },
+    "tags": {
+     "addr:city": "Atlanta",
+     "addr:housenumber": "595",
+     "addr:postcode": "30308",
+     "addr:state": "GA",
+     "addr:street": "Piedmont Avenue Northeast",
+     "branch": "Piedmont",
+     "brand": "Publix",
+     "brand:wikidata": "Q672170",
+     "building": "yes",
+     "check_date:opening_hours": "2026-03-23",
+     "name": "Publix",
+     "opening_hours": "Mo-Su 07:00-22:00",
+     "phone": "+1 404-881-1750",
+     "ref": "776",
+     "shop": "supermarket",
+     "source": "bing_imagery",
+     "website": "https://www.publix.com/locations/776"
+    }
+   },
+   {
+    "type": "way",
+    "id": 226271463,
+    "timestamp": "2024-02-07T09:58:02Z",
+    "version": 6,
+    "changeset": 147168875,
+    "center": {
+     "lat": 33.7990502,
+     "lon": -84.3718581
+    },
+    "tags": {
+     "addr:city": "Atlanta",
+     "addr:housenumber": "1544",
+     "addr:postcode": "30324",
+     "addr:state": "GA",
+     "addr:street": "Piedmont Avenue Northeast",
+     "branch": "Ansley Mall",
+     "brand": "Publix",
+     "brand:wikidata": "Q672170",
+     "building": "yes",
+     "name": "Publix",
+     "opening_hours": "Mo-Su 07:00-22:00",
+     "phone": "+1 404-898-1850",
+     "ref": "599",
+     "shop": "supermarket",
+     "source": "bing_imagery",
+     "website": "https://www.publix.com/locations/599",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

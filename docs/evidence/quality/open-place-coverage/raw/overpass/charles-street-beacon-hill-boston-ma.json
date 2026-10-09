@@ -1,0 +1,25 @@
+{
+ "place": "Charles Street, Beacon Hill, Boston, MA",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 42.3585732,
+  "lon": -71.0707002,
+  "osm_type": "way",
+  "osm_id": 8644437,
+  "category": "highway",
+  "type": "primary",
+  "display_name": "Charles Street, Beacon Hill, Boston, Suffolk County, Massachusetts, 02114, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.3368,-71.1001,42.3803,-71.0413];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Blackstone'?s\",i];nwr.a[brand~\"^Blackstone'?s\",i];);\nout center meta;",
+ "endpoint": "https://overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T17:51:37.943Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T17:50:41Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

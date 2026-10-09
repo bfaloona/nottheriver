@@ -1,0 +1,25 @@
+{
+ "place": "Knollwood Mall, St. Louis Park, MN",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.9378561,
+  "lon": -93.3859653,
+  "osm_type": "way",
+  "osm_id": 40541021,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Knollwood Mall, 36th Street West, Aquila, Saint Louis Park, Hennepin County, Minnesota, 55426, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:44.9161,-93.4167,44.9596,-93.3553];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Home ?Goods$\",i];nwr.a[brand~\"^Home ?Goods$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:21:50.686Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:20:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

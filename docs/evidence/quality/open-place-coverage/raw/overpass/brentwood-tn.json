@@ -1,0 +1,91 @@
+{
+ "place": "Brentwood, TN",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 36.0325687,
+  "lon": -86.7825235,
+  "osm_type": "relation",
+  "osm_id": 196062,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Brentwood, Williamson County, Middle Tennessee, Tennessee, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:35.9384,-86.8990,36.1268,-86.6660];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Brilliant Sky|^B ?& ?C (Ace )?Hardware$|^Ace Hardware$\",i];nwr.a[brand~\"^Brilliant Sky|^B ?& ?C (Ace )?Hardware$|^Ace Hardware$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:19:29.951Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:17:20Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 13845980332,
+    "lat": 35.9649829,
+    "lon": -86.8147052,
+    "timestamp": "2026-05-18T17:21:10Z",
+    "version": 1,
+    "changeset": 182844286,
+    "tags": {
+     "name": "Brilliant Sky Toys & Books",
+     "shop": "books"
+    }
+   },
+   {
+    "type": "way",
+    "id": 544429169,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 3,
+    "changeset": 153904537,
+    "center": {
+     "lat": 36.1016181,
+     "lon": -86.8708898
+    },
+    "tags": {
+     "addr:city": "Nashville",
+     "addr:housenumber": "5304",
+     "addr:postcode": "37205-2806",
+     "addr:state": "TN",
+     "addr:street": "Harding Pike",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "building": "yes",
+     "name": "Ace Hardware",
+     "opening_hours": "Mo-Fr 07:30-19:00; Sa 08:00-18:00; Su 11:00-17:00",
+     "phone": "+1 615-352-5252",
+     "ref": "12109",
+     "shop": "doityourself"
+    }
+   },
+   {
+    "type": "way",
+    "id": 888355472,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 3,
+    "changeset": 153904537,
+    "center": {
+     "lat": 35.9742516,
+     "lon": -86.6774517
+    },
+    "tags": {
+     "addr:city": "Nolensville",
+     "addr:housenumber": "7120",
+     "addr:postcode": "37135-9472",
+     "addr:state": "TN",
+     "addr:street": "Nolensville Road",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "building": "yes",
+     "name": "Ace Hardware",
+     "opening_hours": "Mo-Sa 07:30-18:00",
+     "phone": "+1 615-832-4448",
+     "ref": "16221",
+     "shop": "doityourself"
+    }
+   }
+  ]
+ }
+}

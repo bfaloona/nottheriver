@@ -1,0 +1,90 @@
+{
+ "place": "Morris, IL",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 41.3574135,
+  "lon": -88.4215234,
+  "osm_type": "relation",
+  "osm_id": 126870,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Morris, Grundy County, Illinois, 60450, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:41.2632,-88.5470,41.4516,-88.2960];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Walmart( Supercenter| Neighborhood Market)?$|^Menards$\",i];nwr.a[brand~\"^Walmart( Supercenter| Neighborhood Market)?$|^Menards$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:41:07.854Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:39:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 228446899,
+    "timestamp": "2025-06-28T02:29:20Z",
+    "version": 9,
+    "changeset": 168210559,
+    "center": {
+     "lat": 41.3844562,
+     "lon": -88.4171631
+    },
+    "tags": {
+     "addr:city": "Morris",
+     "addr:country": "US",
+     "addr:housenumber": "333",
+     "addr:postcode": "60450",
+     "addr:state": "IL",
+     "addr:street": "East US Route 6",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "retail",
+     "name": "Walmart Supercenter",
+     "opening_hours": "24/7",
+     "operator": "Walmart",
+     "operator:wikidata": "Q483551",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 815-942-6306",
+     "ref": "844",
+     "ref:walmart": "844",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "store_ref": "844",
+     "website": "https://www.walmart.com/store/844-morris-il"
+    }
+   },
+   {
+    "type": "way",
+    "id": 234847354,
+    "timestamp": "2026-10-03T00:46:02Z",
+    "version": 6,
+    "changeset": 189905388,
+    "center": {
+     "lat": 41.3890296,
+     "lon": -88.4286535
+    },
+    "tags": {
+     "addr:city": "Morris",
+     "addr:housenumber": "500",
+     "addr:postcode": "60450",
+     "addr:state": "IL",
+     "addr:street": "Gore Road",
+     "brand": "Menards",
+     "brand:wikidata": "Q1639897",
+     "building": "retail",
+     "name": "Menards",
+     "opening_hours": "Mo-Sa 06:00-21:00; Su 08:00-20:00",
+     "ref": "3215",
+     "shop": "doityourself",
+     "website": "https://www.menards.com/store-details/store.html?store=3215"
+    }
+   }
+  ]
+ }
+}

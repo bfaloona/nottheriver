@@ -1,0 +1,83 @@
+{
+ "place": "Southdale Center, Edina, MN",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.8840496,
+  "lon": -93.3242685,
+  "osm_type": "way",
+  "osm_id": 52868480,
+  "category": "building",
+  "type": "yes",
+  "display_name": "Southdale Center, 3400, West 66th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:44.8623,-93.3550,44.9058,-93.2936];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Games By James|^Macy'?s$\",i];nwr.a[brand~\"^Games By James|^Macy'?s$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:25:58.604Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:24:31Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 4077104633,
+    "lat": 44.8813113,
+    "lon": -93.3248155,
+    "timestamp": "2026-09-06T01:43:12Z",
+    "version": 2,
+    "changeset": 188597169,
+    "tags": {
+     "fixme": "location approximate",
+     "level": "1",
+     "name": "Games by James",
+     "phone": "+1 952-925-9656",
+     "shop": "games",
+     "website": "https://gamesbyjames.com"
+    }
+   },
+   {
+    "type": "node",
+    "id": 5413361865,
+    "lat": 44.8814841,
+    "lon": -93.3264521,
+    "timestamp": "2024-02-09T15:46:49Z",
+    "version": 4,
+    "changeset": 147262514,
+    "tags": {
+     "brand": "Macy's",
+     "brand:wikidata": "Q629269",
+     "name": "Macy's",
+     "shop": "department_store",
+     "website": "https://www.macys.com/stores/mn/edina/southdale-center_231.html"
+    }
+   },
+   {
+    "type": "way",
+    "id": 47586776,
+    "timestamp": "2024-02-09T15:46:49Z",
+    "version": 10,
+    "changeset": 147262514,
+    "center": {
+     "lat": 44.8714778,
+     "lon": -93.3272592
+    },
+    "tags": {
+     "addr:city": "Edina",
+     "addr:housenumber": "7235",
+     "addr:postcode": "55435",
+     "addr:street": "France Avenue South",
+     "brand": "Macy's",
+     "brand:wikidata": "Q629269",
+     "building": "retail",
+     "name": "Macy's Furniture Gallery",
+     "phone": "+1 952 896 2160",
+     "shop": "furniture",
+     "website": "https://www.macys.com/stores/mn/edina/southdale-furniture-and-mattress-gallery_234.html"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "place": "5211 Hickory Hollow Pkwy, Antioch, TN 37013",
+ "radius_mi": 1,
+ "center": {
+  "lat": 36.0485773,
+  "lon": -86.6608346,
+  "osm_type": "way",
+  "osm_id": 19464527,
+  "category": "place",
+  "type": "house",
+  "display_name": "5211, Hickory Hollow Parkway, Antioch, Nashville, Davidson County, Middle Tennessee, Tennessee, 37013, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:36.0341,-86.6788,36.0631,-86.6429];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Harbor Freight( Tools)?$\",i];nwr.a[brand~\"^Harbor Freight( Tools)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:22:54.563Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:21:20Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

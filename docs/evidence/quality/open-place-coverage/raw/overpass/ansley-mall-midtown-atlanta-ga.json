@@ -1,0 +1,25 @@
+{
+ "place": "Ansley Mall, Midtown, Atlanta, GA",
+ "radius_mi": 3.5,
+ "center": {
+  "lat": 33.7816556,
+  "lon": -84.3840713,
+  "osm_type": "node",
+  "osm_id": 8433055871,
+  "category": "place",
+  "type": "neighbourhood",
+  "display_name": "Midtown, Old Fourth Ward, Atlanta, Fulton County, Georgia, 30361, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.7309,-84.4451,33.8324,-84.3230];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^High Country Outfitters$\",i];nwr.a[brand~\"^High Country Outfitters$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:10:53.573Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:09:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

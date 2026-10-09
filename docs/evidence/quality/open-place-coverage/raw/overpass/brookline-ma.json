@@ -1,0 +1,46 @@
+{
+ "place": "Brookline, MA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.332918,
+  "lon": -71.1187829,
+  "osm_type": "relation",
+  "osm_id": 2306361,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Brookline, Norfolk County, Massachusetts, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.2387,-71.2462,42.4271,-70.9914];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Boston General Store\",i];nwr.a[brand~\"^Boston General Store\",i];);\nout center meta;",
+ "endpoint": "https://overpass.kumi.systems/api/interpreter",
+ "fetched": "2026-10-09T17:52:51.580Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-07-28T02:16:18Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 13156963921,
+    "lat": 42.3432336,
+    "lon": -71.1227453,
+    "timestamp": "2025-09-19T21:20:45Z",
+    "version": 1,
+    "changeset": 172182610,
+    "tags": {
+     "addr:city": "Brookline",
+     "addr:housenumber": "305",
+     "addr:postcode": "02446",
+     "addr:state": "MA",
+     "addr:street": "Harvard Street",
+     "name": "Boston General Store",
+     "phone": "+16172320103",
+     "shop": "general",
+     "website": "https://www.bostongeneralstore.com/"
+    }
+   }
+  ]
+ }
+}

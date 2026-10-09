@@ -1,0 +1,57 @@
+{
+ "place": "Plymouth Meeting, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.102332,
+  "lon": -75.2743467,
+  "osm_type": "node",
+  "osm_id": 158303535,
+  "category": "place",
+  "type": "locality",
+  "display_name": "Plymouth Meeting, Harmonville, Whitemarsh Township, Montgomery County, Pennsylvania, 19462, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.0081,-75.3975,40.1965,-75.1512];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^REI( Co-op)?$\",i];nwr.a[brand~\"^REI( Co-op)?$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:05:46.751Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:04:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 286268327,
+    "timestamp": "2024-07-05T03:48:00Z",
+    "version": 9,
+    "changeset": 153570968,
+    "center": {
+     "lat": 40.096225,
+     "lon": -75.2876817
+    },
+    "tags": {
+     "addr:city": "Conshohocken",
+     "addr:housenumber": "200",
+     "addr:postcode": "19428",
+     "addr:state": "PA",
+     "addr:street": "West Ridge Pike",
+     "branch": "Co op",
+     "brand": "REI",
+     "brand:wikidata": "Q3414933",
+     "building": "yes",
+     "check_date": "2024-03-31",
+     "name": "REI",
+     "official_name": "Recreational Equipment, Inc.",
+     "opening_hours": "Mo-Sa 10:00-21:00; Su 11:00-18:00",
+     "phone": "+1-610-940-0809",
+     "service:bicycle:repair": "yes",
+     "service:bicycle:retail": "yes",
+     "shop": "outdoor",
+     "website": "https://www.rei.com/stores/conshohocken-plymouth-meeting"
+    }
+   }
+  ]
+ }
+}

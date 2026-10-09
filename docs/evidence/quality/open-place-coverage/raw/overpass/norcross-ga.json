@@ -1,0 +1,25 @@
+{
+ "place": "Norcross, GA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 33.9412127,
+  "lon": -84.2135309,
+  "osm_type": "relation",
+  "osm_id": 119593,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Norcross, Gwinnett County, Georgia, 30071, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.8470,-84.3271,34.0354,-84.1000];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^VSOP\",i];nwr.a[brand~\"^VSOP\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:30:37.950Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:28:34Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

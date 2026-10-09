@@ -1,0 +1,49 @@
+{
+ "place": "Orwigsburg, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6548566,
+  "lon": -76.1007318,
+  "osm_type": "relation",
+  "osm_id": 188913,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Orwigsburg, Schuylkill County, Pennsylvania, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.5607,-76.2249,40.7491,-75.9766];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Heiser'?s( Ace Hardware)?$|^Ace Hardware$\",i];nwr.a[brand~\"^Heiser'?s( Ace Hardware)?$|^Ace Hardware$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:17:59.784Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:16:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 5839155344,
+    "lat": 40.654546,
+    "lon": -76.109956,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 2,
+    "changeset": 153904537,
+    "tags": {
+     "addr:city": "Orwigsburg",
+     "addr:housenumber": "715",
+     "addr:postcode": "17961-1001",
+     "addr:state": "PA",
+     "addr:street": "West Market Street",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "name": "Heiser's True Value",
+     "opening_hours": "Mo-Fr 07:30-19:00; Sa 07:30-17:30; Su 10:00-14:00",
+     "phone": "+1 570-366-2323",
+     "ref": "17093",
+     "shop": "hardware"
+    }
+   }
+  ]
+ }
+}

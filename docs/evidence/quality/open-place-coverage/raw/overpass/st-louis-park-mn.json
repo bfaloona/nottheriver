@@ -1,0 +1,357 @@
+{
+ "place": "St. Louis Park, MN",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 44.9475726,
+  "lon": -93.3569023,
+  "osm_type": "relation",
+  "osm_id": 136701,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Saint Louis Park, Hennepin County, Minnesota, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:44.8534,-93.4900,45.0418,-93.2238];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(Super)?Target$\",i];nwr.a[brand~\"^(Super)?Target$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:21:10.760Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:19:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 3144871785,
+    "lat": 44.9816802,
+    "lon": -93.2350859,
+    "timestamp": "2026-10-09T16:48:12Z",
+    "version": 12,
+    "changeset": 190263421,
+    "tags": {
+     "addr:city": "Minneapolis",
+     "addr:housenumber": "1329",
+     "addr:postcode": "55414",
+     "addr:state": "MN",
+     "addr:street": "Southeast 5th Street",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "name": "Target",
+     "name:en": "Target",
+     "name:zh": "标靶超市",
+     "opening_hours": "Mo-Fr 07:00-21:00; Sa,Su 08:00-21:00",
+     "operator": "Target",
+     "phone": "+1-612-355-3857",
+     "shop": "department_store",
+     "toilets": "yes",
+     "website": "https://www.target.com/sl/minneapolis-dinkytown/3200",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3907322386,
+    "lat": 44.8554108,
+    "lon": -93.4257662,
+    "timestamp": "2024-07-05T10:24:12Z",
+    "version": 3,
+    "changeset": 153581851,
+    "tags": {
+     "addr:city": "Eden Prairie",
+     "addr:housenumber": "8225",
+     "addr:postcode": "55344-5315",
+     "addr:state": "MN",
+     "addr:street": "Flying Cloud Drive",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1 952-944-0700",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/eden-prairie/220"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11075003620,
+    "lat": 45.0047945,
+    "lon": -93.229945,
+    "timestamp": "2025-06-04T00:49:04Z",
+    "version": 4,
+    "changeset": 167156508,
+    "tags": {
+     "addr:city": "Minneapolis",
+     "addr:housenumber": "1650",
+     "addr:postcode": "55413-1643",
+     "addr:state": "MN",
+     "addr:street": "New Brighton Boulevard",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "building:levels": "1",
+     "drinking_water": "yes",
+     "name": "Target",
+     "opening_hours": "Mo,Tu,Sa 07:00-24:00; We-Fr,Su 07:00-24:00",
+     "phone": "+1 612-781-7033",
+     "shop": "department_store",
+     "toilets": "yes",
+     "website": "https://www.target.com/sl/minneapolis-ne/1095"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12903097789,
+    "lat": 44.974879,
+    "lon": -93.274534,
+    "timestamp": "2026-09-28T10:26:43Z",
+    "version": 3,
+    "changeset": 189671146,
+    "tags": {
+     "addr:city": "Minneapolis",
+     "addr:housenumber": "900",
+     "addr:postcode": "55403-2530",
+     "addr:state": "MN",
+     "addr:street": "Nicollet Mall",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "changing_table": "yes",
+     "check_date": "2026-09-28",
+     "check_date:opening_hours": "2026-09-28",
+     "name": "Target",
+     "opening_hours": "Mo-Sa 07:00-20:00; Su 09:00-19:00",
+     "opening_hours:skyway": "Mo-We 06:00-20:00; Th-Fr 06:00-02:00; Sa-Su 14:00-02:00",
+     "operator": "Target Corporation",
+     "payment:cash": "yes",
+     "payment:credit_cards": "yes",
+     "payment:debit_cards": "yes",
+     "phone": "+1 612-338-0085",
+     "shop": "department_store",
+     "toilets": "yes",
+     "website": "https://www.target.com/sl/mpls-nicollet-mall/1375"
+    }
+   },
+   {
+    "type": "way",
+    "id": 41673493,
+    "timestamp": "2024-07-05T10:24:12Z",
+    "version": 11,
+    "changeset": 153581851,
+    "center": {
+     "lat": 44.859532,
+     "lon": -93.3112988
+    },
+    "tags": {
+     "addr:city": "Bloomington",
+     "addr:housenumber": "2555",
+     "addr:postcode": "55431",
+     "addr:state": "MN",
+     "addr:street": "West 79th Street",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "name": "Target",
+     "opening_hours": "Mo-Su 07:00 - 23:00",
+     "phone": "+1 952-888-7701",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/bloomington/5"
+    }
+   },
+   {
+    "type": "way",
+    "id": 43287415,
+    "timestamp": "2024-01-17T03:49:43Z",
+    "version": 10,
+    "changeset": 146345669,
+    "center": {
+     "lat": 44.9372898,
+     "lon": -93.3468489
+    },
+    "tags": {
+     "addr:city": "Saint Louis Park",
+     "addr:housenumber": "3601",
+     "addr:postcode": "55416",
+     "addr:state": "MN",
+     "addr:street": "MN-100",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "Mo-Su 07:00-22:00",
+     "phone": "+1 952 926 8855",
+     "shop": "department_store",
+     "toilets": "yes",
+     "website": "https://www.target.com/sl/st-louis-park/260"
+    }
+   },
+   {
+    "type": "way",
+    "id": 43300382,
+    "timestamp": "2024-07-05T10:24:12Z",
+    "version": 7,
+    "changeset": 153581851,
+    "center": {
+     "lat": 44.9360662,
+     "lon": -93.3932648
+    },
+    "tags": {
+     "addr:city": "Saint Louis Park",
+     "addr:housenumber": "8900",
+     "addr:postcode": "55426",
+     "addr:state": "MN",
+     "addr:street": "Minnesota State Highway 7",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1 952-935-6941",
+     "shop": "supermarket",
+     "website": "https://www.target.com/sl/knollwood/2189"
+    }
+   },
+   {
+    "type": "way",
+    "id": 44414329,
+    "timestamp": "2026-09-29T17:25:49Z",
+    "version": 20,
+    "changeset": 189739960,
+    "center": {
+     "lat": 44.9494136,
+     "lon": -93.2370712
+    },
+    "tags": {
+     "addr:city": "Minneapolis",
+     "addr:housenumber": "2500",
+     "addr:postcode": "55406",
+     "addr:state": "MN",
+     "addr:street": "East Lake Street",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "building:levels": "1",
+     "name": "Target",
+     "name:en": "Target",
+     "name:fa": "تارگت",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1 612-721-5701",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/east-lake-street-and-hwy-55/52",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 47586774,
+    "timestamp": "2024-07-05T10:24:12Z",
+    "version": 13,
+    "changeset": 153581851,
+    "center": {
+     "lat": 44.8753929,
+     "lon": -93.324237
+    },
+    "tags": {
+     "addr:city": "Edina",
+     "addr:housenumber": "7000",
+     "addr:postcode": "55435-4213",
+     "addr:state": "MN",
+     "addr:street": "York Avenue South",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "operator": "Target",
+     "phone": "+1 952-925-4610",
+     "shop": "supermarket",
+     "website": "https://www.target.com/sl/edina/2313"
+    }
+   },
+   {
+    "type": "way",
+    "id": 83692618,
+    "timestamp": "2026-07-14T13:40:22Z",
+    "version": 10,
+    "changeset": 185718255,
+    "center": {
+     "lat": 44.8856378,
+     "lon": -93.2483654
+    },
+    "tags": {
+     "addr:city": "Richfield",
+     "addr:housenumber": "6445",
+     "addr:postcode": "55423",
+     "addr:state": "MN",
+     "addr:street": "Richfield Parkway",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "building:levels": "1",
+     "check_date": "2026-07-03",
+     "internet_access": "wlan",
+     "internet_access:fee": "customers",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1-612-252-0473",
+     "shop": "department_store",
+     "toilets": "yes",
+     "website": "https://www.target.com/sl/richfield/2300",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 162044149,
+    "timestamp": "2024-07-05T10:24:12Z",
+    "version": 8,
+    "changeset": 153581851,
+    "center": {
+     "lat": 45.0317708,
+     "lon": -93.4507203
+    },
+    "tags": {
+     "addr:city": "Plymouth",
+     "addr:housenumber": "4175",
+     "addr:postcode": "55441",
+     "addr:state": "MN",
+     "addr:street": "Vinewood Lane North",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1 763-553-0302",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/plymouth/664"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1308864959,
+    "timestamp": "2024-08-19T17:44:51Z",
+    "version": 1,
+    "changeset": 155473527,
+    "center": {
+     "lat": 44.9698616,
+     "lon": -93.4479264
+    },
+    "tags": {
+     "addr:city": "Minnetonka",
+     "addr:housenumber": "13201",
+     "addr:postcode": "55305-1809",
+     "addr:state": "MN",
+     "addr:street": "Ridgedale Drive",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "operator": "Target",
+     "phone": "+1 952-542-8250",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/ridgedale/100"
+    }
+   }
+  ]
+ }
+}

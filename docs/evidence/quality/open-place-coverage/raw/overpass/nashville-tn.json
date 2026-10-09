@@ -1,0 +1,136 @@
+{
+ "place": "Nashville, TN",
+ "radius_mi": 10.5,
+ "center": {
+  "lat": 36.1622767,
+  "lon": -86.7742984,
+  "osm_type": "relation",
+  "osm_id": 197472,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Nashville, Davidson County, Middle Tennessee, Tennessee, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:36.0101,-86.9628,36.3145,-86.5858];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Phillips Toy|^Guthrie'?s Ace Hardware$|^Ace Hardware$|^Hillsboro Hardware|^Lakeshore Learning\",i];nwr.a[brand~\"^Phillips Toy|^Guthrie'?s Ace Hardware$|^Ace Hardware$|^Hillsboro Hardware|^Lakeshore Learning\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:20:22.204Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:18:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 7107739431,
+    "lat": 36.1687086,
+    "lon": -86.665755,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 3,
+    "changeset": 153904537,
+    "tags": {
+     "addr:city": "Nashville",
+     "addr:housenumber": "2730",
+     "addr:postcode": "37214-2504",
+     "addr:state": "TN",
+     "addr:street": "Lebanon Pike",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "name": "Ace Hardware",
+     "opening_hours": "Mo-Fr 07:30-20:00; Sa 08:00-20:00; Su 10:00-19:00",
+     "phone": "+1 615-678-5634",
+     "ref": "17481",
+     "shop": "doityourself"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11327525918,
+    "lat": 36.3033248,
+    "lon": -86.6320587,
+    "timestamp": "2025-03-15T07:13:21Z",
+    "version": 3,
+    "changeset": 163638509,
+    "tags": {
+     "addr:housenumber": "260",
+     "addr:postcode": "37075",
+     "addr:street": "West Main Street",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "name": "Ace Hardware",
+     "shop": "doityourself"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13449299097,
+    "lat": 36.1437395,
+    "lon": -86.8729482,
+    "timestamp": "2026-01-12T03:26:45Z",
+    "version": 1,
+    "changeset": 177120361,
+    "tags": {
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "check_date": "2026-01-11",
+     "name": "Ace Hardware",
+     "shop": "doityourself"
+    }
+   },
+   {
+    "type": "way",
+    "id": 373415204,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 5,
+    "changeset": 153904537,
+    "center": {
+     "lat": 36.0518802,
+     "lon": -86.6136954
+    },
+    "tags": {
+     "addr:city": "Antioch",
+     "addr:housenumber": "3540",
+     "addr:postcode": "37013",
+     "addr:state": "TN",
+     "addr:street": "Murfreesboro Road",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "building": "yes",
+     "name": "Antioch Ace Hardware",
+     "opening_hours": "Mo,We-Fr 08:00-20:00; Tu 07:00-18:00; Sa 08:00-18:00; Su 10:00-18:00",
+     "operator": "Naman Patel",
+     "phone": "+1 615-280-1618",
+     "ref": "18543",
+     "shop": "doityourself"
+    }
+   },
+   {
+    "type": "way",
+    "id": 544429169,
+    "timestamp": "2024-07-13T18:04:16Z",
+    "version": 3,
+    "changeset": 153904537,
+    "center": {
+     "lat": 36.1016181,
+     "lon": -86.8708898
+    },
+    "tags": {
+     "addr:city": "Nashville",
+     "addr:housenumber": "5304",
+     "addr:postcode": "37205-2806",
+     "addr:state": "TN",
+     "addr:street": "Harding Pike",
+     "brand": "Ace Hardware",
+     "brand:wikidata": "Q4672981",
+     "building": "yes",
+     "name": "Ace Hardware",
+     "opening_hours": "Mo-Fr 07:30-19:00; Sa 08:00-18:00; Su 11:00-17:00",
+     "phone": "+1 615-352-5252",
+     "ref": "12109",
+     "shop": "doityourself"
+    }
+   }
+  ]
+ }
+}

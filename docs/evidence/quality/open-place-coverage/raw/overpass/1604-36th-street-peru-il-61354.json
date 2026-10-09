@@ -1,0 +1,41 @@
+{
+ "place": "1604 36th Street, Peru, IL 61354",
+ "radius_mi": 1,
+ "center": {
+  "lat": 41.3528299,
+  "lon": -89.1269074,
+  "osm_type": "way",
+  "osm_id": 21831851,
+  "category": "place",
+  "type": "house",
+  "display_name": "1604, 36th Street, Peru, LaSalle County, Illinois, 61354, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:41.3383,-89.1462,41.3673,-89.1076];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Harbor Freight( Tools)?$\",i];nwr.a[brand~\"^Harbor Freight( Tools)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:30:47.727Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:29:31Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 14018229771,
+    "lat": 41.3516622,
+    "lon": -89.1268823,
+    "timestamp": "2026-07-15T18:03:30Z",
+    "version": 1,
+    "changeset": 185801036,
+    "tags": {
+     "brand": "Harbor Freight Tools",
+     "brand:wikidata": "Q5654601",
+     "name": "Harbor Freight Tools",
+     "shop": "hardware"
+    }
+   }
+  ]
+ }
+}

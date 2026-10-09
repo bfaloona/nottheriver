@@ -1,0 +1,52 @@
+{
+ "place": "CoolSprings Galleria, Franklin, TN",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 35.9572905,
+  "lon": -86.8135103,
+  "osm_type": "way",
+  "osm_id": 250775498,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Coolsprings Galleria, Galleria Boulevard, Coolsprings Crossing, Cool Springs, Franklin, Williamson County, Middle Tennessee, Tennessee, 37067, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:35.9356,-86.8404,35.9790,-86.7867];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(Super)?Target$\",i];nwr.a[brand~\"^(Super)?Target$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:20:32.298Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:18:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 242423006,
+    "timestamp": "2024-01-17T03:44:51Z",
+    "version": 7,
+    "changeset": 146345597,
+    "center": {
+     "lat": 35.9661655,
+     "lon": -86.812754
+    },
+    "tags": {
+     "addr:city": "Franklin",
+     "addr:housenumber": "1701",
+     "addr:postcode": "37067",
+     "addr:state": "TN",
+     "addr:street": "Galleria Boulevard",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "yes",
+     "name": "Target",
+     "opening_hours": "Mo-Su 08:00-23:00",
+     "phone": "+1 615-771-2093",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/cool-springs/695"
+    }
+   }
+  ]
+ }
+}

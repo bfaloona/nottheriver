@@ -1,0 +1,47 @@
+{
+ "place": "Pottsville, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6851324,
+  "lon": -76.1953701,
+  "osm_type": "relation",
+  "osm_id": 187735,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Pottsville, Schuylkill County, Pennsylvania, 17901, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.5909,-76.3196,40.7793,-76.0711];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Dunham'?s( Sports)?$\",i];nwr.a[brand~\"^Dunham'?s( Sports)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:10:33.610Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:09:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 12033637939,
+    "lat": 40.7054444,
+    "lon": -76.1898404,
+    "timestamp": "2024-07-04T15:14:23Z",
+    "version": 1,
+    "changeset": 153552652,
+    "tags": {
+     "addr:city": "Pottsville",
+     "addr:housenumber": "7165",
+     "addr:postcode": "17901",
+     "addr:state": "PA",
+     "addr:street": "Fairlane Village Mall",
+     "addr:unit": "1C",
+     "brand": "Dunham's Sports",
+     "brand:wikidata": "Q5315238",
+     "name": "Dunham's Sports",
+     "shop": "sports"
+    }
+   }
+  ]
+ }
+}

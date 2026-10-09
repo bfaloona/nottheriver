@@ -1,0 +1,165 @@
+{
+ "place": "San Mateo, CA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 37.496904,
+  "lon": -122.3330573,
+  "osm_type": "relation",
+  "osm_id": 396498,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "San Mateo County, California, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:37.4027,-122.4518,37.5911,-122.2143];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(Super)?Target$|^Trader Joe'?s$\",i];nwr.a[brand~\"^(Super)?Target$|^Trader Joe'?s$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:41:42.582Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:39:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 1199004366,
+    "lat": 37.5354941,
+    "lon": -122.298437,
+    "timestamp": "2025-12-01T04:20:40Z",
+    "version": 7,
+    "changeset": 175339852,
+    "tags": {
+     "addr:city": "San Mateo",
+     "addr:housenumber": "45",
+     "addr:postcode": "94403",
+     "addr:state": "CA",
+     "addr:street": "West Hillsdale Boulevard",
+     "branch": "San Mateo - Hillsdale",
+     "brand": "Trader Joe's",
+     "brand:wikidata": "Q688825",
+     "name": "Trader Joe's",
+     "opening_hours": "Mo-Su 08:00-21:00",
+     "phone": "+1-650-286-1509",
+     "ref": "245",
+     "ref:shop:num": "245",
+     "shop": "supermarket",
+     "website": "https://locations.traderjoes.com/ca/san-mateo/245/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 35399390,
+    "timestamp": "2026-07-29T22:00:48Z",
+    "version": 7,
+    "changeset": 186613564,
+    "center": {
+     "lat": 37.5545644,
+     "lon": -122.3026017
+    },
+    "tags": {
+     "addr:city": "San Mateo",
+     "addr:housenumber": "1820-22",
+     "addr:postcode": "94402",
+     "addr:state": "CA",
+     "addr:street": "South Grant Street",
+     "branch": "San Mateo - Grant Street",
+     "brand": "Trader Joe's",
+     "brand:wikidata": "Q688825",
+     "building": "yes",
+     "name": "Trader Joe's",
+     "opening_hours": "08:00-21:00",
+     "phone": "+1 650-570-6140",
+     "ref": "67",
+     "shop": "supermarket",
+     "website": "https://locations.traderjoes.com/ca/san-mateo/67/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 41657254,
+    "timestamp": "2024-02-13T08:20:45Z",
+    "version": 7,
+    "changeset": 147397776,
+    "center": {
+     "lat": 37.4963911,
+     "lon": -122.2485687
+    },
+    "tags": {
+     "addr:city": "San Carlos",
+     "addr:housenumber": "1482",
+     "addr:postcode": "94070",
+     "addr:state": "CA",
+     "addr:street": "El Camino Real",
+     "branch": "San Carlos",
+     "brand": "Trader Joe's",
+     "brand:wikidata": "Q688825",
+     "building": "retail",
+     "building:levels": "1",
+     "name": "Trader Joe's",
+     "opening_hours": "Mo-Su 08:00-21:00",
+     "phone": "+1 650-594-2138",
+     "ref": "174",
+     "shop": "supermarket",
+     "website": "https://locations.traderjoes.com/ca/san-carlos/174/",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 54777770,
+    "timestamp": "2025-07-28T03:55:42Z",
+    "version": 12,
+    "changeset": 169589631,
+    "center": {
+     "lat": 37.5586198,
+     "lon": -122.2833228
+    },
+    "tags": {
+     "addr:city": "San Mateo",
+     "addr:housenumber": "2220",
+     "addr:postcode": "94404",
+     "addr:state": "CA",
+     "addr:street": "Bridgepointe Parkway",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "name": "Target",
+     "opening_hours": "Mo-Su 07:00-23:00",
+     "phone": "+1 650-341-0734",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/san-mateo-fashion-island/1122"
+    }
+   },
+   {
+    "type": "way",
+    "id": 130819318,
+    "timestamp": "2024-07-05T10:23:43Z",
+    "version": 8,
+    "changeset": 153581835,
+    "center": {
+     "lat": 37.4756714,
+     "lon": -122.2170797
+    },
+    "tags": {
+     "addr:city": "Redwood City",
+     "addr:country": "US",
+     "addr:housenumber": "2485",
+     "addr:postcode": "94061",
+     "addr:state": "CA",
+     "addr:street": "El Camino Real",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "building": "retail",
+     "name": "Target",
+     "opening_hours": "07:00-22:00",
+     "phone": "+1 650-363-8940",
+     "redwood_city_ca:addr_id": "15972",
+     "shop": "department_store",
+     "source": "City of Redwood City, CA 1013",
+     "website": "https://www.target.com/sl/redwood-city/321"
+    }
+   }
+  ]
+ }
+}

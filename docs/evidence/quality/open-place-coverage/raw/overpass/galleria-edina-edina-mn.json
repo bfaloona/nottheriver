@@ -1,0 +1,25 @@
+{
+ "place": "Galleria Edina, Edina, MN",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 44.877525,
+  "lon": -93.3223514,
+  "osm_type": "way",
+  "osm_id": 241579915,
+  "category": "building",
+  "type": "hotel",
+  "display_name": "Westin Edina Galleria, 3201, West 69th Street, Southdale, Edina, Hennepin County, Minnesota, 55435, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:44.8558,-93.3530,44.8993,-93.2917];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Barnes (&|and) Noble|^Crate (&|and) Barrel$|^Pottery Barn$\",i];nwr.a[brand~\"^Barnes (&|and) Noble|^Crate (&|and) Barrel$|^Pottery Barn$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:26:07.319Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:24:31Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

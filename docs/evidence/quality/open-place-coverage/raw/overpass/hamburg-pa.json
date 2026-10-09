@@ -1,0 +1,91 @@
+{
+ "place": "Hamburg, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.5553081,
+  "lon": -75.9824083,
+  "osm_type": "relation",
+  "osm_id": 188499,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Hamburg, Berks County, Pennsylvania, 19526, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.4611,-76.1064,40.6495,-75.8584];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Walmart( Supercenter| Neighborhood Market)?$|^Lowe'?s( Home Improvement)?$\",i];nwr.a[brand~\"^Walmart( Supercenter| Neighborhood Market)?$|^Lowe'?s( Home Improvement)?$\",i];);\nout center meta;",
+ "endpoint": "https://overpass.kumi.systems/api/interpreter",
+ "fetched": "2026-10-09T18:10:24.425Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-06-01T08:52:28Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 278451885,
+    "timestamp": "2025-06-28T02:29:20Z",
+    "version": 9,
+    "changeset": 168210559,
+    "center": {
+     "lat": 40.5640871,
+     "lon": -76.0122551
+    },
+    "tags": {
+     "addr:city": "Hamburg",
+     "addr:country": "US",
+     "addr:housenumber": "1800",
+     "addr:postcode": "19526",
+     "addr:state": "PA",
+     "addr:street": "Tilden Ridge",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "retail",
+     "name": "Walmart Supercenter",
+     "opening_hours": "24/7",
+     "operator": "Walmart",
+     "operator:wikidata": "Q483551",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 484-668-4001",
+     "ref": "4612",
+     "ref:walmart": "4612",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/4612-hamburg-pa"
+    }
+   },
+   {
+    "type": "way",
+    "id": 544589622,
+    "timestamp": "2024-06-30T18:59:29Z",
+    "version": 4,
+    "changeset": 153382040,
+    "center": {
+     "lat": 40.5631645,
+     "lon": -76.0084473
+    },
+    "tags": {
+     "addr:city": "Hamburg",
+     "addr:housenumber": "20",
+     "addr:postcode": "19526",
+     "addr:state": "PA",
+     "addr:street": "Wilderness Trail",
+     "brand": "Lowe's",
+     "brand:wikidata": "Q1373493",
+     "building": "retail",
+     "name": "Lowe's",
+     "opening_hours": "Mo-Sa 06:00-21:00; Su 08:00-19:00",
+     "phone": "+1 484-660-7970",
+     "ref": "2894",
+     "shop": "doityourself",
+     "start_date": "2010-10-22",
+     "website": "https://www.lowes.com/store/pa-hamburg/2894"
+    }
+   }
+  ]
+ }
+}

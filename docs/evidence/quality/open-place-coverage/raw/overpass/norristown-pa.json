@@ -1,0 +1,100 @@
+{
+ "place": "Norristown, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.1146022,
+  "lon": -75.3446458,
+  "osm_type": "relation",
+  "osm_id": 187789,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Norristown, Montgomery County, Pennsylvania, 19401, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.0204,-75.4678,40.2088,-75.2215];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Walmart( Supercenter| Neighborhood Market)?$\",i];nwr.a[brand~\"^Walmart( Supercenter| Neighborhood Market)?$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:08:43.702Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:07:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 47088801,
+    "timestamp": "2026-06-18T02:46:20Z",
+    "version": 12,
+    "changeset": 184251615,
+    "center": {
+     "lat": 40.0834642,
+     "lon": -75.3985668
+    },
+    "tags": {
+     "addr:city": "King of Prussia",
+     "addr:housenumber": "275",
+     "addr:postcode": "19406",
+     "addr:state": "PA",
+     "addr:street": "North Gulph Road",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "retail",
+     "check_date": "2026-06-17",
+     "fixme:atp": "check if location still exists; no corresponding ATP location found",
+     "name": "Walmart Supercenter",
+     "opening_hours": "06:00-23:00",
+     "operator": "Walmart",
+     "operator:wikidata": "Q483551",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 610-768-0530",
+     "ref:walmart": "4687",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/4687/king-of%20prussia-pa/whats-new"
+    }
+   },
+   {
+    "type": "way",
+    "id": 641884688,
+    "timestamp": "2026-06-18T10:39:57Z",
+    "version": 6,
+    "changeset": 184265124,
+    "center": {
+     "lat": 40.127367,
+     "lon": -75.4015543
+    },
+    "tags": {
+     "addr:city": "Norristown",
+     "addr:housenumber": "650",
+     "addr:postcode": "19403",
+     "addr:state": "PA",
+     "addr:street": "South Trooper Road",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "retail",
+     "check_date": "2026-06-18",
+     "name": "Walmart Supercenter",
+     "opening_hours": "06:00-23:00",
+     "operator": "Walmart",
+     "operator:wikidata": "Q483551",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 610-631-6750",
+     "ref": "3475",
+     "ref:walmart": "3475",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/3475-norristown-pa"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "place": "Fort Collins, CO",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.5871782,
+  "lon": -105.0770113,
+  "osm_type": "relation",
+  "osm_id": 112524,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Fort Collins, Larimer County, Colorado, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.4930,-105.2011,40.6814,-104.9530];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Pendleton|^JAX( Outdoor Gear| Ranch & Home| Mercantile| Goods)?$\",i];nwr.a[brand~\"^Pendleton|^JAX( Outdoor Gear| Ranch & Home| Mercantile| Goods)?$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:26:48.679Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:25:35Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 7279349013,
+    "lat": 40.5866147,
+    "lon": -105.077331,
+    "timestamp": "2026-07-23T18:40:14Z",
+    "version": 4,
+    "changeset": 186252086,
+    "tags": {
+     "addr:city": "Fort Collins",
+     "addr:housenumber": "107",
+     "addr:postcode": "80524",
+     "addr:state": "CO",
+     "addr:street": "South College Avenue",
+     "brand": "Pendleton",
+     "brand:wikidata": "Q7162488",
+     "check_date": "2026-07-23",
+     "level": "0",
+     "name": "Pendleton",
+     "official_name": "Pendleton Woolen Mills",
+     "opening_hours": "Mo-Th 10:00-18:00; Fr-Sa 10:00-19:00; Su 12:00-17:00",
+     "payment:cash": "yes",
+     "payment:credit_cards": "yes",
+     "payment:debit_cards": "yes",
+     "shop": "clothes",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "place": "Decatur, DeKalb County, GA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 33.7737582,
+  "lon": -84.296069,
+  "osm_type": "relation",
+  "osm_id": 119289,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Decatur, DeKalb County, Georgia, 30030, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.6796,-84.4094,33.8680,-84.1827];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Splash of Olive\",i];nwr.a[brand~\"^Splash of Olive\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:30:29.086Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:28:34Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

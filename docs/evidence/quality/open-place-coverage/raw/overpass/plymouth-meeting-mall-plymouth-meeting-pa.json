@@ -1,0 +1,52 @@
+{
+ "place": "Plymouth Meeting Mall, Plymouth Meeting, PA",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 40.115784,
+  "lon": -75.2827841,
+  "osm_type": "way",
+  "osm_id": 58745026,
+  "category": "shop",
+  "type": "mall",
+  "display_name": "Plymouth Meeting Mall, 500, West Germantown Pike, Plymouth Meeting Mall, Hickorytown, Plymouth Township, Montgomery County, Pennsylvania, 19462, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.0940,-75.3112,40.1375,-75.2544];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Dick'?s Sporting Goods$\",i];nwr.a[brand~\"^Dick'?s Sporting Goods$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:06:25.472Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:05:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 10644928919,
+    "lat": 40.1152921,
+    "lon": -75.2838189,
+    "timestamp": "2026-01-10T08:26:26Z",
+    "version": 3,
+    "changeset": 177052546,
+    "tags": {
+     "addr:city": "Plymouth Meeting",
+     "addr:housenumber": "500",
+     "addr:postcode": "19462",
+     "addr:state": "PA",
+     "addr:street": "West Germantown Pike",
+     "branch": "Plymouth Meeting Mall",
+     "brand": "Dick's Sporting Goods",
+     "brand:wikidata": "Q5272601",
+     "check_date": "2026-01-09",
+     "name": "Dick's Sporting Goods",
+     "opening_hours": "Mo-Sa 09:00-21:00; Su 10:00-19:00",
+     "phone": "+1 484-351-0045",
+     "ref": "1373",
+     "shop": "sports",
+     "website": "https://stores.dickssportinggoods.com/pa/plymouth-meeting/1373/"
+    }
+   }
+  ]
+ }
+}

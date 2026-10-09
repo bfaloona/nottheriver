@@ -1,0 +1,327 @@
+{
+ "place": "San Francisco, CA",
+ "radius_mi": 7.5,
+ "center": {
+  "lat": 37.7879363,
+  "lon": -122.4075201,
+  "osm_type": "relation",
+  "osm_id": 111968,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "San Francisco, California, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:37.6792,-122.5451,37.8966,-122.2700];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Sports Basement|^Dandelion|^REI( Co-op)?$|^Lowe'?s( Home Improvement)?$\",i];nwr.a[brand~\"^Sports Basement|^Dandelion|^REI( Co-op)?$|^Lowe'?s( Home Improvement)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:15:54.525Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:14:18Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 650083475,
+    "lat": 37.8908972,
+    "lon": -122.2760769,
+    "timestamp": "2020-01-05T10:51:20Z",
+    "version": 5,
+    "changeset": 79209470,
+    "tags": {
+     "amenity": "kindergarten",
+     "cooperative": "yes",
+     "name": "Dandelion Nursery School",
+     "website": "https://www.dandelionnurseryschool.org/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2240785314,
+    "lat": 37.8790601,
+    "lon": -122.296043,
+    "timestamp": "2024-01-16T00:53:57Z",
+    "version": 14,
+    "changeset": 146303081,
+    "tags": {
+     "addr:city": "Berkeley",
+     "addr:country": "US",
+     "addr:housenumber": "1338",
+     "addr:postcode": "94702",
+     "addr:state": "CA",
+     "addr:street": "San Pablo Avenue",
+     "branch": "Berkeley",
+     "brand": "REI",
+     "brand:wikidata": "Q3414933",
+     "contact:twitter": "@REI",
+     "image": "https://www.rei.com/assets/stores/region-images/store-images/12/live.jpg",
+     "name": "REI",
+     "note": "Founding location of REI co-op.",
+     "official_name": "Recreational Equipment, Inc.",
+     "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-20:00; Su 10:00-19:00",
+     "phone": "+1-510-527-4140",
+     "service:bicycle:repair": "yes",
+     "service:bicycle:retail": "yes",
+     "shop": "outdoor",
+     "website": "https://www.rei.com/stores/berkeley"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3855454683,
+    "lat": 37.7727376,
+    "lon": -122.4046129,
+    "timestamp": "2024-01-16T00:53:57Z",
+    "version": 8,
+    "changeset": 146303081,
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "840",
+     "addr:postcode": "94103",
+     "addr:state": "CA",
+     "addr:street": "Brannan Street",
+     "branch": "San Francisco",
+     "brand": "REI",
+     "brand:wikidata": "Q3414933",
+     "contact:twitter": "@REI",
+     "image": "https://www.rei.com/assets/stores/region-images/store-images/83/live.jpg",
+     "internet_access": "wlan",
+     "name": "REI",
+     "official_name": "Recreational Equipment, Inc.",
+     "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-20:00; Su 10:00-19:00",
+     "operator": "REI",
+     "phone": "+1-415-934-1938",
+     "ref": "83",
+     "service:bicycle:repair": "yes",
+     "service:bicycle:retail": "yes",
+     "shop": "outdoor",
+     "website": "https://www.rei.com/stores/san-francisco"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4628105878,
+    "lat": 37.765649,
+    "lon": -122.4126352,
+    "timestamp": "2026-10-06T20:47:52Z",
+    "version": 4,
+    "changeset": 190113491,
+    "tags": {
+     "addr:housenumber": "2600",
+     "addr:street": "16th Street",
+     "amenity": "cafe",
+     "check_date": "2026-10-06",
+     "check_date:opening_hours": "2022-09-17",
+     "indoor_seating": "yes",
+     "name": "Dandelion Chocolate Factory & Café",
+     "opening_hours:signed": "no",
+     "outdoor_seating": "no",
+     "website": "https://www.dandelionchocolate.com/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8991553540,
+    "lat": 37.7290935,
+    "lon": -122.4771692,
+    "timestamp": "2023-03-17T22:08:08Z",
+    "version": 3,
+    "changeset": 133806145,
+    "tags": {
+     "addr:housenumber": "3251",
+     "addr:street": "20th Avenue",
+     "email": "friends@sportsbasement.com",
+     "name": "Sports Basement",
+     "phone": "+1 415-934-2922",
+     "shop": "sports",
+     "website": "https://shop.sportsbasement.com/blogs/stores/san-francisco-stonestown"
+    }
+   },
+   {
+    "type": "node",
+    "id": 9403944439,
+    "lat": 37.7610386,
+    "lon": -122.4216984,
+    "timestamp": "2025-01-23T02:36:04Z",
+    "version": 4,
+    "changeset": 161658411,
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "740",
+     "addr:state": "CA",
+     "addr:street": "Valencia Street",
+     "check_date": "2025-01-22",
+     "contact:facebook": "DandelionChocolate",
+     "contact:instagram": "dandelionchocolate",
+     "contact:twitter": "DandelionChoco",
+     "description": "A chocolate shop and cafe",
+     "email": "info@dandelionchocolate.com",
+     "name": "Dandelion Chocolate",
+     "opening_hours": "Mo-Th,Su 07:30-21:00; Fr-Sa 07:30-22:00",
+     "opening_hours:url": "https://store.dandelionchocolate.com/pages/visit-us",
+     "phone": "+1 415 3490942",
+     "shop": "chocolate",
+     "website": "https://store.dandelionchocolate.com/pages/visit-us",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 9725210185,
+    "lat": 37.7891995,
+    "lon": -122.4340425,
+    "timestamp": "2025-09-09T21:09:34Z",
+    "version": 2,
+    "changeset": 171706964,
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "2115",
+     "addr:state": "CA",
+     "addr:street": "Fillmore Street",
+     "check_date": "2025-09-09",
+     "level": "0",
+     "name": "Dandelion Chocolate",
+     "shop": "chocolate",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12321564791,
+    "lat": 37.7748702,
+    "lon": -122.2765899,
+    "timestamp": "2024-11-07T23:34:21Z",
+    "version": 1,
+    "changeset": 158875683,
+    "tags": {
+     "name": "Dandelion Flowers and Gifts",
+     "shop": "florist"
+    }
+   },
+   {
+    "type": "way",
+    "id": 30130846,
+    "timestamp": "2026-05-13T04:53:48Z",
+    "version": 19,
+    "changeset": 182581652,
+    "center": {
+     "lat": 37.8028226,
+     "lon": -122.4592825
+    },
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "610",
+     "addr:postcode": "94129",
+     "addr:state": "CA",
+     "addr:street": "Mason Street",
+     "building": "retail",
+     "height": "9",
+     "name": "Sports Basement",
+     "service:bicycle:rental": "yes",
+     "shop": "outdoor"
+    }
+   },
+   {
+    "type": "way",
+    "id": 35343322,
+    "timestamp": "2026-05-11T20:43:48Z",
+    "version": 12,
+    "changeset": 182528909,
+    "center": {
+     "lat": 37.7671113,
+     "lon": -122.4111373
+    },
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:full": "1590 Bryant St, San Francisco, CA 94103",
+     "addr:housenumber": "1590",
+     "addr:postcode": "94103",
+     "addr:state": "CA",
+     "addr:street": "Bryant Street",
+     "building": "yes",
+     "email": "Bnevinger@sportsbasement.com",
+     "height": "15",
+     "internet_access": "wlan",
+     "name": "Sports Basement Outdoor & Camping",
+     "opening_hours": "Mo-Fr 09:00-21:00; Sa-Su 08:00-20:00",
+     "phone": "+1-415-234-7965",
+     "shop": "outdoor",
+     "website": "https://www.sportsbasement.com/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 259001360,
+    "timestamp": "2025-12-13T16:03:17Z",
+    "version": 6,
+    "changeset": 175889304,
+    "center": {
+     "lat": 37.7398189,
+     "lon": -122.4061939
+    },
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "491",
+     "addr:postcode": "94124",
+     "addr:state": "CA",
+     "addr:street": "Bayshore Boulevard",
+     "brand": "Lowe's",
+     "brand:wikidata": "Q1373493",
+     "building": "commercial",
+     "fax": "+1 415-486-8614",
+     "height": "8",
+     "name": "Lowe's",
+     "opening_hours": "Mo-Sa 06:00-21:00; Su 07:00-20:00",
+     "phone": "+1 415-486-8611",
+     "ref": "3095",
+     "shop": "doityourself",
+     "start_date": "2010-10-29",
+     "website": "https://www.lowes.com/store/ca-san-francisco/3095",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1177704967,
+    "timestamp": "2023-05-30T23:20:14Z",
+    "version": 1,
+    "changeset": 136766081,
+    "center": {
+     "lat": 37.7956667,
+     "lon": -122.3988913
+    },
+    "tags": {
+     "amenity": "fountain",
+     "area": "yes",
+     "artist": "Bob Woodward",
+     "layer": "1",
+     "name": "Dandelion Fountain"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1189071455,
+    "timestamp": "2025-07-02T19:47:55Z",
+    "version": 3,
+    "changeset": 168415272,
+    "center": {
+     "lat": 37.7957272,
+     "lon": -122.3937844
+    },
+    "tags": {
+     "addr:housenumber": "1",
+     "addr:place": "Ferry Building",
+     "addr:unit": "14",
+     "check_date": "2025-07-02",
+     "indoor": "room",
+     "level": "0",
+     "name": "Dandelion Chocolate",
+     "opening_hours": "Mo-Sa 08:00-18:00; Su 09:00-17:00",
+     "shop": "chocolate",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "place": "789 Mission St, San Francisco, CA",
+ "radius_mi": 1,
+ "center": {
+  "lat": 37.7846295,
+  "lon": -122.403758,
+  "osm_type": "node",
+  "osm_id": 2730487173,
+  "category": "shop",
+  "type": "department_store",
+  "display_name": "Target, 789, Mission Street, South of Market, Financial District, San Francisco, California, 94103, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:37.7701,-122.4221,37.7991,-122.3854];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(Super)?Target$\",i];nwr.a[brand~\"^(Super)?Target$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:17:17.952Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:15:20Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 2730487173,
+    "lat": 37.7846295,
+    "lon": -122.403758,
+    "timestamp": "2024-01-16T00:53:57Z",
+    "version": 15,
+    "changeset": 146303081,
+    "tags": {
+     "addr:city": "San Francisco",
+     "addr:housenumber": "789",
+     "addr:postcode": "94103",
+     "addr:state": "CA",
+     "addr:street": "Mission Street",
+     "branch": "San Francisco Central",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "level": "1",
+     "name": "Target",
+     "opening_hours": "Mo-Su 09:00-20:00",
+     "operator": "Target",
+     "phone": "+1-415-343-6272",
+     "shop": "department_store",
+     "website": "https://www.target.com/sl/san-francisco-central/2766"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4722828690,
+    "lat": 37.7910409,
+    "lon": -122.401015,
+    "timestamp": "2024-01-16T00:53:57Z",
+    "version": 5,
+    "changeset": 146303081,
+    "tags": {
+     "addr:housenumber": "225",
+     "addr:postcode": "94104",
+     "addr:street": "Bush Street",
+     "brand": "Target",
+     "brand:wikidata": "Q1046951",
+     "disused:shop": "department_store",
+     "name": "Target",
+     "phone": "+1-415-365-0834"
+    }
+   }
+  ]
+ }
+}

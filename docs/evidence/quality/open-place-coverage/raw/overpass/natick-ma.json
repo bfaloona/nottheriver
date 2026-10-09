@@ -1,0 +1,80 @@
+{
+ "place": "Natick, MA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.2836393,
+  "lon": -71.346996,
+  "osm_type": "relation",
+  "osm_id": 1865757,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Natick, Middlesex County, Massachusetts, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.1894,-71.4743,42.3778,-71.2197];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(The )?Home Depot$|^Natick Outdoor|^Dick'?s Sporting Goods$\",i];nwr.a[brand~\"^(The )?Home Depot$|^Natick Outdoor|^Dick'?s Sporting Goods$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T17:56:34.032Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T17:54:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 5607583383,
+    "lat": 42.2980441,
+    "lon": -71.3867439,
+    "timestamp": "2025-05-31T00:24:38Z",
+    "version": 5,
+    "changeset": 166994014,
+    "tags": {
+     "addr:city": "Natick",
+     "addr:housenumber": "1336",
+     "addr:postcode": "01760",
+     "addr:state": "MA",
+     "addr:street": "Worcester Street",
+     "brand": "Dick's Sporting Goods",
+     "brand:wikidata": "Q5272601",
+     "name": "Dick's Sporting Goods",
+     "opening_hours": "Mo-Su 09:00-21:00",
+     "phone": "+1 508-653-0908",
+     "ref": "255",
+     "shop": "sports",
+     "website": "https://stores.dickssportinggoods.com/ma/natick/255/",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 471976990,
+    "timestamp": "2024-07-03T23:53:55Z",
+    "version": 7,
+    "changeset": 153523102,
+    "center": {
+     "lat": 42.3071226,
+     "lon": -71.3811305
+    },
+    "tags": {
+     "addr:city": "Natick",
+     "addr:housenumber": "339",
+     "addr:postcode": "01760",
+     "addr:state": "MA",
+     "addr:street": "Speen Street",
+     "alt_name": "Home Depot",
+     "branch": "Natick",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "yes",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+     "phone": "+1 508-647-9600",
+     "ref": "2669",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/Natick/MA/Natick/01760/2669"
+    }
+   }
+  ]
+ }
+}

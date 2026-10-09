@@ -1,0 +1,255 @@
+{
+ "place": "Somerville, MA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.3875968,
+  "lon": -71.0994968,
+  "osm_type": "relation",
+  "osm_id": 1933746,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Somerville, Middlesex County, Massachusetts, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.2934,-71.2270,42.4818,-70.9720];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(The )?Home Depot$\",i];nwr.a[brand~\"^(The )?Home Depot$\",i];);\nout center meta;",
+ "endpoint": "https://overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T17:53:08.470Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T17:51:46Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 29537447,
+    "timestamp": "2026-04-24T20:37:51Z",
+    "version": 7,
+    "changeset": 181783179,
+    "center": {
+     "lat": 42.3901035,
+     "lon": -71.0795423
+    },
+    "tags": {
+     "addr:city": "Somerville",
+     "addr:housenumber": "75",
+     "addr:postcode": "02143",
+     "addr:state": "MA",
+     "addr:street": "Mystic Avenue",
+     "alt_name": "Home Depot",
+     "branch": "Somerville",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "retail",
+     "check_date:opening_hours": "2026-04-24",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+     "phone": "+1 617-623-0001",
+     "ref": "2667",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/somerville/ma/somerville/02145/2667"
+    }
+   },
+   {
+    "type": "way",
+    "id": 29563686,
+    "timestamp": "2024-07-03T23:53:55Z",
+    "version": 9,
+    "changeset": 153523102,
+    "center": {
+     "lat": 42.4040968,
+     "lon": -71.0255946
+    },
+    "tags": {
+     "addr:city": "Chelsea",
+     "addr:housenumber": "1100",
+     "addr:postcode": "02150",
+     "addr:state": "MA",
+     "addr:street": "Revere Beach Parkway",
+     "alt_name": "Home Depot",
+     "branch": "Chelsea,MA",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "yes",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-21:00; Su 08:00-18:00",
+     "phone": "+1 617-887-9560",
+     "ref": "8979",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/Chelsea-MA/MA/Chelsea/02150/8979",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 29648841,
+    "timestamp": "2024-07-03T23:53:55Z",
+    "version": 9,
+    "changeset": 153523102,
+    "center": {
+     "lat": 42.3283388,
+     "lon": -71.0638224
+    },
+    "tags": {
+     "addr:city": "Boston",
+     "addr:housenumber": "5",
+     "addr:postcode": "02125",
+     "addr:state": "MA",
+     "addr:street": "Allstate Road South Bay Center",
+     "alt_name": "Home Depot",
+     "branch": "South Bay/Boston",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "warehouse",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Su 06:00-21:00",
+     "phone": "+1 617-442-6110",
+     "ref": "2679",
+     "shop": "doityourself",
+     "source": "esri/Boston_MA_Addresses",
+     "website": "https://www.homedepot.com/l/South-Bay-Boston/MA/Boston/02125/2679"
+    }
+   },
+   {
+    "type": "way",
+    "id": 29886703,
+    "timestamp": "2026-06-07T16:23:46Z",
+    "version": 11,
+    "changeset": 183789299,
+    "center": {
+     "lat": 42.3621621,
+     "lon": -71.1551083
+    },
+    "tags": {
+     "addr:city": "Watertown",
+     "addr:housenumber": "615",
+     "addr:postcode": "02472",
+     "addr:state": "MA",
+     "addr:street": "Arsenal Street",
+     "alt_name": "Home Depot",
+     "branch": "Watertown",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "retail",
+     "check_date": "2026-06-07",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+     "phone": "+1 617-926-0299",
+     "ref": "2602",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/watertown/ma/watertown/02472/2602"
+    }
+   },
+   {
+    "type": "way",
+    "id": 29899109,
+    "timestamp": "2024-12-18T16:37:38Z",
+    "version": 8,
+    "changeset": 160359268,
+    "center": {
+     "lat": 42.476673,
+     "lon": -71.0204631
+    },
+    "tags": {
+     "addr:city": "Saugus",
+     "addr:housenumber": "564",
+     "addr:postcode": "01906",
+     "addr:state": "MA",
+     "addr:street": "Broadway",
+     "alt_name": "Home Depot",
+     "branch": "Saugus",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "yes",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+     "phone": "+1 781-231-9500",
+     "ref": "2653",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/saugus/ma/saugus/01906/2653"
+    }
+   },
+   {
+    "type": "way",
+    "id": 398305636,
+    "timestamp": "2022-05-28T21:28:23Z",
+    "version": 3,
+    "changeset": 121633410,
+    "center": {
+     "lat": 42.4774894,
+     "lon": -71.0209932
+    },
+    "tags": {
+     "access": "customers",
+     "amenity": "parking",
+     "name": "Home Depot",
+     "parking": "surface",
+     "surface": "asphalt"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1064675750,
+    "timestamp": "2022-05-28T21:28:23Z",
+    "version": 1,
+    "changeset": 121633410,
+    "center": {
+     "lat": 42.4770484,
+     "lon": -71.0220338
+    },
+    "tags": {
+     "access": "customers",
+     "amenity": "parking",
+     "name": "Home Depot",
+     "parking": "surface",
+     "surface": "asphalt"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1254123532,
+    "timestamp": "2024-07-03T23:53:55Z",
+    "version": 2,
+    "changeset": 153523102,
+    "center": {
+     "lat": 42.3976816,
+     "lon": -71.0697351
+    },
+    "tags": {
+     "addr:city": "Everett",
+     "addr:housenumber": "3",
+     "addr:postcode": "02149",
+     "addr:state": "MA",
+     "addr:street": "Mystic View Road",
+     "alt_name": "Home Depot",
+     "branch": "Everett,MA",
+     "brand": "The Home Depot",
+     "brand:wikidata": "Q864407",
+     "building": "yes",
+     "name": "The Home Depot",
+     "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+     "phone": "+1 617-389-2323",
+     "ref": "2688",
+     "shop": "doityourself",
+     "website": "https://www.homedepot.com/l/Everett-MA/MA/Everett/02149/2688"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1254130814,
+    "timestamp": "2025-07-16T15:46:39Z",
+    "version": 2,
+    "changeset": 169020538,
+    "center": {
+     "lat": 42.3893991,
+     "lon": -71.0788573
+    },
+    "tags": {
+     "name": "Home Depot",
+     "shop": "garden_centre"
+    }
+   }
+  ]
+ }
+}

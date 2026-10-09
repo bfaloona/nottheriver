@@ -1,0 +1,48 @@
+{
+ "place": "Schuylkill Haven, PA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.6306464,
+  "lon": -76.171054,
+  "osm_type": "relation",
+  "osm_id": 187721,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Schuylkill Haven, Schuylkill County, Pennsylvania, 17972, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.5364,-76.2952,40.7248,-76.0469];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Denney\",i];nwr.a[brand~\"^Denney\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:18:54.304Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:17:20Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 5837277807,
+    "lat": 40.6372084,
+    "lon": -76.1791684,
+    "timestamp": "2024-04-03T12:35:03Z",
+    "version": 2,
+    "changeset": 149522691,
+    "tags": {
+     "addr:city": "Schuylkill Haven",
+     "addr:housenumber": "375",
+     "addr:postcode": "17972",
+     "addr:state": "PA",
+     "addr:street": "Center Avenue",
+     "check_date": "2024-04-03",
+     "craft": "electrician",
+     "name": "Denney Electric Supply",
+     "opening_hours": "Mo-Fr 07:00-16:00; Sa-Su off",
+     "phone": "+1 570-385-4412",
+     "website": "https://www.denneyelectricsupply.com/"
+    }
+   }
+  ]
+ }
+}

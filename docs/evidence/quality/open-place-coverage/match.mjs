@@ -9,6 +9,9 @@ const DIR = 'docs/evidence/quality/open-place-coverage';
 const shops = JSON.parse(readFileSync(`${DIR}/shops.json`, 'utf8'));
 const geo = JSON.parse(readFileSync(`${DIR}/raw/nominatim.json`, 'utf8'));
 const rules = JSON.parse(readFileSync(`${DIR}/category-rules.json`, 'utf8'));
+// Chain or independent, as labelled per baseline row on 2026-09-27 (store types, CQ5).
+const chainRows = JSON.parse(readFileSync('docs/evidence/quality/eval20-0925/chain-labels/chain-labels-local.json', 'utf8')).rows;
+const chainOf = (/** @type {{search_id: string, name: string}} */ s) => chainRows.find((c) => c.search_id === s.search_id && c.name === s.name)?.chain ?? null;
 
 const slug = (/** @type {string} */ s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const norm = (/** @type {string} */ s) => s.toLowerCase().replace(/\(.*?\)/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -92,7 +95,7 @@ const results = shops.map((shop) => {
   const center = g.hit;
   const out = {
     row: shop.row, search_id: shop.search_id, product: shop.product, category: shop.category, zip: shop.zip, zip_kind: shop.zip_kind, zip_ruca: shop.zip_ruca,
-    name: shop.name, url: shop.url,
+    name: shop.name, url: shop.url, chain: chainOf(shop),
     expected: { place: shop.place, geocoded_as: g.used, fallback: g.fallback, lat: center.lat, lon: center.lon, accept_radius_mi: radiusMi, street_hint: shop.street ?? null, name_re: shop.name_re },
     distance_from_zip_mi: round(distanceMi(shop.zip_lat, shop.zip_lon, center.lat, center.lon)),
     osm: null, overture: null,
@@ -176,7 +179,9 @@ const median = (/** @type {number[]} */ xs) => {
 };
 const summary = {
   shops: n,
-  distinct_shops: new Set(results.map((r) => `${r.name}|${r.url}`)).size,
+  // Two stores sit in two searches each (REI Conshohocken, Walmart Hamburg); the Walmart URLs
+  // differ only by a department path.
+  distinct_stores: new Set(results.map((r) => (r.url ?? r.name).replace(/\/[a-z-]+-store$/, ''))).size,
   osm: {
     found: pct(osmFound.length),
     usable: { yes: count((r) => r.osm.category_usable === 'yes'), weak: count((r) => r.osm.category_usable === 'weak'), no: count((r) => r.osm.found && r.osm.category_usable === 'no') },
@@ -219,6 +224,7 @@ const summary = {
   outside_nearby_radius: results.filter((r) => r.distance_from_zip_mi > (r.zip_ruca <= 3 ? 10 : 30)).map((r) => ({ row: r.row, name: r.name, distance_from_zip_mi: r.distance_from_zip_mi })),
   ...tally('by_zip_kind', (r) => r.zip_kind),
   ...tally('by_category', (r) => r.category),
+  ...tally('by_chain', (r) => (r.chain === null ? 'unlabelled' : r.chain ? 'chain' : 'independent')),
   ...tally('by_search', (r) => r.search_id),
 };
 writeFileSync(`${DIR}/summary.json`, JSON.stringify(summary, null, 1) + '\n');

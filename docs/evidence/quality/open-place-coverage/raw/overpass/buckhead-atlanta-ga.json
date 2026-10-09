@@ -1,0 +1,52 @@
+{
+ "place": "Buckhead, Atlanta, GA",
+ "radius_mi": 3.5,
+ "center": {
+  "lat": 33.8398137,
+  "lon": -84.3795589,
+  "osm_type": "node",
+  "osm_id": 154061351,
+  "category": "place",
+  "type": "suburb",
+  "display_name": "Buckhead, Atlanta, Fulton County, Georgia, 30305, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.7891,-84.4406,33.8905,-84.3185];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Mountain High Outfitters$\",i];nwr.a[brand~\"^Mountain High Outfitters$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:11:00.305Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:09:06Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 9176612023,
+    "lat": 33.8485662,
+    "lon": -84.4280058,
+    "timestamp": "2024-08-16T00:26:56Z",
+    "version": 3,
+    "changeset": 155305566,
+    "tags": {
+     "addr:housenumber": "1248",
+     "addr:street": "West Paces Ferry Road Northwest",
+     "addr:unit": "B",
+     "check_date": "2024-08-15",
+     "clothes": "outdoor",
+     "email": "mhoatlstore@mhomovement.com",
+     "name": "Mountain High Outfitters",
+     "opening_hours": "Mo-Th 10:00-20:00; Fr 10:00-21:00; Sa 09:00-21:00; Su 11:00-19:00",
+     "payment:cash": "yes",
+     "payment:credit_cards": "yes",
+     "payment:debit_cards": "yes",
+     "phone": "+1 404-343-1764",
+     "shop": "clothes",
+     "website": "https://mountainhighoutfitters.com",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

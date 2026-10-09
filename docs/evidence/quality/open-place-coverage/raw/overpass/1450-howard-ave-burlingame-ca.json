@@ -1,0 +1,81 @@
+{
+ "place": "1450 Howard Ave, Burlingame, CA",
+ "radius_mi": 1,
+ "center": {
+  "lat": 37.5763671,
+  "lon": -122.3483368,
+  "osm_type": "way",
+  "osm_id": 152910616,
+  "category": "shop",
+  "type": "supermarket",
+  "display_name": "Safeway, 1450, Howard Avenue, Burlingame, San Mateo County, California, 94010, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:37.5619,-122.3666,37.5909,-122.3301];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Safeway$\",i];nwr.a[brand~\"^Safeway$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:32:51.377Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:31:41Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 152910616,
+    "timestamp": "2024-01-17T09:57:54Z",
+    "version": 10,
+    "changeset": 146356024,
+    "center": {
+     "lat": 37.5764588,
+     "lon": -122.3482868
+    },
+    "tags": {
+     "addr:city": "Burlingame",
+     "addr:housenumber": "1450",
+     "addr:postcode": "94010",
+     "addr:state": "CA",
+     "addr:street": "Howard Avenue",
+     "brand": "Safeway",
+     "brand:wikidata": "Q1508234",
+     "building": "yes",
+     "name": "Safeway",
+     "note": "Customer parking on roof",
+     "phone": "+1-650-343-3488",
+     "shop": "supermarket",
+     "website": "https://local.safeway.com/safeway/ca/burlingame/1450-howard-ave.html"
+    }
+   },
+   {
+    "type": "way",
+    "id": 239393865,
+    "timestamp": "2024-02-09T02:43:35Z",
+    "version": 7,
+    "changeset": 147239497,
+    "center": {
+     "lat": 37.5804102,
+     "lon": -122.3327948
+    },
+    "tags": {
+     "addr:city": "San Mateo",
+     "addr:housenumber": "860",
+     "addr:postcode": "94401",
+     "addr:state": "CA",
+     "addr:street": "North Delaware Street",
+     "branch": "0694",
+     "brand": "Safeway",
+     "brand:wikidata": "Q1508234",
+     "building": "yes",
+     "designation": "Safeway 0694",
+     "name": "Safeway",
+     "opening_hours": "06:00-24:00",
+     "phone": "+1 650-347-2704",
+     "shop": "supermarket",
+     "website": "https://local.safeway.com/safeway/ca/san-mateo/860-n-delaware-st.html",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

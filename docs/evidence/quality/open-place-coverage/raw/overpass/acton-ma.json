@@ -1,0 +1,41 @@
+{
+ "place": "Acton, MA",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 42.4850931,
+  "lon": -71.43284,
+  "osm_type": "relation",
+  "osm_id": 1832779,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Acton, Middlesex County, Massachusetts, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.3909,-71.5606,42.5793,-71.3051];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Kitchen Outfitters\",i];nwr.a[brand~\"^Kitchen Outfitters\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T17:57:26.515Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T17:55:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 2139017609,
+    "lat": 42.5021462,
+    "lon": -71.4207002,
+    "timestamp": "2026-10-06T13:12:51Z",
+    "version": 4,
+    "changeset": 190090601,
+    "tags": {
+     "check_date": "2026-10-06",
+     "name": "Kitchen Outfitters",
+     "opening_hours": "Mo-We,Fr 09:30-17:30; Sa 09:30-17:30; Th 09:30-19:00",
+     "shop": "kitchen"
+    }
+   }
+  ]
+ }
+}

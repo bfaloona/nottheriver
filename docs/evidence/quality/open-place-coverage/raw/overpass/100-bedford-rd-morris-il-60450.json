@@ -1,0 +1,73 @@
+{
+ "place": "100 Bedford Rd, Morris, IL 60450",
+ "radius_mi": 1,
+ "center": {
+  "lat": 41.3740037,
+  "lon": -88.4226728,
+  "osm_type": "way",
+  "osm_id": 437690750,
+  "category": "shop",
+  "type": "chemist",
+  "display_name": "Walgreens, 100, Bedford Road, Morris, Saratoga Township, Grundy County, Illinois, 60450, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:41.3595,-88.4420,41.3885,-88.4034];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Walgreens$\",i];nwr.a[brand~\"^Walgreens$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:32:09.184Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:30:41Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 6842607089,
+    "lat": 41.3740097,
+    "lon": -88.4227046,
+    "timestamp": "2024-03-04T18:22:47Z",
+    "version": 3,
+    "changeset": 148220268,
+    "tags": {
+     "addr:city": "Morris",
+     "addr:housenumber": "100",
+     "addr:postcode": "60450",
+     "addr:state": "IL",
+     "addr:street": "Bedford Road",
+     "amenity": "pharmacy",
+     "brand": "Walgreens",
+     "brand:wikidata": "Q1591889",
+     "dispensing": "yes",
+     "healthcare": "pharmacy",
+     "name": "Walgreens",
+     "website": "https://www.walgreens.com/locator/walgreens-100+bedford+rd-morris-il-60450/id=4348"
+    }
+   },
+   {
+    "type": "way",
+    "id": 437690750,
+    "timestamp": "2024-03-04T18:22:47Z",
+    "version": 6,
+    "changeset": 148220268,
+    "center": {
+     "lat": 41.3740036,
+     "lon": -88.4226728
+    },
+    "tags": {
+     "addr:city": "Morris",
+     "addr:housenumber": "100",
+     "addr:postcode": "60450",
+     "addr:state": "IL",
+     "addr:street": "Bedford Road",
+     "brand": "Walgreens",
+     "brand:wikidata": "Q1591889",
+     "building": "retail",
+     "name": "Walgreens",
+     "shop": "chemist",
+     "website": "https://www.walgreens.com/locator/walgreens-100+bedford+rd-morris-il-60450/id=4348"
+    }
+   }
+  ]
+ }
+}

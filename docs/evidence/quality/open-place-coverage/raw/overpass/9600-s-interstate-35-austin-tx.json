@@ -1,0 +1,56 @@
+{
+ "place": "9600 S Interstate 35, Austin, TX",
+ "radius_mi": 1,
+ "center": {
+  "lat": 30.1604914,
+  "lon": -97.7944404,
+  "osm_type": "node",
+  "osm_id": 13118718279,
+  "category": "shop",
+  "type": "clothes",
+  "display_name": "Carter's, 9600, South Interstate 35, Austin, Travis County, Texas, 78748, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:30.1460,-97.8112,30.1750,-97.7777];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Best Buy$\",i];nwr.a[brand~\"^Best Buy$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:15:37.728Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:13:18Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 1307580963,
+    "timestamp": "2025-09-04T03:43:29Z",
+    "version": 4,
+    "changeset": 171432188,
+    "center": {
+     "lat": 30.1591752,
+     "lon": -97.7918915
+    },
+    "tags": {
+     "addr:city": "Austin",
+     "addr:housenumber": "9600",
+     "addr:postcode": "78748",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "addr:unit": "Q",
+     "air_conditioning": "yes",
+     "brand": "Best Buy",
+     "brand:wikidata": "Q533415",
+     "building": "retail",
+     "check_date": "2025-09-03",
+     "name": "Best Buy",
+     "opening_hours": "Mo-Sa 10:00-21:00; Su 10:00-20:00",
+     "phone": "+1-512-437-3699",
+     "shop": "electronics",
+     "website": "https://stores.bestbuy.com",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

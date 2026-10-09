@@ -1,0 +1,71 @@
+{
+ "place": "Greeley, CO",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 40.4233142,
+  "lon": -104.7091322,
+  "osm_type": "relation",
+  "osm_id": 112430,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Greeley, Weld County, Colorado, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:40.3291,-104.8329,40.5175,-104.5854];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Murdoch'?s|^Tractor Supply\",i];nwr.a[brand~\"^Murdoch'?s|^Tractor Supply\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:34:27.916Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:32:46Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 10677264872,
+    "lat": 40.3882727,
+    "lon": -104.71754,
+    "timestamp": "2024-07-03T10:32:31Z",
+    "version": 2,
+    "changeset": 153495539,
+    "tags": {
+     "addr:city": "Greeley",
+     "addr:housenumber": "3015",
+     "addr:postcode": "80631",
+     "addr:state": "CO",
+     "addr:street": "South 23rd Avenue",
+     "brand": "Tractor Supply Company",
+     "brand:wikidata": "Q15109925",
+     "name": "Tractor Supply Company",
+     "opening_hours": "Mo-Sa 08:00-21:00; Su 09:00-19:00",
+     "phone": "+1 970-330-3440",
+     "ref": "1614",
+     "shop": "country_store",
+     "website": "https://www.tractorsupply.com/tsc/store_Greeley-CO-80631_1614"
+    }
+   },
+   {
+    "type": "way",
+    "id": 549436474,
+    "timestamp": "2020-04-26T06:35:01Z",
+    "version": 2,
+    "changeset": 84130212,
+    "center": {
+     "lat": 40.4242944,
+     "lon": -104.6824649
+    },
+    "tags": {
+     "addr:city": "Greeley",
+     "addr:housenumber": "310",
+     "addr:postcode": "80631",
+     "addr:state": "CO",
+     "addr:street": "8th Street",
+     "building": "yes",
+     "name": "Murdoch's Ranch & Home Supply",
+     "shop": "agrarian"
+    }
+   }
+  ]
+ }
+}

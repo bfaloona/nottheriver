@@ -30,12 +30,18 @@ async function query(ql) {
   let last = '';
   for (let attempt = 0; attempt < 6; attempt++) {
     for (const endpoint of ENDPOINTS) {
-      const res = await fetch(endpoint, { method: 'POST', headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' }, body: 'data=' + encodeURIComponent(ql) });
-      const body = await res.text();
-      if (res.ok && body.trimStart().startsWith('{')) return { endpoint, reply: JSON.parse(body) };
-      last = `${endpoint} ${res.status}: ${body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 200)}`;
+      let status = 0;
+      try {
+        const res = await fetch(endpoint, { method: 'POST', headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' }, body: 'data=' + encodeURIComponent(ql) });
+        status = res.status;
+        const body = await res.text();
+        if (res.ok && body.trimStart().startsWith('{')) return { endpoint, reply: JSON.parse(body) };
+        last = `${endpoint} ${res.status}: ${body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 200)}`;
+      } catch (err) {
+        last = `${endpoint} network error: ${err?.cause?.code ?? err?.code ?? err.message}`;
+      }
       console.log(`  ${last}`);
-      await sleep(res.status === 429 ? 60_000 : 20_000);
+      await sleep(status === 429 ? 60_000 : 20_000);
     }
   }
   throw new Error(`overpass failed on every mirror: ${last}`);

@@ -1,0 +1,25 @@
+{
+ "place": "Little Five Points, Atlanta, GA",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 33.7649773,
+  "lon": -84.3491749,
+  "osm_type": "node",
+  "osm_id": 2710191943,
+  "category": "place",
+  "type": "neighbourhood",
+  "display_name": "Little Five Points, Druid Hills, Atlanta, DeKalb County, Georgia, 30307, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.7432,-84.3753,33.7867,-84.3230];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Abbadabba'?s\",i];nwr.a[brand~\"^Abbadabba'?s\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:13:18.470Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:11:11Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": []
+ }
+}

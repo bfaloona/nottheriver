@@ -1,0 +1,52 @@
+{
+ "place": "Lenox Marketplace, Buckhead, Atlanta, GA",
+ "radius_mi": 3.5,
+ "center": {
+  "lat": 33.8398137,
+  "lon": -84.3795589,
+  "osm_type": "node",
+  "osm_id": 154061351,
+  "category": "place",
+  "type": "suburb",
+  "display_name": "Buckhead, Atlanta, Fulton County, Georgia, 30305, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:33.7891,-84.4406,33.8905,-84.3185];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Dick'?s Sporting Goods$\",i];nwr.a[brand~\"^Dick'?s Sporting Goods$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:40:58.603Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:38:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 3113375329,
+    "lat": 33.8528,
+    "lon": -84.359743,
+    "timestamp": "2024-07-02T10:23:55Z",
+    "version": 6,
+    "changeset": 153448491,
+    "tags": {
+     "addr:city": "Atlanta",
+     "addr:housenumber": "3535",
+     "addr:postcode": "30326",
+     "addr:state": "GA",
+     "addr:street": "Peachtree Road",
+     "brand": "Dick's Sporting Goods",
+     "brand:wikidata": "Q5272601",
+     "name": "Dick's Sporting Goods",
+     "opening_hours": "Mo-Sa 09:00-21:00; Su 10:00-19:00",
+     "phone": "+1 404-267-0200",
+     "ref": "418",
+     "shop": "sports",
+     "source": "Survey",
+     "website": "https://stores.dickssportinggoods.com/ga/atlanta/418/",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ }
+}

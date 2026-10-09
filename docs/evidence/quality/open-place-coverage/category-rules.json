@@ -1,5 +1,5 @@
 {
- "about": "Rule from a search's product category (eval/queries.json `category`) to the place tags that let a classifier say 'plausibly sells it' from the tag alone. `yes`: the tag names a shop type that stocks the product as a matter of course. `weak`: a general merchant that may stock it (department, variety, discount, supermarket, drugstore, farm store). Anything else, or no shop/amenity/craft tag at all, is `no`. OSM entries are `key=value` over shop, amenity and craft; Overture entries are matched against any element of taxonomy.hierarchy (which includes taxonomy.primary) and against basic_category. The Overture lists were aligned to the vocabulary seen in the raw Overture rows (basic_category and taxonomy.primary values) before the match step ran; see README.md.",
+ "about": "Rule from a search's product category (eval/queries.json `category`) to the place tags that let a classifier say 'plausibly sells it' from the tag alone. `yes`: the tag names a shop type that stocks the product as a matter of course. `weak`: a general merchant that may stock it (department, variety, discount, supermarket, drugstore, farm store). Anything else, or no shop/amenity/craft tag at all, is `no`. OSM entries are `key=value` over shop, amenity and craft; Overture entries are matched against any element of taxonomy.hierarchy (which includes taxonomy.primary) and against basic_category. The Overture lists were aligned to the vocabulary seen in the raw Overture rows (basic_category and taxonomy.primary values) before the match step ran; two consistency fixes were made after a first look at the OSM matches (README.md, Run notes).",
  "osm_weak_all": [
   "shop=department_store",
   "shop=variety_store",
@@ -31,11 +31,12 @@
     "shop=kitchen",
     "shop=doityourself",
     "shop=hardware",
-    "shop=interior_decoration",
     "shop=cookware"
    ],
    "osm_weak": [
-    "shop=supermarket"
+    "shop=supermarket",
+    "shop=furniture",
+    "shop=interior_decoration"
    ],
    "overture_yes": [
     "kitchen_supply_store",
@@ -45,12 +46,12 @@
     "hardware_store",
     "home_improvement_store",
     "do_it_yourself_store",
-    "hardware_home_and_garden_store",
-    "furniture_store"
+    "hardware_home_and_garden_store"
    ],
    "overture_weak": [
     "grocery_store",
-    "supermarket"
+    "supermarket",
+    "furniture_store"
    ]
   },
   "outdoor": {
@@ -231,9 +232,7 @@
    ],
    "overture_weak": [
     "gift_shop",
-    "flowers_and_gifts_store",
-    "museum",
-    "art_museum"
+    "flowers_and_gifts_store"
    ]
   },
   "electronics_accessories": {

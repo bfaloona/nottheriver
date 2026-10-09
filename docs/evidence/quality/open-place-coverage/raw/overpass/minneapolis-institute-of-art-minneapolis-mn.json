@@ -1,0 +1,54 @@
+{
+ "place": "Minneapolis Institute of Art, Minneapolis, MN",
+ "radius_mi": 1,
+ "center": {
+  "lat": 44.9584761,
+  "lon": -93.2741528,
+  "osm_type": "way",
+  "osm_id": 38898412,
+  "category": "tourism",
+  "type": "museum",
+  "display_name": "Minneapolis Institute of Art, 2400, 3rd Avenue South, Whittier, Eat Street, Powderhorn, Minneapolis, Hennepin County, Minnesota, 55404, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:44.9440,-93.2946,44.9730,-93.2537];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^(The )?Store at Mia|^Mia Store|^Minneapolis Institute of Arts?$\",i];nwr.a[brand~\"^(The )?Store at Mia|^Mia Store|^Minneapolis Institute of Arts?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:25:24.981Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:23:28Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 38898412,
+    "timestamp": "2026-09-21T22:13:16Z",
+    "version": 17,
+    "changeset": 189371203,
+    "center": {
+     "lat": 44.9584411,
+     "lon": -93.2741635
+    },
+    "tags": {
+     "addr:city": "Minneapolis",
+     "addr:housenumber": "2400",
+     "addr:postcode": "55404",
+     "addr:state": "MN",
+     "addr:street": "3rd Avenue South",
+     "building": "yes",
+     "name": "Minneapolis Institute of Art",
+     "old_name": "Minneapolis Institute of Arts",
+     "opening_hours": "PH Tu-Su open \"except Christmas eve, Christmas, 4th of July, and Thanksgiving\"; Tu-Sa 10:00-17:00; Th-Fr 10:00-21:00; Su 11:00-17:00; Jul 04 closed; Dec 24,25 closed; Nov Th[4] closed \"US Thanksgiving\"",
+     "short_name": "Mia",
+     "tourism": "museum",
+     "website": "https://new.artsmia.org",
+     "wheelchair": "yes",
+     "wikidata": "Q1700481",
+     "wikipedia": "en:Minneapolis Institute of Art"
+    }
+   }
+  ]
+ }
+}

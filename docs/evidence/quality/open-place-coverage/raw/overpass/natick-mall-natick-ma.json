@@ -1,0 +1,50 @@
+{
+ "place": "Natick Mall, Natick, MA",
+ "radius_mi": 1.5,
+ "center": {
+  "lat": 42.3017312,
+  "lon": -71.384253,
+  "osm_type": "way",
+  "osm_id": 336100152,
+  "category": "landuse",
+  "type": "retail",
+  "display_name": "Natick Mall, 1245, Natick, Middlesex County, Massachusetts, 01760, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:42.2800,-71.4136,42.3235,-71.3549];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Sur La Table$|^Crate (&|and) Barrel$|^(The )?North Face$\",i];nwr.a[brand~\"^Sur La Table$|^Crate (&|and) Barrel$|^(The )?North Face$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T17:56:26.797Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T17:54:51Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "way",
+    "id": 257087750,
+    "timestamp": "2024-01-17T03:31:19Z",
+    "version": 6,
+    "changeset": 146345401,
+    "center": {
+     "lat": 42.300159,
+     "lon": -71.38583
+    },
+    "tags": {
+     "addr:city": "Natick",
+     "addr:housenumber": "1245",
+     "addr:postcode": "01760",
+     "addr:street": "Worcester Street",
+     "brand": "Crate & Barrel",
+     "brand:wikidata": "Q5182604",
+     "building": "retail",
+     "check_date": "2023-08-20",
+     "name": "Crate & Barrel",
+     "shop": "furniture",
+     "website": "https://www.crateandbarrel.com/"
+    }
+   }
+  ]
+ }
+}

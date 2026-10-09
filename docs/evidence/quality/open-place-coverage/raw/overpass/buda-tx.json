@@ -1,0 +1,488 @@
+{
+ "place": "Buda, TX",
+ "radius_mi": 6.5,
+ "center": {
+  "lat": 30.082475,
+  "lon": -97.8417144,
+  "osm_type": "relation",
+  "osm_id": 6586487,
+  "category": "boundary",
+  "type": "administrative",
+  "display_name": "Buda, Hays County, Texas, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:29.9883,-97.9506,30.1767,-97.7328];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^AT&T( Store)?$|^H-?E-?B( plus!?)?$|^Walmart( Supercenter| Neighborhood Market)?$\",i];nwr.a[brand~\"^AT&T( Store)?$|^H-?E-?B( plus!?)?$|^Walmart( Supercenter| Neighborhood Market)?$\",i];);\nout center meta;",
+ "endpoint": "https://lz4.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:13:31.986Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:11:11Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 3448475630,
+    "lat": 30.086964,
+    "lon": -97.8246306,
+    "timestamp": "2024-10-10T23:20:25Z",
+    "version": 5,
+    "changeset": 157736071,
+    "tags": {
+     "addr:city": "Buda",
+     "addr:housenumber": "690",
+     "addr:postcode": "78610",
+     "addr:state": "TX",
+     "addr:street": "Old San Antonio Road",
+     "amenity": "pharmacy",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "healthcare": "pharmacy",
+     "name": "Walmart Pharmacy",
+     "operator": "Walmart",
+     "phone": "+1-512-295-1687",
+     "website": "https://www.walmart.com/store/4219-buda-tx/pharmacy"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13116681796,
+    "lat": 30.1581194,
+    "lon": -97.7910953,
+    "timestamp": "2025-09-03T18:19:42Z",
+    "version": 1,
+    "changeset": 171420276,
+    "tags": {
+     "addr:city": "Austin",
+     "addr:housenumber": "9900",
+     "addr:postcode": "78748",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "addr:unit": "A-100",
+     "air_conditioning": "yes",
+     "branch": "Southpark Meadows",
+     "brand": "AT&T",
+     "brand:wikidata": "Q298594",
+     "check_date": "2025-09-03",
+     "name": "AT&T",
+     "opening_hours": "Mo-Sa 09:00-20:00; Su 11:00-18:00",
+     "phone": "+1 512-291-9800",
+     "shop": "mobile_phone",
+     "website": "https://www.att.com/",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 31695438,
+    "timestamp": "2025-06-28T02:29:20Z",
+    "version": 14,
+    "changeset": 168210559,
+    "center": {
+     "lat": 30.1651398,
+     "lon": -97.7905693
+    },
+    "tags": {
+     "addr:city": "Austin",
+     "addr:country": "US",
+     "addr:housenumber": "9300",
+     "addr:postcode": "78748",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "addr:unit": "B",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "yes",
+     "name": "Walmart Supercenter",
+     "opening_hours": "24/7",
+     "operator": "Walmart",
+     "operator:wikidata": "Q483551",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 512-292-6973",
+     "ref": "5317",
+     "ref:shop:num": "5317",
+     "ref:walmart": "5317",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/5317-austin-tx"
+    }
+   },
+   {
+    "type": "way",
+    "id": 207134534,
+    "timestamp": "2026-09-01T22:56:13Z",
+    "version": 15,
+    "changeset": 188392798,
+    "center": {
+     "lat": 30.016317,
+     "lon": -97.8613404
+    },
+    "tags": {
+     "addr:city": "Kyle",
+     "addr:housenumber": "5401",
+     "addr:postcode": "78640",
+     "addr:state": "TX",
+     "addr:street": "South FM 1626",
+     "air_conditioning": "yes",
+     "brand": "H-E-B plus!",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "check_date": "2024-07-06",
+     "delivery": "yes",
+     "name": "H-E-B plus!",
+     "opening_hours": "06:00-23:00",
+     "phone": "+1-512-268-7900",
+     "shop": "supermarket",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 237847687,
+    "timestamp": "2025-06-28T02:29:20Z",
+    "version": 10,
+    "changeset": 168210559,
+    "center": {
+     "lat": 30.0866476,
+     "lon": -97.8250542
+    },
+    "tags": {
+     "addr:city": "Buda",
+     "addr:country": "US",
+     "addr:housenumber": "690",
+     "addr:postcode": "78610",
+     "addr:state": "TX",
+     "addr:street": "Old San Antonio Road",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "yes",
+     "name": "Walmart Supercenter",
+     "opening_hours": "24/7",
+     "operator": "Walmart",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 512-295-1670",
+     "ref": "4219",
+     "ref:shop:num": "4219",
+     "ref:walmart": "4219",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/4219-buda-tx"
+    }
+   },
+   {
+    "type": "way",
+    "id": 252217318,
+    "timestamp": "2024-11-20T22:23:14Z",
+    "version": 15,
+    "changeset": 159387042,
+    "center": {
+     "lat": 30.0140734,
+     "lon": -97.8616861
+    },
+    "tags": {
+     "addr:city": "Kyle",
+     "addr:housenumber": "5401",
+     "addr:postcode": "78640",
+     "addr:state": "TX",
+     "addr:street": "South FM 1626",
+     "amenity": "fuel",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "roof",
+     "name": "H-E-B Fuel",
+     "self_service": "yes",
+     "short_name": "H-E-B"
+    }
+   },
+   {
+    "type": "way",
+    "id": 256651294,
+    "timestamp": "2024-01-17T09:44:11Z",
+    "version": 14,
+    "changeset": 146355374,
+    "center": {
+     "lat": 30.0881505,
+     "lon": -97.8201407
+    },
+    "tags": {
+     "addr:city": "Buda",
+     "addr:housenumber": "15300",
+     "addr:postcode": "78610",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "amenity": "fuel",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "layer": "1",
+     "name": "H-E-B Fuel",
+     "short_name": "H-E-B"
+    }
+   },
+   {
+    "type": "way",
+    "id": 256651398,
+    "timestamp": "2024-01-17T09:44:11Z",
+    "version": 12,
+    "changeset": 146355374,
+    "center": {
+     "lat": 30.0879224,
+     "lon": -97.8215144
+    },
+    "tags": {
+     "addr:city": "Buda",
+     "addr:housenumber": "15300",
+     "addr:postcode": "78610",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "name": "H-E-B",
+     "phone": "+1-512-312-1615",
+     "shop": "supermarket"
+    }
+   },
+   {
+    "type": "way",
+    "id": 259087830,
+    "timestamp": "2024-11-20T22:23:14Z",
+    "version": 8,
+    "changeset": 159387042,
+    "center": {
+     "lat": 30.014363,
+     "lon": -97.8616354
+    },
+    "tags": {
+     "addr:city": "Kyle",
+     "addr:housenumber": "5401",
+     "addr:postcode": "78640",
+     "addr:state": "TX",
+     "addr:street": "South FM 1626",
+     "amenity": "car_wash",
+     "automated": "yes",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "name": "H-E-B Car Wash",
+     "short_name": "H-E-B"
+    }
+   },
+   {
+    "type": "way",
+    "id": 384115379,
+    "timestamp": "2024-01-17T09:44:11Z",
+    "version": 3,
+    "changeset": 146355374,
+    "center": {
+     "lat": 30.1753397,
+     "lon": -97.8250934
+    },
+    "tags": {
+     "addr:city": "Austin",
+     "addr:housenumber": "2110",
+     "addr:postcode": "78748",
+     "addr:state": "TX",
+     "addr:street": "West Slaughter Lane",
+     "branch": "Slaughter and Manchaca",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "retail",
+     "height": "14.5",
+     "name": "H-E-B",
+     "opening_hours": "06:00-23:00",
+     "phone": "+1-512-282-0182",
+     "ref": "227",
+     "shop": "supermarket",
+     "website": "https://www.heb.com/heb-store/US/tx/austin/slaughter-and-manchaca-h-e-b-227"
+    }
+   },
+   {
+    "type": "way",
+    "id": 384116006,
+    "timestamp": "2025-09-18T22:08:33Z",
+    "version": 7,
+    "changeset": 172134778,
+    "center": {
+     "lat": 30.1743022,
+     "lon": -97.8258305
+    },
+    "tags": {
+     "addr:city": "Austin",
+     "addr:housenumber": "2110",
+     "addr:postcode": "78748",
+     "addr:state": "TX",
+     "addr:street": "West Slaughter Lane",
+     "amenity": "fuel",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "roof",
+     "compressed_air": "yes",
+     "fixme": "Please add and verify tags: fuel:octane_XX; hours; phone; website",
+     "fuel:octane_85": "unknown",
+     "fuel:octane_86": "unknown",
+     "fuel:octane_87": "unknown",
+     "fuel:octane_88": "unknown",
+     "fuel:octane_89": "unknown",
+     "fuel:octane_90": "unknown",
+     "fuel:octane_91": "unknown",
+     "fuel:octane_92": "unknown",
+     "fuel:octane_93": "unknown",
+     "height": "5.9",
+     "layer": "1",
+     "name": "H-E-B Fuel",
+     "short_name": "H-E-B"
+    }
+   },
+   {
+    "type": "way",
+    "id": 457968084,
+    "timestamp": "2025-12-24T20:30:01Z",
+    "version": 9,
+    "changeset": 176375405,
+    "center": {
+     "lat": 30.0101331,
+     "lon": -97.8591836
+    },
+    "tags": {
+     "addr:city": "Kyle",
+     "addr:country": "US",
+     "addr:housenumber": "5754",
+     "addr:postcode": "78640",
+     "addr:state": "TX",
+     "addr:street": "Kyle Parkway",
+     "brand": "Walmart",
+     "brand:wikidata": "Q483551",
+     "building": "yes",
+     "name": "Walmart Supercenter",
+     "opening_hours": "24/7",
+     "operator": "Walmart",
+     "payment:app:walmart": "yes",
+     "payment:apple_pay": "no",
+     "payment:google_pay": "no",
+     "payment:samsung_pay": "no",
+     "phone": "+1 512-268-1451",
+     "ref": "4130",
+     "ref:shop:num": "4130",
+     "ref:walmart": "4130",
+     "sensory_friendly:accommodation": "dimmed_light;static_screens;no_pa",
+     "sensory_friendly:conditional": "yes @ 08:00-10:00",
+     "shop": "supermarket",
+     "website": "https://www.walmart.com/store/4130-kyle-tx"
+    }
+   },
+   {
+    "type": "way",
+    "id": 457968089,
+    "timestamp": "2024-10-10T23:23:16Z",
+    "version": 5,
+    "changeset": 157736071,
+    "center": {
+     "lat": 30.0114799,
+     "lon": -97.8603667
+    },
+    "tags": {
+     "addr:city": "Kyle",
+     "addr:housenumber": "20585",
+     "addr:postcode": "78640",
+     "addr:state": "TX",
+     "addr:street": "South Interstate 35",
+     "amenity": "fuel",
+     "brand": "Walmart",
+     "brand:wikidata": "Q62606411",
+     "building": "roof",
+     "name": "Walmart",
+     "website": "https://www.walmart.com/store/4130-kyle-tx"
+    }
+   },
+   {
+    "type": "way",
+    "id": 832499554,
+    "timestamp": "2024-01-17T09:46:09Z",
+    "version": 4,
+    "changeset": 146355482,
+    "center": {
+     "lat": 30.1687911,
+     "lon": -97.7870855
+    },
+    "tags": {
+     "addr:city": "Austin",
+     "addr:housenumber": "8801",
+     "addr:postcode": "78745",
+     "addr:state": "TX",
+     "addr:street": "South Congress Avenue",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "name": "H-E-B",
+     "phone": "+1-737-236-8348",
+     "shop": "supermarket"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1181425112,
+    "timestamp": "2024-09-18T17:27:18Z",
+    "version": 2,
+    "changeset": 156784715,
+    "center": {
+     "lat": 30.1705725,
+     "lon": -97.7847225
+    },
+    "tags": {
+     "amenity": "fuel",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "roof",
+     "fixme": "Please add and verify tags: addr; hours; phone; website",
+     "fuel:diesel": "yes",
+     "fuel:octane_85": "no",
+     "fuel:octane_86": "no",
+     "fuel:octane_87": "yes",
+     "fuel:octane_88": "no",
+     "fuel:octane_89": "yes",
+     "fuel:octane_90": "no",
+     "fuel:octane_91": "no",
+     "fuel:octane_92": "no",
+     "fuel:octane_93": "yes",
+     "large_vehicles": "yes",
+     "name": "H-E-B Fuel",
+     "payment:cards": "yes",
+     "payment:contactless": "yes",
+     "self_service": "yes",
+     "short_name": "H-E-B"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1218182783,
+    "timestamp": "2026-03-25T03:52:42Z",
+    "version": 2,
+    "changeset": 180384889,
+    "center": {
+     "lat": 30.1706217,
+     "lon": -97.7850672
+    },
+    "tags": {
+     "amenity": "car_wash",
+     "automated": "yes",
+     "brand": "H-E-B",
+     "brand:wikidata": "Q830621",
+     "building": "yes",
+     "name": "H-E-B Car Wash",
+     "self_service": "no",
+     "short_name": "H-E-B"
+    }
+   }
+  ]
+ }
+}

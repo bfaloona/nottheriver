@@ -1,0 +1,49 @@
+{
+ "place": "863 East Francisco Blvd, San Rafael, CA 94901",
+ "radius_mi": 1,
+ "center": {
+  "lat": 37.9622188,
+  "lon": -122.5075359,
+  "osm_type": "node",
+  "osm_id": 13086739544,
+  "category": "shop",
+  "type": "hardware",
+  "display_name": "Harbor Freight Tools, 863, Francisco Boulevard East, Canal, San Rafael, Marin County, California, 94901, United States"
+ },
+ "query": "[out:json][timeout:120][bbox:37.9477,-122.5259,37.9767,-122.4892];\n(nwr[name];nwr[brand];)->.a;\n(nwr.a[name~\"^Harbor Freight( Tools)?$\",i];nwr.a[brand~\"^Harbor Freight( Tools)?$\",i];);\nout center meta;",
+ "endpoint": "https://z.overpass-api.de/api/interpreter",
+ "fetched": "2026-10-09T18:17:52.029Z",
+ "reply": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-09T18:16:21Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 13086739544,
+    "lat": 37.9622188,
+    "lon": -122.5075359,
+    "timestamp": "2025-08-22T00:11:20Z",
+    "version": 2,
+    "changeset": 170804407,
+    "tags": {
+     "addr:city": "San Rafael",
+     "addr:housenumber": "863",
+     "addr:postcode": "94901",
+     "addr:state": "CA",
+     "addr:street": "Francisco Boulevard East",
+     "brand": "Harbor Freight Tools",
+     "brand:wikidata": "Q5654601",
+     "name": "Harbor Freight Tools",
+     "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-18:00",
+     "phone": "+1 415-721-0792",
+     "shop": "hardware",
+     "website": "https://www.harborfreight.com/storelocator/863-east-francisco-blvd-san-rafael-94901?number=386"
+    }
+   }
+  ]
+ }
+}
