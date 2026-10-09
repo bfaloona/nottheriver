@@ -22,6 +22,7 @@ Nothing here changes the live site. The live data stays in `data/`.
 | `build-index.test.mjs` | Tests for the build script |
 | `index.json` | Built from the front matter of `sites/` and `retailers/`; don't edit by hand |
 | `raw/` | Source material, listed below |
+| `competitors/` | Who else runs ethical or sustainable shopping search and list sites, and which planned features set nottheriver apart (2026-10-09): `README.md` synthesis, `directories.md`, `search-tools.md` |
 
 `<slug>` is the registrable domain with dots as hyphens (`thegoodtrade.com` becomes `thegoodtrade-com`). Each file is Markdown with YAML front matter, so the files are both the source material and the database.
 
