@@ -64,33 +64,37 @@ New this run: the privacy policy (last updated 2015-12-02) collects location "fr
 - Last visible update: articles dated 2026-10-06.
 - FT: FT11 partial (ad and sponsorship free by statement; outbound shopmy links unexplained).
 
-### A5. Thingtesting (thingtesting.com), pages returned 403
+### A5. Thingtesting (thingtesting.com), plain fetches returned 403, opened in a browser
 
-All of thingtesting.com returned HTTP 403 this run, so this profile rests on search-result snippets of its own pages (the Thingtester guide and the "Q2 2026 Thingtesting ShopMy brand update") and third parties. Treat as unverified.
+All of thingtesting.com returned HTTP 403 to plain fetches this run; the profile first rested on search-result snippets. The browser check below opened the about page, the home page and the ShopMy update, so the claims now cite those pages.
 
-- Owner and funding: per snippets, acquired by ShopMy in 2025; affiliate commissions are held as a "reward" paid to a reviewer after a verified review; "Thingdrop" features one brand a week with "increased rewards". Affiliate-funded.
-- What it is: brand and product review site for direct-to-consumer brands.
+- Owner and funding: "Hard to believe it's already been a year since Thingtesting was acquired by ShopMy"; "Thingtesting Rewards, powered by the ShopMy affiliate network": "When a Thingtester buys through an affiliate link with Thingtesting Rewards, your affiliate commission is held as a 'reward'", cashed out "Once the tester leaves a verified review"; "Thingdrop is our weekly limited product testing campaign featuring one brand with increased rewards", which brands buy ("When you buy a Thingdrop, you get: a newsletter feature..."; "We are booked out through May"); review export "exclusively available for brands that are ShopMy customers" (thingtesting.com/stories/q2-2026-thingtesting-shopmy-brand-update, browser, 2026-10-09; the story shows no date). The about page FAQ still says "Forerunner Ventures led our seed round" and "Thingtesting investors cannot influence what brands are featured", with no mention of ShopMy (thingtesting.com/about, browser, 2026-10-09). Affiliate-funded, with paid brand features.
+- What it is: brand and product review site for direct-to-consumer brands with a "Search brands or products" box (thingtesting.com, browser, 2026-10-09).
 - Scope: global brands; US-usable; brands and products, not shops.
-- Negatives: user reviews, not sourced findings. Disputes, local, privacy, open source: not read.
-- Last visible update: a Q2 2026 brand update exists per the snippet.
-- FT: FT1 partial (brand discovery).
+- How reviews are gathered: "Reviews on Thingtesting are written by real people"; reviewers' phone number and email are verified; Rewards pay a commission after a "verified review" of a purchase made through the affiliate link; staff screen community-submitted brands weekly; "Most of the brands in our directory are claimed by their founders or people working at the businesses" (thingtesting.com/about FAQ, browser, 2026-10-09).
+- Negatives: user reviews, not sourced findings. Disputes, local, open source: not stated on the pages read. Privacy: cookies "for promotional purposes" (site banner, 2026-10-09).
+- Affiliate or sponsorship: footer, every page: "Things you buy through retailers after clicking an external link on Thingtesting may earn us a commission"; story pages: "We may earn a commission on purchases made through our links".
+- Last visible update: home page stories dated 6 October 2026 and "Brands Spotted: October 7, 2026".
+- Browser check 2026-10-09: opened thingtesting.com/about (FAQ answers expanded), thingtesting.com and thingtesting.com/stories/q2-2026-thingtesting-shopmy-brand-update, each in a fresh browser session. Confirmed: the ShopMy acquisition and the commission-as-reward model, now on the site's own page rather than snippets. Added: Thingdrop is a paid brand feature; the search box covers brands and products; reviewers are phone- and email-verified; the about page still names the Forerunner seed round. No FT cell changed (FT1 stays partial; FT11 stays blank).
+- FT: FT1 partial (search returns brands and products, not shops).
 
-### A6. Bookshop.org (bookshop.org), own pages returned 403
+### A6. Bookshop.org (bookshop.org), plain fetches returned 403, opened in a browser
 
-bookshop.org returned HTTP 403 on every page tried (about, pages/about, root, info/embed/about-us). What follows comes from its support site (opened), a Bookshop blog post republished on Goodreads (opened) and search snippets of bookshop.org pages (not opened).
+bookshop.org returned HTTP 403 to plain fetches on every page tried (about, pages/about, root, info/embed/about-us). The profile first came from its support site (opened), a Bookshop blog post republished on Goodreads (opened) and search snippets; the browser check below opened the home page, the store locator, the affiliate page and a search page.
 
-- Owner and funding: B Corp per the about-page snippet ("Certified as a B Corp... giving over 80% of our profit margin to independent bookstores"). Support article (last modified 2023-10-08): 10% of regular sales go to an earnings pool "evenly divided and distributed to independent bookstores every six months"; bookstore affiliates "earn 30% of the cover price on any sales generated from the link", which "is the entire profit margin"; online-only sellers and media affiliates get a 10% program. Fulfilment by Ingram.
-- What it is: online bookstore (marketplace with a single fulfilment path) plus a store map.
+- Owner and funding: B Corp per the about-page snippet ("Certified as a B Corp... giving over 80% of our profit margin to independent bookstores"). The site banner says "giving over 80% of our profit margin to independent bookstores. In total, we support over 2,500+ stores" and shows a running total raised ($51.17 million on 2026-10-09) (bookshop.org, browser, 2026-10-09). Support article (last modified 2023-10-08): 10% of regular sales go to an earnings pool "evenly divided and distributed to independent bookstores every six months"; bookstore affiliates "earn 30% of the cover price on any sales generated from the link", which "is the entire profit margin"; the affiliate page offers others "an industry-leading 10% whenever someone buys a book you share" (bookshop.org/affiliates/profile/introduction, browser, 2026-10-09). Fulfilment by Ingram.
+- What it is: online bookstore (marketplace with a single fulfilment path) plus a store locator.
 - Scope: US (separate UK site); books only.
 - Data source: ABA member bookstores with a physical location opt in.
-- Ranking and explanation: not stated.
+- Ranking and explanation: search results show title, author, format and price with no explanation of order and no sponsored label (bookshop.org/search?keywords=gardening, which redirected to /beta-search, browser, 2026-10-09). The home page carries "SPONSORED TITLE" blocks and publisher-branded discount offers ("15% off ... from Bloomsbury") (bookshop.org, browser, 2026-10-09).
 - Negatives: none. Disputes: not stated.
-- Local: "find them on our map and they'll receive the full profit off your order" (blog post, 2022-03-14). Distance ranking not verified.
-- Privacy: not read (403).
-- Affiliate or sponsorship: it is an affiliate program by design.
+- Local: the "Store Locator" ("Choose your favorite bookstore to receive the full profit from your Bookshop.org purchases") takes a zip code or store name ("Enter zipcode or store name"), a radius of 15, 50, 100, 150, 250 or 1000 miles, and owner filters (Black-, LGBTQIA+-, Latine-, AAPI-, Indigenous-, women- and disabled-owned, plus romance bookstores); it lists stores nearest first with "N miles away" beside a Google map. On first load it centered on an approximate visitor location without a prompt (bookshop.org/pages/bookstores, a StoreRocket widget, browser, 2026-10-09).
+- Privacy: a site banner says "We've updated our Privacy Policy - effective June 6, 2026. We've made changes to how we share data with advertising and analytics partners" (bookshop.org, browser, 2026-10-09); the policy itself was not read.
+- Affiliate or sponsorship: it is an affiliate program by design, and the home page sells sponsored title slots.
 - Open source: not stated.
-- Last visible update: support article 2023-10-08; snippets show 2026 content.
-- FT: FT1 partial (books), FT2 partial (map, no distance ranking seen), FT6 partial (Amazon is absent by construction; Amazon-published titles not checked), FT7 partial (independent bookstores only), FT12 partial (curated store list via ABA membership; no sources or dispute state).
+- Last visible update: support article 2023-10-08; home page lists dated October 2026; privacy policy 2026-06-06.
+- Browser check 2026-10-09: opened bookshop.org, /pages/bookstores, /affiliates/profile/introduction and /beta-search?keywords=gardening (fresh browser session each); /info/about-us loaded only its header and footer, with no body text. Corrected: the map is a zip-code store locator ranked by distance in miles with a map; the home page has sponsored titles; the privacy banner names sharing with advertising and analytics partners. FT2 changed from P to Y (zip entry, nearest-first list in miles, map), count column updated; FT1 stays P and FT11 stays blank.
+- FT: FT1 partial (books), FT2 yes (zip-code store locator, nearest first in miles, with a map; bookstores only), FT6 partial (Amazon is absent by construction; Amazon-published titles not checked), FT7 partial (independent bookstores only), FT12 partial (curated store list via ABA membership; no sources or dispute state).
 
 ### A7. IndieBound (indiebound.org), already profiled in `research/sites/indiebound-org.md`
 
@@ -217,11 +221,15 @@ Nothing new found this run. Relevant here: Indie Bookstore Finder by ZIP, city o
 - Last visible update: 2026 news items; footer © 2026.
 - FT: FT3 partial, FT4 partial, FT13 partial.
 
-### A20. American Express Shop Small map, not opened
+### A20. American Express Shop Small map, plain fetches failed, opened in a browser
 
-americanexpress.com returned "Parse Error: Header overflow" twice and the maps page served only a title. From search snippets of Amex pages and an AOL article: a map of "qualifying American Express Card-accepting" small merchants, searchable by location; US eligibility requires accepting Amex for over 12 months. Card-network marketing; no ethics data.
+americanexpress.com returned "Parse Error: Header overflow" twice to plain fetches and the maps page served only a title; the profile first rested on search snippets of Amex pages and an AOL article. Card-network marketing; no ethics data.
 
-- FT: FT2 partial, FT7 partial (small merchant per Amex rules), FT12 partial.
+- What it is: the Shop Small page still links a "Shop Small Map" and a "Shop Small Online Directory"; "Only qualifying American Express® Card-accepting merchants will be featured on the map", and the map "may contain inaccuracies or errors, including as a result of information provided by third parties" (americanexpress.com/en-us/benefits/shop-small/, browser, 2026-10-09).
+- Local: a Google map with "Search by business name" and "Search by location" (typed place with Google autocomplete, or a current-location button); results list name, category, street address and distance in miles, sorted "Popular" by default with "Distance" as the other sort; filters are "Shop Small", "New Listing", "Places reporting recent activity", "Contactless Payments Accepted" and a category (Dining, Shopping, Entertainment, Services, Travel, Business Services) (americanexpress.com/en-us/maps?cat=Shop-Small&version=shopsmall, test search on a Portland, OR zip, browser, 2026-10-09).
+- What "small" means: Map FAQ 4: an Amex-accepting business in the US or its territories with "at least 1 but no more than 25 locations" and "no more than $7M in American Express annual charge volume"; "Must not be part of a franchise brand that has more than 100 stores", and a franchise brand with "more than 25 corporate-owned stores" is excluded entirely; merchants with Amex for more than 12 months "must have had at least 1 transaction in the last calendar year"; listed industries excluded (gas stations, non-profits, direct sellers, cannabis, firearms, gambling and others) (americanexpress.com/us/merchant/map-faqs.html, browser, 2026-10-09).
+- Browser check 2026-10-09: opened the Shop Small page, the Shop Small map (one location search) and the Map FAQs, each in a fresh browser session, no sign-in. Corrected: the earlier snippet reading "US eligibility requires accepting Amex for over 12 months" is wrong; the 12-month clause only requires one transaction in the last year from merchants that have accepted Amex that long; "small" is a size rule (locations, Amex charge volume, franchise size). No FT cell changed: FT2 stays P because results default to "Popular", with distance an optional sort; FT7 stays P (a stated size and franchise rule, applied by Amex, not sourced per merchant).
+- FT: FT2 partial (map, miles shown, distance sort optional), FT7 partial (small merchant per Amex size and franchise rules), FT12 partial.
 
 ### A21. Shop Ethical! (ethical.org.au), Australia
 
@@ -288,7 +296,7 @@ Columns: BC Boycat, BY Buycott, GB Goodbuy, FI Finch, TT Thingtesting, BS Booksh
 | FT | BC | BY | GB | FI | TT | BS | IB | IW | LO | LK | GG | SH | ET | EB | EC | DD | BR | PS | GU | AX | SE | BB | YP | DM | MC | SL | Count (yes) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | FT1 product search | P |  | P |  | P | P |  |  | Y | P | Y | P | P | P | P | P | P |  |  |  |  | P | P |  |  | P | 16 (2) |
-| FT2 nearby, distance, map |  |  | P |  |  | P | P | P | P | P | Y | P |  |  |  |  |  |  |  | P |  |  | P | P | P | P | 13 (1) |
+| FT2 nearby, distance, map |  |  | P |  |  | Y | P | P | P | P | Y | P |  |  |  |  |  |  |  | P |  |  | P | P | P | P | 13 (2) |
 | FT3 every result explained | P |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | P | P |  | P |  |  |  |  |  | 4 (0) |
 | FT4 sourced dated negatives | P | P |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | P | P |  | P |  |  |  |  |  | 5 (0) |
 | FT5 dispute link |  | P |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | P |  |  |  |  |  | 2 (0) |
@@ -334,7 +342,7 @@ Reading the counts: a feature with 0 "yes" and only "partial" marks means no too
 | Lokjo | OpenStreetMap shop map, nearby search, ad-free, no tracking, non-profit, worldwide | No product search, no ethics data, no explanation, no stated correction path, EU-based |
 | Locally | Type a product, get nearby stores with stock and distance, US-usable | Brand-funded with co-op advertising, no ethics data, precise location sold to ad networks, chains included |
 | Boycat (next closest) | Values flags with a stated reason, alternatives, membership funding, anonymous brand checks | Amazon-centric (alternatives open on Amazon), no sources or dates visible, no dispute path, company anonymous |
-| Bookshop.org (next closest) | Independent-only, store map, published profit share, B Corp | Books only, affiliate by design, no explanation or negatives, pages blocked to fetchers |
+| Bookshop.org (next closest) | Independent-only, zip-code store locator ranked by distance in miles with a map, published profit share, B Corp | Books only, affiliate by design, sponsored titles on the home page, no explanation or negatives |
 
 Taken together: nottheriver's combination of FT1 plus FT2 plus FT3 and FT4 is not found in any single tool in this scope. The pieces exist separately: product-to-local-stock (Locally), open-map local shops (Lokjo), sourced company ratings (Shop Ethical!).
 
@@ -383,8 +391,10 @@ All read 2026-10-09 with a generic fetcher. "Not opened" lines say why. Search-r
 | https://www.choosefinch.com/our-methodology | Opened. A4. |
 | https://finch.com/ | Opened; unrelated marketing agency. Not used. |
 | https://trellis.net/article/want-data-about-products-sustainability-theres-browser-extension | Opened (2021-06-10, updated 2024-07-24). A4 old extension. |
-| https://thingtesting.com/about, https://thingtesting.com/, https://thingtesting.com/stories/a-guide-to-thingtesting-reviews, https://thingtesting.com/thingtester?from=nav | Not opened (HTTP 403 on all). A5 rests on search snippets of these and of https://thingtesting.com/stories/q2-2026-thingtesting-shopmy-brand-update. |
-| https://bookshop.org/info/about-us, https://bookshop.org/pages/about, https://bookshop.org/, https://bookshop.org/info/embed/about-us | Not opened (HTTP 403). Snippets only. |
+| https://thingtesting.com/about, https://thingtesting.com/, https://thingtesting.com/stories/a-guide-to-thingtesting-reviews, https://thingtesting.com/thingtester?from=nav | HTTP 403 to plain fetches. /about and the home page opened in the browser check (2026-10-09). A5. |
+| https://thingtesting.com/stories/q2-2026-thingtesting-shopmy-brand-update | Opened in the browser check (2026-10-09; story undated). A5 ShopMy, Rewards, Thingdrop. |
+| https://bookshop.org/info/about-us, https://bookshop.org/pages/about, https://bookshop.org/, https://bookshop.org/info/embed/about-us | HTTP 403 to plain fetches. In the browser check (2026-10-09) the home page opened; /info/about-us loaded header and footer only. |
+| https://bookshop.org/pages/bookstores, https://bookshop.org/affiliates/profile/introduction, https://bookshop.org/search?keywords=gardening (redirected to /beta-search) | Opened in the browser check (2026-10-09). A6 store locator, affiliate rate, search page. |
 | https://support.bookshop.org/ | Opened; titles only. |
 | https://support.bookshop.org/support/solutions/articles/65000169519-how-does-bookshop-work-with-independent-bookstores- | Opened (modified 2023-10-08). A6. |
 | https://www.goodreads.com/author_blog_posts/22334173-what-is-bookshop-org | Opened (2022-03-14; republished Bookshop blog post). A6 store map. |
@@ -414,9 +424,10 @@ All read 2026-10-09 with a generic fetcher. "Not opened" lines say why. Search-r
 | http://privacy.progressiveshopper.com | Not opened (DNS not found). |
 | https://www.goodsuniteus.com/ | Opened. A19. |
 | https://www.goodsuniteus.com/where-do-we-get-our-data/ | Opened. A19. |
-| https://www.americanexpress.com/en-us/benefits/shop-small/, https://americanexpress.com/en-gb/benefits/shopping/places-to-use-my-card/shopping | Not opened (header overflow). |
-| https://www.americanexpress.com/en-us/maps/ | Opened; title only. |
-| https://www.aol.com/finance/featured-small-business-saturday-map-215315417.html | Not opened (HTTP 404). A20 rests on search snippets. |
+| https://www.americanexpress.com/en-us/benefits/shop-small/, https://americanexpress.com/en-gb/benefits/shopping/places-to-use-my-card/shopping | Header overflow to plain fetches. The US page opened in the browser check (2026-10-09); the en-gb page was not retried. |
+| https://www.americanexpress.com/en-US/maps?cat=Shop-Small&version=shopsmall, https://www.americanexpress.com/us/merchant/map-faqs.html | Opened in the browser check (2026-10-09). A20 map, filters, FAQ 4 eligibility. |
+| https://www.americanexpress.com/en-us/maps/ | Opened; title only (superseded by the browser check of the Shop Small map). |
+| https://www.aol.com/finance/featured-small-business-saturday-map-215315417.html | Not opened (HTTP 404). A20 first rested on search snippets; it now cites the browser-check pages above. |
 | https://ethical.org.au/ | Opened. A21. |
 | https://ethical.org.au/about/ethical-consumer-group | Opened. A21. |
 | https://www.ethical.org.au/about/ratings | Opened. A21 rating method. |

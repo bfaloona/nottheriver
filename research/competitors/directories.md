@@ -65,18 +65,19 @@ Each profile uses the same field order: owner and funding; what it is; scope; ho
 
 ### A3. B Lab, Certified B Corporation directory (bcorporation.net)
 
-- Owner and funding: B Lab, described as a nonprofit in the complaints-process coverage (search results, 2026-10-09); certification fees scale with revenue (bcorporation.uk pricing and bcorporation.eu pricing via search results, 2026-10-09; the US pricing page was not opened). Every bcorporation.net page tried returned HTTP 403 this run, so the US directory, FAQ, complaints and profile pages are "not opened"; claims below come from search-result excerpts of those pages.
-- What it is: certification plus a public directory ("Find a B Corp") searchable "by keyword, location, and more" (FAQ "Are there B Corps in my area?" via search excerpt, 2026-10-09).
+- Owner and funding: B Lab, described as a nonprofit in the complaints-process coverage (search results, 2026-10-09); certification fees scale with revenue (bcorporation.uk pricing and bcorporation.eu pricing via search results, 2026-10-09; the US pricing page was not opened). Every bcorporation.net page tried returned HTTP 403 to plain fetches; the browser check below opened the directory, a profile, the complaints page and the privacy policy.
+- What it is: certification plus a public directory ("Find a B Corp"), 10,801 companies listed (bcorporation.net/en-us/find-a-b-corp/, browser, 2026-10-09).
 - Scope: global; companies, not products.
 - How companies get in: application, B Impact Assessment, verification, annual fee; paid.
-- Evidence shown: public profiles with impact scores and disclosure reports, per a third-party scraper description (apify.com, 2026-10-09); not verified on the site.
-- Negatives shown: not on profiles as far as could be read. A public complaint process investigates "intentional misrepresentation" and breaches of core values; it excludes customer-service matters and pending legal actions (bcorporation.net/complaints via search excerpt, 2026-10-09).
-- Disputes: the complaint form above; not per badge.
-- Local or nearby: location filter in the directory; map not verified.
-- Privacy: not opened.
+- Evidence shown: each profile shows an overall B Impact Score with the 80 qualifying line and the median for ordinary businesses, five area scores (Governance, Workers, Community, Environment, Customers), earlier overall scores by year, standards version, "Certified Since", and attached disclosure documents; no per-claim sources (find-a-b-corp/company/patagonia-inc/, browser, 2026-10-09).
+- Negatives shown: none on the profile read. The complaints page says a resolved complaint can require the company to "disclose the findings of the case on its B Corp public profile", and a suspended company's profile "will indicate that the company is suspended"; outcomes run from upheld with no action to revocation, decided by an independent Standards Advisory Council (bcorporation.net/en-us/standards/complaints/, browser, 2026-10-09).
+- Disputes: a complaint form for "intentional misrepresentation" or breaches of the Declaration of Interdependence; customer-service issues, pending legal actions and practices not required for certification are excluded; not per badge (same page).
+- Local or nearby: filters are Location (country only, 217 entries), Ownership, and under "More filters" company size by employees and industry; no map, no distance; a test city typed in the keyword box returned companies whose descriptions name that city (find-a-b-corp, browser, 2026-10-09).
+- Privacy: last updated 24 August 2026; cookies and server logs collect "Technical Data"; personal data received from "analytics providers such as Google", "advertising networks" and "data brokers or aggregators" (bcorporation.net/en-us/privacy-policy/, browser, 2026-10-09). The cookie banner names sharing with "social media, advertising, and analytics partners".
 - Affiliates or sponsorship: no affiliate links seen; listing requires paid certification.
 - Open source: not stated.
-- Last visible update: not opened.
+- Last visible update: newest listings "Certified since October 2026"; privacy policy 2026-08-24.
+- Browser check 2026-10-09: opened bcorporation.net/en-us/find-a-b-corp/, /find-a-b-corp/company/patagonia-inc/, /standards/complaints/ and /privacy-policy/ (each first load in a fresh browser session; a second page load in the same session got a Cloudflare "verify you are human" check, which was not clicked). Corrected: profile scores are now verified on the site (previously a third-party description); the location filter is country only; complaint findings can appear on profiles; privacy policy read. FT cells unchanged: FT2 stays partial (country filter, no map or distance); FT4 stays no (disclosure is a stated process, none seen, nothing down-ranked).
 - FT labels: FT2 partial, FT3 partial, FT5 partial, FT11 partial.
 
 ### A4. DoneGood (donegood.co)
@@ -113,16 +114,17 @@ Each profile uses the same field order: owner and funding; what it is; scope; ho
 
 - Already partly profiled: `research/sites/greenamerica-org.md` covers the "Sustainable Alternatives to Amazon" page and notes that every pick links to this directory and that certified members pay dues.
 - Owner and funding: Green America, 501(c)(3); certification dues $150 to $2,500 a year by employee count (greenbusinessnetwork.org/certification, 2026-10-09). greenpages.org redirects here.
-- What it is: member directory of certified businesses; the directory page rendered "No results found" with no visible search controls this run (greenbusinessnetwork.org/directory, 2026-10-09), so search by location could not be checked.
+- What it is: member directory of certified businesses ("All businesses listed have earned Green America's Green Business Certification") with a keyword box and three filters: location, industry (a list of industries from "Apparel and Textiles" on) and ownership (AAPI-, Black-, disability-, Latinx/o/a- and Hispanic-, LGBTQ+-, veteran-, woman- and worker-owned) (greenbusinessnetwork.org/directory, browser, 2026-10-09). The plain fetch earlier this run rendered "No results found" with no controls.
 - How businesses get in: application, industry-specific screening, approval, dues; disqualifiers include "legal complaints involving product integrity, labor abuse, fraud".
 - Evidence shown: certification only; no sources per business seen.
 - Negatives shown: no.
 - Disputes: a "Complaints and Appeals Standard Operating Procedure" for certification; complaints can trigger review.
-- Local or nearby: could not be checked.
+- Local or nearby: "Search by location" offers "Within 5 / 10 / 30 / 60 / 120 / 200 miles of", "by city/state/country" or "all areas"; the zip field behind the radius choice stayed hidden at the browser width used, so a radius search was not run; no map and no distance shown in results (greenbusinessnetwork.org/directory, browser, 2026-10-09).
+- Browser check 2026-10-09: opened greenbusinessnetwork.org/directory (fresh browser session). Search works in a browser: the keyword box sets a "tag" value in the URL (#!directory/tag=...) and matched both a member's name ("AltaadiR" returned AltaadiR LLC) and a word in a member's description ("Nepal" returned Aid Through Trade, Inc. and one other member); fields beyond name and description are not stated. Corrected: the directory is not empty and has location, industry and ownership filters. FT2 changed from no to partial (a radius filter in miles without a map, the cell rule's own example), count column updated.
 - Privacy: third-party ad cookies, visitor logs; "does not rent, share, sell or trade supporter e-mail addresses"; updated 2025-06-10 (greenamerica.org/privacy-and-policy, 2026-10-09).
 - Affiliates or sponsorship: no affiliates seen; listing requires paid certification.
 - Open source: not stated. Last visible update: copyright 2026.
-- FT labels: FT5 partial, FT11 partial, FT13 partial (the Amazon alternatives page, undated, per the existing profile).
+- FT labels: FT2 partial (radius filter in miles, no map), FT5 partial, FT11 partial, FT13 partial (the Amazon alternatives page, undated, per the existing profile).
 
 ### A8. Better World Shopper (betterworldshopper.org)
 
@@ -174,12 +176,13 @@ Each profile uses the same field order: owner and funding; what it is; scope; ho
 ### A12. 1% for the Planet directory (directories.onepercentfortheplanet.org)
 
 - Owner and funding: 1% for the Planet, 501(c)(3); members commit 1% of revenue and pay annual dues on a sliding scale that count toward the 1%; annual certification with proof of revenue and donations (onepercentfortheplanet.org/faqs, 2026-10-09).
-- What it is: a directory of member businesses and environmental partners, and a "network map" (FAQ). The directory itself rendered only a page title this run (a JavaScript app), so its filters could not be read (directories.onepercentfortheplanet.org and /businesses, 2026-10-09; the /directory and /search-business-members pages returned 404).
+- What it is: a directory of member businesses and environmental partners, and a "network map" (FAQ). A plain fetch rendered only a page title (a JavaScript app; the /directory and /search-business-members pages returned 404). In a browser the directory has two tabs, "Impact Partners" and "Businesses"; the Businesses search takes "Name or topic", a Location field (placeholder "Headquarters", with a use-my-location button) and Industry; Impact Partners swaps Industry for "Impact Theme" (directories.onepercentfortheplanet.org, browser, 2026-10-09).
 - Scope: global; 4,241 member businesses (visible text) or 4,424 (page metadata), both on the FAQ page.
-- Evidence shown: membership only. Negatives: no. Disputes: not stated. Removal: "Continued membership is contingent on completing this annual process".
-- Local or nearby: a network map is named; search by location not verified.
-- Privacy, open source: not read. Affiliates: none seen; listing requires paid membership.
-- FT labels: FT2 partial (unverified), FT11 partial.
+- Evidence shown: membership only. A member profile shows membership type ("Whole Company Member"), "Certified" with a date, industry, headquarters city, website and "Supported Impact Partners" by name; no amounts given (directories.onepercentfortheplanet.org/profile/hetty-alice-brewing-company, browser, 2026-10-09). Negatives: no. Disputes: not stated. Removal: "Continued membership is contingent on completing this annual process".
+- Local or nearby: a location search by headquarters city (a test city returned members headquartered there, in a list without distances) and an "Explore map" view on a Google map with member clusters; no distance ranking (directories.onepercentfortheplanet.org/?viewMode=map, browser, 2026-10-09).
+- Privacy, open source: not read; the cookie banner says cookies are used "for analytics, personalization, and targeted advertising". Affiliates: none seen; listing requires paid membership.
+- Browser check 2026-10-09: opened directories.onepercentfortheplanet.org (list, filter panel and map views) and one member profile. Corrected: the directory renders in a browser; filters are type, name or topic, headquarters location and industry or impact theme; the map exists. FT2 stays partial, now verified (location filter and map, no distance ranking).
+- FT labels: FT2 partial, FT11 partial.
 
 ### A13. Ethical.net (ethical.net)
 
@@ -287,6 +290,7 @@ Each profile uses the same field order: owner and funding; what it is; scope; ho
 - The about page would not open (redirect loop at both www and bare domain, 2026-10-09); claims come from search-result excerpts of madetrade.com/pages/about and a Made Trade magazine post.
 - What it is: a curated marketplace; "We verify and vet every product we carry to ensure it meets our core values of equity, sustainability, and transparency"; each product must meet "at least two of Made Trade's eight core values" (Fair Trade, Sustainable, USA Made, Heritage, Vegan, Women-Owned, POC-Owned, plus Handcrafted and Recycled per category pages); 135+ brands; the Fair Trade badge appears only with third-party certification or verification.
 - Owner, funding, privacy, disputes: not opened. Affiliates: it sells the products itself.
+- Browser check 2026-10-09: failed. https://www.madetrade.com/, https://madetrade.com/ and https://www.madetrade.com/collections/all each ended in ERR_TOO_MANY_REDIRECTS in a fresh browser session; the network log shows the server answering 301 with a Location header pointing to the same URL, repeated until the browser gave up. Store type, product search, values filters, per-product sourcing and affiliate status remain as above (search excerpts only).
 - FT labels: FT1 partial (one marketplace), FT6 partial (own store; not a stated policy).
 
 ### A25. EcoHubMap (ecohubmap.com)
@@ -318,10 +322,16 @@ Each profile uses the same field order: owner and funding; what it is; scope; ho
 - Evidence shown: certification only. Negatives: no. Disputes: not stated. Local: none on the pages read. Privacy: not read.
 - FT labels: FT11 partial.
 
-### A28. EWG Skin Deep (ewg.org/skindeep), not opened
+### A28. EWG Skin Deep (ewg.org/skindeep), opened in a browser only
 
-- Every ewg.org and oembed.ewg.org page tried returned HTTP 403. From search-result excerpts of EWG's own pages (2026-10-09): a product and ingredient hazard database launched 2004, scores combine ingredient lists with "more than 60 standard toxicity and regulatory databases", with a data-availability score; EWG is a 501(c)(3) funded about half by individual donations, about 30 percent by foundation grants, the rest including "licensing and consulting fees associated with our EWG VERIFIED program". A 2012-era industry blog claims EWG uses Amazon affiliate links; not verified.
-- FT labels: FT3 partial (hazard and data scores with database sources), FT11 partial (paid verification program; affiliate claim unverified).
+- Every ewg.org and oembed.ewg.org page tried returned HTTP 403 to plain fetches. From search-result excerpts of EWG's own pages (2026-10-09): a product and ingredient hazard database launched 2004, with a data-availability score; EWG is a 501(c)(3) funded about half by individual donations, about 30 percent by foundation grants, the rest including "licensing and consulting fees associated with our EWG VERIFIED program".
+- What it is (browser, 2026-10-09): a product search ("Search for an ingredient, brand or product"; 155,108 products, 7,780 brands, 2,502 EWG Verified products on ewg.org/skindeep/). Results list products by brand with a score badge, filters for product type, brand, "Black-Owned Brands" and "EWG VERIFIED", and sorts "Best match", best to worst, worst to best, A to Z. For "shampoo" and "mineral sunscreen" the first 12 "Best match" results were all EWG VERIFIED products (ewg.org/skindeep/search/?search=..., 2026-10-09). Brands include "365 Whole Foods Market" (brand filter on the same search).
+- How scores are explained: each product has a 1 to 10 hazard score "calculated using a weight-of-evidence approach", not an average, plus a data-availability rating (none, limited, fair, good, robust); concern levels for cancer, allergies and immunotoxicity, developmental and reproductive toxicity, and use restrictions; per-ingredient concerns; "DATA LAST UPDATED" month and year (product page for Head & Shoulders Advanced 2in1, ewg.org/skindeep/products/1054224-..., 2026-10-09). Scores draw on "nearly 60" toxicity and regulatory databases (skindeep home and /learn_more/about/, 2026-10-09; the excerpt's "more than 60" is not what the pages say now).
+- Sources: each ingredient page lists every concern with a named reference body (for zinc pyrithione: EU Cosmetics Directive, Japan Ministry of Health, Environment Canada, EPA, European Chemicals Agency), as names, not links, and undated (ewg.org/skindeep/ingredients/707074-ZINC_PYRITHIONE/, 2026-10-09).
+- Disputes or corrections: none found; the product page's "CONTACT SKIN DEEP" link points to ewg.org/support-our-work/ways-to-donate/stay-touch (not opened); the about page describes staff correcting parsed ingredient lists and contacting companies, with no public correction path (product page and /learn_more/about/, 2026-10-09).
+- Affiliates: yes. The product page shows "WHERE TO BUY / BUY ON AMAZON" linking to amazon.com with an affiliate tag, and states "When you make a purchase through retailer links on our site, we may earn commission through affiliate programs" (product page, 2026-10-09). This confirms the 2012-era blog claim.
+- Browser check 2026-10-09: opened ewg.org/skindeep/, two search result pages, one product page, one ingredient page and /learn_more/about/ (each in a fresh browser session; a second page load in the same session got a Cloudflare "verify you are human" check, which was not clicked). Corrected: Amazon affiliate links verified; "nearly 60" databases, not "more than 60"; sources are named per ingredient concern. FT1 changed from no to partial (typed product search returns products; the buy link goes to Amazon, not shops); FT4 changed from no to partial (named-source hazard concerns raise the score and the product carries a data date, but the concerns are mostly health hazards, only ecotoxicology fits FT4's labor, environment, governance scope, and the per-finding sources are undated); FT11 changed from partial to no (Amazon affiliate links on product pages). Count column updated for all three.
+- FT labels: FT1 partial (product search, products not shops), FT3 partial (hazard and data scores with named sources per ingredient concern, no links), FT4 partial (see browser check). FT11 no (Amazon affiliate links).
 
 Defunct, one line: GoodGuide (product health, environment and social scores) was bought by UL in 2012 and shut down 2020-06-01 (Wikipedia via search, 2026-10-09).
 
@@ -331,17 +341,17 @@ Columns are the profile numbers above. Sites with nothing verifiable (A4 DoneGoo
 
 | Feature | A1 GOY | A2 EC | A3 BCorp | A5 GUU | A6 PS | A7 GA | A8 BWS | A9 Leaf | A10 SJ | A11 FTF | A12 1% | A13 Eth.net | A14 BMO | A17 FTI | A18 LB | A19 CL | A20 KTC | A21 ShopEth | A22 FTUSA | A23 Cece | A24 MT | A25 EHM | A26 GSG | A27 CH | A28 EWG | Count yes / partial (of 25 live) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| FT1 product search to shops | no | no | no | no | no | no | no | partial | no | no | no | no | partial | no | no | no | no | no | no | yes | partial | no | no | no | no | 1 yes / 3 partial |
-| FT2 nearby shops, distance, map | no | no | partial | no | no | no | no | no | no | partial | partial | no | no | no | no | no | no | no | no | no | no | partial | no | no | no | 0 yes / 4 partial |
+| FT1 product search to shops | no | no | no | no | no | no | no | partial | no | no | no | no | partial | no | no | no | no | no | no | yes | partial | no | no | no | partial | 1 yes / 4 partial |
+| FT2 nearby shops, distance, map | no | no | partial | no | no | partial | no | no | no | partial | partial | no | no | no | no | no | no | no | no | no | no | partial | no | no | no | 0 yes / 5 partial |
 | FT3 explained with values and source link | partial | partial | partial | partial | no | no | partial | partial | partial | no | no | no | no | yes | no | no | partial | partial | no | partial | no | no | partial | no | partial | 1 yes / 12 partial |
-| FT4 sourced, dated negatives that down-rank | partial | yes | no | partial | partial | no | no | partial | no | no | no | no | no | no | no | no | partial | partial | no | no | no | no | partial | no | no | 1 yes / 7 partial |
+| FT4 sourced, dated negatives that down-rank | partial | yes | no | partial | partial | no | no | partial | no | no | no | no | no | no | no | no | partial | partial | no | no | no | no | partial | no | partial | 1 yes / 8 partial |
 | FT5 dispute link on every finding and badge | no | partial | partial | partial | no | partial | no | no | partial | no | no | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | 0 yes / 6 partial |
 | FT6 Amazon never appears | no | partial | no | no | no | no | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | partial | no | no | no | no | 0 yes / 3 partial |
 | FT7 chain vs independent badge | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | 0 yes / 1 partial |
 | FT8 privacy as stated | no | no | no | no | no | no | partial | no | no | no | no | partial | no | no | partial | no | no | no | no | no | no | no | no | no | no | 0 yes / 3 partial |
 | FT9 cost transparency, open source | no | no | no | no | no | no | no | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | no | no | no | no | 0 yes / 1 partial |
 | FT10 published quality numbers | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | 0 yes / 0 partial |
-| FT11 no affiliates, no sponsored placement | no | partial | partial | partial | no | partial | partial | no | no | partial | partial | partial | no | yes | yes | partial | partial | partial | partial | no | no | no | partial | partial | partial | 2 yes / 15 partial |
+| FT11 no affiliates, no sponsored placement | no | partial | partial | partial | no | partial | partial | no | no | partial | partial | partial | no | yes | yes | partial | partial | partial | partial | no | no | no | partial | partial | no | 2 yes / 14 partial |
 | FT12 curated directory with sources and dispute state | no | partial | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | no | partial | no | no | no | no | no | no | no | 0 yes / 3 partial |
 | FT13 alternatives to Amazon-owned brands | partial | yes | no | partial | no | partial | no | no | partial | no | no | partial | no | no | no | no | no | no | no | no | no | no | no | no | no | 1 yes / 5 partial |
 | FT14 honest degradation at budget | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | no | 0 yes / 0 partial |
@@ -350,9 +360,9 @@ Cell notes that matter: FT4 "yes" for Ethical Consumer is with full stories behi
 
 ## C. Observations
 
-C1. Nobody in this scope has: FT7 (chain vs independent badge; Shop Ethical!'s revenue penalty is the only size signal), FT8 as a whole (every site read either runs Google Analytics or ad tracking, offers accounts, or has no policy; none publishes a "what is kept" table), FT9 (no site states what a lookup costs or publishes a cost ledger; none says it is open source; the Fashion Transparency Index publishes open data, not open code), FT10 (no site publishes a measured accuracy figure for its own ratings), FT14 (no site describes what happens when its budget runs out). Combined FT2 with FT3 (nearby shops with explained scores) exists nowhere: the sites with any location feature (B Corp, FTF, 1%, EcoHubMap) show certification or self-description only.
+C1. Nobody in this scope has: FT7 (chain vs independent badge; Shop Ethical!'s revenue penalty is the only size signal), FT8 as a whole (every site read either runs Google Analytics or ad tracking, offers accounts, or has no policy; none publishes a "what is kept" table), FT9 (no site states what a lookup costs or publishes a cost ledger; none says it is open source; the Fashion Transparency Index publishes open data, not open code), FT10 (no site publishes a measured accuracy figure for its own ratings), FT14 (no site describes what happens when its budget runs out). Combined FT2 with FT3 (nearby shops with explained scores) exists nowhere: the sites with any location feature (B Corp, Green America, FTF, 1%, EcoHubMap) show certification, B Corp's impact scores without sources, or self-description.
 
-C2. Common: FT11-style independence claims (17 of 25 at least partial), usually as "nonprofit" or "we don't take money for scores" rather than "no affiliate links"; FT3 partial (12 of 25) as a score with a rationale but without per-claim sources or dates. Brand lists dominate; only Project Cece, Buy Me Once and Made Trade return products, and the latter two are single stores.
+C2. Common: FT11-style independence claims (16 of 25 at least partial; EWG dropped to no after the browser check found Amazon affiliate links), usually as "nonprofit" or "we don't take money for scores" rather than "no affiliate links"; FT3 partial (12 of 25) as a score with a rationale but without per-claim sources or dates. Brand lists dominate; only Project Cece, Buy Me Once, Made Trade and EWG Skin Deep return products; Buy Me Once and Made Trade are single stores, and EWG sends buyers to Amazon.
 
 C3. Closest to nottheriver, and how:
 - Ethical Consumer (A2): the only site with sourced, dated, down-ranking negatives, a five-year decay rule, a company challenge path, and an explicit "alternatives to Amazon" series. Gaps against nottheriver: UK guides, subscriber paywall on the evidence, tracked purchase links, analytics, no local, no per-finding dispute link, Amazon is rated rather than excluded.
@@ -361,14 +371,14 @@ C3. Closest to nottheriver, and how:
 Also near on single features: Project Cece on FT1 (typed product search across shops, fashion only, affiliate funded); Fair Trade Federation on FT2 (a hand-kept list of 60 US fair trade stores by state, which is the kind of curated local table the feasibility overview proposes, without the map or distance).
 
 C4. Funding models seen and what they imply:
-- Affiliate commission and discount codes (Good On You, LeafScore, Sustainable Jungle, Project Cece, Ethical Consumer's purchase links): the rated brand is also the revenue source; none of these publishes how that is kept apart from the rating. This is the gap FT11 names and the existing `research/brief.md` dark-pattern rubric already penalizes.
+- Affiliate commission and discount codes (Good On You, LeafScore, Sustainable Jungle, Project Cece, Ethical Consumer's purchase links, EWG Skin Deep's "BUY ON AMAZON" links): the rated brand is also the revenue source; none of these publishes how that is kept apart from the rating. This is the gap FT11 names and the existing `research/brief.md` dark-pattern rubric already penalizes.
 - Paid certification or membership with a directory as a benefit (B Corp, Green America, FTF, 1%, Climate Label, Certified Humane, Fair Trade USA, Good Shopping Guide's accreditation): the directory is complete for payers only and shows no negatives; inclusion is itself a paid placement even without affiliate links. nottheriver's use of these as positive signals (certifications in `docs/ranking.md`) inherits that bias, which the down-ranking side offsets.
 - Subscription and donations (Ethical Consumer, Shop Ethical!, Goods Unite Us Premium): the evidence sits behind the paywall, which is the opposite of FT3.
 - Grants and nonprofit benchmarks (Fashion Transparency Index, KnowTheChain, Remake): open or public data, but aimed at investors and brands, not shoppers, and Remake concluded operations in February 2026 (reason not stated), so the directory is now an archive rather than a degraded service.
 - Self-submission with paid featuring (EcoHubMap): scale without vetting.
 Implication for FT14: every model above either has a revenue source that scales with use (affiliates, dues) or shuts down when funding ends; none publishes a per-query cost or a spending cap, so an honest "budget spent" state would be new in this scope.
 
-C5. Limits of this pass: bcorporation.net, ewg.org and madetrade.com blocked plain fetches, and the 1% directory is a JavaScript app; their directory filters, profile contents and privacy policies are unverified here and are marked in section D. The brief's "Green Pages" is now the Green Business Network directory, which rendered empty this run, so its search capabilities could not be checked.
+C5. Limits of this pass: bcorporation.net, ewg.org and madetrade.com blocked plain fetches, and the 1% directory is a JavaScript app. A browser check on 2026-10-09 opened B Corp, EWG Skin Deep, the 1% directory and the Green Business Network directory (the brief's "Green Pages"); each profile has a "Browser check 2026-10-09" line, and four cells changed (EWG FT1, FT4, FT11; Green America FT2). madetrade.com still failed in the browser (the server redirects to the same URL), so A24 rests on search excerpts.
 
 ## D. Sources
 
@@ -414,7 +424,7 @@ Opened:
 - https://fairtradefederation.org/pages/our-mission
 - https://fairtradefederation.org/pages/retail-locations
 - https://www.onepercentfortheplanet.org/faqs
-- https://directories.onepercentfortheplanet.org/ (title only; JavaScript app)
+- https://directories.onepercentfortheplanet.org/ (title only; JavaScript app; superseded by the browser check below)
 - https://directories.onepercentfortheplanet.org/businesses (title only)
 - https://ethical.net/
 - https://ethical.net/about/
@@ -443,11 +453,11 @@ Opened:
 - https://certifiedhumane.org/whos-certified/
 
 Not opened:
-- https://www.bcorporation.net/en-us/find-a-b-corp/ (HTTP 403)
+- https://www.bcorporation.net/en-us/find-a-b-corp/ (HTTP 403; opened in the browser check, below)
 - https://www.bcorporation.net/en-us/faqs/ (HTTP 403)
-- https://www.bcorporation.net/en-us/standards/complaints/ (HTTP 403)
+- https://www.bcorporation.net/en-us/standards/complaints/ (HTTP 403; opened in the browser check, below)
 - https://bcorporation.net/en-us/faqs/are-there-b-corps-my-area/ (HTTP 403)
-- https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/ (HTTP 403)
+- https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/ (HTTP 403; opened in the browser check, below)
 - https://www.bcorporation.net/en-us/movement/about-b-lab/ (HTTP 403)
 - https://www.goodsuniteus.com/about, /faq, /faqs/ (HTTP 404)
 - https://progressiveshopper.com/about (HTTP 404)
@@ -464,10 +474,25 @@ Not opened:
 - https://www.changeclimate.org/what-it-costs (HTTP 404)
 - https://www.ethical.org.au/about-us/ (HTTP 404; homepage opened instead)
 - https://www.projectcece.com/about/ (redirect loop)
-- https://www.madetrade.com/, /pages/about and https://madetrade.com/pages/about (redirect loop)
+- https://www.madetrade.com/, /pages/about and https://madetrade.com/pages/about (redirect loop; the browser check also failed on https://www.madetrade.com/, https://madetrade.com/ and /collections/all: 301 to the same URL)
 - https://www.ecohubmap.com/packages (HTTP 404)
 - https://thegoodshoppingguide.com/about-us/ (HTTP 404; homepage opened instead)
 - https://certifiedhumane.org/where-to-buy/ (HTTP 404)
-- https://www.ewg.org/skindeep/contents/about-page/, https://ewg.org/skindeep/contents/faq, https://oembed.ewg.org/skindeep/contents/faq (HTTP 403)
+- https://www.ewg.org/skindeep/contents/about-page/, https://ewg.org/skindeep/contents/faq, https://oembed.ewg.org/skindeep/contents/faq (HTTP 403; not retried in the browser; the pages in the browser check list were used instead)
 
-Search-result excerpts used where a page would not open (13 WebSearch calls in total, all 2026-10-09): bcorporation.net/complaints and the B Corp FAQ (complaint scope, keyword and location search); bcorporation.uk and bcorporation.eu pricing pages (fee structure by revenue); apify.com B Corp directory scraper description (directory filters, marked unverified); madetrade.com/pages/about and a Made Trade magazine post (vetting and values); ewg.org FAQ and funding pages (Skin Deep method, revenue mix); fashionunited.com and foreignpress.org (Remake scoring scales); channel3000.com and xconomy (Goods Unite Us score logic, not used in the profile beyond the FEC mention); en.wikipedia.org/wiki/GoodGuide (shutdown date); ethical.net Amazon guide title and 2022 update; growensemble.com PDF title.
+Browser check, 2026-10-09 (Chrome, a fresh isolated session per page, no sign-in, no forms submitted, cookie banners closed or left alone):
+- https://www.bcorporation.net/en-us/find-a-b-corp/ (filters opened; a country filter and a keyword search run)
+- https://www.bcorporation.net/en-us/find-a-b-corp/company/patagonia-inc/
+- https://www.bcorporation.net/en-us/standards/complaints/
+- https://www.bcorporation.net/en-us/privacy-policy/ (last updated 24 August 2026)
+- https://www.ewg.org/skindeep/
+- https://www.ewg.org/skindeep/search/?search=mineral+sunscreen and ?search=shampoo
+- https://www.ewg.org/skindeep/products/1054224-Head__Shoulders_Advanced_2in1_Smooth__Silky_Dandruff_Shampoo__Conditioner/ (data last updated May 2024)
+- https://www.ewg.org/skindeep/ingredients/707074-ZINC_PYRITHIONE/
+- https://www.ewg.org/skindeep/learn_more/about/
+- https://directories.onepercentfortheplanet.org/ (filter panel, list and map views)
+- https://directories.onepercentfortheplanet.org/profile/hetty-alice-brewing-company
+- https://www.greenbusinessnetwork.org/directory (keyword, location, industry and ownership controls)
+- https://www.madetrade.com/, https://madetrade.com/, https://www.madetrade.com/collections/all (failed: ERR_TOO_MANY_REDIRECTS)
+
+Search-result excerpts used where a page would not open (13 WebSearch calls in total, all 2026-10-09): bcorporation.net/complaints and the B Corp FAQ (complaint scope, keyword and location search); bcorporation.uk and bcorporation.eu pricing pages (fee structure by revenue); apify.com B Corp directory scraper description (directory filters, marked unverified; superseded by the browser check); madetrade.com/pages/about and a Made Trade magazine post (vetting and values); ewg.org FAQ and funding pages (Skin Deep method, revenue mix); fashionunited.com and foreignpress.org (Remake scoring scales); channel3000.com and xconomy (Goods Unite Us score logic, not used in the profile beyond the FEC mention); en.wikipedia.org/wiki/GoodGuide (shutdown date); ethical.net Amazon guide title and 2022 update; growensemble.com PDF title.
