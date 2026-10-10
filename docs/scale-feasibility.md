@@ -76,4 +76,4 @@ The labels are the companion notes' (RQ from the reuse note, $Q from the costs n
 | 12 | RQ5 A shop store (facts, corrections, dispute state) | After the dispute process is written; until then, corrections go in `data/` as sourced rows |
 | 13 | $Q2 When Workers Paid switches on | When KV writes approach 1,000 a day or a cache that needs D1 ships; the Durable Object limiter fix runs on Free |
 
-Items 7 and 8 need Brave calls; the standing authorization to raise the Brave cap ended 2026-09-30 (`docs/STATUS.md`, Blocked on operator). Item 6 added 2026-10-09 after the coverage check; if open data replaces Brave's local search, item 7's 3-call eval measures a smaller change than it did.
+Items 1 to 3 were deferred by the operator on 2026-10-09, to revisit on or after 2026-10-14; no public link before then. Items 7 and 8 need Brave calls; the standing authorization to raise the Brave cap ended 2026-09-30 (`docs/STATUS.md`, Blocked on operator). Item 6 added 2026-10-09 after the coverage check; if open data replaces Brave's local search, item 7's 3-call eval measures a smaller change than it did.
