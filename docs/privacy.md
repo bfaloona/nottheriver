@@ -35,6 +35,8 @@ The Worker builds every outbound header from fixed values, so your browser's `Us
 | Brave, OpenRouter, the model provider | The data in the table above | Per each service's policy; see the OpenRouter settings below |
 | Your browser | The last product you typed, in `sessionStorage` (cleared when the tab closes). Never the zip | Until the tab closes |
 
+The About page's Privacy section lists the same items in plain words ("What is fresh on every search, and what is kept"); a change to this table changes that list too, and a new cache adds one line to each.
+
 No cookies, no analytics, no third-party scripts, no CDN fonts. The map library (Leaflet) is bundled with the site; only the map images come from a third party.
 
 ## OpenRouter settings (operator action, not verified)

@@ -45,7 +45,19 @@
 <p data-needs-repo hidden>Open a dispute with the <a data-dispute-link>dispute issue template</a>. It asks for the retailer, the signal shown, the source link, and evidence for the correction.</p>
 
 <h2 id="privacy">Privacy</h2>
-<p>Your zip code never leaves your browser. The site looks it up in a file it downloads and sends only the product, the city and state, the center of your zip area rounded to two decimal places, and its rural-urban category (used only to decide how far counts as nearby). The search service uses that center to find nearby shops, so it learns the zip area of each search; the language model's first call sees only the product, and its second sees the search results, which can name nearby towns. The model's reading of each product (its category and search wording) is kept for 30 days, so repeat searches for it use the same searches. The site never asks for a street address. The map of nearby shops loads its images from OpenStreetMap, so OpenStreetMap sees your IP address and roughly where the search was. The rate limiter keeps your IP address for its one-minute window, and the hosting platforms keep request logs under their own policies. Details: <a data-repo-path="blob/main/docs/privacy.md">docs/privacy.md</a>.</p>
+<p>Your zip code never leaves your browser. The site looks it up in a file it downloads and sends only the product, the city and state, the center of your zip area rounded to two decimal places, and its rural-urban category (used only to decide how far counts as nearby). The search service uses that center to find nearby shops, so it learns the zip area of each search; the language model's first call sees only the product, and its second sees the search results, which can name nearby towns. The site never asks for a street address. The map of nearby shops loads its images from OpenStreetMap, so OpenStreetMap sees your IP address and roughly where the search was.</p>
+<p>What is fresh on every search, and what is kept:</p>
+<!-- Must match the "What is kept, and where" table in docs/privacy.md. A new cache is one more line here: what, fresh or kept, where, how long, who shares it. -->
+<ul>
+<li>Your search as a whole (the product together with where you searched from): used for that search only and never stored by this site.</li>
+<li>Shops found, whether each likely sells the product, and their scores: looked up fresh for every search and not kept.</li>
+<li>The model's reading of a product (its category and search wording): kept in Cloudflare's storage for 30 days from the first search for it. That first reading is shared by everyone who types the same product, in any capitalization, so repeat searches for it use the same search wording. No location or IP address is kept with it.</li>
+<li>Your IP address (for IPv6, its first half): kept by the rate limiter for one minute, counting searches from that address. A copy in the search service's memory stops counting after the minute and is erased when old entries are cleared or the service restarts.</li>
+<li>The search service's log line (whether the search worked and how long it took, never the product or location): not kept, because its log storage is turned off.</li>
+<li>Request logs at Cloudflare, GitHub Pages and OpenStreetMap, and what Brave, OpenRouter and the model provider receive: kept under each one's own policy.</li>
+<li>The last product you typed: kept in this browser tab until you close it, for you only. Never the zip.</li>
+</ul>
+<p>Details: <a data-repo-path="blob/main/docs/privacy.md">docs/privacy.md</a>.</p>
 
 <h2 id="coverage">Coverage and quality</h2>
 <p>Results come from Brave Search's index. Shops that block search crawlers, or that the index has not reached, may be missing. Quality is measured on a fixed set of test searches: how many results really sell the product (precision), and how many good shops found by an independent search engine this site also found (recall).</p>
