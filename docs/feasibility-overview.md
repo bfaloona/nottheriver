@@ -25,6 +25,7 @@ Summary of the 2026-10-08 evaluation, for the operator. The evidence is in [scal
 | Brave payment method and monthly quota | none | Whether a busy day can run up a bill |
 | Daily counters (searches, cache hits, Brave calls, model cost), with a privacy row | none | Turns every "hit rate unknown" into a number |
 | Coverage check: how many of the 86 graded nearby shops appear in OpenStreetMap or Overture with a usable category | no Brave calls | Whether open place data can carry local search. Done 2026-10-09: 98% found in either, 70% with a tag that says "plausibly sells it" ([open-place-coverage.md](open-place-coverage.md)) |
+| Precision check of open place data: grade whether tagged shops near the 14 graded zips sell the product | no Brave calls; grader time | Whether open data can replace Brave's local search, not only find the known shops |
 | Eval of 3 Brave calls a search instead of 4 | about 160 Brave calls | The one cost cut above 12% that needs no new data |
 
 ## Open

@@ -58,7 +58,7 @@ Abuse ceiling: the 60-a-minute global limit implies about $2,000 a day, but the 
 
 ## Decisions for the operator, in the order they unblock each other
 
-The labels are the companion notes' (RQ from the reuse note, $Q from the costs note), with each note's recommendation.
+The labels are the companion notes' (RQ from the reuse note, $Q from the costs note) and OQ for the open place data check, with each note's recommendation.
 
 | Order | Question | Recommendation |
 |---|---|---|
@@ -67,12 +67,13 @@ The labels are the companion notes' (RQ from the reuse note, $Q from the costs n
 | 3 | $Q6 Spend ceilings on both keys | OpenRouter key cap at about twice the expected month, Brave quota per $Q3; both explicit guesses until the RQ4 counters exist, reviewed monthly; record that caps exist, never the values |
 | 4 | RQ7 A "what is fresh and what is kept" list on the About page | Yes, small; gives any later cache one line to add |
 | 5 | $Q1 Accept $0.023 a search as the unit cost until a Brave-call change is evaluated | Yes; nothing model-side moves it more than 12% |
-| 6 | $Q5 Fund an eval of 3 Brave calls a search (one web call at count 20, or one local query) | Yes, before any cache work; the only change above 12% of the total, and it needs a recall eval, not a price check |
-| 7 | RQ6 About 60 Brave calls to test whether location headers change web results (20 queries with and without location, plus a same-condition pair as a churn control) | Yes; if location barely matters, a query-only web cache is shared by everyone with no location stored |
-| 8 | RQ1 and $Q4 Reopen the place cache (CQ1) | Not yet; decide with the counters from RQ4, on privacy not money; not below 30,000 searches a month or a city-focused launch |
-| 9 | RQ2 Narrow verdict cache as a prompt shrinker | No for now; small money, and a partial prompt changes the call context again |
-| 10 | RQ3 Whole-response cache per product and zip area | No; near-zero hits and the one store that pairs product with location |
-| 11 | RQ5 A shop store (facts, corrections, dispute state) | After the dispute process is written; until then, corrections go in `data/` as sourced rows |
-| 12 | $Q2 When Workers Paid switches on | When KV writes approach 1,000 a day or a cache that needs D1 ships; the Durable Object limiter fix runs on Free |
+| 6 | OQ1 Fund an open place data precision check: sample Overture Places (and OSM) shops near the 14 graded zips whose category passes the coverage check's rule, and grade "sells it" with the existing page-reading grader | Yes, before item 7; zero Brave calls, model and grader time only. The [coverage check](open-place-coverage.md) found 98% of the graded nearby shops in open data and 70% with a usable tag but measured nothing about shops that would be shown and do not sell the product; precision decides whether open data can replace Brave's local search, which is a larger change than removing one of 4 Brave calls |
+| 7 | $Q5 Fund an eval of 3 Brave calls a search (one web call at count 20, or one local query) | Yes, before any cache work; the only change above 12% of the total, and it needs a recall eval, not a price check |
+| 8 | RQ6 About 60 Brave calls to test whether location headers change web results (20 queries with and without location, plus a same-condition pair as a churn control) | Yes; if location barely matters, a query-only web cache is shared by everyone with no location stored |
+| 9 | RQ1 and $Q4 Reopen the place cache (CQ1) | Not yet; decide with the counters from RQ4, on privacy not money; not below 30,000 searches a month or a city-focused launch |
+| 10 | RQ2 Narrow verdict cache as a prompt shrinker | No for now; small money, and a partial prompt changes the call context again |
+| 11 | RQ3 Whole-response cache per product and zip area | No; near-zero hits and the one store that pairs product with location |
+| 12 | RQ5 A shop store (facts, corrections, dispute state) | After the dispute process is written; until then, corrections go in `data/` as sourced rows |
+| 13 | $Q2 When Workers Paid switches on | When KV writes approach 1,000 a day or a cache that needs D1 ships; the Durable Object limiter fix runs on Free |
 
-Items 6 and 7 need Brave calls; the standing authorization to raise the Brave cap ended 2026-09-30 (`docs/STATUS.md`, Blocked on operator).
+Items 7 and 8 need Brave calls; the standing authorization to raise the Brave cap ended 2026-09-30 (`docs/STATUS.md`, Blocked on operator). Item 6 added 2026-10-09 after the coverage check; if open data replaces Brave's local search, item 7's 3-call eval measures a smaller change than it did.

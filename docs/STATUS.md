@@ -58,7 +58,7 @@ How work is scheduled: this list is the order of work. The top item not blocked 
 |---|---|
 | OpenRouter account privacy settings ([privacy.md](privacy.md#openrouter-settings-operator-action-not-verified)) | Not verified by this project |
 | Brave call budget for eval runs: the standing authorization to raise the cap ended 2026-09-30 | Any further graded rerun (about 80 Brave calls each) |
-| Scale feasibility rulings: 12 decisions in [scale-feasibility.md](scale-feasibility.md) (RQ1 to RQ7 on caching and storage, $Q1 to $Q6 on cost), ordered there | A Brave payment method and quota before any public link; the daily counters that turn every "hit rate unknown" into a number; whether a 3-Brave-call eval and the 60-call location test run |
+| Scale feasibility rulings: 13 decisions in [scale-feasibility.md](scale-feasibility.md) (RQ1 to RQ7 on caching and storage, $Q1 to $Q6 on cost, OQ1 on open place data), ordered there | A Brave payment method and quota before any public link; the daily counters that turn every "hit rate unknown" into a number; whether the open-data precision check, a 3-Brave-call eval and the 60-call location test run |
 
 ## Deploy (2026-09-23)
 
