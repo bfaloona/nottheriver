@@ -50,11 +50,12 @@
 <!-- Must match the "What is kept, and where" table in docs/privacy.md. A new cache is one more line here: what, fresh or kept, where, how long, who shares it. -->
 <ul>
 <li>Your search as a whole (the product together with where you searched from): used for that search only and never stored by this site.</li>
-<li>Shops found, whether each likely sells the product, and their scores: looked up fresh for every search and not kept.</li>
-<li>The model's reading of a product (its category and search wording): kept in Cloudflare's storage for 30 days from the first search for it. That first reading is shared by everyone who types the same product, in any capitalization, so repeat searches for it use the same search wording. No location or IP address is kept with it.</li>
+<li>Shops found, whether each likely sells the product, and their scores: looked up fresh for every search and not kept by this site.</li>
+<li>The model's reading of a product (its category and search wording): kept in Cloudflare's storage for 30 days from the first search for it. That first reading is shared by everyone who types the same product, in any capitalization, so repeat searches for it use the same search wording. In effect it is a list of products people searched for, with no location or IP address.</li>
 <li>Your IP address (for IPv6, its first half): kept by the rate limiter for one minute, counting searches from that address. A copy in the search service's memory stops counting after the minute and is erased when old entries are cleared or the service restarts.</li>
 <li>The search service's log line (whether the search worked and how long it took, never the product or location): not kept, because its log storage is turned off.</li>
-<li>Request logs at Cloudflare, GitHub Pages and OpenStreetMap, and what Brave, OpenRouter and the model provider receive: kept under each one's own policy.</li>
+<li>Request logs at Cloudflare and GitHub Pages, which host the site: kept under each platform's own policy.</li>
+<li>What Brave, OpenRouter, the model provider and OpenStreetMap receive for a search: kept by each under its own policy.</li>
 <li>The last product you typed: kept in this browser tab until you close it, for you only. Never the zip.</li>
 </ul>
 <p>Details: <a data-repo-path="blob/main/docs/privacy.md">docs/privacy.md</a>.</p>
