@@ -1,0 +1,272 @@
+[
+  {
+    "row_id": "r271",
+    "sells_product": "yes",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "publix.com/locations/776-publix-at-piedmont; publix.com/pd/publix-olive-oil-extra-virgin/RIO-PCI-103897 (search result)",
+    "notes": "Store #776 page shows 595 Piedmont Ave NE, open. Chain site lists Publix and several other brands of extra virgin olive oil.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r272",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "none",
+    "basis": "Web search: bankerandtradesman.com financing article; storeopeninghours.com Chipotle listing at 219 N Main St (9/27 Plaza)",
+    "notes": "A shopping center (Stop & Shop anchor, Panera, Music Go Round, etc.), not a single shop; no tenant shown selling rain jackets. Tenant list may be dated.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r273",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search for The Lunchbox, 301 N Main St, Seneca IL: no matching listing",
+    "notes": "No listing found; name suggests a lunch restaurant but nothing shows stock.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r274",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "leverettwoodworks.com (DNS does not resolve); web search: no listing for the business",
+    "notes": "Woodworking business; name settles it does not sell cast iron skillets. No evidence it is at the address.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r275",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "bearsaddleranch.com returned HTTP 429 to curl and WebFetch; web search found no listing at 323 3rd St Kersey",
+    "notes": "Site refused requests (429 Too Many Requests); business type not confirmed.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r276",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "bp.com returned 403; web search found no BP listing at 450 Jefferson St Marseilles",
+    "notes": "Gas station brand; no store stock seen. A GasBuddy comment mentions a former Marseilles BP now a Circle K, but at a different address (291 Main St).",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r277",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "casaguadalupesm.com home page",
+    "notes": "Supermarket; site lists the 26th Street location at 2999 Mission St but shows no stock list; no headlamps seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r278",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search for Splashdrone at 730 Peachtree St NE Ste 570: only articles about the SwellPro/Urban Drones waterproof drone",
+    "notes": "Splashdrone is a waterproof drone product/brand; name settles it does not sell wool socks. No listing ties it to the Atlanta suite.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r279",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "massehardwarecompany.ambz.com (DNS does not resolve); web search: no listing for Masse Hardware at 249 Walden St",
+    "notes": "Hardware store; no stock seen. Search found 'Masse Corner' apartments at 253 Walden St, which hints at redevelopment but does not confirm closure.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r280",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "saatva.com/locations/philadelphia/rittenhousesquare",
+    "notes": "Mattress and bedding viewing room at 1712 Walnut St with current hours; sells mattresses, bedding, blankets, not camping tents.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r281",
+    "sells_product": "equivalent",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "us.burberry.com home page navigation; stores.burberry.com/en/site-map/us; natickmall.com Burberry directory page (via search)",
+    "notes": "Site sells trench coats (gabardine raincoats), a close substitute; no item named rain jacket seen. Conflicting location evidence: Burberry's own US store list shows only Boston and Wrentham in MA, while the mall directory still lists a Burberry. Row ZIP 17600 is malformed.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r282",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "locations.familydollar.com/co/kersey/109-hill-street; familydollar.com blanket results (search)",
+    "notes": "Store page shows 109 Hill Street, open. Chain blankets seen are synthetic plush, velvet, fleece and down alternative; no wool blanket seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r283",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search for Reservoir Pub & Grill, 6650 Golf Course Dr: only Crystal Springs Golf Course listings",
+    "notes": "Address is Crystal Springs Golf Course; a directory mentions an unnamed restaurant there. No evidence of the pub by name or of chocolate bars.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r284",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "sherwin-williams.com store-locator page for store 703005",
+    "notes": "Commercial paint store at 505 W Lake St with current hours; paint retailer, does not sell bath towels.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r285",
+    "sells_product": "yes",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "cb2.com bath towel product pages (search results); cb2.com/stores returned 403; mallsinamerica.com Calhoun Square listing",
+    "notes": "Chain sells bath towels (Brooks, Arlow, Kalani lines). Conflicting location evidence: a 2021 directory lists CB2 at 3001 Hennepin Ave (Calhoun Square), while CB2's store list per search shows no Minnesota store; could not load cb2.com/stores (403).",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r286",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search: ocfrealty.com blog on Brooklinen opening at 1703 Walnut St; brooklinen.com/pages/stores returned 429",
+    "notes": "Sheet and bedding brand; does not sell camping tents. Opening at this address reported in an undated blog post; no current listing confirmed.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r287",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "burlington.com home page; burlington.com search via web search (only kids' play tents); PREIT Plymouth Meeting Mall listing",
+    "notes": "Off-price retailer at Plymouth Meeting Mall (500 W Germantown Pike). Only children's play tents seen, which are not camping tents.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r288",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search for Starbucks at 550 Peachtree: no listing at that address (nearest Colony Square, 1197 Peachtree St NE)",
+    "notes": "Coffee shop chain; does not sell bottled olive oil. Row says Peachtree Rd; no listing confirms a Starbucks at 550 Peachtree.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r289",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "hometownhospitality.net (DNS does not resolve); web search: no listing at 141 Spencer Creek Rd Franklin",
+    "notes": "Business type unclear (name suggests hospitality); no stock or listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r290",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "brunobeef.com home page",
+    "notes": "Small British White cattle beef farm; site lists 2507 N. 2553rd Road, Marseilles. Sells beef, not tea.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r291",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "bonnysgardencenter.wixsite.com returned Wix 404; Checkbook listing (2021 comments) and Hoodline 2020 article via search",
+    "notes": "Garden center; site gone and listings found are several years old. No cast iron skillets seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r292",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "playfulrides.com redirects to a HugeDomains for-sale page; web search: no listing",
+    "notes": "Domain is for sale; business type unknown; no evidence at the Peachtree suite.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r293",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "error",
+    "basis": "stores.gnc.com/pa/hamburg/974 returned 404; storelocators.com GNC listing and Chain Store Age article via search",
+    "notes": "Row is a shopping center (website points to its GNC store). Center exists on Tilden Ridge Dr; no tenant shown selling camping tents. GNC store page 404 may mean that store closed.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r294",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "villagesmoke.com (DNS does not resolve); web search: no listing at 583 Juniper St NE",
+    "notes": "Business type unclear (smoke shop or smokehouse); no stock or listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r295",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "natickcooperativeplaygroup.com shows a Namecheap expired-domain page; find.coop listing via search",
+    "notes": "Children's cooperative playgroup; does not sell cast iron skillets. find.coop lists it at 13 Common St, not 39 E Central St; undated.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r296",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "threaded3boutique.com returned Wix ConnectYourDomain 404; web search: no listing",
+    "notes": "Boutique of unknown stock; site gone, no listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r297",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "blocked",
+    "basis": "mattressfirm.com store page returned Cloudflare 403; Tempur-Pedic retailer finder and GoodBed listings via search",
+    "notes": "Mattress retailer at 1760 Tilden Ridge Dr per listings; does not sell camping tents.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r298",
+    "sells_product": "yes",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "regencycenters.com property page; starmarket.com cookware page via search (direct load hit a bot challenge)",
+    "notes": "Row is a single-tenant center whose tenant is a Star Market supermarket. Star Market site lists a Good Cook 8-inch cast iron skillet. Yes rests on the chain listing seen through search.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r299",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "bellettinifoods.com (DNS does not resolve); web search: no listing",
+    "notes": "Row has no street address; no stock or listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r300",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "Web search: Genji sushi counters in Whole Foods; zabihah.com Whole Foods Plymouth Meeting listing",
+    "notes": "Sushi counter brand; does not sell camping tents. Whole Foods exists at 500 W Germantown Pike, but no source confirms a Genji counter there.",
+    "checked": "2026-10-09"
+  }
+]

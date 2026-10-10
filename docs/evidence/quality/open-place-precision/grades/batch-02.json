@@ -1,0 +1,272 @@
+[
+  {
+    "row_id": "r031",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "WebSearch for name and address; no listing found (only Marseilles city directory PDF and property pages)",
+    "notes": "No website and no listing found; a greenhouse's stock of batteries cannot be told from the name.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r032",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "thegoatgirls.com redirects to a hugedomains.com for-sale page; WebSearch found a 2016 gazettenet.com article",
+    "notes": "Domain is for sale, so the shop site is dead. The 2016 article describes Goat Girls as an Amherst goat-grazing brush-clearing service, not a retailer; no current listing with the Pelham Rd address.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r033",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "https://www.letsrollgames.com/ home page (footer address)",
+    "notes": "Board game store; footer gives 6960 Moores Lane, Brentwood, TN 37027. No stock list on the site, so wooden train sets cannot be seen either way.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r034",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "locations.bloomingdales.com redirect to bloomingdales.com store page returned 403 (curl), certificate error (WebFetch); WebSearch: Bisnow sale report and Inquirer/PhillyVoice coverage",
+    "notes": "Bloomingdale's site blocked. News coverage places the outlet as anchor of the Shops at Liberty Place, 1625 Chestnut St (opened 2015; a Bisnow sale report from after Feb 2024 still names it), but no current listing was reached. No evidence of camping tents.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r035",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "https://www.santaschristmastrees.com/ home page (locations list)",
+    "notes": "Seasonal Christmas tree lot (trees, wreaths, tree removal); site lists the Grassland lot at 2184 Hillsboro Rd, Franklin, TN 37069. Does not sell drills.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r036",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "none",
+    "basis": "https://www.restaurantji.com/il/seneca/refuge-coffee-/ listing",
+    "notes": "Coffee shop; listing gives 113 William Street, Seneca, IL 61360, marked open with hours. Menu text names only coffee drinks and snacks; no tea seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r037",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "www.tileandgranitesolutions.com did not resolve (DNS); WebSearch for name and address found no listing",
+    "notes": "Tile and granite installer/fabricator by name; does not sell cookware. No listing found at 30 Washington St (a different tile business is listed at 25 Washington St).",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r038",
+    "sells_product": "no",
+    "local_exists": "no",
+    "page_access": "ok",
+    "basis": "https://www.gotchacovered.com/west-minneapolis/ via WebFetch (curl got 403)",
+    "notes": "Custom window treatments franchise (blinds, shades, shutters); no towels. Its own page gives 2400 N 2nd St Unit 128, Minneapolis, MN 55411, a separate commercial unit; an apartment on Bryant Ave S cannot be the same place.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r039",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "www.randys-maintenance-inc.com did not resolve (DNS); WebSearch for name and address found no listing",
+    "notes": "Site dead and no listing found; name suggests a maintenance service but does not settle whether it sells batteries.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r040",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "http://www.budadrugstore.com home page",
+    "notes": "Independent pharmacy and soda fountain; site gives 203 Railroad St Suite 2B, Buda, TX 78610. Site lists pharmacy services and medical equipment, no electronics or cables.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r041",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "urban-cigar-smoke-shop.business.site returned 404; WebSearch for name and address",
+    "notes": "Site dead. Search found no listing for the shop; directories tie 1199 Broadway to other businesses (a tapas bar, a pizza place), but the row gives Ste 4, so occupancy of that suite is not settled.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r042",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "https://www.kismetsf.com home page and kismetsf.com/contact/",
+    "notes": "Furniture refinishing/upcycling portfolio site; no headlamps or general merchandise. Contact page shows only theme placeholder text (a Paris address), so the 24th St address is not confirmed.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r043",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "WebSearch for name and address; no listing found",
+    "notes": "No website and no listing found; a cafe's stock of chocolate bars cannot be told from the name.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r044",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "blocked",
+    "basis": "https://www.acehardware.com/store-details/17984 returned 403 (curl and WebFetch); WebSearch result for the same Ace store page and yellowpages listing",
+    "notes": "Ace Hardware affiliate. Search results show the Ace store page titled Hamshaw Lumber-Amherst at 150 College St, Amherst, MA 01002 with hours. Ace site blocked, so cast iron skillet stock not seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r045",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "wingstop.com location menu page (curl 200 and WebFetch; page renders only a title without JavaScript)",
+    "notes": "Wingstop is a chicken wing restaurant chain, not a grocery retailer of olive oil. The page shell showed no address or status.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r046",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "www.nutsforcandy.com returned 429 local_rate_limited (Shopify) on three tries; WebSearch: Green Business CA listing and machronicle.com feature",
+    "notes": "Candy and toy shop (listing says 400+ candies); dark chocolate bars not seen on any page. Listing gives 1241 Broadway, Burlingame, but the Green Business page shows status Closed, so evidence conflicts.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r047",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "www.atlgothworks.com did not resolve (DNS); WebSearch for name and street found no listing",
+    "notes": "Site dead and no listing found; listed address is an apartment.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r048",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "Google Form at the listed website (workshop sign-up); WebSearch: loc8nearme.com listing for The Good Tree Boutique",
+    "notes": "Gift and home decor boutique (kitchenware, engraved wood boards, personalized gifts); listing gives 2176 Hillsboro Rd Suites 126 and 130, Franklin, TN 37069. No toys or train sets seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r049",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "www.fleursdelee.com did not resolve (DNS); WebSearch for name and address found no listing",
+    "notes": "Florist by name; site dead and no listing found. Jigsaw puzzles not seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r050",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "https://www.walgreens.com home page (200); walgreens.com search for cordless drill returned a challenge page; WebSearch: insiderx and wellrx pharmacy listings",
+    "notes": "Listings show Walgreens store #04695 at 2045 Fieldstone Pkwy, Franklin, TN 37069. Product search hit a challenge, so drill stock not seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r051",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "www.phillyteamstore.com refused connection (http and https); WebSearch for name and address found no listing",
+    "notes": "Sports team merchandise store by name; site dead and no listing at 1720 Chestnut St found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r052",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "erniesappliancerepair.com did not resolve (DNS); WebSearch for name and address found no listing",
+    "notes": "Appliance repair service by name; does not sell camping tents. No listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r053",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "https://www.biewerlumber.com home page and /contact-us-2/locations/",
+    "notes": "Lumber manufacturer and treater selling through dealers; does not sell batteries. Its Seneca, IL facility is listed at 524 East Union Street, not Shipyard Rd; a plant site can front two roads, so this is not taken as proof it is elsewhere.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r054",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "WebSearch for name and address; no listing found",
+    "notes": "No website and no listing found; name does not settle what it sells.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r055",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "bauerroofing.biz did not resolve (DNS); WebSearch: blockshopper.com property record for Hossack St",
+    "notes": "Roofing contractor by name; does not sell batteries. No business listing found; the address appears only as a residential property record.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r056",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "www.beehealthycandles.com returned 429 local_rate_limited (Shopify) on three tries; WebSearch: faire.com brand listing",
+    "notes": "Site blocked. A Faire listing under this name describes a beeswax candle maker (candles, ear candles, beeswax bars) but places it in Southern Colorado, so it may not be this shop; not enough to settle the product or the Eaton address.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r057",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "http://www.wizardsforhire.com home page",
+    "notes": "Custom furniture and carpentry business (Murphy beds, tables, shelving); no electronics. Site says Central Texas, no street address.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r058",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "starbucks.com store-locator page 14081 (200 but content renders only with JavaScript); WebSearch: allmenus and atmosfy listings",
+    "notes": "Listings show a Starbucks at 1230 Broadway, Burlingame, CA 94010, phone matching the row. Store page showed no menu text, so chocolate bars not seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r059",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "WebSearch for business name; no listing found",
+    "notes": "No website, phone or listing found; name does not settle what it sells.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r060",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "http://www.burkeydriscoll.com returned only a consent/redirect script with no business content; WebSearch: tributearchive listing",
+    "notes": "Domain appears parked (consent manager plus script redirect, no funeral home content), so recorded as error. Funeral home; does not sell light bulbs. A listing calls Burkey & Driscoll a branch of Kuhn Funeral Home, whose Hamburg location is at 40 S Fourth St, so the address is now listed under another name.",
+    "checked": "2026-10-09"
+  }
+]

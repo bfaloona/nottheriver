@@ -1,0 +1,272 @@
+[
+  {
+    "row_id": "r061",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "blocked",
+    "basis": "lowes.com/store/PA-Hamburg/2894 (403 Access Denied via curl and WebFetch); web search: storelocators.com and iBegin Lowe's listings",
+    "notes": "Store page and national site blocked. Listings place the store at 20 Wilderness Trail. Search results show lowes.com LED bulb category URLs, but no page showing stock or pickup was read.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r062",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "local.starmarket.com/ma/cambridge/699-mt-auburn-st.html; starmarket.com product search (bot check)",
+    "notes": "Supermarket; store page confirms 699 Mt Auburn St. Department list has no cookware; the online shop search returned a bot-check page, so cast iron skillets not seen.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r063",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "slotcar-fever.com (NXDOMAIN); web search for name and address found no listing",
+    "notes": "Name settled it: a slot car hobby shop does not carry bath towels. Domain no longer resolves; no current listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r064",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "3rdbarseneca.com (redirects to 3rdbarseneca.twupro.com)",
+    "notes": "Italian restaurant/bar per its site (pizza, pasta); no retail tea. Site looks template-generated, but it does list 316 N Main St, Seneca.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r065",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "lovenhoneycandles.com (empty reply over http and https); web search: Philadelphia Magazine candle-making listings",
+    "notes": "Candle shop with candle-making classes in Plymouth Meeting Mall, 500 W Germantown Pike unit 1300, per listings (undated). Name and type settled it: no camping tents. Dead or taken-over site plus an undated listing counts as conflicting evidence.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r066",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "goldenstatelumber.com/locations/san-francisco/",
+    "notes": "The San Francisco location is a window and door showroom at 625 Potrero Ave; no headlamps or general merchandise shown.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r067",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "momshouse.org (403 hosting domain-mapping error page); web search: iExit listing 'Mom's House Convenience Store, 318 College St'",
+    "notes": "Convenience store per iExit listing (undated). Site returned 403 with a hosting domain-mapping error page. Skillet not seen. Dead or taken-over site plus an undated listing counts as conflicting evidence.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r068",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "san-fran-market.business.site (Google 404); web search for name and address found no listing",
+    "notes": "Google Business Site is gone; no current listing found for the name at 3353 26th St.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r069",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search 'Front Range Supply 2434 E 8th St Greeley CO' found no listing",
+    "notes": "No website and no listing for this name or address; business type unclear.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r070",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search for 'Mill & Speen Corner' / 2 Mill St Natick found no listing",
+    "notes": "Name reads like an intersection or small plaza, not a named shop; no listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r071",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html; cabelas.com/l/tents (403); web search",
+    "notes": "Store page confirms 100 Cabela Drive and a large Camping department, but no tent was seen on it; the US tents category was blocked (tents seen only on cabelas.ca and third-party pages).",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r072",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search '\"Rooted on Main\" Marseilles IL' found no listing",
+    "notes": "No website and no listing; business type unknown.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r073",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "samiramisimports.com (NXDOMAIN); web search for name and address found no listing",
+    "notes": "Domain no longer resolves; no current listing found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r074",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search '\"Tilden Ridge\" 1898 Tilden Ridge Dr Hamburg PA'",
+    "notes": "Name is the street name of a retail strip (Mattress Firm at 1760, retail suite at 1700); no shop named Tilden Ridge found at 1898.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r075",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "blocked",
+    "basis": "hedgehogbellydesigns.com (429 rate limited via curl and WebFetch); web search: atly.com listing",
+    "notes": "Children's clothing and home decor boutique at 1 Main St, Natick per atly listing (single aggregator, undated). Rain jackets not seen. One undated aggregator listing with a blocked site is not enough to confirm.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r076",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "ameliaflower.com (now an unrelated Chinese-language medical-equipment site); web search found no listing",
+    "notes": "Domain taken over by an unrelated site; no current listing for the florist at 910 W 36th St.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r077",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "metrofuxon.com (redirects to a parked /lander page); web search for name and address",
+    "notes": "Domain loads only a parked /lander redirect, not the shop. no listing for the name. A dated property record called 554 Piedmont Ave unoccupied as of 08/22. Business type unknown.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r078",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "arhommes.com (now an unrelated Chinese-language industrial/gambling spam site); web search found no listing",
+    "notes": "Domain taken over by an unrelated site; no listing for Ar Hommes at 730 Peachtree St NE (an office building).",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r079",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "error",
+    "basis": "kitemas.com (NXDOMAIN); web search for name and address found no listing",
+    "notes": "Domain no longer resolves; 620 Peachtree St NE is a mixed-use residential tower; no listing for Kitemas.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r080",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "finewineandgoodspirits.com store 0607 page",
+    "notes": "Pennsylvania state wine and liquor store; page confirms 1772 Tilden Ridge Drive. A liquor store does not carry LED bulbs.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r081",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "salemspeedway.com (unrelated race track site); web search for Tedeschi and 7-Eleven at 54 E Central St",
+    "notes": "Listed website belongs to an unrelated business. Tedeschi chain was bought by 7-Eleven in 2015 (Wikipedia); no listing found for either at this address.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r082",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "puroclean.com/natick-ma-puroclean-natick/",
+    "notes": "Water, fire and mold damage restoration service, not a retailer. Its own site gives 841 Worcester St, Suite 334, Natick (likely a mailbox address; a UPS Store is at 841), so no evidence either way about 4 Mechanic St.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r083",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search for the listed phone number found nothing",
+    "notes": "Row has no real name or street address; nothing identifies the business.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r084",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search 'Natick Appliance 30 N Main St Natick MA'",
+    "notes": "No listing for this name at 30 N Main St (listings show an apartment/office building there). Appliance store type alone does not settle skillets.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r085",
+    "sells_product": "unknown",
+    "local_exists": "yes",
+    "page_access": "none",
+    "basis": "web search: atly.com 9/27 Plaza listing and tenant listings (Panera 841 Worcester St, Staples 881 Worcester Rd)",
+    "notes": "A shopping plaza, not a single shop (tenants include Staples, Panera, Dollar Tree, UPS Store); no tenant seen selling rain jackets.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r086",
+    "sells_product": "unknown",
+    "local_exists": "no",
+    "page_access": "none",
+    "basis": "web search: Nashville Post 'ex-Toys R Us home in Franklin sells for $5.4M'; WSMV on new Nashville-area store",
+    "notes": "The Franklin (Cool Springs) Toys R Us closed and its building (1755 Galleria Blvd) was sold to Electronic Express; the only current Middle Tennessee store is at Tanger Outlets, not Franklin. No store at 165 Cool Springs Blvd found.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r087",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "lincolngarbage.com (D&D Refuse, a Lincoln NE trash hauler, unrelated); web search for Ref-use at 601 S Loop 4 Buda",
+    "notes": "Listed website belongs to an unrelated business; no listing found for Ref-use in Buda. Business type unknown.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r088",
+    "sells_product": "no",
+    "local_exists": "unknown",
+    "page_access": "ok",
+    "basis": "debsan.net (redirects to an unrelated Indonesian lottery site); web search: Boston Design Guide and PDR Magazine listings",
+    "notes": "Domain taken over. Listings describe a paint and decorating store at 25 Main St, Natick (Benjamin Moore paint, window treatments, wallcoverings, flooring); no cookware. Dead or taken-over site plus an undated listing counts as conflicting evidence.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r089",
+    "sells_product": "no",
+    "local_exists": "yes",
+    "page_access": "ok",
+    "basis": "alternativefurnishings.com home page and /Lighting/index.html",
+    "notes": "Mid-century and decorative furniture dealer at 266 State St, Hamburg; Lighting category lists only vintage lamps and a chandelier, no bulbs.",
+    "checked": "2026-10-09"
+  },
+  {
+    "row_id": "r090",
+    "sells_product": "unknown",
+    "local_exists": "unknown",
+    "page_access": "none",
+    "basis": "web search: City of Cambridge Huron/Observatory Hill retail map 2023",
+    "notes": "Huron Village is a neighborhood shopping district, not a shop. The 2023 city retail map lists Estetika Spa at 370 Huron Ave.",
+    "checked": "2026-10-09"
+  }
+]
