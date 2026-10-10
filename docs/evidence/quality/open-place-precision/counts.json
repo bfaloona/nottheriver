@@ -1,0 +1,402 @@
+{
+ "cast-iron-skillet-urban": {
+  "product": "cast iron skillet",
+  "category": "kitchen",
+  "zip": "02138",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 2588,
+  "in_radius_yes_or_weak": 2349,
+  "dropped_not_open": {
+   "permanently_closed": 33
+  },
+  "dropped_duplicates": 17,
+  "yes_in_radius": 1298,
+  "weak_in_radius": 1001,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.69
+ },
+ "cast-iron-skillet-suburban": {
+  "product": "cast iron skillet",
+  "category": "kitchen",
+  "zip": "01760",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 1137,
+  "in_radius_yes_or_weak": 826,
+  "dropped_not_open": {
+   "permanently_closed": 11
+  },
+  "dropped_duplicates": 9,
+  "yes_in_radius": 547,
+  "weak_in_radius": 259,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.74
+ },
+ "cast-iron-skillet-rural": {
+  "product": "cast iron skillet",
+  "category": "kitchen",
+  "zip": "01072",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 1757,
+  "in_radius_yes_or_weak": 1433,
+  "dropped_not_open": {
+   "permanently_closed": 29
+  },
+  "dropped_duplicates": 12,
+  "yes_in_radius": 837,
+  "weak_in_radius": 555,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 7.59
+ },
+ "camping-tent-urban": {
+  "product": "camping tent",
+  "category": "outdoor",
+  "zip": "19103",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 3990,
+  "in_radius_yes_or_weak": 3624,
+  "dropped_not_open": {
+   "permanently_closed": 125
+  },
+  "dropped_duplicates": 35,
+  "yes_in_radius": 1611,
+  "weak_in_radius": 1853,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.1
+ },
+ "camping-tent-suburban": {
+  "product": "camping tent",
+  "category": "outdoor",
+  "zip": "19462",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 2477,
+  "in_radius_yes_or_weak": 1609,
+  "dropped_not_open": {
+   "permanently_closed": 34
+  },
+  "dropped_duplicates": 13,
+  "yes_in_radius": 982,
+  "weak_in_radius": 580,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.6
+ },
+ "camping-tent-rural": {
+  "product": "camping tent",
+  "category": "outdoor",
+  "zip": "19549",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 2837,
+  "in_radius_yes_or_weak": 2242,
+  "dropped_not_open": {
+   "permanently_closed": 39
+  },
+  "dropped_duplicates": 18,
+  "yes_in_radius": 1323,
+  "weak_in_radius": 862,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 2.81
+ },
+ "wool-socks-urban": {
+  "product": "wool socks",
+  "category": "clothing",
+  "zip": "30308",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 3296,
+  "in_radius_yes_or_weak": 2869,
+  "dropped_not_open": {
+   "permanently_closed": 125
+  },
+  "dropped_duplicates": 27,
+  "yes_in_radius": 2293,
+  "weak_in_radius": 424,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.44
+ },
+ "cordless-drill-suburban": {
+  "product": "cordless drill",
+  "category": "hardware",
+  "zip": "37069",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 919,
+  "in_radius_yes_or_weak": 643,
+  "dropped_not_open": {
+   "permanently_closed": 8
+  },
+  "dropped_duplicates": 5,
+  "yes_in_radius": 321,
+  "weak_in_radius": 309,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 2.56
+ },
+ "loose-leaf-green-tea-rural": {
+  "product": "loose leaf green tea",
+  "category": "grocery",
+  "zip": "61360",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 4032,
+  "in_radius_yes_or_weak": 2138,
+  "dropped_not_open": {
+   "permanently_closed": 33
+  },
+  "dropped_duplicates": 14,
+  "yes_in_radius": 640,
+  "weak_in_radius": 1451,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 5.61
+ },
+ "jigsaw-puzzle-urban": {
+  "product": "jigsaw puzzle",
+  "category": "books_toys",
+  "zip": "55408",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 1294,
+  "in_radius_yes_or_weak": 1226,
+  "dropped_not_open": {
+   "permanently_closed": 17
+  },
+  "dropped_duplicates": 3,
+  "yes_in_radius": 409,
+  "weak_in_radius": 797,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.82
+ },
+ "usb-c-charging-cable-suburban": {
+  "product": "USB-C charging cable",
+  "category": "electronics_accessories",
+  "zip": "78610",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 936,
+  "in_radius_yes_or_weak": 678,
+  "dropped_not_open": {
+   "permanently_closed": 6
+  },
+  "dropped_duplicates": 6,
+  "yes_in_radius": 308,
+  "weak_in_radius": 358,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.77
+ },
+ "wool-blanket-rural": {
+  "product": "wool blanket",
+  "category": "home",
+  "zip": "80622",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 704,
+  "in_radius_yes_or_weak": 484,
+  "dropped_not_open": {
+   "permanently_closed": 11
+  },
+  "dropped_duplicates": 0,
+  "yes_in_radius": 234,
+  "weak_in_radius": 239,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 13.45
+ },
+ "headlamp-urban": {
+  "product": "headlamp",
+  "category": "outdoor",
+  "zip": "94110",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 2785,
+  "in_radius_yes_or_weak": 2380,
+  "dropped_not_open": {
+   "permanently_closed": 94
+  },
+  "dropped_duplicates": 10,
+  "yes_in_radius": 1432,
+  "weak_in_radius": 844,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.33
+ },
+ "rain-jacket-suburban": {
+  "product": "rain jacket",
+  "category": "clothing",
+  "zip": "01760",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 1202,
+  "in_radius_yes_or_weak": 974,
+  "dropped_not_open": {
+   "permanently_closed": 17
+  },
+  "dropped_duplicates": 10,
+  "yes_in_radius": 833,
+  "weak_in_radius": 114,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.34
+ },
+ "led-light-bulbs-rural": {
+  "product": "LED light bulbs",
+  "category": "hardware",
+  "zip": "19549",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 3622,
+  "in_radius_yes_or_weak": 2891,
+  "dropped_not_open": {
+   "permanently_closed": 49
+  },
+  "dropped_duplicates": 31,
+  "yes_in_radius": 1105,
+  "weak_in_radius": 1706,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 3.07
+ },
+ "extra-virgin-olive-oil-urban": {
+  "product": "extra virgin olive oil",
+  "category": "grocery",
+  "zip": "30308",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 8973,
+  "in_radius_yes_or_weak": 7644,
+  "dropped_not_open": {
+   "permanently_closed": 187
+  },
+  "dropped_duplicates": 61,
+  "yes_in_radius": 1799,
+  "weak_in_radius": 5597,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.31
+ },
+ "wooden-train-set-suburban": {
+  "product": "wooden train set",
+  "category": "books_toys",
+  "zip": "37069",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 368,
+  "in_radius_yes_or_weak": 268,
+  "dropped_not_open": {
+   "permanently_closed": 7
+  },
+  "dropped_duplicates": 1,
+  "yes_in_radius": 65,
+  "weak_in_radius": 195,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 4.4
+ },
+ "rechargeable-aa-batteries-rural": {
+  "product": "rechargeable AA batteries",
+  "category": "electronics_accessories",
+  "zip": "61360",
+  "zip_kind": "rural",
+  "zip_ruca": 10,
+  "radius_mi": 30,
+  "rows_in_bbox": 2604,
+  "in_radius_yes_or_weak": 1387,
+  "dropped_not_open": {
+   "permanently_closed": 24
+  },
+  "dropped_duplicates": 13,
+  "yes_in_radius": 650,
+  "weak_in_radius": 700,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 5.62
+ },
+ "bath-towels-urban": {
+  "product": "bath towels",
+  "category": "home",
+  "zip": "55408",
+  "zip_kind": "urban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 4051,
+  "in_radius_yes_or_weak": 3804,
+  "dropped_not_open": {
+   "permanently_closed": 73
+  },
+  "dropped_duplicates": 22,
+  "yes_in_radius": 1195,
+  "weak_in_radius": 2514,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 0.7
+ },
+ "dark-chocolate-bar-suburban": {
+  "product": "dark chocolate bar",
+  "category": "grocery",
+  "zip": "94010",
+  "zip_kind": "suburban",
+  "zip_ruca": 1,
+  "radius_mi": 10,
+  "rows_in_bbox": 3647,
+  "in_radius_yes_or_weak": 3045,
+  "dropped_not_open": {
+   "permanently_closed": 59
+  },
+  "dropped_duplicates": 18,
+  "yes_in_radius": 749,
+  "weak_in_radius": 2219,
+  "yes_sampled": 10,
+  "weak_sampled": 5,
+  "thin_yes_section": false,
+  "farthest_sampled_yes_mi": 1.68
+ }
+}
