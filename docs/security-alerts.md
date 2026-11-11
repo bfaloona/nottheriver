@@ -4,7 +4,8 @@ As of 2026-11-11: `npm audit --audit-level=high` exits 0. The 7 high alerts are 
 
 - Alert source: `npm audit`. GitHub Dependabot alerts are off for this repo, and there is one `package.json` (repo root).
 - Counts are npm's: one alert per affected package, so one advisory can count several times.
-- All figures below were measured on 2026-11-11 on macOS arm64, node 22.22.3, npm 10.9.8, starting from commit `e132f05`.
+- All figures below were measured on 2026-11-11 on macOS arm64, node 22.22.3, npm 10.9.8, starting from commit `e132f05`, with the commands under "Repeat the check". Versions come from the `package-lock.json` diff; the baseline check results and bundle hashes are recorded in `handoff/2026-11-11-security-alerts.md` on the branch `claude/security-alerts`.
+- The end-to-end tests have not run against this change (see "Checks before and after").
 
 ## Counts
 
@@ -18,7 +19,7 @@ As of 2026-11-11: `npm audit --audit-level=high` exits 0. The 7 high alerts are 
 
 Two steps, in two commits:
 
-1. Plain `npm audit fix` (never `--force`). It changed `package-lock.json` only; every package stayed inside the version range `package.json` already allowed.
+1. Plain `npm audit fix` (never `--force`). It changed `package-lock.json` only; every direct dependency stayed inside the version range `package.json` already allowed. Three nested packages crossed a major version as their parents moved (obug 2.2.1 to 3.0.0, why-is-node-running 2.3.0 to 3.2.1, @emnapi/runtime 1.11.3 to 2.0.0-beta.2).
 2. happy-dom from 20 to 21.0.4, a major version jump, in `package.json` and the lock file. No 20.x release fixes either high advisory (the newest, 20.14.6, is still in both affected ranges), so nothing smaller clears the alert.
 
 No `overrides` entry was added.
