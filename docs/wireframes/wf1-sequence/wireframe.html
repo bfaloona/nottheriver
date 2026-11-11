@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WF1 Sequence: low-fidelity wireframe</title>
+<style>
+:root{--k:#111;--d:#444;--m:#777;--l:#bbb;--p:#eee;--w:#fff}
+*{box-sizing:border-box}
+body{margin:0;padding:16px;font:14px/1.4 system-ui,sans-serif;color:var(--k);background:var(--p)}
+h1{font-size:20px;margin:0 0 4px}
+h2{font-size:16px;margin:28px 0 6px;border-top:2px solid var(--k);padding-top:8px}
+h3{font-size:16px;margin:0 0 6px}
+h4{font-size:13px;margin:12px 0 4px;text-transform:uppercase;letter-spacing:.04em;color:var(--d)}
+p{margin:0 0 8px}
+ol,ul{margin:0 0 8px;padding-left:20px}
+small,.note{font-size:12px;color:var(--d)}
+.ctl span{display:inline-block;border:1px solid var(--k);background:var(--w);padding:3px 8px;margin:0 4px 4px 0;cursor:pointer;font-size:12px}
+.ctl span.on{background:var(--k);color:var(--w)}
+.pair{display:flex;gap:16px;align-items:flex-start;overflow-x:auto;padding-bottom:10px}
+.cap{font-size:12px;color:var(--d);margin:0 0 3px}
+.frame{background:var(--w);border:1px solid var(--k);flex:none;padding:10px}
+.w360{width:360px}
+.w1280{width:1280px;padding:16px}
+.top{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--l);padding-bottom:6px;margin-bottom:8px;font-size:12px}
+.lnk{text-decoration:underline;color:var(--k);cursor:pointer}
+.foot{border-top:1px solid var(--l);margin:10px 0 0;padding-top:6px;font-size:12px;color:var(--d)}
+.rail{list-style:none;padding:0;margin:0 0 10px;font-size:12px}
+.rail li{padding:3px 6px;border-left:3px solid var(--l);color:var(--d)}
+.rail li.done{border-left-color:var(--m)}
+.rail li.cur{border-left-color:var(--k);background:var(--p);color:var(--k);font-weight:bold}
+.rail li.todo{color:var(--m)}
+.rail i{font-style:normal}
+.w360 .rail li.todo{display:inline-block;border-left:0;padding:3px 6px 0 0}
+.w360 .rail li.todo i{display:none}
+.w1280 .page{display:grid;grid-template-columns:220px 1fr 300px;gap:20px}
+.w1280 .rail li{padding:8px;margin-bottom:4px}
+.w1280 .rail li b{display:block}
+.w1280 .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.w1280 .tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.asked{border-top:1px solid var(--l);padding-top:8px;margin-top:8px}
+.w1280 .asked{border-top:0;border-left:1px solid var(--l);padding:0 0 0 16px;margin:0}
+.q{border-bottom:1px solid var(--l);padding:5px 0;font-size:13px}
+.q p,.q ul{font-size:12px;margin:4px 0 0;color:var(--d)}
+.box{border:1px solid var(--k);padding:8px;margin:0 0 8px}
+.dash{border:1px dashed var(--m);padding:5px 8px;margin:4px 0;font-size:12px}
+.plan{border:1px dotted var(--m);padding:5px 8px;margin:6px 0;font-size:12px;color:var(--d);background:var(--p)}
+.cert{border:1px solid var(--k);padding:4px 8px;margin:4px 0;font-size:12px}
+.conc{border:1px solid var(--k);border-left:6px solid var(--k);padding:6px 8px;margin:6px 0;font-size:12px}
+.err{border:2px solid var(--k);padding:6px 8px;margin:6px 0;font-size:12px}
+.btn{display:inline-block;border:1px solid var(--k);padding:5px 10px;margin:2px 4px 2px 0;background:var(--p);font-size:13px}
+.btn.pri{background:var(--k);color:var(--w)}
+.btn.off{border-color:var(--l);color:var(--m);background:var(--w)}
+.inp{display:block;border:1px solid var(--k);padding:7px 8px;margin:2px 0 8px;color:var(--d);background:var(--w)}
+.inp.off{border-color:var(--l);color:var(--l)}
+.tag{border:1px solid var(--m);padding:0 5px;font-size:12px;white-space:nowrap}
+.k{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--d);margin:0 0 2px}
+.sw{margin:0 0 6px}
+.opt{display:inline-block;border:1px solid var(--k);padding:4px 8px;margin:0 4px 4px 0;font-size:12px}
+.opt.on{background:var(--k);color:var(--w)}
+.opt.on small{color:var(--l)}
+.opt small{display:block}
+.opt.off{border-color:var(--l);color:var(--m)}
+.rowi{border-top:1px solid var(--l);padding:5px 0;font-size:12px}
+.part{border-top:1px solid var(--l);padding:6px 0;font-size:12px}
+.bar{display:inline-block;height:8px;background:var(--m);vertical-align:middle;margin-right:6px}
+.ruler{font-size:12px;border:1px solid var(--l);padding:6px}
+.ruler div{white-space:nowrap;overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:12px;margin:0 0 8px}
+td,th{border:1px solid var(--l);padding:3px 5px;text-align:left;vertical-align:top}
+.hide{display:none}
+</style>
+</head>
+<body>
+<h1>WF1: the decision as a sequence in time</h1>
+<p class="note">Low-fidelity wireframe. One page is one path of six steps: 1 What, 2 Where, 3 Search, 4 How soon, 5 Which shop, 6 Go. Finished steps fold to one line, the current step is open, and each step carries the questions that arise at that moment ("Asked at this step"). Shops and sources are invented and say "Example". Score values are example values. Underlined text stands for a link; nothing here loads anything.</p>
+<p class="ctl" id="ctl">Show: <span data-s="all" class="on">All states</span><span data-s="s1">S1 Arriving</span><span data-s="s2">S2 Asking</span><span data-s="s3">S3 Waiting</span><span data-s="s4">S4 Results, nearby</span><span data-s="s5">S5 Results, online</span><span data-s="s6">S6 Thin or empty</span><span data-s="s7">S7 Shop opened</span><span data-s="s8">S8 Concern and dispute</span><span data-s="s9">S9 Go</span><span data-s="s10">S10 Trust, cost, privacy</span><span data-s="s11">S11 Budget spent</span></p>
+
+<!-- ================= S1 ================= -->
+<section id="s1">
+<h2>S1 Arriving</h2>
+<div class="pair">
+<div><p class="cap">S1 Arriving &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="cur">1 What<i> you need</i></li><li class="todo"><b>2 Where</b><i> you are, roughly</i></li><li class="todo"><b>3 Search</b><i> about 3 seconds</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p>Find who sells a thing, near you or online, ordered by how the sellers treat people and the planet. Amazon and every business it owns or has owned never appear.</p>
+<h3>1 What do you need?</h3>
+<span class="inp">cordless drill</span>
+<p class="note">1 to 120 characters. Any words you like.</p>
+<span class="btn pri">Next: where</span>
+<p class="note">Six short steps from a need to one shop. Next you give a US zip code, which stays in this browser. No account, no cookies, no analytics.</p>
+<h4>Not here to search?</h4>
+<div class="rowi"><span class="lnk">I doubt this ordering. What is it based on, and how often is it wrong?</span></div>
+<div class="rowi"><span class="lnk">Something is said about my shop. How do I check it and contest it?</span></div>
+<div class="rowi"><span class="lnk">What will you learn about me? Tell me before I type.</span></div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What is this for?</b><p>Naming shops that sell what you need, so you can buy it somewhere other than Amazon. Each shop's place in the order is explained with sources.</p></div>
+<div class="q"><b>+ Why is there no Amazon, and what counts as Amazon?</b></div>
+<div class="q"><b>+ Who pays for this? Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S1 Arriving &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="cur">1 What<i> you need</i></li><li class="todo"><b>2 Where</b><i> you are, roughly</i></li><li class="todo"><b>3 Search</b><i> about 3 seconds</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p>Find who sells a thing, near you or online, ordered by how the sellers treat people and the planet. Amazon and every business it owns or has owned never appear.</p>
+<h3>1 What do you need?</h3>
+<span class="inp">cordless drill</span>
+<p class="note">1 to 120 characters. Any words you like.</p>
+<span class="btn pri">Next: where</span>
+<p class="note">Six short steps from a need to one shop. Next you give a US zip code, which stays in this browser. No account, no cookies, no analytics.</p>
+<h4>Not here to search?</h4>
+<div class="rowi"><span class="lnk">I doubt this ordering. What is it based on, and how often is it wrong?</span></div>
+<div class="rowi"><span class="lnk">Something is said about my shop. How do I check it and contest it?</span></div>
+<div class="rowi"><span class="lnk">What will you learn about me? Tell me before I type.</span></div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What is this for?</b><p>Naming shops that sell what you need, so you can buy it somewhere other than Amazon. Each shop's place in the order is explained with sources.</p></div>
+<div class="q"><b>+ Why is there no Amazon, and what counts as Amazon?</b></div>
+<div class="q"><b>+ Who pays for this? Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S2 ================= -->
+<section id="s2">
+<h2>S2 Asking (step 2, with the things that can be wrong)</h2>
+<div class="pair">
+<div><p class="cap">S2 Asking &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="cur">2 Where<i> you are, roughly</i></li><li class="todo"><b>3 Search</b><i> about 3 seconds</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>2 Where are you, roughly?</h3>
+<p class="k">US zip code, five digits</p>
+<span class="inp">9810</span>
+<div class="err"><b>The zip needs five digits.</b> You typed four. Example: 5 digits, numbers only.</div>
+<p class="note">The zip is turned into a city, a state and the center of the zip area (rounded to about 0.6 mile) inside this browser. Only those are sent. The zip is never sent, never saved, and never put in a web address. This site never asks for a street address or your device's location.</p>
+<span class="btn pri">Search</span> <span class="btn">Back</span>
+<h4>Other messages this step can give</h4>
+<div class="err"><b>Step 1 is empty.</b> Name a product, 1 to 120 characters. <span class="lnk">Go to step 1</span></div>
+<div class="err"><b>This zip is not known here.</b> Some real codes, mostly PO-box codes, are not among the 33,791 zip areas this site holds. Try the zip of a street address near you.</div>
+<div class="plan">Planned (IV-E11): a fallback or fuller explanation for real zips that cannot be resolved would replace the last line of the box above.</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What is sent, and to whom?</b>
+<table><tr><th>Who</th><th>Learns</th></tr>
+<tr><td>Search provider (Brave Search)</td><td>Search wording made from your product, and the zip-area center, so the zip area. Not your IP address</td></tr>
+<tr><td>Language-model service (OpenRouter and the model provider it routes to)</td><td>Your product text, then titles and excerpts of results, which can name nearby towns. No location fields</td></tr>
+<tr><td>Hosts (Cloudflare, GitHub Pages)</td><td>Ordinary request records, including IP address</td></tr></table>
+<p>Nothing else is fetched from any outside party.</p></div>
+<div class="q"><b>+ What is kept, and for how long?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S2 Asking &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="cur">2 Where<i> you are, roughly</i></li><li class="todo"><b>3 Search</b><i> about 3 seconds</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>2 Where are you, roughly?</h3>
+<p class="k">US zip code, five digits</p>
+<span class="inp">9810</span>
+<div class="err"><b>The zip needs five digits.</b> You typed four. Example: 5 digits, numbers only.</div>
+<p class="note">The zip is turned into a city, a state and the center of the zip area (rounded to about 0.6 mile) inside this browser. Only those are sent. The zip is never sent, never saved, and never put in a web address. This site never asks for a street address or your device's location.</p>
+<span class="btn pri">Search</span> <span class="btn">Back</span>
+<h4>Other messages this step can give</h4>
+<div class="split">
+<div class="err"><b>Step 1 is empty.</b> Name a product, 1 to 120 characters. <span class="lnk">Go to step 1</span></div>
+<div class="err"><b>This zip is not known here.</b> Some real codes, mostly PO-box codes, are not among the 33,791 zip areas this site holds. Try the zip of a street address near you.</div>
+</div>
+<div class="plan">Planned (IV-E11): a fallback or fuller explanation for real zips that cannot be resolved would replace the last line of the box above.</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What is sent, and to whom?</b>
+<table><tr><th>Who</th><th>Learns</th></tr>
+<tr><td>Search provider (Brave Search)</td><td>Search wording made from your product, and the zip-area center, so the zip area. Not your IP address</td></tr>
+<tr><td>Language-model service (OpenRouter and the model provider it routes to)</td><td>Your product text, then titles and excerpts of results, which can name nearby towns. No location fields</td></tr>
+<tr><td>Hosts (Cloudflare, GitHub Pages)</td><td>Ordinary request records, including IP address</td></tr></table>
+<p>Nothing else is fetched from any outside party.</p></div>
+<div class="q"><b>+ What is kept, and for how long?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S3 ================= -->
+<section id="s3">
+<h2>S3 Waiting (step 3, with failed and too-many-searches variants)</h2>
+<div class="pair">
+<div><p class="cap">S3 Waiting &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST (zip not shown again) <span class="lnk">change</span></li><li class="cur">3 Search<i> under way</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>3 Searching. About 3 seconds, at most about 5.</h3>
+<p class="note">Measured on 20 searches. Announced once to screen readers; nothing moves if you prefer reduced motion.</p>
+<div class="box"><p class="k">What happens during the wait, in this order</p>
+<ol><li>Reads your words: what kind of product this is</li><li>Searches the web and nearby places</li><li>Judges which results are shops that sell it</li><li>Scores them</li></ol>
+<p class="note">This page hears back once, when all four are done. It cannot yet tell you which one is under way.</p></div>
+<div class="plan">Planned (IV-E6): if the service reports each step as it happens, the list above marks the current one.</div>
+<h4>If the wait ends badly</h4>
+<div class="err"><b>The search did not finish.</b> That is all this page knows. You are not blocked. Waiting a moment and trying again may work. <span class="btn">Try again</span></div>
+<div class="err"><b>Too many searches from your connection</b> (the limit is 30 a minute). Nothing is broken and no money has run out. Try again in about a minute. <span class="btn off">Try again in 1 minute</span></div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What was just sent?</b><p>"cordless drill", Example City, ST, the center of your zip area, and that the area is metropolitan. Not the zip.</p></div>
+<div class="q"><b>+ What will this search cost, and who pays?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S3 Waiting &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST (zip not shown again) <span class="lnk">change</span></li><li class="cur">3 Search<i> under way</i></li><li class="todo"><b>4 How soon</b><i> go, drive or wait</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>3 Searching. About 3 seconds, at most about 5.</h3>
+<p class="note">Measured on 20 searches. Announced once to screen readers; nothing moves if you prefer reduced motion.</p>
+<div class="box"><p class="k">What happens during the wait, in this order</p>
+<ol><li>Reads your words: what kind of product this is</li><li>Searches the web and nearby places</li><li>Judges which results are shops that sell it</li><li>Scores them</li></ol>
+<p class="note">This page hears back once, when all four are done. It cannot yet tell you which one is under way.</p></div>
+<div class="plan">Planned (IV-E6): if the service reports each step as it happens, the list above marks the current one.</div>
+<h4>If the wait ends badly</h4>
+<div class="split">
+<div class="err"><b>The search did not finish.</b> That is all this page knows. You are not blocked. Waiting a moment and trying again may work. <span class="btn">Try again</span></div>
+<div class="err"><b>Too many searches from your connection</b> (the limit is 30 a minute). Nothing is broken and no money has run out. Try again in about a minute. <span class="btn off">Try again in 1 minute</span></div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What was just sent?</b><p>"cordless drill", Example City, ST, the center of your zip area, and that the area is metropolitan. Not the zip.</p></div>
+<div class="q"><b>+ What will this search cost, and who pays?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S4 ================= -->
+<section id="s4">
+<h2>S4 Results, nearby (steps 4 and 5)</h2>
+<div class="pair">
+<div><p class="cap">S4 Results, nearby &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p class="k">4 How soon do you need it?</p>
+<div class="sw"><span class="opt on">I will go and get it<small>4 shops within 10 miles</small></span><span class="opt">I will drive farther<small>1 more, within 100 miles</small></span><span class="opt">I can wait for delivery<small>4 online shops</small></span><span class="opt">No preference<small>all 9, by score</small></span></div>
+<p class="note">This site does not know stock, opening hours or delivery times. Nearby means within 10 miles of the center of your zip area (a metropolitan area).</p>
+<h3>5 Which shop? Consider this one first.</h3>
+<p class="note">Order in force: score, highest first. Reorder by: <span class="tag">[x] score</span> <span class="tag">[ ] distance</span> <span class="tag">[ ] name</span> &nbsp; <span class="tag">[ ] only shops with a certification</span></p>
+<div class="split">
+<div>
+<div class="box"><p><b>1 of 4 &middot; Example Hardware Co-op</b> <span class="tag">score 0.66</span></p>
+<ol>
+<li><b>Does it sell it?</b> Likely. A judgment from the shop's name and type, not a stock check. 80% of nearby shops at this level really sold the product (53 of 66). Call before you go.</li>
+<li><b>Can you reach it?</b> 2.1 miles north-east in a straight line from the center of your zip area, not from you. 410 Example St, Example City.</li>
+<li><b>What is on its record?</b>
+<div class="cert">Certification: worker co-op. <span class="lnk">Source</span>, checked 2026-09-20</div>
+No concerns found. Not in the curated set of chains.</li>
+</ol>
+<span class="btn pri">Choose this shop</span> <span class="btn">Why is it placed first?</span> <span class="btn">Not this one: next shop</span></div>
+</div>
+<div>
+<h4>Then consider, in order</h4>
+<div class="rowi"><b>2 Example Tool Supply</b> <span class="tag">0.58</span><br>Likely sells it &middot; 3.4 mi east &middot; nothing found
+<div class="dash">Fact, not scored: part of a chain, 195 stores</div></div>
+<div class="rowi"><b>3 Example Home Center</b> <span class="tag">0.52</span><br>Likely sells it &middot; 1.2 mi south &middot; 1 concern (labor, 2023)
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores</div></div>
+<div class="rowi"><b>4 Example Variety Store</b> <span class="tag">0.51</span><br>Possibly sells it (40% at this level really did) &middot; 6.0 mi west &middot; nothing found</div>
+<h4>How far, nearest first</h4>
+<div class="ruler">
+<div><span class="bar" style="width:12%"></span>1.2 mi S &middot; Example Home Center</div>
+<div><span class="bar" style="width:21%"></span>2.1 mi NE &middot; Example Hardware Co-op</div>
+<div><span class="bar" style="width:34%"></span>3.4 mi E &middot; Example Tool Supply</div>
+<div><span class="bar" style="width:60%"></span>6.0 mi W &middot; Example Variety Store</div>
+<div class="note">Bar = share of the 10-mile nearby limit. Straight lines from the zip-area center.</div></div>
+<p class="note">Left out: 6 sites. <span class="lnk">See each and why</span> (not a shop, does not sell it, too far, more than 2 branches, not in the top 10). Not judged: 2 results.</p>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- How often is a nearby shop wrong?</b><p>62 to 64% of nearby results really sold the product (a shop that does not exist counts as wrong). Online: 98%. Measured 2026-09-26 on 20 graded searches. <span class="lnk">Method and raw evidence</span></p></div>
+<div class="q"><b>+ Why this order?</b></div>
+<div class="q"><b>+ How were my words read?</b></div>
+<div class="q"><b>+ What does this miss?</b></div>
+<div class="q"><b>+ Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S4 Results, nearby &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p class="k">4 How soon do you need it?</p>
+<div class="sw"><span class="opt on">I will go and get it<small>4 shops within 10 miles</small></span><span class="opt">I will drive farther<small>1 more, within 100 miles</small></span><span class="opt">I can wait for delivery<small>4 online shops</small></span><span class="opt">No preference<small>all 9, by score</small></span></div>
+<p class="note">This site does not know stock, opening hours or delivery times. Nearby means within 10 miles of the center of your zip area (a metropolitan area).</p>
+<h3>5 Which shop? Consider this one first.</h3>
+<p class="note">Order in force: score, highest first. Reorder by: <span class="tag">[x] score</span> <span class="tag">[ ] distance</span> <span class="tag">[ ] name</span> &nbsp; <span class="tag">[ ] only shops with a certification</span></p>
+<div class="split">
+<div>
+<div class="box"><p><b>1 of 4 &middot; Example Hardware Co-op</b> <span class="tag">score 0.66</span></p>
+<ol>
+<li><b>Does it sell it?</b> Likely. A judgment from the shop's name and type, not a stock check. 80% of nearby shops at this level really sold the product (53 of 66). Call before you go.</li>
+<li><b>Can you reach it?</b> 2.1 miles north-east in a straight line from the center of your zip area, not from you. 410 Example St, Example City.</li>
+<li><b>What is on its record?</b>
+<div class="cert">Certification: worker co-op. <span class="lnk">Source</span>, checked 2026-09-20</div>
+No concerns found. Not in the curated set of chains.</li>
+</ol>
+<span class="btn pri">Choose this shop</span> <span class="btn">Why is it placed first?</span> <span class="btn">Not this one: next shop</span></div>
+</div>
+<div>
+<h4>Then consider, in order</h4>
+<div class="rowi"><b>2 Example Tool Supply</b> <span class="tag">0.58</span><br>Likely sells it &middot; 3.4 mi east &middot; nothing found
+<div class="dash">Fact, not scored: part of a chain, 195 stores</div></div>
+<div class="rowi"><b>3 Example Home Center</b> <span class="tag">0.52</span><br>Likely sells it &middot; 1.2 mi south &middot; 1 concern (labor, 2023)
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores</div></div>
+<div class="rowi"><b>4 Example Variety Store</b> <span class="tag">0.51</span><br>Possibly sells it (40% at this level really did) &middot; 6.0 mi west &middot; nothing found</div>
+<h4>How far, nearest first</h4>
+<div class="ruler">
+<div><span class="bar" style="width:12%"></span>1.2 mi S &middot; Example Home Center</div>
+<div><span class="bar" style="width:21%"></span>2.1 mi NE &middot; Example Hardware Co-op</div>
+<div><span class="bar" style="width:34%"></span>3.4 mi E &middot; Example Tool Supply</div>
+<div><span class="bar" style="width:60%"></span>6.0 mi W &middot; Example Variety Store</div>
+<div class="note">Bar = share of the 10-mile nearby limit. Straight lines from the zip-area center.</div></div>
+<p class="note">Left out: 6 sites. <span class="lnk">See each and why</span> (not a shop, does not sell it, too far, more than 2 branches, not in the top 10). Not judged: 2 results.</p>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- How often is a nearby shop wrong?</b><p>62 to 64% of nearby results really sold the product (a shop that does not exist counts as wrong). Online: 98%. Measured 2026-09-26 on 20 graded searches. <span class="lnk">Method and raw evidence</span></p></div>
+<div class="q"><b>+ Why this order?</b></div>
+<div class="q"><b>+ How were my words read?</b></div>
+<div class="q"><b>+ What does this miss?</b></div>
+<div class="q"><b>+ Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S5 ================= -->
+<section id="s5">
+<h2>S5 Results, online (steps 4 and 5, the other answer to "how soon")</h2>
+<div class="pair">
+<div><p class="cap">S5 Results, online &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I can wait for delivery <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4</i></li><li class="todo"><b>6 Go</b><i> website</i></li></ol>
+<div class="now">
+<p class="k">4 How soon do you need it?</p>
+<div class="sw"><span class="opt">I will go and get it<small>4 shops within 10 miles</small></span><span class="opt">I will drive farther<small>1 more, within 100 miles</small></span><span class="opt on">I can wait for delivery<small>4 online shops</small></span><span class="opt">No preference<small>all 9, by score</small></span></div>
+<p class="note">This site does not know delivery times or shipping costs. The shop's own page does.</p>
+<h3>5 Which shop? Consider this one first.</h3>
+<p class="note">Order in force: score, highest first. Reorder by: <span class="tag">[x] score</span> <span class="tag">[ ] name</span> (distance does not apply online) &nbsp; <span class="tag">[ ] only shops with a certification</span></p>
+<div class="split">
+<div>
+<div class="box"><p><b>1 of 4 &middot; Example Tools Online</b> <span class="tag">score 0.70</span></p>
+<ol>
+<li><b>Does it sell it?</b> Its listing names the product: "Example 18V Cordless Drill Kit". 98% of online results really sold the product or a close equivalent.</li>
+<li><b>Can you reach it?</b> Online only: no address, no distance. Page found: tools-online.example/drills</li>
+<li><b>What is on its record?</b>
+<div class="cert">Certification: 1% for the Planet. <span class="lnk">Source</span>, checked 2026-09-20</div>
+No concerns found. Not in the curated set of chains.</li>
+</ol>
+<span class="btn pri">Choose this shop</span> <span class="btn">Why is it placed first?</span> <span class="btn">Not this one: next shop</span></div>
+</div>
+<div>
+<h4>Then consider, in order</h4>
+<div class="rowi"><b>2 Example Tool Warehouse Online</b> <span class="tag">0.63</span><br>Listing names the product &middot; nothing found</div>
+<div class="rowi"><b>3 Example General Goods Online</b> <span class="tag">0.58</span><br>Listing names only the category (power tools) &middot; nothing found</div>
+<div class="rowi"><b>4 Example Big Box Online</b> <span class="tag">0.52</span><br>Listing names the product &middot; 3 concerns, 2019 to 2024 (1 labor, 2 environmental) <span class="lnk">read all 3</span>
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores</div></div>
+<p class="note">Left out: 5 sites. <span class="lnk">See each and why</span>. Not judged: 0 results.</p>
+<div class="plan">If built (IV-E3): up to 3 suggested shops would sit here, below the last scored shop, in their own box headed "Named by other sites, not scored, not confirmed to sell this".</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- Why this order?</b><p>One score from 0 to 1 per shop, the same four parts for every search: sells it (0.25), how it treats people (0.30), how it treats the planet (0.30), how close (0.15; online shops get a fixed middle value). Nothing found means the middle, not a penalty. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>+ How often is an online shop wrong?</b></div>
+<div class="q"><b>+ How were my words read?</b></div>
+<div class="q"><b>+ What does this miss?</b></div>
+<div class="q"><b>+ Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S5 Results, online &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I can wait for delivery <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4</i></li><li class="todo"><b>6 Go</b><i> website</i></li></ol>
+<div class="now">
+<p class="k">4 How soon do you need it?</p>
+<div class="sw"><span class="opt">I will go and get it<small>4 shops within 10 miles</small></span><span class="opt">I will drive farther<small>1 more, within 100 miles</small></span><span class="opt on">I can wait for delivery<small>4 online shops</small></span><span class="opt">No preference<small>all 9, by score</small></span></div>
+<p class="note">This site does not know delivery times or shipping costs. The shop's own page does.</p>
+<h3>5 Which shop? Consider this one first.</h3>
+<p class="note">Order in force: score, highest first. Reorder by: <span class="tag">[x] score</span> <span class="tag">[ ] name</span> (distance does not apply online) &nbsp; <span class="tag">[ ] only shops with a certification</span></p>
+<div class="split">
+<div>
+<div class="box"><p><b>1 of 4 &middot; Example Tools Online</b> <span class="tag">score 0.70</span></p>
+<ol>
+<li><b>Does it sell it?</b> Its listing names the product: "Example 18V Cordless Drill Kit". 98% of online results really sold the product or a close equivalent.</li>
+<li><b>Can you reach it?</b> Online only: no address, no distance. Page found: tools-online.example/drills</li>
+<li><b>What is on its record?</b>
+<div class="cert">Certification: 1% for the Planet. <span class="lnk">Source</span>, checked 2026-09-20</div>
+No concerns found. Not in the curated set of chains.</li>
+</ol>
+<span class="btn pri">Choose this shop</span> <span class="btn">Why is it placed first?</span> <span class="btn">Not this one: next shop</span></div>
+</div>
+<div>
+<h4>Then consider, in order</h4>
+<div class="rowi"><b>2 Example Tool Warehouse Online</b> <span class="tag">0.63</span><br>Listing names the product &middot; nothing found</div>
+<div class="rowi"><b>3 Example General Goods Online</b> <span class="tag">0.58</span><br>Listing names only the category (power tools) &middot; nothing found</div>
+<div class="rowi"><b>4 Example Big Box Online</b> <span class="tag">0.52</span><br>Listing names the product &middot; 3 concerns, 2019 to 2024 (1 labor, 2 environmental) <span class="lnk">read all 3</span>
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores</div></div>
+<p class="note">Left out: 5 sites. <span class="lnk">See each and why</span>. Not judged: 0 results.</p>
+<div class="plan">If built (IV-E3): up to 3 suggested shops would sit here, below the last scored shop, in their own box headed "Named by other sites, not scored, not confirmed to sell this".</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- Why this order?</b><p>One score from 0 to 1 per shop, the same four parts for every search: sells it (0.25), how it treats people (0.30), how it treats the planet (0.30), how close (0.15; online shops get a fixed middle value). Nothing found means the middle, not a penalty. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>+ How often is an online shop wrong?</b></div>
+<div class="q"><b>+ How were my words read?</b></div>
+<div class="q"><b>+ What does this miss?</b></div>
+<div class="q"><b>+ Is anyone paying to be placed?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S6 ================= -->
+<section id="s6">
+<h2>S6 Thin or empty result (step 4 answers "no" first, then says what to try, in order)</h2>
+<div class="pair">
+<div><p class="cap">S6 Thin or empty &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> left-handed pruning saw <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example Township, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 0 nearby, 2 farther, 1 online</li><li class="cur">4 How soon<i> not nearby</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>4 Nothing was found within 30 miles.</h3>
+<p>30 miles is the nearby distance used outside metropolitan areas. That does not mean no shop near you sells it: see "the site's limit" below.</p>
+<div class="sw"><span class="opt off">I will go and get it<small>0 within 30 miles</small></span><span class="opt">I will drive farther<small>2 shops: 38 and 61 miles</small></span><span class="opt">I can wait for delivery<small>1 online shop</small></span></div>
+<h4>Is it my wording, my location, or the site's limit? Try in this order.</h4>
+<div class="tri">
+<div class="box"><p><b>1 Your wording</b></p><p class="note">Read as: pruning saws (garden tools). Also looked for: folding saw, bow saw. A shorter or more general name may find more.</p><span class="btn">Search "pruning saw"</span></div>
+<div class="box"><p><b>2 Your location</b></p><p class="note">Resolved to Example Township, ST, a rural area. Distances are from the center of that zip area.</p><span class="btn">Change the zip</span></div>
+<div class="box"><p><b>3 The site's limit</b></p><p class="note">Measured: this site finds 33 to 35% of the good nearby shops an independent search finds, and 31% of the good online ones. It uses one search index; shops that index has not reached are missing.</p><span class="lnk">Method and evidence</span></div>
+</div>
+<h4>Other thin results</h4>
+<div class="err"><b>Nothing matched "left-handed pruning saw" at all,</b> nearby or online. A shorter or more general name may work. <span class="btn">Search "pruning saw"</span></div>
+<div class="err"><b>3 shops were found, and your own choice hides them:</b> "only shops with a certification". <span class="btn">Show all 3</span></div>
+<div class="err"><b>No online shops were found.</b> 4 nearby shops were. <span class="btn">See nearby shops</span></div>
+<div class="plan">If built (IV-E9): free, used, lending and thrift places would be a fourth "how soon" answer here, where a thin result leaves the most room.</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What was left out, and why?</b><p>4 sites: 2 not a shop, 1 does not sell it, 1 too far (over 100 miles). <span class="lnk">See each</span></p></div>
+<div class="q"><b>+ What does this site miss?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S6 Thin or empty &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> left-handed pruning saw <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example Township, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 0 nearby, 2 farther, 1 online</li><li class="cur">4 How soon<i> not nearby</i></li><li class="todo"><b>5 Which shop</b><i> one at a time</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<h3>4 Nothing was found within 30 miles.</h3>
+<p>30 miles is the nearby distance used outside metropolitan areas. That does not mean no shop near you sells it: see "the site's limit" below.</p>
+<div class="sw"><span class="opt off">I will go and get it<small>0 within 30 miles</small></span><span class="opt">I will drive farther<small>2 shops: 38 and 61 miles</small></span><span class="opt">I can wait for delivery<small>1 online shop</small></span></div>
+<h4>Is it my wording, my location, or the site's limit? Try in this order.</h4>
+<div class="tri">
+<div class="box"><p><b>1 Your wording</b></p><p class="note">Read as: pruning saws (garden tools). Also looked for: folding saw, bow saw. A shorter or more general name may find more.</p><span class="btn">Search "pruning saw"</span></div>
+<div class="box"><p><b>2 Your location</b></p><p class="note">Resolved to Example Township, ST, a rural area. Distances are from the center of that zip area.</p><span class="btn">Change the zip</span></div>
+<div class="box"><p><b>3 The site's limit</b></p><p class="note">Measured: this site finds 33 to 35% of the good nearby shops an independent search finds, and 31% of the good online ones. It uses one search index; shops that index has not reached are missing.</p><span class="lnk">Method and evidence</span></div>
+</div>
+<h4>Other thin results</h4>
+<div class="tri">
+<div class="err"><b>Nothing matched "left-handed pruning saw" at all,</b> nearby or online. A shorter or more general name may work. <span class="btn">Search "pruning saw"</span></div>
+<div class="err"><b>3 shops were found, and your own choice hides them:</b> "only shops with a certification". <span class="btn">Show all 3</span></div>
+<div class="err"><b>No online shops were found.</b> 4 nearby shops were. <span class="btn">See nearby shops</span></div>
+</div>
+<div class="plan">If built (IV-E9): free, used, lending and thrift places would be a fourth "how soon" answer here, where a thin result leaves the most room.</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What was left out, and why?</b><p>4 sites: 2 not a shop, 1 does not sell it, 1 too far (over 100 miles). <span class="lnk">See each</span></p></div>
+<div class="q"><b>+ What does this site miss?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S7 ================= -->
+<section id="s7">
+<h2>S7 One shop opened to its reasons and sources (step 5, "Why is it placed first?")</h2>
+<div class="pair">
+<div><p class="cap">S7 Shop opened &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4, reasons</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p class="note"><span class="lnk">Back to the 4 shops</span></p>
+<h3>Example Hardware Co-op: why it is placed first</h3>
+<p>Score 0.66 of 1. Four parts, in the order you would check them. Each can be disputed.</p>
+<div class="split">
+<div>
+<div class="part"><b>1 Does it sell the product?</b> Judged likely from the type of shop. <br>0.60 &times; weight 0.25 = <b>0.15</b> &middot; <span class="lnk">dispute</span><br><span class="note">The five levels: product named in the listing; only the category named; judged likely; judged possible; not confirmed.</span></div>
+<div class="part"><b>2 How close is it?</b> 2.1 miles (full at the center of the zip area, nothing at 25 miles). <br>0.92 &times; weight 0.15 = <b>0.14</b> &middot; <span class="lnk">dispute</span></div>
+<div class="part"><b>3 How does it treat people?</b> Starts at the middle (0.50: unknown, not bad).
+<div class="cert">Certification: worker co-op, adds 0.25. Source: Example Worker Co-op Federation, directory.example/members. Checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+No concerns counted. 0.75 &times; weight 0.30 = <b>0.225</b></div>
+<div class="part"><b>4 How does it treat the planet?</b> Nothing found, so it stays at the middle. <br>0.50 &times; weight 0.30 = <b>0.15</b> &middot; <span class="lnk">dispute</span></div>
+<div class="part"><b>Total 0.66</b> (0.15 + 0.14 + 0.225 + 0.15, rounded)</div>
+</div>
+<div>
+<div class="box"><p class="k">Why ahead of the next shop?</p><p>Example Tool Supply scores 0.58. The gap is 0.08: 0.075 from the worker co-op certification, the rest from being 1.3 miles closer.</p></div>
+<div class="dash">Fact, not scored: no chain fact. This shop is not in the curated set of 41 chains. That does not prove it is independent.</div>
+<div class="cert">Fact about the shop, not scored: member of an independent retailer association. Source: Example Independent Retailers Association. Checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+<p class="note">The site shows no excerpts from web pages about a shop, only the facts above and their sources.</p>
+<span class="btn pri">Choose this shop</span> <span class="btn">Not this one: next shop</span>
+<div class="plan">If built: a consumer co-op fact (IV-E4) would be a row like the retailer association one. A price level (IV-E5) would be a fifth line marked "not scored", and a fourth reorder choice. Favoring independents (IV-E10), if it enters the score, becomes a fifth part here.</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What raises and lowers each part?</b><p>Each certification adds 0.25, capped. Each accepted concern costs up to 0.25: less when the penalty was small, the amount is not stated, the case is open, or it is against a related company. Small concerns together cost at most 0.25. The same weights apply to every search. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>+ Who decides which sources count?</b></div>
+<div class="q"><b>+ How do I dispute any of this?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S7 Shop opened &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 1 of 4, reasons</i></li><li class="todo"><b>6 Go</b><i> address and website</i></li></ol>
+<div class="now">
+<p class="note"><span class="lnk">Back to the 4 shops</span></p>
+<h3>Example Hardware Co-op: why it is placed first</h3>
+<p>Score 0.66 of 1. Four parts, in the order you would check them. Each can be disputed.</p>
+<div class="split">
+<div>
+<div class="part"><b>1 Does it sell the product?</b> Judged likely from the type of shop. <br>0.60 &times; weight 0.25 = <b>0.15</b> &middot; <span class="lnk">dispute</span><br><span class="note">The five levels: product named in the listing; only the category named; judged likely; judged possible; not confirmed.</span></div>
+<div class="part"><b>2 How close is it?</b> 2.1 miles (full at the center of the zip area, nothing at 25 miles). <br>0.92 &times; weight 0.15 = <b>0.14</b> &middot; <span class="lnk">dispute</span></div>
+<div class="part"><b>3 How does it treat people?</b> Starts at the middle (0.50: unknown, not bad).
+<div class="cert">Certification: worker co-op, adds 0.25. Source: Example Worker Co-op Federation, directory.example/members. Checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+No concerns counted. 0.75 &times; weight 0.30 = <b>0.225</b></div>
+<div class="part"><b>4 How does it treat the planet?</b> Nothing found, so it stays at the middle. <br>0.50 &times; weight 0.30 = <b>0.15</b> &middot; <span class="lnk">dispute</span></div>
+<div class="part"><b>Total 0.66</b> (0.15 + 0.14 + 0.225 + 0.15, rounded)</div>
+</div>
+<div>
+<div class="box"><p class="k">Why ahead of the next shop?</p><p>Example Tool Supply scores 0.58. The gap is 0.08: 0.075 from the worker co-op certification, the rest from being 1.3 miles closer.</p></div>
+<div class="dash">Fact, not scored: no chain fact. This shop is not in the curated set of 41 chains. That does not prove it is independent.</div>
+<div class="cert">Fact about the shop, not scored: member of an independent retailer association. Source: Example Independent Retailers Association. Checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+<p class="note">The site shows no excerpts from web pages about a shop, only the facts above and their sources.</p>
+<span class="btn pri">Choose this shop</span> <span class="btn">Not this one: next shop</span>
+<div class="plan">If built: a consumer co-op fact (IV-E4) would be a row like the retailer association one. A price level (IV-E5) would be a fifth line marked "not scored", and a fourth reorder choice. Favoring independents (IV-E10), if it enters the score, becomes a fifth part here.</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- What raises and lowers each part?</b><p>Each certification adds 0.25, capped. Each accepted concern costs up to 0.25: less when the penalty was small, the amount is not stated, the case is open, or it is against a related company. Small concerns together cost at most 0.25. The same weights apply to every search. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>+ Who decides which sources count?</b></div>
+<div class="q"><b>+ How do I dispute any of this?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S8 ================= -->
+<section id="s8">
+<h2>S8 A concern and its dispute path (step 5, third check, on a shop with several concerns)</h2>
+<div class="pair">
+<div><p class="cap">S8 Concern and dispute &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I can wait for delivery <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 4 of 4, its record</i></li><li class="todo"><b>6 Go</b><i> website</i></li></ol>
+<div class="now">
+<p class="note"><span class="lnk">Back to the 4 shops</span></p>
+<h3>Example Big Box Online: what is on its record</h3>
+<p>3 concerns, 2019 to 2024, newest first. The wording is each source's own. This site adds no grade of its own. Age does not change how a concern counts.</p>
+<div class="split">
+<div>
+<div class="conc"><b>Concern 1 of 3 &middot; Labor &middot; 2024-03-08</b><br>"Example Big Box to pay $2,300,000 to settle unpaid overtime claims"<br>Source: Example State Labor Agency, labor-agency.example/cases/1<br><b>How it was counted:</b> major ($1,000,000 or more); about this shop itself; case final. Took 0.25 from "how it treats people", which is 0.075 off the score.<br><span class="btn">Read the source</span> <span class="btn pri">Dispute this</span></div>
+<div class="conc"><b>Concern 2 of 3 &middot; Environmental &middot; 2021-06-15</b><br>"Example Big Box Logistics fined $40,000 over waste handling"<br>Source: Example Environmental Regulator, env-regulator.example/actions/2<br><b>How it was counted:</b> minor (under $100,000); about a related company, not this shop; case final. Took 0.05 from "how it treats the planet", 0.015 off the score.<br><span class="btn">Read the source</span> <span class="btn">Dispute this</span></div>
+<div class="conc"><b>Concern 3 of 3 &middot; Environmental &middot; 2019-11-02</b><br>"Complaint filed against Example Big Box over stormwater permits"<br>Source: Example Court Records Office, court-records.example/3<br><b>How it was counted:</b> minor (case still open); about this shop itself. Took 0.05 from "how it treats the planet", 0.015 off the score.<br><span class="btn">Read the source</span> <span class="btn">Dispute this</span></div>
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores. Source: Example Big Box annual report, checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+<div class="plan">Planned (IV-E2): each concern gets a link to the full research record for this retailer, beside "Read the source".</div>
+</div>
+<div>
+<div class="box"><p class="k">Disputing concern 1, in order</p>
+<ol>
+<li><b>Read the source</b> and check it says what is shown here.</li>
+<li><b>Gather four things:</b> the retailer's name; what was shown (copied for you: concern 1 above); the source's address; your evidence.</li>
+<li><b>File the public form on GitHub.</b> You need an account there, and what you file is public. GitHub is an outside party: it learns your IP address and your account. <span class="btn pri">Open the dispute form</span></li>
+<li><b>What happens next is not settled.</b> How disputes are reviewed is undecided and no response time is promised. Until a dispute is resolved, the concern stays as shown.</li>
+</ol>
+<p class="note">Anyone can do this, including the shop. The same four steps work for a certification, a chain fact or any part of a score: use the "dispute" link beside it. Not searching? "Dispute something" at the top starts at step 2 and asks for the retailer's name.</p>
+<p class="note">No other way to file exists today. A person without a GitHub account cannot file.</p></div>
+<div class="plan">If built (IV-E8): each concern shows its state ("under dispute since [date]", "corrected on [date]") under its date, and step 4 states the response time.</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- How bad is this?</b><p>This site does not say. It gives you the date, the amount band, whether the case is final, and whether it is about the shop or a related company, and what each took from the score.</p></div>
+<div class="q"><b>+ Which sources are accepted?</b><p>Regulators, court records, established news organizations, recognized labor and environmental watchdogs: 14 accepted sources. <span class="lnk">The list</span></p></div>
+<div class="q"><b>+ Why do most shops show nothing?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S8 Concern and dispute &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I can wait for delivery <span class="lnk">change</span></li><li class="cur">5 Which shop<i> shop 4 of 4, its record</i></li><li class="todo"><b>6 Go</b><i> website</i></li></ol>
+<div class="now">
+<p class="note"><span class="lnk">Back to the 4 shops</span></p>
+<h3>Example Big Box Online: what is on its record</h3>
+<p>3 concerns, 2019 to 2024, newest first. The wording is each source's own. This site adds no grade of its own. Age does not change how a concern counts.</p>
+<div class="split">
+<div>
+<div class="conc"><b>Concern 1 of 3 &middot; Labor &middot; 2024-03-08</b><br>"Example Big Box to pay $2,300,000 to settle unpaid overtime claims"<br>Source: Example State Labor Agency, labor-agency.example/cases/1<br><b>How it was counted:</b> major ($1,000,000 or more); about this shop itself; case final. Took 0.25 from "how it treats people", which is 0.075 off the score.<br><span class="btn">Read the source</span> <span class="btn pri">Dispute this</span></div>
+<div class="conc"><b>Concern 2 of 3 &middot; Environmental &middot; 2021-06-15</b><br>"Example Big Box Logistics fined $40,000 over waste handling"<br>Source: Example Environmental Regulator, env-regulator.example/actions/2<br><b>How it was counted:</b> minor (under $100,000); about a related company, not this shop; case final. Took 0.05 from "how it treats the planet", 0.015 off the score.<br><span class="btn">Read the source</span> <span class="btn">Dispute this</span></div>
+<div class="conc"><b>Concern 3 of 3 &middot; Environmental &middot; 2019-11-02</b><br>"Complaint filed against Example Big Box over stormwater permits"<br>Source: Example Court Records Office, court-records.example/3<br><b>How it was counted:</b> minor (case still open); about this shop itself. Took 0.05 from "how it treats the planet", 0.015 off the score.<br><span class="btn">Read the source</span> <span class="btn">Dispute this</span></div>
+<div class="dash">Fact, not scored: part of a chain, more than 2,000 stores. Source: Example Big Box annual report, checked 2026-09-20. <span class="lnk">open source</span> &middot; <span class="lnk">dispute</span></div>
+<div class="plan">Planned (IV-E2): each concern gets a link to the full research record for this retailer, beside "Read the source".</div>
+</div>
+<div>
+<div class="box"><p class="k">Disputing concern 1, in order</p>
+<ol>
+<li><b>Read the source</b> and check it says what is shown here.</li>
+<li><b>Gather four things:</b> the retailer's name; what was shown (copied for you: concern 1 above); the source's address; your evidence.</li>
+<li><b>File the public form on GitHub.</b> You need an account there, and what you file is public. GitHub is an outside party: it learns your IP address and your account. <span class="btn pri">Open the dispute form</span></li>
+<li><b>What happens next is not settled.</b> How disputes are reviewed is undecided and no response time is promised. Until a dispute is resolved, the concern stays as shown.</li>
+</ol>
+<p class="note">Anyone can do this, including the shop. The same four steps work for a certification, a chain fact or any part of a score: use the "dispute" link beside it. Not searching? "Dispute something" at the top starts at step 2 and asks for the retailer's name.</p>
+<p class="note">No other way to file exists today. A person without a GitHub account cannot file.</p></div>
+<div class="plan">If built (IV-E8): each concern shows its state ("under dispute since [date]", "corrected on [date]") under its date, and step 4 states the response time.</div>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- How bad is this?</b><p>This site does not say. It gives you the date, the amount band, whether the case is final, and whether it is about the shop or a related company, and what each took from the score.</p></div>
+<div class="q"><b>+ Which sources are accepted?</b><p>Regulators, court records, established news organizations, recognized labor and environmental watchdogs: 14 accepted sources. <span class="lnk">The list</span></p></div>
+<div class="q"><b>+ Why do most shops show nothing?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S9 ================= -->
+<section id="s9">
+<h2>S9 Go (step 6: the chosen shop, how to get to it, what the search cost)</h2>
+<div class="pair">
+<div><p class="cap">S9 Go &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="done"><b>5 Which shop</b> Example Hardware Co-op <span class="lnk">change</span></li><li class="cur">6 Go</li></ol>
+<div class="now">
+<h3>6 Go to Example Hardware Co-op</h3>
+<div class="split">
+<div>
+<div class="box"><ol>
+<li><b>Check first.</b> "Likely sells it" is a judgment, not a stock check, and the shop may not be at this address. Its website: hardware-coop.example <span class="btn pri">Open the shop's website</span><br><span class="note">The shop is not told you came from here.</span></li>
+<li><b>Get there.</b> 410 Example St, Example City, ST. 2.1 miles north-east of the center of your zip area, in a straight line. <span class="btn">Copy the address</span> <span class="btn">Open in my device's map app</span><br><span class="note">This site shows no map and fetches none. If you open your own map app, that app's maker learns the shop's address, not this site's doing.</span></li>
+<li><b>If it does not work out,</b> your list is still here while this page stays open. <span class="btn">Next shop: Example Tool Supply, 3.4 mi</span></li>
+</ol></div>
+<div class="box"><p class="k">Online shop instead? The same step has two lines</p><ol><li><b>Open the page found:</b> tools-online.example/drills. The shop is not told you came from here.</li><li><b>If it does not work out:</b> next shop.</li></ol></div>
+</div>
+<div>
+<div class="box"><p class="k">What this search cost</p><p>5 web lookups, 6,200 language-model tokens (example figure), about $0.023. Paid by the operator. No shop paid to be placed; there are no affiliate links and no advertising. <span class="lnk">Public cost ledger</span></p></div>
+<div class="box"><p class="k">What is kept now that you are done</p><p>Nothing about this search as a whole. How "cordless drill" was read is kept 30 days and shared with anyone who types the same words, with no place or IP address. The product stays in this tab until it closes. The zip is already gone.</p></div>
+<span class="btn">Search for something else</span> <span class="btn">Same product, different zip</span>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>+ Something about this shop is wrong. How do I contest it?</b></div>
+<div class="q"><b>+ Who pays for this?</b></div>
+<div class="q"><b>+ Where is the code?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S9 Go &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="done"><b>1 What</b> cordless drill <span class="lnk">change</span></li><li class="done"><b>2 Where</b> Example City, ST <span class="lnk">change</span></li><li class="done"><b>3 Search</b> done: 4 nearby, 1 farther, 4 online</li><li class="done"><b>4 How soon</b> I will go and get it <span class="lnk">change</span></li><li class="done"><b>5 Which shop</b> Example Hardware Co-op <span class="lnk">change</span></li><li class="cur">6 Go</li></ol>
+<div class="now">
+<h3>6 Go to Example Hardware Co-op</h3>
+<div class="split">
+<div>
+<div class="box"><ol>
+<li><b>Check first.</b> "Likely sells it" is a judgment, not a stock check, and the shop may not be at this address. Its website: hardware-coop.example <span class="btn pri">Open the shop's website</span><br><span class="note">The shop is not told you came from here.</span></li>
+<li><b>Get there.</b> 410 Example St, Example City, ST. 2.1 miles north-east of the center of your zip area, in a straight line. <span class="btn">Copy the address</span> <span class="btn">Open in my device's map app</span><br><span class="note">This site shows no map and fetches none. If you open your own map app, that app's maker learns the shop's address, not this site's doing.</span></li>
+<li><b>If it does not work out,</b> your list is still here while this page stays open. <span class="btn">Next shop: Example Tool Supply, 3.4 mi</span></li>
+</ol></div>
+<div class="box"><p class="k">Online shop instead? The same step has two lines</p><ol><li><b>Open the page found:</b> tools-online.example/drills. The shop is not told you came from here.</li><li><b>If it does not work out:</b> next shop.</li></ol></div>
+</div>
+<div>
+<div class="box"><p class="k">What this search cost</p><p>5 web lookups, 6,200 language-model tokens (example figure), about $0.023. Paid by the operator. No shop paid to be placed; there are no affiliate links and no advertising. <span class="lnk">Public cost ledger</span></p></div>
+<div class="box"><p class="k">What is kept now that you are done</p><p>Nothing about this search as a whole. How "cordless drill" was read is kept 30 days and shared with anyone who types the same words, with no place or IP address. The product stays in this tab until it closes. The zip is already gone.</p></div>
+<span class="btn">Search for something else</span> <span class="btn">Same product, different zip</span>
+</div>
+</div>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>+ Something about this shop is wrong. How do I contest it?</b></div>
+<div class="q"><b>+ Who pays for this?</b></div>
+<div class="q"><b>+ Where is the code?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S10 ================= -->
+<section id="s10">
+<h2>S10 Trust, cost and privacy ("Every question, in order": the whole path readable without searching)</h2>
+<div class="pair">
+<div><p class="cap">S10 Trust, cost, privacy &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Start a search</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<h3>Every question, in the order it arises</h3>
+<p class="note">The same answers that open beside each step, on one page, for reading before you type anything. Jump to: <span class="lnk">before</span> &middot; <span class="lnk">step 2</span> &middot; <span class="lnk">step 3</span> &middot; <span class="lnk">steps 4 and 5</span> &middot; <span class="lnk">step 6</span> &middot; <span class="lnk">if something is wrong</span></p>
+<div class="tri">
+<div>
+<h4>Before step 1</h4>
+<div class="q"><b>What is this for?</b><p>Finding who sells a product, near you or online, ordered by how the sellers treat people and the planet.</p></div>
+<div class="q"><b>Why is there no Amazon, and what counts?</b><p>Leaving it out is the reason the site exists. Amazon and every business it owns or has owned: 39 web domains and 14 business names, each with a public source and date. Code removes them twice per search; the language model is never the only check. <span class="lnk">The exclusion set</span></p></div>
+<div class="q"><b>Who pays, and is anyone paying to be placed?</b><p>The operator pays per search, about $0.023 each; fixed running cost is zero. No paid placement, no affiliate links, no advertising. <span class="lnk">Public cost ledger</span></p></div>
+<h4>At step 2, before you give a zip</h4>
+<div class="q"><b>What is sent, and to whom?</b>
+<table><tr><th>Who</th><th>Learns</th></tr>
+<tr><td>Brave Search</td><td>Search wording from your product; the zip-area center, so your zip area. Not your IP address</td></tr>
+<tr><td>OpenRouter and the model provider it routes to</td><td>Product text; titles and excerpts of results, which can name nearby towns</td></tr>
+<tr><td>Cloudflare, GitHub Pages</td><td>Ordinary request records, with IP address</td></tr>
+<tr><td>Anyone else</td><td>Nothing. The page fetches from no other party</td></tr></table></div>
+<div class="q"><b>What is kept?</b>
+<table><tr><th>What</th><th>How long</th></tr>
+<tr><td>The search as a whole (product with place)</td><td>Not stored</td></tr>
+<tr><td>Shops found and their scores</td><td>Not stored; looked up anew each search</td></tr>
+<tr><td>How a product was read; in effect a list of products people searched for, with no place or IP</td><td>30 days</td></tr>
+<tr><td>IP address, in the rate limiter</td><td>One minute</td></tr>
+<tr><td>The service's log line (worked or not, how long)</td><td>Not stored</td></tr>
+<tr><td>Records at the hosts and outside services</td><td>Under each one's own policy</td></tr>
+<tr><td>Last product typed</td><td>In your tab, until it closes</td></tr>
+<tr><td>Your zip</td><td>Never sent, never kept</td></tr></table>
+<p>No accounts, cookies, analytics or tracking.</p></div>
+</div>
+<div>
+<h4>At step 3, while you wait</h4>
+<div class="q"><b>How long, and what is it doing?</b><p>Median about 3 seconds, slowest about 5. It reads the product, searches, judges which results are shops that sell it, and scores them.</p></div>
+<h4>At steps 4 and 5, when you choose</h4>
+<div class="q"><b>How does the order work?</b>
+<table><tr><th>Part</th><th>Weight</th><th>Moves when</th></tr>
+<tr><td>Sells the product</td><td>0.25</td><td>Five levels of how sure the site is</td></tr>
+<tr><td>Treats people</td><td>0.30</td><td>Starts at the middle; ethics certifications raise it, accepted labor or governance concerns lower it</td></tr>
+<tr><td>Treats the planet</td><td>0.30</td><td>The same, environmental</td></tr>
+<tr><td>How close</td><td>0.15</td><td>Full at the zip-area center, nothing at 25 miles; online a fixed middle</td></tr></table>
+<p>Most shops have nothing found, so sells-it and closeness decide the order among them. A chain fact never changes the score. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>How often is it wrong, and what does it miss?</b>
+<table><tr><th>Measured</th><th>Value</th></tr>
+<tr><td>Online results that really sold the product or a close equivalent</td><td>98%</td></tr>
+<tr><td>Nearby results that really did</td><td>62 to 64%</td></tr>
+<tr><td>Nearby, "likely" level</td><td>80% (53 of 66)</td></tr>
+<tr><td>Nearby, "possibly" level</td><td>40% (58 of 146)</td></tr>
+<tr><td>Good online shops found, of those an independent search found</td><td>31%</td></tr>
+<tr><td>Good nearby shops found</td><td>33 to 35%</td></tr></table>
+<p>Measured 2026-09-26 on 20 graded searches, each run twice. A later run (2026-09-29) measured 98.4% online and 71% nearby. One search index (Brave Search): shops it has not reached are missing. <span class="lnk">Method</span> &middot; <span class="lnk">Raw evidence</span></p></div>
+</div>
+<div>
+<h4>At step 6, when you leave</h4>
+<div class="q"><b>What did my search cost?</b><p>Shown at step 6 for your own search: lookups, tokens, dollars. Projection: 3,000 searches a month is about $65.</p></div>
+<div class="plan">If built and made public (IV-E13): daily totals of searches and cost would sit here, under the cost answer.</div>
+<h4>If something is wrong about a shop</h4>
+<div class="q"><b>How do I contest it?</b><p>Anyone can, including the shop: concerns, certifications, chain facts, any part of a score. Four steps: read the source, gather four things, file the public form on GitHub (account needed), then wait; review is undecided and no response time is promised. <span class="btn">Start a dispute</span></p></div>
+<h4>About the project</h4>
+<div class="q"><b>Where is the code, and what is public?</b><p>Open source, AGPL-3.0. <span class="lnk">Code repository</span>. Public documents: <span class="lnk">ranking method</span>, <span class="lnk">privacy</span>, <span class="lnk">costs</span>, <span class="lnk">quality method and evidence</span>, <span class="lnk">exclusion set</span>, <span class="lnk">accepted sources</span>, <span class="lnk">known shortcuts</span>.</p></div>
+<div class="q"><b>Data credits</b><p>Zip data: US Census Bureau and GeoNames (CC BY 4.0).</p></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Start a search</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S10 Trust, cost, privacy &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Start a search</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<h3>Every question, in the order it arises</h3>
+<p class="note">The same answers that open beside each step, on one page, for reading before you type anything. Jump to: <span class="lnk">before</span> &middot; <span class="lnk">step 2</span> &middot; <span class="lnk">step 3</span> &middot; <span class="lnk">steps 4 and 5</span> &middot; <span class="lnk">step 6</span> &middot; <span class="lnk">if something is wrong</span></p>
+<div class="tri">
+<div>
+<h4>Before step 1</h4>
+<div class="q"><b>What is this for?</b><p>Finding who sells a product, near you or online, ordered by how the sellers treat people and the planet.</p></div>
+<div class="q"><b>Why is there no Amazon, and what counts?</b><p>Leaving it out is the reason the site exists. Amazon and every business it owns or has owned: 39 web domains and 14 business names, each with a public source and date. Code removes them twice per search; the language model is never the only check. <span class="lnk">The exclusion set</span></p></div>
+<div class="q"><b>Who pays, and is anyone paying to be placed?</b><p>The operator pays per search, about $0.023 each; fixed running cost is zero. No paid placement, no affiliate links, no advertising. <span class="lnk">Public cost ledger</span></p></div>
+<h4>At step 2, before you give a zip</h4>
+<div class="q"><b>What is sent, and to whom?</b>
+<table><tr><th>Who</th><th>Learns</th></tr>
+<tr><td>Brave Search</td><td>Search wording from your product; the zip-area center, so your zip area. Not your IP address</td></tr>
+<tr><td>OpenRouter and the model provider it routes to</td><td>Product text; titles and excerpts of results, which can name nearby towns</td></tr>
+<tr><td>Cloudflare, GitHub Pages</td><td>Ordinary request records, with IP address</td></tr>
+<tr><td>Anyone else</td><td>Nothing. The page fetches from no other party</td></tr></table></div>
+<div class="q"><b>What is kept?</b>
+<table><tr><th>What</th><th>How long</th></tr>
+<tr><td>The search as a whole (product with place)</td><td>Not stored</td></tr>
+<tr><td>Shops found and their scores</td><td>Not stored; looked up anew each search</td></tr>
+<tr><td>How a product was read; in effect a list of products people searched for, with no place or IP</td><td>30 days</td></tr>
+<tr><td>IP address, in the rate limiter</td><td>One minute</td></tr>
+<tr><td>The service's log line (worked or not, how long)</td><td>Not stored</td></tr>
+<tr><td>Records at the hosts and outside services</td><td>Under each one's own policy</td></tr>
+<tr><td>Last product typed</td><td>In your tab, until it closes</td></tr>
+<tr><td>Your zip</td><td>Never sent, never kept</td></tr></table>
+<p>No accounts, cookies, analytics or tracking.</p></div>
+</div>
+<div>
+<h4>At step 3, while you wait</h4>
+<div class="q"><b>How long, and what is it doing?</b><p>Median about 3 seconds, slowest about 5. It reads the product, searches, judges which results are shops that sell it, and scores them.</p></div>
+<h4>At steps 4 and 5, when you choose</h4>
+<div class="q"><b>How does the order work?</b>
+<table><tr><th>Part</th><th>Weight</th><th>Moves when</th></tr>
+<tr><td>Sells the product</td><td>0.25</td><td>Five levels of how sure the site is</td></tr>
+<tr><td>Treats people</td><td>0.30</td><td>Starts at the middle; ethics certifications raise it, accepted labor or governance concerns lower it</td></tr>
+<tr><td>Treats the planet</td><td>0.30</td><td>The same, environmental</td></tr>
+<tr><td>How close</td><td>0.15</td><td>Full at the zip-area center, nothing at 25 miles; online a fixed middle</td></tr></table>
+<p>Most shops have nothing found, so sells-it and closeness decide the order among them. A chain fact never changes the score. <span class="lnk">Full method</span></p></div>
+<div class="q"><b>How often is it wrong, and what does it miss?</b>
+<table><tr><th>Measured</th><th>Value</th></tr>
+<tr><td>Online results that really sold the product or a close equivalent</td><td>98%</td></tr>
+<tr><td>Nearby results that really did</td><td>62 to 64%</td></tr>
+<tr><td>Nearby, "likely" level</td><td>80% (53 of 66)</td></tr>
+<tr><td>Nearby, "possibly" level</td><td>40% (58 of 146)</td></tr>
+<tr><td>Good online shops found, of those an independent search found</td><td>31%</td></tr>
+<tr><td>Good nearby shops found</td><td>33 to 35%</td></tr></table>
+<p>Measured 2026-09-26 on 20 graded searches, each run twice. A later run (2026-09-29) measured 98.4% online and 71% nearby. One search index (Brave Search): shops it has not reached are missing. <span class="lnk">Method</span> &middot; <span class="lnk">Raw evidence</span></p></div>
+</div>
+<div>
+<h4>At step 6, when you leave</h4>
+<div class="q"><b>What did my search cost?</b><p>Shown at step 6 for your own search: lookups, tokens, dollars. Projection: 3,000 searches a month is about $65.</p></div>
+<div class="plan">If built and made public (IV-E13): daily totals of searches and cost would sit here, under the cost answer.</div>
+<h4>If something is wrong about a shop</h4>
+<div class="q"><b>How do I contest it?</b><p>Anyone can, including the shop: concerns, certifications, chain facts, any part of a score. Four steps: read the source, gather four things, file the public form on GitHub (account needed), then wait; review is undecided and no response time is promised. <span class="btn">Start a dispute</span></p></div>
+<h4>About the project</h4>
+<div class="q"><b>Where is the code, and what is public?</b><p>Open source, AGPL-3.0. <span class="lnk">Code repository</span>. Public documents: <span class="lnk">ranking method</span>, <span class="lnk">privacy</span>, <span class="lnk">costs</span>, <span class="lnk">quality method and evidence</span>, <span class="lnk">exclusion set</span>, <span class="lnk">accepted sources</span>, <span class="lnk">known shortcuts</span>.</p></div>
+<div class="q"><b>Data credits</b><p>Zip data: US Census Bureau and GeoNames (CC BY 4.0).</p></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Start a search</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<!-- ================= S11 ================= -->
+<section id="s11">
+<h2>S11 Budget spent (said at step 1, before anything is typed; the wording is this designer's proposal)</h2>
+<div class="pair">
+<div><p class="cap">S11 Budget spent &middot; 360 px</p><div class="frame w360">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="cur">1 What<i> paused</i></li><li class="todo"><b>2 Where</b></li><li class="todo"><b>3 Search</b></li><li class="todo"><b>4 How soon</b></li><li class="todo"><b>5 Which shop</b></li><li class="todo"><b>6 Go</b></li></ol>
+<div class="now">
+<div class="err"><h3>Searching is paused: the money for searches in this period is spent.</h3>
+<p>Each search costs the operator about $0.023 and nobody pays to be placed, so there is a limit. Nothing is broken and you are not blocked.</p>
+<p><b>When it resumes:</b> no date is set. This page does not know.</p></div>
+<span class="inp off">What do you need? (paused)</span>
+<span class="btn off">Next: where</span>
+<h4>What still works</h4>
+<div class="rowi"><span class="lnk">Read every question and answer, in order</span></div>
+<div class="rowi"><span class="lnk">Dispute something said about a shop</span></div>
+<div class="rowi"><span class="lnk">See the public cost ledger</span></div>
+<p class="note">If the budget runs out between step 2 and step 3, step 3 shows this same box in place of the wait, with your product kept in step 1 for this tab.</p>
+<p class="note">Open design points, not decided: whether a limit exists per month, and whether anything is offered in the meantime.</p>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- Is it broken, am I blocked, or is it out of money?</b><p>Out of money. A failed search says "did not finish"; a blocked connection says "too many searches, try in about a minute". This is neither.</p></div>
+<div class="q"><b>+ Who pays for this?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+<div><p class="cap">S11 Budget spent &middot; 1280 px</p><div class="frame w1280">
+<div class="top"><b>nottheriver</b><span><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Dispute something</span></span></div>
+<div class="page">
+<ol class="rail"><li class="cur">1 What<i> paused</i></li><li class="todo"><b>2 Where</b></li><li class="todo"><b>3 Search</b></li><li class="todo"><b>4 How soon</b></li><li class="todo"><b>5 Which shop</b></li><li class="todo"><b>6 Go</b></li></ol>
+<div class="now">
+<div class="err"><h3>Searching is paused: the money for searches in this period is spent.</h3>
+<p>Each search costs the operator about $0.023 and nobody pays to be placed, so there is a limit. Nothing is broken and you are not blocked.</p>
+<p><b>When it resumes:</b> no date is set. This page does not know.</p></div>
+<span class="inp off">What do you need? (paused)</span>
+<span class="btn off">Next: where</span>
+<h4>What still works</h4>
+<div class="rowi"><span class="lnk">Read every question and answer, in order</span></div>
+<div class="rowi"><span class="lnk">Dispute something said about a shop</span></div>
+<div class="rowi"><span class="lnk">See the public cost ledger</span></div>
+<p class="note">If the budget runs out between step 2 and step 3, step 3 shows this same box in place of the wait, with your product kept in step 1 for this tab.</p>
+<p class="note">Open design points, not decided: whether a limit exists per month, and whether anything is offered in the meantime.</p>
+</div>
+<div class="asked"><p class="k">Asked at this step</p>
+<div class="q"><b>- Is it broken, am I blocked, or is it out of money?</b><p>Out of money. A failed search says "did not finish"; a blocked connection says "too many searches, try in about a minute". This is neither.</p></div>
+<div class="q"><b>+ Who pays for this?</b></div>
+</div>
+</div>
+<p class="foot"><span class="lnk">Every question, in order</span> &middot; <span class="lnk">Source code and license (AGPL-3.0)</span> &middot; <span class="lnk">Data credits</span></p>
+</div></div>
+</div>
+</section>
+
+<script>
+(function(){
+var ctl=document.getElementById('ctl');
+ctl.addEventListener('click',function(e){
+var s=e.target.getAttribute('data-s');if(!s)return;
+var b=ctl.querySelectorAll('span'),i;
+for(i=0;i<b.length;i++)b[i].className=b[i]===e.target?'on':'';
+var x=document.querySelectorAll('section');
+for(i=0;i<x.length;i++)x[i].className=(s==='all'||x[i].id===s)?'':'hide';
+});
+})();
+</script>
+</body>
+</html>
