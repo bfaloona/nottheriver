@@ -5,7 +5,7 @@ As of 2026-11-11: `npm audit --audit-level=high` exits 0. The 7 high alerts are 
 - Alert source: `npm audit`. GitHub Dependabot alerts are off for this repo, and there is one `package.json` (repo root).
 - Counts are npm's: one alert per affected package, so one advisory can count several times.
 - All figures below were measured on 2026-11-11 on macOS arm64, node 22.22.3, npm 10.9.8, starting from commit `e132f05`, with the commands under "Repeat the check". Versions come from the `package-lock.json` diff; the baseline check results and bundle hashes are recorded in `handoff/2026-11-11-security-alerts.md` on the branch `claude/security-alerts`.
-- The end-to-end tests have not run against this change (see "Checks before and after").
+- The end-to-end tests did not run locally; the CI `e2e` job passed on the pull request and on `main` at `84e7470` (see "Checks before and after").
 
 ## Counts
 
@@ -87,7 +87,7 @@ One advisory, [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg
 | `npm run build` | exit 0 | exit 0 |
 | `npm run build:proxy` | exit 0, 302.34 KiB | exit 0, 302.34 KiB |
 | `npm run scan:bundle` | exit 0, no leaks found | exit 0, no leaks found |
-| `npm run e2e` | Could not run: Playwright's Chromium was not installed in the session | Could not run, same reason. The CI `e2e` job is the check |
+| `npm run e2e` | Could not run: Playwright's Chromium was not installed in the session | Could not run locally, same reason. The CI `e2e` job passed on pull request 1 and on `main` at `84e7470` (2026-11-12 UTC) |
 
 The lock file keeps the same 7 `linux-x64` optional packages the CI runner needs.
 
