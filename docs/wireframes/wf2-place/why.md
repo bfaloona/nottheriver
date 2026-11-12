@@ -18,8 +18,11 @@ The page is built on a single drawing, called the plan. The browser draws it fro
 | Strip off the plan, left | Nearby shops whose position or distance is not listed |
 | Strip off the plan, right | "No place": online shops |
 | Number on each mark | The shop's place in the one order by score (1 is highest) |
-| Solid or dashed mark | How sure "sells it" is (likely or listed, versus possibly). Never good or bad |
-| Legend under the plan | Accuracy per zone, what is never on the plan, and the links to trust, privacy, cost and method |
+| Solid or dashed mark | How sure "sells it" is. Solid: product or category named in a listing, or judged likely. Dashed: judged possible, or not confirmed. Never good or bad |
+| Mark with a plus (4+) | Several shops too close to draw apart. A stated rule, not drawn |
+| Legend under the plan | What the marks mean and open, accuracy per zone, what is never on the plan, and the links to trust, privacy, cost, method, dispute and source code |
+
+All frames are views inside one page (the designer's judgment). Opening a card or the trust or privacy view loads nothing, so going back needs no new search and the zip, which is never stored, is still in its field. A reload empties it.
 
 ## Order of information, and why
 
@@ -33,7 +36,7 @@ The page is built on a single drawing, called the plan. The browser draws it fro
 | A6 | Rows by zone, center outward: nearby, position not listed, farther, no place | Reachability first. Score orders shops inside a zone |
 | A7 | One shop: where it is and how to get there, then whether it sells it, then the score and its four parts (closeness first), then what is known and who says so | The visitor who chose a shop needs the address first. The reasons follow |
 | A8 | A concern: what it is about (the shop's own company or a related company), who said it, when, how it was counted, then the dispute path as a route with places that leave the site | "Where does this finding point" is a place question, and it is the fact most easily misread on a branch's card |
-| A9 | Trust, cost and privacy, reached from the legend | Trust is stated per zone (nearby 62 to 64%, online 98%). Privacy and cost are a path of the places a search travels to |
+| A9 | Trust, cost and privacy, reached from the legend | Trust is stated per zone (nearby 62 to 64%, online 98%, no separate figure for farther shops). Privacy and cost are a path of the places a search travels to |
 
 ## What it deliberately makes harder
 
@@ -41,7 +44,7 @@ The page is built on a single drawing, called the plan. The browser draws it fro
 |---|---|---|
 | Seeing the single best shop by score. The highest score can sit in the last zone when it is online | The lens ranks reachability over score | The numbers on marks and rows, and "Order: score" |
 | Comparing an online shop with a nearby shop side by side | They sit in different zones | Same numbers, same four parts, same card layout |
-| Reading the ranking method before seeing results | It lives behind the legend and the shop card | One link from every frame |
+| Reading the ranking method before seeing results | It lives behind the legend and the shop card | One link from the arriving frame, every result frame, every shop card and the refusal frames. Not linked from the waiting frame, the fix-it messages or the change form (frame 2c); at 360 px the asking frame reaches it in two steps through "Legend and limits" |
 | Treating the site as an online-only finder | Online is the outermost zone, so it comes last in the list | "Show zones: online" narrows to it |
 | Asking for a product before giving a place | Zip is the first field | None. Both are required anyway |
 
@@ -62,4 +65,9 @@ The lens leads with the weakest data and the lightest part of the score.
 - Advising "try the zip of a street address near you" when a zip cannot be resolved.
 - All score values in the wireframe are placeholders. The inventory gives the weights, not the value of each sells-it level, the online closeness value or how an unknown distance is counted.
 - The explanation of the exclusion names Amazon once per place it is needed and names none of its brands; it points to the public exclusion set instead.
-- "Open in your device's map app" is offered on a shop card as the visitor's own choice, with a statement of what that app learns. The page itself fetches nothing from it.
+- "Open in your device's map app" is offered on a shop card as the visitor's own choice. The card names the app as an outside party, says what it receives and what a map app normally already knows (the device's location, possibly the person), and marks it as a cost the operator has to accept or remove. The page itself fetches nothing from it.
+- Treating every frame as a view inside one page, with the zip left in its field while the page is open. The inventory says the zip is never recalled; this design reads that as never stored, not as cleared from the field after each search.
+- Drawing an unknown distance as adding nothing to the score (frame 6c), and a B Corp certification as raising "treats people" (frame 6b). The inventory states neither.
+- Frame 10c, arriving while the budget is spent, assumes the site can know that before a search is tried. That is not decided.
+- The rule for crowded marks (one mark with a plus that opens a short list).
+- On result rows a chain fact is an unboxed italic line and certifications and concerns are boxed tags, so a chain fact cannot be taken for either.

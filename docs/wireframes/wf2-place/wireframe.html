@@ -60,6 +60,7 @@ ul,ol{margin:0 0 6px;padding-left:18px}
 .r{display:grid;grid-template-columns:26px 1fr auto;gap:8px;border-bottom:1px solid #bbb;padding:6px 0}
 .sc{text-align:right;font-weight:bold}
 .t{display:inline-block;border:1px solid #777;padding:0 5px;font-size:12px;margin:2px 4px 0 0}
+.ch{display:inline-block;font-size:12px;font-style:italic;color:#555;margin:2px 4px 0 0}
 table{border-collapse:collapse;width:100%;font-size:13px;margin:0 0 8px}
 td,th{border:1px solid #999;padding:3px 5px;text-align:left;vertical-align:top}
 th{background:#eee}
@@ -81,6 +82,8 @@ th{background:#eee}
 <button data-s="" class="on">All states</button><button data-s="s1">1 Arriving</button><button data-s="s2">2 Asking</button><button data-s="s3">3 Waiting</button><button data-s="s4">4 Results</button><button data-s="s5">5 Thin or empty</button><button data-s="s6">6 Shop opened</button><button data-s="s7">7 Concern and dispute</button><button data-s="s8">8 Trust</button><button data-s="s9">9 Privacy and cost</button><button data-s="s10">10 Budget spent</button>
 </div>
 <div class="note"><b>How the design is built.</b> One drawing, called the plan, is the frame for everything: a mark for the center of the visitor's zip area, a circle for the nearby distance (10 or 30 miles), a circle for 100 miles, and a strip off the plan for things with no place (online shops, and nearby shops whose position is not listed). The plan is drawn in the browser from the zip, with no map service and no outside request. Results are grouped by zone, nearest zone first; the number on each mark is the shop's place in the one overall order by score. Trust, privacy and cost are reached from the plan's legend and are themselves arranged by place: accuracy per zone, and a path of the places a search travels to. The list under the plan repeats everything on the plan as text, in the same order, for keyboard and screen reader use.</div>
+<div class="note"><b>One page, several views.</b> Frames 1 to 10 are views inside one page; none is a separate page with its own address. Opening a shop's card, the limits view (frame 8) or the privacy and cost view (frame 9) loads nothing new, so "Back to the plan" shows the same results without a new search. The zip stays in its field only while the page stays open. It is not stored and not put in the page address, so a reload or a new visit starts at frame 1 with an empty zip field (the product can be recalled until the tab closes). "Change" opens the form of frame 2c.</div>
+<div class="note"><b>Keyboard and screen reader (stated, not testable in a static frame).</b> Source order in every frame: top bar, status message or counts, the plan, the legend, the controls, the list. The plan is one labeled picture with a text summary ("5 shops within 10 miles..."); its marks can be clicked or tapped but are not tab stops, because the same shops follow as rows that are. The status message is a live region: it announces "Looking around Example City...", then the counts sentence when results arrive, or the refusal or error message. Focus moves to that message when the answer arrives. Opening a card moves focus to the card's heading; "Back to the plan" returns focus to the row or mark it was opened from. Field errors are tied to their fields and announced. Nothing moves or animates.</div>
 
 <!-- ===================== 1 ARRIVING ===================== -->
 <section class="state" id="s1">
@@ -102,7 +105,7 @@ th{background:#eee}
 <p class="sm">What you will get: this plan, filled in.</p>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of your zip area</i><i class="e1">nearby shops</i><i class="e2">farther shops</i><i class="l2">100 mi</i></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b><br>Shops with no listed position go here.</div><div class="b g sm"><b>No place: online</b><br>Online shops go here. Scored the same way.</div></div>
-<p class="sm">Each shop gets a number: its place in one order by score. Every placement is explained with sources, and anyone can dispute any of it.</p>
+<p class="sm">Each shop gets a number: its place in one order by score. Every placement is explained with sources, and anyone can dispute any of it. A search takes about 3 seconds and costs the project about $0.023; nobody pays to be placed.</p>
 <div class="b sm"><b>Legend and limits</b><br><span class="lk">What the plan gets wrong, zone by zone</span> · <span class="lk">Where your search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Why Amazon is never on it</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code, license, data credits</span></div>
 </div></div>
 <div class="cap">1. Arriving, 1280 px</div>
@@ -146,7 +149,7 @@ th{background:#eee}
 <b>2. What are you looking for?</b>
 <div class="in">cordless dri|</div>
 <span class="btn">Find where</span>
-<p class="sm">Pressing the button sends: the product; Example City, ST; the center of the zip area; "metropolitan". Not the zip. The zip is not kept and is not put in the page address.</p>
+<p class="sm">Pressing the button sends: the product; Example City, ST; the center of the zip area; "metropolitan". Not the zip. The zip is not stored and is not put in the page address.</p>
 </div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of zip area, Example City</i><i class="l1">10 mi</i><i class="l2">100 mi</i></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b></div><div class="b g sm"><b>No place: online</b></div></div>
@@ -163,7 +166,7 @@ th{background:#eee}
 <b>2. What are you looking for?</b>
 <div class="in">cordless dri|</div>
 <span class="btn">Find where</span>
-<p class="sm">Pressing the button sends: the product; Example City, ST; the center of the zip area; "metropolitan". Not the zip. The zip is not kept and is not put in the page address.</p>
+<p class="sm">Pressing the button sends: the product; Example City, ST; the center of the zip area; "metropolitan". Not the zip. The zip is not stored and is not put in the page address.</p>
 </div>
 </div>
 <div>
@@ -202,6 +205,44 @@ th{background:#eee}
 <div><div class="plan"><div class="c co"></div><div class="c ci"></div><i class="e1">no place yet</i></div></div>
 </div>
 </div></div></div>
+
+<div class="note"><b>2c.</b> What "Change", "Change the product" and "Change the place" open: the form of frame 2, in place above the plan, with both fields as the visitor left them. Focus goes to the field named by the link (the product field for plain "Change"). After a reload the zip field is empty and the visitor is at frame 1.</div>
+<div class="cap">2c. Changing the product or place after a search, 360 px</div>
+<div class="w360"><div class="scr">
+<div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST</span></div>
+<div class="b k">
+<b>1. Where are you?</b> US zip code
+<div class="in">00000</div>
+<div class="b g sm"><b>Example City, ST.</b> Nearby means within 10 miles. The zip is still in this field because the page has not been reloaded. It is not stored anywhere: a reload empties it.</div>
+<b>2. What are you looking for?</b>
+<div class="in">cordless drill|</div>
+<span class="btn">Find where</span><span class="btn s">Cancel, back to the plan</span>
+<p class="sm">Edit either field or both. A new search sends the same four things as before, not the zip. The last results stay below until the new answer arrives.</p>
+</div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
+<div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
+</div></div>
+<div class="cap">2c. Changing the product or place after a search, 1280 px</div>
+<div class="wide"><div class="w1280"><div class="scr">
+<div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST</span></div>
+<div class="cols rev">
+<div>
+<div class="b k">
+<b>1. Where are you?</b> US zip code
+<div class="in">00000</div>
+<div class="b g sm"><b>Example City, ST.</b> Nearby means within 10 miles. The zip is still in this field because the page has not been reloaded. It is not stored anywhere: a reload empties it.</div>
+<b>2. What are you looking for?</b>
+<div class="in">cordless drill|</div>
+<span class="btn">Find where</span><span class="btn s">Cancel, back to the plan</span>
+<p class="sm">Edit either field or both. A new search sends the same four things as before, not the zip. The last results stay beside this form until the new answer arrives.</p>
+</div>
+</div>
+<div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
+<div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
+</div>
+</div>
+</div></div></div>
 </section>
 
 <!-- ===================== 3 WAITING ===================== -->
@@ -211,7 +252,7 @@ th{background:#eee}
 <div class="cap">3. Waiting, 360 px</div>
 <div class="w360"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST</span></div>
-<div class="b k"><b>Looking around Example City for a cordless drill.</b> Usually about 3 seconds, at most about 5.</div>
+<div class="b k"><b>Looking around Example City for a cordless drill.</b> Usually about 3 seconds. The slowest of 20 measured searches took about 5.</div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of zip area</i><i class="e1">nothing placed yet</i><i class="l1">10 mi</i><i class="l2">100 mi</i></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b></div><div class="b g sm"><b>No place: online</b></div></div>
 <p class="sm">The service does four things in order, then answers once. Shops will appear together, not one by one.</p>
@@ -220,13 +261,13 @@ th{background:#eee}
 <div class="cap">3. Waiting, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST</span></div>
+<div class="b k"><b>Looking around Example City for a cordless drill.</b> Usually about 3 seconds. The slowest of 20 measured searches took about 5.</div>
 <div class="cols">
 <div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of zip area</i><i class="e1">nothing placed yet</i><i class="l1">10 mi</i><i class="l2">100 mi</i></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b></div><div class="b g sm"><b>No place: online</b></div></div>
 </div>
 <div>
-<div class="b k"><b>Looking around Example City for a cordless drill.</b> Usually about 3 seconds, at most about 5.</div>
 <p class="sm">The service does four things in order, then answers once. Shops will appear together, not one by one.</p>
 <ol class="sm"><li>Reads the product</li><li>Searches the web and nearby places</li><li>Judges which results are shops that sell it</li><li>Scores them</li></ol>
 </div>
@@ -237,7 +278,8 @@ th{background:#eee}
 <!-- ===================== 4 RESULTS ===================== -->
 <section class="state" id="s4">
 <h2>4. Results of both kinds</h2>
-<div class="note">Zones run from the center outward: nearby, position not listed, farther, no place. The shop with the highest score (number 1) is online here, so it sits in the last zone. That is the cost of the lens; the numbers and "Order: score" keep the single order reachable. A solid mark means the shop likely sells it or names it in a listing; a dashed mark means possibly. Marks never show good or bad.</div>
+<div class="note">Zones run from the center outward: nearby, position not listed, farther, no place. The shop with the highest score (number 1) is online here, so it sits in the last zone. That is the cost of the lens; the numbers and "Order: score" keep the single order reachable. The five sells-it levels are drawn as two mark styles. Solid: product named in the shop's listing, only its category named, or judged likely. Dashed: judged possible, or not confirmed. The row always states the exact level in words. Marks never show good or bad.</div>
+<div class="note"><b>What a mark or a name does.</b> A mark on the plan and the underlined shop name on a row do the same thing: open that shop's card (frame 6). Neither goes to the shop's website; that is a button on the card. <b>Crowded marks (rule, not drawn).</b> Up to 10 nearby shops can fall inside the inner circle, which is 124 px across at 360 px. Marks that would overlap each other are drawn as one mark with the lowest number and a plus (for example 4+); it opens a short list of the shops it stands for. A shop at the center of the zip area is drawn beside the black square, never on it. The list under the plan always has every shop on its own row, so nothing depends on the marks.</div>
 <div class="cap">4. Results of both kinds, 360 px</div>
 <div class="w360"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST <span class="lk">Change</span></span></div>
@@ -245,50 +287,50 @@ th{background:#eee}
 <p class="sm">Read as: cordless drill (power tools). Also looked for: drill driver, impact driver. <span class="lk">Search wording used</span></p>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
-<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 10 mi. Number: place in the order by score, 1 is highest. Dashed: possibly sells it. Nearby marks are right about 62 to 64% of the time, online 98%. Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span></div>
+<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 10 mi. Number: place in the order by score, 1 is highest. Solid mark: judged likely, or the product or its category is named in the shop's listing. Dashed mark: judged possible, or not confirmed. Each row says which. A mark or a shop name opens that shop's card (its reasons and sources); the shop's website is a button on the card. A mark with a plus, such as 4+, stands for several shops too close to draw apart and opens a short list of them. A boxed tag is a certification or a concern. A "Chain" line in italics is a fact about size only, neither praise nor criticism, and never changes the score. In tests 62 to 64% of nearby shops shown really sold the product, and 98% of online shops; no separate figure exists for farther shops. Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
 <div class="b sm">Order: <b>[by place]</b> · <span class="lk">score</span> · <span class="lk">distance</span> · <span class="lk">name</span><br>Show zones: [x] nearby [x] farther [x] online<br>[ ] only shops with a certification</div>
 <div class="z"><b>Within 10 miles</b> of the center of your zip area · 5 shops<br><span class="sm">"Sells it" is a judgment from the kind of shop, not a stock check. Call first.</span></div>
 <div class="r"><b class="m">2</b><div><b class="lk">Example Hardware Co-op</b><br>4.0 mi NE · 12 Example St<br>Likely sells it<br><span class="t">Certification: worker co-op</span></div><div class="sc">0.68</div></div>
 <div class="r"><b class="m">4</b><div><b class="lk">Example Street Hardware</b><br>3.1 mi W · 480 Example Ave<br>Likely sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.61</div></div>
-<div class="r"><b class="m">5</b><div><b class="lk">Example Builders Supply</b><br>4.6 mi S · 9 Example Rd<br>Likely sells it<br><span class="t">Chain: 195 stores</span></div><div class="sc">0.60</div></div>
-<div class="r"><b class="m">7</b><div><b class="lk">Example Big Box Stores</b><br>6.8 mi SE · 2100 Example Pkwy<br>Likely sells it<br><span class="t">Chain: more than 1,200 stores</span><span class="t">Concern: 1, labor, 2023</span></div><div class="sc">0.51</div></div>
+<div class="r"><b class="m">5</b><div><b class="lk">Example Builders Supply</b><br>4.6 mi S · 9 Example Rd<br>Likely sells it<br><span class="ch">Chain: 195 stores (size only, not scored)</span></div><div class="sc">0.60</div></div>
+<div class="r"><b class="m">7</b><div><b class="lk">Example Big Box Stores</b><br>6.8 mi SE · 2100 Example Pkwy<br>Likely sells it<br><span class="ch">Chain: more than 1,200 stores (size only, not scored)</span><span class="t">Concern: 1, labor, 2023</span></div><div class="sc">0.51</div></div>
 <div class="r"><b class="m q">8</b><div><b class="lk">Example General Store</b><br>8.3 mi E · street address not listed<br>Possibly sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.50</div></div>
 <div class="z"><b>Nearby, position not listed</b> · 1 shop</div>
 <div class="r"><b class="m q">10</b><div><b class="lk">Example Corner Variety</b><br>Distance unknown · 31 Example Ln<br>Possibly sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.40</div></div>
 <div class="z"><b>10 to 100 miles</b> · 1 shop</div>
 <div class="r"><b class="m">9</b><div><b class="lk">Example Farm and Ranch</b><br>38 mi N · 7 Example Hwy, Example Falls<br>Likely sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.48</div></div>
-<div class="z"><b>No place: online</b> · 3 shops · reach you anywhere<br><span class="sm">Taken from the shop's own listing. Counted as a middle distance in the score.</span></div>
+<div class="z"><b>No place: online</b> · 3 shops · no address, no distance<br><span class="sm">Taken from the shop's own listing. Counted as a middle distance in the score.</span></div>
 <div class="r"><b class="m">1</b><div><b class="lk">Example Tool Works</b><br>Online · listing: "18V cordless drill kit"<br>Product named in its listing<br><span class="t">Certification: B Corp</span></div><div class="sc">0.70</div></div>
 <div class="r"><b class="m">3</b><div><b class="lk">Example Outfitters Online</b><br>Online · listing: "Cordless drill, 2 batteries"<br>Product named in its listing<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.63</div></div>
 <div class="r"><b class="m">6</b><div><b class="lk">Example Home Goods Online</b><br>Online · listing title not given<br>Only the category is named: power tools<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.58</div></div>
-<p class="sm"><b>Left off the plan: 14 sites.</b> 6 not a shop, 4 do not sell it, 2 too far, 1 third branch of one company, 1 outside the top 10. 0 returned results went unjudged. <span class="lk">List them</span></p>
+<p class="sm"><b>Left off the plan: 14 sites.</b> 7 not a shop, 4 do not sell it, 2 too far, 1 third branch of one company. 0 returned results went unjudged. <span class="lk">List them</span></p>
 <p class="sm">This search: 5 web lookups, about $0.023. <span class="lk">Where it went</span></p>
 </div></div>
 <div class="cap">4. Results of both kinds, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST <span class="lk">Change product or place</span></span></div>
+<p><b>5 shops within 10 miles, 1 nearby with no listed position, 1 farther, 3 online.</b> <span class="sm">Read as: cordless drill (power tools). Also looked for: drill driver, impact driver. <span class="lk">Search wording used</span></span></p>
 <div class="cols">
 <div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
-<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 10 mi. Number: place in the order by score, 1 is highest. Dashed: possibly sells it. Nearby marks are right about 62 to 64% of the time, online 98%. Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span></div>
-<p class="sm"><b>Left off the plan: 14 sites.</b> 6 not a shop, 4 do not sell it, 2 too far, 1 third branch of one company, 1 outside the top 10. 0 returned results went unjudged. <span class="lk">List them</span></p>
+<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 10 mi. Number: place in the order by score, 1 is highest. Solid mark: judged likely, or the product or its category is named in the shop's listing. Dashed mark: judged possible, or not confirmed. Each row says which. A mark or a shop name opens that shop's card (its reasons and sources); the shop's website is a button on the card. A mark with a plus, such as 4+, stands for several shops too close to draw apart and opens a short list of them. A boxed tag is a certification or a concern. A "Chain" line in italics is a fact about size only, neither praise nor criticism, and never changes the score. In tests 62 to 64% of nearby shops shown really sold the product, and 98% of online shops; no separate figure exists for farther shops. Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
+<p class="sm"><b>Left off the plan: 14 sites.</b> 7 not a shop, 4 do not sell it, 2 too far, 1 third branch of one company. 0 returned results went unjudged. <span class="lk">List them</span></p>
 <p class="sm">This search: 5 web lookups, about $0.023. <span class="lk">Where it went</span></p>
 </div>
 <div>
-<p><b>5 shops within 10 miles, 1 nearby with no listed position, 1 farther, 3 online.</b> <span class="sm">Read as: cordless drill (power tools). Also looked for: drill driver, impact driver. <span class="lk">Search wording used</span></span></p>
 <div class="b sm">Order: <b>[by place]</b> · <span class="lk">score</span> · <span class="lk">distance</span> · <span class="lk">name</span> &nbsp; Show zones: [x] nearby [x] farther [x] online &nbsp; [ ] only shops with a certification</div>
 <div class="z"><b>Within 10 miles</b> of the center of your zip area · 5 shops · <span class="sm">"Sells it" is a judgment from the kind of shop, not a stock check. Call first.</span></div>
 <div class="r"><b class="m">2</b><div><b class="lk">Example Hardware Co-op</b> · 4.0 mi NE · 12 Example St<br>Likely sells it <span class="t">Certification: worker co-op</span></div><div class="sc">0.68</div></div>
 <div class="r"><b class="m">4</b><div><b class="lk">Example Street Hardware</b> · 3.1 mi W · 480 Example Ave<br>Likely sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.61</div></div>
-<div class="r"><b class="m">5</b><div><b class="lk">Example Builders Supply</b> · 4.6 mi S · 9 Example Rd<br>Likely sells it <span class="t">Chain: 195 stores</span></div><div class="sc">0.60</div></div>
-<div class="r"><b class="m">7</b><div><b class="lk">Example Big Box Stores</b> · 6.8 mi SE · 2100 Example Pkwy<br>Likely sells it <span class="t">Chain: more than 1,200 stores</span><span class="t">Concern: 1, labor, 2023</span></div><div class="sc">0.51</div></div>
+<div class="r"><b class="m">5</b><div><b class="lk">Example Builders Supply</b> · 4.6 mi S · 9 Example Rd<br>Likely sells it <span class="ch">Chain: 195 stores (size only, not scored)</span></div><div class="sc">0.60</div></div>
+<div class="r"><b class="m">7</b><div><b class="lk">Example Big Box Stores</b> · 6.8 mi SE · 2100 Example Pkwy<br>Likely sells it <span class="ch">Chain: more than 1,200 stores (size only, not scored)</span><span class="t">Concern: 1, labor, 2023</span></div><div class="sc">0.51</div></div>
 <div class="r"><b class="m q">8</b><div><b class="lk">Example General Store</b> · 8.3 mi E · street address not listed<br>Possibly sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.50</div></div>
 <div class="z"><b>Nearby, position not listed</b> · 1 shop</div>
 <div class="r"><b class="m q">10</b><div><b class="lk">Example Corner Variety</b> · distance unknown · 31 Example Ln<br>Possibly sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.40</div></div>
 <div class="z"><b>10 to 100 miles</b> · 1 shop</div>
 <div class="r"><b class="m">9</b><div><b class="lk">Example Farm and Ranch</b> · 38 mi N · 7 Example Hwy, Example Falls<br>Likely sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.48</div></div>
-<div class="z"><b>No place: online</b> · 3 shops · reach you anywhere · <span class="sm">Taken from the shop's own listing. Counted as a middle distance in the score.</span></div>
+<div class="z"><b>No place: online</b> · 3 shops · no address, no distance · <span class="sm">Taken from the shop's own listing. Counted as a middle distance in the score.</span></div>
 <div class="r"><b class="m">1</b><div><b class="lk">Example Tool Works</b> · online · listing: "18V cordless drill kit"<br>Product named in its listing <span class="t">Certification: B Corp</span></div><div class="sc">0.70</div></div>
 <div class="r"><b class="m">3</b><div><b class="lk">Example Outfitters Online</b> · online · listing: "Cordless drill, 2 batteries"<br>Product named in its listing <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.63</div></div>
 <div class="r"><b class="m">6</b><div><b class="lk">Example Home Goods Online</b> · online · listing title not given<br>Only the category is named: power tools <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.58</div></div>
@@ -307,36 +349,46 @@ th{background:#eee}
 <div class="b k"><b>Nothing found within 30 miles.</b> 2 shops between 30 and 100 miles. 4 online.</div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e1">none found</i><i class="l1">30 mi</i><i class="l2">100 mi</i><b class="m t4">4</b><b class="m q t6">6</b></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b><br>none</div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">2</b> <b class="m">3</b> <b class="m">5</b></div></div>
+<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 30 mi. Number: place in the order by score, 1 is highest. Solid mark: judged likely, or the product or its category is named in the shop's listing. Dashed mark: judged possible, or not confirmed. A mark or a shop name opens that shop's card; the shop's website is a button on the card. In tests 98% of online shops shown really sold the product. The two marks here are farther shops, for which no separate figure exists (nearby shops: 62 to 64%). Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
 <div class="b sm"><b>Why so little?</b>
 <ul><li><b>Your place:</b> Example Township is a rural zip area, so nearby already means 30 miles, not 10. The two farther shops are the nearest found.</li><li><b>The site's reach:</b> in tests it found about a third (33 to 35%) of the good nearby shops. A shop near you can exist and be missing.</li><li><b>Your wording:</b> read as "cordless drill (power tools)". A shorter or more general name may find more.</li></ul>
-<span class="btn s">Change the product</span><span class="btn s">Change the place</span></div>
+<span class="btn s">Change the product</span><span class="btn s">Change the place</span>
+<p class="sm">Either one opens the form with both fields still filled in (frame 2c).</p></div>
+<div class="b sm">Order: <b>[by place]</b> · <span class="lk">score</span> · <span class="lk">distance</span> · <span class="lk">name</span><br>Show zones: [x] nearby [x] farther [x] online<br>[ ] only shops with a certification</div>
 <div class="z"><b>Within 30 miles</b> · none found</div>
 <div class="z"><b>30 to 100 miles</b> · 2 shops</div>
 <div class="r"><b class="m">4</b><div><b class="lk">Example Farm and Ranch</b><br>41 mi NW · 7 Example Hwy, Example Falls<br>Likely sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.48</div></div>
 <div class="r"><b class="m q">6</b><div><b class="lk">Example Feed and Supply</b><br>67 mi S · 3 Example Rd, Example Junction<br>Possibly sells it<br><span class="sm">Nothing found, for or against</span></div><div class="sc">0.40</div></div>
-<div class="z"><b>No place: online</b> · 4 shops · reach you anywhere</div>
+<div class="z"><b>No place: online</b> · 4 shops · no address, no distance</div>
 <div class="r"><b class="m">1</b><div><b class="lk">Example Tool Works</b><br>Online · listing: "18V cordless drill kit"<br>Product named in its listing<br><span class="t">Certification: B Corp</span></div><div class="sc">0.70</div></div>
 <div class="r"><b class="m">2</b><div><b class="lk">Example Outfitters Online</b><br>Online · Product named in its listing</div><div class="sc">0.63</div></div>
 <p class="sm">2 more online shops (3 and 5) follow in the same form.</p>
+<p class="sm"><b>Left off the plan: 9 sites.</b> 5 not a shop, 3 do not sell it, 1 too far. 0 returned results went unjudged. <span class="lk">List them</span></p>
+<p class="sm">This search: 4 web lookups, about $0.023. <span class="lk">Where it went</span></p>
 </div></div>
 <div class="cap">5. Thin result (nothing nearby), 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example Township, ST <span class="lk">Change product or place</span></span></div>
+<div class="b k"><b>Nothing found within 30 miles.</b> 2 shops between 30 and 100 miles. 4 online.</div>
 <div class="cols">
 <div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e1">none found</i><i class="l1">30 mi</i><i class="l2">100 mi</i><b class="m t4">4</b><b class="m q t6">6</b></div>
 <div class="off"><div class="b sm"><b>Nearby, position not listed</b><br>none</div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">2</b> <b class="m">3</b> <b class="m">5</b></div></div>
+<div class="b sm"><b>Legend.</b> Black square: center of your zip area, not you. Miles are straight lines from it. Not to scale beyond 30 mi. Number: place in the order by score, 1 is highest. Solid mark: judged likely, or the product or its category is named in the shop's listing. Dashed mark: judged possible, or not confirmed. A mark or a shop name opens that shop's card; the shop's website is a button on the card. In tests 98% of online shops shown really sold the product. The two marks here are farther shops, for which no separate figure exists (nearby shops: 62 to 64%). Never on this plan: Amazon or any business it owns or has owned. <span class="lk">Limits</span> · <span class="lk">Where this search went, and its cost</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
+<p class="sm"><b>Left off the plan: 9 sites.</b> 5 not a shop, 3 do not sell it, 1 too far. 0 returned results went unjudged. <span class="lk">List them</span></p>
+<p class="sm">This search: 4 web lookups, about $0.023. <span class="lk">Where it went</span></p>
 </div>
 <div>
-<div class="b k"><b>Nothing found within 30 miles.</b> 2 shops between 30 and 100 miles. 4 online.</div>
 <div class="b sm"><b>Why so little?</b>
 <ul><li><b>Your place:</b> Example Township is a rural zip area, so nearby already means 30 miles, not 10. The two farther shops are the nearest found.</li><li><b>The site's reach:</b> in tests it found about a third (33 to 35%) of the good nearby shops. A shop near you can exist and be missing.</li><li><b>Your wording:</b> read as "cordless drill (power tools)". A shorter or more general name may find more.</li></ul>
-<span class="btn s">Change the product</span><span class="btn s">Change the place</span></div>
+<span class="btn s">Change the product</span><span class="btn s">Change the place</span>
+<p class="sm">Either one opens the form with both fields still filled in (frame 2c).</p></div>
+<div class="b sm">Order: <b>[by place]</b> · <span class="lk">score</span> · <span class="lk">distance</span> · <span class="lk">name</span> &nbsp; Show zones: [x] nearby [x] farther [x] online &nbsp; [ ] only shops with a certification</div>
 <div class="z"><b>Within 30 miles</b> · none found</div>
 <div class="z"><b>30 to 100 miles</b> · 2 shops</div>
 <div class="r"><b class="m">4</b><div><b class="lk">Example Farm and Ranch</b> · 41 mi NW · 7 Example Hwy, Example Falls<br>Likely sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.48</div></div>
 <div class="r"><b class="m q">6</b><div><b class="lk">Example Feed and Supply</b> · 67 mi S · 3 Example Rd, Example Junction<br>Possibly sells it <span class="sm">· Nothing found, for or against</span></div><div class="sc">0.40</div></div>
-<div class="z"><b>No place: online</b> · 4 shops · reach you anywhere</div>
+<div class="z"><b>No place: online</b> · 4 shops · no address, no distance</div>
 <div class="r"><b class="m">1</b><div><b class="lk">Example Tool Works</b> · online · listing: "18V cordless drill kit"<br>Product named in its listing <span class="t">Certification: B Corp</span></div><div class="sc">0.70</div></div>
 <div class="r"><b class="m">2</b><div><b class="lk">Example Outfitters Online</b> · online · Product named in its listing</div><div class="sc">0.63</div></div>
 <p class="sm">2 more online shops (3 and 5) follow in the same form.</p>
@@ -344,7 +396,7 @@ th{background:#eee}
 </div>
 </div></div></div>
 
-<div class="cap">5b. Empty result and the other thin cases, 360 px (alternative messages for the box at the top of frame 5; the plan stays drawn in each)</div>
+<div class="cap">5b. Empty result and the other thin cases, 360 px (alternative messages for the box at the top of frame 5; the plan, legend, controls, left-off summary and cost line of frame 5 stay in each)</div>
 <div class="w360"><div class="scr">
 <div class="b k"><b>Nothing matched "left-handed cordless drill chuck key".</b> No shop was found in any zone, near or online. A shorter or more general name may work, for example the kind of thing it is.<br><span class="btn s">Change the product</span></div>
 <div class="b k"><b>No online shops found.</b> 3 shops within 10 miles are on the plan. The "No place" strip is empty.</div>
@@ -368,7 +420,7 @@ th{background:#eee}
 <div class="note">The card starts with where the shop is and how to get there, then whether it sells the product, then the score. Closeness is the first line of the score table because of the lens; its weight (0.15) is printed beside it so the order of lines does not overstate it.</div>
 <div class="cap">6. Shop opened, 360 px</div>
 <div class="w360"><div class="scr">
-<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST</span></div>
+<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST <span class="lk">Change</span></span></div>
 <h3><b class="m on">2</b> Example Hardware Co-op</h3>
 <p>Number 2 of 10 by score (0.68). Zone: within 10 miles.</p>
 <div class="b"><b>Where it is</b>
@@ -376,7 +428,8 @@ th{background:#eee}
 <p>12 Example St, Example City, ST</p>
 <p class="sm">4.0 miles is measured from the center of your zip area, not from you, and not along roads.</p>
 <span class="btn s">Copy address</span><span class="btn s">Shop's website</span>
-<p class="sm">The shop is not told you came from here. <span class="lk">Open in your device's map app</span>: your choice; that app then learns this shop's address, not your zip.</p></div>
+<p class="sm">The shop is not told you came from here.</p>
+<p class="sm"><b>Leaves this site, only if you choose it:</b> <span class="lk">Open in your device's map app</span>. That app is an outside party under its own policy. This page hands it the shop's address and nothing else, never your zip. A map app normally also knows your device's location and may know who you are. (Wireframe note: a cost the operator has to accept, or remove the link.)</p></div>
 <div class="b"><b>Does it sell a cordless drill?</b> Likely.
 <p class="sm">A judgment from the shop's name and kind, not a stock check. In tests, 80% of nearby shops at this level really sold the product (53 of 66). The shop may also not exist at this address. Call first.</p></div>
 <div class="b"><b>Why it is number 2</b>
@@ -389,7 +442,7 @@ th{background:#eee}
 <p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
 <div class="b"><b>What is known, and who says so</b>
 <p><span class="t">Certification: worker co-op</span><br>Source: Example Worker Co-op Federation, member list. Checked 2026-08-14. <span class="lk">Open source</span> · <span class="lk">Dispute</span></p>
-<p><b>Concerns:</b> none found in the 14 accepted sources. That is the common case.</p>
+<p><b>Concerns:</b> none in our set. The set is small and hand-built from 14 accepted sources; this shop was not looked up in each of them. So this means "nothing on file", not "checked and clear".</p>
 <p><b>Chain:</b> no chain fact. This shop is not in our set of 41 chains. That does not prove it is independent. <span class="lk">Dispute</span></p></div>
 </div></div>
 <div class="cap">6. Shop opened, 1280 px</div>
@@ -411,7 +464,8 @@ th{background:#eee}
 <p>12 Example St, Example City, ST</p>
 <p class="sm">4.0 miles is measured from the center of your zip area, not from you, and not along roads.</p>
 <span class="btn s">Copy address</span><span class="btn s">Shop's website</span>
-<p class="sm">The shop is not told you came from here. <span class="lk">Open in your device's map app</span>: your choice; that app then learns this shop's address, not your zip.</p></div>
+<p class="sm">The shop is not told you came from here.</p>
+<p class="sm"><b>Leaves this site, only if you choose it:</b> <span class="lk">Open in your device's map app</span>. That app is an outside party under its own policy. This page hands it the shop's address and nothing else, never your zip. A map app normally also knows your device's location and may know who you are. (Wireframe note: a cost the operator has to accept, or remove the link.)</p></div>
 <div class="b"><b>Does it sell a cordless drill?</b> Likely.
 <p class="sm">A judgment from the shop's name and kind, not a stock check. In tests, 80% of nearby shops at this level really sold the product (53 of 66). The shop may also not exist at this address. Call first.</p></div>
 </div>
@@ -426,14 +480,142 @@ th{background:#eee}
 <p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
 <div class="b"><b>What is known, and who says so</b>
 <p><span class="t">Certification: worker co-op</span><br>Source: Example Worker Co-op Federation, member list. Checked 2026-08-14. <span class="lk">Open source</span> · <span class="lk">Dispute</span></p>
-<p><b>Concerns:</b> none found in the 14 accepted sources. That is the common case.</p>
+<p><b>Concerns:</b> none in our set. The set is small and hand-built from 14 accepted sources; this shop was not looked up in each of them. So this means "nothing on file", not "checked and clear".</p>
 <p><b>Chain:</b> no chain fact. This shop is not in our set of 41 chains. That does not prove it is independent. <span class="lk">Dispute</span></p></div>
 </div>
 </div>
 </div>
 </div>
 </div></div></div>
-<div class="note"><b>An online shop opened (not drawn).</b> Same card. "Where it is" reads: No place: online. No address, no distance. The first button is "Open the listing on the shop's website". The first line of the score table reads: How close (0.15), online, a fixed middle value.</div>
+<div class="note"><b>6b.</b> An online shop opened: the same card. "Where it is" says the shop has no place, the button goes to the listing, and the first score line says how an online shop counts for closeness. Which conduct part a B Corp certification raises is a placeholder here.</div>
+<div class="cap">6b. Online shop opened, 360 px</div>
+<div class="w360"><div class="scr">
+<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST <span class="lk">Change</span></span></div>
+<h3><b class="m on">1</b> Example Tool Works</h3>
+<p>Number 1 of 10 by score (0.70). Zone: no place, online.</p>
+<div class="b g"><b>Where it is</b>
+<p>No place: online. No street address and no distance.</p>
+<p>Found at: the shop's own listing, "18V cordless drill kit".</p>
+<span class="btn s">Open the listing on the shop's website</span>
+<p class="sm">The shop is not told you came from here. This page does not know where the shop delivers; the shop's site says.</p></div>
+<div class="b"><b>Does it sell a cordless drill?</b> The product is named in its listing.
+<p class="sm">Read from the listing's text, not a stock check. In tests, 98% of online shops shown really sold the product or a close equivalent.</p></div>
+<div class="b"><b>Why it is number 1</b>
+<table><tr><th>Part (weight)</th><th>What is known</th><th>Adds</th></tr>
+<tr><td>How close (0.15)</td><td>Online: a fixed middle value, 0.50, the same for every online shop</td><td>0.075</td></tr>
+<tr><td>Sells it (0.25)</td><td>Product named in the listing; value 1.00</td><td>0.250</td></tr>
+<tr><td>Treats people (0.30)</td><td>1 certification, no concern; value 0.75</td><td>0.225</td></tr>
+<tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><th colspan="2">Score</th><th>0.700</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
+<div class="b"><b>What is known, and who says so</b>
+<p><span class="t">Certification: B Corp</span><br>Source: Example B Corp Directory, the certifier's own page. Checked 2026-08-20. <span class="lk">Open source</span> · <span class="lk">Dispute</span></p>
+<p><b>Concerns:</b> none in our set. The set is small and hand-built from 14 accepted sources; this shop was not looked up in each of them. So this means "nothing on file", not "checked and clear".</p>
+<p><b>Chain:</b> no chain fact. This shop is not in our set of 41 chains. That does not prove it is independent. <span class="lk">Dispute</span></p></div>
+</div></div>
+<div class="cap">6b. Online shop opened, 1280 px</div>
+<div class="wide"><div class="w1280"><div class="scr">
+<div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST <span class="lk">Change product or place</span></span></div>
+<div class="cols">
+<div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
+<div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m on">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
+<p class="sm">The opened shop is the filled mark, in the "No place" strip. <span class="lk">Back to the list</span></p>
+</div>
+<div>
+<h3><b class="m on">1</b> Example Tool Works</h3>
+<p>Number 1 of 10 by score (0.70). Zone: no place, online.</p>
+<div class="two">
+<div>
+<div class="b g"><b>Where it is</b>
+<p>No place: online. No street address and no distance.</p>
+<p>Found at: the shop's own listing, "18V cordless drill kit".</p>
+<span class="btn s">Open the listing on the shop's website</span>
+<p class="sm">The shop is not told you came from here. This page does not know where the shop delivers; the shop's site says.</p></div>
+<div class="b"><b>Does it sell a cordless drill?</b> The product is named in its listing.
+<p class="sm">Read from the listing's text, not a stock check. In tests, 98% of online shops shown really sold the product or a close equivalent.</p></div>
+</div>
+<div>
+<div class="b"><b>Why it is number 1</b>
+<table><tr><th>Part (weight)</th><th>What is known</th><th>Adds</th></tr>
+<tr><td>How close (0.15)</td><td>Online: a fixed middle value, 0.50, the same for every online shop</td><td>0.075</td></tr>
+<tr><td>Sells it (0.25)</td><td>Product named in the listing; value 1.00</td><td>0.250</td></tr>
+<tr><td>Treats people (0.30)</td><td>1 certification, no concern; value 0.75</td><td>0.225</td></tr>
+<tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><th colspan="2">Score</th><th>0.700</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
+<div class="b"><b>What is known, and who says so</b>
+<p><span class="t">Certification: B Corp</span><br>Source: Example B Corp Directory, the certifier's own page. Checked 2026-08-20. <span class="lk">Open source</span> · <span class="lk">Dispute</span></p>
+<p><b>Concerns:</b> none in our set. The set is small and hand-built from 14 accepted sources; this shop was not looked up in each of them. So this means "nothing on file", not "checked and clear".</p>
+<p><b>Chain:</b> no chain fact. This shop is not in our set of 41 chains. That does not prove it is independent. <span class="lk">Dispute</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+
+<div class="note"><b>6c.</b> A shop whose distance is unknown. The inventory does not say how an unknown distance counts in the score. The wireframe draws it as adding nothing (a placeholder), which is why the line has to be explained in words. If the real rule differs, only the first table line changes.</div>
+<div class="cap">6c. Shop opened, distance unknown, 360 px</div>
+<div class="w360"><div class="scr">
+<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST <span class="lk">Change</span></span></div>
+<h3><b class="m q on">10</b> Example Corner Variety</h3>
+<p>Number 10 of 10 by score (0.40). Zone: nearby, position not listed.</p>
+<div class="b"><b>Where it is</b>
+<p>31 Example Ln, Example City, ST</p>
+<p class="sm"><b>Distance unknown.</b> The shop's listing gives no position, so it cannot be placed on the plan and no miles can be given. It was returned as a nearby shop.</p>
+<span class="btn s">Copy address</span><span class="btn s">Shop's website</span>
+<p class="sm">The shop is not told you came from here.</p></div>
+<div class="b"><b>Does it sell a cordless drill?</b> Possibly.
+<p class="sm">A judgment from the shop's name and kind, not a stock check. In tests, 40% of nearby shops at this level really sold the product (58 of 146). The shop may also not exist at this address. Call first.</p></div>
+<div class="b"><b>Why it is number 10</b>
+<table><tr><th>Part (weight)</th><th>What is known</th><th>Adds</th></tr>
+<tr><td>How close (0.15)</td><td>Distance unknown, so this part adds nothing. That is missing data about position, not a finding about the shop</td><td>0.000</td></tr>
+<tr><td>Sells it (0.25)</td><td>Judged possible; value 0.40</td><td>0.100</td></tr>
+<tr><td>Treats people (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><th colspan="2">Score</th><th>0.400</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
+<div class="b"><b>What is known, and who says so</b>
+<p>Certifications: none in our set. Concerns: none in our set (nothing on file, not "checked and clear"). Chain: no chain fact, which does not prove it is independent. <span class="lk">Dispute</span></p></div>
+</div></div>
+<div class="cap">6c. Shop opened, distance unknown, 1280 px</div>
+<div class="wide"><div class="w1280"><div class="scr">
+<div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST <span class="lk">Change product or place</span></span></div>
+<div class="cols">
+<div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="l1">10 mi</i><i class="l2">100 mi</i><b class="m k2">2</b><b class="m k4">4</b><b class="m k5">5</b><b class="m k7">7</b><b class="m q k8">8</b><b class="m k9">9</b></div>
+<div class="off"><div class="b sm"><b>Nearby, position not listed</b><br><b class="m q on">10</b></div><div class="b g sm"><b>No place: online</b><br><b class="m">1</b> <b class="m">3</b> <b class="m">6</b></div></div>
+<p class="sm">The opened shop is the filled mark, in the "position not listed" strip. <span class="lk">Back to the list</span></p>
+</div>
+<div>
+<h3><b class="m q on">10</b> Example Corner Variety</h3>
+<p>Number 10 of 10 by score (0.40). Zone: nearby, position not listed.</p>
+<div class="two">
+<div>
+<div class="b"><b>Where it is</b>
+<p>31 Example Ln, Example City, ST</p>
+<p class="sm"><b>Distance unknown.</b> The shop's listing gives no position, so it cannot be placed on the plan and no miles can be given. It was returned as a nearby shop.</p>
+<span class="btn s">Copy address</span><span class="btn s">Shop's website</span>
+<p class="sm">The shop is not told you came from here.</p></div>
+<div class="b"><b>Does it sell a cordless drill?</b> Possibly.
+<p class="sm">A judgment from the shop's name and kind, not a stock check. In tests, 40% of nearby shops at this level really sold the product (58 of 146). The shop may also not exist at this address. Call first.</p></div>
+</div>
+<div>
+<div class="b"><b>Why it is number 10</b>
+<table><tr><th>Part (weight)</th><th>What is known</th><th>Adds</th></tr>
+<tr><td>How close (0.15)</td><td>Distance unknown, so this part adds nothing. That is missing data about position, not a finding about the shop</td><td>0.000</td></tr>
+<tr><td>Sells it (0.25)</td><td>Judged possible; value 0.40</td><td>0.100</td></tr>
+<tr><td>Treats people (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50. Unknown is not bad</td><td>0.150</td></tr>
+<tr><th colspan="2">Score</th><th>0.400</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
+<div class="b"><b>What is known, and who says so</b>
+<p>Certifications: none in our set. Concerns: none in our set (nothing on file, not "checked and clear"). Chain: no chain fact, which does not prove it is independent. <span class="lk">Dispute</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
 </section>
 
 <!-- ===================== 7 CONCERN AND DISPUTE ===================== -->
@@ -442,7 +624,7 @@ th{background:#eee}
 <div class="note">The place question for a concern is "what is this about": the shop's own company or a related company. It is answered before the claim's cost to the score. The dispute path is drawn as a route with its places named, because two of its steps leave this site.</div>
 <div class="cap">7. Concern and dispute path, 360 px</div>
 <div class="w360"><div class="scr">
-<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST</span></div>
+<div class="bar"><span class="lk">Back to the plan</span><span>cordless drill, Example City, ST <span class="lk">Change</span></span></div>
 <h3><b class="m on">7</b> Example Big Box Stores</h3>
 <p>Number 7 of 10 by score (0.51). 6.8 mi SE · 2100 Example Pkwy. Likely sells it.</p>
 <div class="b"><b>Chain fact</b> (a fact about size; not praise, not criticism; does not change the score)
@@ -465,7 +647,8 @@ th{background:#eee}
 <tr><td>Sells it (0.25)</td><td>Judged likely; value 0.70</td><td>0.175</td></tr>
 <tr><td>Treats people (0.30)</td><td>1 concern (above); value 0.25</td><td>0.075</td></tr>
 <tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50</td><td>0.150</td></tr>
-<tr><th colspan="2">Score</th><th>0.509</th></tr></table></div>
+<tr><th colspan="2">Score</th><th>0.509</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
 </div></div>
 <div class="cap">7. Concern and dispute path, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
@@ -501,7 +684,8 @@ th{background:#eee}
 <tr><td>Sells it (0.25)</td><td>Judged likely; value 0.70</td><td>0.175</td></tr>
 <tr><td>Treats people (0.30)</td><td>1 concern (left); value 0.25</td><td>0.075</td></tr>
 <tr><td>Treats the planet (0.30)</td><td>Nothing found: the middle, 0.50</td><td>0.150</td></tr>
-<tr><th colspan="2">Score</th><th>0.509</th></tr></table></div>
+<tr><th colspan="2">Score</th><th>0.509</th></tr></table>
+<p class="sm">The same four weights apply to every search. <span class="lk">How the order works</span> · <span class="lk">Dispute any line</span></p></div>
 </div>
 </div>
 </div>
@@ -543,13 +727,14 @@ th{background:#eee}
 <!-- ===================== 8 TRUST ===================== -->
 <section class="state" id="s8">
 <h2>8. Trust: what the plan gets wrong, zone by zone</h2>
-<div class="note">Reached from the legend under every plan. Accuracy is stated per zone because it differs by zone, and the zone is what the visitor is looking at when the doubt arises. The exclusion is described as a zone that is never drawn.</div>
+<div class="note">Reached from the legend under every plan that holds results, and from the arriving frame.Accuracy is stated per zone because it differs by zone, and the zone is what the visitor is looking at when the doubt arises. The exclusion is described as a zone that is never drawn.</div>
 <div class="cap">8. Trust, 360 px</div>
 <div class="w360"><div class="scr">
 <div class="bar"><span class="lk">Back to the plan</span><b>Limits of the plan</b></div>
 <h3>What the plan gets wrong, zone by zone</h3>
 <table><tr><th>Zone</th><th>Shops shown that really sold it</th><th>Good shops that we found</th></tr>
-<tr><td><b>Nearby and farther</b></td><td>62 to 64%. A shop that does not exist counts as wrong.<br>Marked likely: 80% (53 of 66).<br>Marked possibly: 40% (58 of 146).</td><td>33 to 35%</td></tr>
+<tr><td><b>Nearby</b> (within 10 or 30 miles)</td><td>62 to 64%. A shop that does not exist counts as wrong.<br>Marked likely: 80% (53 of 66).<br>Marked possibly: 40% (58 of 146).</td><td>33 to 35%</td></tr>
+<tr><td><b>Farther</b> (out to 100 miles)</td><td>No separate figure. The nearby figures were measured on nearby results.</td><td>No separate figure</td></tr>
 <tr><td><b>No place: online</b></td><td>98%</td><td>31%</td></tr></table>
 <p class="sm">Measured 2026-09-26 on 20 graded searches, each run twice; the two levels graded 2026-09-24. A later run (2026-09-29) measured 71% nearby and 98.4% online. <span class="lk">Raw evidence</span> · <span class="lk">Method</span></p>
 <div class="b"><b>Not reached.</b> Results come from one search index (Brave Search). Shops that block search crawlers, or that the index has not reached, are missing from every zone.</div>
@@ -562,7 +747,7 @@ th{background:#eee}
 <tr><td>Treats the planet</td><td>0.30</td><td>The same, with environmental certifications and concerns.</td></tr></table>
 <p class="sm">Most shops have nothing found, so they sit at the middle on both conduct parts and their order comes from the other two. A chain fact and membership of an independent retailer association never change the score. <span class="lk">Full method</span> · <span class="lk">The 14 accepted sources</span></p></div>
 <div class="b"><b>Nobody pays to be on the plan.</b> No paid placement, no affiliate links, no advertising.</div>
-<div class="b sm"><span class="lk">Dispute something</span> · <span class="lk">Known shortcuts</span> · <span class="lk">Source code (AGPL-3.0)</span> · Data credits: zip data from the US Census Bureau and GeoNames (CC BY 4.0)</div>
+<div class="b sm"><span class="lk">Where your search goes and what it costs</span> · <span class="lk">Dispute something</span> · <span class="lk">Known shortcuts</span> · <span class="lk">Source code (AGPL-3.0)</span> · Data credits: zip data from the US Census Bureau and GeoNames (CC BY 4.0)</div>
 </div></div>
 <div class="cap">8. Trust, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
@@ -571,7 +756,8 @@ th{background:#eee}
 <div class="two">
 <div>
 <table><tr><th>Zone</th><th>Shops shown that really sold it</th><th>Good shops that we found</th></tr>
-<tr><td><b>Nearby and farther</b></td><td>62 to 64%. A shop that does not exist counts as wrong.<br>Marked likely: 80% (53 of 66).<br>Marked possibly: 40% (58 of 146).</td><td>33 to 35%</td></tr>
+<tr><td><b>Nearby</b> (within 10 or 30 miles)</td><td>62 to 64%. A shop that does not exist counts as wrong.<br>Marked likely: 80% (53 of 66).<br>Marked possibly: 40% (58 of 146).</td><td>33 to 35%</td></tr>
+<tr><td><b>Farther</b> (out to 100 miles)</td><td>No separate figure. The nearby figures were measured on nearby results.</td><td>No separate figure</td></tr>
 <tr><td><b>No place: online</b></td><td>98%</td><td>31%</td></tr></table>
 <p class="sm">Measured 2026-09-26 on 20 graded searches, each run twice; the two levels graded 2026-09-24. A later run (2026-09-29) measured 71% nearby and 98.4% online. <span class="lk">Raw evidence</span> · <span class="lk">Method</span></p>
 <div class="b"><b>Not reached.</b> Results come from one search index (Brave Search). Shops that block search crawlers, or that the index has not reached, are missing from every zone.</div>
@@ -586,7 +772,7 @@ th{background:#eee}
 <tr><td>Treats people</td><td>0.30</td><td>Starts at the middle. Each ethics certification adds 0.25, capped. Each accepted labor or governance concern costs up to 0.25; less if small, amount not stated, case open, or about a related company. Small ones together cost at most 0.25.</td></tr>
 <tr><td>Treats the planet</td><td>0.30</td><td>The same, with environmental certifications and concerns.</td></tr></table>
 <p class="sm">Most shops have nothing found, so they sit at the middle on both conduct parts and their order comes from the other two. A chain fact and membership of an independent retailer association never change the score. <span class="lk">Full method</span> · <span class="lk">The 14 accepted sources</span></p></div>
-<div class="b sm"><span class="lk">Dispute something</span> · <span class="lk">Known shortcuts</span> · <span class="lk">Source code (AGPL-3.0)</span> · Data credits: zip data from the US Census Bureau and GeoNames (CC BY 4.0)</div>
+<div class="b sm"><span class="lk">Where your search goes and what it costs</span> · <span class="lk">Dispute something</span> · <span class="lk">Known shortcuts</span> · <span class="lk">Source code (AGPL-3.0)</span> · Data credits: zip data from the US Census Bureau and GeoNames (CC BY 4.0)</div>
 </div>
 </div>
 </div></div></div>
@@ -602,13 +788,14 @@ th{background:#eee}
 <h3>Where your search goes, and what it costs</h3>
 <div class="path">
 <div class="b k"><b>Place 1: your browser.</b> Stays here.
-<ul><li>Your zip. Never sent, never kept, never in the page address.</li><li>The last product you typed, until this tab closes.</li><li>The plan itself: drawn here from the zip.</li></ul></div>
+<ul><li>Your zip. Never sent, never stored, never in the page address. It sits in its field only while this page is open.</li><li>The last product you typed, until this tab closes.</li><li>The plan itself: drawn here from the zip.</li></ul></div>
 <div class="b"><b>Place 2: this site's service.</b> Sent, used once.
 <ul><li>The product; your city and state; the center of your zip area (rounded to about 0.6 mile); one of 10 rural-to-urban categories.</li><li>The search as a whole, the shops found and the scores are not stored.</li><li>Your IP address (for IPv6, its first half): held one minute by the rate limiter.</li><li>The log line says only worked or not, and how long. Not stored.</li><li><b>Kept 30 days:</b> how the product was read, shared by everyone who types the same product. In effect a list of products people searched for, with no place and no IP address.</li></ul></div>
 <div class="b g"><b>Place 3: outside parties.</b> Passed on, under each one's own policy.
 <ul><li><b>Brave Search:</b> search wording made from the product, and the center of your zip area. It learns the zip area of each search. Not your IP address.</li><li><b>OpenRouter and the model provider it routes to:</b> the product text, then titles and excerpts of results, which can name nearby towns. No location fields.</li><li><b>Cloudflare and GitHub Pages (hosts):</b> ordinary request records, including IP address.</li></ul></div>
 </div>
-<div class="b"><b>Nowhere else.</b> No accounts, cookies, analytics or tracking. The page loads nothing from any other party: no map service, no outside fonts. A shop learns nothing unless you follow its link, and then it is not told where you came from.</div>
+<div class="b"><b>Nowhere else.</b> No accounts, cookies, analytics or tracking. The page loads nothing from any other party: no map service, no outside fonts. A shop learns nothing unless you follow its link, and then it is not told where you came from.
+<p><b>One exit you can choose:</b> "Open in your device's map app" on a shop's card. The page loads nothing from that app. If you use the link, the app receives the shop's address, under its own policy; it normally also knows your device's location and may know who you are. This site never asks for either. (Wireframe note: an outside party the operator has to accept, or remove the link.)</p></div>
 <div class="b k"><b>What this search cost:</b> 5 web lookups, 9,100 language-model tokens, about $0.023.
 <p class="sm">The project pays per search; there is no fixed running cost. Nobody pays to be placed. <span class="lk">Public cost ledger</span></p></div>
 <p class="sm"><span class="lk">Full privacy document</span> · <span class="lk">Limits of the plan</span></p>
@@ -619,14 +806,15 @@ th{background:#eee}
 <h3>Where your search goes, and what it costs</h3>
 <div class="path">
 <div class="b k"><b>Place 1: your browser.</b> Stays here.
-<ul><li>Your zip. Never sent, never kept, never in the page address.</li><li>The last product you typed, until this tab closes.</li><li>The plan itself: drawn here from the zip.</li></ul></div>
+<ul><li>Your zip. Never sent, never stored, never in the page address. It sits in its field only while this page is open.</li><li>The last product you typed, until this tab closes.</li><li>The plan itself: drawn here from the zip.</li></ul></div>
 <div class="b"><b>Place 2: this site's service.</b> Sent, used once.
 <ul><li>The product; your city and state; the center of your zip area (rounded to about 0.6 mile); one of 10 rural-to-urban categories.</li><li>The search as a whole, the shops found and the scores are not stored.</li><li>Your IP address (for IPv6, its first half): held one minute by the rate limiter.</li><li>The log line says only worked or not, and how long. Not stored.</li><li><b>Kept 30 days:</b> how the product was read, shared by everyone who types the same product. In effect a list of products people searched for, with no place and no IP address.</li></ul></div>
 <div class="b g"><b>Place 3: outside parties.</b> Passed on, under each one's own policy.
 <ul><li><b>Brave Search:</b> search wording made from the product, and the center of your zip area. It learns the zip area of each search. Not your IP address.</li><li><b>OpenRouter and the model provider it routes to:</b> the product text, then titles and excerpts of results, which can name nearby towns. No location fields.</li><li><b>Cloudflare and GitHub Pages (hosts):</b> ordinary request records, including IP address.</li></ul></div>
 </div>
 <div class="two">
-<div class="b"><b>Nowhere else.</b> No accounts, cookies, analytics or tracking. The page loads nothing from any other party: no map service, no outside fonts. A shop learns nothing unless you follow its link, and then it is not told where you came from.</div>
+<div class="b"><b>Nowhere else.</b> No accounts, cookies, analytics or tracking. The page loads nothing from any other party: no map service, no outside fonts. A shop learns nothing unless you follow its link, and then it is not told where you came from.
+<p><b>One exit you can choose:</b> "Open in your device's map app" on a shop's card. The page loads nothing from that app. If you use the link, the app receives the shop's address, under its own policy; it normally also knows your device's location and may know who you are. This site never asks for either. (Wireframe note: an outside party the operator has to accept, or remove the link.)</p></div>
 <div class="b k"><b>What this search cost:</b> 5 web lookups, 9,100 language-model tokens, about $0.023.
 <p class="sm">The project pays per search; there is no fixed running cost. Nobody pays to be placed. <span class="lk">Public cost ledger</span> · <span class="lk">Full privacy document</span></p></div>
 </div>
@@ -644,22 +832,22 @@ th{background:#eee}
 <p>The site is not broken and you are not blocked. Each search costs the project about $0.023, and the budget has run out.</p>
 <p class="sm">When searches resume is not decided, so no date is given here. <span class="lk">Public cost ledger</span></p></div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of zip area, Example City</i><i class="e1">no shops placed</i><i class="l1">10 mi</i><i class="l2">100 mi</i></div>
-<p class="sm"><b>Still works, at no cost:</b> your place (Example City, ST; nearby means within 10 miles) and every page behind the legend. Your zip stayed in this browser.</p>
-<div class="b sm"><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Source code</span></div>
+<p class="sm"><b>Still works, at no cost:</b> your place (Example City, ST; nearby means within 10 miles) and every view behind the legend. Your zip stayed in this browser.</p>
+<div class="b sm"><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
 </div></div>
 <div class="cap">10. Budget spent, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
 <div class="bar"><b>nottheriver</b><span>cordless drill, around Example City, ST</span></div>
+<div class="b k"><b>No search was made: the money for searches is spent for this period.</b>
+<p>The site is not broken and you are not blocked. Each search costs the project about $0.023, and the budget has run out.</p>
+<p class="sm">When searches resume is not decided, so no date is given here. <span class="lk">Public cost ledger</span></p></div>
 <div class="cols">
 <div>
 <div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of zip area, Example City</i><i class="e1">no shops placed</i><i class="l1">10 mi</i><i class="l2">100 mi</i></div>
 </div>
 <div>
-<div class="b k"><b>No search was made: the money for searches is spent for this period.</b>
-<p>The site is not broken and you are not blocked. Each search costs the project about $0.023, and the budget has run out.</p>
-<p class="sm">When searches resume is not decided, so no date is given here. <span class="lk">Public cost ledger</span></p></div>
-<p class="sm"><b>Still works, at no cost:</b> your place (Example City, ST; nearby means within 10 miles) and every page behind the legend. Your zip stayed in this browser.</p>
-<div class="b sm"><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Source code</span></div>
+<p class="sm"><b>Still works, at no cost:</b> your place (Example City, ST; nearby means within 10 miles) and every view behind the legend. Your zip stayed in this browser.</p>
+<div class="b sm"><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code</span></div>
 </div>
 </div>
 </div></div></div>
@@ -667,13 +855,53 @@ th{background:#eee}
 <div class="cap">10b. The other two refusals, 360 px (alternatives to the box at the top of frame 10; the plan stays drawn)</div>
 <div class="w360"><div class="scr">
 <div class="b k"><b>Too many searches from your connection.</b> The limit is 30 a minute. Nothing is wrong with the site or your search. Try again in about a minute.<br><span class="btn s">Try again</span></div>
-<div class="b k"><b>The search did not complete.</b> All we know is that it failed. Waiting a moment and trying again may work. Your product and place are still filled in.<br><span class="btn s">Try again</span></div>
+<div class="b k"><b>The search did not complete.</b> All we know is that it failed. Waiting a moment and trying again may work. Your product and zip are still in the form, because the page was not reloaded.<br><span class="btn s">Try again</span></div>
 </div></div>
 <div class="cap">10b. The other two refusals, 1280 px</div>
 <div class="wide"><div class="w1280"><div class="scr">
 <div class="two">
 <div class="b k"><b>Too many searches from your connection.</b> The limit is 30 a minute. Nothing is wrong with the site or your search. Try again in about a minute.<br><span class="btn s">Try again</span></div>
-<div class="b k"><b>The search did not complete.</b> All we know is that it failed. Waiting a moment and trying again may work. Your product and place are still filled in.<br><span class="btn s">Try again</span></div>
+<div class="b k"><b>The search did not complete.</b> All we know is that it failed. Waiting a moment and trying again may work. Your product and zip are still in the form, because the page was not reloaded.<br><span class="btn s">Try again</span></div>
+</div>
+</div></div></div>
+
+<div class="note"><b>10c (a guess).</b> Arriving while the budget is spent. This frame is possible only if the site can know the budget is spent before a search is tried. That is not decided, and neither is what a visitor is offered. If the site cannot know, the visitor meets frame 10 after pressing the button.</div>
+<div class="cap">10c. Arriving while the budget is spent, 360 px</div>
+<div class="w360"><div class="scr">
+<div class="bar"><b>nottheriver</b><span class="lk">Legend and limits</span></div>
+<div class="b k"><b>Searches are paused: the money for searches is spent for this period.</b>
+<p>The site is not broken and you are not blocked. When searches resume is not decided, so no date is given. <span class="lk">Public cost ledger</span></p></div>
+<div class="b">
+<b>1. Where are you?</b> US zip code
+<div class="in ph">5 digits</div>
+<p class="sm">Still works: your zip is looked up in this browser, so your place and the nearby distance can be drawn. Nothing is sent.</p>
+<b>2. What are you looking for?</b>
+<div class="in ph">not available while searches are paused</div>
+<span class="btn s">Find where (paused)</span>
+</div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of your zip area</i><i class="e1">no shops placed</i><i class="l2">100 mi</i></div>
+<div class="b sm"><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span> · <span class="lk">Source code, license, data credits</span></div>
+</div></div>
+<div class="cap">10c. Arriving while the budget is spent, 1280 px</div>
+<div class="wide"><div class="w1280"><div class="scr">
+<div class="bar"><b>nottheriver</b><span><span class="lk">Limits of the plan</span> · <span class="lk">Where a search goes and what it costs</span> · <span class="lk">How the order works</span> · <span class="lk">Why no Amazon</span> · <span class="lk">Dispute something</span></span></div>
+<div class="b k"><b>Searches are paused: the money for searches is spent for this period.</b>
+<p>The site is not broken and you are not blocked. When searches resume is not decided, so no date is given. <span class="lk">Public cost ledger</span></p></div>
+<div class="cols rev">
+<div>
+<div class="b">
+<b>1. Where are you?</b> US zip code
+<div class="in ph">5 digits</div>
+<p class="sm">Still works: your zip is looked up in this browser, so your place and the nearby distance can be drawn. Nothing is sent.</p>
+<b>2. What are you looking for?</b>
+<div class="in ph">not available while searches are paused</div>
+<span class="btn s">Find where (paused)</span>
+</div>
+<p class="sm"><span class="lk">Source code (AGPL-3.0)</span> · <span class="lk">Data credits</span></p>
+</div>
+<div>
+<div class="plan"><div class="c co"></div><div class="c ci"></div><div class="h"></div><i class="n">N</i><i class="e0">center of your zip area</i><i class="e1">no shops placed</i><i class="l2">100 mi</i></div>
+</div>
 </div>
 </div></div></div>
 </section>
