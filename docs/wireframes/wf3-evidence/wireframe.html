@@ -61,7 +61,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <body>
 <h1>WF3 Evidence: wireframe</h1>
 <p>Every state is drawn twice: 360 px, then 1280 px. Scroll sideways for the wide frames. Underlined text is a link; boxed text is a control; black boxes are the selected control.</p>
-<p><small>Placeholders: shops, sources, addresses, dates, the token count and the value of each sells-it level are invented. Weights, accuracy, cost, time and limits are the inventory's figures. Dashed notes like the one below are designer notes, not page text.</small></p>
+<p><small>Placeholders: shops, sources, addresses, dates, the search wording, the left-out sites, the token count, the value of each sells-it level and the exact amount each concern takes are invented. Weights, accuracy, cost, time and limits are the inventory's figures. Text in [square brackets] stands for a name or value the real page would print. Service providers are given by role, not by name. Dashed notes like the one below are designer notes, not page text.</small></p>
 <p>Show:
 <button onclick="sh('all')">All states</button>
 <button onclick="sh('A')">A Arriving</button>
@@ -256,16 +256,16 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <p class="m"><b>How far to rely on it:</b> online "sells it" was right 98% of the time in tests; nearby "likely" 80%, "possibly" 40%. About a third of good shops are found. <u>Evidence</u><br><b>This search cost:</b> 5 web lookups, [token count] tokens, about $0.023. <u>Cost ledger</u></p>
 </div>
 </div>
-<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b on">All 9</span> <span class="b">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b on">All 9</span> <span class="b">Nearby 4</span> <span class="b">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
 <div class="lg"><span class="s">Sourced</span><span class="j">Judged</span><span class="m">Measured</span><span class="z">Nothing found (counts as the middle, not as bad)</span><span class="x">Not scored</span></div>
 <div class="r hd"><div>#</div><div>Shop</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
 <div class="r"><div class="rk">1</div><div class="nm"><b>Example Cookware Works</b><br><small>Online · matched "Example 10 inch cast iron skillet"</small></div><div class="sc"><b>0.78</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>B Corp</div><div class="s"><span class="cl">Planet: </span>1% for the Planet</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">2</div><div class="nm"><b>Example Kitchen Collective</b><br><small>Online · matched "Cast iron skillet, 12 inch"</small></div><div class="sc"><b>0.70</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>Worker co-op</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">3</div><div class="nm"><b>Example Home Goods</b><br><small>Online · matched "Skillet, cast iron, pre-seasoned"</small></div><div class="sc"><b>0.63</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Member of an independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Membership: independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">5</div><div class="nm"><b>Example General Goods</b><br><small>Online · no matched product title</small></div><div class="sc"><b>0.58</b></div><div class="s"><span class="cl">Sells it: </span>Only the category named in its listing</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">6</div><div class="nm"><b>Example Restaurant Supply</b><br><small>Nearby · 5.0 mi east · 77 Example Way</small></div><div class="sc"><b>0.57</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>5.0 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Chain: 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Size, not a rating: chain of 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">8</div><div class="nm"><b>Example Thrift and Variety</b><br><small>Nearby · 8.5 mi south · address not listed</small></div><div class="sc"><b>0.50</b></div><div class="j"><span class="cl">Sells it: </span>Possibly, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>8.5 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">9</div><div class="nm"><b>Example Outfitters</b><br><small>More distant · 41 mi south-west · 9 Example Rd</small></div><div class="sc"><b>0.35</b></div><div class="j"><span class="cl">Sells it: </span>Not confirmed: the model did not get to judge this one</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>41 mi, adds nothing past 25 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <p><small>6 of these 9 shops have nothing found for people or planet. Among them the order comes only from "sells it" and "how close". Miles are a straight line from the center of the zip area, not from you. A shop without a chain note is not shown to be independent; it is only not in the site's list of 41 chains.</small></p>
@@ -283,16 +283,16 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <p class="m"><b>How far to rely on it:</b> online "sells it" was right 98% of the time in tests; nearby "likely" 80%, "possibly" 40%. About a third of good shops are found. <u>Evidence</u><br><b>This search cost:</b> 5 web lookups, [token count] tokens, about $0.023. <u>Cost ledger</u></p>
 </div>
 </div>
-<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b on">All 9</span> <span class="b">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b on">All 9</span> <span class="b">Nearby 4</span> <span class="b">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
 <div class="lg"><span class="s">Sourced</span><span class="j">Judged</span><span class="m">Measured</span><span class="z">Nothing found (counts as the middle, not as bad)</span><span class="x">Not scored</span></div>
 <div class="r hd"><div>#</div><div>Shop</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
 <div class="r"><div class="rk">1</div><div class="nm"><b>Example Cookware Works</b><br><small>Online · matched "Example 10 inch cast iron skillet"</small></div><div class="sc"><b>0.78</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>B Corp</div><div class="s"><span class="cl">Planet: </span>1% for the Planet</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">2</div><div class="nm"><b>Example Kitchen Collective</b><br><small>Online · matched "Cast iron skillet, 12 inch"</small></div><div class="sc"><b>0.70</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>Worker co-op</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">3</div><div class="nm"><b>Example Home Goods</b><br><small>Online · matched "Skillet, cast iron, pre-seasoned"</small></div><div class="sc"><b>0.63</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Member of an independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Membership: independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">5</div><div class="nm"><b>Example General Goods</b><br><small>Online · no matched product title</small></div><div class="sc"><b>0.58</b></div><div class="s"><span class="cl">Sells it: </span>Only the category named in its listing</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">6</div><div class="nm"><b>Example Restaurant Supply</b><br><small>Nearby · 5.0 mi east · 77 Example Way</small></div><div class="sc"><b>0.57</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>5.0 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Chain: 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Size, not a rating: chain of 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">8</div><div class="nm"><b>Example Thrift and Variety</b><br><small>Nearby · 8.5 mi south · address not listed</small></div><div class="sc"><b>0.50</b></div><div class="j"><span class="cl">Sells it: </span>Possibly, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>8.5 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">9</div><div class="nm"><b>Example Outfitters</b><br><small>More distant · 41 mi south-west · 9 Example Rd</small></div><div class="sc"><b>0.35</b></div><div class="j"><span class="cl">Sells it: </span>Not confirmed: the model did not get to judge this one</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>41 mi, adds nothing past 25 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <p><small>6 of these 9 shops have nothing found for people or planet. Among them the order comes only from "sells it" and "how close". Miles are a straight line from the center of the zip area, not from you. A shop without a chain note is not shown to be independent; it is only not in the site's list of 41 chains.</small></p>
@@ -307,7 +307,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <div class="fr n">
 <div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
 <p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
-<p><span class="cl keep">Order by </span><span class="b">Score</span> <span class="b on">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b">All 9</span> <span class="b on">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b">Score</span> <span class="b on">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby 4</span> <span class="b on">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
 <p class="j"><b>A nearby "sells it" is a judgment, not a stock check.</b> In tests, shops judged "likely" really sold the product 80% of the time (53 of 66), "possibly" 40% (58 of 146). A listed shop may also not exist at its address. Check the shop's site before you travel.</p>
 <div class="bx">
 <h4>How far, on a strip of 25 miles</h4>
@@ -321,8 +321,8 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <small>0 is the center of the zip area, not your address. "Nearby" for this zip area ends at 10 miles (two fifths of the strip). Closeness adds nothing to the score past 25 miles (the full strip). Straight-line miles, not road miles.</small>
 </div>
 <div class="r hd"><div>Place by score</div><div>Shop</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
-<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Member of an independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Chain: 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Membership: independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Size, not a rating: chain of 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">6</div><div class="nm"><b>Example Restaurant Supply</b><br><small>Nearby · 5.0 mi east · 77 Example Way</small></div><div class="sc"><b>0.57</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>5.0 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">8</div><div class="nm"><b>Example Thrift and Variety</b><br><small>Nearby · 8.5 mi south · address not listed</small></div><div class="sc"><b>0.50</b></div><div class="j"><span class="cl">Sells it: </span>Possibly, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>8.5 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <h4>More distant (past 10 miles, out to 100)</h4>
@@ -333,7 +333,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <div class="fr w">
 <div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
 <p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
-<p><span class="cl keep">Order by </span><span class="b">Score</span> <span class="b on">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b">All 9</span> <span class="b on">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b">Score</span> <span class="b on">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby 4</span> <span class="b on">Nearby and more distant 5</span> <span class="b">Online 4</span> <span class="b">With a certification 3</span></p>
 <div class="cols">
 <p class="j"><b>A nearby "sells it" is a judgment, not a stock check.</b> In tests, shops judged "likely" really sold the product 80% of the time (53 of 66), "possibly" 40% (58 of 146). A listed shop may also not exist at its address. Check the shop's site before you travel.</p>
 <div class="bx">
@@ -349,8 +349,8 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 </div>
 </div>
 <div class="r hd"><div>Place by score</div><div>Shop</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
-<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Member of an independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
-<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Chain: 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">4</div><div class="nm"><b>Example Hardware and Supply</b><br><small>Nearby · 2.1 mi north · 410 Example Ave</small><br><span class="x">Membership: independent retailer association</span></div><div class="sc"><b>0.59</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>2.1 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
+<div class="r"><div class="rk">7</div><div class="nm"><b>Example Mart</b><br><small>Nearby · 3.2 mi north-east · 2200 Example Blvd</small><br><span class="x">Size, not a rating: chain of 1,240 stores</span></div><div class="sc"><b>0.51</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="s"><span class="cl">People: </span>1 concern counted: labor, 2023, Example State Labor Agency</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>3.2 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">6</div><div class="nm"><b>Example Restaurant Supply</b><br><small>Nearby · 5.0 mi east · 77 Example Way</small></div><div class="sc"><b>0.57</b></div><div class="j"><span class="cl">Sells it: </span>Likely, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>5.0 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <div class="r"><div class="rk">8</div><div class="nm"><b>Example Thrift and Variety</b><br><small>Nearby · 8.5 mi south · address not listed</small></div><div class="sc"><b>0.50</b></div><div class="j"><span class="cl">Sells it: </span>Possibly, judged from the type of shop</div><div class="z"><span class="cl">People: </span>Nothing found</div><div class="z"><span class="cl">Planet: </span>Nothing found</div><div class="m"><span class="cl">How close: </span>8.5 mi</div><div><span class="b">Why here</span> <span class="b">Shop's site</span></div></div>
 <h4>More distant (past 10 miles, out to 100)</h4>
@@ -365,7 +365,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <div class="fr n">
 <div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
 <p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
-<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby and more distant 5</span> <span class="b on">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span><br><span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby 4</span> <span class="b">Nearby and more distant 5</span> <span class="b on">Online 4</span> <span class="b">With a certification 3</span></p>
 <p class="s"><b>An online "sells it" comes from the shop's own listing.</b> In tests it was right 98% of the time. "Product named" is stronger than "only the category named". Online shops have no distance; each gets the same fixed middle value for closeness, so "Order by distance" leaves them in score order.</p>
 <div class="r hd"><div>Place by score</div><div>Shop and the listing found</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
 <div class="r"><div class="rk">1</div><div class="nm"><b>Example Cookware Works</b><br><small>Online · matched "Example 10 inch cast iron skillet" · examplecookwareworks.example/skillets/10-inch</small></div><div class="sc"><b>0.78</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>B Corp</div><div class="s"><span class="cl">Planet: </span>1% for the Planet</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Go to the listing</span></div></div>
@@ -378,7 +378,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <div class="fr w">
 <div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
 <p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
-<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby and more distant 5</span> <span class="b on">Online 4</span> <span class="b">With a certification 3</span></p>
+<p><span class="cl keep">Order by </span><span class="b on">Score</span> <span class="b">Distance</span> <span class="b">Name</span> &nbsp; <span class="cl keep">Show </span><span class="b">All 9</span> <span class="b">Nearby 4</span> <span class="b">Nearby and more distant 5</span> <span class="b on">Online 4</span> <span class="b">With a certification 3</span></p>
 <p class="s"><b>An online "sells it" comes from the shop's own listing.</b> In tests it was right 98% of the time. "Product named" is stronger than "only the category named". Online shops have no distance; each gets the same fixed middle value for closeness, so "Order by distance" leaves them in score order.</p>
 <div class="r hd"><div>Place by score</div><div>Shop and the listing found</div><div>Sells it (weight 0.25)</div><div>How it treats people (0.30)</div><div>How it treats the planet (0.30)</div><div>How close (0.15)</div><div>Score</div><div></div></div>
 <div class="r"><div class="rk">1</div><div class="nm"><b>Example Cookware Works</b><br><small>Online · matched "Example 10 inch cast iron skillet" · examplecookwareworks.example/skillets/10-inch</small></div><div class="sc"><b>0.78</b></div><div class="s"><span class="cl">Sells it: </span>Product named in its own listing</div><div class="s"><span class="cl">People: </span>B Corp</div><div class="s"><span class="cl">Planet: </span>1% for the Planet</div><div class="m"><span class="cl">How close: </span>Online, fixed middle value</div><div><span class="b">Why here</span> <span class="b">Go to the listing</span></div></div>
@@ -420,7 +420,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 </div>
 <h4>G3. Your own narrowing hides everything</h4>
 <div class="bx">
-<p><span class="cl keep">Show </span><span class="b">All 3</span> <span class="b">Nearby and more distant 1</span> <span class="b">Online 2</span> <span class="b on">With a certification 0</span></p>
+<p><span class="cl keep">Show </span><span class="b">All 3</span> <span class="b">Nearby 0</span> <span class="b">Nearby and more distant 1</span> <span class="b">Online 2</span> <span class="b on">With a certification 0</span></p>
 <p><b>3 shops were found; none has a certification in the site's list.</b> This is your filter, not an empty search. Having no certification is the common case and is not a mark against a shop. <span class="b on">Show all 3</span></p>
 </div>
 </div>
@@ -456,7 +456,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <div>
 <h4>G3. Your own narrowing hides everything</h4>
 <div class="bx">
-<p><span class="cl keep">Show </span><span class="b">All 3</span> <span class="b">Nearby and more distant 1</span> <span class="b">Online 2</span> <span class="b on">With a certification 0</span></p>
+<p><span class="cl keep">Show </span><span class="b">All 3</span> <span class="b">Nearby 0</span> <span class="b">Nearby and more distant 1</span> <span class="b">Online 2</span> <span class="b on">With a certification 0</span></p>
 <p><b>3 shops were found; none has a certification in the site's list.</b> This is your filter, not an empty search. Having no certification is the common case and is not a mark against a shop. <span class="b on">Show all 3</span></p>
 </div>
 </div>
@@ -499,7 +499,7 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <p class="m">The one difference that puts it behind is the labor concern. Without it this shop would score 0.58 and stand at place 5.</p>
 <p><span class="cl keep">Compare with </span><span class="b on">The shop above</span> <span class="b">The shop below</span> <span class="b">Another shop...</span></p>
 <h4>Known, but not scored</h4>
-<p><span class="x">Chain: 1,240 stores</span> as stated at examplemart.example/about, checked 2026-09-02. Neither praise nor criticism; it does not change the score. <u>Open the source</u> · <u>Dispute</u></p>
+<p><span class="x">Size, not a rating: chain of 1,240 stores</span> as stated at examplemart.example/about, checked 2026-09-02. Neither praise nor criticism; it does not change the score. <u>Open the source</u> · <u>Dispute</u></p>
 <p class="z">Certifications: nothing found. <u>Dispute</u></p>
 </div>
 </div>
@@ -536,14 +536,486 @@ button{font:inherit;color:#000;background:#fff;border:1px solid #000;padding:2px
 <p class="m">The one difference that puts it behind is the labor concern. Without it this shop would score 0.58 and stand at place 5.</p>
 <p><span class="cl keep">Compare with </span><span class="b on">The shop above</span> <span class="b">The shop below</span> <span class="b">Another shop...</span></p>
 <h4>Known, but not scored</h4>
-<p><span class="x">Chain: 1,240 stores</span> as stated at examplemart.example/about, checked 2026-09-02. Neither praise nor criticism; it does not change the score. <u>Open the source</u> · <u>Dispute</u></p>
+<p><span class="x">Size, not a rating: chain of 1,240 stores</span> as stated at examplemart.example/about, checked 2026-09-02. Neither praise nor criticism; it does not change the score. <u>Open the source</u> · <u>Dispute</u></p>
 <p class="z">Certifications: nothing found. <u>Dispute</u></p>
 </div>
 </div>
 </div>
 </section>
 
-<!--NEXT-->
+<section class="st" id="I">
+<h2>I. A concern and its dispute path</h2>
+<div class="note">Reached from "Read the concern" or any "Dispute" in state H. I1 is the one concern on Example Mart. I2 is a shop with several. I3 is the dispute path, the same for a concern, a certification, a chain fact or a score part. The "under dispute" marker does not exist; it is shown only as a designer note.</div>
+<div class="lab">I. Concern and dispute, 360 px</div>
+<div class="fr n">
+<div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
+<p><u>Back to Example Mart's record</u></p>
+<div class="cols">
+<div>
+<h4>I1. One concern, read in full</h4>
+<h3>"Example Mart to pay $310,000 in back wages to 212 workers"</h3>
+<p><small>The source's own title. This site adds no verdict and no grade.</small></p>
+<div class="t" style="--c:1fr 2.6fr">
+<div class="hd"><div>Question</div><div>What is known</div></div>
+<div><div><b>Who says so</b></div><div class="s">Example State Labor Agency, a regulator and one of the 14 accepted sources. examplelabor.example/releases/2023-041 <u>Open the source</u></div></div>
+<div><div><b>When</b></div><div class="s">Date of the action: 2023-04-12. Age is not weighed: an old concern counts like a new one</div></div>
+<div><div><b>What kind</b></div><div class="s">Labor. It counts in "How it treats people"</div></div>
+<div><div><b>About whom</b></div><div class="s">Example Mart itself, not a related company</div></div>
+<div><div><b>Final or open</b></div><div class="s">Final</div></div>
+<div><div><b>How large</b></div><div class="m">Penalty $310,000: the standard band. Major is $1,000,000 or more; minor is under $100,000 or still open</div></div>
+<div><div><b>What it cost</b></div><div class="m">Takes 0.25 from "How it treats people" (0.50 to 0.25). That lowers the score by 0.075 and moves the shop from place 5 to place 7</div></div>
+</div>
+<p><span class="b on">Dispute this concern</span> <u>How concerns are counted</u></p>
+</div>
+<div>
+<h4>I2. A shop with several concerns</h4>
+<p><b>Example Big Box: 4 concerns counted, 2016 to 2024.</b> <span class="cl keep">Order by </span><span class="b on">Date</span> <span class="b">Cost to the score</span></p>
+<div class="t" style="--c:2.2fr 1.5fr 1.5fr 1.3fr 60px">
+<div class="hd"><div>Claim, in the source's words</div><div>Who says so, when</div><div>How it was counted</div><div>Cost</div><div></div></div>
+<div><div class="s">"Complaint issued against Example Big Box over break-time rules"</div><div>Example Labor Board, 2024-02-20. <u>Source</u></div><div class="m">Labor · the shop itself · open · amount not stated · minor</div><div class="m"><span class="cl">Cost: </span>0.05 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box cited for blocked exits, fined $48,000"</div><div>Example Safety Agency, 2022-09-08. <u>Source</u></div><div class="m">Labor · the shop itself · final · minor</div><div class="m"><span class="cl">Cost: </span>0.05 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box settles overtime suit for $2,400,000"</div><div>Example Court Records, 2019-06-03. <u>Source</u></div><div class="m">Labor · the shop itself · final · major</div><div class="m"><span class="cl">Cost: </span>0.25 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box Logistics fined $180,000 over waste handling"</div><div>Example Environmental Agency, 2016-11-15. <u>Source</u></div><div class="m">Environmental · a related company · final · standard</div><div class="m"><span class="cl">Cost: </span>0.15 from planet</div><div><u>Dispute</u></div></div>
+</div>
+<p class="m">Together: people 0.50 to 0.15, planet 0.50 to 0.35. Minor concerns together can take at most 0.25. A concern about a related company, an open case or an unstated amount takes less.</p>
+<div class="note">Planned, not built: a link from each concern to the full research record for that retailer.</div>
+</div>
+</div>
+<h4>I3. Disputing a statement</h4>
+<div class="cols">
+<div>
+<p><b>You are disputing:</b> the labor concern counted against Example Mart. The same path serves every statement:</p>
+<p><span class="cl keep">Dispute </span><span class="b on">A concern</span> <span class="b">A certification</span> <span class="b">A chain fact</span> <span class="b">A sells-it judgment</span> <span class="b">A distance or address</span> <span class="b">Something missing</span></p>
+<ol>
+<li>This page fills in what the form asks for. Your search and your zip are not included.</li>
+<li>You add your evidence: a source's address, or what you know and how.</li>
+<li>You file it on the public form at the code host [named here].</li>
+</ol>
+<div class="bx g">
+<div class="cl keep">Retailer</div><div class="in">Example Mart</div>
+<div class="cl keep">What was shown</div><div class="in">Labor concern: "Example Mart to pay $310,000 in back wages to 212 workers", 2023-04-12, counted as standard, final, the shop itself</div>
+<div class="cl keep">The source's address</div><div class="in">examplelabor.example/releases/2023-041</div>
+<div class="cl keep">Your evidence</div><div class="in"><small>for example: the decision was overturned, with the address of the ruling</small></div>
+<span class="b">Copy all four</span> <span class="b on">Open the dispute form</span> <small>Leaves this site.</small>
+</div>
+</div>
+<div>
+<h4>What to expect, stated plainly</h4>
+<div class="t" style="--c:1fr 2fr">
+<div class="hd"><div>Question</div><div>Answer today</div></div>
+<div><div><b>Who can file</b></div><div>Anyone, including the shop. Filing needs an account at the code host; this site has no other intake</div></div>
+<div><div><b>Is it public</b></div><div>Yes. The form and what you write on it are public</div></div>
+<div><div><b>Who reviews it, and how</b></div><div>Not decided yet</div></div>
+<div><div><b>How long it takes</b></div><div>No response time is promised</div></div>
+<div><div><b>Meanwhile</b></div><div>The statement stays shown and stays counted. The site cannot yet show that a statement is under dispute</div></div>
+<div><div><b>What the code host learns</b></div><div>Your account, your IP address and what you file. Nothing is sent to it until you open the form</div></div>
+</div>
+<div class="note">Proposed, not built: a written dispute process with a response time, and a record per shop that would let this page say "under dispute since [date]" or "corrected on [date]".</div>
+</div>
+</div>
+</div>
+<div class="lab">I. Concern and dispute, 1280 px</div>
+<div class="fr w">
+<div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
+<p><u>Back to Example Mart's record</u></p>
+<div class="cols">
+<div>
+<h4>I1. One concern, read in full</h4>
+<h3>"Example Mart to pay $310,000 in back wages to 212 workers"</h3>
+<p><small>The source's own title. This site adds no verdict and no grade.</small></p>
+<div class="t" style="--c:1fr 2.6fr">
+<div class="hd"><div>Question</div><div>What is known</div></div>
+<div><div><b>Who says so</b></div><div class="s">Example State Labor Agency, a regulator and one of the 14 accepted sources. examplelabor.example/releases/2023-041 <u>Open the source</u></div></div>
+<div><div><b>When</b></div><div class="s">Date of the action: 2023-04-12. Age is not weighed: an old concern counts like a new one</div></div>
+<div><div><b>What kind</b></div><div class="s">Labor. It counts in "How it treats people"</div></div>
+<div><div><b>About whom</b></div><div class="s">Example Mart itself, not a related company</div></div>
+<div><div><b>Final or open</b></div><div class="s">Final</div></div>
+<div><div><b>How large</b></div><div class="m">Penalty $310,000: the standard band. Major is $1,000,000 or more; minor is under $100,000 or still open</div></div>
+<div><div><b>What it cost</b></div><div class="m">Takes 0.25 from "How it treats people" (0.50 to 0.25). That lowers the score by 0.075 and moves the shop from place 5 to place 7</div></div>
+</div>
+<p><span class="b on">Dispute this concern</span> <u>How concerns are counted</u></p>
+</div>
+<div>
+<h4>I2. A shop with several concerns</h4>
+<p><b>Example Big Box: 4 concerns counted, 2016 to 2024.</b> <span class="cl keep">Order by </span><span class="b on">Date</span> <span class="b">Cost to the score</span></p>
+<div class="t" style="--c:2.2fr 1.5fr 1.5fr 1.3fr 60px">
+<div class="hd"><div>Claim, in the source's words</div><div>Who says so, when</div><div>How it was counted</div><div>Cost</div><div></div></div>
+<div><div class="s">"Complaint issued against Example Big Box over break-time rules"</div><div>Example Labor Board, 2024-02-20. <u>Source</u></div><div class="m">Labor · the shop itself · open · amount not stated · minor</div><div class="m"><span class="cl">Cost: </span>0.05 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box cited for blocked exits, fined $48,000"</div><div>Example Safety Agency, 2022-09-08. <u>Source</u></div><div class="m">Labor · the shop itself · final · minor</div><div class="m"><span class="cl">Cost: </span>0.05 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box settles overtime suit for $2,400,000"</div><div>Example Court Records, 2019-06-03. <u>Source</u></div><div class="m">Labor · the shop itself · final · major</div><div class="m"><span class="cl">Cost: </span>0.25 from people</div><div><u>Dispute</u></div></div>
+<div><div class="s">"Example Big Box Logistics fined $180,000 over waste handling"</div><div>Example Environmental Agency, 2016-11-15. <u>Source</u></div><div class="m">Environmental · a related company · final · standard</div><div class="m"><span class="cl">Cost: </span>0.15 from planet</div><div><u>Dispute</u></div></div>
+</div>
+<p class="m">Together: people 0.50 to 0.15, planet 0.50 to 0.35. Minor concerns together can take at most 0.25. A concern about a related company, an open case or an unstated amount takes less.</p>
+<div class="note">Planned, not built: a link from each concern to the full research record for that retailer.</div>
+</div>
+</div>
+<h4>I3. Disputing a statement</h4>
+<div class="cols">
+<div>
+<p><b>You are disputing:</b> the labor concern counted against Example Mart. The same path serves every statement:</p>
+<p><span class="cl keep">Dispute </span><span class="b on">A concern</span> <span class="b">A certification</span> <span class="b">A chain fact</span> <span class="b">A sells-it judgment</span> <span class="b">A distance or address</span> <span class="b">Something missing</span></p>
+<ol>
+<li>This page fills in what the form asks for. Your search and your zip are not included.</li>
+<li>You add your evidence: a source's address, or what you know and how.</li>
+<li>You file it on the public form at the code host [named here].</li>
+</ol>
+<div class="bx g">
+<div class="cl keep">Retailer</div><div class="in">Example Mart</div>
+<div class="cl keep">What was shown</div><div class="in">Labor concern: "Example Mart to pay $310,000 in back wages to 212 workers", 2023-04-12, counted as standard, final, the shop itself</div>
+<div class="cl keep">The source's address</div><div class="in">examplelabor.example/releases/2023-041</div>
+<div class="cl keep">Your evidence</div><div class="in"><small>for example: the decision was overturned, with the address of the ruling</small></div>
+<span class="b">Copy all four</span> <span class="b on">Open the dispute form</span> <small>Leaves this site.</small>
+</div>
+</div>
+<div>
+<h4>What to expect, stated plainly</h4>
+<div class="t" style="--c:1fr 2fr">
+<div class="hd"><div>Question</div><div>Answer today</div></div>
+<div><div><b>Who can file</b></div><div>Anyone, including the shop. Filing needs an account at the code host; this site has no other intake</div></div>
+<div><div><b>Is it public</b></div><div>Yes. The form and what you write on it are public</div></div>
+<div><div><b>Who reviews it, and how</b></div><div>Not decided yet</div></div>
+<div><div><b>How long it takes</b></div><div>No response time is promised</div></div>
+<div><div><b>Meanwhile</b></div><div>The statement stays shown and stays counted. The site cannot yet show that a statement is under dispute</div></div>
+<div><div><b>What the code host learns</b></div><div>Your account, your IP address and what you file. Nothing is sent to it until you open the form</div></div>
+</div>
+<div class="note">Proposed, not built: a written dispute process with a response time, and a record per shop that would let this page say "under dispute since [date]" or "corrected on [date]".</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="st" id="J">
+<h2>J. Sources: the same answer, arranged by who says so</h2>
+<div class="note">The "Sources" tab. The 9 shops of state D are not listed again; the statements about them are, grouped by where each came from. This is also where "Search wording used" and "See what was left out" lead. No web excerpts are shown anywhere.</div>
+<div class="lab">J. Sources, 360 px</div>
+<div class="fr n">
+<div class="top"><b>nottheriver</b><span class="b">Shops</span><span class="b on">Sources</span><span class="b">This site's record</span></div>
+<p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
+<p class="m"><b>This answer of 9 shops rests on:</b> 6 statements from outside sources, 4 shop listings, 5 judgments by a language model (and 1 shop it did not get to judge), 5 measured distances, and 14 places where nothing was found.</p>
+<p><span class="cl keep">Show </span><span class="b on">All</span> <span class="b">Outside sources 6</span> <span class="b">Shop listings 4</span> <span class="b">Judgments 5</span> <span class="b">Measured 5</span> <span class="b">Nothing found 14</span></p>
+<h4>Outside sources (6 statements, 6 sources)</h4>
+<div class="t" style="--c:1.6fr 1.8fr 1.2fr 1.3fr 150px">
+<div class="hd"><div>Source, date checked</div><div>What it says</div><div>About</div><div>Effect on the score</div><div></div></div>
+<div><div class="s">Example B Corp directory · checked 2026-08-14</div><div><span class="cl">Says: </span>Certified B Corp</div><div><span class="cl">About: </span>Example Cookware Works</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example 1% for the Planet member list · checked 2026-08-14</div><div><span class="cl">Says: </span>Member, 1% for the Planet</div><div><span class="cl">About: </span>Example Cookware Works</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to planet</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example worker co-op federation · checked 2026-07-30</div><div><span class="cl">Says: </span>Worker co-op</div><div><span class="cl">About: </span>Example Kitchen Collective</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example State Labor Agency · action dated 2023-04-12</div><div><span class="cl">Says: </span>"Example Mart to pay $310,000 in back wages to 212 workers"</div><div><span class="cl">About: </span>Example Mart</div><div class="m"><span class="cl">Effect: </span>takes 0.25 from people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example independent retailer association · checked 2026-08-02</div><div><span class="cl">Says: </span>Member</div><div><span class="cl">About: </span>Example Hardware and Supply</div><div><span class="x">Not scored</span></div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">examplemart.example/about · checked 2026-09-02</div><div><span class="cl">Says: </span>1,240 stores</div><div><span class="cl">About: </span>Example Mart</div><div><span class="x">Not scored</span> size, not a rating</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+</div>
+<div class="cols">
+<div>
+<h4>Shop listings (4)</h4>
+<p class="s">Each online shop's own page says it sells the product. Product named: Example Cookware Works, Example Kitchen Collective, Example Home Goods. Only the category named: Example General Goods. <small>In tests, online "sells it" was right 98% of the time.</small> <u>Evidence</u></p>
+<h4>Judgments by a language model (5)</h4>
+<p class="j"><b>The reading of your product (1):</b> cookware; "cast iron skillet"; similar: cast iron frying pan, carbon steel skillet, enameled skillet. Shared by everyone who types this product, kept 30 days.</p>
+<p class="j"><b>Search wording it wrote (sent to the search provider):</b> online: "cast iron skillet buy", "pre-seasoned cast iron skillet shop", "cast iron frying pan store". Nearby: "kitchen supply store", "hardware store".</p>
+<p class="j"><b>Sells it, from a shop's name and type (4):</b> likely: Example Hardware and Supply, Example Restaurant Supply, Example Mart. Possibly: Example Thrift and Variety. Not judged, so not confirmed (1): Example Outfitters. <small>In tests "likely" was right 80% of the time, "possibly" 40%.</small> <u>Evidence</u> · <u>Dispute a judgment</u></p>
+<h4>Measured by this site (5 distances, 9 scores)</h4>
+<p class="m">Straight-line miles from the center of the zip area to each shop's listed position: 2.1, 3.2, 5.0, 8.5 and 41. Each score is the sum of four parts. <u>How ordering works</u></p>
+</div>
+<div>
+<h4>Nothing found (14 places)</h4>
+<p class="z">6 shops have nothing for people or planet; 2 more have nothing for one of the two. Checked against the site's own lists: 28 certification entries, concerns from 14 accepted sources, 41 chains. Not being in a list proves nothing about a shop, so it counts as the middle. <u>The lists</u></p>
+<h4>Left out of this answer (11)</h4>
+<div class="t" style="--c:1.6fr 1.4fr">
+<div class="hd"><div>Site</div><div>Reason</div></div>
+<div><div>examplerecipes.example, examplereviews.example, exampleforum.example, examplenews.example, exampleguides.example</div><div><span class="cl">Reason: </span>not a shop (5)</div></div>
+<div><div>examplegarden.example, exampletoys.example, examplepharmacy.example, examplebooks.example</div><div><span class="cl">Reason: </span>does not sell it (4)</div></div>
+<div><div>Example Ironworks Outlet, Example Camp Supply</div><div><span class="cl">Reason: </span>too far (2)</div></div>
+</div>
+<p><small>The other two possible reasons (more than 2 branches of one company; did not make the top 10) did not apply to this search. Only the site name and the reason are known. Businesses in the exclusion set are removed before this point and are not listed here. <u>The exclusion set</u></small></p>
+</div>
+</div>
+</div>
+<div class="lab">J. Sources, 1280 px</div>
+<div class="fr w">
+<div class="top"><b>nottheriver</b><span class="b">Shops</span><span class="b on">Sources</span><span class="b">This site's record</span></div>
+<p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
+<p class="m"><b>This answer of 9 shops rests on:</b> 6 statements from outside sources, 4 shop listings, 5 judgments by a language model (and 1 shop it did not get to judge), 5 measured distances, and 14 places where nothing was found.</p>
+<p><span class="cl keep">Show </span><span class="b on">All</span> <span class="b">Outside sources 6</span> <span class="b">Shop listings 4</span> <span class="b">Judgments 5</span> <span class="b">Measured 5</span> <span class="b">Nothing found 14</span></p>
+<h4>Outside sources (6 statements, 6 sources)</h4>
+<div class="t" style="--c:1.6fr 1.8fr 1.2fr 1.3fr 150px">
+<div class="hd"><div>Source, date checked</div><div>What it says</div><div>About</div><div>Effect on the score</div><div></div></div>
+<div><div class="s">Example B Corp directory · checked 2026-08-14</div><div><span class="cl">Says: </span>Certified B Corp</div><div><span class="cl">About: </span>Example Cookware Works</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example 1% for the Planet member list · checked 2026-08-14</div><div><span class="cl">Says: </span>Member, 1% for the Planet</div><div><span class="cl">About: </span>Example Cookware Works</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to planet</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example worker co-op federation · checked 2026-07-30</div><div><span class="cl">Says: </span>Worker co-op</div><div><span class="cl">About: </span>Example Kitchen Collective</div><div class="m"><span class="cl">Effect: </span>adds 0.25 to people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example State Labor Agency · action dated 2023-04-12</div><div><span class="cl">Says: </span>"Example Mart to pay $310,000 in back wages to 212 workers"</div><div><span class="cl">About: </span>Example Mart</div><div class="m"><span class="cl">Effect: </span>takes 0.25 from people</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">Example independent retailer association · checked 2026-08-02</div><div><span class="cl">Says: </span>Member</div><div><span class="cl">About: </span>Example Hardware and Supply</div><div><span class="x">Not scored</span></div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+<div><div class="s">examplemart.example/about · checked 2026-09-02</div><div><span class="cl">Says: </span>1,240 stores</div><div><span class="cl">About: </span>Example Mart</div><div><span class="x">Not scored</span> size, not a rating</div><div><u>Open the source</u> · <u>Dispute</u></div></div>
+</div>
+<div class="cols">
+<div>
+<h4>Shop listings (4)</h4>
+<p class="s">Each online shop's own page says it sells the product. Product named: Example Cookware Works, Example Kitchen Collective, Example Home Goods. Only the category named: Example General Goods. <small>In tests, online "sells it" was right 98% of the time.</small> <u>Evidence</u></p>
+<h4>Judgments by a language model (5)</h4>
+<p class="j"><b>The reading of your product (1):</b> cookware; "cast iron skillet"; similar: cast iron frying pan, carbon steel skillet, enameled skillet. Shared by everyone who types this product, kept 30 days.</p>
+<p class="j"><b>Search wording it wrote (sent to the search provider):</b> online: "cast iron skillet buy", "pre-seasoned cast iron skillet shop", "cast iron frying pan store". Nearby: "kitchen supply store", "hardware store".</p>
+<p class="j"><b>Sells it, from a shop's name and type (4):</b> likely: Example Hardware and Supply, Example Restaurant Supply, Example Mart. Possibly: Example Thrift and Variety. Not judged, so not confirmed (1): Example Outfitters. <small>In tests "likely" was right 80% of the time, "possibly" 40%.</small> <u>Evidence</u> · <u>Dispute a judgment</u></p>
+<h4>Measured by this site (5 distances, 9 scores)</h4>
+<p class="m">Straight-line miles from the center of the zip area to each shop's listed position: 2.1, 3.2, 5.0, 8.5 and 41. Each score is the sum of four parts. <u>How ordering works</u></p>
+</div>
+<div>
+<h4>Nothing found (14 places)</h4>
+<p class="z">6 shops have nothing for people or planet; 2 more have nothing for one of the two. Checked against the site's own lists: 28 certification entries, concerns from 14 accepted sources, 41 chains. Not being in a list proves nothing about a shop, so it counts as the middle. <u>The lists</u></p>
+<h4>Left out of this answer (11)</h4>
+<div class="t" style="--c:1.6fr 1.4fr">
+<div class="hd"><div>Site</div><div>Reason</div></div>
+<div><div>examplerecipes.example, examplereviews.example, exampleforum.example, examplenews.example, exampleguides.example</div><div><span class="cl">Reason: </span>not a shop (5)</div></div>
+<div><div>examplegarden.example, exampletoys.example, examplepharmacy.example, examplebooks.example</div><div><span class="cl">Reason: </span>does not sell it (4)</div></div>
+<div><div>Example Ironworks Outlet, Example Camp Supply</div><div><span class="cl">Reason: </span>too far (2)</div></div>
+</div>
+<p><small>The other two possible reasons (more than 2 branches of one company; did not make the top 10) did not apply to this search. Only the site name and the reason are known. Businesses in the exclusion set are removed before this point and are not listed here. <u>The exclusion set</u></small></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="st" id="K">
+<h2>K. This site's record: trust, cost and privacy</h2>
+<div class="note">The "This site's record" tab. The site is treated like a shop: each thing it claims about itself is a statement with its evidence. One page, six parts; every "Evidence", "Privacy", "Costs" and "How ordering works" link in other states lands on a part of it. Providers are given by role; the real page names each one where [named here] appears. Who funds the operator is not in the inventory, so it is left as a bracket.</div>
+<div class="lab">K. Trust, cost, privacy, 360 px</div>
+<div class="fr n">
+<div class="top"><b>nottheriver</b><span class="b">Shops</span><span class="b">Sources</span><span class="b on">This site's record</span></div>
+<h3>What this site claims about itself, and the evidence for each claim</h3>
+<p><u>K1 How often it is right</u> · <u>K2 How ordering works</u> · <u>K3 Why no Amazon</u> · <u>K4 What is sent and kept</u> · <u>K5 Cost and who pays</u> · <u>K6 Code, documents, credits</u></p>
+<h4>K1. How often it is right, and what it misses</h4>
+<div class="t" style="--c:2fr 1fr 1fr 1.6fr">
+<div class="hd"><div>What was measured</div><div>Result</div><div>Later run, 2026-09-29</div><div>How</div></div>
+<div><div class="m">Online results that really sold the product or a close equivalent</div><div><span class="cl">Result: </span>98%</div><div><span class="cl">Later run: </span>98.4%</div><div>20 graded searches, each run twice, 2026-09-26</div></div>
+<div><div class="m">Nearby results that really did. A shop that does not exist counts as wrong</div><div><span class="cl">Result: </span>62 to 64%</div><div><span class="cl">Later run: </span>71%</div><div>Same test</div></div>
+<div><div class="m">Nearby shops judged "likely" that really sold it</div><div><span class="cl">Result: </span>80% (53 of 66)</div><div></div><div>Graded 2026-09-24</div></div>
+<div><div class="m">Nearby shops judged "possibly" that really sold it</div><div><span class="cl">Result: </span>40% (58 of 146)</div><div></div><div>Graded 2026-09-24</div></div>
+<div><div class="m">Good online shops an independent search found that this site also found</div><div><span class="cl">Result: </span>31%</div><div></div><div>Same 20 searches</div></div>
+<div><div class="m">Good nearby shops, likewise</div><div><span class="cl">Result: </span>33 to 35%</div><div></div><div>Same 20 searches</div></div>
+<div><div class="m">Time a search takes</div><div><span class="cl">Result: </span>about 3 seconds in the middle case, about 5 at the slowest</div><div></div><div>20 searches, 2026-09-29</div></div>
+</div>
+<p class="s"><b>What it misses:</b> results come from one search index [named here]. Shops that block search crawlers, or that the index has not reached, are missing. Some real zip codes, mostly PO-box codes, cannot be used. <u>Raw evidence</u> · <u>The method</u> · <u>Known shortcuts</u></p>
+<div class="cols">
+<div>
+<h4>K2. How ordering works</h4>
+<div class="t" style="--c:1.2fr .5fr 1.6fr 1.6fr">
+<div class="hd"><div>Part</div><div>Weight</div><div>What moves it</div><div>When nothing is known</div></div>
+<div><div><b>Does it sell the product</b></div><div><span class="cl">Weight: </span>0.25</div><div>Five levels: product named in the shop's listing; only the category named; judged likely; judged possible; not confirmed</div><div>Not confirmed is the lowest level</div></div>
+<div><div><b>How it treats people</b></div><div><span class="cl">Weight: </span>0.30</div><div>Each ethics certification adds 0.25, capped. Each accepted labor or governance concern takes up to 0.25</div><div>Stays at the middle. Unknown is not bad</div></div>
+<div><div><b>How it treats the planet</b></div><div><span class="cl">Weight: </span>0.30</div><div>The same, with environmental certifications and concerns</div><div>Stays at the middle</div></div>
+<div><div><b>How close it is</b></div><div><span class="cl">Weight: </span>0.15</div><div>Nearby: full at the center of the zip area, nothing at 25 miles. Online: a fixed middle value</div><div>Distance unknown: said so on the shop's record</div></div>
+</div>
+<p class="m">The same weights apply to every search. A concern takes less when the penalty was small, the amount is not stated, the case is open, or it is about a related company. Minor concerns together take at most 0.25.</p>
+<p><span class="x">Not scored</span> chain size, membership of an independent retailer association, a concern's age.</p>
+<p class="s">Counted from: 28 certification entries of six kinds, concerns from 14 accepted sources (regulators, court records, established news organizations, recognized labor and environmental watchdogs), 41 chains with 10 or more US stores. <u>The lists</u> · <u>The full formula</u> · <u>Dispute a part of it</u></p>
+<h4>K3. Why no Amazon, and what counts as Amazon</h4>
+<p class="s">Amazon and every business it owns or has owned never appear, in any kind of result. That exclusion is the reason the site exists.</p>
+<div class="t" style="--c:1.2fr 1.2fr 1.4fr 1fr">
+<div class="hd"><div>Excluded</div><div>Web domain</div><div>Source for the ownership</div><div>Dated</div></div>
+<div><div>[business name 1 of 14]</div><div>[domain 1 of 39]</div><div>[public source] <u>Open</u></div><div>[date]</div></div>
+<div><div>[business name 2 of 14]</div><div>[domain 2 of 39]</div><div>[public source] <u>Open</u></div><div>[date]</div></div>
+</div>
+<p class="m">39 web domains and 14 business names. Code removes them twice in every search; the language model is never the only check. <u>The whole exclusion set</u></p>
+<h4>K5. Cost, and who pays</h4>
+<div class="t" style="--c:1.4fr 2fr">
+<div class="hd"><div>Question</div><div>What is known</div></div>
+<div><div><b>Your last search</b></div><div class="m">5 web lookups, [token count] tokens, about $0.023. Not charged to you</div></div>
+<div><div><b>A typical search</b></div><div class="m">4 or 5 web lookups, about $0.023. The first live search cost about $0.026</div></div>
+<div><div><b>Running the site</b></div><div class="m">No fixed cost; cost is per search. Projection, not a measurement: 3,000 searches a month is about $65</div></div>
+<div><div><b>Who pays</b></div><div>[who funds the searches: to be supplied by the operator]</div></div>
+<div><div><b>Is anyone paying to be placed</b></div><div class="s">No. No paid placement, no affiliate links, no advertising. Links to shops carry nothing that earns this site money</div></div>
+</div>
+<p><u>The cost ledger</u> · <u>What happens when the money runs out</u></p>
+</div>
+<div>
+<h4>K4. What is sent, to whom, and what is kept</h4>
+<p class="s"><b>Sent with each search:</b> the product, the city and state, the center of the zip area (rounded to about 0.6 mile), a rural-urban category. <b>Never sent:</b> the zip, a street address, your device's location.</p>
+<div class="t" style="--c:1.3fr 2.2fr">
+<div class="hd"><div>Who</div><div>Learns</div></div>
+<div><div><b>The search provider</b> [named here]</div><div>Search wording made from the product, and the center of the zip area, so it learns the zip area of each search. Not your IP address</div></div>
+<div><div><b>The language-model service</b> [named here], and the model provider it routes to</div><div>The product text, then titles and excerpts of the results found, which can name nearby towns. No location fields</div></div>
+<div><div><b>The hosts</b> [two, named here]</div><div>Ordinary request records, including your IP address</div></div>
+<div><div><b>Anyone else</b></div><div>No one. This page fetches no fonts, pictures, maps or other files from any other party</div></div>
+</div>
+<div class="t" style="--c:1.6fr 1.6fr .8fr">
+<div class="hd"><div>What</div><div>Afterward</div><div>How long</div></div>
+<div><div>The search as a whole: product together with place</div><div><span class="cl">Afterward: </span>used for that search only, never stored by this site</div><div></div></div>
+<div><div>Shops found, sells-it judgments, scores</div><div><span class="cl">Afterward: </span>looked up anew every search, not stored</div><div></div></div>
+<div><div>The reading of a product</div><div><span class="cl">Afterward: </span>stored and shared by everyone who types the same product. In effect a list of products people searched for, with no place and no IP address</div><div><span class="cl">How long: </span>30 days</div></div>
+<div><div>Your IP address (for IPv6, its first half)</div><div><span class="cl">Afterward: </span>held by the rate limiter</div><div><span class="cl">How long: </span>one minute</div></div>
+<div><div>The service's log line: worked or not, how long. Never product or place</div><div><span class="cl">Afterward: </span>not stored</div><div></div></div>
+<div><div>Request records at the hosts</div><div><span class="cl">Afterward: </span>under each host's own policy</div><div></div></div>
+<div><div>What the search provider and the model service receive</div><div><span class="cl">Afterward: </span>under each one's own policy</div><div></div></div>
+<div><div>The last product you typed</div><div><span class="cl">Afterward: </span>in this browser tab, for you only. Never the zip</div><div><span class="cl">How long: </span>until the tab closes</div></div>
+</div>
+<p class="s">No accounts, no cookies, no analytics, no tracking. The zip is never put in the page address. <u>The privacy document</u></p>
+<h4>K6. Code, documents and credits</h4>
+<p class="s">Open source under AGPL-3.0. <u>Source code</u> · <u>License</u></p>
+<p>Public documents: <u>ranking method</u> · <u>privacy</u> · <u>costs</u> · <u>quality method and evidence</u> · <u>exclusion set</u> · <u>accepted sources</u> · <u>known shortcuts</u></p>
+<p><b>Data credits:</b> zip data from the US Census Bureau and GeoNames (CC BY 4.0).</p>
+</div>
+</div>
+</div>
+<div class="lab">K. Trust, cost, privacy, 1280 px</div>
+<div class="fr w">
+<div class="top"><b>nottheriver</b><span class="b">Shops</span><span class="b">Sources</span><span class="b on">This site's record</span></div>
+<h3>What this site claims about itself, and the evidence for each claim</h3>
+<p><u>K1 How often it is right</u> · <u>K2 How ordering works</u> · <u>K3 Why no Amazon</u> · <u>K4 What is sent and kept</u> · <u>K5 Cost and who pays</u> · <u>K6 Code, documents, credits</u></p>
+<h4>K1. How often it is right, and what it misses</h4>
+<div class="t" style="--c:2fr 1fr 1fr 1.6fr">
+<div class="hd"><div>What was measured</div><div>Result</div><div>Later run, 2026-09-29</div><div>How</div></div>
+<div><div class="m">Online results that really sold the product or a close equivalent</div><div><span class="cl">Result: </span>98%</div><div><span class="cl">Later run: </span>98.4%</div><div>20 graded searches, each run twice, 2026-09-26</div></div>
+<div><div class="m">Nearby results that really did. A shop that does not exist counts as wrong</div><div><span class="cl">Result: </span>62 to 64%</div><div><span class="cl">Later run: </span>71%</div><div>Same test</div></div>
+<div><div class="m">Nearby shops judged "likely" that really sold it</div><div><span class="cl">Result: </span>80% (53 of 66)</div><div></div><div>Graded 2026-09-24</div></div>
+<div><div class="m">Nearby shops judged "possibly" that really sold it</div><div><span class="cl">Result: </span>40% (58 of 146)</div><div></div><div>Graded 2026-09-24</div></div>
+<div><div class="m">Good online shops an independent search found that this site also found</div><div><span class="cl">Result: </span>31%</div><div></div><div>Same 20 searches</div></div>
+<div><div class="m">Good nearby shops, likewise</div><div><span class="cl">Result: </span>33 to 35%</div><div></div><div>Same 20 searches</div></div>
+<div><div class="m">Time a search takes</div><div><span class="cl">Result: </span>about 3 seconds in the middle case, about 5 at the slowest</div><div></div><div>20 searches, 2026-09-29</div></div>
+</div>
+<p class="s"><b>What it misses:</b> results come from one search index [named here]. Shops that block search crawlers, or that the index has not reached, are missing. Some real zip codes, mostly PO-box codes, cannot be used. <u>Raw evidence</u> · <u>The method</u> · <u>Known shortcuts</u></p>
+<div class="cols">
+<div>
+<h4>K2. How ordering works</h4>
+<div class="t" style="--c:1.2fr .5fr 1.6fr 1.6fr">
+<div class="hd"><div>Part</div><div>Weight</div><div>What moves it</div><div>When nothing is known</div></div>
+<div><div><b>Does it sell the product</b></div><div><span class="cl">Weight: </span>0.25</div><div>Five levels: product named in the shop's listing; only the category named; judged likely; judged possible; not confirmed</div><div>Not confirmed is the lowest level</div></div>
+<div><div><b>How it treats people</b></div><div><span class="cl">Weight: </span>0.30</div><div>Each ethics certification adds 0.25, capped. Each accepted labor or governance concern takes up to 0.25</div><div>Stays at the middle. Unknown is not bad</div></div>
+<div><div><b>How it treats the planet</b></div><div><span class="cl">Weight: </span>0.30</div><div>The same, with environmental certifications and concerns</div><div>Stays at the middle</div></div>
+<div><div><b>How close it is</b></div><div><span class="cl">Weight: </span>0.15</div><div>Nearby: full at the center of the zip area, nothing at 25 miles. Online: a fixed middle value</div><div>Distance unknown: said so on the shop's record</div></div>
+</div>
+<p class="m">The same weights apply to every search. A concern takes less when the penalty was small, the amount is not stated, the case is open, or it is about a related company. Minor concerns together take at most 0.25.</p>
+<p><span class="x">Not scored</span> chain size, membership of an independent retailer association, a concern's age.</p>
+<p class="s">Counted from: 28 certification entries of six kinds, concerns from 14 accepted sources (regulators, court records, established news organizations, recognized labor and environmental watchdogs), 41 chains with 10 or more US stores. <u>The lists</u> · <u>The full formula</u> · <u>Dispute a part of it</u></p>
+<h4>K3. Why no Amazon, and what counts as Amazon</h4>
+<p class="s">Amazon and every business it owns or has owned never appear, in any kind of result. That exclusion is the reason the site exists.</p>
+<div class="t" style="--c:1.2fr 1.2fr 1.4fr 1fr">
+<div class="hd"><div>Excluded</div><div>Web domain</div><div>Source for the ownership</div><div>Dated</div></div>
+<div><div>[business name 1 of 14]</div><div>[domain 1 of 39]</div><div>[public source] <u>Open</u></div><div>[date]</div></div>
+<div><div>[business name 2 of 14]</div><div>[domain 2 of 39]</div><div>[public source] <u>Open</u></div><div>[date]</div></div>
+</div>
+<p class="m">39 web domains and 14 business names. Code removes them twice in every search; the language model is never the only check. <u>The whole exclusion set</u></p>
+<h4>K5. Cost, and who pays</h4>
+<div class="t" style="--c:1.4fr 2fr">
+<div class="hd"><div>Question</div><div>What is known</div></div>
+<div><div><b>Your last search</b></div><div class="m">5 web lookups, [token count] tokens, about $0.023. Not charged to you</div></div>
+<div><div><b>A typical search</b></div><div class="m">4 or 5 web lookups, about $0.023. The first live search cost about $0.026</div></div>
+<div><div><b>Running the site</b></div><div class="m">No fixed cost; cost is per search. Projection, not a measurement: 3,000 searches a month is about $65</div></div>
+<div><div><b>Who pays</b></div><div>[who funds the searches: to be supplied by the operator]</div></div>
+<div><div><b>Is anyone paying to be placed</b></div><div class="s">No. No paid placement, no affiliate links, no advertising. Links to shops carry nothing that earns this site money</div></div>
+</div>
+<p><u>The cost ledger</u> · <u>What happens when the money runs out</u></p>
+</div>
+<div>
+<h4>K4. What is sent, to whom, and what is kept</h4>
+<p class="s"><b>Sent with each search:</b> the product, the city and state, the center of the zip area (rounded to about 0.6 mile), a rural-urban category. <b>Never sent:</b> the zip, a street address, your device's location.</p>
+<div class="t" style="--c:1.3fr 2.2fr">
+<div class="hd"><div>Who</div><div>Learns</div></div>
+<div><div><b>The search provider</b> [named here]</div><div>Search wording made from the product, and the center of the zip area, so it learns the zip area of each search. Not your IP address</div></div>
+<div><div><b>The language-model service</b> [named here], and the model provider it routes to</div><div>The product text, then titles and excerpts of the results found, which can name nearby towns. No location fields</div></div>
+<div><div><b>The hosts</b> [two, named here]</div><div>Ordinary request records, including your IP address</div></div>
+<div><div><b>Anyone else</b></div><div>No one. This page fetches no fonts, pictures, maps or other files from any other party</div></div>
+</div>
+<div class="t" style="--c:1.6fr 1.6fr .8fr">
+<div class="hd"><div>What</div><div>Afterward</div><div>How long</div></div>
+<div><div>The search as a whole: product together with place</div><div><span class="cl">Afterward: </span>used for that search only, never stored by this site</div><div></div></div>
+<div><div>Shops found, sells-it judgments, scores</div><div><span class="cl">Afterward: </span>looked up anew every search, not stored</div><div></div></div>
+<div><div>The reading of a product</div><div><span class="cl">Afterward: </span>stored and shared by everyone who types the same product. In effect a list of products people searched for, with no place and no IP address</div><div><span class="cl">How long: </span>30 days</div></div>
+<div><div>Your IP address (for IPv6, its first half)</div><div><span class="cl">Afterward: </span>held by the rate limiter</div><div><span class="cl">How long: </span>one minute</div></div>
+<div><div>The service's log line: worked or not, how long. Never product or place</div><div><span class="cl">Afterward: </span>not stored</div><div></div></div>
+<div><div>Request records at the hosts</div><div><span class="cl">Afterward: </span>under each host's own policy</div><div></div></div>
+<div><div>What the search provider and the model service receive</div><div><span class="cl">Afterward: </span>under each one's own policy</div><div></div></div>
+<div><div>The last product you typed</div><div><span class="cl">Afterward: </span>in this browser tab, for you only. Never the zip</div><div><span class="cl">How long: </span>until the tab closes</div></div>
+</div>
+<p class="s">No accounts, no cookies, no analytics, no tracking. The zip is never put in the page address. <u>The privacy document</u></p>
+<h4>K6. Code, documents and credits</h4>
+<p class="s">Open source under AGPL-3.0. <u>Source code</u> · <u>License</u></p>
+<p>Public documents: <u>ranking method</u> · <u>privacy</u> · <u>costs</u> · <u>quality method and evidence</u> · <u>exclusion set</u> · <u>accepted sources</u> · <u>known shortcuts</u></p>
+<p><b>Data credits:</b> zip data from the US Census Bureau and GeoNames (CC BY 4.0).</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="st" id="L">
+<h2>L. Budget spent, refused, failed</h2>
+<div class="note">Three cases that give no answer, each shown where the answer would have been, with the form still filled in. Only one appears at a time. L1 is this designer's proposal: the product has no budget-spent behavior yet, and whether a limit exists is undecided, so it gives no reset date. The design assumes the service can tell the three cases apart. Input errors are in state B; empty answers are in state G.</div>
+<div class="lab">L. Budget spent, refused, failed, 360 px</div>
+<div class="fr n">
+<div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
+<p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
+<div class="c3">
+<div class="bx">
+<h4>L1. Budget spent (proposal)</h4>
+<p><b>No search was run: the money for searches is spent for now.</b></p>
+<p class="m">Each search costs about $0.023, not charged to you. The site stops searching when its budget is used up, and says so here.</p>
+<p><b>Is it you?</b> No. You are not blocked and nothing is wrong with what you typed.</p>
+<p><b>When can you try again?</b> [when searches resume, if the operator has set that; otherwise "not known"]</p>
+<p><b>What still works:</b> everything that needs no search. <u>This site's record</u> · <u>The cost ledger</u></p>
+</div>
+<div class="bx">
+<h4>L2. Refused: too many searches</h4>
+<p><b>No search was run: more than 30 searches came from your connection in one minute.</b></p>
+<p class="m">The limit is 30 a minute for each connection. Others on the same connection count toward it.</p>
+<p><b>Is it you?</b> It is your connection, and only for a minute. The rate limiter holds your IP address for one minute, no longer.</p>
+<p><b>When can you try again?</b> In about a minute.</p>
+<p><span class="b on">Search again</span> <small>The form is as you left it.</small></p>
+</div>
+<div class="bx">
+<h4>L3. Failed</h4>
+<p><b>The search did not complete.</b></p>
+<p class="m">That is all this page is told. It does not know which of the four steps stopped.</p>
+<p><b>Is it you?</b> No. You are not blocked, and this is not the budget.</p>
+<p><b>When can you try again?</b> Now, or after a short wait. It may work.</p>
+<p><span class="b on">Search again</span> <small>The form is as you left it.</small></p>
+</div>
+</div>
+<h4>Which one is it?</h4>
+<div class="t" style="--c:1.2fr 1fr 1fr 1fr">
+<div class="hd"><div>Question</div><div>Budget spent</div><div>Too many searches</div><div>Failed</div></div>
+<div><div><b>Is the site broken?</b></div><div><span class="cl">Budget spent: </span>no</div><div><span class="cl">Too many: </span>no</div><div><span class="cl">Failed: </span>possibly, for the moment</div></div>
+<div><div><b>Am I blocked?</b></div><div><span class="cl">Budget spent: </span>no, it stops for everyone</div><div><span class="cl">Too many: </span>for about a minute</div><div><span class="cl">Failed: </span>no</div></div>
+<div><div><b>Has it run out of money?</b></div><div><span class="cl">Budget spent: </span>yes</div><div><span class="cl">Too many: </span>no</div><div><span class="cl">Failed: </span>no</div></div>
+<div><div><b>When can I try again?</b></div><div><span class="cl">Budget spent: </span>[if set]</div><div><span class="cl">Too many: </span>in about a minute</div><div><span class="cl">Failed: </span>now</div></div>
+</div>
+<p><small>In every case your zip has not left this browser.</small></p>
+</div>
+<div class="lab">L. Budget spent, refused, failed, 1280 px</div>
+<div class="fr w">
+<div class="top"><b>nottheriver</b><span class="b on">Shops</span><span class="b">Sources</span><span class="b">This site's record</span></div>
+<p>"cast iron skillet" near Olympia, WA <span class="b">Change the search</span></p>
+<div class="c3">
+<div class="bx">
+<h4>L1. Budget spent (proposal)</h4>
+<p><b>No search was run: the money for searches is spent for now.</b></p>
+<p class="m">Each search costs about $0.023, not charged to you. The site stops searching when its budget is used up, and says so here.</p>
+<p><b>Is it you?</b> No. You are not blocked and nothing is wrong with what you typed.</p>
+<p><b>When can you try again?</b> [when searches resume, if the operator has set that; otherwise "not known"]</p>
+<p><b>What still works:</b> everything that needs no search. <u>This site's record</u> · <u>The cost ledger</u></p>
+</div>
+<div class="bx">
+<h4>L2. Refused: too many searches</h4>
+<p><b>No search was run: more than 30 searches came from your connection in one minute.</b></p>
+<p class="m">The limit is 30 a minute for each connection. Others on the same connection count toward it.</p>
+<p><b>Is it you?</b> It is your connection, and only for a minute. The rate limiter holds your IP address for one minute, no longer.</p>
+<p><b>When can you try again?</b> In about a minute.</p>
+<p><span class="b on">Search again</span> <small>The form is as you left it.</small></p>
+</div>
+<div class="bx">
+<h4>L3. Failed</h4>
+<p><b>The search did not complete.</b></p>
+<p class="m">That is all this page is told. It does not know which of the four steps stopped.</p>
+<p><b>Is it you?</b> No. You are not blocked, and this is not the budget.</p>
+<p><b>When can you try again?</b> Now, or after a short wait. It may work.</p>
+<p><span class="b on">Search again</span> <small>The form is as you left it.</small></p>
+</div>
+</div>
+<h4>Which one is it?</h4>
+<div class="t" style="--c:1.2fr 1fr 1fr 1fr">
+<div class="hd"><div>Question</div><div>Budget spent</div><div>Too many searches</div><div>Failed</div></div>
+<div><div><b>Is the site broken?</b></div><div><span class="cl">Budget spent: </span>no</div><div><span class="cl">Too many: </span>no</div><div><span class="cl">Failed: </span>possibly, for the moment</div></div>
+<div><div><b>Am I blocked?</b></div><div><span class="cl">Budget spent: </span>no, it stops for everyone</div><div><span class="cl">Too many: </span>for about a minute</div><div><span class="cl">Failed: </span>no</div></div>
+<div><div><b>Has it run out of money?</b></div><div><span class="cl">Budget spent: </span>yes</div><div><span class="cl">Too many: </span>no</div><div><span class="cl">Failed: </span>no</div></div>
+<div><div><b>When can I try again?</b></div><div><span class="cl">Budget spent: </span>[if set]</div><div><span class="cl">Too many: </span>in about a minute</div><div><span class="cl">Failed: </span>now</div></div>
+</div>
+<p><small>In every case your zip has not left this browser.</small></p>
+</div>
+</section>
 
 <script>
 function sh(v){var s=document.querySelectorAll('.st');for(var i=0;i<s.length;i++){s[i].style.display=(v==='all'||s[i].id===v)?'':'none'}}
