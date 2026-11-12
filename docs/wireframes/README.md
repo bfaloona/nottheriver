@@ -4,7 +4,7 @@ Three low-fidelity designs for the site, each built on a different idea of what 
 
 - The designers never saw the current site. All they had was [inventory.md](inventory.md), which lists needs, information, functions and rules and says nothing about screens.
 - To view one, open its `wireframe.html` in a browser. Each file shows every state twice, at 360 px and at 1280 px wide, with buttons at the top to show one state at a time.
-- Nothing was rendered in a browser during this work (the brief forbids it). Whether the 360 px frames really fit was reasoned from the markup, not seen.
+- The designers and checkers rendered nothing in a browser (the brief forbids it). A later check on 2026-11-11 loaded all three files in headless Chromium at a 1400 px window: no script errors, no request to an outside host, every state switch shows its own screens, and no content leaves its 360 px or 1280 px frame (measured, 88 frames). One WF3 phone row did spill by 10 px on a long shop address and was fixed. Sample screens were looked at; not every frame was read by eye.
 
 ## The three designs
 
