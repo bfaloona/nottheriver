@@ -4,7 +4,7 @@ This is the only description of the product that the wireframe designers read. I
 
 - Product name: nottheriver. Stage: proof of concept, deployed, no public link yet (`docs/STATUS.md`).
 - Purpose (paraphrased from `README.md`): help someone find who sells a product, near them or online, ordered by how the sellers treat people and the planet, with Amazon never among them.
-- Every figure below is measured, with its source file, unless it says projection. Distances are in miles.
+- Every measured figure below names its source file; a projection says so. Limits (how many, how long, how far) come from the code and the cited docs. Statements of how often something happens ("usually", "typically", "rarely") without a source are the lead agent's estimates. Distances are in miles.
 - Item labels (IV-B3, IV-D7 and so on) are for the designers' coverage tables.
 
 ## IV-A. Why people come
@@ -238,7 +238,7 @@ Every function below must be possible in a design. How is open.
 
 | Label | Addition | State | Source |
 |---|---|---|---|
-| IV-E1 | Many more concerns: about 54 findings and 6 certifications imported from research on 54 retailers. Several concerns on one shop becomes common for large retailers | Planned | `docs/plans/amazon-alternatives-in-ranking.md` |
+| IV-E1 | Many more concerns: about 54 findings and 6 certifications imported from research on 54 retailers. Several concerns on one shop becomes common for large retailers | Planned | `docs/plans/amazon-alternatives-in-ranking.md`; the 54 retailers are from `docs/STATUS.md` |
 | IV-E2 | For each concern, a statement of how it was counted (its size band and whether it is about the shop or a related company) and a way to reach the full research record for that retailer | Planned | Same |
 | IV-E3 | Suggested shops: up to 3 shops that other recommendation sites name for the product's category, each citing those sites. Never scored, because nothing confirms they sell the product searched | Undecided (operator: not yet) | Same |
 | IV-E4 | Consumer co-ops as a positive fact about a shop, either shown only or with a score effect | Proposed | `docs/STATUS.md` |
@@ -249,7 +249,7 @@ Every function below must be possible in a design. How is open.
 | IV-E9 | Wider kinds of places to get a thing: free, used, lending libraries, thrift shops, person-to-person marketplaces, places near public transit | Proposed; whether marketplaces appear at all is undecided | `docs/ideas.md`, `docs/STATUS.md` |
 | IV-E10 | Favoring independent shops: in what is found, or in the score | Undecided | `docs/STATUS.md` |
 | IV-E11 | A fallback or clearer explanation for real zip codes that cannot be resolved | Undecided | `docs/STATUS.md` |
-| IV-E12 | Nearby shops from a curated, sourced directory of shops built on open place data, with web search as the fallback. Would keep the zip area away from the search provider and make "sells it" a lookup. A first check found open data alone too imprecise | Proposed direction | `docs/feasibility-overview.md` |
+| IV-E12 | Nearby shops from a curated, sourced directory of shops built on open place data, with web search as the fallback. Would keep the zip area away from the search provider and make "sells it" a lookup. A first check found that 6 of 300 tagged shops in open place data sold the product | Proposed direction | `docs/feasibility-overview.md` |
 | IV-E13 | Daily totals (searches, cost). Kept by the site once built; whether visitors can read them is not stated | Deferred | `docs/scale-feasibility.md` |
 | IV-E14 | Weighing concerns by age | Deferred | `docs/plans/amazon-alternatives-in-ranking.md` |
 
