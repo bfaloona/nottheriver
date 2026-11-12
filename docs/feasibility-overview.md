@@ -1,6 +1,6 @@
 # Feasibility overview: running nottheriver as users arrive
 
-Summary of the 2026-10-08 evaluation, for the operator. The evidence is in [scale-feasibility.md](scale-feasibility.md) and its two companions; every figure below is from there (measured or projection, as labelled there).
+Summary of the 2026-10-08 evaluation, for the operator. The evidence is in [scale-feasibility.md](scale-feasibility.md) and its two companions; every figure below is from there (measured or projection, as labelled there). What happens in a spike, under scripted traffic, across the whole country and in a month with no money, and which changes each calls for, is in [scaling-architecture.md](scaling-architecture.md) (2026-11-11).
 
 ## The short version
 

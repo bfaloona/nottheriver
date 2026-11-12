@@ -1,0 +1,520 @@
+{
+  "note": "Projections from repo figures and list prices; nothing here is billed data. Written by scenarios.mjs.",
+  "inputs": {
+    "braveUsdPerCall": 0.005,
+    "braveCreditUsd": 5,
+    "braveCallsPerSearch": 4,
+    "braveQueriesPerSecond": 50,
+    "normalizeUsd": 0.00033,
+    "normalizeMissRate": 0.4,
+    "modelUsdRouted": 0.00338,
+    "modelUsdCheapest": 0.00053,
+    "upperBoundUsdPerSearch": 0.1,
+    "openRouterFeeRate": 0.055,
+    "openRouterFeeMinUsd": 0.8,
+    "workerRequestsPerSearch": 2,
+    "workersFreeRequestsPerDay": 100000,
+    "workersPaidUsd": 5,
+    "kvFreeWritesPerDay": 1000,
+    "kvFreeReadsPerDay": 100000,
+    "durableFreeRequestsPerDay": 100000,
+    "durableFreeRowsWrittenPerDay": 100000,
+    "clientLimitPerMinute": 30,
+    "globalLimitPerMinute": 60,
+    "zipsGzipBytes": 330531,
+    "daysPerMonth": 30,
+    "peak_hour_share_assumed": 0.1,
+    "typical_usd_per_search": 0.02338
+  },
+  "shares_of_a_typical_search": {
+    "brave": 0.855,
+    "model": 0.145,
+    "one_brave_call": 0.214,
+    "model_when_on_the_cheapest_endpoint": 0.026
+  },
+  "steady": {
+    "SC1-small": {
+      "searches_per_month": 300,
+      "searches_per_day": 10,
+      "brave_calls": 1200,
+      "brave_usd_after_credit": 1,
+      "model_calls": 720,
+      "model_usd": 1.01,
+      "model_key_cap_at_twice_the_month_usd": 2.03,
+      "openrouter_purchase_fee_usd": 0.8,
+      "cloudflare_usd": 0,
+      "total_usd": 2.01,
+      "usd_per_search": 0.0067,
+      "worker_requests_per_day": 20,
+      "kv_reads_per_day": 10,
+      "kv_writes_per_day": 4,
+      "searches_per_minute_flat": 0.007,
+      "searches_per_minute_peak_hour": 0.02,
+      "zips_json_gb_if_fetched_every_search": 0.1
+    },
+    "SC1-medium": {
+      "searches_per_month": 3000,
+      "searches_per_day": 100,
+      "brave_calls": 12000,
+      "brave_usd_after_credit": 55,
+      "model_calls": 7200,
+      "model_usd": 10.14,
+      "model_key_cap_at_twice_the_month_usd": 20.28,
+      "openrouter_purchase_fee_usd": 0.8,
+      "cloudflare_usd": 0,
+      "total_usd": 65.14,
+      "usd_per_search": 0.0217,
+      "worker_requests_per_day": 200,
+      "kv_reads_per_day": 100,
+      "kv_writes_per_day": 40,
+      "searches_per_minute_flat": 0.069,
+      "searches_per_minute_peak_hour": 0.17,
+      "zips_json_gb_if_fetched_every_search": 0.99
+    },
+    "SC1-large": {
+      "searches_per_month": 30000,
+      "searches_per_day": 1000,
+      "brave_calls": 120000,
+      "brave_usd_after_credit": 595,
+      "model_calls": 72000,
+      "model_usd": 101.4,
+      "model_key_cap_at_twice_the_month_usd": 202.8,
+      "openrouter_purchase_fee_usd": 5.58,
+      "cloudflare_usd": 0,
+      "total_usd": 696.4,
+      "usd_per_search": 0.0232,
+      "worker_requests_per_day": 2000,
+      "kv_reads_per_day": 1000,
+      "kv_writes_per_day": 400,
+      "searches_per_minute_flat": 0.694,
+      "searches_per_minute_peak_hour": 1.67,
+      "zips_json_gb_if_fetched_every_search": 9.92
+    },
+    "SC3-country": {
+      "searches_per_month": 300000,
+      "searches_per_day": 10000,
+      "brave_calls": 1200000,
+      "brave_usd_after_credit": 5995,
+      "model_calls": 720000,
+      "model_usd": 1014,
+      "model_key_cap_at_twice_the_month_usd": 2028,
+      "openrouter_purchase_fee_usd": 55.77,
+      "cloudflare_usd": 5,
+      "total_usd": 7014,
+      "usd_per_search": 0.0234,
+      "worker_requests_per_day": 20000,
+      "kv_reads_per_day": 10000,
+      "kv_writes_per_day": 4000,
+      "searches_per_minute_flat": 6.944,
+      "searches_per_minute_peak_hour": 16.67,
+      "zips_json_gb_if_fetched_every_search": 99.16
+    }
+  },
+  "thresholds_searches_per_month": {
+    "brave_credit_ends": 250,
+    "kv_free_writes_end": 75000,
+    "peak_hour_meets_global_limit": 1080000,
+    "flat_traffic_meets_global_limit": 2592000,
+    "workers_free_requests_end": 1500000,
+    "durable_free_requests_end_at_2_per_search": 1500000
+  },
+  "spike_a_month_in_an_hour": {
+    "SC1-small": {
+      "minutes_until_workers_free_requests_run_out": 60,
+      "brave_calls_if_the_limit_fails_on_workers_free": 1200,
+      "brave_usd_if_the_limit_fails_on_workers_free": 6,
+      "searches_in_the_hour": 300,
+      "demand_per_minute": 5,
+      "times_the_global_limit": 0.08,
+      "served_if_the_global_limit_holds": 300,
+      "brave_calls_if_the_limit_holds": 1200,
+      "model_calls_if_the_limit_holds": 720,
+      "model_calls_if_every_search_runs": 720,
+      "not_served": 0,
+      "share_not_served": 0,
+      "share_refused_by_the_site_limit_while_running": 0,
+      "usd_if_the_limit_holds": 7.01,
+      "usd_if_every_search_runs": 7.01,
+      "usd_if_every_search_runs_upper_bound": 30,
+      "brave_calls_per_second_if_every_search_runs": 0.3,
+      "brave_calls_if_every_search_runs": 1200,
+      "worker_requests_in_the_hour": 600,
+      "over_workers_free_daily_requests": false,
+      "kv_writes_wanted": 120,
+      "over_kv_free_daily_writes": false
+    },
+    "SC1-medium": {
+      "minutes_until_workers_free_requests_run_out": 60,
+      "brave_calls_if_the_limit_fails_on_workers_free": 12000,
+      "brave_usd_if_the_limit_fails_on_workers_free": 60,
+      "searches_in_the_hour": 3000,
+      "demand_per_minute": 50,
+      "times_the_global_limit": 0.83,
+      "served_if_the_global_limit_holds": 3000,
+      "brave_calls_if_the_limit_holds": 12000,
+      "model_calls_if_the_limit_holds": 7200,
+      "model_calls_if_every_search_runs": 7200,
+      "not_served": 0,
+      "share_not_served": 0,
+      "share_refused_by_the_site_limit_while_running": 0,
+      "usd_if_the_limit_holds": 70.14,
+      "usd_if_every_search_runs": 70.14,
+      "usd_if_every_search_runs_upper_bound": 300,
+      "brave_calls_per_second_if_every_search_runs": 3.3,
+      "brave_calls_if_every_search_runs": 12000,
+      "worker_requests_in_the_hour": 6000,
+      "over_workers_free_daily_requests": false,
+      "kv_writes_wanted": 1200,
+      "over_kv_free_daily_writes": true
+    },
+    "SC1-large": {
+      "minutes_until_workers_free_requests_run_out": 60,
+      "brave_calls_if_the_limit_fails_on_workers_free": 120000,
+      "brave_usd_if_the_limit_fails_on_workers_free": 600,
+      "searches_in_the_hour": 30000,
+      "demand_per_minute": 500,
+      "times_the_global_limit": 8.33,
+      "served_if_the_global_limit_holds": 3600,
+      "brave_calls_if_the_limit_holds": 14400,
+      "model_calls_if_the_limit_holds": 8640,
+      "model_calls_if_every_search_runs": 72000,
+      "not_served": 26400,
+      "share_not_served": 0.88,
+      "share_refused_by_the_site_limit_while_running": 0.88,
+      "usd_if_the_limit_holds": 84.17,
+      "usd_if_every_search_runs": 701.4,
+      "usd_if_every_search_runs_upper_bound": 3000,
+      "brave_calls_per_second_if_every_search_runs": 33.3,
+      "brave_calls_if_every_search_runs": 120000,
+      "worker_requests_in_the_hour": 60000,
+      "over_workers_free_daily_requests": false,
+      "kv_writes_wanted": 12000,
+      "over_kv_free_daily_writes": true
+    },
+    "SC3-country": {
+      "minutes_until_workers_free_requests_run_out": 10,
+      "brave_calls_if_the_limit_fails_on_workers_free": 30000,
+      "brave_usd_if_the_limit_fails_on_workers_free": 150,
+      "searches_in_the_hour": 300000,
+      "demand_per_minute": 5000,
+      "times_the_global_limit": 83.33,
+      "served_if_the_global_limit_holds": 600,
+      "brave_calls_if_the_limit_holds": 2400,
+      "model_calls_if_the_limit_holds": 1440,
+      "model_calls_if_every_search_runs": 720000,
+      "not_served": 299400,
+      "share_not_served": 0.998,
+      "share_refused_by_the_site_limit_while_running": 0.988,
+      "usd_if_the_limit_holds": 14.03,
+      "usd_if_every_search_runs": 7014,
+      "usd_if_every_search_runs_upper_bound": 30000,
+      "brave_calls_per_second_if_every_search_runs": 333.3,
+      "brave_calls_if_every_search_runs": 1200000,
+      "worker_requests_in_the_hour": 600000,
+      "over_workers_free_daily_requests": true,
+      "kv_writes_wanted": 120000,
+      "over_kv_free_daily_writes": true
+    }
+  },
+  "brave_rate_cap": {
+    "searches_per_hour": 45000,
+    "brave_usd_per_hour": 900
+  },
+  "territory_check": {
+    "searches": 10,
+    "brave_calls": 40,
+    "brave_usd": 0.2
+  },
+  "abuse": {
+    "one_client_at_the_per_client_limit": {
+      "hour": {
+        "searches": 1800,
+        "brave_calls": 7200,
+        "model_calls": 4320,
+        "usd_typical": 42.08,
+        "usd_upper_bound": 180
+      },
+      "day": {
+        "searches": 43200,
+        "brave_calls": 172800,
+        "model_calls": 103680,
+        "usd_typical": 1010.02,
+        "usd_upper_bound": 4320
+      },
+      "month": {
+        "searches": 1296000,
+        "brave_calls": 5184000,
+        "model_calls": 3110400,
+        "usd_typical": 30300.48,
+        "usd_upper_bound": 129600
+      }
+    },
+    "many_clients_at_the_global_limit": {
+      "hour": {
+        "searches": 3600,
+        "brave_calls": 14400,
+        "model_calls": 8640,
+        "usd_typical": 84.17,
+        "usd_upper_bound": 360
+      },
+      "day": {
+        "searches": 86400,
+        "brave_calls": 345600,
+        "model_calls": 207360,
+        "usd_typical": 2020.03,
+        "usd_upper_bound": 8640
+      },
+      "month": {
+        "searches": 2592000,
+        "brave_calls": 10368000,
+        "model_calls": 6220800,
+        "usd_typical": 60600.96,
+        "usd_upper_bound": 259200
+      }
+    },
+    "global_limit_times_isolates_per_day_usd_typical": {
+      "2": 4040.06,
+      "5": 10100.16,
+      "10": 20200.32
+    },
+    "workers_free_daily_cap_no_preflight": {
+      "searches": 100000,
+      "usd_typical": 2338,
+      "usd_upper_bound": 10000
+    },
+    "minutes_to_use_up_a_budget_at_the_global_limit": {
+      "SC1-small": {
+        "monthly_pot_searches": 300,
+        "monthly_pot_minutes": 5,
+        "daily_slice_searches": 10,
+        "daily_slice_minutes": 0.2,
+        "most_lost_in_a_day_with_daily_slices_usd": 0.23
+      },
+      "SC1-medium": {
+        "monthly_pot_searches": 3000,
+        "monthly_pot_minutes": 50,
+        "daily_slice_searches": 100,
+        "daily_slice_minutes": 1.7,
+        "most_lost_in_a_day_with_daily_slices_usd": 2.34
+      },
+      "SC1-large": {
+        "monthly_pot_searches": 30000,
+        "monthly_pot_minutes": 500,
+        "daily_slice_searches": 1000,
+        "daily_slice_minutes": 16.7,
+        "most_lost_in_a_day_with_daily_slices_usd": 23.38
+      },
+      "SC3-country": {
+        "monthly_pot_searches": 300000,
+        "monthly_pot_minutes": 5000,
+        "daily_slice_searches": 10000,
+        "daily_slice_minutes": 166.7,
+        "most_lost_in_a_day_with_daily_slices_usd": 233.8
+      }
+    }
+  },
+  "zero_spend": {
+    "4_brave_calls_per_search": {
+      "searches_per_month": 250,
+      "searches_per_day": 8.3,
+      "brave_calls": 1000,
+      "model_calls": 600,
+      "model_usd_routed": 0.85,
+      "model_usd_cheapest": 0.13,
+      "months_a_5_usd_model_top_up_lasts_routed": 5.9,
+      "months_a_5_usd_model_top_up_lasts_cheapest": 37.7
+    },
+    "3_brave_calls_per_search": {
+      "searches_per_month": 333,
+      "searches_per_day": 11.1,
+      "brave_calls": 999,
+      "model_calls": 799.2,
+      "model_usd_routed": 1.13,
+      "model_usd_cheapest": 0.18,
+      "months_a_5_usd_model_top_up_lasts_routed": 4.4,
+      "months_a_5_usd_model_top_up_lasts_cheapest": 28.3
+    },
+    "2_brave_calls_per_search": {
+      "searches_per_month": 500,
+      "searches_per_day": 16.7,
+      "brave_calls": 1000,
+      "model_calls": 1200,
+      "model_usd_routed": 1.69,
+      "model_usd_cheapest": 0.27,
+      "months_a_5_usd_model_top_up_lasts_routed": 3,
+      "months_a_5_usd_model_top_up_lasts_cheapest": 18.9
+    }
+  },
+  "options": {
+    "today": {
+      "label": "4 Brave calls, throughput routing",
+      "usd_per_search_before_credit": 0.02338,
+      "saving_vs_today_share": 0,
+      "monthly_total_usd": {
+        "SC1-small": 2.01,
+        "SC1-medium": 65.14,
+        "SC1-large": 696.4,
+        "SC3-country": 7014
+      },
+      "searches_a_month_on_the_brave_credit": 250
+    },
+    "three_calls": {
+      "label": "3 Brave calls",
+      "usd_per_search_before_credit": 0.01838,
+      "saving_vs_today_share": 0.214,
+      "monthly_total_usd": {
+        "SC1-small": 1.01,
+        "SC1-medium": 50.14,
+        "SC1-large": 546.4,
+        "SC3-country": 5514
+      },
+      "searches_a_month_on_the_brave_credit": 333
+    },
+    "cheapest_routing": {
+      "label": "4 Brave calls, cheapest endpoint",
+      "usd_per_search_before_credit": 0.02053,
+      "saving_vs_today_share": 0.122,
+      "monthly_total_usd": {
+        "SC1-small": 1.16,
+        "SC1-medium": 56.59,
+        "SC1-large": 610.9,
+        "SC3-country": 6159
+      },
+      "searches_a_month_on_the_brave_credit": 250
+    },
+    "no_place_search": {
+      "label": "web search only (shop table replaces place search)",
+      "usd_per_search_before_credit": 0.01338,
+      "saving_vs_today_share": 0.428,
+      "monthly_total_usd": {
+        "SC1-small": 1.01,
+        "SC1-medium": 35.14,
+        "SC1-large": 396.4,
+        "SC3-country": 4014
+      },
+      "searches_a_month_on_the_brave_credit": 500
+    },
+    "no_place_one_web": {
+      "label": "shop table plus one web call",
+      "usd_per_search_before_credit": 0.00838,
+      "saving_vs_today_share": 0.642,
+      "monthly_total_usd": {
+        "SC1-small": 1.01,
+        "SC1-medium": 20.14,
+        "SC1-large": 246.4,
+        "SC3-country": 2514
+      },
+      "searches_a_month_on_the_brave_credit": 1000
+    },
+    "free_model": {
+      "label": "4 Brave calls, model at no charge (ceiling of any model change)",
+      "usd_per_search_before_credit": 0.02,
+      "saving_vs_today_share": 0.145,
+      "monthly_total_usd": {
+        "SC1-small": 1,
+        "SC1-medium": 55,
+        "SC1-large": 595,
+        "SC3-country": 6000
+      },
+      "searches_a_month_on_the_brave_credit": 250
+    }
+  },
+  "web_cache_saving_usd_per_month": {
+    "10_percent_hits": {
+      "SC1-small": 0.3,
+      "SC1-medium": 3,
+      "SC1-large": 30,
+      "SC3-country": 300
+    },
+    "30_percent_hits": {
+      "SC1-small": 0.9,
+      "SC1-medium": 9,
+      "SC1-large": 90,
+      "SC3-country": 900
+    },
+    "50_percent_hits": {
+      "SC1-small": 1.5,
+      "SC1-medium": 15,
+      "SC1-large": 150,
+      "SC3-country": 1500
+    }
+  },
+  "routing_premium_usd_per_month": {
+    "SC1-small": 0.86,
+    "SC1-medium": 8.55,
+    "SC1-large": 85.5,
+    "SC3-country": 855
+  },
+  "precompute_grid": {
+    "products": 100,
+    "areas": 50,
+    "cells": 5000,
+    "usd_per_refresh": 116.9,
+    "usd_per_month_nightly": 3507,
+    "usd_per_month_weekly": 501,
+    "searches_a_month_needed_to_break_even_nightly": 150000,
+    "searches_a_month_needed_to_break_even_weekly": 21428.57,
+    "requests_per_cell_per_month_if_all_traffic_lands_on_the_grid": {
+      "SC1-small": 0.06,
+      "SC1-medium": 0.6,
+      "SC1-large": 6,
+      "SC3-country": 60
+    }
+  },
+  "prewarm_readings_usd_per_month": {
+    "100_products": 0.03,
+    "1000_products": 0.33,
+    "10000_products": 3.3
+  },
+  "budget_meter": {
+    "durable_requests_per_search": 2,
+    "durable_requests_per_day": {
+      "SC1-small": 20,
+      "SC1-medium": 200,
+      "SC1-large": 2000,
+      "SC3-country": 20000
+    },
+    "rows_written_per_day_at_one_per_search": {
+      "SC1-small": 10,
+      "SC1-medium": 100,
+      "SC1-large": 1000,
+      "SC3-country": 10000
+    },
+    "durable_requests_if_every_arrival_asks": {
+      "spike_of_30000_in_an_hour": 30000,
+      "spike_of_300000_in_an_hour": 300000,
+      "caller_at_the_global_limit_per_day": 86400
+    },
+    "free_requests_per_day": 100000,
+    "free_rows_written_per_day": 100000
+  },
+  "geography": {
+    "zip_areas": 33791,
+    "distinct_two_decimal_centers": 33680,
+    "by_rural_urban_code": {
+      "metro_1_to_3": 17314,
+      "other_4_to_10": 16473,
+      "none": 4
+    },
+    "share_with_the_30_mile_nearby_radius": 0.487,
+    "territories": {
+      "PR": 132,
+      "VI": 6,
+      "GU": 7,
+      "AS": 1,
+      "MP": 3
+    },
+    "territories_total": 149,
+    "contiguous_states_longitude": {
+      "west": -124.64,
+      "east": -67.01
+    },
+    "contiguous_states_sun_time_span_hours": 3.8,
+    "searches_per_zip_area_per_month_if_spread_evenly": {
+      "SC1-small": 0.009,
+      "SC1-medium": 0.089,
+      "SC1-large": 0.888,
+      "SC3-country": 8.878
+    }
+  }
+}
