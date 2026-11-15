@@ -20,7 +20,7 @@ Nothing here changes the live site. The live data stays in `data/`.
 | `retailers/<slug>.md` | One file per retailer (54 files: 50 rated, 4 Amazon-owned and excluded) |
 | `build-index.mjs` | Checks every file's front matter and builds `index.json` |
 | `build-index.test.mjs` | Tests for the build script |
-| `fetch-page.mjs` | Reads public pages for any research run: `node research/fetch-page.mjs --out DIR [--browser] [--max-mb N] URL...`. Checks robots.txt before every request and redirect hop, keeps its true client name, records a refusal or challenge page without retrying, and loads script-filled pages in a headless browser. Not part of the Amazon alternatives run |
+| `fetch-page.mjs` | Reads public pages for any research run: `node research/fetch-page.mjs --out DIR [--browser] [--max-mb N] URL...`. Checks robots.txt (the general `*` group) before every request and redirect hop, keeps its true client name, records a refusal or challenge page without retrying, and loads script-filled pages in a headless browser. Not part of the Amazon alternatives run |
 | `fetch-page.test.mjs` | Tests for its robots.txt rules, text extraction and page classes |
 | `index.json` | Built from the front matter of `sites/` and `retailers/`; don't edit by hand |
 | `raw/` | Source material, listed below |

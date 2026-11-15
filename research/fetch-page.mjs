@@ -16,10 +16,11 @@ import { homedir } from 'node:os';
 import { pathToFileURL } from 'node:url';
 import { setTimeout as sleep } from 'node:timers/promises';
 
-// An agent runs this script and a model reads the pages, so a group a site wrote for
-// Anthropic's user-directed fetchers binds it as well as `*`. Groups for training
-// crawlers (ClaudeBot, GPTBot, CCBot) do not: nothing fetched here trains a model.
-export const ROBOTS_AGENTS = ['*', 'claude-user', 'claude-web', 'anthropic-ai'];
+// The request carries Node's own client name, which no robots.txt names, so the `*`
+// group is the one that binds it. A group written for a named crawler or assistant
+// (ClaudeBot, Claude-User, GPTBot) is not applied, by the owner's ruling in
+// docs/STATUS.md ("Decisions made by the operator", crawler rules).
+export const ROBOTS_AGENTS = ['*'];
 const MIN_GAP_MS = 2000;
 const MAX_PER_HOST = 6;
 const MAX_HOPS = 5;

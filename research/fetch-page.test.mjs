@@ -39,11 +39,10 @@ describe('robotsAllows', () => {
     expect(allows(robots, '/private')).toBe(false);
   });
 
-  it('obeys a group written for Anthropic user-directed fetchers, not one for training crawlers', () => {
-    const training = 'User-agent: *\nAllow: /\n\nUser-agent: ClaudeBot\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n';
-    expect(allows(training, '/directory')).toBe(true);
-    for (const agent of ['Claude-User', 'Claude-Web', 'anthropic-ai']) {
-      expect(allows(`User-agent: *\nAllow: /\n\nUser-agent: ${agent}\nDisallow: /\n`, '/directory')).toBe(false);
+  it('follows the general group, not one written for a named crawler or assistant', () => {
+    for (const agent of ['ClaudeBot', 'GPTBot', 'Claude-User', 'Claude-Web', 'anthropic-ai']) {
+      expect(allows(`User-agent: *\nAllow: /\n\nUser-agent: ${agent}\nDisallow: /\n`, '/directory')).toBe(true);
+      expect(allows(`User-agent: *\nDisallow: /\n\nUser-agent: ${agent}\nAllow: /\n`, '/directory')).toBe(false);
     }
   });
 
