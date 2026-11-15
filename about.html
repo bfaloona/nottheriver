@@ -22,7 +22,7 @@
 </header>
 
 <main class="page prose">
-<h1>Find who sells it near you or online, ranked by how they treat people and the planet, never Amazon.</h1>
+<h1>Find who sells it near you or online, never Amazon. For every shop we show what we know about how it treats people and the planet.</h1>
 <p>Type a product and a US zip code. You get shops near you and online retailers that sell it or something close, each ranked with its reasons shown. There are no accounts, cookies, or analytics.</p>
 
 <h2 id="amazon">Why Amazon never appears</h2>
@@ -38,6 +38,7 @@
 <li>Proximity: for shops near you, 1 at the center of your zip area, falling to 0 at 40 km (about 25 miles). Online retailers get 0.5.</li>
 </ul>
 <p>"Baseline 0.5" in a score's sources means that score started at 0.5 and nothing changed it.</p>
+<p>"Unknown" on a result means the shop is on none of our curated lists and the search turned up no accepted finding about it: we have not looked further yet, or we were blocked from looking. It counts neither for nor against the shop: its ethics and environment scores stay at 0.5.</p>
 <p>Certifications come from a short curated list in which every entry cites its source. A negative finding lowers a score only when its source is on the list of accepted sources: regulators, court records, established news organizations, and recognized labor and environmental watchdogs. The language model suggests search terms, judges whether each result is a shop that sells the product and leaves out those it judges are not, and points to findings in the search results; the text shown for a finding is always the source's own title or snippet, never words the model wrote. The chain badge comes from a curated list of chains with 10 or more US stores, each entry linking its own source, Like a certification it can be disputed; unlike one, it never changes the score. Details: <a data-repo-path="blob/main/docs/ranking.md">docs/ranking.md</a>.</p>
 
 <h2 id="dispute">Disputing a ranking</h2>

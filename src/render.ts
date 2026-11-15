@@ -41,6 +41,8 @@ const SIGNAL_LABELS: Record<SignalKind, string> = {
 
 const RANKING_HELP = 'about.html#ranking';
 
+type Component = SearchResult['components'][number];
+
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
   props: { id?: string; className?: string; data?: Record<string, string> } = {},
@@ -97,7 +99,7 @@ const WHY_LABELS: Record<ComponentName, string> = {
 
 const isRankingDoc = (url: string) => url.endsWith('about.html#ranking');
 
-function sellsText(c: SearchResult['components'][number]): string {
+function sellsText(c: Component): string {
   const judged = c.sources.some((s) => s.label.startsWith('Model judgment'));
   if (c.value >= 1) return judged ? 'Likely, by shop type' : 'Product named in listing';
   if (c.value >= 0.5) return judged ? 'Maybe, by shop type' : 'Category named in listing';
@@ -161,7 +163,17 @@ function sourceLink(s: SourceRef): HTMLAnchorElement {
   return outbound(s.url, kind ? `${kind} concern` : s.label, { data: { componentSource: '' } });
 }
 
-function whyText(c: SearchResult['components'][number], result: SearchResult): (Node | string)[] {
+const foundSources = (c: Component) => c.sources.filter((s) => !isRankingDoc(s.url));
+
+// "Unknown", not "nothing found": holding no certification or finding says the shop has
+// not been looked into far, or that looking was blocked, and nothing about how it behaves.
+// The test is the panel's own (a source behind the ethics or environment score), so the row
+// and the panel cannot disagree. A chain badge or a membership badge that never scores is
+// not a record.
+const hasRecord = (result: SearchResult) =>
+  result.signals.length > 0 || result.components.some((c) => (c.name === 'ethics' || c.name === 'env') && foundSources(c).length > 0);
+
+function whyText(c: Component, result: SearchResult): (Node | string)[] {
   switch (c.name) {
     case 'relevance':
       return [sellsText(c)];
@@ -169,14 +181,14 @@ function whyText(c: SearchResult['components'][number], result: SearchResult): (
       if (result.kind === 'online') return ['Online'];
       return [result.distance_km === null ? 'Unknown' : formatDistance(result.distance_km)];
     default: {
-      const found = c.sources.filter((s) => !isRankingDoc(s.url));
-      if (found.length === 0) return ['Nothing found'];
+      const found = foundSources(c);
+      if (found.length === 0) return ['Unknown'];
       return found.flatMap((s, i) => (i > 0 ? [', ', sourceLink(s)] : [sourceLink(s)]));
     }
   }
 }
 
-function componentRow(c: SearchResult['components'][number], result: SearchResult): HTMLLIElement {
+function componentRow(c: Component, result: SearchResult): HTMLLIElement {
   return el(
     'li',
     { data: { component: c.name } },
@@ -209,6 +221,8 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
       ),
     );
   }
+
+  if (!hasRecord(result)) body.append(el('p', { className: 'record', data: { record: 'unknown' } }, 'People and planet: unknown'));
 
   // The claim is the source's own title; this code only labels its kind.
   for (const s of result.signals) {
@@ -253,6 +267,16 @@ export function renderWeights(weights: SearchResponse['weights']): HTMLParagraph
     `Ranked by ${parts.join(', ')}. `,
     internal(RANKING_HELP, 'How ranking works'),
   );
+}
+
+// Says how much of the list rests on a record, so a page of "unknown" rows reads as a gap
+// in what the site holds and not as a verdict on the shops.
+function renderRecordCount(shown: SearchResult[]): HTMLParagraphElement | null {
+  if (shown.length === 0) return null;
+  const withRecord = shown.filter(hasRecord).length;
+  const count = `${withRecord} of ${shown.length} ${shown.length === 1 ? 'result has' : 'results have'} a people-and-planet record.`;
+  const unknown = ' Unknown means a shop is on none of our lists and this search found nothing about it: we have not looked further yet, or were blocked from looking.';
+  return el('p', { className: 'record-count', data: { recordCount: '' } }, withRecord < shown.length ? count + unknown : count);
 }
 
 const shopId = (rank: number) => `shop-${rank}`;
@@ -318,7 +342,7 @@ function section(
   return node;
 }
 
-// Renders the weights line and both sections into root; returns how many results are visible.
+// Renders the weights line, the record count and both sections into root; returns how many results are visible.
 export function renderResults(
   response: SearchResponse,
   root: HTMLElement,
@@ -334,8 +358,10 @@ export function renderResults(
   const map = pins.length > 0 && config.onMap ? el('div', { className: 'map', data: { map: '' } }) : null;
   map?.setAttribute('role', 'region');
   map?.setAttribute('aria-label', 'Map of the shops listed near you');
+  const recordCount = renderRecordCount([...shownLocal, ...shownFarther, ...shownOnline]);
   root.replaceChildren(
     renderWeights(response.weights),
+    ...(recordCount ? [recordCount] : []),
     section('near', 'Near you', response.local, shownLocal, view.near, config, farther, map),
     section('online', 'Online', response.online, shownOnline, view.online, config),
   );

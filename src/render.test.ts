@@ -61,12 +61,12 @@ describe('renderResults (HR5)', () => {
     }
   });
 
-  it('names certifications and concerns, and says when nothing was found', () => {
+  it('names certifications and concerns, and says unknown when it holds neither', () => {
     const [first, second] = response.local;
     expect(whyRows(first!)).toEqual([
       ['Sells it', 'Product named in listing'],
       ['Ethics', 'B Corp'],
-      ['Environment', 'Nothing found'],
+      ['Environment', 'Unknown'],
       ['Distance', formatDistance(first!.distance_km!)],
     ]);
     expect(whyRows(second!)[1]).toEqual(['Ethics', 'Labor concern']);
@@ -87,7 +87,7 @@ describe('renderResults (HR5)', () => {
     });
     const rows = (r: SearchResult) =>
       [...renderResult(r, config).querySelectorAll('[data-component]')].map((row) => row.querySelector('.component-text')!.textContent);
-    expect(rows(judged(1, 'Model judgment: likely sells it'))).toEqual(['Likely, by shop type', 'B Corp', 'Nothing found', 'Unknown']);
+    expect(rows(judged(1, 'Model judgment: likely sells it'))).toEqual(['Likely, by shop type', 'B Corp', 'Unknown', 'Unknown']);
     expect(rows(judged(0.5, 'Model judgment: may sell it'))[0]).toBe('Maybe, by shop type');
     expect(rows(judged(0.2, base.retailer.name))[0]).toBe('Not confirmed');
   });
@@ -126,6 +126,63 @@ describe('renderResults (HR5)', () => {
     expect(plain.certifications).toHaveLength(0);
     expect(plain.chain).toBeUndefined();
     expect(item(plain).querySelector('.badges')).toBeNull();
+  });
+
+  const recordLine = (result: SearchResult) => renderResult(result, config).querySelector('[data-record]');
+
+  it('says "unknown" on a result with no certification or finding, and only there', () => {
+    const [certified, withConcern] = response.local;
+    const [alsoCertified, chainOnly] = response.online;
+    // A chain badge is a fact about the domain, not about how the shop treats people or the planet.
+    expect(chainOnly!.chain).toBeDefined();
+    expect(recordLine(chainOnly!)!.textContent).toBe('People and planet: unknown');
+    for (const result of [certified!, withConcern!, alsoCertified!]) expect(recordLine(result), result.id).toBeNull();
+    const positive: Signal = { kind: 'labor', polarity: 'positive', claim: 'Named a best employer', source_url: 'https://example.org/a', origin: 'llm', action_date: null };
+    expect(recordLine({ ...chainOnly!, signals: [positive] })).toBeNull();
+  });
+
+  it('still says "unknown" beside a membership badge that does not score', () => {
+    const base = response.online[1]!;
+    const member: SearchResult = {
+      ...base,
+      certifications: [{ kind: 'independent_retailer_assoc', label: 'Independent retailer association member', source_url: 'https://example.org/members', checked: '2026-01-01' }],
+    };
+    const li = renderResult(member, config);
+    expect(li.querySelector('.badge')!.textContent).toBe('Independent retailer association member');
+    expect(li.querySelector('[data-record]')!.textContent).toBe('People and planet: unknown');
+    const el = document.createElement('div');
+    renderResults({ ...response, local: [], online: [member] }, el, config);
+    expect(el.querySelector('[data-record-count]')!.textContent).toMatch(/^0 of 1 result has a people-and-planet record\. Unknown means/);
+  });
+
+  it('keeps the "unknown" line free of links, and the panel in agreement with it', () => {
+    for (const result of all) {
+      const li = renderResult(result, config);
+      const line = li.querySelector('[data-record]');
+      if (!line) continue;
+      expect(line.querySelector('a')).toBeNull();
+      const panel = [...li.querySelectorAll('[data-component="ethics"] .component-text, [data-component="env"] .component-text')];
+      expect(panel.map((row) => row.textContent)).toEqual(['Unknown', 'Unknown']);
+    }
+  });
+
+  it('counts the results that have a record, once, above the lists', () => {
+    const counts = root.querySelectorAll('[data-record-count]');
+    expect(counts).toHaveLength(1);
+    expect(counts[0]!.textContent).toBe(
+      '3 of 4 results have a people-and-planet record. Unknown means a shop is on none of our lists and this search found nothing about it: we have not looked further yet, or were blocked from looking.',
+    );
+    expect(counts[0]!.previousElementSibling!.matches('[data-weights]')).toBe(true);
+  });
+
+  it('counts only the results the filters leave, and drops the explanation when none is unknown', () => {
+    const el = document.createElement('div');
+    renderResults(response, el, config, { ...defaultView, certifiedOnly: true });
+    expect(el.querySelector('[data-record-count]')!.textContent).toBe('2 of 2 results have a people-and-planet record.');
+    renderResults(response, el, config, { ...defaultView, near: false, certifiedOnly: true });
+    expect(el.querySelector('[data-record-count]')!.textContent).toBe('1 of 1 result has a people-and-planet record.');
+    renderResults({ ...response, local: [], online: [] }, el, config);
+    expect(el.querySelector('[data-record-count]')).toBeNull();
   });
 
   it('shows a negative signal with its kind, source link, action date, and a dispute link', () => {
