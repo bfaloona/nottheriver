@@ -2,6 +2,8 @@
 
 Status: research and proposals, 2026-11-11. Nothing here is built or tested with people. The owner decides (section 9).
 
+Updated 2026-11-15: most of the pages in section 10 have now been read, and sections 10 and 11 carry the results; the evidence is in [evidence/ethics-data/blocked-pages/](evidence/ethics-data/blocked-pages/README.md). Pages were read with a plain request, a headless browser, Wayback Machine copies, and for three sites the owner's own browser with the owner present. Scripted requests followed each site's crawler rules, and no stealth tool, proxy, CAPTCHA solving or login was used; two departures are recorded in that folder's README. On the same day the owner ruled that this project claims fair use and does not wait on publishers' permission (`docs/STATUS.md`, "Decisions made by the operator"). Sections 1 to 9 are as written on 2026-11-11 apart from three corrected lines (the unread list in section 2, the "Data needed" line of ES3 and the "Reuse rights" line of ES6), so where they say a source "needs permission", read that ruling alongside, and where they say "unconfirmed", check sections 10 and 11.
+
 Why this exists: a review on 2026-11-11 ([value-proposition-review.md](value-proposition-review.md), decision VQ3, the headline rewrite) proposed dropping "ranked by how they treat people and the planet" from the headline because 87% to 93% of results carried the default scores. The owner's answer: not now. Treat it as a data problem and keep ethics in the product; without it the site is a map search. This report asks what a one-person site can do to make ethical ratings easy to find and use during a product search.
 
 Written 2026-11-11 by an evaluation agent (Fable) from the nine research files in [evidence/ethics-data/](evidence/ethics-data/) plus `docs/ranking.md`, `data/README.md`, `data/negative-sources.md`, `src/render.ts`, `src/controls.ts` and `docs/wireframes/README.md`. No web request was made for this report itself; the research files made them. Outside facts carry the URL and "read 2026-11-11" from the file that read them. "Measured" names its file; "estimate" and "my judgment" are labeled. Nothing here is legal advice.
@@ -28,7 +30,7 @@ Written 2026-11-11 by an evaluation agent (Fable) from the nine research files i
 
 - **Starting points, named by the owner:** seven sites (Good Shopping Guide, Ethical Consumer, Good On You, Toxic-Free Future's Retailer Report Card, Climate Friendly Supermarkets, the Environmental Investigation Agency's "Dirty Dozen" of 2013, EPA's Green Power Partnership) and one web search, "retail store ethical ranking", which became the survey of 15 other graders in `p1-epa-and-survey.md`.
 - **Approach the seed sites suggested (the rubric):** their finished scores cannot be copied, but their method and the public records and registries they draw on can. So every source is described by ten fields (F1 to F10: entity, join, topic and direction, coverage, evidence strength, reuse rights, form, upkeep, meaning of absence, risk of harm) and every strategy is judged by six tests: coverage, reuse rights, upkeep, honesty when data is missing, shopper use, risk.
-- **What could not be read:** the Dirty Dozen PDF (expired certificate); the B Corp directory and its terms (HTTP 403, refused); the data portal of DOL (US Department of Labor), empty to the fetch tool; Violation Tracker's terms (403); most script-driven member directories. Section 10 lists all of them. Most pages were read through a summarizing fetch tool, so quotes are as that tool returned them.
+- **What could not be read:** the Dirty Dozen PDF (expired certificate); the B Corp directory and its terms (HTTP 403, refused); the data portal of DOL (US Department of Labor), empty to the fetch tool; Violation Tracker's terms (403); most script-driven member directories. Section 10 lists all of them, with what a second pass on 2026-11-15 read. Most pages were read through a summarizing fetch tool, so quotes are as that tool returned them.
 
 ## 3. What the seed sites and the dataset hunts found
 
@@ -146,7 +148,7 @@ Thirteen strategies, labeled ES1 to ES12, with ES11 split into ES11a and ES11b. 
 | | |
 |---|---|
 | Shopper sees | In "Why this rank": "Look this shop up: OSHA inspections, Violation Tracker, B Corp directory" |
-| Data needed | URL patterns only, none of them confirmed (OSHA returned 405 (request type not allowed), B Corp and Violation Tracker 403 to the agents) |
+| Data needed | URL patterns only. On 2026-11-15 four landed on the right company, each tested on one or two names: Violation Tracker, Good On You, Good Shopping Guide and B Corp (section 10, first row). OSHA is untested (405, request type not allowed, in the first pass; crawler rules unreadable in the second) |
 | Coverage | 0% moved; useful mostly for chains and brands |
 | Reuse rights | Links copy nothing; the owner should check each site's terms on links that carry a search term |
 | Upkeep | 6 h; 2 h a year (estimate) |
@@ -192,7 +194,7 @@ Thirteen strategies, labeled ES1 to ES12, with ES11 split into ES11a and ES11b. 
 | Shopper sees | A box above the results: labels checked by a third party, a question to ask the shop, what makes it last; each line linked |
 | Data needed | Hand-written cards keyed to a fixed list of product types. The model returns a free-text category today (`proxy/schemas/normalize.json`) and would pick from the list instead |
 | Coverage | 0% of shops moved; share of searches with a card: not measured |
-| Reuse rights | The site's own words plus links. EPA's ecolabel table (the Fable file's main source) did not load, so its fit to cookware, tents or toys is unknown. EPA says a listing "is not an endorsement" and states non-commercial reuse; the owner should check that naming a listed label is acceptable |
+| Reuse rights | The site's own words plus links. EPA's ecolabel table (the Fable file's main source) did not load on 2026-11-11. Read on 2026-11-15, it is mostly institutional, with one cookware label and no rows for tents or toys (section 10). EPA says a listing "is not an endorsement" and states non-commercial reuse; the owner should check that naming a listed label is acceptable |
 | Upkeep | Opus 15 to 25 h for 40 types; Fable about 2 h a card, 40 h for 20; 10 h a year (estimates) |
 | Honesty when missing | "No guide yet for this product type" |
 | Shopper use | High (both brainstorms): the only ethics help that works in a shop the site cannot rate |
@@ -365,68 +367,71 @@ Today (`index.html:25`): "Find who sells it near you or online, ranked by how th
 
 ## 10. Pages the owner needs to open
 
-Ordered by which step each one gates.
+Ordered by which step each one gates. The last column is what a second pass read on 2026-11-15; quotes, counts and the files behind each answer are in [evidence/ethics-data/blocked-pages/](evidence/ethics-data/blocked-pages/README.md). Each answer rests on one fetch; "skipped" means a terms or license question left unread under the owner's ruling of that day. Still for the owner, by hand: one search for REI or Target in the Good On You directory, and the form searches (CPSC, NLRB, IndieBound, Human Rights Campaign).
 
-| Step | Page | What to look for |
-|---|---|---|
-| 1 | OSHA establishment search, https://violationtracker.goodjobsfirst.org/, B Corp directory, https://directory.goodonyou.eco/brand/<name>, https://thegoodshoppingguide.com/brand-directory/<name>/ (both patterns seen only in search results) | Whether a link carrying a shop name lands on that shop (for the check-it-yourself links) |
-| 1 | https://violationtracker.goodjobsfirst.org/plans and /pages/user-guide | Price; what may be republished; parent coverage |
-| 2 | https://www.epa.gov/greenerproducts/recommendations-specifications-standards-and-ecolabels-federal-purchasing | Whether its rows cover consumer goods the site sees |
-| 3 | https://www.bcorporation.net/en-us/find-a-b-corp/ and /en-us/terms-and-conditions/ | Terms; confirm Alter Eco and Lake Champlain Chocolates |
-| 3 | https://directories.onepercentfortheplanet.org/ ; https://explore.changeclimate.org/ ; https://partner.fairtradecertified.org/ | Member counts, terms, whether retailers appear |
-| 3 | https://greenbusinessnetwork.org/directory ; https://search.greenbusinessca.org/ | Listings, counts, share that are shops |
-| 3 | https://certifiedeo.com/companies and /terms-of-service ; https://livingwageforus.org/living-wage-employers/ | Directory size, reuse, share that are shops |
-| 3 | DOL Form 5500 layout files, newest year | Whether a code marks employee ownership plans |
-| 3 | https://www.ncg.coop/ | Ask permission to use the co-op list |
-| 3 | https://www.indiebound.org/indie-store-finder ; https://www.narts.org/find-a-narts-member-store ; https://nbda.com/dealer-finder-member-directory/ | Test a known bookshop, thrift shop and bike shop; terms; whether public |
-| 3 | Toxic-Free Future's scoring rubric PDF, linked from https://toxicfreefuture.org/retailer-report-card/2024/methodology/ | Sub-criterion points |
-| 3 | https://directory.goodonyou.eco/ (search REI or Target) ; https://resources.goodonyou.eco/help/multi-collection ; https://resources.goodonyou.eco/help/good-on-you-ratings-api | Whether any retailer rating is public; API fields and price |
-| 3 | https://thegoodshoppingguide.com/supermarkets/ ; https://www.ethicalconsumer.org/subscriptions ; https://www.ethicalconsumer.org/company-profile/etsy-inc | Scores and benchmark; price and data license; what a free reader sees |
-| 4 | https://dataportal.dol.gov/ and https://data.dol.gov/ | Whether a no-key CSV of wage and OSHA cases exists; file URLs; license |
-| 4 | https://www.dol.gov/general/aboutdol/copyright | Confirm the public-domain sentences |
-| 4 | https://www.nlrb.gov/advanced-search | Whether the export has employer address; robots rules |
-| 4 | CPSC site, search "Civil and Criminal Penalties" | The civil-penalty list |
-| 4 | https://www.epa.gov/greenchill/greenchill-certified-stores-historical-data (2023 file) ; Safer Choice spreadsheet on Envirofacts | Columns; overlap with the top 99 |
-| 4 | https://www.epa.gov/greenpower/green-power-partnership-100-green-power-users | Whether the live table matches the October 2024 PDF |
-| 4 | https://www.sec.gov/files/company_tickers.json | Download once with the owner's own client details |
-| 4 | https://dol.ny.gov/wage-theft-dashboard | Fields, size, terms |
-| Low value | https://wikirate.org/Wikirate_Terms_of_Use and /Licensing | Which license applies |
-| Low value | https://organic.ams.usda.gov/integrity/ and /integrity/Reports/DataHub.aspx ; https://www.ams.usda.gov/rules-regulations/organic/organic-integrity-database | Downloads, terms, whether retailers appear |
-| Low value | https://www.fairlabor.org/members/all-members/ ; https://certifiedhumane.org/whos-certified/ ; https://global-standards.org/suppliers/certified-suppliers ; https://www.bluesign.com/system-partners | Counts and terms (makers, not shops) |
-| Low value | https://sam.gov/content/entity-information ; Google Maps Platform terms ; https://support.google.com/business/answer/9049526 | Scraping and caching terms; owner-attribute rules |
-| Low value | https://www.hrc.org/cei/search ; https://foe.org/retailer-report-card/ ; https://progressivegrocer.com/4-big-food-retailers-score-lowest-plastic-pollution-scorecard ; https://chainstoreage.com/operations/list-details-worlds-most-ethical-companies-15-retailers-make-cut | Whether results are free and which retailers; whether an edition newer than 2018 to 2021 exists |
-| Low value | https://content.eia-global.org/assets/2013/10/The_Dirty_Dozen.pdf | Chain list and grades (2013) |
+| Step | Page | What to look for | Read 2026-11-15 |
+|---|---|---|---|
+| 1 | OSHA establishment search, https://violationtracker.goodjobsfirst.org/, B Corp directory, https://directory.goodonyou.eco/brand/<name>, https://thegoodshoppingguide.com/brand-directory/<name>/ (both patterns seen only in search results) | Whether a link carrying a shop name lands on that shop (for the check-it-yourself links) | Four of five land, each tested on one or two names. Violation Tracker: `https://violationtracker.goodjobsfirst.org/?company_op=starts&company=Dollar+General` gave 319 results. Good On You and Good Shopping Guide: both patterns land on Patagonia; Good On You's address is not always the plain name (`/brand/hello-jackalo` is Jackalo). B Corp: `https://www.bcorporation.net/en-us/find-a-b-corp/?query=<name>&sortBy=companies-production-en-us` puts the company first, but the match is loose, so the name must be read. OSHA: not tested (crawler rules unreadable) |
+| 1 | https://violationtracker.goodjobsfirst.org/plans and /pages/user-guide | Price; what may be republished; parent coverage | From archive copies dated 2026-06-30: searching and viewing are free; downloads cost $25, $45 or $150 a month by size; "more than 3,000 parent companies". Republishing: skipped (terms) |
+| 2 | https://www.epa.gov/greenerproducts/recommendations-specifications-standards-and-ecolabels-federal-purchasing | Whether its rows cover consumer goods the site sees | Mostly not. 135 rows, 71 of them construction; the table is built for federal buyers. Consumer rows: clothing, furniture, paint, cleaners, hand soap, paper, phones, TVs, computers and one cookware label. None for tents or toys |
+| 3 | https://www.bcorporation.net/en-us/find-a-b-corp/ and /en-us/terms-and-conditions/ | Terms; confirm Alter Eco and Lake Champlain Chocolates | Both are listed: Alter Eco LLC, "Certified since January 2009"; Champlain Chocolate Company (Lake Champlain Chocolates), "Certified since May 2018". Read in the owner's browser. Terms: skipped. The site's crawler rules close it to Anthropic's assistants, so the project's fetch script leaves it alone |
+| 3 | https://directories.onepercentfortheplanet.org/ ; https://explore.changeclimate.org/ ; https://partner.fairtradecertified.org/ | Member counts, terms, whether retailers appear | 1% for the Planet: not read, its crawler rules allow only the home page. Climate Label (explore.changeclimate.org): 148 certified brands; REI and Etsy are featured; there is no shop category. Fair Trade portal: likely needs a login. Terms: skipped |
+| 3 | https://greenbusinessnetwork.org/directory ; https://search.greenbusinessca.org/ | Listings, counts, share that are shops | Green Business Network: only the first screen of listings loaded in a test; no count. California directory: only its menu loaded; the menu has a "Shopping & Retail" category. Shares unknown |
+| 3 | https://certifiedeo.com/companies and /terms-of-service ; https://livingwageforus.org/living-wage-employers/ | Directory size, reuse, share that are shops | Certified EO: likely 6,200 to 6,300 entries (63 pages of 100; page 1 repeats some names). Of the first 100, 9 carry a store tag and none is a top-99 shop; each entry has a type tag (ESOP, co-op, trust). Living Wage for Us: the page claims "300+" employers; the names did not load. Reuse: skipped |
+| 3 | DOL Form 5500 layout files, newest year | Whether a code marks employee ownership plans | Yes. The data field `TYPE_PENSION_BNFT_CODE` holds plan codes, and `2O`, `2P` and `2Q` are employee stock ownership plans. The code marks a company that sponsors such a plan, not the share it owns. Read from the 2025 form and instructions; the layout files' host was skipped (crawler rules unreadable) |
+| 3 | https://www.ncg.coop/ | Ask permission to use the co-op list | No longer an ask, under the 2026-11-15 ruling. Only the home page was read; the list is at `/find-co-op`, not fetched |
+| 3 | https://www.indiebound.org/indie-store-finder ; https://www.narts.org/find-a-narts-member-store ; https://nbda.com/dealer-finder-member-directory/ | Test a known bookshop, thrift shop and bike shop; terms; whether public | No shop was tested. IndieBound: the finder is public (books only), its ownership filter lists only stores that opted in, and its crawler rules close it to Anthropic's assistants. NARTS: the directory sits on a separate member site, not loaded. NBDA: closed by its crawler rules. Terms: skipped |
+| 3 | Toxic-Free Future's scoring rubric PDF, linked from https://toxicfreefuture.org/retailer-report-card/2024/methodology/ | Sub-criterion points | Read. Corporate Commitment 20; Transparency 44 (40 for shops that do not sell beauty products); Ban the Bad 51 (45); Safer Solutions 50; totals 165 and 155. Points per sub-criterion are in `answers.md`, row p57. Points go only to adopted, public policies |
+| 3 | https://directory.goodonyou.eco/ (search REI or Target) ; https://resources.goodonyou.eco/help/multi-collection ; https://resources.goodonyou.eco/help/good-on-you-ratings-api | Whether any retailer rating is public; API fields and price | No retailer rating seen: the directory has only Fashion and Beauty tabs, though a retailer method is published. The search was not run (crawler rules close `/search/`). API: fields include `parentCompany`, `certifications` and `size`; 60 requests a minute; no price on the page |
+| 3 | https://thegoodshoppingguide.com/supermarkets/ ; https://www.ethicalconsumer.org/subscriptions ; https://www.ethicalconsumer.org/company-profile/etsy-inc | Scores and benchmark; price and data license; what a free reader sees | Supermarkets page: gone (redirects to the home page; the archive copy is a challenge page). Ethical Consumer: £39.50 or £45.50 a year; no data-license price on the page. A free reader sees the summary, boycott status and stories with some sub-scores; the overall score is hidden |
+| 4 | https://dataportal.dol.gov/ and https://data.dol.gov/ | Whether a no-key CSV of wage and OSHA cases exists; file URLs; license | Not readable. Both are script apps, and their crawler rules close the paths the scripts load from. The Department of Labor API (key held) is the route |
+| 4 | https://www.dol.gov/general/aboutdol/copyright | Confirm the public-domain sentences | The sentence is on the page: "may be used, reproduced and distributed without permission". Quoted, not analyzed |
+| 4 | https://www.nlrb.gov/advanced-search | Whether the export has employer address; robots rules | Crawler rules allow this path (they close `/search/`). The export gives up to 100,000 records with chosen columns; the column names need a form request, not made, so the address question is open |
+| 4 | CPSC site, search "Civil and Criminal Penalties" | The civil-penalty list | The page holds a pick-list of 297 company names with no amounts or years. Nine match top-99 names: Walmart, Target, Dollar General, Macy's, IKEA, TJX, Office Depot, Williams-Sonoma, Walgreen. Details need one form request per company, not made |
+| 4 | https://www.epa.gov/greenchill/greenchill-certified-stores-historical-data (2023 file) ; Safer Choice spreadsheet on Envirofacts | Columns; overlap with the top 99 | GreenChill 2023: 893 certified stores in 15 chains, with chain, store number, street address, level and years certified. Top-99 overlap: Target (78 stores) and Costco (5); the certificate belongs to a store, not a chain. Safer Choice: not measured |
+| 4 | https://www.epa.gov/greenpower/green-power-partnership-100-green-power-users | Whether the live table matches the October 2024 PDF | It matches. The live table's data file is dated 2024-10-22 and holds 265 entries; every usage figure in it is in the PDF. The same file holds the Top 30 Retail list, with ten top-99 names |
+| 4 | https://www.sec.gov/files/company_tickers.json | Download once with the owner's own client details | Not needed. The archive copy dated 2026-11-02 holds the file (10,423 entries: `cik_str`, `ticker`, `title`) |
+| 4 | https://dol.ny.gov/wage-theft-dashboard | Fields, size, terms | Likely gone: the owner's browser shows "Access denied" and "not found". The archive copy dated 2026-06-01 describes searches by employer and year; its data sat in an embedded view the copy does not hold |
+| Low value | https://wikirate.org/Wikirate_Terms_of_Use and /Licensing | Which license applies | Skipped (terms). An archive copy of the licensing page is held, unread |
+| Low value | https://organic.ams.usda.gov/integrity/ and /integrity/Reports/DataHub.aspx ; https://www.ams.usda.gov/rules-regulations/organic/organic-integrity-database | Downloads, terms, whether retailers appear | Not readable: the app shows an error screen to a headless browser, and the third page is gone (404) |
+| Low value | https://www.fairlabor.org/members/all-members/ ; https://certifiedhumane.org/whos-certified/ ; https://global-standards.org/suppliers/certified-suppliers ; https://www.bluesign.com/system-partners | Counts and terms (makers, not shops) | Fair Labor: the first 20 members only, no total. Certified Humane: 206 companies, mostly producers; its products column names store brands (Great Value, Kirkland, Member's Mark). Global Organic Textile Standard: results failed to load. bluesign: 947 partners, 91 of them brands and retailers. Terms: skipped |
+| Low value | https://sam.gov/content/entity-information ; Google Maps Platform terms ; https://support.google.com/business/answer/9049526 | Scraping and caching terms; owner-attribute rules | Terms: skipped. SAM.gov offers data files and an API. Google Business Profile: owners declare identity attributes and "Small business" themselves; there is no employee-owned or co-op attribute |
+| Low value | https://www.hrc.org/cei/search ; https://foe.org/retailer-report-card/ ; https://progressivegrocer.com/4-big-food-retailers-score-lowest-plastic-pollution-scorecard ; https://chainstoreage.com/operations/list-details-worlds-most-ethical-companies-15-retailers-make-cut | Whether results are free and which retailers; whether an edition newer than 2018 to 2021 exists | Human Rights Campaign: a 2026 edition exists; the search form needs no sign-in; results need a form request, not made. The other three are held as archive copies, unread |
+| Low value | https://content.eia-global.org/assets/2013/10/The_Dirty_Dozen.pdf | Chain list and grades (2013) | The PDF is held from an archive copy dated 2025-09-22, unread |
 
 ## 11. What is unverified
 
 | Claim in this report | Why it is unverified |
 |---|---|
 | Every hour figure | One agent's estimate each; none timed. Those for the public-record check rest on a bulk download no agent opened |
-| The share of brand and online results reachable by certifications | No one has measured it. Neither the Opus file's "10 to 25%" nor a lower figure has a test behind it: the B Corp directory returned 403, the 1% for the Planet directory did not load, and Climate Label was tried for three names. Seen so far: Alter Eco (Climate Label, confirmed; B Corp, unconfirmed) and Lake Champlain Chocolates (B Corp, unconfirmed); no full check of the 77 websites |
+| The share of brand and online results reachable by certifications | No one has measured it. Neither the Opus file's "10 to 25%" nor a lower figure has a test behind it: the B Corp directory returned 403, the 1% for the Planet directory did not load, and Climate Label was tried for three names. Seen so far: Alter Eco (Climate Label and B Corp) and Lake Champlain Chocolates (B Corp); both B Corp listings were read on 2026-11-15. No full check of the 77 websites |
 | The Opus file's "60 to 90% of chain results get a finding" | Unmeasured. The concentration of chain results makes a high share possible; no agent ran the check |
 | About 5% of all results gain data if a parent's record counts for its banners (ED12) | The Opus file's estimate; not tested |
 | Coverage for DOL wage cases, OSHA, ECHO, NLRB, FTC | Estimates; only the OSHA rate (9 of 50) was measured, on an earlier branch and a different retailer set |
 | Science Based Targets 336 results and SmartWay 235 | My sums over the hunt's name lists; the name matches (ITO EN, Patagonia Works, parent ties) are that agent's |
 | The 463 and 151 scorecard figures | Depend on parent ties (Safeway to Albertsons, Sam's Club to Walmart, TJX banners) taken from agents' own knowledge |
-| The 471 results on 25 websites for Toxic-Free Future | Adds three parent ties (HomeSense and Sierra to TJX, Nordstrom Rack to Nordstrom) from the reviewer's own knowledge, not the hunts or the files |
+| The 471 results on 25 websites for Toxic-Free Future | Adds three parent ties (HomeSense and Sierra to TJX, Nordstrom Rack to Nordstrom) from the reviewer's own knowledge, not the hunts or the files. The methodology page read on 2026-11-15 names TJX and Nordstrom but none of those banners |
 | jewelosco.com as an Albertsons banner | Unconfirmed; the saved shop name is "Jewel Fresh Food Center" |
 | The share of results on graded websites whose product type matches the grade's topic | Not measured; it needs the product-type list |
 | 28 resale results (1.3%) | The Fable file's count; I did not reclassify |
 | 12 hardware-banner websites, 60 results (11 websites and 36 results outside the chain list) | My reading of shop names in `shop-domains.tsv`, not a dealer list |
 | The three-kinds split | A proxy (chain tag by local or online), not a classification; brands with stores and small shops that sell online fall on the wrong side |
-| Lake Champlain Chocolates is a B Corp; Food Depot is employee-owned | Search-result leads; pages not read |
-| DOL Form 5500 can identify employee-owned companies | Layout files not read |
-| All reuse-rights readings | Read through a summarizing tool on 2026-11-11, often as clipped quotes; several terms pages not read at all (B Corp, 1% for the Planet, Green America, Violation Tracker). None is a legal conclusion |
-| That linking to a grade, or a link carrying a shop's name, is acceptable | Not checked against any site's terms |
+| Food Depot is employee-owned | A search-result lead. It is not on the first page of the Certified EO directory; the other 62 pages were not read |
+| DOL Form 5500 can identify employee-owned companies | Partly resolved: codes `2O`, `2P` and `2Q` mark a sponsor of an employee stock ownership plan. Unverified: that such a plan means the company is employee-owned (the code gives no share), and whether any top-99 shop's parent carries one (the data file was not read) |
+| All reuse-rights readings | Read through a summarizing tool on 2026-11-11, often as clipped quotes; several terms pages not read at all (B Corp, 1% for the Planet, Green America, Violation Tracker). None is a legal conclusion. Terms reading stopped on 2026-11-15 under the owner's ruling, so these stay unverified by choice |
+| That linking to a grade, or a link carrying a shop's name, is acceptable | Not checked against any site's terms, and under the ruling it will not be |
+| That a look-up link lands on the right business | Tested on one or two names per site (Violation Tracker: Dollar General; Good On You and Good Shopping Guide: Patagonia; B Corp: Alter Eco and Lake Champlain Chocolates). ES3's check on 20 shops is still needed; Good On You's addresses and B Corp's loose matching will both miss some names |
 | "Not checked" reads as neutral; shoppers want ownership stated; shoppers will consider used goods | No user research exists in the repo or the files |
 | The model can pick from a fixed product-type list reliably | Not tested |
 | The share of searches whose product type has a "what to look for" card | Not measured |
 | Hours for the fixed product-type list and the model change in step 2 | Not estimated by any agent |
 | Review load for ES11a (sourced tips, checked by the owner) | Open-ended; not estimated |
-| EPA's ecolabel table fits consumer product types | Rows did not load |
-| Toxic-Free Future has no edition newer than 2024 | One search by one agent |
+| Toxic-Free Future has no edition newer than 2024 | One search by one agent; the methodology page read on 2026-11-15 names only the sixth edition (2024) |
+| Everything in section 10's last column | One fetch per page on one day, by agents. Answers from archive copies are as old as the copy. "Likely gone" for the New York dashboard rests on one browser load. The Certified EO size is an estimate from a page counter. Shop matches for GreenChill, CPSC and the green power lists are by name |
 | Shopper use and risk ratings in section 5 | Judgments, the brainstorms' or the evaluation agent's; none is tested |
 | Ratings in section 6 and all recommendations in section 9 | The evaluation agent's judgment |
+
+Resolved on 2026-11-15, and so removed from the table: EPA's ecolabel table is mostly institutional (135 rows, 71 of them construction; no rows for tents or toys); Lake Champlain Chocolates is a B Corp (certified since May 2018).
 
 ## 12. Review record
 
