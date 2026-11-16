@@ -1,6 +1,6 @@
 # nottheriver
 
-Type a product and a US zip code, and this site suggests retailers that sell it, split into stores near you and online shops, ranked by ethical practice, environmental sustainability, and proximity. Amazon and Amazon-owned businesses never appear. That exclusion is the reason the site exists.
+Type a product and a US zip code, and this site suggests retailers that sell it, split into stores near you and online shops, ranked by ethical practice, environmental sustainability, and proximity. Amazon and Amazon-owned businesses never appear.
 
 Status: proof of concept, deployed. See [docs/STATUS.md](docs/STATUS.md).
 
@@ -13,6 +13,7 @@ Status: proof of concept, deployed. See [docs/STATUS.md](docs/STATUS.md).
 
 ## Docs
 
+- [Goals](docs/goals.md): the vision, the checks that show whether it works, and the order of work
 - [Privacy](docs/privacy.md): what leaves the browser and what is kept
 - [How ranking works](docs/ranking.md), including the down-ranking policy
 - [Costs](docs/costs.md): the open ledger of unit prices and cost per search
