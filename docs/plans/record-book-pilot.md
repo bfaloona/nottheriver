@@ -6,9 +6,9 @@ Answer: run these steps per chain, in order, with no other route. Tried on Costc
 
 - [x] Routes probed; Costco run (`docs/evidence/record-book/`)
 - [x] Lead's review of the trial: two OSHA rows fetched again match the sheet; both known in-window Costco OSHA cases were found; the wage route returns rows with money owed (Costco, 2004 to 2008) and the FTC route returns a known 2022 case (Kohl's)
-- [ ] Name patterns probed for the nine other chains, then frozen (step 0)
-- [ ] Nine chains left, Walmart first
-- [ ] Second-agent check; comparison with held-back files
+- [x] Name patterns probed for the nine other chains, then frozen (step 0)
+- [x] Nine chains run, Walmart first (results: `docs/evidence/record-book/README.md`)
+- [x] Second-agent check (`docs/evidence/record-book/check-rows.md`: 1 row of 787 mismatches, Walmart W204); comparison with held-back files (`docs/evidence/record-book/check-known-cases.md`: 5 of 7 known cases found, 2 left out as $0, none missed)
 - [ ] Owner rules on the $100,000 threshold, back wages, AT2b, and agent-written claim wording. These are filters over rows already collected, so collection does not wait for them
 - [ ] Owner takes advice on wording
 - [ ] Owner reads every row that meets the chosen rule
@@ -56,7 +56,7 @@ For each of the nine chains, find the names the sources use: one `query` per can
 ## Steps per chain
 
 1. **Entities.** Fetch (always by `research/fetch-page.mjs`) `https://data.sec.gov/submissions/CIK<10 digits>.json`, the latest 10-K's `index.json`, then its `ex21` file. Ace and REI file no 10-K: use their annual report (one web search).
-2. **Patterns.** Case-sensitive: OSHA names were upper case, WHD mixed. `%COSTCO%`, `%WAL-MART%`, `%WALMART%`, `%SAM'S CLUB%`, `%HOME DEPOT%`, `%RECREATIONAL EQUIPMENT%`, `%BEST BUY%`, `%DICK'S SPORTING%`, `%DICKS SPORTING%`, `%LOWE'S HOME%`, `%LOWES HOME%`, `%ACE HARDWARE%`, `%HOMEGOODS%`, `%HOME GOODS%`, `%TJX%`, `%TARGET CORP%`, `%TARGET STORE%`; title case too for WHD. Only Costco's are tested. Known gap: bare "REI", "TARGET" or "LOWE'S" names are missed.
+2. **Patterns.** Case-sensitive: OSHA names were upper case, WHD mixed. `%COSTCO%`, `%WAL-MART%`, `%WALMART%`, `%SAM'S CLUB%`, `%WAL MART%`, `%SAMS CLUB%`, `%HOME DEPOT%`, `%RECREATIONAL EQUIPMENT%`, `REI` (whole name), `%BEST BUY%`, `%DICK'S SPORTING%`, `%DICKS SPORTING%`, `%DICK'S%`, `%LOWE'S%`, `%LOWES%`, `%ACE HARDWARE%`, `%HOMEGOODS%`, `%HOME GOODS%`, `%TJX%`, `%TARGET%`; title case too for WHD. Frozen 2026-11-15 16:47 after the step 0 probe (`docs/evidence/record-book/patterns.md`). Known gap: names that put "REI" beside other words are missed; bare "TARGET" is found but excluded (AT2b).
 3. **S1.** Per pattern: `node research/fetch-osha-dol.mjs query OSHA inspection --where '[["estab_name","like","<pattern>"],["open_date","gt","2020-11-15"]]' --page 1000 --sort-by activity_nr --save handoff/record-book/raw/dol/<chain>-osha-<n>.json`; over 10,000 rows, split by `open_date` year. Then `penalties --ids-from <file> --save ...` and `node docs/evidence/record-book/osha-claims.mjs <inspections> <violations>`. Run DOL calls singly, backgrounded, under `gtimeout 1500`; after about 8, expect HTTP 429 for up to 10 minutes.
 4. **S2.** `query WHD enforcement` on `legal_name`, then `trade_nm`, both cases, no date filter.
 5. **S3.** Fetch `https://www.ftc.gov/legal-library/browse/cases-proceedings?search=<name>&sort_by=search_api_relevance` and the same on `/news-events/news/press-releases`, adding `&page=1`, `&page=2` until results predate the window. Keep a result only if the chain's entity is respondent or defendant.
