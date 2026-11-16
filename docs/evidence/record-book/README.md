@@ -39,7 +39,24 @@ Every case, accepted or excluded, is in the chain's `-cases.tsv` file beside its
 
 ## What the spread does not show
 
-The three chains over the proposed line are Walmart, Home Depot and Target, which also have the most cases of any size. No rate per store or per worker was computed, so this run cannot tell a worse record from a bigger company. That is the lead agent's reading, not a measured result.
+The three chains over the proposed line are Walmart, Home Depot and Target, which also have the most cases of any size. A later check computed OSHA cases per 100 US stores and per 10,000 US workers ([rates.md](rates.md)). Its answer: size explains much of the spread, likely not all. By the lead agent's bars, fixed before lookup:
+
+| Measure | Raw counts differ by | Rates differ by | Call |
+|---|---|---|---|
+| Cases of any size, per store (ten chains) | 45 times | 4.8 times | More than size |
+| Cases of any size, per US worker (Walmart, Home Depot, Costco: the only three with a published US figure) | 4.4 times | 2.4 times | Mostly size |
+| Cases of $10,000 or more, per US worker (the same three) | 6.9 times | 4.5 times | More than size |
+| Cases of $10,000 or more, per store | 48 times | 6.3 times | Cannot tell: it turns on Ace's single case and a store count taken from a results release |
+
+Inside the peer groups, with cases counted as accepted on the sheets:
+
+| Group | By raw count | By rate |
+|---|---|---|
+| Walmart, Target, Costco | Walmart has the most cases (182, 82, 41) | Walmart never has the highest rate. Per 100 stores: Costco 6.3, Target 4.1, Walmart 3.5. Per 10,000 US workers: Costco 1.8, Walmart 1.1. With Walmart's 28 held cases (RB3) added back, Walmart is 4.0 per 100 stores and its range touches Costco's; per worker their ranges overlap either way |
+| Home Depot, Lowe's | Home Depot has more (114, 60) | The order holds on every measure. Per 100 stores: 5.6 and 3.4 for cases of any size, 2.4 and 0.4 for cases of $10,000 or more |
+| REI, DICK'S | DICK'S has more (10, 5) | Too few cases to tell |
+
+The rates cannot test the proposed $100,000 rule: cases that large are 0 to 2 per chain, and Walmart's are FTC cases. Store sizes, distribution centers and state-run inspection programs differ by chain, and none is corrected for.
 
 ## Rulings the owner owes before anything shows
 
