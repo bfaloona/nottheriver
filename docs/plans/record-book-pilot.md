@@ -9,7 +9,9 @@ Answer: run these steps per chain, in order, with no other route. Tried on Costc
 - [x] Name patterns probed for the nine other chains, then frozen (step 0)
 - [x] Nine chains run, Walmart first (results: `docs/evidence/record-book/README.md`)
 - [x] Second-agent check (`docs/evidence/record-book/check-rows.md`: 1 row of 787 mismatches, Walmart W204); comparison with held-back files (`docs/evidence/record-book/check-known-cases.md`: 5 of 7 known cases found, 2 left out as $0, none missed)
-- [ ] Owner rules on the $100,000 threshold, back wages, AT2b, and agent-written claim wording. These are filters over rows already collected, so collection does not wait for them
+- [x] Owner ruled on AT4 (RB3, 2026-11-15): a company named with the chain's own name plus a company form counts as the chain, labeled "name as given; parent inferred from the name", at every chain (`docs/evidence/record-book/README.md`, "Rulings made"). The sheets stay as collected
+- [x] Owner ruled on the threshold (RB1, 2026-11-16): the $100,000 line stands, shown with each chain's count of all cases and its cases per 100 stores; a chain under the line reads "no case of $100,000 or more", never "none found"
+- [ ] Owner rules on back wages, AT2b, and agent-written claim wording. These are filters over rows already collected, so collection does not wait for them
 - [ ] Owner takes advice on wording
 - [ ] Owner reads every row that meets the chosen rule
 
@@ -18,7 +20,7 @@ Answer: run these steps per chain, in order, with no other route. Tried on Costc
 | Term | Value |
 |---|---|
 | Window | Action dated 2021-11-15 to 2026-11-15 |
-| Rule (proposed) | Final penalty or settlement of $100,000 or more, per case. Every case is recorded; the rule filters |
+| Rule (chosen by the owner 2026-11-16) | Final penalty or settlement of $100,000 or more, per case. Every case is recorded; the rule filters |
 | Row | S1: inspection with penalty above $0. S2: case with back wages or penalties above $0 ($0 cases in a side table). S3: case naming the chain's entity as respondent or defendant. S4: registry listing |
 
 | Source | Final when | Action date |

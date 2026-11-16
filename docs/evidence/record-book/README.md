@@ -1,6 +1,6 @@
 # Record book pilot: results for ten chains
 
-Answer: the fixed check ran on all ten chains inside the time bar, and a second agent matched 786 of 787 rows to their sources. By the proposed rule (a final penalty or settlement of $100,000 or more, 2021-11-15 to 2026-11-15) three chains have findings and seven have none. Nothing here shows on the site: the owner has not ruled on the rule or read the rows. Run 2026-11-15; method in [the plan](../../plans/record-book-pilot.md).
+Answer: the fixed check ran on all ten chains inside the time bar, and a second agent matched 786 of 787 rows to their sources. By the rule the owner chose on 2026-11-16 (a final penalty or settlement of $100,000 or more, 2021-11-15 to 2026-11-15, shown with each chain's case count and rate) three chains have findings and seven have none. Nothing here shows on the site: six rulings are open and the owner has not read the rows. Run 2026-11-15; method in [the plan](../../plans/record-book-pilot.md).
 
 ## The spread
 
@@ -58,13 +58,32 @@ Inside the peer groups, with cases counted as accepted on the sheets:
 
 The rates cannot test the proposed $100,000 rule: cases that large are 0 to 2 per chain, and Walmart's are FTC cases. Store sizes, distribution centers and state-run inspection programs differ by chain, and none is corrected for.
 
+## Rulings made
+
+**RB1, 2026-11-16: the $100,000 line, plus context.** Offered four rules, the owner chose "$100,000 line plus context":
+
+- A named finding is a final penalty or settlement of $100,000 or more in one case, dated in the window.
+- Every chain also shows its count of all cases and, where a store count is published, its cases per 100 stores.
+- A chain under the line reads "no case of $100,000 or more", never "none found".
+
+Cases that meet the line today: Walmart W202 (FTC, $100,000,000) and W204 (FTC, $3,000,000); Home Depot H1 (OSHA, $110,619) and H2 (OSHA, $100,425); Target T1 (OSHA, $176,000). Walmart W203 (FTC, $10,000,000) waits on RB5. The owner reads each of these rows before any shows.
+
+**RB3, 2026-11-15: a company named with the chain's own name plus a company form counts as the chain, at every chain.** The owner ruled "Count them" for Walmart and "Same ruling for all". Each such case is labeled "name as given; parent inferred from the name". The basis offered: Walmart's subsidiary list says it leaves out subsidiaries that are not significant, and the Labor Department's wage data pairs the trade name "Walmart" with "Wal-Mart Associates, Inc." and "Sam's Club" with "Walmart Puerto Rico, Inc.". No second source was checked for any of the companies. Rows naming another business ("Target Piping Corp.") stay out. The sheets and case files stay as collected; the counts below apply the ruling.
+
+| Chain | Cases added | OSHA cases, before and after | $10,000 or more (all sources), before and after | Largest added |
+|---|---|---|---|---|
+| Walmart | 28 OSHA: Wal-Mart Associates, Inc. (18), Wal-Mart Puerto Rico, Inc. (7), Wal-Mart Transportation, LLC (1), Wal-Mart Louisiana, LLC (1), Walmart Advanced Systems - Robotics Inc (1). 1 wage case of $6,288 (Sam's Club, Walmart Puerto Rico, Inc.) | 182, 210 | 46, 51 | $36,935 |
+| Target | 5 OSHA: Target Stores, Inc. | 82, 87 | 21, 22 | $11,522 |
+| Lowe's | 4 OSHA: Lowe's Home Improvement, LLC (3), Lowes Home Improvement Centers, LLC (1) | 60, 64 | 7, 9 | $13,240 |
+| Home Depot | 1 OSHA: The Home Depot Puerto Rico Inc | 114, 115 | 48, 48 | $2,500 |
+
+No added case reaches $100,000, so the "$100,000 or more" columns above do not change. Still held: the two bare "TARGET" and "SUPER TARGET" rows (RB6), the 18 TJX rows (RB4) and one "Westlake Ace Hardware" row. In [rates.md](rates.md) the "held rows added back" figures match this ruling for Walmart, Lowe's and Home Depot; for Target they also include the two bare banner rows (89 where the ruling gives 87).
+
 ## Rulings the owner owes before anything shows
 
 | | Ruling | What it changes |
 |---|---|---|
-| RB1 | The rule for a finding: $100,000 a case, another line, or a total per company | Which of the rows above count. At $10,000 a case every chain has at least one |
 | RB2 | Whether wage back pay counts toward the line, and whether wage cases are "final" when the source does not say | 16 wage cases in the window; the largest is $23,000 |
-| RB3 | Wal-Mart Associates, Inc. and other Walmart companies missing from the subsidiary list in its annual filing | Walmart OSHA cases held as "excluded, owner to rule": 18 that name Wal-Mart Associates, Inc. (the largest $36,935) and 10 that name other Walmart companies |
 | RB4 | Two TJX cases of $167,504 and $115,000 that the source does not tie to HomeGoods | Whether HomeGoods has findings by the proposed rule |
 | RB5 | Walmart's $10,000,000 FTC order (W203): ftc.gov shows no court entry, while the repo's earlier research says the court entered it on 2025-06-23 | Whether Walmart has two or three final findings |
 | RB6 | A bare banner name, such as "COSTCO" with no company suffix, accepted as the chain | Rows that rest on that rule, most of them on Walmart's and Home Depot's sheets; "TARGET STORES, INC." and bare "TARGET" rows are excluded today |
