@@ -50,7 +50,7 @@ As of 2026-10-01. Pushed to `main`; the Worker is deployed at `e573572` with the
 
 ## In flight
 
-- Nothing running.
+- Record book pilot ([plans/record-book-pilot.md](plans/record-book-pilot.md)), started 2026-11-15: the Costco trial is done ([evidence/record-book/trial-costco.md](evidence/record-book/trial-costco.md)); one agent is probing name patterns and then running the nine other chains, Walmart first. It ends at claim sheets for the operator; nothing changes on the site or in `data/`.
 - Stalled since 2026-10-09: the 3-Brave-call eval ($Q5 in [scale-feasibility.md](scale-feasibility.md), ruled yes with about 160 Brave calls). Round 1 ran (72 real Brave calls, 20 of 20 searches in both arms); round 2 and the blind grading did not. Its work is in the worktree `.claude/worktrees/agent-a425196dcc37b1982` (2 commits not on `main`, plus untracked grades), with the agent's own note in that worktree's `handoff/`. Seen 2026-11-15, not resumed.
 - Ruled yes and never started: the location-header test (RQ6, about 60 Brave calls authorized for it on 2026-10-09).
 

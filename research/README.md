@@ -21,6 +21,7 @@ Nothing here changes the live site. The live data stays in `data/`.
 | `build-index.mjs` | Checks every file's front matter and builds `index.json` |
 | `build-index.test.mjs` | Tests for the build script |
 | `fetch-page.mjs` | Reads public pages for any research run: `node research/fetch-page.mjs --out DIR [--browser] [--max-mb N] URL...`. Checks robots.txt (the general `*` group) before every request and redirect hop, keeps its true client name, records a refusal or challenge page without retrying, and loads script-filled pages in a headless browser. Not part of the Amazon alternatives run |
+| `fetch-osha-dol.mjs` | Reads DOL's open-data API (OSHA and Wage and Hour) with the key kept out of command lines and output: `metadata [agency endpoint] --out DIR`, `query <agency> <endpoint> --where '<[field, op, value] list>' --save FILE` (paged), `penalties --ids-from FILE --save FILE` (violations in batches). Searches are case-sensitive; the API refuses for minutes after about 8 calls. Tests in `fetch-osha-dol.test.mjs` |
 | `fetch-page.test.mjs` | Tests for its robots.txt rules, text extraction and page classes |
 | `index.json` | Built from the front matter of `sites/` and `retailers/`; don't edit by hand |
 | `raw/` | Source material, listed below |
