@@ -11,6 +11,8 @@ Answer: run these steps per chain, in order, with no other route. Tried on Costc
 - [x] Second-agent check (`docs/evidence/record-book/check-rows.md`: 1 row of 787 mismatches, Walmart W204); comparison with held-back files (`docs/evidence/record-book/check-known-cases.md`: 5 of 7 known cases found, 2 left out as $0, none missed)
 - [x] Owner ruled on AT4 (RB3, 2026-11-15): a company named with the chain's own name plus a company form counts as the chain, labeled "name as given; parent inferred from the name", at every chain (`docs/evidence/record-book/README.md`, "Rulings made"). The sheets stay as collected
 - [x] Owner ruled on the threshold (RB1, 2026-11-16): the $100,000 line stands, shown with each chain's count of all cases and its cases per 100 stores; a chain under the line reads "no case of $100,000 or more", never "none found"
+- [x] Owner ruled on Walmart's $10,000,000 FTC order (RB5, 2026-11-16): final, on the court's signed copy of 2025-06-23; this case only
+- Deferred by the owner 2026-11-16 ("defer remaining actions as unknown usefulness"): the three boxes below, and the rulings on the two TJX cases and on other sources
 - [ ] Owner rules on back wages, AT2b, and agent-written claim wording. These are filters over rows already collected, so collection does not wait for them
 - [ ] Owner takes advice on wording
 - [ ] Owner reads every row that meets the chosen rule
