@@ -85,6 +85,7 @@ Each needs the owner to schedule it under a goal, shelve it or drop it.
 | A graded test of searches that make 3 paid search calls in place of 4 | Approved 2026-10-09, stalled after its first round ([STATUS.md](STATUS.md#in-flight)). It would cut cost per search, which G4 might cover once G4 has a measure |
 | A test of whether sending the shopper's location changes web results | Approved 2026-10-09, never started ([STATUS.md](STATUS.md#in-flight)) |
 | Ideas not started: a price-level score, and free, used, lending-library and near-transit options | [ideas.md](ideas.md) |
+| Build the interface from the clickable prototype ([ui-prototype/README.md](ui-prototype/README.md)) | Put off by the owner on 2026-11-16 ("schedule building from this prototype for the future. 1mo?"). Revisit on or after 2026-12-16, a date the agent set from "1mo". First step then: the owner rules on the prototype's six decisions (UP1 to UP6), the first being whether the design is worth building while most results carry no checked fact. Size not estimated |
 
 ### Set aside
 
