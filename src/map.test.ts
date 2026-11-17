@@ -58,9 +58,9 @@ describe('drawMap', () => {
     expect(el.querySelector('.leaflet-control-attribution')!.textContent).toContain('OpenStreetMap contributors');
   });
 
-  it('takes a pin click to its result: scrolled into view, marked, and its shop link focused', () => {
+  it('takes a pin click to its result: scrolled into view, marked, and its shop name focused', () => {
     const list = document.createElement('ol');
-    list.innerHTML = '<li class="result" id="shop-1"><a data-retailer href="#a">Near Shop</a></li><li class="result result-picked" id="shop-2"><a data-retailer href="#b">Far Shop</a></li>';
+    list.innerHTML = '<li class="result" id="shop-1"><button data-retailer>Near Shop</button></li><li class="result result-picked" id="shop-2"><button data-retailer>Far Shop</button></li>';
     document.body.append(list);
     const scrolled = vi.fn();
     const item = document.getElementById('shop-1')!;
@@ -71,7 +71,7 @@ describe('drawMap', () => {
     const pin = pinsIn(el).find((p) => p.title === '1. Near Shop')!;
     pin.dispatchEvent(new MouseEvent('click', { bubbles: true }));
     expect(scrolled).toHaveBeenCalledWith({ behavior: 'smooth', block: 'center' });
-    expect(document.activeElement).toBe(item.querySelector('a'));
+    expect(document.activeElement).toBe(item.querySelector('button'));
     expect([...document.querySelectorAll('.result-picked')]).toEqual([item]);
   });
 

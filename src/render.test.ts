@@ -4,7 +4,7 @@ import type { SearchResponse, SearchResult, Signal } from '../proxy/src/contract
 import fixture from '../tests/fixtures/search-response.json';
 import { disputeUrlFor } from './config';
 import { defaultView } from './controls';
-import { formatDistance, removeMap, renderFooter, renderMap, renderResult, renderResults, renderStatus } from './render';
+import { formatDistance, removeMap, renderFooter, renderMap, renderResult, renderResults, renderStatus, type Shown } from './render';
 
 const response = fixture as SearchResponse;
 const config = { disputeUrl: disputeUrlFor('') };
@@ -42,11 +42,74 @@ describe('renderResults (HR5)', () => {
   it('explains every result in four plain rows under its score', () => {
     for (const result of all) {
       const li = item(result);
-      expect(li.querySelector('[data-why] summary')!.textContent).toBe('Why this rank');
+      expect(li.textContent).not.toContain('Why this rank');
       expect(li.querySelector('.why-total')!.textContent).toBe(`Score ${result.score.toFixed(2)}`);
       expect(whyRows(result).map(([name]) => name)).toEqual(['Sells it', 'Ethics', 'Environment', 'Distance']);
       expect(li.querySelector('.component-math'), 'no weight × value math').toBeNull();
     }
+  });
+
+  const nameOf = (li: Element) => li.querySelector<HTMLButtonElement>('[data-why] button[data-retailer]')!;
+  const panelOf = (li: Element) => li.querySelector<HTMLElement>('[data-why] .why-panel')!;
+
+  it('makes the shop name the button for its rank panel, closed until asked for', () => {
+    for (const result of all) {
+      const li = item(result);
+      const name = nameOf(li);
+      expect(name.type).toBe('button');
+      expect(name.textContent).toBe(result.retailer.name);
+      // The words are no longer on screen, so the button's label carries them.
+      expect(name.getAttribute('aria-label')).toBe(`${result.retailer.name}: why this rank`);
+      expect(name.getAttribute('aria-expanded')).toBe('false');
+      expect(name.getAttribute('aria-controls')).toBe(panelOf(li).id);
+      expect(panelOf(li).hidden).toBe(true);
+    }
+    const ids = [...root.querySelectorAll('.why-panel')].map((panel) => panel.id);
+    expect(new Set(ids).size, 'nearby and online ranks both start at 1').toBe(all.length);
+  });
+
+  it('links to the shop from an icon beside its name', () => {
+    for (const result of all) {
+      const li = item(result);
+      const visit = li.querySelector<HTMLAnchorElement>('[data-why] a[data-visit]')!;
+      expect(visit.previousElementSibling).toBe(nameOf(li));
+      expect(visit.getAttribute('href')).toBe(result.retailer.url);
+      expect(visit.getAttribute('aria-label')).toBe(`Visit ${result.retailer.name}`);
+      expect(visit.target).toBe('_blank');
+      expect(visit.textContent).toBe('');
+      expect(visit.querySelector('svg')!.getAttribute('aria-hidden')).toBe('true');
+      expect(li.querySelectorAll(`a[href="${result.retailer.url}"]`), 'one link to the shop').toHaveLength(1);
+    }
+  });
+
+  it('shows no shop link when the address is not one a browser should follow', () => {
+    const li = renderResult({ ...response.local[0]!, retailer: { ...response.local[0]!.retailer, url: 'javascript:alert(1)' } }, config);
+    expect(li.querySelector('[data-visit]')).toBeNull();
+    expect(nameOf(li).textContent).toBe(response.local[0]!.retailer.name);
+  });
+
+  it('opens and closes the panel in place on a press of the name where there is no hover pointer', () => {
+    // happy-dom answers yes to the hover query, so a touch screen has to be stated.
+    vi.stubGlobal('matchMedia', () => ({ matches: false }));
+    renderResults(response, root, config);
+    vi.unstubAllGlobals();
+    const li = item(response.local[0]!);
+    nameOf(li).click();
+    expect(panelOf(li).hidden).toBe(false);
+    expect(nameOf(li).getAttribute('aria-expanded')).toBe('true');
+    // In place, the panel is part of the page: a tap elsewhere must not collapse it and move the list.
+    document.body.click();
+    expect(panelOf(li).hidden).toBe(false);
+    nameOf(li).click();
+    expect(panelOf(li).hidden).toBe(true);
+    expect(nameOf(li).getAttribute('aria-expanded')).toBe('false');
+  });
+
+  it('leaves the panel closed when the name only takes focus, as it does after a map pin click', () => {
+    const li = item(response.local[0]!);
+    nameOf(li).focus();
+    expect(document.activeElement).toBe(nameOf(li));
+    expect(panelOf(li).hidden).toBe(true);
   });
 
   it('links only certifications and concerns, plus one "How ranking works"', () => {
@@ -152,7 +215,7 @@ describe('renderResults (HR5)', () => {
     expect(li.querySelector('[data-record]')!.textContent).toBe('People and planet: unknown');
     const el = document.createElement('div');
     renderResults({ ...response, local: [], online: [member] }, el, config);
-    expect(el.querySelector('[data-record-count] summary')!.textContent).toMatch(/^0 of 1 result has a people-and-planet record\./);
+    expect(el.querySelector('[data-unknown-toggle]'), 'an unknown shop on screen brings the explanation').not.toBeNull();
   });
 
   it('keeps the "unknown" line free of links, and the panel in agreement with it', () => {
@@ -166,37 +229,58 @@ describe('renderResults (HR5)', () => {
     }
   });
 
-  it('counts the results that have a record, once, above the lists', () => {
-    const counts = root.querySelectorAll('[data-record-count]');
-    expect(counts).toHaveLength(1);
-    expect(counts[0]!.querySelector('summary')!.textContent).toBe('3 of 4 results have a people-and-planet record. What unknown means');
-    expect(counts[0]!.previousElementSibling!.matches('[data-weights]')).toBe(true);
+  const unknownToggle = (el: ParentNode = root) => el.querySelector<HTMLButtonElement>('[data-unknown-toggle]');
+  const unknownHelp = (el: ParentNode = root) => el.querySelector<HTMLElement>('[data-unknown-help]');
+
+  it('puts one help line above the lists: the ranking link, then "What unknown means"', () => {
+    const lines = root.querySelectorAll('[data-results-help]');
+    expect(lines).toHaveLength(1);
+    expect(root.firstElementChild).toBe(lines[0]);
+    const [link, button] = [...lines[0]!.children];
+    expect(link!.textContent).toBe('How ranking works');
+    expect(link!.getAttribute('href')).toBe('about.html#ranking');
+    expect(button).toBe(unknownToggle());
+    expect(button!.textContent).toBe('What unknown means');
+  });
+
+  it('shows neither the weights nor a count of records above the lists', () => {
+    expect(root.textContent).not.toContain('Ranked by');
+    expect(root.textContent).not.toContain('people-and-planet record');
+    for (const w of new Set(Object.values(response.weights))) expect(root.textContent).not.toContain(w.toFixed(2));
   });
 
   it('keeps the explanation of "unknown" on the page, closed until asked for', () => {
-    const count = root.querySelector<HTMLDetailsElement>('[data-record-count]')!;
-    expect(count.tagName).toBe('DETAILS'); // native, so it opens in place and the results stay
-    expect(count.open).toBe(false);
-    expect(count.querySelector('summary + p')!.textContent).toBe(
+    const button = unknownToggle()!;
+    const help = unknownHelp()!;
+    expect(help.textContent).toBe(
       "Unknown means our lists hold no certification that counts toward a shop's score and this search found nothing about it: we have not looked further yet, or were blocked from looking.",
     );
+    expect(help.hidden).toBe(true);
+    expect(button.getAttribute('aria-expanded')).toBe('false');
+    expect(button.getAttribute('aria-controls')).toBe(help.id);
+
+    // A button, not a link to the About page: the explanation opens in place and the results stay.
+    button.click();
+    expect(help.hidden).toBe(false);
+    expect(button.getAttribute('aria-expanded')).toBe('true');
+    button.click();
+    expect(help.hidden).toBe(true);
+    expect(button.getAttribute('aria-expanded')).toBe('false');
   });
 
   it('leaves the explanation open across a re-render, such as a change of sort', () => {
-    root.querySelector<HTMLDetailsElement>('[data-record-count]')!.open = true;
+    unknownToggle()!.click();
     renderResults(response, root, config, { ...defaultView, sort: 'name' });
-    expect(root.querySelector<HTMLDetailsElement>('[data-record-count]')!.open).toBe(true);
+    expect(unknownHelp()!.hidden).toBe(false);
+    expect(unknownToggle()!.getAttribute('aria-expanded')).toBe('true');
   });
 
-  it('counts only the results the filters leave, and drops the explanation when none is unknown', () => {
+  it('drops the explanation when no shop on screen is unknown, and keeps the ranking link', () => {
     const el = document.createElement('div');
     renderResults(response, el, config, { ...defaultView, certifiedOnly: true });
-    expect(el.querySelector('[data-record-count]')!.textContent).toBe('2 of 2 results have a people-and-planet record.');
-    renderResults(response, el, config, { ...defaultView, near: false, certifiedOnly: true });
-    expect(el.querySelector('[data-record-count]')!.textContent).toBe('1 of 1 result has a people-and-planet record.');
-    expect(el.querySelector('[data-record-count]')!.tagName).toBe('P'); // nothing to explain, so nothing to open
-    renderResults({ ...response, local: [], online: [] }, el, config);
-    expect(el.querySelector('[data-record-count]')).toBeNull();
+    expect(unknownToggle(el)).toBeNull();
+    expect(unknownHelp(el)).toBeNull();
+    expect(el.querySelector('[data-results-help] a')!.textContent).toBe('How ranking works');
   });
 
   it('shows a negative signal with its kind, source link, action date, and a dispute link', () => {
@@ -309,18 +393,6 @@ describe('renderResults (HR5)', () => {
     ]);
   });
 
-  it('lists all four weights once per response', () => {
-    const weights = root.querySelectorAll('[data-weights]');
-    expect(weights).toHaveLength(1);
-    for (const w of Object.values(response.weights)) expect(weights[0]!.textContent).toContain(w.toFixed(2));
-  });
-
-  it('names the four score parts on the weights line as the "Why this rank" panel does', () => {
-    expect(root.querySelector('[data-weights]')!.textContent).toBe(
-      'Ranked by sells it 0.25, ethics 0.30, environment 0.30, distance 0.15. How ranking works',
-    );
-  });
-
   const facts = (result: SearchResult) => renderResult(result, config).querySelector('[data-facts]')!.textContent;
 
   it('gives each shop one facts line: the sells-it reading, then where it is, then "unknown" when it has no record', () => {
@@ -409,19 +481,47 @@ describe('renderStatus', () => {
     expect(el.textContent).toBe('Too many searches from this connection. Try again in about a minute.');
   });
 
-  it('links the online count to the Online section, and only while that section has rows to jump to', () => {
+  const all3 = { near: true, online: true, certifiedOnly: false };
+  const doneText = (shown: Partial<Shown>, view: Partial<typeof all3> = {}) => {
     const el = document.createElement('p');
-    renderStatus(el, { kind: 'done', near: 3, online: 10, onlineShown: true });
-    expect(el.textContent).toBe('Found 3 shops near you and 10 online.');
-    const link = el.querySelector('a')!;
+    const counts = { near: 0, withinKm: null, farther: 0, online: 0, ...shown };
+    renderStatus(el, { kind: 'done', shown: { ...counts, total: counts.near + counts.farther + counts.online }, view: { ...all3, ...view } });
+    return el;
+  };
+
+  it('counts the nearby shops with the distance they fall within, and the online ones', () => {
+    expect(doneText({ near: 10, withinKm: 9.66, online: 8 }).textContent).toBe('Found 10 shops within 6.0 mi and 8 online.');
+    expect(doneText({ near: 1, withinKm: 3.2, online: 1 }).textContent).toBe('Found 1 shop within 2.0 mi and 1 online.');
+  });
+
+  it('says "near you" when no nearby shop has a known distance', () => {
+    expect(doneText({ near: 3, online: 2 }).textContent).toBe('Found 3 shops near you and 2 online.');
+  });
+
+  it('counts farther shops apart from the nearby ones', () => {
+    expect(doneText({ near: 2, withinKm: 11.5, farther: 3, online: 4 }).textContent).toBe('Found 2 shops within 7.1 mi, 3 farther away and 4 online.');
+    expect(doneText({ farther: 1, online: 4 }).textContent).toBe('Found 1 shop farther away and 4 online.');
+    expect(doneText({ farther: 2 }).textContent).toBe('Found 2 shops farther away and none online.');
+  });
+
+  it('says so when a side found nothing', () => {
+    expect(doneText({ online: 4 }).textContent).toBe('Found no shops near you and 4 online.');
+    expect(doneText({ near: 2, withinKm: 11.5 }).textContent).toBe('Found 2 shops within 7.1 mi and none online.');
+  });
+
+  it('says "Showing" and leaves out a switched-off section while a filter is on', () => {
+    expect(doneText({ online: 8 }, { near: false }).textContent).toBe('Showing 8 online shops.');
+    expect(doneText({ online: 1 }, { near: false }).querySelector('a')!.textContent).toBe('1 online shop');
+    expect(doneText({ near: 2, withinKm: 11.5 }, { online: false }).textContent).toBe('Showing 2 shops within 7.1 mi.');
+    expect(doneText({ near: 1, withinKm: 3.2, online: 1 }, { certifiedOnly: true }).textContent).toBe('Showing 1 shop within 2.0 mi and 1 online.');
+    expect(doneText({ online: 1 }, { certifiedOnly: true }).textContent).toBe('Showing no shops near you and 1 online.');
+  });
+
+  it('links the online count to the Online section, and only while that section has rows to jump to', () => {
+    const link = doneText({ near: 3, withinKm: 5, online: 10 }).querySelector('a')!;
     expect(link.textContent).toBe('10 online');
     expect(link.getAttribute('href')).toBe('#online-heading');
-
-    renderStatus(el, { kind: 'done', near: 1, online: 10, onlineShown: false });
-    expect(el.textContent).toBe('Found 1 shop near you and 10 online.');
-    expect(el.querySelector('a')).toBeNull();
-    renderStatus(el, { kind: 'done', near: 3, online: 0, onlineShown: true });
-    expect(el.querySelector('a')).toBeNull();
+    expect(doneText({ near: 1, withinKm: 5 }).querySelector('a')).toBeNull();
   });
 
   it('points the jump link at the id the Online heading carries', () => {
@@ -436,6 +536,21 @@ describe('renderStatus', () => {
 });
 
 describe('section notes', () => {
+  it('leaves the count to the count line when a section has shops on screen', () => {
+    expect(root.querySelector('[data-section="near"] > .section-note')).toBeNull();
+    expect(root.querySelector('[data-section="online"] > .section-note')).toBeNull();
+  });
+
+  it('reports what is on screen: nearby shops with their farthest distance, farther ones and online', () => {
+    const el = document.createElement('div');
+    expect(renderResults(response, el, config)).toEqual({ near: 2, withinKm: 11.5, farther: 0, online: 2, total: 4 });
+    const far = { ...response.local[0]!, id: 'far1', rank: 3, distance_km: 72.4 };
+    expect(renderResults({ ...response, local: [], local_farther: [far] }, el, config)).toEqual({ near: 0, withinKm: null, farther: 1, online: 2, total: 3 });
+    // "Within 7.1 mi" would be a claim about a shop whose distance is not known.
+    const oneUnplaced = [response.local[0]!, { ...response.local[1]!, distance_km: null }];
+    expect(renderResults({ ...response, local: oneUnplaced }, el, config).withinKm).toBeNull();
+  });
+
   it('explains an empty section instead of hiding it', () => {
     const el = document.createElement('div');
     renderResults({ ...response, local: [] }, el, config);
@@ -460,7 +575,7 @@ describe('section notes', () => {
     expect(group.querySelector('h3')!.textContent).toBe('Farther away');
     expect(group.querySelector('.section-note')!.textContent).toBe('2 shops, 15 to 45 mi away');
     expect([...group.querySelectorAll('.rank')].map((r) => r.textContent)).toEqual(['3', '4']);
-    expect(shown).toBe(response.local.length + response.online.length + 2);
+    expect(shown.total).toBe(response.local.length + response.online.length + 2);
   });
 
   it('shows no farther heading when there are no farther shops', () => {
@@ -471,58 +586,212 @@ describe('section notes', () => {
     const el = document.createElement('div');
     const shown = renderResults(response, el, config, { sort: 'score', near: false, online: true, certifiedOnly: true });
     expect(el.querySelector<HTMLElement>('[data-section="near"]')!.hidden).toBe(true);
-    expect(shown).toBe(1);
+    expect(shown).toEqual({ near: 0, withinKm: null, farther: 0, online: 1, total: 1 });
   });
 });
 
-describe('"Why this rank" on a fine hover pointer', () => {
+describe('the rank panel on a fine hover pointer', () => {
   let el: HTMLElement;
-  const whys = () => [...el.querySelectorAll<HTMLDetailsElement>('details[data-why]')];
+  const whys = () => [...el.querySelectorAll<HTMLElement>('[data-why]')];
+  const name = (why: HTMLElement) => why.querySelector<HTMLButtonElement>('[data-retailer]')!;
+  const isOpen = (why: HTMLElement) => !why.querySelector<HTMLElement>('.why-panel')!.hidden;
+  const visit = (why: HTMLElement) => why.querySelector<HTMLAnchorElement>('[data-visit]')!;
+  const panel = (why: HTMLElement) => why.querySelector<HTMLElement>('.why-panel')!;
+  const REST_MS = 250;
+  // The pointer crossing into the wrapper, and then onto one thing inside it.
+  const enter = (why: HTMLElement) => why.dispatchEvent(new MouseEvent('mouseenter'));
+  const over = (target: Element) => target.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
 
   beforeEach(() => {
+    vi.useFakeTimers();
     vi.stubGlobal('matchMedia', () => ({ matches: true }));
     el = document.createElement('div');
     document.body.append(el);
     renderResults(response, el, config);
   });
-  afterEach(() => vi.unstubAllGlobals());
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.unstubAllGlobals();
+  });
 
-  it('closes on Escape from inside the panel and leaves focus on the summary', () => {
-    const d = whys()[0]!;
-    const link = d.querySelector<HTMLAnchorElement>('.why-help a')!;
+  it('opens once the pointer rests on the name, and closes when it leaves', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS - 1);
+    expect(isOpen(why)).toBe(false);
+    vi.advanceTimersByTime(1);
+    expect(isOpen(why)).toBe(true);
+    expect(name(why).getAttribute('aria-expanded')).toBe('true');
+    why.dispatchEvent(new MouseEvent('mouseleave'));
+    expect(isOpen(why)).toBe(false);
+  });
+
+  it('stays closed when the pointer only passes over the name', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS - 1);
+    why.dispatchEvent(new MouseEvent('mouseleave'));
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(false);
+  });
+
+  it('stays closed while the pointer rests on the shop link', () => {
+    const why = whys()[0]!;
+    enter(why);
+    // The pointer lands on the drawing inside the link.
+    over(visit(why).querySelector('svg')!);
+    vi.advanceTimersByTime(REST_MS * 2);
+    expect(isOpen(why)).toBe(false);
+  });
+
+  it('closes when the pointer moves from the name to the shop link, and opens again back on the name', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(true);
+    over(visit(why));
+    expect(isOpen(why)).toBe(false);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(true);
+  });
+
+  it('opens nothing when the pointer crosses the name on its way to the shop link', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS - 1);
+    over(visit(why));
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(false);
+  });
+
+  it('stays open while the pointer moves from the name into the panel', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS);
+    over(why.querySelector('.result-head')!);
+    over(panel(why).querySelector('.why-help a')!);
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(true);
+  });
+
+  it('leaves a panel pressed shut closed when the pointer drifts off the name beside it', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    name(why).click();
+    name(why).click();
+    over(why.querySelector('.result-head')!);
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(false);
+  });
+
+  it('keeps a pinned panel open with the pointer on the shop link', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    name(why).click();
+    over(visit(why));
+    expect(isOpen(why)).toBe(true);
+  });
+
+  it('stays closed on focus alone, and opens on a press', () => {
+    const why = whys()[0]!;
+    name(why).focus();
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(false);
+    name(why).click();
+    expect(isOpen(why)).toBe(true);
+    expect(why.dataset.pinned).toBe('1');
+  });
+
+  it('keeps a pinned panel open when the pointer leaves, until the name is pressed again', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    name(why).click();
+    why.dispatchEvent(new MouseEvent('mouseleave'));
+    expect(isOpen(why)).toBe(true);
+    name(why).click();
+    expect(isOpen(why)).toBe(false);
+    expect(why.dataset.pinned).toBeUndefined();
+  });
+
+  it('closes on Escape from inside the panel and leaves focus on the name', () => {
+    const why = whys()[0]!;
+    name(why).click();
+    const link = why.querySelector<HTMLAnchorElement>('.why-help a')!;
     link.focus();
-    expect(d.open).toBe(true);
     link.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-    expect(d.open).toBe(false);
-    expect(document.activeElement).toBe(d.querySelector('summary'));
+    expect(isOpen(why)).toBe(false);
+    expect(document.activeElement).toBe(name(why));
+  });
+
+  it('closes on Escape wherever focus is, since the pointer alone can open it', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(true);
+    document.body.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+    expect(isOpen(why)).toBe(false);
+    // Focus was not in the panel, so it is not pulled there.
+    expect(document.activeElement).not.toBe(name(why));
+  });
+
+  it('stays closed when the name is pressed open and shut before the pointer has rested', () => {
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    name(why).click();
+    name(why).click();
+    vi.advanceTimersByTime(REST_MS);
+    expect(isOpen(why)).toBe(false);
+    expect(name(why).getAttribute('aria-expanded')).toBe('false');
+  });
+
+  it('closes when focus leaves the name, the shop link and the panel', () => {
+    const why = whys()[0]!;
+    name(why).click();
+    why.dispatchEvent(new FocusEvent('focusout', { relatedTarget: why.querySelector('[data-visit]') }));
+    expect(isOpen(why)).toBe(true);
+    why.dispatchEvent(new FocusEvent('focusout', { relatedTarget: name(whys()[1]!) }));
+    expect(isOpen(why)).toBe(false);
+    expect(why.dataset.pinned).toBeUndefined();
   });
 
   it('closes a pinned panel on an outside click, with no listener left from an earlier render', () => {
     const old = whys()[0]!;
-    old.querySelector('summary')!.click();
+    name(old).click();
     expect(old.dataset.pinned).toBe('1');
 
     renderResults(response, el, config);
-    const d = whys()[0]!;
-    d.querySelector('summary')!.click();
-    expect(d.open).toBe(true);
+    const why = whys()[0]!;
+    name(why).click();
+    expect(isOpen(why)).toBe(true);
     document.body.click();
-    expect(d.open).toBe(false);
-    expect(d.dataset.pinned).toBeUndefined();
+    expect(isOpen(why)).toBe(false);
+    expect(why.dataset.pinned).toBeUndefined();
     // The first render's document listener would have unpinned this one.
     expect(old.dataset.pinned).toBe('1');
   });
 
   it('stays pinned when a click on panel text sends focus to the body', () => {
-    const d = whys()[0]!;
-    d.dispatchEvent(new MouseEvent('mouseenter'));
-    d.querySelector('summary')!.click();
-    d.dispatchEvent(new FocusEvent('focusout', { relatedTarget: null }));
-    expect(d.open).toBe(true);
+    const why = whys()[0]!;
+    enter(why);
+    over(name(why));
+    name(why).click();
+    why.dispatchEvent(new FocusEvent('focusout', { relatedTarget: null }));
+    expect(isOpen(why)).toBe(true);
 
-    d.dispatchEvent(new MouseEvent('mouseleave'));
-    d.dispatchEvent(new FocusEvent('focusout', { relatedTarget: null }));
-    expect(d.open).toBe(false);
+    why.dispatchEvent(new MouseEvent('mouseleave'));
+    why.dispatchEvent(new FocusEvent('focusout', { relatedTarget: null }));
+    expect(isOpen(why)).toBe(false);
   });
 });
 

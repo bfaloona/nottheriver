@@ -1,6 +1,6 @@
 # How ranking works
 
-Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms, points at evidence, and judges whether each result is a shop that sells the product, which can remove a result ([Filtered before scoring](#filtered-before-scoring)); it never sets a number and never writes text that is shown as a finding. Each result's "Why this rank" shows its score and one plain-words line per component (sells it, ethics, environment, distance), linking only certifications and concerns to their sources; the weights are in the line above the results and the full values stay in the API response.
+Every result's score is computed by code in `proxy/ranking/score.ts`, from fetched search results and curated, sourced data. The language model suggests search terms, points at evidence, and judges whether each result is a shop that sells the product, which can remove a result ([Filtered before scoring](#filtered-before-scoring)); it never sets a number and never writes text that is shown as a finding. Each result's rank panel, opened from the shop's name, shows its score and one plain-words line per component (sells it, ethics, environment, distance), linking only certifications and concerns to their sources; the weights are on the About page and the full values stay in the API response.
 
 ## Filtered before scoring
 
@@ -29,7 +29,7 @@ Every word in the URL rule matched at least one graded page; the lists grow only
 score = 0.25 × relevance + 0.30 × ethics + 0.30 × env + 0.15 × proximity
 ```
 
-Every component is between 0 and 1, and the weights sum to 1, so the score is too. The weights live in `proxy/ranking/weights.ts` and are shown above every set of results. Why these weights: [ADR 0003](decisions/0003-scoring.md).
+Every component is between 0 and 1, and the weights sum to 1, so the score is too. The weights live in `proxy/ranking/weights.ts` and are stated on the About page, beside each score part. Why these weights: [ADR 0003](decisions/0003-scoring.md).
 
 ## Components
 

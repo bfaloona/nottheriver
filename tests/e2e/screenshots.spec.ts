@@ -38,11 +38,11 @@ test('landing, results and about, desktop width', async ({ page }) => {
   await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
   // A curated fixture (tests/fixtures/negatives.json) gives Northfork Kitchen Supply two
   // findings, so opening its group here makes the grouped-concerns UI visible in the shot.
-  // Before the "Why this rank" click: wirePopovers' outside-click handler unpins any open
-  // .why panel on a click elsewhere, and .concerns has no such handler to undo it.
+  // Before the press on a shop name: wirePopovers' outside-click handler closes any open
+  // rank panel on a click elsewhere, and .concerns has no such handler to undo it.
   await page.locator('[data-concerns] summary').first().click();
-  // The last block, so its open panel covers no other result.
-  await page.locator('[data-why] summary').last().click();
+  // The last shop, so its open panel covers no other result.
+  await page.locator('[data-why] [data-retailer]').last().click();
   // Back to the top, so the map (which follows the scroll beside the nearby list) is shot where a visitor first sees it.
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: `${OUT}/results.png`, fullPage: true });

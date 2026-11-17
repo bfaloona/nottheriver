@@ -1,7 +1,7 @@
 import type { SearchResponse } from '../proxy/src/contract';
 import { round2, search } from './api';
 import { disputeUrl, siteName, zipsUrl } from './config';
-import { bindControls, filterResults, showCertifiedCount } from './controls';
+import { bindControls, showCertifiedCount } from './controls';
 import { removeMap, renderFooter, renderMap, renderResults, renderStatus, type MapPin, type RenderConfig } from './render';
 import { loadZips, lookupZip, parseZip } from './zip';
 
@@ -14,7 +14,10 @@ const form = $<HTMLFormElement>('#search');
 const product = $<HTMLInputElement>('#product');
 const zip = $<HTMLInputElement>('#zip');
 const button = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+// Under the search box: progress and failures, while there are no results to put them beside.
 const status = $('[data-status]');
+// At the top of the results: what the search and the filters left on screen.
+const found = $('[data-found]');
 const results = $('#results');
 const sections = $('#result-sections');
 const cost = $('[data-cost]');
@@ -58,7 +61,8 @@ let mapOpen = false;
 // The layout the map was last drawn in.
 let drawnBeside: boolean | undefined;
 
-function renderConfig(): RenderConfig {
+// Also records the layout it builds for, which the width listener compares against.
+function configForWidth(): RenderConfig {
   drawnBeside = mapBeside.matches;
   const mapButton = drawnBeside ? undefined : { open: mapOpen, onToggle: (open: boolean) => { mapOpen = open; } };
   return { disputeUrl, onMap, onNoMap: () => clearMap?.(), mapButton };
@@ -69,26 +73,25 @@ const readView = bindControls(results, () => {
 });
 // Chromium also fires this with nothing changed while it takes a full-page screenshot.
 mapBeside.addEventListener('change', () => {
-  if (current && mapBeside.matches !== drawnBeside) renderMap(current, sections, renderConfig(), readView());
+  if (current && mapBeside.matches !== drawnBeside) renderMap(current, sections, configForWidth(), readView());
 });
 
 function show(response: SearchResponse, newSearch = false): void {
   // Before the view is read: a new search with no certified shop takes the filter off.
   showCertifiedCount(results, [...response.local, ...(response.local_farther ?? []), ...response.online], readView(), newSearch);
   const view = readView();
-  const visible = renderResults(response, sections, renderConfig(), view);
-  renderStatus(
-    status,
-    visible > 0
-      ? { kind: 'done', near: response.local.length, online: response.online.length, onlineShown: filterResults(response.online, view).length > 0 }
-      : { kind: 'filtered' },
-  );
+  const shown = renderResults(response, sections, configForWidth(), view);
+  renderStatus(found, shown.total > 0 ? { kind: 'done', shown, view } : { kind: 'filtered' });
 }
 
 function clearResults(): void {
   current = null;
   mapOpen = false;
+  // The hidden results still hold the last search's map; nothing else would release it.
+  clearMap?.();
   results.hidden = true;
+  // Emptied, so the next count is a change a screen reader announces.
+  renderStatus(found, { kind: 'idle' });
   cost.hidden = true;
 }
 
@@ -111,6 +114,14 @@ form.addEventListener('submit', (event) => {
   void run();
 });
 
+// The button is the activity indicator: it is where the visitor just pressed, and the status
+// line says nothing until the zip list has loaded.
+function working(on: boolean): void {
+  button.disabled = on;
+  button.toggleAttribute('data-busy', on);
+  button.textContent = on ? 'Searching' : 'Search';
+}
+
 async function run(): Promise<void> {
   const text = product.value.trim();
   const code = parseZip(zip.value);
@@ -119,7 +130,7 @@ async function run(): Promise<void> {
   if (!text) return product.focus();
   if (!code) return zip.focus();
 
-  button.disabled = true;
+  working(true);
   try {
     const place = lookupZip(code, await loadZips(zipsUrl));
     if (!place) {
@@ -134,7 +145,7 @@ async function run(): Promise<void> {
     }
 
     // Clear the previous search first, so a filter change mid-flight or after a
-    // failure cannot redraw old results over the status line.
+    // failure cannot redraw old results under the status line.
     clearResults();
     // From here on the page is for results. The headline stays hidden after a failed search too,
     // so the form does not move back down under the visitor.
@@ -154,12 +165,13 @@ async function run(): Promise<void> {
     center = { lat: round2(place.lat), lon: round2(place.lon) };
     results.hidden = false;
     show(current, true);
+    renderStatus(status, { kind: 'idle' });
   } catch {
     // A failed zip download, or a response that passed the shape check but
     // breaks rendering, must not leave the status stuck on "Searching".
     clearResults();
     renderStatus(status, { kind: 'failed' });
   } finally {
-    button.disabled = false;
+    working(false);
   }
 }

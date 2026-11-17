@@ -12,7 +12,7 @@ Results are ranked by ethical practice, environmental practice and proximity, am
 score = 0.25 × relevance + 0.30 × ethics + 0.30 × env + 0.15 × proximity
 ```
 
-Weights live in `proxy/ranking/weights.ts`, are returned with every response and are shown on the page. Every component is in [0, 1] and the weights sum to 1.
+Weights live in `proxy/ranking/weights.ts`, are returned with every response and are stated on the About page (until 2026-11-16, in a line above the results). Every component is in [0, 1] and the weights sum to 1.
 
 **Why these weights.**
 
@@ -34,9 +34,10 @@ What that means in points: one certification moves a score by 0.075 (0.30 × 0.2
 - Positive signals the model points at are displayed but do not change the score; only curated certifications raise it.
 - Ties keep fetch order (stable sort); scores and contributions are rounded to 3 decimals in the response, and the total is summed from unrounded products.
 - Amended 2026-09-24 (operator decision): "Why this rank" on the page shows the score to 2 decimals and one plain-words line per component, linking only certifications and concerns; the weights are in the line above the results, and every value, weight and source stays in the API response.
+- Amended 2026-11-16 (operator request): the weights line above the results is gone. The About page states each weight beside its score part, and a unit test fails if one differs from `weights.ts`. The panel opens from the shop's name, and the words "Why this rank" are no longer on screen.
 
 ## Consequences
 
 - Most local shops score 0.5 or 0.2 on relevance, because a place result has only a name and a category list ([debt.md](../debt.md)).
 - A substring match can over-match inside longer words ("pan" in "Japan").
-- Changing a weight is a one-line change in `weights.ts`; the page reads the weights from each response, but this ADR and [ranking.md](../ranking.md) must be updated with it.
+- Changing a weight is a one-line change in `weights.ts`; a unit test fails until the About page matches, and this ADR and [ranking.md](../ranking.md) must be updated with it.

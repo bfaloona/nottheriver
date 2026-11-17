@@ -1,5 +1,5 @@
 import type { ComponentName, SearchResponse, SearchResult, Signal, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
-import { defaultView, filterResults, sortResults, type View } from './controls';
+import { defaultView, filterResults, sortResults, type Filters, type View } from './controls';
 import { wirePopovers } from './popover';
 
 // Everything in a SearchResponse is untrusted text from the web: nodes are built
@@ -22,11 +22,14 @@ export interface RenderConfig {
   mapButton?: { open: boolean; onToggle: (open: boolean) => void };
 }
 
+// What a render left on screen. withinKm: the farthest nearby shop, or null unless every
+// nearby shop's distance is known, so "within" is never said of a shop that might lie beyond it.
+export interface Shown { near: number; withinKm: number | null; farther: number; online: number; total: number }
+
 export type Status =
   | { kind: 'idle' }
   | { kind: 'searching'; city: string; state: string }
-  // onlineShown: the Online section has a shop on screen, so the count can link to it.
-  | { kind: 'done'; near: number; online: number; onlineShown: boolean }
+  | { kind: 'done'; shown: Shown; view: Filters }
   | { kind: 'no_results'; product: string }
   | { kind: 'filtered' }
   | { kind: 'failed' }
@@ -86,8 +89,8 @@ export function formatDistance(km: number): string {
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
-// One set of plain words for the four score parts, used by the weights line, each shop's
-// facts line and the "Why this rank" panel; the formula lives on the ranking page.
+// One set of plain words for the four score parts, used by each shop's facts line and its
+// "Why this rank" panel; the weights and the formula live on the ranking page.
 // In the panel only certifications and concerns link out: the baseline and distance lines point
 // at that page, and the "Sells it" line points at the shop's own page, already linked above.
 const WHY_LABELS: Record<ComponentName, string> = {
@@ -214,13 +217,60 @@ function factsLine(result: SearchResult): HTMLParagraphElement {
   return el('p', { className: 'facts', data: { facts: '' } }, ...facts.flatMap((fact, i) => (i > 0 ? [' · ', fact] : [fact])));
 }
 
+const SVG_NS = 'http://www.w3.org/2000/svg';
+
+// An arrow leaving a box, the usual mark for a link to another site.
+function visitIcon(): SVGSVGElement {
+  const svg = document.createElementNS(SVG_NS, 'svg');
+  const attributes = {
+    viewBox: '0 0 16 16', width: '16', height: '16', fill: 'none', stroke: 'currentColor',
+    'stroke-width': '1.75', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true',
+  };
+  for (const [name, value] of Object.entries(attributes)) svg.setAttribute(name, value);
+  for (const d of ['M9 2.5h4.5V7', 'M13.5 2.5 7.5 8.5', 'M11.5 9.5v3a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3']) {
+    const path = document.createElementNS(SVG_NS, 'path');
+    path.setAttribute('d', d);
+    svg.append(path);
+  }
+  return svg;
+}
+
+// The name is the button for the shop's rank panel (popover.ts), so the way to the shop is the
+// icon beside it. A shop whose address is not http(s) gets no icon: a link with no href does nothing.
+function resultHead(result: SearchResult, panelId: string): HTMLDivElement {
+  const name = el('button', { className: 'retailer', data: { retailer: '' } }, result.retailer.name);
+  name.type = 'button';
+  // "Why this rank" is not on screen, so the label says what the button shows.
+  name.setAttribute('aria-label', `${result.retailer.name}: why this rank`);
+  name.setAttribute('aria-expanded', 'false');
+  name.setAttribute('aria-controls', panelId);
+  const head = el('div', { className: 'result-head' }, name);
+  const visit = outbound(result.retailer.url, '', { className: 'visit', data: { visit: '' } });
+  if (visit.hasAttribute('href')) {
+    visit.setAttribute('aria-label', `Visit ${result.retailer.name}`);
+    visit.append(visitIcon());
+    head.append(visit);
+  }
+  return head;
+}
+
 export function renderResult(result: SearchResult, config: RenderConfig): HTMLLIElement {
+  // Nearby and online ranks both start at 1, so the kind keeps the panel ids apart.
+  const panel = el(
+    'div',
+    { id: `why-${result.kind}-${result.rank}`, className: 'why-panel' },
+    el('p', { className: 'why-total' }, `Score ${result.score.toFixed(2)}`),
+    el('ul', { className: 'components' }, ...result.components.map((c) => componentRow(c, result))),
+    el('p', { className: 'why-help' }, internal(RANKING_HELP, 'How ranking works')),
+  );
+  panel.hidden = true;
   const body = el(
     'div',
     { className: 'result-body' },
-    outbound(result.retailer.url, result.retailer.name, { className: 'retailer', data: { retailer: '' } }),
+    // The panel follows the name directly: opened in place by a tap, it appears where the tap was.
+    el('div', { className: 'why', data: { why: '' } }, resultHead(result, panel.id), panel),
+    factsLine(result),
   );
-  body.append(factsLine(result));
 
   if (result.certifications.length > 0 || result.chain) {
     body.append(
@@ -246,56 +296,33 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
   if (negatives.length === 1) body.append(concernBox(negatives[0]!, config));
   else if (negatives.length > 1) body.append(concernsGroup(negatives, config));
 
-  const rows = result.components.map((c) => componentRow(c, result));
-  body.append(
-    el(
-      'details',
-      { className: 'why', data: { why: '' } },
-      el('summary', {}, 'Why this rank'),
-      el(
-        'div',
-        { className: 'why-panel' },
-        el('p', { className: 'why-total' }, `Score ${result.score.toFixed(2)}`),
-        el('ul', { className: 'components' }, ...rows),
-        el('p', { className: 'why-help' }, internal(RANKING_HELP, 'How ranking works')),
-      ),
-    ),
-  );
-
   const item = el('li', { className: 'result', data: { result: '' } }, el('span', { className: 'rank' }, String(result.rank)), body);
   // Nearby and farther shops share one numbering, so the rank names a map pin's list item uniquely.
   if (result.kind === 'local') item.id = shopId(result.rank);
   return item;
 }
 
-export function renderWeights(weights: SearchResponse['weights']): HTMLParagraphElement {
-  const parts = (Object.keys(WHY_LABELS) as ComponentName[]).map(
-    (name) => `${WHY_LABELS[name].toLowerCase()} ${weights[name].toFixed(2)}`,
-  );
-  return el(
+// One line of help above the lists. "What unknown means" is offered only while a shop on screen
+// is unknown, and opens in place: a link to the About page would cost the visitor the results.
+function resultsHelp(shown: SearchResult[], open: boolean): HTMLElement[] {
+  const line = el('p', { className: 'results-help', data: { resultsHelp: '' } }, internal(RANKING_HELP, 'How ranking works'));
+  if (shown.every(hasRecord)) return [line];
+  const help = el(
     'p',
-    { className: 'weights', data: { weights: '' } },
-    `Ranked by ${parts.join(', ')}. `,
-    internal(RANKING_HELP, 'How ranking works'),
+    { id: 'unknown-help', className: 'results-help-text', data: { unknownHelp: '' } },
+    "Unknown means our lists hold no certification that counts toward a shop's score and this search found nothing about it: we have not looked further yet, or were blocked from looking.",
   );
-}
-
-// Says how much of the list rests on a record, so a page of "unknown" rows reads as a gap
-// in what the site holds and not as a verdict on the shops.
-// The explanation of "unknown" opens in place: a link to the About page would cost the visitor
-// the results.
-function renderRecordCount(shown: SearchResult[]): HTMLElement | null {
-  if (shown.length === 0) return null;
-  const withRecord = shown.filter(hasRecord).length;
-  const count = `${withRecord} of ${shown.length} ${shown.length === 1 ? 'result has' : 'results have'} a people-and-planet record.`;
-  const props = { className: 'record-count', data: { recordCount: '' } };
-  if (withRecord === shown.length) return el('p', props, count);
-  return el(
-    'details',
-    props,
-    el('summary', {}, `${count} `, el('span', { className: 'summary-link' }, 'What unknown means')),
-    el('p', {}, "Unknown means our lists hold no certification that counts toward a shop's score and this search found nothing about it: we have not looked further yet, or were blocked from looking."),
-  );
+  const button = el('button', { className: 'link-button', data: { unknownToggle: '' } }, 'What unknown means');
+  button.type = 'button';
+  button.setAttribute('aria-controls', help.id);
+  const show = (visible: boolean) => {
+    help.hidden = !visible;
+    button.setAttribute('aria-expanded', String(visible));
+  };
+  show(open);
+  button.addEventListener('click', () => show(help.hidden === true));
+  line.append(button);
+  return [line, help];
 }
 
 const shopId = (rank: number) => `shop-${rank}`;
@@ -313,14 +340,15 @@ function mapToggle(map: HTMLElement, pins: MapPin[], config: RenderConfig): HTML
   button.type = 'button';
   button.setAttribute('aria-controls', map.id);
   // The label carries the state; aria-expanded on top would be read as "Hide map, expanded".
-  const set = (open: boolean) => {
+  let open = config.mapButton!.open;
+  const show = () => {
     map.hidden = !open;
     button.textContent = open ? 'Hide map' : 'Show map';
   };
-  set(config.mapButton!.open);
+  show();
   button.addEventListener('click', () => {
-    const open = map.hasAttribute('hidden');
-    set(open);
+    open = !open;
+    show();
     config.mapButton!.onToggle(open);
     if (open) config.onMap!(map, pins);
     else config.onNoMap?.();
@@ -331,6 +359,12 @@ function mapToggle(map: HTMLElement, pins: MapPin[], config: RenderConfig): HTML
 function clearMapFrom(near: HTMLElement): void {
   for (const old of [...near.children]) if (old.matches('[data-map], [data-map-toggle]')) old.remove();
   delete near.dataset.mapLayout;
+}
+
+// What the view leaves on screen, in the order shown: one rule for the lists, the map and the counts.
+function shownLists(response: SearchResponse, view: View) {
+  const shown = (list: SearchResult[]) => sortResults(filterResults(list, view), view.sort);
+  return { local: shown(response.local), farther: shown(response.local_farther ?? []), online: shown(response.online) };
 }
 
 // For a map that failed to load or draw: its button goes with it, so no control is left that does nothing.
@@ -360,8 +394,8 @@ function placeMap(near: HTMLElement, pins: MapPin[], config: RenderConfig): void
 export function renderMap(response: SearchResponse, root: HTMLElement, config: RenderConfig, view: View = defaultView): void {
   const near = root.querySelector<HTMLElement>('[data-section="near"]');
   if (!near) return;
-  const shown = (list: SearchResult[]) => sortResults(filterResults(list, view), view.sort);
-  placeMap(near, view.near ? mapPins(shown(response.local), shown(response.local_farther ?? [])) : [], config);
+  const shown = shownLists(response, view);
+  placeMap(near, view.near ? mapPins(shown.local, shown.farther) : [], config);
 }
 
 interface Farther { all: SearchResult[]; shown: SearchResult[]; nearMiles: number | undefined }
@@ -391,25 +425,21 @@ function section(
   config: RenderConfig,
   farther?: Farther,
 ): HTMLElement {
-  let note: string;
+  // A section with shops on screen has no note: the count line above the lists carries the counts.
+  let note: string | null = null;
   if (all.length === 0 && farther?.all.length) {
     note = `No shops within ${farther.nearMiles ?? 10} mi matched. Farther shops are below.`;
   } else if (all.length === 0) {
     note = key === 'near' ? 'No shops nearby matched. Online results are below.' : 'No online retailers matched.';
   } else if (shown.length === 0) {
     note = 'Every result here is hidden by the filters.';
-  } else if (key === 'near') {
-    const known = shown.flatMap((r) => (r.distance_km === null ? [] : [r.distance_km]));
-    note = plural(shown.length, 'shop', 'shops') + (known.length ? ` within ${formatDistance(Math.max(...known))}` : '');
-  } else {
-    note = plural(shown.length, 'online retailer', 'online retailers');
   }
   const id = headingId(key);
   const node = el(
     'section',
     { data: { section: key } },
     el('h2', { id }, heading),
-    el('p', { className: 'section-note' }, note),
+    ...(note ? [el('p', { className: 'section-note' }, note)] : []),
     el('ol', { className: 'results' }, ...shown.map((r) => renderResult(r, config))),
     ...(farther ? [fartherGroup(farther, config)].filter((g): g is HTMLElement => g !== null) : []),
   );
@@ -418,31 +448,33 @@ function section(
   return node;
 }
 
-// Renders the weights line, the record count and both sections into root; returns how many results are visible.
+// Renders the help line and both sections into root; returns what is on screen.
 export function renderResults(
   response: SearchResponse,
   root: HTMLElement,
   config: RenderConfig,
   view: View = defaultView,
-): number {
-  const shownLocal = sortResults(filterResults(response.local, view), view.sort);
-  const fartherAll = response.local_farther ?? [];
-  const shownFarther = sortResults(filterResults(fartherAll, view), view.sort);
-  const shownOnline = sortResults(filterResults(response.online, view), view.sort);
-  const farther = { all: fartherAll, shown: shownFarther, nearMiles: response.query.near_radius_mi };
-  const near = section('near', 'Near you', response.local, shownLocal, view.near, config, farther);
-  const recordCount = renderRecordCount([...shownLocal, ...shownFarther, ...shownOnline]);
+): Shown {
+  const shown = shownLists(response, view);
+  const farther = { all: response.local_farther ?? [], shown: shown.farther, nearMiles: response.query.near_radius_mi };
+  const near = section('near', 'Near you', response.local, shown.local, view.near, config, farther);
   // A sort or filter change rebuilds the page; an explanation the visitor opened stays open.
-  if (recordCount instanceof HTMLDetailsElement) recordCount.open = root.querySelector<HTMLDetailsElement>('details[data-record-count]')?.open ?? false;
+  const helpOpen = root.querySelector<HTMLElement>('[data-unknown-help]')?.hidden === false;
   root.replaceChildren(
-    renderWeights(response.weights),
-    ...(recordCount ? [recordCount] : []),
+    ...resultsHelp([...shown.local, ...shown.farther, ...shown.online], helpOpen),
     near,
-    section('online', 'Online', response.online, shownOnline, view.online, config),
+    section('online', 'Online', response.online, shown.online, view.online, config),
   );
   wirePopovers(root);
-  placeMap(near, view.near ? mapPins(shownLocal, shownFarther) : [], config);
-  return shownLocal.length + shownFarther.length + shownOnline.length;
+  placeMap(near, view.near ? mapPins(shown.local, shown.farther) : [], config);
+  const distances = shown.local.map((r) => r.distance_km);
+  return {
+    near: shown.local.length,
+    withinKm: distances.length > 0 && distances.every((d): d is number => d !== null) ? Math.max(...distances) : null,
+    farther: shown.farther.length,
+    online: shown.online.length,
+    total: shown.local.length + shown.farther.length + shown.online.length,
+  };
 }
 
 function statusText(status: Exclude<Status, { kind: 'done' }>): string {
@@ -462,15 +494,36 @@ function statusText(status: Exclude<Status, { kind: 'done' }>): string {
   }
 }
 
+// The one place the counts are written, so it follows the filters: a section with shops on
+// screen carries no count of its own.
+function foundParts(shown: Shown, view: Filters): (Node | string)[] {
+  const parts: (Node | string)[] = [];
+  if (view.near) {
+    if (shown.near > 0) {
+      const where = shown.withinKm === null ? 'near you' : `within ${formatDistance(shown.withinKm)}`;
+      parts.push(`${plural(shown.near, 'shop', 'shops')} ${where}`);
+      if (shown.farther > 0) parts.push(`${shown.farther} farther away`);
+    } else {
+      parts.push(shown.farther > 0 ? `${plural(shown.farther, 'shop', 'shops')} farther away` : 'no shops near you');
+    }
+  }
+  // Linked because the nearby list, and its map on a narrow screen, can fill more than one screen above Online.
+  // After a count of shops "8 online" reads on from it; alone it needs its noun.
+  const online = parts.length > 0 ? `${shown.online} online` : plural(shown.online, 'online shop', 'online shops');
+  if (view.online) parts.push(shown.online > 0 ? internal(`#${headingId('online')}`, online) : 'none online');
+  return parts;
+}
+
 export function renderStatus(target: HTMLElement, status: Status): void {
   if (status.kind !== 'done') {
     target.textContent = statusText(status);
     return;
   }
-  // The nearby list, and its map on a narrow screen, can fill more than one screen above Online.
-  const online = `${status.online} online`;
-  const jump = status.onlineShown && status.online > 0;
-  target.replaceChildren(`Found ${plural(status.near, 'shop', 'shops')} near you and `, jump ? internal(`#${headingId('online')}`, online) : online, '.');
+  const { shown, view } = status;
+  const parts = foundParts(shown, view);
+  // "Found" would overstate a list the filters have cut down.
+  const verb = view.near && view.online && !view.certifiedOnly ? 'Found' : 'Showing';
+  target.replaceChildren(`${verb} `, ...parts.flatMap((part, i) => (i === 0 ? [part] : [i === parts.length - 1 ? ' and ' : ', ', part])), '.');
 }
 
 export function renderFooter(target: HTMLElement, usage: Usage): void {

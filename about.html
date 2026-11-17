@@ -30,12 +30,12 @@
 <p>Every entry on the exclusion list cites a public source: <a data-repo-path="blob/main/data/blocklist.md">data/blocklist.md</a>.</p>
 
 <h2 id="ranking">How ranking works</h2>
-<p>Each result gets four scores between 0 and 1, and its rank comes from their weighted sum. The weights are listed above every set of results, and "Why this rank" on each result says in plain words what went into its score, linking each certification or concern to its source.</p>
+<p>Each result gets four scores between 0 and 1, and its rank comes from their weighted sum. On the results page, a shop's name opens a panel that says in plain words what went into its score, linking each certification or concern to its source.</p>
 <ul>
-<li>Sells it (relevance): 1 when the shop's listing names the product or a close equivalent, 0.5 when it matches only the product's category, otherwise 0.2. For a shop near you, the language model's judgment from the shop's name and type also counts: 1 if it judged the shop likely sells the product, 0.5 if maybe.</li>
-<li>Ethics: starts at 0.5. Each ethics certification (B Corp, Fair Trade, worker co-op) adds 0.25, up to 1. An accepted labor or governance finding subtracts up to 0.25: less when the penalty was small, the amount isn't stated, the case is still open, or it was against a related company; small findings together subtract at most 0.25; down to 0. The ranking page has the table.</li>
-<li>Environment: starts at 0.5. Each environmental certification (1% for the Planet, Climate Neutral) adds 0.25, up to 1. An accepted environmental finding subtracts up to 0.25 the same way; down to 0.</li>
-<li>Distance (proximity): for shops near you, 1 at the center of your zip area, falling to 0 at 40 km (about 25 miles). Online retailers get 0.5.</li>
+<li>Sells it (relevance), weight <span data-weight="relevance">0.25</span>: 1 when the shop's listing names the product or a close equivalent, 0.5 when it matches only the product's category, otherwise 0.2. For a shop near you, the language model's judgment from the shop's name and type also counts: 1 if it judged the shop likely sells the product, 0.5 if maybe.</li>
+<li>Ethics, weight <span data-weight="ethics">0.30</span>: starts at 0.5. Each ethics certification (B Corp, Fair Trade, worker co-op) adds 0.25, up to 1. An accepted labor or governance finding subtracts up to 0.25: less when the penalty was small, the amount isn't stated, the case is still open, or it was against a related company; small findings together subtract at most 0.25; down to 0. The ranking page has the table.</li>
+<li>Environment, weight <span data-weight="env">0.30</span>: starts at 0.5. Each environmental certification (1% for the Planet, Climate Neutral) adds 0.25, up to 1. An accepted environmental finding subtracts up to 0.25 the same way; down to 0.</li>
+<li>Distance (proximity), weight <span data-weight="proximity">0.15</span>: for shops near you, 1 at the center of your zip area, falling to 0 at 40 km (about 25 miles). Online retailers get 0.5.</li>
 </ul>
 <p>"Baseline 0.5" in a score's sources means that score started at 0.5 and nothing changed it.</p>
 <p>"Unknown" on a result means our curated lists hold no certification that counts toward the shop's score and the search turned up no accepted finding about it: we have not looked further yet, or we were blocked from looking. It counts neither for nor against the shop: its ethics and environment scores stay at 0.5.</p>

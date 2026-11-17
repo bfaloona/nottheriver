@@ -18,7 +18,7 @@ function pinIcon(pin: MapPin): L.DivIcon {
   return L.divIcon({ html: label, className: pin.farther ? 'map-pin map-pin-farther' : 'map-pin', iconSize: [26, 26] });
 }
 
-// Brings a pin's shop into view in the list and moves focus to its link, so the next Tab or
+// Brings a pin's shop into view in the list and moves focus to its name, so the next Tab or
 // Enter continues from there.
 function showInList(pin: MapPin, reducedMotion: boolean): void {
   const item = document.getElementById(pin.target);

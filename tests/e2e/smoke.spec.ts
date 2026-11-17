@@ -58,12 +58,19 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
 
   await expect(page.locator('[data-section=near] [data-result]').first()).toBeVisible();
   await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
-  await expect(page.locator('[data-weights]')).toBeVisible();
+  await expect(page.locator('[data-results-help]')).toBeVisible();
 
   // Once a search starts the headline is clipped to a pixel, so the results get its room.
   expect((await box(page.locator('[data-mission]'))).height).toBeLessThanOrEqual(1);
   // The found count leads to the Online section.
-  await expect(page.locator('[data-status] a')).toHaveAttribute('href', '#online-heading');
+  await expect(page.locator('[data-found] a')).toHaveAttribute('href', '#online-heading');
+  // The count sits at the top of the results: under the sort and filter row, above the lists.
+  // The line under the search box, emptied, takes no room.
+  const controlsBox = await box(page.locator('.controls'));
+  const foundBox = await box(page.locator('[data-found]'));
+  expect(foundBox.y).toBeGreaterThanOrEqual(controlsBox.y + controlsBox.height - 1);
+  expect(foundBox.y + foundBox.height).toBeLessThanOrEqual((await box(page.locator('[data-section=near] h2'))).y + 1);
+  expect(await page.locator('[data-status]').evaluate((el) => el.getBoundingClientRect().height)).toBe(0);
 
   // At this width the map sits beside the nearby list, level with its heading, and nothing runs off the screen.
   const mapBox = await box(page.locator('[data-map]'));
@@ -83,6 +90,8 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await pin.click();
   await expect(page.locator(`#shop-${rank}`)).toHaveClass(/result-picked/);
   await expect(page.locator(`#shop-${rank} [data-retailer]`)).toBeFocused();
+  // Focus alone must not open the shop's rank panel over the list.
+  await expect(page.locator(`#shop-${rank} .why-panel`)).toBeHidden();
   // OpenStreetMap requires a Referer; the tiles send the site's origin only, never a path.
   expect(new Set(tileReferers)).toEqual(new Set([new URL(page.url()).origin + '/']));
   await expect(page.locator('[data-cost]')).toBeVisible();
@@ -101,7 +110,7 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
 
   // a.href, not the attribute, so relative links resolve the way the browser follows them.
   const hrefs = await page
-    .locator('[data-result] a[href], [data-weights] a[href]')
+    .locator('[data-result] a[href], [data-results-help] a[href]')
     .evaluateAll((links) => links.map((a) => (a as HTMLAnchorElement).href));
   expect(hrefs.length).toBeGreaterThan(0);
   expect(isBlockedUrl('https://www.amazon.com/dp/B0'), 'blocklist positive control').toBe(true);
@@ -135,26 +144,53 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   const count = await results.count();
   for (let i = 0; i < count; i++) {
     const why = results.nth(i).locator('[data-why]');
-    await expect(why.locator('summary')).toHaveText('Why this rank');
+    await expect(why.locator('[data-retailer]')).toHaveAttribute('aria-label', /: why this rank$/);
+    await expect(why.locator('[data-visit]'), `result ${i} links to its shop`).toHaveAttribute('href', /^https?:/);
     await expect(why.locator('[data-component]'), `result ${i} explains its rank in four rows`).toHaveCount(4);
     for (const text of await why.locator('.component-text').allTextContents()) {
       expect(text.trim(), `result ${i} has no blank row`).not.toBe('');
     }
   }
 
-  // Where a fine pointer exists, focus alone opens the block, so "open" cannot tell whether
-  // Enter worked; only the summary's click handler, which Enter triggers, pins it.
+  // The keyboard path to a rank panel: Tab to the shop's name, which stays closed on focus, then Enter.
   const first = page.locator('[data-why]').first();
-  const summary = first.locator('summary');
-  await expect(first).not.toHaveAttribute('open');
+  const name = first.locator('[data-retailer]');
+  const panel = first.locator('.why-panel');
   await page.getByLabel('Zip code').focus();
-  for (let i = 0; i < 50 && !(await summary.evaluate((s) => s === document.activeElement)); i++) {
+  for (let i = 0; i < 50 && !(await name.evaluate((s) => s === document.activeElement)); i++) {
     await page.keyboard.press('Tab');
   }
-  await expect(summary, 'Tab reaches the first "Why this rank"').toBeFocused();
+  await expect(name, 'Tab reaches the first shop name').toBeFocused();
+  await expect(panel).toBeHidden();
   await page.keyboard.press('Enter');
-  await expect(first).toHaveAttribute('open', '');
-  await expect(first).toHaveAttribute('data-pinned', '1');
+  await expect(panel).toBeVisible();
+  await expect(name).toHaveAttribute('aria-expanded', 'true');
+  await page.keyboard.press('Escape');
+  await expect(panel).toBeHidden();
+  await expect(name).toBeFocused();
+
+  // The pointer path: resting on the name opens the panel, and the pointer can then cross into
+  // it. Moved in steps, because a gap between the name and the panel would close it on the way.
+  await name.hover();
+  await expect(panel).toBeVisible();
+  const link = (await panel.locator('.why-help a').boundingBox())!;
+  await page.mouse.move(link.x + link.width / 2, link.y + link.height / 2, { steps: 30 });
+  await expect(panel).toBeVisible();
+  await page.mouse.move(0, 0);
+  await expect(panel).toBeHidden();
+
+  // The link to the shop opens nothing, and closes a panel the name opened.
+  const visit = first.locator('[data-visit]');
+  await visit.hover();
+  await page.waitForTimeout(600); // longer than the rest on the name takes to open it
+  await expect(panel).toBeHidden();
+  await name.hover();
+  await expect(panel).toBeVisible();
+  await visit.hover();
+  await expect(panel).toBeHidden();
+  // With a pointer the name opens on rest, so it does not show the hand of something to click.
+  expect(await name.evaluate((el) => getComputedStyle(el).cursor)).toBe('default');
+  await page.mouse.move(0, 0);
 
   expect(errors).toEqual([]);
 });

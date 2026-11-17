@@ -1,6 +1,7 @@
 // @vitest-environment happy-dom
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import aboutHtml from '../about.html?raw';
+import { WEIGHTS } from '../proxy/ranking/weights';
 import { tagline } from './config';
 
 async function load(measured: unknown, repo = '') {
@@ -19,6 +20,13 @@ afterEach(() => {
 });
 
 describe('about page', () => {
+  // The results page no longer lists the weights, so this page is where a visitor reads them.
+  it('states each score part\'s weight as the ranking code holds it', async () => {
+    await load(null);
+    const stated = Object.fromEntries([...document.querySelectorAll<HTMLElement>('#ranking ~ ul [data-weight]')].map((el) => [el.dataset.weight, el.textContent]));
+    expect(stated).toEqual(Object.fromEntries(Object.entries(WEIGHTS).map(([name, weight]) => [name, weight.toFixed(2)])));
+  });
+
   it('says "Not yet measured" until an evaluation has run', async () => {
     await load(null);
     expect($('[data-quality]').textContent).toBe('Not yet measured.');
