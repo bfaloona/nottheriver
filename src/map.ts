@@ -11,6 +11,8 @@ const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">Op
 
 let current: L.Map | undefined;
 let sizeWatch: ResizeObserver | undefined;
+// The shops pinned on the current map, and the layer their pins are in.
+let shops: { layer: L.LayerGroup; pins: MapPin[] } | undefined;
 
 function pinIcon(pin: MapPin): L.DivIcon {
   const label = document.createElement('span');
@@ -34,15 +36,47 @@ export function clearMap(): void {
   sizeWatch = undefined;
   current?.remove();
   current = undefined;
+  shops = undefined;
+}
+
+// Order is left out: a sort hands over the same shops in another order.
+const sameShops = (a: MapPin[], b: MapPin[]) => {
+  const key = (pins: MapPin[]) => JSON.stringify([...pins].sort((x, y) => x.rank - y.rank));
+  return key(a) === key(b);
+};
+
+// Puts the pins on the map in place of any there, and brings them all, and the center, into view.
+function showPins(map: L.Map, pins: MapPin[], center: { lat: number; lon: number } | undefined, reducedMotion: boolean): void {
+  shops?.layer.remove();
+  const layer = L.layerGroup().addTo(map);
+  shops = { layer, pins };
+  const points: L.LatLngExpression[] = center ? [[center.lat, center.lon]] : [];
+  // Farther pins first, so nearby ones draw on top where they overlap. keyboard: false keeps
+  // pins out of the tab order: a pin only leads to its list item, which the next Tab reaches anyway.
+  for (const pin of [...pins].sort((a, b) => Number(b.farther) - Number(a.farther))) {
+    L.marker([pin.lat, pin.lon], { icon: pinIcon(pin), title: `${pin.rank}. ${pin.name}`, keyboard: false })
+      .on('click', () => showInList(pin, reducedMotion))
+      .addTo(layer);
+    points.push([pin.lat, pin.lon]);
+  }
+  map.fitBounds(L.latLngBounds(points), { padding: [24, 24], maxZoom: 15 });
 }
 
 export function drawMap(container: HTMLElement, pins: MapPin[], center?: { lat: number; lon: number }): void {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // A sort or filter change hands back the container the map is already in. The map stays, so
+  // its images are not fetched and drawn again; the same shops leave it exactly as the visitor
+  // has it, and other shops change the pins and the view.
+  if (current && shops && current.getContainer() === container && container.isConnected && !container.hidden) {
+    if (!sameShops(shops.pins, pins)) showPins(current, pins, center, reducedMotion);
+    return;
+  }
+
   clearMap();
   // A newer render already replaced this container, or "Hide map" was pressed while the
   // library was still loading.
   if (!container.isConnected || container.hidden) return;
 
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   // One-finger drag would trap page scrolling on a touch screen; the zoom buttons still work.
   const map = L.map(container, {
     scrollWheelZoom: false,
@@ -54,25 +88,15 @@ export function drawMap(container: HTMLElement, pins: MapPin[], center?: { lat: 
   try {
     map.attributionControl.setPrefix(false);
     L.tileLayer(TILES, { maxZoom: 19, attribution: ATTRIBUTION, referrerPolicy: 'strict-origin-when-cross-origin' }).addTo(map);
-
-    const points: L.LatLngExpression[] = [];
     if (center) {
       L.circleMarker([center.lat, center.lon], { radius: 6, className: 'map-center' })
         .bindTooltip('Center of your zip area')
         .addTo(map);
-      points.push([center.lat, center.lon]);
     }
-    // Farther pins first, so nearby ones draw on top where they overlap. keyboard: false keeps
-    // pins out of the tab order: a pin only leads to its list item, which the next Tab reaches anyway.
-    for (const pin of [...pins].sort((a, b) => Number(b.farther) - Number(a.farther))) {
-      L.marker([pin.lat, pin.lon], { icon: pinIcon(pin), title: `${pin.rank}. ${pin.name}`, keyboard: false })
-        .on('click', () => showInList(pin, reducedMotion))
-        .addTo(map);
-      points.push([pin.lat, pin.lon]);
-    }
-    map.fitBounds(L.latLngBounds(points), { padding: [24, 24], maxZoom: 15 });
+    showPins(map, pins, center, reducedMotion);
   } catch (err) {
     map.remove();
+    shops = undefined;
     throw err;
   }
   current = map;

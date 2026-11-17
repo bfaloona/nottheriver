@@ -105,6 +105,68 @@ describe('renderResults (HR5)', () => {
     expect(nameOf(li).getAttribute('aria-expanded')).toBe('false');
   });
 
+  describe('through a sort or filter change, where panels open in place', () => {
+    const byName = { ...defaultView, sort: 'name' as const };
+    const openPanels = () => [...root.querySelectorAll<HTMLElement>('.why-panel')].filter((p) => !p.hidden);
+    beforeEach(() => {
+      // happy-dom answers yes to the hover query. There a panel floats, and the click or Tab
+      // that reaches a control has already closed it.
+      vi.stubGlobal('matchMedia', () => ({ matches: false }));
+      renderResults(response, root, config);
+    });
+    afterEach(() => vi.unstubAllGlobals());
+
+    it('keeps an opened rank panel open, and one more press still closes it', () => {
+      const shop = response.local[1]!;
+      nameOf(item(shop)).click();
+      renderResults(response, root, config, byName);
+      const li = item(shop);
+      expect(openPanels()).toEqual([panelOf(li)]);
+      expect(nameOf(li).getAttribute('aria-expanded')).toBe('true');
+      nameOf(li).click();
+      expect(panelOf(li).hidden).toBe(true);
+      expect(nameOf(li).getAttribute('aria-expanded')).toBe('false');
+    });
+
+    it('keeps the online panel of a rank apart from the nearby one', () => {
+      nameOf(item(response.online[0]!)).click();
+      renderResults(response, root, config, byName);
+      expect(openPanels()).toEqual([panelOf(item(response.online[0]!))]);
+    });
+
+    it('opens nothing for a new search, whose shops only share rank numbers with the last one', () => {
+      nameOf(item(response.local[0]!)).click();
+      renderResults({ ...response }, root, config);
+      expect(openPanels()).toEqual([]);
+    });
+
+    it('keeps an opened list of concerns open', () => {
+      const finding = (i: number): Signal => ({
+        kind: 'labor',
+        polarity: 'negative',
+        claim: `Finding ${i}`,
+        source_url: `https://example-source.gov/${i}`,
+        origin: 'curated',
+        action_date: `202${i}-01-01`,
+      });
+      const shop: SearchResult = { ...response.local[1]!, signals: [finding(1), finding(2)] };
+      const withConcerns = { ...response, local: [response.local[0]!, shop] };
+      const concerns = () => item(shop).querySelector<HTMLDetailsElement>('[data-concerns]')!;
+      renderResults(withConcerns, root, config);
+      concerns().open = true;
+      renderResults(withConcerns, root, config, byName);
+      expect(concerns().open).toBe(true);
+      expect(root.querySelectorAll('details[open]')).toHaveLength(1);
+    });
+
+    it('keeps the shop a map pin picked marked', () => {
+      const shop = response.local[1]!;
+      item(shop).classList.add('result-picked');
+      renderResults(response, root, config, byName);
+      expect([...root.querySelectorAll('.result-picked')]).toEqual([item(shop)]);
+    });
+  });
+
   it('leaves the panel closed when the name only takes focus, as it does after a map pin click', () => {
     const li = item(response.local[0]!);
     nameOf(li).focus();
@@ -770,7 +832,8 @@ describe('the rank panel on a fine hover pointer', () => {
     name(old).click();
     expect(old.dataset.pinned).toBe('1');
 
-    renderResults(response, el, config);
+    // As a new search: the same results drawn again would bring the pressed panel back open.
+    renderResults({ ...response }, el, config);
     const why = whys()[0]!;
     name(why).click();
     expect(isOpen(why)).toBe(true);
@@ -929,6 +992,17 @@ describe('map of nearby shops', () => {
       expect(toggled).not.toHaveBeenCalled();
     });
 
+    it('keeps a map the visitor opened through a redraw of the same results', () => {
+      renderResults(response, el, narrow(true));
+      const opened = map();
+      renderResults(response, el, narrow(true), { ...defaultView, sort: 'name' });
+      expect(map()).toBe(opened);
+      expect(map().hidden).toBe(false);
+      expect(button().nextElementSibling).toBe(map());
+      expect(button().textContent).toBe('Hide map');
+      expect(draw).toHaveBeenCalledTimes(2);
+    });
+
     it('takes the button away with a map that could not be drawn, so no dead control is left', () => {
       renderResults(response, el, narrow(false));
       button().click();
@@ -945,6 +1019,39 @@ describe('map of nearby shops', () => {
       expect(el.querySelector<HTMLElement>('[data-section="near"]')!.dataset.mapLayout).toBeUndefined();
       expect(draw).not.toHaveBeenCalled();
     });
+  });
+
+  it('carries the map into the rebuilt lists when the same results are drawn again, so a sort or filter change does not reload it', () => {
+    renderResults(response, el, mapConfig);
+    const map = el.querySelector('[data-map]');
+    renderResults(response, el, mapConfig, { ...defaultView, sort: 'name' });
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+    expect(el.querySelector('[data-map]')).toBe(map);
+    expect(el.querySelector('[data-section="near"]')!.lastElementChild).toBe(map);
+    expect(draw).toHaveBeenCalledTimes(2);
+    expect(draw.mock.calls[1]![0]).toBe(map);
+
+    // A filter that leaves nothing to pin takes the map away; it comes back as a new one.
+    renderResults(response, el, mapConfig, { ...defaultView, near: false });
+    expect(el.querySelector('[data-map]')).toBeNull();
+    renderResults(response, el, mapConfig);
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+  });
+
+  it('starts a new map for a new search', () => {
+    renderResults(response, el, mapConfig);
+    const map = el.querySelector('[data-map]');
+    renderResults({ ...response }, el, mapConfig);
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+    expect(el.querySelector('[data-map]')).not.toBe(map);
+  });
+
+  it('starts a new map when the same results are drawn for the other layout', () => {
+    renderResults(response, el, mapConfig);
+    const map = el.querySelector('[data-map]');
+    renderResults(response, el, { ...mapConfig, mapButton: { open: true, onToggle: vi.fn() } });
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+    expect(el.querySelector('[data-map]')).not.toBe(map);
   });
 
   it('redraws only the map when asked to, leaving the lists as they are', () => {

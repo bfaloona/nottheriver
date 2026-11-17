@@ -99,6 +99,55 @@ describe('drawMap', () => {
     expect(pinsIn(second)).toHaveLength(0);
   });
 
+  it('keeps the map it drew when the same shops come again in another order', () => {
+    const fitted = vi.spyOn(L.Map.prototype, 'fitBounds');
+    try {
+      const el = container();
+      drawMap(el, PINS, CENTER);
+      const pane = el.querySelector('.leaflet-map-pane');
+      const pins = pinsIn(el);
+      fitted.mockClear();
+
+      drawMap(el, [...PINS].reverse(), CENTER);
+      expect(el.querySelector('.leaflet-map-pane')).toBe(pane);
+      expect(pinsIn(el)).toEqual(pins);
+      // The visitor may have moved the map; a sort is no reason to move it back.
+      expect(fitted).not.toHaveBeenCalled();
+      expect(watched.filter((w) => w.target === el)).toHaveLength(1);
+    } finally {
+      fitted.mockRestore();
+    }
+  });
+
+  it('changes only the pins, and fits the view to them, when the shops in its container change', () => {
+    const fitted = vi.spyOn(L.Map.prototype, 'fitBounds');
+    try {
+      const el = container();
+      drawMap(el, PINS, CENTER);
+      const pane = el.querySelector('.leaflet-map-pane');
+      fitted.mockClear();
+
+      drawMap(el, [PINS[0]!], CENTER);
+      expect(el.querySelector('.leaflet-map-pane')).toBe(pane);
+      expect(pinsIn(el).map((p) => p.title)).toEqual(['1. Near Shop']);
+      expect(el.querySelectorAll('.map-center')).toHaveLength(1);
+      expect(fitted).toHaveBeenCalledTimes(1);
+
+      drawMap(el, PINS, CENTER);
+      expect(pinsIn(el).map((p) => p.title).sort()).toEqual(['1. Near Shop', '2. Far Shop']);
+    } finally {
+      fitted.mockRestore();
+    }
+  });
+
+  it('draws a new map in a container whose map was cleared', () => {
+    const el = container();
+    drawMap(el, PINS, CENTER);
+    clearMap();
+    drawMap(el, PINS, CENTER);
+    expect(pinsIn(el)).toHaveLength(2);
+  });
+
   it('recalculates its size when its container changes size, until the map is cleared', () => {
     const resized = vi.spyOn(L.Map.prototype, 'invalidateSize');
     const el = container();

@@ -190,9 +190,83 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(panel).toBeHidden();
   // With a pointer the name opens on rest, so it does not show the hand of something to click.
   expect(await name.evaluate((el) => getComputedStyle(el).cursor)).toBe('default');
+  // The open/closed mark after the name is for touch screens, where nothing opens on rest.
+  expect(await name.evaluate((el) => getComputedStyle(el, '::after').content)).toBe('none');
   await page.mouse.move(0, 0);
 
   expect(errors).toEqual([]);
+});
+
+test('a sort change rebuilds the lists and keeps the map, asking for no image again', async ({ page }) => {
+  const tileReferers = await stubTiles(page);
+  await page.goto('/');
+  await page.getByLabel('What are you looking for').fill('cast iron skillet');
+  await page.getByLabel('Zip code').fill(ZIP);
+  await page.getByRole('button', { name: 'Search' }).click();
+  const map = page.locator('[data-map]');
+  await expect(map.locator('.map-pin')).toHaveCount(await page.locator('[data-section=near] [data-result]').count());
+  await expect.poll(() => tileReferers.length).toBeGreaterThan(0);
+  await page.waitForLoadState('networkidle');
+  const tiles = tileReferers.length;
+  // Marks that only the same nodes can still carry after the change.
+  await page.evaluate(() => {
+    for (const selector of ['[data-result]', '[data-map] .leaflet-tile', '[data-map] .map-pin']) {
+      (document.querySelector(selector) as HTMLElement & { seen?: boolean }).seen = true;
+    }
+  });
+  const seen = (selector: string) => page.evaluate((s) => (document.querySelector(s) as (HTMLElement & { seen?: boolean }) | null)?.seen === true, selector);
+
+  await page.getByLabel('Sort by').selectOption('name');
+  expect(await seen('[data-result]'), 'the lists are rebuilt').toBe(false);
+  expect(await seen('[data-map] .leaflet-tile'), 'the map image is the one already loaded').toBe(true);
+  expect(await seen('[data-map] .map-pin'), 'the pins are the ones already drawn').toBe(true);
+  await page.waitForTimeout(500);
+  expect(tileReferers.length).toBe(tiles);
+});
+
+test.describe('on a touch screen', () => {
+  test.use({ viewport: { width: 360, height: 640 }, hasTouch: true, isMobile: true });
+
+  test('the shop name carries a mark for its panel, which stays open through a sort change', async ({ page }) => {
+    await page.route('https://tile.openstreetmap.org/**', (route) => route.abort());
+    await page.goto('/');
+    // The test only means something where the panel opens in place.
+    expect(await page.evaluate(() => matchMedia('(hover: hover) and (pointer: fine)').matches)).toBe(false);
+    await page.getByLabel('What are you looking for').fill('cast iron skillet');
+    await page.getByLabel('Zip code').fill(ZIP);
+    await page.getByRole('button', { name: 'Search' }).tap();
+    const first = page.locator('[data-result]').first();
+    const name = first.locator('[data-retailer]');
+    await expect(name).toBeVisible();
+
+    // A triangle drawn with borders: the top one when closed (pointing down), the bottom one when open.
+    const mark = () =>
+      name.evaluate((el) => {
+        const style = getComputedStyle(el, '::after');
+        return { drawn: style.content !== 'none', down: parseFloat(style.borderTopWidth) > 0, up: parseFloat(style.borderBottomWidth) > 0 };
+      });
+    expect(await mark()).toEqual({ drawn: true, down: true, up: false });
+    await name.tap();
+    await expect(first.locator('.why-panel')).toBeVisible();
+    expect(await mark()).toEqual({ drawn: true, down: false, up: true });
+
+    // The mark never takes a line of its own: no name is taller with it than without.
+    const heights = () => page.locator('[data-retailer]').evaluateAll((names) => names.map((n) => n.getBoundingClientRect().height));
+    const withMark = await heights();
+    await page.evaluate(() => {
+      // Through the stylesheet's own object: the page's CSP allows no injected style element.
+      const sheet = [...document.styleSheets].find((s) => s.href?.startsWith(location.origin))!;
+      sheet.insertRule('.retailer::after { display: none !important; }', sheet.cssRules.length);
+    });
+    expect(await heights()).toEqual(withMark);
+
+    const shop = await name.textContent();
+    await page.getByLabel('Sort by').selectOption('name');
+    const open = page.locator('[data-why]').filter({ has: page.locator('.why-panel:visible') });
+    await expect(open).toHaveCount(1);
+    await expect(open.locator('[data-retailer]')).toHaveText(shop!);
+    expect(await pageScrollsSideways(page)).toBe(false);
+  });
 });
 
 test('on a phone the map, and its request to OpenStreetMap, waits for "Show map"', async ({ page }) => {

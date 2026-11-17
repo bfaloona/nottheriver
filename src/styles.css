@@ -257,7 +257,24 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
   cursor: pointer; /* a finger's press target; the hover query below takes the hand away */
   text-decoration: underline dotted var(--ink-muted);
   text-underline-offset: 0.25em;
+  position: relative;
+  padding-inline-end: 1.1em; /* room for the mark below */
 }
+/* Where nothing opens on rest, a press is the only way into the panel, so the name carries a
+   mark: a triangle pointing down, and up while the panel is open. The browser's own triangle
+   on "N concerns" points right when closed; here that would point at the link beside the name.
+   It is placed in the name's padding, level with the first line, so it adds no line of its own
+   and stays clear of the dotted underline. */
+.retailer::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0.2em;
+  top: 0.6em;
+  border: solid transparent;
+  border-width: 0.4em 0.3em 0;
+  border-top-color: var(--ink-muted);
+}
+.retailer[aria-expanded="true"]::after { border-width: 0 0.3em 0.4em; border-bottom-color: var(--ink-muted); }
 /* The link to the shop: a box as tall as the name's first line. ::after widens what a finger
    can hit to 44px without making the row taller. */
 .visit {
@@ -313,7 +330,8 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
   /* The wrapper is the name and the icon, not the row's width: leaving it closes the panel. */
   .why { width: fit-content; max-width: 100%; }
   /* Resting on the name opens the panel, so the name does not offer itself as something to click. */
-  .retailer { cursor: default; }
+  .retailer { cursor: default; padding-inline-end: 0; }
+  .retailer::after { content: none; }
   /* A pointer does not need the 44px target, and it would make the space around the icon
      close the panel as the icon itself does. */
   .visit::after { content: none; }

@@ -1,6 +1,6 @@
 import type { ComponentName, SearchResponse, SearchResult, Signal, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
 import { defaultView, filterResults, sortResults, type Filters, type View } from './controls';
-import { wirePopovers } from './popover';
+import { pinnedPanels, wirePopovers } from './popover';
 
 // Everything in a SearchResponse is untrusted text from the web: nodes are built
 // with textContent only, and a URL becomes an href only when it is http(s).
@@ -255,10 +255,11 @@ function resultHead(result: SearchResult, panelId: string): HTMLDivElement {
 }
 
 export function renderResult(result: SearchResult, config: RenderConfig): HTMLLIElement {
-  // Nearby and online ranks both start at 1, so the kind keeps the panel ids apart.
+  // Nearby and online ranks both start at 1, so the kind keeps them apart.
+  const key = `${result.kind}-${result.rank}`;
   const panel = el(
     'div',
-    { id: `why-${result.kind}-${result.rank}`, className: 'why-panel' },
+    { id: `why-${key}`, className: 'why-panel' },
     el('p', { className: 'why-total' }, `Score ${result.score.toFixed(2)}`),
     el('ul', { className: 'components' }, ...result.components.map((c) => componentRow(c, result))),
     el('p', { className: 'why-help' }, internal(RANKING_HELP, 'How ranking works')),
@@ -296,7 +297,7 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
   if (negatives.length === 1) body.append(concernBox(negatives[0]!, config));
   else if (negatives.length > 1) body.append(concernsGroup(negatives, config));
 
-  const item = el('li', { className: 'result', data: { result: '' } }, el('span', { className: 'rank' }, String(result.rank)), body);
+  const item = el('li', { className: 'result', data: { result: key } }, el('span', { className: 'rank' }, String(result.rank)), body);
   // Nearby and farther shops share one numbering, so the rank names a map pin's list item uniquely.
   if (result.kind === 'local') item.id = shopId(result.rank);
   return item;
@@ -356,6 +357,8 @@ function mapToggle(map: HTMLElement, pins: MapPin[], config: RenderConfig): HTML
   return button;
 }
 
+const mapLayout = (config: RenderConfig) => (config.mapButton ? 'button' : 'beside');
+
 function clearMapFrom(near: HTMLElement): void {
   for (const old of [...near.children]) if (old.matches('[data-map], [data-map-toggle]')) old.remove();
   delete near.dataset.mapLayout;
@@ -375,16 +378,18 @@ export function removeMap(container: HTMLElement): void {
 // Puts the map, and on a narrow screen its button, last in the Near you section, in place of
 // any already there; the stylesheet moves a map with no button beside the lists. The section
 // must be in the page, because onMap draws into the container at once.
-function placeMap(near: HTMLElement, pins: MapPin[], config: RenderConfig): void {
+// kept: the container of the map these same results already had, in the same layout. Drawn
+// into again, it keeps its map, so a sort or filter change does not load the map's images anew.
+function placeMap(near: HTMLElement, pins: MapPin[], config: RenderConfig, kept?: HTMLElement | null): void {
   clearMapFrom(near);
   if (pins.length === 0 || !config.onMap) return config.onNoMap?.();
 
-  const map = el('div', { id: 'near-map', className: 'map', data: { map: '' } });
+  const map = kept ?? el('div', { id: 'near-map', className: 'map', data: { map: '' } });
   map.setAttribute('role', 'region');
   map.setAttribute('aria-label', 'Map of the shops listed near you');
   const toggle = config.mapButton ? mapToggle(map, pins, config) : null;
   near.append(...(toggle ? [toggle] : []), map);
-  near.dataset.mapLayout = toggle ? 'button' : 'beside';
+  near.dataset.mapLayout = mapLayout(config);
   if (map.hidden) config.onNoMap?.();
   else config.onMap(map, pins);
 }
@@ -448,6 +453,25 @@ function section(
   return node;
 }
 
+// The results each root last showed. Drawing the same ones again is a sort or filter change; a
+// new search brings other shops, which only share rank numbers with the last one's.
+const drawn = new WeakMap<HTMLElement, SearchResponse>();
+
+// What a rebuild of the lists would undo for the visitor: the rank panels and lists of concerns
+// they opened, the shop a map pin led them to (map.ts marks it), and the map they may have moved.
+function kept(root: HTMLElement) {
+  const shops = (selector: string) =>
+    [...root.querySelectorAll(selector)].map((node) => node.closest<HTMLElement>('[data-result]')!.dataset.result!);
+  const map = root.querySelector<HTMLElement>('[data-map]');
+  return {
+    panels: pinnedPanels(root),
+    concerns: shops('[data-concerns][open]'),
+    picked: shops('.result-picked'),
+    map,
+    mapLayout: map?.parentElement?.dataset.mapLayout,
+  };
+}
+
 // Renders the help line and both sections into root; returns what is on screen.
 export function renderResults(
   response: SearchResponse,
@@ -458,15 +482,26 @@ export function renderResults(
   const shown = shownLists(response, view);
   const farther = { all: response.local_farther ?? [], shown: shown.farther, nearMiles: response.query.near_radius_mi };
   const near = section('near', 'Near you', response.local, shown.local, view.near, config, farther);
-  // A sort or filter change rebuilds the page; an explanation the visitor opened stays open.
+  // The lists are built anew every time. For the same results in another order or under
+  // another filter, what the visitor opened in them is put back.
+  const before = drawn.get(root) === response ? kept(root) : null;
+  drawn.set(root, response);
+  // The explanation of "unknown" reads the same for any search, so it stays open across them too.
   const helpOpen = root.querySelector<HTMLElement>('[data-unknown-help]')?.hidden === false;
   root.replaceChildren(
     ...resultsHelp([...shown.local, ...shown.farther, ...shown.online], helpOpen),
     near,
     section('online', 'Online', response.online, shown.online, view.online, config),
   );
-  wirePopovers(root);
-  placeMap(near, view.near ? mapPins(shown.local, shown.farther) : [], config);
+  wirePopovers(root, before?.panels);
+  for (const item of before ? root.querySelectorAll<HTMLElement>('[data-result]') : []) {
+    const shop = item.dataset.result!;
+    if (before!.picked.includes(shop)) item.classList.add('result-picked');
+    const concerns = item.querySelector<HTMLDetailsElement>('[data-concerns]');
+    if (concerns && before!.concerns.includes(shop)) concerns.open = true;
+  }
+  const sameLayout = before?.mapLayout === mapLayout(config);
+  placeMap(near, view.near ? mapPins(shown.local, shown.farther) : [], config, sameLayout ? before!.map : null);
   const distances = shown.local.map((r) => r.distance_km);
   return {
     near: shown.local.length,

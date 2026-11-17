@@ -25,7 +25,13 @@ function unpinAndClose(why: HTMLElement): void {
   setOpen(why, false);
 }
 
-export function wirePopovers(root: ParentNode): void {
+// The panels pressed open and still open, by id.
+export function pinnedPanels(root: ParentNode): string[] {
+  return [...root.querySelectorAll<HTMLElement>('[data-why][data-pinned]')].map((why) => panelOf(why).id);
+}
+
+// reopen: panels to start pressed open, for lists rebuilt under a visitor who had opened them.
+export function wirePopovers(root: ParentNode, reopen: string[] = []): void {
   const all = [...root.querySelectorAll<HTMLElement>('[data-why]')];
   const floats = matchMedia('(hover: hover) and (pointer: fine)').matches;
 
@@ -61,6 +67,10 @@ export function wirePopovers(root: ParentNode): void {
   }
 
   for (const why of all) {
+    if (reopen.includes(panelOf(why).id)) {
+      why.dataset.pinned = '1';
+      setOpen(why, true);
+    }
     let rest: ReturnType<typeof setTimeout> | undefined;
     const cancelRest = () => {
       clearTimeout(rest);

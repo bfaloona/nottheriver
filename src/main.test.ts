@@ -425,6 +425,27 @@ describe('search page', () => {
     expect($('[data-why] .why-panel').hidden).toBe(false);
   });
 
+  it('keeps the map and an opened panel through a sort change', async () => {
+    await search();
+    const map = $('[data-map]');
+    const shop = $('[data-why] [data-retailer]').textContent;
+    $('[data-why] [data-retailer]').click();
+    set('#sort', 'name');
+    expect($('[data-map]')).toBe(map);
+    const open = [...document.querySelectorAll<HTMLElement>('.why-panel')].filter((p) => !p.hidden);
+    expect(open.map((p) => p.closest('[data-why]')!.querySelector('[data-retailer]')!.textContent)).toEqual([shop]);
+  });
+
+  it('starts the next search with a new map and every panel closed', async () => {
+    await search();
+    const map = $('[data-map]');
+    $('[data-why] [data-retailer]').click();
+    submit('kettle', '02138');
+    await vi.waitFor(() => expect($('[data-map]')).not.toBe(map));
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    expect([...document.querySelectorAll<HTMLElement>('.why-panel')].filter((p) => !p.hidden)).toEqual([]);
+  });
+
   it('leaves the map alone when a width event arrives without a change of layout', async () => {
     await search();
     const map = $('[data-map]');
