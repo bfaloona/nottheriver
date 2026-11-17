@@ -4,7 +4,7 @@ import type { SearchResponse, SearchResult, Signal } from '../proxy/src/contract
 import fixture from '../tests/fixtures/search-response.json';
 import { disputeUrlFor } from './config';
 import { defaultView } from './controls';
-import { formatDistance, renderFooter, renderResult, renderResults, renderStatus } from './render';
+import { formatDistance, removeMap, renderFooter, renderMap, renderResult, renderResults, renderStatus } from './render';
 
 const response = fixture as SearchResponse;
 const config = { disputeUrl: disputeUrlFor('') };
@@ -152,7 +152,7 @@ describe('renderResults (HR5)', () => {
     expect(li.querySelector('[data-record]')!.textContent).toBe('People and planet: unknown');
     const el = document.createElement('div');
     renderResults({ ...response, local: [], online: [member] }, el, config);
-    expect(el.querySelector('[data-record-count]')!.textContent).toMatch(/^0 of 1 result has a people-and-planet record\. Unknown means/);
+    expect(el.querySelector('[data-record-count] summary')!.textContent).toMatch(/^0 of 1 result has a people-and-planet record\./);
   });
 
   it('keeps the "unknown" line free of links, and the panel in agreement with it', () => {
@@ -169,10 +169,23 @@ describe('renderResults (HR5)', () => {
   it('counts the results that have a record, once, above the lists', () => {
     const counts = root.querySelectorAll('[data-record-count]');
     expect(counts).toHaveLength(1);
-    expect(counts[0]!.textContent).toBe(
-      '3 of 4 results have a people-and-planet record. Unknown means a shop is on none of our lists and this search found nothing about it: we have not looked further yet, or were blocked from looking.',
-    );
+    expect(counts[0]!.querySelector('summary')!.textContent).toBe('3 of 4 results have a people-and-planet record. What unknown means');
     expect(counts[0]!.previousElementSibling!.matches('[data-weights]')).toBe(true);
+  });
+
+  it('keeps the explanation of "unknown" on the page, closed until asked for', () => {
+    const count = root.querySelector<HTMLDetailsElement>('[data-record-count]')!;
+    expect(count.tagName).toBe('DETAILS'); // native, so it opens in place and the results stay
+    expect(count.open).toBe(false);
+    expect(count.querySelector('summary + p')!.textContent).toBe(
+      "Unknown means our lists hold no certification that counts toward a shop's score and this search found nothing about it: we have not looked further yet, or were blocked from looking.",
+    );
+  });
+
+  it('leaves the explanation open across a re-render, such as a change of sort', () => {
+    root.querySelector<HTMLDetailsElement>('[data-record-count]')!.open = true;
+    renderResults(response, root, config, { ...defaultView, sort: 'name' });
+    expect(root.querySelector<HTMLDetailsElement>('[data-record-count]')!.open).toBe(true);
   });
 
   it('counts only the results the filters leave, and drops the explanation when none is unknown', () => {
@@ -181,6 +194,7 @@ describe('renderResults (HR5)', () => {
     expect(el.querySelector('[data-record-count]')!.textContent).toBe('2 of 2 results have a people-and-planet record.');
     renderResults(response, el, config, { ...defaultView, near: false, certifiedOnly: true });
     expect(el.querySelector('[data-record-count]')!.textContent).toBe('1 of 1 result has a people-and-planet record.');
+    expect(el.querySelector('[data-record-count]')!.tagName).toBe('P'); // nothing to explain, so nothing to open
     renderResults({ ...response, local: [], online: [] }, el, config);
     expect(el.querySelector('[data-record-count]')).toBeNull();
   });
@@ -301,6 +315,41 @@ describe('renderResults (HR5)', () => {
     for (const w of Object.values(response.weights)) expect(weights[0]!.textContent).toContain(w.toFixed(2));
   });
 
+  it('names the four score parts on the weights line as the "Why this rank" panel does', () => {
+    expect(root.querySelector('[data-weights]')!.textContent).toBe(
+      'Ranked by sells it 0.25, ethics 0.30, environment 0.30, distance 0.15. How ranking works',
+    );
+  });
+
+  const facts = (result: SearchResult) => renderResult(result, config).querySelector('[data-facts]')!.textContent;
+
+  it('gives each shop one facts line: the sells-it reading, then where it is, then "unknown" when it has no record', () => {
+    const [certified, withConcern] = response.local;
+    const [onlineCertified, chainOnly] = response.online;
+    expect(facts(certified!)).toBe('Sells it: product named in listing · 2.0 mi, 12 Main St, Springfield, IL 62701');
+    expect(facts(withConcern!)).toBe('Sells it: product named in listing · 7.1 mi, 300 Oak Ave, Springfield, IL 62702');
+    expect(facts(onlineCertified!)).toBe('Sells it: product named in listing');
+    expect(facts(chainOnly!)).toBe('Sells it: category named in listing · People and planet: unknown');
+    for (const result of all) expect(renderResult(result, config).querySelectorAll('[data-facts]'), result.id).toHaveLength(1);
+  });
+
+  it('puts a nearby shop with no record, and one with no known distance, on the same line', () => {
+    const base = response.local[1]!;
+    const noRecord: SearchResult = { ...base, signals: [], components: base.components.map((c) => (c.name === 'ethics' ? { ...c, sources: [] } : c)) };
+    expect(facts(noRecord)).toBe('Sells it: product named in listing · 7.1 mi, 300 Oak Ave, Springfield, IL 62702 · People and planet: unknown');
+    expect(facts({ ...noRecord, address: null })).toBe('Sells it: product named in listing · 7.1 mi · People and planet: unknown');
+    expect(facts({ ...noRecord, distance_km: null })).toBe('Sells it: product named in listing · People and planet: unknown');
+  });
+
+  it('words the facts line as the panel words "Sells it", and drops the "Matched" line', () => {
+    for (const result of all) {
+      const li = renderResult(result, config);
+      const panel = li.querySelector('[data-component="relevance"] .component-text')!.textContent;
+      expect(li.querySelector('[data-sells]')!.textContent!.toLowerCase(), result.id).toBe(`sells it: ${panel.toLowerCase()}`);
+      expect(li.textContent, result.id).not.toContain('Matched:');
+    }
+  });
+
   it('shows local distance in miles and none for online', () => {
     expect(item(response.local[0]!).querySelector('.distance')!.textContent).toContain('2.0 mi');
     expect(item(response.online[0]!).querySelector('.distance')).toBeNull();
@@ -358,6 +407,25 @@ describe('renderStatus', () => {
     const el = document.createElement('p');
     renderStatus(el, { kind: 'rate_limited' });
     expect(el.textContent).toBe('Too many searches from this connection. Try again in about a minute.');
+  });
+
+  it('links the online count to the Online section, and only while that section has rows to jump to', () => {
+    const el = document.createElement('p');
+    renderStatus(el, { kind: 'done', near: 3, online: 10, onlineShown: true });
+    expect(el.textContent).toBe('Found 3 shops near you and 10 online.');
+    const link = el.querySelector('a')!;
+    expect(link.textContent).toBe('10 online');
+    expect(link.getAttribute('href')).toBe('#online-heading');
+
+    renderStatus(el, { kind: 'done', near: 1, online: 10, onlineShown: false });
+    expect(el.textContent).toBe('Found 1 shop near you and 10 online.');
+    expect(el.querySelector('a')).toBeNull();
+    renderStatus(el, { kind: 'done', near: 3, online: 0, onlineShown: true });
+    expect(el.querySelector('a')).toBeNull();
+  });
+
+  it('points the jump link at the id the Online heading carries', () => {
+    expect(root.querySelector('[data-section="online"] h2')!.id).toBe('online-heading');
   });
 
   it('names the place being searched', () => {
@@ -468,12 +536,15 @@ describe('map of nearby shops', () => {
   });
   const farther = { ...response.local[0]!, id: 'local:far:9', rank: 3, retailer: { ...response.local[0]!.retailer, name: 'Far Shop' }, lat: 40.5, lon: -89.1 };
 
-  it('puts one map between the Near you note and its list, pinning shown shops by rank', () => {
+  it('puts one map at the end of the Near you section, marked to sit beside its lists, pinning shown shops by rank', () => {
     renderResults({ ...response, local_farther: [farther] }, el, mapConfig);
-    const near = el.querySelector('[data-section="near"]')!;
+    const near = el.querySelector<HTMLElement>('[data-section="near"]')!;
     const map = near.querySelector<HTMLElement>('[data-map]')!;
-    expect(map.previousElementSibling!.className).toBe('section-note');
-    expect(map.nextElementSibling!.tagName).toBe('OL');
+    expect(near.lastElementChild).toBe(map);
+    expect(map.previousElementSibling!.matches('[data-farther]')).toBe(true);
+    expect(near.dataset.mapLayout).toBe('beside');
+    expect(map.hidden).toBe(false);
+    expect(el.querySelector('[data-map-toggle]')).toBeNull();
     expect(map.getAttribute('aria-label')).toBe('Map of the shops listed near you');
     expect(draw).toHaveBeenCalledTimes(1);
     expect(draw.mock.calls[0]![0]).toBe(map);
@@ -530,6 +601,104 @@ describe('map of nearby shops', () => {
     const [first, second] = response.local;
     renderResults({ ...response, local: [first!, { ...second!, lat: Number.NaN }] }, el, mapConfig);
     expect(draw.mock.calls[0]![1]).toHaveLength(1);
+  });
+
+  describe('on a screen too narrow to hold it beside the list', () => {
+    const noMap = vi.fn();
+    const toggled = vi.fn();
+    const narrow = (open: boolean) => ({ ...config, onMap: draw, onNoMap: noMap, mapButton: { open, onToggle: toggled } });
+    const button = () => el.querySelector<HTMLButtonElement>('[data-map-toggle]')!;
+    const map = () => el.querySelector<HTMLElement>('[data-map]')!;
+    beforeEach(() => {
+      noMap.mockClear();
+      toggled.mockClear();
+    });
+
+    it('draws nothing until "Show map" is pressed, then shows the map below the nearby lists', () => {
+      renderResults({ ...response, local_farther: [farther] }, el, narrow(false));
+      const near = el.querySelector<HTMLElement>('[data-section="near"]')!;
+      expect(draw).not.toHaveBeenCalled();
+      expect(noMap).toHaveBeenCalledTimes(1);
+      expect(near.dataset.mapLayout).toBe('button');
+      expect(button().textContent).toBe('Show map');
+      // The label alone says the state; with aria-expanded too a screen reader hears "Hide map, expanded".
+      expect(button().hasAttribute('aria-expanded')).toBe(false);
+      expect(button().type).toBe('button');
+      expect(button().previousElementSibling!.matches('[data-farther]')).toBe(true);
+      expect(button().nextElementSibling).toBe(map());
+      expect(near.lastElementChild).toBe(map());
+      expect(button().getAttribute('aria-controls')).toBe(map().id);
+      expect(map().hidden).toBe(true);
+
+      button().click();
+      expect(map().hidden).toBe(false);
+      expect(draw).toHaveBeenCalledTimes(1);
+      expect(draw.mock.calls[0]![0]).toBe(map());
+      expect(draw.mock.calls[0]![1].map((p: { rank: number }) => p.rank)).toEqual([...response.local.map((r) => r.rank), farther.rank]);
+      expect(button().textContent).toBe('Hide map');
+      expect(button().hasAttribute('aria-expanded')).toBe(false);
+      expect(toggled).toHaveBeenLastCalledWith(true);
+    });
+
+    it('hides the map again on a second press and lets the page release it', () => {
+      renderResults(response, el, narrow(false));
+      button().click();
+      noMap.mockClear();
+      button().click();
+      expect(map().hidden).toBe(true);
+      expect(noMap).toHaveBeenCalledTimes(1);
+      expect(button().textContent).toBe('Show map');
+      expect(toggled).toHaveBeenLastCalledWith(false);
+      expect(draw).toHaveBeenCalledTimes(1);
+    });
+
+    it('draws at once when the visitor already opened the map for this search', () => {
+      renderResults(response, el, narrow(true));
+      expect(draw).toHaveBeenCalledTimes(1);
+      expect(map().hidden).toBe(false);
+      expect(button().textContent).toBe('Hide map');
+      expect(toggled).not.toHaveBeenCalled();
+    });
+
+    it('takes the button away with a map that could not be drawn, so no dead control is left', () => {
+      renderResults(response, el, narrow(false));
+      button().click();
+      removeMap(map());
+      expect(el.querySelector('[data-map]')).toBeNull();
+      expect(el.querySelector('[data-map-toggle]')).toBeNull();
+      expect(el.querySelector<HTMLElement>('[data-section="near"]')!.dataset.mapLayout).toBeUndefined();
+    });
+
+    it('offers no button when no shop can be pinned', () => {
+      renderResults({ ...response, local: response.local.map((r) => ({ ...r, lat: null, lon: null })) }, el, narrow(true));
+      expect(el.querySelector('[data-map-toggle]')).toBeNull();
+      expect(el.querySelector('[data-map]')).toBeNull();
+      expect(el.querySelector<HTMLElement>('[data-section="near"]')!.dataset.mapLayout).toBeUndefined();
+      expect(draw).not.toHaveBeenCalled();
+    });
+  });
+
+  it('redraws only the map when asked to, leaving the lists as they are', () => {
+    renderResults(response, el, mapConfig);
+    const firstShop = el.querySelector('[data-result]');
+    draw.mockClear();
+    const toggled = vi.fn();
+    renderMap(response, el, { ...mapConfig, mapButton: { open: false, onToggle: toggled } });
+    expect(el.querySelector('[data-result]')).toBe(firstShop);
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+    expect(el.querySelector<HTMLElement>('[data-map]')!.hidden).toBe(true);
+    expect(el.querySelector('[data-map-toggle]')!.textContent).toBe('Show map');
+    expect(draw).not.toHaveBeenCalled();
+
+    renderMap(response, el, mapConfig);
+    expect(el.querySelector('[data-map-toggle]')).toBeNull();
+    expect(el.querySelectorAll('[data-map]')).toHaveLength(1);
+    expect(el.querySelector<HTMLElement>('[data-section="near"]')!.dataset.mapLayout).toBe('beside');
+    expect(draw).toHaveBeenCalledTimes(1);
+
+    // The same filters as the lists: with Near you switched off there is nothing to map.
+    renderMap(response, el, mapConfig, { ...defaultView, near: false });
+    expect(el.querySelector('[data-map]')).toBeNull();
   });
 
   it('reports a render without a map, so the page can drop the old one', () => {

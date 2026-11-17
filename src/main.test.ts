@@ -37,7 +37,15 @@ function submit(product: string, zip: string): Event {
   return event;
 }
 
-beforeEach(async () => {
+// The page asks one width question: is there room for the map beside the list. Every other
+// media query (hover, pointer, reduced motion) answers no.
+const screen = { wide: true, changed: [] as (() => void)[] };
+function resize(wide: boolean): void {
+  screen.wide = wide;
+  for (const listener of screen.changed) listener();
+}
+
+async function boot(wide = true): Promise<void> {
   const body = /<body>([\s\S]*)<\/body>/.exec(indexHtml)![1]!.replace(/<script[\s\S]*?<\/script>/g, '');
   document.body.innerHTML = body;
   sessionStorage.clear();
@@ -45,9 +53,19 @@ beforeEach(async () => {
   fetchMock.mockReset();
   searchReplies(() => new Response(JSON.stringify(fixture), { status: 200 }));
   vi.stubGlobal('fetch', fetchMock);
+  screen.wide = wide;
+  screen.changed = [];
+  vi.stubGlobal('matchMedia', (query: string) => ({
+    get matches() {
+      return query.includes('min-width') && screen.wide;
+    },
+    addEventListener: (_: 'change', listener: () => void) => screen.changed.push(listener),
+  }));
   vi.resetModules();
   await import('./main');
-});
+}
+
+beforeEach(() => boot());
 
 describe('search page', () => {
   it('names the page from config and keeps the mission copy in sync', () => {
@@ -137,6 +155,229 @@ describe('search page', () => {
     }
     expect($('[data-status]').textContent).toBe('Every result is hidden by the filters. Clear a filter to see them again.');
     expect(searchCalls()).toHaveLength(1);
+  });
+
+  it('shows how many results the certification filter would keep', async () => {
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    const certified = $<HTMLInputElement>('#certified-only');
+    expect(certified.closest('label')!.textContent!.trim()).toBe('Has certification (2)');
+    expect(certified.disabled).toBe(false);
+  });
+
+  it('switches the certification filter off and disables it when no result is certified', async () => {
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    const certified = $<HTMLInputElement>('#certified-only');
+    certified.checked = true;
+    certified.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(document.querySelectorAll('[data-result]')).toHaveLength(2);
+
+    // A box left checked from the last search would hide every result of this one.
+    const bare = (list: { certifications: unknown[] }[]) => list.map((r) => ({ ...r, certifications: [] }));
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, local: bare(fixture.local), online: bare(fixture.online) }), { status: 200 }));
+    submit('kettle', '10001');
+    await vi.waitFor(() => expect(certified.disabled).toBe(true));
+    expect(certified.checked).toBe(false);
+    expect(certified.closest('label')!.textContent!.trim()).toBe('Has certification (0)');
+    expect(document.querySelectorAll('[data-result]')).toHaveLength(4);
+    expect($('[data-status]').textContent).toBe('Found 2 shops near you and 2 online.');
+  });
+
+  it('counts certified shops only in the sections switched on, so the number is what the box would show', async () => {
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    const certified = $<HTMLInputElement>('#certified-only');
+    const label = () => certified.closest('label')!.textContent!.trim();
+    const online = $<HTMLInputElement>('#show-online');
+
+    online.checked = false;
+    online.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(label()).toBe('Has certification (1)');
+
+    online.checked = true;
+    online.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(label()).toBe('Has certification (2)');
+  });
+
+  it('leaves a checked certification filter checked and usable when switching a section off empties it', async () => {
+    // Certified shops online only.
+    const local = fixture.local.map((r) => ({ ...r, certifications: [] }));
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, local }), { status: 200 }));
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    const certified = $<HTMLInputElement>('#certified-only');
+    const online = $<HTMLInputElement>('#show-online');
+    const set = (box: HTMLInputElement, checked: boolean) => {
+      box.checked = checked;
+      box.dispatchEvent(new Event('change', { bubbles: true }));
+    };
+
+    set(certified, true);
+    set(online, false);
+    // Unchecking it for the visitor would bring back shops they filtered out; disabling it would trap them.
+    expect(certified.checked).toBe(true);
+    expect(certified.disabled).toBe(false);
+    expect(certified.closest('label')!.textContent!.trim()).toBe('Has certification (0)');
+    expect($('[data-status]').textContent).toBe('Every result is hidden by the filters. Clear a filter to see them again.');
+
+    set(certified, false);
+    expect(certified.disabled).toBe(true);
+    expect(document.querySelectorAll('[data-result]')).toHaveLength(2);
+
+    set(online, true);
+    expect(certified.disabled).toBe(false);
+    expect(certified.closest('label')!.textContent!.trim()).toBe('Has certification (1)');
+  });
+
+  it('takes the certification filter off for a new search whose switched-on sections hold no certified shop', async () => {
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    const certified = $<HTMLInputElement>('#certified-only');
+    for (const [id, checked] of [['#show-online', false], ['#certified-only', true]] as const) {
+      $<HTMLInputElement>(id).checked = checked;
+      $<HTMLInputElement>(id).dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    expect(document.querySelectorAll('[data-result]')).toHaveLength(1);
+
+    // The next search has a certified shop, but only in Online, which is switched off.
+    const local = fixture.local.map((r) => ({ ...r, certifications: [] }));
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, local }), { status: 200 }));
+    submit('kettle', '10001');
+    await vi.waitFor(() => expect(certified.checked).toBe(false));
+    expect(certified.disabled).toBe(true);
+    expect(certified.closest('label')!.textContent!.trim()).toBe('Has certification (0)');
+    expect(document.querySelectorAll('[data-result]')).toHaveLength(2);
+  });
+
+  it('links the found count to the Online section until that section is switched off', async () => {
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    expect($('[data-status] a').getAttribute('href')).toBe('#online-heading');
+    expect(document.getElementById('online-heading')).not.toBeNull();
+
+    const online = $<HTMLInputElement>('#show-online');
+    online.checked = false;
+    online.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(document.querySelector('[data-status] a')).toBeNull();
+  });
+
+  it('shows the headline until a search starts, then keeps it out of the way', async () => {
+    const page = $('.page');
+    expect(page.classList.contains('searched')).toBe(false);
+    submit('kettle', '99999'); // not in the zip list, so no search starts
+    await vi.waitFor(() => expect($('#zip-help').hidden).toBe(false));
+    expect(page.classList.contains('searched')).toBe(false);
+
+    submit('cast iron skillet', '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    expect(page.classList.contains('searched')).toBe(true);
+    // Still in the page for a screen reader: it is the only h1.
+    expect($('h1[data-mission]').hidden).toBe(false);
+
+    // A failed search leaves the form where it is rather than moving it back down.
+    searchReplies(() => new Response('{"error":"rate_limited"}', { status: 429 }));
+    submit('kettle', '10001');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(true));
+    expect(page.classList.contains('searched')).toBe(true);
+  });
+
+  const search = async (product = 'cast iron skillet') => {
+    submit(product, '02138');
+    await vi.waitFor(() => expect($('#results').hidden).toBe(false));
+    await vi.waitFor(() => expect($('[data-status]').textContent).toMatch(/^Found/));
+  };
+  const mapButton = () => document.querySelector<HTMLButtonElement>('[data-map-toggle]');
+  const sortBy = (key: string) => {
+    $<HTMLSelectElement>('#sort').value = key;
+    $('#sort').dispatchEvent(new Event('change', { bubbles: true }));
+  };
+
+  it('shows the map beside the list, with no button, on a wide screen', async () => {
+    await search();
+    expect($('[data-section="near"]').dataset.mapLayout).toBe('beside');
+    expect($('[data-map]').hidden).toBe(false);
+    expect(mapButton()).toBeNull();
+  });
+
+  it('keeps the map behind "Show map" on a narrow screen, open across a sort, closed again for a new search', async () => {
+    await boot(false);
+    await search();
+    expect($('[data-map]').hidden).toBe(true);
+    expect(mapButton()!.textContent).toBe('Show map');
+
+    mapButton()!.click();
+    sortBy('name');
+    expect(mapButton()!.textContent).toBe('Hide map');
+    expect($('[data-map]').hidden).toBe(false);
+
+    // A new search can be about another place, so it asks again before loading a map of it.
+    await search('kettle');
+    expect(mapButton()!.textContent).toBe('Show map');
+    expect($('[data-map]').hidden).toBe(true);
+  });
+
+  it('moves the map behind the button when the window is narrowed, and back beside the list when widened', async () => {
+    await search();
+    resize(false);
+    expect(mapButton()!.textContent).toBe('Show map');
+    expect($('[data-map]').hidden).toBe(true);
+    resize(true);
+    expect(mapButton()).toBeNull();
+    expect($('[data-section="near"]').dataset.mapLayout).toBe('beside');
+  });
+
+  it('links to Online only while that section has a shop on screen', async () => {
+    // Certified shops nearby only: the certification filter empties Online without switching it off.
+    const online = fixture.online.map((r) => ({ ...r, certifications: [] }));
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, online }), { status: 200 }));
+    await search();
+    expect(document.querySelector('[data-status] a')).not.toBeNull();
+    const certified = $<HTMLInputElement>('#certified-only');
+    certified.checked = true;
+    certified.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(document.querySelectorAll('[data-section="online"] [data-result]')).toHaveLength(0);
+    expect($('[data-status]').textContent).toBe('Found 2 shops near you and 2 online.');
+    expect(document.querySelector('[data-status] a')).toBeNull();
+  });
+
+  it('takes "Show map" away when the map cannot be loaded, instead of leaving a button that does nothing', async () => {
+    vi.doMock('./map', () => ({
+      clearMap: () => {},
+      drawMap: () => {
+        throw new Error('no map');
+      },
+    }));
+    try {
+      await boot(false);
+      await search();
+      mapButton()!.click();
+      await vi.waitFor(() => expect(mapButton()).toBeNull());
+      expect(document.querySelector('[data-map]')).toBeNull();
+      expect(document.querySelectorAll('[data-section="near"] [data-result]')).toHaveLength(2);
+      // The next re-render offers the map again, closed, rather than "Hide map" over nothing.
+      sortBy('name');
+      expect(mapButton()!.textContent).toBe('Show map');
+    } finally {
+      vi.doUnmock('./map');
+    }
+  });
+
+  it('swaps only the map when the width changes, so an opened panel stays open', async () => {
+    await search();
+    const why = $<HTMLDetailsElement>('[data-why]');
+    why.open = true;
+    resize(false);
+    expect(mapButton()!.textContent).toBe('Show map');
+    expect($<HTMLDetailsElement>('[data-why]')).toBe(why);
+    expect(why.open).toBe(true);
+  });
+
+  it('leaves the map alone when a width event arrives without a change of layout', async () => {
+    await search();
+    const map = $('[data-map]');
+    resize(true); // a full-page screenshot fires one of these in Chromium
+    expect($('[data-map]')).toBe(map);
   });
 
   it('keeps a failure message when a filter changes after the failed search', async () => {

@@ -1,8 +1,8 @@
 import type { SearchResponse } from '../proxy/src/contract';
 import { round2, search } from './api';
 import { disputeUrl, siteName, zipsUrl } from './config';
-import { bindControls } from './controls';
-import { renderFooter, renderResults, renderStatus, type MapPin } from './render';
+import { bindControls, filterResults, showCertifiedCount } from './controls';
+import { removeMap, renderFooter, renderMap, renderResults, renderStatus, type MapPin, type RenderConfig } from './render';
 import { loadZips, lookupZip, parseZip } from './zip';
 
 // Only the product text is remembered, never the zip.
@@ -18,6 +18,7 @@ const status = $('[data-status]');
 const results = $('#results');
 const sections = $('#result-sections');
 const cost = $('[data-cost]');
+const page = $('.page');
 
 document.title = siteName;
 $('[data-site-name]').textContent = siteName;
@@ -40,25 +41,53 @@ function onMap(container: HTMLElement, pins: MapPin[]): void {
       clearMap = m.clearMap;
       m.drawMap(container, pins, center);
     })
-    .catch(() => container.remove());
+    .catch(() => {
+      mapOpen = false;
+      removeMap(container);
+    });
+}
+
+// The width from which the map fits beside the list (the stylesheet's map column is 18rem
+// wide there). Below it the map waits behind a button (see RenderConfig.mapButton). The
+// stylesheet lays the map out from what the renderer marks, not from a media query of its own,
+// but its column width counts on the page's left margin, which starts at this same 64rem
+// (styles.css, ".site-header, .page, .site-footer"): change the two together.
+const mapBeside = matchMedia('(min-width: 64rem)');
+// Whether the visitor opened the map for the search on screen.
+let mapOpen = false;
+// The layout the map was last drawn in.
+let drawnBeside: boolean | undefined;
+
+function renderConfig(): RenderConfig {
+  drawnBeside = mapBeside.matches;
+  const mapButton = drawnBeside ? undefined : { open: mapOpen, onToggle: (open: boolean) => { mapOpen = open; } };
+  return { disputeUrl, onMap, onNoMap: () => clearMap?.(), mapButton };
 }
 
 const readView = bindControls(results, () => {
   if (current) show(current);
 });
+// Chromium also fires this with nothing changed while it takes a full-page screenshot.
+mapBeside.addEventListener('change', () => {
+  if (current && mapBeside.matches !== drawnBeside) renderMap(current, sections, renderConfig(), readView());
+});
 
-function show(response: SearchResponse): void {
-  const visible = renderResults(response, sections, { disputeUrl, onMap, onNoMap: () => clearMap?.() }, readView());
+function show(response: SearchResponse, newSearch = false): void {
+  // Before the view is read: a new search with no certified shop takes the filter off.
+  showCertifiedCount(results, [...response.local, ...(response.local_farther ?? []), ...response.online], readView(), newSearch);
+  const view = readView();
+  const visible = renderResults(response, sections, renderConfig(), view);
   renderStatus(
     status,
     visible > 0
-      ? { kind: 'done', near: response.local.length, online: response.online.length }
+      ? { kind: 'done', near: response.local.length, online: response.online.length, onlineShown: filterResults(response.online, view).length > 0 }
       : { kind: 'filtered' },
   );
 }
 
 function clearResults(): void {
   current = null;
+  mapOpen = false;
   results.hidden = true;
   cost.hidden = true;
 }
@@ -107,6 +136,9 @@ async function run(): Promise<void> {
     // Clear the previous search first, so a filter change mid-flight or after a
     // failure cannot redraw old results over the status line.
     clearResults();
+    // From here on the page is for results. The headline stays hidden after a failed search too,
+    // so the form does not move back down under the visitor.
+    page.classList.add('searched');
     renderStatus(status, { kind: 'searching', city: place.city, state: place.state });
     const outcome = await search({ product: text, city: place.city, state: place.state, lat: place.lat, lon: place.lon, ruca: place.ruca });
     if (!outcome.ok) {
@@ -121,7 +153,7 @@ async function run(): Promise<void> {
     // The same 2-decimal center the Worker receives, so the map shows nothing finer.
     center = { lat: round2(place.lat), lon: round2(place.lon) };
     results.hidden = false;
-    show(current);
+    show(current, true);
   } catch {
     // A failed zip download, or a response that passed the shape check but
     // breaks rendering, must not leave the status stuck on "Searching".

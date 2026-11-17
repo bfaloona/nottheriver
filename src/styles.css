@@ -102,6 +102,10 @@ a:not([href]) { color: inherit; text-decoration: none; } /* doc names stay plain
   text-wrap: balance;
 }
 @media (min-width: 48rem) { .mission { font-size: var(--text-2xl); } }
+/* Once a search starts the headline gives its room to the results. It is clipped, not removed:
+   it is the page's only h1. */
+.searched .mission { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.searched .search { margin-top: var(--space-5); }
 
 .search { display: grid; gap: var(--space-3); }
 @media (min-width: 48rem) {
@@ -135,17 +139,32 @@ input[aria-invalid="true"] { border-color: var(--warn); border-width: 2px; }
   cursor: pointer;
 }
 .button-primary:disabled { opacity: 0.6; cursor: default; }
+.button-secondary {
+  font: inherit;
+  height: var(--control-height);
+  padding: 0 var(--space-4);
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-control);
+  cursor: pointer;
+}
 @media (max-width: 47.99rem) { .button-primary { width: 100%; margin-top: var(--space-1); } }
 
 /* results */
 .status { min-height: 1.5rem; color: var(--ink-muted); margin: var(--space-4) 0 0; }
-.controls { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); align-items: center; margin: var(--space-5) 0 0; }
+/* The gap is sized so all four controls, with a two-digit certification count, fit one row of the measure. */
+.controls { display: flex; flex-wrap: wrap; gap: 0 var(--space-4); align-items: center; margin: var(--space-5) 0 0; }
 .controls select { width: auto; }
 .controls label { display: inline-flex; align-items: center; gap: var(--space-2); min-height: var(--control-height); }
 input[type="checkbox"] { accent-color: var(--accent); width: 1.25rem; height: 1.25rem; margin: 0; }
+.controls label:has(:disabled) { color: var(--ink-muted); }
 .weights, .coverage-note { color: var(--ink-muted); font-size: var(--text-sm); margin: var(--space-3) 0 0; }
 .coverage-note { margin-top: var(--space-6); }
 .record-count { color: var(--ink-muted); font-size: var(--text-sm); margin: var(--space-1) 0 0; }
+.record-count summary { cursor: pointer; padding-block: var(--space-1); width: fit-content; }
+.record-count p { margin: 0; }
+.summary-link { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
 
 section h2 { font-family: var(--font-voice); font-weight: 400; font-size: var(--text-lg); margin: var(--space-6) 0 var(--space-1); }
 section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--text-md); margin: var(--space-5) 0 var(--space-1); }
@@ -153,7 +172,31 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 .results { list-style: none; margin: 0; padding: 0; }
 
 /* Map of nearby shops. Selectors start with .map to outrank leaflet.css, which loads later. isolation keeps Leaflet's pane z-indexes (up to 1000) inside the map. */
-.map { height: 16rem; margin: 0 0 var(--space-3); border: 1px solid var(--rule); border-radius: var(--radius-panel); isolation: isolate; font-family: var(--font-ui); }
+.map { height: 16rem; margin: var(--space-3) 0 0; border: 1px solid var(--rule); border-radius: var(--radius-panel); isolation: isolate; font-family: var(--font-ui); }
+/* Beside the lists when the renderer marks the section so (main.ts holds the width that decides,
+   so there is no media query here). The second column runs past the page's measure to the right:
+   it takes what the viewport has left after the page's left margin, the measure and the gap.
+   That left margin is the --space-8 the 64rem rule above gives the page, the same width main.ts
+   uses: change the two together.
+   The last row is flexible so a map taller than a short list adds its height below the list,
+   not between the heading and the note. */
+[data-map-layout="beside"] {
+  display: grid;
+  grid-template-columns: 100% min(34rem, calc(100vw - var(--space-8) - var(--measure) - var(--space-6)));
+  grid-template-rows: auto auto auto 1fr;
+  column-gap: var(--space-6);
+}
+[data-map-layout="beside"] > * { grid-column: 1; }
+[data-map-layout="beside"] > .map {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  position: sticky;
+  top: var(--space-4);
+  align-self: start;
+  height: min(24rem, calc(100vh - 2 * var(--space-4)));
+  margin-top: var(--space-6); /* level with the section heading, which has the same top margin */
+}
+[data-map-layout="button"] > .button-secondary { margin-top: var(--space-4); }
 .map .map-pin {
   cursor: pointer;
   display: grid;
@@ -180,7 +223,7 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 }
 .rank { color: var(--ink-muted); font-variant-numeric: tabular-nums; padding-top: 0.15rem; }
 .retailer { font-size: var(--text-md); font-weight: 600; overflow-wrap: anywhere; }
-.matched, .distance { margin: var(--space-1) 0 0; color: var(--ink-muted); }
+.facts { margin: var(--space-1) 0 0; color: var(--ink-muted); }
 .distance { font-variant-numeric: tabular-nums; }
 .badges { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-3) 0 0; padding: 0; }
 .badge {
@@ -196,7 +239,6 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 /* An inset shadow, not a border, keeps it the same height as a teal badge in the same row. */
 .badge-neutral { background: none; color: var(--ink); box-shadow: inset 0 0 0 1px var(--border-input); }
 .signal, .negative, .concerns { margin: var(--space-3) 0 0; font-size: var(--text-sm); }
-.record { margin: var(--space-3) 0 0; font-size: var(--text-sm); color: var(--ink-muted); }
 .signal-kind { font-weight: 600; }
 .negative { padding: var(--space-3); background: var(--warn-bg); color: var(--warn); border-radius: var(--radius-panel); }
 .negative a { color: var(--warn); margin-right: var(--space-4); }

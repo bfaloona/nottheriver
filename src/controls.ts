@@ -22,6 +22,8 @@ const comparators: Record<SortKey, Compare> = {
   },
 };
 
+const isCertified = (r: SearchResult) => r.certifications.length > 0;
+
 // Array.prototype.sort is stable, so equal keys keep their input order.
 export function sortResults(results: readonly SearchResult[], key: SortKey): SearchResult[] {
   return [...results].sort(comparators[key]);
@@ -31,8 +33,26 @@ export function filterResults(results: readonly SearchResult[], filters: Filters
   return results.filter(
     (r) =>
       (r.kind === 'local' ? filters.near : filters.online) &&
-      (!filters.certifiedOnly || r.certifications.length > 0),
+      (!filters.certifiedOnly || isCertified(r)),
   );
+}
+
+// The number is what checking the box would leave on screen, so it follows the sections
+// switched on and comes from the filter itself.
+export function showCertifiedCount(
+  root: ParentNode,
+  results: readonly SearchResult[],
+  sections: Pick<Filters, 'near' | 'online'>,
+  newSearch = false,
+): void {
+  const count = filterResults(results, { ...sections, certifiedOnly: true }).length;
+  const box = root.querySelector<HTMLInputElement>('#certified-only')!;
+  root.querySelector('[data-certified-count]')!.textContent = `(${count})`;
+  // Left checked from an earlier search, the box would hide every result of this one.
+  if (newSearch && count === 0) box.checked = false;
+  // A checked box stays enabled at 0: switching a section off must not trap the visitor
+  // behind their own filter, or quietly take it off.
+  box.disabled = count === 0 && !box.checked;
 }
 
 // Wires the native controls; returns a reader for the current view.

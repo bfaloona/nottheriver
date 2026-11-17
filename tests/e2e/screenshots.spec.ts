@@ -13,6 +13,19 @@ test('landing, phone width', async ({ page }) => {
   await page.screenshot({ path: `${OUT}/landing-360.png`, fullPage: true });
 });
 
+test('results, phone width', async ({ page }) => {
+  await page.setViewportSize(PHONE);
+  // The map stays behind its button here, so no tile is asked for; none may reach the network if that changes.
+  await page.route('https://tile.openstreetmap.org/**', (route) => route.abort());
+  await page.goto('/');
+  await page.getByLabel('What are you looking for').fill('cast iron skillet');
+  await page.getByLabel('Zip code').fill(ZIP);
+  await page.getByRole('button', { name: 'Search' }).click();
+  await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Show map' })).toBeVisible();
+  await page.screenshot({ path: `${OUT}/results-360.png`, fullPage: true });
+});
+
 test('landing, results and about, desktop width', async ({ page }) => {
   await page.setViewportSize(DESKTOP);
   await page.goto('/');
@@ -30,6 +43,8 @@ test('landing, results and about, desktop width', async ({ page }) => {
   await page.locator('[data-concerns] summary').first().click();
   // The last block, so its open panel covers no other result.
   await page.locator('[data-why] summary').last().click();
+  // Back to the top, so the map (which follows the scroll beside the nearby list) is shot where a visitor first sees it.
+  await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: `${OUT}/results.png`, fullPage: true });
 
   await page.goto('/about.html');

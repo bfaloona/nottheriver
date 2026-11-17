@@ -11,27 +11,26 @@ export interface MapPin { rank: number; name: string; lat: number; lon: number; 
 // onMap draws the map into the container, which is already in the page; kept out of this
 // module so rendering stays testable without a map library and the library can load on
 // demand. onNoMap runs when a render shows no map, so an earlier map can be released.
+//
+// mapButton is set on a screen too narrow for the map to sit beside the list. The map then
+// waits behind a "Show map" button, so nothing is asked of the map's tile server until the
+// visitor presses it. open carries the button's state across renders; onToggle reports a press.
 export interface RenderConfig {
   disputeUrl: string;
   onMap?: (container: HTMLElement, pins: MapPin[]) => void;
   onNoMap?: () => void;
+  mapButton?: { open: boolean; onToggle: (open: boolean) => void };
 }
 
 export type Status =
   | { kind: 'idle' }
   | { kind: 'searching'; city: string; state: string }
-  | { kind: 'done'; near: number; online: number }
+  // onlineShown: the Online section has a shop on screen, so the count can link to it.
+  | { kind: 'done'; near: number; online: number; onlineShown: boolean }
   | { kind: 'no_results'; product: string }
   | { kind: 'filtered' }
   | { kind: 'failed' }
   | { kind: 'rate_limited' };
-
-const COMPONENT_LABELS: Record<ComponentName, string> = {
-  relevance: 'Relevance',
-  ethics: 'Ethics',
-  env: 'Environment',
-  proximity: 'Proximity',
-};
 
 const SIGNAL_LABELS: Record<SignalKind, string> = {
   labor: 'Labor',
@@ -87,9 +86,10 @@ export function formatDistance(km: number): string {
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
-// The panel speaks in plain words; the weights and formula live on the ranking page.
-// Only certifications and concerns link out: the baseline and distance lines point at
-// that page, and the relevance line points at the shop's own page, already linked above.
+// One set of plain words for the four score parts, used by the weights line, each shop's
+// facts line and the "Why this rank" panel; the formula lives on the ranking page.
+// In the panel only certifications and concerns link out: the baseline and distance lines point
+// at that page, and the "Sells it" line points at the shop's own page, already linked above.
 const WHY_LABELS: Record<ComponentName, string> = {
   relevance: 'Sells it',
   ethics: 'Ethics',
@@ -197,17 +197,30 @@ function componentRow(c: Component, result: SearchResult): HTMLLIElement {
   );
 }
 
+// One line of what is known about a shop, sells-it reading first because every result has one.
+// A shop with a record shows it in its badges and findings instead of in words here.
+function factsLine(result: SearchResult): HTMLParagraphElement {
+  const facts: HTMLElement[] = [];
+  const relevance = result.components.find((c) => c.name === 'relevance');
+  if (relevance) {
+    const reading = sellsText(relevance);
+    facts.push(el('span', { data: { sells: '' } }, `${WHY_LABELS.relevance}: ${reading.charAt(0).toLowerCase()}${reading.slice(1)}`));
+  }
+  if (result.distance_km !== null) {
+    const where = formatDistance(result.distance_km) + (result.address ? `, ${result.address}` : '');
+    facts.push(el('span', { className: 'distance' }, where));
+  }
+  if (!hasRecord(result)) facts.push(el('span', { data: { record: 'unknown' } }, 'People and planet: unknown'));
+  return el('p', { className: 'facts', data: { facts: '' } }, ...facts.flatMap((fact, i) => (i > 0 ? [' · ', fact] : [fact])));
+}
+
 export function renderResult(result: SearchResult, config: RenderConfig): HTMLLIElement {
   const body = el(
     'div',
     { className: 'result-body' },
     outbound(result.retailer.url, result.retailer.name, { className: 'retailer', data: { retailer: '' } }),
   );
-  if (result.matched_product) body.append(el('p', { className: 'matched' }, `Matched: ${result.matched_product}`));
-  if (result.distance_km !== null) {
-    const where = formatDistance(result.distance_km) + (result.address ? `, ${result.address}` : '');
-    body.append(el('p', { className: 'distance' }, where));
-  }
+  body.append(factsLine(result));
 
   if (result.certifications.length > 0 || result.chain) {
     body.append(
@@ -221,8 +234,6 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
       ),
     );
   }
-
-  if (!hasRecord(result)) body.append(el('p', { className: 'record', data: { record: 'unknown' } }, 'People and planet: unknown'));
 
   // The claim is the source's own title; this code only labels its kind.
   for (const s of result.signals) {
@@ -258,8 +269,8 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
 }
 
 export function renderWeights(weights: SearchResponse['weights']): HTMLParagraphElement {
-  const parts = (Object.keys(COMPONENT_LABELS) as ComponentName[]).map(
-    (name) => `${COMPONENT_LABELS[name].toLowerCase()} ${weights[name].toFixed(2)}`,
+  const parts = (Object.keys(WHY_LABELS) as ComponentName[]).map(
+    (name) => `${WHY_LABELS[name].toLowerCase()} ${weights[name].toFixed(2)}`,
   );
   return el(
     'p',
@@ -271,12 +282,20 @@ export function renderWeights(weights: SearchResponse['weights']): HTMLParagraph
 
 // Says how much of the list rests on a record, so a page of "unknown" rows reads as a gap
 // in what the site holds and not as a verdict on the shops.
-function renderRecordCount(shown: SearchResult[]): HTMLParagraphElement | null {
+// The explanation of "unknown" opens in place: a link to the About page would cost the visitor
+// the results.
+function renderRecordCount(shown: SearchResult[]): HTMLElement | null {
   if (shown.length === 0) return null;
   const withRecord = shown.filter(hasRecord).length;
   const count = `${withRecord} of ${shown.length} ${shown.length === 1 ? 'result has' : 'results have'} a people-and-planet record.`;
-  const unknown = ' Unknown means a shop is on none of our lists and this search found nothing about it: we have not looked further yet, or were blocked from looking.';
-  return el('p', { className: 'record-count', data: { recordCount: '' } }, withRecord < shown.length ? count + unknown : count);
+  const props = { className: 'record-count', data: { recordCount: '' } };
+  if (withRecord === shown.length) return el('p', props, count);
+  return el(
+    'details',
+    props,
+    el('summary', {}, `${count} `, el('span', { className: 'summary-link' }, 'What unknown means')),
+    el('p', {}, "Unknown means our lists hold no certification that counts toward a shop's score and this search found nothing about it: we have not looked further yet, or were blocked from looking."),
+  );
 }
 
 const shopId = (rank: number) => `shop-${rank}`;
@@ -286,6 +305,63 @@ function mapPins(near: SearchResult[], farther: SearchResult[]): MapPin[] {
     // Number.isFinite also rejects a missing field, from a Worker deployed before shops carried coordinates.
     Number.isFinite(r.lat) && Number.isFinite(r.lon) ? [{ rank: r.rank, name: r.retailer.name, lat: r.lat!, lon: r.lon!, farther: isFarther, target: shopId(r.rank) }] : [];
   return [...near.flatMap(pin(false)), ...farther.flatMap(pin(true))];
+}
+
+// The container starts hidden unless the visitor already opened the map for this search.
+function mapToggle(map: HTMLElement, pins: MapPin[], config: RenderConfig): HTMLButtonElement {
+  const button = el('button', { className: 'button-secondary', data: { mapToggle: '' } });
+  button.type = 'button';
+  button.setAttribute('aria-controls', map.id);
+  // The label carries the state; aria-expanded on top would be read as "Hide map, expanded".
+  const set = (open: boolean) => {
+    map.hidden = !open;
+    button.textContent = open ? 'Hide map' : 'Show map';
+  };
+  set(config.mapButton!.open);
+  button.addEventListener('click', () => {
+    const open = map.hasAttribute('hidden');
+    set(open);
+    config.mapButton!.onToggle(open);
+    if (open) config.onMap!(map, pins);
+    else config.onNoMap?.();
+  });
+  return button;
+}
+
+function clearMapFrom(near: HTMLElement): void {
+  for (const old of [...near.children]) if (old.matches('[data-map], [data-map-toggle]')) old.remove();
+  delete near.dataset.mapLayout;
+}
+
+// For a map that failed to load or draw: its button goes with it, so no control is left that does nothing.
+export function removeMap(container: HTMLElement): void {
+  if (container.parentElement) clearMapFrom(container.parentElement);
+}
+
+// Puts the map, and on a narrow screen its button, last in the Near you section, in place of
+// any already there; the stylesheet moves a map with no button beside the lists. The section
+// must be in the page, because onMap draws into the container at once.
+function placeMap(near: HTMLElement, pins: MapPin[], config: RenderConfig): void {
+  clearMapFrom(near);
+  if (pins.length === 0 || !config.onMap) return config.onNoMap?.();
+
+  const map = el('div', { id: 'near-map', className: 'map', data: { map: '' } });
+  map.setAttribute('role', 'region');
+  map.setAttribute('aria-label', 'Map of the shops listed near you');
+  const toggle = config.mapButton ? mapToggle(map, pins, config) : null;
+  near.append(...(toggle ? [toggle] : []), map);
+  near.dataset.mapLayout = toggle ? 'button' : 'beside';
+  if (map.hidden) config.onNoMap?.();
+  else config.onMap(map, pins);
+}
+
+// Redraws only the map for results already on the page, so a change of screen width does not
+// rebuild the lists and close what the visitor opened in them.
+export function renderMap(response: SearchResponse, root: HTMLElement, config: RenderConfig, view: View = defaultView): void {
+  const near = root.querySelector<HTMLElement>('[data-section="near"]');
+  if (!near) return;
+  const shown = (list: SearchResult[]) => sortResults(filterResults(list, view), view.sort);
+  placeMap(near, view.near ? mapPins(shown(response.local), shown(response.local_farther ?? [])) : [], config);
 }
 
 interface Farther { all: SearchResult[]; shown: SearchResult[]; nearMiles: number | undefined }
@@ -304,6 +380,8 @@ function fartherGroup(farther: Farther, config: RenderConfig): HTMLElement | nul
   );
 }
 
+const headingId = (key: 'near' | 'online') => `${key}-heading`;
+
 function section(
   key: 'near' | 'online',
   heading: string,
@@ -312,7 +390,6 @@ function section(
   enabled: boolean,
   config: RenderConfig,
   farther?: Farther,
-  map?: HTMLElement | null,
 ): HTMLElement {
   let note: string;
   if (all.length === 0 && farther?.all.length) {
@@ -327,13 +404,12 @@ function section(
   } else {
     note = plural(shown.length, 'online retailer', 'online retailers');
   }
-  const id = `${key}-heading`;
+  const id = headingId(key);
   const node = el(
     'section',
     { data: { section: key } },
     el('h2', { id }, heading),
     el('p', { className: 'section-note' }, note),
-    ...(map ? [map] : []),
     el('ol', { className: 'results' }, ...shown.map((r) => renderResult(r, config))),
     ...(farther ? [fartherGroup(farther, config)].filter((g): g is HTMLElement => g !== null) : []),
   );
@@ -354,31 +430,27 @@ export function renderResults(
   const shownFarther = sortResults(filterResults(fartherAll, view), view.sort);
   const shownOnline = sortResults(filterResults(response.online, view), view.sort);
   const farther = { all: fartherAll, shown: shownFarther, nearMiles: response.query.near_radius_mi };
-  const pins = view.near ? mapPins(shownLocal, shownFarther) : [];
-  const map = pins.length > 0 && config.onMap ? el('div', { className: 'map', data: { map: '' } }) : null;
-  map?.setAttribute('role', 'region');
-  map?.setAttribute('aria-label', 'Map of the shops listed near you');
+  const near = section('near', 'Near you', response.local, shownLocal, view.near, config, farther);
   const recordCount = renderRecordCount([...shownLocal, ...shownFarther, ...shownOnline]);
+  // A sort or filter change rebuilds the page; an explanation the visitor opened stays open.
+  if (recordCount instanceof HTMLDetailsElement) recordCount.open = root.querySelector<HTMLDetailsElement>('details[data-record-count]')?.open ?? false;
   root.replaceChildren(
     renderWeights(response.weights),
     ...(recordCount ? [recordCount] : []),
-    section('near', 'Near you', response.local, shownLocal, view.near, config, farther, map),
+    near,
     section('online', 'Online', response.online, shownOnline, view.online, config),
   );
   wirePopovers(root);
-  if (map) config.onMap!(map, pins);
-  else config.onNoMap?.();
+  placeMap(near, view.near ? mapPins(shownLocal, shownFarther) : [], config);
   return shownLocal.length + shownFarther.length + shownOnline.length;
 }
 
-function statusText(status: Status): string {
+function statusText(status: Exclude<Status, { kind: 'done' }>): string {
   switch (status.kind) {
     case 'idle':
       return '';
     case 'searching':
       return `Searching shops near ${status.city}, ${status.state} and online. This takes a few seconds.`;
-    case 'done':
-      return `Found ${plural(status.near, 'shop', 'shops')} near you and ${status.online} online.`;
     case 'no_results':
       return `Nothing matched for ${status.product}. Try a shorter or more general name.`;
     case 'filtered':
@@ -391,7 +463,14 @@ function statusText(status: Status): string {
 }
 
 export function renderStatus(target: HTMLElement, status: Status): void {
-  target.textContent = statusText(status);
+  if (status.kind !== 'done') {
+    target.textContent = statusText(status);
+    return;
+  }
+  // The nearby list, and its map on a narrow screen, can fill more than one screen above Online.
+  const online = `${status.online} online`;
+  const jump = status.onlineShown && status.online > 0;
+  target.replaceChildren(`Found ${plural(status.near, 'shop', 'shops')} near you and `, jump ? internal(`#${headingId('online')}`, online) : online, '.');
 }
 
 export function renderFooter(target: HTMLElement, usage: Usage): void {

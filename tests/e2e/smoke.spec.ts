@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 import { tsImport } from 'tsx/esm/api';
 
 // Loaded through tsx because Playwright's ESM loader rejects the blocklist module's JSON import,
@@ -15,6 +15,21 @@ const ZIP = '98116';
 // The mission sentence is the only copy allowed to name Amazon.
 const BLOCKED_TEXT = /amazon|whole foods market|zappos|a\.co\b/i;
 
+const PIXEL = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
+
+// Never fetch real tiles in a test; a 1x1 PNG stands in, and each request's Referer is kept.
+async function stubTiles(page: Page): Promise<(string | undefined)[]> {
+  const referers: (string | undefined)[] = [];
+  await page.route('https://tile.openstreetmap.org/**', async (route) => {
+    referers.push((await route.request().allHeaders()).referer);
+    await route.fulfill({ contentType: 'image/png', body: PIXEL });
+  });
+  return referers;
+}
+
+const box = async (locator: Locator) => (await locator.boundingBox())!;
+const pageScrollsSideways = (page: Page) => page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
+
 test('a search renders ranked, explained, Amazon-free results under the CSP', async ({ page }) => {
   const errors: string[] = [];
   page.on('console', (msg) => {
@@ -22,13 +37,7 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   });
   page.on('pageerror', (err) => errors.push(err.message));
 
-  // Never fetch real tiles in a test; a 1x1 PNG stands in, and each request's Referer is kept.
-  const tileReferers: (string | undefined)[] = [];
-  const PIXEL = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
-  await page.route('https://tile.openstreetmap.org/**', async (route) => {
-    tileReferers.push((await route.request().allHeaders()).referer);
-    await route.fulfill({ contentType: 'image/png', body: PIXEL });
-  });
+  const tileReferers = await stubTiles(page);
 
   await page.goto('/');
   await expect(page.locator('meta[name=referrer][content=no-referrer]')).toHaveCount(1);
@@ -50,6 +59,18 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(page.locator('[data-section=near] [data-result]').first()).toBeVisible();
   await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
   await expect(page.locator('[data-weights]')).toBeVisible();
+
+  // Once a search starts the headline is clipped to a pixel, so the results get its room.
+  expect((await box(page.locator('[data-mission]'))).height).toBeLessThanOrEqual(1);
+  // The found count leads to the Online section.
+  await expect(page.locator('[data-status] a')).toHaveAttribute('href', '#online-heading');
+
+  // At this width the map sits beside the nearby list, level with its heading, and nothing runs off the screen.
+  const mapBox = await box(page.locator('[data-map]'));
+  const listBox = await box(page.locator('[data-section=near] .results').first());
+  expect(mapBox.x).toBeGreaterThanOrEqual(listBox.x + listBox.width);
+  expect(Math.abs(mapBox.y - (await box(page.locator('#near-heading'))).y)).toBeLessThanOrEqual(2);
+  expect(await pageScrollsSideways(page)).toBe(false);
 
   // One pin per shop listed near you (the mock places every shop), under the CSP, with attribution.
   const map = page.locator('[data-section=near] [data-map]');
@@ -136,4 +157,69 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await expect(first).toHaveAttribute('data-pinned', '1');
 
   expect(errors).toEqual([]);
+});
+
+test('on a phone the map, and its request to OpenStreetMap, waits for "Show map"', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  const tileReferers = await stubTiles(page);
+  const outside: string[] = [];
+  page.on('request', (r) => {
+    if (new URL(r.url()).hostname !== 'localhost') outside.push(r.url());
+  });
+
+  await page.goto('/');
+  await page.getByLabel('What are you looking for').fill('cast iron skillet');
+  await page.getByLabel('Zip code').fill(ZIP);
+  await page.getByRole('button', { name: 'Search' }).click();
+  const shops = page.locator('[data-section=near] [data-result]');
+  await expect(shops.first()).toBeVisible();
+  await expect(page.locator('[data-section=online] [data-result]').first()).toBeVisible();
+
+  const button = page.getByRole('button', { name: 'Show map' });
+  await expect(button).toBeVisible();
+  await expect(page.locator('[data-map]')).toBeHidden();
+  // Long enough for a map that loaded by itself to have asked for its first tiles.
+  await page.waitForTimeout(1000);
+  expect(tileReferers).toEqual([]);
+  expect(outside).toEqual([]);
+
+  await button.click();
+  const map = page.locator('[data-map]');
+  await expect(map.locator('.map-pin')).toHaveCount(await shops.count());
+  await expect.poll(() => tileReferers.length).toBeGreaterThan(0);
+  await expect(page.getByRole('button', { name: 'Hide map' })).toBeVisible();
+  // Below the nearby list, inside the screen's width.
+  const lastShop = await box(shops.last());
+  expect((await box(map)).y).toBeGreaterThanOrEqual(lastShop.y + lastShop.height);
+  expect(await pageScrollsSideways(page)).toBe(false);
+
+  await page.getByRole('button', { name: 'Hide map' }).click();
+  await expect(map).toBeHidden();
+});
+
+test('at the narrowest width that puts the map beside the list, it fits and follows the scroll', async ({ page }) => {
+  // 64rem at the default text size; the map column is at its narrowest here.
+  await page.setViewportSize({ width: 1024, height: 768 });
+  await stubTiles(page);
+  await page.goto('/');
+  await page.getByLabel('What are you looking for').fill('cast iron skillet');
+  await page.getByLabel('Zip code').fill(ZIP);
+  await page.getByRole('button', { name: 'Search' }).click();
+  const shops = page.locator('[data-section=near] [data-result]');
+  await expect(shops.first()).toBeVisible();
+
+  const map = page.locator('[data-map]');
+  await expect(map.locator('.map-pin')).toHaveCount(await shops.count());
+  await expect(page.getByRole('button', { name: 'Show map' })).toHaveCount(0);
+  const list = await box(page.locator('[data-section=near] .results').first());
+  const beside = await box(map);
+  expect(beside.x).toBeGreaterThanOrEqual(list.x + list.width);
+  expect(beside.x + beside.width).toBeLessThanOrEqual(1024);
+  expect(await pageScrollsSideways(page)).toBe(false);
+
+  // Scrolled to the second shop, the map has stopped just under the top of the screen, not scrolled away.
+  await shops.nth(1).evaluate((shop) => window.scrollTo(0, shop.getBoundingClientRect().top + window.scrollY));
+  const stuck = await box(map);
+  expect(stuck.y).toBeGreaterThanOrEqual(0);
+  expect(stuck.y).toBeLessThanOrEqual(32);
 });

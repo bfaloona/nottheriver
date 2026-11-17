@@ -1,4 +1,5 @@
 // @vitest-environment happy-dom
+import L from 'leaflet';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { clearMap, drawMap } from './map';
 import type { MapPin } from './render';
@@ -17,9 +18,27 @@ function container(): HTMLElement {
 
 const pinsIn = (el: HTMLElement) => [...el.querySelectorAll<HTMLElement>('.map-pin')];
 
+// Stands in for the browser's observer: records what is watched and lets a test report a size change.
+const watched: { target: Element | null; changed: () => void }[] = [];
+class FakeResizeObserver {
+  private readonly entry: (typeof watched)[number];
+  constructor(changed: () => void) {
+    this.entry = { target: null, changed };
+    watched.push(this.entry);
+  }
+  observe(target: Element): void {
+    this.entry.target = target;
+  }
+  disconnect(): void {
+    this.entry.target = null;
+  }
+}
+
 beforeEach(() => {
   document.body.innerHTML = '';
+  watched.length = 0;
   vi.stubGlobal('matchMedia', () => ({ matches: false }));
+  vi.stubGlobal('ResizeObserver', FakeResizeObserver);
 });
 afterEach(() => {
   clearMap();
@@ -62,6 +81,13 @@ describe('drawMap', () => {
     expect(el.classList.contains('leaflet-container')).toBe(false);
   });
 
+  it('skips a container that was hidden again before the map library loaded', () => {
+    const el = container();
+    el.hidden = true;
+    drawMap(el, PINS);
+    expect(el.classList.contains('leaflet-container')).toBe(false);
+  });
+
   it('removes the previous map when it draws a new one, and on clearMap', () => {
     const first = container();
     drawMap(first, PINS);
@@ -71,6 +97,20 @@ describe('drawMap', () => {
     expect(pinsIn(second)).toHaveLength(2);
     clearMap();
     expect(pinsIn(second)).toHaveLength(0);
+  });
+
+  it('recalculates its size when its container changes size, until the map is cleared', () => {
+    const resized = vi.spyOn(L.Map.prototype, 'invalidateSize');
+    const el = container();
+    drawMap(el, PINS);
+    expect(watched.map((w) => w.target)).toEqual([el]);
+    resized.mockClear();
+    watched[0]!.changed();
+    expect(resized).toHaveBeenCalledTimes(1);
+
+    clearMap();
+    expect(watched[0]!.target).toBeNull();
+    resized.mockRestore();
   });
 
   it('removes a half-built map when a pin cannot be placed', () => {

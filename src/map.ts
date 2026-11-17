@@ -10,6 +10,7 @@ const TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 const ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
 let current: L.Map | undefined;
+let sizeWatch: ResizeObserver | undefined;
 
 function pinIcon(pin: MapPin): L.DivIcon {
   const label = document.createElement('span');
@@ -29,14 +30,17 @@ function showInList(pin: MapPin, reducedMotion: boolean): void {
 }
 
 export function clearMap(): void {
+  sizeWatch?.disconnect();
+  sizeWatch = undefined;
   current?.remove();
   current = undefined;
 }
 
 export function drawMap(container: HTMLElement, pins: MapPin[], center?: { lat: number; lon: number }): void {
   clearMap();
-  // A newer render already replaced this container.
-  if (!container.isConnected) return;
+  // A newer render already replaced this container, or "Hide map" was pressed while the
+  // library was still loading.
+  if (!container.isConnected || container.hidden) return;
 
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   // One-finger drag would trap page scrolling on a touch screen; the zoom buttons still work.
@@ -72,4 +76,8 @@ export function drawMap(container: HTMLElement, pins: MapPin[], center?: { lat: 
     throw err;
   }
   current = map;
+  // Leaflet only follows window resizes; the container also changes size when its column does
+  // or a scrollbar appears, and tiles for the new area load only once the map is told.
+  sizeWatch = new ResizeObserver(() => map.invalidateSize());
+  sizeWatch.observe(container);
 }
