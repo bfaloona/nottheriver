@@ -42,6 +42,17 @@ Inferred from the rulings in [ranking.md](ranking.md), [privacy.md](privacy.md) 
 - A shop with no record says "unknown".
 - The zip code stays in the browser.
 
+**How sure each item is (the owner, 2026-11-17).** "Perhaps there is a design language that we include to indicate if things are facts, likely facts, likely true, broad generalizations. (Obviously we don't want a bunch of levels!)" Every item shown carries one of four levels, each with one visual mark used site-wide:
+
+| Level | Means | Example |
+|---|---|---|
+| Checked | A public source with a date | "Nonprofit (IRS listing)" |
+| Likely | What a shop says about itself, map tags, or the model's reading of a page | "Likely consignment" |
+| In general | True of most places of this kind, not checked for this one | "Thrift stores usually carry clothing and housewares" |
+| Unknown | Nothing found | "Size unknown" |
+
+What a shop says about itself may show as Likely: "we should be permissive with showing what a shop advertises about themselves, except for certain things which we deem to require an external source." Certifications and findings stay Checked only. Which other claims need an outside source: TBD, the owner to fill. A Likely or In general item never changes a score ([ranking.md](ranking.md#negative-findings-down-ranking-policy)).
+
 Today: the Amazon list is enforced by code that runs twice per search, with tests. How often an Amazon result slips through has never been counted.
 
 ### G4. Small enough for one person to keep (inferred)
@@ -49,6 +60,14 @@ Today: the Amazon list is enforced by code that runs twice per search, with test
 Inferred from the owner's words: "simplicity is paramount. i want to build toward something with a good architecture." and "still experimenting with what is possible/useful/sustainable-for-me". Passes when: TBD, the owner to fill.
 
 Today: one server program (a Cloudflare Worker), static pages, and data files in git ([architecture.md](architecture.md)). The free search credit covers about 250 searches a month ([costs.md](costs.md)).
+
+### G5. Useful information without a data feed
+
+The owner, 2026-11-17: "The site should include information dynamically. We can't purchase data feeds." When a search's product falls in a category that a kind of place usually carries ("if a search term meets any of a set of criteria (e.g. is_clothing==true), we could include thrift stores"), those places join the results. The first case is thrift stores: nearby ones appear with a short description (size, main goods, donation or consignment), each item marked with a level from G3, beside a general guide to what thrift stores usually carry. Tool libraries are a likely second case.
+
+Passes when: TBD, the owner to fill. Candidate: in a hand check of 20 thrift stores near 3 zip codes, at least 8 in 10 Likely items are right.
+
+Today: not started. Thrift stores appear only when the search happens to find them; 28 saved results (1.3%) are resale ([ethics-data-strategies.md](ethics-data-strategies.md), ES5).
 
 ## 3. Upcoming work
 
@@ -75,6 +94,7 @@ Sizes are estimates.
 | After 3 | **Links on each shop to check its public record yourself** ([ethics-data-strategies.md](ethics-data-strategies.md#5-strategies), "links to check a shop yourself") | G1c, G3 | Small | Test the links on 20 shops before any ship | The owner's choice: build now or after the 20-shop test |
 | After 4 | **Grow the record book to the 99 most-seen shop websites**, ownership first. They are about half of saved results | G1c | Large: 26 to 30 hours of agent time | Decide from the results of items 1 and 2 | Items 1 and 2 both passing |
 | After 4 | **Count Amazon results that slip through**, by a hand read of 50 saved results for Amazon-owned names missing from the blocklist and for sellers that ship through Amazon ([value-proposition-review.md](value-proposition-review.md), row R1) | G3 | Small: about half a day of page reading, no search calls | Pick the 50 results | The owner's ruling: this check was shelved on 2026-11-15 with the other value proposition decisions |
+| After 5 | **Thrift store pilot.** A list of product categories that bring thrift stores into results, a general guide to what thrift stores carry, and a Likely description of each nearby one; the four marks from G3 drawn once | G5, G3 | Not estimated | Draft the category list and the general guide, and propose the four marks | The owner's pass mark for G5. Finding thrift stores likely needs one more place search, and today's cap of 5 search calls leaves one spare ([ethics-data-strategies.md](ethics-data-strategies.md), ES5) |
 
 ### No goal named
 
@@ -84,7 +104,7 @@ Each needs the owner to schedule it under a goal, shelve it or drop it.
 |---|---|
 | A graded test of searches that make 3 paid search calls in place of 4 | Approved 2026-10-09, stalled after its first round ([STATUS.md](STATUS.md#in-flight)). It would cut cost per search, which G4 might cover once G4 has a measure |
 | A test of whether sending the shopper's location changes web results | Approved 2026-10-09, never started ([STATUS.md](STATUS.md#in-flight)) |
-| Ideas not started: a price-level score, and free, used, lending-library and near-transit options | [ideas.md](ideas.md) |
+| Ideas not started: a price-level score, and free, used, lending-library and near-transit options | [ideas.md](ideas.md). Thrift stores moved to G5 on 2026-11-17, with tool libraries a likely second case |
 | Build the interface from the clickable prototype ([ui-prototype/README.md](ui-prototype/README.md)) | Put off by the owner on 2026-11-16 ("schedule building from this prototype for the future. 1mo?"). Revisit on or after 2026-12-16, a date the agent set from "1mo". First step then: the owner rules on the prototype's six decisions (UP1 to UP6), the first being whether the design is worth building while most results carry no checked fact. Size not estimated |
 
 ### Set aside

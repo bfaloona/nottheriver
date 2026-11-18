@@ -363,7 +363,7 @@ Today (`index.html:25`): "Find who sells it near you or online, ranked by how th
 | ED10 | Sourced tips and a shop's own answers | ES11a (sourced tips, checked by the owner) can pilot with the 10-shop invite from the first-month check of ES11b (the shop's own words), since it keeps today's evidence rule; ES11b (unverified answers) waits until after step 3. The owner decides whether to pilot |
 | ED11 | An extra paid search for ES5 (used and repair options first) | Only for durable product types, after the offline test |
 | ED12 | Should a parent's curated findings and certifications count for its banners at the 0.5 "related" weight | Decide with ED6 (size bias): it lowers chains' banners more often than it raises them (my judgment). Opus estimate: about 5% of all results gain data |
-| ED13 | May a model-read stock fact ("sells used") appear as a badge | The owner rules whether it fits the rule that a shop's page is not evidence about itself |
+| ED13 | May a model-read stock fact ("sells used") appear as a badge | Answered 2026-11-17: yes, marked Likely, except claims the owner names as needing an outside source ([goals.md](goals.md#g3-what-the-site-says-can-be-checked-inferred)) |
 
 ## 10. Pages the owner needs to open
 
