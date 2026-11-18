@@ -10,12 +10,18 @@ How to read the citations. Paths are relative to `/Users/brandon/dev/ai/nottheri
 
 ## 1. Answer
 
-- **Recommended:** three kinds of place, one fixed sentence each (tool library, repair café, thrift store), shown as an unscored "Before you buy" list when the last words of the shopper's typed product match a hand-kept table of 8 product groups, and never when a keep-out word appears. The browser decides from the search response it already has: no Worker change, no search call, no model call, a site push alone. Today two of the three sentences have sources that pass one stated bar (BD-1, the source bar); the thrift sentence does not.
-- **Changed from the working draft, after the critique (section 11):** three kinds where the draft had five; "often" is back in every sentence; source names are off the face of the list, behind one "Sources" button; a row word must end the typed product; a research step and the fail bar come before any code; and the first build is the collapsed line at every width, with "beside" to follow. That last change departs from the placement ruling for one stage, so it is the owner's decision (BD-10, the first build).
-- **Smallest first step (shows a shopper nothing):** desk research (PH-R, source research): read the pages the bar needs: thrift stores, one page with no Amazon store link plus a second organization (RT-9); used tool shops, two pages from two organizations; repair shops, one more page that names tool repair (RT-2). Then the owner reads the sentences and signs the table (PH-0, the owner's read and sign-off). No code.
-- **Left for later:** any named place, any link to a directory or map search for a kind (ALT-3, BD-13), a caution for goods that are fine only after a check (used furniture, used power tools), and a score boost for used and repair shops. The Sources panel links to each source page (STR-4, BD-9).
-- **Where it falls short of the owner's own example:** a drill search shows borrow and repair and no used idea, and the repair idea names a repair café where the owner's sentence names "a tool repair shop" (`docs/goals.md:23`). Used tool shops have no page read for that kind, and repair shops have one; the bar asks for two organizations.
-- **Biggest doubt:** whether a sentence that names a kind of place and no place changes any purchase. No tool found does this (research 06, "Answer"), the owner's read before the build is a weak test because the owner proposed these kinds, and the list shows for 2 of the 20 test products today, 3 once the thrift sentence has a source (`BYB/41-final-rules-rerun.out.txt:24`, `:47`).
+Revised 2026-11-18 for the owner's rulings OR-1 to OR-7 (section 12). Sections 3 to 11 still read as written before the rulings; where they talk about sources, a held thrift sentence or research before code, the rulings win.
+
+- **Recommended:** seven kinds of place, one fixed sentence each, shown as an unscored "Before you buy" list when the last words of the shopper's typed product match a hand-kept table of product groups, and never when a keep-out word appears. The browser decides from the search response it already has: no Worker change, no search call, no model call, a site push alone.
+- **The kinds (OR-5):** borrow: tool library, library of things. Repair: tool repair shop, repair café. Used: used tool shop, thrift store, building-material reuse center.
+- **What a sentence rests on (OR-2, OR-3):** the owner's word. Each sentence ships when the owner signs it; outside pages read by the agents are kept as optional support (2a). A page that links to Amazon is not disqualified (OR-1).
+- **The drill example:** a drill search shows all three of the owner's ideas: "Borrow it" (tool library), "Repair the one you have" (tool repair shop), "Buy it used" (used tool shop).
+- **First step (PH-0):** the owner reads and signs the seven sentences and the table in 2b. Then the data file, the matcher and its tests (PH-1). No desk research comes first.
+- **First build (OR-7):** the collapsed line at every width; the list beside the shops on wide screens follows after a mock-up.
+- **Safety (OR-6):** silent, with no reason given, for car seats, helmets, children's goods and the watch-list goods (2b).
+- **How it is judged (OR-4):** the owner's judgment from using it. No pass mark or fail bar.
+- **Left for later:** any named place, any link to a directory or map search for a kind (BD-13), a caution line for goods that are fine only after a check, and a score boost for used and repair shops.
+- **Biggest doubt:** whether a sentence that names a kind of place and no place changes any purchase. No tool found does this (research 06, "Answer").
 
 ## 2. Recommended version one
 
@@ -38,30 +44,24 @@ How to read the citations. Paths are relative to `/Users/brandon/dev/ai/nottheri
 
 ### 2a. The kinds and their sentences
 
-**One source bar for every kind** (BAR-A, agent's judgment, no source; the owner rules in BD-1, the source bar). A kind's sentence may ship when (1) pages were read from at least two organizations that run, represent or regulate places of that kind, (2) every good the sentence names is on one of those pages, and (3) no page shown as a source links to an Amazon store. A page by an operator describing itself counts, nonprofit or for-profit, and is recorded as such.
+**What a sentence rests on.** The owner's word (OR-3): a sentence ships when the owner signs it. The pages the agents read are kept in the Support column so a reader can follow up; a sentence with no page is marked "owner". Earlier drafts held sentences to a source bar (BAR-A); OR-1 and OR-3 replace it.
 
-| Label | Kind of place | Pages read | Under BAR-A |
-|---|---|---|---|
-| BARK-1 | Tool library | 4 operators: LA County Library, Denver Tool Library, Community Homeworks, Riverside Public Library (research 01 BOR-A) | Passes |
-| BARK-2 | Repair café | The organizer's About and FAQ pages; the Open Repair Alliance's 2024 report; one café described on a Vermont state agency page (research 02 REP-A) | Passes |
-| BARK-3 | Thrift store | One Goodwill region's donation page names the goods, and its menu links to its Amazon store (`OLD/pages/data-sources/goodwillng.org_ways-to-support_donate-goods_items-we-do-and-dont-accept.txt:67`, `:107`). A resale trade group's page says thrift stores are part of resale and that apparel leads (`OLD/pages/data-sources/www.narts.org_state-of-resale.txt:57`), and names "clothing, home goods, and accessories" as what shoppers link with secondhand buying (`:70`); it names no books or furniture, and its menu carries an "Amazon Picks" link (`:40`, `:44`) | Fails on (3) for both pages, which leaves no clean page for (1); the NARTS link is to a narts.org page named "Amazon Picks", and the bar treats that as an Amazon link (agent's judgment, no source). Needs one clean page (RT-9, a clean thrift page) |
-| BARK-4 | Library of things | 4 public libraries (research 01, lenders LND-4 to LND-7) | Passes; held (BD-5, how many kinds) |
-| BARK-5 | Building-material reuse center | EPA and Habitat for Humanity (research 03 USE-A) | Passes; held (BD-5) |
-| BARK-6 | Used tool shop (the owner's example) | One pawn chain's page lists tools (research 03 USE-A); a pawn shop is a different kind of place | Fails on (1). Needs two pages (RT-2, pages on used tool shops and repair shops) |
-| BARK-7 | Repair shop, the owner's "tool repair shop" included | One state agency's list of repair businesses, no tool repair on it (research 02 REP-A, SENT-4) | Fails on (1). Needs one more page, one that names tools (RT-2) |
-| BARK-8 | Community bike shop, library book sale, used sporting goods store | One page each (research 03 USE-A) | Fail on (1); not in version one |
+Each sentence is a fixed string of 20 words or fewer, says "often", and never contains the product's name. Level is In general (`docs/goals.md:64`), pending BD-2 (the level and the hedge). **Every sentence below is a draft for the owner to sign or rewrite in PH-0.**
 
-**The sentences.** Each is a fixed string of 20 words or fewer. The product's name is never put into a sentence. Level is In general (`docs/goals.md:64`), pending BD-2 (the level and the hedge). "Date checked" is the day the researchers read the page. Saved pages are under `BYB/pages/` unless OLD is written. The final writer reopened every cited line today except the Goodwill list at `:125-129`, which the claim check reopened.
+| Label | Idea | Kind of place | Draft sentence | Support (optional) | Must not be read to promise |
+|---|---|---|---|---|---|
+| SEN-1 | Borrow | Tool library | "Tool libraries often lend hand and power tools; some are free with a library card, others charge a membership." | 4 lender pages, read 2026-11-17: https://lacountylibrary.org/tools/ ; https://denvertoollibrary.org/tool-library ; https://communityhomeworks.org/programs/tool-library/ ; https://riversideca.gov/library/library-services/riverside-tool-lending-library | One nearby; that it is free; open to renters or under-18s (research 01 LIM-1, LIM-8); the tool on the shelf today |
+| SEN-2 | Borrow | Library of things | "Libraries of things at public libraries often lend tools, kitchen items and games with a library card." | https://www.readingpl.org/library-of-things ; https://www.wilmingtonlibrary.org/library-of-things/ (read 2026-11-17) | That your library has one (no count of US libraries found, research 01 NOTF-4); free to non-residents |
+| SEN-6 | Repair | Tool repair shop | "Tool repair shops often fix power tools, sharpen blades and replace worn parts such as cords and switches." | Owner | One nearby; that a repair costs less than a new tool |
+| SEN-3 | Repair | Repair café (a volunteer repair event) | "Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances and electronics." | https://www.repaircafe.org/en/about/ ; https://openrepair.org/open-data/insights/2024-report/ (read 2026-11-17) | One nearby or meeting this week; that the item gets fixed (53% fixed at community repair events, same report `:42`); a repair service (`repair/www.repaircafe.org_en_faq.txt:55`) |
+| SEN-7 | Used | Used tool shop | "Used tool shops often sell secondhand hand and power tools." | Owner | One nearby; that a tool is tested or under warranty |
+| SEN-4 | Used | Thrift store | "Thrift stores often sell donated clothes, housewares, books and furniture." | Owner (OR-2). Also the Goodwill donation list, https://goodwillng.org/ways-to-support/donate-goods/items-we-do-and-dont-accept/ (read 2026-11-17) | Stock today; any one store |
+| SEN-5 | Used | Building-material reuse center | "Building-material reuse centers often sell used doors, windows, cabinets, lumber and flooring." | https://www.epa.gov/smm/best-practices-reducing-reusing-and-recycling-construction-and-demolition-materials ; https://www.habitat.org/restores (read 2026-11-17) | One nearby (EPA: reuse centers are "a small percentage" of reuse outlets); that salvaged goods are free of lead or asbestos (same EPA file `:103-104`) |
 
-| Label | Idea | Kind of place | Exact sentence | Level | Supporting passage (saved page:line) | Source URL | Date checked | Must not be read to promise | State |
-|---|---|---|---|---|---|---|---|---|---|
-| SEN-1 | Borrow | Tool library | "Tool libraries often lend hand and power tools; some are free with a library card, others charge a yearly membership." | In general | `borrow/communityhomeworks.org_programs_tool-library.txt:129` "hand tools, power tools, and outdoor equipment"; `borrow/denvertoollibrary.org_tool-library.txt:131` "Drills (power, impact, hammer)"; `borrow/lacountylibrary.org_tools.txt:105` "Borrow tools for free!"; `borrow/riversideca.gov_library_library-services_riverside-tool-lending-library.txt:102` "Borrow it for free with your library card"; fees in research 01 LIM-5 to LIM-8 | https://lacountylibrary.org/tools/ ; https://denvertoollibrary.org/tool-library ; https://communityhomeworks.org/programs/tool-library/ ; https://riversideca.gov/library/library-services/riverside-tool-lending-library | 2026-11-17 | One nearby; that it is free; open to renters or under-18s (research 01 LIM-1, LIM-8); power tools at every one (Riverside's page lists none); the tool on the shelf today | First set |
-| SEN-3 | Repair | Repair café (a volunteer repair event) | "Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances, electronics and power tools." | In general | `repair/www.repaircafe.org_en_about.txt:36` "Repair Cafés are free meeting places ... On clothes, furniture, electrical appliances, bicycles, crockery, appliances, toys, et cetera. You’ll also find expert volunteers"; `repair/openrepair.org_open-data_insights_2024-report.txt:43` "7 years for example for coffee makers, laptops and printers, 10 years on average for hair dryers and power tools" (products seen at community repair events); `repair/dec.vermont.gov_waste-management_solid_materials-mgmt_how-can-i-waste-less_reusevt.txt:225`, one café on a state agency's page: "Computers, clothes, appliances, tools, furniture, bikes" | https://www.repaircafe.org/en/about/ ; https://openrepair.org/open-data/insights/2024-report/ ; https://dec.vermont.gov/waste-management/solid/materials-mgmt/how-can-i-waste-less/reusevt | 2026-11-17 | One nearby or open this week; that the item gets fixed (53% fixed and 25% deemed end of life at community repair events, same report `:42`; research 02 SENT-2 says the data cover electrical and electronic items); a repair service (the organizer's FAQ, `repair/www.repaircafe.org_en_faq.txt:55`). The first source is the organizer describing itself. "Electronics" and "power tools" rest on the report, which covers community repair events in general, and on one Vermont café that lists computers and tools; that the report's events include repair cafés is one step of inference (BD-4, the drill example) | First set |
-| SEN-4 | Used | Thrift store | "Thrift stores often sell donated clothing, housewares, books and furniture." | In general | `OLD/pages/data-sources/goodwillng.org_ways-to-support_donate-goods_items-we-do-and-dont-accept.txt:125-129`, "Items We Need": "Clothing", "Housewares", "Books", "Furniture"; `:179` "Revenue generated from donated goods sold in our stores" | None that passes BAR-A. https://goodwillng.org/ways-to-support/donate-goods/items-we-do-and-dont-accept/ (read; fails BAR-A part 3, it links to an Amazon store) | 2026-11-17 | Stock today; any one store | **Held: no source passes** (BARK-3). The rows that use it show nothing until RT-9 finds a page |
-| SEN-2 | Borrow | Library of things at a public library | "Libraries of things at public libraries often lend household items such as tools and kitchen equipment with a library card." | In general | `borrow/www.readingpl.org_library-of-things.txt:113` "tools, kitchen items, outdoor gear, tech devices, games, and more"; `borrow/www.wilmingtonlibrary.org_library-of-things.txt:39` "kitchen gadgets, tools, electronics" | https://www.readingpl.org/library-of-things ; https://www.wilmingtonlibrary.org/library-of-things/ | 2026-11-17 | That your library has one (no count of US libraries found, research 01 NOTF-4); camping gear; free to non-residents | Sourced, held (BD-5) |
-| SEN-5 | Used | Building-material reuse center | "Building-material reuse centers often sell used doors, windows, cabinets, lumber and flooring." | In general | `used/www.epa.gov_smm_best-practices-reducing-reus__ycling-construction-and-demolition-materials.txt:107` reuse centers "primarily offering items such as doors, windows, cabinets, plumbing fixtures, lumber, millwork, metals, flooring"; `OLD/pages/data-sources/www.habitat.org_restores.txt:106` "furniture, appliances, home goods, building materials and more" | https://www.epa.gov/smm/best-practices-reducing-reusing-and-recycling-construction-and-demolition-materials ; https://www.habitat.org/restores | 2026-11-17 | One nearby: the same EPA line says reuse centers "represent a small percentage of the total number of reuse retail businesses". That salvaged goods are free of hazards: the page says a small percentage of these materials "contains constituents of potential concern", and names asbestos, PCBs and lead (same file `:103-104`) | Sourced, held (BD-5) |
+Changes from the earlier draft: SEN-3 drops "power tools", since a tool repair shop now carries that case. SEN-2 drops "household" and "kitchen equipment", words not on its pages (final check FC-6). SEN-1 drops "yearly". SEN-6 and SEN-7 are new and rest on the owner's word.
 
-No caution sentence is shown in version one: a caution is a claim that needs its own source and level (OLD critique CRIT-11, per the triage).
+No caution sentence is shown in version one: a caution is a claim of its own (OLD critique CRIT-11, per the triage).
+
 
 ### 2b. Which products show which idea
 
@@ -72,21 +72,22 @@ No caution sentence is shown in version one: a caution is a claim that needs its
 - Keep-out words are checked first and win. A hit shows no list and gives no reason.
 - Every row and every word needs the owner's sign-off before it ships (lens 14 OW-2). The "basis" below is what the row rests on, for the owner to judge.
 
-**The table, first set.** Empty cells are agent's judgment, no source, unless noted. The match words for each row are at `BYB/41-final-rules-rerun.py:34-50`; they are a first draft by agents, and the owner opens them only after writing their own probe strings (PH-0, the owner's read and sign-off).
+**The table, first set (revised 2026-11-18).** Each idea shows at most one kind. When two kinds fit, the table picks one (MATCH-7). Every cell is a draft for the owner to sign in PH-0. The match words in `BYB/41-final-rules-rerun.py:34-50` cover only the earlier rows and must be extended for the new cells.
 
-| Label | Product group | Borrow | Repair | Used | Basis of the show cells |
+| Label | Product group | Borrow | Repair | Used | Note |
 |---|---|---|---|---|---|
-| TRG-1 | Power tools | SEN-1 (tool libraries) | SEN-3 (repair cafés) | none: no sentence for used tool shops (BARK-6) | Borrow: research 01 KIND-2. Repair: power tools are seen at community repair events (SEN-3's second source); BD-4 (the drill example) |
-| TRG-2 | Hand tools | SEN-1 | | | Research 01 KIND-1. Garden tools are left out: SEN-1 does not name them |
-| TRG-4 | Cookware and dishes, not nonstick | | | SEN-4 (thrift stores), held | The Goodwill list (lens 12 ROW-5). Nonstick is out on a press list only (research 04 KE-4) |
-| TRG-5 | Adult clothing, not socks, underwear or swimwear | | SEN-3 | SEN-4, held | The sentences' sources. The exceptions are press-only or agent's judgment (research 04 KR-15) |
-| TRG-6 | Books | | | SEN-4, held | The Goodwill list |
-| TRG-8 | Furniture, by named piece (desk, dresser, bookshelf, dining table, office chair) | | SEN-3 | none: gray | Repair: SEN-3's first source. Used: EPA says inspect and clean first (research 04 SB-1). No bare word "chair", and no "sofa" |
-| TRG-9 | Small appliances and electronics | | SEN-3 | | SEN-3's sources; research 02 REP-A |
-| TRG-10 | Bicycles, not e-bikes | | SEN-3 | none: kind fails the bar (BARK-8, bike shops, book sales, sporting goods) | SEN-3's first source |
-| held | Baking equipment (was TRG-3) | SEN-2 (libraries of things) | | | Waits on BD-5 (how many kinds) |
-| held | Doors, windows, cabinets, flooring, lumber (was TRG-7) | | | SEN-5 (reuse centers) | Waits on BD-5; doors and windows with old paint are a named case in BD-7 (check-first goods) |
+| TRG-1 | Power tools | SEN-1 (tool library) | SEN-6 (tool repair shop) | SEN-7 (used tool shop) | The owner's drill example |
+| TRG-2 | Hand tools | SEN-1 | SEN-6 | SEN-7 | Garden tools: the owner to decide |
+| TRG-3 | Baking equipment, small kitchen tools | SEN-2 (library of things) | | SEN-4 (thrift store) | |
+| TRG-4 | Cookware and dishes, not nonstick | | | SEN-4 | Nonstick is out on a press list only (research 04 KE-4) |
+| TRG-5 | Adult clothing, not socks, underwear or swimwear | | SEN-3 (repair café) | SEN-4 | Protective clothing (welding jacket, lab coat) needs exception words (final check FC-10) |
+| TRG-6 | Books | | | SEN-4 | No borrow idea: public libraries lending books is not one of the seven kinds |
+| TRG-7 | Doors, windows, cabinets, flooring, lumber | | | SEN-5 (reuse center) | Doors and windows with old paint: BD-7 |
+| TRG-8 | Furniture, by named piece (desk, dresser, bookshelf, dining table, office chair) | | SEN-3 | SEN-4 | Used was hidden in the earlier draft (EPA: inspect and clean first, research 04 SB-1). Shown now because the owner's thrift sentence names furniture; the owner to confirm. No bare "chair", no "sofa" |
+| TRG-9 | Small appliances and electronics | | SEN-3 | | "Heat lamp" needs an exception word (WATCH-6) |
+| TRG-10 | Bicycles, not e-bikes | | SEN-3 | | No used kind for bikes among the seven |
 | not a row | Tents and outdoor gear | dropped | | | A tent is named on 1 of 4 library-of-things pages (lens 12 ROW-3) |
+
 
 **Keep-out words** (in the matcher; a hit hides all three ideas). Only words that can collide with a row word, plus the owner's two examples (`docs/goals.md:91`).
 
@@ -141,6 +142,8 @@ The owner's two examples are met by trade sources, not by CPSC or NHTSA. Keeping
 | WALK-105 | e-bike | Nothing | MATCH-4 (an exception word); lithium batteries have no source (research 04 KE-3); BD-7 |
 | WALK-104, 109, 118 | kids bike, children's winter coat, kids tablet | Nothing | KOUT-4; BD-8 |
 
+**The counts below were taken before the 2026-11-18 table.** They cover the old rows only and are rerun in PH-1.
+
 **Counts after the changes** (the rerun, run today; graded by hand against the walk-through's own "should show" column, most of which is agent's judgment):
 
 - The 118 walk-through products, with SEN-4 sourced: 0 unsafe shows, 0 wrong shows, 16 wrong hides, 5 hidden by defaults the owner has not ruled (kids bike, kids tablet, children's winter coat, e-bike, bike trailer), 97 right (`BYB/41-final-rules-rerun.out.txt:49-169`). Before the changes: 8 unsafe, 20 wrong shows, 13 wrong hides, 8 undecidable, 69 right.
@@ -154,7 +157,7 @@ These words were changed after seeing the failing cases, so the rerun shows the 
 
 Nothing below was rendered. Every string and height is a proposal (lens 13 section 8).
 
-**Two stages** (BD-10, the first build). Stage one (PH-3a) is the collapsed line at every width. Stage two (PH-3b) is the wide layout below, built after a local mock (RT-5). Row V0 rules "beside the shops on wide screens" (`docs/goals.md:23`), so stage one departs from that ruling until stage two ships, and needs the owner's yes. If the owner says no, PH-3a is skipped and PH-3b builds the wide layout from the start.
+**Two stages** (OR-7). Stage one (PH-3a) is the collapsed line at every width. Stage two (PH-3b) is the wide layout below, built after a local mock (RT-5). The owner approved this order on 2026-11-17.
 
 **Where it lives.** The list is its own `aside` named "Before you buy", a child of `#results` between the count line and `#result-sections` (`index.html:56-57`), inside neither shop section. The second column today exists only inside "Near you" and only while that section has map pins (`src/render.ts:384-385`), so a list placed in that column would have no home when the map is absent (lens 13 section 2a).
 
@@ -201,9 +204,9 @@ Near you
 | STR-1 | Heading | "Before you buy" (`docs/goals.md:23`, the file's wording) |
 | STR-2 | Note under the heading, in the muted ink of `.section-note` (`src/styles.css:192`). It carries the mark | "Ideas that may apply, picked by hand for this kind of product. In general: each sentence is about a kind of place. Whether one is near you, or has what you need, was not looked up." |
 | STR-3 | One entry | "{Bare suggestion}. {Sentence}" with no source name, link or date |
-| STR-4 | Sources, under the last entry | A button, "Sources", dressed as `.link-button` (`src/styles.css:188`), that opens in place, as "What unknown means" does (`src/render.ts:306-316`). Open, one line per sentence shown: "{Kind of place}: {Publisher}; {Publisher}. Read {date}.", each publisher's name a link to its page |
-| STR-5 | Cordless drill | Line: "Before you buy: borrow, repair". "Borrow it. Tool libraries often lend hand and power tools; some are free with a library card, others charge a yearly membership." "Repair the one you have. Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances, electronics and power tools." |
-| STR-6 | Rain jacket | Today, line: "Before you buy: repair", and the repair entry as above. Once SEN-4 (thrift stores) has a source, line: "Before you buy: repair, used", adding "Buy it used. Thrift stores often sell donated clothing, housewares, books and furniture." |
+| STR-4 | Sources, under the last entry | A button, "Sources", dressed as `.link-button` (`src/styles.css:188`), that opens in place, as "What unknown means" does (`src/render.ts:306-316`). Open, one line per sentence shown: "{Kind of place}: {Publisher}; {Publisher}. Read {date}." or, for a sentence with no page, "{Kind of place}: the site owner's experience." Whether a publisher's name links to its page is BD-9 |
+| STR-5 | Cordless drill | Line: "Before you buy: borrow, repair, used". "Borrow it. Tool libraries often lend hand and power tools; some are free with a library card, others charge a membership." "Repair the one you have. Tool repair shops often fix power tools, sharpen blades and replace worn parts such as cords and switches." "Buy it used. Used tool shops often sell secondhand hand and power tools." |
+| STR-6 | Rain jacket | Line: "Before you buy: repair, used". "Repair the one you have. Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances and electronics." "Buy it used. Thrift stores often sell donated clothes, housewares, books and furniture." |
 | STR-7 | Child car seat | Nothing, and no reason |
 
 Order is fixed: borrow, repair, used, the order of the owner's sentence in row V0. No rank number, score, box, icon, accent color or comparative word ("better", "instead"), so the list does not read as a ranked or featured slot (lens 13 NEV-1 to NEV-4). The word "likely" appears nowhere: the results page already prints "Likely, by shop type" for a shop (`src/render.ts:107`). The note does not use "unknown": G3 defines Unknown as "Nothing found" (`docs/goals.md:65`) and the help text ties it to a shop's record (`src/render.ts:314`), while here nothing was looked up.
@@ -249,23 +252,22 @@ Two things carry no level:
 
 | Label | Test (none exists) |
 |---|---|
-| TEST-1 | Every kind: text present and 20 words or fewer, sources from at least two publishers (BAR-A, the source bar), each https with a date and a quote of 4 words or more, the ruled level, no "likely" |
+| TEST-1 | Every kind: text present and 20 words or fewer, contains "often", a support entry that is either "owner" or https pages with a date, the ruled level, no "likely" |
 | TEST-2 | Ids unique; every row names existing kinds; every row and keep-out cell has a basis; no row term is a bare word the owner has barred under MATCH-6 ("chair" today) |
 | TEST-3 | Every keep-out example and every watch string shows nothing; near misses written by hand ("car seat cover", "helmet light", "drill bits", "feeding chair") show nothing |
 | TEST-4 | Over the 1,101 saved responses: every response of a product gives the same ideas, equal to the owner's signed table |
-| TEST-5 | No string or link in the data file matches an entry of the Amazon blocklist (lens 11 AZ-2). Needed because the Worker's two filter passes never see this list (`docs/architecture.md:32`) |
+| TEST-5 | No string or link in the data file names Amazon, an Amazon-owned company, or an Amazon-hosted page (OR-1). A source page that only links to Amazon passes |
 
 | Label | Phase | Shopper sees | Work | Waits on |
 |---|---|---|---|---|
-| PH-R | Fill the sources | Nothing | Desk research, no code: RT-9 (a thrift page that says what such stores sell and links to no Amazon store) and RT-2 (used tool shops; repair shops, one page naming tools). The claim check's method: saved pages, quotes checked by a second reader | BD-1 (the source bar) |
-| PH-0 | Read and sign | Nothing | The owner reads the sentences (MEAS-1, the owner's read), writes probe strings of their own, then opens the match words and signs or corrects each row, word and expected result for the 20 test products. The blocking decisions BD-2 to BD-8 (section 12) are made in this read | PH-R |
-| PH-1 | Data and matcher | Nothing | The data file and matcher (BLD-1, BLD-2), tests TEST-1 to TEST-5, a report per test product, and a source-check script that re-fetches each source, checks its quote is still there and searches the page for blocklist names (lens 14 UP-2; critique CRIT-3). The script is run by hand: the saved pages are in a git-ignored folder, so a unit test in CI cannot read them. Not wired to the page | PH-0 |
+| PH-0 | Read and sign | Nothing | The owner reads the seven sentences (2a), writes probe strings of their own, then signs or corrects each row of the table (2b) and the expected result for the 20 test products. BD-2 and BD-7 are settled here | Nothing |
+| PH-1 | Data and matcher | Nothing | The data file and matcher (BLD-1, BLD-2), match words for the new rows, tests TEST-1 to TEST-5, and a report per test product. Not wired to the page | PH-0 |
 | PH-2 | Owner reads the report | Nothing | A difference is fixed in the data, never in the signed table, unless the owner rules the table wrong | PH-1 |
 | PH-3a | The line | The collapsed line at every width | The drawing code (BLD-3), stage one; end-to-end tests at 360 and 1280 wide | PH-2; the page decisions BD-9 to BD-11, BD-13 and BD-14 (section 12) |
-| PH-4 | Measure | The line | One field per ten-purchase-log line (MEAS-4, the log marks) | BD-15 (the log field) |
-| PH-3b | Beside | The wide layout | A local mock first (RT-5), then BLD-3 stage two | The fail bar not met (BD-3); BD-12 (the width for beside) |
+| PH-4 | Use it | The line | The owner uses the site and judges whether the list helps (OR-4). The log field (BD-15) is optional | Nothing |
+| PH-3b | Beside | The wide layout | A local mock first (RT-5), then BLD-3 stage two | PH-3a; BD-12 (the width for beside) |
 
-**Upkeep for one person:** 3 sentences with their sources and dates (5 if decision BD-5 picks five kinds), 8 rows, 4 keep-out groups, 8 watch groups that are test strings only, one file, one test file. In one day of research the pages tried already gave three 404s, one domain that did not resolve and one blocked page and one unreadable robots.txt (lens 14 UP-2), so sources will move. Rhythm taken as a default (DEF-5, the re-check rhythm): run the source check before each edit and once a year.
+**Upkeep for one person:** 7 sentences, 10 rows, 4 keep-out groups, 8 watch groups that are test strings only, one file, one test file. Pages cited as support may move; a dead support link is removed, and the sentence stays on the owner's word.
 
 ## 3. How version one serves the aims, in order
 
