@@ -68,10 +68,11 @@ Shelved by the operator's yes to OD1 and OD3 in [path-forward.md](path-forward.m
 | What | Where it is described | Why shelved |
 |---|---|---|
 | Amazon plan Phases B, C and D (import 54 findings and 6 certifications into the score, measure, suggested shops) | [plans/amazon-alternatives-in-ranking.md](plans/amazon-alternatives-in-ranking.md), [plans/amazon-execution-approach.md](plans/amazon-execution-approach.md) | Replaced by the record book pilot. The 54 retailer files in `research/` stay as leads |
+| Record book pilot (unscheduled by the owner 2026-11-17: "defer the pilot. it should not be scheduled.") | [plans/record-book-pilot.md](plans/record-book-pilot.md), [results for ten chains](evidence/record-book/README.md) | Before you buy took first place in the order of work ([goals.md](goals.md#3-upcoming-work)). To resume: five rulings, then the owner reads the six cases that meet the chosen rule |
 | Scaling decisions AQ1 to AQ11 | [scaling-architecture.md](scaling-architecture.md#aq-decisions-for-the-operator) | Until a public link is planned |
 | Wireframe decisions WD1 to WD12 | [wireframes/README.md](wireframes/README.md) | Until a public link is planned |
 | Value proposition decisions VQ1, VQ2 and VQ4 to VQ8 | [value-proposition-review.md](value-proposition-review.md#5-decisions-for-the-operator) | The pilot and the ten-purchase log come first |
-| Ethics data decisions ED7 to ED11 (ED13 answered 2026-11-17), and strategies ES4, ES5, ES6 and ES11 | [ethics-data-strategies.md](ethics-data-strategies.md#9-decisions-for-the-owner) | New features or outreach before the record is shown to work |
+| Ethics data decisions ED7 to ED11 (ED13 answered 2026-11-17), and strategies ES4, ES5, ES6 and ES11. ES5 (used and repair options first) lifted 2026-11-17 for borrow, repair and used, as [goals.md](goals.md#g6-ideas-for-not-buying-new) G6; ED11's extra paid search stays shelved while no place is named | [ethics-data-strategies.md](ethics-data-strategies.md#9-decisions-for-the-owner) | New features or outreach before the record is shown to work |
 
 ### Deferred: outreach (2026-11-15)
 
