@@ -479,6 +479,16 @@ The critique's rivals: ALT-S (the collapsed line, three kinds, sources behind a 
 
 ## 12. Decisions for the owner
 
+**Owner rulings, 2026-11-17 (after this draft; sections above not yet revised):**
+- OR-1, Amazon scope: only Amazon, Amazon-owned companies and products hosted on Amazon are disqualified. A company or page that links to Amazon is not disqualified as a source or a store. BAR-A part (3) and DEF-6 are overruled; the Goodwill page and the NARTS page qualify, and CRIT-3 is answered.
+- OR-2, lived experience: "Thrift stores often sell donated clothes" needs no outside source; the owner's lived experience is enough. SEN-4 (thrift stores) is no longer held on sources.
+- OR-3, owner's word: any common-knowledge sentence the owner signs may ship on the owner's experience; outside sources are optional. This replaces BD-1 (BAR-A) and answers BD-4 (b): tool repair shops and used tool shops can have sentences without PH-R.
+- OR-4, fail bar: no formal pass mark or fail bar; the owner judges by using it. Answers BD-3; CAND-1 and CAND-2 are not adopted.
+- OR-5, kinds (answers BD-5): seven kinds in version one: tool library, tool repair shop, used tool shop, thrift store, repair café, library of things, building-material reuse center. Each gets one sentence the owner signs.
+- OR-6, safety (answers BD-6, BD-8; BD-7 default): stay silent for car seats, helmets, children's goods and the watch-list goods; exceptions may be added later.
+- OR-7, placement (answers BD-10): the collapsed line at every width first, then "beside" on wide screens after a mock-up.
+
+
 **Blocking the first steps: source research (PH-R), the owner's read and sign-off (PH-0), data and matcher (PH-1)**
 
 | Label | Decision | Options | Suggested default | Waits on it |
