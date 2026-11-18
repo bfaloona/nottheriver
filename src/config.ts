@@ -3,8 +3,7 @@
 
 export const siteName = 'nottheriver';
 
-export const tagline =
-  'Find who sells it near you or online, never Amazon. For every shop we show what we know about how it treats people and the planet.';
+export const tagline = 'If not Amazon, who?';
 
 // Operator-entered, so a trailing slash must not turn /search into //search.
 export const workerUrl: string = (import.meta.env.VITE_WORKER_URL ?? '').replace(/\/+$/, '');

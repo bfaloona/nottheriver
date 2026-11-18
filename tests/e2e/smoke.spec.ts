@@ -42,6 +42,7 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
   await page.goto('/');
   await expect(page.locator('meta[name=referrer][content=no-referrer]')).toHaveCount(1);
   await expect(page.locator('meta[http-equiv=Content-Security-Policy]')).toHaveAttribute('content', /form-action 'none'/);
+  await expect(page.locator('.mission-note')).toBeVisible();
 
   await page.getByLabel('What are you looking for').fill('cast iron skillet');
   await page.getByLabel('Zip code').fill(ZIP);
@@ -62,6 +63,8 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
 
   // Once a search starts the headline is clipped to a pixel, so the results get its room.
   expect((await box(page.locator('[data-mission]'))).height).toBeLessThanOrEqual(1);
+  // The line under the headline goes with it.
+  await expect(page.locator('.mission-note')).toBeHidden();
   // The found count leads to the Online section.
   await expect(page.locator('[data-found] a')).toHaveAttribute('href', '#online-heading');
   // The count sits at the top of the results: under the sort and filter row, above the lists.

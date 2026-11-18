@@ -93,6 +93,10 @@ describe('search page', () => {
     for (const a of document.querySelectorAll('a[href]')) expect(a.getAttribute('href')!.startsWith('/')).toBe(false);
   });
 
+  it('gives the reason to search in a line under the headline', () => {
+    expect($('[data-mission] + .mission-note').textContent).toBe('Who you buy from matters.');
+  });
+
   it('never puts the zip in the URL, storage, or the request (HR3)', async () => {
     const zip = '60614';
     const event = submit('cast iron skillet', zip);
