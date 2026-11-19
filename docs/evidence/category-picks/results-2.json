@@ -130,7 +130,24 @@
       "n": 18,
       "of": 21,
       "pct": 85.7
-     }
+     },
+     "by_run": [
+      {
+       "n": 8,
+       "of": 10,
+       "pct": 80
+      },
+      {
+       "n": 8,
+       "of": 10,
+       "pct": 80
+      },
+      {
+       "n": 8,
+       "of": 10,
+       "pct": 80
+      }
+     ]
     },
     "pm5_old_fields_hold": {
      "draft_calls": 144,
@@ -3576,7 +3593,24 @@
       "n": 12,
       "of": 12,
       "pct": 100
-     }
+     },
+     "by_run": [
+      {
+       "n": 5,
+       "of": 6,
+       "pct": 83.3
+      },
+      {
+       "n": 5,
+       "of": 6,
+       "pct": 83.3
+      },
+      {
+       "n": 5,
+       "of": 6,
+       "pct": 83.3
+      }
+     ]
     },
     "pm5_old_fields_hold": {
      "draft_calls": 57,
@@ -5297,5 +5331,91 @@
     }
    }
   }
+ },
+ "across_files": {
+  "today_prompt_nearby_wording_same_as_itself": {
+   "first_run_vs_pilot_a": {
+    "n": 45,
+    "of": 48,
+    "pct": 93.8
+   },
+   "pilot_a_vs_second_run": {
+    "n": 42,
+    "of": 48,
+    "pct": 87.5
+   },
+   "first_run_vs_second_run": {
+    "n": 43,
+    "of": 48,
+    "pct": 89.6
+   }
+  },
+  "calls_with_no_cached_prompt_tokens": {
+   "second_draft_pilot_e_and_run": {
+    "calls": 78,
+    "cost_usd_median": 0.0007395,
+    "latency_ms_median": 721.5
+   },
+   "today_pilot_a_and_run": {
+    "calls": 63,
+    "cost_usd_median": 0.000339,
+    "latency_ms_median": 522
+   },
+   "first_draft_first_run_round_1": {
+    "calls": 48,
+    "cost_usd_median": 0.0006978749999999999,
+    "latency_ms_median": 647
+   },
+   "today_first_run": {
+    "calls": 48,
+    "cost_usd_median": 0.000339,
+    "latency_ms_median": 609.5
+   }
+  },
+  "pilot_e_and_run_calls_with_cached_prompt_tokens": {
+   "n": 207,
+   "of": 316,
+   "pct": 65.5
+  },
+  "second_run_cost_usd_by_file": [
+   {
+    "file": "raw-2-pilot-b.json",
+    "calls": 48,
+    "attempts": 48,
+    "cost_usd": 0.031165
+   },
+   {
+    "file": "raw-2-pilot-c.json",
+    "calls": 48,
+    "attempts": 48,
+    "cost_usd": 0.025588
+   },
+   {
+    "file": "raw-2-pilot-d.json",
+    "calls": 48,
+    "attempts": 48,
+    "cost_usd": 0.031716
+   },
+   {
+    "file": "raw-2-pilot-e.json",
+    "calls": 48,
+    "attempts": 48,
+    "cost_usd": 0.031743
+   },
+   {
+    "file": "raw-2-pilot.json",
+    "calls": 96,
+    "attempts": 96,
+    "cost_usd": 0.046814
+   },
+   {
+    "file": "raw-2.json",
+    "calls": 268,
+    "attempts": 268,
+    "cost_usd": 0.116892
+   }
+  ],
+  "second_run_cost_usd_total": 0.283918,
+  "second_run_calls_total": 556
  }
 }

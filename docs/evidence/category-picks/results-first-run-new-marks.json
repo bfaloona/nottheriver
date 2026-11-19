@@ -1,0 +1,362 @@
+{
+ "about": "Written by grade.ts from raw.json: the first run graded on PM-4, PM-5 and PM-6, which were set for the second run.",
+ "pm4_no_specific_where_label_has_none": {
+  "n": 9,
+  "of": 30,
+  "pct": 30,
+  "pass_mark_pct": 80,
+  "misses": [
+   "firewood (run 1): tools_hardware/building_materials",
+   "firewood (run 2): garden/grills_patio",
+   "firewood (run 3): garden/grills_patio",
+   "gift card (run 1): not_a_product/service",
+   "gift card (run 2): not_a_product/service",
+   "gift card (run 3): not_a_product/service",
+   "eyeglasses (run 1): health_beauty/medicine_medical",
+   "eyeglasses (run 2): health_beauty/medicine_medical",
+   "eyeglasses (run 3): health_beauty/medicine_medical",
+   "pocket knife (run 1): outdoor/fishing_hunting",
+   "pocket knife (run 2): outdoor/fishing_hunting",
+   "pocket knife (run 3): outdoor/fishing_hunting",
+   "baby monitor (run 1): baby_kids/nursery_furniture",
+   "baby monitor (run 2): baby_kids/nursery_furniture",
+   "baby monitor (run 3): baby_kids/nursery_furniture",
+   "garden gloves (run 1): garden/yard_power_equipment",
+   "garden gloves (run 2): garden/yard_power_equipment",
+   "garden gloves (run 3): garden/yard_power_equipment",
+   "bird feeder (run 1): garden/grills_patio",
+   "bird feeder (run 2): garden/grills_patio",
+   "bird feeder (run 3): garden/grills_patio"
+  ],
+  "of_calls_with_the_general_pick_right": {
+   "n": 9,
+   "of": 21,
+   "pct": 42.9
+  },
+  "by_run": [
+   {
+    "n": 3,
+    "of": 10,
+    "pct": 30
+   },
+   {
+    "n": 3,
+    "of": 10,
+    "pct": 30
+   },
+   {
+    "n": 3,
+    "of": 10,
+    "pct": 30
+   }
+  ]
+ },
+ "pm5_old_fields_hold": {
+  "draft_calls": 144,
+  "category_is_none_or_a_reserved_id": [
+   "kitchen (run 1): none",
+   "kitchen (run 2): none",
+   "kitchen (run 3): none"
+  ],
+  "product_calls_with_1_or_more_online_and_exactly_2_local_queries": {
+   "n": 114,
+   "of": 114,
+   "pct": 100
+  },
+  "product_calls_failing": [],
+  "pass": false,
+  "nonproduct_calls_with_the_same_queries": {
+   "n": 27,
+   "of": 30,
+   "pct": 90
+  },
+  "nonsense_calls_with_the_same_queries": {
+   "n": 0,
+   "of": 3,
+   "pct": 0
+  }
+ },
+ "pm6_nearby_wording_same_as_today": {
+  "n": 23,
+  "of": 48,
+  "pct": 47.9,
+  "pass_mark_pct": 70,
+  "inputs_that_differ": [
+   {
+    "input": "DeWalt DCD771",
+    "today": [
+     "power tool store",
+     "hardware shop"
+    ],
+    "draft_run_1": [
+     "power tool store",
+     "hardware store"
+    ]
+   },
+   {
+    "input": "Kobo Clara",
+    "today": [
+     "electronics store",
+     "book shop"
+    ],
+    "draft_run_1": [
+     "electronics store",
+     "computer shop"
+    ]
+   },
+   {
+    "input": "Vitamix 5200",
+    "today": [
+     "appliance store",
+     "kitchen supply shop"
+    ],
+    "draft_run_1": [
+     "kitchen appliance store",
+     "kitchen supply shop"
+    ]
+   },
+   {
+    "input": "Dyson V8",
+    "today": [
+     "vacuum cleaner store",
+     "home appliance shop"
+    ],
+    "draft_run_1": [
+     "vacuum store",
+     "home appliance shop"
+    ]
+   },
+   {
+    "input": "Catan",
+    "today": [
+     "hobby store",
+     "game shop"
+    ],
+    "draft_run_1": [
+     "board game store",
+     "toy shop"
+    ]
+   },
+   {
+    "input": "Weber Spirit II",
+    "today": [
+     "outdoor gear store",
+     "home and garden shop"
+    ],
+    "draft_run_1": [
+     "grill store",
+     "home and garden shop"
+    ]
+   },
+   {
+    "input": "Stihl MS 170",
+    "today": [
+     "power tool store",
+     "hardware store"
+    ],
+    "draft_run_1": [
+     "garden power equipment store",
+     "hardware store"
+    ]
+   },
+   {
+    "input": "Fender Stratocaster",
+    "today": [
+     "music instrument store",
+     "music shop"
+    ],
+    "draft_run_1": [
+     "music store",
+     "musical instrument shop"
+    ]
+   },
+   {
+    "input": "Graco SlimFit3",
+    "today": [
+     "baby gear store",
+     "childrens supply shop"
+    ],
+    "draft_run_1": [
+     "baby gear store",
+     "baby supply shop"
+    ]
+   },
+   {
+    "input": "haircut",
+    "today": [
+     "hair salon store",
+     "beauty parlor shop"
+    ],
+    "draft_run_1": [
+     "barber shop",
+     "hair salon store"
+    ]
+   },
+   {
+    "input": "plumber",
+    "today": [
+     "plumbing store",
+     "home improvement shop"
+    ],
+    "draft_run_1": [
+     "plumbing store",
+     "hardware store"
+    ]
+   },
+   {
+    "input": "pizza delivery",
+    "today": [
+     "pizzeria shop",
+     "deli store"
+    ],
+    "draft_run_1": [
+     "pizzeria store",
+     "italian food shop"
+    ]
+   },
+   {
+    "input": "kitchen",
+    "today": [
+     "cookware store",
+     "home goods shop"
+    ],
+    "draft_run_1": [
+     "cookware store",
+     "kitchen supply store"
+    ]
+   },
+   {
+    "input": "bathroom remodel",
+    "today": [
+     "bathroom showroom store",
+     "home improvement shop"
+    ],
+    "draft_run_1": [
+     "home improvement store",
+     "building supply shop"
+    ]
+   },
+   {
+    "input": "yoga class",
+    "today": [
+     "wellness studio store",
+     "health center shop"
+    ],
+    "draft_run_1": [
+     "yoga studio store",
+     "wellness center shop"
+    ]
+   },
+   {
+    "input": "asdfgh",
+    "today": [
+     "specialty store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "general store",
+     "gift shop"
+    ]
+   },
+   {
+    "input": "dishwasher tablets",
+    "today": [
+     "cleaning supply store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "household supply store",
+     "general store"
+    ]
+   },
+   {
+    "input": "laundry detergent",
+    "today": [
+     "cleaning supply store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "household supply store",
+     "general store"
+    ]
+   },
+   {
+    "input": "firewood",
+    "today": [
+     "firewood store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "building materials store",
+     "general store"
+    ]
+   },
+   {
+    "input": "gift card",
+    "today": [
+     "stationery store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "gift shop store",
+     "general store shop"
+    ]
+   },
+   {
+    "input": "notebook",
+    "today": [
+     "stationery store",
+     "paper goods shop"
+    ],
+    "draft_run_1": [
+     "stationery store",
+     "office supply shop"
+    ]
+   },
+   {
+    "input": "pocket knife",
+    "today": [
+     "cutlery store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "outdoor gear store",
+     "general store"
+    ]
+   },
+   {
+    "input": "sewing machine",
+    "today": [
+     "sewing machine store",
+     "fabric and notions shop"
+    ],
+    "draft_run_1": [
+     "sewing machine store",
+     "craft supply shop"
+    ]
+   },
+   {
+    "input": "yoga mat",
+    "today": [
+     "yoga gear store",
+     "wellness shop"
+    ],
+    "draft_run_1": [
+     "fitness equipment store",
+     "sporting goods shop"
+    ]
+   },
+   {
+    "input": "work boots",
+    "today": [
+     "footwear store",
+     "general store"
+    ],
+    "draft_run_1": [
+     "workwear store",
+     "clothing shop"
+    ]
+   }
+  ]
+ }
+}

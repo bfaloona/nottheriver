@@ -250,6 +250,7 @@ function gradeSet(probes: Probe[]) {
       pass_mark_pct: 80,
       misses: noSpecific.filter((x) => !(x.pick !== null && x.pick.specific === null)).map((x) => `${label(x)}: ${show(x.pick)}`),
       of_calls_with_the_general_pick_right: share(count(noSpecific, (x) => generalHit(x) && x.pick!.specific === null), count(noSpecific, generalHit)),
+      by_run: [1, 2, 3].map((run) => share(count(noSpecific, (x) => x.run === run && x.pick !== null && x.pick.specific === null), count(noSpecific, (x) => x.run === run))),
     },
     // PM-5. All draft runs. Passes only with no violation of either part. A call with no valid reply is a violation.
     pm5_old_fields_hold: {
@@ -319,10 +320,56 @@ const totals = {
   cost_usd_reported_by_openrouter: usage(all).cost_usd,
 };
 
+// Second run only: figures that need more than one raw file (the first run, the pilots and the run).
+function acrossFiles() {
+  const load = (name: string) => (JSON.parse(fs.readFileSync(RAW_FILE.replace('raw-2.json', name), 'utf8')) as RawFile).calls;
+  const first = load('raw.json');
+  const pilotA = load('raw-2-pilot.json');
+  const pilotE = load('raw-2-pilot-e.json');
+  const nearby = (c: Call) => replyOf(c)?.local_queries.map((q) => q.toLowerCase().trim()).join('|') ?? null;
+  // Today's prompt against itself: the inputs both files hold, both nearby searches the same in the same order.
+  const todaySame = (a: Call[], b: Call[]) => {
+    const pairs = a.filter((c) => c.arm === 'today').flatMap((c) => {
+      const d = b.find((x) => x.arm === 'today' && x.input === c.input);
+      return d ? [[nearby(c), nearby(d)] as const] : [];
+    });
+    return share(count(pairs, ([x, y]) => x !== null && x === y), pairs.length);
+  };
+  const isCached = (a: Attempt) => (completion(a).usage?.prompt_tokens_details?.cached_tokens ?? 0) > 0;
+  const uncached = (calls: Call[]) => {
+    const as = calls.flatMap((c) => c.attempts).filter((a) => a.http_status === 200 && !isCached(a));
+    return { calls: as.length, cost_usd_median: spread(as.map((a) => completion(a).usage?.cost ?? 0))?.median ?? null, latency_ms_median: spread(as.map((a) => a.ms))?.median ?? null };
+  };
+  const draft = (calls: Call[]) => calls.filter((c) => c.arm === 'draft');
+  const today = (calls: Call[]) => calls.filter((c) => c.arm === 'today');
+  const secondDraft = [...pilotE, ...draft(raw.calls)];
+  const sameNight = [...pilotE, ...raw.calls].flatMap((c) => c.attempts);
+  const files = fs.readdirSync(RAW_FILE.replace('/raw-2.json', '')).filter((f) => /^raw-2.*\.json$/.test(f)).sort();
+  const costs = files.map((f) => {
+    const calls = load(f);
+    return { file: f, calls: calls.length, attempts: calls.flatMap((c) => c.attempts).length, cost_usd: usage(calls.flatMap((c) => c.attempts)).cost_usd.sum };
+  });
+  return {
+    today_prompt_nearby_wording_same_as_itself: { first_run_vs_pilot_a: todaySame(first, pilotA), pilot_a_vs_second_run: todaySame(pilotA, raw.calls), first_run_vs_second_run: todaySame(first, raw.calls) },
+    calls_with_no_cached_prompt_tokens: {
+      second_draft_pilot_e_and_run: uncached(secondDraft),
+      today_pilot_a_and_run: uncached([...today(pilotA), ...today(raw.calls)]),
+      first_draft_first_run_round_1: uncached(draft(first).filter((c) => c.round === 1)),
+      today_first_run: uncached(today(first)),
+    },
+    pilot_e_and_run_calls_with_cached_prompt_tokens: share(count(sameNight, isCached), sameNight.length),
+    second_run_cost_usd_by_file: costs,
+    second_run_cost_usd_total: Number(costs.reduce((s, c) => s + c.cost_usd, 0).toFixed(6)),
+    second_run_calls_total: costs.reduce((s, c) => s + c.calls, 0),
+  };
+}
+
 if (RUN === '1') {
   // The first run's file keeps its shape: one probe set and the three marks it was graded on.
   const results = { about: 'Written by grade.ts from raw.json. Every figure is computed from the saved replies.', totals, ...sets.tuned!.graded };
   fs.writeFileSync(RESULTS_FILE, `${JSON.stringify(results, null, 1)}\n`);
+  // The marks added for the second run, applied to the first run's replies, in a file of their own.
+  fs.writeFileSync(RESULTS_FILE.replace('results.json', 'results-first-run-new-marks.json'), `${JSON.stringify({ about: 'Written by grade.ts from raw.json: the first run graded on PM-4, PM-5 and PM-6, which were set for the second run.', ...sets.tuned!.newMarks }, null, 1)}\n`);
   const g = sets.tuned!.graded;
   console.log(JSON.stringify({ totals, marks: g.marks, by_kind: g.by_kind, specific_level: g.specific_level, off_list: g.off_list, per_call: g.per_call }, null, 1));
 } else {
@@ -344,6 +391,7 @@ if (RUN === '1') {
     totals,
     pass_marks: passMarks,
     sets: Object.fromEntries(Object.entries(sets).map(([set, s]) => [set, { new_marks: s.newMarks, ...s.graded }])),
+    ...(RUN === '2' && { across_files: acrossFiles() }),
   };
   fs.writeFileSync(RESULTS_FILE, `${JSON.stringify(results, null, 1)}\n`);
   console.log(JSON.stringify({ totals, pass_marks: passMarks }, null, 1));

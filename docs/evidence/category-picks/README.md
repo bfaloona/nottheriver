@@ -153,7 +153,7 @@ The grades above use every label as written. These labels are open to question:
 
 ## Second run
 
-Run on 2026-11-19, 12:19 AM to 12:30 AM Pacific. The owner approved it (model calls only). No Brave call was made and the live site was not used. Every figure comes from `results-2.json` or a pilot's results file, which `grade.ts` computes from the raw files.
+Run on 2026-11-19, 12:19 AM to 12:30 AM Pacific. The owner approved it (model calls only). No Brave call was made and the live site was not used. Every figure comes from a results file that `grade.ts` computes from the raw files: `results-2.json` (its `across_files` part holds the cost totals, the uncached medians and today's prompt against itself), a pilot's results file, or `results-first-run-new-marks.json` for the first run under the new marks.
 
 ### Result against the six pass marks
 
@@ -232,7 +232,7 @@ Today's prompt in the first run: $0.000339 and 609.5 ms (48 calls). The second d
 
 **SR-1. FIX-1 worked: forced specific picks are nearly gone, and brand picks did not suffer.** Where the label has no specific category and the general pick was right, the model named a specific category in 3 of 15 calls on the 48 (12 of 15 in the first run) and in 0 of 12 held-out calls. The 3 are "pocket knife" (`outdoor/fishing_hunting`). "garden gloves", "bird feeder" and "baby monitor" now get the general category alone. Brand inputs matched the label on both levels in 72 of 72 calls and 18 of 18 held-out calls, so the stricter line did not strip right specific picks. "LEGO 10311" now gets `toys`.
 
-**SR-2. PM-4 misses come from the general pick.** On the 48: "gift card" (`not_a_product/service` twice, `books_media/stationery_office` once) and "pocket knife". Held-out: "toilet paper" got `home/bedding_bath` in all 3 runs, a wrong specific pick under a general pick the label does not have.
+**SR-2. The 9 PM-4 misses are three inputs.** On the 48: "pocket knife" (3 calls, a forced specific pick under the right general pick) and "gift card" (3 calls, a general pick the label does not have: `not_a_product/service` twice, `books_media/stationery_office` once). Held-out: "toilet paper" got `home/bedding_bath` in all 3 runs, a wrong specific pick under a general pick the label does not have.
 
 **SR-3. FIX-2 holds the shape of the old fields and not their wording.** PM-5 passed on both sets: no `category` was "none" or a reserved id, and every product call had 2 online queries and 2 nearby searches (150 of 150). "kitchen" got `category` "kitchenware" and "asdfgh" got its queries in all 3 runs. The wording still moved:
 
@@ -291,6 +291,7 @@ The grades use every label as written. No label was edited after a model call.
 | `lib.ts` | Draft prompts (first draft and pilots a to e), draft schemas, mapping rules, shared types |
 | `raw.json` | First run. Every reply as OpenRouter returned it (content, usage, cost, model, provider), with start time and latency |
 | `results.json` | First run. All its figures, plus the pick for every input and run |
+| `results-first-run-new-marks.json` | First run graded on PM-4, PM-5 and PM-6 |
 | `held-out.json` | The 19 held-out probes and their labels, committed before the second run |
 | `raw-2.json`, `results-2.json` | Second run: both probe sets, graded apart under `sets.tuned` and `sets.held_out` |
 | `raw-2-pilot.json` and `raw-2-pilot-b.json` to `-e.json`, with their `results-` files | The five pilots on the 48 probes. Pilot a also holds the run of today's prompt that pilots b to e are compared with |
