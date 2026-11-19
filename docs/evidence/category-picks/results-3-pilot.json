@@ -29,9 +29,14 @@
     "file": "raw-3-smoke-2.json",
     "attempts": 1,
     "cost_usd": 0.000133
+   },
+   {
+    "file": "raw-3.json",
+    "attempts": 806,
+    "cost_usd": 0.17724
    }
   ],
-  "third_run_cost_usd_total": 0.047646
+  "third_run_cost_usd_total": 0.224886
  },
  "haiku": null,
  "pass_marks": {
