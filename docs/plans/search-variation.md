@@ -4,7 +4,7 @@ Status: steps 1-3 and 5 done 2026-09-25 (results: `docs/quality.md`, "Why local 
 
 ## What is known
 
-- The model writes the local queries, and they changed between runs for the same search even though the normalize call uses `temperature: 0` (`proxy/src/llm.ts:77`): "chocolatier shop" / "specialty food store" vs "chocolatier store" / "specialty food shop"; "clothing shop" vs "clothing boutique shop". OpenRouter may route to different providers, so temperature 0 does not make the output repeatable.
+- The model writes the local queries, and they changed between runs for the same search even though the normalize call uses `temperature: 0` (`proxy/src/llm.ts:80`): "chocolatier shop" / "specialty food store" vs "chocolatier store" / "specialty food shop"; "clothing shop" vs "clothing boutique shop". OpenRouter may route to different providers, so temperature 0 does not make the output repeatable.
 - Brave's place search can itself vary for an identical query (index updates, ranking); not yet measured.
 - Saved evidence has both runs' `query.local_queries` and results: `docs/evidence/quality/eval60/responses/` and `docs/evidence/quality/eval20-0924/responses/`.
 

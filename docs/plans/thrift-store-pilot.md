@@ -10,7 +10,7 @@ Goals named here: G5 is "Useful information without a data feed"; G3 is "What th
 
 - **Recommended:** three steps, each waiting on the one before: (1) a hand check with no build; (2) one sentence on the results page for clothing searches, naming no store, with no change to the search Worker; (3) a block of up to 3 nearby thrift stores by miles, with no score, built only if step 1 finds something to list and the owner has set a pass mark.
 - **Changed from the working draft,** which built the block first. The adversarial critique earned the change (section 8): the block spent a Worker change, a prompt change and the last spare search call on three names and one sentence.
-- **Less than asked:** step 2 names no store, and no step says "this store likely carries it". No free source was found for the per-store description in G5 (size, main goods, donation or consignment, `docs/goals.md:66`).
+- **Less than asked:** step 2 names no store, and no step says "this store likely carries it". No free source was found for the per-store description in G5 (size, main goods, donation or consignment, `docs/goals.md:79`).
 - **Smallest first step:** no code, no paid calls. Hand-check the 5 nearest open-map thrift places per graded zip code (exists, is a thrift store, has a website, its page says what it carries), and write one mock block as text for the owner to read.
 - **Biggest doubt:** a sentence, or a block of names and miles, might tell a shopper nothing a map app does not. Nothing measured today says otherwise.
 
@@ -53,7 +53,7 @@ Two claims stay apart throughout. KIND-CLAIM: what thrift stores carry in genera
 | DATA-2 | Each store's name, address, miles | The same place result | Shown as given, no level word (TD-11) | PH-2 on | Not cached |
 | DATA-3 | Each store's record: certifications, findings, chain badge | The site's own data files, joined by website with no model call, as the enrich step does for every candidate (`proxy/src/enrich.ts:127-133`) | Checked, as on any row; "People and planet: unknown" when there is none. Today no thrift-like name is in `data/chains.json`, `data/negatives.json` or `data/certifications.json` (searched today; a control word matched) | PH-2 on | Git |
 | DATA-4 | Each store's size, main goods, donation or consignment | No free structured source found (research file 01, "Answer") | Not shown; would be Likely at best. PH-1 measures whether store pages say it | Not planned (ALT-4) | n/a |
-| DATA-5 | The trigger list: words that bring the sentence or block in, and keep-out words checked first | A short word list in git. One group, clothing, from the owner's example at `docs/goals.md:66` ("is_clothing==true"). Matched against the typed product, the normalized name and the free-text category. In 1,101 saved responses the 20 test products drew these clothing categories: "outerwear" (rain jacket, 54 of 54), "clothing" and "apparel" (wool socks, 50 and 4), so the list needs all three words (script `handoff/thrift-pilot-spec/40-count-saved-thrift-rows.py`). Keep-out words: helmet and car seat (`docs/ethics-data-strategies.md:185`); socks, underwear and swimwear are an agent's judgment (TD-5) | None: a rule, not a statement | PH-1b on | Git; in the site for PH-1b, in the Worker for PH-2 |
+| DATA-5 | The trigger list: words that bring the sentence or block in, and keep-out words checked first | A short word list in git. One group, clothing, from the owner's example at `docs/goals.md:79` ("is_clothing==true"). Matched against the typed product, the normalized name and the free-text category. In 1,101 saved responses the 20 test products drew these clothing categories: "outerwear" (rain jacket, 54 of 54), "clothing" and "apparel" (wool socks, 50 and 4), so the list needs all three words (script `handoff/thrift-pilot-spec/40-count-saved-thrift-rows.py`). Keep-out words: helmet and car seat (`docs/ethics-data-strategies.md:185`); socks, underwear and swimwear are an agent's judgment (TD-5) | None: a rule, not a statement | PH-1b on | Git; in the site for PH-1b, in the Worker for PH-2 |
 | DATA-6 | The In general guide | One sentence, "Thrift stores usually carry clothing." Sources so far: the owner's example at `docs/goals.md:51`. Candidate outside sources: one Goodwill region's accepted-items page (file 01, SRC-B3), a trade group's page saying apparel leads secondhand sales (SRC-D5). Other regions' pages were seen as search snippets only, so whether one national sentence holds is not checked (RT-4) | In general | PH-1b on | Git, with source link and check date |
 | DATA-7 | Whether a store has the item today | No source of any kind found (file 01, NF-2) | Unknown, said once | PH-1b on | n/a |
 
@@ -165,7 +165,7 @@ The product's name appears only in the unknown sentence. A thrift row never has 
 | G3 level: Unknown | Stock today is stated as unknown | | | Section 2c |
 | G3: one mark per level, site-wide | Words reuse the site's pattern | The pilot draws two of the four marks anew. Checked has several shapes today (DEP-6); the provenance line has no level (DEP-7); "Not confirmed" (`src/render.ts:109`) would need rewording, and "Maybe, by shop type" fits no level | | Lens 13, table EX |
 | G3: Likely or In general never changes a score | The block has no score, and the ranked list is left as it is | | | COST-6, DEP-8 |
-| G5 | A trigger rule; in the block, places no feed supplied | No per-store description at any step. PH-1b is a fixed sentence, which might not count as "information dynamically" (`docs/goals.md:66`). The one dynamic part of the block is one more place search | | Lens 14, AGAINST-1; critique CRIT-5 |
+| G5 | A trigger rule; in the block, places no feed supplied | No per-store description at any step. PH-1b is a fixed sentence, which might not count as "information dynamically" (`docs/goals.md:79`). The one dynamic part of the block is one more place search | | Lens 14, AGAINST-1; critique CRIT-5 |
 | G1 | Might help G1a, the ten-purchase log | Block rows add results with no checked fact (G1c) unless the owner rules them out of the count (TD-12) | G1b; G1d, since the ranked list is unchanged | Lens 14, GOAL-1 to GOAL-4 |
 | G2 | PH-1b adds no time | Block: one more search call; time not measured | | COST-3 |
 | G4 | PH-1b: a word list and a sentence in the site, no Worker deploy | Block: one more list to keep by hand, each edit a Worker deploy, and a triggered search uses the last spare call. If every search triggered, the free credit would cover about 200 searches against about 250 today (arithmetic from `docs/costs.md:33`) | | Lens 11, FIND-1 |
@@ -189,7 +189,7 @@ The product's name appears only in the unknown sentence. A thrift row never has 
 | ALT-7 | Thrift stores in the ranked list, with a badge | Weighed by three lenses | Needs a score, so a guess sets the order. It is what happens by accident today: arc Thrift Stores, nearby rank 6 or 7 for "wool blanket" depending on the run |
 | ALT-8 | Larger: "likely has it" per store, or a reuse-first product (shape S3, "Reuse first, nearby") | The request's wording; `docs/value-proposition/different-product.md` | A stock claim with no source. S3 itself drops per-product judgments (`docs/value-proposition/different-product.md:94`) |
 | ALT-9 | A keyword table over today's free-text category, no model field | Architecture lens (turned down there); the critique | Picked in a narrow form: one group, three category words (DATA-5). Its weak spot stands: 20 products drew 27 category wordings in saved responses, so a new wording is a silent miss |
-| ALT-10 | One true/false per kind ("is_clothing") as the model's reply | The owner's example, `docs/goals.md:66` | Needs a prompt change (see ALT-18). Kept in spirit: the word list answers "is it clothing" |
+| ALT-10 | One true/false per kind ("is_clothing") as the model's reply | The owner's example, `docs/goals.md:79` | Needs a prompt change (see ALT-18). Kept in spirit: the word list answers "is it clothing" |
 | ALT-11 | A small icon per level, with a legend | Shopper lens | A new icon set to learn; revisit with the clickable prototype, whose building is put off |
 | ALT-12 | The block first, above the ranked shops | ES5 | It puts places with unknown stock above shops with a sells-it reading, and is a value statement no file records the owner making (DIS-7) |
 | ALT-13 | Show 5 stores | Architecture lens | ES5 and two lenses say 3. Owner decision TD-9 |
@@ -240,7 +240,7 @@ The product's name appears only in the unknown sentence. A thrift row never has 
 
 ## 7. Existing solutions and data feeds
 
-The owner's rule (`docs/goals.md:66`): "We can't purchase data feeds."
+The owner's rule (`docs/goals.md:79`): "We can't purchase data feeds."
 
 "Read" means a research agent opened the page on 2026-11-17 (saved under `pages/`); "snippet" means a search summary only. IDs are those of research file 01.
 
@@ -369,7 +369,7 @@ G3 stays labeled "inferred" (`docs/goals.md:36`).
 | UNV-16 | Hours and cost of the build | Not estimated. ES5's 12 to 16 hours was for its own version (`docs/ethics-data-strategies.md:182`) |
 | UNV-17 | 3 thrift-like rows in 1,101 saved responses; no thrift-like name in the three data files | A script and a search run today by the final writer, using name lists the writer made up: for saved responses, thrift, goodwill, salvation army, savers, value village, consign, second hand, resale, restore, st vincent; for the data files, thrift, goodwill, salvation, savers, restore. A store with another kind of name is missed |
 | UNV-18 | A map search link with no place in it returns something useful | Not checked (RT-11) |
-| UNV-19 | That PH-1b might not count as "information dynamically" | An agent's reading of the owner's words at `docs/goals.md:66` |
+| UNV-19 | That PH-1b might not count as "information dynamically" | An agent's reading of the owner's words at `docs/goals.md:79` |
 | UNV-20 | That the records join needs no model call | Read from `proxy/src/enrich.ts:127-133`, where the three lookups take only a domain and a data file; not run |
 
 ## 11. Sources
