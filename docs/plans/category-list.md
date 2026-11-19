@@ -1,7 +1,7 @@
 # Plan: product category list and normalize fields
 Status: draft for owner discussion
 
-Written 2026-11-18. No production code or prompt changed. No model, Brave or web call was made. Companion to `docs/plans/category-uses.md` (the uses) and `docs/plans/dynamic-categorization.md` (the memo). Files: the list is `data/categories.draft.json`; the tests are `docs/evidence/category-list/run-tests.ts` with `hand-labels.json` and `results.json` beside it.
+Written 2026-11-18. No production code or prompt changed. No model, Brave or web call was made for this plan as written. On 2026-11-19 the fields table, MAP-3, the schema note, the prompt draft and the prompt length table were revised after two runs of model calls (`docs/evidence/category-picks/README.md`); the other sections are as written on 2026-11-18. Companion to `docs/plans/category-uses.md` (the uses) and `docs/plans/dynamic-categorization.md` (the memo). Files: the list is `data/categories.draft.json`; the tests are `docs/evidence/category-list/run-tests.ts` with `hand-labels.json` and `results.json` beside it.
 
 ## Recommendation
 
@@ -20,7 +20,7 @@ Reasons, all from the free tests below:
 | Field | Proposal | Why |
 |---|---|---|
 | `general` (new) | A string: a general category id, `not_a_product` or `none` | IDEA-1, IDEA-10, IDEA-11 |
-| `specific` (new) | A string: a specific id under that general category, or `""`. For `not_a_product` it holds the reason | One field serves both jobs, so no third field is needed |
+| `specific` (new) | A string: `none` by default, or a specific id under that general category when the id names exactly this kind of product. For `not_a_product` it holds the reason | One field serves both jobs, so no third field is needed. A missing specific id falls back to the general category's data; a wrong one steers store types, ideas and `no_used` |
 | `category` | Keep, same wording | Three places read it as text: the 0.5 tier (`proxy/ranking/score.ts:87`), the keep-out check (`src/ideas.ts:58`) and the shop-judging prompt (`proxy/src/prompts.ts:27`). Dropping it removes a hide path and ships IDEA-3 untested |
 | `canonical_name` | Keep, same wording | The top relevance tier and the shop-judging prompt read it. Changing its wording in the same edit would mix two effects |
 | `local_queries` | Keep in version one as the fallback | When the pick is on the list, code builds the two searches from the list. When the pick is `none`, `not_a_product` or unknown, the model's two run, as today (RULE-5). The cache guard at `proxy/src/pipeline.ts:311` then checks the searches that will run. Drop the field later if the fallback is rare (LQ3) |
@@ -32,7 +32,7 @@ Reasons, all from the free tests below:
 |---|---|---|
 | MAP-1 | Any value | Lowercase, trim, turn spaces and hyphens into underscores, then look up |
 | MAP-2 | `general` on the list, `specific` on the list under it | Both levels |
-| MAP-3 | `general` on the list, `specific` empty or unknown | General alone |
+| MAP-3 | `general` on the list, `specific` is `none`, empty or unknown | General alone |
 | MAP-4 | `general` on the list, `specific` belongs to another parent | General alone. Count it: it marks a confused reading |
 | MAP-5 | `general` unknown, `specific` on the list | The specific and its own parent (specific ids are unique across the list) |
 | MAP-6 | `general` is `not_a_product` | The reason from `specific` if it is one of the six, else `unclear` |
@@ -40,7 +40,7 @@ Reasons, all from the free tests below:
 
 The response carries the mapped ids and the data file's display names only (proposed: `query.pick`). The model's raw strings never reach the browser.
 
-**Schema draft** (add to `proxy/schemas/normalize.json`, both in `required`):
+**Schema draft** (add to `proxy/schemas/normalize.json` after `local_queries`, both in `required`; the model writes the fields in schema order, so the five fields of today come first):
 
 ```json
 "general": { "type": "string", "maxLength": 60 },
@@ -49,11 +49,12 @@ The response carries the mapped ids and the data file's display names only (prop
 
 The longest id has 24 characters. The limit is wide so that a reply written as a display name still validates and maps to `none`.
 
-**Prompt draft.** Two new field lines go above `- category:`. The list block goes above the last line. Everything else in `proxy/prompts/normalize.ts` stays word for word.
+**Prompt draft (second draft, 2026-11-19).** `proxy/prompts/normalize.ts` stays whole, word for word. The text below follows its last line, after one blank line. The first draft put the two field lines above `- category:` and the list above the last line; `docs/evidence/category-picks/README.md` ("Second run") gives the reasons for the change and the test results. The second draft passes five of the six pass marks on the 48 probes and four of six on the 19 held-out probes. It does not keep the nearby wording of today's prompt (PM-6: 28 of 48 and 8 of 19 inputs), and none of the six layouts tried did. On the held-out probes it read nonsense input as `none` more often than as `not_a_product` (PM-2: 15 of 21 calls).
 
 ```
-- general: one id from the left of a line in CATEGORIES, by the kind of shop that sells the product. Read a brand or model name as the product it is. Use "not_a_product" for a service, a meal, a place to stay, an activity or a whole room, and "none" when no line fits.
-- specific: one id from the right of the same line when one fits, else "". For "not_a_product" give the reason: service, meal, place_to_stay, activity, room or unclear.
+Then add two labels to the same object. Write the five fields above first, as you would without this part. Do this for every input and leave no field empty, even when the input is not a product.
+- general: one id from the left of a line in CATEGORIES, by the kind of shop that sells the product. Read a brand or model name as the product it is. Use "not_a_product" for a service, a meal, a place to stay, an activity, a whole room or text you cannot read as a product, and "none" when no line fits.
+- specific: an id from the right of the same line only when it names exactly this kind of product; otherwise "none". For "not_a_product" give the reason: service, meal, place_to_stay, activity, room or unclear.
 
 CATEGORIES
 kitchen: cookware, nonstick_cookware, kitchen_knives, bakeware, tableware_drinkware, coffee_tea_gear, small_kitchen_appliances
@@ -82,11 +83,12 @@ The prompt lists ids, not display names. A renamed category, a new store type or
 |---|---|---|
 | Today | 1,475 | 348 to 351, measured |
 | The list block alone, both levels | 1,187 | about 280 |
-| Draft above, `local_queries` kept | 3,113 | about 740 |
-| Draft above, `local_queries` line removed | 2,609 | about 620 |
-| General ids only, `local_queries` kept | 2,077 | about 490 |
+| First draft, `local_queries` kept | 3,113 | about 740; measured median 802.5 |
+| Second draft (above), `local_queries` kept | 3,386 | measured median 862.5 |
+| First draft, `local_queries` line removed | 2,609 | about 620 |
+| First draft, general ids only, `local_queries` kept | 2,077 | about 490 |
 
-Ids are underscore words, which may cost more tokens per character than prose; no tokenizer was run. The owner's full shape (15 general, 10 to 20 specific each) is 150 to 300 ids. At this list's 14 characters per id, that block is about 500 to 1,000 tokens, an estimate. The effect of prompt length on normalize time is not measured.
+The two measured figures are from `docs/evidence/category-picks/README.md`. The second draft costs a median of $0.000740 per call with no cached tokens, against $0.000339 for today's prompt (OpenRouter's reported cost). Ids are underscore words, which may cost more tokens per character than prose; no tokenizer was run. The owner's full shape (15 general, 10 to 20 specific each) is 150 to 300 ids. At this list's 14 characters per id, that block is about 500 to 1,000 tokens, an estimate. The effect of prompt length on normalize time is not measured.
 
 ## The list
 
@@ -182,7 +184,8 @@ The 19 of 20 is a ceiling, not a forecast: the match words were written by an ag
 | FAIL-9, broad match words | "tablet" maps dishwasher tablets to electronics. "hardware" and "toy" match more bad listings than good | Code map; TEST-2 |
 | FAIL-10, wide categories | `home` runs from towels to sofas, `clothing` from socks to luggage. A general pick alone gives store types that fit half the category | Guess |
 | FAIL-11, wrong pick, cached | A wrong pick steers the nearby section for 30 days (`proxy/src/normalize-cache.ts:8`). With `local_queries` kept, the model's own wording is still in the cached reply, so a code change can fall back without new model calls | Reading of the code |
-| FAIL-12, prompt length | About twice today's prompt tokens on every uncached search | Estimate above |
+| FAIL-12, prompt length | About 2.5 times today's prompt tokens (862.5 against 348.5) and 2.2 times its cost on every uncached search | Measured, `docs/evidence/category-picks/README.md` |
+| FAIL-13, changed wording of the old fields | With the list in the prompt, the two nearby searches differ from today's for 20 of 48 and 11 of 19 probe inputs, in every layout tried. Today's prompt differs from itself for 3 to 6 of 48 | Measured, same file (SR-3, SR-4). Which wording finds better shops is not measured |
 
 ## Owner questions
 

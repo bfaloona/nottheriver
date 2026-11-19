@@ -2,6 +2,8 @@
 
 Run on 2026-11-18, 10:35 PM to 10:38 PM Pacific. It tests the two reply fields that `docs/plans/category-list.md` proposes (`general` and `specific`) with real model calls. The owner approved the calls on 2026-11-18 (`docs/plans/category-uses.md`, "Owner rulings", CQ3 and LQ7). No Brave call was made and the live site was not used.
 
+A second run on 2026-11-19 tested a revised draft prompt against six pass marks. It is in the "Second run" section below. The sections before it describe the first run and its first draft prompt.
+
 ## Result against the pass marks
 
 The pass marks were set before the run. All three passed.
@@ -149,12 +151,148 @@ The grades above use every label as written. These labels are open to question:
 - Latency was measured from a laptop with calls one at a time. It is a comparison between the two prompts, not a forecast of Worker latency.
 - The draft schema puts `general` and `specific` first. Another field order may change the replies.
 
+## Second run
+
+Run on 2026-11-19, 12:19 AM to 12:30 AM Pacific. The owner approved it (model calls only). No Brave call was made and the live site was not used. Every figure comes from `results-2.json` or a pilot's results file, which `grade.ts` computes from the raw files.
+
+### Result against the six pass marks
+
+All six marks were set before the run. The grading code for PM-4, PM-5 and PM-6 was committed before the first second-run call. "The 48" is the probe set of the first run, on which the prompt was revised. "Held-out" is the 19 new probes of `held-out.json`, committed before any second-run call and never used to revise the prompt.
+
+| Mark | Pass mark | The 48 | Held-out |
+|---|---|---|---|
+| PM-1. Brand and model inputs: the general pick matches the label | at least 90% of calls | 72 of 72 (100%), pass | 18 of 18 (100%), pass |
+| PM-2. Non-products get "not a product" | at least 80% of calls | 25 of 30 (83.3%), pass | 15 of 21 (71.4%), **fail** |
+| PM-3. Same pick in all 3 runs, both levels | at least 90% of inputs | 45 of 48 (93.8%), pass | 19 of 19 (100%), pass |
+| PM-4. Label has no specific category: the reply has none | at least 80% of calls | 24 of 30 (80.0%), pass | 15 of 18 (83.3%), pass |
+| PM-5. `category` is never "none" or a reserved id; every product input has at least 1 online query and exactly 2 nearby searches | no exception | 0 reserved values; 114 of 114 product calls, pass | 0 reserved values; 36 of 36 product calls, pass |
+| PM-6. Nearby wording is the same as today's prompt gives | at least 70% of inputs | 28 of 48 (58.3%), **fail** | 8 of 19 (42.1%), **fail** |
+
+PM-4 passed on the 48 with no call to spare. PM-6 is a target for unchanged wording. It is not a measure of which wording finds better shops.
+
+### What changed in the draft prompt
+
+The second draft is in the "Prompt draft" section of `docs/plans/category-list.md` and in `raw-2.json` under `prompts`.
+
+| Fix | Change |
+|---|---|
+| FIX-1, specific is optional | The `specific` line now reads: an id "only when it names exactly this kind of product; otherwise "none"". The first draft asked for an id "when one fits" |
+| FIX-2, old fields unchanged | Today's prompt stays whole. The lead-in, the two field lines and the list follow its last line. The schema puts `general` and `specific` last, so the model writes the five old fields first (every saved reply has that key order). The lead-in tells the model to write the five fields as it would without the new part, for every input, with no field empty |
+| FIX-3, nonsense input | The `general` line adds "or text you cannot read as a product" to the uses of `not_a_product` |
+
+### Method
+
+- **Probes.** The 48 of the first run and 19 held-out inputs: 6 brand or model names, 4 products with a general category and no specific one, 2 products with no category, 4 non-products and 3 nonsense strings. The nonsense strings have kind `nonproduct` and the label `not_a_product/unclear`, as the data file says.
+- **Calls.** The second draft ran 3 times per probe (201 calls). Today's prompt ran once per probe (67 calls). The request, schema swap, retry rule, mapping and grading are those of the first run. No retry was needed in any of the 556 second-run calls.
+- **Pilots.** Before the run, five drafts ran once each on the 48 only (288 calls, with one run of today's prompt). Pilot e became the second draft and was frozen in a commit before the first held-out call. The prompt did not change after that.
+- **PM-4.** Counts every call whose label has no specific category: 10 of the 48 (5 "gap", 5 "two") and 6 held-out inputs. It uses the mapped pick and does not require a right general pick, so `not_a_product` with a reason is a miss.
+- **PM-5.** Counts all three draft runs. A product input is every kind except `nonproduct`.
+- **PM-6.** Both nearby searches the same, in the same order, between today's prompt and draft run 1. This is the measure that gave 23 of 48 in the first run.
+
+### Pilots on the 48 probes
+
+One run each, so the call counts are out of 10 inputs where the full run has 30 calls.
+
+| Pilot | Layout | PM-2 | PM-4 | PM-5 | PM-6 | Brand, both levels | Median prompt tokens |
+|---|---|---|---|---|---|---|---|
+| First run | New lines above `- category:`, list above the last line, new fields first in the reply | 9 of 10 | 3 of 10 | fail: `category` "none" for "kitchen" | 23 of 48 | 23 of 24 | 802.5 |
+| a | New lines after today's field lines, list after the last line, new fields last in the reply | 10 of 10 | 7 of 10 | fail: `category` "not_a_product" for "kitchen" and "none" for "asdfgh", both with no queries | 24 of 48 | 24 of 24 | 834.5 |
+| b | Today's prompt whole, then a lead-in, the new lines and the list | 10 of 10 | 6 of 10 | pass | 23 of 48 | 24 of 24 | 849.5 |
+| c | List near the top, above the shopper's request | 8 of 10 | 10 of 10 | fail: `category` "none" for "asdfgh" | 22 of 48 | 22 of 24 | 840.5 |
+| d | Layout b, shorter lead-in, stricter `specific` line | 10 of 10 | 8 of 10 | pass | 24 of 48 | 23 of 24 | 846.5 |
+| e (chosen) | Layout d, lead-in also says "leave no field empty" | 9 of 10 | 8 of 10 | pass | 26 of 48 | 24 of 24 | 862.5 |
+
+The first-run row uses its run 1 and the second run's definitions. Pilot e was chosen over d because d returned no nearby searches for "asdfgh".
+
+### Cost
+
+Total for the second run: **$0.283918** for 556 calls. The source is the `usage.cost` figure that OpenRouter returned in each reply, summed over `raw-2.json` and the five pilot files. The limit was $1.
+
+| Calls | Count | Reported cost |
+|---|---|---|
+| Pilot a, with one run of today's prompt | 96 | $0.046814 |
+| Pilots b, c, d, e | 48 each | $0.031165, $0.025588, $0.031716, $0.031743 |
+| Second run, today's prompt | 67 | $0.017977 |
+| Second run, draft run 1 | 67 | $0.039871 |
+| Second run, draft run 2 | 67 | $0.028823 |
+| Second run, draft run 3 | 67 | $0.030220 |
+
+The provider's prompt cache billed part of the prompt at a lower rate in 207 of the 316 calls of pilot e and the run, because the pilots had sent the same prompts minutes earlier. A first search gets no such discount, so the figure to plan with is the median of the calls with no cached tokens:
+
+| Per call, median | Today's prompt | First draft (first run) | Second draft |
+|---|---|---|---|
+| Prompt tokens | 348.5 | 802.5 | 862.5 |
+| Output tokens | 78 | 94 | 92 |
+| Cost with no cached tokens | $0.000339 (63 calls) | $0.000698 (48 calls) | $0.000740 (78 calls) |
+| Latency with no cached tokens, ms | 522 (63 calls) | 647 (48 calls) | 721.5 (78 calls) |
+
+Today's prompt in the first run: $0.000339 and 609.5 ms (48 calls). The second draft costs about 2.2 times today's prompt per call and has 60 more prompt tokens than the first draft. Its median latency was about 200 ms above today's on this night. The first run measured a gap of 37.5 ms, so the latency gap is not a stable figure.
+
+### Findings
+
+**SR-1. FIX-1 worked: forced specific picks are nearly gone, and brand picks did not suffer.** Where the label has no specific category and the general pick was right, the model named a specific category in 3 of 15 calls on the 48 (12 of 15 in the first run) and in 0 of 12 held-out calls. The 3 are "pocket knife" (`outdoor/fishing_hunting`). "garden gloves", "bird feeder" and "baby monitor" now get the general category alone. Brand inputs matched the label on both levels in 72 of 72 calls and 18 of 18 held-out calls, so the stricter line did not strip right specific picks. "LEGO 10311" now gets `toys`.
+
+**SR-2. PM-4 misses come from the general pick.** On the 48: "gift card" (`not_a_product/service` twice, `books_media/stationery_office` once) and "pocket knife". Held-out: "toilet paper" got `home/bedding_bath` in all 3 runs, a wrong specific pick under a general pick the label does not have.
+
+**SR-3. FIX-2 holds the shape of the old fields and not their wording.** PM-5 passed on both sets: no `category` was "none" or a reserved id, and every product call had 2 online queries and 2 nearby searches (150 of 150). "kitchen" got `category` "kitchenware" and "asdfgh" got its queries in all 3 runs. The wording still moved:
+
+| Same value for the same input, today vs draft run 1 | First run, 48 | Second run, 48 | Second run, held-out |
+|---|---|---|---|
+| `category` | 30 of 48 | 24 of 48 | 14 of 19 |
+| `canonical_name` | 42 of 48 | 42 of 48 | 19 of 19 |
+| Both nearby searches, same order (PM-6) | 23 of 48 | 28 of 48 | 8 of 19 |
+| First nearby search | 30 of 48 | 33 of 48 | 13 of 19 |
+| Online queries, same set | 24 of 48 | 29 of 48 | 14 of 19 |
+| Similar products, same set | 3 of 48 | 12 of 48 | 1 of 19 |
+
+**SR-4. No layout kept the nearby wording, so the list in the prompt is the likely cause.** Six layouts gave 22 to 28 of 48. Today's prompt against itself gave 45 of 48 (first run against pilot a, about two hours apart) and 42 of 48 (pilot a against the second run, six minutes apart). The second draft against itself gave 42 and 45 of 48 between runs. Writing the old fields first in the reply did not help. Some changes are a "store" and "shop" swap ("garden gloves": "hardware store" to "hardware shop"). Others take words from the list: "yoga mat" gives "fitness equipment store" (today "yoga gear store"), "work boots" gives "workwear store" (today "footwear store"), "Stihl MS 170" gives "garden power equipment store" (today "power tool store"). A separate model call for the two new fields would leave today's reply untouched. That design was not tested, and it adds a call.
+
+**SR-5. FIX-3 did not work reliably.** Nonsense input got `not_a_product` in 4 of 12 calls: "zxcvbnm" 3 of 3, "asdfgh" 1 of 3, "???" 0 of 3, "ghjk 4477" 0 of 3. The rest got `none`. This is the held-out PM-2 failure: the 4 real non-products there got `not_a_product` in 12 of 12 calls. All five pilots read "asdfgh" as `not_a_product`, and the full run read it so once in three, so this pick is not stable.
+
+**SR-6. "camping" changed to `outdoor` in all 3 runs.** The first run and pilots a, b and d read it as `not_a_product/activity`. Pilots c and e and the second run read it as a product. The lead-in of pilot e ("even when the input is not a product") is the only text that differs from pilot d. Small prompt edits flip single picks: across the six layouts "pocket knife" got `outdoor/fishing_hunting`, `tools_hardware/hand_tools` and `outdoor`, and "gift card" got `not_a_product/service`, `books_media/stationery_office` and `none`.
+
+**SR-7. Repeat runs agree less than in the first run on the 48, and fully on the held-out set.** Three of the 48 changed between runs: "asdfgh", "gift card" and "yoga class" (the reason changed, `service` or `activity`). The general level alone was the same for 46 of 48. All 201 draft calls were answered by `google/gemma-4-31b-it` from the provider ModelRun, as in the first run.
+
+**SR-8. Products with no category still rarely get "none".** 6 of 15 calls on the 48 (the same two inputs as in the first run) and 0 of 6 held-out calls ("toilet paper" and "trash bags" got `home`). "firewood" got `garden` and "eyeglasses" got `health_beauty`, both now with no specific category. No pass mark covers the general pick of this kind.
+
+**SR-9. The reason for a non-product is less exact than the pick.** The reason matched the label in 20 of 25 calls on the 48 and 12 of 15 held-out calls. "bathroom remodel", "yoga class" and "guitar lessons" got `service`.
+
+**SR-10. No reply was off the list.** All 201 draft replies passed the schema on the first attempt and every value was an id, `none` or `not_a_product`. No brand or model word was in `canonical_name` in any draft call (90 of 90 brand calls).
+
+**SR-11. "???" gets empty fields from today's prompt too.** Today's prompt returned no similar products, no online queries and no nearby searches for "???". The second draft did the same in all 3 runs. This is the only input with an empty field in the second run. The schema accepts empty lists.
+
+### Hand labels that look wrong (second run)
+
+The grades use every label as written. No label was edited after a model call.
+
+| Input | Label | Model | Comment |
+|---|---|---|---|
+| ghjk 4477 | `not_a_product/unclear` | `none` | The input looks like a model number, so "a product with no category" is defensible. With that reading the held-out PM-2 figure would be 15 of 18 |
+| toilet paper, trash bags | `none` | `home` | `home` is defensible for both. The specific `bedding_bath` for toilet paper is not |
+| guitar lessons | `not_a_product/activity` | `not_a_product/service` | Either reason is defensible |
+| gift card, eyeglasses, sewing machine | as in the first run | | The comments of the first run still apply |
+
+### Limits of the second run
+
+- The limits of the first run apply: one model, one provider, one night, inputs written by an agent, three runs per input.
+- The held-out set is small. One input is 3 of 18 or 21 calls, so one input moves PM-1, PM-2 or PM-4 by 14 to 17 points and PM-6 by 5 points. The held-out labels were written by the agent that revised the prompt.
+- PM-4 passed on the 48 at exactly 80%, on the probes the prompt was tuned on. The held-out figure (83.3%) rests on 6 inputs.
+- Each pilot is one run of 48 inputs. A gap of 2 or 3 inputs between pilots is inside the repeat-run noise (3 to 6 of 48 for nearby wording).
+- The pilots warmed the provider's prompt cache, so the cost and latency tables mix cached and uncached calls. The planning figures use only calls with no cached tokens, which are not a random sample of the probes.
+- PM-6 compares wording as text. This run cannot say whether the changed nearby searches find better or worse shops; that needs Brave calls.
+- The two-call design named in SR-4 is a guess about a remedy. No call tested it.
+
 ## Files
 
 | File | What |
 |---|---|
-| `run-picks.ts` | Makes the calls and writes `raw.json` after every call |
-| `grade.ts` | Grades `raw.json` and writes `results.json` |
-| `lib.ts` | Draft prompt, draft schema, mapping rules, shared types |
-| `raw.json` | Every reply as OpenRouter returned it (content, usage, cost, model, provider), with start time and latency |
-| `results.json` | All figures in this file, plus the pick for every input and run |
+| `run-picks.ts` | Makes the calls and writes the run's raw file after every call |
+| `grade.ts` | Grades a raw file and writes its results file |
+| `lib.ts` | Draft prompts (first draft and pilots a to e), draft schemas, mapping rules, shared types |
+| `raw.json` | First run. Every reply as OpenRouter returned it (content, usage, cost, model, provider), with start time and latency |
+| `results.json` | First run. All its figures, plus the pick for every input and run |
+| `held-out.json` | The 19 held-out probes and their labels, committed before the second run |
+| `raw-2.json`, `results-2.json` | Second run: both probe sets, graded apart under `sets.tuned` and `sets.held_out` |
+| `raw-2-pilot.json` and `raw-2-pilot-b.json` to `-e.json`, with their `results-` files | The five pilots on the 48 probes. Pilot a also holds the run of today's prompt that pilots b to e are compared with |
+
+Rerun the second run with `RUN=2` in front of both commands in "Rerun". A pilot uses `RUN=2-pilot` or `RUN=2-pilot-b` to `-e`, with `DRAFT_ONLY=1 ROUNDS=1` for b to e.
