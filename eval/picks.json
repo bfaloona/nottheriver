@@ -1,0 +1,25 @@
+{
+  "about": "The expected category pick for each of the 20 eval products: [general id, specific id or null] from data/categories.draft.json. 'alt' is a second pick a careful reader could defend. Hand labels, copied on 2026-11-19 from eval_picks in docs/evidence/category-list/hand-labels.json, where one agent wrote them on 2026-11-18 without a model call. eval/summarize.mjs compares them with query.pick in the saved responses.",
+  "picks": {
+    "cast iron skillet": { "pick": ["kitchen", "cookware"] },
+    "camping tent": { "pick": ["outdoor", null] },
+    "wool socks": { "pick": ["clothing", "socks_underwear_swim"], "alt": ["outdoor", "outdoor_clothing"] },
+    "cordless drill": { "pick": ["tools_hardware", "power_tools"] },
+    "loose leaf green tea": { "pick": ["food_drink", "tea"] },
+    "jigsaw puzzle": { "pick": ["toys_hobbies", "puzzles_board_games"] },
+    "USB-C charging cable": { "pick": ["electronics", "cables_batteries"] },
+    "wool blanket": { "pick": ["home", "bedding_bath"], "alt": ["outdoor", null] },
+    "chef's knife": { "pick": ["kitchen", "kitchen_knives"] },
+    "headlamp": { "pick": ["outdoor", null] },
+    "rain jacket": { "pick": ["outdoor", "outdoor_clothing"], "alt": ["clothing", "everyday_clothing"] },
+    "rechargeable AA batteries": { "pick": ["electronics", "cables_batteries"] },
+    "dark chocolate bar": { "pick": ["food_drink", "chocolate_candy"] },
+    "extra virgin olive oil": { "pick": ["food_drink", "oils_spices_pantry"] },
+    "garden hose": { "pick": ["garden", null], "alt": ["tools_hardware", null] },
+    "LED light bulbs": { "pick": ["tools_hardware", "light_bulbs_electrical"], "alt": ["home", "lamps_lighting"] },
+    "bath towels": { "pick": ["home", "bedding_bath"] },
+    "wooden train set": { "pick": ["toys_hobbies", "toys"] },
+    "insulated water bottle": { "pick": ["kitchen", "tableware_drinkware"], "alt": ["outdoor", null] },
+    "pour-over coffee dripper": { "pick": ["kitchen", "coffee_tea_gear"] }
+  }
+}

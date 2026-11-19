@@ -219,6 +219,58 @@ async function readJson(path, fallback) {
   }
 }
 
+const pickText = (pick) => (pick ? `${pick[0]}/${pick[1] ?? ''}` : null);
+
+/**
+ * Compares the category pick in each saved response (`query.pick`) with the hand pick for its
+ * product (eval/picks.json). A response saved before the Worker made the category call has no pick
+ * and is not measured, so an old run reports `measured: 0` and null ratios, not a failure.
+ * `one_pick_products` counts products whose measured searches all got the same pick.
+ */
+export function pickCheck(queries, picks, responses) {
+  const rows = queries.flatMap((q) => {
+    const saved = responses.get(q.id);
+    const got = saved?.status === 200 ? saved.body?.query?.pick : undefined;
+    const expected = picks[q.product];
+    if (!got || !expected) return [];
+    const same = (want) => Boolean(want) && want[0] === got.general;
+    const both = (want) => same(want) && want[1] === got.specific;
+    return [{ id: q.id, product: q.product, got: pickText([got.general, got.specific]), expected, general: same(expected.pick), both: both(expected.pick), alt: !same(expected.pick) && same(expected.alt) }];
+  });
+  const count = (f) => rows.filter(f).length;
+  const byProduct = Map.groupBy(rows, (r) => r.product);
+  const general = count((r) => r.general);
+  return {
+    saved: queries.filter((q) => responses.get(q.id)?.status === 200).length,
+    measured: rows.length,
+    general_match: general,
+    general_match_rate: ratio(general, rows.length),
+    both_levels_match: count((r) => r.both),
+    second_pick_match: count((r) => r.alt),
+    products: byProduct.size,
+    one_pick_products: [...byProduct.values()].filter((rs) => new Set(rs.map((r) => r.got)).size === 1).length,
+    misses: rows.filter((r) => !r.both).map((r) => ({ id: r.id, expected: pickText(r.expected.pick), ...(r.expected.alt && { second_pick: pickText(r.expected.alt) }), got: r.got })),
+  };
+}
+
+/**
+ * Precision per general category, by the hand pick of each search's product, so runs saved before
+ * the category call are grouped the same way. `products` is the count of graded products in the
+ * group: with 1 to 4 products a group, a figure here describes those products and no more.
+ */
+export function precisionByGeneral(queries, picks, grades) {
+  const productOf = new Map(queries.map((q) => [q.id, q.product]));
+  const generalOf = (g) => picks[productOf.get(g.search_id)]?.pick[0] ?? 'no_hand_pick';
+  const groups = Map.groupBy(grades, generalOf);
+  return Object.fromEntries([...groups.keys()].sort().map((general) => {
+    const rows = groups.get(general);
+    return [general, {
+      products: new Set(rows.map((g) => productOf.get(g.search_id))).size,
+      ...Object.fromEntries(SECTIONS.map((sec) => [sec, precision(rows.filter((g) => g.kind === sec))])),
+    }];
+  }));
+}
+
 /** What the page shows in a section: local includes the "Farther away" group listed under it. */
 export function sectionResults(body, section) {
   return section === 'local' ? [...body.local, ...(body.local_farther ?? [])] : body[section];
@@ -226,6 +278,7 @@ export function sectionResults(body, section) {
 
 async function main() {
   const { queries } = await readJson('eval/queries.json');
+  const { picks } = await readJson('eval/picks.json');
   const saved = await Promise.all(queries.map((q) => readJson(`${DIR}/responses/${q.id}.json`, null)));
   const responses = new Map(saved.filter(Boolean).map((s) => [s.id, s]));
   const grades = await readJson(`${DIR}/grades.json`, { grades: [], baseline: [] });
@@ -256,6 +309,8 @@ async function main() {
     labels: Object.fromEntries(SECTIONS.map((sec) => [sec, labelCounts(grades.baseline.filter((b) => b.section === sec))])),
     recall_by_kind: Object.fromEntries(SECTIONS.map((sec) => [sec, recallByKind(grades.baseline.filter((b) => b.section === sec), resultsFor)])),
     chain_badges: badgeCheck(grades.baseline, resultsFor),
+    category_pick: pickCheck(queries, picks, responses),
+    precision_by_general_category: precisionByGeneral(queries, picks, grades.grades),
     probe: Object.fromEntries(SECTIONS.map((sec) => [sec, probeRates(probe.results.filter((r) => r.kind === sec))])),
     probe_vs_person: agreement(probe.results, grades.grades),
   };

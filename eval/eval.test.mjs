@@ -6,11 +6,13 @@ import { pickTargets } from './access-probe/run-probe.mjs';
 import { parseTarget } from './access-probe/target';
 import { compareRow } from './compare.mjs';
 import { buildRequest } from './run-searches.mjs';
-import { agreement, badgeCheck, labelCounts, precision, probeRates, recall, recallByKind, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
+import { agreement, badgeCheck, labelCounts, pickCheck, precision, precisionByGeneral, probeRates, recall, recallByKind, sectionResults, siteMeasure, tally, totals, usageRow, validateGrades } from './summarize.mjs';
 
 const { queries } = JSON.parse(readFileSync('eval/queries.json', 'utf8'));
 const zips = JSON.parse(readFileSync('public/zips.json', 'utf8'));
 const schema = JSON.parse(readFileSync('eval/grade-schema.json', 'utf8'));
+const { picks } = JSON.parse(readFileSync('eval/picks.json', 'utf8'));
+const categoryList = JSON.parse(readFileSync('data/categories.draft.json', 'utf8'));
 
 describe('queries.json', () => {
   it('has 20 products, each with an urban, suburban and rural zip', () => {
@@ -355,5 +357,60 @@ describe('sectionResults', () => {
 
   it('reads a response saved before farther shops existed', () => {
     expect(sectionResults({ local: [near], online: [] }, 'local')).toEqual([near]);
+  });
+});
+
+describe('category pick check', () => {
+  const qs = [
+    { id: 'a-urban', product: 'cast iron skillet' }, { id: 'a-rural', product: 'cast iron skillet' },
+    { id: 'b-urban', product: 'wool socks' }, { id: 'b-rural', product: 'wool socks' },
+    { id: 'c-urban', product: 'headlamp' },
+  ];
+  const saved = (id, pick, status = 200) => [id, { id, status, body: { query: { ...(pick && { pick: { general: pick[0], specific: pick[1] } }) } } }];
+
+  it('has a hand pick from the category list for every eval product', () => {
+    const parent = new Map(categoryList.general.flatMap((g) => [[g.id, null], ...g.specific.map((s) => [s.id, g.id])]));
+    expect(Object.keys(picks).sort()).toEqual([...new Set(queries.map((q) => q.product))].sort());
+    for (const { pick, alt } of Object.values(picks)) {
+      for (const [general, specific] of alt ? [pick, alt] : [pick]) {
+        expect(parent.get(general), general).toBe(null);
+        if (specific !== null) expect(parent.get(specific), specific).toBe(general);
+      }
+    }
+  });
+
+  it('counts matches at each level, second picks, and products that got one pick in every search', () => {
+    const responses = new Map([
+      saved('a-urban', ['kitchen', 'cookware']), // both levels
+      saved('a-rural', ['kitchen', null]), // general only, and a second pick for the product
+      saved('b-urban', ['outdoor', 'outdoor_clothing']), // the second defensible pick
+      saved('b-rural', ['outdoor', 'outdoor_clothing']),
+      saved('c-urban', ['none', null]),
+    ]);
+    expect(pickCheck(qs, picks, responses)).toEqual({
+      saved: 5, measured: 5, general_match: 2, general_match_rate: 0.4, both_levels_match: 1, second_pick_match: 2, products: 3, one_pick_products: 2,
+      misses: [
+        { id: 'a-rural', expected: 'kitchen/cookware', got: 'kitchen/' },
+        { id: 'b-urban', expected: 'clothing/socks_underwear_swim', second_pick: 'outdoor/outdoor_clothing', got: 'outdoor/outdoor_clothing' },
+        { id: 'b-rural', expected: 'clothing/socks_underwear_swim', second_pick: 'outdoor/outdoor_clothing', got: 'outdoor/outdoor_clothing' },
+        { id: 'c-urban', expected: 'outdoor/', got: 'none/' },
+      ],
+    });
+  });
+
+  it('does not measure a response with no pick, a failed search or a missing file', () => {
+    const responses = new Map([saved('a-urban', null), saved('a-rural', ['kitchen', 'cookware'], 502)]);
+    expect(pickCheck(qs, picks, responses)).toMatchObject({ saved: 1, measured: 0, general_match: 0, general_match_rate: null, products: 0, misses: [] });
+  });
+
+  it('groups precision by the hand pick of the product, with the count of products behind it', () => {
+    const grades = [
+      grade({ search_id: 'a-urban', sells_product: 'yes' }), grade({ search_id: 'a-rural', sells_product: 'no' }),
+      grade({ search_id: 'c-urban', kind: 'local', sells_product: 'yes', local_exists: 'yes' }),
+    ];
+    const report = precisionByGeneral(qs, picks, grades);
+    expect(Object.keys(report)).toEqual(['kitchen', 'outdoor']);
+    expect(report.kitchen).toMatchObject({ products: 1, online: { graded: 2, relevant: 1, precision: 0.5 }, local: { graded: 0, precision: null } });
+    expect(report.outdoor).toMatchObject({ products: 1, local: { graded: 1, precision: 1 } });
   });
 });
