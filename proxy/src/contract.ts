@@ -96,7 +96,7 @@ export interface SearchResult {
 }
 
 export interface LlmUsage {
-  call: 'normalize' | 'enrich';
+  call: 'normalize' | 'enrich' | 'category';
   model: string;
   prompt_tokens: number;
   completion_tokens: number;
@@ -116,11 +116,21 @@ export interface Usage {
 // dropped shop from one never found. Domain only: no name, address or coordinates.
 export interface Dropped { kind: ResultKind; domain: string; reason: 'place_category' | 'editorial_url' | 'site_type' | 'sells_product' | 'below_top_10' | 'branch_cap' | 'too_far' }
 
+// The category a separate model call picked from the fixed list (data/categories.draft.json).
+// Code maps the reply, so only the list's ids and display names appear here.
+export interface CategoryPick {
+  general: string;         // a general id, "none" or "not_a_product"
+  specific: string | null; // a specific id under `general`; the reason for "not_a_product"; else null
+  general_name?: string;   // display names: present for ids on the list only
+  specific_name?: string;
+}
+
 export interface SearchResponse {
   query: {
     product: string; city: string; state: string; canonical_name: string; category: string;
     online_queries?: string[]; local_queries?: string[];
     near_radius_mi?: number; // local results within this distance are "nearby"
+    pick?: CategoryPick;     // absent from a Worker older than the category call
   };
   weights: Record<ComponentName, number>;
   local: SearchResult[];  // <= 10, within near_radius_mi

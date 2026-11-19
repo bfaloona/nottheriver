@@ -35,7 +35,7 @@ export type Pick = [string, string | null];
 export type ProbeKind = 'brand' | 'nonproduct' | 'gap' | 'two' | 'general';
 export type ProbeSet = 'tuned' | 'held_out';
 export interface Probe { input: string; kind: ProbeKind; pick: Pick; alt?: Pick; set: ProbeSet }
-interface List { general: { id: string; specific: { id: string }[] }[]; reserved: { id: string; reasons?: { id: string }[] }[] }
+interface List { general: { id: string; specific: { id: string }[] }[] }
 
 type Labeled = Omit<Probe, 'set'>;
 const tuned = read<{ probes: Labeled[] }>('docs/evidence/category-list/hand-labels.json').probes;
@@ -173,26 +173,5 @@ export interface Attempt {
 export interface Call { input: string; kind: ProbeKind; arm: Arm; round: number; attempts: Attempt[] }
 export interface RawFile { about: string; request: unknown; prompts: Record<Arm, { example_input: string; chars: number; text: string }>; calls: Call[] }
 
-export const generalIds = new Set(list.general.map((g) => g.id));
-export const parentOf = new Map(list.general.flatMap((g) => g.specific.map((s) => [s.id, g.id] as const)));
-/** Every general and specific id. */
-export const listIds = new Set([...generalIds, ...parentOf.keys()]);
-/** "none" and "not_a_product". */
-export const reservedIds = new Set(list.reserved.map((r) => r.id));
-export const reasons = new Set(list.reserved.find((r) => r.id === 'not_a_product')?.reasons?.map((r) => r.id));
-
-export interface Mapped { general: string; specific: string | null; rule: string }
-const tidy = (s: unknown) => (typeof s === 'string' ? s.toLowerCase().trim().replace(/[\s-]+/g, '_') : '');
-
-export function mapPick(rawGeneral: unknown, rawSpecific: unknown): Mapped {
-  const g = tidy(rawGeneral);
-  const s = tidy(rawSpecific);
-  if (g === 'not_a_product') return { general: g, specific: reasons.has(s) ? s : 'unclear', rule: 'MAP-6' };
-  if (generalIds.has(g)) {
-    if (parentOf.get(s) === g) return { general: g, specific: s, rule: 'MAP-2' };
-    return { general: g, specific: null, rule: parentOf.has(s) ? 'MAP-4' : 'MAP-3' };
-  }
-  // A reply of "none" is a known value, not an unknown one, so MAP-5 does not rescue it.
-  if (g !== 'none' && parentOf.has(s)) return { general: parentOf.get(s)!, specific: s, rule: 'MAP-5' };
-  return { general: 'none', specific: null, rule: 'MAP-7' };
-}
+// The mapping rule and the id sets are the Worker's own, so the runs are graded with the code that ships.
+export { generalIds, listIds, mapPick, parentOf, reasons, reservedIds, type Mapped } from '../../../proxy/src/category';

@@ -5,13 +5,16 @@ import { schemas, structuralOnly, validateAgainst } from './validate';
 export const MODELS = ['google/gemma-4-31b-it', 'google/gemma-4-26b-a4b-it'];
 export const NORMALIZE_MAX_TOKENS = 400;
 export const ENRICH_MAX_TOKENS = 3000;
+// A reply is two ids, about 13 tokens. The limit is the one the tested call ran with.
+export const CATEGORY_MAX_TOKENS = 400;
 const ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 
-export type LlmCall = 'normalize' | 'enrich';
+export type LlmCall = 'normalize' | 'enrich' | 'category';
 
 const modelSchemas: Record<LlmCall, unknown> = {
   normalize: structuralOnly(schemas.normalize),
   enrich: structuralOnly(schemas.enrich),
+  category: structuralOnly(schemas.category),
 };
 
 interface Completion {

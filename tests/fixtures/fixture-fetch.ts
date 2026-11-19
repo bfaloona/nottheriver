@@ -3,6 +3,7 @@ import web2 from './brave/web-2.json';
 import place1 from './brave/place-1.json';
 import normalize from './llm/normalize.json';
 import enrich from './llm/enrich.json';
+import category from './llm/category.json';
 
 export type FixtureRoute = {
   match: (url: URL, init?: RequestInit) => boolean; // OpenRouter routes discriminate on json_schema.name in the body
@@ -45,7 +46,7 @@ export function schemaNameOf(init?: RequestInit): string | undefined {
 
 // One routing table for the Worker tests and the e2e mock proxy, so they cannot diverge.
 // Web search alternates web-1, web-2, web-1, ... per makeFixtureFetch instance.
-export function defaultRoutes(llm: { normalize?: unknown; enrich?: unknown } = {}): FixtureRoute[] {
+export function defaultRoutes(llm: { normalize?: unknown; enrich?: unknown; category?: unknown } = {}): FixtureRoute[] {
   return [
     { match: (u) => u.pathname === '/res/v1/web/search', respond: (_u, _i, n) => ({ body: n % 2 === 0 ? web1 : web2 }) },
     { match: (u) => u.pathname === '/res/v1/local/place_search', respond: () => ({ body: place1 }) },
@@ -56,6 +57,10 @@ export function defaultRoutes(llm: { normalize?: unknown; enrich?: unknown } = {
     {
       match: (u, init) => u.pathname === '/api/v1/chat/completions' && schemaNameOf(init) === 'enrich',
       respond: () => ({ body: llm.enrich ?? enrich }),
+    },
+    {
+      match: (u, init) => u.pathname === '/api/v1/chat/completions' && schemaNameOf(init) === 'category',
+      respond: () => ({ body: llm.category ?? category }),
     },
   ];
 }

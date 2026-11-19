@@ -3,12 +3,14 @@ import searchRequest from '../schemas/search-request.json';
 import searchResponse from '../schemas/search-response.json';
 import normalize from '../schemas/normalize.json';
 import enrich from '../schemas/enrich.json';
+import category from '../schemas/category.json';
 
 export const schemas = {
   'search-request': searchRequest as Schema,
   'search-response': searchResponse as Schema,
   normalize: normalize as Schema,
   enrich: enrich as Schema,
+  category: category as Schema,
 };
 export type SchemaName = keyof typeof schemas;
 

@@ -1,0 +1,18 @@
+{
+  "id": "gen-fixture-category",
+  "model": "google/gemma-4-31b-it",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"general\": \"kitchen\", \"specific\": \"cookware\"}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 570,
+    "completion_tokens": 17,
+    "total_tokens": 587,
+    "cost": 0.000444
+  }
+}

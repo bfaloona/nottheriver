@@ -90,7 +90,7 @@ async function searchOnce(job: Job, arm: string, round: number) {
     if (url.host === 'openrouter.ai') {
       try {
         const j = JSON.parse(text);
-        const call = String(body ?? '').includes('"name":"enrich"') ? 'enrich' : 'normalize';
+        const call = (['enrich', 'category'] as const).find((name) => String(body ?? '').includes(`"name":"${name}"`)) ?? 'normalize';
         Object.assign(entry, { call, provider: j.provider, model: j.model, prompt_tokens: j.usage?.prompt_tokens, completion_tokens: j.usage?.completion_tokens, out_chars: j.choices?.[0]?.message?.content?.length });
         if (call === 'enrich' && !evalMode) {
           // A split arm makes two enrich calls; the second is kept as -enrich-out-2 instead of overwriting the first.

@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["general", "specific"],
+  "properties": {
+    "general": { "type": "string", "maxLength": 60 },
+    "specific": { "type": "string", "maxLength": 60 }
+  }
+}

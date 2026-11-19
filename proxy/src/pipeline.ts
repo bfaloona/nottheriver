@@ -10,6 +10,7 @@ import type {
   Candidate, Dropped, Env, Deps, KvStore, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
 } from './contract';
 import { enrichAll, type CertificationRow, type ChainRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
+import { pickCategory } from './category';
 import { InvalidLlmOutput } from './errors';
 import { NORMALIZE_MAX_TOKENS, createLlmClient, type LlmClient } from './llm';
 import { dropReason, isEditorialUrl, splitEditorial } from './precision';
@@ -318,15 +319,20 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   // The client refuses a seventh call; truncation keeps a search at five at most.
   const brave = createBraveClient({ fetch: deps.fetch, apiKey: env.BRAVE_API_KEY, negativeSourceDomains });
 
+  // Started beside the normalize call and read only when the response is built, so the pick
+  // never delays a search step. pickCategory never rejects.
+  const picking = pickCategory(req.product, llm, env.NORMALIZE_CACHE);
   const n = await normalize(req, llm, env.NORMALIZE_CACHE);
   const pass1 = filterBlocked(dedupe(await fetchCandidates(n, req, brave)), (c) => c);
   const dropped = placeCategoryDrops(brave.rejected);
   const kept = await enrichAndFilter(pass1, llm, n, dropped, deps); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
+  const pick = await picking; // before the usage is totalled, so the call is counted
   const res = finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
   const unjudged = new Set(kept.filter((r) => r.classification === null).map((r) => r.candidate));
   const unjudgedIds = new Set(scored.filter((r) => unjudged.has(r.input.candidate)).map((r) => r.result.id));
   const count = (section: SearchResult[]) => section.filter((r) => unjudgedIds.has(r.id)).length;
   res.usage.unclassified_shown = { online: count(res.online), local: count(res.local) };
+  res.query.pick = pick;
   return res;
 }

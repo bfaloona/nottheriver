@@ -223,9 +223,9 @@ describe('runSearch over the fixtures', () => {
     const expected = NORMALIZED.online_queries.length + NORMALIZED.local_queries.length;
     expect(fetch.calls.filter((c) => isBrave(c.url))).toHaveLength(expected);
     expect(res.usage.brave_calls).toBe(expected);
-    // One enrich call per kind; the fixture answers each with the same 2100 + 300 tokens.
-    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich', 'enrich']);
-    expect(res.usage.llm_tokens).toBe(400 + 120 + 2 * (2100 + 300));
+    // The category call starts first. One enrich call per kind; the fixture answers each with the same 2100 + 300 tokens.
+    expect(res.usage.llm.map((u) => u.call)).toEqual(['category', 'normalize', 'enrich', 'enrich']);
+    expect(res.usage.llm_tokens).toBe(570 + 17 + 400 + 120 + 2 * (2100 + 300));
     expect(res.usage.estimated_cost_usd).toBe(estimateCost(res.usage));
     expect(res.usage.estimated_cost_usd).toBeGreaterThan(0);
   });
@@ -250,16 +250,17 @@ describe('runSearch over the fixtures', () => {
   it('sends the model no location: no location keys and no coordinates', async () => {
     const { fetch } = await search();
     const bodies = fetch.calls.filter((c) => isLlm(c.url)).map((c) => c.body ?? '');
-    expect(bodies).toHaveLength(3);
+    expect(bodies).toHaveLength(4);
     const coordinates = [...place1.results.flatMap((r) => r.coordinates ?? []), REQ.lat, REQ.lon].map(String);
     for (const body of bodies) {
       const prompt = (JSON.parse(body) as { messages: Array<{ content: string }> }).messages.map((m) => m.content).join('\n');
       for (const key of ['lat', 'lon', 'coordinates', 'postal_address', 'distance', 'address']) expect(prompt).not.toContain(`"${key}"`);
       for (const value of coordinates) expect(body).not.toContain(value);
     }
-    // The enrich call carries Brave snippets, which may name a town; the normalize call never does.
-    const normalize = bodies[0]!;
-    for (const text of ['"city"', '"state"', REQ.city, `\\"${REQ.state}\\"`]) expect(normalize).not.toContain(text);
+    // The enrich call carries Brave snippets, which may name a town; the category and normalize calls never do.
+    for (const body of bodies.slice(0, 2)) {
+      for (const text of ['"city"', '"state"', REQ.city, `\\"${REQ.state}\\"`]) expect(body).not.toContain(text);
+    }
   });
 
   it('removes every blocked retailer, URL and mention', async () => {
@@ -398,8 +399,8 @@ describe('query handling', () => {
       ...defaultRoutes(),
     ];
     const { res, fetch } = await search(onlyBlocked);
-    expect(fetch.calls.filter((c) => isLlm(c.url))).toHaveLength(1);
-    expect(res.usage.llm.map((u) => u.call)).toEqual(['normalize']);
+    expect(fetch.calls.filter((c) => isLlm(c.url))).toHaveLength(2);
+    expect(res.usage.llm.map((u) => u.call)).toEqual(['category', 'normalize']);
     expect(res.local).toEqual([]);
     expect(res.online).toEqual([]);
   });
@@ -564,6 +565,7 @@ describe('normalize cache', () => {
     } as unknown as KvStore;
     return { store, puts, binding };
   }
+  const normalizePuts = (kv: Kv) => kv.puts.filter((p) => p.key.startsWith('normalize:'));
   const llmCalls = (fetch: { calls: Array<{ url: string }> }) => fetch.calls.filter((c) => isLlm(c.url)).length;
   const placeQueries = (fetch: { calls: Array<{ url: string }> }) =>
     fetch.calls.filter((c) => c.url.includes('/local/place_search')).map((c) => new URL(c.url).searchParams.get('q'));
@@ -573,11 +575,13 @@ describe('normalize cache', () => {
     const env = { ...ENV, NORMALIZE_CACHE: kv.binding };
     const first = await search(defaultRoutes(), env);
     const second = await search(defaultRoutes(), env);
-    expect(llmCalls(second.fetch)).toBe(llmCalls(first.fetch) - 1);
+    // The category pick is cached beside the reading, so the repeat skips both calls.
+    expect(llmCalls(second.fetch)).toBe(llmCalls(first.fetch) - 2);
     expect(placeQueries(second.fetch)).toEqual(placeQueries(first.fetch));
     expect(second.res.query).toEqual(first.res.query);
-    expect(second.res.usage.llm.map((u) => u.call)).not.toContain('normalize');
-    expect(kv.puts).toHaveLength(1);
+    expect(second.res.query.pick).toMatchObject({ general: 'kitchen', specific: 'cookware' });
+    expect(second.res.usage.llm.map((u) => u.call)).toEqual(['enrich', 'enrich']);
+    expect(kv.puts.map((p) => p.key.split(':')[0]).sort()).toEqual(['category', 'normalize']);
   });
 
   it('gives case and spacing variants one key, and different products different keys', async () => {
@@ -589,7 +593,7 @@ describe('normalize cache', () => {
   it('does not cache a reading with no local search, so nearby shops are not hidden for 30 days', async () => {
     const kv = fakeKv();
     await search(defaultRoutes({ normalize: llmReply({ ...NORMALIZED, local_queries: [] }) }), { ...ENV, NORMALIZE_CACHE: kv.binding });
-    expect(kv.store.size).toBe(0);
+    expect(normalizePuts(kv)).toHaveLength(0);
   });
 
   it('keys by product only: another town and different case or spacing is a hit', async () => {
@@ -603,10 +607,12 @@ describe('normalize cache', () => {
   it('stores the model output for 30 days under a hashed key that holds no product text', async () => {
     const kv = fakeKv();
     await search(defaultRoutes(), { ...ENV, NORMALIZE_CACHE: kv.binding });
-    expect(kv.puts).toHaveLength(1);
-    expect(kv.puts[0]!.ttl).toBe(30 * 24 * 60 * 60);
-    expect(kv.puts[0]!.key).toMatch(/^normalize:[0-9a-f]{64}$/);
-    expect(JSON.parse(kv.store.get(kv.puts[0]!.key)!)).toEqual(NORMALIZED);
+    const puts = normalizePuts(kv);
+    expect(puts).toHaveLength(1);
+    expect(puts[0]!.ttl).toBe(30 * 24 * 60 * 60);
+    expect(puts[0]!.key).toMatch(/^normalize:[0-9a-f]{64}$/);
+    expect(JSON.parse(kv.store.get(puts[0]!.key)!)).toEqual(NORMALIZED);
+    for (const put of kv.puts) expect(put.ttl).toBe(30 * 24 * 60 * 60);
   });
 
   it.each([
@@ -616,7 +622,7 @@ describe('normalize cache', () => {
     const kv = fakeKv();
     const env = { ...ENV, NORMALIZE_CACHE: kv.binding };
     await search(defaultRoutes(), env);
-    const key = kv.puts[0]!.key;
+    const key = normalizePuts(kv)[0]!.key;
     kv.store.set(key, JSON.stringify(bad));
     const { res } = await search(defaultRoutes(), env);
     expect(res.usage.llm.map((u) => u.call)).toContain('normalize');
@@ -627,12 +633,50 @@ describe('normalize cache', () => {
     const kv = fakeKv();
     const routes = defaultRoutes({ normalize: llmReply({ ...NORMALIZED, online_queries: ['best top reviews'] }) });
     await expect(search(routes, { ...ENV, NORMALIZE_CACHE: kv.binding })).rejects.toThrow(InvalidLlmOutput);
-    expect(kv.store.size).toBe(0);
+    expect(normalizePuts(kv)).toHaveLength(0);
   });
 
   it.each([['get', { failGet: true }], ['put', { failPut: true }]] as const)('a failing cache %s still returns the search', async (_op, opts) => {
     const kv = fakeKv(opts);
     const { res } = await search(defaultRoutes(), { ...ENV, NORMALIZE_CACHE: kv.binding });
     expect(res.online.length + res.local.length).toBeGreaterThan(0);
+  });
+});
+
+describe('category pick', () => {
+  const noCategory = (routes: FixtureRoute[]) => routes.filter((r) => !r.match(new URL('https://openrouter.ai/api/v1/chat/completions'), { body: JSON.stringify({ response_format: { json_schema: { name: 'category' } } }) }));
+
+  it('puts the mapped pick in the response, and the response fits the schema', async () => {
+    const { res } = await search();
+    expect(res.query.pick).toEqual({ general: 'kitchen', specific: 'cookware', general_name: 'Kitchen and dining', specific_name: 'Pots and pans' });
+    const result = validateAgainst('search-response', res);
+    expect(result.ok ? [] : result.errors).toEqual([]);
+  });
+
+  it('starts beside the normalize call, before any Brave call', async () => {
+    const { fetch } = await search();
+    const firstBrave = fetch.calls.findIndex((c) => isBrave(c.url));
+    const names = fetch.calls.slice(0, firstBrave).map((c) => (JSON.parse(c.body!) as { response_format: { json_schema: { name: string } } }).response_format.json_schema.name);
+    expect(names.sort()).toEqual(['category', 'normalize']);
+  });
+
+  it('a failed category call leaves the search as it is without one, with the pick "none"', async () => {
+    const withPick = await search();
+    const without = await search(noCategory(defaultRoutes()));
+    expect(without.res.query.pick).toEqual({ general: 'none', specific: null });
+    const strip = (r: SearchResponse) => ({ ...r, query: { ...r.query, pick: undefined }, usage: undefined });
+    expect(strip(without.res)).toEqual(strip(withPick.res));
+    expect(without.res.usage.llm.map((u) => u.call)).toEqual(['normalize', 'enrich', 'enrich']);
+  });
+
+  it('an off-list reply never reaches the response as the model wrote it', async () => {
+    const { res } = await search(defaultRoutes({ category: llmReply({ general: 'Amazon Basics', specific: 'https://amazon.com/' }) }));
+    expect(res.query.pick).toEqual({ general: 'none', specific: null });
+    expectAmazonFree(res);
+  });
+
+  it('a failed normalize call still fails the search', async () => {
+    const routes = defaultRoutes({ normalize: llmReply({ category: 'x' }) });
+    await expect(search(routes)).rejects.toThrow(InvalidLlmOutput);
   });
 });
