@@ -54,7 +54,7 @@ Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `re
 | M3, no usable grade (never graded, or graded "unknown") | 16 | 15 | 21 | 19 |
 
 - **M1 and M2.** The one-shop gap on M1 is Barnes & Noble for jigsaw puzzle: "hobby store" returned it and "game store" did not. On the page the arms differ by one shop each way in that search (the `model` arm shows Barnes & Noble, the `list` arm shows Pinwheels and Play Toys). The other five searches give the same baseline shops in both arms.
-- **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops with no usable grade. Control for the grade join: the same join on the saved run of these six searches (`docs/evidence/quality/eval20-store-types`) gives 28 good, 13 bad and 10 graded "unknown" of 51 shown shops, with none unmatched.
+- **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops with no usable grade. Control for the grade join: the same join on the saved run of these six searches (`docs/evidence/quality/eval20-store-types`) gives 28 good, 13 bad and 10 graded "unknown" of 51 shown shops, with none unmatched. The join is by exact shop URL: of the shown shops with no grade under that URL, 1 or 2 per arm and round have a grade under another URL of the same domain in that search (another branch, or another page), so the join does not explain the gap between the arms.
 - **M4, noise.** M1 and M2 did not change between rounds in either arm. Shown nearby shops in common between the two rounds: 47 of 50 (`model`) and 44 of 49 (`list`). Between the arms: 33 of 63 in round 1 and 31 of 63 in round 2. The list wording changes about half of the shops shown and does not change how many baseline shops the page shows (M2).
 - **M5, wording.** The pairs differ in all six searches, by one phrase each: every search has one phrase that both arms sent.
 
@@ -73,4 +73,5 @@ Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `re
 - Each pair shares one phrase, so the test compares six single phrases, not twelve.
 - One reading per search. The test does not measure the benefit IDEA-1 claims from fixed wording: the model's own wording changed for 2 of 6 products since September, and the list's would not have.
 - The `list` arm used the hand pick. A wrong live pick would change its pair.
+- After a code review, `run-ab.ts` got two guards (the Brave stop now ends the run; a `list` search that did not send the list pair ends the run) and `score-ab.ts` compares the pairs without regard to order. `results.json` did not change.
 - `score-ab.ts` was changed once after the run: one `grades.json` under `docs/evidence/quality` has another shape and stopped the script. No measure changed.

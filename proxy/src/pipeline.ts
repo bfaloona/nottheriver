@@ -7,10 +7,10 @@ import { rankByScore, scoreCandidate, type ScoreInput } from '../ranking/score';
 import { filterBlocked, isBlocked, isBlockedDomain, isBlockedUrl, mentionsAmazon, scrubBlockedText } from './blocklist';
 import { createBraveClient, type BraveClient } from './brave';
 import type {
-  Candidate, Dropped, Env, Deps, KvStore, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
+  Candidate, CategoryPick, Dropped, Env, Deps, KvStore, LlmUsage, Normalized, ResultKind, SearchRequest, SearchResponse, SearchResult, Usage,
 } from './contract';
 import { enrichAll, type CertificationRow, type ChainRow, type CuratedData, type EnrichedRow, type NegativeRow } from './enrich';
-import { pickCategory } from './category';
+import { NO_PICK, pickCategory } from './category';
 import { InvalidLlmOutput } from './errors';
 import { NORMALIZE_MAX_TOKENS, createLlmClient, type LlmClient } from './llm';
 import { dropReason, isEditorialUrl, splitEditorial } from './precision';
@@ -26,6 +26,7 @@ export const MAX_DROPPED = 60;
 export const MAX_BRANCHES_PER_DOMAIN = 2;
 export const MAX_FARTHER = 3;
 export const MAX_LOCAL_MILES = 100;
+export const CATEGORY_GRACE_MS = 1000;
 const KM_PER_MILE = 1.609344;
 
 // RUCA 1-3 is metropolitan; 4-10 (micropolitan, small town, rural) spreads shops farther apart.
@@ -327,7 +328,12 @@ export async function runSearch(req: SearchRequest, env: Env, deps: Deps): Promi
   const dropped = placeCategoryDrops(brave.rejected);
   const kept = await enrichAndFilter(pass1, llm, n, dropped, deps); // no model call when no shop survives pass 1
   const scored = scoreAll(kept, n, req, siteUrl);
-  const pick = await picking; // before the usage is totalled, so the call is counted
+  // By now the call has had the whole search to finish. A stalled one gets a short grace period
+  // and then gives up its label, so it cannot hold back results that are ready.
+  let graceTimer!: ReturnType<typeof setTimeout>;
+  const grace = new Promise<CategoryPick>((resolve) => { graceTimer = setTimeout(() => resolve(NO_PICK), CATEGORY_GRACE_MS); });
+  const pick = await Promise.race([picking, grace]); // before the usage is totalled, so a finished call is counted
+  clearTimeout(graceTimer);
   const res = finalizeResponse(scored, n, req, totalUsage(brave.calls, [...llm.usage]), dropped);
   const unjudged = new Set(kept.filter((r) => r.classification === null).map((r) => r.candidate));
   const unjudgedIds = new Set(scored.filter((r) => unjudged.has(r.input.candidate)).map((r) => r.result.id));

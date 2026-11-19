@@ -67,7 +67,10 @@ export async function pickCategory(product: string, llm: LlmClient, cache: KvSto
     const cached = cache && key ? await readCached(cache, key, 'category') : null;
     if (cached !== null) return toPick(cached as CategoryReply);
     const raw = await llm.complete<CategoryReply>('category', buildCategoryPrompt({ product }), CATEGORY_MAX_TOKENS);
-    if (cache && key) await writeCached(cache, key, raw);
+    // A reply the list does not hold is not cached, so one stray answer cannot leave a product
+    // without a category for 30 days. The model's own "none" is a reading and is cached.
+    const offList = mapPick(raw.general, raw.specific).rule === 'MAP-7' && tidy(raw.general) !== 'none';
+    if (cache && key && !offList) await writeCached(cache, key, raw);
     return toPick(raw);
   } catch {
     return NO_PICK;

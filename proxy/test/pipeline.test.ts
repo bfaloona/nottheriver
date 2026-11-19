@@ -8,7 +8,7 @@ import { enrichAll, type EnrichedRow } from '../src/enrich';
 import { InvalidLlmOutput } from '../src/errors';
 import { MAX_BRAVE_CALLS } from '../src/brave';
 import { normalizeCacheKey } from '../src/normalize-cache';
-import { MAX_DROPPED, MAX_LOCAL_QUERIES, MAX_ONLINE_QUERIES, finalizeResponse, placeCategoryDrops, runSearch, scoreAll, type ScoredRow } from '../src/pipeline';
+import { CATEGORY_GRACE_MS, MAX_DROPPED, MAX_LOCAL_QUERIES, MAX_ONLINE_QUERIES, finalizeResponse, placeCategoryDrops, runSearch, scoreAll, type ScoredRow } from '../src/pipeline';
 import { estimateCost } from '../src/pricing';
 import { validateAgainst } from '../src/validate';
 import { defaultRoutes, makeFixtureFetch, type FixtureRoute } from '../../tests/fixtures/fixture-fetch';
@@ -673,6 +673,21 @@ describe('category pick', () => {
     const { res } = await search(defaultRoutes({ category: llmReply({ general: 'Amazon Basics', specific: 'https://amazon.com/' }) }));
     expect(res.query.pick).toEqual({ general: 'none', specific: null });
     expectAmazonFree(res);
+  });
+
+  it('a category call that never answers gives up its label after the grace period', async () => {
+    vi.useFakeTimers();
+    try {
+      const base = makeFixtureFetch(defaultRoutes());
+      const stalled: typeof fetch = (input, init) => (typeof init?.body === 'string' && init.body.includes('"name":"category"') ? new Promise<Response>(() => {}) : base(input, init));
+      const pending = runSearch(REQ, ENV, { fetch: stalled, now: () => 0, log: () => {} });
+      await vi.advanceTimersByTimeAsync(CATEGORY_GRACE_MS);
+      const res = await pending;
+      expect(res.query.pick).toEqual({ general: 'none', specific: null });
+      expect(res.online.length + res.local.length).toBeGreaterThan(0);
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it('a failed normalize call still fails the search', async () => {

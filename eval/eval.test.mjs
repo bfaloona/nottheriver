@@ -388,7 +388,7 @@ describe('category pick check', () => {
       saved('c-urban', ['none', null]),
     ]);
     expect(pickCheck(qs, picks, responses)).toEqual({
-      saved: 5, measured: 5, general_match: 2, general_match_rate: 0.4, both_levels_match: 1, second_pick_match: 2, products: 3, one_pick_products: 2,
+      saved: 5, measured: 5, general_match: 2, general_match_rate: 0.4, both_levels_match: 1, second_pick_match: 2, products: 3, products_searched_twice: 2, one_pick_products: 1,
       misses: [
         { id: 'a-rural', expected: 'kitchen/cookware', got: 'kitchen/' },
         { id: 'b-urban', expected: 'clothing/socks_underwear_swim', second_pick: 'outdoor/outdoor_clothing', got: 'outdoor/outdoor_clothing' },

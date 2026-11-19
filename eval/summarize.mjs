@@ -225,7 +225,8 @@ const pickText = (pick) => (pick ? `${pick[0]}/${pick[1] ?? ''}` : null);
  * Compares the category pick in each saved response (`query.pick`) with the hand pick for its
  * product (eval/picks.json). A response saved before the Worker made the category call has no pick
  * and is not measured, so an old run reports `measured: 0` and null ratios, not a failure.
- * `one_pick_products` counts products whose measured searches all got the same pick.
+ * `one_pick_products` counts products whose measured searches all got the same pick, among the
+ * `products_searched_twice` (a product with one measured search cannot disagree with itself).
  */
 export function pickCheck(queries, picks, responses) {
   const rows = queries.flatMap((q) => {
@@ -239,6 +240,7 @@ export function pickCheck(queries, picks, responses) {
   });
   const count = (f) => rows.filter(f).length;
   const byProduct = Map.groupBy(rows, (r) => r.product);
+  const repeated = [...byProduct.values()].filter((rs) => rs.length >= 2);
   const general = count((r) => r.general);
   return {
     saved: queries.filter((q) => responses.get(q.id)?.status === 200).length,
@@ -248,7 +250,8 @@ export function pickCheck(queries, picks, responses) {
     both_levels_match: count((r) => r.both),
     second_pick_match: count((r) => r.alt),
     products: byProduct.size,
-    one_pick_products: [...byProduct.values()].filter((rs) => new Set(rs.map((r) => r.got)).size === 1).length,
+    products_searched_twice: repeated.length,
+    one_pick_products: repeated.filter((rs) => new Set(rs.map((r) => r.got)).size === 1).length,
     misses: rows.filter((r) => !r.both).map((r) => ({ id: r.id, expected: pickText(r.expected.pick), ...(r.expected.alt && { second_pick: pickText(r.expected.alt) }), got: r.got })),
   };
 }

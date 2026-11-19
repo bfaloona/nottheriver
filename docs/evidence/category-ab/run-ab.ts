@@ -51,6 +51,7 @@ const env = {
   SITE_URL: conf.SITE_URL!,
 };
 
+let capHit = false;
 let braveLive = 0;
 let braveReplayed = 0;
 const calls: CallsFile = { ran: new Date().toISOString(), rounds, brave_live_calls: 0, brave_replayed_calls: 0, searches: [], place_calls: [] };
@@ -68,7 +69,11 @@ async function searchOnce(job: Query, arm: Arm, round: number, replay: Map<strin
     let reply = replay.get(key);
     const replayed = reply !== undefined;
     if (!reply) {
-      if (braveLive >= maxBrave) throw new Error(`stopped: ${braveLive} live Brave calls reached MAX_BRAVE`);
+      // The Brave client turns any fetch error into an upstream error, so the stop is a flag the loop reads.
+      if (braveLive >= maxBrave) {
+        capHit = true;
+        throw new Error('MAX_BRAVE reached');
+      }
       braveLive++;
       const res = await fetch(input, init);
       reply = { status: res.status, text: await res.text() };
@@ -92,11 +97,15 @@ async function searchOnce(job: Query, arm: Arm, round: number, replay: Map<strin
   try {
     body = await runSearch(request, { ...env, NORMALIZE_CACHE: cacheFor(arm, job.product) }, { fetch: recordingFetch, now: () => Date.now(), log: () => {} });
   } catch (e) {
-    if ((e as Error).message.startsWith('stopped:')) throw e;
     status = 502;
     body = { error: (e as Error).name };
   }
+  if (capHit) throw new Error(`stopped: ${braveLive} live Brave calls reached MAX_BRAVE; this search is not saved`);
   const elapsed = Math.round(performance.now() - t0);
+  // A list search that did not read the shared reading would run on the model's own wording.
+  if (arm === 'list' && status === 200 && JSON.stringify((body as SearchResponse).query.local_queries) !== JSON.stringify(listPair(job.product))) {
+    throw new Error(`stopped: the list arm of ${job.id} did not send the list pair`);
+  }
   const dir = path.join(OUT, `${arm}-r${round}`, 'responses');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, `${job.id}.json`), JSON.stringify({ id: job.id, checked: new Date().toISOString(), request, status, elapsed_ms: elapsed, body }, null, 2));

@@ -143,11 +143,20 @@ describe('pickCategory', () => {
     expect(second.fetch.calls).toHaveLength(0);
   });
 
-  it('caches an off-list reply as the model wrote it, and maps it on every read', async () => {
+  it('does not cache an off-list reply, so one stray answer does not stay for 30 days', async () => {
     const kv = fakeKv();
     const { llm } = client(categoryRoute(() => reply({ general: 'gadgets', specific: 'none' })));
     expect(await pickCategory('thing', llm, kv.binding)).toEqual(NO_PICK);
-    expect(JSON.parse([...kv.store.values()][0]!)).toEqual({ general: 'gadgets', specific: 'none' });
+    expect(kv.store.size).toBe(0);
+  });
+
+  it('caches the model\'s own "none" and "not_a_product" as readings', async () => {
+    for (const r of [{ general: 'none', specific: 'none' }, { general: 'not_a_product', specific: 'meal' }]) {
+      const kv = fakeKv();
+      const { llm } = client(categoryRoute(() => reply(r)));
+      await pickCategory('thing', llm, kv.binding);
+      expect(JSON.parse([...kv.store.values()][0]!)).toEqual(r);
+    }
   });
 
   it('a cached value that fails the schema is a miss', async () => {

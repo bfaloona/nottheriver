@@ -16,7 +16,7 @@ function spread(xs) {
 }
 
 /** @type {Record<string, Array<{ prompt_tokens: number; completion_tokens: number; cost_usd: number | null }>>} */
-const calls = { normalize: [], enrich: [] };
+const calls = { normalize: [], enrich: [], category: [] };
 /** @type {Array<{ brave: number; normalize: number; enrichPrompt: number; enrichCompletion: number; cost: number }>} */
 const searches = [];
 for (const dir of process.argv.slice(2)) {
@@ -25,10 +25,10 @@ for (const dir of process.argv.slice(2)) {
     if (!usage) continue;
     const s = { brave: usage.brave_calls, normalize: 0, enrichPrompt: 0, enrichCompletion: 0, cost: 0 };
     for (const c of usage.llm) {
-      calls[c.call].push(c);
+      (calls[c.call] ??= []).push(c);
       s.cost += c.cost_usd ?? 0;
       if (c.call === 'normalize') s.normalize++;
-      else { s.enrichPrompt += c.prompt_tokens; s.enrichCompletion += c.completion_tokens; }
+      else if (c.call === 'enrich') { s.enrichPrompt += c.prompt_tokens; s.enrichCompletion += c.completion_tokens; }
     }
     searches.push(s);
   }

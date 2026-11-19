@@ -21,7 +21,7 @@ const normName = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
 
 function saved(arm: Arm, round: number): Map<string, Saved> {
   const dir = path.join(OUT, `${arm}-r${round}`, 'responses');
-  return new Map(fs.readdirSync(dir).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as Saved).map((s) => [s.id, s]));
+  return new Map(fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as Saved).map((s) => [s.id, s]));
 }
 const shownLocal = (s: Saved | undefined): SearchResult[] => (s?.status === 200 ? (sectionResults(s.body, 'local') as SearchResult[]) : []);
 
@@ -104,7 +104,8 @@ const perSearch = jobs.map((job) => {
     m5_model_pair: modelPair,
     m5_list_pair: listPair(job.product),
     m5_list_pair_as_sent: sentByList?.status === 200 ? sentByList.body.query.local_queries ?? [] : [],
-    m5_pairs_differ: JSON.stringify(modelPair) !== JSON.stringify(sentByList?.status === 200 ? sentByList.body.query.local_queries : null),
+    // The same two phrases in another order are the same two map searches. Null when a search failed.
+    m5_pairs_differ: first?.status === 200 && sentByList?.status === 200 ? JSON.stringify([...modelPair].sort()) !== JSON.stringify([...(sentByList.body.query.local_queries ?? [])].sort()) : null,
     live_pick: first?.status === 200 ? first.body.query.pick ?? null : null,
     ...Object.fromEntries(ARMS.flatMap((arm) => rounds.map((round) => [`${arm}_r${round}`, cell(arm, round)]))),
   };
