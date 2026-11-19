@@ -1,7 +1,7 @@
 # Plan: product category list and normalize fields
 Status: draft for owner discussion
 
-Written 2026-11-18. No production code or prompt changed. No model, Brave or web call was made for this plan as written. On 2026-11-19 the fields table, MAP-3, the schema note, the prompt draft and the prompt length table were revised after two runs of model calls (`docs/evidence/category-picks/README.md`); the other sections are as written on 2026-11-18. Companion to `docs/plans/category-uses.md` (the uses) and `docs/plans/dynamic-categorization.md` (the memo). Files: the list is `data/categories.draft.json`; the tests are `docs/evidence/category-list/run-tests.ts` with `hand-labels.json` and `results.json` beside it.
+Written 2026-11-18. No production code or prompt changed. No model, Brave or web call was made for this plan as written. On 2026-11-19 the fields table, MAP-3, the schema note, the prompt draft and the prompt length table were revised after two runs of model calls (`docs/evidence/category-picks/README.md`); the other sections are as written on 2026-11-18. A third run added the "Separate category call" section the same day. Companion to `docs/plans/category-uses.md` (the uses) and `docs/plans/dynamic-categorization.md` (the memo). Files: the list is `data/categories.draft.json`; the tests are `docs/evidence/category-list/run-tests.ts` with `hand-labels.json` and `results.json` beside it.
 
 ## Recommendation
 
@@ -93,6 +93,8 @@ The two measured figures are from `docs/evidence/category-picks/README.md`. The 
 ## Separate category call
 
 Added 2026-11-19 as an alternative to the prompt draft above. Both runs showed that the list inside the normalize prompt changes the nearby wording and doubles the prompt tokens. In this design `proxy/prompts/normalize.ts` and its schema do not change. A second model call asks for the category only and starts at the same time as the normalize call. Test results: `docs/evidence/category-picks/README.md`, "Third run".
+
+**Measured (third run).** On the production model this call passed all six pass marks on the 48 probes and on the 19 held-out probes: every input got the same pick in 3 runs, and the pair took a median of 554 ms against 552 ms for the normalize call in it. It does not cut cost. The call has 569 prompt tokens and costs a median of $0.000444 with no cached tokens, so a search's first two model calls cost $0.000783 against $0.000339 today and $0.000740 for the second draft (OpenRouter's reported cost). The Recommendation section above was written before this run and still names the one-prompt change.
 
 **Request.** The same models, provider settings, temperature and token limit as the normalize call (`proxy/src/llm.ts`). The schema name is `category`.
 

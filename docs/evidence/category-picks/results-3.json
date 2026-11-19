@@ -1,0 +1,2658 @@
+{
+ "about": "Written by grade-category.ts from raw-3.json. Every figure is computed from the saved replies. \"tuned\" is the 48 probes; \"held_out\" is held-out.json. Arm \"category\" is ARM-G (production models), arm \"haiku\" is ARM-H.",
+ "totals": {
+  "units": 201,
+  "failed_units": [],
+  "runs_per_probe": 3,
+  "attempts": 806,
+  "legs_with_a_second_attempt": [
+   "haiku: notebook (run 2)",
+   "haiku: pocket knife (run 2)"
+  ],
+  "legs_with_no_valid_reply": [],
+  "first_call": "2026-11-19T09:52:45.408Z",
+  "last_call": "2026-11-19T09:59:30.692Z",
+  "cost_usd_reported_by_openrouter_this_file": {
+   "attempts_with_a_cost": 806,
+   "sum": 0.17724,
+   "median": 0.0001643
+  },
+  "third_run_cost_usd_by_file": [
+   {
+    "file": "raw-3-pilot.json",
+    "attempts": 144,
+    "cost_usd": 0.046703
+   },
+   {
+    "file": "raw-3-smoke-1.json",
+    "attempts": 4,
+    "cost_usd": 0.00081
+   },
+   {
+    "file": "raw-3-smoke-2.json",
+    "attempts": 1,
+    "cost_usd": 0.000133
+   },
+   {
+    "file": "raw-3.json",
+    "attempts": 806,
+    "cost_usd": 0.17724
+   }
+  ],
+  "third_run_cost_usd_total": 0.224886
+ },
+ "haiku": {
+  "model": "anthropic/claude-haiku-5.5",
+  "fields_left_out": [
+   "temperature"
+  ]
+ },
+ "pass_marks": {
+  "tuned": {
+   "category": {
+    "pm1": {
+     "n": 72,
+     "of": 72,
+     "pct": 100,
+     "pass": true
+    },
+    "pm2": {
+     "n": 30,
+     "of": 30,
+     "pct": 100,
+     "pass": true
+    },
+    "pm3": {
+     "n": 48,
+     "of": 48,
+     "pct": 100,
+     "pass": true
+    },
+    "pm4": {
+     "n": 27,
+     "of": 30,
+     "pct": 90,
+     "pass": true
+    },
+    "pm5": {
+     "violations": 0,
+     "of": 144,
+     "pass": true
+    }
+   },
+   "haiku": {
+    "pm1": {
+     "n": 72,
+     "of": 72,
+     "pct": 100,
+     "pass": true
+    },
+    "pm2": {
+     "n": 28,
+     "of": 30,
+     "pct": 93.3,
+     "pass": true
+    },
+    "pm3": {
+     "n": 41,
+     "of": 48,
+     "pct": 85.4,
+     "pass": false
+    },
+    "pm4": {
+     "n": 28,
+     "of": 30,
+     "pct": 93.3,
+     "pass": true
+    },
+    "pm5": {
+     "violations": 8,
+     "of": 144,
+     "pass": false
+    }
+   }
+  },
+  "held_out": {
+   "category": {
+    "pm1": {
+     "n": 18,
+     "of": 18,
+     "pct": 100,
+     "pass": true
+    },
+    "pm2": {
+     "n": 18,
+     "of": 21,
+     "pct": 85.7,
+     "pass": true
+    },
+    "pm3": {
+     "n": 19,
+     "of": 19,
+     "pct": 100,
+     "pass": true
+    },
+    "pm4": {
+     "n": 18,
+     "of": 18,
+     "pct": 100,
+     "pass": true
+    },
+    "pm5": {
+     "violations": 0,
+     "of": 57,
+     "pass": true
+    }
+   },
+   "haiku": {
+    "pm1": {
+     "n": 18,
+     "of": 18,
+     "pct": 100,
+     "pass": true
+    },
+    "pm2": {
+     "n": 21,
+     "of": 21,
+     "pct": 100,
+     "pass": true
+    },
+    "pm3": {
+     "n": 16,
+     "of": 19,
+     "pct": 84.2,
+     "pass": false
+    },
+    "pm4": {
+     "n": 18,
+     "of": 18,
+     "pct": 100,
+     "pass": true
+    },
+    "pm5": {
+     "violations": 1,
+     "of": 57,
+     "pass": false
+    }
+   }
+  }
+ },
+ "pm7_wall_time_all_units": {
+  "category": {
+   "pairs": 201,
+   "pair_ms_median": 554,
+   "normalize_in_pair_ms_median": 552,
+   "category_call_ms_median": 266,
+   "ratio_to_normalize_in_pair": 1.004,
+   "pass_mark_ratio": 1.15,
+   "pass": true,
+   "normalize_solo_ms_median": 556,
+   "ratio_to_normalize_solo": 0.996,
+   "pass_against_solo": true,
+   "pairs_where_the_category_call_finished_last": 5,
+   "extra_ms_per_pair": {
+    "n": 201,
+    "min": 0,
+    "median": 0,
+    "max": 1698,
+    "mean": 9.95
+   }
+  },
+  "haiku": {
+   "pairs": 201,
+   "pair_ms_median": 1191,
+   "normalize_in_pair_ms_median": 552,
+   "category_call_ms_median": 1177,
+   "ratio_to_normalize_in_pair": 2.158,
+   "pass_mark_ratio": 1.15,
+   "pass": false,
+   "normalize_solo_ms_median": 556,
+   "ratio_to_normalize_solo": 2.142,
+   "pass_against_solo": false,
+   "pairs_where_the_category_call_finished_last": 194,
+   "extra_ms_per_pair": {
+    "n": 201,
+    "min": 0,
+    "median": 578,
+    "max": 4547,
+    "mean": 806.32
+   }
+  }
+ },
+ "pm7_wall_time_round_1_only": {
+  "category": {
+   "pairs": 67,
+   "pair_ms_median": 557,
+   "normalize_in_pair_ms_median": 540,
+   "category_call_ms_median": 262,
+   "ratio_to_normalize_in_pair": 1.031,
+   "pass_mark_ratio": 1.15,
+   "pass": true,
+   "normalize_solo_ms_median": 604,
+   "ratio_to_normalize_solo": 0.922,
+   "pass_against_solo": true,
+   "pairs_where_the_category_call_finished_last": 2,
+   "extra_ms_per_pair": {
+    "n": 67,
+    "min": 0,
+    "median": 0,
+    "max": 194,
+    "mean": 3.85
+   }
+  },
+  "haiku": {
+   "pairs": 67,
+   "pair_ms_median": 1335,
+   "normalize_in_pair_ms_median": 540,
+   "category_call_ms_median": 1315,
+   "ratio_to_normalize_in_pair": 2.472,
+   "pass_mark_ratio": 1.15,
+   "pass": false,
+   "normalize_solo_ms_median": 604,
+   "ratio_to_normalize_solo": 2.21,
+   "pass_against_solo": false,
+   "pairs_where_the_category_call_finished_last": 65,
+   "extra_ms_per_pair": {
+    "n": 67,
+    "min": 0,
+    "median": 636,
+    "max": 3053,
+    "mean": 870.85
+   }
+  }
+ },
+ "per_call": {
+  "today": {
+   "attempts": 201,
+   "http_200": 201,
+   "valid": 201,
+   "prompt_tokens": {
+    "n": 201,
+    "min": 347,
+    "median": 348,
+    "max": 355,
+    "mean": 349.42
+   },
+   "completion_tokens": {
+    "n": 201,
+    "min": 46,
+    "median": 78,
+    "max": 142,
+    "mean": 84.41
+   },
+   "latency_ms": {
+    "n": 201,
+    "min": 330,
+    "median": 552,
+    "max": 2005,
+    "mean": 604.23
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 201,
+    "sum": 0.043427,
+    "median": 0.0001864
+   },
+   "attempts_with_cached_prompt_tokens": 145,
+   "no_cached_tokens": {
+    "attempts": 56,
+    "prompt_tokens_median": 349,
+    "completion_tokens_median": 77.5,
+    "cost_usd_median": 0.00033975,
+    "cost_usd_mean": 0.00034902,
+    "latency_ms_median": 561
+   },
+   "models": {
+    "google/gemma-4-31b-it": 201
+   },
+   "providers": {
+    "ModelRun": 201
+   },
+   "finish_reasons": {
+    "stop": 201
+   }
+  },
+  "solo": {
+   "attempts": 201,
+   "http_200": 201,
+   "valid": 201,
+   "prompt_tokens": {
+    "n": 201,
+    "min": 347,
+    "median": 348,
+    "max": 355,
+    "mean": 349.42
+   },
+   "completion_tokens": {
+    "n": 201,
+    "min": 46,
+    "median": 78,
+    "max": 142,
+    "mean": 84.6
+   },
+   "latency_ms": {
+    "n": 201,
+    "min": 337,
+    "median": 556,
+    "max": 1203,
+    "mean": 596.09
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 201,
+    "sum": 0.043415,
+    "median": 0.0001876
+   },
+   "attempts_with_cached_prompt_tokens": 146,
+   "no_cached_tokens": {
+    "attempts": 55,
+    "prompt_tokens_median": 348,
+    "completion_tokens_median": 77,
+    "cost_usd_median": 0.000339,
+    "cost_usd_mean": 0.0003439,
+    "latency_ms_median": 535
+   },
+   "models": {
+    "google/gemma-4-31b-it": 201
+   },
+   "providers": {
+    "ModelRun": 201
+   },
+   "finish_reasons": {
+    "stop": 201
+   }
+  },
+  "category": {
+   "attempts": 201,
+   "http_200": 201,
+   "valid": 201,
+   "prompt_tokens": {
+    "n": 201,
+    "min": 568,
+    "median": 569,
+    "max": 576,
+    "mean": 570.42
+   },
+   "completion_tokens": {
+    "n": 201,
+    "min": 13,
+    "median": 16,
+    "max": 21,
+    "mean": 15.73
+   },
+   "latency_ms": {
+    "n": 201,
+    "min": 212,
+    "median": 265,
+    "max": 2240,
+    "mean": 300.61
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 201,
+    "sum": 0.057543,
+    "median": 0.00016615
+   },
+   "attempts_with_cached_prompt_tokens": 113,
+   "no_cached_tokens": {
+    "attempts": 88,
+    "prompt_tokens_median": 569,
+    "completion_tokens_median": 16.5,
+    "cost_usd_median": 0.00044375,
+    "cost_usd_mean": 0.00044342,
+    "latency_ms_median": 263.5
+   },
+   "models": {
+    "google/gemma-4-31b-it": 201
+   },
+   "providers": {
+    "ModelRun": 201
+   },
+   "finish_reasons": {
+    "stop": 201
+   }
+  },
+  "haiku": {
+   "attempts": 203,
+   "http_200": 203,
+   "valid": 201,
+   "prompt_tokens": {
+    "n": 203,
+    "min": 1048,
+    "median": 1053,
+    "max": 1060,
+    "mean": 1053.16
+   },
+   "completion_tokens": {
+    "n": 203,
+    "min": 17,
+    "median": 82,
+    "max": 400,
+    "mean": 113.06
+   },
+   "latency_ms": {
+    "n": 203,
+    "min": 561,
+    "median": 1185,
+    "max": 3571,
+    "mean": 1385.7
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 203,
+    "sum": 0.032855,
+    "median": 0.0001466
+   },
+   "attempts_with_cached_prompt_tokens": 0,
+   "no_cached_tokens": {
+    "attempts": 203,
+    "prompt_tokens_median": 1053,
+    "completion_tokens_median": 82,
+    "cost_usd_median": 0.0001466,
+    "cost_usd_mean": 0.00016185,
+    "latency_ms_median": 1185
+   },
+   "models": {
+    "anthropic/claude-haiku-5.5": 203
+   },
+   "providers": {
+    "Google": 203
+   },
+   "finish_reasons": {
+    "stop": 201,
+    "length": 2
+   }
+  }
+ },
+ "normalize_calls_with_no_cached_tokens_pair_and_solo": {
+  "attempts": 111,
+  "prompt_tokens_median": 348,
+  "completion_tokens_median": 77,
+  "cost_usd_median": 0.000339,
+  "cost_usd_mean": 0.00034648,
+  "latency_ms_median": 550
+ },
+ "cost_per_search_with_no_cached_tokens": {
+  "category": {
+   "normalize_cost_usd_median": 0.000339,
+   "category_call_cost_usd_median": 0.00044375,
+   "both_usd": 0.00078275,
+   "times_today": 2.31
+  },
+  "haiku": {
+   "normalize_cost_usd_median": 0.000339,
+   "category_call_cost_usd_median": 0.0001466,
+   "both_usd": 0.0004856,
+   "times_today": 1.43
+  }
+ },
+ "arm_agreement_same_mapped_pick": {
+  "n": 164,
+  "of": 201,
+  "pct": 81.6,
+  "units_that_differ": [
+   "Kobo Clara (run 1): electronics/phones_tablets vs electronics/",
+   "LEGO 10311 (run 1): toys_hobbies/models_collectibles vs toys_hobbies/toys",
+   "haircut (run 1): not_a_product/service vs not_a_product/unclear",
+   "pizza delivery (run 1): not_a_product/meal vs not_a_product/service",
+   "hotel room (run 1): not_a_product/place_to_stay vs not_a_product/unclear",
+   "bathroom remodel (run 1): not_a_product/room vs not_a_product/service",
+   "camping (run 1): not_a_product/activity vs outdoor/",
+   "yoga class (run 1): not_a_product/activity vs not_a_product/unclear",
+   "firewood (run 1): garden/ vs tools_hardware/",
+   "notebook (run 1): books_media/stationery_office vs electronics/computers",
+   "pocket knife (run 1): tools_hardware/hand_tools vs tools_hardware/",
+   "sewing machine (run 1): toys_hobbies/craft_supplies vs toys_hobbies/",
+   "toilet paper (run 1): none/ vs home/",
+   "??? (run 1): none/ vs not_a_product/unclear",
+   "Kobo Clara (run 2): electronics/phones_tablets vs electronics/",
+   "LEGO 10311 (run 2): toys_hobbies/models_collectibles vs toys_hobbies/toys",
+   "pizza delivery (run 2): not_a_product/meal vs not_a_product/service",
+   "hotel room (run 2): not_a_product/place_to_stay vs not_a_product/unclear",
+   "bathroom remodel (run 2): not_a_product/room vs not_a_product/service",
+   "camping (run 2): not_a_product/activity vs outdoor/",
+   "yoga class (run 2): not_a_product/activity vs not_a_product/unclear",
+   "firewood (run 2): garden/ vs tools_hardware/",
+   "sewing machine (run 2): toys_hobbies/craft_supplies vs toys_hobbies/",
+   "work boots (run 2): clothing/workwear vs clothing/shoes",
+   "trash bags (run 2): none/ vs home/",
+   "vacation rental (run 2): not_a_product/place_to_stay vs not_a_product/unclear",
+   "??? (run 2): none/ vs not_a_product/unclear",
+   "Kobo Clara (run 3): electronics/phones_tablets vs electronics/",
+   "LEGO 10311 (run 3): toys_hobbies/models_collectibles vs toys_hobbies/toys",
+   "haircut (run 3): not_a_product/service vs not_a_product/unclear",
+   "pizza delivery (run 3): not_a_product/meal vs not_a_product/service",
+   "bathroom remodel (run 3): not_a_product/room vs not_a_product/service",
+   "yoga class (run 3): not_a_product/activity vs not_a_product/unclear",
+   "sewing machine (run 3): toys_hobbies/craft_supplies vs toys_hobbies/",
+   "work boots (run 3): clothing/workwear vs clothing/shoes",
+   "trash bags (run 3): none/ vs home/",
+   "??? (run 3): none/ vs not_a_product/unclear"
+  ]
+ },
+ "today_prompt": {
+  "inputs": 67,
+  "nearby_wording_same_in_pair_and_solo_round_1": {
+   "n": 60,
+   "of": 67,
+   "pct": 89.6
+  }
+ },
+ "sets": {
+  "tuned": {
+   "arms": {
+    "category": {
+     "missing_a_run": [],
+     "pass_marks": {
+      "pm1_brand_general_matches_label": {
+       "n": 72,
+       "of": 72,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm2_nonproduct_gets_not_a_product": {
+       "n": 30,
+       "of": 30,
+       "pct": 100,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": []
+      },
+      "pm3_same_pick_in_all_runs_both_levels": {
+       "n": 48,
+       "of": 48,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm4_no_specific_where_label_has_none": {
+       "n": 27,
+       "of": 30,
+       "pct": 90,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": [
+        "pocket knife (run 1): tools_hardware/hand_tools",
+        "pocket knife (run 2): tools_hardware/hand_tools",
+        "pocket knife (run 3): tools_hardware/hand_tools"
+       ]
+      },
+      "pm5_only_list_ids_or_reserved_values": {
+       "calls": 144,
+       "violations": 0,
+       "by_type": {},
+       "list": [],
+       "pass": true
+      }
+     },
+     "side_figures": {
+      "same_pick_in_all_runs_general_only": {
+       "n": 48,
+       "of": 48,
+       "pct": 100
+      },
+      "nonsense_gets_not_a_product": {
+       "n": 3,
+       "of": 3,
+       "pct": 100
+      },
+      "nonproduct_reason_matches_label": {
+       "n": 30,
+       "of": 30,
+       "pct": 100
+      },
+      "forced_specific_where_general_right_and_label_has_none": {
+       "n": 0,
+       "of": 12,
+       "pct": 0
+      },
+      "by_rule": {
+       "MAP-2": 87,
+       "MAP-3": 18,
+       "MAP-6": 30,
+       "MAP-7": 9
+      },
+      "by_kind": {
+       "brand": {
+        "calls": 72,
+        "general_matches_label": {
+         "n": 72,
+         "of": 72,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 69,
+         "of": 72,
+         "pct": 95.8
+        }
+       },
+       "nonproduct": {
+        "calls": 30,
+        "general_matches_label": {
+         "n": 30,
+         "of": 30,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 30,
+         "of": 30,
+         "pct": 100
+        }
+       },
+       "gap": {
+        "calls": 15,
+        "general_matches_label": {
+         "n": 9,
+         "of": 15,
+         "pct": 60
+        },
+        "both_levels_match_label": {
+         "n": 9,
+         "of": 15,
+         "pct": 60
+        }
+       },
+       "two": {
+        "calls": 27,
+        "general_matches_label": {
+         "n": 24,
+         "of": 27,
+         "pct": 88.9
+        },
+        "both_levels_match_label": {
+         "n": 21,
+         "of": 27,
+         "pct": 77.8
+        }
+       }
+      }
+     },
+     "picks": [
+      {
+       "input": "macbook",
+       "kind": "brand",
+       "label": "electronics/computers",
+       "picks": [
+        "electronics/computers",
+        "electronics/computers",
+        "electronics/computers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "MacBook Air M3",
+       "kind": "brand",
+       "label": "electronics/computers",
+       "picks": [
+        "electronics/computers",
+        "electronics/computers",
+        "electronics/computers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "DeWalt DCD771",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Makita XFD131",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "iPhone 15",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/phones_tablets",
+        "electronics/phones_tablets",
+        "electronics/phones_tablets"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Kobo Clara",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/phones_tablets",
+        "electronics/phones_tablets",
+        "electronics/phones_tablets"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Le Creuset dutch oven",
+       "kind": "brand",
+       "label": "kitchen/cookware",
+       "picks": [
+        "kitchen/cookware",
+        "kitchen/cookware",
+        "kitchen/cookware"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Vitamix 5200",
+       "kind": "brand",
+       "label": "kitchen/small_kitchen_appliances",
+       "picks": [
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Dyson V8",
+       "kind": "brand",
+       "label": "appliances/vacuums",
+       "picks": [
+        "appliances/vacuums",
+        "appliances/vacuums",
+        "appliances/vacuums"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Patagonia Nano Puff",
+       "kind": "brand",
+       "label": "outdoor/outdoor_clothing",
+       "picks": [
+        "outdoor/outdoor_clothing",
+        "outdoor/outdoor_clothing",
+        "outdoor/outdoor_clothing"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Levi's 501",
+       "kind": "brand",
+       "label": "clothing/everyday_clothing",
+       "picks": [
+        "clothing/everyday_clothing",
+        "clothing/everyday_clothing",
+        "clothing/everyday_clothing"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Birkenstock Arizona",
+       "kind": "brand",
+       "label": "clothing/shoes",
+       "picks": [
+        "clothing/shoes",
+        "clothing/shoes",
+        "clothing/shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Brooks Ghost 16",
+       "kind": "brand",
+       "label": "sports/running_shoes",
+       "picks": [
+        "sports/running_shoes",
+        "sports/running_shoes",
+        "sports/running_shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Trek FX 2",
+       "kind": "brand",
+       "label": "sports/bikes",
+       "picks": [
+        "sports/bikes",
+        "sports/bikes",
+        "sports/bikes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "LEGO 10311",
+       "kind": "brand",
+       "label": "toys_hobbies/toys",
+       "picks": [
+        "toys_hobbies/models_collectibles",
+        "toys_hobbies/models_collectibles",
+        "toys_hobbies/models_collectibles"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Catan",
+       "kind": "brand",
+       "label": "toys_hobbies/puzzles_board_games",
+       "picks": [
+        "toys_hobbies/puzzles_board_games",
+        "toys_hobbies/puzzles_board_games",
+        "toys_hobbies/puzzles_board_games"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Yeti Rambler",
+       "kind": "brand",
+       "label": "kitchen/tableware_drinkware",
+       "picks": [
+        "kitchen/tableware_drinkware",
+        "kitchen/tableware_drinkware",
+        "kitchen/tableware_drinkware"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Weber Spirit II",
+       "kind": "brand",
+       "label": "garden/grills_patio",
+       "picks": [
+        "garden/grills_patio",
+        "garden/grills_patio",
+        "garden/grills_patio"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Stihl MS 170",
+       "kind": "brand",
+       "label": "garden/yard_power_equipment",
+       "picks": [
+        "garden/yard_power_equipment",
+        "garden/yard_power_equipment",
+        "garden/yard_power_equipment"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Fender Stratocaster",
+       "kind": "brand",
+       "label": "books_media/musical_instruments",
+       "picks": [
+        "books_media/musical_instruments",
+        "books_media/musical_instruments",
+        "books_media/musical_instruments"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Graco SlimFit3",
+       "kind": "brand",
+       "label": "baby_kids/car_seats_strollers",
+       "picks": [
+        "baby_kids/car_seats_strollers",
+        "baby_kids/car_seats_strollers",
+        "baby_kids/car_seats_strollers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Nintendo Switch",
+       "kind": "brand",
+       "label": "electronics/video_games",
+       "picks": [
+        "electronics/video_games",
+        "electronics/video_games",
+        "electronics/video_games"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Canon EOS R10",
+       "kind": "brand",
+       "label": "electronics/cameras",
+       "picks": [
+        "electronics/cameras",
+        "electronics/cameras",
+        "electronics/cameras"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Michelin X-Ice",
+       "kind": "brand",
+       "label": "auto/tires",
+       "picks": [
+        "auto/tires",
+        "auto/tires",
+        "auto/tires"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "haircut",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "plumber",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "pizza delivery",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/meal",
+        "not_a_product/meal",
+        "not_a_product/meal"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "sushi",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/meal",
+        "not_a_product/meal",
+        "not_a_product/meal"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "hotel room",
+       "kind": "nonproduct",
+       "label": "not_a_product/place_to_stay",
+       "picks": [
+        "not_a_product/place_to_stay",
+        "not_a_product/place_to_stay",
+        "not_a_product/place_to_stay"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "kitchen",
+       "kind": "nonproduct",
+       "label": "not_a_product/room",
+       "picks": [
+        "not_a_product/room",
+        "not_a_product/room",
+        "not_a_product/room"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "bathroom remodel",
+       "kind": "nonproduct",
+       "label": "not_a_product/room",
+       "picks": [
+        "not_a_product/room",
+        "not_a_product/room",
+        "not_a_product/room"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "camping",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "not_a_product/activity",
+        "not_a_product/activity",
+        "not_a_product/activity"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "yoga class",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "not_a_product/activity",
+        "not_a_product/activity",
+        "not_a_product/activity"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "asdfgh",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "dishwasher tablets",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "laundry detergent",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "firewood",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "garden/",
+        "garden/",
+        "garden/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "gift card",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "eyeglasses",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "health_beauty/",
+        "health_beauty/",
+        "health_beauty/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "notebook",
+       "kind": "two",
+       "label": "books_media/stationery_office",
+       "picks": [
+        "books_media/stationery_office",
+        "books_media/stationery_office",
+        "books_media/stationery_office"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "pocket knife",
+       "kind": "two",
+       "label": "outdoor/",
+       "picks": [
+        "tools_hardware/hand_tools",
+        "tools_hardware/hand_tools",
+        "tools_hardware/hand_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "sewing machine",
+       "kind": "two",
+       "label": "toys_hobbies/fabric_yarn",
+       "picks": [
+        "toys_hobbies/craft_supplies",
+        "toys_hobbies/craft_supplies",
+        "toys_hobbies/craft_supplies"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "yoga mat",
+       "kind": "two",
+       "label": "sports/fitness_equipment",
+       "picks": [
+        "sports/fitness_equipment",
+        "sports/fitness_equipment",
+        "sports/fitness_equipment"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "baby monitor",
+       "kind": "two",
+       "label": "baby_kids/",
+       "picks": [
+        "baby_kids/",
+        "baby_kids/",
+        "baby_kids/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "dog bed",
+       "kind": "two",
+       "label": "pets/",
+       "picks": [
+        "pets/",
+        "pets/",
+        "pets/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "work boots",
+       "kind": "two",
+       "label": "clothing/workwear",
+       "picks": [
+        "clothing/workwear",
+        "clothing/workwear",
+        "clothing/workwear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "garden gloves",
+       "kind": "two",
+       "label": "garden/",
+       "picks": [
+        "garden/",
+        "garden/",
+        "garden/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "bird feeder",
+       "kind": "two",
+       "label": "garden/",
+       "picks": [
+        "garden/",
+        "garden/",
+        "garden/"
+       ],
+       "same_all_runs": true
+      }
+     ]
+    },
+    "haiku": {
+     "missing_a_run": [],
+     "pass_marks": {
+      "pm1_brand_general_matches_label": {
+       "n": 72,
+       "of": 72,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm2_nonproduct_gets_not_a_product": {
+       "n": 28,
+       "of": 30,
+       "pct": 93.3,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": [
+        "camping (run 1): outdoor/",
+        "camping (run 2): outdoor/"
+       ]
+      },
+      "pm3_same_pick_in_all_runs_both_levels": {
+       "n": 41,
+       "of": 48,
+       "pct": 85.4,
+       "pass_mark_pct": 90,
+       "pass": false,
+       "misses": [
+        "haircut: not_a_product/unclear | not_a_product/service | not_a_product/unclear",
+        "hotel room: not_a_product/unclear | not_a_product/unclear | not_a_product/place_to_stay",
+        "camping: outdoor/ | outdoor/ | not_a_product/activity",
+        "firewood: tools_hardware/ | tools_hardware/ | garden/",
+        "notebook: electronics/computers | books_media/stationery_office | books_media/stationery_office",
+        "pocket knife: tools_hardware/ | tools_hardware/hand_tools | tools_hardware/hand_tools",
+        "work boots: clothing/workwear | clothing/shoes | clothing/shoes"
+       ]
+      },
+      "pm4_no_specific_where_label_has_none": {
+       "n": 28,
+       "of": 30,
+       "pct": 93.3,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": [
+        "pocket knife (run 2): tools_hardware/hand_tools",
+        "pocket knife (run 3): tools_hardware/hand_tools"
+       ]
+      },
+      "pm5_only_list_ids_or_reserved_values": {
+       "calls": 144,
+       "violations": 8,
+       "by_type": {
+        "specific_not_allowed_for_this_general": 8
+       },
+       "list": [
+        "haircut (run 1): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "haircut (run 3): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "hotel room (run 1): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "hotel room (run 2): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "yoga class (run 1): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "yoga class (run 2): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "yoga class (run 3): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}",
+        "asdfgh (run 3): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}"
+       ],
+       "pass": false
+      }
+     },
+     "side_figures": {
+      "same_pick_in_all_runs_general_only": {
+       "n": 45,
+       "of": 48,
+       "pct": 93.8
+      },
+      "nonsense_gets_not_a_product": {
+       "n": 3,
+       "of": 3,
+       "pct": 100
+      },
+      "nonproduct_reason_matches_label": {
+       "n": 15,
+       "of": 28,
+       "pct": 53.6
+      },
+      "forced_specific_where_general_right_and_label_has_none": {
+       "n": 0,
+       "of": 12,
+       "pct": 0
+      },
+      "by_rule": {
+       "MAP-2": 80,
+       "MAP-3": 27,
+       "MAP-6": 28,
+       "MAP-7": 9
+      },
+      "by_kind": {
+       "brand": {
+        "calls": 72,
+        "general_matches_label": {
+         "n": 72,
+         "of": 72,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 69,
+         "of": 72,
+         "pct": 95.8
+        }
+       },
+       "nonproduct": {
+        "calls": 30,
+        "general_matches_label": {
+         "n": 28,
+         "of": 30,
+         "pct": 93.3
+        },
+        "both_levels_match_label": {
+         "n": 15,
+         "of": 30,
+         "pct": 50
+        }
+       },
+       "gap": {
+        "calls": 15,
+        "general_matches_label": {
+         "n": 9,
+         "of": 15,
+         "pct": 60
+        },
+        "both_levels_match_label": {
+         "n": 9,
+         "of": 15,
+         "pct": 60
+        }
+       },
+       "two": {
+        "calls": 27,
+        "general_matches_label": {
+         "n": 23,
+         "of": 27,
+         "pct": 85.2
+        },
+        "both_levels_match_label": {
+         "n": 18,
+         "of": 27,
+         "pct": 66.7
+        }
+       }
+      }
+     },
+     "picks": [
+      {
+       "input": "macbook",
+       "kind": "brand",
+       "label": "electronics/computers",
+       "picks": [
+        "electronics/computers",
+        "electronics/computers",
+        "electronics/computers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "MacBook Air M3",
+       "kind": "brand",
+       "label": "electronics/computers",
+       "picks": [
+        "electronics/computers",
+        "electronics/computers",
+        "electronics/computers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "DeWalt DCD771",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Makita XFD131",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "iPhone 15",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/phones_tablets",
+        "electronics/phones_tablets",
+        "electronics/phones_tablets"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Kobo Clara",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/",
+        "electronics/",
+        "electronics/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Le Creuset dutch oven",
+       "kind": "brand",
+       "label": "kitchen/cookware",
+       "picks": [
+        "kitchen/cookware",
+        "kitchen/cookware",
+        "kitchen/cookware"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Vitamix 5200",
+       "kind": "brand",
+       "label": "kitchen/small_kitchen_appliances",
+       "picks": [
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Dyson V8",
+       "kind": "brand",
+       "label": "appliances/vacuums",
+       "picks": [
+        "appliances/vacuums",
+        "appliances/vacuums",
+        "appliances/vacuums"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Patagonia Nano Puff",
+       "kind": "brand",
+       "label": "outdoor/outdoor_clothing",
+       "picks": [
+        "outdoor/outdoor_clothing",
+        "outdoor/outdoor_clothing",
+        "outdoor/outdoor_clothing"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Levi's 501",
+       "kind": "brand",
+       "label": "clothing/everyday_clothing",
+       "picks": [
+        "clothing/everyday_clothing",
+        "clothing/everyday_clothing",
+        "clothing/everyday_clothing"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Birkenstock Arizona",
+       "kind": "brand",
+       "label": "clothing/shoes",
+       "picks": [
+        "clothing/shoes",
+        "clothing/shoes",
+        "clothing/shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Brooks Ghost 16",
+       "kind": "brand",
+       "label": "sports/running_shoes",
+       "picks": [
+        "sports/running_shoes",
+        "sports/running_shoes",
+        "sports/running_shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Trek FX 2",
+       "kind": "brand",
+       "label": "sports/bikes",
+       "picks": [
+        "sports/bikes",
+        "sports/bikes",
+        "sports/bikes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "LEGO 10311",
+       "kind": "brand",
+       "label": "toys_hobbies/toys",
+       "picks": [
+        "toys_hobbies/toys",
+        "toys_hobbies/toys",
+        "toys_hobbies/toys"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Catan",
+       "kind": "brand",
+       "label": "toys_hobbies/puzzles_board_games",
+       "picks": [
+        "toys_hobbies/puzzles_board_games",
+        "toys_hobbies/puzzles_board_games",
+        "toys_hobbies/puzzles_board_games"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Yeti Rambler",
+       "kind": "brand",
+       "label": "kitchen/tableware_drinkware",
+       "picks": [
+        "kitchen/tableware_drinkware",
+        "kitchen/tableware_drinkware",
+        "kitchen/tableware_drinkware"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Weber Spirit II",
+       "kind": "brand",
+       "label": "garden/grills_patio",
+       "picks": [
+        "garden/grills_patio",
+        "garden/grills_patio",
+        "garden/grills_patio"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Stihl MS 170",
+       "kind": "brand",
+       "label": "garden/yard_power_equipment",
+       "picks": [
+        "garden/yard_power_equipment",
+        "garden/yard_power_equipment",
+        "garden/yard_power_equipment"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Fender Stratocaster",
+       "kind": "brand",
+       "label": "books_media/musical_instruments",
+       "picks": [
+        "books_media/musical_instruments",
+        "books_media/musical_instruments",
+        "books_media/musical_instruments"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Graco SlimFit3",
+       "kind": "brand",
+       "label": "baby_kids/car_seats_strollers",
+       "picks": [
+        "baby_kids/car_seats_strollers",
+        "baby_kids/car_seats_strollers",
+        "baby_kids/car_seats_strollers"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Nintendo Switch",
+       "kind": "brand",
+       "label": "electronics/video_games",
+       "picks": [
+        "electronics/video_games",
+        "electronics/video_games",
+        "electronics/video_games"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Canon EOS R10",
+       "kind": "brand",
+       "label": "electronics/cameras",
+       "picks": [
+        "electronics/cameras",
+        "electronics/cameras",
+        "electronics/cameras"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Michelin X-Ice",
+       "kind": "brand",
+       "label": "auto/tires",
+       "picks": [
+        "auto/tires",
+        "auto/tires",
+        "auto/tires"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "haircut",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/service",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "plumber",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "pizza delivery",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "sushi",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/meal",
+        "not_a_product/meal",
+        "not_a_product/meal"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "hotel room",
+       "kind": "nonproduct",
+       "label": "not_a_product/place_to_stay",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/place_to_stay"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "kitchen",
+       "kind": "nonproduct",
+       "label": "not_a_product/room",
+       "picks": [
+        "not_a_product/room",
+        "not_a_product/room",
+        "not_a_product/room"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "bathroom remodel",
+       "kind": "nonproduct",
+       "label": "not_a_product/room",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "camping",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "outdoor/",
+        "outdoor/",
+        "not_a_product/activity"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "yoga class",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "asdfgh",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "dishwasher tablets",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "laundry detergent",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "firewood",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "tools_hardware/",
+        "tools_hardware/",
+        "garden/"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "gift card",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "eyeglasses",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "health_beauty/",
+        "health_beauty/",
+        "health_beauty/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "notebook",
+       "kind": "two",
+       "label": "books_media/stationery_office",
+       "picks": [
+        "electronics/computers",
+        "books_media/stationery_office",
+        "books_media/stationery_office"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "pocket knife",
+       "kind": "two",
+       "label": "outdoor/",
+       "picks": [
+        "tools_hardware/",
+        "tools_hardware/hand_tools",
+        "tools_hardware/hand_tools"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "sewing machine",
+       "kind": "two",
+       "label": "toys_hobbies/fabric_yarn",
+       "picks": [
+        "toys_hobbies/",
+        "toys_hobbies/",
+        "toys_hobbies/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "yoga mat",
+       "kind": "two",
+       "label": "sports/fitness_equipment",
+       "picks": [
+        "sports/fitness_equipment",
+        "sports/fitness_equipment",
+        "sports/fitness_equipment"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "baby monitor",
+       "kind": "two",
+       "label": "baby_kids/",
+       "picks": [
+        "baby_kids/",
+        "baby_kids/",
+        "baby_kids/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "dog bed",
+       "kind": "two",
+       "label": "pets/",
+       "picks": [
+        "pets/",
+        "pets/",
+        "pets/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "work boots",
+       "kind": "two",
+       "label": "clothing/workwear",
+       "picks": [
+        "clothing/workwear",
+        "clothing/shoes",
+        "clothing/shoes"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "garden gloves",
+       "kind": "two",
+       "label": "garden/",
+       "picks": [
+        "garden/",
+        "garden/",
+        "garden/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "bird feeder",
+       "kind": "two",
+       "label": "garden/",
+       "picks": [
+        "garden/",
+        "garden/",
+        "garden/"
+       ],
+       "same_all_runs": true
+      }
+     ]
+    }
+   },
+   "wall_time": {
+    "category": {
+     "pairs": 144,
+     "pair_ms_median": 553.5,
+     "normalize_in_pair_ms_median": 552,
+     "category_call_ms_median": 268,
+     "ratio_to_normalize_in_pair": 1.003,
+     "pass_mark_ratio": 1.15,
+     "pass": true,
+     "normalize_solo_ms_median": 560.5,
+     "ratio_to_normalize_solo": 0.988,
+     "pass_against_solo": true,
+     "pairs_where_the_category_call_finished_last": 3,
+     "extra_ms_per_pair": {
+      "n": 144,
+      "min": 0,
+      "median": 0,
+      "max": 194,
+      "mean": 1.98
+     }
+    },
+    "haiku": {
+     "pairs": 144,
+     "pair_ms_median": 1184,
+     "normalize_in_pair_ms_median": 552,
+     "category_call_ms_median": 1184,
+     "ratio_to_normalize_in_pair": 2.145,
+     "pass_mark_ratio": 1.15,
+     "pass": false,
+     "normalize_solo_ms_median": 560.5,
+     "ratio_to_normalize_solo": 2.112,
+     "pass_against_solo": false,
+     "pairs_where_the_category_call_finished_last": 141,
+     "extra_ms_per_pair": {
+      "n": 144,
+      "min": 0,
+      "median": 588,
+      "max": 4547,
+      "mean": 837.4
+     }
+    }
+   }
+  },
+  "held_out": {
+   "arms": {
+    "category": {
+     "missing_a_run": [],
+     "pass_marks": {
+      "pm1_brand_general_matches_label": {
+       "n": 18,
+       "of": 18,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm2_nonproduct_gets_not_a_product": {
+       "n": 18,
+       "of": 21,
+       "pct": 85.7,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": [
+        "??? (run 1): none/",
+        "??? (run 2): none/",
+        "??? (run 3): none/"
+       ]
+      },
+      "pm3_same_pick_in_all_runs_both_levels": {
+       "n": 19,
+       "of": 19,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm4_no_specific_where_label_has_none": {
+       "n": 18,
+       "of": 18,
+       "pct": 100,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": []
+      },
+      "pm5_only_list_ids_or_reserved_values": {
+       "calls": 57,
+       "violations": 0,
+       "by_type": {},
+       "list": [],
+       "pass": true
+      }
+     },
+     "side_figures": {
+      "same_pick_in_all_runs_general_only": {
+       "n": 19,
+       "of": 19,
+       "pct": 100
+      },
+      "nonsense_gets_not_a_product": {
+       "n": 6,
+       "of": 9,
+       "pct": 66.7
+      },
+      "nonproduct_reason_matches_label": {
+       "n": 15,
+       "of": 18,
+       "pct": 83.3
+      },
+      "forced_specific_where_general_right_and_label_has_none": {
+       "n": 0,
+       "of": 12,
+       "pct": 0
+      },
+      "by_rule": {
+       "MAP-2": 18,
+       "MAP-3": 12,
+       "MAP-6": 18,
+       "MAP-7": 9
+      },
+      "by_kind": {
+       "brand": {
+        "calls": 18,
+        "general_matches_label": {
+         "n": 18,
+         "of": 18,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 18,
+         "of": 18,
+         "pct": 100
+        }
+       },
+       "general": {
+        "calls": 12,
+        "general_matches_label": {
+         "n": 12,
+         "of": 12,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 12,
+         "of": 12,
+         "pct": 100
+        }
+       },
+       "gap": {
+        "calls": 6,
+        "general_matches_label": {
+         "n": 6,
+         "of": 6,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 6,
+         "of": 6,
+         "pct": 100
+        }
+       },
+       "nonproduct": {
+        "calls": 21,
+        "general_matches_label": {
+         "n": 18,
+         "of": 21,
+         "pct": 85.7
+        },
+        "both_levels_match_label": {
+         "n": 15,
+         "of": 21,
+         "pct": 71.4
+        }
+       }
+      }
+     },
+     "picks": [
+      {
+       "input": "Google Pixel 8",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/phones_tablets",
+        "electronics/phones_tablets",
+        "electronics/phones_tablets"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Bose QuietComfort 45",
+       "kind": "brand",
+       "label": "electronics/audio",
+       "picks": [
+        "electronics/audio",
+        "electronics/audio",
+        "electronics/audio"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Milwaukee M18 Fuel",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Dr. Martens 1460",
+       "kind": "brand",
+       "label": "clothing/shoes",
+       "picks": [
+        "clothing/shoes",
+        "clothing/shoes",
+        "clothing/shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Instant Pot Duo",
+       "kind": "brand",
+       "label": "kitchen/small_kitchen_appliances",
+       "picks": [
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Hario Skerton",
+       "kind": "brand",
+       "label": "kitchen/coffee_tea_gear",
+       "picks": [
+        "kitchen/coffee_tea_gear",
+        "kitchen/coffee_tea_gear",
+        "kitchen/coffee_tea_gear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "sleeping bag",
+       "kind": "general",
+       "label": "outdoor/",
+       "picks": [
+        "outdoor/",
+        "outdoor/",
+        "outdoor/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "refrigerator",
+       "kind": "general",
+       "label": "appliances/",
+       "picks": [
+        "appliances/",
+        "appliances/",
+        "appliances/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "soccer ball",
+       "kind": "general",
+       "label": "sports/",
+       "picks": [
+        "sports/",
+        "sports/",
+        "sports/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "cat litter",
+       "kind": "general",
+       "label": "pets/",
+       "picks": [
+        "pets/",
+        "pets/",
+        "pets/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "toilet paper",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "trash bags",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "oil change",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "thai takeout",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/meal",
+        "not_a_product/meal",
+        "not_a_product/meal"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "vacation rental",
+       "kind": "nonproduct",
+       "label": "not_a_product/place_to_stay",
+       "picks": [
+        "not_a_product/place_to_stay",
+        "not_a_product/place_to_stay",
+        "not_a_product/place_to_stay"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "guitar lessons",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "zxcvbnm",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "???",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "none/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "ghjk 4477",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      }
+     ]
+    },
+    "haiku": {
+     "missing_a_run": [],
+     "pass_marks": {
+      "pm1_brand_general_matches_label": {
+       "n": 18,
+       "of": 18,
+       "pct": 100,
+       "pass_mark_pct": 90,
+       "pass": true,
+       "misses": []
+      },
+      "pm2_nonproduct_gets_not_a_product": {
+       "n": 21,
+       "of": 21,
+       "pct": 100,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": []
+      },
+      "pm3_same_pick_in_all_runs_both_levels": {
+       "n": 16,
+       "of": 19,
+       "pct": 84.2,
+       "pass_mark_pct": 90,
+       "pass": false,
+       "misses": [
+        "toilet paper: home/ | none/ | none/",
+        "trash bags: none/ | home/ | home/",
+        "vacation rental: not_a_product/place_to_stay | not_a_product/unclear | not_a_product/place_to_stay"
+       ]
+      },
+      "pm4_no_specific_where_label_has_none": {
+       "n": 18,
+       "of": 18,
+       "pct": 100,
+       "pass_mark_pct": 80,
+       "pass": true,
+       "misses": []
+      },
+      "pm5_only_list_ids_or_reserved_values": {
+       "calls": 57,
+       "violations": 1,
+       "by_type": {
+        "specific_not_allowed_for_this_general": 1
+       },
+       "list": [
+        "vacation rental (run 2): specific_not_allowed_for_this_general: {\"general\":\"not_a_product\",\"specific\":\"not_a_product\"}"
+       ],
+       "pass": false
+      }
+     },
+     "side_figures": {
+      "same_pick_in_all_runs_general_only": {
+       "n": 17,
+       "of": 19,
+       "pct": 89.5
+      },
+      "nonsense_gets_not_a_product": {
+       "n": 9,
+       "of": 9,
+       "pct": 100
+      },
+      "nonproduct_reason_matches_label": {
+       "n": 17,
+       "of": 21,
+       "pct": 81
+      },
+      "forced_specific_where_general_right_and_label_has_none": {
+       "n": 0,
+       "of": 12,
+       "pct": 0
+      },
+      "by_rule": {
+       "MAP-2": 18,
+       "MAP-3": 15,
+       "MAP-6": 21,
+       "MAP-7": 3
+      },
+      "by_kind": {
+       "brand": {
+        "calls": 18,
+        "general_matches_label": {
+         "n": 18,
+         "of": 18,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 18,
+         "of": 18,
+         "pct": 100
+        }
+       },
+       "general": {
+        "calls": 12,
+        "general_matches_label": {
+         "n": 12,
+         "of": 12,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 12,
+         "of": 12,
+         "pct": 100
+        }
+       },
+       "gap": {
+        "calls": 6,
+        "general_matches_label": {
+         "n": 3,
+         "of": 6,
+         "pct": 50
+        },
+        "both_levels_match_label": {
+         "n": 3,
+         "of": 6,
+         "pct": 50
+        }
+       },
+       "nonproduct": {
+        "calls": 21,
+        "general_matches_label": {
+         "n": 21,
+         "of": 21,
+         "pct": 100
+        },
+        "both_levels_match_label": {
+         "n": 17,
+         "of": 21,
+         "pct": 81
+        }
+       }
+      }
+     },
+     "picks": [
+      {
+       "input": "Google Pixel 8",
+       "kind": "brand",
+       "label": "electronics/phones_tablets",
+       "picks": [
+        "electronics/phones_tablets",
+        "electronics/phones_tablets",
+        "electronics/phones_tablets"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Bose QuietComfort 45",
+       "kind": "brand",
+       "label": "electronics/audio",
+       "picks": [
+        "electronics/audio",
+        "electronics/audio",
+        "electronics/audio"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Milwaukee M18 Fuel",
+       "kind": "brand",
+       "label": "tools_hardware/power_tools",
+       "picks": [
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools",
+        "tools_hardware/power_tools"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Dr. Martens 1460",
+       "kind": "brand",
+       "label": "clothing/shoes",
+       "picks": [
+        "clothing/shoes",
+        "clothing/shoes",
+        "clothing/shoes"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Instant Pot Duo",
+       "kind": "brand",
+       "label": "kitchen/small_kitchen_appliances",
+       "picks": [
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances",
+        "kitchen/small_kitchen_appliances"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "Hario Skerton",
+       "kind": "brand",
+       "label": "kitchen/coffee_tea_gear",
+       "picks": [
+        "kitchen/coffee_tea_gear",
+        "kitchen/coffee_tea_gear",
+        "kitchen/coffee_tea_gear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "sleeping bag",
+       "kind": "general",
+       "label": "outdoor/",
+       "picks": [
+        "outdoor/",
+        "outdoor/",
+        "outdoor/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "refrigerator",
+       "kind": "general",
+       "label": "appliances/",
+       "picks": [
+        "appliances/",
+        "appliances/",
+        "appliances/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "soccer ball",
+       "kind": "general",
+       "label": "sports/",
+       "picks": [
+        "sports/",
+        "sports/",
+        "sports/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "cat litter",
+       "kind": "general",
+       "label": "pets/",
+       "picks": [
+        "pets/",
+        "pets/",
+        "pets/"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "toilet paper",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "home/",
+        "none/",
+        "none/"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "trash bags",
+       "kind": "gap",
+       "label": "none/",
+       "picks": [
+        "none/",
+        "home/",
+        "home/"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "oil change",
+       "kind": "nonproduct",
+       "label": "not_a_product/service",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "thai takeout",
+       "kind": "nonproduct",
+       "label": "not_a_product/meal",
+       "picks": [
+        "not_a_product/meal",
+        "not_a_product/meal",
+        "not_a_product/meal"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "vacation rental",
+       "kind": "nonproduct",
+       "label": "not_a_product/place_to_stay",
+       "picks": [
+        "not_a_product/place_to_stay",
+        "not_a_product/unclear",
+        "not_a_product/place_to_stay"
+       ],
+       "same_all_runs": false
+      },
+      {
+       "input": "guitar lessons",
+       "kind": "nonproduct",
+       "label": "not_a_product/activity",
+       "picks": [
+        "not_a_product/service",
+        "not_a_product/service",
+        "not_a_product/service"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "zxcvbnm",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "???",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      },
+      {
+       "input": "ghjk 4477",
+       "kind": "nonproduct",
+       "label": "not_a_product/unclear",
+       "picks": [
+        "not_a_product/unclear",
+        "not_a_product/unclear",
+        "not_a_product/unclear"
+       ],
+       "same_all_runs": true
+      }
+     ]
+    }
+   },
+   "wall_time": {
+    "category": {
+     "pairs": 57,
+     "pair_ms_median": 569,
+     "normalize_in_pair_ms_median": 553,
+     "category_call_ms_median": 263,
+     "ratio_to_normalize_in_pair": 1.029,
+     "pass_mark_ratio": 1.15,
+     "pass": true,
+     "normalize_solo_ms_median": 551,
+     "ratio_to_normalize_solo": 1.033,
+     "pass_against_solo": true,
+     "pairs_where_the_category_call_finished_last": 2,
+     "extra_ms_per_pair": {
+      "n": 57,
+      "min": 0,
+      "median": 0,
+      "max": 1698,
+      "mean": 30.09
+     }
+    },
+    "haiku": {
+     "pairs": 57,
+     "pair_ms_median": 1193,
+     "normalize_in_pair_ms_median": 553,
+     "category_call_ms_median": 1176,
+     "ratio_to_normalize_in_pair": 2.157,
+     "pass_mark_ratio": 1.15,
+     "pass": false,
+     "normalize_solo_ms_median": 551,
+     "ratio_to_normalize_solo": 2.165,
+     "pass_against_solo": false,
+     "pairs_where_the_category_call_finished_last": 53,
+     "extra_ms_per_pair": {
+      "n": 57,
+      "min": 0,
+      "median": 565,
+      "max": 2809,
+      "mean": 727.79
+     }
+    }
+   }
+  }
+ }
+}

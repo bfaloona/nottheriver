@@ -4,6 +4,8 @@ Run on 2026-11-18, 10:35 PM to 10:38 PM Pacific. It tests the two reply fields t
 
 A second run on 2026-11-19 tested a revised draft prompt against six pass marks. It is in the "Second run" section below. The sections before it describe the first run and its first draft prompt.
 
+A third run on 2026-11-19 tested a separate category call that leaves today's normalize call unchanged. It is in the "Third run: separate category call" section.
+
 ## Result against the pass marks
 
 The pass marks were set before the run. All three passed.
@@ -282,13 +284,141 @@ The grades use every label as written. No label was edited after a model call.
 - PM-6 compares wording as text. This run cannot say whether the changed nearby searches find better or worse shops; that needs Brave calls.
 - The two-call design named in SR-4 is a guess about a remedy. No call tested it.
 
+## Third run: separate category call
+
+Run on 2026-11-19, 1:50 AM to 2:00 AM Pacific. The owner approved it (model calls only). No Brave call was made and the live site was not used. It tests the design that SR-4 names: today's normalize call stays as it is, and a second call that starts at the same time returns only `general` and `specific`. Every figure comes from `results-3.json` or `results-3-pilot.json`, which `grade-category.ts` computes from the raw files.
+
+### Arms
+
+| Arm | Prompt | Model and request |
+|---|---|---|
+| ARM-G | The category prompt | The production models and request of `proxy/src/llm.ts`, with the category schema. `google/gemma-4-31b-it` from the provider ModelRun answered all 201 calls |
+| ARM-H | The category prompt | `anthropic/claude-haiku-5.5`, the newest Haiku in OpenRouter's model list by its `created` field (`haiku-model-list.json`). The request is ARM-G's with one field left out: `temperature`. With `temperature: 0` OpenRouter found no endpoint for this model (HTTP 404, "No endpoints found that can handle the requested parameters"); the model's entry does not list `temperature` as supported. The provider Google answered all calls |
+| TODAY | Today's normalize prompt and schema, unchanged | The production request. It ran twice per probe and run: once started with the two category calls, and once alone as a control |
+
+### Result against the pass marks
+
+The marks were set before the run. PM-1 to PM-4 are those of the second run. PM-5 and PM-7 are new in this run (PM-6 does not apply, because today's prompt is not changed). The grading code for both was committed with the frozen prompt, before the first held-out call.
+
+| Mark | Pass mark | ARM-G, the 48 | ARM-G, held-out | ARM-H, the 48 | ARM-H, held-out |
+|---|---|---|---|---|---|
+| PM-1. Brand and model inputs: the general pick matches the label | at least 90% of calls | 72 of 72 (100%), pass | 18 of 18 (100%), pass | 72 of 72 (100%), pass | 18 of 18 (100%), pass |
+| PM-2. Non-products, nonsense included, get "not a product" | at least 80% of calls | 30 of 30 (100%), pass | 18 of 21 (85.7%), pass | 28 of 30 (93.3%), pass | 21 of 21 (100%), pass |
+| PM-3. Same pick in all 3 runs, both levels | at least 90% of inputs | 48 of 48 (100%), pass | 19 of 19 (100%), pass | 41 of 48 (85.4%), **fail** | 16 of 19 (84.2%), **fail** |
+| PM-4. Label has no specific category: the reply has none | at least 80% of calls | 27 of 30 (90.0%), pass | 18 of 18 (100%), pass | 28 of 30 (93.3%), pass | 18 of 18 (100%), pass |
+| PM-5. Every reply uses only ids on the list or the reserved values | no exception | 0 of 144 calls off, pass | 0 of 57 calls off, pass | 8 of 144 calls off, **fail** | 1 of 57 calls off, **fail** |
+
+| Mark | Pass mark | ARM-G | ARM-H |
+|---|---|---|---|
+| PM-7. Median wall time of the pair against the median of normalize alone, 201 pairs | at most 1.15 times | 554 ms against 552 ms (1.004 times), pass | 1,191 ms against 552 ms (2.158 times), **fail** |
+
+ARM-G passed every mark on both probe sets. ARM-H failed PM-3, PM-5 and PM-7.
+
+### Method
+
+- **Probes and calls.** The 48 probes and the 19 held-out probes, 3 runs each: 201 units. In each unit the script built the requests first and then started today's normalize call, the ARM-G call and the ARM-H call in the same tick. It also sent today's normalize prompt alone, just before or just after the three, in alternating order. That is 804 calls. Two ARM-H calls needed a second attempt, so the run has 806 attempts.
+- **Prompt.** The "Separate category call" draft of `docs/plans/category-list.md`: a new first line, the DATA block of `proxy/prompts/normalize.ts` word for word, the two field lines that worked in the second run (FIX-1 and FIX-3), and the list last. `raw-3.json` holds the text under `prompts.category`. For "cast iron skillet" it has 2,108 characters.
+- **Schema and limit.** Two required strings of up to 60 characters and no other field. The token limit is today's 400. A first draft of the script used 60; the first ARM-H smoke call spent 56 tokens, 36 of them on reasoning, so the limit went back to 400 before the pilot.
+- **Pilot and freeze.** One prompt ran 3 times on the 48 only, on ARM-G (144 calls, `raw-3-pilot.json`). It passed PM-1 to PM-5, so no second prompt was written. The prompt, the schema and the grading code were committed at 1:52 AM Pacific (commit `bced8bd`), before the first held-out call. Nothing in them changed after that. Two smoke runs on the first probe of the 48 came before the pilot (`raw-3-smoke-1.json`, `raw-3-smoke-2.json`).
+- **PM-5.** Graded on the reply as written, before mapping. `general` must be a general id, `none` or `not_a_product`. `specific` must be `none` or an id under that general id, `none` under `none`, or one of the six reasons under `not_a_product`. An empty string, a value that needs tidying and an id under another parent count as violations.
+- **PM-7.** The pair time is the time from the common start until both today's normalize call and the category call have finished. "Normalize alone" is the normalize call of the same pairs, as set before the run. The control is the normalize call sent alone: its median was 556 ms, which gives 0.996 times for ARM-G and 2.142 times for ARM-H. The verdicts are the same.
+- **Mapping and grading.** PM-1 to PM-4 use the mapped pick (`mapPick` in `lib.ts`) and the hand labels as written, as in the second run.
+
+### Cost
+
+Total for the third run: **$0.224886** for 955 attempts. The source is the `usage.cost` figure that OpenRouter returned in each reply, summed over `raw-3.json`, the pilot file and the two smoke files (`totals.third_run_cost_usd_by_file` in `results-3.json`). The limit was $1.
+
+| Calls | Attempts | Reported cost |
+|---|---|---|
+| Two smoke runs | 5 | $0.000943 |
+| Pilot on the 48, ARM-G | 144 | $0.046703 |
+| Run, today's normalize in the pair | 201 | $0.043427 |
+| Run, today's normalize alone | 201 | $0.043415 |
+| Run, ARM-G | 201 | $0.057543 |
+| Run, ARM-H | 203 | $0.032855 |
+
+The provider's prompt cache billed part of the prompt at a lower rate in 113 of the 201 ARM-G calls and in 291 of the 402 normalize calls. No ARM-H call had cached tokens. A first search gets no discount, so the planning figures use only the calls with no cached tokens:
+
+| Per call, median, no cached tokens | Today's normalize | ARM-G category call | ARM-H category call | Second draft (one call, from the second run) |
+|---|---|---|---|---|
+| Calls in the sample | 111 | 88 | 203 | 78 |
+| Prompt tokens | 348 | 569 | 1,053 | 862.5 |
+| Output tokens | 77 | 16.5 | 82 | 92 |
+| Cost per call | $0.000339 | $0.000444 | $0.000147 | $0.000740 |
+| Latency of the call, ms | 550 | 263.5 | 1,185 | 721.5 |
+
+| Cost of one search's model calls before the shop-judging call, no cached tokens | Cost | Against today |
+|---|---|---|
+| Today: normalize | $0.000339 | 1 |
+| Normalize and the ARM-G call | $0.000783 | 2.31 times |
+| Normalize and the ARM-H call | $0.000486 | 1.43 times |
+| Second draft, one call (second run) | $0.000740 | 2.18 times |
+
+Each combined figure is the sum of two medians. The ARM-H output tokens include the model's reasoning tokens.
+
+### Latency
+
+| Median, ms, 201 units | ARM-G | ARM-H |
+|---|---|---|
+| Today's normalize call in the pair | 552 | 552 |
+| The category call | 266 | 1,177 |
+| The pair, until both have finished | 554 | 1,191 |
+| Today's normalize call alone (control) | 556 | 556 |
+| Pairs in which the category call finished last | 5 of 201 | 194 of 201 |
+| Time the pair added to its normalize call, mean | 10 ms | 806 ms |
+
+By probe set the ARM-G ratio was 1.003 on the 48 and 1.029 on the held-out probes. In run 1 alone it was 1.031 (67 pairs). The longest wait that the ARM-G call added to one pair was 1,698 ms.
+
+### Findings
+
+**TR-1. The separate call on the production model passed every mark, on both probe sets.** Today's normalize prompt, schema and reply do not change in this design, so the nearby wording that PM-6 measured is today's by construction. The second draft failed PM-6 on both sets and PM-2 on the held-out set.
+
+**TR-2. The pair takes no longer than normalize alone.** The category reply is about 16 tokens and came back in a median of 266 ms, about half the normalize time. The normalize call finished last in 196 of 201 pairs.
+
+**TR-3. The separate call does not cut cost. It costs slightly more than the list inside the normalize prompt.** Normalize and the ARM-G call cost $0.000783 per search with no cached tokens, against $0.000740 for the second draft and $0.000339 today. The category prompt has 569 tokens, more than today's whole normalize prompt (348), because the list and its two field lines are most of it. The two calls send 917 prompt tokens together; the second draft sent 862.5. The gain of this design is unchanged wording and stable picks, at about 2.3 times today's normalize cost.
+
+**TR-4. Picks were fully repeatable on ARM-G.** Every one of the 67 inputs got the same pick in all 3 runs, and the 48 got the same picks as in the pilot a few minutes earlier. The second draft changed 3 of 48. All calls were minutes apart, on one model and one provider.
+
+**TR-5. Nonsense input: 2 of 3 held-out strings are now read as not a product.** "zxcvbnm" and "ghjk 4477" got `not_a_product/unclear` in 3 of 3 runs each, and "asdfgh" did on the 48. "???" got `none` in all 3 runs; it is the whole held-out PM-2 shortfall. The second draft read nonsense as `not_a_product` in 4 of 12 calls; ARM-G did in 9 of 12.
+
+**TR-6. Forced specific picks are gone and "none" is used more.** Where the label has a general category and no specific one and the general pick was right, ARM-G named a specific category in 0 of 12 calls on each set. "toilet paper" and "trash bags" got `none` in 6 of 6 calls (the second draft gave `home` in 6 of 6). On the 48, "dishwasher tablets", "laundry detergent" and "gift card" got `none`; "firewood" got `garden` and "eyeglasses" got `health_beauty`. The 3 PM-4 misses are "pocket knife", which got `tools_hardware/hand_tools` in all runs.
+
+**TR-7. "camping" is read as an activity again.** ARM-G gave `not_a_product/activity` in all 3 runs, and the reason matched the label in 30 of 30 non-product calls on the 48. In the second run the lead-in that protected the old fields had turned "camping" into `outdoor` (SR-6). The held-out reason matched in 15 of 18 calls; "guitar lessons" got `service`.
+
+**TR-8. The Haiku arm is cheaper per call and worse on three marks.** It cost $0.000147 per call against $0.000444 for ARM-G. Its picks were less repeatable: 7 of the 48 and 3 of the 19 held-out inputs changed between runs. It ran without `temperature: 0`, which is one likely cause. In 9 calls it wrote `not_a_product` in both fields; code maps that to the reason `unclear`. Its median call took 1,177 ms, so it finished after normalize in 194 of 201 pairs and would add about 0.6 seconds to a search. Two first attempts hit the 400-token limit and were sent again. The two arms gave the same mapped pick in 164 of 201 units.
+
+**TR-9. Today's prompt against itself.** The normalize call in the pair and the normalize call alone gave the same two nearby searches for 60 of the 67 inputs in run 1. That is the repeat-run noise of today's prompt, in line with the 42 and 45 of 48 of the second run.
+
+### Hand labels that look wrong (third run)
+
+The grades use every label as written. No label was edited after a model call.
+
+| Input | Label | ARM-G | Comment |
+|---|---|---|---|
+| pocket knife | `outdoor` | `tools_hardware/hand_tools` | A hardware store sells pocket knives, so the general pick is defensible. `hand_tools` does not name this kind of product. These 3 calls are the only PM-4 misses |
+| ??? | `not_a_product/unclear` | `none` | The label looks right. This is a model miss |
+| LEGO 10311, sewing machine, eyeglasses, firewood | as in the first run | | The comments of the first run still apply |
+| guitar lessons | `not_a_product/activity` | `not_a_product/service` | Either reason is defensible |
+| Kobo Clara (ARM-H only) | `electronics/phones_tablets` | `electronics` | An e-reader is not exactly a phone or a tablet, so no specific pick is defensible |
+
+### Limits of the third run
+
+- The limits of the first two runs apply: one production model, one provider, one night, inputs written by an agent, three runs per input.
+- The held-out probes are no longer blind. The second run used them, and this file printed their failures before the category prompt was written. The prompt took its FIX-3 wording from the second run and was not piloted on them, but its author had read which held-out inputs failed.
+- One prompt was piloted. No other wording or layout of a category-only prompt was tried, so the run does not show that this one is the best.
+- ARM-H differs from ARM-G in more than the model: no `temperature` field, another provider, reasoning tokens, and no cached prompt tokens. Its repeat-run result cannot be read as a result at temperature 0.
+- Latency was measured from a laptop, with three calls started together in each unit (normalize, ARM-G and ARM-H), one unit at a time. It compares the calls with each other; it is not a forecast of Worker latency. PM-7 is a mark on medians and says little about the slowest searches.
+- The uncached samples (88 ARM-G calls, 111 normalize calls) are the calls the provider did not serve from its cache. They are not a random sample of the probes.
+- The combined cost adds two medians from this run. It was not measured through the Worker, and the Worker's 30-day normalize cache was not part of the test. Whether the category reply would be cached with the normalize reply is a design question this run does not answer.
+- The run measures the pick. It does not measure whether the pick finds better shops; that needs Brave calls.
+
 ## Files
 
 | File | What |
 |---|---|
 | `run-picks.ts` | Makes the calls and writes the run's raw file after every call |
 | `grade.ts` | Grades a raw file and writes its results file |
-| `lib.ts` | Draft prompts (first draft and pilots a to e), draft schemas, mapping rules, shared types |
+| `lib.ts` | Draft prompts (first draft and pilots a to e), the category prompt of the third run, schemas, mapping rules, shared types |
 | `raw.json` | First run. Every reply as OpenRouter returned it (content, usage, cost, model, provider), with start time and latency |
 | `results.json` | First run. All its figures, plus the pick for every input and run |
 | `results-first-run-new-marks.json` | First run graded on PM-4, PM-5 and PM-6 |
@@ -296,4 +426,18 @@ The grades use every label as written. No label was edited after a model call.
 | `raw-2.json`, `results-2.json` | Second run: both probe sets, graded apart under `sets.tuned` and `sets.held_out` |
 | `raw-2-pilot.json` and `raw-2-pilot-b.json` to `-e.json`, with their `results-` files | The five pilots on the 48 probes. Pilot a also holds the run of today's prompt that pilots b to e are compared with |
 
+| `run-category.ts`, `grade-category.ts` | Third run: make the calls of each unit and grade them. The first two runs do not use them |
+| `haiku-model-list.json` | The Haiku entries of OpenRouter's model list on 2026-11-19, with the list prices of the production models |
+| `raw-3.json`, `results-3.json` | Third run: 201 units of four calls each, both probe sets and both arms |
+| `raw-3-pilot.json`, `results-3-pilot.json` | The pilot of the category prompt on the 48 probes, ARM-G only |
+| `raw-3-smoke-1.json`, `raw-3-smoke-2.json` | Two smoke runs on the first probe, made with a 60-token limit. In the first, the ARM-H call got HTTP 404. Kept for the cost total |
+
 Rerun the second run with `RUN=2` in front of both commands in "Rerun". A pilot uses `RUN=2-pilot` or `RUN=2-pilot-b` to `-e`, with `DRAFT_ONLY=1 ROUNDS=1` for b to e.
+
+Rerun the third run with its own two scripts. Delete `raw-3.json` first for a fresh run; the cost limit counts every `raw-3*.json` file.
+
+```sh
+RUN=3-pilot LEGS=category npx tsx docs/evidence/category-picks/run-category.ts   # the pilot, the 48 only
+RUN=3 HAIKU_DROP=temperature npx tsx docs/evidence/category-picks/run-category.ts   # paid calls; resumes by unit
+RUN=3 npx tsx docs/evidence/category-picks/grade-category.ts                     # no calls; rewrites results-3.json
+```
