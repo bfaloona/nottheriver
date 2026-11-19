@@ -16,7 +16,7 @@ Before any push to `main`: `npx vitest run`, `npm run lint`, `npm run typecheck`
 Run `infra/deploy.sh` after pushing any commit that changes:
 
 - `proxy/**` (code, ranking, schemas, prompts, `wrangler.jsonc`)
-- a `data/*.json` file the Worker imports (blocklist, certifications, negatives, negative sources)
+- a `data/*.json` file the Worker imports (blocklist, certifications, negatives, negative sources, chains, the category list `categories.draft.json`)
 - `infra/*.tf`
 
 When unsure, run it: it compares the committed build with the last deployed state and does nothing if they match (a Worker changed by hand in Cloudflare may not show). `infra/deploy.sh --check` only reports whether a deploy is needed; any other argument is refused.

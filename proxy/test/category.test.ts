@@ -106,6 +106,13 @@ describe('pickCategory', () => {
     expect(llm.usage.map((u) => u.call)).toEqual(['category']);
   });
 
+  // Models, provider settings, strict mode, schema, token limit and temperature, not only the prompt.
+  it('sends the request body the third run tested, field for field', async () => {
+    const { fetch, llm } = client();
+    await pickCategory(raw3.prompts.category.example_input, llm, undefined);
+    expect(JSON.parse(fetch.calls[0]!.body!)).toEqual(raw3.request.category_body_for_example);
+  });
+
   it.each([
     ['an upstream error', () => reply({}, 500)],
     ['a reply that fails the schema twice', () => reply({ general: 'kitchen' })],

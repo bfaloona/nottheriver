@@ -131,7 +131,7 @@ The 16 lines of the CATEGORIES block of the prompt draft above follow that last 
 
 ## The list
 
-`data/categories.draft.json` holds 16 general and 70 specific categories, two reserved values, and FLD-1 to FLD-11 for each. Nothing reads the file.
+`data/categories.draft.json` holds 16 general and 70 specific categories, two reserved values, and FLD-1 to FLD-11 for each. Since 2026-11-19 the Worker reads its ids and display names (`proxy/src/category.ts`); nothing reads the other fields.
 
 | General id | Display name | Store types (default) | Specific | Eval tag |
 |---|---|---|---|---|

@@ -42,7 +42,7 @@ The hand pick is used, not the live category call, so that the test is about the
 
 Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `results.json` (from `score-ab.ts`); raw map replies and call counts: `runs/calls.json`; responses: `runs/<arm>-r<round>/responses/`.
 
-**The list wording shows no gain on these six searches.** By the reading rule it is not "no worse": its map searches returned one baseline shop fewer in both rounds. The page showed the same number of baseline shops in both arms.
+**The list wording finds no more baseline shops than the model's wording on these six searches.** The run does not test the other claim for IDEA-1, that fixed wording gives the same searches every time. By the reading rule it is not "no worse": its map searches returned one baseline shop fewer in both rounds. The page showed the same number of baseline shops in both arms.
 
 | Measure | `model` round 1 | `model` round 2 | `list` round 1 | `list` round 2 |
 |---|---|---|---|---|
@@ -51,16 +51,16 @@ Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `re
 | M3, nearby shops shown | 48 | 49 | 48 | 45 |
 | M3, graded good | 18 | 18 | 15 | 14 |
 | M3, graded bad | 14 | 16 | 12 | 12 |
-| M3, never graded | 16 | 15 | 21 | 19 |
+| M3, no usable grade (never graded, or graded "unknown") | 16 | 15 | 21 | 19 |
 
 - **M1 and M2.** The one-shop gap on M1 is Barnes & Noble for jigsaw puzzle: "hobby store" returned it and "game store" did not. On the page the arms differ by one shop each way in that search (the `model` arm shows Barnes & Noble, the `list` arm shows Pinwheels and Play Toys). The other five searches give the same baseline shops in both arms.
-- **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops that no run has graded.
+- **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops with no usable grade. Control for the grade join: the same join on the saved run of these six searches (`docs/evidence/quality/eval20-store-types`) gives 28 good, 13 bad and 10 graded "unknown" of 51 shown shops, with none unmatched.
 - **M4, noise.** M1 and M2 did not change between rounds in either arm. Shown nearby shops in common between the two rounds: 47 of 50 (`model`) and 44 of 49 (`list`). Between the arms: 33 of 63 in round 1 and 31 of 63 in round 2. The list wording changes about half of the shops shown and does not change how many baseline shops are found.
 - **M5, wording.** The pairs differ in all six searches, by one phrase each: every search has one phrase that both arms sent.
 
 **Other findings.**
 
-- **The model's wording had already moved.** The live reading differs from the wording saved on 2026-09-29 (`docs/evidence/quality/eval20-store-types`) in 2 of the 6 searches: wool socks ("outdoor gear store" became "clothing store") and LED light bulbs ("electrical supply store" became "hardware store"). The saved run shows 9 of these 29 baseline shops; both arms here show 5. The loss is in wool socks: 4 shown then, 0 now in both arms.
+- **The model's wording had already moved.** The live reading differs from the wording saved on 2026-09-29 (`docs/evidence/quality/eval20-store-types`) in 2 of the 6 searches: wool socks ("outdoor gear store" became "clothing store") and LED light bulbs ("electrical supply store" became "hardware store"). The saved run shows 9 of these 29 baseline shops; both arms here show 5. The loss is in wool socks: 4 shown then, 0 now in both arms. `proxy/prompts/normalize.ts` and the model list did not change between the two dates (`git log`), so the model reworded the same prompt.
 - **Wool socks is a wrong-category case for the list (FAIL-1 of the plan).** Its four found baseline shops are outdoor shops. The hand pick is `clothing`, whose pair ("clothing store", "shoe store") returned none of the five. The second defensible pick, `outdoor`, was not run.
 - **Cordless drill and wool blanket found no baseline shop in any arm or round**, here and in the saved run.
 - **The live category pick matched the hand pick at both levels in all six searches.** This is the first run of the category call inside the pipeline. The call ran once per product (569 prompt tokens, $0.000444 reported for wool socks) and later searches read the saved reply.
@@ -69,7 +69,7 @@ Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `re
 
 **Limits.**
 
-- Six searches, one zip each, 29 baseline shops. The baseline was collected for the 2026-09 runs, and 15 to 21 shown shops per arm and round have no grade.
+- Six searches, one zip each, 29 baseline shops. The baseline was collected for the 2026-09 runs, and 15 to 21 shown shops per arm and round have no usable grade.
 - Each pair shares one phrase, so the test compares six single phrases, not twelve.
 - One reading per search. The test does not measure the benefit IDEA-1 claims from fixed wording: the model's own wording changed for 2 of 6 products since September, and the list's would not have.
 - The `list` arm used the hand pick. A wrong live pick would change its pair.
