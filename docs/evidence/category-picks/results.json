@@ -7,6 +7,7 @@
   "calls_with_no_valid_reply": [],
   "draft_runs_per_probe": 3,
   "probes_missing_a_run": [],
+  "distinct_response_ids": 192,
   "first_call": "2026-11-19T06:35:52.477Z",
   "last_call": "2026-11-19T06:38:05.403Z",
   "cost_usd_reported_by_openrouter": {
@@ -1243,6 +1244,18 @@
    "n": 24,
    "of": 24,
    "pct": 100
+  },
+  "inputs_where_draft_run_1_differs_from_today": {
+   "n": 5,
+   "of": 24,
+   "pct": 20.8,
+   "list": [
+    "MacBook Air M3: ultraportable laptop -> laptop",
+    "Makita XFD131: cordless drill driver -> cordless drill",
+    "Dyson V8: cordless stick vacuum -> cordless vacuum cleaner",
+    "Birkenstock Arizona: two-strap sandals -> sandals",
+    "Brooks Ghost 16: neutral running shoes -> running shoes"
+   ]
   },
   "per_input": [
    {
@@ -2976,6 +2989,8 @@
    "attempts": 48,
    "http_200": 48,
    "valid": 48,
+   "attempts_with_cached_prompt_tokens": 0,
+   "cached_prompt_tokens_sum": 0,
    "prompt_tokens": {
     "n": 48,
     "min": 347,
@@ -3016,6 +3031,8 @@
    "attempts": 48,
    "http_200": 48,
    "valid": 48,
+   "attempts_with_cached_prompt_tokens": 0,
+   "cached_prompt_tokens_sum": 0,
    "prompt_tokens": {
     "n": 48,
     "min": 801,
@@ -3052,10 +3069,96 @@
     "stop": 48
    }
   },
+  "draft_run_2": {
+   "attempts": 48,
+   "http_200": 48,
+   "valid": 48,
+   "attempts_with_cached_prompt_tokens": 33,
+   "cached_prompt_tokens_sum": 26520,
+   "prompt_tokens": {
+    "n": 48,
+    "min": 801,
+    "median": 802.5,
+    "max": 808,
+    "mean": 803.38
+   },
+   "completion_tokens": {
+    "n": 48,
+    "min": 52,
+    "median": 94,
+    "max": 143,
+    "mean": 99.73
+   },
+   "latency_ms": {
+    "n": 48,
+    "min": 463,
+    "median": 628,
+    "max": 1046,
+    "mean": 644.33
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 48,
+    "sum": 0.019123,
+    "median": 0.0002627
+   },
+   "models": {
+    "google/gemma-4-31b-it": 48
+   },
+   "providers": {
+    "ModelRun": 48
+   },
+   "finish_reasons": {
+    "stop": 48
+   }
+  },
+  "draft_run_3": {
+   "attempts": 48,
+   "http_200": 48,
+   "valid": 48,
+   "attempts_with_cached_prompt_tokens": 33,
+   "cached_prompt_tokens_sum": 26510,
+   "prompt_tokens": {
+    "n": 48,
+    "min": 801,
+    "median": 802.5,
+    "max": 808,
+    "mean": 803.38
+   },
+   "completion_tokens": {
+    "n": 48,
+    "min": 52,
+    "median": 94,
+    "max": 143,
+    "mean": 99.77
+   },
+   "latency_ms": {
+    "n": 48,
+    "min": 369,
+    "median": 637,
+    "max": 926,
+    "mean": 652.67
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 48,
+    "sum": 0.01913,
+    "median": 0.0002632
+   },
+   "models": {
+    "google/gemma-4-31b-it": 48
+   },
+   "providers": {
+    "ModelRun": 48
+   },
+   "finish_reasons": {
+    "stop": 48
+   }
+  },
   "draft_all_runs": {
    "attempts": 144,
    "http_200": 144,
    "valid": 144,
+   "attempts_with_cached_prompt_tokens": 66,
+   "cached_prompt_tokens_sum": 53030,
    "prompt_tokens": {
     "n": 144,
     "min": 801,

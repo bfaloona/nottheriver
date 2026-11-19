@@ -38,14 +38,18 @@ npx tsx docs/evidence/category-picks/grade.ts       # no calls; rewrites results
 
 Total: **$0.088572** for 192 calls. The source is the `usage.cost` figure that OpenRouter returned in each of the 192 replies, summed. This total includes the 2 smoke-test calls, which are the first probe's first-run calls.
 
-| Calls | Count | Reported cost | Median per call |
-|---|---|---|---|
-| Today's prompt | 48 | $0.016614 | $0.000339 |
-| Draft prompt | 144 | $0.071958 | $0.000686 |
+| Calls | Count | Reported cost | Median per call | Calls with cached prompt tokens |
+|---|---|---|---|---|
+| Today's prompt, run 1 | 48 | $0.016614 | $0.000339 | 0 |
+| Draft prompt, run 1 | 48 | $0.033706 | $0.000698 | 0 |
+| Draft prompt, run 2 | 48 | $0.019123 | $0.000263 | 33 |
+| Draft prompt, run 3 | 48 | $0.019130 | $0.000263 | 33 |
+
+Runs 2 and 3 cost less because the provider had the same prompt in its own cache for 33 of 48 calls in each run and billed those prompt tokens at a lower rate. A first search for a product gets no such discount, so run 1 is the figure to plan with: $0.000698 per call against $0.000339 today.
 
 ## Findings
 
-**FIND-1. The model reads brand and model names well.** The general pick matched the label in 72 of 72 calls and both levels matched in 69 of 72. The 3 misses are one input: "LEGO 10311" got `toys_hobbies/models_collectibles` in all 3 runs, where the label says `toys`. A bare model number worked ("DeWalt DCD771", "Makita XFD131", "Stihl MS 170").
+**FIND-1. The model reads brand and model names well.** The general pick matched the label in 72 of 72 calls and both levels matched in 69 of 72. The 3 misses are one input: "LEGO 10311" got `toys_hobbies/models_collectibles` in all 3 runs, where the label says `toys`. A brand with a model number worked ("DeWalt DCD771", "Makita XFD131", "Stihl MS 170").
 
 **FIND-2. The model names a specific category when none fits.** In 15 calls the label has a general category and no specific one, and the general pick was right. The model named a specific category in 12 of them. It never left `specific` empty for a product that had a general pick, except "dog bed" (`pets`, 3 calls).
 
@@ -62,7 +66,7 @@ The specific level decides store types, idea kinds and `no_used`, so a forced sp
 
 **FIND-4. Products with no category rarely got "none".** 6 of 15 calls (2 of 5 inputs: dishwasher tablets, laundry detergent). "eyeglasses" got `health_beauty/medicine_medical`, "gift card" got `not_a_product/service`, and "firewood" got `tools_hardware/building_materials` once and `garden/grills_patio` twice. This kind has no pass mark.
 
-**FIND-5. Repeat runs agree; one input changed.** "firewood" is the only input whose pick changed between runs. All 144 draft calls were answered by the same model (`google/gemma-4-31b-it`) and the same provider (ModelRun) within three minutes, so this measures repeatability under the best conditions.
+**FIND-5. Repeat runs agree; one input changed.** "firewood" is the only input whose pick changed between runs. All 144 draft calls were answered by the same model (`google/gemma-4-31b-it`) and the same provider (ModelRun) within three minutes, so this measures repeatability under the best conditions. In 66 of the 96 calls of runs 2 and 3 the provider read the prompt from its own cache. The replies were still generated anew: all 192 replies have distinct ids, and the other fields differ between runs (FIND-9).
 
 **FIND-6. Two-category products (owner question CQ6).** For all 9 inputs the model picked the label's general category in all 27 calls and never picked the other one. Each input got the same pick in all 3 runs.
 
@@ -82,7 +86,7 @@ Both levels matched the label in 12 of 27 calls; the misses are the forced speci
 
 **FIND-7. No reply was off the list.** All 144 draft replies passed the schema on the first attempt. Every `general` value was a list id, `none` or `not_a_product`, written exactly as in the prompt. Every non-empty `specific` value was an id under its own general category. By rule: MAP-2 102 replies, MAP-3 3, MAP-6 30, MAP-7 9; MAP-4 and MAP-5 never applied.
 
-**FIND-8. `canonical_name` already turns a brand into a generic name, with or without the new fields.** No brand or model word was in `canonical_name` in 72 of 72 draft calls and in 24 of 24 calls of today's prompt ("macbook" gives "laptop", "Stihl MS 170" gives "chainsaw"). With the draft prompt the name differed for 5 of 24 brand inputs and was less specific in each: "MacBook Air M3" gives "laptop" where today's prompt gives "ultraportable laptop"; "Brooks Ghost 16" gives "running shoes" where today's gives "neutral running shoes". No brand word was in any search query in either arm.
+**FIND-8. `canonical_name` already turns a brand into a generic name, with or without the new fields.** No brand or model word was in `canonical_name` in 72 of 72 draft calls and in 24 of 24 calls of today's prompt ("macbook" gives "laptop", "Stihl MS 170" gives "chainsaw"). With the draft prompt the name differed for 5 of 24 brand inputs (`canonical_name.inputs_where_draft_run_1_differs_from_today` in `results.json`) and was less specific in each: "MacBook Air M3" gives "laptop" where today's prompt gives "ultraportable laptop"; "Brooks Ghost 16" gives "running shoes" where today's gives "neutral running shoes". No brand word was in any search query in either arm.
 
 **FIND-9. The existing fields keep their shape, and their wording moves.**
 
@@ -110,16 +114,16 @@ Both levels matched the label in 12 of 27 calls; the misses are the forced speci
 
 - Some draft nearby searches use words from the list: "firewood" gives "building materials store" (today "firewood store"), "work boots" gives "workwear store" (today "footwear store"), "Stihl MS 170" gives "garden power equipment store" (today "power tool store"). This run cannot say which wording finds better shops, because that needs Brave calls. `results.json` holds every pair under `existing_fields.side_by_side`.
 
-**FIND-10. The draft prompt costs about twice as much per call and is slightly slower.**
+**FIND-10. The draft prompt costs about twice as much per call. Median latency was 37.5 ms higher in run 1.**
 
-| Per call, median (min to max) | Today's prompt, 48 calls | Draft prompt run 1, 48 calls | Draft prompt, all 144 calls |
-|---|---|---|---|
-| Prompt tokens | 348.5 (347 to 354) | 802.5 (801 to 808) | 802.5 (801 to 808) |
-| Output tokens | 78 (65 to 128) | 94 (52 to 143) | 94 (52 to 143) |
-| Latency, ms | 609.5 (432 to 995) | 647 (398 to 1,241) | 637.5 (369 to 1,241) |
-| Cost reported by OpenRouter | $0.000339 | $0.000698 | $0.000686 |
+| Per call, median (min to max) | Today's prompt, 48 calls | Draft prompt run 1, 48 calls |
+|---|---|---|
+| Prompt tokens | 348.5 (347 to 354) | 802.5 (801 to 808) |
+| Output tokens | 78 (65 to 128) | 94 (52 to 143) |
+| Latency, ms | 609.5 (432 to 995) | 647 (398 to 1,241) |
+| Cost reported by OpenRouter | $0.000339 | $0.000698 |
 
-The plan estimated about 740 prompt tokens for the draft; the measured figure is about 800. Latency is the time from sending the request to reading the full reply, on the machine that ran the script.
+The plan estimated about 740 prompt tokens for the draft; the measured figure is about 800. Latency is the time from sending the request to reading the full reply, on the machine that ran the script. The two latency ranges overlap, and 48 calls per prompt is too few to call the 37.5 ms gap a real difference. Median latency was 628 ms in draft run 2 and 637 ms in run 3.
 
 ## Hand labels that look wrong
 
@@ -137,7 +141,8 @@ The grades above use every label as written. These labels are open to question:
 
 - 48 inputs, written and labeled by the agent that wrote the category list. The inputs are not real shopper searches.
 - One model, one provider, one three-minute window. The fallback model (`google/gemma-4-26b-a4b-it`) never answered. Picks on another day, from another provider or from the fallback model are not measured.
-- Three runs per input catch only large instability.
+- Three runs per input catch only large instability. The provider's prompt cache served 66 of the 96 repeat calls.
+- Every brand probe names the brand. A bare model number ("DCD771") was not probed.
 - The run measures the pick. It does not measure whether list-built store types find better shops; that needs Brave calls.
 - The checks on the existing fields are rule checks in code (counts, endings, banned words, equal text). No person graded which wording is better.
 - The brand-word check is a substring match against a hand list.

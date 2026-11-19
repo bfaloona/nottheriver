@@ -39,7 +39,7 @@ interface Completion {
   provider?: string;
   model?: string;
   choices?: { finish_reason?: string; message?: { content?: string } }[];
-  usage?: { prompt_tokens?: number; completion_tokens?: number; cost?: number };
+  usage?: { prompt_tokens?: number; completion_tokens?: number; cost?: number; prompt_tokens_details?: { cached_tokens?: number } };
 }
 
 const raw = JSON.parse(fs.readFileSync(RAW_FILE, 'utf8')) as RawFile;
@@ -163,7 +163,8 @@ const canonical = (() => {
   const draftNames = per.flatMap((p) => p.draft.map((name) => ({ input: p.input, name })));
   const todayNames = per.map((p) => ({ input: p.input, name: p.today }));
   const generic = (xs: { input: string; name: string | null }[]) => share(count(xs, (x) => x.name !== null && !hasBrand(x.input, x.name)), xs.length);
-  return { draft_calls_generic_name: generic(draftNames), today_calls_generic_name: generic(todayNames), per_input: per };
+  const differs = per.filter((p) => p.today !== null && p.draft[0] !== null && p.today.toLowerCase() !== p.draft[0]!.toLowerCase());
+  return { draft_calls_generic_name: generic(draftNames), today_calls_generic_name: generic(todayNames), inputs_where_draft_run_1_differs_from_today: { ...share(differs.length, per.length), list: differs.map((p) => `${p.input}: ${p.today} -> ${p.draft[0]}`) }, per_input: per };
 })();
 
 // The fields the reply has today: rule checks from the prompt's own wording, per arm.
@@ -236,6 +237,9 @@ function usage(as: Attempt[]) {
     attempts: as.length,
     http_200: ok.length,
     valid: count(as, (a) => a.valid),
+    // The provider read these prompt tokens from its own cache and billed them at a lower rate.
+    attempts_with_cached_prompt_tokens: count(ok, (a) => (completion(a).usage?.prompt_tokens_details?.cached_tokens ?? 0) > 0),
+    cached_prompt_tokens_sum: num((c) => c.usage?.prompt_tokens_details?.cached_tokens).reduce((s, x) => s + x, 0),
     prompt_tokens: spread(num((c) => c.usage?.prompt_tokens)),
     completion_tokens: spread(num((c) => c.usage?.completion_tokens)),
     latency_ms: spread(ok.map((a) => a.ms)),
@@ -245,7 +249,8 @@ function usage(as: Attempt[]) {
     finish_reasons: tally((c) => c.choices?.[0]?.finish_reason),
   };
 }
-const perCall = { today_run_1: usage(attemptsOf('today')), draft_run_1: usage(attemptsOf('draft', 1)), draft_all_runs: usage(attemptsOf('draft')) };
+const perCall = { today_run_1: usage(attemptsOf('today')), draft_run_1: usage(attemptsOf('draft', 1)), draft_run_2: usage(attemptsOf('draft', 2)), draft_run_3: usage(attemptsOf('draft', 3)), draft_all_runs: usage(attemptsOf('draft')) };
+const responseIds = raw.calls.flatMap((c) => c.attempts).map((a) => (a.response as { id?: string } | null)?.id);
 const all = raw.calls.flatMap((c) => c.attempts);
 const totals = {
   calls: raw.calls.length,
@@ -254,6 +259,7 @@ const totals = {
   calls_with_no_valid_reply: raw.calls.filter((c) => !c.attempts.at(-1)?.valid).map((c) => `${c.arm} r${c.round} ${c.input}`),
   draft_runs_per_probe: expectedRuns,
   probes_missing_a_run: rows.filter((r) => r.calls.length !== expectedRuns).map((r) => r.probe.input),
+  distinct_response_ids: new Set(responseIds).size,
   first_call: all.map((a) => a.started).sort()[0],
   last_call: all.map((a) => a.started).sort().at(-1),
   cost_usd_reported_by_openrouter: usage(all).cost_usd,
