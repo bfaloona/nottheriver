@@ -1,0 +1,3096 @@
+{
+ "about": "Written by grade.ts from raw.json. Every figure is computed from the saved replies.",
+ "totals": {
+  "calls": 192,
+  "attempts": 192,
+  "calls_with_a_second_attempt": 0,
+  "calls_with_no_valid_reply": [],
+  "draft_runs_per_probe": 3,
+  "probes_missing_a_run": [],
+  "first_call": "2026-11-19T06:35:52.477Z",
+  "last_call": "2026-11-19T06:38:05.403Z",
+  "cost_usd_reported_by_openrouter": {
+   "attempts_with_a_cost": 192,
+   "sum": 0.088572,
+   "median": 0.000341625
+  }
+ },
+ "marks": {
+  "brand_general_matches_label": {
+   "n": 72,
+   "of": 72,
+   "pct": 100,
+   "pass_mark_pct": 90
+  },
+  "nonproduct_gets_not_a_product": {
+   "n": 27,
+   "of": 30,
+   "pct": 90,
+   "pass_mark_pct": 80
+  },
+  "same_pick_in_all_runs_both_levels": {
+   "n": 47,
+   "of": 48,
+   "pct": 97.9,
+   "pass_mark_pct": 90
+  },
+  "same_pick_in_all_runs_general_only": {
+   "n": 47,
+   "of": 48,
+   "pct": 97.9,
+   "pass_mark_pct": 90
+  }
+ },
+ "by_kind": {
+  "brand": {
+   "inputs": 24,
+   "calls": 72,
+   "general_matches_label": {
+    "n": 72,
+    "of": 72,
+    "pct": 100
+   },
+   "both_levels_match_label": {
+    "n": 69,
+    "of": 72,
+    "pct": 95.8
+   },
+   "inputs_with_same_pick_all_runs_both_levels": {
+    "n": 24,
+    "of": 24,
+    "pct": 100
+   },
+   "inputs_with_same_pick_all_runs_general_only": {
+    "n": 24,
+    "of": 24,
+    "pct": 100
+   }
+  },
+  "nonproduct": {
+   "inputs": 10,
+   "calls": 30,
+   "general_matches_label": {
+    "n": 27,
+    "of": 30,
+    "pct": 90
+   },
+   "both_levels_match_label": {
+    "n": 27,
+    "of": 30,
+    "pct": 90
+   },
+   "inputs_with_same_pick_all_runs_both_levels": {
+    "n": 10,
+    "of": 10,
+    "pct": 100
+   },
+   "inputs_with_same_pick_all_runs_general_only": {
+    "n": 10,
+    "of": 10,
+    "pct": 100
+   }
+  },
+  "gap": {
+   "inputs": 5,
+   "calls": 15,
+   "general_matches_label": {
+    "n": 6,
+    "of": 15,
+    "pct": 40
+   },
+   "both_levels_match_label": {
+    "n": 6,
+    "of": 15,
+    "pct": 40
+   },
+   "inputs_with_same_pick_all_runs_both_levels": {
+    "n": 4,
+    "of": 5,
+    "pct": 80
+   },
+   "inputs_with_same_pick_all_runs_general_only": {
+    "n": 4,
+    "of": 5,
+    "pct": 80
+   }
+  },
+  "two": {
+   "inputs": 9,
+   "calls": 27,
+   "general_matches_label": {
+    "n": 27,
+    "of": 27,
+    "pct": 100
+   },
+   "both_levels_match_label": {
+    "n": 12,
+    "of": 27,
+    "pct": 44.4
+   },
+   "inputs_with_same_pick_all_runs_both_levels": {
+    "n": 9,
+    "of": 9,
+    "pct": 100
+   },
+   "inputs_with_same_pick_all_runs_general_only": {
+    "n": 9,
+    "of": 9,
+    "pct": 100
+   }
+  }
+ },
+ "specific_level": {
+  "brand_calls_general_right": 72,
+  "of_them_specific_right": 69,
+  "of_them_specific_empty_or_unknown": 0,
+  "of_them_other_specific": 3,
+  "nonproduct_calls_not_a_product": 27,
+  "of_them_reason_matches_label": 27,
+  "gap_calls_none": {
+   "n": 6,
+   "of": 15,
+   "pct": 40
+  },
+  "calls_general_right_where_label_has_no_specific": 15,
+  "of_them_model_gave_a_specific": 12
+ },
+ "off_list": {
+  "replies": 144,
+  "by_rule": {
+   "MAP-2": 102,
+   "MAP-3": 3,
+   "MAP-6": 30,
+   "MAP-7": 9
+  },
+  "general_not_an_id": [],
+  "general_needed_tidying": 0,
+  "specific_dropped": []
+ },
+ "picks": [
+  {
+   "input": "macbook",
+   "kind": "brand",
+   "label": "electronics/computers",
+   "picks": [
+    "electronics/computers",
+    "electronics/computers",
+    "electronics/computers"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "MacBook Air M3",
+   "kind": "brand",
+   "label": "electronics/computers",
+   "picks": [
+    "electronics/computers",
+    "electronics/computers",
+    "electronics/computers"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "DeWalt DCD771",
+   "kind": "brand",
+   "label": "tools_hardware/power_tools",
+   "picks": [
+    "tools_hardware/power_tools",
+    "tools_hardware/power_tools",
+    "tools_hardware/power_tools"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Makita XFD131",
+   "kind": "brand",
+   "label": "tools_hardware/power_tools",
+   "picks": [
+    "tools_hardware/power_tools",
+    "tools_hardware/power_tools",
+    "tools_hardware/power_tools"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "iPhone 15",
+   "kind": "brand",
+   "label": "electronics/phones_tablets",
+   "picks": [
+    "electronics/phones_tablets",
+    "electronics/phones_tablets",
+    "electronics/phones_tablets"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Kobo Clara",
+   "kind": "brand",
+   "label": "electronics/phones_tablets",
+   "picks": [
+    "electronics/phones_tablets",
+    "electronics/phones_tablets",
+    "electronics/phones_tablets"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Le Creuset dutch oven",
+   "kind": "brand",
+   "label": "kitchen/cookware",
+   "picks": [
+    "kitchen/cookware",
+    "kitchen/cookware",
+    "kitchen/cookware"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Vitamix 5200",
+   "kind": "brand",
+   "label": "kitchen/small_kitchen_appliances",
+   "picks": [
+    "kitchen/small_kitchen_appliances",
+    "kitchen/small_kitchen_appliances",
+    "kitchen/small_kitchen_appliances"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Dyson V8",
+   "kind": "brand",
+   "label": "appliances/vacuums",
+   "picks": [
+    "appliances/vacuums",
+    "appliances/vacuums",
+    "appliances/vacuums"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Patagonia Nano Puff",
+   "kind": "brand",
+   "label": "outdoor/outdoor_clothing",
+   "picks": [
+    "outdoor/outdoor_clothing",
+    "outdoor/outdoor_clothing",
+    "outdoor/outdoor_clothing"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Levi's 501",
+   "kind": "brand",
+   "label": "clothing/everyday_clothing",
+   "picks": [
+    "clothing/everyday_clothing",
+    "clothing/everyday_clothing",
+    "clothing/everyday_clothing"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Birkenstock Arizona",
+   "kind": "brand",
+   "label": "clothing/shoes",
+   "picks": [
+    "clothing/shoes",
+    "clothing/shoes",
+    "clothing/shoes"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Brooks Ghost 16",
+   "kind": "brand",
+   "label": "sports/running_shoes",
+   "picks": [
+    "sports/running_shoes",
+    "sports/running_shoes",
+    "sports/running_shoes"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Trek FX 2",
+   "kind": "brand",
+   "label": "sports/bikes",
+   "picks": [
+    "sports/bikes",
+    "sports/bikes",
+    "sports/bikes"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "LEGO 10311",
+   "kind": "brand",
+   "label": "toys_hobbies/toys",
+   "picks": [
+    "toys_hobbies/models_collectibles",
+    "toys_hobbies/models_collectibles",
+    "toys_hobbies/models_collectibles"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Catan",
+   "kind": "brand",
+   "label": "toys_hobbies/puzzles_board_games",
+   "picks": [
+    "toys_hobbies/puzzles_board_games",
+    "toys_hobbies/puzzles_board_games",
+    "toys_hobbies/puzzles_board_games"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Yeti Rambler",
+   "kind": "brand",
+   "label": "kitchen/tableware_drinkware",
+   "picks": [
+    "kitchen/tableware_drinkware",
+    "kitchen/tableware_drinkware",
+    "kitchen/tableware_drinkware"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Weber Spirit II",
+   "kind": "brand",
+   "label": "garden/grills_patio",
+   "picks": [
+    "garden/grills_patio",
+    "garden/grills_patio",
+    "garden/grills_patio"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Stihl MS 170",
+   "kind": "brand",
+   "label": "garden/yard_power_equipment",
+   "picks": [
+    "garden/yard_power_equipment",
+    "garden/yard_power_equipment",
+    "garden/yard_power_equipment"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Fender Stratocaster",
+   "kind": "brand",
+   "label": "books_media/musical_instruments",
+   "picks": [
+    "books_media/musical_instruments",
+    "books_media/musical_instruments",
+    "books_media/musical_instruments"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Graco SlimFit3",
+   "kind": "brand",
+   "label": "baby_kids/car_seats_strollers",
+   "picks": [
+    "baby_kids/car_seats_strollers",
+    "baby_kids/car_seats_strollers",
+    "baby_kids/car_seats_strollers"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Nintendo Switch",
+   "kind": "brand",
+   "label": "electronics/video_games",
+   "picks": [
+    "electronics/video_games",
+    "electronics/video_games",
+    "electronics/video_games"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Canon EOS R10",
+   "kind": "brand",
+   "label": "electronics/cameras",
+   "picks": [
+    "electronics/cameras",
+    "electronics/cameras",
+    "electronics/cameras"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "Michelin X-Ice",
+   "kind": "brand",
+   "label": "auto/tires",
+   "picks": [
+    "auto/tires",
+    "auto/tires",
+    "auto/tires"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "haircut",
+   "kind": "nonproduct",
+   "label": "not_a_product/service",
+   "picks": [
+    "not_a_product/service",
+    "not_a_product/service",
+    "not_a_product/service"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "plumber",
+   "kind": "nonproduct",
+   "label": "not_a_product/service",
+   "picks": [
+    "not_a_product/service",
+    "not_a_product/service",
+    "not_a_product/service"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "pizza delivery",
+   "kind": "nonproduct",
+   "label": "not_a_product/meal",
+   "picks": [
+    "not_a_product/meal",
+    "not_a_product/meal",
+    "not_a_product/meal"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "sushi",
+   "kind": "nonproduct",
+   "label": "not_a_product/meal",
+   "picks": [
+    "not_a_product/meal",
+    "not_a_product/meal",
+    "not_a_product/meal"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "hotel room",
+   "kind": "nonproduct",
+   "label": "not_a_product/place_to_stay",
+   "picks": [
+    "not_a_product/place_to_stay",
+    "not_a_product/place_to_stay",
+    "not_a_product/place_to_stay"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "kitchen",
+   "kind": "nonproduct",
+   "label": "not_a_product/room",
+   "picks": [
+    "not_a_product/room",
+    "not_a_product/room",
+    "not_a_product/room"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "bathroom remodel",
+   "kind": "nonproduct",
+   "label": "not_a_product/room",
+   "picks": [
+    "not_a_product/room",
+    "not_a_product/room",
+    "not_a_product/room"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "camping",
+   "kind": "nonproduct",
+   "label": "not_a_product/activity",
+   "picks": [
+    "not_a_product/activity",
+    "not_a_product/activity",
+    "not_a_product/activity"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "yoga class",
+   "kind": "nonproduct",
+   "label": "not_a_product/activity",
+   "picks": [
+    "not_a_product/activity",
+    "not_a_product/activity",
+    "not_a_product/activity"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "asdfgh",
+   "kind": "nonproduct",
+   "label": "not_a_product/unclear",
+   "picks": [
+    "none/",
+    "none/",
+    "none/"
+   ],
+   "sides": [
+    "other",
+    "other",
+    "other"
+   ],
+   "general_right_runs": 0,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "dishwasher tablets",
+   "kind": "gap",
+   "label": "none/",
+   "picks": [
+    "none/",
+    "none/",
+    "none/"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "laundry detergent",
+   "kind": "gap",
+   "label": "none/",
+   "picks": [
+    "none/",
+    "none/",
+    "none/"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "firewood",
+   "kind": "gap",
+   "label": "none/",
+   "picks": [
+    "tools_hardware/building_materials",
+    "garden/grills_patio",
+    "garden/grills_patio"
+   ],
+   "sides": [
+    "other",
+    "other",
+    "other"
+   ],
+   "general_right_runs": 0,
+   "same_all_runs": false,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "gift card",
+   "kind": "gap",
+   "label": "none/",
+   "picks": [
+    "not_a_product/service",
+    "not_a_product/service",
+    "not_a_product/service"
+   ],
+   "sides": [
+    "other",
+    "other",
+    "other"
+   ],
+   "general_right_runs": 0,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "eyeglasses",
+   "kind": "gap",
+   "label": "none/",
+   "picks": [
+    "health_beauty/medicine_medical",
+    "health_beauty/medicine_medical",
+    "health_beauty/medicine_medical"
+   ],
+   "sides": [
+    "other",
+    "other",
+    "other"
+   ],
+   "general_right_runs": 0,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "notebook",
+   "kind": "two",
+   "label": "books_media/stationery_office",
+   "alt": "electronics/computers",
+   "picks": [
+    "books_media/stationery_office",
+    "books_media/stationery_office",
+    "books_media/stationery_office"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "pocket knife",
+   "kind": "two",
+   "label": "outdoor/",
+   "alt": "kitchen/kitchen_knives",
+   "picks": [
+    "outdoor/fishing_hunting",
+    "outdoor/fishing_hunting",
+    "outdoor/fishing_hunting"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "sewing machine",
+   "kind": "two",
+   "label": "toys_hobbies/fabric_yarn",
+   "alt": "appliances/",
+   "picks": [
+    "toys_hobbies/craft_supplies",
+    "toys_hobbies/craft_supplies",
+    "toys_hobbies/craft_supplies"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "yoga mat",
+   "kind": "two",
+   "label": "sports/fitness_equipment",
+   "alt": "outdoor/",
+   "picks": [
+    "sports/fitness_equipment",
+    "sports/fitness_equipment",
+    "sports/fitness_equipment"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "baby monitor",
+   "kind": "two",
+   "label": "baby_kids/",
+   "alt": "electronics/",
+   "picks": [
+    "baby_kids/nursery_furniture",
+    "baby_kids/nursery_furniture",
+    "baby_kids/nursery_furniture"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "dog bed",
+   "kind": "two",
+   "label": "pets/",
+   "alt": "home/bedding_bath",
+   "picks": [
+    "pets/",
+    "pets/",
+    "pets/"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "work boots",
+   "kind": "two",
+   "label": "clothing/workwear",
+   "alt": "clothing/shoes",
+   "picks": [
+    "clothing/workwear",
+    "clothing/workwear",
+    "clothing/workwear"
+   ],
+   "sides": [
+    "pick",
+    "pick",
+    "pick"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "garden gloves",
+   "kind": "two",
+   "label": "garden/",
+   "alt": "clothing/workwear",
+   "picks": [
+    "garden/yard_power_equipment",
+    "garden/yard_power_equipment",
+    "garden/yard_power_equipment"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  },
+  {
+   "input": "bird feeder",
+   "kind": "two",
+   "label": "garden/",
+   "alt": "pets/",
+   "picks": [
+    "garden/grills_patio",
+    "garden/grills_patio",
+    "garden/grills_patio"
+   ],
+   "sides": [
+    "pick, general only",
+    "pick, general only",
+    "pick, general only"
+   ],
+   "general_right_runs": 3,
+   "same_all_runs": true,
+   "providers": [
+    "ModelRun",
+    "ModelRun",
+    "ModelRun"
+   ]
+  }
+ ],
+ "canonical_name": {
+  "draft_calls_generic_name": {
+   "n": 72,
+   "of": 72,
+   "pct": 100
+  },
+  "today_calls_generic_name": {
+   "n": 24,
+   "of": 24,
+   "pct": 100
+  },
+  "per_input": [
+   {
+    "input": "macbook",
+    "draft": [
+     "laptop",
+     "laptop",
+     "laptop"
+    ],
+    "today": "laptop"
+   },
+   {
+    "input": "MacBook Air M3",
+    "draft": [
+     "laptop",
+     "laptop",
+     "laptop"
+    ],
+    "today": "ultraportable laptop"
+   },
+   {
+    "input": "DeWalt DCD771",
+    "draft": [
+     "cordless drill driver",
+     "cordless drill driver",
+     "cordless drill driver"
+    ],
+    "today": "cordless drill driver"
+   },
+   {
+    "input": "Makita XFD131",
+    "draft": [
+     "cordless drill",
+     "cordless drill",
+     "cordless drill"
+    ],
+    "today": "cordless drill driver"
+   },
+   {
+    "input": "iPhone 15",
+    "draft": [
+     "smartphone",
+     "smartphone",
+     "smartphone"
+    ],
+    "today": "smartphone"
+   },
+   {
+    "input": "Kobo Clara",
+    "draft": [
+     "e-reader",
+     "e-reader",
+     "e-reader"
+    ],
+    "today": "e-reader"
+   },
+   {
+    "input": "Le Creuset dutch oven",
+    "draft": [
+     "enameled cast iron dutch oven",
+     "enameled cast iron dutch oven",
+     "enameled cast iron dutch oven"
+    ],
+    "today": "enameled cast iron dutch oven"
+   },
+   {
+    "input": "Vitamix 5200",
+    "draft": [
+     "high-performance blender",
+     "high-performance blender",
+     "high-performance blender"
+    ],
+    "today": "high-performance blender"
+   },
+   {
+    "input": "Dyson V8",
+    "draft": [
+     "cordless vacuum cleaner",
+     "cordless vacuum cleaner",
+     "cordless vacuum cleaner"
+    ],
+    "today": "cordless stick vacuum"
+   },
+   {
+    "input": "Patagonia Nano Puff",
+    "draft": [
+     "insulated jacket",
+     "insulated jacket",
+     "insulated jacket"
+    ],
+    "today": "insulated jacket"
+   },
+   {
+    "input": "Levi's 501",
+    "draft": [
+     "straight leg jeans",
+     "straight leg jeans",
+     "straight leg jeans"
+    ],
+    "today": "straight leg jeans"
+   },
+   {
+    "input": "Birkenstock Arizona",
+    "draft": [
+     "sandals",
+     "sandals",
+     "sandals"
+    ],
+    "today": "two-strap sandals"
+   },
+   {
+    "input": "Brooks Ghost 16",
+    "draft": [
+     "running shoes",
+     "running shoes",
+     "running shoes"
+    ],
+    "today": "neutral running shoes"
+   },
+   {
+    "input": "Trek FX 2",
+    "draft": [
+     "hybrid bike",
+     "hybrid bike",
+     "hybrid bike"
+    ],
+    "today": "hybrid bike"
+   },
+   {
+    "input": "LEGO 10311",
+    "draft": [
+     "building block set",
+     "building block set",
+     "building block set"
+    ],
+    "today": "building block set"
+   },
+   {
+    "input": "Catan",
+    "draft": [
+     "board game",
+     "board game",
+     "board game"
+    ],
+    "today": "board game"
+   },
+   {
+    "input": "Yeti Rambler",
+    "draft": [
+     "insulated tumbler",
+     "insulated tumbler",
+     "insulated tumbler"
+    ],
+    "today": "insulated tumbler"
+   },
+   {
+    "input": "Weber Spirit II",
+    "draft": [
+     "gas grill",
+     "gas grill",
+     "gas grill"
+    ],
+    "today": "gas grill"
+   },
+   {
+    "input": "Stihl MS 170",
+    "draft": [
+     "chainsaw",
+     "chainsaw",
+     "chainsaw"
+    ],
+    "today": "chainsaw"
+   },
+   {
+    "input": "Fender Stratocaster",
+    "draft": [
+     "electric guitar",
+     "electric guitar",
+     "electric guitar"
+    ],
+    "today": "electric guitar"
+   },
+   {
+    "input": "Graco SlimFit3",
+    "draft": [
+     "convertible car seat",
+     "convertible car seat",
+     "convertible car seat"
+    ],
+    "today": "convertible car seat"
+   },
+   {
+    "input": "Nintendo Switch",
+    "draft": [
+     "handheld gaming console",
+     "handheld gaming console",
+     "handheld gaming console"
+    ],
+    "today": "handheld gaming console"
+   },
+   {
+    "input": "Canon EOS R10",
+    "draft": [
+     "mirrorless camera",
+     "mirrorless camera",
+     "mirrorless camera"
+    ],
+    "today": "mirrorless camera"
+   },
+   {
+    "input": "Michelin X-Ice",
+    "draft": [
+     "winter tires",
+     "winter tires",
+     "winter tires"
+    ],
+    "today": "winter tires"
+   }
+  ]
+ },
+ "existing_fields": {
+  "rule_checks": {
+   "today": {
+    "calls": 48,
+    "valid_replies": 48,
+    "similar_products_3_to_6": 48,
+    "online_queries_2_or_3": 48,
+    "online_queries_with_a_banned_word": 0,
+    "local_queries_exactly_2": 48,
+    "local_queries_all_end_store_or_shop": 48,
+    "local_queries_name_the_product": 2,
+    "brand_inputs_valid": 24,
+    "brand_inputs_with_brand_word_in_a_query": 0,
+    "category_is_none_or_not_a_product": [],
+    "category_is_an_id_on_the_list": 9,
+    "category_chars": {
+     "n": 48,
+     "min": 4,
+     "median": 12,
+     "max": 22,
+     "mean": 12.17
+    },
+    "similar_products_count": {
+     "n": 48,
+     "min": 3,
+     "median": 5,
+     "max": 6,
+     "mean": 4.77
+    },
+    "online_queries_count": {
+     "n": 48,
+     "min": 2,
+     "median": 2,
+     "max": 2,
+     "mean": 2
+    }
+   },
+   "draft_run_1": {
+    "calls": 48,
+    "valid_replies": 48,
+    "similar_products_3_to_6": 47,
+    "online_queries_2_or_3": 47,
+    "online_queries_with_a_banned_word": 0,
+    "local_queries_exactly_2": 48,
+    "local_queries_all_end_store_or_shop": 48,
+    "local_queries_name_the_product": 3,
+    "brand_inputs_valid": 24,
+    "brand_inputs_with_brand_word_in_a_query": 0,
+    "category_is_none_or_not_a_product": [
+     "kitchen: none"
+    ],
+    "category_is_an_id_on_the_list": 7,
+    "category_chars": {
+     "n": 48,
+     "min": 4,
+     "median": 10.5,
+     "max": 19,
+     "mean": 10.9
+    },
+    "similar_products_count": {
+     "n": 48,
+     "min": 0,
+     "median": 5,
+     "max": 6,
+     "mean": 4.85
+    },
+    "online_queries_count": {
+     "n": 48,
+     "min": 0,
+     "median": 2,
+     "max": 2,
+     "mean": 1.96
+    }
+   },
+   "draft_all_runs": {
+    "calls": 144,
+    "valid_replies": 144,
+    "similar_products_3_to_6": 141,
+    "online_queries_2_or_3": 141,
+    "online_queries_with_a_banned_word": 0,
+    "local_queries_exactly_2": 144,
+    "local_queries_all_end_store_or_shop": 144,
+    "local_queries_name_the_product": 7,
+    "brand_inputs_valid": 72,
+    "brand_inputs_with_brand_word_in_a_query": 0,
+    "category_is_none_or_not_a_product": [
+     "kitchen: none",
+     "kitchen: none",
+     "kitchen: none"
+    ],
+    "category_is_an_id_on_the_list": 21,
+    "category_chars": {
+     "n": 144,
+     "min": 4,
+     "median": 10,
+     "max": 19,
+     "mean": 10.78
+    },
+    "similar_products_count": {
+     "n": 144,
+     "min": 0,
+     "median": 5,
+     "max": 6,
+     "mean": 4.85
+    },
+    "online_queries_count": {
+     "n": 144,
+     "min": 0,
+     "median": 2,
+     "max": 2,
+     "mean": 1.96
+    }
+   }
+  },
+  "same_value_for_the_same_input": {
+   "today_vs_draft_run_1": {
+    "category": {
+     "n": 30,
+     "of": 48,
+     "pct": 62.5
+    },
+    "canonical_name": {
+     "n": 42,
+     "of": 48,
+     "pct": 87.5
+    },
+    "local_queries_same_two_in_order": {
+     "n": 23,
+     "of": 48,
+     "pct": 47.9
+    },
+    "local_queries_first_same": {
+     "n": 30,
+     "of": 48,
+     "pct": 62.5
+    },
+    "online_queries_same_set": {
+     "n": 24,
+     "of": 48,
+     "pct": 50
+    },
+    "similar_products_same_set": {
+     "n": 3,
+     "of": 48,
+     "pct": 6.3
+    }
+   },
+   "draft_run_1_vs_run_2": {
+    "category": {
+     "n": 47,
+     "of": 48,
+     "pct": 97.9
+    },
+    "canonical_name": {
+     "n": 48,
+     "of": 48,
+     "pct": 100
+    },
+    "local_queries_same_two_in_order": {
+     "n": 43,
+     "of": 48,
+     "pct": 89.6
+    },
+    "local_queries_first_same": {
+     "n": 45,
+     "of": 48,
+     "pct": 93.8
+    },
+    "online_queries_same_set": {
+     "n": 44,
+     "of": 48,
+     "pct": 91.7
+    },
+    "similar_products_same_set": {
+     "n": 36,
+     "of": 48,
+     "pct": 75
+    }
+   },
+   "draft_run_2_vs_run_3": {
+    "category": {
+     "n": 47,
+     "of": 48,
+     "pct": 97.9
+    },
+    "canonical_name": {
+     "n": 48,
+     "of": 48,
+     "pct": 100
+    },
+    "local_queries_same_two_in_order": {
+     "n": 45,
+     "of": 48,
+     "pct": 93.8
+    },
+    "local_queries_first_same": {
+     "n": 47,
+     "of": 48,
+     "pct": 97.9
+    },
+    "online_queries_same_set": {
+     "n": 47,
+     "of": 48,
+     "pct": 97.9
+    },
+    "similar_products_same_set": {
+     "n": 43,
+     "of": 48,
+     "pct": 89.6
+    }
+   }
+  },
+  "side_by_side": [
+   {
+    "input": "macbook",
+    "today": {
+     "category": "computing",
+     "canonical_name": "laptop",
+     "local_queries": [
+      "computer store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy laptop",
+      "laptop shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "laptops",
+     "canonical_name": "laptop",
+     "local_queries": [
+      "computer store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy laptop online",
+      "laptop shop"
+     ]
+    }
+   },
+   {
+    "input": "MacBook Air M3",
+    "today": {
+     "category": "laptops",
+     "canonical_name": "ultraportable laptop",
+     "local_queries": [
+      "computer store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy ultraportable laptop",
+      "laptop shop online"
+     ]
+    },
+    "draft_run_1": {
+     "category": "laptops",
+     "canonical_name": "laptop",
+     "local_queries": [
+      "computer store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy laptop",
+      "laptop shop"
+     ]
+    }
+   },
+   {
+    "input": "DeWalt DCD771",
+    "today": {
+     "category": "power tools",
+     "canonical_name": "cordless drill driver",
+     "local_queries": [
+      "power tool store",
+      "hardware shop"
+     ],
+     "online_queries": [
+      "buy cordless drill driver",
+      "cordless drill shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "power tools",
+     "canonical_name": "cordless drill driver",
+     "local_queries": [
+      "power tool store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy cordless drill driver",
+      "cordless drill shop"
+     ]
+    }
+   },
+   {
+    "input": "Makita XFD131",
+    "today": {
+     "category": "power tools",
+     "canonical_name": "cordless drill driver",
+     "local_queries": [
+      "power tool store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy cordless drill driver",
+      "cordless drill shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "power tools",
+     "canonical_name": "cordless drill",
+     "local_queries": [
+      "power tool store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy cordless drill",
+      "cordless drill shop"
+     ]
+    }
+   },
+   {
+    "input": "iPhone 15",
+    "today": {
+     "category": "smartphones",
+     "canonical_name": "smartphone",
+     "local_queries": [
+      "electronics store",
+      "mobile phone shop"
+     ],
+     "online_queries": [
+      "buy smartphone",
+      "smartphone shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "smartphones",
+     "canonical_name": "smartphone",
+     "local_queries": [
+      "electronics store",
+      "mobile phone shop"
+     ],
+     "online_queries": [
+      "buy smartphone online",
+      "smartphone shop"
+     ]
+    }
+   },
+   {
+    "input": "Kobo Clara",
+    "today": {
+     "category": "electronics",
+     "canonical_name": "e-reader",
+     "local_queries": [
+      "electronics store",
+      "book shop"
+     ],
+     "online_queries": [
+      "buy e-reader",
+      "e-ink tablet shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "e-readers",
+     "canonical_name": "e-reader",
+     "local_queries": [
+      "electronics store",
+      "computer shop"
+     ],
+     "online_queries": [
+      "buy e-reader",
+      "e-ink tablet shop"
+     ]
+    }
+   },
+   {
+    "input": "Le Creuset dutch oven",
+    "today": {
+     "category": "cookware",
+     "canonical_name": "enameled cast iron dutch oven",
+     "local_queries": [
+      "cookware store",
+      "kitchen supply store"
+     ],
+     "online_queries": [
+      "buy enameled cast iron dutch oven",
+      "enameled cast iron pot shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "cookware",
+     "canonical_name": "enameled cast iron dutch oven",
+     "local_queries": [
+      "cookware store",
+      "kitchen supply store"
+     ],
+     "online_queries": [
+      "buy enameled cast iron dutch oven",
+      "enameled dutch oven shop"
+     ]
+    }
+   },
+   {
+    "input": "Vitamix 5200",
+    "today": {
+     "category": "kitchen appliances",
+     "canonical_name": "high-performance blender",
+     "local_queries": [
+      "appliance store",
+      "kitchen supply shop"
+     ],
+     "online_queries": [
+      "buy high performance blender",
+      "professional blender shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "blenders",
+     "canonical_name": "high-performance blender",
+     "local_queries": [
+      "kitchen appliance store",
+      "kitchen supply shop"
+     ],
+     "online_queries": [
+      "buy high performance blender",
+      "professional blender shop"
+     ]
+    }
+   },
+   {
+    "input": "Dyson V8",
+    "today": {
+     "category": "vacuum cleaners",
+     "canonical_name": "cordless stick vacuum",
+     "local_queries": [
+      "vacuum cleaner store",
+      "home appliance shop"
+     ],
+     "online_queries": [
+      "buy cordless stick vacuum",
+      "cordless vacuum shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "vacuum cleaners",
+     "canonical_name": "cordless vacuum cleaner",
+     "local_queries": [
+      "vacuum store",
+      "home appliance shop"
+     ],
+     "online_queries": [
+      "buy cordless vacuum",
+      "cordless stick vacuum shop"
+     ]
+    }
+   },
+   {
+    "input": "Patagonia Nano Puff",
+    "today": {
+     "category": "outdoor apparel",
+     "canonical_name": "insulated jacket",
+     "local_queries": [
+      "outdoor gear store",
+      "outdoor outfitters shop"
+     ],
+     "online_queries": [
+      "buy insulated jacket",
+      "synthetic puffer jacket shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "outdoor clothing",
+     "canonical_name": "insulated jacket",
+     "local_queries": [
+      "outdoor gear store",
+      "outdoor outfitters shop"
+     ],
+     "online_queries": [
+      "buy insulated jacket",
+      "synthetic puffer jacket shop"
+     ]
+    }
+   },
+   {
+    "input": "Levi's 501",
+    "today": {
+     "category": "apparel",
+     "canonical_name": "straight leg jeans",
+     "local_queries": [
+      "clothing store",
+      "apparel shop"
+     ],
+     "online_queries": [
+      "buy straight leg jeans",
+      "denim trousers shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "denim",
+     "canonical_name": "straight leg jeans",
+     "local_queries": [
+      "clothing store",
+      "apparel shop"
+     ],
+     "online_queries": [
+      "buy straight leg jeans",
+      "denim trousers shop"
+     ]
+    }
+   },
+   {
+    "input": "Birkenstock Arizona",
+    "today": {
+     "category": "footwear",
+     "canonical_name": "two-strap sandals",
+     "local_queries": [
+      "shoe store",
+      "footwear shop"
+     ],
+     "online_queries": [
+      "buy two strap sandals",
+      "leather cork sandals shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "footwear",
+     "canonical_name": "sandals",
+     "local_queries": [
+      "shoe store",
+      "footwear shop"
+     ],
+     "online_queries": [
+      "buy two strap sandals",
+      "cork footbed sandals shop"
+     ]
+    }
+   },
+   {
+    "input": "Brooks Ghost 16",
+    "today": {
+     "category": "footwear",
+     "canonical_name": "neutral running shoes",
+     "local_queries": [
+      "running shoe store",
+      "athletic footwear shop"
+     ],
+     "online_queries": [
+      "buy neutral running shoes",
+      "running sneakers shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "footwear",
+     "canonical_name": "running shoes",
+     "local_queries": [
+      "running shoe store",
+      "athletic footwear shop"
+     ],
+     "online_queries": [
+      "buy running shoes",
+      "neutral cushioning running shoes shop"
+     ]
+    }
+   },
+   {
+    "input": "Trek FX 2",
+    "today": {
+     "category": "bicycles",
+     "canonical_name": "hybrid bike",
+     "local_queries": [
+      "bicycle store",
+      "bike shop"
+     ],
+     "online_queries": [
+      "buy hybrid bike",
+      "hybrid bicycle shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "bicycles",
+     "canonical_name": "hybrid bike",
+     "local_queries": [
+      "bicycle store",
+      "bike shop"
+     ],
+     "online_queries": [
+      "buy hybrid bike",
+      "hybrid bicycle shop"
+     ]
+    }
+   },
+   {
+    "input": "LEGO 10311",
+    "today": {
+     "category": "toys",
+     "canonical_name": "building block set",
+     "local_queries": [
+      "toy store",
+      "hobby shop"
+     ],
+     "online_queries": [
+      "buy building block set",
+      "construction toy shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "building blocks",
+     "canonical_name": "building block set",
+     "local_queries": [
+      "toy store",
+      "hobby shop"
+     ],
+     "online_queries": [
+      "buy building block set",
+      "construction toy shop"
+     ]
+    }
+   },
+   {
+    "input": "Catan",
+    "today": {
+     "category": "board games",
+     "canonical_name": "board game",
+     "local_queries": [
+      "hobby store",
+      "game shop"
+     ],
+     "online_queries": [
+      "buy board games online",
+      "board game shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "board games",
+     "canonical_name": "board game",
+     "local_queries": [
+      "board game store",
+      "toy shop"
+     ],
+     "online_queries": [
+      "buy board games online",
+      "board game shop"
+     ]
+    }
+   },
+   {
+    "input": "Yeti Rambler",
+    "today": {
+     "category": "drinkware",
+     "canonical_name": "insulated tumbler",
+     "local_queries": [
+      "outdoor gear store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy insulated tumbler",
+      "stainless steel travel mug shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "drinkware",
+     "canonical_name": "insulated tumbler",
+     "local_queries": [
+      "outdoor gear store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy insulated tumbler",
+      "stainless steel travel mug shop"
+     ]
+    }
+   },
+   {
+    "input": "Weber Spirit II",
+    "today": {
+     "category": "outdoor cooking",
+     "canonical_name": "gas grill",
+     "local_queries": [
+      "outdoor gear store",
+      "home and garden shop"
+     ],
+     "online_queries": [
+      "buy gas grill",
+      "propane barbecue shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "grills",
+     "canonical_name": "gas grill",
+     "local_queries": [
+      "grill store",
+      "home and garden shop"
+     ],
+     "online_queries": [
+      "buy gas grill",
+      "propane grill shop"
+     ]
+    }
+   },
+   {
+    "input": "Stihl MS 170",
+    "today": {
+     "category": "power tools",
+     "canonical_name": "chainsaw",
+     "local_queries": [
+      "power tool store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy gas chainsaw",
+      "chainsaw shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "chainsaws",
+     "canonical_name": "chainsaw",
+     "local_queries": [
+      "garden power equipment store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy gas chainsaw",
+      "chainsaw shop"
+     ]
+    }
+   },
+   {
+    "input": "Fender Stratocaster",
+    "today": {
+     "category": "musical instruments",
+     "canonical_name": "electric guitar",
+     "local_queries": [
+      "music instrument store",
+      "music shop"
+     ],
+     "online_queries": [
+      "buy electric guitar",
+      "electric guitar shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "musical instruments",
+     "canonical_name": "electric guitar",
+     "local_queries": [
+      "music store",
+      "musical instrument shop"
+     ],
+     "online_queries": [
+      "buy electric guitar",
+      "electric guitar shop"
+     ]
+    }
+   },
+   {
+    "input": "Graco SlimFit3",
+    "today": {
+     "category": "baby gear",
+     "canonical_name": "convertible car seat",
+     "local_queries": [
+      "baby gear store",
+      "childrens supply shop"
+     ],
+     "online_queries": [
+      "buy convertible car seat",
+      "narrow car seat shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "baby gear",
+     "canonical_name": "convertible car seat",
+     "local_queries": [
+      "baby gear store",
+      "baby supply shop"
+     ],
+     "online_queries": [
+      "buy convertible car seat",
+      "car seat shop"
+     ]
+    }
+   },
+   {
+    "input": "Nintendo Switch",
+    "today": {
+     "category": "gaming consoles",
+     "canonical_name": "handheld gaming console",
+     "local_queries": [
+      "video game store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy handheld gaming console",
+      "gaming console shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "gaming consoles",
+     "canonical_name": "handheld gaming console",
+     "local_queries": [
+      "video game store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy handheld gaming console",
+      "video game console shop"
+     ]
+    }
+   },
+   {
+    "input": "Canon EOS R10",
+    "today": {
+     "category": "cameras",
+     "canonical_name": "mirrorless camera",
+     "local_queries": [
+      "camera store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy mirrorless camera",
+      "digital camera shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "cameras",
+     "canonical_name": "mirrorless camera",
+     "local_queries": [
+      "camera store",
+      "electronics shop"
+     ],
+     "online_queries": [
+      "buy mirrorless camera",
+      "mirrorless camera shop"
+     ]
+    }
+   },
+   {
+    "input": "Michelin X-Ice",
+    "today": {
+     "category": "automotive tires",
+     "canonical_name": "winter tires",
+     "local_queries": [
+      "tire store",
+      "auto supply shop"
+     ],
+     "online_queries": [
+      "buy winter tires",
+      "winter tires shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "tires",
+     "canonical_name": "winter tires",
+     "local_queries": [
+      "tire store",
+      "auto supply shop"
+     ],
+     "online_queries": [
+      "buy winter tires",
+      "winter car tires shop"
+     ]
+    }
+   },
+   {
+    "input": "haircut",
+    "today": {
+     "category": "personal care services",
+     "canonical_name": "haircut",
+     "local_queries": [
+      "hair salon store",
+      "beauty parlor shop"
+     ],
+     "online_queries": [
+      "book haircut appointment",
+      "hair salon booking"
+     ]
+    },
+    "draft_run_1": {
+     "category": "hair care",
+     "canonical_name": "haircut",
+     "local_queries": [
+      "barber shop",
+      "hair salon store"
+     ],
+     "online_queries": [
+      "book haircut online",
+      "hair salon appointment"
+     ]
+    }
+   },
+   {
+    "input": "plumber",
+    "today": {
+     "category": "home services",
+     "canonical_name": "plumber",
+     "local_queries": [
+      "plumbing store",
+      "home improvement shop"
+     ],
+     "online_queries": [
+      "hire local plumber",
+      "plumbing services near me"
+     ]
+    },
+    "draft_run_1": {
+     "category": "plumbing services",
+     "canonical_name": "plumber",
+     "local_queries": [
+      "plumbing store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "hire a plumber",
+      "plumbing repair services"
+     ]
+    }
+   },
+   {
+    "input": "pizza delivery",
+    "today": {
+     "category": "food service",
+     "canonical_name": "pizza delivery",
+     "local_queries": [
+      "pizzeria shop",
+      "deli store"
+     ],
+     "online_queries": [
+      "order pizza online",
+      "pizza delivery service"
+     ]
+    },
+    "draft_run_1": {
+     "category": "prepared food",
+     "canonical_name": "pizza delivery",
+     "local_queries": [
+      "pizzeria store",
+      "italian food shop"
+     ],
+     "online_queries": [
+      "order pizza online",
+      "pizza delivery service"
+     ]
+    }
+   },
+   {
+    "input": "sushi",
+    "today": {
+     "category": "prepared food",
+     "canonical_name": "sushi",
+     "local_queries": [
+      "japanese restaurant store",
+      "delicatessen shop"
+     ],
+     "online_queries": [
+      "order sushi online",
+      "buy sushi platter"
+     ]
+    },
+    "draft_run_1": {
+     "category": "prepared food",
+     "canonical_name": "sushi",
+     "local_queries": [
+      "japanese restaurant store",
+      "delicatessen shop"
+     ],
+     "online_queries": [
+      "order sushi online",
+      "sushi delivery"
+     ]
+    }
+   },
+   {
+    "input": "hotel room",
+    "today": {
+     "category": "accommodation",
+     "canonical_name": "hotel room",
+     "local_queries": [
+      "lodging store",
+      "hospitality shop"
+     ],
+     "online_queries": [
+      "book hotel room",
+      "reserve hotel stay"
+     ]
+    },
+    "draft_run_1": {
+     "category": "accommodation",
+     "canonical_name": "hotel room",
+     "local_queries": [
+      "lodging store",
+      "hospitality shop"
+     ],
+     "online_queries": [
+      "book hotel room",
+      "hotel reservation"
+     ]
+    }
+   },
+   {
+    "input": "kitchen",
+    "today": {
+     "category": "kitchenware",
+     "canonical_name": "kitchen supplies",
+     "local_queries": [
+      "cookware store",
+      "home goods shop"
+     ],
+     "online_queries": [
+      "buy kitchenware",
+      "kitchen supplies shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "none",
+     "canonical_name": "kitchen",
+     "local_queries": [
+      "cookware store",
+      "kitchen supply store"
+     ],
+     "online_queries": [
+      "buy kitchenware",
+      "kitchen supplies shop"
+     ]
+    }
+   },
+   {
+    "input": "bathroom remodel",
+    "today": {
+     "category": "home improvement",
+     "canonical_name": "bathroom remodel",
+     "local_queries": [
+      "bathroom showroom store",
+      "home improvement shop"
+     ],
+     "online_queries": [
+      "buy bathroom fixtures",
+      "bathroom vanity shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "home improvement",
+     "canonical_name": "bathroom remodel",
+     "local_queries": [
+      "home improvement store",
+      "building supply shop"
+     ],
+     "online_queries": [
+      "buy bathroom fixtures",
+      "bathroom renovation supplies"
+     ]
+    }
+   },
+   {
+    "input": "camping",
+    "today": {
+     "category": "outdoor gear",
+     "canonical_name": "camping equipment",
+     "local_queries": [
+      "outdoor gear store",
+      "outdoor outfitters shop"
+     ],
+     "online_queries": [
+      "buy camping gear",
+      "camping equipment shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "outdoor gear",
+     "canonical_name": "camping equipment",
+     "local_queries": [
+      "outdoor gear store",
+      "outdoor outfitters shop"
+     ],
+     "online_queries": [
+      "buy camping gear",
+      "camping equipment shop"
+     ]
+    }
+   },
+   {
+    "input": "yoga class",
+    "today": {
+     "category": "wellness services",
+     "canonical_name": "yoga class",
+     "local_queries": [
+      "wellness studio store",
+      "health center shop"
+     ],
+     "online_queries": [
+      "book yoga class online",
+      "yoga class membership"
+     ]
+    },
+    "draft_run_1": {
+     "category": "wellness",
+     "canonical_name": "yoga class",
+     "local_queries": [
+      "yoga studio store",
+      "wellness center shop"
+     ],
+     "online_queries": [
+      "buy yoga class pass",
+      "online yoga membership"
+     ]
+    }
+   },
+   {
+    "input": "asdfgh",
+    "today": {
+     "category": "unknown",
+     "canonical_name": "asdfgh",
+     "local_queries": [
+      "specialty store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy asdfgh",
+      "asdfgh shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "unknown",
+     "canonical_name": "asdfgh",
+     "local_queries": [
+      "general store",
+      "gift shop"
+     ],
+     "online_queries": []
+    }
+   },
+   {
+    "input": "dishwasher tablets",
+    "today": {
+     "category": "household cleaning",
+     "canonical_name": "dishwasher tablets",
+     "local_queries": [
+      "cleaning supply store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy dishwasher tablets",
+      "dishwasher tablets shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "household cleaning",
+     "canonical_name": "dishwasher tablets",
+     "local_queries": [
+      "household supply store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy dishwasher tablets",
+      "dishwasher tablets shop"
+     ]
+    }
+   },
+   {
+    "input": "laundry detergent",
+    "today": {
+     "category": "household cleaning",
+     "canonical_name": "laundry detergent",
+     "local_queries": [
+      "cleaning supply store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy laundry detergent",
+      "laundry detergent shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "household cleaning",
+     "canonical_name": "laundry detergent",
+     "local_queries": [
+      "household supply store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy laundry detergent",
+      "laundry detergent shop"
+     ]
+    }
+   },
+   {
+    "input": "firewood",
+    "today": {
+     "category": "heating fuel",
+     "canonical_name": "firewood",
+     "local_queries": [
+      "firewood store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy kiln dried firewood",
+      "hardwood firewood delivery"
+     ]
+    },
+    "draft_run_1": {
+     "category": "heating fuel",
+     "canonical_name": "firewood",
+     "local_queries": [
+      "building materials store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy firewood online",
+      "hardwood firewood delivery"
+     ]
+    }
+   },
+   {
+    "input": "gift card",
+    "today": {
+     "category": "gift services",
+     "canonical_name": "gift card",
+     "local_queries": [
+      "stationery store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy gift card online",
+      "purchase digital gift voucher"
+     ]
+    },
+    "draft_run_1": {
+     "category": "gift cards",
+     "canonical_name": "gift card",
+     "local_queries": [
+      "gift shop store",
+      "general store shop"
+     ],
+     "online_queries": [
+      "buy gift card online",
+      "purchase digital gift voucher"
+     ]
+    }
+   },
+   {
+    "input": "eyeglasses",
+    "today": {
+     "category": "eyewear",
+     "canonical_name": "eyeglasses",
+     "local_queries": [
+      "optician store",
+      "optical shop"
+     ],
+     "online_queries": [
+      "buy prescription eyeglasses",
+      "eyeglasses online shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "eyewear",
+     "canonical_name": "eyeglasses",
+     "local_queries": [
+      "optician store",
+      "optical shop"
+     ],
+     "online_queries": [
+      "buy eyeglasses online",
+      "prescription glasses shop"
+     ]
+    }
+   },
+   {
+    "input": "notebook",
+    "today": {
+     "category": "stationery",
+     "canonical_name": "notebook",
+     "local_queries": [
+      "stationery store",
+      "paper goods shop"
+     ],
+     "online_queries": [
+      "buy notebook",
+      "notebook shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "stationery",
+     "canonical_name": "notebook",
+     "local_queries": [
+      "stationery store",
+      "office supply shop"
+     ],
+     "online_queries": [
+      "buy paper notebook",
+      "stationery shop notebook"
+     ]
+    }
+   },
+   {
+    "input": "pocket knife",
+    "today": {
+     "category": "tools",
+     "canonical_name": "pocket knife",
+     "local_queries": [
+      "cutlery store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy pocket knife",
+      "pocket knife shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "knives",
+     "canonical_name": "pocket knife",
+     "local_queries": [
+      "outdoor gear store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy pocket knife",
+      "folding knife shop"
+     ]
+    }
+   },
+   {
+    "input": "sewing machine",
+    "today": {
+     "category": "sewing equipment",
+     "canonical_name": "sewing machine",
+     "local_queries": [
+      "sewing machine store",
+      "fabric and notions shop"
+     ],
+     "online_queries": [
+      "buy sewing machine",
+      "sewing machine shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "sewing equipment",
+     "canonical_name": "sewing machine",
+     "local_queries": [
+      "sewing machine store",
+      "craft supply shop"
+     ],
+     "online_queries": [
+      "buy sewing machine",
+      "sewing machine shop"
+     ]
+    }
+   },
+   {
+    "input": "yoga mat",
+    "today": {
+     "category": "fitness equipment",
+     "canonical_name": "yoga mat",
+     "local_queries": [
+      "yoga gear store",
+      "wellness shop"
+     ],
+     "online_queries": [
+      "buy yoga mat",
+      "yoga mat shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "fitness gear",
+     "canonical_name": "yoga mat",
+     "local_queries": [
+      "fitness equipment store",
+      "sporting goods shop"
+     ],
+     "online_queries": [
+      "buy yoga mat",
+      "yoga mat shop"
+     ]
+    }
+   },
+   {
+    "input": "baby monitor",
+    "today": {
+     "category": "baby electronics",
+     "canonical_name": "baby monitor",
+     "local_queries": [
+      "baby gear store",
+      "baby supply shop"
+     ],
+     "online_queries": [
+      "buy baby monitor",
+      "baby monitor shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "baby electronics",
+     "canonical_name": "baby monitor",
+     "local_queries": [
+      "baby gear store",
+      "baby supply shop"
+     ],
+     "online_queries": [
+      "buy baby monitor",
+      "baby monitor shop"
+     ]
+    }
+   },
+   {
+    "input": "dog bed",
+    "today": {
+     "category": "pet supplies",
+     "canonical_name": "dog bed",
+     "local_queries": [
+      "pet supply store",
+      "pet boutique shop"
+     ],
+     "online_queries": [
+      "buy dog bed",
+      "dog bed shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "pet supplies",
+     "canonical_name": "dog bed",
+     "local_queries": [
+      "pet supply store",
+      "pet boutique shop"
+     ],
+     "online_queries": [
+      "buy dog bed",
+      "dog bed shop"
+     ]
+    }
+   },
+   {
+    "input": "work boots",
+    "today": {
+     "category": "footwear",
+     "canonical_name": "work boots",
+     "local_queries": [
+      "footwear store",
+      "general store"
+     ],
+     "online_queries": [
+      "buy work boots",
+      "work boots shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "footwear",
+     "canonical_name": "work boots",
+     "local_queries": [
+      "workwear store",
+      "clothing shop"
+     ],
+     "online_queries": [
+      "buy work boots",
+      "work boots shop"
+     ]
+    }
+   },
+   {
+    "input": "garden gloves",
+    "today": {
+     "category": "gardening supplies",
+     "canonical_name": "garden gloves",
+     "local_queries": [
+      "garden center store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy garden gloves",
+      "garden gloves shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "gardening gear",
+     "canonical_name": "garden gloves",
+     "local_queries": [
+      "garden center store",
+      "hardware store"
+     ],
+     "online_queries": [
+      "buy garden gloves",
+      "garden gloves shop"
+     ]
+    }
+   },
+   {
+    "input": "bird feeder",
+    "today": {
+     "category": "garden supplies",
+     "canonical_name": "bird feeder",
+     "local_queries": [
+      "garden center store",
+      "home and garden shop"
+     ],
+     "online_queries": [
+      "buy bird feeder",
+      "bird feeder shop"
+     ]
+    },
+    "draft_run_1": {
+     "category": "garden supplies",
+     "canonical_name": "bird feeder",
+     "local_queries": [
+      "garden center store",
+      "home and garden shop"
+     ],
+     "online_queries": [
+      "buy bird feeder",
+      "bird feeder shop"
+     ]
+    }
+   }
+  ]
+ },
+ "per_call": {
+  "today_run_1": {
+   "attempts": 48,
+   "http_200": 48,
+   "valid": 48,
+   "prompt_tokens": {
+    "n": 48,
+    "min": 347,
+    "median": 348.5,
+    "max": 354,
+    "mean": 349.38
+   },
+   "completion_tokens": {
+    "n": 48,
+    "min": 65,
+    "median": 78,
+    "max": 128,
+    "mean": 84.1
+   },
+   "latency_ms": {
+    "n": 48,
+    "min": 432,
+    "median": 609.5,
+    "max": 995,
+    "mean": 631.19
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 48,
+    "sum": 0.016614,
+    "median": 0.000339
+   },
+   "models": {
+    "google/gemma-4-31b-it": 48
+   },
+   "providers": {
+    "ModelRun": 48
+   },
+   "finish_reasons": {
+    "stop": 48
+   }
+  },
+  "draft_run_1": {
+   "attempts": 48,
+   "http_200": 48,
+   "valid": 48,
+   "prompt_tokens": {
+    "n": 48,
+    "min": 801,
+    "median": 802.5,
+    "max": 808,
+    "mean": 803.38
+   },
+   "completion_tokens": {
+    "n": 48,
+    "min": 52,
+    "median": 94,
+    "max": 143,
+    "mean": 99.67
+   },
+   "latency_ms": {
+    "n": 48,
+    "min": 398,
+    "median": 647,
+    "max": 1241,
+    "mean": 694.06
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 48,
+    "sum": 0.033706,
+    "median": 0.0006978749999999999
+   },
+   "models": {
+    "google/gemma-4-31b-it": 48
+   },
+   "providers": {
+    "ModelRun": 48
+   },
+   "finish_reasons": {
+    "stop": 48
+   }
+  },
+  "draft_all_runs": {
+   "attempts": 144,
+   "http_200": 144,
+   "valid": 144,
+   "prompt_tokens": {
+    "n": 144,
+    "min": 801,
+    "median": 802.5,
+    "max": 808,
+    "mean": 803.38
+   },
+   "completion_tokens": {
+    "n": 144,
+    "min": 52,
+    "median": 94,
+    "max": 143,
+    "mean": 99.72
+   },
+   "latency_ms": {
+    "n": 144,
+    "min": 369,
+    "median": 637.5,
+    "max": 1241,
+    "mean": 663.69
+   },
+   "cost_usd": {
+    "attempts_with_a_cost": 144,
+    "sum": 0.071958,
+    "median": 0.000685625
+   },
+   "models": {
+    "google/gemma-4-31b-it": 144
+   },
+   "providers": {
+    "ModelRun": 144
+   },
+   "finish_reasons": {
+    "stop": 144
+   }
+  }
+ }
+}
