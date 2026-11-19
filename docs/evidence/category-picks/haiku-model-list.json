@@ -1,0 +1,132 @@
+{
+ "about": "Every model whose id contains \"haiku\" in the reply of GET https://openrouter.ai/api/v1/models, fetched 2026-11-19 with no key, newest first by the created field. ARM-H of the third run uses the first id that is not a batch entry (\":batch\") or an alias (\"~\"). The list prices of the production models are added for reference; the costs in README.md are the usage.cost of each reply, not these prices.",
+ "models_in_list": 480,
+ "haiku": [
+  {
+   "id": "anthropic/claude-haiku-5.5",
+   "created": 1791397883,
+   "created_date": "2026-10-07",
+   "pricing_usd_per_token": {
+    "prompt": "0.0000001",
+    "completion": "0.0000005"
+   },
+   "supported_parameters": [
+    "include_reasoning",
+    "max_completion_tokens",
+    "max_tokens",
+    "reasoning",
+    "reasoning_effort",
+    "response_format",
+    "stop",
+    "structured_outputs",
+    "tool_choice",
+    "tools",
+    "verbosity"
+   ]
+  },
+  {
+   "id": "anthropic/claude-haiku-5.5:batch",
+   "created": 1791397883,
+   "created_date": "2026-10-07",
+   "pricing_usd_per_token": {
+    "prompt": "0.00000005",
+    "completion": "0.00000025"
+   },
+   "supported_parameters": [
+    "include_reasoning",
+    "max_tokens",
+    "reasoning",
+    "reasoning_effort",
+    "response_format",
+    "stop",
+    "structured_outputs",
+    "tool_choice",
+    "tools",
+    "verbosity"
+   ]
+  },
+  {
+   "id": "~anthropic/claude-haiku-latest",
+   "created": 1777318492,
+   "created_date": "2026-04-27",
+   "pricing_usd_per_token": {
+    "prompt": "0.0000001",
+    "completion": "0.0000005"
+   },
+   "supported_parameters": [
+    "include_reasoning",
+    "max_completion_tokens",
+    "max_tokens",
+    "reasoning",
+    "reasoning_effort",
+    "response_format",
+    "stop",
+    "structured_outputs",
+    "tool_choice",
+    "tools",
+    "verbosity"
+   ]
+  },
+  {
+   "id": "anthropic/claude-haiku-4.5",
+   "created": 1760547638,
+   "created_date": "2025-10-15",
+   "pricing_usd_per_token": {
+    "prompt": "0.000001",
+    "completion": "0.000005"
+   },
+   "supported_parameters": [
+    "include_reasoning",
+    "max_completion_tokens",
+    "max_tokens",
+    "reasoning",
+    "response_format",
+    "stop",
+    "structured_outputs",
+    "temperature",
+    "tool_choice",
+    "tools",
+    "top_k",
+    "top_p"
+   ]
+  },
+  {
+   "id": "anthropic/claude-haiku-4.5:batch",
+   "created": 1760547638,
+   "created_date": "2025-10-15",
+   "pricing_usd_per_token": {
+    "prompt": "0.0000005",
+    "completion": "0.0000025"
+   },
+   "supported_parameters": [
+    "include_reasoning",
+    "max_tokens",
+    "reasoning",
+    "response_format",
+    "stop",
+    "structured_outputs",
+    "temperature",
+    "tool_choice",
+    "tools",
+    "top_k",
+    "top_p"
+   ]
+  }
+ ],
+ "production_models": [
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "pricing_usd_per_token": {
+    "prompt": "0.00000009",
+    "completion": "0.0000003"
+   }
+  },
+  {
+   "id": "google/gemma-4-31b-it",
+   "pricing_usd_per_token": {
+    "prompt": "0.0000002",
+    "completion": "0.0000004"
+   }
+  }
+ ]
+}

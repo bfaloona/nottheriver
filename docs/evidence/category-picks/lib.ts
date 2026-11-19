@@ -7,6 +7,10 @@
 //            raw-2.json and results-2.json
 //   2-pilot, 2-pilot-b, ...  one revised draft prompt each, on the 48 probes only (never the
 //            held-out ones), raw-2-pilot.json, raw-2-pilot-b.json, ...
+//   3        the third run: a separate category call beside today's unchanged normalize call, the
+//            48 probes and the held-out probes, raw-3.json and results-3.json. Its scripts are
+//            run-category.ts and grade-category.ts.
+//   3-pilot, 3-pilot-b, ...  one category prompt each, on the 48 probes only
 import { readFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import type { Schema } from '@cfworker/json-schema';
@@ -19,12 +23,13 @@ export const HERE = join(ROOT, 'docs/evidence/category-picks');
 const read = <T>(path: string): T => JSON.parse(readFileSync(join(ROOT, path), 'utf8')) as T;
 
 export const RUN = process.env.RUN ?? '1';
-if (!/^(1|2|2-pilot(-[a-z])?)$/.test(RUN)) throw new Error(`unknown RUN ${RUN}`);
+if (!/^(1|[23]|[23]-pilot(-[a-z])?)$/.test(RUN)) throw new Error(`unknown RUN ${RUN}`);
 const suffix = RUN === '1' ? '' : `-${RUN}`;
 export const RAW_FILE = join(HERE, `raw${suffix}.json`);
 export const RESULTS_FILE = join(HERE, `results${suffix}.json`);
-/** Every raw file of the second run, so the cost limit covers the pilots and the run together. */
-export const COST_FILES = RUN === '1' ? [RAW_FILE] : readdirSync(HERE).filter((f) => /^raw-2.*\.json$/.test(f)).map((f) => join(HERE, f));
+/** Every raw file of the second (or the third) run, so the cost limit covers the pilots and the run together. */
+export const COST_FILES = RUN === '1' ? [RAW_FILE] : readdirSync(HERE).filter((f) => f.startsWith(`raw-${RUN[0]}`) && f.endsWith('.json')).map((f) => join(HERE, f));
+const withHeldOut = RUN === '2' || RUN === '3';
 
 export type Pick = [string, string | null];
 export type ProbeKind = 'brand' | 'nonproduct' | 'gap' | 'two' | 'general';
@@ -38,9 +43,9 @@ const heldOutFile = read<{ probes: Labeled[]; brand_words: Record<string, string
 export const heldOutBrandWords = heldOutFile.brand_words;
 export const probes: Probe[] = [
   ...tuned.map((p) => ({ ...p, set: 'tuned' as const })),
-  ...(RUN === '2' ? heldOutFile.probes.map((p) => ({ ...p, set: 'held_out' as const })) : []),
+  ...(withHeldOut ? heldOutFile.probes.map((p) => ({ ...p, set: 'held_out' as const })) : []),
 ];
-export const probeSets: ProbeSet[] = RUN === '2' ? ['tuned', 'held_out'] : ['tuned'];
+export const probeSets: ProbeSet[] = withHeldOut ? ['tuned', 'held_out'] : ['tuned'];
 const list = read<List>('data/categories.draft.json');
 
 export type Arm = 'draft' | 'today';
@@ -98,11 +103,35 @@ if (!pilotA.includes(general2) || pilotA.replace(`\n${general2}\n${specific2}`, 
   throw new Error('pilot a draft prompt: an anchor in proxy/prompts/normalize.ts moved');
 }
 const variant = RUN === '2' ? CHOSEN : RUN === '2-pilot' ? 'a' : RUN.slice(-1);
-const draftTemplate = RUN === '1' ? draftTemplate1 : pilots[variant];
-if (!draftTemplate) throw new Error(`no draft prompt for RUN ${RUN}`);
+// The third run has no draft normalize prompt: its normalize call is today's.
+const draftTemplate = RUN === '1' ? draftTemplate1 : RUN.startsWith('3') ? undefined : pilots[variant];
+if (!draftTemplate && !RUN.startsWith('3')) throw new Error(`no draft prompt for RUN ${RUN}`);
 
 export function buildPrompt(arm: Arm, product: string): string {
-  return renderTemplate(arm === 'draft' ? draftTemplate : normalizeTemplate, { product: JSON.stringify(product) });
+  if (arm === 'draft' && !draftTemplate) throw new Error(`RUN ${RUN} has no draft normalize prompt`);
+  return renderTemplate(arm === 'draft' ? draftTemplate! : normalizeTemplate, { product: JSON.stringify(product) });
+}
+
+// Third run: a prompt that asks for the category only. It keeps the layout of today's prompt
+// (first line, DATA block, field lines), so the shopper's text is JSON-encoded inside the same
+// markers. The list comes last, after the shopper's text, as in the second draft. No example in
+// the prompt is a probe input.
+const dataBlock = normalizeTemplate.slice(normalizeTemplate.indexOf("The shopper's request"), normalizeTemplate.indexOf('Return a JSON object'));
+if (!dataBlock.includes('<<<DATA\n{"product": {{product}}}\nDATA>>>\n\n')) throw new Error('category prompt: the DATA block in proxy/prompts/normalize.ts moved');
+const categoryHead = `You label what a shopper wants to buy with a category from a fixed list.\n\n${dataBlock}Return a JSON object with exactly these fields:`;
+// Pilot a: the two field lines that worked in the second run (FIX-1 and FIX-3), with "none" tied to a product.
+const generalA = '- general: one id from the left of a line in CATEGORIES, by the kind of shop that sells the product. Read a brand or model name as the product it is. Use "not_a_product" for a service, a meal, a place to stay, an activity, a whole room or text you cannot read as a product, and "none" for a product that no line fits.';
+const categoryA = `${categoryHead}\n${generalA}\n${specificD}\n\nCATEGORIES\n${listBlock}`;
+// Pilot a passed every mark on the 48 probes, so no second prompt was written or tried.
+const categoryPilots: Record<string, string> = { a: categoryA };
+/** The category prompt that the third run uses, word for word the "Separate category call" draft of docs/plans/category-list.md. Frozen before any held-out call of the third run. */
+const CHOSEN_CATEGORY = 'a';
+const categoryVariant = RUN === '3' ? CHOSEN_CATEGORY : RUN === '3-pilot' ? 'a' : RUN.slice(-1);
+
+export function buildCategoryPrompt(product: string): string {
+  const template = categoryPilots[categoryVariant];
+  if (!RUN.startsWith('3') || !template) throw new Error(`no category prompt for RUN ${RUN}`);
+  return renderTemplate(template, { product: JSON.stringify(product) });
 }
 
 // Any string validates, so an off-list reply maps to "none" in code and never fails the search.
@@ -114,6 +143,14 @@ export const draftSchema: Schema = {
   required: [...(today.required ?? []), 'general', 'specific'],
   properties: RUN === '1' ? { general: anyId, specific: anyId, ...today.properties } : { ...today.properties, general: anyId, specific: anyId },
 };
+
+/** The reply of the separate category call. Any string validates, as in the draft schema, and code maps it. */
+export const categorySchema: Schema = { type: 'object', additionalProperties: false, required: ['general', 'specific'], properties: { general: anyId, specific: anyId } };
+/**
+ * Today's normalize limit. A reply is two ids, about 13 tokens, but the Haiku model also spends
+ * reasoning tokens inside this limit: the first smoke call used 56 tokens under a limit of 60.
+ */
+export const CATEGORY_MAX_TOKENS = 400;
 
 export interface Reply {
   general?: string;
@@ -137,12 +174,12 @@ export interface Call { input: string; kind: ProbeKind; arm: Arm; round: number;
 export interface RawFile { about: string; request: unknown; prompts: Record<Arm, { example_input: string; chars: number; text: string }>; calls: Call[] }
 
 export const generalIds = new Set(list.general.map((g) => g.id));
-const parentOf = new Map(list.general.flatMap((g) => g.specific.map((s) => [s.id, g.id] as const)));
+export const parentOf = new Map(list.general.flatMap((g) => g.specific.map((s) => [s.id, g.id] as const)));
 /** Every general and specific id. */
 export const listIds = new Set([...generalIds, ...parentOf.keys()]);
 /** "none" and "not_a_product". */
 export const reservedIds = new Set(list.reserved.map((r) => r.id));
-const reasons = new Set(list.reserved.find((r) => r.id === 'not_a_product')?.reasons?.map((r) => r.id));
+export const reasons = new Set(list.reserved.find((r) => r.id === 'not_a_product')?.reasons?.map((r) => r.id));
 
 export interface Mapped { general: string; specific: string | null; rule: string }
 const tidy = (s: unknown) => (typeof s === 'string' ? s.toLowerCase().trim().replace(/[\s-]+/g, '_') : '');
