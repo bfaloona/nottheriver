@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "spec": "docs/plans/before-you-buy-v1.md",
+  "signed": {
+    "sentences": "2026-11-18",
+    "table": "2026-11-18",
+    "terms": "2026-11-18",
+    "note": "The owner signed the seven sentences and the product-group table (which group shows which kind) on 2026-11-18. The owner signed the match, exception and keep-out terms on 2026-11-18."
+  },
+  "kinds": [
+    {"id": "tool_library", "idea": "borrow", "name": "Tool library", "level": "in_general",
+     "text": "Tool libraries often lend hand and power tools; some are free with a library card, others charge a membership.",
+     "basis": "owner",
+     "sources": [
+       {"url": "https://lacountylibrary.org/tools/", "publisher": "LA County Library", "checked": "2026-11-17"},
+       {"url": "https://denvertoollibrary.org/tool-library", "publisher": "Denver Tool Library", "checked": "2026-11-17"},
+       {"url": "https://communityhomeworks.org/programs/tool-library/", "publisher": "Community Homeworks", "checked": "2026-11-17"},
+       {"url": "https://riversideca.gov/library/library-services/riverside-tool-lending-library", "publisher": "Riverside Public Library", "checked": "2026-11-17"}
+     ]},
+    {"id": "library_of_things", "idea": "borrow", "name": "Library of things", "level": "in_general",
+     "text": "Libraries of things at public libraries often lend tools, kitchen items and games with a library card.",
+     "basis": "owner",
+     "sources": [
+       {"url": "https://www.readingpl.org/library-of-things", "publisher": "Reading Public Library", "checked": "2026-11-17"},
+       {"url": "https://www.wilmingtonlibrary.org/library-of-things/", "publisher": "Wilmington Public Library", "checked": "2026-11-17"}
+     ]},
+    {"id": "tool_repair_shop", "idea": "repair", "name": "Tool repair shop", "level": "in_general",
+     "text": "Tool repair shops often fix power tools, sharpen blades and replace worn parts such as cords and switches.",
+     "basis": "owner",
+     "sources": []},
+    {"id": "repair_cafe", "idea": "repair", "name": "Repair café", "level": "in_general",
+     "text": "Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances and electronics.",
+     "basis": "owner",
+     "sources": [
+       {"url": "https://www.repaircafe.org/en/about/", "publisher": "Repair Café International", "checked": "2026-11-17"},
+       {"url": "https://openrepair.org/open-data/insights/2024-report/", "publisher": "Open Repair Alliance", "checked": "2026-11-17"}
+     ]},
+    {"id": "used_tool_shop", "idea": "used", "name": "Used tool shop", "level": "in_general",
+     "text": "Used tool shops often sell secondhand hand and power tools.",
+     "basis": "owner",
+     "sources": []},
+    {"id": "thrift_store", "idea": "used", "name": "Thrift store", "level": "in_general",
+     "text": "Thrift stores often sell donated clothes, housewares, books and furniture.",
+     "basis": "owner",
+     "sources": [
+       {"url": "https://goodwillng.org/ways-to-support/donate-goods/items-we-do-and-dont-accept/", "publisher": "Goodwill of North Georgia", "checked": "2026-11-17"}
+     ]},
+    {"id": "reuse_center", "idea": "used", "name": "Building-material reuse center", "level": "in_general",
+     "text": "Building-material reuse centers often sell used doors, windows, cabinets, lumber and flooring.",
+     "basis": "owner",
+     "sources": [
+       {"url": "https://www.epa.gov/smm/best-practices-reducing-reusing-and-recycling-construction-and-demolition-materials", "publisher": "US EPA", "checked": "2026-11-17"},
+       {"url": "https://www.habitat.org/restores", "publisher": "Habitat for Humanity", "checked": "2026-11-17"}
+     ]}
+  ],
+  "rows": [
+    {"id": "TRG-1", "group": "Power tools", "borrow": "tool_library", "repair": "tool_repair_shop", "used": "used_tool_shop",
+     "terms": ["drill", "sander", "circular saw", "table saw", "miter saw", "reciprocating saw", "jigsaw", "impact driver", "nail gun", "power tool", "chainsaw", "pressure washer"],
+     "except": ["puzzle"]},
+    {"id": "TRG-2", "group": "Hand tools", "borrow": "tool_library", "repair": "tool_repair_shop", "used": "used_tool_shop",
+     "terms": ["hammer", "wrench", "screwdriver", "pliers", "clamp", "socket set", "hand tool", "hand saw", "chisel"],
+     "except": ["hose clamp"]},
+    {"id": "TRG-3", "group": "Baking and small kitchen tools", "borrow": "library_of_things", "repair": null, "used": "thrift_store",
+     "terms": ["cake pan", "bundt pan", "baking pan", "baking sheet", "muffin tin", "rolling pin", "pasta maker", "ice cream maker", "stand mixer", "food dehydrator"],
+     "except": []},
+    {"id": "TRG-4", "group": "Cookware and dishes, not nonstick", "borrow": null, "repair": null, "used": "thrift_store",
+     "terms": ["skillet", "frying pan", "dutch oven", "saucepan", "stock pot", "dish", "dinner plate", "glassware", "mug", "cookware", "knife", "dripper", "water bottle"],
+     "except": ["nonstick", "non stick", "teflon"]},
+    {"id": "TRG-5", "group": "Adult clothing, not socks, underwear or swimwear", "borrow": null, "repair": "repair_cafe", "used": "thrift_store",
+     "terms": ["jacket", "coat", "sweater", "jeans", "shirt", "dress", "pants"],
+     "except": ["sock", "underwear", "bra", "swimsuit", "swimwear", "swim", "lingerie", "welding", "lab coat", "hazmat"]},
+    {"id": "TRG-6", "group": "Books", "borrow": null, "repair": null, "used": "thrift_store",
+     "terms": ["book", "novel", "cookbook", "textbook"],
+     "except": ["coloring book", "e book"]},
+    {"id": "TRG-7", "group": "Doors, windows, cabinets, flooring, lumber", "borrow": null, "repair": null, "used": "reuse_center",
+     "terms": ["door", "window", "cabinet", "flooring", "lumber"],
+     "except": ["car door", "truck door"]},
+    {"id": "TRG-8", "group": "Furniture, by named piece", "borrow": null, "repair": "repair_cafe", "used": "thrift_store",
+     "terms": ["dining table", "coffee table", "desk", "dresser", "bookshelf", "bookshelves", "bookcase", "office chair", "dining chair", "desk chair", "armchair"],
+     "except": []},
+    {"id": "TRG-9", "group": "Small appliances and electronics", "borrow": null, "repair": "repair_cafe", "used": null,
+     "terms": ["toaster", "coffee maker", "vacuum", "vacuum cleaner", "lamp", "hair dryer", "blender", "laptop", "printer", "phone", "smartphone", "iphone", "stand mixer"],
+     "except": ["head lamp", "heat lamp"]},
+    {"id": "TRG-10", "group": "Bicycles, not e-bikes", "borrow": null, "repair": "repair_cafe", "used": null,
+     "terms": ["bike", "bicycle"],
+     "except": ["exercise bike", "e bike", "ebike", "electric bike", "balance bike", "dirt bike"]}
+  ],
+  "keep_out": [
+    {"id": "KOUT-1", "group": "Car seats, boosters, infant carriers", "terms": ["car seat", "carseat", "booster", "infant carrier"]},
+    {"id": "KOUT-2", "group": "Helmets", "terms": ["helmet"]},
+    {"id": "KOUT-3", "group": "Life jackets and flotation wear", "terms": ["life jacket", "life vest", "flotation", "float coat", "pfd"]},
+    {"id": "KOUT-4", "group": "Children's goods", "terms": ["baby", "infant", "toddler", "nursery", "kid", "child", "children", "boy", "girl", "youth"]}
+  ],
+  "watch": [
+    "crib", "bassinet", "inclined sleeper", "baby walker",
+    "play yard", "high chair", "feeding chair", "hook-on chair", "bouncer chair", "stroller", "swing",
+    "breast pump", "mattress", "box spring", "climbing rope", "climbing harness",
+    "space heater", "electric blanket", "heated blanket", "hoverboard", "heat lamp",
+    "mascara", "wheelchair", "wheel chair", "winter tires", "smoke alarm", "carbon monoxide alarm"
+  ]
+}
