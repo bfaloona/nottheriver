@@ -175,6 +175,7 @@ input[aria-invalid="true"] { border-color: var(--warn); border-width: 2px; }
    rendered: a live region brought back from display:none is not announced when it fills. */
 .searched .status:empty { min-height: 0; margin: 0; }
 .found { color: var(--ink-muted); margin: var(--space-3) 0 0; }
+.looked-for { color: var(--ink-muted); margin: var(--space-1) 0 0; }
 /* The gap is sized so all four controls, with a two-digit certification count, fit one row of the measure. */
 .controls { display: flex; flex-wrap: wrap; gap: 0 var(--space-4); align-items: center; margin: var(--space-5) 0 0; }
 .controls select { width: auto; }

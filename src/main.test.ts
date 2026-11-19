@@ -244,8 +244,9 @@ describe('search page', () => {
     await search();
     const found = $('[data-found]');
     expect(found.previousElementSibling).toBe($('.controls'));
-    // "Before you buy" sits between the count and the shops.
-    expect(found.nextElementSibling).toBe($('[data-before-you-buy]'));
+    // How the search was read, then "Before you buy", sit between the count and the shops.
+    expect(found.nextElementSibling).toBe($('[data-looked-for]'));
+    expect($('[data-looked-for]').nextElementSibling).toBe($('[data-before-you-buy]'));
     expect($('[data-before-you-buy]').nextElementSibling).toBe($('#result-sections'));
     expect(found.getAttribute('role')).toBe('status');
   });
@@ -261,6 +262,21 @@ describe('search page', () => {
     sort.value = 'name';
     sort.dispatchEvent(new Event('change', { bubbles: true }));
     expect(box.querySelector('details')!.open).toBe(true);
+  });
+
+  it('says how the search was read when the reply carries a category pick, and clears it for the next search', async () => {
+    const pick = { general: 'tools_hardware', specific: 'power_tools', general_name: 'Tools and hardware', specific_name: 'Power tools' };
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, query: { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill', pick } }), { status: 200 }));
+    submit('DeWalt DCD771', '10001');
+    const line = $('[data-looked-for]');
+    await vi.waitFor(() => expect(line.hidden).toBe(false));
+    expect(line.textContent).toBe('We looked for: cordless drill (Tools and hardware, Power tools)');
+    // A reply from a Worker that made no category call has no pick: no line, and the page still works.
+    searchReplies(() => new Response(JSON.stringify(fixture), { status: 200 }));
+    submit('kettle', '10001');
+    await vi.waitFor(() => expect($('[data-found]').textContent).toMatch(/^Found/));
+    expect(line.hidden).toBe(true);
+    expect(line.textContent).toBe('');
   });
 
   it('clears the line under the search box once the results are in', async () => {

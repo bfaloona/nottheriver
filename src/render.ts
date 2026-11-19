@@ -570,6 +570,20 @@ export function renderFooter(target: HTMLElement, usage: Usage): void {
   target.hidden = false;
 }
 
+// How the site read the search: the model's generic name for the product and the category picked
+// from the fixed list, so a shopper can see a wrong reading. Drawn once per search. A reply from a
+// Worker that made no category call carries no pick, and then the line stays hidden.
+export function renderLookedFor(target: HTMLElement, query: SearchResponse['query'] | null): void {
+  const pick = query?.pick;
+  target.hidden = !pick;
+  if (!query || !pick) {
+    target.textContent = '';
+    return;
+  }
+  const names = [pick.general_name, pick.specific_name].filter(Boolean);
+  target.textContent = `We looked for: ${query.canonical_name}${names.length ? ` (${names.join(', ')})` : ''}`;
+}
+
 const IDEA_LEAD: Record<Idea, string> = { borrow: 'Borrow it.', repair: 'Repair the one you have.', used: 'Buy it used.' };
 
 // "Before you buy" (docs/plans/before-you-buy-v1.md, 2c): one collapsed line above the shops,
