@@ -110,7 +110,8 @@ for (let round = 1; round <= rounds; round++) {
   for (const [n, probe] of probes.slice(0, limit).entries()) {
     // Today's prompt runs beside the draft in round 1, in alternating order, so neither arm
     // always gets the fresher provider queue.
-    const arms: Arm[] = round === 1 ? (n % 2 ? ['today', 'draft'] : ['draft', 'today']) : ['draft'];
+    // A later pilot sets DRAFT_ONLY=1 and is compared with the today replies of the first pilot.
+    const arms: Arm[] = round === 1 && !process.env.DRAFT_ONLY ? (n % 2 ? ['today', 'draft'] : ['draft', 'today']) : ['draft'];
     for (const arm of arms) {
       if (raw.calls.some((c) => c.input === probe.input && c.arm === arm && c.round === round)) continue;
       if (totalCost() > maxUsd) {

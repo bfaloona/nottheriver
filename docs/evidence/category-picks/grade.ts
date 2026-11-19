@@ -52,7 +52,9 @@ const replyOf = (c: Call): Reply | null => {
   if (!last?.valid) return null;
   return JSON.parse(completion(last).choices![0]!.message!.content!) as Reply;
 };
-const callsOf = (arm: Arm, input?: string) => raw.calls.filter((c) => c.arm === arm && (input === undefined || c.input === input)).sort((a, b) => a.round - b.round);
+// A later pilot ran the draft prompt only. Its today replies are the first pilot's, made earlier the same night.
+const todayCalls = raw.calls.some((c) => c.arm === 'today') ? [] : (JSON.parse(fs.readFileSync(RAW_FILE.replace(/-pilot-[a-z]\.json$/, '-pilot.json'), 'utf8')) as RawFile).calls.filter((c) => c.arm === 'today');
+const callsOf = (arm: Arm, input?: string) => [...raw.calls, ...todayCalls].filter((c) => c.arm === arm && (input === undefined || c.input === input)).sort((a, b) => a.round - b.round);
 const pct = (n: number, d: number) => (d ? Math.round((n / d) * 1000) / 10 : null);
 const share = (n: number, d: number) => ({ n, of: d, pct: pct(n, d) });
 const count = <T>(xs: T[], f: (x: T) => boolean) => xs.filter(f).length;
