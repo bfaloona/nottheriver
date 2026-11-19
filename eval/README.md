@@ -9,7 +9,7 @@ Measures whether searches return shops that really sell the product, how many go
 | `grade-schema.json` | Shape of the hand grades and the recall baseline |
 | `access-probe/` | Throwaway Worker plus driver that fetches retailer pages as a declared bot |
 | `summarize.mjs` | Computes `report.json` from the evidence files |
-| `picks.json` | The expected category pick for each of the 20 products, hand labels |
+| `picks.json` | The hand pick (the expected category) for each of the 20 products |
 | `compare.mjs` | Compares wording and shop overlap between two saved runs |
 | `eval.test.mjs` | Unit tests for all of the above (`npx vitest run eval`) |
 
@@ -81,7 +81,7 @@ node eval/summarize.mjs --site   # also writes src/quality.json for the About pa
 
 Precision counts `yes` and `equivalent` as relevant (local results also need `local_exists: yes`) and leaves `unknown` (on either question) out of the denominator, reporting how many were left out; a local shop confirmed not to exist (`local_exists: no`) counts as bad even when `sells_product` is `unknown` (operator ruling, 2026-09-26). `badges_sourced` and `distance_plausible` are reported as counts of each answer. The bot blocked rate is `challenge`, `blocked` and `robots_disallow` over all probed domains except `error`. `--site` writes numbers only when precision and recall are all measured for both sections; otherwise the About page keeps saying "Not yet measured." The probe table compares the probe's verdict with what a person saw on the same URL: `bot_only` is bot-specific blocking.
 
-`category_pick` in `report.json` compares each saved response's `query.pick` (the category the Worker's separate model call picked) with the hand pick in `picks.json`: matches at the general level and at both levels, searches that got the product's second defensible pick, products that got one pick in every search, and each miss. A run saved before the Worker returned a pick reports `measured: 0`. `precision_by_general_category` splits precision by the hand pick's general category; each group holds 1 to 4 products, so read it as a description of those products.
+`category_pick` in `report.json` compares each saved response's `query.pick` (the category the Worker's separate model call picked) with the hand pick in `picks.json`: matches at the general level and at both levels, searches that got the product's second defensible pick, products that got one pick in every search, and each miss. A run saved before the Worker returned a pick reports `measured: 0`. `precision_by_general_category` splits precision by the hand pick's general category; each group holds 1 to 4 products.
 
 `chain` and `chain_source` (baseline items) and `store_breadth` (grades) are optional (the Worker no longer returns `store_breadth`, removed 2026-10-01; the grade field stays so the recorded grades validate), per `docs/plans/store-types.md` Phase 0 (CQ5): a baseline row with no `chain` field is unlabelled, not "independent". `recall_by_kind` in `report.json` splits each section's recall into `chain`, `not_chain` and `unlabelled` buckets so the unlabelled count is visible rather than folded into one figure. `chain_badges` checks the site's (Phase 1) chain badge against these labels: a badge on a `chain: false` shop must be 0, and coverage reports the share of returned `chain: true` shops carrying the badge; it reports `{ measured: false }` until some returned result actually has a `chain` field.
 

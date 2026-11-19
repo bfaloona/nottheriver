@@ -55,7 +55,7 @@ Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `re
 
 - **M1 and M2.** The one-shop gap on M1 is Barnes & Noble for jigsaw puzzle: "hobby store" returned it and "game store" did not. On the page the arms differ by one shop each way in that search (the `model` arm shows Barnes & Noble, the `list` arm shows Pinwheels and Play Toys). The other five searches give the same baseline shops in both arms.
 - **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops with no usable grade. Control for the grade join: the same join on the saved run of these six searches (`docs/evidence/quality/eval20-store-types`) gives 28 good, 13 bad and 10 graded "unknown" of 51 shown shops, with none unmatched.
-- **M4, noise.** M1 and M2 did not change between rounds in either arm. Shown nearby shops in common between the two rounds: 47 of 50 (`model`) and 44 of 49 (`list`). Between the arms: 33 of 63 in round 1 and 31 of 63 in round 2. The list wording changes about half of the shops shown and does not change how many baseline shops are found.
+- **M4, noise.** M1 and M2 did not change between rounds in either arm. Shown nearby shops in common between the two rounds: 47 of 50 (`model`) and 44 of 49 (`list`). Between the arms: 33 of 63 in round 1 and 31 of 63 in round 2. The list wording changes about half of the shops shown and does not change how many baseline shops the page shows (M2).
 - **M5, wording.** The pairs differ in all six searches, by one phrase each: every search has one phrase that both arms sent.
 
 **Other findings.**
