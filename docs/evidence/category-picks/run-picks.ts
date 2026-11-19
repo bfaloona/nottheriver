@@ -1,5 +1,6 @@
 // Sends the draft normalize prompt (docs/plans/category-list.md) and today's prompt to the model
-// production uses, for every probe in docs/evidence/category-list/hand-labels.json.
+// production uses, for every probe in docs/evidence/category-list/hand-labels.json and, in the
+// second run, in held-out.json beside this file.
 // The request (URL, headers, body) is the one proxy/src/llm.ts builds: it is captured from
 // createLlmClient with a stand-in fetch, then sent unchanged. The draft arm swaps in the draft
 // schema; nothing else differs. No Brave call, no cache, no live site.
@@ -9,14 +10,16 @@
 //                      The OpenRouter key is read from the file it names and never printed or saved.
 //   LIMIT=1            only the first N probes (a smoke run). A later full run keeps those calls.
 //   ROUNDS=3           draft-prompt runs per probe. Today's prompt runs once, in round 1.
-//   MAX_USD=1          stop when OpenRouter's reported cost for the whole file passes this.
-// The run resumes: a call already in raw.json is not sent again.
+//   MAX_USD=1          stop when OpenRouter's reported cost passes this. The second run counts
+//                      its pilot file and its run file together.
+//   RUN=1              which run: 1, 2 or 2-pilot (see lib.ts). Each has its own draft prompt and raw file.
+// The run resumes: a call already in the run's raw file is not sent again.
 import fs from 'node:fs';
 import path from 'node:path';
 import { Validator } from '@cfworker/json-schema';
 import { NORMALIZE_MAX_TOKENS, createLlmClient } from '../../../proxy/src/llm';
 import { schemas, structuralOnly } from '../../../proxy/src/validate';
-import { RAW_FILE, ROOT, buildPrompt, draftSchema, probes, type Arm, type Attempt, type Call, type RawFile } from './lib';
+import { COST_FILES, RAW_FILE, ROOT, RUN, buildPrompt, draftSchema, probes, type Arm, type Attempt, type Call, type RawFile } from './lib';
 
 const rounds = Number(process.env.ROUNDS ?? 3);
 const maxUsd = Number(process.env.MAX_USD ?? 1);
@@ -89,7 +92,7 @@ const shown = await requestFor('draft', example, 'KEY-NOT-SAVED');
 const raw: RawFile = fs.existsSync(RAW_FILE)
   ? (JSON.parse(fs.readFileSync(RAW_FILE, 'utf8')) as RawFile)
   : {
-      about: 'Raw OpenRouter replies for docs/evidence/category-picks. One entry per call; a call has two attempts when the first reply failed the schema, as in production. See README.md.',
+      about: `Raw OpenRouter replies for docs/evidence/category-picks, run ${RUN}. One entry per call; a call has two attempts when the first reply failed the schema, as in production. See README.md.`,
       request: { url: shown.url, header_names: Object.keys(shown.headers), draft_body_for_example: JSON.parse(shown.body) },
       prompts: {
         today: { example_input: example, chars: buildPrompt('today', example).length, text: buildPrompt('today', example) },
@@ -99,7 +102,9 @@ const raw: RawFile = fs.existsSync(RAW_FILE)
     };
 const save = () => fs.writeFileSync(RAW_FILE, JSON.stringify(raw, null, 1));
 const costOf = (a: Attempt) => (a.response as { usage?: { cost?: unknown } } | null)?.usage?.cost;
-const totalCost = () => raw.calls.flatMap((c) => c.attempts).reduce((sum, a) => sum + (typeof costOf(a) === 'number' ? (costOf(a) as number) : 0), 0);
+const costIn = (calls: Call[]) => calls.flatMap((c) => c.attempts).reduce((sum, a) => sum + (typeof costOf(a) === 'number' ? (costOf(a) as number) : 0), 0);
+const spentElsewhere = COST_FILES.filter((f) => f !== RAW_FILE && fs.existsSync(f)).reduce((sum, f) => sum + costIn((JSON.parse(fs.readFileSync(f, 'utf8')) as RawFile).calls), 0);
+const totalCost = () => spentElsewhere + costIn(raw.calls);
 
 for (let round = 1; round <= rounds; round++) {
   for (const [n, probe] of probes.slice(0, limit).entries()) {
@@ -131,4 +136,4 @@ for (let round = 1; round <= rounds; round++) {
     }
   }
 }
-console.log(`calls ${raw.calls.length}, attempts ${raw.calls.flatMap((c) => c.attempts).length}, reported cost $${totalCost().toFixed(6)}`);
+console.log(`run ${RUN}: calls ${raw.calls.length}, attempts ${raw.calls.flatMap((c) => c.attempts).length}, reported cost $${costIn(raw.calls).toFixed(6)} in this file, $${totalCost().toFixed(6)} with the run's other files`);
