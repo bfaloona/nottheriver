@@ -1,0 +1,664 @@
+{
+ "scored_from": "2026-11-19T15:52:42.391Z",
+ "brave_live_calls": 60,
+ "brave_replayed_calls": 36,
+ "per_arm": [
+  {
+   "arm": "model",
+   "round": 1,
+   "searches_ok": 6,
+   "m1_returned_by_map_search": 6,
+   "m2_shown": 5,
+   "baseline_shops": 29,
+   "m3_shown_nearby": 48,
+   "m3_graded_good": 18,
+   "m3_graded_bad": 14,
+   "m3_ungraded": 16,
+   "brave_live": 24,
+   "brave_replayed": 0,
+   "model_cost_usd_reported": 0.023656,
+   "model_calls_without_reported_cost": 0
+  },
+  {
+   "arm": "model",
+   "round": 2,
+   "searches_ok": 6,
+   "m1_returned_by_map_search": 6,
+   "m2_shown": 5,
+   "baseline_shops": 29,
+   "m3_shown_nearby": 49,
+   "m3_graded_good": 18,
+   "m3_graded_bad": 16,
+   "m3_ungraded": 15,
+   "brave_live": 15,
+   "brave_replayed": 9,
+   "model_cost_usd_reported": 0.011688,
+   "model_calls_without_reported_cost": 0
+  },
+  {
+   "arm": "list",
+   "round": 1,
+   "searches_ok": 6,
+   "m1_returned_by_map_search": 5,
+   "m2_shown": 5,
+   "baseline_shops": 29,
+   "m3_shown_nearby": 48,
+   "m3_graded_good": 15,
+   "m3_graded_bad": 12,
+   "m3_ungraded": 21,
+   "brave_live": 6,
+   "brave_replayed": 18,
+   "model_cost_usd_reported": 0.014389,
+   "model_calls_without_reported_cost": 0
+  },
+  {
+   "arm": "list",
+   "round": 2,
+   "searches_ok": 6,
+   "m1_returned_by_map_search": 5,
+   "m2_shown": 5,
+   "baseline_shops": 29,
+   "m3_shown_nearby": 45,
+   "m3_graded_good": 14,
+   "m3_graded_bad": 12,
+   "m3_ungraded": 19,
+   "brave_live": 15,
+   "brave_replayed": 9,
+   "model_cost_usd_reported": 0.01167,
+   "model_calls_without_reported_cost": 0
+  }
+ ],
+ "m4_shown_nearby_shops_in_common": {
+  "model_r1_vs_r2": {
+   "both": 47,
+   "either": 50
+  },
+  "list_r1_vs_r2": {
+   "both": 44,
+   "either": 49
+  },
+  "model_vs_list_r1": {
+   "both": 33,
+   "either": 63
+  },
+  "model_vs_list_r2": {
+   "both": 31,
+   "either": 63
+  }
+ },
+ "per_search": [
+  {
+   "id": "wool-socks-urban",
+   "baseline": [
+    "High Country Outfitters (Midtown, Ansley Mall)",
+    "Mountain High Outfitters (Buckhead)",
+    "Abbadabba's Little Five Points",
+    "REI (Atlanta, NE Expressway)",
+    "DICK'S Sporting Goods (Lenox Marketplace, Buckhead)"
+   ],
+   "m5_model_pair": [
+    "clothing store",
+    "general store"
+   ],
+   "m5_list_pair": [
+    "clothing store",
+    "shoe store"
+   ],
+   "m5_list_pair_as_sent": [
+    "clothing store",
+    "shoe store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "clothing",
+    "specific": "socks_underwear_swim",
+    "general_name": "Clothing and shoes",
+    "specific_name": "Socks, underwear and swimwear"
+   },
+   "model_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Cradled in Couth Boutique [ungraded]",
+     "J.Crew [ungraded]",
+     "Levi’s Store [bad]",
+     "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear [ungraded]",
+     "Walter's Clothing [bad]",
+     "Scout General Store [ungraded]",
+     "Dillard's [ungraded]",
+     "The Clothing Warehouse [bad]",
+     "H&M [ungraded]",
+     "Ross Dress for Less [ungraded]"
+    ]
+   },
+   "model_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Cradled in Couth Boutique [ungraded]",
+     "J.Crew [ungraded]",
+     "Levi’s Store [bad]",
+     "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear [ungraded]",
+     "Walter's Clothing [bad]",
+     "Scout General Store [ungraded]",
+     "Dillard's [ungraded]",
+     "The Clothing Warehouse [bad]",
+     "H&M [ungraded]",
+     "Ross Dress for Less [ungraded]"
+    ]
+   },
+   "list_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Cradled in Couth Boutique [ungraded]",
+     "Big Peach Ride + Run - Midtown [ungraded]",
+     "J.Crew [ungraded]",
+     "Levi’s Store [bad]",
+     "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear [ungraded]",
+     "Nike Ponce City Market [ungraded]",
+     "Hype 24/7 [ungraded]",
+     "The Athlete's Foot [ungraded]",
+     "Walter's Clothing [bad]",
+     "Friedman's Shoes [ungraded]"
+    ]
+   },
+   "list_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Cradled in Couth Boutique [ungraded]",
+     "Big Peach Ride + Run - Midtown [ungraded]",
+     "J.Crew [ungraded]",
+     "Levi’s Store [bad]",
+     "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear [ungraded]",
+     "Nike Ponce City Market [ungraded]",
+     "Hype 24/7 [ungraded]",
+     "The Athlete's Foot [ungraded]",
+     "Walter's Clothing [bad]",
+     "Friedman's Shoes [ungraded]"
+    ]
+   }
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "baseline": [
+    "Butters Ace Hardware (Thompsons Station)",
+    "B & C Hardware (Ace, Brentwood)",
+    "Guthrie's Ace Hardware (Nashville, Charlotte Pike)",
+    "Hillsboro Hardware (Nashville)",
+    "Harbor Freight Tools (Antioch)"
+   ],
+   "m5_model_pair": [
+    "hardware store",
+    "tool supply store"
+   ],
+   "m5_list_pair": [
+    "tool store",
+    "hardware store"
+   ],
+   "m5_list_pair_as_sent": [
+    "tool store",
+    "hardware store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "tools_hardware",
+    "specific": "power_tools",
+    "general_name": "Tools and hardware",
+    "specific_name": "Power tools"
+   },
+   "model_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Tractor Supply Co. [good]",
+     "Lowe's Home Improvement [good]",
+     "Harpeth True Value Hardware [bad]",
+     "Rockler Woodworking and Hardware - Brentwood [good]",
+     "Elder's Ace Hardware-Bellevue [good]",
+     "Complete Home Hardware [bad]",
+     "The Home Depot [good]",
+     "SiteOne Landscape Supply [good]",
+     "Ideal Millwork & Hardware [bad]",
+     "Huskey Truss & Building Supply [bad]"
+    ]
+   },
+   "model_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Tractor Supply Co. [good]",
+     "Lowe's Home Improvement [good]",
+     "Harpeth True Value Hardware [bad]",
+     "Rockler Woodworking and Hardware - Brentwood [good]",
+     "Elder's Ace Hardware-Bellevue [good]",
+     "Complete Home Hardware [bad]",
+     "The Home Depot [good]",
+     "SiteOne Landscape Supply [good]",
+     "Ideal Millwork & Hardware [bad]",
+     "Huskey Truss & Building Supply [bad]"
+    ]
+   },
+   "list_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Tractor Supply Co. [good]",
+     "ProVisionTools [bad]",
+     "Lowe's Home Improvement [good]",
+     "Rockler Woodworking and Hardware - Brentwood [good]",
+     "Harpeth True Value Hardware [bad]",
+     "Elder's Ace Hardware-Bellevue [good]",
+     "Complete Home Hardware [bad]",
+     "The Home Depot [good]",
+     "Braswell & Son Hillsboro Road [ungraded]",
+     "Ideal Millwork & Hardware [bad]"
+    ]
+   },
+   "list_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Tractor Supply Co. [good]",
+     "ProVisionTools [bad]",
+     "Lowe's Home Improvement [good]",
+     "Rockler Woodworking and Hardware - Brentwood [good]",
+     "Harpeth True Value Hardware [bad]",
+     "Elder's Ace Hardware-Bellevue [good]",
+     "Complete Home Hardware [bad]",
+     "The Home Depot [good]",
+     "Braswell & Son Hillsboro Road [ungraded]",
+     "Ideal Millwork & Hardware [bad]"
+    ]
+   }
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "baseline": [
+    "Kinoko Kids",
+    "The Store at Mia (Minneapolis Institute of Art)",
+    "Games By James (Southdale Center)",
+    "Pinwheels and Play Toys",
+    "Barnes & Noble (Galleria, Edina)"
+   ],
+   "m5_model_pair": [
+    "toy store",
+    "hobby store"
+   ],
+   "m5_list_pair": [
+    "game store",
+    "toy store"
+   ],
+   "m5_list_pair_as_sent": [
+    "game store",
+    "toy store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "toys_hobbies",
+    "specific": "puzzles_board_games",
+    "general_name": "Toys, games and crafts",
+    "specific_name": "Puzzles and board games"
+   },
+   "model_r1": {
+    "m1": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys",
+     "Barnes & Noble (Galleria, Edina)"
+    ],
+    "m2": [
+     "Kinoko Kids",
+     "Barnes & Noble (Galleria, Edina)"
+    ],
+    "shown": [
+     "Steamship Games [bad]",
+     "Tower Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Barnes & Noble [ungraded]",
+     "Level Up Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Hub Hobby Center [good]",
+     "Dreamers Vault Games Minneapolis [ungraded]",
+     "Hobby Lobby [good]",
+     "Kinoko Kids [good]"
+    ]
+   },
+   "model_r2": {
+    "m1": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys",
+     "Barnes & Noble (Galleria, Edina)"
+    ],
+    "m2": [
+     "Kinoko Kids",
+     "Barnes & Noble (Galleria, Edina)"
+    ],
+    "shown": [
+     "Steamship Games [bad]",
+     "Tower Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Barnes & Noble [ungraded]",
+     "Level Up Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Hub Hobby Center [good]",
+     "Dreamers Vault Games Minneapolis [ungraded]",
+     "Hobby Lobby [good]",
+     "Kinoko Kids [good]"
+    ]
+   },
+   "list_r1": {
+    "m1": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys"
+    ],
+    "m2": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys"
+    ],
+    "shown": [
+     "Steamship Games [bad]",
+     "Kinoko Kids [good]",
+     "Tower Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Pinwheels and Play Toys [good]",
+     "Level Up Games [ungraded]",
+     "Paradise Arcade Shop [ungraded]",
+     "Pacifier Kids Baby Boutique - North Loop [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Gamestop [ungraded]"
+    ]
+   },
+   "list_r2": {
+    "m1": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys"
+    ],
+    "m2": [
+     "Kinoko Kids",
+     "Pinwheels and Play Toys"
+    ],
+    "shown": [
+     "Steamship Games [bad]",
+     "Kinoko Kids [good]",
+     "Tower Games [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Pinwheels and Play Toys [good]",
+     "Level Up Games [ungraded]",
+     "Paradise Arcade Shop [ungraded]",
+     "Pacifier Kids Baby Boutique - North Loop [ungraded]",
+     "Creative Kidstuff Toy Store [bad]",
+     "Gamestop [ungraded]"
+    ]
+   }
+  },
+  {
+   "id": "wool-blanket-rural",
+   "baseline": [
+    "Pendleton Woolen Mills (Fort Collins)",
+    "JAX Outdoor Gear (Fort Collins)",
+    "Murdoch's Ranch & Home Supply (Greeley)",
+    "Tractor Supply Co. (Greeley, S 23rd Ave)"
+   ],
+   "m5_model_pair": [
+    "textile store",
+    "home goods store"
+   ],
+   "m5_list_pair": [
+    "linen store",
+    "home goods store"
+   ],
+   "m5_list_pair_as_sent": [
+    "linen store",
+    "home goods store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "home",
+    "specific": "bedding_bath",
+    "general_name": "Home goods and furniture",
+    "specific_name": "Bedding and bath"
+   },
+   "model_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "At Home [ungraded]",
+     "H&J HomeGoods [bad]"
+    ]
+   },
+   "model_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "Treelotta: Fabric + Craft Studio [bad]",
+     "H&J HomeGoods [bad]",
+     "H&J home goods [bad]"
+    ]
+   },
+   "list_r1": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "The Brass Bed, Fine Linens & Furnishings [ungraded]",
+     "The Brass Bed, Fine Linens & Furnishings [ungraded]",
+     "At Home [ungraded]"
+    ]
+   },
+   "list_r2": {
+    "m1": [],
+    "m2": [],
+    "shown": [
+     "The Brass Bed, Fine Linens & Furnishings [ungraded]",
+     "The Brass Bed, Fine Linens & Furnishings [ungraded]",
+     "H&J HomeGoods [bad]"
+    ]
+   }
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "baseline": [
+    "Heiser's Ace Hardware (Orwigsburg)",
+    "Dewald & Lengle Hardware (Friedensburg)",
+    "Denney Electric Supply (Schuylkill Haven)",
+    "Lowe's (Hamburg)",
+    "Walmart Supercenter (Hamburg)"
+   ],
+   "m5_model_pair": [
+    "lighting store",
+    "hardware store"
+   ],
+   "m5_list_pair": [
+    "electrical supply store",
+    "hardware store"
+   ],
+   "m5_list_pair_as_sent": [
+    "electrical supply store",
+    "hardware store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "tools_hardware",
+    "specific": "light_bulbs_electrical",
+    "general_name": "Tools and hardware",
+    "specific_name": "Light bulbs and electrical"
+   },
+   "model_r1": {
+    "m1": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "m2": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "shown": [
+     "Lowe's Garden Center [good]",
+     "Jack's DIY Home Store [ungraded]",
+     "Mountain View Supply & Rental (Ace Hardware) [good]",
+     "Kuzan's True Value Hardware & Rental Center [good]",
+     "Tractor Supply Co. [ungraded]",
+     "Walmart Supercenter [good]",
+     "Keystone Landscape Supply [bad]",
+     "Fastener Place [bad]"
+    ]
+   },
+   "model_r2": {
+    "m1": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "m2": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "shown": [
+     "Lowe's Garden Center [good]",
+     "Jack's DIY Home Store [ungraded]",
+     "Mountain View Supply & Rental (Ace Hardware) [good]",
+     "Kuzan's True Value Hardware & Rental Center [good]",
+     "Tractor Supply Co. [ungraded]",
+     "Walmart Supercenter [good]",
+     "Keystone Landscape Supply [bad]",
+     "Fastener Place [bad]"
+    ]
+   },
+   "list_r1": {
+    "m1": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "m2": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "shown": [
+     "Walmart Supercenter [good]",
+     "Lowe's Garden Center [good]",
+     "Wausau Supply Co. [bad]",
+     "Cabela's [ungraded]",
+     "Keystone Landscape Supply [bad]",
+     "Jack's DIY Home Store [ungraded]",
+     "Mountain View Supply & Rental (Ace Hardware) [good]",
+     "Kuzan's True Value Hardware & Rental Center [good]",
+     "Tractor Supply Co. [ungraded]"
+    ]
+   },
+   "list_r2": {
+    "m1": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "m2": [
+     "Lowe's (Hamburg)",
+     "Walmart Supercenter (Hamburg)"
+    ],
+    "shown": [
+     "Lowe's Garden Center [good]",
+     "Walmart Supercenter [good]",
+     "Wausau Supply Co. [bad]",
+     "Jack's DIY Home Store [ungraded]",
+     "Mountain View Supply & Rental (Ace Hardware) [good]",
+     "Kuzan's True Value Hardware & Rental Center [good]",
+     "Tractor Supply Co. [ungraded]"
+    ]
+   }
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "baseline": [
+    "Harbor Freight Tools (Peru)",
+    "Seneca Ace Hardware",
+    "Walgreens (Morris, 100 Bedford Rd)",
+    "Walmart Supercenter (Morris)",
+    "Menards (Morris)"
+   ],
+   "m5_model_pair": [
+    "electronics store",
+    "general store"
+   ],
+   "m5_list_pair": [
+    "electronics store",
+    "computer supply store"
+   ],
+   "m5_list_pair_as_sent": [
+    "electronics store",
+    "computer supply store"
+   ],
+   "m5_pairs_differ": true,
+   "live_pick": {
+    "general": "electronics",
+    "specific": "cables_batteries",
+    "general_name": "Electronics and computers",
+    "specific_name": "Cables, chargers and batteries"
+   },
+   "model_r1": {
+    "m1": [
+     "Seneca Ace Hardware"
+    ],
+    "m2": [
+     "Seneca Ace Hardware"
+    ],
+    "shown": [
+     "Seneca Ace Hardware [good]",
+     "Dollar General Market [good]",
+     "Dollar General [good]",
+     "Casey's [ungraded]",
+     "Illinois Valley Cellular [ungraded]",
+     "Abt Electronics & Appliances [bad]",
+     "Best Buy [good]",
+     "Micro Center [good]"
+    ]
+   },
+   "model_r2": {
+    "m1": [
+     "Seneca Ace Hardware"
+    ],
+    "m2": [
+     "Seneca Ace Hardware"
+    ],
+    "shown": [
+     "Seneca Ace Hardware [good]",
+     "Dollar General Market [good]",
+     "Dollar General [good]",
+     "Casey's [ungraded]",
+     "Illinois Valley Cellular [ungraded]",
+     "Abt Electronics & Appliances [bad]",
+     "Best Buy [good]",
+     "Micro Center [good]"
+    ]
+   },
+   "list_r1": {
+    "m1": [
+     "Seneca Ace Hardware"
+    ],
+    "m2": [
+     "Seneca Ace Hardware"
+    ],
+    "shown": [
+     "Seneca Ace Hardware [good]",
+     "Dollar General Market [good]",
+     "Illinois Valley Cellular [ungraded]",
+     "Abt Electronics & Appliances [bad]",
+     "Best Buy [good]",
+     "Micro Center [good]"
+    ]
+   },
+   "list_r2": {
+    "m1": [
+     "Seneca Ace Hardware"
+    ],
+    "m2": [
+     "Seneca Ace Hardware"
+    ],
+    "shown": [
+     "Seneca Ace Hardware [good]",
+     "Illinois Valley Cellular [ungraded]",
+     "Abt Electronics & Appliances [bad]",
+     "Best Buy [good]",
+     "Micro Center [good]"
+    ]
+   }
+  }
+ ]
+}

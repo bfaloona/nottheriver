@@ -1,0 +1,3150 @@
+{
+ "ran": "2026-11-19T15:52:42.391Z",
+ "rounds": 2,
+ "brave_live_calls": 60,
+ "brave_replayed_calls": 36,
+ "searches": [
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 3716,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2600,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2893,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2107,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 3021,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2727,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 3286,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 1943,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 3883,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2178,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 2330,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 1,
+   "status": 200,
+   "elapsed_ms": 1645,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2344,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2451,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 1773,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 1729,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2428,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2216,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2390,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2006,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2020,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2066,
+   "brave_live": 1,
+   "brave_replayed": 3
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 1556,
+   "brave_live": 4,
+   "brave_replayed": 0
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 2,
+   "status": 200,
+   "elapsed_ms": 2607,
+   "brave_live": 1,
+   "brave_replayed": 3
+  }
+ ],
+ "place_calls": [
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 1,
+   "q": "general store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Scout General Store",
+     "url": "https://scoutgeneralstore.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Belly General Store",
+     "url": "",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Whole Foods Market",
+     "url": "https://wholefoodsmarket.com/stores/poncedeleon?ref_=US_TRF_ALL_UFG_WFM_FRSOC_1001580",
+     "categories": [
+      "bakery",
+      "convenience_store",
+      "grocery"
+     ]
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/8589",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Savi Provisions - Midtown",
+     "url": "https://saviprovisions.com/",
+     "icon_category": "grocery",
+     "categories": [
+      "cafe",
+      "convenience_store"
+     ]
+    },
+    {
+     "title": "General Wholesale",
+     "url": "https://generalwholesalecompany.com/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/19081",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/22316",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Publix Super Market at Atlantic Station",
+     "url": "https://publix.com/?setstorenumber=1010",
+     "icon_category": "grocery",
+     "categories": [
+      "bakery",
+      "convenience_store",
+      "florist"
+     ]
+    },
+    {
+     "title": "Trader Joe's",
+     "url": "https://locations.traderjoes.com/ga/atlanta/730",
+     "categories": [
+      "grocery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 1,
+   "q": "clothing store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Clothing Warehouse",
+     "url": "https://theclothingwarehouse.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Walter's Clothing",
+     "url": "https://waltersclothing.com/",
+     "categories": []
+    },
+    {
+     "title": "Cradled in Couth Boutique",
+     "url": "https://cradledincouth.com/",
+     "icon_category": "clothing_store",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "J.Crew",
+     "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "H&M",
+     "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united states/atlanta/atlantic-station/US0160.html",
+     "categories": []
+    },
+    {
+     "title": "Levi’s Store",
+     "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Ross Dress for Less",
+     "url": "https://rossstores.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+     "url": "https://rye51.com/pages/atlanta",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Dillard's",
+     "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265",
+     "categories": []
+    },
+    {
+     "title": "Lanier Clothes",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 1,
+   "q": "clothing store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Clothing Warehouse",
+     "url": "https://theclothingwarehouse.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Walter's Clothing",
+     "url": "https://waltersclothing.com/",
+     "categories": []
+    },
+    {
+     "title": "Cradled in Couth Boutique",
+     "url": "https://cradledincouth.com/",
+     "icon_category": "clothing_store",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "J.Crew",
+     "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "H&M",
+     "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united states/atlanta/atlantic-station/US0160.html",
+     "categories": []
+    },
+    {
+     "title": "Levi’s Store",
+     "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Ross Dress for Less",
+     "url": "https://rossstores.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+     "url": "https://rye51.com/pages/atlanta",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Dillard's",
+     "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265",
+     "categories": []
+    },
+    {
+     "title": "Lanier Clothes",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 1,
+   "q": "shoe store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Nike Ponce City Market",
+     "url": "https://nike.com/retail/s/nike-well-collective-ponce-city-market?cp=84620811901_seo_&y_source=1_MjgwMDEzNjItNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Friedman's Shoes",
+     "url": "https://largefeet.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "DSW Designer Shoe Warehouse",
+     "url": "https://stores.dsw.com/usa/ga/atlanta/dsw-designer-shoe-warehouse-atlantic-station.html?y_source=1_MTY1MTU0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Foot Locker",
+     "url": "https://stores.footlocker.com/ga/atlanta/829-ralph-david-aber-blvd-sw-8814.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Hype 24/7",
+     "url": "https://hype2407.com/",
+     "categories": []
+    },
+    {
+     "title": "Nike Factory Store - Atlantic Station",
+     "url": "https://nike.com/retail/s/nike-unite-atlantic-station?cp=84620811901_seo_&y_source=1_MTg4MjM2OTItNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Big Peach Ride + Run - Midtown",
+     "url": "https://bigpeachrideandrun.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Shoe's Ittalianio",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "The Athlete's Foot",
+     "url": "https://theathletesfoot.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Rack Room Shoes",
+     "url": "https://rackroomshoes.com/store/787",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 1,
+   "q": "hardware store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Complete Home Hardware",
+     "url": "https://completehomehardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Ideal Millwork & Hardware",
+     "url": "https://idealmillworktn.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Huskey Truss & Building Supply",
+     "url": "https://huskeytruss.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 1,
+   "q": "tool supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Brentwood Rental & Sales",
+     "url": "https://brentwoodrental.net/",
+     "icon_category": "car_rental",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "SiteOne Landscape Supply",
+     "url": "https://siteone.com/en/store/193",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Haley Tool & Stamping Inc",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 1,
+   "q": "hardware store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Complete Home Hardware",
+     "url": "https://completehomehardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Ideal Millwork & Hardware",
+     "url": "https://idealmillworktn.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Huskey Truss & Building Supply",
+     "url": "https://huskeytruss.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 1,
+   "q": "tool store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Braswell & Son Hillsboro Road",
+     "url": "https://store.shopbraswell.com/",
+     "icon_category": "jewelry_store",
+     "categories": [
+      "jewelry_store",
+      "hardware"
+     ]
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Brentwood Rental & Sales",
+     "url": "https://brentwoodrental.net/",
+     "icon_category": "car_rental",
+     "categories": []
+    },
+    {
+     "title": "ProVisionTools",
+     "url": "https://provisiontools.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Haley Tool & Stamping Inc",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 1,
+   "q": "hobby store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Steamship Games",
+     "url": "https://steamshipgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Level Up Games",
+     "url": "https://levelupshoponline.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Hobby Lobby",
+     "url": "https://hobbylobby.com/stores/search/686",
+     "categories": []
+    },
+    {
+     "title": "Mantel Collectibles",
+     "url": "https://mantelcollectibles.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Bobby Bead",
+     "url": "https://bobbybead.com/",
+     "icon_category": "gift",
+     "categories": []
+    },
+    {
+     "title": "Dreamers Vault Games Minneapolis",
+     "url": "https://dreamersvault.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Barnes & Noble",
+     "url": "https://stores.barnesandnoble.com/store/2516",
+     "categories": []
+    },
+    {
+     "title": "Hot Comics and Collectibles",
+     "url": "https://hotcomicsandcollectibles.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 1,
+   "q": "toy store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kinoko Kids",
+     "url": "https://kinokokids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pinwheels and Play Toys",
+     "url": "https://facebook.com/PinwheelsandPlayToys",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pacifier Kids Baby Boutique - North Loop",
+     "url": "https://pacifierkids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Moona Moono",
+     "url": "https://moonamoono.com/",
+     "icon_category": "cafe",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 1,
+   "q": "toy store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kinoko Kids",
+     "url": "https://kinokokids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pinwheels and Play Toys",
+     "url": "https://facebook.com/PinwheelsandPlayToys",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pacifier Kids Baby Boutique - North Loop",
+     "url": "https://pacifierkids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Moona Moono",
+     "url": "https://moonamoono.com/",
+     "icon_category": "cafe",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 1,
+   "q": "game store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Steamship Games",
+     "url": "https://steamshipgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Level Up Games",
+     "url": "https://levelupshoponline.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "GameStop",
+     "url": "https://gamestop.com/store/us/mn/richfield/633/the-hub-gamestop",
+     "categories": []
+    },
+    {
+     "title": "Gamestop",
+     "url": "https://gamestop.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Dreamers Vault Games Minneapolis",
+     "url": "https://dreamersvault.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Dumpster Cat Games",
+     "url": "https://dumpstercatgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "All Systems Go Games",
+     "url": "https://allsystemsgo.games/",
+     "categories": []
+    },
+    {
+     "title": "Paradise Arcade Shop",
+     "url": "https://paradisearcadeshop.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "home goods store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "At Home",
+     "url": "https://athome.com/store/colorado-johnstown",
+     "categories": []
+    },
+    {
+     "title": "T.J. Maxx & HomeGoods",
+     "url": "https://tjmaxx.tjx.com/store/index.jsp",
+     "categories": []
+    },
+    {
+     "title": "H&J HomeGoods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "textile store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Treelotta: Fabric + Craft Studio",
+     "url": "https://treelotta.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Fabric Store",
+     "url": "https://textilefabricstore.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Direct Textile Store",
+     "url": "https://directtextilestore.com/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Textile Discount Outlet",
+     "url": "https://textilediscountoutlet.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Fabric Wholesale Direct",
+     "url": "https://fabricwholesaledirect.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Sewtopia",
+     "url": "https://sewtopia.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Fabric Shop",
+     "url": "https://textilesfabricshop.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Center",
+     "url": "https://textilecentermn.org/",
+     "icon_category": "art_gallery",
+     "categories": [
+      "library"
+     ]
+    },
+    {
+     "title": "Marshall Dry Goods Co Inc",
+     "url": "https://marshalldrygoods.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "home goods store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "At Home",
+     "url": "https://athome.com/store/colorado-johnstown",
+     "categories": []
+    },
+    {
+     "title": "T.J. Maxx & HomeGoods",
+     "url": "https://tjmaxx.tjx.com/store/index.jsp",
+     "categories": []
+    },
+    {
+     "title": "H&J HomeGoods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "linen store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Brass Bed, Fine Linens & Furnishings",
+     "url": "https://brassbedfinelinens.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "The Linen Kist",
+     "url": "https://thelinenkist.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Brass Bed, Fine Linens & Furnishings",
+     "url": "https://brassbedfinelinens.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Linen Gallery",
+     "url": "https://linensanddown.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Linen Store",
+     "url": "https://thelinenstore.com.ar/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "The Linen Shop",
+     "url": "https://linenshopfabrics.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Linen Shop",
+     "url": "https://thelinenshopnj.com/",
+     "icon_category": "gift",
+     "categories": []
+    },
+    {
+     "title": "Linen Boutique",
+     "url": "https://linen-boutique.com/",
+     "categories": []
+    },
+    {
+     "title": "The Linen Tree",
+     "url": "https://thelinentree.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Linen & Lounge",
+     "url": "https://linenandlounge.co/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "lighting store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Keystone Landscape Supply",
+     "url": "https://keystonelandscapesupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Wicker Cottage Country Candle Co",
+     "url": "https://wickercottagecandleco.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "hardware store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Walmart Supercenter",
+     "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc",
+     "categories": [
+      "bakery"
+     ]
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Lowe's Garden Center",
+     "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC",
+     "icon_category": "garden_center",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "hardware store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Walmart Supercenter",
+     "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc",
+     "categories": [
+      "bakery"
+     ]
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Lowe's Garden Center",
+     "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC",
+     "icon_category": "garden_center",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "electrical supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Cabela's",
+     "url": "https://stores.cabelas.com/us/pa/hamburg/100-cabela-drive.html?y_source=1_Mzk4NjcxMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Wausau Supply Co.",
+     "url": "https://wausausupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    },
+    {
+     "title": "Keystone Landscape Supply",
+     "url": "https://keystonelandscapesupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "electronics store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Abt Electronics & Appliances",
+     "url": "https://abt.com/",
+     "categories": []
+    },
+    {
+     "title": "Best Buy",
+     "url": "https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100",
+     "categories": []
+    },
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Micro Center",
+     "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Illinois Valley Cellular",
+     "url": "https://ivcellular.com/",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Dollar General Market",
+     "url": "https://dollargeneral.com/store-directory/il/seneca/17461",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "McCullough Equipment Group Morris",
+     "url": "https://mcagplus.com/location/morris",
+     "icon_category": "car",
+     "categories": []
+    },
+    {
+     "title": "We Fix That",
+     "url": "",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Redbox",
+     "url": "https://redbox.com/locations/illinois/seneca/61360/34225",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 1,
+   "q": "general store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Dollar General Market",
+     "url": "https://dollargeneral.com/store-directory/il/seneca/17461",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/il/marseilles/12394",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Casey's",
+     "url": "https://caseys.com/general-store/il-seneca/225-n-main-st/1665",
+     "icon_category": "fuel",
+     "categories": []
+    },
+    {
+     "title": "Glenwood RV Resort - General Store",
+     "url": "",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Casey's",
+     "url": "https://caseys.com/general-store/il-marseilles/150-w-bluff-st/3595",
+     "icon_category": "restaurant",
+     "categories": []
+    },
+    {
+     "title": "Seneca Food Mart",
+     "url": "",
+     "icon_category": "grocery",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "electronics store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Abt Electronics & Appliances",
+     "url": "https://abt.com/",
+     "categories": []
+    },
+    {
+     "title": "Best Buy",
+     "url": "https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100",
+     "categories": []
+    },
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Micro Center",
+     "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Illinois Valley Cellular",
+     "url": "https://ivcellular.com/",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Dollar General Market",
+     "url": "https://dollargeneral.com/store-directory/il/seneca/17461",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "McCullough Equipment Group Morris",
+     "url": "https://mcagplus.com/location/morris",
+     "icon_category": "car",
+     "categories": []
+    },
+    {
+     "title": "We Fix That",
+     "url": "",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Redbox",
+     "url": "https://redbox.com/locations/illinois/seneca/61360/34225",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 1,
+   "q": "computer supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Midwest SxS, LLC.",
+     "url": "",
+     "categories": []
+    },
+    {
+     "title": "McCullough Equipment Group Morris",
+     "url": "https://mcagplus.com/location/morris",
+     "icon_category": "car",
+     "categories": []
+    },
+    {
+     "title": "Gleason & Co",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 2,
+   "q": "general store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Scout General Store",
+     "url": "https://scoutgeneralstore.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Belly General Store",
+     "url": "",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Whole Foods Market",
+     "url": "https://wholefoodsmarket.com/stores/poncedeleon?ref_=US_TRF_ALL_UFG_WFM_FRSOC_1001580",
+     "categories": [
+      "bakery",
+      "convenience_store",
+      "grocery"
+     ]
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/8589",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Savi Provisions - Midtown",
+     "url": "https://saviprovisions.com/",
+     "icon_category": "grocery",
+     "categories": [
+      "cafe",
+      "convenience_store"
+     ]
+    },
+    {
+     "title": "General Wholesale",
+     "url": "https://generalwholesalecompany.com/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/19081",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/ga/atlanta/22316",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Publix Super Market at Atlantic Station",
+     "url": "https://publix.com/?setstorenumber=1010",
+     "icon_category": "grocery",
+     "categories": [
+      "bakery",
+      "convenience_store",
+      "florist"
+     ]
+    },
+    {
+     "title": "Trader Joe's",
+     "url": "https://locations.traderjoes.com/ga/atlanta/730",
+     "categories": [
+      "grocery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "model",
+   "round": 2,
+   "q": "clothing store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Clothing Warehouse",
+     "url": "https://theclothingwarehouse.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Walter's Clothing",
+     "url": "https://waltersclothing.com/",
+     "categories": []
+    },
+    {
+     "title": "Cradled in Couth Boutique",
+     "url": "https://cradledincouth.com/",
+     "icon_category": "clothing_store",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "J.Crew",
+     "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Levi’s Store",
+     "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "H&M",
+     "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united states/atlanta/atlantic-station/US0160.html",
+     "categories": []
+    },
+    {
+     "title": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+     "url": "https://rye51.com/pages/atlanta",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Ross Dress for Less",
+     "url": "https://rossstores.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Dillard's",
+     "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265",
+     "categories": []
+    },
+    {
+     "title": "Lanier Clothes",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 2,
+   "q": "clothing store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Clothing Warehouse",
+     "url": "https://theclothingwarehouse.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Walter's Clothing",
+     "url": "https://waltersclothing.com/",
+     "categories": []
+    },
+    {
+     "title": "Cradled in Couth Boutique",
+     "url": "https://cradledincouth.com/",
+     "icon_category": "clothing_store",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "J.Crew",
+     "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Levi’s Store",
+     "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "H&M",
+     "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united states/atlanta/atlantic-station/US0160.html",
+     "categories": []
+    },
+    {
+     "title": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+     "url": "https://rye51.com/pages/atlanta",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Ross Dress for Less",
+     "url": "https://rossstores.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Dillard's",
+     "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265",
+     "categories": []
+    },
+    {
+     "title": "Lanier Clothes",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-socks-urban",
+   "arm": "list",
+   "round": 2,
+   "q": "shoe store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Nike Ponce City Market",
+     "url": "https://nike.com/retail/s/nike-well-collective-ponce-city-market?cp=84620811901_seo_&y_source=1_MjgwMDEzNjItNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Friedman's Shoes",
+     "url": "https://largefeet.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "DSW Designer Shoe Warehouse",
+     "url": "https://stores.dsw.com/usa/ga/atlanta/dsw-designer-shoe-warehouse-atlantic-station.html?y_source=1_MTY1MTU0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Foot Locker",
+     "url": "https://stores.footlocker.com/ga/atlanta/829-ralph-david-aber-blvd-sw-8814.html",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Hype 24/7",
+     "url": "https://hype2407.com/",
+     "categories": []
+    },
+    {
+     "title": "Nike Factory Store - Atlantic Station",
+     "url": "https://nike.com/retail/s/nike-unite-atlantic-station?cp=84620811901_seo_&y_source=1_MTg4MjM2OTItNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Big Peach Ride + Run - Midtown",
+     "url": "https://bigpeachrideandrun.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Shoe's Ittalianio",
+     "url": "",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "Rack Room Shoes",
+     "url": "https://rackroomshoes.com/store/787",
+     "icon_category": "clothing_store",
+     "categories": []
+    },
+    {
+     "title": "The Athlete's Foot",
+     "url": "https://theathletesfoot.com/",
+     "icon_category": "clothing_store",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 2,
+   "q": "tool store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Braswell & Son Hillsboro Road",
+     "url": "https://store.shopbraswell.com/",
+     "icon_category": "jewelry_store",
+     "categories": [
+      "jewelry_store",
+      "hardware"
+     ]
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Brentwood Rental & Sales",
+     "url": "https://brentwoodrental.net/",
+     "icon_category": "car_rental",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Haley Tool & Stamping Inc",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "ProVisionTools",
+     "url": "https://provisiontools.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "list",
+   "round": 2,
+   "q": "hardware store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Complete Home Hardware",
+     "url": "https://completehomehardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Ideal Millwork & Hardware",
+     "url": "https://idealmillworktn.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Huskey Truss & Building Supply",
+     "url": "https://huskeytruss.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 2,
+   "q": "hardware store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Complete Home Hardware",
+     "url": "https://completehomehardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Ideal Millwork & Hardware",
+     "url": "https://idealmillworktn.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Huskey Truss & Building Supply",
+     "url": "https://huskeytruss.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "cordless-drill-suburban",
+   "arm": "model",
+   "round": 2,
+   "q": "tool supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Franklin-TN-37069_2314",
+     "categories": []
+    },
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/TN-Franklin/0532?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-532-_-na-_-0-_-0&y_source=1_MTE4MzcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "categories": []
+    },
+    {
+     "title": "Brentwood Rental & Sales",
+     "url": "https://brentwoodrental.net/",
+     "icon_category": "car_rental",
+     "categories": []
+    },
+    {
+     "title": "The Home Depot",
+     "url": "https://homedepot.com/l/Brentwood/TN/Brentwood/37027/723?emt=MSGoogleMaps",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Harpeth True Value Hardware",
+     "url": "https://stores.truevalue.com/tn/franklin/23150",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Rockler Woodworking and Hardware - Brentwood",
+     "url": "https://rockler.com/retail/stores/tn-brentwood-store",
+     "categories": []
+    },
+    {
+     "title": "Stewart Builder Supply",
+     "url": "https://stewartbuildersupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Elder's Ace Hardware-Bellevue",
+     "url": "https://eldershardware.com/locations/bellevue",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "SiteOne Landscape Supply",
+     "url": "https://siteone.com/en/store/193",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Haley Tool & Stamping Inc",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 2,
+   "q": "hobby store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Steamship Games",
+     "url": "https://steamshipgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Level Up Games",
+     "url": "https://levelupshoponline.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Hobby Lobby",
+     "url": "https://hobbylobby.com/stores/search/686",
+     "categories": []
+    },
+    {
+     "title": "Mantel Collectibles",
+     "url": "https://mantelcollectibles.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Bobby Bead",
+     "url": "https://bobbybead.com/",
+     "icon_category": "gift",
+     "categories": []
+    },
+    {
+     "title": "Dreamers Vault Games Minneapolis",
+     "url": "https://dreamersvault.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Barnes & Noble",
+     "url": "https://stores.barnesandnoble.com/store/2516",
+     "categories": []
+    },
+    {
+     "title": "Hot Comics and Collectibles",
+     "url": "https://hotcomicsandcollectibles.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "model",
+   "round": 2,
+   "q": "toy store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kinoko Kids",
+     "url": "https://kinokokids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pinwheels and Play Toys",
+     "url": "https://facebook.com/PinwheelsandPlayToys",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pacifier Kids Baby Boutique - North Loop",
+     "url": "https://pacifierkids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Moona Moono",
+     "url": "https://moonamoono.com/",
+     "icon_category": "cafe",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 2,
+   "q": "toy store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kinoko Kids",
+     "url": "https://kinokokids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pinwheels and Play Toys",
+     "url": "https://facebook.com/PinwheelsandPlayToys",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Pacifier Kids Baby Boutique - North Loop",
+     "url": "https://pacifierkids.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Moona Moono",
+     "url": "https://moonamoono.com/",
+     "icon_category": "cafe",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Creative Kidstuff Toy Store",
+     "url": "https://creativekidstuff.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "jigsaw-puzzle-urban",
+   "arm": "list",
+   "round": 2,
+   "q": "game store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Steamship Games",
+     "url": "https://steamshipgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Tower Games",
+     "url": "https://towergamesmn.com/",
+     "categories": []
+    },
+    {
+     "title": "Level Up Games",
+     "url": "https://levelupshoponline.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "GameStop",
+     "url": "https://gamestop.com/store/us/mn/richfield/633/the-hub-gamestop",
+     "categories": []
+    },
+    {
+     "title": "Gamestop",
+     "url": "https://gamestop.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Dreamers Vault Games Minneapolis",
+     "url": "https://dreamersvault.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "Hub Hobby Center",
+     "url": "https://hubhobby.com/",
+     "categories": []
+    },
+    {
+     "title": "Dumpster Cat Games",
+     "url": "https://dumpstercatgames.com/",
+     "icon_category": "gaming",
+     "categories": []
+    },
+    {
+     "title": "All Systems Go Games",
+     "url": "https://allsystemsgo.games/",
+     "categories": []
+    },
+    {
+     "title": "Paradise Arcade Shop",
+     "url": "https://paradisearcadeshop.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "home goods store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "H&J HomeGoods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "H&J home goods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    },
+    {
+     "title": "At Home",
+     "url": "https://athome.com/store/colorado-colorado-springs",
+     "icon_category": "shop",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "linen store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "The Brass Bed, Fine Linens & Furnishings",
+     "url": "https://brassbedfinelinens.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "The Linen Kist",
+     "url": "https://thelinenkist.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Brass Bed, Fine Linens & Furnishings",
+     "url": "https://brassbedfinelinens.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Linen Gallery",
+     "url": "https://linensanddown.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Linen Store",
+     "url": "https://thelinenstore.com.ar/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "The Linen Shop",
+     "url": "https://linenshopfabrics.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "The Linen Shop",
+     "url": "https://thelinenshopnj.com/",
+     "icon_category": "gift",
+     "categories": []
+    },
+    {
+     "title": "The Linen Tree",
+     "url": "https://thelinentree.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Linen Boutique",
+     "url": "https://linen-boutique.com/",
+     "categories": []
+    },
+    {
+     "title": "Irish Linen Stores",
+     "url": "https://irishlinenvictoria.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "home goods store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "H&J HomeGoods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "H&J home goods",
+     "url": "https://handjhomegoods.com/",
+     "icon_category": "furniture",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    },
+    {
+     "title": "At Home",
+     "url": "https://athome.com/store/colorado-colorado-springs",
+     "icon_category": "shop",
+     "categories": [
+      "clothing_store"
+     ]
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    },
+    {
+     "title": "HomeGoods",
+     "url": "https://homegoods.com/",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "wool-blanket-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "textile store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Treelotta: Fabric + Craft Studio",
+     "url": "https://treelotta.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Fabric Store",
+     "url": "https://textilefabricstore.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Discount Outlet",
+     "url": "https://textilediscountoutlet.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Direct Textile Store",
+     "url": "https://directtextilestore.com/",
+     "icon_category": "shop",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Fabric Wholesale Direct",
+     "url": "https://fabricwholesaledirect.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Sewtopia",
+     "url": "https://sewtopia.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Fabric Shop",
+     "url": "https://textilesfabricshop.com/",
+     "icon_category": "shop",
+     "categories": []
+    },
+    {
+     "title": "Textile Center",
+     "url": "https://textilecentermn.org/",
+     "icon_category": "art_gallery",
+     "categories": [
+      "library"
+     ]
+    },
+    {
+     "title": "Marshall Dry Goods Co Inc",
+     "url": "https://marshalldrygoods.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "lighting store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Keystone Landscape Supply",
+     "url": "https://keystonelandscapesupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Wicker Cottage Country Candle Co",
+     "url": "https://wickercottagecandleco.com/",
+     "icon_category": "shop",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "hardware store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Walmart Supercenter",
+     "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc",
+     "categories": [
+      "bakery"
+     ]
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Lowe's Garden Center",
+     "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC",
+     "icon_category": "garden_center",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "hardware store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Walmart Supercenter",
+     "url": "https://walmart.com/store/4612-hamburg-pa/?veh=seo_loc",
+     "categories": [
+      "bakery"
+     ]
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Lowe's Garden Center",
+     "url": "https://lowes.com/l/gardencenter.html?cm_mmc=YEXT-_-GC",
+     "icon_category": "garden_center",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "led-light-bulbs-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "electrical supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Lowe's Home Improvement",
+     "url": "https://lowes.com/store/PA-Hamburg/2894?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2894-_-na-_-0-_-0&y_source=1_MTE4MzQwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Jack's DIY Home Store",
+     "url": "https://jackssurplus.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Mountain View Supply & Rental (Ace Hardware)",
+     "url": "https://mtviewsupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Kuzan's True Value Hardware & Rental Center",
+     "url": "https://kuzanshardware.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Fastener Place",
+     "url": "https://thefastenerplace.com/",
+     "icon_category": "hardware",
+     "categories": [
+      "shop"
+     ]
+    },
+    {
+     "title": "Wausau Supply Co.",
+     "url": "https://wausausupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Tractor Supply Co.",
+     "url": "https://tractorsupply.com/tsc/store_Shoemakersville-PA-19555_2691",
+     "categories": []
+    },
+    {
+     "title": "Keystone Landscape Supply",
+     "url": "https://keystonelandscapesupply.com/",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "electronics store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Abt Electronics & Appliances",
+     "url": "https://abt.com/",
+     "categories": []
+    },
+    {
+     "title": "Best Buy",
+     "url": "https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100",
+     "categories": []
+    },
+    {
+     "title": "Micro Center",
+     "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151",
+     "categories": []
+    },
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Illinois Valley Cellular",
+     "url": "https://ivcellular.com/",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "We Fix That",
+     "url": "",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Midwest SxS, LLC.",
+     "url": "",
+     "categories": []
+    },
+    {
+     "title": "Gleason & Co",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "list",
+   "round": 2,
+   "q": "computer supply store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Midwest SxS, LLC.",
+     "url": "",
+     "categories": []
+    },
+    {
+     "title": "McCullough Equipment Group Morris",
+     "url": "https://mcagplus.com/location/morris",
+     "icon_category": "car",
+     "categories": []
+    },
+    {
+     "title": "Gleason & Co",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "electronics store",
+   "replayed": true,
+   "status": 200,
+   "results": [
+    {
+     "title": "Abt Electronics & Appliances",
+     "url": "https://abt.com/",
+     "categories": []
+    },
+    {
+     "title": "Best Buy",
+     "url": "https://stores.bestbuy.com/il/chicago/555-w-roosevelt-rd-1142.html/?loc=ns100",
+     "categories": []
+    },
+    {
+     "title": "Micro Center",
+     "url": "https://microcenter.com/site/stores/chicago.aspx?storeid=151",
+     "categories": []
+    },
+    {
+     "title": "Kick The Computer, Inc",
+     "url": "https://kickthecomputer.com/",
+     "icon_category": "car_repair",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Illinois Valley Cellular",
+     "url": "https://ivcellular.com/",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "We Fix That",
+     "url": "",
+     "icon_category": "mobile_phone",
+     "categories": []
+    },
+    {
+     "title": "Midwest SxS, LLC.",
+     "url": "",
+     "categories": []
+    },
+    {
+     "title": "Gleason & Co",
+     "url": "",
+     "icon_category": "hardware",
+     "categories": []
+    }
+   ]
+  },
+  {
+   "id": "rechargeable-aa-batteries-rural",
+   "arm": "model",
+   "round": 2,
+   "q": "general store",
+   "replayed": false,
+   "status": 200,
+   "results": [
+    {
+     "title": "Dollar General Market",
+     "url": "https://dollargeneral.com/store-directory/il/seneca/17461",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Dollar General",
+     "url": "https://dollargeneral.com/store-directory/il/marseilles/12394",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Casey's",
+     "url": "https://caseys.com/general-store/il-seneca/225-n-main-st/1665",
+     "icon_category": "fuel",
+     "categories": []
+    },
+    {
+     "title": "Glenwood RV Resort - General Store",
+     "url": "",
+     "icon_category": "convenience_store",
+     "categories": []
+    },
+    {
+     "title": "Seneca Ace Hardware",
+     "url": "https://acehardware.com/store-details/16926",
+     "icon_category": "hardware",
+     "categories": []
+    },
+    {
+     "title": "Casey's",
+     "url": "https://caseys.com/general-store/il-marseilles/150-w-bluff-st/3595",
+     "icon_category": "restaurant",
+     "categories": []
+    },
+    {
+     "title": "Seneca Food Mart",
+     "url": "",
+     "icon_category": "grocery",
+     "categories": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1561 @@
+{
+  "id": "wool-socks-urban",
+  "checked": "2026-11-19T15:53:17.089Z",
+  "request": {
+    "product": "wool socks",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.77,
+    "lon": -84.38,
+    "ruca": 1
+  },
+  "status": 200,
+  "elapsed_ms": 2344,
+  "body": {
+    "query": {
+      "product": "wool socks",
+      "city": "Atlanta",
+      "state": "GA",
+      "canonical_name": "wool socks",
+      "category": "clothing",
+      "online_queries": [
+        "buy wool socks",
+        "wool socks shop"
+      ],
+      "local_queries": [
+        "clothing store",
+        "general store"
+      ],
+      "near_radius_mi": 10,
+      "pick": {
+        "general": "clothing",
+        "specific": "socks_underwear_swim",
+        "general_name": "Clothing and shoes",
+        "specific_name": "Socks, underwear and swimwear"
+      }
+    },
+    "weights": {
+      "relevance": 0.25,
+      "ethics": 0.3,
+      "env": 0.3,
+      "proximity": 0.15
+    },
+    "local": [
+      {
+        "id": "local:loc4XEQLMTZC4NAEAREEP4I3IGCVYCJGHFJXAAAAAAA=:2",
+        "kind": "local",
+        "retailer": {
+          "name": "Cradled in Couth Boutique",
+          "domain": "cradledincouth.com",
+          "url": "https://cradledincouth.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store, clothing_store",
+        "address": "730 Peachtree St NE #570, Atlanta, GA 30308",
+        "distance_km": 0.7,
+        "lat": 33.7745,
+        "lon": -84.386,
+        "certifications": [],
+        "signals": [],
+        "score": 0.572,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Cradled in Couth Boutique",
+                "url": "https://cradledincouth.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9825,
+            "weight": 0.15,
+            "contribution": 0.147,
+            "sources": [
+              {
+                "label": "0.4 mi (0.7 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "local:loc4BSZSXCG44JAEBVWCFS2HGF2VYDBF3CDRAAAAAAA=:3",
+        "kind": "local",
+        "retailer": {
+          "name": "J.Crew",
+          "domain": "jcrew.com",
+          "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "675 Ponce De Leon Ave NE Ste W112, Atlanta, GA 30308",
+        "distance_km": 1.3,
+        "lat": 33.7724,
+        "lon": -84.3664,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "J.Crew",
+                "url": "https://stores.jcrew.com/us/ga/atlanta/675-ponce-de-leon-ave-ne"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9675,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.8 mi (1.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "local:loc4746XR3OS4JAEAPZZMXEXOF2VYCNHLMS7AAAAAAA=:4",
+        "kind": "local",
+        "retailer": {
+          "name": "Levi’s Store",
+          "domain": "levi.com",
+          "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "650 North Avenue NE Ste S106-B, Atlanta, GA 30308",
+        "distance_km": 1.3,
+        "lat": 33.7721,
+        "lon": -84.3667,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Levi’s Store",
+                "url": "https://locations.levi.com/en-us/ga/atlanta/denim_atlanta_ga_603.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9675,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.8 mi (1.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "local:loc4NHBWC2PA4JAEAVJBF62W6F2VYDXSLV2AAAAAAAA=:6",
+        "kind": "local",
+        "retailer": {
+          "name": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+          "domain": "rye51.com",
+          "url": "https://rye51.com/pages/atlanta"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "619 Ponce De Leon Ave NE B105, Atlanta, GA 30308",
+        "distance_km": 1.3,
+        "lat": 33.7725,
+        "lon": -84.3662,
+        "certifications": [],
+        "signals": [],
+        "score": 0.57,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Rye 51 - Atlanta, GA | Luxury Men's Clothing & Casual Menswear",
+                "url": "https://rye51.com/pages/atlanta"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9675,
+            "weight": 0.15,
+            "contribution": 0.145,
+            "sources": [
+              {
+                "label": "0.8 mi (1.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "local:loc43LDJ7KDM4BAEAWQLWPIM4GCVYAT76NXAAAAAAAA=:1",
+        "kind": "local",
+        "retailer": {
+          "name": "Walter's Clothing",
+          "domain": "waltersclothing.com",
+          "url": "https://waltersclothing.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "",
+        "address": "66 Decatur St. SE, Atlanta, GA 30303",
+        "distance_km": 2,
+        "lat": 33.7533,
+        "lon": -84.3876,
+        "certifications": [],
+        "signals": [],
+        "score": 0.568,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Walter's Clothing",
+                "url": "https://waltersclothing.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.95,
+            "weight": 0.15,
+            "contribution": 0.143,
+            "sources": [
+              {
+                "label": "1.2 mi (2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "local:loc46XQKIH6D4FAEA52VK2E6QFSVYA2FZR73AAAAAAA=:9",
+        "kind": "local",
+        "retailer": {
+          "name": "Scout General Store",
+          "domain": "scoutgeneralstore.com",
+          "url": "https://scoutgeneralstore.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "905 Bernina Ave NE, Atlanta, GA 30307",
+        "distance_km": 2.2,
+        "lat": 33.7638,
+        "lon": -84.3579,
+        "certifications": [],
+        "signals": [],
+        "score": 0.567,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Scout General Store",
+                "url": "https://scoutgeneralstore.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.945,
+            "weight": 0.15,
+            "contribution": 0.142,
+            "sources": [
+              {
+                "label": "1.4 mi (2.2 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "local:loc4JGKXECDG4VAEBQLDREMEAGKVYAS4XWWUGFFCIBY=:8",
+        "kind": "local",
+        "retailer": {
+          "name": "Dillard's",
+          "domain": "dillards.com",
+          "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "1371 Market St NW, Atlanta, GA 30363",
+        "distance_km": 2.8,
+        "lat": 33.7922,
+        "lon": -84.3945,
+        "certifications": [],
+        "signals": [],
+        "score": 0.565,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://dillards.com/stores/georgia/atlantic-station-atlanta/0265"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.93,
+            "weight": 0.15,
+            "contribution": 0.14,
+            "sources": [
+              {
+                "label": "1.7 mi (2.8 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "local:loc43RDAG6AL4JAEBNFYWU5VUFSVYCTSMR4HAAAAAAA=:0",
+        "kind": "local",
+        "retailer": {
+          "name": "The Clothing Warehouse",
+          "domain": "theclothingwarehouse.com",
+          "url": "https://theclothingwarehouse.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "420 Moreland Ave NE, Atlanta, GA 30307",
+        "distance_km": 2.9,
+        "lat": 33.766,
+        "lon": -84.3493,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "The Clothing Warehouse",
+                "url": "https://theclothingwarehouse.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9275,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.8 mi (2.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 8
+      },
+      {
+        "id": "local:loc4VGJLOETQ4VAEA35LNKJVIGKVYAFUSPQZAAAAAAA=:5",
+        "kind": "local",
+        "retailer": {
+          "name": "H&M",
+          "domain": "hm.com",
+          "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united%20states/atlanta/atlantic-station/US0160.html"
+        },
+        "matched_product": "",
+        "snippet": "",
+        "address": "231 18th St NW, Atlanta, GA 30363",
+        "distance_km": 2.9,
+        "lat": 33.7925,
+        "lon": -84.3958,
+        "certifications": [],
+        "signals": [],
+        "score": 0.564,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Model judgment: may sell it",
+                "url": "https://www2.hm.com/en_us/customer-service/shopping-at-hm/store-locator/united%20states/atlanta/atlantic-station/US0160.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9275,
+            "weight": 0.15,
+            "contribution": 0.139,
+            "sources": [
+              {
+                "label": "1.8 mi (2.9 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "local:loc4CBC5Z5YD4FAEA7GGZ6IDWFSVYCPM5JRLUYPFXKI=:7",
+        "kind": "local",
+        "retailer": {
+          "name": "Ross Dress for Less",
+          "domain": "rossstores.com",
+          "url": "https://rossstores.com/"
+        },
+        "matched_product": "clothing",
+        "snippet": "clothing store",
+        "address": "1255 Caroline St NE, Atlanta, GA 30307",
+        "distance_km": 3.3,
+        "lat": 33.7579,
+        "lon": -84.3474,
+        "certifications": [],
+        "signals": [],
+        "score": 0.563,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 0.5,
+            "weight": 0.25,
+            "contribution": 0.125,
+            "sources": [
+              {
+                "label": "Ross Dress for Less",
+                "url": "https://rossstores.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.9175,
+            "weight": 0.15,
+            "contribution": 0.138,
+            "sources": [
+              {
+                "label": "2.1 mi (3.3 km) from your zip area",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 10
+      }
+    ],
+    "local_farther": [],
+    "online": [
+      {
+        "id": "online:woolx.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Woolx",
+          "domain": "woolx.com",
+          "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Shop Merino Wool Socks for men and women. Our collection offers moisture-wicking, odor-resistant, and cushioned socks perfect for hiking, running, and everyday activities. Enjoy warmth and comfort in all seasons. long sleeve hoodie merino tee base layer joggers socks wool ribbed dress pants leggings jackets best sellers pants collared shirt crew neck 100% Wool You are $200.00 away from a FREE $25 value Mystery Sock! Satisfaction Guaranteed Every Woolx purchase is backed by our money back guarantee.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks for Men & Women | Soft, Warm & Durable Socks – Woolx",
+                "url": "https://www.woolx.com/collections/merino-wool-socks-for-men-and-women"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 1
+      },
+      {
+        "id": "online:thebuffalowoolco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "The Buffalo Wool Co.",
+          "domain": "thebuffalowoolco.com",
+          "url": "https://thebuffalowoolco.com/collections/rtw-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Next Up is our Technical Boot Sock. Medium weight, 50% Bison 50% Silk. Skiing, skating, snowboarding, riding, snowmachining? have allergies to traditional sheeps wool, or looking for professional quality performance and warmth, without much bulk? Need something with more form fitting, control? Next Up is our Technical Boot Sock. Medium weight, 50% Bison 50% Silk. Skiing, skating, snowboarding, riding, snowmachining? have allergies to traditional sheeps wool, or looking for professional quality performance and warmth, without much bulk? Need something with more form fitting, control? Red: Pro-Gear Boot Socks. ... American buffalo (or bison) live in harsh climates. The same fiber that keeps them comfortable in subzero temperatures produces bison wool socks that will do the same for you. They’re great for hiking, fishing, and just being outdoors. There are other bison socks on the market, but we are the only ones who start from the beginning, from raising the bison, harvesting the fiber, scour and process the down, we source our own fiber for blending, design the yarns, and work with textile technologists and sock experts to make the best quality and most effective socks possible. We do this entirely in the U.S. and stand behind every product we make 100%. We will ensure you are comfortable, happy and hope that you will help spread the word about us. If you have further questions, or would rather just talk to one of us, please feel free to give us a call or write anytime 802-379-WOOL (9665) or [email protected] Bison wool socks provide the same warmth and comfort that bison have enjoyed for years, and our modern techniques have only improved upon the time-tested formula.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Buffalo Wool Socks - The Buffalo Wool Co.",
+                "url": "https://thebuffalowoolco.com/collections/rtw-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 2
+      },
+      {
+        "id": "online:darntough.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Darn Tough Vermont",
+          "domain": "darntough.com",
+          "url": "https://darntough.com/"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Guaranteed for life and made in the USA, Darn Tough socks are the best merino wool socks for hiking, running, work, and everyday wear. They arrived at the same Mill where your socks were made. Explore the Mill · \"Close (esc)\" Darn Tough Vermont - Merino Wool Socks Guaranteed for Life Sock Finder · Size Chart · About Merino Wool · Help Center · Micro Crew Rewards · About Activities · Socks for Hiking · Socks for Running · Socks for Every Day · Socks for Skiing · Socks for Hunting · Socks for Work · Socks for Tactical Use · Gift Finder · If our socks aren't the most comfortable, durable, best-fitting socks, we'll replace them. The chance to score the ultimate deal for your feet: Socks.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Darn Tough Vermont - Merino Wool Socks Guaranteed for Life",
+                "url": "https://darntough.com/"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 3
+      },
+      {
+        "id": "online:duckworthco.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Duckworth",
+          "domain": "duckworthco.com",
+          "url": "https://www.duckworthco.com/collections/socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Merino Wool socks for men and women. These comfy, no-itch wool socks are quick-drying and both cooling and warming, for warm or cold weather. Duckworth’s Merino wool socks offer the ultimate in comfort and performance. Made from American-made Montana Merino wool, these socks are cushioned, itch-free, quick-drying, and odor-resistant. Perfect for any activity, our socks keep your feet thermoregulated and blister-free, ensuring maximum comfort throughout the day. Experience unparalleled comfort and versatility with Duckworth’s wool socks for both men and women. Our lightweight Merino wool socks are perfect for everyday wear, offering superior breathability and moisture-wicking properties. Made from soft Merino wool, these socks are suitable for any activity, from lounging at home to intense outdoor workouts. With cushioned fits and a range of knits from lightweight to heavyweight, these quick-drying socks are soft, supportive, and help prevent blisters and odors. Whether you’re at the office, on the trails, or enjoying a high-intensity workout, our wool socks are the perfect choice to keep your feet cool, warm, and comfortable. Designed for durability and style, our wool socks are ideal for hiking, running, or casual wear, providing excellent support and moisture-wicking properties.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks | USA Made – Duckworth",
+                "url": "https://www.duckworthco.com/collections/socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 4
+      },
+      {
+        "id": "online:smartwool.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Smartwool",
+          "domain": "smartwool.com",
+          "url": "https://www.smartwool.com/en-us"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Discover Merino wool socks, apparel and outdoor clothing available in the U.S. at Smartwool®. Built for comfort, breathability and performance. No one asks for socks until they get Smartwool socks. ... Make ’em feel good inside and out. ... Our new indoor-outdoor Cabin Mule: 75% recycled materials and 100% giftable. Shop the Cabin Mule · Make good gifting easy this year with our 2026 Holiday Gift Guide. BROWSE GIFT GUIDE · Join Little Guy’s Loyalty Club and earn points on your purchases when you buy gifts for your good people. ... For decades, Smartwool has helped to redefine comfort with Merino wool apparel designed for performance, durability, and everyday adventure wherever life takes you. Discover Merino wool socks, apparel and outdoor clothing available in the U.S. at Smartwool®. Built for comfort, breathability and performance.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Merino Wool Socks & Apparel in the U.S. | Smartwool®",
+                "url": "https://www.smartwool.com/en-us"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 5
+      },
+      {
+        "id": "online:gobros.com",
+        "kind": "online",
+        "retailer": {
+          "name": "GoBros",
+          "domain": "gobros.com",
+          "url": "https://www.gobros.com/collections/wool-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Shop Wool Socks at GoBros.com. Merino Wool. Built for everyday wear and all-day comfort. Authorized retailer. Free shipping on $40+, 60-day returns. Ready for the ultimate in cozy comfort and superior performance? Our GoBros team has curated a fantastic collection of wool socks from top brands, perfect for any activity or weather condition, ensuring your feet stay happy whether you're hitting the trails, conquering the slopes, or simply seeking everyday bliss! Discover your ideal pair of Merino wool socks or other cozy blends and experience the difference true comfort makes.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Socks | Warm Wool for Work & Winter | GoBros – GoBros.com",
+                "url": "https://www.gobros.com/collections/wool-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 6
+      },
+      {
+        "id": "online:nordicsocks.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Nordic Socks US",
+          "domain": "nordicsocks.com",
+          "url": "https://www.nordicsocks.com/collections/wool-socks-for-women"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Crew SocksCrew Crew Socks (Activity)Crew Socks (Activity) Low Cut Socks (Activity)Low Cut (Activity) Long socksLong socks Kids SocksKids · Stay stylish and cozy with our collection of wool socks for women. Featuring timeless Nordic prints, these socks are crafted from a soft Merino wool blend that provide exceptional warmth and comfort. Crew SocksCrew Crew Socks (Activity)Crew Socks (Activity) Low Cut Socks (Activity)Low Cut (Activity) Long socksLong socks Kids SocksKids · Stay stylish and cozy with our collection of wool socks for women. Featuring timeless Nordic prints, these socks are crafted from a soft Merino wool blend that provide exceptional warmth and comfort. These socks are designed with compression areas to boost comfort, reduce swelling, and enhance blood circulation during intense activities. They are suitable for indoor and outdoor use with any footwear. ... Elevate your style with our collection of long wool socks for women—an essential for those who love to stay on-trend, no matter how cold it is outside. Perfect for pairing with skirts of any length or layering over leggings, these versatile socks add a chic touch to any outfit while keeping you cozy all winter long. Embrace both comfort and fashion with our stylish long wool socks, designed to keep you looking fabulous all season. Support them during their first journeys in the unknown with Nordic kids' socks. The Merino wool blend is the best safety measure you can take against cold feet and any feelings of discomfort that might arise from playing outside or getting cozy inside the home.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool Socks for Women - Nordic Socks US",
+                "url": "https://www.nordicsocks.com/collections/wool-socks-for-women"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 7
+      },
+      {
+        "id": "online:dickssportinggoods.com",
+        "kind": "online",
+        "retailer": {
+          "name": "DICK'S Sporting Goods",
+          "domain": "dickssportinggoods.com",
+          "url": "https://www.dickssportinggoods.com/a/comfortable-wool-socks-0zez01a.html"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Shop our collection of comfortable wool socks at Dick&#x27;s Sporting Goods. Perfect for keeping your feet warm and cozy, these high-quality socks are ideal for any outdoor adventure or everyday wear. Smart wool sox ... They are very true to size, the cushioning is perfect for how I like my hiking socks, and they are very comfortable. ... They ’ re comfortable and help keep your feet dry as ... 5 Eric1138 Perfect sock solution for those that want ample cushioning and warmth without overheating. They do run small so if you 're between I would size up. I 'm a size 11. 5- 12 and got XL. 5 Shop around Bought as Christmas presents and the guys love them. Cozy Pajamas, Socks & More! ... Experience ultimate warmth and comfort with our collection of comfortable wool socks. Designed to keep your feet cozy in any season, these socks offer excellent insulation while wicking away moisture. Crafted from high-quality wool, they provide a soft, breathable fit that reduces odor and enhances durability. I am always warm with my ActionHeat Socks! 5 Teddy Really happy with them. I have tried other brands but these work well! 5 Sim B For this price, I am very happy! I bought them for all my family for our big hunting trip coming up! ... Smart Wool Best Socks Ever ... The best socks I have for every day wear. Gym, outside, indoors with no shoes. Love them. 5 Deb57 I buy these for stocking stuffers every year! They all look forward to receiving them! 5 Cold Minnesota My feet are cold at work. I have some knee length wools socks but they make my legs itchy after wearing them for 4 hours so I decided to try the ankle socks and they keep my feet so warm, I absolutely love them!",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Comfortable Wool Socks | Black Friday Sport Picks | DICK'S Sporting Goods",
+                "url": "https://www.dickssportinggoods.com/a/comfortable-wool-socks-0zez01a.html"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 888 stores",
+          "stores": 888,
+          "source_url": "https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods",
+          "checked": "2026-09-27"
+        },
+        "rank": 8
+      },
+      {
+        "id": "online:townshop.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Town Shop",
+          "domain": "townshop.com",
+          "url": "https://www.townshop.com/collections/wool-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "Shop cozy wool socks, ultra-soft cashmere socks, and breathable merino wool styles. Perfect for everyday warmth, lounging, or gifting in all seasons. Wool Socks Experience the epitome of sophistication of cosy wool and cashmere socks. Crafted from luxurious fibers, wool socks offer unmatched warmth, softness, and comfort. Elevate your daily attire with a touch of opulence, as these socks cocoon your feet in pure, timeless elegance. Known for their exceptional softness, warmth, and comfort, these socks provide a cozy and opulent experience for your feet. Cashmere socks are ideal for cold weather or for adding a touch of elegance to any outfit, rendering them a symbol of luxury and comfort. Wool socks offer numerous benefits, making them a popular choice for those seeking warmth, comfort, and quality. Exceptional warmth: Wool is a natural insulator that effectively traps heat, keeping your feet warm during cold weather. It retains warmth efficiently even in wet conditions, making wool socks an ideal choice for damp and chilly environments. Softness and comfort: Wool socks possess a gentle and soft texture that ensures comfort and coziness to the skin. These socks caress your skin with a gentle, luxurious touch, and are less likely to cause irritation and chafing.",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [],
+        "score": 0.625,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Wool, Merino & Cashmere Socks – Warm, Soft & Breathable Comfort",
+                "url": "https://www.townshop.com/collections/wool-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "rank": 9
+      },
+      {
+        "id": "online:walmart.com",
+        "kind": "online",
+        "retailer": {
+          "name": "Walmart",
+          "domain": "walmart.com",
+          "url": "https://www.walmart.com/c/kp/wool-socks"
+        },
+        "matched_product": "wool socks",
+        "snippet": "NevENDMens Merino Wool Cotton Crew Socks Thermal and Warm Socks for Winter Work Hiking Running 3 Pairs (Size 7-13) AISPARKY5 Pairs Fuzzy Fluffy Soft Cozy Socks for Women Comfy Casual Warm Home Sleep Winter Thick Wool Socks Gifts for Women PULIOUMerino Wool Hiking Socks for Men & Women, Thick Cushioned Anti-Blister, Moisture-Wicking, Seamless, 3 Pairs, Black NevENDMens Merino Wool Cotton Crew Socks Thermal and Warm Socks for Winter Work Hiking Running 3 Pairs (Size 7-13) NevEND3 Pairs Women's Wool Merino Winter Thermal Boots Thick Insulated Heated Socks For Cold Weather Outdoor Activities Black",
+        "address": null,
+        "distance_km": null,
+        "lat": null,
+        "lon": null,
+        "certifications": [],
+        "signals": [
+          {
+            "kind": "governance",
+            "polarity": "negative",
+            "claim": "FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+            "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls",
+            "origin": "curated",
+            "action_date": "2022-04-08",
+            "penalty_usd": 3000000,
+            "relation": "self",
+            "status": "final",
+            "band": "major",
+            "cost": 0.25
+          }
+        ],
+        "score": 0.55,
+        "components": [
+          {
+            "name": "relevance",
+            "value": 1,
+            "weight": 0.25,
+            "contribution": 0.25,
+            "sources": [
+              {
+                "label": "Shop Wool Socks for Warmth and Comfort",
+                "url": "https://www.walmart.com/c/kp/wool-socks"
+              }
+            ]
+          },
+          {
+            "name": "ethics",
+            "value": 0.25,
+            "weight": 0.3,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              },
+              {
+                "label": "Governance: FTC Uses Penalty Offense Authority to Seek Largest-Ever Civil Penalty for Bogus Bamboo Marketing from Kohl's and Walmart",
+                "url": "https://www.ftc.gov/news-events/news/press-releases/2022/04/ftc-uses-penalty-offense-authority-seek-largest-ever-civil-penalty-bogus-bamboo-marketing-kohls"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "env",
+            "value": 0.5,
+            "weight": 0.3,
+            "contribution": 0.15,
+            "sources": [
+              {
+                "label": "Baseline 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ],
+            "minor_cap_applied": false
+          },
+          {
+            "name": "proximity",
+            "value": 0.5,
+            "weight": 0.15,
+            "contribution": 0.075,
+            "sources": [
+              {
+                "label": "Online retailer, fixed 0.5",
+                "url": "https://bfaloona.github.io/nottheriver/about.html#ranking"
+              }
+            ]
+          }
+        ],
+        "chain": {
+          "label": "Chain, 4,615 stores",
+          "stores": 4615,
+          "source_url": "https://corporate.walmart.com/about/location-facts",
+          "checked": "2026-10-01"
+        },
+        "rank": 10
+      }
+    ],
+    "usage": {
+      "brave_calls": 4,
+      "llm": [
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 2022,
+          "completion_tokens": 194,
+          "cost_usd": 0.0005984
+        },
+        {
+          "call": "enrich",
+          "model": "google/gemma-4-31b-it",
+          "prompt_tokens": 1614,
+          "completion_tokens": 345,
+          "cost_usd": 0.0015555
+        }
+      ],
+      "llm_tokens": 4175,
+      "estimated_cost_usd": 0.022154,
+      "unclassified_shown": {
+        "online": 0,
+        "local": 0
+      }
+    },
+    "dropped": [
+      {
+        "kind": "local",
+        "domain": "saviprovisions.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "publix.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "traderjoes.com",
+        "reason": "sells_product"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "branch_cap"
+      },
+      {
+        "kind": "local",
+        "domain": "generalwholesalecompany.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "below_top_10"
+      },
+      {
+        "kind": "local",
+        "domain": "dollargeneral.com",
+        "reason": "below_top_10"
+      }
+    ]
+  }
+}

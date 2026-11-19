@@ -39,7 +39,9 @@ const qualityDir = path.join(ROOT, 'docs/evidence/quality');
 for (const dir of fs.readdirSync(qualityDir)) {
   const file = path.join(qualityDir, dir, 'grades.json');
   if (!fs.existsSync(file)) continue;
-  for (const g of (JSON.parse(fs.readFileSync(file, 'utf8')) as GradesFile).grades.filter((x) => x.kind === 'local' && ids.has(x.search_id))) {
+  // One folder (open-place-precision) holds a grades.json of another shape, with no `grades` list.
+  const { grades } = JSON.parse(fs.readFileSync(file, 'utf8')) as Partial<GradesFile>;
+  for (const g of (Array.isArray(grades) ? grades : []).filter((x) => x.kind === 'local' && ids.has(x.search_id))) {
     const key = `${g.search_id} ${g.url}`;
     const old = verdicts.get(key);
     if (!old || old.checked < g.checked) verdicts.set(key, g);

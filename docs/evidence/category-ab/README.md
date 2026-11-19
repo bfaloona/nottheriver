@@ -37,3 +37,40 @@ The hand pick is used, not the live category call, so that the test is about the
 **Budget.** At most 7 Brave calls per search in round 1 (3 web, 2 map, then 2 new map searches for the `list` arm) and the same in round 2: 84 calls at most, fewer when the arms share a phrase. The script stops at 100 live Brave calls. At the list price in `proxy/src/pricing.ts` ($0.005 a call) that is at most $0.50, an estimate from the price list. Model cost is read from OpenRouter's reported `usage.cost`.
 
 **Rerun.** `npx tsx docs/evidence/category-ab/run-ab.ts`, then `npx tsx docs/evidence/category-ab/score-ab.ts`. A rerun makes new paid calls and overwrites `runs/`.
+
+## Result, 2026-11-19
+
+Run on commit d6cf96a at 7:52 AM Pacific. All 24 searches returned. Figures: `results.json` (from `score-ab.ts`); raw map replies and call counts: `runs/calls.json`; responses: `runs/<arm>-r<round>/responses/`.
+
+**The list wording shows no gain on these six searches.** By the reading rule it is not "no worse": its map searches returned one baseline shop fewer in both rounds. The page showed the same number of baseline shops in both arms.
+
+| Measure | `model` round 1 | `model` round 2 | `list` round 1 | `list` round 2 |
+|---|---|---|---|---|
+| M1, baseline shops returned by the map searches (of 29) | 6 | 6 | 5 | 5 |
+| M2, baseline shops shown on the page (of 29) | 5 | 5 | 5 | 5 |
+| M3, nearby shops shown | 48 | 49 | 48 | 45 |
+| M3, graded good | 18 | 18 | 15 | 14 |
+| M3, graded bad | 14 | 16 | 12 | 12 |
+| M3, never graded | 16 | 15 | 21 | 19 |
+
+- **M1 and M2.** The one-shop gap on M1 is Barnes & Noble for jigsaw puzzle: "hobby store" returned it and "game store" did not. On the page the arms differ by one shop each way in that search (the `model` arm shows Barnes & Noble, the `list` arm shows Pinwheels and Play Toys). The other five searches give the same baseline shops in both arms.
+- **M3.** Among graded shops the share that is good is about the same: 18 of 32 and 18 of 34 for `model`, 15 of 27 and 14 of 26 for `list`. The `list` arm shows more shops that no run has graded.
+- **M4, noise.** M1 and M2 did not change between rounds in either arm. Shown nearby shops in common between the two rounds: 47 of 50 (`model`) and 44 of 49 (`list`). Between the arms: 33 of 63 in round 1 and 31 of 63 in round 2. The list wording changes about half of the shops shown and does not change how many baseline shops are found.
+- **M5, wording.** The pairs differ in all six searches, by one phrase each: every search has one phrase that both arms sent.
+
+**Other findings.**
+
+- **The model's wording had already moved.** The live reading differs from the wording saved on 2026-09-29 (`docs/evidence/quality/eval20-store-types`) in 2 of the 6 searches: wool socks ("outdoor gear store" became "clothing store") and LED light bulbs ("electrical supply store" became "hardware store"). The saved run shows 9 of these 29 baseline shops; both arms here show 5. The loss is in wool socks: 4 shown then, 0 now in both arms.
+- **Wool socks is a wrong-category case for the list (FAIL-1 of the plan).** Its four found baseline shops are outdoor shops. The hand pick is `clothing`, whose pair ("clothing store", "shoe store") returned none of the five. The second defensible pick, `outdoor`, was not run.
+- **Cordless drill and wool blanket found no baseline shop in any arm or round**, here and in the saved run.
+- **The live category pick matched the hand pick at both levels in all six searches.** This is the first run of the category call inside the pipeline. The call ran once per product (569 prompt tokens, $0.000444 reported for wool socks) and later searches read the saved reply.
+
+**Cost.** 60 live Brave calls and 36 replayed: $0.30 at the list price of $0.005 a call (an estimate from the price list, `proxy/src/pricing.ts`). Model calls: $0.061 (the sum of OpenRouter's reported `usage.cost` in the 24 responses; no call lacked a reported cost).
+
+**Limits.**
+
+- Six searches, one zip each, 29 baseline shops. The baseline was collected for the 2026-09 runs, and 15 to 21 shown shops per arm and round have no grade.
+- Each pair shares one phrase, so the test compares six single phrases, not twelve.
+- One reading per search. The test does not measure the benefit IDEA-1 claims from fixed wording: the model's own wording changed for 2 of 6 products since September, and the list's would not have.
+- The `list` arm used the hand pick. A wrong live pick would change its pair.
+- `score-ab.ts` was changed once after the run: one `grades.json` under `docs/evidence/quality` has another shape and stopped the script. No measure changed.
