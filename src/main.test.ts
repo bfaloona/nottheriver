@@ -244,8 +244,23 @@ describe('search page', () => {
     await search();
     const found = $('[data-found]');
     expect(found.previousElementSibling).toBe($('.controls'));
-    expect(found.nextElementSibling).toBe($('#result-sections'));
+    // "Before you buy" sits between the count and the shops.
+    expect(found.nextElementSibling).toBe($('[data-before-you-buy]'));
+    expect($('[data-before-you-buy]').nextElementSibling).toBe($('#result-sections'));
     expect(found.getAttribute('role')).toBe('status');
+  });
+
+  it('shows "Before you buy" for a matching product, and keeps it through a sort change', async () => {
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, query: { ...fixture.query, product: 'cordless drill' } }), { status: 200 }));
+    submit('cordless drill', '10001');
+    const box = $('[data-before-you-buy]');
+    await vi.waitFor(() => expect(box.hidden).toBe(false));
+    expect(box.querySelector('summary')!.textContent).toBe('Before you buy: borrow, repair, used');
+    box.querySelector('details')!.open = true;
+    const sort = $<HTMLSelectElement>('#sort');
+    sort.value = 'name';
+    sort.dispatchEvent(new Event('change', { bubbles: true }));
+    expect(box.querySelector('details')!.open).toBe(true);
   });
 
   it('clears the line under the search box once the results are in', async () => {

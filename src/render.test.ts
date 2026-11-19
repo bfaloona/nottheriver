@@ -4,7 +4,8 @@ import type { SearchResponse, SearchResult, Signal } from '../proxy/src/contract
 import fixture from '../tests/fixtures/search-response.json';
 import { disputeUrlFor } from './config';
 import { defaultView } from './controls';
-import { formatDistance, removeMap, renderFooter, renderMap, renderResult, renderResults, renderStatus, type Shown } from './render';
+import { ideasFor } from './ideas';
+import { formatDistance, removeMap, renderFooter, renderIdeas, renderMap, renderResult, renderResults, renderStatus, type Shown } from './render';
 
 const response = fixture as SearchResponse;
 const config = { disputeUrl: disputeUrlFor('') };
@@ -1084,5 +1085,36 @@ describe('map of nearby shops', () => {
     noMap.mockClear();
     renderResults(response, el, { ...config, onMap: draw, onNoMap: noMap });
     expect(noMap).not.toHaveBeenCalled();
+  });
+});
+
+describe('renderIdeas (Before you buy)', () => {
+  it('shows a closed line naming the ideas, one entry per idea, and sources behind a button', () => {
+    const box = document.createElement('div');
+    renderIdeas(box, ideasFor({ product: 'cordless drill', canonical_name: '', category: '' }));
+    expect(box.hidden).toBe(false);
+    const details = box.querySelector('details')!;
+    expect(details.open).toBe(false);
+    expect(details.querySelector('summary')!.textContent).toBe('Before you buy: borrow, repair, used');
+    const items = [...box.querySelectorAll('.ideas-list li')].map((li) => li.textContent);
+    expect(items).toHaveLength(3);
+    expect(items[0]).toMatch(/^Borrow it\. Tool libraries often lend/);
+    expect(items[2]).toMatch(/^Buy it used\. Used tool shops often sell/);
+    const sources = box.querySelector<HTMLElement>('[data-idea-sources]')!;
+    const toggle = box.querySelector<HTMLButtonElement>('[data-idea-sources-toggle]')!;
+    expect(sources.hidden).toBe(true);
+    toggle.click();
+    expect(sources.hidden).toBe(false);
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    expect(sources.textContent).toContain("Used tool shop: the site owner's experience.");
+    expect(sources.querySelector('a')!.rel).toBe('noopener noreferrer');
+  });
+
+  it('is hidden and empty when no idea applies', () => {
+    const box = document.createElement('div');
+    renderIdeas(box, ideasFor({ product: 'drill', canonical_name: '', category: '' }));
+    renderIdeas(box, ideasFor({ product: 'car seat', canonical_name: '', category: '' }));
+    expect(box.hidden).toBe(true);
+    expect(box.childElementCount).toBe(0);
   });
 });

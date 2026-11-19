@@ -2,7 +2,8 @@ import type { SearchResponse } from '../proxy/src/contract';
 import { round2, search } from './api';
 import { disputeUrl, siteName, zipsUrl } from './config';
 import { bindControls, showCertifiedCount } from './controls';
-import { removeMap, renderFooter, renderMap, renderResults, renderStatus, type MapPin, type RenderConfig } from './render';
+import { ideasFor } from './ideas';
+import { removeMap, renderFooter, renderIdeas, renderMap, renderResults, renderStatus, type MapPin, type RenderConfig } from './render';
 import { loadZips, lookupZip, parseZip } from './zip';
 
 // Only the product text is remembered, never the zip.
@@ -20,6 +21,7 @@ const status = $('[data-status]');
 const found = $('[data-found]');
 const results = $('#results');
 const sections = $('#result-sections');
+const ideas = $('[data-before-you-buy]');
 const cost = $('[data-cost]');
 const page = $('.page');
 
@@ -90,6 +92,7 @@ function clearResults(): void {
   // The hidden results still hold the last search's map; nothing else would release it.
   clearMap?.();
   results.hidden = true;
+  renderIdeas(ideas, []);
   // Emptied, so the next count is a change a screen reader announces.
   renderStatus(found, { kind: 'idle' });
   cost.hidden = true;
@@ -165,6 +168,8 @@ async function run(): Promise<void> {
     center = { lat: round2(place.lat), lon: round2(place.lon) };
     results.hidden = false;
     show(current, true);
+    // Once per search, so a sort or filter change leaves it as the visitor left it.
+    renderIdeas(ideas, ideasFor(current.query));
     renderStatus(status, { kind: 'idle' });
   } catch {
     // A failed zip download, or a response that passed the shape check but

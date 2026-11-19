@@ -1,5 +1,6 @@
 import type { ComponentName, SearchResponse, SearchResult, Signal, SignalKind, SourceRef, Usage } from '../proxy/src/contract';
 import { defaultView, filterResults, sortResults, type Filters, type View } from './controls';
+import { IDEAS_DATA, type Idea, type IdeasData, type ShownIdea } from './ideas';
 import { pinnedPanels, wirePopovers } from './popover';
 
 // Everything in a SearchResponse is untrusted text from the web: nodes are built
@@ -567,4 +568,50 @@ export function renderFooter(target: HTMLElement, usage: Usage): void {
     `This search used ${plural(usage.brave_calls, 'web lookup', 'web lookups')} and ` +
     `${usage.llm_tokens.toLocaleString('en-US')} model tokens, about $${cost.toFixed(cost < 0.1 ? 3 : 2)}.`;
   target.hidden = false;
+}
+
+const IDEA_LEAD: Record<Idea, string> = { borrow: 'Borrow it.', repair: 'Repair the one you have.', used: 'Buy it used.' };
+
+// "Before you buy" (docs/plans/before-you-buy-v1.md, 2c): one collapsed line above the shops,
+// closed on each new search. It is drawn once per search, outside the sections that sort and
+// filter changes rebuild, and carries no rank, score or accent so it does not read as a shop.
+export function renderIdeas(target: HTMLElement, ideas: ShownIdea[], data: IdeasData = IDEAS_DATA): void {
+  target.replaceChildren();
+  target.hidden = ideas.length === 0;
+  if (target.hidden) return;
+  const kinds = new Map(data.kinds.map((k) => [k.id, k]));
+  const shown = ideas.flatMap((i) => {
+    const kind = kinds.get(i.kind);
+    return kind ? [{ idea: i.idea, kind }] : [];
+  });
+  const sources = el('ul', { id: 'idea-sources', className: 'idea-sources', data: { ideaSources: '' } },
+    ...shown.map(({ kind }) => {
+      const li = el('li', {}, `${kind.name}: the site owner's experience.`);
+      if (kind.sources.length) {
+        li.append(' See also ');
+        kind.sources.forEach((s, n) => {
+          if (n) li.append('; ');
+          li.append(outbound(s.url, s.publisher));
+        });
+        li.append(`. Read ${kind.sources[0]!.checked}.`);
+      }
+      return li;
+    }));
+  const toggle = el('button', { className: 'link-button', data: { ideaSourcesToggle: '' } }, 'Sources');
+  toggle.type = 'button';
+  toggle.setAttribute('aria-controls', sources.id);
+  const open = (visible: boolean) => {
+    sources.hidden = !visible;
+    toggle.setAttribute('aria-expanded', String(visible));
+  };
+  open(false);
+  toggle.addEventListener('click', () => open(sources.hidden === true));
+  target.append(el('details', { className: 'ideas' },
+    el('summary', {}, `Before you buy: ${shown.map((s) => s.idea).join(', ')}`),
+    el('p', { className: 'ideas-note' },
+      'Ideas that may apply, picked by hand for this kind of product. In general: each sentence is about a kind of place. Whether one is near you, or has what you need, was not looked up.'),
+    el('ul', { className: 'ideas-list' },
+      ...shown.map(({ idea, kind }) => el('li', { data: { idea } }, `${IDEA_LEAD[idea]} ${kind.text}`))),
+    el('p', { className: 'ideas-sources-line' }, toggle),
+    sources));
 }

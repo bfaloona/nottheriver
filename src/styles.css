@@ -362,3 +362,12 @@ section h3 { font-family: var(--font-voice); font-weight: 400; font-size: var(--
 .site-footer { margin-top: var(--space-8); padding-block: var(--space-5); font-size: var(--text-sm); color: var(--ink-muted); }
 .site-footer p { margin: 0; }
 .site-footer p > * { margin-right: var(--space-3); }
+
+/* "Before you buy": a plain disclosure line, no box or accent, so it does not read as a ranked slot. */
+.ideas { margin: var(--space-3) 0 0; }
+.ideas summary { cursor: pointer; padding-block: var(--space-2); width: fit-content; }
+.ideas-note { color: var(--ink-muted); font-size: var(--text-sm); margin: 0 0 var(--space-2); }
+.ideas-list { margin: 0; padding-left: 1.25rem; }
+.ideas-list li + li { margin-top: var(--space-1); }
+.ideas-sources-line { font-size: var(--text-sm); margin: var(--space-2) 0 0; }
+.idea-sources { color: var(--ink-muted); font-size: var(--text-sm); margin: var(--space-1) 0 0; padding-left: 1.25rem; }
