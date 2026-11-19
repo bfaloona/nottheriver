@@ -304,7 +304,7 @@ export function renderResult(result: SearchResult, config: RenderConfig): HTMLLI
   return item;
 }
 
-// One line of help above the lists. "What unknown means" is offered only while a shop on screen
+// One line of help below the lists. "What unknown means" is offered only while a shop on screen
 // is unknown, and opens in place: a link to the About page would cost the visitor the results.
 function resultsHelp(shown: SearchResult[], open: boolean): HTMLElement[] {
   const line = el('p', { className: 'results-help', data: { resultsHelp: '' } }, internal(RANKING_HELP, 'How ranking works'));
@@ -490,9 +490,9 @@ export function renderResults(
   // The explanation of "unknown" reads the same for any search, so it stays open across them too.
   const helpOpen = root.querySelector<HTMLElement>('[data-unknown-help]')?.hidden === false;
   root.replaceChildren(
-    ...resultsHelp([...shown.local, ...shown.farther, ...shown.online], helpOpen),
     near,
     section('online', 'Online', response.online, shown.online, view.online, config),
+    ...resultsHelp([...shown.local, ...shown.farther, ...shown.online], helpOpen),
   );
   wirePopovers(root, before?.panels);
   for (const item of before ? root.querySelectorAll<HTMLElement>('[data-result]') : []) {

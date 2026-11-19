@@ -295,10 +295,10 @@ describe('renderResults (HR5)', () => {
   const unknownToggle = (el: ParentNode = root) => el.querySelector<HTMLButtonElement>('[data-unknown-toggle]');
   const unknownHelp = (el: ParentNode = root) => el.querySelector<HTMLElement>('[data-unknown-help]');
 
-  it('puts one help line above the lists: the ranking link, then "What unknown means"', () => {
+  it('puts one help line below the lists: the ranking link, then "What unknown means"', () => {
     const lines = root.querySelectorAll('[data-results-help]');
     expect(lines).toHaveLength(1);
-    expect(root.firstElementChild).toBe(lines[0]);
+    expect(lines[0]!.previousElementSibling).toBe(root.querySelector('section:last-of-type'));
     const [link, button] = [...lines[0]!.children];
     expect(link!.textContent).toBe('How ranking works');
     expect(link!.getAttribute('href')).toBe('about.html#ranking');
@@ -306,7 +306,7 @@ describe('renderResults (HR5)', () => {
     expect(button!.textContent).toBe('What unknown means');
   });
 
-  it('shows neither the weights nor a count of records above the lists', () => {
+  it('shows neither the weights nor a count of records with the lists', () => {
     expect(root.textContent).not.toContain('Ranked by');
     expect(root.textContent).not.toContain('people-and-planet record');
     for (const w of new Set(Object.values(response.weights))) expect(root.textContent).not.toContain(w.toFixed(2));
