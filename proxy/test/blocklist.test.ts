@@ -56,6 +56,11 @@ describe('registrableDomain', () => {
     ['https://example.org:8080/', 'example.org'],
     ['https://example.org./', 'example.org'],
     ['example.org.', 'example.org'],
+    // Valid IDN hosts stay, in any of the three ways they arrive.
+    ['https://xn--mnchen-3ya.de/', 'xn--mnchen-3ya.de'],
+    ['https://münchen.de/', 'xn--mnchen-3ya.de'],
+    ['shop.XN--MNCHEN-3YA.de', 'xn--mnchen-3ya.de'],
+    ['https://xn--caf-dma.example.org/', 'example.org'],
   ])('%s -> %s', (input, expected) => {
     expect(registrableDomain(input)).toBe(expected);
   });
@@ -66,6 +71,19 @@ describe('registrableDomain', () => {
       expect(registrableDomain(input)).toBeNull();
     },
   );
+
+  // Refused by the code, not by the runtime's URL parser: Node 26 and the Worker runtime accept these URLs.
+  it.each([
+    'https://xn--amzon-hqa.com/',
+    'xn--amzon-hqa.com',
+    'https://www.xn--amzon-hqa.com/dp/1',
+    'https://xn--amazon-.com/',
+    'https://xn--.com/',
+    'https://xn--a!b.com/',
+    'xn--99999999999999999999.com',
+  ])('invalid punycode %j -> null', (input) => {
+    expect(registrableDomain(input)).toBeNull();
+  });
 });
 
 describe('normalizeName', () => {

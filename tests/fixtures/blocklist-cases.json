@@ -200,7 +200,7 @@
     "kind": "url",
     "input": "https://xn--amzon-hqa.com/",
     "expected": "dropped",
-    "note": "invalid punycode fails URL parsing"
+    "note": "invalid punycode label is refused"
   },
   {
     "id": "D30",
