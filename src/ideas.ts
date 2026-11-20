@@ -6,6 +6,8 @@ export type Idea = 'borrow' | 'repair' | 'used';
 export type Kind = {
   id: string; idea: Idea; name: string; level: string; text: string; basis: string;
   sources: { url: string; publisher: string; checked: string }[];
+  // Set by hand for a sentence a reader may doubt. Without it the page lists no source for the kind.
+  show_sources?: boolean;
 };
 export type Row = {
   id: string; group: string; borrow: string | null; repair: string | null; used: string | null;

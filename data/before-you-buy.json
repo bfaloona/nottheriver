@@ -11,6 +11,7 @@
     {"id": "tool_library", "idea": "borrow", "name": "Tool library", "level": "in_general",
      "text": "Tool libraries often lend hand and power tools; some are free with a library card, others charge a membership.",
      "basis": "owner",
+     "show_sources": true,
      "sources": [
        {"url": "https://lacountylibrary.org/tools/", "publisher": "LA County Library", "checked": "2026-11-17"},
        {"url": "https://denvertoollibrary.org/tool-library", "publisher": "Denver Tool Library", "checked": "2026-11-17"},
@@ -20,6 +21,7 @@
     {"id": "library_of_things", "idea": "borrow", "name": "Library of things", "level": "in_general",
      "text": "Libraries of things at public libraries often lend tools, kitchen items and games with a library card.",
      "basis": "owner",
+     "show_sources": true,
      "sources": [
        {"url": "https://www.readingpl.org/library-of-things", "publisher": "Reading Public Library", "checked": "2026-11-17"},
        {"url": "https://www.wilmingtonlibrary.org/library-of-things/", "publisher": "Wilmington Public Library", "checked": "2026-11-17"}
@@ -31,6 +33,7 @@
     {"id": "repair_cafe", "idea": "repair", "name": "Repair café", "level": "in_general",
      "text": "Repair cafés are free meeting places where volunteers often help fix clothes, furniture, bicycles, appliances and electronics.",
      "basis": "owner",
+     "show_sources": true,
      "sources": [
        {"url": "https://www.repaircafe.org/en/about/", "publisher": "Repair Café International", "checked": "2026-11-17"},
        {"url": "https://openrepair.org/open-data/insights/2024-report/", "publisher": "Open Repair Alliance", "checked": "2026-11-17"}

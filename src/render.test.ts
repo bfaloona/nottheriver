@@ -1134,8 +1134,19 @@ describe('renderIdeas (Before you buy)', () => {
     toggle.click();
     expect(sources.hidden).toBe(false);
     expect(toggle.getAttribute('aria-expanded')).toBe('true');
-    expect(sources.textContent).toContain("Used tool shop: the site owner's experience.");
+    // Only the kind marked to list its sources is there: the tool library, not the two shops.
+    expect([...sources.querySelectorAll('li')].map((li) => li.textContent!.split(':')[0])).toEqual(['Tool library']);
+    expect(sources.textContent).not.toContain('experience');
     expect(sources.querySelector('a')!.rel).toBe('noopener noreferrer');
+  });
+
+  it('shows no Sources button when no shown kind is marked to list its sources', () => {
+    const box = document.createElement('div');
+    // The thrift store holds a source in the data file, and is not marked.
+    renderIdeas(box, [{ idea: 'used', kind: 'thrift_store' }]);
+    expect(box.querySelector('.ideas-list li')!.textContent).toMatch(/^Buy it used\. Thrift stores/);
+    expect(box.querySelector('[data-idea-sources-toggle]')).toBeNull();
+    expect(box.querySelector('[data-idea-sources]')).toBeNull();
   });
 
   it('is hidden and empty when no idea applies', () => {

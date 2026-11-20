@@ -489,6 +489,7 @@ The critique's rivals: ALT-S (the collapsed line, three kinds, sources behind a 
 - OR-5, kinds (answers BD-5): seven kinds in version one: tool library, tool repair shop, used tool shop, thrift store, repair café, library of things, building-material reuse center. Each gets one sentence the owner signs.
 - OR-6, safety (answers BD-6, BD-8; BD-7 default): stay silent for car seats, helmets, children's goods and the watch-list goods; exceptions may be added later.
 - OR-7, placement (answers BD-10): the collapsed line at every width first, then "beside" on wide screens after a mock-up.
+- OR-8, sources on the page (2026-11-19): the page never says "the site owner's experience". The Sources button shows only for a kind marked `show_sources` in `data/before-you-buy.json`; a kind with no outside source lists nothing. The sentence itself still shows (OR-3 stands). Later, not built: a link for a reader to suggest a source for a kind that has none.
 
 
 **Blocking the first steps: source research (PH-R), the owner's read and sign-off (PH-0), data and matcher (PH-1)**

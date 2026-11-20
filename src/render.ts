@@ -598,17 +598,17 @@ export function renderIdeas(target: HTMLElement, ideas: ShownIdea[], data: Ideas
     const kind = kinds.get(i.kind);
     return kind ? [{ idea: i.idea, kind }] : [];
   });
+  // Most sentences need no source ("thrift stores sell used goods"), so the button shows only
+  // when a shown kind is marked to list its sources.
+  const cited = shown.filter(({ kind }) => kind.show_sources && kind.sources.length > 0);
   const sources = el('ul', { id: 'idea-sources', className: 'idea-sources', data: { ideaSources: '' } },
-    ...shown.map(({ kind }) => {
-      const li = el('li', {}, `${kind.name}: the site owner's experience.`);
-      if (kind.sources.length) {
-        li.append(' See also ');
-        kind.sources.forEach((s, n) => {
-          if (n) li.append('; ');
-          li.append(outbound(s.url, s.publisher));
-        });
-        li.append(`. Read ${kind.sources[0]!.checked}.`);
-      }
+    ...cited.map(({ kind }) => {
+      const li = el('li', {}, `${kind.name}: `);
+      kind.sources.forEach((s, n) => {
+        if (n) li.append('; ');
+        li.append(outbound(s.url, s.publisher));
+      });
+      li.append(`. Read ${kind.sources[0]!.checked}.`);
       return li;
     }));
   const toggle = el('button', { className: 'link-button', data: { ideaSourcesToggle: '' } }, 'Sources');
@@ -623,9 +623,8 @@ export function renderIdeas(target: HTMLElement, ideas: ShownIdea[], data: Ideas
   target.append(el('details', { className: 'ideas' },
     el('summary', {}, `Before you buy: ${shown.map((s) => s.idea).join(', ')}`),
     el('p', { className: 'ideas-note' },
-      'Ideas that may apply, picked by hand for this kind of product. In general: each sentence is about a kind of place. Whether one is near you, or has what you need, was not looked up.'),
+      'Worth a try before you buy. Not checked for your area.'),
     el('ul', { className: 'ideas-list' },
       ...shown.map(({ idea, kind }) => el('li', { data: { idea } }, `${IDEA_LEAD[idea]} ${kind.text}`))),
-    el('p', { className: 'ideas-sources-line' }, toggle),
-    sources));
+    ...(cited.length ? [el('p', { className: 'ideas-sources-line' }, toggle), sources] : [])));
 }
