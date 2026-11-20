@@ -162,6 +162,8 @@ async function run(): Promise<void> {
     }
 
     renderFooter(cost, outcome.data.usage);
+    // Before the empty check: a wrong reading of the product is the likely cause of an empty search.
+    renderLookedFor(lookedFor, outcome.data.query);
     if (outcome.data.local.length === 0 && !outcome.data.local_farther?.length && outcome.data.online.length === 0) {
       return renderStatus(status, { kind: 'no_results', product: text });
     }
@@ -170,7 +172,6 @@ async function run(): Promise<void> {
     center = { lat: round2(place.lat), lon: round2(place.lon) };
     results.hidden = false;
     show(current, true);
-    renderLookedFor(lookedFor, current.query);
     // Once per search, so a sort or filter change leaves it as the visitor left it.
     renderIdeas(ideas, ideasFor(current.query));
     renderStatus(status, { kind: 'idle' });

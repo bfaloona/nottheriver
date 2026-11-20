@@ -244,9 +244,11 @@ describe('search page', () => {
     await search();
     const found = $('[data-found]');
     expect(found.previousElementSibling).toBe($('.controls'));
-    // How the search was read, then "Before you buy", sit between the count and the shops.
-    expect(found.nextElementSibling).toBe($('[data-looked-for]'));
-    expect($('[data-looked-for]').nextElementSibling).toBe($('[data-before-you-buy]'));
+    // "Before you buy" sits between the count and the shops.
+    expect(found.nextElementSibling).toBe($('[data-before-you-buy]'));
+    // How the search was read sits outside the results block, so an empty search can show it too.
+    expect($('[data-status]').nextElementSibling).toBe($('[data-looked-for]'));
+    expect($('[data-looked-for]').nextElementSibling).toBe($('#results'));
     expect($('[data-before-you-buy]').nextElementSibling).toBe($('#result-sections'));
     expect(found.getAttribute('role')).toBe('status');
   });
@@ -277,6 +279,17 @@ describe('search page', () => {
     await vi.waitFor(() => expect($('[data-found]').textContent).toMatch(/^Found/));
     expect(line.hidden).toBe(true);
     expect(line.textContent).toBe('');
+  });
+
+  it('says how the search was read when the search found nothing', async () => {
+    const pick = { general: 'tools_hardware', specific: null, general_name: 'Tools and hardware' };
+    const query = { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill', pick };
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, query, local: [], local_farther: [], online: [] }), { status: 200 }));
+    submit('DeWalt DCD771', '10001');
+    const line = $('[data-looked-for]');
+    await vi.waitFor(() => expect(line.hidden).toBe(false));
+    expect(line.textContent).toBe('We looked for: cordless drill (Tools and hardware)');
+    expect($('#results').hidden).toBe(true);
   });
 
   it('clears the line under the search box once the results are in', async () => {
