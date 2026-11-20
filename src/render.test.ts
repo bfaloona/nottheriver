@@ -1089,27 +1089,18 @@ describe('map of nearby shops', () => {
 });
 
 describe('renderLookedFor', () => {
-  const query = (pick?: SearchResponse['query']['pick']) => ({ ...response.query, canonical_name: 'laptop', ...(pick && { pick }) });
-  const line = (pick?: SearchResponse['query']['pick']) => {
-    const p = document.createElement('p');
-    renderLookedFor(p, query(pick));
-    return p;
-  };
-
-  it.each([
-    ['both levels', { general: 'electronics', specific: 'computers', general_name: 'Electronics and computers', specific_name: 'Computers' }, 'We looked for: laptop (Electronics and computers, Computers)'],
-    ['the general level alone', { general: 'pets', specific: null, general_name: 'Pet supplies' }, 'We looked for: laptop (Pet supplies)'],
-    ['no category', { general: 'none', specific: null }, 'We looked for: laptop'],
-    ['not a product: the name alone, never an id', { general: 'not_a_product', specific: 'meal' }, 'We looked for: laptop'],
-  ])('%s', (_name, pick, text) => {
-    const p = line(pick);
-    expect(p.hidden).toBe(false);
-    expect(p.textContent).toBe(text);
+  it('shows the generic name alone, with or without a category pick', () => {
+    for (const pick of [undefined, { general: 'electronics', specific: 'computers', general_name: 'Electronics and computers', specific_name: 'Computers' }]) {
+      const p = document.createElement('p');
+      renderLookedFor(p, { ...response.query, canonical_name: 'laptop', ...(pick && { pick }) });
+      expect(p.hidden).toBe(false);
+      expect(p.textContent).toBe('We looked for: laptop');
+    }
   });
 
-  it('stays hidden without a pick, and is emptied when the results are cleared', () => {
-    expect(line().hidden).toBe(true);
-    const p = line({ general: 'none', specific: null });
+  it('is hidden and emptied when the results are cleared', () => {
+    const p = document.createElement('p');
+    renderLookedFor(p, { ...response.query, canonical_name: 'laptop' });
     renderLookedFor(p, null);
     expect(p.hidden).toBe(true);
     expect(p.textContent).toBe('');

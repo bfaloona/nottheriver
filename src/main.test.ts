@@ -266,29 +266,24 @@ describe('search page', () => {
     expect(box.querySelector('details')!.open).toBe(true);
   });
 
-  it('says how the search was read when the reply carries a category pick, and clears it for the next search', async () => {
-    const pick = { general: 'tools_hardware', specific: 'power_tools', general_name: 'Tools and hardware', specific_name: 'Power tools' };
-    searchReplies(() => new Response(JSON.stringify({ ...fixture, query: { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill', pick } }), { status: 200 }));
+  it('says how the search was read, and replaces the line on the next search', async () => {
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, query: { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill' } }), { status: 200 }));
     submit('DeWalt DCD771', '10001');
     const line = $('[data-looked-for]');
-    await vi.waitFor(() => expect(line.hidden).toBe(false));
-    expect(line.textContent).toBe('We looked for: cordless drill (Tools and hardware, Power tools)');
-    // A reply from a Worker that made no category call has no pick: no line, and the page still works.
-    searchReplies(() => new Response(JSON.stringify(fixture), { status: 200 }));
+    await vi.waitFor(() => expect(line.textContent).toBe('We looked for: cordless drill'));
+    expect(line.hidden).toBe(false);
+    searchReplies(() => new Response(JSON.stringify({ ...fixture, query: { ...fixture.query, canonical_name: 'kettle' } }), { status: 200 }));
     submit('kettle', '10001');
-    await vi.waitFor(() => expect($('[data-found]').textContent).toMatch(/^Found/));
-    expect(line.hidden).toBe(true);
-    expect(line.textContent).toBe('');
+    await vi.waitFor(() => expect(line.textContent).toBe('We looked for: kettle'));
   });
 
   it('says how the search was read when the search found nothing', async () => {
-    const pick = { general: 'tools_hardware', specific: null, general_name: 'Tools and hardware' };
-    const query = { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill', pick };
+    const query = { ...fixture.query, product: 'DeWalt DCD771', canonical_name: 'cordless drill' };
     searchReplies(() => new Response(JSON.stringify({ ...fixture, query, local: [], local_farther: [], online: [] }), { status: 200 }));
     submit('DeWalt DCD771', '10001');
     const line = $('[data-looked-for]');
     await vi.waitFor(() => expect(line.hidden).toBe(false));
-    expect(line.textContent).toBe('We looked for: cordless drill (Tools and hardware)');
+    expect(line.textContent).toBe('We looked for: cordless drill');
     expect($('#results').hidden).toBe(true);
   });
 
