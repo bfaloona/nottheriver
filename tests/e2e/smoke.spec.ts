@@ -174,6 +174,9 @@ test('a search renders ranked, explained, Amazon-free results under the CSP', as
 
   // The pointer path: resting on the name opens the panel, and the pointer can then cross into
   // it. Moved in steps, because a gap between the name and the panel would close it on the way.
+  // The help link is the last line of the panel. With the name at the top of the window, the
+  // whole panel is inside the window in any font, so the pointer never has to leave the page.
+  await name.evaluate((el) => el.scrollIntoView({ block: 'start' }));
   await name.hover();
   await expect(panel).toBeVisible();
   const link = (await panel.locator('.why-help a').boundingBox())!;
