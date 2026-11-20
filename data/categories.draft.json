@@ -8,9 +8,9 @@
   "parent": "FLD-3. A specific category is nested under its one parent.",
   "store_types": "FLD-4. Two map-search phrases: the specialist kind, then a broader kind. On a specific category, null means \"use the parent's\". basis: \"seen\" = the phrase was a local query in the saved responses under docs/evidence/quality (the script counts them); \"prompt\" = an example in proxy/prompts/normalize.ts:15; \"guess\" = neither. No saved file shows which phrase returned which shop, so \"seen\" does not mean \"returns good shops\".",
   "match_words": "FLD-5. Words a shop listing or a category label would contain. Matched as whole words, plural allowed on the last word.",
-  "ideas": "FLD-6. PROPOSALS, UNSIGNED. Kind ids from data/before-you-buy.json. ideas_from names the signed row a proposal was widened from; the signed rows are narrower (named words) than any category here.",
+  "ideas": "FLD-6. Proposals, approved as a set by the owner on 2026-11-19; no feature reads them yet. Kind ids from data/before-you-buy.json. ideas_from names the signed row a proposal was widened from; the signed rows are narrower (named words) than any category here.",
   "safe_as_whole": "FLD-7. False everywhere until the owner signs one.",
-  "no_used": "FLD-8. PROPOSALS, UNSIGNED. A hide the pick can add. It does not replace the keep-out words in code.",
+  "no_used": "FLD-8. Proposals, approved as a set by the owner on 2026-11-19; no feature reads them yet. A hide the pick can add. It does not replace the keep-out words in code.",
   "examples": "FLD-10. Hand-written. Brand and model names are examples of inputs, not endorsements; none was checked against a live catalog.",
   "eval_tag": "FLD-11. The eval/queries.json category this general category most often answers to; null where the eval has no product.",
   "differs_in": "Why the specific category exists: what it carries that its parent does not."
